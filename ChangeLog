@@ -1,3 +1,15 @@
+2005-01-09  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/Makefile.am:
+	* scripts/asc2img.sct: Removed this script as it is supposedly broken
+	beyond repair (according to Sven Neumann) and the functionality is in
+	the text tool itself.
+
+	* scripts/frosty-logo.sct: made sure the shadow is given enough space
+	and then truncated instead of translated to the center of the image,
+	thus preventing the display of shadows with a completely horizontal or
+	vertical edge. From a fix in Script-Fu by Shlomi Fish. Fixes bug #132145.
+
 2004-12-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/weave.sct: Limit the "Thread intensity" parameter to [0..100]

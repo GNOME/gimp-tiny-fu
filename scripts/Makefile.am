@@ -17,7 +17,6 @@ scriptdata_DATA =  \
     alien-glow-button.sct  \
     alien-glow-logo.sct    \
     alien-neon-logo.sct    \
-    asc2img.sct            \
     basic1-logo.sct        \
     basic2-logo.sct        \
     beveled-button.sct     \
