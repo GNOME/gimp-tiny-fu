@@ -1,3 +1,9 @@
+2005-03-04  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/ts-wrapper.c: Added support for SF-REGION. SF-BOUNDARY,
+	and SF-PATH. Used proper structure member when passing/receiving
+	data instead of always using d_int32.
+
 2005-03-03  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/script-fu-compat.init: Added/improved comments, changed

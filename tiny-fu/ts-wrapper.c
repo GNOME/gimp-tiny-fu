@@ -1025,13 +1025,13 @@ fprintf (stderr, "\n");
         break;
 
       case GIMP_PDB_COLOR:
-    if (! (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
+        if (! (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
           sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 3))
           success = FALSE;
         if (success)
           {
-            pointer   color_list;
-            guchar r, g, b;
+            pointer color_list;
+            guchar  r, g, b;
 
             args[i].type = GIMP_PDB_COLOR;
             color_list = sc->vptr->pair_car (a);
@@ -1049,8 +1049,34 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         break;
 
       case GIMP_PDB_REGION:
-        return my_err ("Regions are currently unsupported as arguments",
-                       sc->vptr->pair_car (a));
+        if (! (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
+          sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 4))
+          success = FALSE;
+        if (success)
+          {
+            pointer region;
+
+            args[i].type = GIMP_PDB_REGION;
+            region = sc->vptr->pair_car (a);
+            args[i].data.d_region.x =
+                         sc->vptr->ivalue (sc->vptr->pair_car (region));
+            region = sc->vptr->pair_cdr (region);
+            args[i].data.d_region.y =
+                         sc->vptr->ivalue (sc->vptr->pair_car (region));
+            region = sc->vptr->pair_cdr (region);
+            args[i].data.d_region.width =
+                         sc->vptr->ivalue (sc->vptr->pair_car (region));
+            region = sc->vptr->pair_cdr (region);
+            args[i].data.d_region.height =
+                         sc->vptr->ivalue (sc->vptr->pair_car (region));
+#if DEBUG_MARSHALL
+fprintf (stderr, "      (%d %d %d %d)\n",
+                 args[i].data.d_region.x,
+                 args[i].data.d_region.y,
+                 args[i].data.d_region.width,
+                 args[i].data.d_region.height);
+#endif
+          }
         break;
 
       case GIMP_PDB_DISPLAY:
@@ -1059,7 +1085,7 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         if (success)
           {
             args[i].type = GIMP_PDB_DISPLAY;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+            args[i].data.d_display = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
 
@@ -1069,7 +1095,7 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         if (success)
           {
             args[i].type = GIMP_PDB_IMAGE;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+            args[i].data.d_image = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
 
@@ -1079,7 +1105,7 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         if (success)
           {
             args[i].type = GIMP_PDB_LAYER;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+            args[i].data.d_layer = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
 
@@ -1089,7 +1115,7 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         if (success)
           {
             args[i].type = GIMP_PDB_CHANNEL;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+            args[i].data.d_channel = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
 
@@ -1099,7 +1125,7 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         if (success)
           {
             args[i].type = GIMP_PDB_DRAWABLE;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+            args[i].data.d_drawable = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
 
@@ -1109,18 +1135,28 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         if (success)
           {
             args[i].type = GIMP_PDB_SELECTION;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+            args[i].data.d_selection = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
 
       case GIMP_PDB_BOUNDARY:
-        return my_err ("Boundaries are currently unsupported as arguments",
-                       sc->vptr->pair_car (a));
+        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
+          success = FALSE;
+        if (success)
+          {
+            args[i].type = GIMP_PDB_BOUNDARY;
+            args[i].data.d_boundary = sc->vptr->ivalue (sc->vptr->pair_car (a));
+          }
         break;
 
       case GIMP_PDB_PATH:
-        return my_err ("Paths are currently unsupported as arguments",
-                       sc->vptr->pair_car (a));
+        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
+          success = FALSE;
+        if (success)
+          {
+            args[i].type = GIMP_PDB_PATH;
+            args[i].data.d_path = sc->vptr->ivalue (sc->vptr->pair_car (a));
+          }
         break;
 
       case GIMP_PDB_PARASITE:
@@ -1391,45 +1427,63 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               }
 
             case GIMP_PDB_REGION:
-              return my_err ("Regions are currently unsupported as return values", sc->NIL);
+              {
+                gint32 x, y, w, h;
+
+                x = values[i + 1].data.d_region.x;
+                y = values[i + 1].data.d_region.y;
+                w = values[i + 1].data.d_region.width;
+                h = values[i + 1].data.d_region.height;
+
+                intermediate_val = sc->vptr->cons (sc,
+                                                   sc->vptr->mk_integer (sc, x),
+                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, y),
+                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, w),
+                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, h),
+                                                   sc->NIL))));
+                return_val = sc->vptr->cons (sc, intermediate_val, return_val);
+                break;
+              }
               break;
 
             case GIMP_PDB_DISPLAY:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_display),
                                  return_val);
               break;
 
             case GIMP_PDB_IMAGE:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_image),
                                  return_val);
               break;
 
             case GIMP_PDB_LAYER:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_layer),
                                  return_val);
               break;
 
             case GIMP_PDB_CHANNEL:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_channel),
                                  return_val);
               break;
 
             case GIMP_PDB_DRAWABLE:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_drawable),
                                  return_val);
               break;
 
             case GIMP_PDB_SELECTION:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_selection),
                                  return_val);
               break;
 
             case GIMP_PDB_BOUNDARY:
-              return my_err ("Boundaries are currently unsupported as return values", sc->NIL);
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_boundary),
+                                 return_val);
               break;
 
             case GIMP_PDB_PATH:
-              return my_err ("Paths are currently unsupported as return values", sc->NIL);
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_path),
+                                 return_val);
               break;
 
             case GIMP_PDB_PARASITE:
