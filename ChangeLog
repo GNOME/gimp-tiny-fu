@@ -1,3 +1,9 @@
+2004-12-25  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/weave.sct: Limit the "Thread intensity" parameter to [0..100]
+	because it's used as layer opacity. From a fix in Script-Fu by Michael
+	Natterer. Fixes bug #162182.
+
 2004-12-19  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/copy-visible.sct: Deprecated since feature added to core.
