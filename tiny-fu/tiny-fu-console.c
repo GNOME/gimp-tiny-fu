@@ -76,8 +76,10 @@ static void       tiny_fu_save_dialog        (GtkWidget    *parent);
 static void       tiny_fu_save_output        (GtkWidget    *dialog,
                                                 gint        response_id,
                                                 gpointer    data);
+#ifdef GIMP_PROC_BROWSER
 static void       tiny_fu_browse_callback    (GtkWidget    *widget,
                                                 gpointer      data);
+#endif
 static gboolean   tiny_fu_cc_is_empty        (void);
 static gboolean   tiny_fu_cc_key_function    (GtkWidget    *widget,
                                                 GdkEventKey  *event,
@@ -276,6 +278,7 @@ tiny_fu_console_interface (void)
                     G_CALLBACK (tiny_fu_cc_key_function),
                     NULL);
 
+#ifdef GIMP_PROC_BROWSER
   button = gtk_button_new_with_mnemonic (_("Browse..."));
   gtk_misc_set_padding (GTK_MISC (GTK_BIN (button)->child), 2, 0);
   gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, TRUE, 0);
@@ -284,6 +287,7 @@ tiny_fu_console_interface (void)
   g_signal_connect (button, "clicked",
                     G_CALLBACK (tiny_fu_browse_callback),
                     NULL);
+#endif
 
   /*  Initialize the history  */
   history     = g_list_append (history, NULL);
@@ -424,17 +428,15 @@ apply_callback (const gchar        *proc_name,
   gtk_entry_set_text (GTK_ENTRY (cint.cc), text->str);
   g_string_free (text, TRUE);
 }
-#endif
 
 static void
 tiny_fu_browse_callback (GtkWidget *widget,
                            gpointer   data)
 {
-#ifdef GIMP_PROC_BROWSER
   gtk_quit_add_destroy (1, (GtkObject *)
                         gimp_proc_browser_dialog_new (apply_callback));
-#endif
 }
+#endif
 
 static gboolean
 tiny_fu_console_idle_scroll_end (gpointer data)
