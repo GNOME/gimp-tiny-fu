@@ -691,7 +691,7 @@ fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements != arraylength (array))
+          if (n_elements > 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -734,7 +734,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements != arraylength (array))
+          if (n_elements > 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -777,7 +777,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements != arraylength (array))
+          if (n_elements > 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -820,7 +820,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements != arraylength (array))
+          if (n_elements > 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -866,7 +866,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements != arraylength (array))
+          if (n_elements > 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
