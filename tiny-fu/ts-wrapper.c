@@ -268,7 +268,10 @@ ts_output_string (FILE *fp, char *string, int len)
 {
   gchar *buff;
 
-  g_return_if_fail (len > 0);
+  g_return_if_fail (len >= 0);
+
+  if (len == 0)
+     return;
 
   if (ts_console_mode && fp == stdout)
   {
