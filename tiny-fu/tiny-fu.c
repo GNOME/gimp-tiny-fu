@@ -114,7 +114,8 @@ tiny_fu_query (void)
 
   gimp_install_procedure ("plug_in_tiny_fu_console",
                           _("Provides a console mode for tiny-fu development"),
-                          _("Provides an interface which allows interactive scheme development."),
+                          _("Provides an interface which allows interactive "
+                                      "scheme development."),
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -125,8 +126,10 @@ tiny_fu_query (void)
                           console_args, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_text_console",
-                          _("Provides a text console mode for tiny-fu development"),
-                          _("Provides an interface which allows interactive scheme development."),
+                          _("Provides a text console mode for tiny-fu "
+                                      "development"),
+                          _("Provides an interface which allows interactive "
+                                      "scheme development."),
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -136,7 +139,6 @@ tiny_fu_query (void)
                           G_N_ELEMENTS (textconsole_args), 0,
                           textconsole_args, NULL);
 
-#ifndef G_OS_WIN32
   gimp_install_procedure ("plug_in_tiny_fu_server",
                           _("Provides a server for remote tiny-fu operation"),
                           _("Provides a server for remote tiny-fu operation"),
@@ -148,11 +150,11 @@ tiny_fu_query (void)
                           GIMP_PLUGIN,
                           G_N_ELEMENTS (server_args), 0,
                           server_args, NULL);
-#endif
 
   gimp_install_procedure ("plug_in_tiny_fu_eval",
                           _("Evaluate scheme code"),
-                          _("Evaluate the code under the scheme interpeter (primarily for batch mode)"),
+                          _("Evaluate the code under the scheme interpreter "
+                                      " (primarily for batch mode)"),
                           "Manish Singh",
                           "Manish Singh",
                           "1998",
@@ -220,7 +222,7 @@ tiny_fu_run (const gchar *name,
   else if (strcmp (name, "plug_in_tiny_fu_text_console") == 0)
     {
       /*
-       *  The tiny-fu text console for interactive SIOD development
+       *  The tiny-fu text console for interactive Scheme development
        */
 
       tiny_fu_text_console_run (name, nparams, param,
@@ -229,13 +231,12 @@ tiny_fu_run (const gchar *name,
   else if (strcmp (name, "plug_in_tiny_fu_console") == 0)
     {
       /*
-       *  The tiny-fu console for interactive SIOD development
+       *  The tiny-fu console for interactive Scheme development
        */
 
       tiny_fu_console_run (name, nparams, param,
                              nreturn_vals, return_vals);
     }
-#ifndef G_OS_WIN32
   else if (strcmp (name, "plug_in_tiny_fu_server") == 0)
     {
       /*
@@ -245,7 +246,6 @@ tiny_fu_run (const gchar *name,
       tiny_fu_server_run (name, nparams, param,
                             nreturn_vals, return_vals);
     }
-#endif
   else if (strcmp (name, "plug_in_tiny_fu_eval") == 0)
     {
       /*
