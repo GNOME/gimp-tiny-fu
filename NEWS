@@ -1,0 +1,135 @@
+Version 0.9 of the Tiny-Fu Plug-in for GIMP 2.1/2.2
+---------------------------------------------------
+
+This is the development branch of Tiny-Fu. Here's where new features
+are being added. Very soon now, the next stable GIMP release, GIMP 2.2,
+will emerge out of this.
+
+
+
+Overview of Changes in July 30, 2004 Tiny-Fu
+===========================================
+
+- Fourth public tarball released.
+
+- Some minor bug fixes
+
+    * Fixed init problem by moving defines for DIR-SEPARATOR and
+      'load-extension'.
+    * Fixed error in allocation of memory used to hold data for
+      PDB_*ARRAY types.
+    * Delayed freeing of some memory that was still being used.
+    * Return a list containing either TRUE or FALSE for PDB calls which
+      return no values to indicate whether the call succeeded or not.
+
+- Stopped versioning of the .so files. Helps when building for Windows.
+
+- Applied changes from Script-Fu to allow use of SF_PALETTE in scripts.
+
+- Added constant DIR-SEPARATOR to aid in portability when building file
+  paths in scripts.
+
+- Updates to the script and init files
+
+    * Changed DIR_SEPARATOR to DIR-SEPARATOR in several scripts.
+    * Added palette parameter to the test script.
+    * Added first version of a contact sheet generation script.
+    * Fixed cons-array compatability definition.
+    * Removed define for 'fread' in Script-Fu compatability file.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Michael Natterer.
+
+
+
+Overview of Changes in July 22, 2004 Tiny-Fu
+===========================================
+
+- Third public tarball released.
+
+- Fixed problems when building under Windows.
+
+- Made changes to the tsx extension
+
+    * Stripped out socket and misc routines.
+    * Added 'dir-rewind' and 'file-type'.
+    * Modified to use routines from glib to aid in portability.
+
+- Hooked tsx extension in to a build and install.
+
+- Added support for PARASITES.
+
+
+Contributors:
+
+   Kevin Cozens, and Michael Schumacher.
+
+
+
+Overview of Changes in July 14, 2004 Tiny-Fu
+===========================================
+
+- Second public tarball released.
+
+- Removed display of GPL text in console mode.
+
+- Hooked tsx extension in to a build and install.
+
+- Added FFI hook for "load-extension".
+
+- Changes to files used during initialization of TinyScheme
+
+    * Load tsx extension on startup.
+    * Added compatibility define for SIOD 'realtime' function.
+    * Added random number generator routines.
+    * Added some compatibility routines for scripts written for SIOD.
+    * Fixed define of lcm.
+
+- Vectors are now used for all PDB *ARRAY types.
+
+- Fixed an undo related problem in the round-corners.scm file
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Dave Neary.
+
+
+
+Overview of Changes in July 5, 2004 Tiny-Fu
+===========================================
+
+- First public release of a tarball for Tiny-Fu
+
+- Partial improvements to error messages when parsing/running scripts.
+
+- Fixed PDB marshaller to handle NULL strings.
+
+- Applied HIG capitalization style to dialogs.
+
+- Updated to version 1.35 of the TinyScheme interpreter.
+
+- Updates to use latest GIMP constants.
+
+- Updates to the script files
+
+   * Updated with a fresh copy of the recently HIG-ified Script-Fu scripts.
+   * Fixed typos in three scripts.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Roman Joost, Bill Skaggs, and Sven Neumann.
+
+
+
+First working version of Tiny-Fu
+================================
+
+- The first successful run of a script (ts-helloworld.sct) using TinyScheme
+  as the Scheme interpreter occurred at 2:07am ET on March 6, 2004.
