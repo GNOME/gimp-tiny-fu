@@ -1,3 +1,8 @@
+2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+
+	* tinyscheme/scheme.c: Applied patch from Dimitrios Souflis which
+	fixes error when parsing two or more consecutive comment lines.
+
 2004-10-24 Kevin Cozens <kcozens@cvs.gimp.org>
 
 	* NEWS: Updated with a summary of information about all public
@@ -66,23 +71,23 @@
 
 2004-10-14  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* plug-ins/script-fu/scripts/circuit.scm: Fixed to allow use of
-	script on original layer.  (bug #155358)  Fixed spelling error.
+	* scripts/circuit.scm: Fixed to allow use of script on original layer.
+	(bug #155358)  Fixed spelling error.
 
 2004-10-12 Kevin Cozens <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
-	* plug-ins/script-fu/scripts/selection-round.scm: moved out of the
-	"Modify" placeholder. Using placeholders from Script-Fu breaks i18n.
+	* scripts/selection-round.scm: moved out of the "Modify" placeholder.
+	Using placeholders from Script-Fu breaks i18n.
 
-	* plug-ins/script-fu/scripts/alien-glow-button.scm
-	* plug-ins/script-fu/scripts/alien-glow-logo.scm
-	* plug-ins/script-fu/scripts/basic2-logo.scm
-	* plug-ins/script-fu/scripts/gradient-bevel-logo.scm: use "Sans
-	Bold" instead of "Futura_Poster". The underscore in the font name
-	used to confuse intltool (bug #137029) and the freefont package
-	isn't that widely used any longer anyway.
+	* scripts/alien-glow-button.scm
+	* scripts/alien-glow-logo.scm
+	* scripts/basic2-logo.scm
+	* scripts/gradient-bevel-logo.scm: use "Sans Bold" instead of
+	"Futura_Poster". The underscore in the font name used to confuse
+	intltool (bug #137029) and the freefont package isn't that widely
+	used any longer anyway.
 
 2004-10-12 Kevin Cozens <kcozens@cvs.gimp.org>
 
@@ -206,49 +211,47 @@
 
 	Updates based on Script-Fu change made by Sven Neumann.
 
-	* plug-ins/script-fu/scripts/addborder.sct: simple change to make
-	the script work on all image types, not only RGB.
+	* tiny-fu/scripts/addborder.sct: simple change to make the script work
+	on all image types, not only RGB.
 
 2004-10-05 Kevin Cozens <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
-	* plug-ins/script-fu/script-fu-interface.c (script_fu_about): Set 
-	the help_func again (but not the help_id). Enabled line wrapping
-	on labels.
+	* tiny-fu/script-fu-interface.c (script_fu_about): Set the help_func
+	again (but not the help_id). Enabled line wrapping on labels.
 
 	(script_fu_interface): substitute underscores by hyphens to
 	generate the help-id from the procedure name.
 
-	* plug-ins/script-fu/script-fu-interface.c: five buttons are too
-	much for the action area. Renamed the About button to Help and
-	resurrected the help button in the about dialog as a way to get to
-	the actual help pages (pressing F1 will get you there as well).
+	* tiny-fu/script-fu-interface.c: five buttons are too much for the
+	action area. Renamed the About button to Help and resurrected the
+	help button in the about dialog as a way to get to the actual help
+	pages (pressing F1 will get you there as well).
 
-	* plug-ins/script-fu/script-fu-interface.c (script_fu_interface):
-	set a minimum width for the color button again.
-	(script_fu_about): don't set help_func and help_id on the about
-	dialog.
+	* tiny-fu/script-fu-interface.c (script_fu_interface): set a minimum
+	width for the color button again.
+	(script_fu_about): don't set help_func and help_id on the about dialog.
 
-	* plug-ins/script-fu/script-fu-interface.c (script_fu_reset):
-	fixed reset for SF_TEXT values.
+	* tiny-fu/script-fu-interface.c (script_fu_reset): fixed reset for
+	SF_TEXT values.
 
 2004-10-04 Kevin Cozens <kcozens@cvs.gimp.org>
 
-	* plug-ins/tiny-fu/ts-wrapper.c: Cleaned init_procedures() by using
+	* tiny-fu/ts-wrapper.c: Cleaned init_procedures() by using
 	g_strdup_printf(), g_strdup()/g_free() proc_name, plugged memory leak.
 	Now strdup and free proc_name in marshall_proc_db_call().
 
-	* plug-ins/tiny-fu/ts-wrapper.c: Generate an error message if the size
-	of an array is different from the previous argument specifying the size
+	* tiny-fu/ts-wrapper.c: Generate an error message if the size of an
+	array is different from the previous argument specifying the size
 	as suggested by Michael Natterer. (Fixes bug #154266)
 
 2004-10-04 Kevin Cozens <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
-	* plug-ins/script-fu/script-fu-interface.c: Added a horizontal
-	size group for the left-aligned controls.
+	* tiny-fu/script-fu-interface.c: Added a horizontal size group for the
+	left-aligned controls.
 
 2004-10-06 Kevin Cozens <kcozens@cvs.gimp.org>
 
