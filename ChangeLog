@@ -1,5 +1,12 @@
 2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* tiny-fu/ts-wrapper.c (init_constants): Re-added the deprecated
+	constants for backwards compatability with Script-Fu and 2.0
+	version of GIMP. Use convert_string() to change name of constants
+	to Scheme format.
+
+2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* configure.in: Bumped version number to 0.9.6
 
 2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>

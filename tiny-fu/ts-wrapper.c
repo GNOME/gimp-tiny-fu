@@ -30,7 +30,7 @@
 #include "libgimp/gimp.h"
 
 #include "tinyscheme/scheme-private.h"
-#if	USE_DL
+#if USE_DL
 #include "tinyscheme/dynload.h"
 #endif
 #include "ftx/ftx.h"
@@ -86,6 +86,84 @@ script_constants[] = {
   /* for SF_ADJUSTMENT */
   { "SF-SLIDER",      SF_SLIDER     },
   { "SF-SPINNER",     SF_SPINNER    },
+
+  { NULL, 0 }
+};
+
+/* The following constants are deprecated. They are */
+/* included to keep backwards compatability with    */
+/* older scripts used with version 2.0 of GIMP.     */
+struct named_constant
+old_constants[] = {
+  { "NORMAL",         GIMP_NORMAL_MODE,       },
+  { "DISSOLVE",       GIMP_DISSOLVE_MODE,     },
+  { "BEHIND",         GIMP_BEHIND_MODE,       },
+  { "MULTIPLY",       GIMP_MULTIPLY_MODE,     },
+  { "SCREEN",         GIMP_SCREEN_MODE,       },
+  { "OVERLAY",        GIMP_OVERLAY_MODE,      },
+  { "DIFFERENCE",     GIMP_DIFFERENCE_MODE,   },
+  { "ADDITION",       GIMP_ADDITION_MODE,     },
+  { "SUBTRACT",       GIMP_SUBTRACT_MODE,     },
+  { "DARKEN-ONLY",    GIMP_DARKEN_ONLY_MODE,  },
+  { "LIGHTEN-ONLY",   GIMP_LIGHTEN_ONLY_MODE, },
+  { "HUE",            GIMP_HUE_MODE,          },
+  { "SATURATION",     GIMP_SATURATION_MODE,   },
+  { "COLOR",          GIMP_COLOR_MODE,        },
+  { "VALUE",          GIMP_VALUE_MODE,        },
+  { "DIVIDE",         GIMP_DIVIDE_MODE,       },
+
+  { "BLUR",           GIMP_BLUR_CONVOLVE,     },
+  { "SHARPEN",        GIMP_SHARPEN_CONVOLVE,  },
+
+  { "WHITE-MASK",     GIMP_ADD_WHITE_MASK,    },
+  { "BLACK-MASK",     GIMP_ADD_BLACK_MASK,    },
+  { "ALPHA-MASK",     GIMP_ADD_ALPHA_MASK,    },
+
+  { "ADD",         GIMP_CHANNEL_OP_ADD,       },
+  { "SUB",         GIMP_CHANNEL_OP_SUBTRACT,  },
+  { "REPLACE",     GIMP_CHANNEL_OP_REPLACE,   },
+  { "INTERSECT",   GIMP_CHANNEL_OP_INTERSECT, },
+
+  { "FG-BG-RGB",   GIMP_FG_BG_RGB_MODE,       },
+  { "FG-BG-HSV",   GIMP_FG_BG_HSV_MODE,       },
+  { "FG-TRANS",    GIMP_FG_TRANSPARENT_MODE,  },
+  { "CUSTOM",      GIMP_CUSTOM_MODE,          },
+
+  { "FG-IMAGE-FILL",    GIMP_FOREGROUND_FILL,  },
+  { "BG-IMAGE-FILL",    GIMP_BACKGROUND_FILL,  },
+  { "WHITE-IMAGE-FILL", GIMP_WHITE_FILL,       },
+  { "TRANS-IMAGE-FILL", GIMP_TRANSPARENT_FILL, },
+
+  { "APPLY",       GIMP_MASK_APPLY,   },
+  { "DISCARD",     GIMP_MASK_DISCARD, },
+
+  { "HARD",        GIMP_BRUSH_HARD, },
+  { "SOFT",        GIMP_BRUSH_SOFT, },
+
+  { "CONTINUOUS",  GIMP_PAINT_CONSTANT,    },
+  { "INCREMENTAL", GIMP_PAINT_INCREMENTAL, },
+
+  { "HORIZONTAL",  GIMP_ORIENTATION_HORIZONTAL, },
+  { "VERTICAL",    GIMP_ORIENTATION_VERTICAL,   },
+  { "UNKNOWN",     GIMP_ORIENTATION_UNKNOWN,    },
+
+  { "LINEAR",               GIMP_GRADIENT_LINEAR,               },
+  { "BILINEAR",             GIMP_GRADIENT_BILINEAR,             },
+  { "RADIAL",               GIMP_GRADIENT_RADIAL,               },
+  { "SQUARE",               GIMP_GRADIENT_SQUARE,               },
+  { "CONICAL-SYMMETRIC",    GIMP_GRADIENT_CONICAL_SYMMETRIC,    },
+  { "CONICAL-ASYMMETRIC",   GIMP_GRADIENT_CONICAL_ASYMMETRIC,   },
+  { "SHAPEBURST-ANGULAR",   GIMP_GRADIENT_SHAPEBURST_ANGULAR,   },
+  { "SHAPEBURST-SPHERICAL", GIMP_GRADIENT_SHAPEBURST_SPHERICAL, },
+  { "SHAPEBURST-DIMPLED",   GIMP_GRADIENT_SHAPEBURST_DIMPLED,   },
+  { "SPIRAL-CLOCKWISE",     GIMP_GRADIENT_SPIRAL_CLOCKWISE,     },
+  { "SPIRAL-ANTICLOCKWISE", GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE, },
+
+  { "VALUE-LUT",   GIMP_HISTOGRAM_VALUE, },
+  { "RED-LUT",     GIMP_HISTOGRAM_RED,   },
+  { "GREEN-LUT",   GIMP_HISTOGRAM_GREEN, },
+  { "BLUE-LUT",    GIMP_HISTOGRAM_BLUE,  },
+  { "ALPHA-LUT",   GIMP_HISTOGRAM_ALPHA, },
 
   { NULL, 0 }
 };
@@ -194,7 +272,7 @@ ts_output_string (FILE *fp, char *string, int len)
   {
     buff = g_strndup (string, len);
     if (buff == NULL)
-       return;	/* Should "No memory" be output here? */
+       return;  /* Should "No memory" be output here? */
 
     tiny_fu_output_to_console (buff);
 
@@ -313,17 +391,13 @@ init_constants (void)
           if (! strncmp ("GIMP_", value->value_name, 5))
             {
               gchar *scheme_name;
-              gchar *s;
 
               scheme_name = g_strdup (value->value_name + 5);
-
-              for (s = scheme_name; *s; s++)
-                if (*s == '_')
-                  *s = '-';
+              convert_string (scheme_name);
 
               symbol = sc.vptr->mk_symbol (&sc, scheme_name);
               sc.vptr->scheme_define (&sc, sc.global_env, symbol,
-                    sc.vptr->mk_integer (&sc, value->value));
+                                      sc.vptr->mk_integer (&sc, value->value));
               sc.vptr->setimmutable(symbol);
 
               g_free (scheme_name);
@@ -352,12 +426,12 @@ init_constants (void)
       g_free (scheme_name);
     }
 
-  /* Constants used in register block of scripts */
+  /* Constants used in the register block of scripts */
   for (i = 0; script_constants[i].name != NULL; ++i)
   {
       symbol = sc.vptr->mk_symbol (&sc, script_constants[i].name);
       sc.vptr->scheme_define (&sc, sc.global_env, symbol,
-            sc.vptr->mk_integer (&sc, script_constants[i].value));
+                    sc.vptr->mk_integer (&sc, script_constants[i].value));
       sc.vptr->setimmutable(symbol);
   }
 
@@ -382,6 +456,14 @@ init_constants (void)
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                 sc.vptr->mk_string (&sc, gimp_plug_in_directory () ));
   sc.vptr->setimmutable(symbol);
+
+  for (i = 0; old_constants[i].name != NULL; ++i)
+  {
+      symbol = sc.vptr->mk_symbol (&sc, old_constants[i].name);
+      sc.vptr->scheme_define (&sc, sc.global_env, symbol,
+                    sc.vptr->mk_integer (&sc, old_constants[i].value));
+      sc.vptr->setimmutable(symbol);
+  }
 }
 
 static void
