@@ -52,20 +52,19 @@ tiny_fu_text_console_run (const gchar      *name,
   switch (run_mode)
     {
     case GIMP_RUN_INTERACTIVE:
-      /*  Enable SIOD output  */
+    case GIMP_RUN_NONINTERACTIVE:  /* Always called with RUN_NONINTERACTIVE */
+      /*  Enable Tiny-Fu output  */
       ts_set_output_file (stdout);
       ts_set_verbose_level (2);
       ts_print_welcome ();
 
       /*  Run the interface  */
       tiny_fu_text_console_interface ();
-
       break;
 
     case GIMP_RUN_WITH_LAST_VALS:
-    case GIMP_RUN_NONINTERACTIVE:
       status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Tiny-Fu console mode allows only interactive invocation"));
+      g_message (_("Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""));
       break;
 
     default:

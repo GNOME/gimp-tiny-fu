@@ -644,6 +644,9 @@ tiny_fu_eval_run (const gchar      *name,
   switch (run_mode)
     {
     case GIMP_RUN_NONINTERACTIVE:
+      /*  Disable Tiny-Fu output  */
+      ts_set_output_file (stdout);
+      ts_set_verbose_level (0);
       if (ts_interpret_string (params[1].data.d_string) != 0)
         status = GIMP_PDB_EXECUTION_ERROR;
       break;

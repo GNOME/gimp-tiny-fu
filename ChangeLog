@@ -1,3 +1,9 @@
+2005-03-24  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/tiny-fu-console.c
+	* tiny-fu/tiny-fu-text-console.c: Changes to allow use of Tiny-Fu with
+	batch mode.
+
 2005-03-17  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tinyscheme/scheme.c: Strings are normalized (characters with an
@@ -6,8 +12,8 @@
 2005-03-17  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tinyscheme/README
-	* tinyscheme/scheme.h:
-	* tinyscheme/scheme-private.h:
+	* tinyscheme/scheme.h
+	* tinyscheme/scheme-private.h
 	* tinyscheme/scheme.c: Added support for UTF-8 coded strings.
 
 	* MAINTAINERS: Added Michael Schumacher as maintainer of Windows
@@ -366,7 +372,7 @@
 2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tinyscheme/scheme.c: Removed some items from here...
-	* tinyscheme/scheme-private.h ... and added them here so they
+	* tinyscheme/scheme-private.h: ... and added them here so they
 	could be used in the ts-wrapper.c file.
 
 2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
