@@ -44,24 +44,24 @@
 static void      tiny_fu_quit           (void);
 static void      tiny_fu_query          (void);
 static void      tiny_fu_run            (const gchar      *name,
-					   gint              nparams,
-					   const GimpParam  *params,
-					   gint             *nreturn_vals,
-					   GimpParam       **return_vals);
+                                         gint              nparams,
+                                         const GimpParam  *params,
+                                         gint             *nreturn_vals,
+                                         GimpParam       **return_vals);
 static void      tiny_fu_auxillary_init (void);
 static void      tiny_fu_refresh_proc   (const gchar      *name,
-					   gint              nparams,
-					   const GimpParam  *params,
-					   gint             *nreturn_vals,
-					   GimpParam       **return_vals);
+                                         gint              nparams,
+                                         const GimpParam  *params,
+                                         gint             *nreturn_vals,
+                                         GimpParam       **return_vals);
 
 
 GimpPlugInInfo PLUG_IN_INFO =
 {
-  NULL,				/* init_proc  */
-  tiny_fu_quit,		/* quit_proc  */
-  tiny_fu_query,	/* query_proc */
-  tiny_fu_run		/* run_proc   */
+  NULL,                /* init_proc  */
+  tiny_fu_quit,        /* quit_proc  */
+  tiny_fu_query,       /* query_proc */
+  tiny_fu_run          /* run_proc   */
 };
 
 
@@ -102,73 +102,73 @@ tiny_fu_query (void)
   gimp_plugin_domain_register (GETTEXT_PACKAGE "-tiny-fu", NULL);
 
   gimp_install_procedure ("extension_tiny_fu",
-			  _("A scheme interpreter for scripting GIMP operations"),
-			  _("More help here later"),
-			  "Spencer Kimball & Peter Mattis",
-			  "Spencer Kimball & Peter Mattis",
-			  "1997",
-			  NULL,
-			  NULL,
-			  GIMP_EXTENSION,
-			  0, 0, NULL, NULL);
+                          _("A scheme interpreter for scripting GIMP operations"),
+                          _("More help here later"),
+                          "Spencer Kimball & Peter Mattis",
+                          "Spencer Kimball & Peter Mattis",
+                          "1997",
+                          NULL,
+                          NULL,
+                          GIMP_EXTENSION,
+                          0, 0, NULL, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_console",
-			  _("Provides a console mode for tiny-fu development"),
-			  _("Provides an interface which allows interactive scheme development."),
-			  "Spencer Kimball & Peter Mattis",
-			  "Spencer Kimball & Peter Mattis",
-			  "1997",
-			  N_("<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"),
-			  NULL,
-			  GIMP_PLUGIN,
-			  G_N_ELEMENTS (console_args), 0,
-			  console_args, NULL);
+                          _("Provides a console mode for tiny-fu development"),
+                          _("Provides an interface which allows interactive scheme development."),
+                          "Spencer Kimball & Peter Mattis",
+                          "Spencer Kimball & Peter Mattis",
+                          "1997",
+                          N_("<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"),
+                          NULL,
+                          GIMP_PLUGIN,
+                          G_N_ELEMENTS (console_args), 0,
+                          console_args, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_text_console",
-			  _("Provides a text console mode for tiny-fu development"),
-			  _("Provides an interface which allows interactive scheme development."),
-			  "Spencer Kimball & Peter Mattis",
-			  "Spencer Kimball & Peter Mattis",
-			  "1997",
+                          _("Provides a text console mode for tiny-fu development"),
+                          _("Provides an interface which allows interactive scheme development."),
+                          "Spencer Kimball & Peter Mattis",
+                          "Spencer Kimball & Peter Mattis",
+                          "1997",
   NULL,
-			  NULL,
-			  GIMP_PLUGIN,
-			  G_N_ELEMENTS (textconsole_args), 0,
-			  textconsole_args, NULL);
+                          NULL,
+                          GIMP_PLUGIN,
+                          G_N_ELEMENTS (textconsole_args), 0,
+                          textconsole_args, NULL);
 
 #ifndef G_OS_WIN32
   gimp_install_procedure ("plug_in_tiny_fu_server",
-			  _("Provides a server for remote tiny-fu operation"),
-			  _("Provides a server for remote tiny-fu operation"),
-			  "Spencer Kimball & Peter Mattis",
-			  "Spencer Kimball & Peter Mattis",
-			  "1997",
-			  N_("<Toolbox>/Xtns/Tiny-Fu/_Start Server..."),
-			  NULL,
-			  GIMP_PLUGIN,
-			  G_N_ELEMENTS (server_args), 0,
-			  server_args, NULL);
+                          _("Provides a server for remote tiny-fu operation"),
+                          _("Provides a server for remote tiny-fu operation"),
+                          "Spencer Kimball & Peter Mattis",
+                          "Spencer Kimball & Peter Mattis",
+                          "1997",
+                          N_("<Toolbox>/Xtns/Tiny-Fu/_Start Server..."),
+                          NULL,
+                          GIMP_PLUGIN,
+                          G_N_ELEMENTS (server_args), 0,
+                          server_args, NULL);
 #endif
 
   gimp_install_procedure ("plug_in_tiny_fu_eval",
-			  _("Evaluate scheme code"),
-			  _("Evaluate the code under the scheme interpeter (primarily for batch mode)"),
-			  "Manish Singh",
-			  "Manish Singh",
-			  "1998",
-			  NULL,
-			  NULL,
-			  GIMP_PLUGIN,
-			  G_N_ELEMENTS (eval_args), 0,
-			  eval_args, NULL);
+                          _("Evaluate scheme code"),
+                          _("Evaluate the code under the scheme interpeter (primarily for batch mode)"),
+                          "Manish Singh",
+                          "Manish Singh",
+                          "1998",
+                          NULL,
+                          NULL,
+                          GIMP_PLUGIN,
+                          G_N_ELEMENTS (eval_args), 0,
+                          eval_args, NULL);
 }
 
 static void
-tiny_fu_run (const gchar     *name,
-	gint              nparams,
-	const GimpParam  *param,
-	gint             *nreturn_vals,
-	GimpParam       **return_vals)
+tiny_fu_run (const gchar *name,
+        gint              nparams,
+        const GimpParam  *param,
+        gint             *nreturn_vals,
+        GimpParam       **return_vals)
 {
   INIT_I18N();
 
@@ -209,7 +209,7 @@ tiny_fu_run (const gchar     *name,
       gimp_extension_ack ();
 
       while (TRUE)
-	gimp_extension_process (0);
+        gimp_extension_process (0);
 
       *nreturn_vals = 1;
       *return_vals  = values;
@@ -224,7 +224,7 @@ tiny_fu_run (const gchar     *name,
        */
 
       tiny_fu_text_console_run (name, nparams, param,
-				  nreturn_vals, return_vals);
+                                  nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug_in_tiny_fu_console") == 0)
     {
@@ -233,7 +233,7 @@ tiny_fu_run (const gchar     *name,
        */
 
       tiny_fu_console_run (name, nparams, param,
-			     nreturn_vals, return_vals);
+                             nreturn_vals, return_vals);
     }
 #ifndef G_OS_WIN32
   else if (strcmp (name, "plug_in_tiny_fu_server") == 0)
@@ -243,7 +243,7 @@ tiny_fu_run (const gchar     *name,
        */
 
       tiny_fu_server_run (name, nparams, param,
-			    nreturn_vals, return_vals);
+                            nreturn_vals, return_vals);
     }
 #endif
   else if (strcmp (name, "plug_in_tiny_fu_eval") == 0)
@@ -253,7 +253,7 @@ tiny_fu_run (const gchar     *name,
        */
 
       tiny_fu_eval_run (name, nparams, param,
-			  nreturn_vals, return_vals);
+                          nreturn_vals, return_vals);
     }
 }
 
@@ -267,25 +267,25 @@ tiny_fu_auxillary_init (void)
   };
 
   gimp_install_temp_proc ("tiny_fu_refresh",
-			  _("Re-read all available scripts"),
-			  _("Re-read all available scripts"),
-			  "Spencer Kimball & Peter Mattis",
-			  "Spencer Kimball & Peter Mattis",
-			  "1997",
-			  N_("<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"),
-			  NULL,
-			  GIMP_TEMPORARY,
-			  G_N_ELEMENTS (args), 0,
-			  args, NULL,
-			  tiny_fu_refresh_proc);
+                          _("Re-read all available scripts"),
+                          _("Re-read all available scripts"),
+                          "Spencer Kimball & Peter Mattis",
+                          "Spencer Kimball & Peter Mattis",
+                          "1997",
+                          N_("<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"),
+                          NULL,
+                          GIMP_TEMPORARY,
+                          G_N_ELEMENTS (args), 0,
+                          args, NULL,
+                          tiny_fu_refresh_proc);
 }
 
 static void
 tiny_fu_refresh_proc (const gchar      *name,
-			gint              nparams,
-			const GimpParam  *params,
-			gint             *nreturn_vals,
-			GimpParam       **return_vals)
+                      gint              nparams,
+                      const GimpParam  *params,
+                      gint             *nreturn_vals,
+                      GimpParam       **return_vals)
 {
   static GimpParam  values[1];
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;

@@ -390,6 +390,7 @@ tiny_fu_save_output (GtkWidget *dialog,
   gtk_widget_destroy (dialog);
 }
 
+#ifdef GIMP_PROC_BROWSER
 static void
 apply_callback (const gchar        *proc_name,
                 const gchar        *scheme_proc_name,
@@ -423,6 +424,7 @@ apply_callback (const gchar        *proc_name,
   gtk_entry_set_text (GTK_ENTRY (cint.cc), text->str);
   g_string_free (text, TRUE);
 }
+#endif
 
 static void
 tiny_fu_browse_callback (GtkWidget *widget,

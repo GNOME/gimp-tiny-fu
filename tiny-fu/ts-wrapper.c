@@ -16,10 +16,10 @@
  * Foundation, Inc., 59 Temple Place - Suite 331, Boston, MA 02111-1307, USA.
  */
 
-#if	1
-#define DEBUG_MARSHALL       0	/* No need to define this until you need it */
-#endif
+#if 0
+#define DEBUG_MARSHALL       0  /* No need to define this until you need it */
 #define DEBUG_SCRIPTS        0
+#endif
 
 #include "config.h"
 
