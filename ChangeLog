@@ -1,3 +1,22 @@
+2004-11-11  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	Updates based on changes made by Michael Natterer to Script-Fu.
+
+	* scripts/add-bevel.sct
+	* scripts/addborder.sct
+	* scripts/carve-it.sct
+	* scripts/carved-logo.sct
+	* scripts/chip-away.sct
+	* scripts/clothify.sct
+	* scripts/font-map.sct
+	* scripts/slide.sct
+	* scripts/swirltile.sct: don't call gimp-edit-* functions on
+	drawables which are not added to an image because this will be
+	forbidden soon (because it can trash the image's undo stack).
+
+	* scripts/lava.sct: replaced undo-disable/enable by
+	undo-group-start/end.
+
 2004-11-10  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on changes made by Sven Neumann to Script-Fu.

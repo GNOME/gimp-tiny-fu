@@ -74,19 +74,17 @@
         (bg-type (car (gimp-drawable-type bg-layer)))
         (bg-image (car (gimp-drawable-get-image bg-layer)))
         (layer1 (car (gimp-layer-new img bg-width bg-height bg-type "Layer1" 100 NORMAL-MODE)))
-        (inset-layer (car (gimp-layer-new img bg-width bg-height bg-type "inset1" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
     (gimp-image-undo-disable img)
+
+    (gimp-image-add-layer img layer1 0)
+
     (gimp-selection-all img)
-    (gimp-edit-clear inset-layer)
     (gimp-edit-clear layer1)
     (gimp-selection-none img)
-    (gimp-image-add-layer img layer1 0)
     (copy-layer-carve-it img layer1 bg-image bg-layer)
-
-    (gimp-edit-clear inset-layer)
 
     (gimp-edit-copy mask-drawable)
     (gimp-image-add-channel img mask 0)
