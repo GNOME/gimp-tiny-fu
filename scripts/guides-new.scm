@@ -20,7 +20,7 @@
     (gimp-image-undo-group-end image)
     (gimp-displays-flush)))
     
-(tiny-fu-register "script-fu-guide-new" 
+(tiny-fu-register "tiny-fu-guide-new" 
 		    _"<Image>/Image/Guides/New _Guide..." 
 		    "Add a single Line Guide with the specified postion and orientation. Postion is specified in Pixels (px)."
 		    "Alan Horkan"

@@ -12,7 +12,7 @@
     (gimp-image-undo-group-end image)
     (gimp-displays-flush)))
 
-(tiny-fu-register "script-fu-guides-remove"
+(tiny-fu-register "tiny-fu-guides-remove"
 		    _"<Image>/Image/Guides/_Remove all Guides"
 		    "Removes all horizontal and vertical guides."
 		    "Alan Horkan"
