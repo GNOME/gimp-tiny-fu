@@ -1,5 +1,20 @@
 2004-10-12 Kevin Cozens <kcozens@cvs.gimp.org>
 
+	Updates based on Script-Fu changes made by Sven Neumann.
+
+	* plug-ins/script-fu/scripts/selection-round.scm: moved out of the
+	"Modify" placeholder. Using placeholders from Script-Fu breaks i18n.
+
+	* plug-ins/script-fu/scripts/alien-glow-button.scm
+	* plug-ins/script-fu/scripts/alien-glow-logo.scm
+	* plug-ins/script-fu/scripts/basic2-logo.scm
+	* plug-ins/script-fu/scripts/gradient-bevel-logo.scm: use "Sans
+	Bold" instead of "Futura_Poster". The underscore in the font name
+	used to confuse intltool (bug #137029) and the freefont package
+	isn't that widely used any longer anyway.
+
+2004-10-12 Kevin Cozens <kcozens@cvs.gimp.org>
+
 	* autogen.sh: removed reference to libtool in the "I am testing ..."
 	message since libtool isn't used.
 

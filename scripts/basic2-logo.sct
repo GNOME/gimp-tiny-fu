@@ -112,7 +112,7 @@
     ""
     SF-STRING     _"Text"               "TINY-FU"
     SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-    SF-FONT       _"Font"               "Futura_Poster"
+    SF-FONT       _"Font"               "Sans Bold"
     SF-COLOR      _"Background color"   '(255 255 255)
     SF-COLOR      _"Text color"         '(206 6 50)
 )
