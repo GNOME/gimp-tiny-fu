@@ -218,8 +218,6 @@ tiny_fu_interface (SFScript *script)
   sf_interface->title = g_strdup_printf (_("Tiny-Fu: %s"),
                                          sf_interface->short_title);
 
-  g_free (title);
-
   sf_interface->help_id = g_strdup (script->pdb_name);
 
   for (tmp = sf_interface->help_id; tmp && *tmp; tmp++)

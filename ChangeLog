@@ -1,5 +1,10 @@
 2004-11-03  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Oops...removed
+	a line left over when applying patch which fixes bug 123882.
+
+2004-11-03  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Don't call
 	gettext() on strings provided by scripts as they are already
 	translated by the Scheme interpreter.
