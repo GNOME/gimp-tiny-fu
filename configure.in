@@ -206,22 +206,9 @@ LIBS="$LIBS $GLIB_LIBS"
 AC_CHECK_FUNCS(bind_textdomain_codeset)
 
 
-AC_MSG_CHECKING([if GIMP is version 2.1.0 or newer])
-if $PKG_CONFIG --atleast-version=2.1.0 gimp-2.0; then
-  have_gimp_2_1=yes
-else
-  have_gimp_2_1=no
-fi
-AC_MSG_RESULT($have_gimp_2_1)
-
-
-PKG_CHECK_MODULES(GIMP, gimp-2.0 gimpui-2.0)
+PKG_CHECK_MODULES(GIMP, gimp-2.0 >= gimp_required_version gimpui-2.0 >= gimp_required_version)
 AC_SUBST(GIMP_CFLAGS)
 AC_SUBST(GIMP_LIBS)
-
-PKG_CHECK_MODULES(GMODULE, gmodule-2.0 gobject-2.0)
-AC_SUBST(GMODULE_CFLAGS)
-AC_SUBST(GMODULE_LIBS)
 
 
 ##################################
