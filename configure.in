@@ -8,10 +8,15 @@ m4_define([plugin_name], [gimp-tiny-fu])
 dnl These three define the plug-in version number
 m4_define([plugin_major_version], [0])
 m4_define([plugin_minor_version], [9])
-m4_define([plugin_micro_version], [4])
+m4_define([plugin_micro_version], [5])
 
 m4_define([plugin_version],
           [plugin_major_version.plugin_minor_version.plugin_micro_version])
+
+dnl required versions of other packages
+m4_define([glib_required_version], [2.4.5])
+m4_define([gtk_required_version], [2.4.4])
+m4_define([gimp_required_version], [2.1.0])
 
 AC_INIT([plugin_name], [plugin_version])
 
@@ -23,9 +28,17 @@ AC_DEFINE(PLUGIN_MINOR_VERSION, plugin_minor_version, [Plug-In minor version])
 AC_DEFINE(PLUGIN_MICRO_VERSION, plugin_micro_version, [Plug-In micro version])
 
 AC_CONFIG_SRCDIR([tiny-fu/tiny-fu.c])
-AM_CONFIG_HEADER(config.h)
 
 AM_INIT_AUTOMAKE(no-define)
+AM_CONFIG_HEADER(config.h)
+
+dnl i18n stuff
+GETTEXT_PACKAGE=plugin_name
+
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
+                                    [The gettext translation domain.])
+
 
 AC_ISC_POSIX
 AC_PROG_CC
@@ -164,24 +177,9 @@ if test x"$os_win32" = xyes; then
 fi
 
 
-PKG_CHECK_MODULES(GIMP, gimp-2.0 gimpui-2.0)
-
-AC_SUBST(GIMP_CFLAGS)
-AC_SUBST(GIMP_LIBS)
-
-GIMP_LIBDIR=`$PKG_CONFIG --variable=gimplibdir gimp-2.0`
-GIMP_DATADIR=`$PKG_CONFIG --variable=gimplibdir gimp-2.0`
-
-AC_SUBST(GIMP_LIBDIR)
-AC_SUBST(GIMP_DATADIR)
-
-
-dnl i18n stuff
-
-GETTEXT_PACKAGE=plugin_name
-AC_SUBST(GETTEXT_PACKAGE)
-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
-                                    [The gettext translation domain.])
+######################
+# Internationalisation
+######################
 
 dnl Add the languages which your application supports here.
 ALL_LINGUAS="az ca cs da de el en_CA en_GB es eu fi fr ga gl he hr hu id it ja ko lt ms nl no pa pl pt pt_BR ro ru sk sr sr@Latn sv tr uk vi yi zh_CN zh_TW"
@@ -189,26 +187,98 @@ ALL_LINGUAS="az ca cs da de el en_CA en_GB es eu fi fr ga gl he hr hu id it ja k
 AC_PROG_INTLTOOL
 AM_GLIB_GNU_GETTEXT
 
+
+###############################
+# Checks for required libraries
+###############################
+                                                                                
+AM_PATH_GLIB_2_0(glib_required_version, :,
+  AC_MSG_ERROR(Test for GLIB failed. See the file 'INSTALL' for help.),
+  gobject)
+
+AM_PATH_GTK_2_0(gtk_required_version, :,
+    AC_MSG_ERROR(Test for GTK+ failed. See the file 'INSTALL' for help.))
+
+
+dnl Check for bind_textdomain_codeset, including -lintl if GLib brings it in.
+gimp_save_LIBS=$LIBS
+LIBS="$LIBS $GLIB_LIBS"
 AC_CHECK_FUNCS(bind_textdomain_codeset)
 
-LOCALEDIR='${datadir}/locale'
-DATADIR=`$PKG_CONFIG gimp-2.0 --variable=gimpdatadir`
 
-AC_SUBST(LOCALEDIR)
-AC_SUBST(DATADIR)
-
-
-AC_MSG_CHECKING([if GTK+ is version 2.3.0 or newer])
-if $PKG_CONFIG --atleast-version=2.3.0 gtk+-2.0; then
-  have_gtk_2_3=yes
+AC_MSG_CHECKING([if GIMP is version 2.1.0 or newer])
+if $PKG_CONFIG --atleast-version=2.1.0 gimp-2.0; then
+  have_gimp_2_1=yes
 else
-  have_gtk_2_3=no
+  have_gimp_2_1=no
 fi
-AC_MSG_RESULT($have_gtk_2_3)
+AC_MSG_RESULT($have_gimp_2_1)
 
-if test "x$have_gtk_2_3" != "xyes"; then
-  CPPFLAGS="$CPPFLAGS -DG_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED"
+
+PKG_CHECK_MODULES(GIMP, gimp-2.0 gimpui-2.0)
+AC_SUBST(GIMP_CFLAGS)
+AC_SUBST(GIMP_LIBS)
+
+PKG_CHECK_MODULES(GMODULE, gmodule-2.0 gobject-2.0)
+AC_SUBST(GMODULE_CFLAGS)
+AC_SUBST(GMODULE_LIBS)
+
+
+##################################
+# Check for regex support in glibc
+##################################
+
+AC_MSG_CHECKING(checking for regex in glibc)
+AC_TRY_RUN([
+#include <features.h>
+#include <stdio.h>
+#include <regex.h>
+int main()
+{
+#if __GLIBC__ >= 2
+  return (0);
+#else
+  return (1);
+#endif
+}], AC_DEFINE(HAVE_GLIBC_REGEX, 1,
+              [Define to 1 if glibc has regex support.])
+    have_glibc_regex=yes
+    AC_MSG_RESULT(yes),
+    AC_MSG_RESULT(no),
+    AC_MSG_RESULT(assuming no))
+AM_CONDITIONAL(HAVE_GLIBC_REGEX, test x$have_glibc_regex = xyes)
+                                                                                
+AC_SUBST(HAVE_GLIBC_REGEX)
+
+
+############################
+# Check for select and fdset
+############################
+
+AC_MSG_CHECKING([fd_set and sys/select])
+AC_TRY_COMPILE([#include <sys/types.h>],
+        [fd_set readMask, writeMask;], gimp_ok=yes, gimp_ok=no)
+if test $gimp_ok = no; then
+    AC_EGREP_HEADER(fd_mask, sys/select.h, gimp_ok=yes)
+    if test $gimp_ok = yes; then
+        AC_DEFINE(HAVE_SYS_SELECT_H, 1,
+                  [Define to 1 if you have the <sys/select.h> header.])
+    fi
 fi
+AC_MSG_RESULT($gimp_ok)
+if test $gimp_ok = no; then
+    AC_DEFINE(NO_FD_SET, 1,
+              [Define to 1 if you don't have the fd_set function.])
+fi
+
+
+GIMP_DATADIR=`$PKG_CONFIG --variable=gimpdatadir gimp-2.0`
+GIMP_LIBDIR=`$PKG_CONFIG --variable=gimplibdir gimp-2.0`
+GIMP_LOCALEDIR='${datadir}/locale'
+
+AC_SUBST(GIMP_LIBDIR)
+AC_SUBST(GIMP_LOCALEDIR)
+AC_SUBST(GIMP_DATADIR)
 
 
 AC_CONFIG_FILES([
