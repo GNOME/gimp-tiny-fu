@@ -987,9 +987,6 @@ fprintf (stderr, "\n");
           success = FALSE;
         if (success)
         {
-          pointer list = array;
-          gint j;
-
           if (arraytype (array) != array_string)
           {
               convert_string (proc_name);
@@ -1012,13 +1009,18 @@ fprintf (stderr, "\n");
 
           args[i].type = GIMP_PDB_STRINGARRAY;
           args[i].data.d_stringarray = (gchar**) arrayvalue (array);
-
-          for (j = 0; j < n_elements; j++)
-          {
-            args[i].data.d_stringarray[j] =
-                sc->vptr->string_value (sc->vptr->pair_car (list));
-            list = sc->vptr->pair_cdr (list);
-          }
+#if DEBUG_MARSHALL
+{
+gchar **data;
+int j;
+data = (gchar**) arrayvalue (array);
+fprintf (stderr, "      string array has %d elements\n", n_elements);
+fprintf (stderr, "     ");
+for (j = 0; j < n_elements; ++j)
+    fprintf (stderr, " \"%s\"", data[j]);
+fprintf (stderr, "\n");
+}
+#endif
         }
         break;
 
@@ -1299,7 +1301,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               {
                 gint32  num_int32s = values[i].data.d_int32;
                 gint32 *array  = (gint32 *) values[i + 1].data.d_int32array;
-                pointer int_cell = sc->vptr->mk_array (sc, num_int32s, 0);
+                pointer int_cell = sc->vptr->mk_array (sc, num_int32s, array_int32);
                 gint32 *avalue = (gint32 *) arrayvalue (int_cell);
 
                 g_memmove(avalue, array, num_int32s*sizeof(gint32));
@@ -1314,7 +1316,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               {
                 gint32  num_int16s = values[i].data.d_int32;
                 gint16 *array  = (gint16 *) values[i + 1].data.d_int16array;
-                pointer int_cell = sc->vptr->mk_array (sc, num_int16s, 1);
+                pointer int_cell = sc->vptr->mk_array (sc, num_int16s, array_int16);
                 gint16 *avalue = (gint16 *) arrayvalue (int_cell);
 
                 g_memmove(avalue, array, num_int16s*sizeof(gint16));
@@ -1329,7 +1331,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               {
                 gint32  num_int8s  = values[i].data.d_int32;
                 gint8  *array  = (gint8 *) values[i + 1].data.d_int8array;
-                pointer int_cell = sc->vptr->mk_array (sc, num_int8s, 2);
+                pointer int_cell = sc->vptr->mk_array (sc, num_int8s, array_int8);
                 gint8  *avalue = (gint8 *) arrayvalue (int_cell);
 
                 g_memmove(avalue, array, num_int8s*sizeof(gint8));
@@ -1344,7 +1346,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               {
                 gint32   num_floats = values[i].data.d_int32;
                 gdouble *array  = (gdouble *) values[i + 1].data.d_floatarray;
-                pointer  float_cell = sc->vptr->mk_array (sc, num_floats, 3);
+                pointer  float_cell = sc->vptr->mk_array (sc, num_floats, array_float);
                 gdouble *avalue = (gdouble *) arrayvalue (float_cell);
 
                 g_memmove(avalue, array, num_floats*sizeof(gdouble));
@@ -1360,7 +1362,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 gint32  j;
                 gint    num_strings = values[i].data.d_int32;
                 gchar **array  = (gchar **) values[i + 1].data.d_stringarray;
-                pointer string_cell = sc->vptr->mk_array (sc, num_strings, 4);
+                pointer string_cell = sc->vptr->mk_array (sc, num_strings, array_string);
                 gchar **avalue = (gchar **) string_cell->_object._array._avalue;
 
                 for (j = 0; j < num_strings; ++j)
@@ -1368,7 +1370,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                     if (array[j] == NULL)
                        avalue[j] = array[j];
                     else
-                       avalue[j] = g_strdup(array[j]);
+                       avalue[j] = g_strdup (array[j]);
                   }
                 return_val = sc->vptr->cons (sc, string_cell, return_val);
               }

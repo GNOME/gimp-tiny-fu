@@ -1,7 +1,7 @@
 Bugs:
 - The scripts-update.pl script isn't converting gimp-blend to gimp-edit-blend
   when the statement is split over two lines. It needs to read in the whole
-  script at time before doing the search/replace operations.
+  script at once before doing the search/replace operations.
 - circuit.scm doesn't work right when separate layer is turned off. The white
   lines are drawn with a black background which obscures the original layer.
   Create circuit paths on separate layer, remove the background, then merge
@@ -10,32 +10,42 @@ Bugs:
 Compatability errors with Script-Fu:
 - Image/Utils/Set Selection gives error while executing
   Not part of standard Script-Fu collection of scripts.
+- There are a number of string and substring routines in SIOD for which there
+  is no matching compatability define in Tiny-Fu.
 
 
 ToDo:
+- Add support for PDB-REGION (x/y/width/height), PDB-BOUNDARY (gint32),
+  and PDB-PATH (gint32)
+- Change Tiny-Fu to allow batch mode to work.
+  See http://pippin.gimp.org/plug-ins/gluas/examples/lua2png.sh.html
+  The problem is the '-' after --batch is being passed to 'load_string()'.
+  If command is "-" call load_file with stdin instead of load_string()?
+  Bug #167964
+- Eliminate tiny_fu_plug_in_eval?
+- Add SF-ENUM paramater type
+- Finish updating the list of tests for plug-ins in pdb-test.sct
+- Do the re and ftx extensions need to be updated for UTF-8?
+- configure should test for existance of strcasecmp and if it exists use it
+  instead of the stricmp() in TinyScheme.
+- Send e-mail about Tiny-Fu, its status, and how it compares to Script-Fu.
+- Modify script which updates scripts from GIMP 2.0 to 2.2 so that it reads
+  an entire script in one go rather than line by line before modifying it.
+- Get spyrogimp.sct working.
 - Add bracket counting to Scheme interpreter. It should display a message
   if it encounters more ')' than '('.
 - Remove conversion of / to \\ in script-fu-scripts since it should
   be handled by other means already?? Either that or it should use
   the #define G_DIR_SEPARATOR
-- Figure out a way to separate out the menu path for a script from the
-  menu item description. ie. something more like is done in plug-ins.
-  This should not be done until post 2.2 as it is likely to break
-  backwards compatability with older scripts. (bug #158117)
-  The simplest way is to create a new call to replace script-fu-register.
-- Send e-mail about Tiny-Fu, its status, and how it compares to Script-Fu.
-- Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
-  DONE??
 - Allow the use of cons-array data types (except for string array) to be
   passed in the data portion of a parasite?
-- Add the script to update scripts from GIMP 2.0 to 2.2 to CVS.
+- Add the script to update scripts from GIMP 2.0 to 2.2 to CVS?
 - Add UTF-8 support to TinyScheme
   <mitch> a safe place to start is probably to simply g_utf8_validate() the
-  whole script upon loading. after that, all strings you get from gtk widgets
+  whole script upon loading. After that, all strings you get from gtk widgets
   are utf-8 already
+  MOSTLY DONE.
 - Document the arguments used by the Image/Render/Grid script.
-- Make Script-Fu warn when variables are used but weren't already defined.
-  Let the errors spew to stderr?
 - Add tests in set-cmap script to ensure <= 256 colours in the named palette.
   neo: you can't call image_set_cmap with more than 256 colors
 - Add check to make sure number of args in call matches number of args
@@ -54,6 +64,8 @@ ToDo:
 		thumbnails + html pages to show them and link to the originals images
 	o Create a contact sheet (DONE)
 
+- Dynamically allocate the number of data cell segments on an as needed basis.
+  Need to modify alloc_cellseg()
 - Clean up the changes re: putting error messages in to a buffer. Send the
   code changes to TinyScheme author.
 - The print_flag variable should only be set to 1 for the console mode.
@@ -77,10 +89,14 @@ ToDo:
 - Update the information in the ftx-functions.txt file to indicate that ftx
   is based on the TinyScheme tsx extensions.
 - Reformat the source files to conform to GIMP coding standards.
+  Partially done.
+- Write up information about the TinyScheme interpreter.
 - Document a suggested coding style for Tiny-Fu scripts.
 
 - The SIOD fread routine can not simply be redefined to use read.
   Mostly done.
+- Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
+  DONE??
 - Add a script under the Utils menu that turns off tracing and restores undo.
   Done.
 - Scripts should live in their own namespace. This will avoid problems which
@@ -110,8 +126,7 @@ ToDo:
   extensions. Add the support if it isn't already there.
   DONE
 - Trying to load 96 scripts causes TinyScheme to report "No memory".
-  Need to increase number of cells allocated on startup or have it dynamically
-  add more cells as needed (up to a specified maximum?).
+  Need to increase number of cells allocated on startup.
   DONE
 - Perform further testing on the support for parasites.
   DONE

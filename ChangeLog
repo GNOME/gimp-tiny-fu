@@ -1,3 +1,14 @@
+2005-03-03  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/script-fu-compat.init: Added/improved comments, changed
+	order of defines, and added a define for SIODs substring-equal?.
+
+	* tiny-fu/ts-wrapper.c: Use enum instead of hard-coded constants
+	when calling mk_array(). Added display of contents of string array
+	when DEBUG_MARSHALL is on.
+
+	* TODO: Updated
+
 2005-02-23  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tinyscheme/scheme.c: Fixed a problem with aset! for string arrays.
