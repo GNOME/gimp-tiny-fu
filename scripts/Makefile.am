@@ -2,7 +2,7 @@
 
 SUBDIRS = images
 
-scriptdatadir = $(DATADIR)/scripts
+scriptdatadir = $(GIMP_DATADIR)/scripts
 
 scriptdata_DATA =  \
     tiny-fu.init           \

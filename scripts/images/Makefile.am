@@ -1,6 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
-imagesdatadir = $(DATADIR)/scripts/images
+imagesdatadir = $(GIMP_DATADIR)/scripts/images
 
 imagesdata_DATA = \
     beavis.jpg   \
