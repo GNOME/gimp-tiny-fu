@@ -38,10 +38,10 @@ static void tiny_fu_text_console_interface (void);
 
 void
 tiny_fu_text_console_run (const gchar      *name,
-			    gint              nparams,
-			    const GimpParam  *params,
-			    gint             *nreturn_vals,
-			    GimpParam       **return_vals)
+                          gint              nparams,
+                          const GimpParam  *params,
+                          gint             *nreturn_vals,
+                          GimpParam       **return_vals)
 {
   static GimpParam  values[1];
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;
@@ -116,7 +116,7 @@ read_command (GString *command)
     }
 
   if (errno)
-    g_printerr (_("error reading from stdin: %s\n"), g_strerror (errno));
+    g_printerr ("error reading from stdin: %s\n", g_strerror (errno));
 
   return FALSE;
 }

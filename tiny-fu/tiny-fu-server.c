@@ -18,7 +18,7 @@
 
 #include "config.h"
 
-#include <glib.h>		/* For G_OS_WIN32 */
+#include <glib.h>    /* For G_OS_WIN32 */
 
 #include <stdarg.h>
 #include <stdlib.h>
@@ -124,18 +124,18 @@ typedef struct
  */
 
 static void      server_start       (gint         port,
-				     const gchar *logfile);
+                                     const gchar *logfile);
 static gboolean  execute_command    (SFCommand   *cmd);
 static gint      read_from_client   (gint         filedes);
 static gint      make_socket        (guint        port);
 static void      server_log         (const gchar *format,
-				     ...) G_GNUC_PRINTF (1, 2);
+                                     ...) G_GNUC_PRINTF (1, 2);
 static void      server_quit        (void);
 
 static gboolean  server_interface   (void);
 static void      response_callback  (GtkWidget   *widget,
                                      gint         response_id,
-				     gpointer     data);
+                                     gpointer     data);
 
 
 /*
@@ -179,10 +179,10 @@ tiny_fu_server_get_mode (void)
 
 void
 tiny_fu_server_run (const gchar      *name,
-		      gint              nparams,
-		      const GimpParam  *params,
-		      gint             *nreturn_vals,
-		      GimpParam       **return_vals)
+                    gint              nparams,
+                    const GimpParam  *params,
+                    gint             *nreturn_vals,
+                    GimpParam       **return_vals)
 {
   static GimpParam   values[1];
   GimpPDBStatusType  status = GIMP_PDB_SUCCESS;
@@ -194,12 +194,12 @@ tiny_fu_server_run (const gchar      *name,
     {
     case GIMP_RUN_INTERACTIVE:
       if (server_interface ())
-	{
-	  server_mode = TRUE;
+        {
+          server_mode = TRUE;
 
-	  /*  Start the server  */
-	  server_start (sint.port, sint.logfile);
-	}
+          /*  Start the server  */
+          server_start (sint.port, sint.logfile);
+        }
       break;
 
     case GIMP_RUN_NONINTERACTIVE:
@@ -212,7 +212,7 @@ tiny_fu_server_run (const gchar      *name,
 
     case GIMP_RUN_WITH_LAST_VALS:
       status = GIMP_PDB_CALLING_ERROR;
-      g_warning (_("Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""));
+      g_warning ("Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\"");
 
     default:
       break;
@@ -352,7 +352,7 @@ server_start (gint   port,
   clients = g_hash_table_new_full (g_direct_hash, NULL,
                                    NULL, (GDestroyNotify) g_free);
 
-  server_log (_("Tiny-Fu server initialized and listening...\n"));
+  server_log ("Tiny-Fu server initialized and listening...\n");
 
   /*  Loop until the server is finished  */
   while (! tiny_fu_done)
@@ -360,20 +360,20 @@ server_start (gint   port,
       tiny_fu_server_listen (0);
 
       while (command_queue)
-	{
+        {
           SFCommand *cmd = (SFCommand *) command_queue->data;
 
-	  /*  Process the command  */
-	  execute_command (cmd);
+          /*  Process the command  */
+          execute_command (cmd);
 
-	  /*  Remove the command from the list  */
-	  command_queue = g_list_remove (command_queue, cmd);
-	  queue_length--;
+          /*  Remove the command from the list  */
+          command_queue = g_list_remove (command_queue, cmd);
+          queue_length--;
 
-	  /*  Free the request  */
-	  g_free (cmd->command);
-	  g_free (cmd);
-	}
+          /*  Free the request  */
+          g_free (cmd->command);
+          g_free (cmd);
+        }
     }
 
   server_quit ();
@@ -390,7 +390,7 @@ execute_command (SFCommand *cmd)
   gboolean     error;
   gint         i;
 
-  server_log (_("Processing request #%d\n"), cmd->request_no);
+  server_log ("Processing request #%d\n", cmd->request_no);
   time (&clock1);
 
   /*  run the command  */
@@ -410,8 +410,8 @@ execute_command (SFCommand *cmd)
       response_len = strlen (response);
 
       time (&clock2);
-      server_log (_("Request #%d processed in %f seconds, finishing on %s"),
-		  cmd->request_no, difftime (clock2, clock1), ctime (&clock2));
+      server_log ("Request #%d processed in %f seconds, finishing on %s",
+                  cmd->request_no, difftime (clock2, clock1), ctime (&clock2));
     }
 
   buffer[MAGIC_BYTE]     = MAGIC;
@@ -423,17 +423,17 @@ execute_command (SFCommand *cmd)
   for (i = 0; i < RESPONSE_HEADER; i++)
     if (cmd->filedes > 0 && write (cmd->filedes, buffer + i, 1) < 0)
       {
-	/*  Write error  */
-	perror ("write");
-	return FALSE;
+        /*  Write error  */
+        perror ("write");
+        return FALSE;
       }
 
   for (i = 0; i < response_len; i++)
     if (cmd->filedes > 0 && write (cmd->filedes, response + i, 1) < 0)
       {
-	/*  Write error  */
-	perror ("write");
-	return FALSE;
+        /*  Write error  */
+        perror ("write");
+        return FALSE;
       }
 
   return FALSE;
@@ -460,7 +460,7 @@ read_from_client (gint filedes)
           if (errno == EINTR)
             continue;
 
-          server_log (_("Error reading command header.\n"));
+          server_log ("Error reading command header.\n");
           return -1;
         }
 
@@ -472,7 +472,7 @@ read_from_client (gint filedes)
 
   if (buffer[MAGIC_BYTE] != MAGIC)
     {
-      server_log (_("Error in tiny-fu command transmission.\n"));
+      server_log ("Error in tiny-fu command transmission.\n");
       return -1;
     }
 
@@ -488,7 +488,7 @@ read_from_client (gint filedes)
           if (nbytes < 0 && errno == EINTR)
             continue;
 
-           server_log (_("Error reading command.  Read %d out of %d bytes.\n"),
+           server_log ("Error reading command.  Read %d out of %d bytes.\n",
                        i, command_len);
            g_free (command);
            return -1;
@@ -511,9 +511,9 @@ read_from_client (gint filedes)
   /*  Get the client address from the address/socket table  */
   clientaddr = g_hash_table_lookup (clients, GINT_TO_POINTER (cmd->filedes));
   time (&clock);
-  server_log (_("Received request #%d from IP address %s: %s on %s,"
-	      "[Request queue length: %d]"),
-	      cmd->request_no,
+  server_log ("Received request #%d from IP address %s: %s on %s,"
+              "[Request queue length: %d]",
+              cmd->request_no,
               clientaddr ? clientaddr : "<invalid>",
               cmd->command, ctime (&clock), queue_length);
 
@@ -641,12 +641,12 @@ server_interface (void)
 
   dlg = gimp_dialog_new (_("Tiny-Fu Server Options"), "tiny-fu",
                          NULL, 0,
-			 gimp_standard_help_func, "plug-in-tiny-fu-server",
+                         gimp_standard_help_func, "plug-in-tiny-fu-server",
 
-			 GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-			 GTK_STOCK_OK,     GTK_RESPONSE_OK,
+                         GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+                         GTK_STOCK_OK,     GTK_RESPONSE_OK,
 
-			 NULL);
+                         NULL);
 
   g_signal_connect (dlg, "response",
                     G_CALLBACK (response_callback),
@@ -667,14 +667,14 @@ server_interface (void)
   sint.port_entry = gtk_entry_new ();
   gtk_entry_set_text (GTK_ENTRY (sint.port_entry), "10008");
   gimp_table_attach_aligned (GTK_TABLE (table), 0, 0,
-			     _("Server Port:"), 0.0, 0.5,
-			     sint.port_entry, 1, FALSE);
+                             _("Server Port:"), 0.0, 0.5,
+                             sint.port_entry, 1, FALSE);
 
   /*  The server logfile  */
   sint.log_entry = gtk_entry_new ();
   gimp_table_attach_aligned (GTK_TABLE (table), 0, 1,
-			     _("Server Logfile:"), 0.0, 0.5,
-			     sint.log_entry, 1, FALSE);
+                             _("Server Logfile:"), 0.0, 0.5,
+                             sint.log_entry, 1, FALSE);
 
   gtk_widget_show (table);
   gtk_widget_show (dlg);

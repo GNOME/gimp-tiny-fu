@@ -71,17 +71,17 @@ enum TF_RESPONSES {
 static void       tiny_fu_console_interface  (void);
 static void       tiny_fu_response           (GtkWidget    *widget,
                                                 gint          response_id,
-						gpointer      data);
+                                                gpointer      data);
 static void       tiny_fu_save_dialog        (GtkWidget    *parent);
 static void       tiny_fu_save_output        (GtkWidget    *dialog,
                                                 gint        response_id,
                                                 gpointer    data);
 static void       tiny_fu_browse_callback    (GtkWidget    *widget,
-						gpointer      data);
+                                                gpointer      data);
 static gboolean   tiny_fu_cc_is_empty        (void);
 static gboolean   tiny_fu_cc_key_function    (GtkWidget    *widget,
-						GdkEventKey  *event,
-						gpointer      data);
+                                                GdkEventKey  *event,
+                                                gpointer      data);
 
 static void       tiny_fu_open_ts_console  (void);
 static void       tiny_fu_close_ts_console (void);
@@ -168,9 +168,11 @@ tiny_fu_console_interface (void)
                             NULL, 0,
                             gimp_standard_help_func,
                             "plug-in-tiny-fu-console",
+
                             _("_Save Output"),  RESPONSE_SAVE,
                             _("Cl_ear Output"), RESPONSE_CLEAR,
-                            GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
+                            GTK_STOCK_CLOSE,    GTK_RESPONSE_CLOSE,
+
                             NULL);
 
   g_signal_connect (dialog, "response",
@@ -280,8 +282,8 @@ tiny_fu_console_interface (void)
   gtk_widget_show (button);
 
   g_signal_connect (button, "clicked",
-		    G_CALLBACK (tiny_fu_browse_callback),
-		    NULL);
+                    G_CALLBACK (tiny_fu_browse_callback),
+                    NULL);
 
   /*  Initialize the history  */
   history     = g_list_append (history, NULL);
@@ -366,7 +368,7 @@ tiny_fu_save_output (GtkWidget *dialog,
       if (! fh)
         {
           gchar *message =
-            g_strdup_printf (_("Could not open '%s' for writing: %s"),
+            g_strdup_printf ("Could not open '%s' for writing: %s",
                              gimp_filename_to_utf8 (filename),
                              g_strerror (errno));
 
@@ -390,17 +392,17 @@ tiny_fu_save_output (GtkWidget *dialog,
 
 static void
 apply_callback (const gchar        *proc_name,
-		const gchar        *scheme_proc_name,
-		const gchar        *proc_blurb,
-		const gchar        *proc_help,
-		const gchar        *proc_author,
-		const gchar        *proc_copyright,
-		const gchar        *proc_date,
-		GimpPDBProcType     proc_type,
-		gint                n_params,
-		gint                n_return_vals,
-		const GimpParamDef *params,
-		const GimpParamDef *return_vals)
+                const gchar        *scheme_proc_name,
+                const gchar        *proc_blurb,
+                const gchar        *proc_help,
+                const gchar        *proc_author,
+                const gchar        *proc_copyright,
+                const gchar        *proc_date,
+                GimpPDBProcType     proc_type,
+                gint                n_params,
+                gint                n_return_vals,
+                const GimpParamDef *params,
+                const GimpParamDef *return_vals)
 {
   gint     i;
   GString *text;
@@ -424,7 +426,7 @@ apply_callback (const gchar        *proc_name,
 
 static void
 tiny_fu_browse_callback (GtkWidget *widget,
-			   gpointer   data)
+                           gpointer   data)
 {
 #ifdef GIMP_PROC_BROWSER
   gtk_quit_add_destroy (1, (GtkObject *)
@@ -455,16 +457,16 @@ void
 tiny_fu_output_to_console (gchar *text)
 {
   GtkTextIter cursor;
-
+  
   gtk_text_buffer_get_end_iter (cint.console, &cursor);
   gtk_text_buffer_insert_with_tags_by_name (cint.console, &cursor,
                                             text, -1,
                                             "weak",
                                             NULL);
-
+  
   tiny_fu_console_scroll_end ();
 }
-
+  
 static gboolean
 tiny_fu_cc_is_empty (void)
 {
@@ -476,7 +478,7 @@ tiny_fu_cc_is_empty (void)
   while (*str)
     {
       if (*str != ' ' && *str != '\t' && *str != '\n')
-	return FALSE;
+        return FALSE;
 
       str ++;
     }
@@ -486,8 +488,8 @@ tiny_fu_cc_is_empty (void)
 
 static gboolean
 tiny_fu_cc_key_function (GtkWidget   *widget,
-			   GdkEventKey *event,
-			   gpointer     data)
+                           GdkEventKey *event,
+                           gpointer     data)
 {
   GList       *list;
   gint         direction = 0;
@@ -497,19 +499,19 @@ tiny_fu_cc_key_function (GtkWidget   *widget,
     {
     case GDK_Return:
       if (tiny_fu_cc_is_empty ())
-	return TRUE;
+        return TRUE;
 
       list = g_list_nth (history, (g_list_length (history) - 1));
       if (list->data)
-	g_free (list->data);
+        g_free (list->data);
       list->data = g_strdup (gtk_entry_get_text (GTK_ENTRY (cint.cc)));
 
       gtk_text_buffer_get_end_iter (cint.console, &cursor);
 
       gtk_text_buffer_insert_with_tags_by_name (cint.console, &cursor,
-						"\n=> ", -1,
-						"strong",
-						NULL);
+                                                "\n=> ", -1,
+                                                "strong",
+                                                NULL);
 
       gtk_text_buffer_insert_with_tags_by_name (cint.console, &cursor,
                                                 gtk_entry_get_text (GTK_ENTRY (cint.cc)), -1,
@@ -517,9 +519,9 @@ tiny_fu_cc_key_function (GtkWidget   *widget,
                                                 NULL);
 
       gtk_text_buffer_insert_with_tags_by_name (cint.console, &cursor,
-						"\n", -1,
-						"weak",
-						NULL);
+                                                "\n", -1,
+                                                "weak",
+                                                NULL);
 
       tiny_fu_console_scroll_end ();
 
@@ -531,13 +533,13 @@ tiny_fu_cc_key_function (GtkWidget   *widget,
 
       history = g_list_append (history, NULL);
       if (history_len == history_max)
-	{
-	  history = g_list_remove (history, history->data);
-	  if (history->data)
-	    g_free (history->data);
-	}
+        {
+          history = g_list_remove (history, history->data);
+          if (history->data)
+            g_free (history->data);
+        }
       else
-	history_len++;
+        history_len++;
       history_cur = g_list_length (history) - 1;
 
       return TRUE;
@@ -573,21 +575,21 @@ tiny_fu_cc_key_function (GtkWidget   *widget,
     {
       /*  Make sure we keep track of the current one  */
       if (history_cur == g_list_length (history) - 1)
-	{
-	  list = g_list_nth (history, history_cur);
-	  if (list->data)
-	    g_free (list->data);
-	  list->data = g_strdup (gtk_entry_get_text (GTK_ENTRY (cint.cc)));
-	}
+        {
+          list = g_list_nth (history, history_cur);
+          if (list->data)
+            g_free (list->data);
+          list->data = g_strdup (gtk_entry_get_text (GTK_ENTRY (cint.cc)));
+        }
 
       history_cur += direction;
       if (history_cur < 0)
-	history_cur = 0;
+        history_cur = 0;
       if (history_cur >= history_len)
-	history_cur = history_len - 1;
+        history_cur = history_len - 1;
 
       gtk_entry_set_text (GTK_ENTRY (cint.cc),
-			  (gchar *) (g_list_nth (history, history_cur))->data);
+                          (gchar *) (g_list_nth (history, history_cur))->data);
 
       gtk_editable_set_position (GTK_EDITABLE (cint.cc), -1);
 
@@ -622,10 +624,10 @@ tiny_fu_close_ts_console (void)
 
 void
 tiny_fu_eval_run (const gchar      *name,
-		    gint              nparams,
-		    const GimpParam  *params,
-		    gint             *nreturn_vals,
-		    GimpParam       **return_vals)
+                    gint              nparams,
+                    const GimpParam  *params,
+                    gint             *nreturn_vals,
+                    GimpParam       **return_vals)
 {
   static GimpParam  values[1];
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;
@@ -637,7 +639,7 @@ tiny_fu_eval_run (const gchar      *name,
     {
     case GIMP_RUN_NONINTERACTIVE:
       if (ts_interpret_string (params[1].data.d_string) != 0)
-	status = GIMP_PDB_EXECUTION_ERROR;
+        status = GIMP_PDB_EXECUTION_ERROR;
       break;
 
     case GIMP_RUN_INTERACTIVE:
