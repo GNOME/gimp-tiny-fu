@@ -24,14 +24,16 @@ Overview of Changes in Tiny-Fu 0.9.6
 
 - Updates and fixes to various scripts
 
-	* Changed some gimp-selection-clear calls to gimp-selection-none
+    * Changed some gimp-selection-clear calls to gimp-selection-none
       See bug #156765.
 
     * Changed some scripts which called gimp-edit-* functions on drawables
       which were not yet added to an image because this will be forbidden
       soon.
 
-	* In lava.sct, replaced undo-disable/enable by undo-group-start/end.
+    * Updated some scripts to use the new transform API.
+
+    * In lava.sct, replaced undo-disable/enable by undo-group-start/end.
 
 
 Contributors:
@@ -51,7 +53,7 @@ Overview of Changes in Tiny-Fu 0.9.5
 
     * Applied patch from Sven Neumann so that the initial selection for
     image, drawable, layer, and channel in dialog causes the "changed"
-	callback for to be run. Fixes bug #156659.
+    callback for to be run. Fixes bug #156659.
 
     * Added check on passed array size to make certain it is between 0
     and the actual size of the passed array. Fixes bug #155359.
@@ -62,7 +64,7 @@ Overview of Changes in Tiny-Fu 0.9.5
 
     * GIMP 2.2 is now required
 
-	* Some minor changes and fixes to the autogen.sh file.
+    * Some minor changes and fixes to the autogen.sh file.
 
 - Updates to the script and init files
 
@@ -71,7 +73,7 @@ Overview of Changes in Tiny-Fu 0.9.5
     * Moved selection-round script to the Select menu.
 
     * Added remaining Script-Fu scripts grid-system.sct, hsv-graph.sct,
-	and image-structure.sct.
+    and image-structure.sct.
 
     * Added new scripts from Alan Horkan which manipulate guides.
 

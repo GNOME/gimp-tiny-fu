@@ -13,11 +13,15 @@ Compatability errors with Script-Fu:
 
 
 ToDo:
+- Remove conversion of / to \\ in script-fu-scripts since it should
+  be handled by other means already?? Either that or it should use
+  the #define G_DIR_SEPARATOR
 - Figure out a way to separate out the menu path for a script from the
   menu item description. ie. something more like is done in plug-ins.
+  This should not be done until post 2.2 as it is likely to break
+  backwards compatability with older scripts. (bug #158117)
+  The simplest way is to create a new call to replace script-fu-register.
 - Send e-mail about Tiny-Fu, its status, and how it compares to Script-Fu.
-- Add information on use of SF-PALETTE and SF-SPINNER to test-sphere.sct
-  and make sure all other SF-* types are documented at the top of the file.
 - Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
   DONE??
 - Allow the use of cons-array data types (except for string array) to be
