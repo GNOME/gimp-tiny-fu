@@ -123,8 +123,6 @@
            FALSE)
           (gimp-edit-clear active-layer)))
     
-    (gimp-context-set-foreground old-fg)
-    
     (if (= keep-selection FALSE)
         (gimp-selection-none image))
     
