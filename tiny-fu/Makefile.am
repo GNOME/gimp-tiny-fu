@@ -23,7 +23,6 @@ libexecdir = $(GIMP_LIBDIR)/plug-ins
 libexec_PROGRAMS = tiny-fu
 
 tiny_fu_SOURCES = \
-    gimp-constants.h       \
     tiny-fu-types.h        \
     tiny-fu-enums.h        \
     tiny-fu-console.c      \

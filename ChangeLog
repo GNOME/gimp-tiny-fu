@@ -1,5 +1,19 @@
 2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
 
+	* tiny-fu/ts-wrapper.c: Allow user to specify array size of zero.
+
+	* configure.in: GIMP 2.2 is required by change in the ts-wrapper.c
+	file.
+
+	* tiny-fu/Makefile.am
+	* tiny-fu/gimp-constants.h: Removed since it is no longer needed.
+
+	* tiny-fu/ts-wrapper.c: Dynamically register all constants using
+	gimp_enums_get_type_names() and introspection. Also register the
+	built-in unit types.
+
+2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+
 	* tiny-fu/ts-wrapper.c: Allow specified array size to be any value
 	from 1 up to the actual size of the array. Fixes bug #155359.
 

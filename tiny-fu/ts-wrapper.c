@@ -58,12 +58,6 @@ named_constant {
 };
 
 struct named_constant
-gimp_constants[] = {
-#include "gimp-constants.h"
-        { NULL, 0 }
-};
-
-struct named_constant
 script_constants[] = {
   /* Useful misc stuff */
   { "TRUE",           TRUE  },
@@ -274,8 +268,11 @@ static pointer  tiny_fu_quit_call     (scheme *sc,     pointer  a);
 static void
 init_constants (void)
 {
-  pointer symbol;
-  int i;
+  const gchar **enum_type_names;
+  gint          n_enum_type_names;
+  gint          i;
+  GimpUnit      unit;
+  pointer       symbol;
 
   symbol = sc.vptr->mk_symbol (&sc, "gimp-directory");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
@@ -302,14 +299,60 @@ init_constants (void)
                 sc.vptr->mk_string (&sc, gimp_sysconf_directory () ));
   sc.vptr->setimmutable(symbol);
 
-  for (i = 0; gimp_constants[i].name != NULL; ++i)
-  {
-      symbol = sc.vptr->mk_symbol (&sc, gimp_constants[i].name);
-      sc.vptr->scheme_define (&sc, sc.global_env, symbol,
-            sc.vptr->mk_integer (&sc, gimp_constants[i].value));
-      sc.vptr->setimmutable(symbol);
-  }
+  enum_type_names = gimp_enums_get_type_names (&n_enum_type_names);
 
+  for (i = 0; i < n_enum_type_names; i++)
+    {
+      const gchar *enum_name  = enum_type_names[i];
+      GType        enum_type  = g_type_from_name (enum_name);
+      GEnumClass  *enum_class = g_type_class_ref (enum_type);
+      GEnumValue  *value;
+
+      for (value = enum_class->values; value->value_name; value++)
+        {
+          if (! strncmp ("GIMP_", value->value_name, 5))
+            {
+              gchar *scheme_name;
+              gchar *s;
+
+              scheme_name = g_strdup (value->value_name + 5);
+
+              for (s = scheme_name; *s; s++)
+                if (*s == '_')
+                  *s = '-';
+
+              symbol = sc.vptr->mk_symbol (&sc, scheme_name);
+              sc.vptr->scheme_define (&sc, sc.global_env, symbol,
+                    sc.vptr->mk_integer (&sc, value->value));
+              sc.vptr->setimmutable(symbol);
+
+              g_free (scheme_name);
+            }
+        }
+
+      g_type_class_unref (enum_class);
+    }
+
+  for (unit = GIMP_UNIT_PIXEL;
+       unit < gimp_unit_get_number_of_built_in_units ();
+       unit++)
+    {
+      gchar *tmp;
+      gchar *scheme_name;
+
+      tmp = g_ascii_strup (gimp_unit_get_singular (unit), -1);
+      scheme_name = g_strconcat ("UNIT-", tmp, NULL);
+      g_free (tmp);
+
+      symbol = sc.vptr->mk_symbol (&sc, scheme_name);
+      sc.vptr->scheme_define (&sc, sc.global_env, symbol,
+            sc.vptr->mk_integer (&sc, unit));
+      sc.vptr->setimmutable(symbol);
+
+      g_free (scheme_name);
+    }
+
+  /* Constants used in register block of scripts */
   for (i = 0; script_constants[i].name != NULL; ++i)
   {
       symbol = sc.vptr->mk_symbol (&sc, script_constants[i].name);
@@ -325,7 +368,6 @@ init_constants (void)
   sc.vptr->setimmutable(symbol);
 
   /* These constants are deprecated and will be removed at a later date. */
-
   symbol = sc.vptr->mk_symbol (&sc, "gimp-dir");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                 sc.vptr->mk_string (&sc, gimp_directory () ));
@@ -604,8 +646,8 @@ fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
 fprintf (stderr, "    param %d - expecting type %s (%d)\n",
                 i+1, ret_types[ params[i].type ], params[i].type);
 fprintf (stderr, "      passed arg is type %s (%d)\n",
-                ts_types[ ( (sc->vptr->pair_car (a))->_flag)&31 ],
-                ( (sc->vptr->pair_car (a))->_flag)&31);
+                ts_types[ type(sc->vptr->pair_car (a)) ],
+                type(sc->vptr->pair_car (a)));
 #endif
 
     switch (params[i].type)
@@ -691,7 +733,7 @@ fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements > 0 && n_elements <= arraylength (array))
+          if (n_elements >= 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -734,7 +776,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements > 0 && n_elements <= arraylength (array))
+          if (n_elements >= 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -777,7 +819,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements > 0 && n_elements <= arraylength (array))
+          if (n_elements >= 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -820,7 +862,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements > 0 && n_elements <= arraylength (array))
+          if (n_elements >= 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
@@ -866,7 +908,7 @@ fprintf (stderr, "\n");
           }
 
           n_elements = args[i-1].data.d_int32;
-          if (n_elements > 0 && n_elements <= arraylength (array))
+          if (n_elements >= 0 && n_elements <= arraylength (array))
           {
             convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
