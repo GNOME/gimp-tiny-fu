@@ -59,11 +59,14 @@ scriptdata_DATA =  \
     glowing-logo.sct        \
     gradient-bevel-logo.sct \
     gradient-example.sct    \
+    grid-system.sct         \
     guides-from-selection.sct \
     guides-new-percent.sct  \
     guides-new.sct          \
     guides-remove-all.sct   \
+    hsv-graph.sct           \
     i26-gunya2.sct          \
+    image-structure.sct     \
     land.sct                \
     lava.sct                \
     line-nova.sct           \
