@@ -1,3 +1,12 @@
+2004-11-13  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/gimp-headers.sct
+	* scripts/gimp-labels.sct
+	* scripts/news-text.sct
+	* scripts/speed-text.sct: Changed calls to gimp-selection-clear to
+	gimp-selection-none in preparation for the deprecation of -clear.
+	(See bug #156765)
+
 2004-11-11  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on changes made by Michael Natterer to Script-Fu.
