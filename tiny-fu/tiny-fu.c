@@ -102,8 +102,8 @@ tiny_fu_query (void)
   gimp_plugin_domain_register (GETTEXT_PACKAGE "-tiny-fu", NULL);
 
   gimp_install_procedure ("extension_tiny_fu",
-                          _("A scheme interpreter for scripting GIMP operations"),
-                          _("More help here later"),
+                          "A scheme interpreter for scripting GIMP operations",
+                          "More help here later",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -113,9 +113,9 @@ tiny_fu_query (void)
                           0, 0, NULL, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_console",
-                          _("Provides a console mode for tiny-fu development"),
-                          _("Provides an interface which allows interactive "
-                                      "scheme development."),
+                          "Provides a console mode for tiny-fu development",
+                          "Provides an interface which allows interactive "
+                                      "scheme development.",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -126,22 +126,22 @@ tiny_fu_query (void)
                           console_args, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_text_console",
-                          _("Provides a text console mode for tiny-fu "
-                                      "development"),
-                          _("Provides an interface which allows interactive "
-                                      "scheme development."),
+                          "Provides a text console mode for tiny-fu "
+                                      "development",
+                          "Provides an interface which allows interactive "
+                                      "scheme development.",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
-  NULL,
+                          NULL,
                           NULL,
                           GIMP_PLUGIN,
                           G_N_ELEMENTS (textconsole_args), 0,
                           textconsole_args, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_server",
-                          _("Provides a server for remote tiny-fu operation"),
-                          _("Provides a server for remote tiny-fu operation"),
+                          "Provides a server for remote tiny-fu operation",
+                          "Provides a server for remote tiny-fu operation",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -152,9 +152,9 @@ tiny_fu_query (void)
                           server_args, NULL);
 
   gimp_install_procedure ("plug_in_tiny_fu_eval",
-                          _("Evaluate scheme code"),
-                          _("Evaluate the code under the scheme interpreter "
-                                      " (primarily for batch mode)"),
+                          "Evaluate scheme code",
+                          "Evaluate the code under the scheme interpreter "
+                                      "(primarily for batch mode)",
                           "Manish Singh",
                           "Manish Singh",
                           "1998",
@@ -226,7 +226,7 @@ tiny_fu_run (const gchar *name,
        */
 
       tiny_fu_text_console_run (name, nparams, param,
-                                  nreturn_vals, return_vals);
+                                nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug_in_tiny_fu_console") == 0)
     {
@@ -235,7 +235,7 @@ tiny_fu_run (const gchar *name,
        */
 
       tiny_fu_console_run (name, nparams, param,
-                             nreturn_vals, return_vals);
+                           nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug_in_tiny_fu_server") == 0)
     {
@@ -244,7 +244,7 @@ tiny_fu_run (const gchar *name,
        */
 
       tiny_fu_server_run (name, nparams, param,
-                            nreturn_vals, return_vals);
+                          nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug_in_tiny_fu_eval") == 0)
     {
@@ -253,7 +253,7 @@ tiny_fu_run (const gchar *name,
        */
 
       tiny_fu_eval_run (name, nparams, param,
-                          nreturn_vals, return_vals);
+                        nreturn_vals, return_vals);
     }
 }
 
