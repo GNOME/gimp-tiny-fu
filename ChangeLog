@@ -1,3 +1,14 @@
+2004-10-09 Kevin Cozens <kcozens@cvs.gimp.org>
+
+	* re/Makefile.am: Added more files missing from the distribution.
+
+	* re/debug.c
+	* re/main.c
+	* re/regcomp.c
+	* re/regerror.c
+	* re/regexec.c: Changed <regex.h> to "regex.h" to emphasize local
+	header is being used rather than standard libc header file.
+
 2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
 
 	* Makefile.am: Forgot to commit this file at the same time
