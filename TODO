@@ -27,11 +27,6 @@ ToDo (for CVS GIMP after branching Tiny-Fu):
 
 
 ToDo:
-- Change Tiny-Fu to allow batch mode to work.
-  See http://pippin.gimp.org/plug-ins/gluas/examples/lua2png.sh.html
-  The problem is the '-' after --batch is being passed to 'load_string()'.
-  If command is "-" call load_file with stdin instead of load_string()?
-  Bug #167964
 - Finish updating the list of tests for plug-ins in pdb-test.sct
 - Do the re and ftx extensions need to be updated for UTF-8?
 - configure should test for existance of strcasecmp and if it exists use it
