@@ -1,5 +1,14 @@
 2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
 
+	* tiny-fu/tiny-fu.c: Untabified file.
+
+	* tiny-fu/tiny-fu-console.c: Added #ifdef GIMP_PROC_BROWSER around
+	apply_callback() since its not currently used.
+
+	* tiny-fu/ts-wrapper.c: Debugging features are now off by default.
+
+2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
+
 	Updates based on Script-Fu changes made by Michael Natterer.
 
 	* scripts/selection-round.scm: use a scale_entry instead of a
