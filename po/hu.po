@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-06-16 11:34+0200\n"
 "Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
@@ -312,8 +312,9 @@ msgstr "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/_Betűkészlet-jegyzék..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1686,6 +1687,21 @@ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr ""
 "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/Testreszabott _színátmenet..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Megjelenítés/Ára_mkör..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "X-felosztás"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Y-felosztás"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1726,6 +1742,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Segédeszközök/_HSV-grafikon rajzolása..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Háttér átlátszatlansága"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Vég, X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Vég, Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Bal felsőtől a jobb alsóig"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Grafikon léptéke"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Kezdet, X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Kezdet, Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "A kijelölés határainak használata a lentiek helyett"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1740,6 +1797,61 @@ msgstr "Keret színe"
 #, fuzzy
 msgid "Frame size"
 msgstr "Keret mérete"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Segédeszközök/Kép_felépítés megjelenítése..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Rétegmaszk alkalmazása (vagy eldobása)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Új kép létrehozása"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Rétegnevek beszúrása"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Új háttér készítése"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Külső szél"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Kitöltés színe"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Kitöltés átlátszatlansága"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Helykitöltés az átlátszó részeknél"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Nyírás hossza"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Rétegek közötti tér"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2771,88 +2883,6 @@ msgstr "Kiemelés átlátszatlansága"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Megjelenítés/_Rács..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "X-felosztás"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Y-felosztás"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Segédeszközök/_HSV-grafikon rajzolása..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Háttér átlátszatlansága"
-
-#~ msgid "End X"
-#~ msgstr "Vég, X"
-
-#~ msgid "End Y"
-#~ msgstr "Vég, Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Bal felsőtől a jobb alsóig"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Grafikon léptéke"
-
-#~ msgid "Start X"
-#~ msgstr "Kezdet, X"
-
-#~ msgid "Start Y"
-#~ msgstr "Kezdet, Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "A kijelölés határainak használata a lentiek helyett"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Segédeszközök/Kép_felépítés megjelenítése..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Rétegmaszk alkalmazása (vagy eldobása)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Új kép létrehozása"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Rétegnevek beszúrása"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Új háttér készítése"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Külső szél"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Kitöltés színe"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Kitöltés átlátszatlansága"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Helykitöltés az átlátszó részeknél"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Nyírás hossza"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Rétegek közötti tér"
 
 #~ msgid ""
 #~ ")))\n"

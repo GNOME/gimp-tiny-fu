@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-01-22 10:37+0100\n"
 "Last-Translator: GNOME PL Team <translators@gnome.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -317,8 +317,9 @@ msgstr "<Toolbox>/Dodatki/Script-Fu/Narzędzia/_Mapa czcionek..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1702,6 +1703,21 @@ msgstr "Rozmiar krawędzi (piksele)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Dodatki/Script-Fu/Narzędzia/Dowolny g_radient..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Renderowanie/_Obwód..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Podziały X"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Podziały Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1742,6 +1758,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Narzędzia/Wykres _HSV..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Krycie tła"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "X końcowe"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Y końcowe"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Od lewego górnego do prawego dolnego"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Skala wykresu"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "X początkowe"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Y początkowe"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Użycie granic zaznaczenia"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1756,6 +1813,61 @@ msgstr "Kolor ramki"
 #, fuzzy
 msgid "Frame size"
 msgstr "Rozmiar ramki"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Narzędzia/_Struktura obrazu..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Zastosowanie maski kanału (lub porzucenie)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Nowy obraz"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Wstawienie nazw warstw"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Nowe tło"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Zewnętrzna krawędź"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Kolor wyściółki"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Krycie wyściółki"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Wyściółka przezroczystych obszarów"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Długość ścięcia"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Odległość pomiędzy warstwami"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2798,88 +2910,6 @@ msgstr "Krycie podświetlenia"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Renderowanie/_Siatka..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Podziały X"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Podziały Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Narzędzia/Wykres _HSV..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Krycie tła"
-
-#~ msgid "End X"
-#~ msgstr "X końcowe"
-
-#~ msgid "End Y"
-#~ msgstr "Y końcowe"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Od lewego górnego do prawego dolnego"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Skala wykresu"
-
-#~ msgid "Start X"
-#~ msgstr "X początkowe"
-
-#~ msgid "Start Y"
-#~ msgstr "Y początkowe"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Użycie granic zaznaczenia"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Narzędzia/_Struktura obrazu..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Zastosowanie maski kanału (lub porzucenie)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Nowy obraz"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Wstawienie nazw warstw"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Nowe tło"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Zewnętrzna krawędź"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Kolor wyściółki"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Krycie wyściółki"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Wyściółka przezroczystych obszarów"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Długość ścięcia"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Odległość pomiędzy warstwami"
 
 # zostawiam (cyba)
 #~ msgid ""

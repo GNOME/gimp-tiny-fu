@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2000-11-24 15:46+0100\n"
 "Last-Translator: Robert Claudiu Gheorghe <rgheorghe@writeme.com>\n"
 "Language-Team: Română <ro@li.org>\n"
@@ -309,8 +309,9 @@ msgstr "Micşorează selecţia"
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1696,6 +1697,19 @@ msgstr "Margine:"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "Micşorează selecţia"
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "Micşorează selecţia"
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr ""
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr ""
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1736,6 +1750,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "Micşorează selecţia"
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Opacitate"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr ""
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr ""
+
+#: scripts/hsv-graph.sct.h:5
+msgid "From top-left to bottom-right"
+msgstr ""
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Scară de gri-uri "
+
+#: scripts/hsv-graph.sct.h:7
+#, fuzzy
+msgid "Start X"
+msgstr "Stare:"
+
+#: scripts/hsv-graph.sct.h:8
+#, fuzzy
+msgid "Start Y"
+msgstr "Stare:"
+
+#: scripts/hsv-graph.sct.h:9
+msgid "Use selection bounds instead of belows"
+msgstr ""
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1750,6 +1805,60 @@ msgstr "Culoare adevărată"
 #, fuzzy
 msgid "Frame size"
 msgstr "Dimensiune Eşantion:"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "Micşorează selecţia"
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "/Aplică stratul mască"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Imagine nouă"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Nume strat:"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Fundal"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Margine:"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Pseudo Culoare"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Opacitate"
+
+#: scripts/image-structure.sct.h:10
+msgid "Padding for transparent regions"
+msgstr ""
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Decupare"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Elimină strat"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2733,66 +2842,6 @@ msgstr "Opacitate umplere:"
 #, fuzzy
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Opacitate"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Scară de gri-uri "
-
-#, fuzzy
-#~ msgid "Start X"
-#~ msgstr "Stare:"
-
-#, fuzzy
-#~ msgid "Start Y"
-#~ msgstr "Stare:"
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "/Aplică stratul mască"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Imagine nouă"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Nume strat:"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Fundal"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Margine:"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Pseudo Culoare"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opacitate"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Decupare"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Elimină strat"
 
 #, fuzzy
 #~ msgid "Blend gradient (sext)"

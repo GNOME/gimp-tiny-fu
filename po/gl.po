@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gimp CVS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2001-03-19 21:35+0100\n"
 "Last-Translator: Francisco Xosé Vázquez Grandal <grandal@mundivia.es>\n"
 "Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
@@ -311,8 +311,9 @@ msgstr "<Toolbox>/Extns/Script-Fu/Útiles/Mapa de Fontes..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1695,6 +1696,19 @@ msgstr "Tamaño da Beira (Pixels)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Extns/Script-Fu/Útiles/Degradado Persoalizado..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Render/Circuito..."
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr ""
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr ""
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1735,6 +1749,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Útiles/Debuxar Grafo HSV..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Opacidade de Fondo"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Fin X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Fin Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Dende Arriba-Esquerda a Abaixo-Dereita"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Escala do Grafo"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Comezo en X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Comezo en Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Usar Selección Superior en vez de Inferior"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1749,6 +1804,61 @@ msgstr "Cor do Cerco"
 #, fuzzy
 msgid "Frame size"
 msgstr "Tamaño do Cerco"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Útiles/Amosar Estructura da Imaxe..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Aplicar Capa de Máscara (ou descartar)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Crear Nova Imaxe"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Insertar Nome das Capas"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Crear Novo Fondo"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Beira Exterior"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Cor do Recheo"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Opacidade do Recheo"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Recheo para Rexións Transparentes"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Lonxitude do Tumbado"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Espacio entre Capas"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2673,82 +2783,6 @@ msgstr "Opacidade do Brillo"
 #, fuzzy
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Render/Circuito..."
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Útiles/Debuxar Grafo HSV..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Opacidade de Fondo"
-
-#~ msgid "End X"
-#~ msgstr "Fin X"
-
-#~ msgid "End Y"
-#~ msgstr "Fin Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Dende Arriba-Esquerda a Abaixo-Dereita"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Escala do Grafo"
-
-#~ msgid "Start X"
-#~ msgstr "Comezo en X"
-
-#~ msgid "Start Y"
-#~ msgstr "Comezo en Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Usar Selección Superior en vez de Inferior"
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Útiles/Amosar Estructura da Imaxe..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Aplicar Capa de Máscara (ou descartar)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Crear Nova Imaxe"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Insertar Nome das Capas"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Crear Novo Fondo"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Beira Exterior"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Cor do Recheo"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opacidade do Recheo"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Recheo para Rexións Transparentes"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Lonxitude do Tumbado"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Espacio entre Capas"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "Imposible abrir un fluxo no cano de saida SIOD"

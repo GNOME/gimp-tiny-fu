@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GIMP 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-03-13 03:27+0100\n"
 "Last-Translator: Branko Collin <collin@xs4all.nl>\n"
 "Language-Team: Dutch <nl@li.org>\n"
@@ -309,8 +309,9 @@ msgstr "<Toolbox>/Xtra/Script-Fu/Hulpprogramma's/Fontkaart..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1681,6 +1682,21 @@ msgstr "Randgrootte (pixel)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Xtra/Script-Fu/Hulpprogramma's/Eigen verloop..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Renderen/Printplaat..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "X-delen"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Y-delen"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1721,6 +1737,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Hulpprogramma's/KVW-grafiek tekenen..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "AG-ondoorzichtigheid"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Einde X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Einde Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Van linksboven naar rechtsonder"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Grafiekschaal"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Begin X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Begin Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Gebruik selectiegrenzen in plaats van onderstaande"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1735,6 +1792,61 @@ msgstr "Framekleur"
 #, fuzzy
 msgid "Frame size"
 msgstr "Framegrootte"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Hulpprogramma's/Afbeeldingsstructuur tonen..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Pas laagmasker toe (of gooi weg)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Maak nieuwe afbeelding"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Voeg laagnamen in"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Maak nieuwe achtergrond"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Buitenste grens"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Opvulkleur"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Opvulondoorzichtigheid"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Opvulling voor transparante gebieden"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Hellingslengte"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Ruimte tussen lagen"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2772,88 +2884,6 @@ msgstr "Ondoorzichtheid hoge lichten"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Renderen/Raster..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "X-delen"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Y-delen"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Hulpprogramma's/KVW-grafiek tekenen..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "AG-ondoorzichtigheid"
-
-#~ msgid "End X"
-#~ msgstr "Einde X"
-
-#~ msgid "End Y"
-#~ msgstr "Einde Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Van linksboven naar rechtsonder"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Grafiekschaal"
-
-#~ msgid "Start X"
-#~ msgstr "Begin X"
-
-#~ msgid "Start Y"
-#~ msgstr "Begin Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Gebruik selectiegrenzen in plaats van onderstaande"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Hulpprogramma's/Afbeeldingsstructuur tonen..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Pas laagmasker toe (of gooi weg)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Maak nieuwe afbeelding"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Voeg laagnamen in"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Maak nieuwe achtergrond"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Buitenste grens"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Opvulkleur"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opvulondoorzichtigheid"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Opvulling voor transparante gebieden"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Hellingslengte"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Ruimte tussen lagen"
 
 #~ msgid ""
 #~ ")))\n"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu 1.3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2003-11-05 13:31+0800\n"
 "Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -311,8 +311,9 @@ msgstr "<Toolbox>/擴展/Script-Fu/工具/字型圖(_F)..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1674,6 +1675,19 @@ msgstr "邊框大小(像素)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/擴展/Script-Fu/工具/自製漸層範例(_G)..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/描繪/電路(_C)..."
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr ""
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr ""
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1714,6 +1728,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/工具/繪製 _HSV 分佈圖..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "背景透明度"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "終點的水平座標"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "終點的垂直座標"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "從左上角至右下角"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "圖形比例"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "起點的水平座標"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "起點的垂直座標"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "使用選擇範圍或圖像範圍，而不理會以下的數值"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1728,6 +1783,60 @@ msgstr "邊框顏色"
 #, fuzzy
 msgid "Frame size"
 msgstr "畫格數目"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/工具/顯示圖像結構(_S)..."
+
+#: scripts/image-structure.sct.h:2
+msgid "Apply layer mask (or discard)"
+msgstr ""
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "產生新的圖像"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "加入圖層名稱"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "製作新的背景圖層"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "模糊邊框"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "填色所用的顏色"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "填色的透明度"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "填上其它顏色表示透明區域"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "推移長度"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "圖層之間的空間"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2679,72 +2788,6 @@ msgstr "高亮度區透明度"
 #, fuzzy
 #~ msgid "<Toolbox>/Xtns/Script-Fu"
 #~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/霓虹管(_E)..."
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/工具/繪製 _HSV 分佈圖..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "背景透明度"
-
-#~ msgid "End X"
-#~ msgstr "終點的水平座標"
-
-#~ msgid "End Y"
-#~ msgstr "終點的垂直座標"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "從左上角至右下角"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "圖形比例"
-
-#~ msgid "Start X"
-#~ msgstr "起點的水平座標"
-
-#~ msgid "Start Y"
-#~ msgstr "起點的垂直座標"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "使用選擇範圍或圖像範圍，而不理會以下的數值"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/工具/顯示圖像結構(_S)..."
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "產生新的圖像"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "加入圖層名稱"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "製作新的背景圖層"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "填色所用的顏色"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "填色的透明度"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "填上其它顏色表示透明區域"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "推移長度"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "圖層之間的空間"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "無法在 SIOD 輸出管道開啟資料串流"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-08-08 14:24+0200\n"
 "Last-Translator: Бранко Ивановић <popeye@one.ekof.bg.ac.yu>\n"
 "Language-Team: Serbian (sr) <gnom@prevod.org>\n"
@@ -315,8 +315,9 @@ msgstr "<Toolbox>/Проширења/Скрипт-Фу/Услужни/Мапа �
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1688,6 +1689,21 @@ msgstr "Величина ивице (тачака)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Проширења/Скрипт-Фу/Услужни/Посебни прелив..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Скрипт-Фу/Исцртавање/Круг..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "X одељци"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Y одељци"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1728,6 +1744,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Скрипт-Фу/Услужни/Цртај hsv график..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Непровидност позадине"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Крај X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "крај Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Од врха-лево до дна-десно"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Графичка скала"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Почетни X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Почетни Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Користи ограничења селекције..."
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1742,6 +1799,61 @@ msgstr "Боја оквира"
 #, fuzzy
 msgid "Frame size"
 msgstr "Величина оквира"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Скрипт-Фу/Услужни/Прикажи структуру слике..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Прихвати маску слоја (или одбаци)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Направи нову слику"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Убаци имена слојева"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Направи нову позадину"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Спољна ивица"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Боја подлоге"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Непровидност подлоге"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Подлога за провидне регионе"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Дужина сечења"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Размак међу слојевима"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2771,88 +2883,6 @@ msgstr "Непровидност осветљеног"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Скрипт-Фу/Исцртавање/Мрежа..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "X одељци"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Y одељци"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Скрипт-Фу/Услужни/Цртај hsv график..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Непровидност позадине"
-
-#~ msgid "End X"
-#~ msgstr "Крај X"
-
-#~ msgid "End Y"
-#~ msgstr "крај Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Од врха-лево до дна-десно"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Графичка скала"
-
-#~ msgid "Start X"
-#~ msgstr "Почетни X"
-
-#~ msgid "Start Y"
-#~ msgstr "Почетни Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Користи ограничења селекције..."
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Скрипт-Фу/Услужни/Прикажи структуру слике..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Прихвати маску слоја (или одбаци)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Направи нову слику"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Убаци имена слојева"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Направи нову позадину"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Спољна ивица"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Боја подлоге"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Непровидност подлоге"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Подлога за провидне регионе"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Дужина сечења"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Размак међу слојевима"
 
 #~ msgid ""
 #~ ")))\n"

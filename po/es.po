@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-01-27 16:03-0300\n"
 "Last-Translator: Pablo G. del Campo <pablodc@bigfoot.com>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
@@ -315,8 +315,9 @@ msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/Mapa de _tipografías..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1720,6 +1721,21 @@ msgstr "Tamaño del borde (píxeles)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/_Gradiente personalizado..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Render/_Circuito..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Divisiones X"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Divisiones Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1760,6 +1776,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Utilidades/Dibujar gráfico _HSV..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Opacidad del fondo"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "X final"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Y final"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "De arriba-izquierda a abajo-derecha"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Escala del gráfico"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Comienzo en X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Comienzo en Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Usar los límites de la selección en vez de los de abajo"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1774,6 +1831,61 @@ msgstr "Color del fotograma"
 #, fuzzy
 msgid "Frame size"
 msgstr "Tamaño del fotograma"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Utilidades/Mostrar la e_structura de la imagen..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Aplicar la máscara de capa (o descartar)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Crear nueva imagen"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Insertar los nombres de las capas"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Crear nuevo fondo"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Borde exterior"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Color de la lámina"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Opacidad de la lámina"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Relleno para las zonas transparentes"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Inclinación"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Espacio entre capas"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2819,88 +2931,6 @@ msgstr "Opacidad del brillo"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Render/Re_jilla..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Divisiones X"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Divisiones Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Utilidades/Dibujar gráfico _HSV..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Opacidad del fondo"
-
-#~ msgid "End X"
-#~ msgstr "X final"
-
-#~ msgid "End Y"
-#~ msgstr "Y final"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "De arriba-izquierda a abajo-derecha"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Escala del gráfico"
-
-#~ msgid "Start X"
-#~ msgstr "Comienzo en X"
-
-#~ msgid "Start Y"
-#~ msgstr "Comienzo en Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Usar los límites de la selección en vez de los de abajo"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Utilidades/Mostrar la e_structura de la imagen..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Aplicar la máscara de capa (o descartar)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Crear nueva imagen"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Insertar los nombres de las capas"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Crear nuevo fondo"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Borde exterior"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Color de la lámina"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opacidad de la lámina"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Relleno para las zonas transparentes"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Inclinación"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Espacio entre capas"
 
 #~ msgid ""
 #~ ")))\n"

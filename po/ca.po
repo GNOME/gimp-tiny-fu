@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-03-26 19:46+0100\n"
 "Last-Translator: Xavier Beà <xbea@pie.xtec.es>\n"
 "Language-Team: Catalan <xbea@pie.xtec.es>\n"
@@ -316,8 +316,9 @@ msgstr "<Toolbox>/Extensions/Script-Fu/Utilitats/_Mapa de tipus de lletra..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1842,6 +1843,19 @@ msgstr "Mida del marge (píxels)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Extensions/Script-Fu/Utilitats/_Gradient personalitzat..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Composició d'imatges/_Circuit..."
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr "Divisions d'X"
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr "Divisions d'Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1884,6 +1898,51 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Utilitats/Dibuixa gràfic _HSV..."
+
+#
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Opacitat del fons"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "X final"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Y final"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Del cantó superior esquerre a l'inferior dret"
+
+#
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Escala de la gràfica"
+
+#
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "X inicial"
+
+#
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Y inicial"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Utilitza el límit de la selecció en comptes dels inferiors"
+
 #
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
@@ -1901,6 +1960,70 @@ msgstr "Color del marc"
 #, fuzzy
 msgid "Frame size"
 msgstr "Mida del marc"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Utilitats/Mo_stra l'estructura de la imatge..."
+
+#
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Aplica la màscara de capa (o descarta)"
+
+#
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Crea una nova imatge"
+
+#
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Insereix els noms de les capes"
+
+#
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Fes un fons nou"
+
+#
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Marge exterior"
+
+#
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Color de l'emplenat"
+
+#
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Opacitat de l'emplenat"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Emplenat de les regions transparents"
+
+#
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Longitud del retall"
+
+#
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Espai entre capes"
 
 #
 #: scripts/land.sct.h:1
@@ -2980,99 +3103,6 @@ msgstr "Opacitat del ressaltat"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Composició d'imatges/_Graella..."
-
-#~ msgid "X divisions"
-#~ msgstr "Divisions d'X"
-
-#~ msgid "Y divisions"
-#~ msgstr "Divisions d'Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Utilitats/Dibuixa gràfic _HSV..."
-
-#
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Opacitat del fons"
-
-#~ msgid "End X"
-#~ msgstr "X final"
-
-#~ msgid "End Y"
-#~ msgstr "Y final"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Del cantó superior esquerre a l'inferior dret"
-
-#
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Escala de la gràfica"
-
-#
-#~ msgid "Start X"
-#~ msgstr "X inicial"
-
-#
-#~ msgid "Start Y"
-#~ msgstr "Y inicial"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Utilitza el límit de la selecció en comptes dels inferiors"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Utilitats/Mo_stra l'estructura de la imatge..."
-
-#
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Aplica la màscara de capa (o descarta)"
-
-#
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Crea una nova imatge"
-
-#
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Insereix els noms de les capes"
-
-#
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Fes un fons nou"
-
-#
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Marge exterior"
-
-#
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Color de l'emplenat"
-
-#
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opacitat de l'emplenat"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Emplenat de les regions transparents"
-
-#
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Longitud del retall"
-
-#
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Espai entre capes"
 
 #~ msgid ""
 #~ ")))\n"

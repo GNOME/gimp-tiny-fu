@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gimp-script-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2003-10-30 09:35+0800\n"
 "Last-Translator: MIMOS Open Source Development Group <ismas@mimos.my>\n"
 "Language-Team: Projek Gabai <gabai-penyumbang@lists.sf.net>\n"
@@ -310,8 +310,9 @@ msgstr "<Toolbox>/Xtns/Script-Fu/Util/Peta _Fon..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1681,6 +1682,21 @@ msgstr "Saiz Sempadan (piksel)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Xtns/Script-Fu/Util/_Kecerunan Biasa..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Render/_Litar..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Divisyen X"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Divisyen Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1721,6 +1737,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Util/Lukis Graf _HSV..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Kelegapan BG"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Hujung X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Hujung Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Dari Kiri Atas ke Bawah Kanan"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Skala Graf"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Mula X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Mula Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Gunakan Batas Pemilihan dan Tidak di Bawah"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1735,6 +1792,61 @@ msgstr "Warna Bingkai"
 #, fuzzy
 msgid "Frame size"
 msgstr "Saiz Bingkai"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Util/Tunjukkan _Struktur Imej..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Gunakan Topeng Lapisan (atau buang)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Wujudkan Imej Baru"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Sisipkan Nama Lapisan"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Buat Latar Belakang Baru"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Sempadan Luar"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Warna Pad"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Kelegapan Pad"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Pad untuk Kawasan Lut sinar"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Panjang Ricih"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Ruang Di antara Lapisan"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2766,88 +2878,6 @@ msgstr "Tonjolkan Kelegapan"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Render/Grid..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Divisyen X"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Divisyen Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Util/Lukis Graf _HSV..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Kelegapan BG"
-
-#~ msgid "End X"
-#~ msgstr "Hujung X"
-
-#~ msgid "End Y"
-#~ msgstr "Hujung Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Dari Kiri Atas ke Bawah Kanan"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Skala Graf"
-
-#~ msgid "Start X"
-#~ msgstr "Mula X"
-
-#~ msgid "Start Y"
-#~ msgstr "Mula Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Gunakan Batas Pemilihan dan Tidak di Bawah"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Util/Tunjukkan _Struktur Imej..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Gunakan Topeng Lapisan (atau buang)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Wujudkan Imej Baru"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Sisipkan Nama Lapisan"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Buat Latar Belakang Baru"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Sempadan Luar"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Warna Pad"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Kelegapan Pad"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Pad untuk Kawasan Lut sinar"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Panjang Ricih"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Ruang Di antara Lapisan"
 
 #~ msgid ""
 #~ ")))\n"

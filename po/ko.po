@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2003-06-05 07:54+0800\n"
 "Last-Translator: Dongsu Jang <iolo@hellocity.net>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -309,8 +309,9 @@ msgstr "<Toolbox>/확장/Script-Fu/유틸리티/글꼴 목록(_F)..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1677,6 +1678,21 @@ msgstr "경계선 크기 (픽셀)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/확장/Script-Fu/유틸리티/커스텀 그라디언트(_G)..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/렌더/회로(_C)..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "가로 분할 수"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "세로 분할 수"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1717,6 +1733,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/유틸리티/HSV 그래프 그리기(_H)..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "배경 투명도"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "가로 끝"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "세로 끝"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "좌상단에서 우하단으로"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "그래프 배율"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "가로 시작"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "세로 시작"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "아래 대신에 선택 경계 사용"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1731,6 +1788,61 @@ msgstr "틀 색상"
 #, fuzzy
 msgid "Frame size"
 msgstr "틀 크기"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/유틸리티/이미지 구조 표시(_S)..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "레이어 마스크 적용 (또는 취소)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "새 이미지 만들기"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "레이어 이름 삽입"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "새 배경 만들기"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "바깥쪽 경계선"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "채움 색상"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "채움 투명도"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "투명 영역 채우기"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "휘는 길이"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "레이어 사이의 공간"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2675,88 +2787,6 @@ msgstr "하일라이트 투명도"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/렌더/모눈(_G)..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "가로 분할 수"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "세로 분할 수"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/유틸리티/HSV 그래프 그리기(_H)..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "배경 투명도"
-
-#~ msgid "End X"
-#~ msgstr "가로 끝"
-
-#~ msgid "End Y"
-#~ msgstr "세로 끝"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "좌상단에서 우하단으로"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "그래프 배율"
-
-#~ msgid "Start X"
-#~ msgstr "가로 시작"
-
-#~ msgid "Start Y"
-#~ msgstr "세로 시작"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "아래 대신에 선택 경계 사용"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/유틸리티/이미지 구조 표시(_S)..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "레이어 마스크 적용 (또는 취소)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "새 이미지 만들기"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "레이어 이름 삽입"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "새 배경 만들기"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "바깥쪽 경계선"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "채움 색상"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "채움 투명도"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "투명 영역 채우기"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "휘는 길이"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "레이어 사이의 공간"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "SIOD 출력 파이프에 대한 스트림을 열 수 없습니다"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu-2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-04-14 17:54+0200\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -309,8 +309,9 @@ msgstr "<Toolbox>/Розш./Скрипт-Фу/Утиліти/Мапа _шриф�
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1674,6 +1675,21 @@ msgstr "Розмір рамки (у точках)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Розш./Скрипт-Фу/Утиліти/Користувацький _градієнт..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Скрипт-Фу/Візуалізація/Друкована _плата..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Горизонталі"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Вертикалі"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1714,6 +1730,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Скрипт-Фу/Утиліти/Побудувати _HSV-графік..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Непрозорість тла"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Кінець X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Кінець Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "З верхнього лівого до нижнього правого"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Масштаб графіка"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Початок по X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Початок по Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Використовувати межі виділення"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1728,6 +1785,61 @@ msgstr "Колір обрамлення"
 #, fuzzy
 msgid "Frame size"
 msgstr "Розмір обрамлення"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Скрипт-Фу/Утиліти/Показати _структуру зображення..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Застосувати маску шару (чи відмовитись)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Створення нового зображення"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Вставити назви шарів"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Зробити нове тло"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Зовнішня рамка"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Колір заповнення"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Непрозорість заповнення"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Заповнення для прозорих ділянок"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Довжина зсуву"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Інтервал між шарами"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2758,88 +2870,6 @@ msgstr "Непрозорість відблисків"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Скрипт-Фу/Візуалізація/С_ітка..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Горизонталі"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Вертикалі"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Скрипт-Фу/Утиліти/Побудувати _HSV-графік..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Непрозорість тла"
-
-#~ msgid "End X"
-#~ msgstr "Кінець X"
-
-#~ msgid "End Y"
-#~ msgstr "Кінець Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "З верхнього лівого до нижнього правого"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Масштаб графіка"
-
-#~ msgid "Start X"
-#~ msgstr "Початок по X"
-
-#~ msgid "Start Y"
-#~ msgstr "Початок по Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Використовувати межі виділення"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Скрипт-Фу/Утиліти/Показати _структуру зображення..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Застосувати маску шару (чи відмовитись)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Створення нового зображення"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Вставити назви шарів"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Зробити нове тло"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Зовнішня рамка"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Колір заповнення"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Непрозорість заповнення"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Заповнення для прозорих ділянок"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Довжина зсуву"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Інтервал між шарами"
 
 #~ msgid ""
 #~ ")))\n"

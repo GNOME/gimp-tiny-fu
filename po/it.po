@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-09-06 02:22+0200\n"
 "Last-Translator: Marco Ciampa <ciampix@libero.it>\n"
 "Language-Team: gimp.linux.it\n"
@@ -309,8 +309,9 @@ msgstr "<Toolbox>/Xtns/Script-Fu/Utilità/_Mappa caratteri..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1566,6 +1567,19 @@ msgstr "Dimensione bordo (pixel)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Xtns/Script-Fu/Utilità/_Gradiente personalizzato..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Render/_Circuiti..."
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr "Divisioni X"
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr "Divisioni Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1606,6 +1620,43 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Utilità/Disegna grafico _HSV..."
+
+#: scripts/hsv-graph.sct.h:2
+msgid "BG opacity"
+msgstr "Opacità sfondo"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Fine X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Fine Y"
+
+#: scripts/hsv-graph.sct.h:5
+msgid "From top-left to bottom-right"
+msgstr "Da Alto-sinistra a Basso-destra"
+
+#: scripts/hsv-graph.sct.h:6
+msgid "Graph scale"
+msgstr "Scala grafico"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Inizio X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Inizio Y"
+
+#: scripts/hsv-graph.sct.h:9
+msgid "Use selection bounds instead of belows"
+msgstr "Usa margini della selezione invece dei sottostanti"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1618,6 +1669,51 @@ msgstr "Colore cornice"
 #: scripts/i26-gunya2.sct.h:5
 msgid "Frame size"
 msgstr "Dimensione cornice"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Utilità/Mostra _struttura immagine..."
+
+#: scripts/image-structure.sct.h:2
+msgid "Apply layer mask (or discard)"
+msgstr "Applica maschera di livello (o annulla)"
+
+#: scripts/image-structure.sct.h:4
+msgid "Create new image"
+msgstr "Crea nuova immagine"
+
+#: scripts/image-structure.sct.h:5
+msgid "Insert layer names"
+msgstr "Inserisci nome livello"
+
+#: scripts/image-structure.sct.h:6
+msgid "Make new background"
+msgstr "Crea nuovo sfondo"
+
+#: scripts/image-structure.sct.h:7
+msgid "Outer border"
+msgstr "Bordo esterno"
+
+#: scripts/image-structure.sct.h:8
+msgid "Pad color"
+msgstr "Colore rilievo"
+
+#: scripts/image-structure.sct.h:9
+msgid "Pad opacity"
+msgstr "Opacità rilievo"
+
+#: scripts/image-structure.sct.h:10
+msgid "Padding for transparent regions"
+msgstr "Rilievo per regioni trasparenti"
+
+#: scripts/image-structure.sct.h:11
+msgid "Shear length"
+msgstr "Lunghezza inclinazione"
+
+#: scripts/image-structure.sct.h:12
+msgid "Space between layers"
+msgstr "Spazio tra livelli"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2575,72 +2671,6 @@ msgstr "Opacità illuminazione"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Render/_Griglia..."
-
-#~ msgid "X divisions"
-#~ msgstr "Divisioni X"
-
-#~ msgid "Y divisions"
-#~ msgstr "Divisioni Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Utilità/Disegna grafico _HSV..."
-
-#~ msgid "BG opacity"
-#~ msgstr "Opacità sfondo"
-
-#~ msgid "End X"
-#~ msgstr "Fine X"
-
-#~ msgid "End Y"
-#~ msgstr "Fine Y"
-
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Da Alto-sinistra a Basso-destra"
-
-#~ msgid "Graph scale"
-#~ msgstr "Scala grafico"
-
-#~ msgid "Start X"
-#~ msgstr "Inizio X"
-
-#~ msgid "Start Y"
-#~ msgstr "Inizio Y"
-
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Usa margini della selezione invece dei sottostanti"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Utilità/Mostra _struttura immagine..."
-
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Applica maschera di livello (o annulla)"
-
-#~ msgid "Create new image"
-#~ msgstr "Crea nuova immagine"
-
-#~ msgid "Insert layer names"
-#~ msgstr "Inserisci nome livello"
-
-#~ msgid "Make new background"
-#~ msgstr "Crea nuovo sfondo"
-
-#~ msgid "Outer border"
-#~ msgstr "Bordo esterno"
-
-#~ msgid "Pad color"
-#~ msgstr "Colore rilievo"
-
-#~ msgid "Pad opacity"
-#~ msgstr "Opacità rilievo"
-
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Rilievo per regioni trasparenti"
-
-#~ msgid "Shear length"
-#~ msgstr "Lunghezza inclinazione"
-
-#~ msgid "Space between layers"
-#~ msgstr "Spazio tra livelli"
 
 #~ msgid ""
 #~ ")))\n"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GIMP script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-02-10 21:40+0100\n"
 "Last-Translator: Ole Laursen <olau@hardworking.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -323,8 +323,9 @@ msgstr "<Toolbox>/Udvidelser/Script-Fu/Værktøjer/_Skrifttypekort..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1729,6 +1730,21 @@ msgstr "Kantstørrelse (skærmpunkter)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Udvidelser/Script-Fu/Værktøjer/Vis f_arveovergang..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Generér/_Kredsløb..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Opdelinger x"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Opdelinger y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1769,6 +1785,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Værktøjer/Tegn _HSV-graf..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Baggrundsugennemsigtighed"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Slut x"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Slut y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Fra øverste-venstre til nederste-højre"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Grafskala"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Start x"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Start y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Benyt markeringsgrænser i stedet for nedre"
+
 # intetsigende original - effekten er en tuschtegning
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
@@ -1784,6 +1841,61 @@ msgstr "Rammefarve"
 #, fuzzy
 msgid "Frame size"
 msgstr "Rammestørrelse"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Værktøjer/Vis billed_struktur..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Anvend (eller fjern) genereret lagmaske"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Opret nyt billede"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Indsæt lagnavne"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Opret ny baggrund"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Ydre kant"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Fyldningsfarve"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Fyldningsgennemsigtighed"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Fyldning for gennemsigtige områder"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Trapezeringslængde"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Afstand mellem lag"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2754,88 +2866,6 @@ msgstr "Højlysugennemsigtighed"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Generér/_Gitter..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Opdelinger x"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Opdelinger y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Værktøjer/Tegn _HSV-graf..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Baggrundsugennemsigtighed"
-
-#~ msgid "End X"
-#~ msgstr "Slut x"
-
-#~ msgid "End Y"
-#~ msgstr "Slut y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Fra øverste-venstre til nederste-højre"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Grafskala"
-
-#~ msgid "Start X"
-#~ msgstr "Start x"
-
-#~ msgid "Start Y"
-#~ msgstr "Start y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Benyt markeringsgrænser i stedet for nedre"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Værktøjer/Vis billed_struktur..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Anvend (eller fjern) genereret lagmaske"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Opret nyt billede"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Indsæt lagnavne"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Opret ny baggrund"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Ydre kant"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Fyldningsfarve"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Fyldningsgennemsigtighed"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Fyldning for gennemsigtige områder"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Trapezeringslængde"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Afstand mellem lag"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "Kan ikke åbne en strøm til SIOD-uddatakanal"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GIMP 1.3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2002-04-28 04:07+0200\n"
 "Last-Translator: Ömer Fadıl USTA <omer_fad@hotmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
@@ -309,8 +309,9 @@ msgstr "<Toolbox>/Xtns/Script-Fu/Araçlar/Yazıtipi Haritası..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1689,6 +1690,19 @@ msgstr "Çevre Büyüklüğü (piksel)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Xtns/Script-Fu/Araçlar/Seçimli Gradyan..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Hesap/Devre..."
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr ""
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr ""
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1729,6 +1743,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Araçlar/HSV Grafiğini Çiz..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "AP Saydamsızlığı"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Bitiş X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Bitiş Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Üst-Soldan Aşağı-Sağa"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Grafik Ölçeği"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Başlama X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Başlama Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Aşağıdakiler Yerine Seçimi Kullan"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1743,6 +1798,61 @@ msgstr "Çerçeve Rengi"
 #, fuzzy
 msgid "Frame size"
 msgstr "Çerçeve Boyutu"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Araçlar/Resmin Yapısını Göster..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Katman Maskesini Uygulua (veya iptal et)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Yeni Resim Oluştur"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Katman İsimlerini Yaz"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Yeni Arkaplan Yap"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Dış Sınır"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Tampon Rengi"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Tampon Saydamsızlığı"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Şeffaf Alanlar İçin Tampon"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Eğme Uzaklığı"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Katmanlar Arası Boşluk"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2690,82 +2800,6 @@ msgstr "Parlama Saydamsızlığı"
 #, fuzzy
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Hesap/Devre..."
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Araçlar/HSV Grafiğini Çiz..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "AP Saydamsızlığı"
-
-#~ msgid "End X"
-#~ msgstr "Bitiş X"
-
-#~ msgid "End Y"
-#~ msgstr "Bitiş Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Üst-Soldan Aşağı-Sağa"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Grafik Ölçeği"
-
-#~ msgid "Start X"
-#~ msgstr "Başlama X"
-
-#~ msgid "Start Y"
-#~ msgstr "Başlama Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Aşağıdakiler Yerine Seçimi Kullan"
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Araçlar/Resmin Yapısını Göster..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Katman Maskesini Uygulua (veya iptal et)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Yeni Resim Oluştur"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Katman İsimlerini Yaz"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Yeni Arkaplan Yap"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Dış Sınır"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Tampon Rengi"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Tampon Saydamsızlığı"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Şeffaf Alanlar İçin Tampon"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Eğme Uzaklığı"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Katmanlar Arası Boşluk"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "SIOD çıkış veriyoluna akış açılamadı"

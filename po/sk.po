@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu.HEAD 2.3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-01-23 14:59+0100\n"
 "Last-Translator: Zdenko Podobný <zdpo@mailbox.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -310,8 +310,9 @@ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_Znaková mapa..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1692,6 +1693,21 @@ msgstr "Veľkosť ohraničenia (v bodoch)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/Vlastný pr_echod..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Generovanie/_Okruh..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Rozdelenie X"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Rozdelenie Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1732,6 +1748,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Pomôcky/Nakresliť _HSV graf..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Krytie pozadie"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Koniec X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Koniec Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Zľava hore doprava dole"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Mierka grafu"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "X začiatok"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Y začiatok"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Namiesto nižšie uvedeného použiť hranice výberu"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1746,6 +1803,61 @@ msgstr "Farba rámu"
 #, fuzzy
 msgid "Frame size"
 msgstr "Veľkosť rámu"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Pomôcky/Zobraziť š_truktúru obrázka..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Použiť masku vrstvy (alebo zahodiť)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Vytvoriť nový obrázok"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Vložiť názvy vrstiev"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Vytvoriť nové pozadie"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Vonkajšia hranica"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Farba výplne"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Krytie výplne"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Výplň pre priesvitné oblasti"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Dĺžka strihu"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Rozostup medzi vrstvami"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2775,88 +2887,6 @@ msgstr "Krytie svetiel"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Generovanie/_Mriežka..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Rozdelenie X"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Rozdelenie Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Pomôcky/Nakresliť _HSV graf..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Krytie pozadie"
-
-#~ msgid "End X"
-#~ msgstr "Koniec X"
-
-#~ msgid "End Y"
-#~ msgstr "Koniec Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Zľava hore doprava dole"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Mierka grafu"
-
-#~ msgid "Start X"
-#~ msgstr "X začiatok"
-
-#~ msgid "Start Y"
-#~ msgstr "Y začiatok"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Namiesto nižšie uvedeného použiť hranice výberu"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Pomôcky/Zobraziť š_truktúru obrázka..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Použiť masku vrstvy (alebo zahodiť)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Vytvoriť nový obrázok"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Vložiť názvy vrstiev"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Vytvoriť nové pozadie"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Vonkajšia hranica"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Farba výplne"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Krytie výplne"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Výplň pre priesvitné oblasti"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Dĺžka strihu"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Rozostup medzi vrstvami"
 
 #~ msgid ""
 #~ ")))\n"

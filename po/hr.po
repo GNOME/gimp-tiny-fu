@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-03-20 14:50+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -309,8 +309,9 @@ msgstr "<Toolbox>/Proširenja/Script-Fu/Uslužni/Mapa pisama..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1681,6 +1682,21 @@ msgstr "Veličina Ruba (piksela)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Proširenja/Script-Fu/Uslužni/Posebno preljevanje..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Iscrtavanje/Krug..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "X odjeljci"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Y odjeljci"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1721,6 +1737,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Uslužni/Crtaj hsv grafik..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Neprozirnost Pozadine"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "Kraj X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Kraj Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Od Vrha-Lijevo do Dna-Desno"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Graph Skala"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Početni X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Početni Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Koristi Odabrana Ograničenja bez obzira..."
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1735,6 +1792,61 @@ msgstr "Boja Okvira"
 #, fuzzy
 msgid "Frame size"
 msgstr "Veličina Okvira"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Uslužni/Pokaži strukturu slike..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Prihvati Masku Sloja (ili nemoj)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Kreiraj Novu Sliku"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Ubaci Imena Slojeva"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Napravi Novu Pozadinu"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Vanjski Rub"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Boja Podloge"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Neprozirnost Podloge"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Podloga za Prozirne regije"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Dužina Striženja"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Razmak Među Slojevima"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2764,88 +2876,6 @@ msgstr "Neprozirnost Osvjetljenog"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Iscrtavanje/Mreža..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "X odjeljci"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Y odjeljci"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Uslužni/Crtaj hsv grafik..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Neprozirnost Pozadine"
-
-#~ msgid "End X"
-#~ msgstr "Kraj X"
-
-#~ msgid "End Y"
-#~ msgstr "Kraj Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Od Vrha-Lijevo do Dna-Desno"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Graph Skala"
-
-#~ msgid "Start X"
-#~ msgstr "Početni X"
-
-#~ msgid "Start Y"
-#~ msgstr "Početni Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Koristi Odabrana Ograničenja bez obzira..."
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Uslužni/Pokaži strukturu slike..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Prihvati Masku Sloja (ili nemoj)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Kreiraj Novu Sliku"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Ubaci Imena Slojeva"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Napravi Novu Pozadinu"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Vanjski Rub"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Boja Podloge"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Neprozirnost Podloge"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Podloga za Prozirne regije"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Dužina Striženja"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Razmak Među Slojevima"
 
 #~ msgid ""
 #~ ")))\n"

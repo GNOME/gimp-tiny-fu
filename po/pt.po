@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2004-03-08 21:40+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
@@ -314,8 +314,9 @@ msgstr "<Toolbox>/Exten/Script-Fu/Utilitários/Mapa _Fontes..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1689,6 +1690,21 @@ msgstr "Tamanho Margem (pixeis)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Exten/Script-Fu/Utilitários/_Gradiente Costumizado..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Renderizar/_Circuito..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "Divisões X"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Divisões Y"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1729,6 +1745,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Utilitários/Desenhar Gráfico _HSV..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Opacidade de Fundo"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "X Final"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "Y Final"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Da Esquerda Superior à Direita Inferior"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "Escala Gráfico"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "X Inicial"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Y Inicial"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "Utilizar Limites de Selecção em vez dos Abaixo"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1743,6 +1800,61 @@ msgstr "Cor de Quadro"
 #, fuzzy
 msgid "Frame size"
 msgstr "Tamanho Quadro"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Utilitários/Exibir E_strutura Imagem..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "Aplicar Máscara de Camada (ou descartar)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Criar Nova Imagem"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Inserir Nomes Camada"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Fazer Novo Fundo"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Margem Externa"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Cor Enchimento"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Opacidade Enchimento"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "Enchimento para Regiões Transparentes"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Comprimento Apara"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Espaço Entre Camadas"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2775,88 +2887,6 @@ msgstr "Opacidade Destaque"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Renderizar/_Grelha..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "Divisões X"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Divisões Y"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Utilitários/Desenhar Gráfico _HSV..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Opacidade de Fundo"
-
-#~ msgid "End X"
-#~ msgstr "X Final"
-
-#~ msgid "End Y"
-#~ msgstr "Y Final"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Da Esquerda Superior à Direita Inferior"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "Escala Gráfico"
-
-#~ msgid "Start X"
-#~ msgstr "X Inicial"
-
-#~ msgid "Start Y"
-#~ msgstr "Y Inicial"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "Utilizar Limites de Selecção em vez dos Abaixo"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Utilitários/Exibir E_strutura Imagem..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Aplicar Máscara de Camada (ou descartar)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Criar Nova Imagem"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Inserir Nomes Camada"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Fazer Novo Fundo"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Margem Externa"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Cor Enchimento"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opacidade Enchimento"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Enchimento para Regiões Transparentes"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Comprimento Apara"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Espaço Entre Camadas"
 
 #~ msgid ""
 #~ ")))\n"

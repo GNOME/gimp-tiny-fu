@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gimp-scriptfu for Gnome 2.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2002-07-20 15:36+0700\n"
 "Last-Translator: Trinh Minh Thanh <tmthanh@linuxmail.org>\n"
 "Language-Team: Gnome-Vi Team <Gnomevi-list@lists.sourceforge.net>\n"
@@ -307,8 +307,9 @@ msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/Bản đồ Phông..."
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1655,6 +1656,19 @@ msgstr "Kích cỡ Đường Viền"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/ASCII cho Ảnh..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
+#: scripts/grid-system.sct.h:2
+msgid "X divisions"
+msgstr ""
+
+#: scripts/grid-system.sct.h:3
+msgid "Y divisions"
+msgstr ""
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1695,6 +1709,45 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "Độ Đục BG"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr ""
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr ""
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "Từ Trái-Trên đến Phải-Dưới"
+
+#: scripts/hsv-graph.sct.h:6
+msgid "Graph scale"
+msgstr ""
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "Chạy X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "Chạy Y"
+
+#: scripts/hsv-graph.sct.h:9
+msgid "Use selection bounds instead of belows"
+msgstr ""
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1709,6 +1762,59 @@ msgstr "Màu Khung"
 #, fuzzy
 msgid "Frame size"
 msgstr "Cỡ Khung"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
+
+#: scripts/image-structure.sct.h:2
+msgid "Apply layer mask (or discard)"
+msgstr ""
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "Tạo Ảnh Mới"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "Chèn Tên Lớp"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "Tạo Nền Mới"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "Khung Viền Bên Ngoài"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "Màu bóng"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "Độ Đục BG"
+
+#: scripts/image-structure.sct.h:10
+msgid "Padding for transparent regions"
+msgstr ""
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "Độ dài Kéo Cắt"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "Khoảng Trống Giữa Các Lớp"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2656,60 +2762,6 @@ msgstr "Màu Nổi Bật"
 #, fuzzy
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "Độ Đục BG"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "Từ Trái-Trên đến Phải-Dưới"
-
-#~ msgid "Start X"
-#~ msgstr "Chạy X"
-
-#~ msgid "Start Y"
-#~ msgstr "Chạy Y"
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Tạo Ảnh Mới"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Chèn Tên Lớp"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Tạo Nền Mới"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Khung Viền Bên Ngoài"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Màu bóng"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Độ Đục BG"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Độ dài Kéo Cắt"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Khoảng Trống Giữa Các Lớp"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "Không thể mở một stream trên SIOD output pipe"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-14 23:39-0400\n"
+"POT-Creation-Date: 2004-10-16 15:47-0400\n"
 "PO-Revision-Date: 2003-09-12 18:36+0900\n"
 "Last-Translator: Ryoichi INAGAKI <ryo1@bc.wakwak.com>\n"
 "Language-Team: Japanese <translation@gnome.gr.jp>\n"
@@ -312,8 +312,9 @@ msgstr "<Toolbox>/拡張/Script-Fu/ユーティリティ/フォントマップ(_
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
 #: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
-#: scripts/gradient-bevel-logo.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
+#: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
+#: scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
@@ -1686,6 +1687,21 @@ msgstr "枠の大きさ (ピクセル)"
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
 msgstr "<Toolbox>/拡張/Script-Fu/ユーティリティ/カスタムグラデーション(_G)..."
 
+#: scripts/grid-system.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Grid..."
+msgstr "<Image>/Script-Fu/下塗り/回路(_C)..."
+
+#: scripts/grid-system.sct.h:2
+#, fuzzy
+msgid "X divisions"
+msgstr "X 分割数"
+
+#: scripts/grid-system.sct.h:3
+#, fuzzy
+msgid "Y divisions"
+msgstr "Y 分割数"
+
 #: scripts/guides-from-selection.sct.h:1
 msgid "<Image>/Image/Guides/New Guides from _Selection"
 msgstr ""
@@ -1726,6 +1742,47 @@ msgstr ""
 msgid "<Image>/Image/Guides/_Remove all Guides"
 msgstr ""
 
+#: scripts/hsv-graph.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/ユーティリティ/HSV グラフ描画(_H)..."
+
+#: scripts/hsv-graph.sct.h:2
+#, fuzzy
+msgid "BG opacity"
+msgstr "背景不透明度"
+
+#: scripts/hsv-graph.sct.h:3
+msgid "End X"
+msgstr "終了 X"
+
+#: scripts/hsv-graph.sct.h:4
+msgid "End Y"
+msgstr "終了 Y"
+
+#: scripts/hsv-graph.sct.h:5
+#, fuzzy
+msgid "From top-left to bottom-right"
+msgstr "左上から右下へ"
+
+#: scripts/hsv-graph.sct.h:6
+#, fuzzy
+msgid "Graph scale"
+msgstr "グラフ寸法"
+
+#: scripts/hsv-graph.sct.h:7
+msgid "Start X"
+msgstr "開始 X"
+
+#: scripts/hsv-graph.sct.h:8
+msgid "Start Y"
+msgstr "開始 Y"
+
+#: scripts/hsv-graph.sct.h:9
+#, fuzzy
+msgid "Use selection bounds instead of belows"
+msgstr "以下の設定ではなく選択領域を使用する"
+
 #: scripts/i26-gunya2.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
@@ -1740,6 +1797,61 @@ msgstr "枠の色"
 #, fuzzy
 msgid "Frame size"
 msgstr "枠サイズ"
+
+#: scripts/image-structure.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+msgstr "<Image>/Script-Fu/ユーティリティ/画像構造表示(_S)..."
+
+#: scripts/image-structure.sct.h:2
+#, fuzzy
+msgid "Apply layer mask (or discard)"
+msgstr "レイヤーマスク適用 (or 破棄)"
+
+#: scripts/image-structure.sct.h:4
+#, fuzzy
+msgid "Create new image"
+msgstr "新規画像を作成"
+
+#: scripts/image-structure.sct.h:5
+#, fuzzy
+msgid "Insert layer names"
+msgstr "レイヤー名の挿入"
+
+#: scripts/image-structure.sct.h:6
+#, fuzzy
+msgid "Make new background"
+msgstr "新規背景を作成"
+
+#: scripts/image-structure.sct.h:7
+#, fuzzy
+msgid "Outer border"
+msgstr "外枠"
+
+#: scripts/image-structure.sct.h:8
+#, fuzzy
+msgid "Pad color"
+msgstr "空間の色"
+
+#: scripts/image-structure.sct.h:9
+#, fuzzy
+msgid "Pad opacity"
+msgstr "空間の不透明度"
+
+#: scripts/image-structure.sct.h:10
+#, fuzzy
+msgid "Padding for transparent regions"
+msgstr "透明な領域のための空間"
+
+#: scripts/image-structure.sct.h:11
+#, fuzzy
+msgid "Shear length"
+msgstr "刈り取る長さ"
+
+#: scripts/image-structure.sct.h:12
+#, fuzzy
+msgid "Space between layers"
+msgstr "レイヤー間の間隔"
 
 #: scripts/land.sct.h:1
 #, fuzzy
@@ -2763,88 +2875,6 @@ msgstr "ハイライト不透明度"
 
 #~ msgid "<Image>/Script-Fu/Render/_Grid..."
 #~ msgstr "<Image>/Script-Fu/下塗り/格子(_G)..."
-
-#, fuzzy
-#~ msgid "X divisions"
-#~ msgstr "X 分割数"
-
-#, fuzzy
-#~ msgid "Y divisions"
-#~ msgstr "Y 分割数"
-
-#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
-#~ msgstr "<Image>/Script-Fu/ユーティリティ/HSV グラフ描画(_H)..."
-
-#, fuzzy
-#~ msgid "BG opacity"
-#~ msgstr "背景不透明度"
-
-#~ msgid "End X"
-#~ msgstr "終了 X"
-
-#~ msgid "End Y"
-#~ msgstr "終了 Y"
-
-#, fuzzy
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "左上から右下へ"
-
-#, fuzzy
-#~ msgid "Graph scale"
-#~ msgstr "グラフ寸法"
-
-#~ msgid "Start X"
-#~ msgstr "開始 X"
-
-#~ msgid "Start Y"
-#~ msgstr "開始 Y"
-
-#, fuzzy
-#~ msgid "Use selection bounds instead of belows"
-#~ msgstr "以下の設定ではなく選択領域を使用する"
-
-#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
-#~ msgstr "<Image>/Script-Fu/ユーティリティ/画像構造表示(_S)..."
-
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "レイヤーマスク適用 (or 破棄)"
-
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "新規画像を作成"
-
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "レイヤー名の挿入"
-
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "新規背景を作成"
-
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "外枠"
-
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "空間の色"
-
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "空間の不透明度"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "透明な領域のための空間"
-
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "刈り取る長さ"
-
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "レイヤー間の間隔"
 
 #~ msgid ""
 #~ ")))\n"
