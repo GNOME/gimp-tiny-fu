@@ -1,5 +1,10 @@
 2005-02-23  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* tinyscheme/scheme.c: Fixed a problem with aset! for string arrays.
+	Old string wasn't freed and wasn't allocating a copy of new string.
+
+2005-02-23  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* tiny-fu/siod-wrapper.c: Reverted previous change. Can't add an API
 	change until after branching the code for the 2.3 version of GIMP.
 
