@@ -11,21 +11,34 @@ will emerge out of this real soon now.
 Overview of Changes in Tiny-Fu 0.9.6
 ====================================
 
-- Actually retrieve the value from the GtkEntry for SF-VALUE.
-
-- Don't call gettext() on strings provided by scripts as they are already
-  translated by the Scheme interpreter.
+- Added support for (tiny-fu-menu-register) to allow scripts to register
+  their menu paths in the same undeprecated way as plug-ins. Fixes bug
+  #158117.
 
 - Don't silently return when there is already a script running but show a
   message instead. Fixes bug #123882.
 
+- Actually retrieve the value from the GtkEntry for SF-VALUE.
+
 - Re-added the deprecated constants for backwards compatability with
   Script-Fu and the 2.0 version of GIMP.
 
+- Other minor code changes, cleanups, and bug fixes.
+
 - Updates and fixes to various scripts
 
-    * Changed some gimp-selection-clear calls to gimp-selection-none
+    * Updated all scripts to use script-fu-menu-register and pass just
+      the menu label in script-fu-register.
+
+    * Changed some gimp-selection-clear calls to gimp-selection-none.
       See bug #156765.
+
+    * Fixed incorrect comparison in an if statement in the copy-visible.sct
+      script. Partial(?) fix for bug #138662. 
+
+    * Fixed erase-rows.sct so it will work on layers that have their
+      top-left corner at a position other than the top-left corner of the
+      image. Fixes bug #158863.
 
     * Changed some scripts which called gimp-edit-* functions on drawables
       which were not yet added to an image because this will be forbidden
@@ -33,7 +46,7 @@ Overview of Changes in Tiny-Fu 0.9.6
 
     * Updated some scripts to use the new transform API.
 
-    * In lava.sct, replaced undo-disable/enable by undo-group-start/end.
+    * Other minor script changes.
 
 
 Contributors:

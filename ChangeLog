@@ -1,12 +1,16 @@
 2004-11-22  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* NEWS: Updated with notes about recent changes.
+
+2004-11-22  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* scripts/copy-visible.sct: Fixed incorrect comparison in if
 	statement. Partial(?) fix for bug #138662. 
 
 2004-11-22  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* scripts/*.sct: Updated all scripts to use script-fu-menu-register
-	and pass just the menu label in script-fu-register.
+	* scripts/*.sct: Updated all scripts to call script-fu-menu-register
+	after the call to script-fu-register.
 
 	Updates based on changes made by Michael Natterer to Script-Fu.
 
