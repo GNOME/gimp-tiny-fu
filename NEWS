@@ -3,8 +3,49 @@ Version 0.9 of the Tiny-Fu Plug-in for GIMP 2.1/2.2
 
 This is the development branch of Tiny-Fu. This is where new features
 are added, features may be dropped or changed, or other large changes
-to the code are made. The next stable Tiny-Fu release, Tiny-Fu 1.0,
+to the code are made. The first stable Tiny-Fu release, Tiny-Fu 1.0,
 will emerge out of this real soon now.
+
+
+
+Overview of Changes in Tiny-Fu 0.9.7
+====================================
+
+- Plugged some memory leaks.
+
+- Added support for SF-REGION. SF-BOUNDARY, and SF-PATH.
+
+- Fixed a problem with aset! for string arrays.
+
+- Added substring-equal? function.
+
+- Other minor code changes, cleanups, and bug fixes.
+
+- Updates and fixes to various scripts
+
+	* Removed the asc2img.sct script as it is supposedly broken
+	beyond repair and the functionality is in the text tool itself.
+
+	* scripts/circuit.sct: Don't try to desaturate a grayscale layer.
+	From a fix in Script-Fu by Bill Skaggs.  Fixes bug #161470.
+
+	* scripts/copy-visible.sct: Apply the layer mask when copying a
+	single layer with a layer mask. Fixes bug #138662. Deprecated since
+	feature added to core.
+
+	* scripts/frosty-logo.sct: made sure the shadow is given enough space
+	and then truncated instead of translated to the center of the image,
+	thus preventing the display of shadows with a completely horizontal or
+	vertical edge. Fixes bug #132145.
+
+    * Other minor script changes.
+
+
+Contributors:
+
+   Kevin Cozens, Bill Skaggs, and Joao S. O. Bueno. Also used contributions
+   originally made to parts of GIMP by Michael Natterer, Sven Neumann,
+   and Shlomi Fish. 
 
 
 
