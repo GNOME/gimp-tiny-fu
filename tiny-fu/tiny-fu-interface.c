@@ -57,6 +57,7 @@ typedef struct
 
   GtkWidget     *about_dialog;
 
+  gchar         *short_title;
   gchar         *title;
   gchar         *help_id;
   gchar         *last_command;
@@ -162,7 +163,6 @@ tiny_fu_interface (SFScript *script)
   GtkWidget    *vbox2;
   GtkSizeGroup *group;
   GSList       *list;
-  gchar        *title;
   gchar        *tmp;
   gint          i;
 
@@ -172,7 +172,18 @@ tiny_fu_interface (SFScript *script)
       ugly workaround for the fact that we can not process two
       scripts at a time.  */
   if (sf_interface != NULL)
-    return;
+    {
+      gchar *message =
+        g_strdup_printf ("%s\n\n%s",
+                         _("Tiny-Fu cannot process two scripts "
+                           "at the same time."),
+                         _("You are already running the \"%s\" script."));
+
+      g_message (message, sf_interface->short_title);
+      g_free (message);
+
+      return;
+    }
 
   g_return_if_fail (script != NULL);
 
@@ -189,23 +200,24 @@ tiny_fu_interface (SFScript *script)
   sf_interface->args_widgets = g_new0 (GtkWidget *, script->num_args);
 
   /* strip the first part of the menupath if it contains _("/Tiny-Fu/") */
-  tmp = strstr (gettext (script->menu_path), _("/Tiny-Fu/"));
+  tmp = strstr (script->menu_path, _("/Tiny-Fu/"));
   if (tmp)
-    title = g_strdup (tmp + strlen (_("/Tiny-Fu/")));
+    sf_interface->short_title = g_strdup (tmp + strlen (_("/Tiny-Fu/")));
   else
-    title = g_strdup (gettext (script->menu_path));
+    sf_interface->short_title = g_strdup (script->menu_path);
 
   /* strip mnemonics from the menupath */
-  tmp = gimp_strip_uline (title);
+  tmp = gimp_strip_uline (sf_interface->short_title);
+  g_free (sf_interface->short_title);
+  sf_interface->short_title = tmp;
 
-  g_free (title);
-  title = tmp;
-
-  tmp = strstr (title, "...");
+  tmp = strstr (sf_interface->short_title, "...");
   if (tmp)
     *tmp = '\0';
 
-  sf_interface->title = g_strdup_printf (_("Tiny-Fu: %s"), title);
+  sf_interface->title = g_strdup_printf (_("Tiny-Fu: %s"),
+                                         sf_interface->short_title);
+
   g_free (title);
 
   sf_interface->help_id = g_strdup (script->pdb_name);
@@ -273,8 +285,7 @@ tiny_fu_interface (SFScript *script)
 
       /*  we add a colon after the label;
           some languages want an extra space here  */
-      label_text =  g_strdup_printf (_("%s:"),
-                                     gettext (script->arg_labels[i]));
+      label_text =  g_strdup_printf (_("%s:"), script->arg_labels[i]);
 
       switch (script->arg_types[i])
         {
@@ -333,7 +344,7 @@ tiny_fu_interface (SFScript *script)
           g_free (label_text);
           label_text = NULL;
           widget =
-            gtk_check_button_new_with_mnemonic (gettext (script->arg_labels[i]));
+            gtk_check_button_new_with_mnemonic (script->arg_labels[i]);
           gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget),
                                        script->arg_values[i].sfa_toggle);
 
@@ -484,7 +495,7 @@ tiny_fu_interface (SFScript *script)
                list = g_slist_next (list))
             {
               gtk_combo_box_append_text (GTK_COMBO_BOX (widget),
-                                         gettext ((const gchar *) list->data));
+                                         (const gchar *) list->data);
             }
 
           gtk_combo_box_set_active (GTK_COMBO_BOX (widget),
@@ -559,6 +570,7 @@ tiny_fu_interface_quit (SFScript *script)
   g_return_if_fail (script != NULL);
   g_return_if_fail (sf_interface != NULL);
 
+  g_free (sf_interface->short_title);
   g_free (sf_interface->title);
   g_free (sf_interface->help_id);
 

@@ -1,7 +1,19 @@
+2004-11-03  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Don't call
+	gettext() on strings provided by scripts as they are already
+	translated by the Scheme interpreter.
+
+	Updates based on changes made by Michael Natterer to Script-Fu.
+
+	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): don't silently
+	return when there is already a script running but show a message
+	instead. Fixes bug #123882.
+
 2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c (init_constants): Re-added the deprecated
-	constants for backwards compatability with Script-Fu and 2.0
+	constants for backwards compatability with Script-Fu and the 2.0
 	version of GIMP. Use convert_string() to change name of constants
 	to Scheme format.
 
