@@ -1,4 +1,17 @@
-2004-10-28 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/carve-it.sct: Removed three lines no longer needed.
+
+	* scripts/contactsheet.sct: Use gimp-drawable-fill instead of
+	gimp-edit-fill.
+
+	* scripts/hsv-graph.sct: Backed out some changes made during first
+	attempts to get the script working. Fixed text for one toggle.
+	Reformatted the file.
+
+	* scripts/test-sphere.sct: Added note about use of SF_PALETTE
+
+2004-10-28  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Applied patch
 	from Sven Neumann which uses gimp_int_combo_box_connect() so
@@ -12,12 +25,12 @@
 
 	* tiny-fu/gimp-constants.h: really remove.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Oops...the array size limit checks
 	were around the wrong way.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Allow user to specify array size of zero.
 
@@ -32,34 +45,34 @@
 	built-in unit types. Change originally made by Michael Natterer
 	to Script-Fu.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Allow specified array size to be any value
 	from 1 up to the actual size of the array. Fixes bug #155359.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/tiny-fu.init: Changed gimp-data-dir to gimp-data-directory.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/test-sphere.sct: Added a palette selector to the dialog.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* NEWS: Updated with a summary of the 0.9.4 release.
 
-2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-25  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tinyscheme/scheme.c: Applied patch from Dimitrios Souflis which
 	fixes error when parsing two or more consecutive comment lines.
 
-2004-10-24 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-24  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* NEWS: Updated with a summary of information about all public
 	releases up to (and including) the 0.9.3 release.
 
-2004-10-24 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-24  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Applied changes made to the autogen.sh file of GIMP.
 
@@ -73,26 +86,26 @@
 	since it might interfere with differing autoconf versions.
 	(Manish Singh)
 
-2004-10-21 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-21  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu.c: Removed _() tag from two strings that should
 	not have been marked for translation.
 
-2004-10-20 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-20  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu.c: Just some minor formatting changes.
 
-2004-10-20 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-20  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu.c: Removed #ifdef's that should have been removed
 	when server mode was re-enabled for Windows. Fixed spelling error,
 	and two comments.
 
-2004-10-20 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-20  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/circuit.sct: Removed line left in by mistake.
 
-2004-10-16 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-16  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Reworded two error messages.
 
@@ -125,7 +138,7 @@
 	* scripts/circuit.scm: Fixed to allow use of script on original layer.
 	(bug #155358)  Fixed spelling error.
 
-2004-10-12 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-12  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -140,7 +153,7 @@
 	intltool (bug #137029) and the freefont package isn't that widely
 	used any longer anyway.
 
-2004-10-12 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-12  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* autogen.sh: removed reference to libtool in the "I am testing ..."
 	message since libtool isn't used.
@@ -150,15 +163,15 @@
 	* autogen.sh: sync'ed with gimp's autogen.sh. Also adds support
 	for the AUTOGEN_CONFIGURE_ARGS environment variable.
 
-2004-10-09 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-09  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* configure.in: Bumped version number to 0.9.5
 
-2004-10-09 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-09  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Released version 0.9.4 (first standalone tarball)
 
-2004-10-09 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-09  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/Makefile.am
 	* scripts/images/Makefile.am: DATADIR is now GIMP_DATADIR
@@ -166,7 +179,7 @@
 	* configure.in: Added check for GIMP >= 2.1. Added checks for some
 	needed libraries, and for some needed library routines.
 
-2004-10-09 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-09  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* re/Makefile.am: Added more files missing from the distribution.
 
@@ -177,7 +190,7 @@
 	* re/regexec.c: Changed <regex.h> to "regex.h" to emphasize local
 	header is being used rather than standard libc header file.
 
-2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-08  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Makefile.am: Forgot to commit this file at the same time
 	as the others.
@@ -191,31 +204,31 @@
 	list of files to include in a distribution. Fixed typo in filename
 	in the re/Makefile.am file.
 
-2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-08  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* AUTHORS: Added initial list of authors and contributors.
 
-2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-08  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu-console.c: Added #ifdef GIMP_PROC_BROWSER around
 	currently unused variable declaration.
 
-2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-08  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* configure.in: Removed two LIBTOOL lines that are not needed and
 	added missing AC_CANONICAL_HOST.
 
-2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-08  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* configure.in
 	* tiny-fu/Makefile.am: Re-instated ability to build under Windows.
 
-2004-10-08 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-08  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu-console.c: Removed "Browse" button using #ifdef
 	GIMP_PROC_BROWSER until the needed code is available via libgimpui.
 
-2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-07  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu.c: Untabified file.
 
@@ -224,7 +237,7 @@
 
 	* tiny-fu/ts-wrapper.c: Debugging features are now off by default.
 
-2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-07  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Michael Natterer.
 
@@ -240,17 +253,17 @@
 	cleanup and added the old procedure for backward compatibility.
 	Fixes bug #145147.
 
-2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-07  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/spyrogimp.sct: Update based on change made by Michael
 	Natterer to Script-Fu version due to change in GIMP API.
 
-2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-07  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* POTFILES.in: Removed dynload.c from list.
 	* po/*.po: Regenerated all .po files.
 
-2004-10-07 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-07  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu-console.c
 	* tiny-fu/tiny-fu-scripts.c
@@ -258,14 +271,14 @@
 	* tiny-fu/tiny-fu-text-console.c: Untabified and unmarked error
 	messages for translation.
 
-2004-10-05 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-05  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu change made by Sven Neumann.
 
 	* tiny-fu/scripts/addborder.sct: simple change to make the script work
 	on all image types, not only RGB.
 
-2004-10-05 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-05  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -287,7 +300,7 @@
 	* tiny-fu/script-fu-interface.c (script_fu_reset): fixed reset for
 	SF_TEXT values.
 
-2004-10-04 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-04  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Cleaned init_procedures() by using
 	g_strdup_printf(), g_strdup()/g_free() proc_name, plugged memory leak.
@@ -297,14 +310,14 @@
 	array is different from the previous argument specifying the size
 	as suggested by Michael Natterer. (Fixes bug #154266)
 
-2004-10-04 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-04  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
 	* tiny-fu/script-fu-interface.c: Added a horizontal size group for the
 	left-aligned controls.
 
-2004-10-06 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-06  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Sven Neumann autoconf'ed version 0.9.3 of Tiny-Fu yesterday. All files
 	were imported in to GNOME CVS today after a couple of minor changes.
@@ -313,19 +326,19 @@
 	to preserve when the changes were originally made since the 0.9.3
 	tarball was released.
 
-2004-10-02 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-02  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Released a new tarball as version 0.9.3
 
 	* plug-ins/tiny-fu/scripts/*.sct: Updated all scripts to conform to
 	the current PDB API.
 
-2004-10-01 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-01  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: increased size of
 	strbuff[] in scheme struct to handle scripts with lots of help info.
 
-2004-10-01 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-01  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Michael Natterer.
 
@@ -341,12 +354,12 @@
 	* plug-ins/tiny-fu/scripts/test-sphere.scm: shortened overly
 	long and useless help text.
 
-2004-10-01 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-10-01  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* gimp/plug-ins/tiny-fu/ts-wrapper.c: ts_interpret_string() now zeros
 	sc.linebuff to ensure it contains no previous error message.
 
-2004-09-29 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-29  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates as the result of changes made by Michael Natterer to DB Browser.
 
@@ -359,7 +372,7 @@
 	* plug-ins/tiny-fu/tiny-fu-console.c: Changed #includes accordingly.
 	Minor cleanup.
 
-2004-09-23 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-23  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -368,7 +381,7 @@
 	GtkTextView. Instead retrieve the final string when the dialog is
 	confirmed.
 
-2004-09-22 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-22  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* gimp/plug-ins/tiny-fu/tiny-fu-enum.h
 	* gimp/plug-ins/tiny-fu/tiny-fu-interface.c
@@ -376,7 +389,7 @@
 	* gimp/plug-ins/tiny-fu/ts-wrapper.c: Added support for multi-line
 	text in scripts using SF-TEXT argument type.
 
-2004-09-21 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-21  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* gimp/plug-ins/tiny-fu/ts-wrapper.c: Added gimp-*directory constants
 	and marked the gimp*-dir constants as deprecated.
@@ -384,7 +397,7 @@
 	* gimp/plug-ins/tiny-fu/server-test/*: Added directory and files
 	with information about using server mode plus some sample scripts.
 
-2004-09-21 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-21  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -401,7 +414,7 @@
 	* plug-ins/tiny-fu/siod-wrapper.c: Removed Win32 specific code
 	that isn't needed any longer.
 
-2004-09-19 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-19  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Released a new tarball as version 0.9.2
 
@@ -412,7 +425,7 @@
 
 	* plug-ins/tiny-fu/scripts/Makefile.am: Updated list of scripts.
 
-2004-09-18 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-18  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/mkbrush.sct
 	* plug-ins/tiny-fu/scripts/select-to-brush.sct
@@ -424,11 +437,11 @@
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Fixed 'rand' function.
 
-2004-09-15 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-15  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/burn-in-anim.sct: Fixed glow effect.
 
-2004-09-13 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-13  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* po-tiny-fu/ChangeLog
 	* po-tiny-fu/POTFILES.in: Updated list of files to check for strings
@@ -452,7 +465,7 @@
 	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: Moved definitions for
 	arrayvalue, arraylength, and arraytype to the header file.
 
-2004-09-11 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-11  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Fixed problem in the
 	cons-array function and added missing statement for float arrays.
@@ -466,7 +479,7 @@
 	that can be allocated. Prevents "No memory!" message when all sample
 	scripts are installed.
 
-2004-09-03 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-03  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Released a new tarball as version 0.9.1
 
@@ -479,7 +492,7 @@
 	over all args to determine the buffer's length and makes the
 	remaining code smaller and more readable.
 
-2004-09-02 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-09-02  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on some more Script-Fu changes made by Michael Natterer.
 
@@ -503,7 +516,7 @@
 	* plug-ins/tiny-fu/tiny-fu-interface.c: removed all progress
 	callbacks and simply use a GimpProgressBar.
 
-2004-08-31 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-31  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on more Script-Fu changes made by Michael Natterer.
 
@@ -516,7 +529,7 @@
 	* plug-ins/tiny-fu/Makefile.am
 	* plug-ins/tiny-fu/ts-wrapper.c: Updated due to the other changes.
 
-2004-08-30 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-30  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/ftx/ftx.c: Changed _ to - in names of
 	constants in file_type_constants structure.
@@ -527,13 +540,13 @@
 
 	* plug-ins/tiny-fu/gimp-constants.h: regenerated
 
-2004-08-30 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-30  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tiny-fu-scripts.c: Applied changes made by Michael
 	Natterer to Script-Fu which uses a new API to show the progress bar in
 	the script-fu dialog.  
 
-2004-08-12 Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-12  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Released a new tarball as version 0.9.0
 
@@ -543,12 +556,12 @@
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Garbage collector now frees
 	the strings pointed to in string array data cells.
 
-2004-08-11  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-11   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Updated the marshalling code to use
 	the new array type in TinyScheme for handling of PDB *ARRAY data.
 
-2004-08-10  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-10   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Updated define blocks
 	for cons-array, aset, and aref to use new array functions.
@@ -567,7 +580,7 @@
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Made define and set! honour
 	immutable setting of data cells. Eliminated compiler warnings.
 
-2004-08-07  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-07   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/ftx/ftx.c: UTF8'ed the file routines.
 
@@ -580,12 +593,12 @@
 	* plug-ins/tiny-fu/ts-wrapper.c: Added extra debugging output in
 	marshalling routine for data passed to GIMP.
 
-2004-08-06  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-06   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tiny-fu-console.c: Added buttons "Clear Output"
 	and "Save Output" to console dialog. (Save not added for GIMP 2.0)
 
-2004-08-04  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-04   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Change to force
 	argument for random to integer.
@@ -597,7 +610,7 @@
 	* plug-ins/tiny-fu/ts-wrapper.h
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Removed pipe in console mode.
 
-2004-08-02  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-02   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Updated the public tarball.
 
@@ -622,7 +635,7 @@
 	* plug-ins/tiny-fu/script-fu-compat.init: The extensions are linked in
 	and no longer need to be loaded.
 
-2004-08-01  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-08-01   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Changed definition for 'fmod'
 	to force arguments to integer.
@@ -630,7 +643,7 @@
 	* plug-ins/tiny-fu/Makefile.am: Changed the dependency order so that
 	$(REGEXREPL) is linked earlier. Per the change made to Script-Fu.
 
-2004-07-31  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-31   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Updated the public tarball.
 
@@ -642,14 +655,14 @@
 	* plug-ins/tiny-fu/script-fu-compat.init: Removed define for 'fread'
 	since 'read' is not a direct equivalent.
 
-2004-07-30  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-30   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Fourth public tarball released.
 
 	* plug-ins/tiny-fu/tinyscheme/ts-wrapper.c: Fixed init problem by
 	moving defines for DIR-SEPARATOR and 'load-extension'.
 
-2004-07-29  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-29   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/ts-wrapper.c: Constant DIR-SEPARATOR 
 	added to aid in portability when building file paths in scripts.
@@ -662,7 +675,7 @@
 	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Added flags to stop
 	versioning of the .so files. Mostly helps when building for Windows.
 
-2004-07-28  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-28   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Changed marshall_proc_db_call() to
 	return a list containing either TRUE or FALSE for PDB calls which
@@ -677,7 +690,7 @@
 	to the test script based on change to Script-Fu version made by Michael
 	Natterer.
 
-2004-07-27  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-27   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tiny-fu-scripts.c: In tiny_fu_free_scripts(),
 	script->arg_types was being freed too soon. (Inherited from Script-Fu)
@@ -687,12 +700,12 @@
 
 	* plug-ins/tiny-fu/scripts/contactsheet.sct: Added first version.
 
-2004-07-25  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-25   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/script-fu-compat.init: Fixed definition for
 	cons-array.
 
-2004-07-22  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-22   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Third public tarball released.
 
@@ -704,7 +717,7 @@
 	routines. Added 'dir-rewind' and 'file-type'. Modified to use routines
 	from glib to aid in portability.
 
-2004-07-20  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-20   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/tsx/tsx.c: Added #if to prevent include
 	of socket related header files when socket routines will not be used.
@@ -714,11 +727,11 @@
 	* plug-ins/tiny-fu/tinyscheme/re/*: Hooked re extension in to a build
 	and install of the Tiny-Fu plugin.
 
-2004-07-16  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-16   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Added support for PARASITES.
 
-2004-07-14  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-14   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Second public tarball released.
 
@@ -734,19 +747,19 @@
 	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Hooked tsx extension
 	in to a build and install of the Tiny-Fu plugin.
 
-2004-07-13  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-13   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Added FFI hook for "load-extension".
 
 	* plug-ins/tiny-fu/script-fu-compat.init: Load tsx extension and
 	added compatibility define for SIOD 'realtime' function.
 
-2004-07-12  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-12   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/script-fu-compat.init: Added random number
 	generator routines.
 
-2004-07-10  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-10   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c
 	* plug-ins/tiny-fu/scripts/Makefile.am
@@ -754,17 +767,17 @@
 	* plug-ins/tiny-fu/script-fu-compat.init: Added some backwards
 	compatibility routines for scripts written for the SIOD interpreter.
 
-2004-07-09  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-09   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/tiny-fu.init
 	* plug-ins/tiny-fu/scripts/tinyscheme/init.scm: Fixed define of lcm.
 
-2004-07-08  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-08   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Modified to use vectors for all
 	PDB *ARRAY types.
 
-2004-07-05  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-05   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* First public release of a tarball for Tiny-Fu
 
@@ -773,18 +786,18 @@
 	* plug-ins/tiny-fu/scripts/test-sphere.scm: Fixed typos originally
 	discovered by Roman Joost in Script-Fu.
 
-2004-07-01  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-07-01   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* gimp/tools/pdbgen/enumcode.pl: Modified to generate the
 	gimp-constants.h file needed by Tiny-Fu.
 
-2004-06-28  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-06-28   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Partial improvement in
 	display of error messages when parsing/running scripts.
 
-2004-06-27  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-06-27   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/tinyscheme/BUILDING
 	* plug-ins/tiny-fu/tinyscheme/CHANGES
@@ -797,12 +810,12 @@
 	* plug-ins/tiny-fu/scripts/tiny-fu.init: Updated to version 1.35
 	of TinyScheme.
 
-2004-06-26  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-06-26   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/*: Updated with a fresh copy of the
 	Script-Fu scripts recently HIG-ified by Bill Skaggs.
 
-2004-06-24  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-06-24   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/gimp-constants.c: Updated to match recent
 	changes in Script-Fu constants.
@@ -812,12 +825,12 @@
 	* plug-ins/tiny-fu/tiny-fu-server.c: HIG-ified based on changes
 	made by Sven Neumann to the similar files in Script-Fu.
 
-2004-04-08  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-04-08   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Fixed PDB marshaller to handle
 	NULL strings.
 
-2004-04-06  Kevin Cozens <kcozens@cvs.gimp.org>
+2004-04-06   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/script-fu/scripts/ts-helloworld.sct: First successful run
 	of a script using TinyScheme as the Scheme interpreter.

@@ -171,9 +171,6 @@
     (gimp-drawable-set-name cast-shadow-layer "Cast Shadow")
     (gimp-drawable-set-name inset-layer "Inset")
 
-    (gimp-context-set-foreground old-fg)
-    (gimp-context-set-background old-bg)
-    (gimp-context-set-brush old-brush)
     (gimp-image-undo-enable img)
     (gimp-context-pop)
     (gimp-display-new img)
