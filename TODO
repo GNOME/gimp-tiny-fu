@@ -1,38 +1,41 @@
 Bugs:
 - The scripts-update.pl script isn't converting gimp-blend to gimp-edit-blend
-  when the statement is split over two lines.
-- Windows related problems (from schumaml)
-  o no script-fu server
-  DONE??
+  when the statement is split over two lines. It needs to read in the whole
+  script at time before doing the search/replace operations.
+- circuit.scm doesn't work right when separate layer is turned off. The white
+  lines are drawn with a black background which obscures the original layer.
+  Create circuit paths on separate layer, remove the background, then merge
+  the original layer with the one containing the pathways.
 
-Script bugs:
-- Image/Alchemy/Predator seg faults when "Separate layer" box is not ticked.
-  Results in call ("plug_in_max_rgb" 1 1 -1 0) and error seg fault
-  #4  main_function (drawable=0x0, preview_mode=0) at max_rgb.c:222
-  #5  0x08049c44 in run (name=0x96e6100 "plug_in_max_rgb", nparams=4,
-  #6  0x00fea8f5 in gimp_proc_run (proc_run=0x96e60c0) at gimp.c:1712
-  #7  0x00fea704 in gimp_loop () at gimp.c:1557
-  #8  0x00fe973e in gimp_main (info=0xbfff49a5, argc=6, argv=0xbffd5ef4)
-  #9  0x08049b52 in main (argc=6, argv=0xbffd5ef4) at max_rgb.c:90
-Dies at the call to (pixelize 1 img -1 3)
-- Image/Render/Circuit seg faults when "Separate layer" box is not ticked.
-  plug-in-maze is the problem.
+Compatability errors with Script-Fu:
+- Image/Utils/Set Selection gives error while executing
+  Not part of standard Script-Fu collection of scripts.
 
 
 ToDo:
-- Announce availability of Tiny-Fu via CVS
-- Update web page to mention Tiny-Fu is available via CVS and how to get it.
-- E-mail GIMP devel list to ask plug-in authors to improve error checking.
+- Figure out a way to separate out the menu path for a script from the
+  menu item description. ie. something more like is done in plug-ins.
+- Send e-mail about Tiny-Fu, its status, and how it compares to Script-Fu.
+- Add information on use of SF-PALETTE and SF-SPINNER to test-sphere.sct
+  and make sure all other SF-* types are documented at the top of the file.
 - Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
-- Add check to make sure number of args in call matches number of args
-  specified when script was registered.
-  I added an item to the register list in test-sphere but not to the define
-  statement and it didn't catch the discrepancy.
-- Add a script under the Utils menu that turns off tracing and restores undo.
+  DONE??
+- Allow the use of cons-array data types (except for string array) to be
+  passed in the data portion of a parasite?
+- Add the script to update scripts from GIMP 2.0 to 2.2 to CVS.
 - Add UTF-8 support to TinyScheme
   <mitch> a safe place to start is probably to simply g_utf8_validate() the
   whole script upon loading. after that, all strings you get from gtk widgets
   are utf-8 already
+- Document the arguments used by the Image/Render/Grid script.
+- Make Script-Fu warn when variables are used but weren't already defined.
+  Let the errors spew to stderr?
+- Add tests in set-cmap script to ensure <= 256 colours in the named palette.
+  neo: you can't call image_set_cmap with more than 256 colors
+- Add check to make sure number of args in call matches number of args
+  specified when script was registered.
+  I added an item to the register list in test-sphere but not to the define
+  statement and it didn't catch the discrepancy.
 - Re-enable Browse button in Console mode.
   To enable the Browse buttin in Tiny-Fu means I need to link in the
   libgimpprocbrowser.a file but it has strings in it which mean I need access
@@ -72,6 +75,8 @@ ToDo:
 
 - The SIOD fread routine can not simply be redefined to use read.
   Mostly done.
+- Add a script under the Utils menu that turns off tracing and restores undo.
+  Done.
 - Scripts should live in their own namespace. This will avoid problems which
   might arise between scripts with the same name for a function but which have
   perform different tasks. See Simon Budig's rewrite of the alien-glow-arrow
