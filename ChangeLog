@@ -1,5 +1,9 @@
 2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* NEWS: Updated with a summary of the 0.9.5 release.
+
+2004-10-29  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* scripts/carve-it.sct: Removed three lines no longer needed.
 
 	* scripts/contactsheet.sct: Use gimp-drawable-fill instead of
@@ -135,20 +139,20 @@
 
 2004-10-14  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* scripts/circuit.scm: Fixed to allow use of script on original layer.
+	* scripts/circuit.sct: Fixed to allow use of script on original layer.
 	(bug #155358)  Fixed spelling error.
 
 2004-10-12  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
-	* scripts/selection-round.scm: moved out of the "Modify" placeholder.
+	* scripts/selection-round.sct: moved out of the "Modify" placeholder.
 	Using placeholders from Script-Fu breaks i18n.
 
-	* scripts/alien-glow-button.scm
-	* scripts/alien-glow-logo.scm
-	* scripts/basic2-logo.scm
-	* scripts/gradient-bevel-logo.scm: use "Sans Bold" instead of
+	* scripts/alien-glow-button.sct
+	* scripts/alien-glow-logo.sct
+	* scripts/basic2-logo.sct
+	* scripts/gradient-bevel-logo.sct: use "Sans Bold" instead of
 	"Futura_Poster". The underscore in the font name used to confuse
 	intltool (bug #137029) and the freefont package isn't that widely
 	used any longer anyway.
@@ -241,14 +245,14 @@
 
 	Updates based on Script-Fu changes made by Michael Natterer.
 
-	* scripts/selection-round.scm: use a scale_entry instead of a
+	* scripts/selection-round.sct: use a scale_entry instead of a
 	spinbutton, changed mnemonic from "R" to "E", indentation.
 
-	* scripts/test-sphere.scm: s/SF_BRUSH/SF-BRUSH/ in a comment.
+	* scripts/test-sphere.sct: s/SF_BRUSH/SF-BRUSH/ in a comment.
 
 	Update based on Script-Fu change made by Sven Neumann.
 
-	* scripts/selection-round.scm: applied patch by Alan Horkan that
+	* scripts/selection-round.sct: applied patch by Alan Horkan that
 	improves usability and usefulness of this script. Did some code
 	cleanup and added the old procedure for backward compatibility.
 	Fixes bug #145147.
@@ -351,7 +355,7 @@
 	menu_path as "blurb" to gimp_install_temp_proc(). Instead,
 	pass "help" as "blurb" and nothing as "help".
 
-	* plug-ins/tiny-fu/scripts/test-sphere.scm: shortened overly
+	* plug-ins/tiny-fu/scripts/test-sphere.sct: shortened overly
 	long and useless help text.
 
 2004-10-01  Kevin Cozens  <kcozens@cvs.gimp.org>
@@ -735,7 +739,7 @@
 
 	* Second public tarball released.
 
-	* plug-ins/script-fu/scripts/round-corners.scm: Changed from using
+	* plug-ins/script-fu/scripts/round-corners.sct: Changed from using
 	undo disable/enable to using an undo group if the script doesn't
 	work on a copy. Based on change from Dave Neary originally made to
 	Script-Fu version.
@@ -770,7 +774,7 @@
 2004-07-09   Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* plug-ins/tiny-fu/scripts/tiny-fu.init
-	* plug-ins/tiny-fu/scripts/tinyscheme/init.scm: Fixed define of lcm.
+	* plug-ins/tiny-fu/scripts/tinyscheme/init.sct: Fixed define of lcm.
 
 2004-07-08   Kevin Cozens  <kcozens@cvs.gimp.org>
 
@@ -781,9 +785,9 @@
 
 	* First public release of a tarball for Tiny-Fu
 
-	* plug-ins/tiny-fu/scripts/blend-anim.scm
-	* plug-ins/tiny-fu/scripts/glossy.scm
-	* plug-ins/tiny-fu/scripts/test-sphere.scm: Fixed typos originally
+	* plug-ins/tiny-fu/scripts/blend-anim.sct
+	* plug-ins/tiny-fu/scripts/glossy.sct
+	* plug-ins/tiny-fu/scripts/test-sphere.sct: Fixed typos originally
 	discovered by Roman Joost in Script-Fu.
 
 2004-07-01   Kevin Cozens  <kcozens@cvs.gimp.org>
@@ -803,7 +807,7 @@
 	* plug-ins/tiny-fu/tinyscheme/CHANGES
 	* plug-ins/tiny-fu/tinyscheme/Manual.txt
 	* plug-ins/tiny-fu/tinyscheme/dynload.c
-	* plug-ins/tiny-fu/tinyscheme/init.scm
+	* plug-ins/tiny-fu/tinyscheme/init.sct
 	* plug-ins/tiny-fu/tinyscheme/scheme.c
 	* plug-ins/tiny-fu/tinyscheme/scheme.h
 	* plug-ins/tiny-fu/tinyscheme/scheme-private.h

@@ -8,6 +8,56 @@ Tiny-Fu 1.0, will emerge out of this.
 
 
 
+Overview of Changes in Tiny-Fu 0.9.5
+====================================
+
+- Constants and unit types are now registered dynamically during startup
+  by querying GIMP.
+
+- Some minor bug fixes
+
+    * Applied patch from Sven Neumann so that the initial selection for
+    image, drawable, layer, and channel in dialog causes the "changed"
+	callback for to be run. Fixes bug #156659.
+
+    * Added check on passed array size to make certain it is between 0
+    and the actual size of the passed array. Fixes bug #155359.
+
+    * Fixed error when parsing two or more consecutive comment lines.
+
+- Minor changes/fixes to the build process
+
+    * GIMP 2.2 is now required
+
+	* Some minor changes and fixes to the autogen.sh file.
+
+- Updates to the script and init files
+
+    * Fixed circuit.sct to allow use on original layer. Fixes bug #155358.
+
+    * Moved selection-round script to the Select menu.
+
+    * Added remaining Script-Fu scripts grid-system.sct, hsv-graph.sct,
+	and image-structure.sct.
+
+    * Added new scripts from Alan Horkan which manipulate guides.
+
+    * Added 'pow' to list of Script-Fu compatability functions.
+
+    * Additional minor changes and bug fixes to some scripts.
+
+- Some other minor changes including fixing spelling errors, reformatting
+  of some files. See the ChangeLog for details.
+
+
+Contributors:
+
+   Kevin Cozens, Michael Natterer, and Dimitrios Souflis. Also used
+   contributions originally made to parts of GIMP by Alan Horkan, Michael
+   Natterer, Manish Singh, and Sven Neumann. 
+
+
+
 Overview of Changes in Tiny-Fu 0.9.4
 ====================================
 
@@ -51,7 +101,7 @@ Overview of Changes in Tiny-Fu 0.9.3
 - Enabled build of the server for the Win32 platform using the winsock API.
 
     * Updated all scripts to conform to the current PDB API.
-    * Shortened overly long and useless help text in test sphere.scm file.
+    * Shortened overly long and useless help text in test sphere.sct file.
 
 - Some minor changes related to building under Windows.
 
@@ -254,7 +304,7 @@ Overview of Changes in July 14, 2004 Tiny-Fu
 
 - Vectors are now used for all PDB *ARRAY types.
 
-- Fixed an undo related problem in the round-corners.scm file
+- Fixed an undo related problem in the round-corners.sct file
 
 
 Contributors:
