@@ -1,3 +1,22 @@
+2004-11-21  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/erase-rows.sct: Applied patch from BM which makes the
+	script work layers that have their top-left corner at a position
+	other than the top-left corner of the image. Fixes bug #158863.
+
+2004-11-19  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/tiny-fu-scripts.c (tiny_fu_menu_compare): Compare the
+	passed menu paths and not the pointers themselves. From a fix in
+	Script-Fu by Sven Neumann.
+
+	* scripts/selection-round.sct: Removed all ^M characters. Detabified
+	file. Moved into the <Image>/Select/Modify based on the change made
+	by Sven Neumann to the Script-Fu version of the script.
+
+	* scripts/*.sct: Ported all scripts to use script-fu-menu-register
+	and pass just the menu label in script-fu-register.
+
 2004-11-18  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu.c
@@ -7,7 +26,7 @@
 	way as plug-ins. Fixes bug #158117. Renamed tiny_fu_find_scripts() to
 	tiny_fu_load_all_scripts(). Added calls to gettext() since TinyScheme
 	no longer translates marked strings. In tiny_fu_script_proc() changed
-	some uses of params variable that should have been param.
+	some uses of 'params' variable that should have been 'param'.
 
 	* tiny-fu/tiny-fu-interface.c: Added a utility function to reduce
 	code duplication.
