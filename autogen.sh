@@ -1,8 +1,9 @@
 #!/bin/sh 
 
 # This script does all the magic calls to automake/autoconf and
-# friends that are needed to configure a cvs checkout.  You need a
-# couple of extra tools to run this script successfully.
+# friends that are needed to configure a cvs checkout.  As described in
+# the file HACKING you need a couple of extra tools to run this script
+# successfully.
 #
 # If you are compiling from a released tarball you don't need these
 # tools and you shouldn't use this script.  Just call ./configure
@@ -37,7 +38,8 @@ check_version ()
 
 echo
 echo "I am testing that you have the required versions of autoconf," 
-echo "automake, glib-gettextize and intltoolize..."
+echo "automake, glib-gettextize and intltoolize. This test is not foolproof,"
+echo "so if anything goes wrong, see the file HACKING for more information..."
 echo
 
 DIE=0
@@ -66,6 +68,9 @@ elif (automake-1.8 --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=automake-1.8
    ACLOCAL=aclocal-1.8
    AUTOMAKE_REQUIRED_VERSION=1.8.3
+elif (automake-1.9 --version) < /dev/null > /dev/null 2>&1; then
+   AUTOMAKE=automake-1.9
+   ACLOCAL=aclocal-1.9
 elif (automake-1.6 --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=automake-1.6
    ACLOCAL=aclocal-1.6
@@ -114,6 +119,35 @@ else
     DIE=1
 fi
 
+# Special test for problematic versions of intltool.  Details at:
+#   http://bugzilla.gnome.org/show_bug.cgi?id=137502
+# Print a warning message, but do not exit.
+INTLTOOL_BUG_MIN_VERSION=0.28
+INTLTOOL_BUG_MAX_VERSION=0.31
+echo -n "checking for intltool < $INTLTOOL_BUG_MIN_VERSION or > $INTLTOOL_BUG_MAX_VERSION ... "
+if (intltoolize --version) < /dev/null > /dev/null 2>&1; then
+    VER=`intltoolize --version \
+         | grep intltoolize | sed "s/.* \([0-9.]*\)/\1/"`
+    if expr $VER \>= $INTLTOOL_BUG_MIN_VERSION > /dev/null; then
+        if expr $VER \<= $INTLTOOL_BUG_MAX_VERSION > /dev/null; then
+            echo "no"
+            echo
+            echo "  Versions of intltool between 0.28 and 0.31 are known to"
+            echo "  generate incorrect XML output.  Please consider using an"
+            echo "  earlier version of intltool in order to avoid these"
+            echo "  problems until a newer version of intltool is released."
+	    echo
+	    echo "  This problem is harmless, you may continue the build." 
+	    echo
+        else
+            echo "yes"
+        fi
+    else
+        echo "yes"
+    fi
+else
+    echo "not found"
+fi
 
 if test "$DIE" -eq 1; then
     echo
@@ -131,23 +165,17 @@ test $TEST_TYPE $FILE || {
 }
 
 
+echo
+echo "I am going to run ./configure with the following arguments:"
+echo
+echo "  --enable-maintainer-mode $AUTOGEN_CONFIGURE_ARGS $@"
+echo
+
 if test -z "$*"; then
-    if test -z "$AUTOGEN_CONFIGURE_ARGS"; then
-	echo
-	echo "I am going to run ./configure with no arguments - if you wish "
-	echo "to pass any to it, please specify them on the $0 command line "
-	echo "or set the AUTOGEN_CONFIGURE_ARGS environment variable."
-	echo
-    else
-	echo
-	echo "I am going to run ./configure with the following arguments:"
-	echo
-	echo "  $AUTOGEN_CONFIGURE_ARGS"
-	echo
-	echo "If you wish to pass additional arguments, please specify them "
-	echo "on the $0 command line."
-	echo
-    fi
+    echo "If you wish to pass additional arguments, please specify them "
+    echo "on the $0 command line or set the AUTOGEN_CONFIGURE_ARGS "
+    echo "environment variable."
+    echo
 fi
 
 
@@ -171,6 +199,7 @@ if test -z "$ACLOCAL_FLAGS"; then
     done
 fi
 
+rm -rf autom4te.cache
 
 $ACLOCAL $ACLOCAL_FLAGS
 RC=$?
@@ -185,8 +214,8 @@ fi
 $AUTOMAKE --add-missing || exit $?
 autoconf || exit $?
 
-glib-gettextize --copy --force || exit $?
-intltoolize --copy --force --automake || exit $?
+glib-gettextize --force || exit $?
+intltoolize --force --automake || exit $?
 
 
 cd $ORIGDIR

@@ -1,3 +1,17 @@
+2004-10-24 Kevin Cozens <kcozens@cvs.gimp.org>
+
+	Applied changes made to the autogen.sh file of GIMP.
+
+	* autogen.sh: don't tell nonsense by printing "I am going to run
+	./configure with no arguments", because we always pass at least
+	--enable-maintainer-mode. Instead, simply always print all
+	arguments. Also removed --copy from the calls to glib-gettextize
+	and intltoolize. (Michael Natterer)
+
+	* autogen.sh: Add support for automake 1.9. Also rm autom4te.cache,
+	since it might interfere with differing autoconf versions.
+	(Manish Singh)
+
 2004-10-21 Kevin Cozens <kcozens@cvs.gimp.org>
 
 	* tiny-fu/tiny-fu.c: Removed _() tag from two strings that should
