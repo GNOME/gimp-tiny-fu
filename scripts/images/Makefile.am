@@ -3,10 +3,10 @@
 imagesdatadir = $(DATADIR)/scripts/images
 
 imagesdata_DATA = \
-    beavis.jpg    \
-    texture1.jpg  \
-    texture2.jpg  \
-    texture3.jpg  \
+    beavis.jpg   \
+    texture1.jpg \
+    texture2.jpg \
+    texture3.jpg \
     texture.jpg
 
 EXTRA_DIST = $(imagesdata_DATA)
