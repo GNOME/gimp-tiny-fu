@@ -158,7 +158,9 @@
         (light-end-x (+ cx (* radius (cos (+ *pi* radians)))))
         (light-end-y (- cy (* radius (sin (+ *pi* radians)))))
         (offset (* radius 0.1))
-        (text-extents (gimp-text-get-extents-fontname text size PIXELS font))
+        (text-extents (gimp-text-get-extents-fontname multi-text
+                                                      size PIXELS
+                                                      font))
         (x-position (- cx (/ (car text-extents) 2)))
         (y-position (- cy (/ (cadr text-extents) 2)))
         (shadow-w)
@@ -214,7 +216,7 @@
     (gimp-context-set-foreground '(0 0 0))
     (gimp-floating-sel-anchor (car (gimp-text-fontname img drawable
                                                        x-position y-position
-                                                       text
+                                                       multi-text
                                                        0 TRUE
                                                        size PIXELS
                                                        font)))
@@ -239,7 +241,7 @@
     SF-COLOR      "Sphere color"       '(255 0 0)
     SF-BRUSH      "Brush"              '("Circle (03)" 1.0 44 0)
     SF-STRING     "Text"               "Tiny-Fu rocks!"
-    SF-TEXT       "Multi-line text"    "One\nLine 2\nThird line"
+    SF-TEXT       "Multi-line text"    "Hello,\nWorld!"
     SF-PATTERN    "Pattern"            "Maple Leaves"
     SF-GRADIENT   "Gradient"           "Deep Sea"
     SF-TOGGLE     "Gradient reverse"   FALSE

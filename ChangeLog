@@ -1,3 +1,13 @@
+2005-03-14  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/script-fu-compat.init: Added substring-equal? function.
+	Re-ordered contents of file. Updated some comments.
+
+	* scripts/test-sphere.sct: Updated to use multi-line text for
+	the text displayed in the generated image.
+
+	* debug-tiny-fu.txt: Added an option passed to valgrind.
+
 2005-03-13  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Minor changes to ts_output_string() which
@@ -38,14 +48,14 @@
 
 2005-02-23  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* tiny-fu/siod-wrapper.c: Reverted previous change. Can't add an API
+	* tiny-fu/ts-wrapper.c: Reverted previous change. Can't add an API
 	change until after branching the code for the 2.3 version of GIMP.
 
 2005-02-16  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* tiny-fu/siod-wrapper.c: Added constants MIN-IMAGE-SIZE,
-	MAX-IMAGE-SIZE, MIN-RESOLUTION, and MAX-RESOLUTION for use in Script-Fu
-	scripts. See comment #4 in bug #167529.
+	* tiny-fu/ts-wrapper.c: Added constants MIN-IMAGE-SIZE, MAX-IMAGE-SIZE,
+	MIN-RESOLUTION, and MAX-RESOLUTION for use in Script-Fu scripts. See
+	comment #4 in bug #167529.
 
 2005-02-01  Kevin Cozens  <kcozens@cvs.gimp.org>
 
@@ -739,7 +749,7 @@
 
 	* plug-ins/tiny-fu/tiny-fu-console.c
 	* plug-ins/tiny-fu/tiny-fu.c
-	* plug-ins/tiny-fu/siod-wrapper.c: Removed Win32 specific code
+	* plug-ins/tiny-fu/ts-wrapper.c: Removed Win32 specific code
 	that isn't needed any longer.
 
 2004-09-19  Kevin Cozens  <kcozens@cvs.gimp.org>
