@@ -1,6 +1,11 @@
+2005-02-23  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/siod-wrapper.c: Reverted previous change. Can't add an API
+	change until after branching the code for the 2.3 version of GIMP.
+
 2005-02-16  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* plug-ins/script-fu/siod-wrapper.c: Added constants MIN-IMAGE-SIZE,
+	* tiny-fu/siod-wrapper.c: Added constants MIN-IMAGE-SIZE,
 	MAX-IMAGE-SIZE, MIN-RESOLUTION, and MAX-RESOLUTION for use in Script-Fu
 	scripts. See comment #4 in bug #167529.
 
