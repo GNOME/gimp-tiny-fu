@@ -7,7 +7,140 @@ will emerge out of this.
 
 
 
-Overview of Changes in July 30, 2004 Tiny-Fu
+Overview of Changes in Tiny-Fu 0.9.3
+====================================
+
+- Fixed bug which left parts of old error messages when generating new ones.
+
+- Removed the 'Browse' button from console mode temporarily.
+
+- Added support for multi-line text in scripts using SF-TEXT argument type.
+
+- Added constants gimp-*directory. Marked the gimp*-dir ones as deprecated.
+
+- Enabled build of the server for the Win32 platform using the winsock API.
+
+    * Updated all scripts to conform to the current PDB API.
+    * Shortened overly long and useless help text in test sphere.scm file.
+
+- Some minor changes related to building under Windows.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Michael Natterer, and Sven Neumann.
+
+
+
+Overview of Changes in Tiny-Fu 0.9.2
+====================================
+
+- Updated the en_CA and en_GB translation files.
+
+- Regenerated the files which provide translations of strings.
+
+- All working scripts are now included during installation of the plug-in.
+
+- Doubled the memory used by TinyScheme to store scripts and script data.
+
+- Added 'gimp-dir' constant for use in scripts.
+
+- Updates to the script and init files
+
+    * Updated scripts to use the new gimp-dir constant.
+    * Fixed the glow effect in the Burn In script.
+    * Fixed 'rand' compatability define.
+    * Fixed problems in the cons-array define.
+
+
+Contributors:
+
+   Kevin Cozens.
+
+
+
+Overview of Changes in Tiny-Fu 0.9.1
+====================================
+
+- Lots of cleanup and restructuring of the main Tiny-Fu code.
+
+- The Tiny-Fu dialog swallows the progress bars created by running a script.
+
+- Changed _ to - in names of constants used in ftx extension.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Michael Natterer.
+
+
+
+Overview of Changes in Tiny-Fu 0.9.0
+====================================
+
+- First numbered release.
+
+- Garbage collector now frees strings pointed to in string array data cells.
+
+- Added support for arrays in TinyScheme to properly handled GIMP *ARRAY
+  types.
+
+- Adds functions make-array, array?, array-length, array-type, array-ref,
+  array-set!, for use in scripts.
+
+- Made constants and procedures defined during initialization immutable.
+
+- Made define and set! honour immutable setting of data cells.
+
+- UTF8'ed the file routines in the tsx extension.
+
+- Minor changes in handling of string arrays.
+
+- Fixed handling of parasite data.
+
+- Changes and enhancements to console mode.
+
+   * Added buttons "Clear Output" and "Save Output".
+   * Output of more than 4096 characters no longer hangs console mode.
+
+- Updates to the script and init files
+
+    * Change to force argument for random to integer.
+    * Updated define blocks for cons-array, aset, and aref to use new
+      array functions.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Michael Natterer, and Sven Neumann.
+
+
+
+Overview of Changes in August 2, 2004 Tiny-Fu
+===========================================
+
+- Fifth public tarball released.
+
+- The extensions are now linked in to the executable rather than being
+  loaded at run-time.
+
+- Renamed the tsx extension to ftx.
+
+- Changed definition for 'fmod' to force arguments to integer.
+
+- Changed the dependency order so that $(REGEXREPL) is linked earlier.
+
+
+Contributors:
+
+   Kevin Cozens.
+
+
+
+Overview of Changes in July 31, 2004 Tiny-Fu
 ===========================================
 
 - Fourth public tarball released.
@@ -58,9 +191,10 @@ Overview of Changes in July 22, 2004 Tiny-Fu
     * Added 'dir-rewind' and 'file-type'.
     * Modified to use routines from glib to aid in portability.
 
-- Hooked tsx extension in to a build and install.
+- Added the tsx extension containing time, date, and file I/O routines
+  for use in scripts.
 
-- Added support for PARASITES.
+- Added support for parasites.
 
 
 Contributors:
@@ -80,7 +214,7 @@ Overview of Changes in July 14, 2004 Tiny-Fu
 
 - Added FFI hook for "load-extension".
 
-- Changes to files used during initialization of TinyScheme
+- Updated files used during initialization of TinyScheme
 
     * Load tsx extension on startup.
     * Added compatibility define for SIOD 'realtime' function.
@@ -112,8 +246,6 @@ Overview of Changes in July 5, 2004 Tiny-Fu
 - Applied HIG capitalization style to dialogs.
 
 - Updated to version 1.35 of the TinyScheme interpreter.
-
-- Updates to use latest GIMP constants.
 
 - Updates to the script files
 
