@@ -70,20 +70,20 @@ enum TF_RESPONSES {
  */
 static void       tiny_fu_console_interface  (void);
 static void       tiny_fu_response           (GtkWidget    *widget,
-                                                gint          response_id,
-                                                gpointer      data);
+                                              gint          response_id,
+                                              gpointer      data);
 static void       tiny_fu_save_dialog        (GtkWidget    *parent);
 static void       tiny_fu_save_output        (GtkWidget    *dialog,
-                                                gint        response_id,
-                                                gpointer    data);
+                                              gint        response_id,
+                                              gpointer    data);
 #ifdef GIMP_PROC_BROWSER
 static void       tiny_fu_browse_callback    (GtkWidget    *widget,
-                                                gpointer      data);
+                                              gpointer      data);
 #endif
 static gboolean   tiny_fu_cc_is_empty        (void);
 static gboolean   tiny_fu_cc_key_function    (GtkWidget    *widget,
-                                                GdkEventKey  *event,
-                                                gpointer      data);
+                                              GdkEventKey  *event,
+                                              gpointer      data);
 
 static void       tiny_fu_open_ts_console  (void);
 static void       tiny_fu_close_ts_console (void);
@@ -630,10 +630,10 @@ tiny_fu_close_ts_console (void)
 
 void
 tiny_fu_eval_run (const gchar      *name,
-                    gint              nparams,
-                    const GimpParam  *params,
-                    gint             *nreturn_vals,
-                    GimpParam       **return_vals)
+                  gint              nparams,
+                  const GimpParam  *params,
+                  gint             *nreturn_vals,
+                  GimpParam       **return_vals)
 {
   static GimpParam  values[1];
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;
