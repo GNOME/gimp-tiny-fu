@@ -36,7 +36,7 @@ check_version ()
 }
 
 echo
-echo "I am testing that you have the required versions of libtool, autoconf," 
+echo "I am testing that you have the required versions of autoconf," 
 echo "automake, glib-gettextize and intltoolize..."
 echo
 
