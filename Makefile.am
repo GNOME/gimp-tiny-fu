@@ -13,6 +13,7 @@ EXTRA_DIST = \
     ChangeLog           \
     COPYING             \
     MAINTAINERS         \
+    NEWS                \
     TODO                \
     autogen.sh          \
     debug-tiny-fu.txt   \
