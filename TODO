@@ -14,16 +14,24 @@ Compatability errors with Script-Fu:
   is no matching compatability define in Tiny-Fu.
 
 
+ToDo (for CVS GIMP after branching Tiny-Fu):
+- Add SF-ENUM parameter type
+- Put the gimp-text-wrapper.sct stuff in one of the .init routines??
+  Or should the routines be deleted?
+- Re-enable Browse button in Console mode.
+  To enable the Browse buttin in Tiny-Fu means I need to link in the
+  libgimpprocbrowser.a file but it has strings in it which mean I need access
+  to two of the source files so any strings marked for translation will be
+  included in the tiny-fu .po files.
+- Change Tiny-Fu from an extension to a regular plug-in.
+
+
 ToDo:
-- Add support for PDB-REGION (x/y/width/height), PDB-BOUNDARY (gint32),
-  and PDB-PATH (gint32)
 - Change Tiny-Fu to allow batch mode to work.
   See http://pippin.gimp.org/plug-ins/gluas/examples/lua2png.sh.html
   The problem is the '-' after --batch is being passed to 'load_string()'.
   If command is "-" call load_file with stdin instead of load_string()?
   Bug #167964
-- Eliminate tiny_fu_plug_in_eval?
-- Add SF-ENUM paramater type
 - Finish updating the list of tests for plug-ins in pdb-test.sct
 - Do the re and ftx extensions need to be updated for UTF-8?
 - configure should test for existance of strcasecmp and if it exists use it
@@ -40,11 +48,6 @@ ToDo:
 - Allow the use of cons-array data types (except for string array) to be
   passed in the data portion of a parasite?
 - Add the script to update scripts from GIMP 2.0 to 2.2 to CVS?
-- Add UTF-8 support to TinyScheme
-  <mitch> a safe place to start is probably to simply g_utf8_validate() the
-  whole script upon loading. After that, all strings you get from gtk widgets
-  are utf-8 already
-  MOSTLY DONE.
 - Document the arguments used by the Image/Render/Grid script.
 - Add tests in set-cmap script to ensure <= 256 colours in the named palette.
   neo: you can't call image_set_cmap with more than 256 colors
@@ -52,12 +55,6 @@ ToDo:
   specified when script was registered.
   I added an item to the register list in test-sphere but not to the define
   statement and it didn't catch the discrepancy.
-- Re-enable Browse button in Console mode.
-  To enable the Browse buttin in Tiny-Fu means I need to link in the
-  libgimpprocbrowser.a file but it has strings in it which mean I need access
-  to two of the source files so any strings marked for translation will be
-  included in the tiny-fu .po files.
-- Change Tiny-Fu from an extension to a regular plug-in.
 - Create some demonstration scripts using the tsx (and re) extensions
 	o Create thumbnails
 	o Web gallery
@@ -93,6 +90,8 @@ ToDo:
 - Write up information about the TinyScheme interpreter.
 - Document a suggested coding style for Tiny-Fu scripts.
 
+- Add UTF-8 support to TinyScheme
+  DONE?
 - The SIOD fread routine can not simply be redefined to use read.
   Mostly done.
 - Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
