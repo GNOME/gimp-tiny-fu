@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"POT-Creation-Date: 2004-10-07 02:46-0400\n"
 "PO-Revision-Date: 2003-08-13 22:11+0300\n"
 "Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -75,135 +75,50 @@ msgstr ""
 msgid "Tiny-Fu Console"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:171
+#: tiny-fu/tiny-fu-console.c:172
 msgid "_Save Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:172
+#: tiny-fu/tiny-fu-console.c:173
 msgid "Cl_ear Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:194
+#: tiny-fu/tiny-fu-console.c:196
 msgid "TinyScheme Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:233
+#: tiny-fu/tiny-fu-console.c:235
 msgid "Welcome to TinyScheme\n"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:234
+#: tiny-fu/tiny-fu-console.c:236
 msgid ""
 "Copyright (c) Dimitrios Souflis\n"
 "\n"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:235
+#: tiny-fu/tiny-fu-console.c:237
 msgid "Tiny-Fu Console - "
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:236
+#: tiny-fu/tiny-fu-console.c:238
 msgid "Interactive Scheme Development"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:259
+#: tiny-fu/tiny-fu-console.c:261
 msgid "Current Command"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:277
+#: tiny-fu/tiny-fu-console.c:279
 msgid "Browse..."
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:332
+#: tiny-fu/tiny-fu-console.c:334
 msgid "Save TinyScheme Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:369
-#, c-format
-msgid "Could not open '%s' for writing: %s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-console.c:646
+#: tiny-fu/tiny-fu-console.c:648
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:149
-msgid "Too few arguments to tiny-fu-register"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:228
-msgid "tiny-fu-register: argument types must be integer values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:233
-msgid "tiny-fu-register: missing type specifier"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:238
-msgid "tiny-fu-register: argument labels must be strings"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:243
-msgid "tiny-fu-register: missing arguments label"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:254
-msgid "tiny-fu-register: drawable defaults must be integer values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:292
-msgid "tiny-fu-register: color defaults must be a list of 3 integers"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:312
-msgid "tiny-fu-register: toggle default must be an integer value"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:326
-msgid "tiny-fu-register: value defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:341
-msgid "tiny-fu-register: string defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:355
-msgid "tiny-fu-register: adjustment defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:390
-msgid "tiny-fu-register: filename defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:395
-msgid "tiny-fu-register: dirname defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:425
-msgid "tiny-fu-register: font defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:439
-msgid "tiny-fu-register: palette defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:453
-msgid "tiny-fu-register: pattern defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:467
-msgid "tiny-fu-register: brush defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:500
-msgid "tiny-fu-register: gradient defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:514
-msgid "tiny-fu-register: option defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:539
-msgid "tiny-fu-register: missing default argument"
 msgstr ""
 
 #: tiny-fu/tiny-fu-scripts.c:552
@@ -213,43 +128,6 @@ msgid ""
 "%s\n"
 "\n"
 "%s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:215
-msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:355
-msgid "Tiny-Fu server initialized and listening...\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:393
-#, c-format
-msgid "Processing request #%d\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:413
-#, c-format
-msgid "Request #%d processed in %f seconds, finishing on %s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:463
-msgid "Error reading command header.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:475
-msgid "Error in tiny-fu command transmission.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:491
-#, c-format
-msgid "Error reading command.  Read %d out of %d bytes.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:514
-#, c-format
-msgid ""
-"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
 msgstr ""
 
 #: tiny-fu/tiny-fu-server.c:642
@@ -264,935 +142,2249 @@ msgstr ""
 msgid "Server Logfile:"
 msgstr ""
 
-#: tiny-fu/tiny-fu-text-console.c:119
-#, c-format
-msgid "error reading from stdin: %s\n"
-msgstr ""
-
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#: tiny-fu/tiny-fu-interface.c:192 tiny-fu/tiny-fu-interface.c:194
 msgid "/Tiny-Fu/"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:205
+#: tiny-fu/tiny-fu-interface.c:208
 #, c-format
 msgid "Tiny-Fu: %s"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:212
-msgid "_About"
-msgstr ""
-
 #. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:237
+#: tiny-fu/tiny-fu-interface.c:245
 msgid "Script Arguments"
 msgstr ""
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:268
+#: tiny-fu/tiny-fu-interface.c:276
 #, c-format
 msgid "%s:"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:312
+#: tiny-fu/tiny-fu-interface.c:321
 msgid "Tiny-Fu Color Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:418
+#: tiny-fu/tiny-fu-interface.c:427
 msgid "Tiny-Fu File Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:422
+#: tiny-fu/tiny-fu-interface.c:431
 msgid "Tiny-Fu Folder Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:434
+#: tiny-fu/tiny-fu-interface.c:443
 msgid "Tiny-Fu Font Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:441
+#: tiny-fu/tiny-fu-interface.c:450
 msgid "Tiny-Fu Palette Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:449
+#: tiny-fu/tiny-fu-interface.c:458
 msgid "Tiny-Fu Pattern Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:457
+#: tiny-fu/tiny-fu-interface.c:465
 msgid "Tiny-Fu Gradient Selection"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:465
+#: tiny-fu/tiny-fu-interface.c:473
 msgid "Tiny-Fu Brush Selection"
 msgstr ""
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:519
+#: tiny-fu/tiny-fu-interface.c:532
 msgid "Script Progress"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:527
+#: tiny-fu/tiny-fu-interface.c:540
 msgid "(none)"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:1042
+#: tiny-fu/tiny-fu-interface.c:1060
 msgid "Author:"
 msgstr "יוצר:"
 
-#: tiny-fu/tiny-fu-interface.c:1048
+#: tiny-fu/tiny-fu-interface.c:1067
 msgid "Copyright:"
 msgstr "זכויות יוצרים:"
 
-#: tiny-fu/tiny-fu-interface.c:1054
+#: tiny-fu/tiny-fu-interface.c:1074
 msgid "Date:"
 msgstr "תאריך:"
 
-#: tiny-fu/tiny-fu-interface.c:1062
+#: tiny-fu/tiny-fu-interface.c:1083
 msgid "Image Types:"
 msgstr "סוגי תמונה:"
 
-#: tiny-fu/ts-wrapper.c:231
-msgid "Could not initialize TinyScheme!\n"
+#: scripts/ts-helloworld.sct.h:1 scripts/drop-shadow.sct.h:4
+#: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
+#: scripts/spyrogimp.sct.h:5
+msgid "Color"
+msgstr "צבע"
+
+#: scripts/ts-helloworld.sct.h:2 scripts/3d-outline.sct.h:5
+#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
+#: scripts/alien-neon-logo.sct.h:5 scripts/asc2img.sct.h:8
+#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:6
+#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:2
+#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:10
+#: scripts/bovinated-logo.sct.h:5 scripts/carved-logo.sct.h:4
+#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:7 scripts/chrome-logo.sct.h:5
+#: scripts/comic-logo.sct.h:4 scripts/coolmetal-logo.sct.h:5
+#: scripts/crystal-logo.sct.h:5 scripts/frosty-logo.sct.h:5
+#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:6
+#: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
+#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:2
+#: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
+#: scripts/pupi-button.sct.h:3 scripts/slide.sct.h:2
+#: scripts/sota-chrome-logo.sct.h:7 scripts/speed-text.sct.h:5
+#: scripts/starburst-logo.sct.h:6 scripts/starscape-logo.sct.h:4
+#: scripts/t-o-p-logo.sct.h:8 scripts/text-circle.sct.h:4
+#: scripts/textured-logo.sct.h:6 scripts/title-header.sct.h:2
+msgid "Font"
+msgstr "גופן"
+
+#: scripts/ts-helloworld.sct.h:3
+msgid "Font Size (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/ts-helloworld.sct.h:4
+msgid "Hello, World!"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:250
-#, c-format
-msgid "Unable to read initialization file\n"
+#: scripts/ts-helloworld.sct.h:5
+#, fuzzy
+msgid "Text String"
+msgstr "דוגמה"
+
+#: scripts/contactsheet.sct.h:1
+msgid " contact sheets from a total of "
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:537
+#: scripts/contactsheet.sct.h:2
+msgid " for directory "
+msgstr ""
+
+#: scripts/contactsheet.sct.h:3
+#, fuzzy
+msgid " images"
+msgstr "דוגמה"
+
+#: scripts/contactsheet.sct.h:4
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:2
+#: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
+#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:4
+#: scripts/alien-neon-logo.sct.h:3 scripts/asc2img.sct.h:3
+#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:5
+#: scripts/blended-logo.sct.h:3 scripts/bovinated-logo.sct.h:4
+#: scripts/chalk.sct.h:3 scripts/chrome-logo.sct.h:4
+#: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
+#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
+#: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
+#: scripts/gradient-bevel-logo.sct.h:5 scripts/neon-logo.sct.h:3
+#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
+#: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
+#: scripts/truchet.sct.h:2
+#, fuzzy
+msgid "Background color"
+msgstr "תמונת רקע"
+
+#: scripts/contactsheet.sct.h:6
+#, fuzzy
+msgid "Created "
+msgstr "הוספת צל"
+
+#: scripts/contactsheet.sct.h:7
+msgid "Directory"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:8
+msgid "Legend Font"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:9
+msgid "Sheet "
+msgstr ""
+
+#: scripts/contactsheet.sct.h:10
+msgid "Sheet Size"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:11
+msgid "Text Color"
+msgstr "צבע טקסט"
+
+#: scripts/contactsheet.sct.h:12
+msgid "Title Font"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:13
+msgid "Unable to open directory "
+msgstr ""
+
+#: scripts/3d-outline.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+msgstr ""
+
+#: scripts/3d-outline.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+msgstr ""
+
+#: scripts/3d-outline.sct.h:3
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr ""
+
+#: scripts/3d-outline.sct.h:4 scripts/glossy.sct.h:7
+msgid "Default bumpmap settings"
+msgstr ""
+
+#: scripts/3d-outline.sct.h:6 scripts/alien-glow-logo.sct.h:6
+#: scripts/alien-neon-logo.sct.h:6 scripts/asc2img.sct.h:9
+#: scripts/basic1-logo.sct.h:5 scripts/basic2-logo.sct.h:7
+#: scripts/beveled-button.sct.h:4 scripts/beveled-pattern-button.sct.h:3
+#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:11
+#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
+#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
+#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
+#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:6
+#: scripts/gimp-headers.sct.h:6 scripts/gimp-labels.sct.h:7
+#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
+#: scripts/gradient-bevel-logo.sct.h:10 scripts/i26-gunya2.sct.h:3
+#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
+#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
+#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
+#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
+#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
+#: scripts/title-header.sct.h:3
+#, fuzzy
+msgid "Font size (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/3d-outline.sct.h:7
+#, fuzzy
+msgid "Outline blur radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/3d-outline.sct.h:8 scripts/glossy.sct.h:16
+#: scripts/round-corners.sct.h:6
+#, fuzzy
+msgid "Shadow X offset"
+msgstr "אטימות"
+
+#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
+#: scripts/round-corners.sct.h:7
+#, fuzzy
+msgid "Shadow Y offset"
+msgstr "אטימות"
+
+#: scripts/3d-outline.sct.h:10
+#, fuzzy
+msgid "Shadow blur radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/3d-outline.sct.h:11 scripts/alien-glow-button.sct.h:10
+#: scripts/alien-glow-logo.sct.h:9 scripts/alien-neon-logo.sct.h:9
+#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:8
+#: scripts/beveled-button.sct.h:8 scripts/beveled-pattern-button.sct.h:6
+#: scripts/beveled-pattern-heading.sct.h:5 scripts/blended-logo.sct.h:16
+#: scripts/bovinated-logo.sct.h:9 scripts/carved-logo.sct.h:7
+#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:13
+#: scripts/chrome-logo.sct.h:8 scripts/comic-logo.sct.h:10
+#: scripts/coolmetal-logo.sct.h:9 scripts/crystal-logo.sct.h:7
+#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:13
+#: scripts/gimp-labels.sct.h:16 scripts/glossy.sct.h:18
+#: scripts/glowing-logo.sct.h:7 scripts/gradient-bevel-logo.sct.h:11
+#: scripts/i26-gunya2.sct.h:6 scripts/neon-logo.sct.h:9
+#: scripts/news-text.sct.h:9 scripts/pupi-button.sct.h:13
+#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:10
+#: scripts/speed-text.sct.h:7 scripts/starburst-logo.sct.h:8
+#: scripts/starscape-logo.sct.h:7 scripts/t-o-p-logo.sct.h:11
+#: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
+#: scripts/title-header.sct.h:5
+msgid "Text"
+msgstr "טקסט"
+
+#: scripts/3dTruchet.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+msgstr ""
+
+#: scripts/3dTruchet.sct.h:3 scripts/truchet.sct.h:3
+#, fuzzy
+msgid "Block size"
+msgstr "גודל בלוק"
+
+#: scripts/3dTruchet.sct.h:4 scripts/blended-logo.sct.h:6
+msgid "End blend"
+msgstr ""
+
+#: scripts/3dTruchet.sct.h:5 scripts/truchet.sct.h:5
+#, fuzzy
+msgid "Number of X tiles"
+msgstr "מספר רצועות"
+
+#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:6
+#, fuzzy
+msgid "Number of Y tiles"
+msgstr "מספר רצועות"
+
+#: scripts/3dTruchet.sct.h:7 scripts/blended-logo.sct.h:15
+msgid "Start blend"
+msgstr ""
+
+#: scripts/3dTruchet.sct.h:8
+msgid "Supersample"
+msgstr ""
+
+#: scripts/3dTruchet.sct.h:9 scripts/add-bevel.sct.h:3 scripts/truchet.sct.h:7
+msgid "Thickness"
+msgstr "עובי"
+
+#: scripts/add-bevel.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+msgstr ""
+
+#: scripts/add-bevel.sct.h:2 scripts/chip-away.sct.h:11
+msgid "Keep bump layer"
+msgstr ""
+
+#: scripts/add-bevel.sct.h:4 scripts/fuzzyborder.sct.h:10
+#: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
+#: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
+msgid "Work on copy"
+msgstr ""
+
+#: scripts/addborder.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+msgstr ""
+
+#: scripts/addborder.sct.h:2
+#, fuzzy
+msgid "Border X size"
+msgstr "גודל גבול X"
+
+#: scripts/addborder.sct.h:3
+#, fuzzy
+msgid "Border Y size"
+msgstr "גודל גבול Y"
+
+#: scripts/addborder.sct.h:4
+#, fuzzy
+msgid "Border color"
+msgstr "צבע גבול"
+
+#: scripts/addborder.sct.h:5
+msgid "Delta value on color"
+msgstr ""
+
+#: scripts/alien-glow-arrow.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+msgstr ""
+
+#: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
+msgid "Down"
+msgstr ""
+
+#: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
+#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:5
+#: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
+#, fuzzy
+msgid "Flatten image"
+msgstr "דוגמה"
+
+#: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
+#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-logo.sct.h:7 scripts/alien-neon-logo.sct.h:7
+#: scripts/burn-in-anim.sct.h:8 scripts/neon-logo.sct.h:8
+#: scripts/starscape-logo.sct.h:6
+#, fuzzy
+msgid "Glow color"
+msgstr "צבע גבול"
+
+#: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
+msgid "Left"
+msgstr "שמאל"
+
+#: scripts/alien-glow-arrow.sct.h:7 scripts/beveled-pattern-arrow.sct.h:4
+msgid "Orientation"
+msgstr "כיוון"
+
+#: scripts/alien-glow-arrow.sct.h:8 scripts/beveled-pattern-arrow.sct.h:6
+msgid "Right"
+msgstr "ימין"
+
+#: scripts/alien-glow-arrow.sct.h:9 scripts/beveled-pattern-arrow.sct.h:7
+#: scripts/lava.sct.h:7
+msgid "Size"
+msgstr "גודל"
+
+#: scripts/alien-glow-arrow.sct.h:10 scripts/beveled-pattern-arrow.sct.h:8
+msgid "Up"
+msgstr ""
+
+#: scripts/alien-glow-bar.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+msgstr ""
+
+#: scripts/alien-glow-bar.sct.h:3
+#, fuzzy
+msgid "Bar height"
+msgstr "גודל תמונה"
+
+#: scripts/alien-glow-bar.sct.h:4
+#, fuzzy
+msgid "Bar length"
+msgstr "גודל תמונה"
+
+#: scripts/alien-glow-bullet.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+msgstr ""
+
+#: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
+#: scripts/tileblur.sct.h:7
+msgid "Radius"
+msgstr "מחוג"
+
+#: scripts/alien-glow-button.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
 msgid ""
-"Procedure database argument marshaller was called with no arguments. The "
-"procedure to be executed and the arguments it requires  (possibly none) must "
-"be specified."
+"\n"
+"    SF-ADJUSTMENT _"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:573
-#, c-format
-msgid "Invalid procedure name %s specified"
+#: scripts/alien-glow-button.sct.h:3
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:598
-#, c-format
-msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+#: scripts/alien-glow-button.sct.h:8
+#, fuzzy
+msgid "Glow radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
+msgid "Padding"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:697
-#, c-format
-msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:11 scripts/asc2img.sct.h:10
+#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:9
+#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
+#: scripts/blended-logo.sct.h:17 scripts/gimp-headers.sct.h:14
+#: scripts/gimp-labels.sct.h:17 scripts/i26-gunya2.sct.h:7
+#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:14
+#: scripts/speed-text.sct.h:8
+#, fuzzy
+msgid "Text color"
+msgstr "צבע טקסט"
 
-#: tiny-fu/ts-wrapper.c:729
-#, c-format
-msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:761
-#, c-format
-msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:793
-#, c-format
-msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:825
-#, c-format
-msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:861
-msgid "Regions are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:926
-msgid "Boundaries are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:931
-msgid "Paths are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:994
-msgid "Status is for return types, not arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1001
-#, c-format
-msgid "Argument %d for %s is an unknown type"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1028
-#, c-format
-msgid "Invalid types specified for argument %d to %s"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1040
-#, c-format
+#: scripts/alien-glow-logo.sct.h:1 scripts/basic2-logo.sct.h:1
 msgid ""
-"Procedural database execution of %s did not return a status:\n"
-"    "
+"\n"
+"    SF-COLOR      _"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1055
-#, c-format
+#: scripts/alien-glow-logo.sct.h:3
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+msgstr ""
+
+#: scripts/alien-glow-logo.sct.h:4
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+msgstr ""
+
+#: scripts/alien-glow-logo.sct.h:8
+#, fuzzy
+msgid "Glow size (pixels * 4)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/alien-neon-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+msgstr ""
+
+#: scripts/alien-neon-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+msgstr ""
+
+#: scripts/alien-neon-logo.sct.h:4
+msgid "Fade away"
+msgstr ""
+
+#: scripts/alien-neon-logo.sct.h:8
+#, fuzzy
+msgid "Number of bands"
+msgstr "מספר רצועות"
+
+#: scripts/alien-neon-logo.sct.h:10
+#, fuzzy
+msgid "Width of bands"
+msgstr "עובי רצועות"
+
+#: scripts/alien-neon-logo.sct.h:11
+#, fuzzy
+msgid "Width of gaps"
+msgstr "עובי מרווחים"
+
+#: scripts/asc2img.sct.h:1
+msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+msgstr ""
+
+#: scripts/asc2img.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+msgstr ""
+
+#: scripts/asc2img.sct.h:5
+#, no-c-format
+msgid "Buffer amount (% height of text)"
+msgstr ""
+
+#: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
+#, fuzzy
+msgid "File name"
+msgstr "שם קובץ"
+
+#: scripts/asc2img.sct.h:7 scripts/select-to-pattern.sct.h:2
+msgid "Filename"
+msgstr "שם קובץ"
+
+#: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:6 scripts/spinning-globe.sct.h:4
+#, fuzzy
+msgid "Transparent background"
+msgstr "תמונת רקע"
+
+#: scripts/basic1-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+msgstr ""
+
+#: scripts/basic1-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+msgstr ""
+
+#: scripts/basic2-logo.sct.h:3
+msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+msgstr ""
+
+#: scripts/basic2-logo.sct.h:4
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+msgstr ""
+
+#: scripts/beveled-button.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+msgstr ""
+
+#: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:7
+#: scripts/pupi-button.sct.h:2
+#, fuzzy
+msgid "Bevel width"
+msgstr "גודל תמונה"
+
+#: scripts/beveled-button.sct.h:5
+#, fuzzy
+msgid "Lower-right color"
+msgstr "צבע גבול"
+
+#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:5
+#: scripts/pupi-button.sct.h:11
+msgid "Pressed"
+msgstr "לחוץ"
+
+#: scripts/beveled-button.sct.h:10
+#, fuzzy
+msgid "Upper-left color"
+msgstr "צבע גבול"
+
+#: scripts/beveled-pattern-arrow.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+msgstr ""
+
+#: scripts/beveled-pattern-arrow.sct.h:5
+#: scripts/beveled-pattern-bullet.sct.h:3
+#: scripts/beveled-pattern-button.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:4
+#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:12
+#: scripts/textured-logo.sct.h:11
+msgid "Pattern"
+msgstr "דוגמה"
+
+#: scripts/beveled-pattern-bullet.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+msgstr ""
+
+#: scripts/beveled-pattern-bullet.sct.h:2
+#, fuzzy
+msgid "Diameter"
+msgstr "קוטר"
+
+#: scripts/beveled-pattern-button.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+msgstr ""
+
+#: scripts/beveled-pattern-heading.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+msgstr ""
+
+#: scripts/beveled-pattern-hrule.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+msgstr ""
+
+#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:8
+#: scripts/gradient-example.sct.h:3 scripts/mkbrush.sct.h:8
+#: scripts/swirltile.sct.h:7
+#, fuzzy
+msgid "Height"
+msgstr "ימין"
+
+#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:4
+#: scripts/mkbrush.sct.h:10 scripts/swirltile.sct.h:10
+msgid "Width"
+msgstr ""
+
+#: scripts/blend-anim.sct.h:1
+msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+msgstr ""
+
+#: scripts/blend-anim.sct.h:2
+msgid "Blend Animation needs at least three source layers"
+msgstr ""
+
+#: scripts/blend-anim.sct.h:3
+msgid "Intermediate frames"
+msgstr ""
+
+#: scripts/blend-anim.sct.h:4
+msgid "Looped"
+msgstr ""
+
+#: scripts/blend-anim.sct.h:5
+#, fuzzy
+msgid "Max. blur radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/blended-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+msgstr ""
+
+#: scripts/blended-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+msgstr ""
+
+#: scripts/blended-logo.sct.h:4
+msgid "Blend mode"
+msgstr ""
+
+#: scripts/blended-logo.sct.h:5
+#, fuzzy
+msgid "Custom Gradient"
+msgstr "מדרג צבעים"
+
+#: scripts/blended-logo.sct.h:7
+msgid "FG-BG-HSV"
+msgstr "FG-BG-HSV"
+
+#: scripts/blended-logo.sct.h:8
+msgid "FG-BG-RGB"
+msgstr "FG-BG-RGB"
+
+#: scripts/blended-logo.sct.h:9
+#, fuzzy
+msgid "FG-Transparent"
+msgstr "תמונת רקע"
+
+#: scripts/blended-logo.sct.h:12 scripts/comic-logo.sct.h:6
+#: scripts/coolmetal-logo.sct.h:7 scripts/land.sct.h:3 scripts/lava.sct.h:2
+#: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
+msgid "Gradient"
+msgstr "מדרג צבעים"
+
+#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
+#: scripts/coolmetal-logo.sct.h:8 scripts/gradient-example.sct.h:2
+#: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
+#, fuzzy
+msgid "Gradient reverse"
+msgstr "מדרג צבעים"
+
+#: scripts/blended-logo.sct.h:14
+#, fuzzy
+msgid "Offset (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/bovinated-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+msgstr ""
+
+#: scripts/bovinated-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+msgstr ""
+
+#: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
+#, fuzzy
+msgid "Background Color"
+msgstr "תמונת רקע"
+
+#: scripts/bovinated-logo.sct.h:7
+msgid "Spots density X"
+msgstr ""
+
+#: scripts/bovinated-logo.sct.h:8
+msgid "Spots density Y"
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:1
+msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:2
+msgid "Add glowing"
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:3
+msgid "After glow"
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:4
 msgid ""
-"Procedural database execution of %s failed:\n"
-"    "
+"Burn-In: Needs two layers in total!\n"
+"A foreground text layer with transparency and a background layer."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1062
-#, c-format
+#: scripts/burn-in-anim.sct.h:5
+#, fuzzy
+msgid "Corona width"
+msgstr "גודל תמונה"
+
+#: scripts/burn-in-anim.sct.h:6
+#, fuzzy
+msgid "Fadeout"
+msgstr "גודל תמונה"
+
+#: scripts/burn-in-anim.sct.h:7
+#, fuzzy
+msgid "Fadeout width"
+msgstr "גודל תמונה"
+
+#: scripts/burn-in-anim.sct.h:9
+msgid "Prepare for GIF"
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:10
+msgid "Speed (pixels/frame)"
+msgstr ""
+
+#: scripts/camo.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+msgstr ""
+
+#: scripts/camo.sct.h:2
+msgid "Color 1"
+msgstr "צבע 1"
+
+#: scripts/camo.sct.h:3
+msgid "Color 2"
+msgstr "צבע 2"
+
+#: scripts/camo.sct.h:4
+msgid "Color 3"
+msgstr "צבע 3"
+
+#: scripts/camo.sct.h:6 scripts/rendermap.sct.h:6
+msgid "Granularity"
+msgstr "גרעיניות"
+
+#: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
+#, fuzzy
+msgid "Image size"
+msgstr "גודל תמונה"
+
+#: scripts/camo.sct.h:8 scripts/distress-selection.sct.h:3
+msgid "Smooth"
+msgstr "חלק"
+
+#: scripts/carved-logo.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+msgstr ""
+
+#: scripts/carved-logo.sct.h:2
+msgid "Background Image"
+msgstr "תמונת רקע"
+
+#: scripts/carved-logo.sct.h:3
+msgid "Carve raised text"
+msgstr ""
+
+#: scripts/carved-logo.sct.h:6
+msgid "Padding around text"
+msgstr ""
+
+#: scripts/carve-it.sct.h:1
+msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+msgstr ""
+
+#: scripts/carve-it.sct.h:2
+msgid "Carve white areas"
+msgstr ""
+
+#: scripts/carve-it.sct.h:3
+msgid "Image to carve"
+msgstr ""
+
+#: scripts/chalk.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+msgstr ""
+
+#: scripts/chalk.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+msgstr ""
+
+#: scripts/chalk.sct.h:4
+#, fuzzy
+msgid "Chalk color"
+msgstr "צבע"
+
+#: scripts/chip-away.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+msgstr ""
+
+#: scripts/chip-away.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+msgstr ""
+
+#: scripts/chip-away.sct.h:3
+#, fuzzy
+msgid "Blur amount"
+msgstr "הגדלת מחוג"
+
+#: scripts/chip-away.sct.h:4
+#, fuzzy
+msgid "Chip amount"
+msgstr "הגדלת מחוג"
+
+#: scripts/chip-away.sct.h:5
+#, fuzzy
+msgid "Drop shadow"
+msgstr "הוספת צל"
+
+#: scripts/chip-away.sct.h:6
+msgid "Fill BG with pattern"
+msgstr ""
+
+#: scripts/chip-away.sct.h:9
+msgid "Invert"
+msgstr ""
+
+#: scripts/chip-away.sct.h:10
+#, fuzzy
+msgid "Keep background"
+msgstr "תמונת רקע"
+
+#: scripts/chrome-it.sct.h:1
+msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+msgstr ""
+
+#: scripts/chrome-it.sct.h:2 scripts/sota-chrome-logo.sct.h:2
+msgid "Chrome balance"
+msgstr ""
+
+#: scripts/chrome-it.sct.h:3 scripts/crystal-logo.sct.h:3
+#: scripts/sota-chrome-logo.sct.h:3
+msgid "Chrome factor"
+msgstr ""
+
+#: scripts/chrome-it.sct.h:4 scripts/sota-chrome-logo.sct.h:4
+msgid "Chrome lightness"
+msgstr ""
+
+#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:5
+msgid "Chrome saturation"
+msgstr ""
+
+#: scripts/chrome-it.sct.h:6
+msgid "Chrome white areas"
+msgstr ""
+
+#: scripts/chrome-it.sct.h:7 scripts/crystal-logo.sct.h:4
+#: scripts/sota-chrome-logo.sct.h:6
+msgid "Environment map"
+msgstr ""
+
+#: scripts/chrome-it.sct.h:8 scripts/sota-chrome-logo.sct.h:9
+#, fuzzy
+msgid "Highlight balance"
+msgstr "צבע"
+
+#: scripts/chrome-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+msgstr ""
+
+#: scripts/chrome-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+msgstr ""
+
+#: scripts/chrome-logo.sct.h:7
+#, fuzzy
+msgid "Offsets (pixels * 2)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/circuit.sct.h:1
+msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+msgstr ""
+
+#: scripts/circuit.sct.h:2
+msgid "Circuit seed"
+msgstr ""
+
+#: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
+#: scripts/xach-effect.sct.h:11
+msgid "Keep selection"
+msgstr ""
+
+#: scripts/circuit.sct.h:4
+msgid "No background (only for separate layer)"
+msgstr ""
+
+#: scripts/circuit.sct.h:5
+#, fuzzy
+msgid "Oilify mask size"
+msgstr "גודל תמונה"
+
+#: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
+msgid "Separate layer"
+msgstr ""
+
+#: scripts/clothify.sct.h:1
+msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+msgstr ""
+
+#: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
+msgid "Azimuth"
+msgstr ""
+
+#: scripts/clothify.sct.h:3
+#, fuzzy
+msgid "Blur X"
+msgstr "גבול"
+
+#: scripts/clothify.sct.h:4
+#, fuzzy
+msgid "Blur Y"
+msgstr "גבול"
+
+#: scripts/clothify.sct.h:5 scripts/swirltile.sct.h:5
+msgid "Depth"
+msgstr ""
+
+#: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
+#, fuzzy
+msgid "Elevation"
+msgstr "כיוון"
+
+#: scripts/coffee.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+msgstr ""
+
+#: scripts/coffee.sct.h:2
 msgid ""
-"Procedural database execution of %s failed on invalid input arguments:\n"
-"    "
+"Darken only\n"
+"(Better, but only for images with alot of white)"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1203
-msgid "Regions are currently unsupported as return values"
+#: scripts/coffee.sct.h:3
+msgid "Stains"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1237
-msgid "Boundaries are currently unsupported as return values"
+#: scripts/comic-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1241
-msgid "Paths are currently unsupported as return values"
+#: scripts/comic-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1249
-msgid "Error: null parasite"
+#: scripts/comic-logo.sct.h:8
+#, fuzzy
+msgid "Outline color"
+msgstr "צבע טקסט"
+
+#: scripts/comic-logo.sct.h:9 scripts/glossy.sct.h:11
+#, fuzzy
+msgid "Outline size"
+msgstr "צבע טקסט"
+
+#: scripts/coolmetal-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1280
-msgid "Procedural database execution returned multiple status values"
+#: scripts/coolmetal-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1284
-msgid "Unknown return type"
+#: scripts/coolmetal-logo.sct.h:4 scripts/frosty-logo.sct.h:4
+#, fuzzy
+msgid "Effect size (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/copy-visible.sct.h:1
+msgid "<Image>/Edit/Copy/Copy _Visible"
 msgstr ""
+
+#: scripts/crystal-logo.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+msgstr ""
+
+#: scripts/crystal-logo.sct.h:2
+#, fuzzy
+msgid "Background image"
+msgstr "תמונת רקע"
+
+#: scripts/distress-selection.sct.h:1
+msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+msgstr ""
+
+#: scripts/distress-selection.sct.h:2
+#, fuzzy
+msgid "Granularity (1 is low)"
+msgstr "גרעיניות"
+
+#: scripts/distress-selection.sct.h:4
+msgid "Smooth horizontally"
+msgstr ""
+
+#: scripts/distress-selection.sct.h:5
+msgid "Smooth vertically"
+msgstr ""
+
+#: scripts/distress-selection.sct.h:6
+msgid "Spread"
+msgstr ""
+
+#: scripts/distress-selection.sct.h:7
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr ""
+
+#: scripts/drop-shadow.sct.h:1
+msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+msgstr ""
+
+#: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
+msgid "Allow resizing"
+msgstr ""
+
+#: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
+#: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
+#: scripts/swirltile.sct.h:4
+#, fuzzy
+msgid "Blur radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:11
+#, fuzzy
+msgid "Offset X"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:12
+#, fuzzy
+msgid "Offset Y"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:7
+msgid "Opacity"
+msgstr "אטימות"
+
+#: scripts/erase-rows.sct.h:1
+msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+msgstr ""
+
+#: scripts/erase-rows.sct.h:2
+msgid "Columns"
+msgstr "עמודות"
+
+#: scripts/erase-rows.sct.h:3
+#, fuzzy
+msgid "Erase"
+msgstr "גודל תמונה"
+
+#: scripts/erase-rows.sct.h:4
+#, fuzzy
+msgid "Erase/fill"
+msgstr "גודל תמונה"
+
+#: scripts/erase-rows.sct.h:5
+msgid "Even"
+msgstr "זוגי"
+
+#: scripts/erase-rows.sct.h:6
+#, fuzzy
+msgid "Even/odd"
+msgstr "זוגי"
+
+#: scripts/erase-rows.sct.h:7
+msgid "Fill with BG"
+msgstr ""
+
+#: scripts/erase-rows.sct.h:8
+msgid "Odd"
+msgstr "אי-זוגי"
+
+#: scripts/erase-rows.sct.h:9
+msgid "Rows"
+msgstr "שורות"
+
+#: scripts/erase-rows.sct.h:10
+#, fuzzy
+msgid "Rows/cols"
+msgstr "שורות/עמודות"
+
+#: scripts/fade-outline.sct.h:1
+msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+msgstr ""
+
+#: scripts/fade-outline.sct.h:2
+msgid "Apply generated layermask"
+msgstr ""
+
+#: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
+#: scripts/old-photo.sct.h:2
+#, fuzzy
+msgid "Border size"
+msgstr "גודל גבול X"
+
+#: scripts/fade-outline.sct.h:4
+msgid "Clear unselected maskarea"
+msgstr ""
+
+#: scripts/fade-outline.sct.h:6
+#, no-c-format
+msgid "Fade from %"
+msgstr ""
+
+#: scripts/fade-outline.sct.h:8
+#, no-c-format
+msgid "Fade to   %"
+msgstr ""
+
+#: scripts/fade-outline.sct.h:9
+msgid "Use growing selection"
+msgstr ""
+
+#: scripts/flatland.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+msgstr ""
+
+#: scripts/flatland.sct.h:2 scripts/land.sct.h:2
+msgid "Detail level"
+msgstr ""
+
+#: scripts/flatland.sct.h:3 scripts/land.sct.h:4
+#, fuzzy
+msgid "Image height"
+msgstr "גודל תמונה"
+
+#: scripts/flatland.sct.h:4 scripts/land.sct.h:5
+#, fuzzy
+msgid "Image width"
+msgstr "גודל תמונה"
+
+#: scripts/flatland.sct.h:5 scripts/land.sct.h:7
+msgid "Random seed"
+msgstr ""
+
+#: scripts/flatland.sct.h:6 scripts/land.sct.h:8
+msgid "Scale X"
+msgstr ""
+
+#: scripts/flatland.sct.h:7 scripts/land.sct.h:9
+msgid "Scale Y"
+msgstr ""
+
+#: scripts/font-map.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+msgstr ""
+
+#: scripts/font-map.sct.h:2
+#, fuzzy
+msgid "Active colors"
+msgstr "צבע טקסט"
+
+#: scripts/font-map.sct.h:3
+#, fuzzy
+msgid "Black on white"
+msgstr "תמונת רקע"
+
+#: scripts/font-map.sct.h:4
+#, fuzzy
+msgid "Font _size (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/font-map.sct.h:5
+msgid "Use font _name as text"
+msgstr ""
+
+#: scripts/font-map.sct.h:6
+#, fuzzy
+msgid "_Border (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/font-map.sct.h:7
+#, fuzzy
+msgid "_Color scheme"
+msgstr "צבע 3"
+
+#: scripts/font-map.sct.h:8
+msgid "_Filter (regexp)"
+msgstr ""
+
+#: scripts/font-map.sct.h:9
+msgid "_Labels"
+msgstr ""
+
+#: scripts/font-map.sct.h:10
+#, fuzzy
+msgid "_Text"
+msgstr "טקסט"
+
+#: scripts/frosty-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+msgstr ""
+
+#: scripts/frosty-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+msgstr ""
+
+#: scripts/fuzzyborder.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+msgstr ""
+
+#: scripts/fuzzyborder.sct.h:2
+#, fuzzy
+msgid "Add shadow"
+msgstr "הוספת צל"
+
+#: scripts/fuzzyborder.sct.h:3
+#, fuzzy
+msgid "Blur border"
+msgstr "גבול"
+
+#: scripts/fuzzyborder.sct.h:7
+#, fuzzy
+msgid "Granularity (1 is Low)"
+msgstr "גרעיניות"
+
+#: scripts/fuzzyborder.sct.h:9
+#, fuzzy, no-c-format
+msgid "Shadow weight (%)"
+msgstr "הוספת צל"
+
+#: scripts/gimp-headers.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+msgstr ""
+
+#: scripts/gimp-headers.sct.h:2
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+msgstr ""
+
+#: scripts/gimp-headers.sct.h:3
+#, fuzzy
+msgid "Autocrop"
+msgstr "יוצר:"
+
+#: scripts/gimp-headers.sct.h:4
+#, fuzzy
+msgid "Dark color"
+msgstr "צבע"
+
+#: scripts/gimp-headers.sct.h:7 scripts/xach-effect.sct.h:9
+#, fuzzy
+msgid "Highlight color"
+msgstr "צבע"
+
+#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:9
+#, fuzzy
+msgid "Index image"
+msgstr "דוגמה"
+
+#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
+#, fuzzy
+msgid "Number of colors"
+msgstr "מספר רצועות"
+
+#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:13
+#, fuzzy
+msgid "Remove background"
+msgstr "תמונת רקע"
+
+#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:14
+msgid "Select-by-color threshold"
+msgstr ""
+
+#: scripts/gimp-headers.sct.h:12 scripts/gimp-labels.sct.h:15
+#, fuzzy
+msgid "Shadow color"
+msgstr "צבע גבול"
+
+#: scripts/gimp-labels.sct.h:1
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+"Label..."
+msgstr ""
+
+#: scripts/gimp-labels.sct.h:2
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-Button "
+"Label..."
+msgstr ""
+
+#: scripts/gimp-labels.sct.h:3
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+"Labels..."
+msgstr ""
+
+#: scripts/gimp-labels.sct.h:4
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button Label..."
+msgstr ""
+
+#: scripts/glossy.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+msgstr ""
+
+#: scripts/glossy.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+msgstr ""
+
+#: scripts/glossy.sct.h:4
+#, fuzzy
+msgid "Blend gradient (Text)"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:5
+#, fuzzy
+msgid "Blend gradient (outline)"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:6
+#, fuzzy
+msgid "Blend gradient (text)"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:10
+#, fuzzy
+msgid "Outline gradient reverse"
+msgstr "מדרג צבעים"
+
+#: scripts/glossy.sct.h:12
+#, fuzzy
+msgid "Pattern (outline)"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:13
+#, fuzzy
+msgid "Pattern (overlay)"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:14
+#, fuzzy
+msgid "Pattern (text)"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:15 scripts/sphere.sct.h:5
+#, fuzzy
+msgid "Shadow"
+msgstr "הוספת צל"
+
+#: scripts/glossy.sct.h:19
+#, fuzzy
+msgid "Text gradient reverse"
+msgstr "מדרג צבעים"
+
+#: scripts/glossy.sct.h:20
+msgid "Use pattern for outline instead of gradient"
+msgstr ""
+
+#: scripts/glossy.sct.h:21
+msgid "Use pattern for text instead of gradient"
+msgstr ""
+
+#: scripts/glossy.sct.h:22
+#, fuzzy
+msgid "Use pattern overlay"
+msgstr "דוגמה"
+
+#: scripts/glossy.sct.h:23
+msgid "Use tattern for outline instead of gradient"
+msgstr ""
+
+#: scripts/glowing-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+msgstr ""
+
+#: scripts/glowing-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+msgstr ""
+
+#: scripts/glowing-logo.sct.h:4
+#, fuzzy
+msgid "Effect size (pixels * 3)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/gradient-bevel-logo.sct.h:3
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+msgstr ""
+
+#: scripts/gradient-bevel-logo.sct.h:4
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+msgstr ""
+
+#: scripts/gradient-bevel-logo.sct.h:6
+msgid "Bevel height (Sharpness)"
+msgstr ""
+
+#: scripts/gradient-bevel-logo.sct.h:8 scripts/t-o-p-logo.sct.h:5
+#: scripts/textured-logo.sct.h:4
+#, fuzzy
+msgid "Border size (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/gradient-example.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+msgstr ""
+
+#: scripts/i26-gunya2.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+msgstr ""
+
+#: scripts/i26-gunya2.sct.h:4
+#, fuzzy
+msgid "Frame color"
+msgstr "צבע גבול"
+
+#: scripts/i26-gunya2.sct.h:5
+#, fuzzy
+msgid "Frame size"
+msgstr "גודל תמונה"
+
+#: scripts/land.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+msgstr ""
+
+#: scripts/land.sct.h:6
+#, fuzzy
+msgid "Land height"
+msgstr "גודל תמונה"
+
+#: scripts/land.sct.h:10
+#, fuzzy
+msgid "Sea depth"
+msgstr "הוספת צל"
+
+#: scripts/lava.sct.h:1
+msgid "<Image>/Tiny-Fu/Render/_Lava..."
+msgstr ""
+
+#: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
+msgid "Roughness"
+msgstr ""
+
+#: scripts/lava.sct.h:5
+msgid "Seed"
+msgstr ""
+
+#: scripts/lava.sct.h:8
+msgid "Use current gradient"
+msgstr ""
+
+#: scripts/line-nova.sct.h:1
+msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+msgstr ""
+
+#: scripts/line-nova.sct.h:2
+#, fuzzy
+msgid "Number of lines"
+msgstr "מספר רצועות"
+
+#: scripts/line-nova.sct.h:3
+#, fuzzy
+msgid "Offset radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/line-nova.sct.h:4
+msgid "Randomness"
+msgstr ""
+
+#: scripts/line-nova.sct.h:5
+msgid "Sharpness (degrees)"
+msgstr ""
+
+#: scripts/mkbrush.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+msgstr ""
+
+#: scripts/mkbrush.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+msgstr ""
+
+#: scripts/mkbrush.sct.h:3
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+msgstr ""
+
+#: scripts/mkbrush.sct.h:4
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+msgstr ""
+
+#: scripts/mkbrush.sct.h:5
+msgid "Create size of brush"
+msgstr ""
+
+#: scripts/mkbrush.sct.h:6
+msgid "Description"
+msgstr ""
+
+#: scripts/mkbrush.sct.h:7
+msgid "Feathering"
+msgstr ""
+
+#: scripts/mkbrush.sct.h:9 scripts/select-to-brush.sct.h:4
+msgid "Spacing"
+msgstr ""
+
+#: scripts/neon-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+msgstr ""
+
+#: scripts/neon-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+msgstr ""
+
+#: scripts/neon-logo.sct.h:4
+#, fuzzy
+msgid "Create shadow"
+msgstr "הוספת צל"
+
+#: scripts/neon-logo.sct.h:5
+#, fuzzy
+msgid "Effect size (pixels * 5)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/news-text.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+msgstr ""
+
+#: scripts/news-text.sct.h:4
+#, fuzzy
+msgid "Cell size (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/news-text.sct.h:6 scripts/speed-text.sct.h:4
+#, no-c-format
+msgid "Density (%)"
+msgstr ""
+
+#: scripts/old-photo.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+msgstr ""
+
+#: scripts/old-photo.sct.h:3
+msgid "Defocus"
+msgstr ""
+
+#: scripts/old-photo.sct.h:4
+msgid "Mottle"
+msgstr ""
+
+#: scripts/old-photo.sct.h:5
+msgid "Sepia"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:1
+msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:3
+#, fuzzy
+msgid "Angle"
+msgstr "שם קובץ"
+
+#: scripts/perspective-shadow.sct.h:6
+msgid "Interpolate"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:8
+msgid "Relative distance of horizon"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:9
+msgid "Relative length of shadow"
+msgstr ""
+
+#: scripts/predator.sct.h:1
+msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+msgstr ""
+
+#: scripts/predator.sct.h:2
+#, fuzzy
+msgid "Edge amount"
+msgstr "הגדלת מחוג"
+
+#: scripts/predator.sct.h:4
+#, fuzzy
+msgid "Pixel amount"
+msgstr "הגדלת מחוג"
+
+#: scripts/predator.sct.h:5
+msgid "Pixelize"
+msgstr ""
+
+#: scripts/pupi-button.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+msgstr ""
+
+#: scripts/pupi-button.sct.h:5
+#, fuzzy
+msgid "Lower color"
+msgstr "צבע גבול"
+
+#: scripts/pupi-button.sct.h:6
+#, fuzzy
+msgid "Lower color (active)"
+msgstr "צבע טקסט"
+
+#: scripts/pupi-button.sct.h:7
+#, fuzzy
+msgid "Not pressed"
+msgstr "לחוץ"
+
+#: scripts/pupi-button.sct.h:8
+#, fuzzy
+msgid "Not pressed (active)"
+msgstr "לחוץ"
+
+#: scripts/pupi-button.sct.h:9
+msgid "Padding X"
+msgstr ""
+
+#: scripts/pupi-button.sct.h:10
+msgid "Padding Y"
+msgstr ""
+
+#: scripts/pupi-button.sct.h:12
+#, fuzzy
+msgid "Round ratio"
+msgstr "כיוון"
+
+#: scripts/pupi-button.sct.h:15
+#, fuzzy
+msgid "Text color (active)"
+msgstr "צבע טקסט"
+
+#: scripts/pupi-button.sct.h:16
+#, fuzzy
+msgid "Upper color"
+msgstr "צבע גבול"
+
+#: scripts/pupi-button.sct.h:17
+#, fuzzy
+msgid "Upper color (active)"
+msgstr "צבע טקסט"
+
+#: scripts/rendermap.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+msgstr ""
+
+#: scripts/rendermap.sct.h:2
+#, fuzzy
+msgid "Behaviour"
+msgstr "הגדלת מחוג"
+
+#: scripts/rendermap.sct.h:3
+msgid "Detail in Middle"
+msgstr ""
+
+#: scripts/rendermap.sct.h:8
+#, fuzzy
+msgid "Tile"
+msgstr "שם קובץ"
+
+#: scripts/ripply-anim.sct.h:1
+msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+msgstr ""
+
+#: scripts/ripply-anim.sct.h:2
+msgid "Black"
+msgstr ""
+
+#: scripts/ripply-anim.sct.h:3
+#, fuzzy
+msgid "Edge behaviour"
+msgstr "הגדלת מחוג"
+
+#: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
+#, fuzzy
+msgid "Number of frames"
+msgstr "מספר רצועות"
+
+#: scripts/ripply-anim.sct.h:5
+msgid "Rippling strength"
+msgstr ""
+
+#: scripts/ripply-anim.sct.h:6
+msgid "Smear"
+msgstr ""
+
+#: scripts/ripply-anim.sct.h:7
+msgid "Wrap"
+msgstr ""
+
+#: scripts/round-corners.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+msgstr ""
+
+#: scripts/round-corners.sct.h:2
+#, fuzzy
+msgid "Add background"
+msgstr "תמונת רקע"
+
+#: scripts/round-corners.sct.h:3
+#, fuzzy
+msgid "Add drop-shadow"
+msgstr "הוספת צל"
+
+#: scripts/round-corners.sct.h:5
+#, fuzzy
+msgid "Edge radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/selection-round.sct.h:1
+msgid "<Image>/Tiny-Fu/Selection/_Round..."
+msgstr ""
+
+#: scripts/selection-round.sct.h:2
+#, fuzzy
+msgid "Relative radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/select-to-brush.sct.h:1
+msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+msgstr ""
+
+#: scripts/select-to-brush.sct.h:2
+msgid "Brush name"
+msgstr ""
+
+#: scripts/select-to-image.sct.h:1
+msgid "<Image>/Tiny-Fu/Selection/To _Image"
+msgstr ""
+
+#: scripts/select-to-pattern.sct.h:1
+msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+msgstr ""
+
+#: scripts/select-to-pattern.sct.h:3
+#, fuzzy
+msgid "Pattern name"
+msgstr "דוגמה"
+
+#: scripts/slide.sct.h:1
+msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+msgstr ""
+
+#: scripts/slide.sct.h:3
+#, fuzzy
+msgid "Font color"
+msgstr "צבע טקסט"
+
+#: scripts/slide.sct.h:4
+msgid "Number"
+msgstr ""
+
+#: scripts/sota-chrome-logo.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+msgstr ""
+
+#: scripts/speed-text.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+msgstr ""
+
+#: scripts/sphere.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+msgstr ""
+
+#: scripts/sphere.sct.h:3
+msgid "Lighting (degrees)"
+msgstr ""
+
+#: scripts/sphere.sct.h:4
+#, fuzzy
+msgid "Radius (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/sphere.sct.h:6
+#, fuzzy
+msgid "Sphere color"
+msgstr "צבע גבול"
+
+#: scripts/spinning-globe.sct.h:1
+msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+msgstr ""
+
+#: scripts/spinning-globe.sct.h:2
+#, fuzzy
+msgid "Frames"
+msgstr "גודל תמונה"
+
+#: scripts/spinning-globe.sct.h:3
+msgid "Index to n colors (0 = remain RGB)"
+msgstr ""
+
+#: scripts/spinning-globe.sct.h:5
+msgid "Turn from left to right"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:1
+msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:2
+msgid "Airbrush"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:3
+msgid "Brush"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:4
+msgid "Circle"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:6
+#, fuzzy
+msgid "Color method"
+msgstr "צבע 3"
+
+#: scripts/spyrogimp.sct.h:7
+msgid "Epitrochoid"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:8
+#, fuzzy
+msgid "Frame"
+msgstr "גודל תמונה"
+
+#: scripts/spyrogimp.sct.h:10
+msgid "Gradient: Loop Sawtooth"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:11
+msgid "Gradient: Loop Triangle"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:12
+#, fuzzy
+msgid "Hexagon"
+msgstr "כיוון"
+
+#: scripts/spyrogimp.sct.h:13
+#, fuzzy
+msgid "Hole ratio"
+msgstr "כיוון"
+
+#: scripts/spyrogimp.sct.h:14
+msgid "Inner teeth"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:15
+msgid "Lissajous"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:16
+#, fuzzy
+msgid "Margin (pixels)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/spyrogimp.sct.h:17
+msgid "Outer teeth"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:18
+msgid "Pencil"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:19
+#, fuzzy
+msgid "Pentagon"
+msgstr "כיוון"
+
+#: scripts/spyrogimp.sct.h:20
+msgid "Polygon: 10 sides"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:21
+msgid "Polygon: 7 sides"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:22
+msgid "Polygon: 8 sides"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:23
+msgid "Polygon: 9 sides"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:24
+msgid "Shape"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:25
+#, fuzzy
+msgid "Solid Color"
+msgstr "צבע"
+
+#: scripts/spyrogimp.sct.h:26
+msgid "Spyrograph"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:27
+msgid "Square"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
+#, fuzzy
+msgid "Start angle"
+msgstr "שם קובץ"
+
+#: scripts/spyrogimp.sct.h:29
+msgid "Tool"
+msgstr ""
+
+#: scripts/spyrogimp.sct.h:30
+#, fuzzy
+msgid "Triangle"
+msgstr "שם קובץ"
+
+#: scripts/spyrogimp.sct.h:31
+msgid "Type"
+msgstr ""
+
+#: scripts/starburst-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+msgstr ""
+
+#: scripts/starburst-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+msgstr ""
+
+#: scripts/starburst-logo.sct.h:4
+#, fuzzy
+msgid "Burst color"
+msgstr "צבע גבול"
+
+#: scripts/starburst-logo.sct.h:5
+#, fuzzy
+msgid "Effect size (pixels * 30)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/starscape-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+msgstr ""
+
+#: scripts/starscape-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+msgstr ""
+
+#: scripts/starscape-logo.sct.h:3
+#, fuzzy
+msgid "Effect size (pixels * 4)"
+msgstr "גודל גופן (פיקסלים)"
+
+#: scripts/swirltile.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+msgstr ""
+
+#: scripts/swirltile.sct.h:9
+#, fuzzy
+msgid "Whirl amount"
+msgstr "הגדלת מחוג"
+
+#: scripts/swirly-pattern.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+msgstr ""
+
+#: scripts/swirly-pattern.sct.h:2
+#, fuzzy
+msgid "Number of times to whirl"
+msgstr "מספר רצועות"
+
+#: scripts/swirly-pattern.sct.h:3
+#, fuzzy
+msgid "Quarter size"
+msgstr "גודל גבול X"
+
+#: scripts/swirly-pattern.sct.h:4
+#, fuzzy
+msgid "Whirl angle"
+msgstr "שם קובץ"
+
+#: scripts/t-o-p-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+msgstr ""
+
+#: scripts/t-o-p-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+msgstr ""
+
+#: scripts/t-o-p-logo.sct.h:4
+#, fuzzy
+msgid "Base color"
+msgstr "צבע גבול"
+
+#: scripts/t-o-p-logo.sct.h:6
+#, fuzzy
+msgid "Edge only"
+msgstr "הגדלת מחוג"
+
+#: scripts/t-o-p-logo.sct.h:7
+#, fuzzy
+msgid "Edge width"
+msgstr "גודל תמונה"
+
+#: scripts/t-o-p-logo.sct.h:10
+msgid "Hit rate"
+msgstr ""
+
+#: scripts/text-circle.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+msgstr ""
+
+#: scripts/text-circle.sct.h:2
+msgid "Antialias"
+msgstr ""
+
+#: scripts/text-circle.sct.h:3
+#, fuzzy
+msgid "Fill angle"
+msgstr "שם קובץ"
+
+#: scripts/text-circle.sct.h:7
+msgid "Render the specified text along the perimeter of a circle"
+msgstr ""
+
+#: scripts/textured-logo.sct.h:1
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+msgstr ""
+
+#: scripts/textured-logo.sct.h:2
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+msgstr ""
+
+#: scripts/textured-logo.sct.h:5
+msgid "Ending blend"
+msgstr ""
+
+#: scripts/textured-logo.sct.h:8
+#, fuzzy
+msgid "Hexagons"
+msgstr "כיוון"
+
+#: scripts/textured-logo.sct.h:9
+msgid "Mosaic tile type"
+msgstr ""
+
+#: scripts/textured-logo.sct.h:10
+#, fuzzy
+msgid "Octagons"
+msgstr "כיוון"
+
+#: scripts/textured-logo.sct.h:12
+msgid "Squares"
+msgstr ""
+
+#: scripts/textured-logo.sct.h:13
+msgid "Starting blend"
+msgstr ""
+
+#: scripts/textured-logo.sct.h:15
+#, fuzzy
+msgid "Text pattern"
+msgstr "דוגמה"
+
+#: scripts/tileblur.sct.h:1
+msgid "<Image>/Filters/Blur/_Tileable Blur..."
+msgstr ""
+
+#: scripts/tileblur.sct.h:2
+msgid "Blur horizontally"
+msgstr ""
+
+#: scripts/tileblur.sct.h:3
+#, fuzzy
+msgid "Blur type"
+msgstr "גבול"
+
+#: scripts/tileblur.sct.h:4
+msgid "Blur vertically"
+msgstr ""
+
+#: scripts/tileblur.sct.h:5
+msgid "IIR"
+msgstr ""
+
+#: scripts/tileblur.sct.h:6
+msgid "RLE"
+msgstr ""
+
+#: scripts/tiny-fu-set-cmap.sct.h:1
+msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+msgstr ""
+
+#: scripts/tiny-fu-set-cmap.sct.h:2
+#, fuzzy
+msgid "Palette"
+msgstr "דוגמה"
+
+#: scripts/title-header.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+msgstr ""
+
+#: scripts/truchet.sct.h:1
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+msgstr ""
+
+#: scripts/truchet.sct.h:4
+#, fuzzy
+msgid "Foreground color"
+msgstr "צבע גבול"
+
+#: scripts/unsharp-mask.sct.h:1
+msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+msgstr ""
+
+#: scripts/unsharp-mask.sct.h:2
+#, fuzzy
+msgid "Mask opacity"
+msgstr "אטימות"
+
+#: scripts/unsharp-mask.sct.h:3
+#, fuzzy
+msgid "Mask size"
+msgstr "גודל תמונה"
+
+#: scripts/waves-anim.sct.h:1
+msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+msgstr ""
+
+#: scripts/waves-anim.sct.h:2
+msgid "Amplitude"
+msgstr ""
+
+#: scripts/waves-anim.sct.h:3
+msgid "Invert direction"
+msgstr ""
+
+#: scripts/waves-anim.sct.h:5
+#, fuzzy
+msgid "Wavelength"
+msgstr "גודל תמונה"
+
+#: scripts/weave.sct.h:1
+msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+msgstr ""
+
+#: scripts/weave.sct.h:2
+#, fuzzy
+msgid "Ribbon spacing"
+msgstr "גודל תמונה"
+
+#: scripts/weave.sct.h:3
+#, fuzzy
+msgid "Ribbon width"
+msgstr "גודל תמונה"
+
+#: scripts/weave.sct.h:4
+#, fuzzy
+msgid "Shadow darkness"
+msgstr "הוספת צל"
+
+#: scripts/weave.sct.h:5
+#, fuzzy
+msgid "Shadow depth"
+msgstr "הוספת צל"
+
+#: scripts/weave.sct.h:6
+msgid "Thread density"
+msgstr ""
+
+#: scripts/weave.sct.h:7
+msgid "Thread intensity"
+msgstr ""
+
+#: scripts/weave.sct.h:8
+#, fuzzy
+msgid "Thread length"
+msgstr "גודל תמונה"
+
+#: scripts/web-browser.sct.h:1
+msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+msgstr ""
+
+#: scripts/web-browser.sct.h:2
+msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+msgstr ""
+
+#: scripts/web-browser.sct.h:3
+msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+msgstr ""
+
+#: scripts/xach-effect.sct.h:1
+msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+msgstr ""
+
+#: scripts/xach-effect.sct.h:2
+#, fuzzy
+msgid "Drop shadow X offset"
+msgstr "אטימות"
+
+#: scripts/xach-effect.sct.h:3
+#, fuzzy
+msgid "Drop shadow Y offset"
+msgstr "אטימות"
+
+#: scripts/xach-effect.sct.h:4
+#, fuzzy
+msgid "Drop shadow blur radius"
+msgstr "הגדלת מחוג"
+
+#: scripts/xach-effect.sct.h:5
+#, fuzzy
+msgid "Drop shadow color"
+msgstr "הוספת צל"
+
+#: scripts/xach-effect.sct.h:6
+#, fuzzy
+msgid "Drop shadow opacity"
+msgstr "אטימות"
+
+#: scripts/xach-effect.sct.h:7
+#, fuzzy
+msgid "Highlight X offset"
+msgstr "צבע"
+
+#: scripts/xach-effect.sct.h:8
+#, fuzzy
+msgid "Highlight Y offset"
+msgstr "צבע"
+
+#: scripts/xach-effect.sct.h:10
+#, fuzzy
+msgid "Highlight opacity"
+msgstr "צבע"
 
 #, fuzzy
 #~ msgid "Parameters"
 #~ msgstr "קוטר"
-
-#~ msgid "Color"
-#~ msgstr "צבע"
-
-#~ msgid "Font"
-#~ msgstr "גופן"
-
-#~ msgid "Font Size (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Text String"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid " images"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Background color"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Created "
-#~ msgstr "הוספת צל"
-
-#~ msgid "Text Color"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Font size (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Outline blur radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Shadow blur radius"
-#~ msgstr "הגדלת מחוג"
-
-#~ msgid "Text"
-#~ msgstr "טקסט"
-
-#, fuzzy
-#~ msgid "Block size"
-#~ msgstr "גודל בלוק"
-
-#, fuzzy
-#~ msgid "Number of X tiles"
-#~ msgstr "מספר רצועות"
-
-#, fuzzy
-#~ msgid "Number of Y tiles"
-#~ msgstr "מספר רצועות"
-
-#~ msgid "Thickness"
-#~ msgstr "עובי"
-
-#, fuzzy
-#~ msgid "Border X size"
-#~ msgstr "גודל גבול X"
-
-#, fuzzy
-#~ msgid "Border Y size"
-#~ msgstr "גודל גבול Y"
-
-#, fuzzy
-#~ msgid "Border color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Flatten image"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Glow color"
-#~ msgstr "צבע גבול"
-
-#~ msgid "Left"
-#~ msgstr "שמאל"
-
-#~ msgid "Orientation"
-#~ msgstr "כיוון"
-
-#~ msgid "Right"
-#~ msgstr "ימין"
-
-#~ msgid "Size"
-#~ msgstr "גודל"
-
-#, fuzzy
-#~ msgid "Bar height"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Bar length"
-#~ msgstr "גודל תמונה"
-
-#~ msgid "Radius"
-#~ msgstr "מחוג"
-
-#, fuzzy
-#~ msgid "Glow radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Text color"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Glow size (pixels * 4)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Number of bands"
-#~ msgstr "מספר רצועות"
-
-#, fuzzy
-#~ msgid "Width of bands"
-#~ msgstr "עובי רצועות"
-
-#, fuzzy
-#~ msgid "Width of gaps"
-#~ msgstr "עובי מרווחים"
-
-#, fuzzy
-#~ msgid "File name"
-#~ msgstr "שם קובץ"
-
-#~ msgid "Filename"
-#~ msgstr "שם קובץ"
-
-#, fuzzy
-#~ msgid "Transparent background"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Bevel width"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Lower-right color"
-#~ msgstr "צבע גבול"
-
-#~ msgid "Pressed"
-#~ msgstr "לחוץ"
-
-#, fuzzy
-#~ msgid "Upper-left color"
-#~ msgstr "צבע גבול"
-
-#~ msgid "Pattern"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Diameter"
-#~ msgstr "קוטר"
-
-#, fuzzy
-#~ msgid "Height"
-#~ msgstr "ימין"
-
-#, fuzzy
-#~ msgid "Max. blur radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Custom Gradient"
-#~ msgstr "מדרג צבעים"
-
-#~ msgid "FG-BG-HSV"
-#~ msgstr "FG-BG-HSV"
-
-#~ msgid "FG-BG-RGB"
-#~ msgstr "FG-BG-RGB"
-
-#, fuzzy
-#~ msgid "FG-Transparent"
-#~ msgstr "תמונת רקע"
-
-#~ msgid "Gradient"
-#~ msgstr "מדרג צבעים"
-
-#, fuzzy
-#~ msgid "Gradient reverse"
-#~ msgstr "מדרג צבעים"
-
-#, fuzzy
-#~ msgid "Offset (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Background Color"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Corona width"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Fadeout"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Fadeout width"
-#~ msgstr "גודל תמונה"
-
-#~ msgid "Color 1"
-#~ msgstr "צבע 1"
-
-#~ msgid "Color 2"
-#~ msgstr "צבע 2"
-
-#~ msgid "Color 3"
-#~ msgstr "צבע 3"
-
-#~ msgid "Granularity"
-#~ msgstr "גרעיניות"
-
-#, fuzzy
-#~ msgid "Image size"
-#~ msgstr "גודל תמונה"
-
-#~ msgid "Smooth"
-#~ msgstr "חלק"
-
-#~ msgid "Background Image"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Chalk color"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Blur amount"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Chip amount"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Drop shadow"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Keep background"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Highlight balance"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Offsets (pixels * 2)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Oilify mask size"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Blur X"
-#~ msgstr "גבול"
-
-#, fuzzy
-#~ msgid "Blur Y"
-#~ msgstr "גבול"
-
-#, fuzzy
-#~ msgid "Elevation"
-#~ msgstr "כיוון"
-
-#, fuzzy
-#~ msgid "Outline color"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Outline size"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Effect size (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Background image"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Granularity (1 is low)"
-#~ msgstr "גרעיניות"
-
-#, fuzzy
-#~ msgid "Blur radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Offset X"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Offset Y"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#~ msgid "Opacity"
-#~ msgstr "אטימות"
-
-#~ msgid "Columns"
-#~ msgstr "עמודות"
-
-#, fuzzy
-#~ msgid "Erase"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Erase/fill"
-#~ msgstr "גודל תמונה"
-
-#~ msgid "Even"
-#~ msgstr "זוגי"
-
-#, fuzzy
-#~ msgid "Even/odd"
-#~ msgstr "זוגי"
-
-#~ msgid "Odd"
-#~ msgstr "אי-זוגי"
-
-#~ msgid "Rows"
-#~ msgstr "שורות"
-
-#, fuzzy
-#~ msgid "Rows/cols"
-#~ msgstr "שורות/עמודות"
-
-#, fuzzy
-#~ msgid "Border size"
-#~ msgstr "גודל גבול X"
-
-#, fuzzy
-#~ msgid "Image height"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Image width"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Active colors"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Black on white"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Font _size (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "_Border (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "_Color scheme"
-#~ msgstr "צבע 3"
-
-#, fuzzy
-#~ msgid "_Text"
-#~ msgstr "טקסט"
-
-#, fuzzy
-#~ msgid "Add shadow"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Blur border"
-#~ msgstr "גבול"
-
-#, fuzzy
-#~ msgid "Granularity (1 is Low)"
-#~ msgstr "גרעיניות"
-
-#, fuzzy
-#~ msgid "Autocrop"
-#~ msgstr "יוצר:"
-
-#, fuzzy
-#~ msgid "Dark color"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Highlight color"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Index image"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Number of colors"
-#~ msgstr "מספר רצועות"
-
-#, fuzzy
-#~ msgid "Remove background"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Shadow color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Blend gradient (Text)"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Blend gradient (outline)"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Blend gradient (text)"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Outline gradient reverse"
-#~ msgstr "מדרג צבעים"
-
-#, fuzzy
-#~ msgid "Pattern (outline)"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Pattern (overlay)"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Pattern (text)"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Shadow"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Text gradient reverse"
-#~ msgstr "מדרג צבעים"
-
-#, fuzzy
-#~ msgid "Use pattern overlay"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 3)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Border size (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Frame color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Frame size"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Land height"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Number of lines"
-#~ msgstr "מספר רצועות"
-
-#, fuzzy
-#~ msgid "Offset radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Create shadow"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 5)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Cell size (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Edge amount"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Pixel amount"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Lower color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Lower color (active)"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Not pressed"
-#~ msgstr "לחוץ"
-
-#, fuzzy
-#~ msgid "Not pressed (active)"
-#~ msgstr "לחוץ"
-
-#, fuzzy
-#~ msgid "Text color (active)"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Upper color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Upper color (active)"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Edge behaviour"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Number of frames"
-#~ msgstr "מספר רצועות"
-
-#, fuzzy
-#~ msgid "Add background"
-#~ msgstr "תמונת רקע"
-
-#, fuzzy
-#~ msgid "Add drop-shadow"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Edge radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Pattern name"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Font color"
-#~ msgstr "צבע טקסט"
-
-#, fuzzy
-#~ msgid "Radius (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Sphere color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Frames"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Color method"
-#~ msgstr "צבע 3"
-
-#, fuzzy
-#~ msgid "Frame"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Hexagon"
-#~ msgstr "כיוון"
-
-#, fuzzy
-#~ msgid "Hole ratio"
-#~ msgstr "כיוון"
-
-#, fuzzy
-#~ msgid "Margin (pixels)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Pentagon"
-#~ msgstr "כיוון"
-
-#, fuzzy
-#~ msgid "Solid Color"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Triangle"
-#~ msgstr "שם קובץ"
-
-#, fuzzy
-#~ msgid "Burst color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 30)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 4)"
-#~ msgstr "גודל גופן (פיקסלים)"
-
-#, fuzzy
-#~ msgid "Whirl amount"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Number of times to whirl"
-#~ msgstr "מספר רצועות"
-
-#, fuzzy
-#~ msgid "Quarter size"
-#~ msgstr "גודל גבול X"
-
-#, fuzzy
-#~ msgid "Whirl angle"
-#~ msgstr "שם קובץ"
-
-#, fuzzy
-#~ msgid "Base color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Edge width"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Fill angle"
-#~ msgstr "שם קובץ"
-
-#, fuzzy
-#~ msgid "Hexagons"
-#~ msgstr "כיוון"
-
-#, fuzzy
-#~ msgid "Octagons"
-#~ msgstr "כיוון"
-
-#, fuzzy
-#~ msgid "Text pattern"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Blur type"
-#~ msgstr "גבול"
-
-#, fuzzy
-#~ msgid "Palette"
-#~ msgstr "דוגמה"
-
-#, fuzzy
-#~ msgid "Foreground color"
-#~ msgstr "צבע גבול"
-
-#, fuzzy
-#~ msgid "Mask opacity"
-#~ msgstr "אטימות"
-
-#, fuzzy
-#~ msgid "Mask size"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Ribbon width"
-#~ msgstr "גודל תמונה"
-
-#, fuzzy
-#~ msgid "Shadow depth"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Drop shadow X offset"
-#~ msgstr "אטימות"
-
-#, fuzzy
-#~ msgid "Drop shadow Y offset"
-#~ msgstr "אטימות"
-
-#, fuzzy
-#~ msgid "Drop shadow blur radius"
-#~ msgstr "הגדלת מחוג"
-
-#, fuzzy
-#~ msgid "Drop shadow color"
-#~ msgstr "הוספת צל"
-
-#, fuzzy
-#~ msgid "Drop shadow opacity"
-#~ msgstr "אטימות"
-
-#, fuzzy
-#~ msgid "Highlight X offset"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Highlight Y offset"
-#~ msgstr "צבע"
-
-#, fuzzy
-#~ msgid "Highlight opacity"
-#~ msgstr "צבע"
 
 #, fuzzy
 #~ msgid "Transparent Background"

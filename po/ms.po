@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gimp-script-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"POT-Creation-Date: 2004-10-07 02:46-0400\n"
 "PO-Revision-Date: 2003-10-30 09:35+0800\n"
 "Last-Translator: MIMOS Open Source Development Group <ismas@mimos.my>\n"
 "Language-Team: Projek Gabai <gabai-penyumbang@lists.sf.net>\n"
@@ -77,139 +77,54 @@ msgstr "mod konsol Script-Fu membolehkan panggilan interaktif sahaja"
 msgid "Tiny-Fu Console"
 msgstr "Konsol Script-Fu"
 
-#: tiny-fu/tiny-fu-console.c:171
+#: tiny-fu/tiny-fu-console.c:172
 #, fuzzy
 msgid "_Save Output"
 msgstr "Output SIOD"
 
-#: tiny-fu/tiny-fu-console.c:172
+#: tiny-fu/tiny-fu-console.c:173
 msgid "Cl_ear Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:194
+#: tiny-fu/tiny-fu-console.c:196
 msgid "TinyScheme Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:233
+#: tiny-fu/tiny-fu-console.c:235
 msgid "Welcome to TinyScheme\n"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:234
+#: tiny-fu/tiny-fu-console.c:236
 msgid ""
 "Copyright (c) Dimitrios Souflis\n"
 "\n"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:235
+#: tiny-fu/tiny-fu-console.c:237
 #, fuzzy
 msgid "Tiny-Fu Console - "
 msgstr "Konsol Script-Fu"
 
-#: tiny-fu/tiny-fu-console.c:236
+#: tiny-fu/tiny-fu-console.c:238
 msgid "Interactive Scheme Development"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:259
+#: tiny-fu/tiny-fu-console.c:261
 msgid "Current Command"
 msgstr "Arahan Semasa"
 
-#: tiny-fu/tiny-fu-console.c:277
+#: tiny-fu/tiny-fu-console.c:279
 msgid "Browse..."
 msgstr "Layari..."
 
-#: tiny-fu/tiny-fu-console.c:332
+#: tiny-fu/tiny-fu-console.c:334
 msgid "Save TinyScheme Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:369
-#, c-format
-msgid "Could not open '%s' for writing: %s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-console.c:646
+#: tiny-fu/tiny-fu-console.c:648
 #, fuzzy
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr "Mod penilai Script-Fu membolehkan panggilan bukan interaktif sahaja"
-
-#: tiny-fu/tiny-fu-scripts.c:149
-msgid "Too few arguments to tiny-fu-register"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:228
-msgid "tiny-fu-register: argument types must be integer values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:233
-msgid "tiny-fu-register: missing type specifier"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:238
-msgid "tiny-fu-register: argument labels must be strings"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:243
-msgid "tiny-fu-register: missing arguments label"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:254
-msgid "tiny-fu-register: drawable defaults must be integer values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:292
-msgid "tiny-fu-register: color defaults must be a list of 3 integers"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:312
-msgid "tiny-fu-register: toggle default must be an integer value"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:326
-msgid "tiny-fu-register: value defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:341
-msgid "tiny-fu-register: string defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:355
-msgid "tiny-fu-register: adjustment defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:390
-msgid "tiny-fu-register: filename defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:395
-msgid "tiny-fu-register: dirname defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:425
-msgid "tiny-fu-register: font defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:439
-msgid "tiny-fu-register: palette defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:453
-msgid "tiny-fu-register: pattern defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:467
-msgid "tiny-fu-register: brush defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:500
-msgid "tiny-fu-register: gradient defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:514
-msgid "tiny-fu-register: option defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:539
-msgid "tiny-fu-register: missing default argument"
-msgstr ""
 
 #: tiny-fu/tiny-fu-scripts.c:552
 #, fuzzy, c-format
@@ -222,43 +137,6 @@ msgstr ""
 "Ralat Script-Fu semasa melaksanakan\n"
 " %s\n"
 "%s"
-
-#: tiny-fu/tiny-fu-server.c:215
-msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:355
-msgid "Tiny-Fu server initialized and listening...\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:393
-#, c-format
-msgid "Processing request #%d\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:413
-#, c-format
-msgid "Request #%d processed in %f seconds, finishing on %s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:463
-msgid "Error reading command header.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:475
-msgid "Error in tiny-fu command transmission.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:491
-#, c-format
-msgid "Error reading command.  Read %d out of %d bytes.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:514
-#, c-format
-msgid ""
-"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
-msgstr ""
 
 #: tiny-fu/tiny-fu-server.c:642
 #, fuzzy
@@ -273,226 +151,2430 @@ msgstr "Port Pelayan"
 msgid "Server Logfile:"
 msgstr "Fail log Pelayan"
 
-#: tiny-fu/tiny-fu-text-console.c:119
-#, c-format
-msgid "error reading from stdin: %s\n"
-msgstr ""
-
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#: tiny-fu/tiny-fu-interface.c:192 tiny-fu/tiny-fu-interface.c:194
 #, fuzzy
 msgid "/Tiny-Fu/"
 msgstr "/Script-Fu/"
 
-#: tiny-fu/tiny-fu-interface.c:205
+#: tiny-fu/tiny-fu-interface.c:208
 #, fuzzy, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Script-Fu: %s"
 
-#: tiny-fu/tiny-fu-interface.c:212
-#, fuzzy
-msgid "_About"
-msgstr "Tentang"
-
 #. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:237
+#: tiny-fu/tiny-fu-interface.c:245
 msgid "Script Arguments"
 msgstr "Argumen Skrip"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:268
+#: tiny-fu/tiny-fu-interface.c:276
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:312
+#: tiny-fu/tiny-fu-interface.c:321
 #, fuzzy
 msgid "Tiny-Fu Color Selection"
 msgstr "Pemilihan Warna Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:418
+#: tiny-fu/tiny-fu-interface.c:427
 #, fuzzy
 msgid "Tiny-Fu File Selection"
 msgstr "Pemilihan Fail Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:422
+#: tiny-fu/tiny-fu-interface.c:431
 #, fuzzy
 msgid "Tiny-Fu Folder Selection"
 msgstr "Pemilihan Folder Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:434
+#: tiny-fu/tiny-fu-interface.c:443
 #, fuzzy
 msgid "Tiny-Fu Font Selection"
 msgstr "Pemilihan Fon Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:441
+#: tiny-fu/tiny-fu-interface.c:450
 #, fuzzy
 msgid "Tiny-Fu Palette Selection"
 msgstr "Pemilihan Corak Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:449
+#: tiny-fu/tiny-fu-interface.c:458
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Pemilihan Corak Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:457
+#: tiny-fu/tiny-fu-interface.c:465
 #, fuzzy
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Pemilihan Kecerunan Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:465
+#: tiny-fu/tiny-fu-interface.c:473
 #, fuzzy
 msgid "Tiny-Fu Brush Selection"
 msgstr "Pemilihan Berus Script-Fu"
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:519
+#: tiny-fu/tiny-fu-interface.c:532
 #, fuzzy
 msgid "Script Progress"
 msgstr "Argumen Skrip"
 
-#: tiny-fu/tiny-fu-interface.c:527
+#: tiny-fu/tiny-fu-interface.c:540
 msgid "(none)"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:1042
+#: tiny-fu/tiny-fu-interface.c:1060
 msgid "Author:"
 msgstr "Pengarang"
 
-#: tiny-fu/tiny-fu-interface.c:1048
+#: tiny-fu/tiny-fu-interface.c:1067
 msgid "Copyright:"
 msgstr "Hak cipta"
 
-#: tiny-fu/tiny-fu-interface.c:1054
+#: tiny-fu/tiny-fu-interface.c:1074
 msgid "Date:"
 msgstr "Tarikh"
 
-#: tiny-fu/tiny-fu-interface.c:1062
+#: tiny-fu/tiny-fu-interface.c:1083
 msgid "Image Types:"
 msgstr "Jenis Imej"
 
-#: tiny-fu/ts-wrapper.c:231
-msgid "Could not initialize TinyScheme!\n"
+#: scripts/ts-helloworld.sct.h:1 scripts/drop-shadow.sct.h:4
+#: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
+#: scripts/spyrogimp.sct.h:5
+msgid "Color"
+msgstr "Warna"
+
+#: scripts/ts-helloworld.sct.h:2 scripts/3d-outline.sct.h:5
+#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
+#: scripts/alien-neon-logo.sct.h:5 scripts/asc2img.sct.h:8
+#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:6
+#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:2
+#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:10
+#: scripts/bovinated-logo.sct.h:5 scripts/carved-logo.sct.h:4
+#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:7 scripts/chrome-logo.sct.h:5
+#: scripts/comic-logo.sct.h:4 scripts/coolmetal-logo.sct.h:5
+#: scripts/crystal-logo.sct.h:5 scripts/frosty-logo.sct.h:5
+#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:6
+#: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
+#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:2
+#: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
+#: scripts/pupi-button.sct.h:3 scripts/slide.sct.h:2
+#: scripts/sota-chrome-logo.sct.h:7 scripts/speed-text.sct.h:5
+#: scripts/starburst-logo.sct.h:6 scripts/starscape-logo.sct.h:4
+#: scripts/t-o-p-logo.sct.h:8 scripts/text-circle.sct.h:4
+#: scripts/textured-logo.sct.h:6 scripts/title-header.sct.h:2
+msgid "Font"
+msgstr "Fon"
+
+#: scripts/ts-helloworld.sct.h:3
+msgid "Font Size (pixels)"
+msgstr "Saiz Fon (piksel)"
+
+#: scripts/ts-helloworld.sct.h:4
+msgid "Hello, World!"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:250
-#, c-format
-msgid "Unable to read initialization file\n"
+#: scripts/ts-helloworld.sct.h:5
+#, fuzzy
+msgid "Text String"
+msgstr "Corak Teks"
+
+#: scripts/contactsheet.sct.h:1
+msgid " contact sheets from a total of "
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:537
+#: scripts/contactsheet.sct.h:2
+#, fuzzy
+msgid " for directory "
+msgstr "Tidak boleh buka paip output SIOD"
+
+#: scripts/contactsheet.sct.h:3
+#, fuzzy
+msgid " images"
+msgstr "Imej Indeks"
+
+#: scripts/contactsheet.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+msgstr "<Toolbox>/Xtns/Script-Fu/Util/Peta _Fon..."
+
+#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:2
+#: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
+#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:4
+#: scripts/alien-neon-logo.sct.h:3 scripts/asc2img.sct.h:3
+#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:5
+#: scripts/blended-logo.sct.h:3 scripts/bovinated-logo.sct.h:4
+#: scripts/chalk.sct.h:3 scripts/chrome-logo.sct.h:4
+#: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
+#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
+#: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
+#: scripts/gradient-bevel-logo.sct.h:5 scripts/neon-logo.sct.h:3
+#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
+#: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
+#: scripts/truchet.sct.h:2
+#, fuzzy
+msgid "Background color"
+msgstr "Warna Latar belakang"
+
+#: scripts/contactsheet.sct.h:6
+#, fuzzy
+msgid "Created "
+msgstr "Wujudkan Bayang"
+
+#: scripts/contactsheet.sct.h:7
+#, fuzzy
+msgid "Directory"
+msgstr "Tidak boleh buka paip output SIOD"
+
+#: scripts/contactsheet.sct.h:8
+msgid "Legend Font"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:9
+#, fuzzy
+msgid "Sheet "
+msgstr "Benih"
+
+#: scripts/contactsheet.sct.h:10
+#, fuzzy
+msgid "Sheet Size"
+msgstr "Benih"
+
+#: scripts/contactsheet.sct.h:11
+msgid "Text Color"
+msgstr "Warna Teks"
+
+#: scripts/contactsheet.sct.h:12
+msgid "Title Font"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:13
+#, fuzzy
+msgid "Unable to open directory "
+msgstr "Tidak boleh buka paip output SIOD"
+
+#: scripts/3d-outline.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Garis luar 3D..."
+
+#: scripts/3d-outline.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Garis luar 3D..."
+
+#: scripts/3d-outline.sct.h:3
+#, fuzzy
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr "Jejari Kabur (Lapisan Alfa) Bumpmap"
+
+#: scripts/3d-outline.sct.h:4 scripts/glossy.sct.h:7
+#, fuzzy
+msgid "Default bumpmap settings"
+msgstr "Seting Piawai Bumpmap"
+
+#: scripts/3d-outline.sct.h:6 scripts/alien-glow-logo.sct.h:6
+#: scripts/alien-neon-logo.sct.h:6 scripts/asc2img.sct.h:9
+#: scripts/basic1-logo.sct.h:5 scripts/basic2-logo.sct.h:7
+#: scripts/beveled-button.sct.h:4 scripts/beveled-pattern-button.sct.h:3
+#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:11
+#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
+#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
+#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
+#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:6
+#: scripts/gimp-headers.sct.h:6 scripts/gimp-labels.sct.h:7
+#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
+#: scripts/gradient-bevel-logo.sct.h:10 scripts/i26-gunya2.sct.h:3
+#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
+#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
+#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
+#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
+#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
+#: scripts/title-header.sct.h:3
+#, fuzzy
+msgid "Font size (pixels)"
+msgstr "Saiz Fon (piksel)"
+
+#: scripts/3d-outline.sct.h:7
+#, fuzzy
+msgid "Outline blur radius"
+msgstr "Jejari Kabur Garis luar"
+
+#: scripts/3d-outline.sct.h:8 scripts/glossy.sct.h:16
+#: scripts/round-corners.sct.h:6
+#, fuzzy
+msgid "Shadow X offset"
+msgstr "Ofset Bayang X"
+
+#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
+#: scripts/round-corners.sct.h:7
+#, fuzzy
+msgid "Shadow Y offset"
+msgstr "Ofset Bayang Y"
+
+#: scripts/3d-outline.sct.h:10
+#, fuzzy
+msgid "Shadow blur radius"
+msgstr "Jejari Kabur Bayang"
+
+#: scripts/3d-outline.sct.h:11 scripts/alien-glow-button.sct.h:10
+#: scripts/alien-glow-logo.sct.h:9 scripts/alien-neon-logo.sct.h:9
+#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:8
+#: scripts/beveled-button.sct.h:8 scripts/beveled-pattern-button.sct.h:6
+#: scripts/beveled-pattern-heading.sct.h:5 scripts/blended-logo.sct.h:16
+#: scripts/bovinated-logo.sct.h:9 scripts/carved-logo.sct.h:7
+#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:13
+#: scripts/chrome-logo.sct.h:8 scripts/comic-logo.sct.h:10
+#: scripts/coolmetal-logo.sct.h:9 scripts/crystal-logo.sct.h:7
+#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:13
+#: scripts/gimp-labels.sct.h:16 scripts/glossy.sct.h:18
+#: scripts/glowing-logo.sct.h:7 scripts/gradient-bevel-logo.sct.h:11
+#: scripts/i26-gunya2.sct.h:6 scripts/neon-logo.sct.h:9
+#: scripts/news-text.sct.h:9 scripts/pupi-button.sct.h:13
+#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:10
+#: scripts/speed-text.sct.h:7 scripts/starburst-logo.sct.h:8
+#: scripts/starscape-logo.sct.h:7 scripts/t-o-p-logo.sct.h:11
+#: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
+#: scripts/title-header.sct.h:5
+msgid "Text"
+msgstr "Teks"
+
+#: scripts/3dTruchet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/Truchet 3_D..."
+
+#: scripts/3dTruchet.sct.h:3 scripts/truchet.sct.h:3
+#, fuzzy
+msgid "Block size"
+msgstr "Saiz Blok"
+
+#: scripts/3dTruchet.sct.h:4 scripts/blended-logo.sct.h:6
+#, fuzzy
+msgid "End blend"
+msgstr "Campuran Berakhir"
+
+#: scripts/3dTruchet.sct.h:5 scripts/truchet.sct.h:5
+#, fuzzy
+msgid "Number of X tiles"
+msgstr "Bilangan Jubin X"
+
+#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:6
+#, fuzzy
+msgid "Number of Y tiles"
+msgstr "Bilangan Jubin Y"
+
+#: scripts/3dTruchet.sct.h:7 scripts/blended-logo.sct.h:15
+#, fuzzy
+msgid "Start blend"
+msgstr "Mula Campur"
+
+#: scripts/3dTruchet.sct.h:8
+msgid "Supersample"
+msgstr "Sampel hebat"
+
+#: scripts/3dTruchet.sct.h:9 scripts/add-bevel.sct.h:3 scripts/truchet.sct.h:7
+msgid "Thickness"
+msgstr "Ketebalan"
+
+#: scripts/add-bevel.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+msgstr "<Image>/Script-Fu/Hias/Tambah B_evel..."
+
+#: scripts/add-bevel.sct.h:2 scripts/chip-away.sct.h:11
+#, fuzzy
+msgid "Keep bump layer"
+msgstr "Simpan Lapisan Bump"
+
+#: scripts/add-bevel.sct.h:4 scripts/fuzzyborder.sct.h:10
+#: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
+#: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
+#, fuzzy
+msgid "Work on copy"
+msgstr "Buat pada Salinan"
+
+#: scripts/addborder.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+msgstr "<Image>/Script-Fu/Hias/Tambah _Sempadan..."
+
+#: scripts/addborder.sct.h:2
+#, fuzzy
+msgid "Border X size"
+msgstr "Saiz Sempadan X"
+
+#: scripts/addborder.sct.h:3
+#, fuzzy
+msgid "Border Y size"
+msgstr "Saiz Sempadan Y"
+
+#: scripts/addborder.sct.h:4
+#, fuzzy
+msgid "Border color"
+msgstr "Warna Sempadan"
+
+#: scripts/addborder.sct.h:5
+#, fuzzy
+msgid "Delta value on color"
+msgstr "Nilai Delta pada Warna"
+
+#: scripts/alien-glow-arrow.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+msgstr ""
+"<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/_Anak panah..."
+
+#: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
+msgid "Down"
+msgstr "Ke Bawah"
+
+#: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
+#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:5
+#: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
+#, fuzzy
+msgid "Flatten image"
+msgstr "Imej Rata"
+
+#: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
+#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-logo.sct.h:7 scripts/alien-neon-logo.sct.h:7
+#: scripts/burn-in-anim.sct.h:8 scripts/neon-logo.sct.h:8
+#: scripts/starscape-logo.sct.h:6
+#, fuzzy
+msgid "Glow color"
+msgstr "Warna Bercahaya"
+
+#: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
+msgid "Left"
+msgstr "Ke Kiri"
+
+#: scripts/alien-glow-arrow.sct.h:7 scripts/beveled-pattern-arrow.sct.h:4
+msgid "Orientation"
+msgstr "Orientasi"
+
+#: scripts/alien-glow-arrow.sct.h:8 scripts/beveled-pattern-arrow.sct.h:6
+msgid "Right"
+msgstr "Ke Kanan"
+
+#: scripts/alien-glow-arrow.sct.h:9 scripts/beveled-pattern-arrow.sct.h:7
+#: scripts/lava.sct.h:7
+msgid "Size"
+msgstr "Saiz"
+
+#: scripts/alien-glow-arrow.sct.h:10 scripts/beveled-pattern-arrow.sct.h:8
+msgid "Up"
+msgstr "Ke Atas"
+
+#: scripts/alien-glow-bar.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/_Hrule..."
+
+#: scripts/alien-glow-bar.sct.h:3
+#, fuzzy
+msgid "Bar height"
+msgstr "Tinggi Bar"
+
+#: scripts/alien-glow-bar.sct.h:4
+#, fuzzy
+msgid "Bar length"
+msgstr "Panjang Bar"
+
+#: scripts/alien-glow-bullet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/_Bulet..."
+
+#: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
+#: scripts/tileblur.sct.h:7
+msgid "Radius"
+msgstr "Jejari"
+
+#: scripts/alien-glow-button.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
+#, fuzzy
 msgid ""
-"Procedure database argument marshaller was called with no arguments. The "
-"procedure to be executed and the arguments it requires  (possibly none) must "
-"be specified."
+"\n"
+"    SF-ADJUSTMENT _"
 msgstr ""
+"\n"
+"\t\t\t SF-ADJUSTMENT _"
 
-#: tiny-fu/ts-wrapper.c:573
-#, c-format
-msgid "Invalid procedure name %s specified"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:3
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/B_utang..."
 
-#: tiny-fu/ts-wrapper.c:598
-#, c-format
-msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:8
+#, fuzzy
+msgid "Glow radius"
+msgstr "Jejari Bercahaya"
 
-#: tiny-fu/ts-wrapper.c:697
-#, c-format
-msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
+msgid "Padding"
+msgstr "Pad"
 
-#: tiny-fu/ts-wrapper.c:729
-#, c-format
-msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:11 scripts/asc2img.sct.h:10
+#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:9
+#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
+#: scripts/blended-logo.sct.h:17 scripts/gimp-headers.sct.h:14
+#: scripts/gimp-labels.sct.h:17 scripts/i26-gunya2.sct.h:7
+#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:14
+#: scripts/speed-text.sct.h:8
+#, fuzzy
+msgid "Text color"
+msgstr "Warna Teks"
 
-#: tiny-fu/ts-wrapper.c:761
-#, c-format
-msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:793
-#, c-format
-msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:825
-#, c-format
-msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:861
-msgid "Regions are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:926
-msgid "Boundaries are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:931
-msgid "Paths are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:994
-msgid "Status is for return types, not arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1001
-#, c-format
-msgid "Argument %d for %s is an unknown type"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1028
-#, c-format
-msgid "Invalid types specified for argument %d to %s"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1040
-#, c-format
+#: scripts/alien-glow-logo.sct.h:1 scripts/basic2-logo.sct.h:1
+#, fuzzy
 msgid ""
-"Procedural database execution of %s did not return a status:\n"
-"    "
+"\n"
+"    SF-COLOR      _"
+msgstr ""
+"\n"
+"\t\t\t SF-COLOR_     _"
+
+#: scripts/alien-glow-logo.sct.h:3
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Cahaya Berlainan..."
+
+#: scripts/alien-glow-logo.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Cahaya Berlainan..."
+
+#: scripts/alien-glow-logo.sct.h:8
+#, fuzzy
+msgid "Glow size (pixels * 4)"
+msgstr "Jumlah Cahaya (Piksel * 4)"
+
+#: scripts/alien-neon-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Cahaya Berlainan..."
+
+#: scripts/alien-neon-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Neon Berlainan..."
+
+#: scripts/alien-neon-logo.sct.h:4
+#, fuzzy
+msgid "Fade away"
+msgstr "Semakin Lenyap"
+
+#: scripts/alien-neon-logo.sct.h:8
+#, fuzzy
+msgid "Number of bands"
+msgstr "Bilangan Jalur"
+
+#: scripts/alien-neon-logo.sct.h:10
+#, fuzzy
+msgid "Width of bands"
+msgstr "Lebar Jalur"
+
+#: scripts/alien-neon-logo.sct.h:11
+#, fuzzy
+msgid "Width of gaps"
+msgstr "Lebar Sela"
+
+#: scripts/asc2img.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+msgstr "<Image>/Script-Fu/Utils/ASCII ke Lapisan Imej..."
+
+#: scripts/asc2img.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Util/_ASCII ke Imej..."
+
+#: scripts/asc2img.sct.h:5
+#, fuzzy, no-c-format
+msgid "Buffer amount (% height of text)"
+msgstr "Jumlah Penimbal (% Tinggi Teks)"
+
+#: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
+#, fuzzy
+msgid "File name"
+msgstr "Nama fail"
+
+#: scripts/asc2img.sct.h:7 scripts/select-to-pattern.sct.h:2
+msgid "Filename"
+msgstr "Nama fail"
+
+#: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:6 scripts/spinning-globe.sct.h:4
+#, fuzzy
+msgid "Transparent background"
+msgstr "Latar belakang Lut sinar"
+
+#: scripts/basic1-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Basic I..."
+
+#: scripts/basic1-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Basic I..."
+
+#: scripts/basic2-logo.sct.h:3
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/B_asic II..."
+
+#: scripts/basic2-logo.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/B_asic II..."
+
+#: scripts/beveled-button.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Butang/Butang _Serong Ringkas..."
+
+#: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:7
+#: scripts/pupi-button.sct.h:2
+#, fuzzy
+msgid "Bevel width"
+msgstr "Lebar Permukaan Serong"
+
+#: scripts/beveled-button.sct.h:5
+#, fuzzy
+msgid "Lower-right color"
+msgstr "Warna sebelah Kanan Bawah"
+
+#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:5
+#: scripts/pupi-button.sct.h:11
+msgid "Pressed"
+msgstr "Ditekan"
+
+#: scripts/beveled-button.sct.h:10
+#, fuzzy
+msgid "Upper-left color"
+msgstr "Warna sebelah Kiri Bawah"
+
+#: scripts/beveled-pattern-arrow.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/_Anak panah..."
+
+#: scripts/beveled-pattern-arrow.sct.h:5
+#: scripts/beveled-pattern-bullet.sct.h:3
+#: scripts/beveled-pattern-button.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:4
+#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:12
+#: scripts/textured-logo.sct.h:11
+msgid "Pattern"
+msgstr "Corak"
+
+#: scripts/beveled-pattern-bullet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/_Bulet..."
+
+#: scripts/beveled-pattern-bullet.sct.h:2
+#, fuzzy
+msgid "Diameter"
+msgstr "Garis pusat"
+
+#: scripts/beveled-pattern-button.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/B_utang..."
+
+#: scripts/beveled-pattern-heading.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/T_ajuk..."
+
+#: scripts/beveled-pattern-hrule.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/_Hrule..."
+
+#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:8
+#: scripts/gradient-example.sct.h:3 scripts/mkbrush.sct.h:8
+#: scripts/swirltile.sct.h:7
+msgid "Height"
+msgstr "Tinggi"
+
+#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:4
+#: scripts/mkbrush.sct.h:10 scripts/swirltile.sct.h:10
+msgid "Width"
+msgstr "Lebar"
+
+#: scripts/blend-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+msgstr "<Image>/Script-Fu/Juruanimasi/_Campur..."
+
+#: scripts/blend-anim.sct.h:2
+msgid "Blend Animation needs at least three source layers"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1055
-#, c-format
+#: scripts/blend-anim.sct.h:3
+#, fuzzy
+msgid "Intermediate frames"
+msgstr "Bingkai Perantaraan"
+
+#: scripts/blend-anim.sct.h:4
+msgid "Looped"
+msgstr "Gelung"
+
+#: scripts/blend-anim.sct.h:5
+#, fuzzy
+msgid "Max. blur radius"
+msgstr "Jejari Kabur Maksimum"
+
+#: scripts/blended-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Di_campur..."
+
+#: scripts/blended-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Di_campur..."
+
+#: scripts/blended-logo.sct.h:4
+#, fuzzy
+msgid "Blend mode"
+msgstr "Mod Campur"
+
+#: scripts/blended-logo.sct.h:5
+msgid "Custom Gradient"
+msgstr "Kecerunan Biasa"
+
+#: scripts/blended-logo.sct.h:7
+msgid "FG-BG-HSV"
+msgstr "FG-BG-HSV"
+
+#: scripts/blended-logo.sct.h:8
+msgid "FG-BG-RGB"
+msgstr "FG-BG-RGB"
+
+#: scripts/blended-logo.sct.h:9
+msgid "FG-Transparent"
+msgstr "EG-Lut sinar"
+
+#: scripts/blended-logo.sct.h:12 scripts/comic-logo.sct.h:6
+#: scripts/coolmetal-logo.sct.h:7 scripts/land.sct.h:3 scripts/lava.sct.h:2
+#: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
+msgid "Gradient"
+msgstr "Kecerunan"
+
+#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
+#: scripts/coolmetal-logo.sct.h:8 scripts/gradient-example.sct.h:2
+#: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
+#, fuzzy
+msgid "Gradient reverse"
+msgstr "Kecerunan Songsang"
+
+#: scripts/blended-logo.sct.h:14
+msgid "Offset (pixels)"
+msgstr "Ofset (Piksel)"
+
+#: scripts/bovinated-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Pe_mbovinan..."
+
+#: scripts/bovinated-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/ Pem_bovinan..."
+
+#: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
+msgid "Background Color"
+msgstr "Warna Latar belakang"
+
+#: scripts/bovinated-logo.sct.h:7
+msgid "Spots density X"
+msgstr "Kepadatan titik X"
+
+#: scripts/bovinated-logo.sct.h:8
+msgid "Spots density Y"
+msgstr "Kepadatan titik Y"
+
+#: scripts/burn-in-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+msgstr "<Image>/Script-Fu/Juruanimasi/_Tulis..."
+
+#: scripts/burn-in-anim.sct.h:2
+#, fuzzy
+msgid "Add glowing"
+msgstr "Tambahkan Cahaya"
+
+#: scripts/burn-in-anim.sct.h:3
+#, fuzzy
+msgid "After glow"
+msgstr "Selepas Bercahaya"
+
+#: scripts/burn-in-anim.sct.h:4
+#, fuzzy
 msgid ""
-"Procedural database execution of %s failed:\n"
-"    "
+"Burn-In: Needs two layers in total!\n"
+"A foreground text layer with transparency and a background layer."
 msgstr ""
+"Burn-In: Keseluruhannya memerlukan dua lapisan!\n"
+"        Lapisan teks latar depan dengan kelutsinaran\n"
+"        dan lapisan latar belakang"
 
-#: tiny-fu/ts-wrapper.c:1062
-#, c-format
+#: scripts/burn-in-anim.sct.h:5
+#, fuzzy
+msgid "Corona width"
+msgstr "Lebar Corona"
+
+#: scripts/burn-in-anim.sct.h:6
+msgid "Fadeout"
+msgstr "Lenyap"
+
+#: scripts/burn-in-anim.sct.h:7
+#, fuzzy
+msgid "Fadeout width"
+msgstr "Lebar Lenyap"
+
+#: scripts/burn-in-anim.sct.h:9
+msgid "Prepare for GIF"
+msgstr "Sediakan untuk GIF"
+
+#: scripts/burn-in-anim.sct.h:10
+msgid "Speed (pixels/frame)"
+msgstr "Kelajuan (piksel/bingkai)"
+
+#: scripts/camo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Penyamaran..."
+
+#: scripts/camo.sct.h:2
+msgid "Color 1"
+msgstr "Warna 1"
+
+#: scripts/camo.sct.h:3
+msgid "Color 2"
+msgstr "Warna 2"
+
+#: scripts/camo.sct.h:4
+msgid "Color 3"
+msgstr "Warna 3"
+
+#: scripts/camo.sct.h:6 scripts/rendermap.sct.h:6
+msgid "Granularity"
+msgstr "Pembutiran"
+
+#: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
+#, fuzzy
+msgid "Image size"
+msgstr "Saiz Imej"
+
+#: scripts/camo.sct.h:8 scripts/distress-selection.sct.h:3
+msgid "Smooth"
+msgstr "Licin"
+
+#: scripts/carved-logo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Diukir..."
+
+#: scripts/carved-logo.sct.h:2
+msgid "Background Image"
+msgstr "Imej Latar belakang"
+
+#: scripts/carved-logo.sct.h:3
+#, fuzzy
+msgid "Carve raised text"
+msgstr "Ukir Teks yang Ditinggikan"
+
+#: scripts/carved-logo.sct.h:6
+#, fuzzy
+msgid "Padding around text"
+msgstr "Pad Keliling Teks"
+
+#: scripts/carve-it.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+msgstr "<Image>/Script-Fu/Stensil Ops/U_kirnya..."
+
+#: scripts/carve-it.sct.h:2
+#, fuzzy
+msgid "Carve white areas"
+msgstr "Ukir Kawasan Putih"
+
+#: scripts/carve-it.sct.h:3
+#, fuzzy
+msgid "Image to carve"
+msgstr "Imej untuk Ukir"
+
+#: scripts/chalk.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Kapur..."
+
+#: scripts/chalk.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Kapur..."
+
+#: scripts/chalk.sct.h:4
+#, fuzzy
+msgid "Chalk color"
+msgstr "Warna Kapur"
+
+#: scripts/chip-away.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Chip Awa_y..."
+
+#: scripts/chip-away.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Chip Awa_y..."
+
+#: scripts/chip-away.sct.h:3
+#, fuzzy
+msgid "Blur amount"
+msgstr "Jumlah Kabur"
+
+#: scripts/chip-away.sct.h:4
+#, fuzzy
+msgid "Chip amount"
+msgstr "Jumlah Chip"
+
+#: scripts/chip-away.sct.h:5
+#, fuzzy
+msgid "Drop shadow"
+msgstr "Lepaskan Bayang"
+
+#: scripts/chip-away.sct.h:6
+#, fuzzy
+msgid "Fill BG with pattern"
+msgstr "Isi BG dengan Corak"
+
+#: scripts/chip-away.sct.h:9
+msgid "Invert"
+msgstr "Songsangkan"
+
+#: scripts/chip-away.sct.h:10
+#, fuzzy
+msgid "Keep background"
+msgstr "Kekalkan Latar belakang"
+
+#: scripts/chrome-it.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+msgstr "<Image>/Script-Fu/Stensil Ops/K_rom..."
+
+#: scripts/chrome-it.sct.h:2 scripts/sota-chrome-logo.sct.h:2
+#, fuzzy
+msgid "Chrome balance"
+msgstr "Keseimbangan Warna Krom"
+
+#: scripts/chrome-it.sct.h:3 scripts/crystal-logo.sct.h:3
+#: scripts/sota-chrome-logo.sct.h:3
+#, fuzzy
+msgid "Chrome factor"
+msgstr "Faktor Warna Krom"
+
+#: scripts/chrome-it.sct.h:4 scripts/sota-chrome-logo.sct.h:4
+#, fuzzy
+msgid "Chrome lightness"
+msgstr "Pencahayaan Warna Krom"
+
+#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:5
+#, fuzzy
+msgid "Chrome saturation"
+msgstr "Ketepuan Warna Krom"
+
+#: scripts/chrome-it.sct.h:6
+#, fuzzy
+msgid "Chrome white areas"
+msgstr "Kawasan Putih Warna Krom"
+
+#: scripts/chrome-it.sct.h:7 scripts/crystal-logo.sct.h:4
+#: scripts/sota-chrome-logo.sct.h:6
+#, fuzzy
+msgid "Environment map"
+msgstr "Peta Persekitaran"
+
+#: scripts/chrome-it.sct.h:8 scripts/sota-chrome-logo.sct.h:9
+#, fuzzy
+msgid "Highlight balance"
+msgstr "Tonjolkan Keseimbangan"
+
+#: scripts/chrome-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/K_rom..."
+
+#: scripts/chrome-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/K_rom..."
+
+#: scripts/chrome-logo.sct.h:7
+msgid "Offsets (pixels * 2)"
+msgstr "Ofset (piksel * 2)"
+
+#: scripts/circuit.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+msgstr "<Image>/Script-Fu/Render/_Litar..."
+
+#: scripts/circuit.sct.h:2
+#, fuzzy
+msgid "Circuit seed"
+msgstr "Benih Litar"
+
+#: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
+#: scripts/xach-effect.sct.h:11
+#, fuzzy
+msgid "Keep selection"
+msgstr "Kekalkan Pemilihan"
+
+#: scripts/circuit.sct.h:4
+#, fuzzy
+msgid "No background (only for separate layer)"
+msgstr "Tiada Latar belakang (hanya untuk lapisan berasingan)"
+
+#: scripts/circuit.sct.h:5
+#, fuzzy
+msgid "Oilify mask size"
+msgstr "Meminyakkan Saiz Topeng"
+
+#: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
+#, fuzzy
+msgid "Separate layer"
+msgstr "Lapisan Berasingan"
+
+#: scripts/clothify.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+msgstr "<Image>/Script-Fu/Alkimia/_Clothify..."
+
+#: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
+msgid "Azimuth"
+msgstr "Azimut"
+
+#: scripts/clothify.sct.h:3
+msgid "Blur X"
+msgstr "Kaburkan X"
+
+#: scripts/clothify.sct.h:4
+msgid "Blur Y"
+msgstr "Kaburkan Y"
+
+#: scripts/clothify.sct.h:5 scripts/swirltile.sct.h:5
+msgid "Depth"
+msgstr "Kedalaman"
+
+#: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
+msgid "Elevation"
+msgstr "Meningkat"
+
+#: scripts/coffee.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+msgstr "<Image>/Script-Fu/Hias/Kesan _Kopi..."
+
+#: scripts/coffee.sct.h:2
+#, fuzzy
 msgid ""
-"Procedural database execution of %s failed on invalid input arguments:\n"
-"    "
+"Darken only\n"
+"(Better, but only for images with alot of white)"
+msgstr ""
+"Gelapkan hanya\n"
+"(Lebih baik, tetapi hanya untuk Imej yang banyak Putih)"
+
+#: scripts/coffee.sct.h:3
+msgid "Stains"
+msgstr "Kesan"
+
+#: scripts/comic-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Buk_u Komik..."
+
+#: scripts/comic-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Buk_u Komik..."
+
+#: scripts/comic-logo.sct.h:8
+#, fuzzy
+msgid "Outline color"
+msgstr "Warna Garis luar"
+
+#: scripts/comic-logo.sct.h:9 scripts/glossy.sct.h:11
+#, fuzzy
+msgid "Outline size"
+msgstr "Saiz Garis luar"
+
+#: scripts/coolmetal-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Cool _Metal"
+
+#: scripts/coolmetal-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Cool _Metal..."
+
+#: scripts/coolmetal-logo.sct.h:4 scripts/frosty-logo.sct.h:4
+#, fuzzy
+msgid "Effect size (pixels)"
+msgstr "Saiz yang Terjejas (piksel)"
+
+#: scripts/copy-visible.sct.h:1
+#, fuzzy
+msgid "<Image>/Edit/Copy/Copy _Visible"
+msgstr "<Image>/Edit/Salinan _Dapat Dilihat..."
+
+#: scripts/crystal-logo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Kristal..."
+
+#: scripts/crystal-logo.sct.h:2
+#, fuzzy
+msgid "Background image"
+msgstr "Imej Latar belakang"
+
+#: scripts/distress-selection.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+msgstr "<Image>/Script-Fu/Pemilihan/Pemilihan _Distres..."
+
+#: scripts/distress-selection.sct.h:2
+#, fuzzy
+msgid "Granularity (1 is low)"
+msgstr "Pembutiran (1 adalah Rendah)"
+
+#: scripts/distress-selection.sct.h:4
+#, fuzzy
+msgid "Smooth horizontally"
+msgstr "Licin secara Mengufuk"
+
+#: scripts/distress-selection.sct.h:5
+#, fuzzy
+msgid "Smooth vertically"
+msgstr "Licin secara Menegak"
+
+#: scripts/distress-selection.sct.h:6
+msgid "Spread"
+msgstr "Hamparan"
+
+#: scripts/distress-selection.sct.h:7
+#, fuzzy
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Ambang (Lebih Besar 1<--> 255 Lebih Kecil)"
+
+#: scripts/drop-shadow.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+msgstr "<Image>/Script-Fu/Bayang/_Lepaskan Bayang..."
+
+#: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
+#, fuzzy
+msgid "Allow resizing"
+msgstr "Benarkan Pensaizan semula"
+
+#: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
+#: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
+#: scripts/swirltile.sct.h:4
+#, fuzzy
+msgid "Blur radius"
+msgstr "Jejari Kabur"
+
+#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:11
+msgid "Offset X"
+msgstr "Ofset X"
+
+#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:12
+msgid "Offset Y"
+msgstr "Ofset Y"
+
+#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:7
+msgid "Opacity"
+msgstr "Kelegapan"
+
+#: scripts/erase-rows.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+msgstr "<Image>/Script-Fu/Alkimia/_Padam selang Sebaris..."
+
+#: scripts/erase-rows.sct.h:2
+msgid "Columns"
+msgstr "Lajur"
+
+#: scripts/erase-rows.sct.h:3
+msgid "Erase"
+msgstr "Padam"
+
+#: scripts/erase-rows.sct.h:4
+#, fuzzy
+msgid "Erase/fill"
+msgstr "Padam/Isi"
+
+#: scripts/erase-rows.sct.h:5
+msgid "Even"
+msgstr "Genap"
+
+#: scripts/erase-rows.sct.h:6
+#, fuzzy
+msgid "Even/odd"
+msgstr "Genap/Ganjil"
+
+#: scripts/erase-rows.sct.h:7
+msgid "Fill with BG"
+msgstr "Isi dengan BG"
+
+#: scripts/erase-rows.sct.h:8
+msgid "Odd"
+msgstr "Ganjil"
+
+#: scripts/erase-rows.sct.h:9
+msgid "Rows"
+msgstr "Baris"
+
+#: scripts/erase-rows.sct.h:10
+#, fuzzy
+msgid "Rows/cols"
+msgstr "Baris/Lajur"
+
+#: scripts/fade-outline.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+msgstr "<Image>/Script-Fu/Pemilihan/_Lenyapkan Garis luar..."
+
+#: scripts/fade-outline.sct.h:2
+#, fuzzy
+msgid "Apply generated layermask"
+msgstr "Gunakan Topeng Lapisan yang Dihasilkan"
+
+#: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
+#: scripts/old-photo.sct.h:2
+#, fuzzy
+msgid "Border size"
+msgstr "Saiz Sempadan"
+
+#: scripts/fade-outline.sct.h:4
+#, fuzzy
+msgid "Clear unselected maskarea"
+msgstr "Bersihkan Kawasan Topeng yang Tidak Dipilih"
+
+#: scripts/fade-outline.sct.h:6
+#, fuzzy, no-c-format
+msgid "Fade from %"
+msgstr "Lenyapkan Dari %"
+
+#: scripts/fade-outline.sct.h:8
+#, fuzzy, no-c-format
+msgid "Fade to   %"
+msgstr "Lenyapkan Kepada   %"
+
+#: scripts/fade-outline.sct.h:9
+#, fuzzy
+msgid "Use growing selection"
+msgstr "Gunakan Pemilihan yang Semakin Banyak"
+
+#: scripts/flatland.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Tanah rata..."
+
+#: scripts/flatland.sct.h:2 scripts/land.sct.h:2
+#, fuzzy
+msgid "Detail level"
+msgstr "Tahap yang Terperinci"
+
+#: scripts/flatland.sct.h:3 scripts/land.sct.h:4
+#, fuzzy
+msgid "Image height"
+msgstr "Tinggi Imej"
+
+#: scripts/flatland.sct.h:4 scripts/land.sct.h:5
+#, fuzzy
+msgid "Image width"
+msgstr "Lebar Imej"
+
+#: scripts/flatland.sct.h:5 scripts/land.sct.h:7
+#, fuzzy
+msgid "Random seed"
+msgstr "Benih Rawak"
+
+#: scripts/flatland.sct.h:6 scripts/land.sct.h:8
+msgid "Scale X"
+msgstr "Skala X"
+
+#: scripts/flatland.sct.h:7 scripts/land.sct.h:9
+msgid "Scale Y"
+msgstr "Skala Y"
+
+#: scripts/font-map.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Util/Peta _Fon..."
+
+#: scripts/font-map.sct.h:2
+#, fuzzy
+msgid "Active colors"
+msgstr "Warna Aktif"
+
+#: scripts/font-map.sct.h:3
+#, fuzzy
+msgid "Black on white"
+msgstr "Hitam atas Putih"
+
+#: scripts/font-map.sct.h:4
+#, fuzzy
+msgid "Font _size (pixels)"
+msgstr "_Saiz Fon (piksel)"
+
+#: scripts/font-map.sct.h:5
+#, fuzzy
+msgid "Use font _name as text"
+msgstr "Guna _Nama Fon sebagai Teks"
+
+#: scripts/font-map.sct.h:6
+msgid "_Border (pixels)"
+msgstr "_Sempadan (piksel)"
+
+#: scripts/font-map.sct.h:7
+#, fuzzy
+msgid "_Color scheme"
+msgstr "Skema _Warna"
+
+#: scripts/font-map.sct.h:8
+msgid "_Filter (regexp)"
+msgstr "_Penapis (regexp)"
+
+#: scripts/font-map.sct.h:9
+msgid "_Labels"
+msgstr "_Label"
+
+#: scripts/font-map.sct.h:10
+msgid "_Text"
+msgstr "_Teks"
+
+#: scripts/frosty-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Berfros..."
+
+#: scripts/frosty-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Berfros..."
+
+#: scripts/fuzzyborder.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+msgstr "<Image>/Script-Fu/Hias/Sempadan _Kabur..."
+
+#: scripts/fuzzyborder.sct.h:2
+#, fuzzy
+msgid "Add shadow"
+msgstr "Tambahkan Bayang"
+
+#: scripts/fuzzyborder.sct.h:3
+#, fuzzy
+msgid "Blur border"
+msgstr "Kaburkan Sempadan"
+
+#: scripts/fuzzyborder.sct.h:7
+msgid "Granularity (1 is Low)"
+msgstr "Pembutiran (1 adalah Rendah)"
+
+#: scripts/fuzzyborder.sct.h:9
+#, fuzzy, no-c-format
+msgid "Shadow weight (%)"
+msgstr "Tinggi Bayang (%)"
+
+#: scripts/gimp-headers.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Tajuk _Besar..."
+
+#: scripts/gimp-headers.sct.h:2
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Tajuk _Kecil..."
+
+#: scripts/gimp-headers.sct.h:3
+#, fuzzy
+msgid "Autocrop"
+msgstr "AutoCrop"
+
+#: scripts/gimp-headers.sct.h:4
+#, fuzzy
+msgid "Dark color"
+msgstr "Warna Gelap"
+
+#: scripts/gimp-headers.sct.h:7 scripts/xach-effect.sct.h:9
+#, fuzzy
+msgid "Highlight color"
+msgstr "Tonjolkan Warna"
+
+#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:9
+#, fuzzy
+msgid "Index image"
+msgstr "Imej Indeks"
+
+#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
+#, fuzzy
+msgid "Number of colors"
+msgstr "Bilangan Warna"
+
+#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:13
+#, fuzzy
+msgid "Remove background"
+msgstr "Keluarkan Latar Belakang"
+
+#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:14
+#, fuzzy
+msgid "Select-by-color threshold"
+msgstr "Ambang Pilih Ikut Warna"
+
+#: scripts/gimp-headers.sct.h:12 scripts/gimp-labels.sct.h:15
+#, fuzzy
+msgid "Shadow color"
+msgstr "Warna Bayang"
+
+#: scripts/gimp-labels.sct.h:1
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+"Label..."
+msgstr ""
+"<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Label Sub-Butang T_iub..."
+
+#: scripts/gimp-labels.sct.h:2
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-Button "
+"Label..."
+msgstr ""
+"<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Sub-Sub-Butang T_iub..."
+"Label..."
+
+#: scripts/gimp-labels.sct.h:3
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+"Labels..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Label Tiub _Am..."
+
+#: scripts/gimp-labels.sct.h:4
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button Label..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Label Butang _Tiub..."
+
+#: scripts/glossy.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Ber_kilat..."
+
+#: scripts/glossy.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Ber_kilat..."
+
+#: scripts/glossy.sct.h:4
+#, fuzzy
+msgid "Blend gradient (Text)"
+msgstr "Campur Kecerunan (Teks)"
+
+#: scripts/glossy.sct.h:5
+#, fuzzy
+msgid "Blend gradient (outline)"
+msgstr "Campur Kecerunan (Garis kasar)"
+
+#: scripts/glossy.sct.h:6
+#, fuzzy
+msgid "Blend gradient (text)"
+msgstr "Campur Kecerunan (Teks)"
+
+#: scripts/glossy.sct.h:10
+#, fuzzy
+msgid "Outline gradient reverse"
+msgstr "Kecerunan Garis Kasar Songsang"
+
+#: scripts/glossy.sct.h:12
+#, fuzzy
+msgid "Pattern (outline)"
+msgstr "Corak (Garis kasar)"
+
+#: scripts/glossy.sct.h:13
+#, fuzzy
+msgid "Pattern (overlay)"
+msgstr "Corak (Tindihan atas)"
+
+#: scripts/glossy.sct.h:14
+#, fuzzy
+msgid "Pattern (text)"
+msgstr "Corak (Teks)"
+
+#: scripts/glossy.sct.h:15 scripts/sphere.sct.h:5
+msgid "Shadow"
+msgstr "Bayang"
+
+#: scripts/glossy.sct.h:19
+#, fuzzy
+msgid "Text gradient reverse"
+msgstr "Kecerunan Teks Songsang"
+
+#: scripts/glossy.sct.h:20
+#, fuzzy
+msgid "Use pattern for outline instead of gradient"
+msgstr "Gunakan Corak untuk Garis kasar dan bukan Kecerunan"
+
+#: scripts/glossy.sct.h:21
+#, fuzzy
+msgid "Use pattern for text instead of gradient"
+msgstr "Gunakan Corak untuk Teks dan bukan Kecerunan"
+
+#: scripts/glossy.sct.h:22
+#, fuzzy
+msgid "Use pattern overlay"
+msgstr "Gunakan Tindihan Atas Corak"
+
+#: scripts/glossy.sct.h:23
+#, fuzzy
+msgid "Use tattern for outline instead of gradient"
+msgstr "Gunakan Corak untuk Garis kasar dan bukan Kecerunan"
+
+#: scripts/glowing-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Ber_cahaya Terang..."
+
+#: scripts/glowing-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Ber_cahaya Terang..."
+
+#: scripts/glowing-logo.sct.h:4
+#, fuzzy
+msgid "Effect size (pixels * 3)"
+msgstr "Beri Kesan kepada Saiz (piksel * 3)"
+
+#: scripts/gradient-bevel-logo.sct.h:3
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Sero_ng Kecerunan..."
+
+#: scripts/gradient-bevel-logo.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Sero_ng Kecerunan..."
+
+#: scripts/gradient-bevel-logo.sct.h:6
+#, fuzzy
+msgid "Bevel height (Sharpness)"
+msgstr "Tinggi Serong (Ketajaman)"
+
+#: scripts/gradient-bevel-logo.sct.h:8 scripts/t-o-p-logo.sct.h:5
+#: scripts/textured-logo.sct.h:4
+#, fuzzy
+msgid "Border size (pixels)"
+msgstr "Saiz Sempadan (piksel)"
+
+#: scripts/gradient-example.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Util/_Kecerunan Biasa..."
+
+#: scripts/i26-gunya2.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Imigre-26..."
+
+#: scripts/i26-gunya2.sct.h:4
+#, fuzzy
+msgid "Frame color"
+msgstr "Warna Bingkai"
+
+#: scripts/i26-gunya2.sct.h:5
+#, fuzzy
+msgid "Frame size"
+msgstr "Saiz Bingkai"
+
+#: scripts/land.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Tanah..."
+
+#: scripts/land.sct.h:6
+#, fuzzy
+msgid "Land height"
+msgstr "Tinggi Tanah"
+
+#: scripts/land.sct.h:10
+#, fuzzy
+msgid "Sea depth"
+msgstr "Kedalaman Laut"
+
+#: scripts/lava.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Lava..."
+msgstr "<Image>/Script-Fu/Render/_Lava..."
+
+#: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
+msgid "Roughness"
+msgstr "Kekasaran"
+
+#: scripts/lava.sct.h:5
+msgid "Seed"
+msgstr "Benih"
+
+#: scripts/lava.sct.h:8
+#, fuzzy
+msgid "Use current gradient"
+msgstr "Gunakan Kecerunan Semasa"
+
+#: scripts/line-nova.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+msgstr "<Image>/Script-Fu/Render/_Nova Garis..."
+
+#: scripts/line-nova.sct.h:2
+#, fuzzy
+msgid "Number of lines"
+msgstr "Bilangan Garis"
+
+#: scripts/line-nova.sct.h:3
+#, fuzzy
+msgid "Offset radius"
+msgstr "Ofset Jejari"
+
+#: scripts/line-nova.sct.h:4
+msgid "Randomness"
+msgstr "Kerawakan"
+
+#: scripts/line-nova.sct.h:5
+msgid "Sharpness (degrees)"
+msgstr "Kejelasan (tahap)"
+
+#: scripts/mkbrush.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+msgstr ""
+"<Toolbox>/Xtns/Script-Fu/Buat Berus/Berbentuk E_lips, Berbulu Pelepah..."
+
+#: scripts/mkbrush.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+msgstr ""
+"<Toolbox>/Xtns/Script-Fu/Buat Berus/S_egi Empat Tepat, Berbulu Pelepah..."
+
+#: scripts/mkbrush.sct.h:3
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Buat Berus/Berbentuk _Elips..."
+
+#: scripts/mkbrush.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Buat Berus/_Segi Empat Tepat..."
+
+#: scripts/mkbrush.sct.h:5
+msgid "Create size of brush"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1203
-msgid "Regions are currently unsupported as return values"
+#: scripts/mkbrush.sct.h:6
+msgid "Description"
+msgstr "Huraian"
+
+#: scripts/mkbrush.sct.h:7
+msgid "Feathering"
+msgstr "Memberikan Bulu Pelepah"
+
+#: scripts/mkbrush.sct.h:9 scripts/select-to-brush.sct.h:4
+msgid "Spacing"
+msgstr "Langkau"
+
+#: scripts/neon-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/N_eon..."
+
+#: scripts/neon-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/N_eon..."
+
+#: scripts/neon-logo.sct.h:4
+#, fuzzy
+msgid "Create shadow"
+msgstr "Wujudkan Bayang"
+
+#: scripts/neon-logo.sct.h:5
+#, fuzzy
+msgid "Effect size (pixels * 5)"
+msgstr "Beri kesan kepada Saiz (piksel * 5)"
+
+#: scripts/news-text.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Teks Cetakan Baru..."
+
+#: scripts/news-text.sct.h:4
+#, fuzzy
+msgid "Cell size (pixels)"
+msgstr "Saiz Sel (piksel)"
+
+#: scripts/news-text.sct.h:6 scripts/speed-text.sct.h:4
+#, no-c-format
+msgid "Density (%)"
+msgstr "Ketumpatan (%)"
+
+#: scripts/old-photo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+msgstr "<Image>/Script-Fu/Hias/Foto _Lama..."
+
+#: scripts/old-photo.sct.h:3
+msgid "Defocus"
+msgstr "Tidak fokus"
+
+#: scripts/old-photo.sct.h:4
+msgid "Mottle"
+msgstr "Berbelak-belak"
+
+#: scripts/old-photo.sct.h:5
+msgid "Sepia"
+msgstr "Warna Sepia"
+
+#: scripts/perspective-shadow.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+msgstr "<Image>/Script-Fu/Bayang/_Perspektif..."
+
+#: scripts/perspective-shadow.sct.h:3
+msgid "Angle"
+msgstr "Sudut"
+
+#: scripts/perspective-shadow.sct.h:6
+msgid "Interpolate"
+msgstr "Sisipkan"
+
+#: scripts/perspective-shadow.sct.h:8
+#, fuzzy
+msgid "Relative distance of horizon"
+msgstr "Jarak Relatif Ufuk"
+
+#: scripts/perspective-shadow.sct.h:9
+#, fuzzy
+msgid "Relative length of shadow"
+msgstr "Panjang Relatif Bayang"
+
+#: scripts/predator.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+msgstr "<Image>/Script-Fu/Alkimia/_Pemangsa..."
+
+#: scripts/predator.sct.h:2
+#, fuzzy
+msgid "Edge amount"
+msgstr "Jumlah Tepi"
+
+#: scripts/predator.sct.h:4
+#, fuzzy
+msgid "Pixel amount"
+msgstr "Jumlah Piksel"
+
+#: scripts/predator.sct.h:5
+msgid "Pixelize"
+msgstr "Berpiksel"
+
+#: scripts/pupi-button.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Butang/Butang _Bundar..."
+
+#: scripts/pupi-button.sct.h:5
+#, fuzzy
+msgid "Lower color"
+msgstr "Pudarkan Warna"
+
+#: scripts/pupi-button.sct.h:6
+#, fuzzy
+msgid "Lower color (active)"
+msgstr "Pudarkan Warna (Aktif)"
+
+#: scripts/pupi-button.sct.h:7
+#, fuzzy
+msgid "Not pressed"
+msgstr "Tidak Ditekan"
+
+#: scripts/pupi-button.sct.h:8
+#, fuzzy
+msgid "Not pressed (active)"
+msgstr "Tidak Ditekan (Aktif)"
+
+#: scripts/pupi-button.sct.h:9
+msgid "Padding X"
+msgstr "Pad X"
+
+#: scripts/pupi-button.sct.h:10
+msgid "Padding Y"
+msgstr "Pad Y"
+
+#: scripts/pupi-button.sct.h:12
+#, fuzzy
+msgid "Round ratio"
+msgstr "Nisbah Nombor Bulat"
+
+#: scripts/pupi-button.sct.h:15
+#, fuzzy
+msgid "Text color (active)"
+msgstr "Warna Teks (Aktif)"
+
+#: scripts/pupi-button.sct.h:16
+#, fuzzy
+msgid "Upper color"
+msgstr "Warna Atas"
+
+#: scripts/pupi-button.sct.h:17
+#, fuzzy
+msgid "Upper color (active)"
+msgstr "Warna Atas (Aktif)"
+
+#: scripts/rendermap.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/Render _Peta..."
+
+#: scripts/rendermap.sct.h:2
+msgid "Behaviour"
+msgstr "Peri laku"
+
+#: scripts/rendermap.sct.h:3
+msgid "Detail in Middle"
+msgstr "Perincian di Tengah"
+
+#: scripts/rendermap.sct.h:8
+msgid "Tile"
+msgstr "Jubin"
+
+#: scripts/ripply-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+msgstr "<Image>/Script-Fu/Juruanimasi/_Beriak..."
+
+#: scripts/ripply-anim.sct.h:2
+msgid "Black"
+msgstr "Hitam"
+
+#: scripts/ripply-anim.sct.h:3
+#, fuzzy
+msgid "Edge behaviour"
+msgstr "Peri laku Tepi"
+
+#: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
+#, fuzzy
+msgid "Number of frames"
+msgstr "Bilangan Bingkai"
+
+#: scripts/ripply-anim.sct.h:5
+#, fuzzy
+msgid "Rippling strength"
+msgstr "Kekuatan Riak"
+
+#: scripts/ripply-anim.sct.h:6
+msgid "Smear"
+msgstr "Comot"
+
+#: scripts/ripply-anim.sct.h:7
+msgid "Wrap"
+msgstr "Pusing"
+
+#: scripts/round-corners.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+msgstr "<Image>/Script-Fu/Hias/Sudut _Bundar..."
+
+#: scripts/round-corners.sct.h:2
+#, fuzzy
+msgid "Add background"
+msgstr "Tambahkan Latar Belakang"
+
+#: scripts/round-corners.sct.h:3
+#, fuzzy
+msgid "Add drop-shadow"
+msgstr "Tambahkan Lepaskan Bayang"
+
+#: scripts/round-corners.sct.h:5
+#, fuzzy
+msgid "Edge radius"
+msgstr "Jejari Tepi"
+
+#: scripts/selection-round.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/_Round..."
+msgstr "<Image>/Script-Fu/Pemilihan/_Bundar..."
+
+#: scripts/selection-round.sct.h:2
+#, fuzzy
+msgid "Relative radius"
+msgstr "Jejari Relatif"
+
+#: scripts/select-to-brush.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+msgstr "<Image>/Script-Fu/Pemilihan/Ke _Berus..."
+
+#: scripts/select-to-brush.sct.h:2
+#, fuzzy
+msgid "Brush name"
+msgstr "Nama Berus"
+
+#: scripts/select-to-image.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/To _Image"
+msgstr "<Image>/Script-Fu/Pemilihan/Ke _Imej"
+
+#: scripts/select-to-pattern.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+msgstr "<Image>/Script-Fu/Pemilihan/Ke _Berus..."
+
+#: scripts/select-to-pattern.sct.h:3
+#, fuzzy
+msgid "Pattern name"
+msgstr "Corak"
+
+#: scripts/slide.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+msgstr "<Image>/Script-Fu/Hias/_Slaid..."
+
+#: scripts/slide.sct.h:3
+#, fuzzy
+msgid "Font color"
+msgstr "Warna Fon"
+
+#: scripts/slide.sct.h:4
+msgid "Number"
+msgstr "Nombor"
+
+#: scripts/sota-chrome-logo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Kuning Kunyit SOTA..."
+
+#: scripts/speed-text.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Teks Laju..."
+
+#: scripts/sphere.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Pelbagai/_Sfera..."
+
+#: scripts/sphere.sct.h:3
+msgid "Lighting (degrees)"
+msgstr "Pencahayaan (Tahap)"
+
+#: scripts/sphere.sct.h:4
+msgid "Radius (pixels)"
+msgstr "Jejari (piksel)"
+
+#: scripts/sphere.sct.h:6
+#, fuzzy
+msgid "Sphere color"
+msgstr "Warna Sfera"
+
+#: scripts/spinning-globe.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+msgstr "<Image>/Script-Fu/Juruanimasi/Glob _Berputar..."
+
+#: scripts/spinning-globe.sct.h:2
+msgid "Frames"
+msgstr "Bingkai"
+
+#: scripts/spinning-globe.sct.h:3
+#, fuzzy
+msgid "Index to n colors (0 = remain RGB)"
+msgstr "Indeks ke Warna n (0 = Baki RGB)"
+
+#: scripts/spinning-globe.sct.h:5
+#, fuzzy
+msgid "Turn from left to right"
+msgstr "Pusingkan dari Kiri ke Kanan"
+
+#: scripts/spyrogimp.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+msgstr "<Image>/Script-Fu/Render/_Spyrogimp..."
+
+#: scripts/spyrogimp.sct.h:2
+msgid "Airbrush"
+msgstr "Penyembur"
+
+#: scripts/spyrogimp.sct.h:3
+msgid "Brush"
+msgstr "Berus"
+
+#: scripts/spyrogimp.sct.h:4
+msgid "Circle"
+msgstr "Bulatan"
+
+#: scripts/spyrogimp.sct.h:6
+#, fuzzy
+msgid "Color method"
+msgstr "Kaedah Warna"
+
+#: scripts/spyrogimp.sct.h:7
+msgid "Epitrochoid"
+msgstr "Epitrochoid"
+
+#: scripts/spyrogimp.sct.h:8
+msgid "Frame"
+msgstr "Bingkai"
+
+#: scripts/spyrogimp.sct.h:10
+msgid "Gradient: Loop Sawtooth"
+msgstr "Kecerunan: Gelung Sawtooth"
+
+#: scripts/spyrogimp.sct.h:11
+msgid "Gradient: Loop Triangle"
+msgstr "Kecerunan: Segi tiga Gelung"
+
+#: scripts/spyrogimp.sct.h:12
+msgid "Hexagon"
+msgstr "Heksagon"
+
+#: scripts/spyrogimp.sct.h:13
+#, fuzzy
+msgid "Hole ratio"
+msgstr "Nisbah Lubang"
+
+#: scripts/spyrogimp.sct.h:14
+#, fuzzy
+msgid "Inner teeth"
+msgstr "Gigi Dalam"
+
+#: scripts/spyrogimp.sct.h:15
+msgid "Lissajous"
+msgstr "Lissajous"
+
+#: scripts/spyrogimp.sct.h:16
+msgid "Margin (pixels)"
+msgstr "Jidar (piksel)"
+
+#: scripts/spyrogimp.sct.h:17
+#, fuzzy
+msgid "Outer teeth"
+msgstr "Gigi Luar"
+
+#: scripts/spyrogimp.sct.h:18
+msgid "Pencil"
+msgstr "Pensel"
+
+#: scripts/spyrogimp.sct.h:19
+msgid "Pentagon"
+msgstr "Pentagon"
+
+#: scripts/spyrogimp.sct.h:20
+msgid "Polygon: 10 sides"
+msgstr "Poligon: 10 sisi"
+
+#: scripts/spyrogimp.sct.h:21
+msgid "Polygon: 7 sides"
+msgstr "Poligon: 7 sisi"
+
+#: scripts/spyrogimp.sct.h:22
+msgid "Polygon: 8 sides"
+msgstr "Poligon: 8 sisi"
+
+#: scripts/spyrogimp.sct.h:23
+msgid "Polygon: 9 sides"
+msgstr "Poligon: 9 sisi"
+
+#: scripts/spyrogimp.sct.h:24
+msgid "Shape"
+msgstr "Bentuk"
+
+#: scripts/spyrogimp.sct.h:25
+msgid "Solid Color"
+msgstr "Warna Pejal"
+
+#: scripts/spyrogimp.sct.h:26
+msgid "Spyrograph"
+msgstr "Spyrograf"
+
+#: scripts/spyrogimp.sct.h:27
+msgid "Square"
+msgstr "Segi empat sama"
+
+#: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
+#, fuzzy
+msgid "Start angle"
+msgstr "Sudut Mula"
+
+#: scripts/spyrogimp.sct.h:29
+msgid "Tool"
+msgstr "Alat"
+
+#: scripts/spyrogimp.sct.h:30
+msgid "Triangle"
+msgstr "Segi tiga"
+
+#: scripts/spyrogimp.sct.h:31
+msgid "Type"
+msgstr "Jenis"
+
+#: scripts/starburst-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Bintang _Bertaburan..."
+
+#: scripts/starburst-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Bintang _Bertaburan..."
+
+#: scripts/starburst-logo.sct.h:4
+#, fuzzy
+msgid "Burst color"
+msgstr "Warna Bertabur"
+
+#: scripts/starburst-logo.sct.h:5
+#, fuzzy
+msgid "Effect size (pixels * 30)"
+msgstr "Saiz yang Terjejas (piksel * 30)"
+
+#: scripts/starscape-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Sta_rscape..."
+
+#: scripts/starscape-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Sta_rscape..."
+
+#: scripts/starscape-logo.sct.h:3
+#, fuzzy
+msgid "Effect size (pixels * 4)"
+msgstr "Saiz yang Terjejas (piksel * 4)"
+
+#: scripts/swirltile.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Jubin Berpusar..."
+
+#: scripts/swirltile.sct.h:9
+#, fuzzy
+msgid "Whirl amount"
+msgstr "Jumlah Pusaran"
+
+#: scripts/swirly-pattern.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Berpusar..."
+
+#: scripts/swirly-pattern.sct.h:2
+#, fuzzy
+msgid "Number of times to whirl"
+msgstr "Bilangan untuk Berpusar"
+
+#: scripts/swirly-pattern.sct.h:3
+#, fuzzy
+msgid "Quarter size"
+msgstr "Saiz Suku"
+
+#: scripts/swirly-pattern.sct.h:4
+#, fuzzy
+msgid "Whirl angle"
+msgstr "Sudut Pusaran"
+
+#: scripts/t-o-p-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/Surihan _Zarah..."
+
+#: scripts/t-o-p-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Surihan _Zarah..."
+
+#: scripts/t-o-p-logo.sct.h:4
+#, fuzzy
+msgid "Base color"
+msgstr "Warna Asas"
+
+#: scripts/t-o-p-logo.sct.h:6
+#, fuzzy
+msgid "Edge only"
+msgstr "Tepi Sahaja"
+
+#: scripts/t-o-p-logo.sct.h:7
+#, fuzzy
+msgid "Edge width"
+msgstr "Lebar Tepi"
+
+#: scripts/t-o-p-logo.sct.h:10
+#, fuzzy
+msgid "Hit rate"
+msgstr "Kadar Hentaman"
+
+#: scripts/text-circle.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Bulatan Teks..."
+
+#: scripts/text-circle.sct.h:2
+msgid "Antialias"
+msgstr "Antialias"
+
+#: scripts/text-circle.sct.h:3
+#, fuzzy
+msgid "Fill angle"
+msgstr "Sudut yang Dipenuhi"
+
+#: scripts/text-circle.sct.h:7
+msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1237
-msgid "Boundaries are currently unsupported as return values"
-msgstr ""
+#: scripts/textured-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+msgstr "<Image>/Script-Fu/Alfa ke Logo/_Bertekstur..."
 
-#: tiny-fu/ts-wrapper.c:1241
-msgid "Paths are currently unsupported as return values"
-msgstr ""
+#: scripts/textured-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Bertekstur..."
 
-#: tiny-fu/ts-wrapper.c:1249
-msgid "Error: null parasite"
-msgstr ""
+#: scripts/textured-logo.sct.h:5
+#, fuzzy
+msgid "Ending blend"
+msgstr "Mengakhiri Campuran"
 
-#: tiny-fu/ts-wrapper.c:1280
-msgid "Procedural database execution returned multiple status values"
-msgstr ""
+#: scripts/textured-logo.sct.h:8
+msgid "Hexagons"
+msgstr "Segi enam"
 
-#: tiny-fu/ts-wrapper.c:1284
-msgid "Unknown return type"
-msgstr ""
+#: scripts/textured-logo.sct.h:9
+#, fuzzy
+msgid "Mosaic tile type"
+msgstr "Jenis Jubin Mozaik"
+
+#: scripts/textured-logo.sct.h:10
+msgid "Octagons"
+msgstr "Segi Lapan"
+
+#: scripts/textured-logo.sct.h:12
+msgid "Squares"
+msgstr "Segi empat sama"
+
+#: scripts/textured-logo.sct.h:13
+#, fuzzy
+msgid "Starting blend"
+msgstr "Mula Campur"
+
+#: scripts/textured-logo.sct.h:15
+#, fuzzy
+msgid "Text pattern"
+msgstr "Corak Teks"
+
+#: scripts/tileblur.sct.h:1
+msgid "<Image>/Filters/Blur/_Tileable Blur..."
+msgstr "<Image>/Penapis/Kabur/Kabur _Berjubin..."
+
+#: scripts/tileblur.sct.h:2
+#, fuzzy
+msgid "Blur horizontally"
+msgstr "Kaburkan secara Mengufuk"
+
+#: scripts/tileblur.sct.h:3
+#, fuzzy
+msgid "Blur type"
+msgstr "Kaburkan Jenis"
+
+#: scripts/tileblur.sct.h:4
+#, fuzzy
+msgid "Blur vertically"
+msgstr "Kaburkan secara Menegak"
+
+#: scripts/tileblur.sct.h:5
+msgid "IIR"
+msgstr "IIR"
+
+#: scripts/tileblur.sct.h:6
+msgid "RLE"
+msgstr "RLE"
+
+#: scripts/tiny-fu-set-cmap.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+msgstr "<Image>/Script-Fu/Pemilihan/Ke _Imej"
+
+#: scripts/tiny-fu-set-cmap.sct.h:2
+#, fuzzy
+msgid "Palette"
+msgstr "Corak"
+
+#: scripts/title-header.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Pengepala Judul Web..."
+
+#: scripts/truchet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Corak/T_ruchet..."
+
+#: scripts/truchet.sct.h:4
+#, fuzzy
+msgid "Foreground color"
+msgstr "Warna Latar Depan"
+
+#: scripts/unsharp-mask.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+msgstr "<Image>/Script-Fu/Alkimia/Topeng Tidak _Terang..."
+
+#: scripts/unsharp-mask.sct.h:2
+#, fuzzy
+msgid "Mask opacity"
+msgstr "Kelegapan Topeng"
+
+#: scripts/unsharp-mask.sct.h:3
+#, fuzzy
+msgid "Mask size"
+msgstr "Saiz Topeng"
+
+#: scripts/waves-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+msgstr "<Image>/Script-Fu/Juruanimasi/_Gelombang..."
+
+#: scripts/waves-anim.sct.h:2
+msgid "Amplitude"
+msgstr "Amplitud"
+
+#: scripts/waves-anim.sct.h:3
+msgid "Invert direction"
+msgstr "Arah songsang"
+
+#: scripts/waves-anim.sct.h:5
+msgid "Wavelength"
+msgstr "Jarak Gelombang"
+
+#: scripts/weave.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+msgstr "<Image>/Script-Fu/Alkimia/_Jalinan..."
+
+#: scripts/weave.sct.h:2
+#, fuzzy
+msgid "Ribbon spacing"
+msgstr "Jarak Reben"
+
+#: scripts/weave.sct.h:3
+#, fuzzy
+msgid "Ribbon width"
+msgstr "Lebar Reben"
+
+#: scripts/weave.sct.h:4
+#, fuzzy
+msgid "Shadow darkness"
+msgstr "Gelap Bayang"
+
+#: scripts/weave.sct.h:5
+#, fuzzy
+msgid "Shadow depth"
+msgstr "Dalam Bayang"
+
+#: scripts/weave.sct.h:6
+#, fuzzy
+msgid "Thread density"
+msgstr "Ketumpatan Bebenang"
+
+#: scripts/weave.sct.h:7
+#, fuzzy
+msgid "Thread intensity"
+msgstr "Keamatan Bebenang"
+
+#: scripts/weave.sct.h:8
+#, fuzzy
+msgid "Thread length"
+msgstr "Panjang Bebenang"
+
+#: scripts/web-browser.sct.h:1
+msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+msgstr "<Toolbox>/Xtns/Pelayar Web/_Pendaftaran Plug-In"
+
+#: scripts/web-browser.sct.h:2
+msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+msgstr "<Toolbox>/Bantuan/GIMP dalam talian/Laman Web _Pembangun"
+
+#: scripts/web-browser.sct.h:3
+msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+msgstr "<Toolbox>/Bantuan/GIMP dalam talian/Laman Web _Utama"
+
+#: scripts/xach-effect.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+msgstr "<Image>/Script-Fu/Bayang/Kesan _Xach..."
+
+#: scripts/xach-effect.sct.h:2
+#, fuzzy
+msgid "Drop shadow X offset"
+msgstr "Gugurkan Ofset Bayang X"
+
+#: scripts/xach-effect.sct.h:3
+#, fuzzy
+msgid "Drop shadow Y offset"
+msgstr "Gugurkan Ofset Bayang Y"
+
+#: scripts/xach-effect.sct.h:4
+#, fuzzy
+msgid "Drop shadow blur radius"
+msgstr "Gugurkan Jejari Kabur Bayang"
+
+#: scripts/xach-effect.sct.h:5
+#, fuzzy
+msgid "Drop shadow color"
+msgstr "Gugurkan Warna Bayang"
+
+#: scripts/xach-effect.sct.h:6
+#, fuzzy
+msgid "Drop shadow opacity"
+msgstr "Gugurkan Kelegapan Bayang"
+
+#: scripts/xach-effect.sct.h:7
+#, fuzzy
+msgid "Highlight X offset"
+msgstr "Tonjolkan Ofset X"
+
+#: scripts/xach-effect.sct.h:8
+#, fuzzy
+msgid "Highlight Y offset"
+msgstr "Tonjolkan Ofset Y"
+
+#: scripts/xach-effect.sct.h:10
+#, fuzzy
+msgid "Highlight opacity"
+msgstr "Tonjolkan Kelegapan"
+
+#, fuzzy
+#~ msgid "_About"
+#~ msgstr "Tentang"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Cari dengan _Nama"
@@ -518,1745 +2600,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Parameters"
 #~ msgstr "Garis pusat"
-
-#~ msgid "Color"
-#~ msgstr "Warna"
-
-#~ msgid "Font"
-#~ msgstr "Fon"
-
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Saiz Fon (piksel)"
-
-#, fuzzy
-#~ msgid "Text String"
-#~ msgstr "Corak Teks"
-
-#, fuzzy
-#~ msgid " for directory "
-#~ msgstr "Tidak boleh buka paip output SIOD"
-
-#, fuzzy
-#~ msgid " images"
-#~ msgstr "Imej Indeks"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Util/Peta _Fon..."
-
-#, fuzzy
-#~ msgid "Background color"
-#~ msgstr "Warna Latar belakang"
-
-#, fuzzy
-#~ msgid "Created "
-#~ msgstr "Wujudkan Bayang"
-
-#, fuzzy
-#~ msgid "Directory"
-#~ msgstr "Tidak boleh buka paip output SIOD"
-
-#, fuzzy
-#~ msgid "Sheet "
-#~ msgstr "Benih"
-
-#, fuzzy
-#~ msgid "Sheet Size"
-#~ msgstr "Benih"
-
-#~ msgid "Text Color"
-#~ msgstr "Warna Teks"
-
-#, fuzzy
-#~ msgid "Unable to open directory "
-#~ msgstr "Tidak boleh buka paip output SIOD"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Garis luar 3D..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Garis luar 3D..."
-
-#, fuzzy
-#~ msgid "Bumpmap (alpha layer) blur radius"
-#~ msgstr "Jejari Kabur (Lapisan Alfa) Bumpmap"
-
-#, fuzzy
-#~ msgid "Default bumpmap settings"
-#~ msgstr "Seting Piawai Bumpmap"
-
-#, fuzzy
-#~ msgid "Font size (pixels)"
-#~ msgstr "Saiz Fon (piksel)"
-
-#, fuzzy
-#~ msgid "Outline blur radius"
-#~ msgstr "Jejari Kabur Garis luar"
-
-#, fuzzy
-#~ msgid "Shadow X offset"
-#~ msgstr "Ofset Bayang X"
-
-#, fuzzy
-#~ msgid "Shadow Y offset"
-#~ msgstr "Ofset Bayang Y"
-
-#, fuzzy
-#~ msgid "Shadow blur radius"
-#~ msgstr "Jejari Kabur Bayang"
-
-#~ msgid "Text"
-#~ msgstr "Teks"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/Truchet 3_D..."
-
-#, fuzzy
-#~ msgid "Block size"
-#~ msgstr "Saiz Blok"
-
-#, fuzzy
-#~ msgid "End blend"
-#~ msgstr "Campuran Berakhir"
-
-#, fuzzy
-#~ msgid "Number of X tiles"
-#~ msgstr "Bilangan Jubin X"
-
-#, fuzzy
-#~ msgid "Number of Y tiles"
-#~ msgstr "Bilangan Jubin Y"
-
-#, fuzzy
-#~ msgid "Start blend"
-#~ msgstr "Mula Campur"
-
-#~ msgid "Supersample"
-#~ msgstr "Sampel hebat"
-
-#~ msgid "Thickness"
-#~ msgstr "Ketebalan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Script-Fu/Hias/Tambah B_evel..."
-
-#, fuzzy
-#~ msgid "Keep bump layer"
-#~ msgstr "Simpan Lapisan Bump"
-
-#, fuzzy
-#~ msgid "Work on copy"
-#~ msgstr "Buat pada Salinan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Script-Fu/Hias/Tambah _Sempadan..."
-
-#, fuzzy
-#~ msgid "Border X size"
-#~ msgstr "Saiz Sempadan X"
-
-#, fuzzy
-#~ msgid "Border Y size"
-#~ msgstr "Saiz Sempadan Y"
-
-#, fuzzy
-#~ msgid "Border color"
-#~ msgstr "Warna Sempadan"
-
-#, fuzzy
-#~ msgid "Delta value on color"
-#~ msgstr "Nilai Delta pada Warna"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
-#~ msgstr ""
-#~ "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/_Anak panah..."
-
-#~ msgid "Down"
-#~ msgstr "Ke Bawah"
-
-#, fuzzy
-#~ msgid "Flatten image"
-#~ msgstr "Imej Rata"
-
-#, fuzzy
-#~ msgid "Glow color"
-#~ msgstr "Warna Bercahaya"
-
-#~ msgid "Left"
-#~ msgstr "Ke Kiri"
-
-#~ msgid "Orientation"
-#~ msgstr "Orientasi"
-
-#~ msgid "Right"
-#~ msgstr "Ke Kanan"
-
-#~ msgid "Size"
-#~ msgstr "Saiz"
-
-#~ msgid "Up"
-#~ msgstr "Ke Atas"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/_Hrule..."
-
-#, fuzzy
-#~ msgid "Bar height"
-#~ msgstr "Tinggi Bar"
-
-#, fuzzy
-#~ msgid "Bar length"
-#~ msgstr "Panjang Bar"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/_Bulet..."
-
-#~ msgid "Radius"
-#~ msgstr "Jejari"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-ADJUSTMENT _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t\t SF-ADJUSTMENT _"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Cahaya Berlainan/B_utang..."
-
-#, fuzzy
-#~ msgid "Glow radius"
-#~ msgstr "Jejari Bercahaya"
-
-#~ msgid "Padding"
-#~ msgstr "Pad"
-
-#, fuzzy
-#~ msgid "Text color"
-#~ msgstr "Warna Teks"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-COLOR      _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t\t SF-COLOR_     _"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Cahaya Berlainan..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Cahaya Berlainan..."
-
-#, fuzzy
-#~ msgid "Glow size (pixels * 4)"
-#~ msgstr "Jumlah Cahaya (Piksel * 4)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Cahaya Berlainan..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Neon Berlainan..."
-
-#, fuzzy
-#~ msgid "Fade away"
-#~ msgstr "Semakin Lenyap"
-
-#, fuzzy
-#~ msgid "Number of bands"
-#~ msgstr "Bilangan Jalur"
-
-#, fuzzy
-#~ msgid "Width of bands"
-#~ msgstr "Lebar Jalur"
-
-#, fuzzy
-#~ msgid "Width of gaps"
-#~ msgstr "Lebar Sela"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
-#~ msgstr "<Image>/Script-Fu/Utils/ASCII ke Lapisan Imej..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Util/_ASCII ke Imej..."
-
-#, fuzzy
-#~ msgid "Buffer amount (% height of text)"
-#~ msgstr "Jumlah Penimbal (% Tinggi Teks)"
-
-#, fuzzy
-#~ msgid "File name"
-#~ msgstr "Nama fail"
-
-#~ msgid "Filename"
-#~ msgstr "Nama fail"
-
-#, fuzzy
-#~ msgid "Transparent background"
-#~ msgstr "Latar belakang Lut sinar"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Basic I..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Basic I..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/B_asic II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/B_asic II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Butang/Butang _Serong Ringkas..."
-
-#, fuzzy
-#~ msgid "Bevel width"
-#~ msgstr "Lebar Permukaan Serong"
-
-#, fuzzy
-#~ msgid "Lower-right color"
-#~ msgstr "Warna sebelah Kanan Bawah"
-
-#~ msgid "Pressed"
-#~ msgstr "Ditekan"
-
-#, fuzzy
-#~ msgid "Upper-left color"
-#~ msgstr "Warna sebelah Kiri Bawah"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/_Anak panah..."
-
-#~ msgid "Pattern"
-#~ msgstr "Corak"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/_Bulet..."
-
-#, fuzzy
-#~ msgid "Diameter"
-#~ msgstr "Garis pusat"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/B_utang..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/T_ajuk..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Corak Serong/_Hrule..."
-
-#~ msgid "Height"
-#~ msgstr "Tinggi"
-
-#~ msgid "Width"
-#~ msgstr "Lebar"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
-#~ msgstr "<Image>/Script-Fu/Juruanimasi/_Campur..."
-
-#, fuzzy
-#~ msgid "Intermediate frames"
-#~ msgstr "Bingkai Perantaraan"
-
-#~ msgid "Looped"
-#~ msgstr "Gelung"
-
-#, fuzzy
-#~ msgid "Max. blur radius"
-#~ msgstr "Jejari Kabur Maksimum"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Di_campur..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Di_campur..."
-
-#, fuzzy
-#~ msgid "Blend mode"
-#~ msgstr "Mod Campur"
-
-#~ msgid "Custom Gradient"
-#~ msgstr "Kecerunan Biasa"
-
-#~ msgid "FG-BG-HSV"
-#~ msgstr "FG-BG-HSV"
-
-#~ msgid "FG-BG-RGB"
-#~ msgstr "FG-BG-RGB"
-
-#~ msgid "FG-Transparent"
-#~ msgstr "EG-Lut sinar"
-
-#~ msgid "Gradient"
-#~ msgstr "Kecerunan"
-
-#, fuzzy
-#~ msgid "Gradient reverse"
-#~ msgstr "Kecerunan Songsang"
-
-#~ msgid "Offset (pixels)"
-#~ msgstr "Ofset (Piksel)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Pe_mbovinan..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/ Pem_bovinan..."
-
-#~ msgid "Background Color"
-#~ msgstr "Warna Latar belakang"
-
-#~ msgid "Spots density X"
-#~ msgstr "Kepadatan titik X"
-
-#~ msgid "Spots density Y"
-#~ msgstr "Kepadatan titik Y"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Script-Fu/Juruanimasi/_Tulis..."
-
-#, fuzzy
-#~ msgid "Add glowing"
-#~ msgstr "Tambahkan Cahaya"
-
-#, fuzzy
-#~ msgid "After glow"
-#~ msgstr "Selepas Bercahaya"
-
-#, fuzzy
-#~ msgid ""
-#~ "Burn-In: Needs two layers in total!\n"
-#~ "A foreground text layer with transparency and a background layer."
-#~ msgstr ""
-#~ "Burn-In: Keseluruhannya memerlukan dua lapisan!\n"
-#~ "        Lapisan teks latar depan dengan kelutsinaran\n"
-#~ "        dan lapisan latar belakang"
-
-#, fuzzy
-#~ msgid "Corona width"
-#~ msgstr "Lebar Corona"
-
-#~ msgid "Fadeout"
-#~ msgstr "Lenyap"
-
-#, fuzzy
-#~ msgid "Fadeout width"
-#~ msgstr "Lebar Lenyap"
-
-#~ msgid "Prepare for GIF"
-#~ msgstr "Sediakan untuk GIF"
-
-#~ msgid "Speed (pixels/frame)"
-#~ msgstr "Kelajuan (piksel/bingkai)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Penyamaran..."
-
-#~ msgid "Color 1"
-#~ msgstr "Warna 1"
-
-#~ msgid "Color 2"
-#~ msgstr "Warna 2"
-
-#~ msgid "Color 3"
-#~ msgstr "Warna 3"
-
-#~ msgid "Granularity"
-#~ msgstr "Pembutiran"
-
-#, fuzzy
-#~ msgid "Image size"
-#~ msgstr "Saiz Imej"
-
-#~ msgid "Smooth"
-#~ msgstr "Licin"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Diukir..."
-
-#~ msgid "Background Image"
-#~ msgstr "Imej Latar belakang"
-
-#, fuzzy
-#~ msgid "Carve raised text"
-#~ msgstr "Ukir Teks yang Ditinggikan"
-
-#, fuzzy
-#~ msgid "Padding around text"
-#~ msgstr "Pad Keliling Teks"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
-#~ msgstr "<Image>/Script-Fu/Stensil Ops/U_kirnya..."
-
-#, fuzzy
-#~ msgid "Carve white areas"
-#~ msgstr "Ukir Kawasan Putih"
-
-#, fuzzy
-#~ msgid "Image to carve"
-#~ msgstr "Imej untuk Ukir"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Kapur..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Kapur..."
-
-#, fuzzy
-#~ msgid "Chalk color"
-#~ msgstr "Warna Kapur"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Chip Awa_y..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Chip Awa_y..."
-
-#, fuzzy
-#~ msgid "Blur amount"
-#~ msgstr "Jumlah Kabur"
-
-#, fuzzy
-#~ msgid "Chip amount"
-#~ msgstr "Jumlah Chip"
-
-#, fuzzy
-#~ msgid "Drop shadow"
-#~ msgstr "Lepaskan Bayang"
-
-#, fuzzy
-#~ msgid "Fill BG with pattern"
-#~ msgstr "Isi BG dengan Corak"
-
-#~ msgid "Invert"
-#~ msgstr "Songsangkan"
-
-#, fuzzy
-#~ msgid "Keep background"
-#~ msgstr "Kekalkan Latar belakang"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Script-Fu/Stensil Ops/K_rom..."
-
-#, fuzzy
-#~ msgid "Chrome balance"
-#~ msgstr "Keseimbangan Warna Krom"
-
-#, fuzzy
-#~ msgid "Chrome factor"
-#~ msgstr "Faktor Warna Krom"
-
-#, fuzzy
-#~ msgid "Chrome lightness"
-#~ msgstr "Pencahayaan Warna Krom"
-
-#, fuzzy
-#~ msgid "Chrome saturation"
-#~ msgstr "Ketepuan Warna Krom"
-
-#, fuzzy
-#~ msgid "Chrome white areas"
-#~ msgstr "Kawasan Putih Warna Krom"
-
-#, fuzzy
-#~ msgid "Environment map"
-#~ msgstr "Peta Persekitaran"
-
-#, fuzzy
-#~ msgid "Highlight balance"
-#~ msgstr "Tonjolkan Keseimbangan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/K_rom..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/K_rom..."
-
-#~ msgid "Offsets (pixels * 2)"
-#~ msgstr "Ofset (piksel * 2)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Script-Fu/Render/_Litar..."
-
-#, fuzzy
-#~ msgid "Circuit seed"
-#~ msgstr "Benih Litar"
-
-#, fuzzy
-#~ msgid "Keep selection"
-#~ msgstr "Kekalkan Pemilihan"
-
-#, fuzzy
-#~ msgid "No background (only for separate layer)"
-#~ msgstr "Tiada Latar belakang (hanya untuk lapisan berasingan)"
-
-#, fuzzy
-#~ msgid "Oilify mask size"
-#~ msgstr "Meminyakkan Saiz Topeng"
-
-#, fuzzy
-#~ msgid "Separate layer"
-#~ msgstr "Lapisan Berasingan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Clothify..."
-
-#~ msgid "Azimuth"
-#~ msgstr "Azimut"
-
-#~ msgid "Blur X"
-#~ msgstr "Kaburkan X"
-
-#~ msgid "Blur Y"
-#~ msgstr "Kaburkan Y"
-
-#~ msgid "Depth"
-#~ msgstr "Kedalaman"
-
-#~ msgid "Elevation"
-#~ msgstr "Meningkat"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Script-Fu/Hias/Kesan _Kopi..."
-
-#, fuzzy
-#~ msgid ""
-#~ "Darken only\n"
-#~ "(Better, but only for images with alot of white)"
-#~ msgstr ""
-#~ "Gelapkan hanya\n"
-#~ "(Lebih baik, tetapi hanya untuk Imej yang banyak Putih)"
-
-#~ msgid "Stains"
-#~ msgstr "Kesan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Buk_u Komik..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Buk_u Komik..."
-
-#, fuzzy
-#~ msgid "Outline color"
-#~ msgstr "Warna Garis luar"
-
-#, fuzzy
-#~ msgid "Outline size"
-#~ msgstr "Saiz Garis luar"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Cool _Metal"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Cool _Metal..."
-
-#, fuzzy
-#~ msgid "Effect size (pixels)"
-#~ msgstr "Saiz yang Terjejas (piksel)"
-
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy/Copy _Visible"
-#~ msgstr "<Image>/Edit/Salinan _Dapat Dilihat..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Kristal..."
-
-#, fuzzy
-#~ msgid "Background image"
-#~ msgstr "Imej Latar belakang"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
-#~ msgstr "<Image>/Script-Fu/Pemilihan/Pemilihan _Distres..."
-
-#, fuzzy
-#~ msgid "Granularity (1 is low)"
-#~ msgstr "Pembutiran (1 adalah Rendah)"
-
-#, fuzzy
-#~ msgid "Smooth horizontally"
-#~ msgstr "Licin secara Mengufuk"
-
-#, fuzzy
-#~ msgid "Smooth vertically"
-#~ msgstr "Licin secara Menegak"
-
-#~ msgid "Spread"
-#~ msgstr "Hamparan"
-
-#, fuzzy
-#~ msgid "Threshold (bigger 1<-->255 smaller)"
-#~ msgstr "Ambang (Lebih Besar 1<--> 255 Lebih Kecil)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "<Image>/Script-Fu/Bayang/_Lepaskan Bayang..."
-
-#, fuzzy
-#~ msgid "Allow resizing"
-#~ msgstr "Benarkan Pensaizan semula"
-
-#, fuzzy
-#~ msgid "Blur radius"
-#~ msgstr "Jejari Kabur"
-
-#~ msgid "Offset X"
-#~ msgstr "Ofset X"
-
-#~ msgid "Offset Y"
-#~ msgstr "Ofset Y"
-
-#~ msgid "Opacity"
-#~ msgstr "Kelegapan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Padam selang Sebaris..."
-
-#~ msgid "Columns"
-#~ msgstr "Lajur"
-
-#~ msgid "Erase"
-#~ msgstr "Padam"
-
-#, fuzzy
-#~ msgid "Erase/fill"
-#~ msgstr "Padam/Isi"
-
-#~ msgid "Even"
-#~ msgstr "Genap"
-
-#, fuzzy
-#~ msgid "Even/odd"
-#~ msgstr "Genap/Ganjil"
-
-#~ msgid "Fill with BG"
-#~ msgstr "Isi dengan BG"
-
-#~ msgid "Odd"
-#~ msgstr "Ganjil"
-
-#~ msgid "Rows"
-#~ msgstr "Baris"
-
-#, fuzzy
-#~ msgid "Rows/cols"
-#~ msgstr "Baris/Lajur"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Script-Fu/Pemilihan/_Lenyapkan Garis luar..."
-
-#, fuzzy
-#~ msgid "Apply generated layermask"
-#~ msgstr "Gunakan Topeng Lapisan yang Dihasilkan"
-
-#, fuzzy
-#~ msgid "Border size"
-#~ msgstr "Saiz Sempadan"
-
-#, fuzzy
-#~ msgid "Clear unselected maskarea"
-#~ msgstr "Bersihkan Kawasan Topeng yang Tidak Dipilih"
-
-#, fuzzy
-#~ msgid "Fade from %"
-#~ msgstr "Lenyapkan Dari %"
-
-#, fuzzy
-#~ msgid "Fade to   %"
-#~ msgstr "Lenyapkan Kepada   %"
-
-#, fuzzy
-#~ msgid "Use growing selection"
-#~ msgstr "Gunakan Pemilihan yang Semakin Banyak"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Tanah rata..."
-
-#, fuzzy
-#~ msgid "Detail level"
-#~ msgstr "Tahap yang Terperinci"
-
-#, fuzzy
-#~ msgid "Image height"
-#~ msgstr "Tinggi Imej"
-
-#, fuzzy
-#~ msgid "Image width"
-#~ msgstr "Lebar Imej"
-
-#, fuzzy
-#~ msgid "Random seed"
-#~ msgstr "Benih Rawak"
-
-#~ msgid "Scale X"
-#~ msgstr "Skala X"
-
-#~ msgid "Scale Y"
-#~ msgstr "Skala Y"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Util/Peta _Fon..."
-
-#, fuzzy
-#~ msgid "Active colors"
-#~ msgstr "Warna Aktif"
-
-#, fuzzy
-#~ msgid "Black on white"
-#~ msgstr "Hitam atas Putih"
-
-#, fuzzy
-#~ msgid "Font _size (pixels)"
-#~ msgstr "_Saiz Fon (piksel)"
-
-#, fuzzy
-#~ msgid "Use font _name as text"
-#~ msgstr "Guna _Nama Fon sebagai Teks"
-
-#~ msgid "_Border (pixels)"
-#~ msgstr "_Sempadan (piksel)"
-
-#, fuzzy
-#~ msgid "_Color scheme"
-#~ msgstr "Skema _Warna"
-
-#~ msgid "_Filter (regexp)"
-#~ msgstr "_Penapis (regexp)"
-
-#~ msgid "_Labels"
-#~ msgstr "_Label"
-
-#~ msgid "_Text"
-#~ msgstr "_Teks"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Berfros..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Berfros..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Script-Fu/Hias/Sempadan _Kabur..."
-
-#, fuzzy
-#~ msgid "Add shadow"
-#~ msgstr "Tambahkan Bayang"
-
-#, fuzzy
-#~ msgid "Blur border"
-#~ msgstr "Kaburkan Sempadan"
-
-#~ msgid "Granularity (1 is Low)"
-#~ msgstr "Pembutiran (1 adalah Rendah)"
-
-#, fuzzy
-#~ msgid "Shadow weight (%)"
-#~ msgstr "Tinggi Bayang (%)"
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Tajuk _Besar..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Tajuk _Kecil..."
-
-#, fuzzy
-#~ msgid "Autocrop"
-#~ msgstr "AutoCrop"
-
-#, fuzzy
-#~ msgid "Dark color"
-#~ msgstr "Warna Gelap"
-
-#, fuzzy
-#~ msgid "Highlight color"
-#~ msgstr "Tonjolkan Warna"
-
-#, fuzzy
-#~ msgid "Index image"
-#~ msgstr "Imej Indeks"
-
-#, fuzzy
-#~ msgid "Number of colors"
-#~ msgstr "Bilangan Warna"
-
-#, fuzzy
-#~ msgid "Remove background"
-#~ msgstr "Keluarkan Latar Belakang"
-
-#, fuzzy
-#~ msgid "Select-by-color threshold"
-#~ msgstr "Ambang Pilih Ikut Warna"
-
-#, fuzzy
-#~ msgid "Shadow color"
-#~ msgstr "Warna Bayang"
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Label Sub-Butang T_iub..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Sub-Sub-Butang T_iub..."
-#~ "Label..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Label Tiub _Am..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Xtns/Script-Fu/Tema Laman Web/Gimp.Org/Label Butang _Tiub..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Ber_kilat..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Ber_kilat..."
-
-#, fuzzy
-#~ msgid "Blend gradient (Text)"
-#~ msgstr "Campur Kecerunan (Teks)"
-
-#, fuzzy
-#~ msgid "Blend gradient (outline)"
-#~ msgstr "Campur Kecerunan (Garis kasar)"
-
-#, fuzzy
-#~ msgid "Blend gradient (text)"
-#~ msgstr "Campur Kecerunan (Teks)"
-
-#, fuzzy
-#~ msgid "Outline gradient reverse"
-#~ msgstr "Kecerunan Garis Kasar Songsang"
-
-#, fuzzy
-#~ msgid "Pattern (outline)"
-#~ msgstr "Corak (Garis kasar)"
-
-#, fuzzy
-#~ msgid "Pattern (overlay)"
-#~ msgstr "Corak (Tindihan atas)"
-
-#, fuzzy
-#~ msgid "Pattern (text)"
-#~ msgstr "Corak (Teks)"
-
-#~ msgid "Shadow"
-#~ msgstr "Bayang"
-
-#, fuzzy
-#~ msgid "Text gradient reverse"
-#~ msgstr "Kecerunan Teks Songsang"
-
-#, fuzzy
-#~ msgid "Use pattern for outline instead of gradient"
-#~ msgstr "Gunakan Corak untuk Garis kasar dan bukan Kecerunan"
-
-#, fuzzy
-#~ msgid "Use pattern for text instead of gradient"
-#~ msgstr "Gunakan Corak untuk Teks dan bukan Kecerunan"
-
-#, fuzzy
-#~ msgid "Use pattern overlay"
-#~ msgstr "Gunakan Tindihan Atas Corak"
-
-#, fuzzy
-#~ msgid "Use tattern for outline instead of gradient"
-#~ msgstr "Gunakan Corak untuk Garis kasar dan bukan Kecerunan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Ber_cahaya Terang..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Ber_cahaya Terang..."
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 3)"
-#~ msgstr "Beri Kesan kepada Saiz (piksel * 3)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Sero_ng Kecerunan..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Sero_ng Kecerunan..."
-
-#, fuzzy
-#~ msgid "Bevel height (Sharpness)"
-#~ msgstr "Tinggi Serong (Ketajaman)"
-
-#, fuzzy
-#~ msgid "Border size (pixels)"
-#~ msgstr "Saiz Sempadan (piksel)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Util/_Kecerunan Biasa..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Imigre-26..."
-
-#, fuzzy
-#~ msgid "Frame color"
-#~ msgstr "Warna Bingkai"
-
-#, fuzzy
-#~ msgid "Frame size"
-#~ msgstr "Saiz Bingkai"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Tanah..."
-
-#, fuzzy
-#~ msgid "Land height"
-#~ msgstr "Tinggi Tanah"
-
-#, fuzzy
-#~ msgid "Sea depth"
-#~ msgstr "Kedalaman Laut"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
-#~ msgstr "<Image>/Script-Fu/Render/_Lava..."
-
-#~ msgid "Roughness"
-#~ msgstr "Kekasaran"
-
-#~ msgid "Seed"
-#~ msgstr "Benih"
-
-#, fuzzy
-#~ msgid "Use current gradient"
-#~ msgstr "Gunakan Kecerunan Semasa"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Script-Fu/Render/_Nova Garis..."
-
-#, fuzzy
-#~ msgid "Number of lines"
-#~ msgstr "Bilangan Garis"
-
-#, fuzzy
-#~ msgid "Offset radius"
-#~ msgstr "Ofset Jejari"
-
-#~ msgid "Randomness"
-#~ msgstr "Kerawakan"
-
-#~ msgid "Sharpness (degrees)"
-#~ msgstr "Kejelasan (tahap)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr ""
-#~ "<Toolbox>/Xtns/Script-Fu/Buat Berus/Berbentuk E_lips, Berbulu Pelepah..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
-#~ msgstr ""
-#~ "<Toolbox>/Xtns/Script-Fu/Buat Berus/S_egi Empat Tepat, Berbulu Pelepah..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Buat Berus/Berbentuk _Elips..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Buat Berus/_Segi Empat Tepat..."
-
-#~ msgid "Description"
-#~ msgstr "Huraian"
-
-#~ msgid "Feathering"
-#~ msgstr "Memberikan Bulu Pelepah"
-
-#~ msgid "Spacing"
-#~ msgstr "Langkau"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/N_eon..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/N_eon..."
-
-#, fuzzy
-#~ msgid "Create shadow"
-#~ msgstr "Wujudkan Bayang"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 5)"
-#~ msgstr "Beri kesan kepada Saiz (piksel * 5)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Teks Cetakan Baru..."
-
-#, fuzzy
-#~ msgid "Cell size (pixels)"
-#~ msgstr "Saiz Sel (piksel)"
-
-#~ msgid "Density (%)"
-#~ msgstr "Ketumpatan (%)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Script-Fu/Hias/Foto _Lama..."
-
-#~ msgid "Defocus"
-#~ msgstr "Tidak fokus"
-
-#~ msgid "Mottle"
-#~ msgstr "Berbelak-belak"
-
-#~ msgid "Sepia"
-#~ msgstr "Warna Sepia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Script-Fu/Bayang/_Perspektif..."
-
-#~ msgid "Angle"
-#~ msgstr "Sudut"
-
-#~ msgid "Interpolate"
-#~ msgstr "Sisipkan"
-
-#, fuzzy
-#~ msgid "Relative distance of horizon"
-#~ msgstr "Jarak Relatif Ufuk"
-
-#, fuzzy
-#~ msgid "Relative length of shadow"
-#~ msgstr "Panjang Relatif Bayang"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Pemangsa..."
-
-#, fuzzy
-#~ msgid "Edge amount"
-#~ msgstr "Jumlah Tepi"
-
-#, fuzzy
-#~ msgid "Pixel amount"
-#~ msgstr "Jumlah Piksel"
-
-#~ msgid "Pixelize"
-#~ msgstr "Berpiksel"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Butang/Butang _Bundar..."
-
-#, fuzzy
-#~ msgid "Lower color"
-#~ msgstr "Pudarkan Warna"
-
-#, fuzzy
-#~ msgid "Lower color (active)"
-#~ msgstr "Pudarkan Warna (Aktif)"
-
-#, fuzzy
-#~ msgid "Not pressed"
-#~ msgstr "Tidak Ditekan"
-
-#, fuzzy
-#~ msgid "Not pressed (active)"
-#~ msgstr "Tidak Ditekan (Aktif)"
-
-#~ msgid "Padding X"
-#~ msgstr "Pad X"
-
-#~ msgid "Padding Y"
-#~ msgstr "Pad Y"
-
-#, fuzzy
-#~ msgid "Round ratio"
-#~ msgstr "Nisbah Nombor Bulat"
-
-#, fuzzy
-#~ msgid "Text color (active)"
-#~ msgstr "Warna Teks (Aktif)"
-
-#, fuzzy
-#~ msgid "Upper color"
-#~ msgstr "Warna Atas"
-
-#, fuzzy
-#~ msgid "Upper color (active)"
-#~ msgstr "Warna Atas (Aktif)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/Render _Peta..."
-
-#~ msgid "Behaviour"
-#~ msgstr "Peri laku"
-
-#~ msgid "Detail in Middle"
-#~ msgstr "Perincian di Tengah"
-
-#~ msgid "Tile"
-#~ msgstr "Jubin"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Script-Fu/Juruanimasi/_Beriak..."
-
-#~ msgid "Black"
-#~ msgstr "Hitam"
-
-#, fuzzy
-#~ msgid "Edge behaviour"
-#~ msgstr "Peri laku Tepi"
-
-#, fuzzy
-#~ msgid "Number of frames"
-#~ msgstr "Bilangan Bingkai"
-
-#, fuzzy
-#~ msgid "Rippling strength"
-#~ msgstr "Kekuatan Riak"
-
-#~ msgid "Smear"
-#~ msgstr "Comot"
-
-#~ msgid "Wrap"
-#~ msgstr "Pusing"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
-#~ msgstr "<Image>/Script-Fu/Hias/Sudut _Bundar..."
-
-#, fuzzy
-#~ msgid "Add background"
-#~ msgstr "Tambahkan Latar Belakang"
-
-#, fuzzy
-#~ msgid "Add drop-shadow"
-#~ msgstr "Tambahkan Lepaskan Bayang"
-
-#, fuzzy
-#~ msgid "Edge radius"
-#~ msgstr "Jejari Tepi"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
-#~ msgstr "<Image>/Script-Fu/Pemilihan/_Bundar..."
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Jejari Relatif"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Script-Fu/Pemilihan/Ke _Berus..."
-
-#, fuzzy
-#~ msgid "Brush name"
-#~ msgstr "Nama Berus"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
-#~ msgstr "<Image>/Script-Fu/Pemilihan/Ke _Imej"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Script-Fu/Pemilihan/Ke _Berus..."
-
-#, fuzzy
-#~ msgid "Pattern name"
-#~ msgstr "Corak"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
-#~ msgstr "<Image>/Script-Fu/Hias/_Slaid..."
-
-#, fuzzy
-#~ msgid "Font color"
-#~ msgstr "Warna Fon"
-
-#~ msgid "Number"
-#~ msgstr "Nombor"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Kuning Kunyit SOTA..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Teks Laju..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Pelbagai/_Sfera..."
-
-#~ msgid "Lighting (degrees)"
-#~ msgstr "Pencahayaan (Tahap)"
-
-#~ msgid "Radius (pixels)"
-#~ msgstr "Jejari (piksel)"
-
-#, fuzzy
-#~ msgid "Sphere color"
-#~ msgstr "Warna Sfera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Script-Fu/Juruanimasi/Glob _Berputar..."
-
-#~ msgid "Frames"
-#~ msgstr "Bingkai"
-
-#, fuzzy
-#~ msgid "Index to n colors (0 = remain RGB)"
-#~ msgstr "Indeks ke Warna n (0 = Baki RGB)"
-
-#, fuzzy
-#~ msgid "Turn from left to right"
-#~ msgstr "Pusingkan dari Kiri ke Kanan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Script-Fu/Render/_Spyrogimp..."
-
-#~ msgid "Airbrush"
-#~ msgstr "Penyembur"
-
-#~ msgid "Brush"
-#~ msgstr "Berus"
-
-#~ msgid "Circle"
-#~ msgstr "Bulatan"
-
-#, fuzzy
-#~ msgid "Color method"
-#~ msgstr "Kaedah Warna"
-
-#~ msgid "Epitrochoid"
-#~ msgstr "Epitrochoid"
-
-#~ msgid "Frame"
-#~ msgstr "Bingkai"
-
-#~ msgid "Gradient: Loop Sawtooth"
-#~ msgstr "Kecerunan: Gelung Sawtooth"
-
-#~ msgid "Gradient: Loop Triangle"
-#~ msgstr "Kecerunan: Segi tiga Gelung"
-
-#~ msgid "Hexagon"
-#~ msgstr "Heksagon"
-
-#, fuzzy
-#~ msgid "Hole ratio"
-#~ msgstr "Nisbah Lubang"
-
-#, fuzzy
-#~ msgid "Inner teeth"
-#~ msgstr "Gigi Dalam"
-
-#~ msgid "Lissajous"
-#~ msgstr "Lissajous"
-
-#~ msgid "Margin (pixels)"
-#~ msgstr "Jidar (piksel)"
-
-#, fuzzy
-#~ msgid "Outer teeth"
-#~ msgstr "Gigi Luar"
-
-#~ msgid "Pencil"
-#~ msgstr "Pensel"
-
-#~ msgid "Pentagon"
-#~ msgstr "Pentagon"
-
-#~ msgid "Polygon: 10 sides"
-#~ msgstr "Poligon: 10 sisi"
-
-#~ msgid "Polygon: 7 sides"
-#~ msgstr "Poligon: 7 sisi"
-
-#~ msgid "Polygon: 8 sides"
-#~ msgstr "Poligon: 8 sisi"
-
-#~ msgid "Polygon: 9 sides"
-#~ msgstr "Poligon: 9 sisi"
-
-#~ msgid "Shape"
-#~ msgstr "Bentuk"
-
-#~ msgid "Solid Color"
-#~ msgstr "Warna Pejal"
-
-#~ msgid "Spyrograph"
-#~ msgstr "Spyrograf"
-
-#~ msgid "Square"
-#~ msgstr "Segi empat sama"
-
-#, fuzzy
-#~ msgid "Start angle"
-#~ msgstr "Sudut Mula"
-
-#~ msgid "Tool"
-#~ msgstr "Alat"
-
-#~ msgid "Triangle"
-#~ msgstr "Segi tiga"
-
-#~ msgid "Type"
-#~ msgstr "Jenis"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Bintang _Bertaburan..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Bintang _Bertaburan..."
-
-#, fuzzy
-#~ msgid "Burst color"
-#~ msgstr "Warna Bertabur"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 30)"
-#~ msgstr "Saiz yang Terjejas (piksel * 30)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Sta_rscape..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Sta_rscape..."
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 4)"
-#~ msgstr "Saiz yang Terjejas (piksel * 4)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Jubin Berpusar..."
-
-#, fuzzy
-#~ msgid "Whirl amount"
-#~ msgstr "Jumlah Pusaran"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/_Berpusar..."
-
-#, fuzzy
-#~ msgid "Number of times to whirl"
-#~ msgstr "Bilangan untuk Berpusar"
-
-#, fuzzy
-#~ msgid "Quarter size"
-#~ msgstr "Saiz Suku"
-
-#, fuzzy
-#~ msgid "Whirl angle"
-#~ msgstr "Sudut Pusaran"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/Surihan _Zarah..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Surihan _Zarah..."
-
-#, fuzzy
-#~ msgid "Base color"
-#~ msgstr "Warna Asas"
-
-#, fuzzy
-#~ msgid "Edge only"
-#~ msgstr "Tepi Sahaja"
-
-#, fuzzy
-#~ msgid "Edge width"
-#~ msgstr "Lebar Tepi"
-
-#, fuzzy
-#~ msgid "Hit rate"
-#~ msgstr "Kadar Hentaman"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Bulatan Teks..."
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
-
-#, fuzzy
-#~ msgid "Fill angle"
-#~ msgstr "Sudut yang Dipenuhi"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Image>/Script-Fu/Alfa ke Logo/_Bertekstur..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/_Bertekstur..."
-
-#, fuzzy
-#~ msgid "Ending blend"
-#~ msgstr "Mengakhiri Campuran"
-
-#~ msgid "Hexagons"
-#~ msgstr "Segi enam"
-
-#, fuzzy
-#~ msgid "Mosaic tile type"
-#~ msgstr "Jenis Jubin Mozaik"
-
-#~ msgid "Octagons"
-#~ msgstr "Segi Lapan"
-
-#~ msgid "Squares"
-#~ msgstr "Segi empat sama"
-
-#, fuzzy
-#~ msgid "Starting blend"
-#~ msgstr "Mula Campur"
-
-#, fuzzy
-#~ msgid "Text pattern"
-#~ msgstr "Corak Teks"
-
-#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
-#~ msgstr "<Image>/Penapis/Kabur/Kabur _Berjubin..."
-
-#, fuzzy
-#~ msgid "Blur horizontally"
-#~ msgstr "Kaburkan secara Mengufuk"
-
-#, fuzzy
-#~ msgid "Blur type"
-#~ msgstr "Kaburkan Jenis"
-
-#, fuzzy
-#~ msgid "Blur vertically"
-#~ msgstr "Kaburkan secara Menegak"
-
-#~ msgid "IIR"
-#~ msgstr "IIR"
-
-#~ msgid "RLE"
-#~ msgstr "RLE"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
-#~ msgstr "<Image>/Script-Fu/Pemilihan/Ke _Imej"
-
-#, fuzzy
-#~ msgid "Palette"
-#~ msgstr "Corak"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logo/Pengepala Judul Web..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Corak/T_ruchet..."
-
-#, fuzzy
-#~ msgid "Foreground color"
-#~ msgstr "Warna Latar Depan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/Topeng Tidak _Terang..."
-
-#, fuzzy
-#~ msgid "Mask opacity"
-#~ msgstr "Kelegapan Topeng"
-
-#, fuzzy
-#~ msgid "Mask size"
-#~ msgstr "Saiz Topeng"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Script-Fu/Juruanimasi/_Gelombang..."
-
-#~ msgid "Amplitude"
-#~ msgstr "Amplitud"
-
-#~ msgid "Invert direction"
-#~ msgstr "Arah songsang"
-
-#~ msgid "Wavelength"
-#~ msgstr "Jarak Gelombang"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Jalinan..."
-
-#, fuzzy
-#~ msgid "Ribbon spacing"
-#~ msgstr "Jarak Reben"
-
-#, fuzzy
-#~ msgid "Ribbon width"
-#~ msgstr "Lebar Reben"
-
-#, fuzzy
-#~ msgid "Shadow darkness"
-#~ msgstr "Gelap Bayang"
-
-#, fuzzy
-#~ msgid "Shadow depth"
-#~ msgstr "Dalam Bayang"
-
-#, fuzzy
-#~ msgid "Thread density"
-#~ msgstr "Ketumpatan Bebenang"
-
-#, fuzzy
-#~ msgid "Thread intensity"
-#~ msgstr "Keamatan Bebenang"
-
-#, fuzzy
-#~ msgid "Thread length"
-#~ msgstr "Panjang Bebenang"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-#~ msgstr "<Toolbox>/Xtns/Pelayar Web/_Pendaftaran Plug-In"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-#~ msgstr "<Toolbox>/Bantuan/GIMP dalam talian/Laman Web _Pembangun"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
-#~ msgstr "<Toolbox>/Bantuan/GIMP dalam talian/Laman Web _Utama"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
-#~ msgstr "<Image>/Script-Fu/Bayang/Kesan _Xach..."
-
-#, fuzzy
-#~ msgid "Drop shadow X offset"
-#~ msgstr "Gugurkan Ofset Bayang X"
-
-#, fuzzy
-#~ msgid "Drop shadow Y offset"
-#~ msgstr "Gugurkan Ofset Bayang Y"
-
-#, fuzzy
-#~ msgid "Drop shadow blur radius"
-#~ msgstr "Gugurkan Jejari Kabur Bayang"
-
-#, fuzzy
-#~ msgid "Drop shadow color"
-#~ msgstr "Gugurkan Warna Bayang"
-
-#, fuzzy
-#~ msgid "Drop shadow opacity"
-#~ msgstr "Gugurkan Kelegapan Bayang"
-
-#, fuzzy
-#~ msgid "Highlight X offset"
-#~ msgstr "Tonjolkan Ofset X"
-
-#, fuzzy
-#~ msgid "Highlight Y offset"
-#~ msgstr "Tonjolkan Ofset Y"
-
-#, fuzzy
-#~ msgid "Highlight opacity"
-#~ msgstr "Tonjolkan Kelegapan"
 
 #~ msgid "Transparent Background"
 #~ msgstr "Latar belakang Lut sinar"

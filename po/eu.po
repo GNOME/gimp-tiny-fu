@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"POT-Creation-Date: 2004-10-07 02:46-0400\n"
 "PO-Revision-Date: 2004-04-06 19:42+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
@@ -81,141 +81,56 @@ msgstr ""
 msgid "Tiny-Fu Console"
 msgstr "Script-Fu kontsola"
 
-#: tiny-fu/tiny-fu-console.c:171
+#: tiny-fu/tiny-fu-console.c:172
 #, fuzzy
 msgid "_Save Output"
 msgstr "SIOD irteera"
 
-#: tiny-fu/tiny-fu-console.c:172
+#: tiny-fu/tiny-fu-console.c:173
 msgid "Cl_ear Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:194
+#: tiny-fu/tiny-fu-console.c:196
 msgid "TinyScheme Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:233
+#: tiny-fu/tiny-fu-console.c:235
 msgid "Welcome to TinyScheme\n"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:234
+#: tiny-fu/tiny-fu-console.c:236
 msgid ""
 "Copyright (c) Dimitrios Souflis\n"
 "\n"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:235
+#: tiny-fu/tiny-fu-console.c:237
 #, fuzzy
 msgid "Tiny-Fu Console - "
 msgstr "Script-Fu kontsola"
 
-#: tiny-fu/tiny-fu-console.c:236
+#: tiny-fu/tiny-fu-console.c:238
 msgid "Interactive Scheme Development"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:259
+#: tiny-fu/tiny-fu-console.c:261
 msgid "Current Command"
 msgstr "Uneko komandoa"
 
-#: tiny-fu/tiny-fu-console.c:277
+#: tiny-fu/tiny-fu-console.c:279
 msgid "Browse..."
 msgstr "Arakatu..."
 
-#: tiny-fu/tiny-fu-console.c:332
+#: tiny-fu/tiny-fu-console.c:334
 msgid "Save TinyScheme Output"
 msgstr ""
 
-#: tiny-fu/tiny-fu-console.c:369
-#, c-format
-msgid "Could not open '%s' for writing: %s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-console.c:646
+#: tiny-fu/tiny-fu-console.c:648
 #, fuzzy
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr ""
 "Script-Fu-ren ebaluatze-moduak deitze ez-interaktiboak bakarrik baimentzen "
 "ditu"
-
-#: tiny-fu/tiny-fu-scripts.c:149
-msgid "Too few arguments to tiny-fu-register"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:228
-msgid "tiny-fu-register: argument types must be integer values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:233
-msgid "tiny-fu-register: missing type specifier"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:238
-msgid "tiny-fu-register: argument labels must be strings"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:243
-msgid "tiny-fu-register: missing arguments label"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:254
-msgid "tiny-fu-register: drawable defaults must be integer values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:292
-msgid "tiny-fu-register: color defaults must be a list of 3 integers"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:312
-msgid "tiny-fu-register: toggle default must be an integer value"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:326
-msgid "tiny-fu-register: value defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:341
-msgid "tiny-fu-register: string defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:355
-msgid "tiny-fu-register: adjustment defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:390
-msgid "tiny-fu-register: filename defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:395
-msgid "tiny-fu-register: dirname defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:425
-msgid "tiny-fu-register: font defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:439
-msgid "tiny-fu-register: palette defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:453
-msgid "tiny-fu-register: pattern defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:467
-msgid "tiny-fu-register: brush defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:500
-msgid "tiny-fu-register: gradient defaults must be string values"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:514
-msgid "tiny-fu-register: option defaults must be a list"
-msgstr ""
-
-#: tiny-fu/tiny-fu-scripts.c:539
-msgid "tiny-fu-register: missing default argument"
-msgstr ""
 
 #: tiny-fu/tiny-fu-scripts.c:552
 #, fuzzy, c-format
@@ -228,43 +143,6 @@ msgstr ""
 "Errorea gertatu da exekutatzean\n"
 " %s\n"
 "%s"
-
-#: tiny-fu/tiny-fu-server.c:215
-msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:355
-msgid "Tiny-Fu server initialized and listening...\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:393
-#, c-format
-msgid "Processing request #%d\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:413
-#, c-format
-msgid "Request #%d processed in %f seconds, finishing on %s"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:463
-msgid "Error reading command header.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:475
-msgid "Error in tiny-fu command transmission.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:491
-#, c-format
-msgid "Error reading command.  Read %d out of %d bytes.\n"
-msgstr ""
-
-#: tiny-fu/tiny-fu-server.c:514
-#, c-format
-msgid ""
-"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
-msgstr ""
 
 #: tiny-fu/tiny-fu-server.c:642
 #, fuzzy
@@ -279,226 +157,2435 @@ msgstr "Zerbitzari-ataka:"
 msgid "Server Logfile:"
 msgstr "Zerbitzariaren egunkari-fitxategia:"
 
-#: tiny-fu/tiny-fu-text-console.c:119
-#, c-format
-msgid "error reading from stdin: %s\n"
-msgstr ""
-
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#: tiny-fu/tiny-fu-interface.c:192 tiny-fu/tiny-fu-interface.c:194
 #, fuzzy
 msgid "/Tiny-Fu/"
 msgstr "/Script-Fu/"
 
-#: tiny-fu/tiny-fu-interface.c:205
+#: tiny-fu/tiny-fu-interface.c:208
 #, fuzzy, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Script-Fu: %s"
 
-#: tiny-fu/tiny-fu-interface.c:212
-#, fuzzy
-msgid "_About"
-msgstr "Honi buruz"
-
 #. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:237
+#: tiny-fu/tiny-fu-interface.c:245
 msgid "Script Arguments"
 msgstr "Script-argumentuak"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:268
+#: tiny-fu/tiny-fu-interface.c:276
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:312
+#: tiny-fu/tiny-fu-interface.c:321
 #, fuzzy
 msgid "Tiny-Fu Color Selection"
 msgstr "Script-Fu-ren kolore-hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:418
+#: tiny-fu/tiny-fu-interface.c:427
 #, fuzzy
 msgid "Tiny-Fu File Selection"
 msgstr "Script-Fu-ren fitxategi-hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:422
+#: tiny-fu/tiny-fu-interface.c:431
 #, fuzzy
 msgid "Tiny-Fu Folder Selection"
 msgstr "Script-Fu-ren karpeta-hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:434
+#: tiny-fu/tiny-fu-interface.c:443
 #, fuzzy
 msgid "Tiny-Fu Font Selection"
 msgstr "Script-Fu-ren letra-tipoaren hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:441
+#: tiny-fu/tiny-fu-interface.c:450
 #, fuzzy
 msgid "Tiny-Fu Palette Selection"
 msgstr "Script-Fu-ren eredu-hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:449
+#: tiny-fu/tiny-fu-interface.c:458
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Script-Fu-ren eredu-hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:457
+#: tiny-fu/tiny-fu-interface.c:465
 #, fuzzy
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Script-Fu-ren gradiente-hautapena"
 
-#: tiny-fu/tiny-fu-interface.c:465
+#: tiny-fu/tiny-fu-interface.c:473
 #, fuzzy
 msgid "Tiny-Fu Brush Selection"
 msgstr "Script-Fu-ren brotxa-hautapena"
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:519
+#: tiny-fu/tiny-fu-interface.c:532
 #, fuzzy
 msgid "Script Progress"
 msgstr "Script-argumentuak"
 
-#: tiny-fu/tiny-fu-interface.c:527
+#: tiny-fu/tiny-fu-interface.c:540
 msgid "(none)"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:1042
+#: tiny-fu/tiny-fu-interface.c:1060
 msgid "Author:"
 msgstr "Egilea:"
 
-#: tiny-fu/tiny-fu-interface.c:1048
+#: tiny-fu/tiny-fu-interface.c:1067
 msgid "Copyright:"
 msgstr "Copyright-a:"
 
-#: tiny-fu/tiny-fu-interface.c:1054
+#: tiny-fu/tiny-fu-interface.c:1074
 msgid "Date:"
 msgstr "Data:"
 
-#: tiny-fu/tiny-fu-interface.c:1062
+#: tiny-fu/tiny-fu-interface.c:1083
 msgid "Image Types:"
 msgstr "Irudi-motak:"
 
-#: tiny-fu/ts-wrapper.c:231
-msgid "Could not initialize TinyScheme!\n"
+#: scripts/ts-helloworld.sct.h:1 scripts/drop-shadow.sct.h:4
+#: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
+#: scripts/spyrogimp.sct.h:5
+msgid "Color"
+msgstr "Kolorea"
+
+#: scripts/ts-helloworld.sct.h:2 scripts/3d-outline.sct.h:5
+#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
+#: scripts/alien-neon-logo.sct.h:5 scripts/asc2img.sct.h:8
+#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:6
+#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:2
+#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:10
+#: scripts/bovinated-logo.sct.h:5 scripts/carved-logo.sct.h:4
+#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:7 scripts/chrome-logo.sct.h:5
+#: scripts/comic-logo.sct.h:4 scripts/coolmetal-logo.sct.h:5
+#: scripts/crystal-logo.sct.h:5 scripts/frosty-logo.sct.h:5
+#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:6
+#: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
+#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:2
+#: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
+#: scripts/pupi-button.sct.h:3 scripts/slide.sct.h:2
+#: scripts/sota-chrome-logo.sct.h:7 scripts/speed-text.sct.h:5
+#: scripts/starburst-logo.sct.h:6 scripts/starscape-logo.sct.h:4
+#: scripts/t-o-p-logo.sct.h:8 scripts/text-circle.sct.h:4
+#: scripts/textured-logo.sct.h:6 scripts/title-header.sct.h:2
+msgid "Font"
+msgstr "Letra-tipoa"
+
+#: scripts/ts-helloworld.sct.h:3
+msgid "Font Size (pixels)"
+msgstr "Letra-tamaina (pixeletan)"
+
+#: scripts/ts-helloworld.sct.h:4
+msgid "Hello, World!"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:250
-#, c-format
-msgid "Unable to read initialization file\n"
+#: scripts/ts-helloworld.sct.h:5
+#, fuzzy
+msgid "Text String"
+msgstr "Testu-eredua"
+
+#: scripts/contactsheet.sct.h:1
+msgid " contact sheets from a total of "
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:537
+#: scripts/contactsheet.sct.h:2
+#, fuzzy
+msgid " for directory "
+msgstr "Ezin da SIOD irteerako kanalizazioa ireki"
+
+#: scripts/contactsheet.sct.h:3
+#, fuzzy
+msgid " images"
+msgstr "Indexatu irudia"
+
+#: scripts/contactsheet.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/Letra-tipoen mapa..."
+
+#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:2
+#: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
+#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:4
+#: scripts/alien-neon-logo.sct.h:3 scripts/asc2img.sct.h:3
+#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:5
+#: scripts/blended-logo.sct.h:3 scripts/bovinated-logo.sct.h:4
+#: scripts/chalk.sct.h:3 scripts/chrome-logo.sct.h:4
+#: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
+#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
+#: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
+#: scripts/gradient-bevel-logo.sct.h:5 scripts/neon-logo.sct.h:3
+#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
+#: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
+#: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
+#: scripts/truchet.sct.h:2
+#, fuzzy
+msgid "Background color"
+msgstr "Atzeko planoaren kolorea"
+
+#: scripts/contactsheet.sct.h:6
+#, fuzzy
+msgid "Created "
+msgstr "Sortu itzala"
+
+#: scripts/contactsheet.sct.h:7
+#, fuzzy
+msgid "Directory"
+msgstr "Ezin da SIOD irteerako kanalizazioa ireki"
+
+#: scripts/contactsheet.sct.h:8
+msgid "Legend Font"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:9
+#, fuzzy
+msgid "Sheet "
+msgstr "Hazia"
+
+#: scripts/contactsheet.sct.h:10
+#, fuzzy
+msgid "Sheet Size"
+msgstr "Hazia"
+
+#: scripts/contactsheet.sct.h:11
+msgid "Text Color"
+msgstr "Testuaren kolorea"
+
+#: scripts/contactsheet.sct.h:12
+msgid "Title Font"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:13
+#, fuzzy
+msgid "Unable to open directory "
+msgstr "Ezin da SIOD irteerako kanalizazioa ireki"
+
+#: scripts/3d-outline.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/3D _eskema..."
+
+#: scripts/3d-outline.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/3D e_skema..."
+
+#: scripts/3d-outline.sct.h:3
+#, fuzzy
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr "Erliebe-maparen (Alfa geruza) lausotze-erradioa"
+
+#: scripts/3d-outline.sct.h:4 scripts/glossy.sct.h:7
+#, fuzzy
+msgid "Default bumpmap settings"
+msgstr "Erliebe-maparen ezarpen lehenetsiak"
+
+#: scripts/3d-outline.sct.h:6 scripts/alien-glow-logo.sct.h:6
+#: scripts/alien-neon-logo.sct.h:6 scripts/asc2img.sct.h:9
+#: scripts/basic1-logo.sct.h:5 scripts/basic2-logo.sct.h:7
+#: scripts/beveled-button.sct.h:4 scripts/beveled-pattern-button.sct.h:3
+#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:11
+#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
+#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
+#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
+#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:6
+#: scripts/gimp-headers.sct.h:6 scripts/gimp-labels.sct.h:7
+#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
+#: scripts/gradient-bevel-logo.sct.h:10 scripts/i26-gunya2.sct.h:3
+#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
+#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
+#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
+#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
+#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
+#: scripts/title-header.sct.h:3
+#, fuzzy
+msgid "Font size (pixels)"
+msgstr "Letra-tamaina (pixeletan)"
+
+#: scripts/3d-outline.sct.h:7
+#, fuzzy
+msgid "Outline blur radius"
+msgstr "Eskemaren lausotze-erradioa"
+
+#: scripts/3d-outline.sct.h:8 scripts/glossy.sct.h:16
+#: scripts/round-corners.sct.h:6
+#, fuzzy
+msgid "Shadow X offset"
+msgstr "Itzalaren X desplazamendua"
+
+#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
+#: scripts/round-corners.sct.h:7
+#, fuzzy
+msgid "Shadow Y offset"
+msgstr "Itzalaren Y desplazamendua"
+
+#: scripts/3d-outline.sct.h:10
+#, fuzzy
+msgid "Shadow blur radius"
+msgstr "Itzalaren lausotze-erradioa"
+
+#: scripts/3d-outline.sct.h:11 scripts/alien-glow-button.sct.h:10
+#: scripts/alien-glow-logo.sct.h:9 scripts/alien-neon-logo.sct.h:9
+#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:8
+#: scripts/beveled-button.sct.h:8 scripts/beveled-pattern-button.sct.h:6
+#: scripts/beveled-pattern-heading.sct.h:5 scripts/blended-logo.sct.h:16
+#: scripts/bovinated-logo.sct.h:9 scripts/carved-logo.sct.h:7
+#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:13
+#: scripts/chrome-logo.sct.h:8 scripts/comic-logo.sct.h:10
+#: scripts/coolmetal-logo.sct.h:9 scripts/crystal-logo.sct.h:7
+#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:13
+#: scripts/gimp-labels.sct.h:16 scripts/glossy.sct.h:18
+#: scripts/glowing-logo.sct.h:7 scripts/gradient-bevel-logo.sct.h:11
+#: scripts/i26-gunya2.sct.h:6 scripts/neon-logo.sct.h:9
+#: scripts/news-text.sct.h:9 scripts/pupi-button.sct.h:13
+#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:10
+#: scripts/speed-text.sct.h:7 scripts/starburst-logo.sct.h:8
+#: scripts/starscape-logo.sct.h:7 scripts/t-o-p-logo.sct.h:11
+#: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
+#: scripts/title-header.sct.h:5
+msgid "Text"
+msgstr "Testua"
+
+#: scripts/3dTruchet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/3D _truchet-a..."
+
+#: scripts/3dTruchet.sct.h:3 scripts/truchet.sct.h:3
+#, fuzzy
+msgid "Block size"
+msgstr "Bloke-tamaina"
+
+#: scripts/3dTruchet.sct.h:4 scripts/blended-logo.sct.h:6
+#, fuzzy
+msgid "End blend"
+msgstr "Amaierako nahastea"
+
+#: scripts/3dTruchet.sct.h:5 scripts/truchet.sct.h:5
+#, fuzzy
+msgid "Number of X tiles"
+msgstr "Xeko lauza-kopurua"
+
+#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:6
+#, fuzzy
+msgid "Number of Y tiles"
+msgstr "Yko lauza-kopurua"
+
+#: scripts/3dTruchet.sct.h:7 scripts/blended-logo.sct.h:15
+#, fuzzy
+msgid "Start blend"
+msgstr "Hasierako nahastea"
+
+#: scripts/3dTruchet.sct.h:8
+msgid "Supersample"
+msgstr "Gainlagina"
+
+#: scripts/3dTruchet.sct.h:9 scripts/add-bevel.sct.h:3 scripts/truchet.sct.h:7
+msgid "Thickness"
+msgstr "Lodiera"
+
+#: scripts/add-bevel.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+msgstr "<Image>/Script-Fu/Dekorazioa/Gehitu a_laka..."
+
+#: scripts/add-bevel.sct.h:2 scripts/chip-away.sct.h:11
+#, fuzzy
+msgid "Keep bump layer"
+msgstr "Mantendu erliebe-geruza"
+
+#: scripts/add-bevel.sct.h:4 scripts/fuzzyborder.sct.h:10
+#: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
+#: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
+#, fuzzy
+msgid "Work on copy"
+msgstr "Kopian lan egin"
+
+#: scripts/addborder.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+msgstr "<Image>/Script-Fu/Dekorazioa/Gehitu e_rtza..."
+
+#: scripts/addborder.sct.h:2
+#, fuzzy
+msgid "Border X size"
+msgstr "Ertzaren X tamaina"
+
+#: scripts/addborder.sct.h:3
+#, fuzzy
+msgid "Border Y size"
+msgstr "Ertzaren Y tamaina"
+
+#: scripts/addborder.sct.h:4
+#, fuzzy
+msgid "Border color"
+msgstr "Ertzaren kolorea"
+
+#: scripts/addborder.sct.h:5
+#, fuzzy
+msgid "Delta value on color"
+msgstr "Koloreko delta balioa "
+
+#: scripts/alien-glow-arrow.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/_Gezia..."
+
+#: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
+msgid "Down"
+msgstr "Behean"
+
+#: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
+#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:5
+#: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
+#, fuzzy
+msgid "Flatten image"
+msgstr "Berdindu irudia"
+
+#: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
+#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-logo.sct.h:7 scripts/alien-neon-logo.sct.h:7
+#: scripts/burn-in-anim.sct.h:8 scripts/neon-logo.sct.h:8
+#: scripts/starscape-logo.sct.h:6
+#, fuzzy
+msgid "Glow color"
+msgstr "Dirdiraren kolorea"
+
+#: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
+msgid "Left"
+msgstr "Ezkerrean"
+
+#: scripts/alien-glow-arrow.sct.h:7 scripts/beveled-pattern-arrow.sct.h:4
+msgid "Orientation"
+msgstr "Orientazioa"
+
+#: scripts/alien-glow-arrow.sct.h:8 scripts/beveled-pattern-arrow.sct.h:6
+msgid "Right"
+msgstr "Eskuinean"
+
+#: scripts/alien-glow-arrow.sct.h:9 scripts/beveled-pattern-arrow.sct.h:7
+#: scripts/lava.sct.h:7
+msgid "Size"
+msgstr "Tamaina"
+
+#: scripts/alien-glow-arrow.sct.h:10 scripts/beveled-pattern-arrow.sct.h:8
+msgid "Up"
+msgstr "Goian"
+
+#: scripts/alien-glow-bar.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/Barra "
+"_horizontala..."
+
+#: scripts/alien-glow-bar.sct.h:3
+#, fuzzy
+msgid "Bar height"
+msgstr "Barraren altuera"
+
+#: scripts/alien-glow-bar.sct.h:4
+#, fuzzy
+msgid "Bar length"
+msgstr "Barraren luzera"
+
+#: scripts/alien-glow-bullet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/_Buleta..."
+
+#: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
+#: scripts/tileblur.sct.h:7
+msgid "Radius"
+msgstr "Erradioa"
+
+#: scripts/alien-glow-button.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
+#, fuzzy
 msgid ""
-"Procedure database argument marshaller was called with no arguments. The "
-"procedure to be executed and the arguments it requires  (possibly none) must "
-"be specified."
+"\n"
+"    SF-ADJUSTMENT _"
 msgstr ""
+"\n"
+"\t\t    SF-ADJUSTMENT _"
 
-#: tiny-fu/ts-wrapper.c:573
-#, c-format
-msgid "Invalid procedure name %s specified"
+#: scripts/alien-glow-button.sct.h:3
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
 msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/Bo_toia..."
 
-#: tiny-fu/ts-wrapper.c:598
-#, c-format
-msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:8
+#, fuzzy
+msgid "Glow radius"
+msgstr "Dirdiraren erradioa"
 
-#: tiny-fu/ts-wrapper.c:697
-#, c-format
-msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
+msgid "Padding"
+msgstr "Tarte betegarria"
 
-#: tiny-fu/ts-wrapper.c:729
-#, c-format
-msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
+#: scripts/alien-glow-button.sct.h:11 scripts/asc2img.sct.h:10
+#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:9
+#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
+#: scripts/blended-logo.sct.h:17 scripts/gimp-headers.sct.h:14
+#: scripts/gimp-labels.sct.h:17 scripts/i26-gunya2.sct.h:7
+#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:14
+#: scripts/speed-text.sct.h:8
+#, fuzzy
+msgid "Text color"
+msgstr "Testuaren kolorea"
 
-#: tiny-fu/ts-wrapper.c:761
-#, c-format
-msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:793
-#, c-format
-msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:825
-#, c-format
-msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:861
-msgid "Regions are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:926
-msgid "Boundaries are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:931
-msgid "Paths are currently unsupported as arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:994
-msgid "Status is for return types, not arguments"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1001
-#, c-format
-msgid "Argument %d for %s is an unknown type"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1028
-#, c-format
-msgid "Invalid types specified for argument %d to %s"
-msgstr ""
-
-#: tiny-fu/ts-wrapper.c:1040
-#, c-format
+#: scripts/alien-glow-logo.sct.h:1 scripts/basic2-logo.sct.h:1
+#, fuzzy
 msgid ""
-"Procedural database execution of %s did not return a status:\n"
-"    "
+"\n"
+"    SF-COLOR      _"
+msgstr ""
+"\n"
+"\t\t    SF-COLOR      _"
+
+#: scripts/alien-glow-logo.sct.h:3
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Dirdira _estralurtarra..."
+
+#: scripts/alien-glow-logo.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Di_rdira estralurtarra..."
+
+#: scripts/alien-glow-logo.sct.h:8
+#, fuzzy
+msgid "Glow size (pixels * 4)"
+msgstr "Dirdiraren tamaina (pixelak * 4)"
+
+#: scripts/alien-neon-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Neon e_stralurtarra..."
+
+#: scripts/alien-neon-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Neon estralur_tarra..."
+
+#: scripts/alien-neon-logo.sct.h:4
+#, fuzzy
+msgid "Fade away"
+msgstr "Iraungiz desagerrarazi"
+
+#: scripts/alien-neon-logo.sct.h:8
+#, fuzzy
+msgid "Number of bands"
+msgstr "Zerrenda-kopurua"
+
+#: scripts/alien-neon-logo.sct.h:10
+#, fuzzy
+msgid "Width of bands"
+msgstr "Zerrenda-zabalera"
+
+#: scripts/alien-neon-logo.sct.h:11
+#, fuzzy
+msgid "Width of gaps"
+msgstr "Hutsuneen zabalera"
+
+#: scripts/asc2img.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+msgstr "<Image>/Script-Fu/Utilitateak/_ASCII geruzara..."
+
+#: scripts/asc2img.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/ASCII irudira..."
+
+#: scripts/asc2img.sct.h:5
+#, fuzzy, no-c-format
+msgid "Buffer amount (% height of text)"
+msgstr "Bufferraren tamaina (testuaren altueraren %)"
+
+#: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
+#, fuzzy
+msgid "File name"
+msgstr "Fitxategi-izena"
+
+#: scripts/asc2img.sct.h:7 scripts/select-to-pattern.sct.h:2
+msgid "Filename"
+msgstr "Fitxategi-izena"
+
+#: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:6 scripts/spinning-globe.sct.h:4
+#, fuzzy
+msgid "Transparent background"
+msgstr "Atzeko plano gardena"
+
+#: scripts/basic1-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Oinarrizkoa I..."
+
+#: scripts/basic1-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/O_inarrizkoa I..."
+
+#: scripts/basic2-logo.sct.h:3
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Oi_narrizkoa II..."
+
+#: scripts/basic2-logo.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Oin_arrizkoa II..."
+
+#: scripts/beveled-button.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Botoiak/Bo_toi soil alakatua..."
+
+#: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:7
+#: scripts/pupi-button.sct.h:2
+#, fuzzy
+msgid "Bevel width"
+msgstr "Alaka-zabalera"
+
+#: scripts/beveled-button.sct.h:5
+#, fuzzy
+msgid "Lower-right color"
+msgstr "Beheko eskuineko kolorea"
+
+#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:5
+#: scripts/pupi-button.sct.h:11
+msgid "Pressed"
+msgstr "Sakatuta"
+
+#: scripts/beveled-button.sct.h:10
+#, fuzzy
+msgid "Upper-left color"
+msgstr "Goiko ezkerreko kolorea"
+
+#: scripts/beveled-pattern-arrow.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/_Gezia..."
+
+#: scripts/beveled-pattern-arrow.sct.h:5
+#: scripts/beveled-pattern-bullet.sct.h:3
+#: scripts/beveled-pattern-button.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:4
+#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:12
+#: scripts/textured-logo.sct.h:11
+msgid "Pattern"
+msgstr "Eredua"
+
+#: scripts/beveled-pattern-bullet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/_Buleta..."
+
+#: scripts/beveled-pattern-bullet.sct.h:2
+#, fuzzy
+msgid "Diameter"
+msgstr "Diametroa"
+
+#: scripts/beveled-pattern-button.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/Bo_toia..."
+
+#: scripts/beveled-pattern-heading.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/_Izenburua..."
+
+#: scripts/beveled-pattern-hrule.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/Ba_rra "
+"horizontala..."
+
+#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:8
+#: scripts/gradient-example.sct.h:3 scripts/mkbrush.sct.h:8
+#: scripts/swirltile.sct.h:7
+msgid "Height"
+msgstr "Altuera"
+
+#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:4
+#: scripts/mkbrush.sct.h:10 scripts/swirltile.sct.h:10
+msgid "Width"
+msgstr "Zabalera"
+
+#: scripts/blend-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+msgstr "<Image>/Script-Fu/Animazioa/_Nahastu..."
+
+#: scripts/blend-anim.sct.h:2
+msgid "Blend Animation needs at least three source layers"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1055
-#, c-format
+#: scripts/blend-anim.sct.h:3
+#, fuzzy
+msgid "Intermediate frames"
+msgstr "Tarteko markoak"
+
+#: scripts/blend-anim.sct.h:4
+msgid "Looped"
+msgstr "Begiztatua"
+
+#: scripts/blend-anim.sct.h:5
+#, fuzzy
+msgid "Max. blur radius"
+msgstr "Gehieneko lausotze-erradioa"
+
+#: scripts/blended-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Na_hastuta..."
+
+#: scripts/blended-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/_Nahastuta..."
+
+#: scripts/blended-logo.sct.h:4
+#, fuzzy
+msgid "Blend mode"
+msgstr "Nahaste-modua"
+
+#: scripts/blended-logo.sct.h:5
+msgid "Custom Gradient"
+msgstr "Gradiente pertsonalizatua"
+
+#: scripts/blended-logo.sct.h:7
+msgid "FG-BG-HSV"
+msgstr "AurrPl-AtzPl-HSV"
+
+#: scripts/blended-logo.sct.h:8
+msgid "FG-BG-RGB"
+msgstr "AurrPl-AtzPl-RGB"
+
+#: scripts/blended-logo.sct.h:9
+msgid "FG-Transparent"
+msgstr "AurrPl-Gardena"
+
+#: scripts/blended-logo.sct.h:12 scripts/comic-logo.sct.h:6
+#: scripts/coolmetal-logo.sct.h:7 scripts/land.sct.h:3 scripts/lava.sct.h:2
+#: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
+msgid "Gradient"
+msgstr "Gradientea"
+
+#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
+#: scripts/coolmetal-logo.sct.h:8 scripts/gradient-example.sct.h:2
+#: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
+#, fuzzy
+msgid "Gradient reverse"
+msgstr "Gradiente alderantzikatua"
+
+#: scripts/blended-logo.sct.h:14
+msgid "Offset (pixels)"
+msgstr "Desplazamendua (pixeletan)"
+
+#: scripts/bovinated-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Behi-kontuak..."
+
+#: scripts/bovinated-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Be_hi-kontuak..."
+
+#: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
+msgid "Background Color"
+msgstr "Atzeko planoaren kolorea"
+
+#: scripts/bovinated-logo.sct.h:7
+msgid "Spots density X"
+msgstr "Orbanen X dentsitatea"
+
+#: scripts/bovinated-logo.sct.h:8
+msgid "Spots density Y"
+msgstr "Orbanen Y dentsitatea"
+
+#: scripts/burn-in-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+msgstr "<Image>/Script-Fu/Animazioa/_Erregailua..."
+
+#: scripts/burn-in-anim.sct.h:2
+#, fuzzy
+msgid "Add glowing"
+msgstr "Gehitu dirdira"
+
+#: scripts/burn-in-anim.sct.h:3
+#, fuzzy
+msgid "After glow"
+msgstr "Dirdiraren ondoren"
+
+#: scripts/burn-in-anim.sct.h:4
 msgid ""
-"Procedural database execution of %s failed:\n"
-"    "
+"Burn-In: Needs two layers in total!\n"
+"A foreground text layer with transparency and a background layer."
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1062
-#, c-format
+#: scripts/burn-in-anim.sct.h:5
+#, fuzzy
+msgid "Corona width"
+msgstr "Koroaren zabalera"
+
+#: scripts/burn-in-anim.sct.h:6
+msgid "Fadeout"
+msgstr "Iraungitzea"
+
+#: scripts/burn-in-anim.sct.h:7
+#, fuzzy
+msgid "Fadeout width"
+msgstr "Iraungitzearen zabalera"
+
+#: scripts/burn-in-anim.sct.h:9
+msgid "Prepare for GIF"
+msgstr "Prestatu GIFerako "
+
+#: scripts/burn-in-anim.sct.h:10
+msgid "Speed (pixels/frame)"
+msgstr "Abiadura (pixel/marko)"
+
+#: scripts/camo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+msgstr "<Toolbox>/Luzp/Script-Fu/_Ereduak/_Kamuflajea..."
+
+#: scripts/camo.sct.h:2
+msgid "Color 1"
+msgstr "1. kolorea"
+
+#: scripts/camo.sct.h:3
+msgid "Color 2"
+msgstr "2. kolorea"
+
+#: scripts/camo.sct.h:4
+msgid "Color 3"
+msgstr "3. kolorea"
+
+#: scripts/camo.sct.h:6 scripts/rendermap.sct.h:6
+msgid "Granularity"
+msgstr "Pikortatzea"
+
+#: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
+#, fuzzy
+msgid "Image size"
+msgstr "Irudiaren tamaina"
+
+#: scripts/camo.sct.h:8 scripts/distress-selection.sct.h:3
+msgid "Smooth"
+msgstr "Leuna"
+
+#: scripts/carved-logo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Zizelkatuta..."
+
+#: scripts/carved-logo.sct.h:2
+msgid "Background Image"
+msgstr "Atzeko planoko irudia"
+
+#: scripts/carved-logo.sct.h:3
+#, fuzzy
+msgid "Carve raised text"
+msgstr "Zizelkatu igotako testua"
+
+#: scripts/carved-logo.sct.h:6
+#, fuzzy
+msgid "Padding around text"
+msgstr "Testu inguruko betegarria"
+
+#: scripts/carve-it.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+msgstr "<Image>/Script-Fu/Eragiketak txantiloiekin/_Zizelkatu..."
+
+#: scripts/carve-it.sct.h:2
+#, fuzzy
+msgid "Carve white areas"
+msgstr "Zizelkatu area zuriak"
+
+#: scripts/carve-it.sct.h:3
+#, fuzzy
+msgid "Image to carve"
+msgstr "Zizelkatzeko irudia"
+
+#: scripts/chalk.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Klera..."
+
+#: scripts/chalk.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_lera..."
+
+#: scripts/chalk.sct.h:4
+#, fuzzy
+msgid "Chalk color"
+msgstr "Klera-kolorea"
+
+#: scripts/chip-away.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Xehatu..."
+
+#: scripts/chip-away.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Xe_hatu..."
+
+#: scripts/chip-away.sct.h:3
+#, fuzzy
+msgid "Blur amount"
+msgstr "Lausotze-maila"
+
+#: scripts/chip-away.sct.h:4
+#, fuzzy
+msgid "Chip amount"
+msgstr "Xehatze-maila"
+
+#: scripts/chip-away.sct.h:5
+#, fuzzy
+msgid "Drop shadow"
+msgstr "Egin itzala"
+
+#: scripts/chip-away.sct.h:6
+#, fuzzy
+msgid "Fill BG with pattern"
+msgstr "Bete atzeko planoa ereduarekin"
+
+#: scripts/chip-away.sct.h:9
+msgid "Invert"
+msgstr "Alderantzikatu"
+
+#: scripts/chip-away.sct.h:10
+#, fuzzy
+msgid "Keep background"
+msgstr "Mantendu atzeko planoa"
+
+#: scripts/chrome-it.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+msgstr "<Image>/Script-Fu/Eragiketak txantiloiekin/_Kromatu..."
+
+#: scripts/chrome-it.sct.h:2 scripts/sota-chrome-logo.sct.h:2
+#, fuzzy
+msgid "Chrome balance"
+msgstr "Kromatze-balantzea"
+
+#: scripts/chrome-it.sct.h:3 scripts/crystal-logo.sct.h:3
+#: scripts/sota-chrome-logo.sct.h:3
+#, fuzzy
+msgid "Chrome factor"
+msgstr "Kromatze-faktorea"
+
+#: scripts/chrome-it.sct.h:4 scripts/sota-chrome-logo.sct.h:4
+#, fuzzy
+msgid "Chrome lightness"
+msgstr "Kromatze-argitasuna"
+
+#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:5
+#, fuzzy
+msgid "Chrome saturation"
+msgstr "Kromatze-saturazioa"
+
+#: scripts/chrome-it.sct.h:6
+#, fuzzy
+msgid "Chrome white areas"
+msgstr "Kromatu area zuriak"
+
+#: scripts/chrome-it.sct.h:7 scripts/crystal-logo.sct.h:4
+#: scripts/sota-chrome-logo.sct.h:6
+#, fuzzy
+msgid "Environment map"
+msgstr "Ingurune-mapa"
+
+#: scripts/chrome-it.sct.h:8 scripts/sota-chrome-logo.sct.h:9
+#, fuzzy
+msgid "Highlight balance"
+msgstr "Nabarmentzearen balantzea"
+
+#: scripts/chrome-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Kromatu..."
+
+#: scripts/chrome-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_romatu..."
+
+#: scripts/chrome-logo.sct.h:7
+msgid "Offsets (pixels * 2)"
+msgstr "Desplazamenduak (pixelak * 2)"
+
+#: scripts/circuit.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+msgstr "<Image>/Script-Fu/Errendatuak/_Zirkuitua..."
+
+#: scripts/circuit.sct.h:2
+#, fuzzy
+msgid "Circuit seed"
+msgstr "Zirkuitu-hazia"
+
+#: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
+#: scripts/xach-effect.sct.h:11
+#, fuzzy
+msgid "Keep selection"
+msgstr "Mantendu hautapena"
+
+#: scripts/circuit.sct.h:4
+#, fuzzy
+msgid "No background (only for separate layer)"
+msgstr "Atzeko planorik ez (bereizitako geruzetarako bakarrik)"
+
+#: scripts/circuit.sct.h:5
+#, fuzzy
+msgid "Oilify mask size"
+msgstr "Olio-maskararen tamaina"
+
+#: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
+#, fuzzy
+msgid "Separate layer"
+msgstr "Geruza bereizia"
+
+#: scripts/clothify.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+msgstr "<Image>/Script-Fu/Alkimia/_Ehundura..."
+
+#: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
+msgid "Azimuth"
+msgstr "Azimuta"
+
+#: scripts/clothify.sct.h:3
+msgid "Blur X"
+msgstr "Lausotu X"
+
+#: scripts/clothify.sct.h:4
+msgid "Blur Y"
+msgstr "Lausotu Y"
+
+#: scripts/clothify.sct.h:5 scripts/swirltile.sct.h:5
+msgid "Depth"
+msgstr "Sakonera"
+
+#: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
+msgid "Elevation"
+msgstr "Goratzea"
+
+#: scripts/coffee.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+msgstr "<Image>/Script-Fu/Dekorazioa/_Kafe-orbana..."
+
+#: scripts/coffee.sct.h:2
+#, fuzzy
 msgid ""
-"Procedural database execution of %s failed on invalid input arguments:\n"
-"    "
+"Darken only\n"
+"(Better, but only for images with alot of white)"
+msgstr ""
+"Ilundu bakarrik\n"
+"(hobeto, baina zuri asko duten irudietarako bakarrik)"
+
+#: scripts/coffee.sct.h:3
+msgid "Stains"
+msgstr "Orbanak"
+
+#: scripts/comic-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Ko_mikia..."
+
+#: scripts/comic-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_omikia..."
+
+#: scripts/comic-logo.sct.h:8
+#, fuzzy
+msgid "Outline color"
+msgstr "Eskemaren kolorea"
+
+#: scripts/comic-logo.sct.h:9 scripts/glossy.sct.h:11
+#, fuzzy
+msgid "Outline size"
+msgstr "Eskemaren tamaina"
+
+#: scripts/coolmetal-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Metal hotza..."
+
+#: scripts/coolmetal-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Me_tal hotza..."
+
+#: scripts/coolmetal-logo.sct.h:4 scripts/frosty-logo.sct.h:4
+#, fuzzy
+msgid "Effect size (pixels)"
+msgstr "Efektuaren tamaina (pixeletan)"
+
+#: scripts/copy-visible.sct.h:1
+#, fuzzy
+msgid "<Image>/Edit/Copy/Copy _Visible"
+msgstr "<Image>/Editatu/Kopiatu _ikusgai dagoena"
+
+#: scripts/crystal-logo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_ristala..."
+
+#: scripts/crystal-logo.sct.h:2
+#, fuzzy
+msgid "Background image"
+msgstr "Atzeko planoko irudia"
+
+#: scripts/distress-selection.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+msgstr "<Image>/Script-Fu/Hautapena/_Desitxuratu hautapena..."
+
+#: scripts/distress-selection.sct.h:2
+#, fuzzy
+msgid "Granularity (1 is low)"
+msgstr "Pikortzea (1 txikia da)"
+
+#: scripts/distress-selection.sct.h:4
+#, fuzzy
+msgid "Smooth horizontally"
+msgstr "Leundu horizontalki"
+
+#: scripts/distress-selection.sct.h:5
+#, fuzzy
+msgid "Smooth vertically"
+msgstr "Leundu bertikalki"
+
+#: scripts/distress-selection.sct.h:6
+msgid "Spread"
+msgstr "Zabaldu"
+
+#: scripts/distress-selection.sct.h:7
+#, fuzzy
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Muga (Handiagoa 1<-->255 Txikiagoa)"
+
+#: scripts/drop-shadow.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+msgstr "<Image>/Script-Fu/Itzala/Egin _itzala..."
+
+#: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
+#, fuzzy
+msgid "Allow resizing"
+msgstr "Baimendu tamaina aldatzea"
+
+#: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
+#: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
+#: scripts/swirltile.sct.h:4
+#, fuzzy
+msgid "Blur radius"
+msgstr "Lausotze-erradioa"
+
+#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:11
+msgid "Offset X"
+msgstr "X desplazamendua"
+
+#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:12
+msgid "Offset Y"
+msgstr "Y desplazamendua"
+
+#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:7
+msgid "Opacity"
+msgstr "Opakutasuna"
+
+#: scripts/erase-rows.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+msgstr "<Image>/Script-Fu/Alkimia/_Ezabatu bi errenkadatatik bat..."
+
+#: scripts/erase-rows.sct.h:2
+msgid "Columns"
+msgstr "Zutabeak"
+
+#: scripts/erase-rows.sct.h:3
+msgid "Erase"
+msgstr "Ezabatu"
+
+#: scripts/erase-rows.sct.h:4
+#, fuzzy
+msgid "Erase/fill"
+msgstr "Ezabatu/Bete"
+
+#: scripts/erase-rows.sct.h:5
+msgid "Even"
+msgstr "Bikoitia"
+
+#: scripts/erase-rows.sct.h:6
+#, fuzzy
+msgid "Even/odd"
+msgstr "Bikoitia/Bakoitia"
+
+#: scripts/erase-rows.sct.h:7
+msgid "Fill with BG"
+msgstr "Bete atzeko planoarekin"
+
+#: scripts/erase-rows.sct.h:8
+msgid "Odd"
+msgstr "Bakoitia"
+
+#: scripts/erase-rows.sct.h:9
+msgid "Rows"
+msgstr "Errenkadak"
+
+#: scripts/erase-rows.sct.h:10
+#, fuzzy
+msgid "Rows/cols"
+msgstr "Errenkadak/Zutabeak"
+
+#: scripts/fade-outline.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+msgstr "<Image>/Script-Fu/Hautapena/_Iraungitze-eskema..."
+
+#: scripts/fade-outline.sct.h:2
+#, fuzzy
+msgid "Apply generated layermask"
+msgstr "Aplikatu sortutako geruza-maskara"
+
+#: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
+#: scripts/old-photo.sct.h:2
+#, fuzzy
+msgid "Border size"
+msgstr "Ertzaren tamaina"
+
+#: scripts/fade-outline.sct.h:4
+#, fuzzy
+msgid "Clear unselected maskarea"
+msgstr "Garbitu hautatu gabeko maskara"
+
+#: scripts/fade-outline.sct.h:6
+#, fuzzy, no-c-format
+msgid "Fade from %"
+msgstr "Iraungi hemendik %"
+
+#: scripts/fade-outline.sct.h:8
+#, fuzzy, no-c-format
+msgid "Fade to   %"
+msgstr "Iraungi hona %"
+
+#: scripts/fade-outline.sct.h:9
+#, fuzzy
+msgid "Use growing selection"
+msgstr "Erabili hazten den hautapena"
+
+#: scripts/flatland.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+msgstr "<Toolbox>/Luzp/Script-Fu/_Ereduak/_Lur laua..."
+
+#: scripts/flatland.sct.h:2 scripts/land.sct.h:2
+#, fuzzy
+msgid "Detail level"
+msgstr "Xehetasun-maila"
+
+#: scripts/flatland.sct.h:3 scripts/land.sct.h:4
+#, fuzzy
+msgid "Image height"
+msgstr "Irudiaren altuera"
+
+#: scripts/flatland.sct.h:4 scripts/land.sct.h:5
+#, fuzzy
+msgid "Image width"
+msgstr "Irudiaren zabalera"
+
+#: scripts/flatland.sct.h:5 scripts/land.sct.h:7
+#, fuzzy
+msgid "Random seed"
+msgstr "Ausazko hazia"
+
+#: scripts/flatland.sct.h:6 scripts/land.sct.h:8
+msgid "Scale X"
+msgstr "X eskala"
+
+#: scripts/flatland.sct.h:7 scripts/land.sct.h:9
+msgid "Scale Y"
+msgstr "Y eskala"
+
+#: scripts/font-map.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/Letra-tipoen mapa..."
+
+#: scripts/font-map.sct.h:2
+#, fuzzy
+msgid "Active colors"
+msgstr "Aktibatu koloreak"
+
+#: scripts/font-map.sct.h:3
+#, fuzzy
+msgid "Black on white"
+msgstr "Beltza zurian"
+
+#: scripts/font-map.sct.h:4
+#, fuzzy
+msgid "Font _size (pixels)"
+msgstr "Letra-_tamaina (pixeletan)"
+
+#: scripts/font-map.sct.h:5
+#, fuzzy
+msgid "Use font _name as text"
+msgstr "Erabili letra-tipoaren _izena testu gisa"
+
+#: scripts/font-map.sct.h:6
+msgid "_Border (pixels)"
+msgstr "_Ertza (pixeletan)"
+
+#: scripts/font-map.sct.h:7
+#, fuzzy
+msgid "_Color scheme"
+msgstr "_Kolorearen eskema"
+
+#: scripts/font-map.sct.h:8
+msgid "_Filter (regexp)"
+msgstr "_Iragazkia (regexp)"
+
+#: scripts/font-map.sct.h:9
+msgid "_Labels"
+msgstr "_Etiketak"
+
+#: scripts/font-map.sct.h:10
+msgid "_Text"
+msgstr "_Testua"
+
+#: scripts/frosty-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Izoztuta..."
+
+#: scripts/frosty-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/I_zoztuta..."
+
+#: scripts/fuzzyborder.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+msgstr "<Image>/Script-Fu/Dekorazioa/_Ertz lausoa..."
+
+#: scripts/fuzzyborder.sct.h:2
+#, fuzzy
+msgid "Add shadow"
+msgstr "Gehitu itzala"
+
+#: scripts/fuzzyborder.sct.h:3
+#, fuzzy
+msgid "Blur border"
+msgstr "Lausotu ertza"
+
+#: scripts/fuzzyborder.sct.h:7
+msgid "Granularity (1 is Low)"
+msgstr "Pikortzea (1 txikia da)"
+
+#: scripts/fuzzyborder.sct.h:9
+#, fuzzy, no-c-format
+msgid "Shadow weight (%)"
+msgstr "Itzalaren pisua (%)"
+
+#: scripts/gimp-headers.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Goiburu handia..."
+
+#: scripts/gimp-headers.sct.h:2
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/G_oiburu txikia..."
+
+#: scripts/gimp-headers.sct.h:3
+#, fuzzy
+msgid "Autocrop"
+msgstr "Ebaki automatikoki"
+
+#: scripts/gimp-headers.sct.h:4
+#, fuzzy
+msgid "Dark color"
+msgstr "Kolore iluna"
+
+#: scripts/gimp-headers.sct.h:7 scripts/xach-effect.sct.h:9
+#, fuzzy
+msgid "Highlight color"
+msgstr "Nabarmentzearen kolorea"
+
+#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:9
+#, fuzzy
+msgid "Index image"
+msgstr "Indexatu irudia"
+
+#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
+#, fuzzy
+msgid "Number of colors"
+msgstr "Kolore-kopurua"
+
+#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:13
+#, fuzzy
+msgid "Remove background"
+msgstr "Kendu atzeko planoa"
+
+#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:14
+#, fuzzy
+msgid "Select-by-color threshold"
+msgstr "Kolorearen araberako hautapenaren muga"
+
+#: scripts/gimp-headers.sct.h:12 scripts/gimp-labels.sct.h:15
+#, fuzzy
+msgid "Shadow color"
+msgstr "Itzalaren kolorea"
+
+#: scripts/gimp-labels.sct.h:1
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+"Label..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Hodiaren azpibotoiko "
+"etiketa..."
+
+#: scripts/gimp-labels.sct.h:2
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-Button "
+"Label..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/Ho_diaren azpibotoiko "
+"etiketa..."
+
+#: scripts/gimp-labels.sct.h:3
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+"Labels..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Hodiaren etiketa "
+"orokorrak..."
+
+#: scripts/gimp-labels.sct.h:4
+#, fuzzy
+msgid ""
+"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button Label..."
+msgstr ""
+"<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Hodiaren botoiko "
+"etiketa..."
+
+#: scripts/glossy.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Distiratsua..."
+
+#: scripts/glossy.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Dis_tiratsua..."
+
+#: scripts/glossy.sct.h:4
+#, fuzzy
+msgid "Blend gradient (Text)"
+msgstr "Nahaste-gradientea (Testua)"
+
+#: scripts/glossy.sct.h:5
+#, fuzzy
+msgid "Blend gradient (outline)"
+msgstr "Nahaste-gradientea (Eskema)"
+
+#: scripts/glossy.sct.h:6
+#, fuzzy
+msgid "Blend gradient (text)"
+msgstr "Nahaste-gradientea (Testua)"
+
+#: scripts/glossy.sct.h:10
+#, fuzzy
+msgid "Outline gradient reverse"
+msgstr "Eskemaren gradiente alderantzikatua"
+
+#: scripts/glossy.sct.h:12
+#, fuzzy
+msgid "Pattern (outline)"
+msgstr "Eredua (Eskema)"
+
+#: scripts/glossy.sct.h:13
+#, fuzzy
+msgid "Pattern (overlay)"
+msgstr "Eredua (Gainjarria)"
+
+#: scripts/glossy.sct.h:14
+#, fuzzy
+msgid "Pattern (text)"
+msgstr "Eredua (Testua)"
+
+#: scripts/glossy.sct.h:15 scripts/sphere.sct.h:5
+msgid "Shadow"
+msgstr "Itzala"
+
+#: scripts/glossy.sct.h:19
+#, fuzzy
+msgid "Text gradient reverse"
+msgstr "Testu-gradiente alderantzikatua"
+
+#: scripts/glossy.sct.h:20
+#, fuzzy
+msgid "Use pattern for outline instead of gradient"
+msgstr "Erabili eredua eskemarako gradientearen ordez "
+
+#: scripts/glossy.sct.h:21
+#, fuzzy
+msgid "Use pattern for text instead of gradient"
+msgstr "Erabili eredua testurako gradientearen ordez "
+
+#: scripts/glossy.sct.h:22
+#, fuzzy
+msgid "Use pattern overlay"
+msgstr "Erabili ereduen gainjartzea"
+
+#: scripts/glossy.sct.h:23
+#, fuzzy
+msgid "Use tattern for outline instead of gradient"
+msgstr "Erabili eredua eskemarako gradientearen ordez "
+
+#: scripts/glowing-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Bero dirdiratsua..."
+
+#: scripts/glowing-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Be_ro dirdiratsua..."
+
+#: scripts/glowing-logo.sct.h:4
+#, fuzzy
+msgid "Effect size (pixels * 3)"
+msgstr "Efektuaren tamaina (pixelak * 3)"
+
+#: scripts/gradient-bevel-logo.sct.h:3
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Gradiente a_lakatua..."
+
+#: scripts/gradient-bevel-logo.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Gradiente _alakatua..."
+
+#: scripts/gradient-bevel-logo.sct.h:6
+#, fuzzy
+msgid "Bevel height (Sharpness)"
+msgstr "Alaka-altuera (Zorroztasuna)"
+
+#: scripts/gradient-bevel-logo.sct.h:8 scripts/t-o-p-logo.sct.h:5
+#: scripts/textured-logo.sct.h:4
+#, fuzzy
+msgid "Border size (pixels)"
+msgstr "Ertzaren tamaina (pixeletan)"
+
+#: scripts/gradient-example.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/_Gradiente pertsonalizatua..."
+
+#: scripts/i26-gunya2.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Imigre-26..."
+
+#: scripts/i26-gunya2.sct.h:4
+#, fuzzy
+msgid "Frame color"
+msgstr "Markoaren kolorea"
+
+#: scripts/i26-gunya2.sct.h:5
+#, fuzzy
+msgid "Frame size"
+msgstr "Markoaren tamaina"
+
+#: scripts/land.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/_Lurra..."
+
+#: scripts/land.sct.h:6
+#, fuzzy
+msgid "Land height"
+msgstr "Lurraren altuera"
+
+#: scripts/land.sct.h:10
+#, fuzzy
+msgid "Sea depth"
+msgstr "Itsasoaren sakonera"
+
+#: scripts/lava.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Lava..."
+msgstr "<Image>/Script-Fu/Errendatuak/La_ba..."
+
+#: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
+msgid "Roughness"
+msgstr "Zimurtasuna"
+
+#: scripts/lava.sct.h:5
+msgid "Seed"
+msgstr "Hazia"
+
+#: scripts/lava.sct.h:8
+#, fuzzy
+msgid "Use current gradient"
+msgstr "Erabili uneko gradientea"
+
+#: scripts/line-nova.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+msgstr "<Image>/Script-Fu/Errendatuak/Line _Nova..."
+
+#: scripts/line-nova.sct.h:2
+#, fuzzy
+msgid "Number of lines"
+msgstr "Marra-kopurua"
+
+#: scripts/line-nova.sct.h:3
+#, fuzzy
+msgid "Offset radius"
+msgstr "Desplazamendu-erradioa"
+
+#: scripts/line-nova.sct.h:4
+msgid "Randomness"
+msgstr "Ausazkotasuna"
+
+#: scripts/line-nova.sct.h:5
+msgid "Sharpness (degrees)"
+msgstr "Zorroztasuna (gradutan)"
+
+#: scripts/mkbrush.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/Eli_ptikoa, difuminatua..."
+
+#: scripts/mkbrush.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/A_ngeluzuzena, difuminatua..."
+
+#: scripts/mkbrush.sct.h:3
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/Elip_tikoa..."
+
+#: scripts/mkbrush.sct.h:4
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/_Laukizuzena..."
+
+#: scripts/mkbrush.sct.h:5
+msgid "Create size of brush"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1203
-msgid "Regions are currently unsupported as return values"
+#: scripts/mkbrush.sct.h:6
+msgid "Description"
+msgstr "Azalpena"
+
+#: scripts/mkbrush.sct.h:7
+msgid "Feathering"
+msgstr "Difuminatzea"
+
+#: scripts/mkbrush.sct.h:9 scripts/select-to-brush.sct.h:4
+msgid "Spacing"
+msgstr "Tartea"
+
+#: scripts/neon-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Neon..."
+
+#: scripts/neon-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Ne_on..."
+
+#: scripts/neon-logo.sct.h:4
+#, fuzzy
+msgid "Create shadow"
+msgstr "Sortu itzala"
+
+#: scripts/neon-logo.sct.h:5
+#, fuzzy
+msgid "Effect size (pixels * 5)"
+msgstr "Efektuaren tamaina (pixelak * 5)"
+
+#: scripts/news-text.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/_Prentsa-paperaren testua..."
+
+#: scripts/news-text.sct.h:4
+#, fuzzy
+msgid "Cell size (pixels)"
+msgstr "Gelaxkaren tamaina (pixeletan)"
+
+#: scripts/news-text.sct.h:6 scripts/speed-text.sct.h:4
+#, no-c-format
+msgid "Density (%)"
+msgstr "Dentsitatea (%)"
+
+#: scripts/old-photo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+msgstr "<Image>/Script-Fu/Dekorazioa/_Argazki zaharra..."
+
+#: scripts/old-photo.sct.h:3
+msgid "Defocus"
+msgstr "Fokatu gabe"
+
+#: scripts/old-photo.sct.h:4
+msgid "Mottle"
+msgstr "Marmola"
+
+#: scripts/old-photo.sct.h:5
+msgid "Sepia"
+msgstr "Sepia"
+
+#: scripts/perspective-shadow.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+msgstr "<Image>/Script-Fu/Itzala/_Perspektiba..."
+
+#: scripts/perspective-shadow.sct.h:3
+msgid "Angle"
+msgstr "Angelua"
+
+#: scripts/perspective-shadow.sct.h:6
+msgid "Interpolate"
+msgstr "Interpolatu"
+
+#: scripts/perspective-shadow.sct.h:8
+#, fuzzy
+msgid "Relative distance of horizon"
+msgstr "Zerumugaren distantzia erlatiboa"
+
+#: scripts/perspective-shadow.sct.h:9
+#, fuzzy
+msgid "Relative length of shadow"
+msgstr "Itzalaren luzera erlatiboa"
+
+#: scripts/predator.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+msgstr "<Image>/Script-Fu/Alkimia/_Harraparia..."
+
+#: scripts/predator.sct.h:2
+#, fuzzy
+msgid "Edge amount"
+msgstr "Ertzaren lodiera"
+
+#: scripts/predator.sct.h:4
+#, fuzzy
+msgid "Pixel amount"
+msgstr "Pixel-kopurua"
+
+#: scripts/predator.sct.h:5
+msgid "Pixelize"
+msgstr "Pixelizatu"
+
+#: scripts/pupi-button.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Botoiak/Bo_toi biribila..."
+
+#: scripts/pupi-button.sct.h:5
+#, fuzzy
+msgid "Lower color"
+msgstr "Behe-mailako kolorea"
+
+#: scripts/pupi-button.sct.h:6
+#, fuzzy
+msgid "Lower color (active)"
+msgstr "Behe-mailako kolorea (Aktiboa)"
+
+#: scripts/pupi-button.sct.h:7
+#, fuzzy
+msgid "Not pressed"
+msgstr "Sakatu gabe"
+
+#: scripts/pupi-button.sct.h:8
+#, fuzzy
+msgid "Not pressed (active)"
+msgstr "Sakatu gabe (Aktiboa)"
+
+#: scripts/pupi-button.sct.h:9
+msgid "Padding X"
+msgstr "X betegarria"
+
+#: scripts/pupi-button.sct.h:10
+msgid "Padding Y"
+msgstr "Y betegarria"
+
+#: scripts/pupi-button.sct.h:12
+#, fuzzy
+msgid "Round ratio"
+msgstr "Biribilaren erlazioa"
+
+#: scripts/pupi-button.sct.h:15
+#, fuzzy
+msgid "Text color (active)"
+msgstr "Testuaren kolorea (Aktiboa)"
+
+#: scripts/pupi-button.sct.h:16
+#, fuzzy
+msgid "Upper color"
+msgstr "Goi-mailako kolorea"
+
+#: scripts/pupi-button.sct.h:17
+#, fuzzy
+msgid "Upper color (active)"
+msgstr "Goi-mailako kolorea (Aktiboa)"
+
+#: scripts/rendermap.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/Errendatu _mapa..."
+
+#: scripts/rendermap.sct.h:2
+msgid "Behaviour"
+msgstr "Portaera"
+
+#: scripts/rendermap.sct.h:3
+msgid "Detail in Middle"
+msgstr "Xehetasuna erdian"
+
+#: scripts/rendermap.sct.h:8
+msgid "Tile"
+msgstr "Lauza moduan"
+
+#: scripts/ripply-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+msgstr "<Image>/Script-Fu/Animazioa/_Izurtu..."
+
+#: scripts/ripply-anim.sct.h:2
+msgid "Black"
+msgstr "Beltza"
+
+#: scripts/ripply-anim.sct.h:3
+#, fuzzy
+msgid "Edge behaviour"
+msgstr "Ertzaren portaera"
+
+#: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
+#, fuzzy
+msgid "Number of frames"
+msgstr "Marko-kopurua"
+
+#: scripts/ripply-anim.sct.h:5
+#, fuzzy
+msgid "Rippling strength"
+msgstr "Izurtze-indarra"
+
+#: scripts/ripply-anim.sct.h:6
+msgid "Smear"
+msgstr "Lohitu"
+
+#: scripts/ripply-anim.sct.h:7
+msgid "Wrap"
+msgstr "Doitu"
+
+#: scripts/round-corners.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+msgstr "<Image>/Script-Fu/Dekorazioa/_Biribildu izkinak..."
+
+#: scripts/round-corners.sct.h:2
+#, fuzzy
+msgid "Add background"
+msgstr "Gehitu atzeko planoa"
+
+#: scripts/round-corners.sct.h:3
+#, fuzzy
+msgid "Add drop-shadow"
+msgstr "Gehitu itzala"
+
+#: scripts/round-corners.sct.h:5
+#, fuzzy
+msgid "Edge radius"
+msgstr "Ertzaren erradioa"
+
+#: scripts/selection-round.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/_Round..."
+msgstr "<Image>/Script-Fu/Hautapena/Bi_ribildu..."
+
+#: scripts/selection-round.sct.h:2
+#, fuzzy
+msgid "Relative radius"
+msgstr "Erradio erlatiboa"
+
+#: scripts/select-to-brush.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+msgstr "<Image>/Script-Fu/Hautapena/_Brotxara..."
+
+#: scripts/select-to-brush.sct.h:2
+#, fuzzy
+msgid "Brush name"
+msgstr "Brotxaren izena"
+
+#: scripts/select-to-image.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/To _Image"
+msgstr "<Image>/Script-Fu/Hautapena/_Irudira..."
+
+#: scripts/select-to-pattern.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+msgstr "<Image>/Script-Fu/Hautapena/_Eredura..."
+
+#: scripts/select-to-pattern.sct.h:3
+#, fuzzy
+msgid "Pattern name"
+msgstr "Eredu-izena"
+
+#: scripts/slide.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+msgstr "<Image>/Script-Fu/Dekorazioa/_Diapositiba..."
+
+#: scripts/slide.sct.h:3
+#, fuzzy
+msgid "Font color"
+msgstr "Letra-tipoaren kolorea"
+
+#: scripts/slide.sct.h:4
+msgid "Number"
+msgstr "Zenbakia"
+
+#: scripts/sota-chrome-logo.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/SOTA _kromatua..."
+
+#: scripts/speed-text.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Testu azkarra..."
+
+#: scripts/sphere.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Hainbat/Es_fera..."
+
+#: scripts/sphere.sct.h:3
+msgid "Lighting (degrees)"
+msgstr "Argitasuna (gradutan)"
+
+#: scripts/sphere.sct.h:4
+msgid "Radius (pixels)"
+msgstr "Erradioa (pixeletan)"
+
+#: scripts/sphere.sct.h:6
+#, fuzzy
+msgid "Sphere color"
+msgstr "Esferaren kolorea"
+
+#: scripts/spinning-globe.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+msgstr "<Image>/Script-Fu/Animazioa/Globo b_irakaria..."
+
+#: scripts/spinning-globe.sct.h:2
+msgid "Frames"
+msgstr "Markoak"
+
+#: scripts/spinning-globe.sct.h:3
+#, fuzzy
+msgid "Index to n colors (0 = remain RGB)"
+msgstr "Indexatu n koloretan (0 = Mantendu RGB)"
+
+#: scripts/spinning-globe.sct.h:5
+#, fuzzy
+msgid "Turn from left to right"
+msgstr "Biratu ezkerretik eskuinera"
+
+#: scripts/spyrogimp.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+msgstr "<Image>/Script-Fu/Errendatuak/_Spyrogimp..."
+
+#: scripts/spyrogimp.sct.h:2
+msgid "Airbrush"
+msgstr "Aerografoa"
+
+#: scripts/spyrogimp.sct.h:3
+msgid "Brush"
+msgstr "Brotxa"
+
+#: scripts/spyrogimp.sct.h:4
+msgid "Circle"
+msgstr "Zirkulua"
+
+#: scripts/spyrogimp.sct.h:6
+#, fuzzy
+msgid "Color method"
+msgstr "Koloreztatze-metodoa"
+
+#: scripts/spyrogimp.sct.h:7
+msgid "Epitrochoid"
+msgstr "Epitrokoidea"
+
+#: scripts/spyrogimp.sct.h:8
+msgid "Frame"
+msgstr "Markoa"
+
+#: scripts/spyrogimp.sct.h:10
+msgid "Gradient: Loop Sawtooth"
+msgstr "Gradientea: begizta horzduna"
+
+#: scripts/spyrogimp.sct.h:11
+msgid "Gradient: Loop Triangle"
+msgstr "Gradientea: begizta triangelua"
+
+#: scripts/spyrogimp.sct.h:12
+msgid "Hexagon"
+msgstr "Hexagonoa"
+
+#: scripts/spyrogimp.sct.h:13
+#, fuzzy
+msgid "Hole ratio"
+msgstr "Zuloaren erradioa"
+
+#: scripts/spyrogimp.sct.h:14
+#, fuzzy
+msgid "Inner teeth"
+msgstr "Barruko hortzak"
+
+#: scripts/spyrogimp.sct.h:15
+msgid "Lissajous"
+msgstr "Lissajous"
+
+#: scripts/spyrogimp.sct.h:16
+msgid "Margin (pixels)"
+msgstr "Marjina (pixeletan)"
+
+#: scripts/spyrogimp.sct.h:17
+#, fuzzy
+msgid "Outer teeth"
+msgstr "Kanpoko hortzak"
+
+#: scripts/spyrogimp.sct.h:18
+msgid "Pencil"
+msgstr "Arkatza"
+
+#: scripts/spyrogimp.sct.h:19
+msgid "Pentagon"
+msgstr "Pentagonoa"
+
+#: scripts/spyrogimp.sct.h:20
+msgid "Polygon: 10 sides"
+msgstr "Poligonoa: 10 alde"
+
+#: scripts/spyrogimp.sct.h:21
+msgid "Polygon: 7 sides"
+msgstr "Poligonoa: 7 alde"
+
+#: scripts/spyrogimp.sct.h:22
+msgid "Polygon: 8 sides"
+msgstr "Poligonoa: 8 alde"
+
+#: scripts/spyrogimp.sct.h:23
+msgid "Polygon: 9 sides"
+msgstr "Poligonoa: 9 alde"
+
+#: scripts/spyrogimp.sct.h:24
+msgid "Shape"
+msgstr "Forma"
+
+#: scripts/spyrogimp.sct.h:25
+msgid "Solid Color"
+msgstr "Kolore lisoa"
+
+#: scripts/spyrogimp.sct.h:26
+msgid "Spyrograph"
+msgstr "Espirografoa"
+
+#: scripts/spyrogimp.sct.h:27
+msgid "Square"
+msgstr "Karratua"
+
+#: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
+#, fuzzy
+msgid "Start angle"
+msgstr "Hasierako angelua"
+
+#: scripts/spyrogimp.sct.h:29
+msgid "Tool"
+msgstr "Tresna"
+
+#: scripts/spyrogimp.sct.h:30
+msgid "Triangle"
+msgstr "Triangelua"
+
+#: scripts/spyrogimp.sct.h:31
+msgid "Type"
+msgstr "Mota"
+
+#: scripts/starburst-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Izar-eztanda..."
+
+#: scripts/starburst-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/I_zar-eztanda..."
+
+#: scripts/starburst-logo.sct.h:4
+#, fuzzy
+msgid "Burst color"
+msgstr "Eztandaren kolorea"
+
+#: scripts/starburst-logo.sct.h:5
+#, fuzzy
+msgid "Effect size (pixels * 30)"
+msgstr "Efektuaren tamaina (pixelak * 30)"
+
+#: scripts/starscape-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/Iza_rretakoa..."
+
+#: scripts/starscape-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Iz_arretakoa..."
+
+#: scripts/starscape-logo.sct.h:3
+#, fuzzy
+msgid "Effect size (pixels * 4)"
+msgstr "Efektuaren tamaina (pixelak * 4)"
+
+#: scripts/swirltile.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/Lauza moduan e_spiralean..."
+
+#: scripts/swirltile.sct.h:9
+#, fuzzy
+msgid "Whirl amount"
+msgstr "Zurrunbiloaren indarra"
+
+#: scripts/swirly-pattern.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/E_spiralean..."
+
+#: scripts/swirly-pattern.sct.h:2
+#, fuzzy
+msgid "Number of times to whirl"
+msgstr "Biratu beharreko aldi-kopurua"
+
+#: scripts/swirly-pattern.sct.h:3
+#, fuzzy
+msgid "Quarter size"
+msgstr "Lauzen tamaina"
+
+#: scripts/swirly-pattern.sct.h:4
+#, fuzzy
+msgid "Whirl angle"
+msgstr "Espiralaren angelua"
+
+#: scripts/t-o-p-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Partikulen arrastoa..."
+
+#: scripts/t-o-p-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Par_tikulen arrastoa..."
+
+#: scripts/t-o-p-logo.sct.h:4
+#, fuzzy
+msgid "Base color"
+msgstr "Oinarri-kolorea"
+
+#: scripts/t-o-p-logo.sct.h:6
+#, fuzzy
+msgid "Edge only"
+msgstr "Ertza bakarrik"
+
+#: scripts/t-o-p-logo.sct.h:7
+#, fuzzy
+msgid "Edge width"
+msgstr "Ertzaren zabalera"
+
+#: scripts/t-o-p-logo.sct.h:10
+#, fuzzy
+msgid "Hit rate"
+msgstr "Talka-tasa"
+
+#: scripts/text-circle.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Testu zirkularra..."
+
+#: scripts/text-circle.sct.h:2
+msgid "Antialias"
+msgstr "Antialiasing-a"
+
+#: scripts/text-circle.sct.h:3
+#, fuzzy
+msgid "Fill angle"
+msgstr "Bete angelua"
+
+#: scripts/text-circle.sct.h:7
+msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
-#: tiny-fu/ts-wrapper.c:1237
-msgid "Boundaries are currently unsupported as return values"
-msgstr ""
+#: scripts/textured-logo.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+msgstr "<Image>/Script-Fu/Alfa logotipora/_Testuraduna..."
 
-#: tiny-fu/ts-wrapper.c:1241
-msgid "Paths are currently unsupported as return values"
-msgstr ""
+#: scripts/textured-logo.sct.h:2
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Te_sturaduna..."
 
-#: tiny-fu/ts-wrapper.c:1249
-msgid "Error: null parasite"
-msgstr ""
+#: scripts/textured-logo.sct.h:5
+#, fuzzy
+msgid "Ending blend"
+msgstr "Amaierako nahastea"
 
-#: tiny-fu/ts-wrapper.c:1280
-msgid "Procedural database execution returned multiple status values"
-msgstr ""
+#: scripts/textured-logo.sct.h:8
+msgid "Hexagons"
+msgstr "Hexagonoak"
 
-#: tiny-fu/ts-wrapper.c:1284
-msgid "Unknown return type"
-msgstr ""
+#: scripts/textured-logo.sct.h:9
+#, fuzzy
+msgid "Mosaic tile type"
+msgstr "Mosaikoko lauzen mota"
+
+#: scripts/textured-logo.sct.h:10
+msgid "Octagons"
+msgstr "Oktagonoak"
+
+#: scripts/textured-logo.sct.h:12
+msgid "Squares"
+msgstr "Karratuak"
+
+#: scripts/textured-logo.sct.h:13
+#, fuzzy
+msgid "Starting blend"
+msgstr "Hasierako nahastea"
+
+#: scripts/textured-logo.sct.h:15
+#, fuzzy
+msgid "Text pattern"
+msgstr "Testu-eredua"
+
+#: scripts/tileblur.sct.h:1
+msgid "<Image>/Filters/Blur/_Tileable Blur..."
+msgstr "<Image>/Iragazkiak/Lausotuak/_Lausotze teilakagarria..."
+
+#: scripts/tileblur.sct.h:2
+#, fuzzy
+msgid "Blur horizontally"
+msgstr "Lausotu horizontalki"
+
+#: scripts/tileblur.sct.h:3
+#, fuzzy
+msgid "Blur type"
+msgstr "Lausotze-mota"
+
+#: scripts/tileblur.sct.h:4
+#, fuzzy
+msgid "Blur vertically"
+msgstr "Lausotu bertikalki"
+
+#: scripts/tileblur.sct.h:5
+msgid "IIR"
+msgstr "IIR"
+
+#: scripts/tileblur.sct.h:6
+msgid "RLE"
+msgstr "RLE"
+
+#: scripts/tiny-fu-set-cmap.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+msgstr "<Image>/Script-Fu/Hautapena/_Irudira..."
+
+#: scripts/tiny-fu-set-cmap.sct.h:2
+#, fuzzy
+msgid "Palette"
+msgstr "Eredua"
+
+#: scripts/title-header.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Web izenburuen goiburua..."
+
+#: scripts/truchet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+msgstr "<Toolbox>/Luzp/Script-Fu/_Ereduak/Truc_het..."
+
+#: scripts/truchet.sct.h:4
+#, fuzzy
+msgid "Foreground color"
+msgstr "Aurreko planoaren kolorea"
+
+#: scripts/unsharp-mask.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+msgstr "<Image>/Script-Fu/Alkimia/_Lausotze-maskara..."
+
+#: scripts/unsharp-mask.sct.h:2
+#, fuzzy
+msgid "Mask opacity"
+msgstr "Maskararen opakutasuna"
+
+#: scripts/unsharp-mask.sct.h:3
+#, fuzzy
+msgid "Mask size"
+msgstr "Maskararen tamaina"
+
+#: scripts/waves-anim.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+msgstr "<Image>/Script-Fu/Animazioa/_Uhinak..."
+
+#: scripts/waves-anim.sct.h:2
+msgid "Amplitude"
+msgstr "Anplitudea"
+
+#: scripts/waves-anim.sct.h:3
+msgid "Invert direction"
+msgstr "Alderantzikatu norabidea"
+
+#: scripts/waves-anim.sct.h:5
+msgid "Wavelength"
+msgstr "Uhinaren luzera"
+
+#: scripts/weave.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+msgstr "<Image>/Script-Fu/Alkimia/_Ehun..."
+
+#: scripts/weave.sct.h:2
+#, fuzzy
+msgid "Ribbon spacing"
+msgstr "Banda arteko tartea"
+
+#: scripts/weave.sct.h:3
+#, fuzzy
+msgid "Ribbon width"
+msgstr "Bandaren zabalera"
+
+#: scripts/weave.sct.h:4
+#, fuzzy
+msgid "Shadow darkness"
+msgstr "Itzalaren iluntasuna"
+
+#: scripts/weave.sct.h:5
+#, fuzzy
+msgid "Shadow depth"
+msgstr "Itzalaren sakonera"
+
+#: scripts/weave.sct.h:6
+#, fuzzy
+msgid "Thread density"
+msgstr "Hariaren dentsitatea"
+
+#: scripts/weave.sct.h:7
+#, fuzzy
+msgid "Thread intensity"
+msgstr "Hariaren intentsitatea"
+
+#: scripts/weave.sct.h:8
+#, fuzzy
+msgid "Thread length"
+msgstr "Hariaren luzera"
+
+#: scripts/web-browser.sct.h:1
+msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+msgstr "<Toolbox>/Laguntza/GIMP online/Plugin-en _erregistroa"
+
+#: scripts/web-browser.sct.h:2
+msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+msgstr "<Toolbox>/Laguntza/GIMP online/_Garatzaileen web gnuea"
+
+#: scripts/web-browser.sct.h:3
+msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+msgstr "<Toolbox>/Laguntza/GIMP online/Web gune _nagusia"
+
+#: scripts/xach-effect.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+msgstr "<Image>/Script-Fu/Itzala/_Xach-en efektua..."
+
+#: scripts/xach-effect.sct.h:2
+#, fuzzy
+msgid "Drop shadow X offset"
+msgstr "Itzalaren X desplazamendua"
+
+#: scripts/xach-effect.sct.h:3
+#, fuzzy
+msgid "Drop shadow Y offset"
+msgstr "Itzalaren Y desplazamendua"
+
+#: scripts/xach-effect.sct.h:4
+#, fuzzy
+msgid "Drop shadow blur radius"
+msgstr "Itzalaren lausotze-erradioa"
+
+#: scripts/xach-effect.sct.h:5
+#, fuzzy
+msgid "Drop shadow color"
+msgstr "Itzalaren kolorea"
+
+#: scripts/xach-effect.sct.h:6
+#, fuzzy
+msgid "Drop shadow opacity"
+msgstr "Itzalaren opakutasuna"
+
+#: scripts/xach-effect.sct.h:7
+#, fuzzy
+msgid "Highlight X offset"
+msgstr "Nabarmentzearen X desplazamendua"
+
+#: scripts/xach-effect.sct.h:8
+#, fuzzy
+msgid "Highlight Y offset"
+msgstr "Nabarmentzearen Y desplazamendua"
+
+#: scripts/xach-effect.sct.h:10
+#, fuzzy
+msgid "Highlight opacity"
+msgstr "Nabarmentzearen opakutasuna"
+
+#, fuzzy
+#~ msgid "_About"
+#~ msgstr "Honi buruz"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Bilatu _izenaren arabera"
@@ -524,1747 +2611,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Parameters"
 #~ msgstr "Diametroa"
-
-#~ msgid "Color"
-#~ msgstr "Kolorea"
-
-#~ msgid "Font"
-#~ msgstr "Letra-tipoa"
-
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Letra-tamaina (pixeletan)"
-
-#, fuzzy
-#~ msgid "Text String"
-#~ msgstr "Testu-eredua"
-
-#, fuzzy
-#~ msgid " for directory "
-#~ msgstr "Ezin da SIOD irteerako kanalizazioa ireki"
-
-#, fuzzy
-#~ msgid " images"
-#~ msgstr "Indexatu irudia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/Letra-tipoen mapa..."
-
-#, fuzzy
-#~ msgid "Background color"
-#~ msgstr "Atzeko planoaren kolorea"
-
-#, fuzzy
-#~ msgid "Created "
-#~ msgstr "Sortu itzala"
-
-#, fuzzy
-#~ msgid "Directory"
-#~ msgstr "Ezin da SIOD irteerako kanalizazioa ireki"
-
-#, fuzzy
-#~ msgid "Sheet "
-#~ msgstr "Hazia"
-
-#, fuzzy
-#~ msgid "Sheet Size"
-#~ msgstr "Hazia"
-
-#~ msgid "Text Color"
-#~ msgstr "Testuaren kolorea"
-
-#, fuzzy
-#~ msgid "Unable to open directory "
-#~ msgstr "Ezin da SIOD irteerako kanalizazioa ireki"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/3D _eskema..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/3D e_skema..."
-
-#, fuzzy
-#~ msgid "Bumpmap (alpha layer) blur radius"
-#~ msgstr "Erliebe-maparen (Alfa geruza) lausotze-erradioa"
-
-#, fuzzy
-#~ msgid "Default bumpmap settings"
-#~ msgstr "Erliebe-maparen ezarpen lehenetsiak"
-
-#, fuzzy
-#~ msgid "Font size (pixels)"
-#~ msgstr "Letra-tamaina (pixeletan)"
-
-#, fuzzy
-#~ msgid "Outline blur radius"
-#~ msgstr "Eskemaren lausotze-erradioa"
-
-#, fuzzy
-#~ msgid "Shadow X offset"
-#~ msgstr "Itzalaren X desplazamendua"
-
-#, fuzzy
-#~ msgid "Shadow Y offset"
-#~ msgstr "Itzalaren Y desplazamendua"
-
-#, fuzzy
-#~ msgid "Shadow blur radius"
-#~ msgstr "Itzalaren lausotze-erradioa"
-
-#~ msgid "Text"
-#~ msgstr "Testua"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/3D _truchet-a..."
-
-#, fuzzy
-#~ msgid "Block size"
-#~ msgstr "Bloke-tamaina"
-
-#, fuzzy
-#~ msgid "End blend"
-#~ msgstr "Amaierako nahastea"
-
-#, fuzzy
-#~ msgid "Number of X tiles"
-#~ msgstr "Xeko lauza-kopurua"
-
-#, fuzzy
-#~ msgid "Number of Y tiles"
-#~ msgstr "Yko lauza-kopurua"
-
-#, fuzzy
-#~ msgid "Start blend"
-#~ msgstr "Hasierako nahastea"
-
-#~ msgid "Supersample"
-#~ msgstr "Gainlagina"
-
-#~ msgid "Thickness"
-#~ msgstr "Lodiera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/Gehitu a_laka..."
-
-#, fuzzy
-#~ msgid "Keep bump layer"
-#~ msgstr "Mantendu erliebe-geruza"
-
-#, fuzzy
-#~ msgid "Work on copy"
-#~ msgstr "Kopian lan egin"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/Gehitu e_rtza..."
-
-#, fuzzy
-#~ msgid "Border X size"
-#~ msgstr "Ertzaren X tamaina"
-
-#, fuzzy
-#~ msgid "Border Y size"
-#~ msgstr "Ertzaren Y tamaina"
-
-#, fuzzy
-#~ msgid "Border color"
-#~ msgstr "Ertzaren kolorea"
-
-#, fuzzy
-#~ msgid "Delta value on color"
-#~ msgstr "Koloreko delta balioa "
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/_Gezia..."
-
-#~ msgid "Down"
-#~ msgstr "Behean"
-
-#, fuzzy
-#~ msgid "Flatten image"
-#~ msgstr "Berdindu irudia"
-
-#, fuzzy
-#~ msgid "Glow color"
-#~ msgstr "Dirdiraren kolorea"
-
-#~ msgid "Left"
-#~ msgstr "Ezkerrean"
-
-#~ msgid "Orientation"
-#~ msgstr "Orientazioa"
-
-#~ msgid "Right"
-#~ msgstr "Eskuinean"
-
-#~ msgid "Size"
-#~ msgstr "Tamaina"
-
-#~ msgid "Up"
-#~ msgstr "Goian"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/Barra "
-#~ "_horizontala..."
-
-#, fuzzy
-#~ msgid "Bar height"
-#~ msgstr "Barraren altuera"
-
-#, fuzzy
-#~ msgid "Bar length"
-#~ msgstr "Barraren luzera"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/_Buleta..."
-
-#~ msgid "Radius"
-#~ msgstr "Erradioa"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-ADJUSTMENT _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-ADJUSTMENT _"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Dirdira estralurtarra/Bo_toia..."
-
-#, fuzzy
-#~ msgid "Glow radius"
-#~ msgstr "Dirdiraren erradioa"
-
-#~ msgid "Padding"
-#~ msgstr "Tarte betegarria"
-
-#, fuzzy
-#~ msgid "Text color"
-#~ msgstr "Testuaren kolorea"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-COLOR      _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-COLOR      _"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Dirdira _estralurtarra..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Di_rdira estralurtarra..."
-
-#, fuzzy
-#~ msgid "Glow size (pixels * 4)"
-#~ msgstr "Dirdiraren tamaina (pixelak * 4)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Neon e_stralurtarra..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Neon estralur_tarra..."
-
-#, fuzzy
-#~ msgid "Fade away"
-#~ msgstr "Iraungiz desagerrarazi"
-
-#, fuzzy
-#~ msgid "Number of bands"
-#~ msgstr "Zerrenda-kopurua"
-
-#, fuzzy
-#~ msgid "Width of bands"
-#~ msgstr "Zerrenda-zabalera"
-
-#, fuzzy
-#~ msgid "Width of gaps"
-#~ msgstr "Hutsuneen zabalera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
-#~ msgstr "<Image>/Script-Fu/Utilitateak/_ASCII geruzara..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/ASCII irudira..."
-
-#, fuzzy
-#~ msgid "Buffer amount (% height of text)"
-#~ msgstr "Bufferraren tamaina (testuaren altueraren %)"
-
-#, fuzzy
-#~ msgid "File name"
-#~ msgstr "Fitxategi-izena"
-
-#~ msgid "Filename"
-#~ msgstr "Fitxategi-izena"
-
-#, fuzzy
-#~ msgid "Transparent background"
-#~ msgstr "Atzeko plano gardena"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Oinarrizkoa I..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/O_inarrizkoa I..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Oi_narrizkoa II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Oin_arrizkoa II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Botoiak/Bo_toi soil alakatua..."
-
-#, fuzzy
-#~ msgid "Bevel width"
-#~ msgstr "Alaka-zabalera"
-
-#, fuzzy
-#~ msgid "Lower-right color"
-#~ msgstr "Beheko eskuineko kolorea"
-
-#~ msgid "Pressed"
-#~ msgstr "Sakatuta"
-
-#, fuzzy
-#~ msgid "Upper-left color"
-#~ msgstr "Goiko ezkerreko kolorea"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/_Gezia..."
-
-#~ msgid "Pattern"
-#~ msgstr "Eredua"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/_Buleta..."
-
-#, fuzzy
-#~ msgid "Diameter"
-#~ msgstr "Diametroa"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/Bo_toia..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/_Izenburua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Eredu alakatua/Ba_rra "
-#~ "horizontala..."
-
-#~ msgid "Height"
-#~ msgstr "Altuera"
-
-#~ msgid "Width"
-#~ msgstr "Zabalera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
-#~ msgstr "<Image>/Script-Fu/Animazioa/_Nahastu..."
-
-#, fuzzy
-#~ msgid "Intermediate frames"
-#~ msgstr "Tarteko markoak"
-
-#~ msgid "Looped"
-#~ msgstr "Begiztatua"
-
-#, fuzzy
-#~ msgid "Max. blur radius"
-#~ msgstr "Gehieneko lausotze-erradioa"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Na_hastuta..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/_Nahastuta..."
-
-#, fuzzy
-#~ msgid "Blend mode"
-#~ msgstr "Nahaste-modua"
-
-#~ msgid "Custom Gradient"
-#~ msgstr "Gradiente pertsonalizatua"
-
-#~ msgid "FG-BG-HSV"
-#~ msgstr "AurrPl-AtzPl-HSV"
-
-#~ msgid "FG-BG-RGB"
-#~ msgstr "AurrPl-AtzPl-RGB"
-
-#~ msgid "FG-Transparent"
-#~ msgstr "AurrPl-Gardena"
-
-#~ msgid "Gradient"
-#~ msgstr "Gradientea"
-
-#, fuzzy
-#~ msgid "Gradient reverse"
-#~ msgstr "Gradiente alderantzikatua"
-
-#~ msgid "Offset (pixels)"
-#~ msgstr "Desplazamendua (pixeletan)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Behi-kontuak..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Be_hi-kontuak..."
-
-#~ msgid "Background Color"
-#~ msgstr "Atzeko planoaren kolorea"
-
-#~ msgid "Spots density X"
-#~ msgstr "Orbanen X dentsitatea"
-
-#~ msgid "Spots density Y"
-#~ msgstr "Orbanen Y dentsitatea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Script-Fu/Animazioa/_Erregailua..."
-
-#, fuzzy
-#~ msgid "Add glowing"
-#~ msgstr "Gehitu dirdira"
-
-#, fuzzy
-#~ msgid "After glow"
-#~ msgstr "Dirdiraren ondoren"
-
-#, fuzzy
-#~ msgid "Corona width"
-#~ msgstr "Koroaren zabalera"
-
-#~ msgid "Fadeout"
-#~ msgstr "Iraungitzea"
-
-#, fuzzy
-#~ msgid "Fadeout width"
-#~ msgstr "Iraungitzearen zabalera"
-
-#~ msgid "Prepare for GIF"
-#~ msgstr "Prestatu GIFerako "
-
-#~ msgid "Speed (pixels/frame)"
-#~ msgstr "Abiadura (pixel/marko)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/_Ereduak/_Kamuflajea..."
-
-#~ msgid "Color 1"
-#~ msgstr "1. kolorea"
-
-#~ msgid "Color 2"
-#~ msgstr "2. kolorea"
-
-#~ msgid "Color 3"
-#~ msgstr "3. kolorea"
-
-#~ msgid "Granularity"
-#~ msgstr "Pikortatzea"
-
-#, fuzzy
-#~ msgid "Image size"
-#~ msgstr "Irudiaren tamaina"
-
-#~ msgid "Smooth"
-#~ msgstr "Leuna"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Zizelkatuta..."
-
-#~ msgid "Background Image"
-#~ msgstr "Atzeko planoko irudia"
-
-#, fuzzy
-#~ msgid "Carve raised text"
-#~ msgstr "Zizelkatu igotako testua"
-
-#, fuzzy
-#~ msgid "Padding around text"
-#~ msgstr "Testu inguruko betegarria"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
-#~ msgstr "<Image>/Script-Fu/Eragiketak txantiloiekin/_Zizelkatu..."
-
-#, fuzzy
-#~ msgid "Carve white areas"
-#~ msgstr "Zizelkatu area zuriak"
-
-#, fuzzy
-#~ msgid "Image to carve"
-#~ msgstr "Zizelkatzeko irudia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Klera..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_lera..."
-
-#, fuzzy
-#~ msgid "Chalk color"
-#~ msgstr "Klera-kolorea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Xehatu..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Xe_hatu..."
-
-#, fuzzy
-#~ msgid "Blur amount"
-#~ msgstr "Lausotze-maila"
-
-#, fuzzy
-#~ msgid "Chip amount"
-#~ msgstr "Xehatze-maila"
-
-#, fuzzy
-#~ msgid "Drop shadow"
-#~ msgstr "Egin itzala"
-
-#, fuzzy
-#~ msgid "Fill BG with pattern"
-#~ msgstr "Bete atzeko planoa ereduarekin"
-
-#~ msgid "Invert"
-#~ msgstr "Alderantzikatu"
-
-#, fuzzy
-#~ msgid "Keep background"
-#~ msgstr "Mantendu atzeko planoa"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Script-Fu/Eragiketak txantiloiekin/_Kromatu..."
-
-#, fuzzy
-#~ msgid "Chrome balance"
-#~ msgstr "Kromatze-balantzea"
-
-#, fuzzy
-#~ msgid "Chrome factor"
-#~ msgstr "Kromatze-faktorea"
-
-#, fuzzy
-#~ msgid "Chrome lightness"
-#~ msgstr "Kromatze-argitasuna"
-
-#, fuzzy
-#~ msgid "Chrome saturation"
-#~ msgstr "Kromatze-saturazioa"
-
-#, fuzzy
-#~ msgid "Chrome white areas"
-#~ msgstr "Kromatu area zuriak"
-
-#, fuzzy
-#~ msgid "Environment map"
-#~ msgstr "Ingurune-mapa"
-
-#, fuzzy
-#~ msgid "Highlight balance"
-#~ msgstr "Nabarmentzearen balantzea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Kromatu..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_romatu..."
-
-#~ msgid "Offsets (pixels * 2)"
-#~ msgstr "Desplazamenduak (pixelak * 2)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Script-Fu/Errendatuak/_Zirkuitua..."
-
-#, fuzzy
-#~ msgid "Circuit seed"
-#~ msgstr "Zirkuitu-hazia"
-
-#, fuzzy
-#~ msgid "Keep selection"
-#~ msgstr "Mantendu hautapena"
-
-#, fuzzy
-#~ msgid "No background (only for separate layer)"
-#~ msgstr "Atzeko planorik ez (bereizitako geruzetarako bakarrik)"
-
-#, fuzzy
-#~ msgid "Oilify mask size"
-#~ msgstr "Olio-maskararen tamaina"
-
-#, fuzzy
-#~ msgid "Separate layer"
-#~ msgstr "Geruza bereizia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Ehundura..."
-
-#~ msgid "Azimuth"
-#~ msgstr "Azimuta"
-
-#~ msgid "Blur X"
-#~ msgstr "Lausotu X"
-
-#~ msgid "Blur Y"
-#~ msgstr "Lausotu Y"
-
-#~ msgid "Depth"
-#~ msgstr "Sakonera"
-
-#~ msgid "Elevation"
-#~ msgstr "Goratzea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/_Kafe-orbana..."
-
-#, fuzzy
-#~ msgid ""
-#~ "Darken only\n"
-#~ "(Better, but only for images with alot of white)"
-#~ msgstr ""
-#~ "Ilundu bakarrik\n"
-#~ "(hobeto, baina zuri asko duten irudietarako bakarrik)"
-
-#~ msgid "Stains"
-#~ msgstr "Orbanak"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Ko_mikia..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_omikia..."
-
-#, fuzzy
-#~ msgid "Outline color"
-#~ msgstr "Eskemaren kolorea"
-
-#, fuzzy
-#~ msgid "Outline size"
-#~ msgstr "Eskemaren tamaina"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Metal hotza..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Me_tal hotza..."
-
-#, fuzzy
-#~ msgid "Effect size (pixels)"
-#~ msgstr "Efektuaren tamaina (pixeletan)"
-
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy/Copy _Visible"
-#~ msgstr "<Image>/Editatu/Kopiatu _ikusgai dagoena"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/K_ristala..."
-
-#, fuzzy
-#~ msgid "Background image"
-#~ msgstr "Atzeko planoko irudia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
-#~ msgstr "<Image>/Script-Fu/Hautapena/_Desitxuratu hautapena..."
-
-#, fuzzy
-#~ msgid "Granularity (1 is low)"
-#~ msgstr "Pikortzea (1 txikia da)"
-
-#, fuzzy
-#~ msgid "Smooth horizontally"
-#~ msgstr "Leundu horizontalki"
-
-#, fuzzy
-#~ msgid "Smooth vertically"
-#~ msgstr "Leundu bertikalki"
-
-#~ msgid "Spread"
-#~ msgstr "Zabaldu"
-
-#, fuzzy
-#~ msgid "Threshold (bigger 1<-->255 smaller)"
-#~ msgstr "Muga (Handiagoa 1<-->255 Txikiagoa)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "<Image>/Script-Fu/Itzala/Egin _itzala..."
-
-#, fuzzy
-#~ msgid "Allow resizing"
-#~ msgstr "Baimendu tamaina aldatzea"
-
-#, fuzzy
-#~ msgid "Blur radius"
-#~ msgstr "Lausotze-erradioa"
-
-#~ msgid "Offset X"
-#~ msgstr "X desplazamendua"
-
-#~ msgid "Offset Y"
-#~ msgstr "Y desplazamendua"
-
-#~ msgid "Opacity"
-#~ msgstr "Opakutasuna"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Ezabatu bi errenkadatatik bat..."
-
-#~ msgid "Columns"
-#~ msgstr "Zutabeak"
-
-#~ msgid "Erase"
-#~ msgstr "Ezabatu"
-
-#, fuzzy
-#~ msgid "Erase/fill"
-#~ msgstr "Ezabatu/Bete"
-
-#~ msgid "Even"
-#~ msgstr "Bikoitia"
-
-#, fuzzy
-#~ msgid "Even/odd"
-#~ msgstr "Bikoitia/Bakoitia"
-
-#~ msgid "Fill with BG"
-#~ msgstr "Bete atzeko planoarekin"
-
-#~ msgid "Odd"
-#~ msgstr "Bakoitia"
-
-#~ msgid "Rows"
-#~ msgstr "Errenkadak"
-
-#, fuzzy
-#~ msgid "Rows/cols"
-#~ msgstr "Errenkadak/Zutabeak"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Script-Fu/Hautapena/_Iraungitze-eskema..."
-
-#, fuzzy
-#~ msgid "Apply generated layermask"
-#~ msgstr "Aplikatu sortutako geruza-maskara"
-
-#, fuzzy
-#~ msgid "Border size"
-#~ msgstr "Ertzaren tamaina"
-
-#, fuzzy
-#~ msgid "Clear unselected maskarea"
-#~ msgstr "Garbitu hautatu gabeko maskara"
-
-#, fuzzy
-#~ msgid "Fade from %"
-#~ msgstr "Iraungi hemendik %"
-
-#, fuzzy
-#~ msgid "Fade to   %"
-#~ msgstr "Iraungi hona %"
-
-#, fuzzy
-#~ msgid "Use growing selection"
-#~ msgstr "Erabili hazten den hautapena"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/_Ereduak/_Lur laua..."
-
-#, fuzzy
-#~ msgid "Detail level"
-#~ msgstr "Xehetasun-maila"
-
-#, fuzzy
-#~ msgid "Image height"
-#~ msgstr "Irudiaren altuera"
-
-#, fuzzy
-#~ msgid "Image width"
-#~ msgstr "Irudiaren zabalera"
-
-#, fuzzy
-#~ msgid "Random seed"
-#~ msgstr "Ausazko hazia"
-
-#~ msgid "Scale X"
-#~ msgstr "X eskala"
-
-#~ msgid "Scale Y"
-#~ msgstr "Y eskala"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/Letra-tipoen mapa..."
-
-#, fuzzy
-#~ msgid "Active colors"
-#~ msgstr "Aktibatu koloreak"
-
-#, fuzzy
-#~ msgid "Black on white"
-#~ msgstr "Beltza zurian"
-
-#, fuzzy
-#~ msgid "Font _size (pixels)"
-#~ msgstr "Letra-_tamaina (pixeletan)"
-
-#, fuzzy
-#~ msgid "Use font _name as text"
-#~ msgstr "Erabili letra-tipoaren _izena testu gisa"
-
-#~ msgid "_Border (pixels)"
-#~ msgstr "_Ertza (pixeletan)"
-
-#, fuzzy
-#~ msgid "_Color scheme"
-#~ msgstr "_Kolorearen eskema"
-
-#~ msgid "_Filter (regexp)"
-#~ msgstr "_Iragazkia (regexp)"
-
-#~ msgid "_Labels"
-#~ msgstr "_Etiketak"
-
-#~ msgid "_Text"
-#~ msgstr "_Testua"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Izoztuta..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/I_zoztuta..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/_Ertz lausoa..."
-
-#, fuzzy
-#~ msgid "Add shadow"
-#~ msgstr "Gehitu itzala"
-
-#, fuzzy
-#~ msgid "Blur border"
-#~ msgstr "Lausotu ertza"
-
-#~ msgid "Granularity (1 is Low)"
-#~ msgstr "Pikortzea (1 txikia da)"
-
-#, fuzzy
-#~ msgid "Shadow weight (%)"
-#~ msgstr "Itzalaren pisua (%)"
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Goiburu handia..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/G_oiburu txikia..."
-
-#, fuzzy
-#~ msgid "Autocrop"
-#~ msgstr "Ebaki automatikoki"
-
-#, fuzzy
-#~ msgid "Dark color"
-#~ msgstr "Kolore iluna"
-
-#, fuzzy
-#~ msgid "Highlight color"
-#~ msgstr "Nabarmentzearen kolorea"
-
-#, fuzzy
-#~ msgid "Index image"
-#~ msgstr "Indexatu irudia"
-
-#, fuzzy
-#~ msgid "Number of colors"
-#~ msgstr "Kolore-kopurua"
-
-#, fuzzy
-#~ msgid "Remove background"
-#~ msgstr "Kendu atzeko planoa"
-
-#, fuzzy
-#~ msgid "Select-by-color threshold"
-#~ msgstr "Kolorearen araberako hautapenaren muga"
-
-#, fuzzy
-#~ msgid "Shadow color"
-#~ msgstr "Itzalaren kolorea"
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Hodiaren azpibotoiko "
-#~ "etiketa..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/Ho_diaren azpibotoiko "
-#~ "etiketa..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Hodiaren etiketa "
-#~ "orokorrak..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Luzp/Script-Fu/Web orriko gaiak/Gimp.Org/_Hodiaren botoiko "
-#~ "etiketa..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Distiratsua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Dis_tiratsua..."
-
-#, fuzzy
-#~ msgid "Blend gradient (Text)"
-#~ msgstr "Nahaste-gradientea (Testua)"
-
-#, fuzzy
-#~ msgid "Blend gradient (outline)"
-#~ msgstr "Nahaste-gradientea (Eskema)"
-
-#, fuzzy
-#~ msgid "Blend gradient (text)"
-#~ msgstr "Nahaste-gradientea (Testua)"
-
-#, fuzzy
-#~ msgid "Outline gradient reverse"
-#~ msgstr "Eskemaren gradiente alderantzikatua"
-
-#, fuzzy
-#~ msgid "Pattern (outline)"
-#~ msgstr "Eredua (Eskema)"
-
-#, fuzzy
-#~ msgid "Pattern (overlay)"
-#~ msgstr "Eredua (Gainjarria)"
-
-#, fuzzy
-#~ msgid "Pattern (text)"
-#~ msgstr "Eredua (Testua)"
-
-#~ msgid "Shadow"
-#~ msgstr "Itzala"
-
-#, fuzzy
-#~ msgid "Text gradient reverse"
-#~ msgstr "Testu-gradiente alderantzikatua"
-
-#, fuzzy
-#~ msgid "Use pattern for outline instead of gradient"
-#~ msgstr "Erabili eredua eskemarako gradientearen ordez "
-
-#, fuzzy
-#~ msgid "Use pattern for text instead of gradient"
-#~ msgstr "Erabili eredua testurako gradientearen ordez "
-
-#, fuzzy
-#~ msgid "Use pattern overlay"
-#~ msgstr "Erabili ereduen gainjartzea"
-
-#, fuzzy
-#~ msgid "Use tattern for outline instead of gradient"
-#~ msgstr "Erabili eredua eskemarako gradientearen ordez "
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Bero dirdiratsua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Be_ro dirdiratsua..."
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 3)"
-#~ msgstr "Efektuaren tamaina (pixelak * 3)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Gradiente a_lakatua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Gradiente _alakatua..."
-
-#, fuzzy
-#~ msgid "Bevel height (Sharpness)"
-#~ msgstr "Alaka-altuera (Zorroztasuna)"
-
-#, fuzzy
-#~ msgid "Border size (pixels)"
-#~ msgstr "Ertzaren tamaina (pixeletan)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Utilitateak/_Gradiente pertsonalizatua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Imigre-26..."
-
-#, fuzzy
-#~ msgid "Frame color"
-#~ msgstr "Markoaren kolorea"
-
-#, fuzzy
-#~ msgid "Frame size"
-#~ msgstr "Markoaren tamaina"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/_Lurra..."
-
-#, fuzzy
-#~ msgid "Land height"
-#~ msgstr "Lurraren altuera"
-
-#, fuzzy
-#~ msgid "Sea depth"
-#~ msgstr "Itsasoaren sakonera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
-#~ msgstr "<Image>/Script-Fu/Errendatuak/La_ba..."
-
-#~ msgid "Roughness"
-#~ msgstr "Zimurtasuna"
-
-#~ msgid "Seed"
-#~ msgstr "Hazia"
-
-#, fuzzy
-#~ msgid "Use current gradient"
-#~ msgstr "Erabili uneko gradientea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Script-Fu/Errendatuak/Line _Nova..."
-
-#, fuzzy
-#~ msgid "Number of lines"
-#~ msgstr "Marra-kopurua"
-
-#, fuzzy
-#~ msgid "Offset radius"
-#~ msgstr "Desplazamendu-erradioa"
-
-#~ msgid "Randomness"
-#~ msgstr "Ausazkotasuna"
-
-#~ msgid "Sharpness (degrees)"
-#~ msgstr "Zorroztasuna (gradutan)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/Eli_ptikoa, difuminatua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/A_ngeluzuzena, difuminatua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/Elip_tikoa..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Egin brotxa/_Laukizuzena..."
-
-#~ msgid "Description"
-#~ msgstr "Azalpena"
-
-#~ msgid "Feathering"
-#~ msgstr "Difuminatzea"
-
-#~ msgid "Spacing"
-#~ msgstr "Tartea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Neon..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Ne_on..."
-
-#, fuzzy
-#~ msgid "Create shadow"
-#~ msgstr "Sortu itzala"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 5)"
-#~ msgstr "Efektuaren tamaina (pixelak * 5)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/_Prentsa-paperaren testua..."
-
-#, fuzzy
-#~ msgid "Cell size (pixels)"
-#~ msgstr "Gelaxkaren tamaina (pixeletan)"
-
-#~ msgid "Density (%)"
-#~ msgstr "Dentsitatea (%)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/_Argazki zaharra..."
-
-#~ msgid "Defocus"
-#~ msgstr "Fokatu gabe"
-
-#~ msgid "Mottle"
-#~ msgstr "Marmola"
-
-#~ msgid "Sepia"
-#~ msgstr "Sepia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Script-Fu/Itzala/_Perspektiba..."
-
-#~ msgid "Angle"
-#~ msgstr "Angelua"
-
-#~ msgid "Interpolate"
-#~ msgstr "Interpolatu"
-
-#, fuzzy
-#~ msgid "Relative distance of horizon"
-#~ msgstr "Zerumugaren distantzia erlatiboa"
-
-#, fuzzy
-#~ msgid "Relative length of shadow"
-#~ msgstr "Itzalaren luzera erlatiboa"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Harraparia..."
-
-#, fuzzy
-#~ msgid "Edge amount"
-#~ msgstr "Ertzaren lodiera"
-
-#, fuzzy
-#~ msgid "Pixel amount"
-#~ msgstr "Pixel-kopurua"
-
-#~ msgid "Pixelize"
-#~ msgstr "Pixelizatu"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Botoiak/Bo_toi biribila..."
-
-#, fuzzy
-#~ msgid "Lower color"
-#~ msgstr "Behe-mailako kolorea"
-
-#, fuzzy
-#~ msgid "Lower color (active)"
-#~ msgstr "Behe-mailako kolorea (Aktiboa)"
-
-#, fuzzy
-#~ msgid "Not pressed"
-#~ msgstr "Sakatu gabe"
-
-#, fuzzy
-#~ msgid "Not pressed (active)"
-#~ msgstr "Sakatu gabe (Aktiboa)"
-
-#~ msgid "Padding X"
-#~ msgstr "X betegarria"
-
-#~ msgid "Padding Y"
-#~ msgstr "Y betegarria"
-
-#, fuzzy
-#~ msgid "Round ratio"
-#~ msgstr "Biribilaren erlazioa"
-
-#, fuzzy
-#~ msgid "Text color (active)"
-#~ msgstr "Testuaren kolorea (Aktiboa)"
-
-#, fuzzy
-#~ msgid "Upper color"
-#~ msgstr "Goi-mailako kolorea"
-
-#, fuzzy
-#~ msgid "Upper color (active)"
-#~ msgstr "Goi-mailako kolorea (Aktiboa)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/Errendatu _mapa..."
-
-#~ msgid "Behaviour"
-#~ msgstr "Portaera"
-
-#~ msgid "Detail in Middle"
-#~ msgstr "Xehetasuna erdian"
-
-#~ msgid "Tile"
-#~ msgstr "Lauza moduan"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Script-Fu/Animazioa/_Izurtu..."
-
-#~ msgid "Black"
-#~ msgstr "Beltza"
-
-#, fuzzy
-#~ msgid "Edge behaviour"
-#~ msgstr "Ertzaren portaera"
-
-#, fuzzy
-#~ msgid "Number of frames"
-#~ msgstr "Marko-kopurua"
-
-#, fuzzy
-#~ msgid "Rippling strength"
-#~ msgstr "Izurtze-indarra"
-
-#~ msgid "Smear"
-#~ msgstr "Lohitu"
-
-#~ msgid "Wrap"
-#~ msgstr "Doitu"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/_Biribildu izkinak..."
-
-#, fuzzy
-#~ msgid "Add background"
-#~ msgstr "Gehitu atzeko planoa"
-
-#, fuzzy
-#~ msgid "Add drop-shadow"
-#~ msgstr "Gehitu itzala"
-
-#, fuzzy
-#~ msgid "Edge radius"
-#~ msgstr "Ertzaren erradioa"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
-#~ msgstr "<Image>/Script-Fu/Hautapena/Bi_ribildu..."
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Erradio erlatiboa"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Script-Fu/Hautapena/_Brotxara..."
-
-#, fuzzy
-#~ msgid "Brush name"
-#~ msgstr "Brotxaren izena"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
-#~ msgstr "<Image>/Script-Fu/Hautapena/_Irudira..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Script-Fu/Hautapena/_Eredura..."
-
-#, fuzzy
-#~ msgid "Pattern name"
-#~ msgstr "Eredu-izena"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
-#~ msgstr "<Image>/Script-Fu/Dekorazioa/_Diapositiba..."
-
-#, fuzzy
-#~ msgid "Font color"
-#~ msgstr "Letra-tipoaren kolorea"
-
-#~ msgid "Number"
-#~ msgstr "Zenbakia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/SOTA _kromatua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Testu azkarra..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Hainbat/Es_fera..."
-
-#~ msgid "Lighting (degrees)"
-#~ msgstr "Argitasuna (gradutan)"
-
-#~ msgid "Radius (pixels)"
-#~ msgstr "Erradioa (pixeletan)"
-
-#, fuzzy
-#~ msgid "Sphere color"
-#~ msgstr "Esferaren kolorea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Script-Fu/Animazioa/Globo b_irakaria..."
-
-#~ msgid "Frames"
-#~ msgstr "Markoak"
-
-#, fuzzy
-#~ msgid "Index to n colors (0 = remain RGB)"
-#~ msgstr "Indexatu n koloretan (0 = Mantendu RGB)"
-
-#, fuzzy
-#~ msgid "Turn from left to right"
-#~ msgstr "Biratu ezkerretik eskuinera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Script-Fu/Errendatuak/_Spyrogimp..."
-
-#~ msgid "Airbrush"
-#~ msgstr "Aerografoa"
-
-#~ msgid "Brush"
-#~ msgstr "Brotxa"
-
-#~ msgid "Circle"
-#~ msgstr "Zirkulua"
-
-#, fuzzy
-#~ msgid "Color method"
-#~ msgstr "Koloreztatze-metodoa"
-
-#~ msgid "Epitrochoid"
-#~ msgstr "Epitrokoidea"
-
-#~ msgid "Frame"
-#~ msgstr "Markoa"
-
-#~ msgid "Gradient: Loop Sawtooth"
-#~ msgstr "Gradientea: begizta horzduna"
-
-#~ msgid "Gradient: Loop Triangle"
-#~ msgstr "Gradientea: begizta triangelua"
-
-#~ msgid "Hexagon"
-#~ msgstr "Hexagonoa"
-
-#, fuzzy
-#~ msgid "Hole ratio"
-#~ msgstr "Zuloaren erradioa"
-
-#, fuzzy
-#~ msgid "Inner teeth"
-#~ msgstr "Barruko hortzak"
-
-#~ msgid "Lissajous"
-#~ msgstr "Lissajous"
-
-#~ msgid "Margin (pixels)"
-#~ msgstr "Marjina (pixeletan)"
-
-#, fuzzy
-#~ msgid "Outer teeth"
-#~ msgstr "Kanpoko hortzak"
-
-#~ msgid "Pencil"
-#~ msgstr "Arkatza"
-
-#~ msgid "Pentagon"
-#~ msgstr "Pentagonoa"
-
-#~ msgid "Polygon: 10 sides"
-#~ msgstr "Poligonoa: 10 alde"
-
-#~ msgid "Polygon: 7 sides"
-#~ msgstr "Poligonoa: 7 alde"
-
-#~ msgid "Polygon: 8 sides"
-#~ msgstr "Poligonoa: 8 alde"
-
-#~ msgid "Polygon: 9 sides"
-#~ msgstr "Poligonoa: 9 alde"
-
-#~ msgid "Shape"
-#~ msgstr "Forma"
-
-#~ msgid "Solid Color"
-#~ msgstr "Kolore lisoa"
-
-#~ msgid "Spyrograph"
-#~ msgstr "Espirografoa"
-
-#~ msgid "Square"
-#~ msgstr "Karratua"
-
-#, fuzzy
-#~ msgid "Start angle"
-#~ msgstr "Hasierako angelua"
-
-#~ msgid "Tool"
-#~ msgstr "Tresna"
-
-#~ msgid "Triangle"
-#~ msgstr "Triangelua"
-
-#~ msgid "Type"
-#~ msgstr "Mota"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Izar-eztanda..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/I_zar-eztanda..."
-
-#, fuzzy
-#~ msgid "Burst color"
-#~ msgstr "Eztandaren kolorea"
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 30)"
-#~ msgstr "Efektuaren tamaina (pixelak * 30)"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/Iza_rretakoa..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Iz_arretakoa..."
-
-#, fuzzy
-#~ msgid "Effect size (pixels * 4)"
-#~ msgstr "Efektuaren tamaina (pixelak * 4)"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/Lauza moduan e_spiralean..."
-
-#, fuzzy
-#~ msgid "Whirl amount"
-#~ msgstr "Zurrunbiloaren indarra"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Ereduak/E_spiralean..."
-
-#, fuzzy
-#~ msgid "Number of times to whirl"
-#~ msgstr "Biratu beharreko aldi-kopurua"
-
-#, fuzzy
-#~ msgid "Quarter size"
-#~ msgstr "Lauzen tamaina"
-
-#, fuzzy
-#~ msgid "Whirl angle"
-#~ msgstr "Espiralaren angelua"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Partikulen arrastoa..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Par_tikulen arrastoa..."
-
-#, fuzzy
-#~ msgid "Base color"
-#~ msgstr "Oinarri-kolorea"
-
-#, fuzzy
-#~ msgid "Edge only"
-#~ msgstr "Ertza bakarrik"
-
-#, fuzzy
-#~ msgid "Edge width"
-#~ msgstr "Ertzaren zabalera"
-
-#, fuzzy
-#~ msgid "Hit rate"
-#~ msgstr "Talka-tasa"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Testu zirkularra..."
-
-#~ msgid "Antialias"
-#~ msgstr "Antialiasing-a"
-
-#, fuzzy
-#~ msgid "Fill angle"
-#~ msgstr "Bete angelua"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Image>/Script-Fu/Alfa logotipora/_Testuraduna..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Te_sturaduna..."
-
-#, fuzzy
-#~ msgid "Ending blend"
-#~ msgstr "Amaierako nahastea"
-
-#~ msgid "Hexagons"
-#~ msgstr "Hexagonoak"
-
-#, fuzzy
-#~ msgid "Mosaic tile type"
-#~ msgstr "Mosaikoko lauzen mota"
-
-#~ msgid "Octagons"
-#~ msgstr "Oktagonoak"
-
-#~ msgid "Squares"
-#~ msgstr "Karratuak"
-
-#, fuzzy
-#~ msgid "Starting blend"
-#~ msgstr "Hasierako nahastea"
-
-#, fuzzy
-#~ msgid "Text pattern"
-#~ msgstr "Testu-eredua"
-
-#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
-#~ msgstr "<Image>/Iragazkiak/Lausotuak/_Lausotze teilakagarria..."
-
-#, fuzzy
-#~ msgid "Blur horizontally"
-#~ msgstr "Lausotu horizontalki"
-
-#, fuzzy
-#~ msgid "Blur type"
-#~ msgstr "Lausotze-mota"
-
-#, fuzzy
-#~ msgid "Blur vertically"
-#~ msgstr "Lausotu bertikalki"
-
-#~ msgid "IIR"
-#~ msgstr "IIR"
-
-#~ msgid "RLE"
-#~ msgstr "RLE"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
-#~ msgstr "<Image>/Script-Fu/Hautapena/_Irudira..."
-
-#, fuzzy
-#~ msgid "Palette"
-#~ msgstr "Eredua"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/Logotipoak/Web izenburuen goiburua..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Luzp/Script-Fu/_Ereduak/Truc_het..."
-
-#, fuzzy
-#~ msgid "Foreground color"
-#~ msgstr "Aurreko planoaren kolorea"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Lausotze-maskara..."
-
-#, fuzzy
-#~ msgid "Mask opacity"
-#~ msgstr "Maskararen opakutasuna"
-
-#, fuzzy
-#~ msgid "Mask size"
-#~ msgstr "Maskararen tamaina"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Script-Fu/Animazioa/_Uhinak..."
-
-#~ msgid "Amplitude"
-#~ msgstr "Anplitudea"
-
-#~ msgid "Invert direction"
-#~ msgstr "Alderantzikatu norabidea"
-
-#~ msgid "Wavelength"
-#~ msgstr "Uhinaren luzera"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
-#~ msgstr "<Image>/Script-Fu/Alkimia/_Ehun..."
-
-#, fuzzy
-#~ msgid "Ribbon spacing"
-#~ msgstr "Banda arteko tartea"
-
-#, fuzzy
-#~ msgid "Ribbon width"
-#~ msgstr "Bandaren zabalera"
-
-#, fuzzy
-#~ msgid "Shadow darkness"
-#~ msgstr "Itzalaren iluntasuna"
-
-#, fuzzy
-#~ msgid "Shadow depth"
-#~ msgstr "Itzalaren sakonera"
-
-#, fuzzy
-#~ msgid "Thread density"
-#~ msgstr "Hariaren dentsitatea"
-
-#, fuzzy
-#~ msgid "Thread intensity"
-#~ msgstr "Hariaren intentsitatea"
-
-#, fuzzy
-#~ msgid "Thread length"
-#~ msgstr "Hariaren luzera"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-#~ msgstr "<Toolbox>/Laguntza/GIMP online/Plugin-en _erregistroa"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-#~ msgstr "<Toolbox>/Laguntza/GIMP online/_Garatzaileen web gnuea"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
-#~ msgstr "<Toolbox>/Laguntza/GIMP online/Web gune _nagusia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
-#~ msgstr "<Image>/Script-Fu/Itzala/_Xach-en efektua..."
-
-#, fuzzy
-#~ msgid "Drop shadow X offset"
-#~ msgstr "Itzalaren X desplazamendua"
-
-#, fuzzy
-#~ msgid "Drop shadow Y offset"
-#~ msgstr "Itzalaren Y desplazamendua"
-
-#, fuzzy
-#~ msgid "Drop shadow blur radius"
-#~ msgstr "Itzalaren lausotze-erradioa"
-
-#, fuzzy
-#~ msgid "Drop shadow color"
-#~ msgstr "Itzalaren kolorea"
-
-#, fuzzy
-#~ msgid "Drop shadow opacity"
-#~ msgstr "Itzalaren opakutasuna"
-
-#, fuzzy
-#~ msgid "Highlight X offset"
-#~ msgstr "Nabarmentzearen X desplazamendua"
-
-#, fuzzy
-#~ msgid "Highlight Y offset"
-#~ msgstr "Nabarmentzearen Y desplazamendua"
-
-#, fuzzy
-#~ msgid "Highlight opacity"
-#~ msgstr "Nabarmentzearen opakutasuna"
 
 #~ msgid "Transparent Background"
 #~ msgstr "Atzeko plano gardena"
