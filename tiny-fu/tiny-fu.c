@@ -194,7 +194,7 @@ tiny_fu_run (const gchar *name,
     }
 
   /*  Load all of the available scripts  */
-  tiny_fu_find_scripts ();
+  tiny_fu_load_all_scripts ();
 
   if (strcmp (name, "extension_tiny_fu") == 0)
     {
@@ -291,7 +291,7 @@ tiny_fu_refresh_proc (const gchar      *name,
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;
 
   /*  Reload all of the available scripts  */
-  tiny_fu_find_scripts ();
+  tiny_fu_load_all_scripts ();
 
   *nreturn_vals = 1;
   *return_vals  = values;

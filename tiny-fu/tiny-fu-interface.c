@@ -200,11 +200,11 @@ tiny_fu_interface (SFScript *script)
   sf_interface->args_widgets = g_new0 (GtkWidget *, script->num_args);
 
   /* strip the first part of the menupath if it contains _("/Tiny-Fu/") */
-  tmp = strstr (script->menu_path, _("/Tiny-Fu/"));
+  tmp = strstr (gettext (script->menu_path), _("/Tiny-Fu/"));
   if (tmp)
     sf_interface->short_title = g_strdup (tmp + strlen (_("/Tiny-Fu/")));
   else
-    sf_interface->short_title = g_strdup (script->menu_path);
+    sf_interface->short_title = g_strdup (gettext (script->menu_path));
 
   /* strip mnemonics from the menupath */
   tmp = gimp_strip_uline (sf_interface->short_title);
@@ -283,7 +283,8 @@ tiny_fu_interface (SFScript *script)
 
       /*  we add a colon after the label;
           some languages want an extra space here  */
-      label_text =  g_strdup_printf (_("%s:"), script->arg_labels[i]);
+      label_text =  g_strdup_printf (_("%s:"),
+                                     gettext (script->arg_labels[i]));
 
       switch (script->arg_types[i])
         {
@@ -342,7 +343,7 @@ tiny_fu_interface (SFScript *script)
           g_free (label_text);
           label_text = NULL;
           widget =
-            gtk_check_button_new_with_mnemonic (script->arg_labels[i]);
+            gtk_check_button_new_with_mnemonic (gettext (script->arg_labels[i]));
           gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget),
                                        script->arg_values[i].sfa_toggle);
 
@@ -490,7 +491,7 @@ tiny_fu_interface (SFScript *script)
                list = g_slist_next (list))
             {
               gtk_combo_box_append_text (GTK_COMBO_BOX (widget),
-                                         (const gchar *) list->data);
+                                         gettext ((const gchar *) list->data));
             }
 
           gtk_combo_box_set_active (GTK_COMBO_BOX (widget),

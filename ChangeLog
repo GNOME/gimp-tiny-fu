@@ -1,3 +1,24 @@
+2004-11-18  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/tiny-fu.c
+	* tiny-fu/tiny-fu-scripts.c
+	* tiny-fu/tiny-fu-scripts.h: Added support for (tiny-fu-menu-register)
+	to allow scripts to register their menu_paths the same undeprecated
+	way as plug-ins. Fixes bug #158117. Renamed tiny_fu_find_scripts() to
+	tiny_fu_load_all_scripts(). Added calls to gettext() since TinyScheme
+	no longer translates marked strings. In tiny_fu_script_proc() changed
+	some uses of params variable that should have been param.
+
+	* tiny-fu/tiny-fu-interface.c: Added a utility function to reduce
+	code duplication.
+
+	* tiny-fu/ts-wrapper.c: Added support for (tiny-fu-menu-register).
+
+	* tinyscheme/scheme.c: Don't call gettext() on strings marked for
+	translation. De-tabified file.
+
+	* scripts/test-sphere.sct: Example use of new API for scripts.
+
 2004-11-17  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/add-bevel.sct: Removed a bracket left in by mistake

@@ -226,7 +226,7 @@
 )
 
 (tiny-fu-register "tiny-fu-test-sphere"
-    "<Toolbox>/Xtns/Tiny-Fu/Test/_Sphere..."
+    _"_Sphere..."
     "Simple script to test and show the usage of the new Script-Fu API extensions."
     "Spencer Kimball, Sven Neumann"
     "Spencer Kimball"
@@ -257,3 +257,8 @@
     SF-CHANNEL    "Channel"            -1
     SF-DRAWABLE   "Drawable"           -1
 )
+
+(tiny-fu-menu-register "tiny-fu-test-sphere"
+                       _"<Toolbox>/Xtns/Tiny-Fu/Test"
+)
+

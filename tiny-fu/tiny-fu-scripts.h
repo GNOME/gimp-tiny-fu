@@ -19,8 +19,9 @@
 #ifndef __TINY_FU_SCRIPTS_H__
 #define __TINY_FU_SCRIPTS_H__
 
-void     tiny_fu_find_scripts  (void);
-pointer  tiny_fu_add_script    (scheme  *sc, pointer a);
-void     tiny_fu_error_msg     (const gchar *command);
+void     tiny_fu_load_all_scripts (void);
+pointer  tiny_fu_add_script       (scheme *sc, pointer a);
+pointer  tiny_fu_add_menu         (scheme *sc, pointer a);
+void     tiny_fu_error_msg        (const gchar *command);
 
 #endif /*  __TINY_FU_SCRIPTS__  */

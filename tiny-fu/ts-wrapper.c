@@ -331,10 +331,11 @@ tinyscheme_deinit (void)
   scheme_deinit (&sc);
 }
 
-static void     convert_string        (gchar   *str);
-static pointer  marshall_proc_db_call (scheme *sc,     pointer  a);
-static pointer  tiny_fu_register_call (scheme *sc,     pointer  a);
-static pointer  tiny_fu_quit_call     (scheme *sc,     pointer  a);
+static void     convert_string             (gchar  *str);
+static pointer  marshall_proc_db_call      (scheme *sc, pointer  a);
+static pointer  tiny_fu_register_call      (scheme *sc, pointer  a);
+static pointer  tiny_fu_menu_register_call (scheme *sc, pointer  a);
+static pointer  tiny_fu_quit_call          (scheme *sc, pointer  a);
 
 
 /*
@@ -497,6 +498,12 @@ init_procedures (void)
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                   sc.vptr->mk_foreign_func (&sc, tiny_fu_register_call));
   sc.vptr->setimmutable(symbol);
+
+  symbol = sc.vptr->mk_symbol (&sc, "tiny-fu-menu-register");
+  sc.vptr->scheme_define (&sc, sc.global_env, symbol,
+                  sc.vptr->mk_foreign_func (&sc, tiny_fu_menu_register_call));
+  sc.vptr->setimmutable(symbol);
+
   symbol = sc.vptr->mk_symbol (&sc, "tiny-fu-quit");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                   sc.vptr->mk_foreign_func (&sc, tiny_fu_quit_call));
@@ -1515,6 +1522,15 @@ tiny_fu_register_call (scheme *sc, pointer a)
 {
   if (register_scripts)
     return tiny_fu_add_script (sc, a);
+  else
+    return sc->NIL;
+}
+
+static pointer
+tiny_fu_menu_register_call (scheme *sc, pointer a)
+{
+  if (register_scripts)
+    return tiny_fu_add_menu (sc, a);
   else
     return sc->NIL;
 }
