@@ -1,9 +1,41 @@
 Version 0.9 of the Tiny-Fu Plug-in for GIMP 2.1/2.2
 ---------------------------------------------------
 
-This is the development branch of Tiny-Fu. Here's where new features
-are being added. Very soon now, the next stable GIMP release, GIMP 2.2,
-will emerge out of this.
+This is the development branch of Tiny-Fu. This is where new features
+are added, features may be dropped or changed, or other large changes
+to the code are made. Real soon now the next stable Tiny-Fu release,
+Tiny-Fu 1.0, will emerge out of this.
+
+
+
+Overview of Changes in Tiny-Fu 0.9.4
+====================================
+
+- First standalone tarball.
+
+- Tiny-Fu was added to GNOME CVS repository.
+
+- Minor changes to the build process.
+
+- Temporarily removed the 'Browse' button from console mode.
+
+- Generate an error if the size of an array is not the same as the previous
+  argument which specifies the array size. (Fixes bug #154266)
+
+- Updates to the script and init files
+
+    * Included improved version of the selection-round.sct script.
+    Fixes bug #145147.
+    * Minor update to the Spyrogimp script.
+    * Changed the Add Border script to work on all image types.
+
+- Various additional minor changes and bug fixes. See ChangeLog for details.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to Script-Fu
+   plug-in by Michael Natterer, and Sven Neumann.
 
 
 
@@ -11,8 +43,6 @@ Overview of Changes in Tiny-Fu 0.9.3
 ====================================
 
 - Fixed bug which left parts of old error messages when generating new ones.
-
-- Removed the 'Browse' button from console mode temporarily.
 
 - Added support for multi-line text in scripts using SF-TEXT argument type.
 
