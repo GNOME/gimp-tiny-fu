@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-29 15:07-0400\n"
+"POT-Creation-Date: 2004-11-22 23:22-0500\n"
 "PO-Revision-Date: 2003-06-05 07:54+0800\n"
 "Last-Translator: Dongsu Jang <iolo@hellocity.net>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr "Script-Fu 평가 모드는 상호작용 없는 호출만 허용합니다"
 
-#: tiny-fu/tiny-fu-scripts.c:552
+#: tiny-fu/tiny-fu-scripts.c:626
 #, fuzzy, c-format
 msgid ""
 "Error while executing\n"
@@ -113,112 +113,126 @@ msgstr "서버 포트:"
 msgid "Server Logfile:"
 msgstr "서버 로그파일:"
 
+#: tiny-fu/tiny-fu-interface.c:178
+msgid "Tiny-Fu cannot process two scripts at the same time."
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:180
+#, c-format
+msgid "You are already running the \"%s\" script."
+msgstr ""
+
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:192 tiny-fu/tiny-fu-interface.c:194
+#: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
 #, fuzzy
 msgid "/Tiny-Fu/"
 msgstr "/Script-Fu/"
 
-#: tiny-fu/tiny-fu-interface.c:208
+#: tiny-fu/tiny-fu-interface.c:218
 #, fuzzy, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Script-Fu: %s"
 
 #. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:245
+#: tiny-fu/tiny-fu-interface.c:255
 msgid "Script Arguments"
 msgstr "스크립트 인수"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:276
+#: tiny-fu/tiny-fu-interface.c:286
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:319
+#: tiny-fu/tiny-fu-interface.c:329
 #, fuzzy
 msgid "Tiny-Fu Color Selection"
 msgstr "Script-Fu 색상 선택"
 
-#: tiny-fu/tiny-fu-interface.c:425
+#: tiny-fu/tiny-fu-interface.c:432
 #, fuzzy
 msgid "Tiny-Fu File Selection"
 msgstr "Script-Fu 파일 선택"
 
-#: tiny-fu/tiny-fu-interface.c:429
+#: tiny-fu/tiny-fu-interface.c:436
 #, fuzzy
 msgid "Tiny-Fu Folder Selection"
 msgstr "Script-Fu 폴더 선택"
 
-#: tiny-fu/tiny-fu-interface.c:441
+#: tiny-fu/tiny-fu-interface.c:448
 #, fuzzy
 msgid "Tiny-Fu Font Selection"
 msgstr "Script-Fu 글꼴 선택"
 
-#: tiny-fu/tiny-fu-interface.c:448
+#: tiny-fu/tiny-fu-interface.c:455
 #, fuzzy
 msgid "Tiny-Fu Palette Selection"
 msgstr "Script-Fu 무늬 선택"
 
-#: tiny-fu/tiny-fu-interface.c:456
+#: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Script-Fu 무늬 선택"
 
-#: tiny-fu/tiny-fu-interface.c:463
+#: tiny-fu/tiny-fu-interface.c:470
 #, fuzzy
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Script-Fu 그라디언트 선택"
 
-#: tiny-fu/tiny-fu-interface.c:471
+#: tiny-fu/tiny-fu-interface.c:478
 #, fuzzy
 msgid "Tiny-Fu Brush Selection"
 msgstr "Script-Fu 브러시 선택"
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:530
+#: tiny-fu/tiny-fu-interface.c:534
 #, fuzzy
 msgid "Script Progress"
 msgstr "스크립트 인수"
 
-#: tiny-fu/tiny-fu-interface.c:538
+#: tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:1058
+#: tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
 msgstr "작성자:"
 
-#: tiny-fu/tiny-fu-interface.c:1065
+#: tiny-fu/tiny-fu-interface.c:1066
 msgid "Copyright:"
 msgstr "저작권:"
 
-#: tiny-fu/tiny-fu-interface.c:1072
+#: tiny-fu/tiny-fu-interface.c:1073
 msgid "Date:"
 msgstr "날짜:"
 
-#: tiny-fu/tiny-fu-interface.c:1081
+#: tiny-fu/tiny-fu-interface.c:1082
 msgid "Image Types:"
 msgstr "이미지 유형:"
 
-#: scripts/ts-helloworld.sct.h:1 scripts/drop-shadow.sct.h:4
+#: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
+msgstr "<Toolbox>/확장/Script-Fu/스크립트 새로 고침(_R)"
+
+#: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
 #: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
 #: scripts/spyrogimp.sct.h:5
 msgid "Color"
 msgstr "색상"
 
-#: scripts/ts-helloworld.sct.h:2 scripts/3d-outline.sct.h:5
-#: scripts/alien-glow-button.sct.h:4 scripts/alien-glow-logo.sct.h:3
-#: scripts/alien-neon-logo.sct.h:5 scripts/asc2img.sct.h:8
-#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:4
-#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:2
-#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:10
-#: scripts/bovinated-logo.sct.h:5 scripts/carved-logo.sct.h:4
-#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:7 scripts/chrome-logo.sct.h:5
-#: scripts/comic-logo.sct.h:4 scripts/coolmetal-logo.sct.h:5
-#: scripts/crystal-logo.sct.h:5 scripts/frosty-logo.sct.h:5
-#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:6
+#: scripts/ts-helloworld.sct.h:3 scripts/3d-outline.sct.h:6
+#: scripts/alien-glow-button.sct.h:5 scripts/alien-glow-logo.sct.h:4
+#: scripts/alien-neon-logo.sct.h:6 scripts/asc2img.sct.h:8
+#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:5
+#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:3
+#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:11
+#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
+#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
+#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
+#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:5
+#: scripts/gimp-headers.sct.h:4 scripts/gimp-labels.sct.h:3
 #: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
 #: scripts/gradient-bevel-logo.sct.h:8 scripts/i26-gunya2.sct.h:2
 #: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
@@ -230,17 +244,36 @@ msgstr "색상"
 msgid "Font"
 msgstr "글꼴"
 
-#: scripts/ts-helloworld.sct.h:3
-msgid "Font Size (pixels)"
+#: scripts/ts-helloworld.sct.h:4 scripts/3d-outline.sct.h:7
+#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
+#: scripts/alien-neon-logo.sct.h:7 scripts/asc2img.sct.h:9
+#: scripts/basic1-logo.sct.h:5 scripts/basic2-logo.sct.h:6
+#: scripts/beveled-button.sct.h:4 scripts/beveled-pattern-button.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:12
+#: scripts/bovinated-logo.sct.h:7 scripts/carved-logo.sct.h:6
+#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:9 scripts/chrome-logo.sct.h:7
+#: scripts/comic-logo.sct.h:6 scripts/coolmetal-logo.sct.h:7
+#: scripts/crystal-logo.sct.h:7 scripts/frosty-logo.sct.h:6
+#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:4
+#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
+#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:3
+#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
+#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
+#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
+#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
+#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
+#: scripts/title-header.sct.h:3
+#, fuzzy
+msgid "Font size (pixels)"
 msgstr "글꼴 크기 (픽셀)"
 
-#: scripts/ts-helloworld.sct.h:4
-msgid "Hello, World!"
+#: scripts/ts-helloworld.sct.h:5
+msgid "Hello World"
 msgstr ""
 
-#: scripts/ts-helloworld.sct.h:5
+#: scripts/ts-helloworld.sct.h:6
 #, fuzzy
-msgid "Text String"
+msgid "Text string"
 msgstr "글자 패턴"
 
 #: scripts/contactsheet.sct.h:1
@@ -257,20 +290,21 @@ msgstr "SIOD 출력 파이프를 열 수 없습니다"
 msgid " images"
 msgstr "인덱스 이미지"
 
-#: scripts/contactsheet.sct.h:4
+#: scripts/contactsheet.sct.h:4 scripts/asc2img.sct.h:2
+#: scripts/font-map.sct.h:1 scripts/gradient-example.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
 msgstr "<Toolbox>/확장/Script-Fu/유틸리티/글꼴 목록(_F)..."
 
-#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:2
+#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
 #: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
-#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:2
-#: scripts/alien-neon-logo.sct.h:3 scripts/asc2img.sct.h:3
-#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:3
+#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:3
+#: scripts/alien-neon-logo.sct.h:4 scripts/asc2img.sct.h:3
+#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:4
 #: scripts/blended-logo.sct.h:3 scripts/bovinated-logo.sct.h:4
 #: scripts/chalk.sct.h:3 scripts/chrome-logo.sct.h:4
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
-#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
+#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:2
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
 #: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
 #: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
@@ -283,212 +317,240 @@ msgid "Background color"
 msgstr "배경색"
 
 #: scripts/contactsheet.sct.h:6
+msgid "Contact Sheet"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:7
 #, fuzzy
 msgid "Created "
 msgstr "그림자 만들기"
 
-#: scripts/contactsheet.sct.h:7
+#: scripts/contactsheet.sct.h:8
 #, fuzzy
 msgid "Directory"
 msgstr "SIOD 출력 파이프를 열 수 없습니다"
 
-#: scripts/contactsheet.sct.h:8
-msgid "Legend Font"
+#: scripts/contactsheet.sct.h:9
+msgid "Legend font"
 msgstr ""
 
-#: scripts/contactsheet.sct.h:9
+#: scripts/contactsheet.sct.h:10
 #, fuzzy
 msgid "Sheet "
 msgstr "씨앗 값"
 
-#: scripts/contactsheet.sct.h:10
+#: scripts/contactsheet.sct.h:11
 #, fuzzy
-msgid "Sheet Size"
+msgid "Sheet size"
 msgstr "씨앗 값"
 
-#: scripts/contactsheet.sct.h:11
-msgid "Text Color"
+#: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
+#: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
+#: scripts/basic2-logo.sct.h:8 scripts/beveled-button.sct.h:10
+#: scripts/beveled-pattern-button.sct.h:8 scripts/blended-logo.sct.h:18
+#: scripts/gimp-headers.sct.h:13 scripts/gimp-labels.sct.h:15
+#: scripts/i26-gunya2.sct.h:8 scripts/news-text.sct.h:11
+#: scripts/pupi-button.sct.h:14 scripts/speed-text.sct.h:9
+#, fuzzy
+msgid "Text color"
 msgstr "글자 색상"
 
-#: scripts/contactsheet.sct.h:12
-msgid "Title Font"
+#: scripts/contactsheet.sct.h:13
+msgid "Title font"
 msgstr ""
 
-#: scripts/contactsheet.sct.h:13
+#: scripts/contactsheet.sct.h:14
 #, fuzzy
 msgid "Unable to open directory "
 msgstr "SIOD 출력 파이프를 열 수 없습니다"
 
 #: scripts/3d-outline.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-msgstr "<Image>/Script-Fu/알파를 로고로/3D 윤곽선(_O)..."
+msgid "3D _Outline..."
+msgstr ""
 
-#: scripts/3d-outline.sct.h:2
+#: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
+#: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
+#: scripts/basic2-logo.sct.h:1 scripts/blended-logo.sct.h:1
+#: scripts/bovinated-logo.sct.h:1 scripts/chalk.sct.h:1
+#: scripts/chip-away.sct.h:1 scripts/chrome-logo.sct.h:1
+#: scripts/comic-logo.sct.h:1 scripts/coolmetal-logo.sct.h:1
+#: scripts/frosty-logo.sct.h:1 scripts/glossy.sct.h:1
+#: scripts/glowing-logo.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
+#: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
+#: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
+#: scripts/textured-logo.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/3D 윤곽선(_O)..."
+msgid "<Image>/Tiny-Fu/Alpha to Logo"
+msgstr "<Image>/Script-Fu/알파를 로고로/네온(_E)..."
 
-#: scripts/3d-outline.sct.h:3
+#: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
+#: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
+#: scripts/basic2-logo.sct.h:2 scripts/blended-logo.sct.h:2
+#: scripts/bovinated-logo.sct.h:2 scripts/carved-logo.sct.h:1
+#: scripts/chalk.sct.h:2 scripts/chip-away.sct.h:2 scripts/chrome-logo.sct.h:2
+#: scripts/comic-logo.sct.h:2 scripts/coolmetal-logo.sct.h:2
+#: scripts/crystal-logo.sct.h:1 scripts/frosty-logo.sct.h:2
+#: scripts/glossy.sct.h:2 scripts/glowing-logo.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:2 scripts/i26-gunya2.sct.h:1
+#: scripts/neon-logo.sct.h:2 scripts/news-text.sct.h:1
+#: scripts/sota-chrome-logo.sct.h:1 scripts/speed-text.sct.h:1
+#: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
+#: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
+#: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
+msgstr "<Toolbox>/확장/Script-Fu/로고/네온(_E)..."
+
+#: scripts/3d-outline.sct.h:4
 #, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
 msgstr "범프맵(알파 레이어) 흐릿한 반지름"
 
-#: scripts/3d-outline.sct.h:4 scripts/glossy.sct.h:7
+#: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
 #, fuzzy
 msgid "Default bumpmap settings"
 msgstr "기본 범프맵 설정"
 
-#: scripts/3d-outline.sct.h:6 scripts/alien-glow-button.sct.h:5
-#: scripts/alien-glow-logo.sct.h:4 scripts/alien-neon-logo.sct.h:6
-#: scripts/asc2img.sct.h:9 scripts/basic1-logo.sct.h:5
-#: scripts/basic2-logo.sct.h:5 scripts/beveled-button.sct.h:4
-#: scripts/beveled-pattern-button.sct.h:3
-#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:11
-#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
-#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
-#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
-#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:6
-#: scripts/gimp-headers.sct.h:6 scripts/gimp-labels.sct.h:7
-#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
-#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:3
-#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
-#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
-#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
-#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
-#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
-#: scripts/title-header.sct.h:3
-#, fuzzy
-msgid "Font size (pixels)"
-msgstr "글꼴 크기 (픽셀)"
-
-#: scripts/3d-outline.sct.h:7
+#: scripts/3d-outline.sct.h:8
 #, fuzzy
 msgid "Outline blur radius"
 msgstr "윤곽선 흐릿한 반지름"
 
-#: scripts/3d-outline.sct.h:8 scripts/glossy.sct.h:16
+#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
 #, fuzzy
 msgid "Shadow X offset"
 msgstr "그림자 X 오프셋"
 
-#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
+#: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
 #, fuzzy
 msgid "Shadow Y offset"
 msgstr "그림자 Y 오프셋"
 
-#: scripts/3d-outline.sct.h:10
+#: scripts/3d-outline.sct.h:11
 #, fuzzy
 msgid "Shadow blur radius"
 msgstr "그림자 흐릿한 반지름"
 
-#: scripts/3d-outline.sct.h:11 scripts/alien-glow-button.sct.h:9
-#: scripts/alien-glow-logo.sct.h:7 scripts/alien-neon-logo.sct.h:9
-#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:6
-#: scripts/beveled-button.sct.h:8 scripts/beveled-pattern-button.sct.h:6
-#: scripts/beveled-pattern-heading.sct.h:5 scripts/blended-logo.sct.h:16
-#: scripts/bovinated-logo.sct.h:9 scripts/carved-logo.sct.h:7
-#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:13
-#: scripts/chrome-logo.sct.h:8 scripts/comic-logo.sct.h:10
-#: scripts/coolmetal-logo.sct.h:9 scripts/crystal-logo.sct.h:7
-#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:13
-#: scripts/gimp-labels.sct.h:16 scripts/glossy.sct.h:18
-#: scripts/glowing-logo.sct.h:7 scripts/gradient-bevel-logo.sct.h:10
-#: scripts/i26-gunya2.sct.h:6 scripts/neon-logo.sct.h:9
-#: scripts/news-text.sct.h:9 scripts/pupi-button.sct.h:13
-#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:10
-#: scripts/speed-text.sct.h:7 scripts/starburst-logo.sct.h:8
-#: scripts/starscape-logo.sct.h:7 scripts/t-o-p-logo.sct.h:11
+#: scripts/3d-outline.sct.h:12 scripts/alien-glow-button.sct.h:10
+#: scripts/alien-glow-logo.sct.h:8 scripts/alien-neon-logo.sct.h:10
+#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:7
+#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
+#: scripts/beveled-pattern-heading.sct.h:6 scripts/blended-logo.sct.h:17
+#: scripts/bovinated-logo.sct.h:10 scripts/carved-logo.sct.h:8
+#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:14
+#: scripts/chrome-logo.sct.h:9 scripts/comic-logo.sct.h:11
+#: scripts/coolmetal-logo.sct.h:10 scripts/crystal-logo.sct.h:8
+#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:12
+#: scripts/gimp-labels.sct.h:14 scripts/glossy.sct.h:19
+#: scripts/glowing-logo.sct.h:8 scripts/gradient-bevel-logo.sct.h:11
+#: scripts/i26-gunya2.sct.h:7 scripts/neon-logo.sct.h:10
+#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:13
+#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:11
+#: scripts/speed-text.sct.h:8 scripts/starburst-logo.sct.h:9
+#: scripts/starscape-logo.sct.h:8 scripts/t-o-p-logo.sct.h:11
 #: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
 #: scripts/title-header.sct.h:5
 msgid "Text"
 msgstr "텍스트"
 
 #: scripts/3dTruchet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-msgstr "<Toolbox>/확장/Script-Fu/패턴/3D 트루쳇(_D)..."
+msgid "3_D Truchet..."
+msgstr ""
 
-#: scripts/3dTruchet.sct.h:3 scripts/truchet.sct.h:3
+#: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
+#: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
+#: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
+msgstr "<Toolbox>/확장/Script-Fu/무늬/땅(_L)..."
+
+#: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
 #, fuzzy
 msgid "Block size"
 msgstr "블럭 크기"
 
-#: scripts/3dTruchet.sct.h:4 scripts/blended-logo.sct.h:6
+#: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
 #, fuzzy
 msgid "End blend"
 msgstr "끝 혼합 색상"
 
-#: scripts/3dTruchet.sct.h:5 scripts/truchet.sct.h:5
+#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
 #, fuzzy
 msgid "Number of X tiles"
 msgstr "X 타일 수"
 
-#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:6
+#: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
 #, fuzzy
 msgid "Number of Y tiles"
 msgstr "Y 타일 수"
 
-#: scripts/3dTruchet.sct.h:7 scripts/blended-logo.sct.h:15
+#: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
 #, fuzzy
 msgid "Start blend"
 msgstr "시작 혼합 색상"
 
-#: scripts/3dTruchet.sct.h:8
+#: scripts/3dTruchet.sct.h:9
 msgid "Supersample"
 msgstr "수퍼샘플"
 
-#: scripts/3dTruchet.sct.h:9 scripts/add-bevel.sct.h:3 scripts/truchet.sct.h:7
+#: scripts/3dTruchet.sct.h:10 scripts/add-bevel.sct.h:4
+#: scripts/truchet.sct.h:8
 msgid "Thickness"
 msgstr "두께"
 
-#: scripts/add-bevel.sct.h:1
+#: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
+#: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
+#: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-msgstr "<Image>/Script-Fu/장식/베벨 더하기(_E)..."
+msgid "<Image>/Tiny-Fu/Decor"
+msgstr "<Image>/Script-Fu/장식/슬라이드(_S)..."
 
-#: scripts/add-bevel.sct.h:2 scripts/chip-away.sct.h:11
+#: scripts/add-bevel.sct.h:2
+msgid "Add B_evel..."
+msgstr ""
+
+#: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
 #, fuzzy
 msgid "Keep bump layer"
 msgstr "범프 레이어 유지"
 
-#: scripts/add-bevel.sct.h:4 scripts/fuzzyborder.sct.h:10
+#: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
 #: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
 #: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
 #, fuzzy
 msgid "Work on copy"
 msgstr "사본으로 작업하기"
 
-#: scripts/addborder.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-msgstr "<Image>/Script-Fu/장식/테두리 더하기(_B)..."
-
 #: scripts/addborder.sct.h:2
+msgid "Add _Border..."
+msgstr ""
+
+#: scripts/addborder.sct.h:3
 #, fuzzy
 msgid "Border X size"
 msgstr "테두리 X 크기"
 
-#: scripts/addborder.sct.h:3
+#: scripts/addborder.sct.h:4
 #, fuzzy
 msgid "Border Y size"
 msgstr "테두리 Y 크기"
 
-#: scripts/addborder.sct.h:4
+#: scripts/addborder.sct.h:5
 #, fuzzy
 msgid "Border color"
 msgstr "테두리 색상"
 
-#: scripts/addborder.sct.h:5
+#: scripts/addborder.sct.h:6
 #, fuzzy
 msgid "Delta value on color"
 msgstr "색상의 명도차"
 
-#: scripts/alien-glow-arrow.sct.h:1
+#: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
+#: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
 msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/화살표(_A)..."
 
 #: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
@@ -496,16 +558,16 @@ msgid "Down"
 msgstr "하"
 
 #: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
-#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:3
+#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
 #: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
 #, fuzzy
 msgid "Flatten image"
 msgstr "배경으로 이미지 합치기"
 
 #: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
-#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:6
-#: scripts/alien-glow-logo.sct.h:5 scripts/alien-neon-logo.sct.h:7
-#: scripts/burn-in-anim.sct.h:8 scripts/neon-logo.sct.h:8
+#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
+#: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
 #, fuzzy
 msgid "Glow color"
@@ -532,10 +594,10 @@ msgstr "크기"
 msgid "Up"
 msgstr "상"
 
-#: scripts/alien-glow-bar.sct.h:1
+#: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/수평선(_H)..."
+msgid "_Arrow..."
+msgstr "찾아보기..."
 
 #: scripts/alien-glow-bar.sct.h:3
 #, fuzzy
@@ -547,95 +609,70 @@ msgstr "막대 높이"
 msgid "Bar length"
 msgstr "막대 길이"
 
-#: scripts/alien-glow-bullet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/글머리표(_B)..."
+#: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
+msgid "_Hrule..."
+msgstr ""
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
 msgid "Radius"
 msgstr "반지름"
 
-#: scripts/alien-glow-button.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/단추(_U)..."
+#: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
+msgid "_Bullet..."
+msgstr ""
 
-#: scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
+msgid "B_utton..."
+msgstr ""
+
+#: scripts/alien-glow-button.sct.h:8
 #, fuzzy
 msgid "Glow radius"
 msgstr "빛 반지름"
 
-#: scripts/alien-glow-button.sct.h:8 scripts/beveled-button.sct.h:6
+#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
 msgid "Padding"
 msgstr "채움"
 
-#: scripts/alien-glow-button.sct.h:10 scripts/asc2img.sct.h:10
-#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:7
-#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
-#: scripts/blended-logo.sct.h:17 scripts/gimp-headers.sct.h:14
-#: scripts/gimp-labels.sct.h:17 scripts/i26-gunya2.sct.h:7
-#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:14
-#: scripts/speed-text.sct.h:8
-#, fuzzy
-msgid "Text color"
-msgstr "글자 색상"
+#: scripts/alien-glow-logo.sct.h:3
+msgid "Alien _Glow..."
+msgstr ""
 
-#: scripts/alien-glow-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-msgstr "<Image>/Script-Fu/알파를 로고로/외계의 빛(_G)..."
-
-#: scripts/alien-glow-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/외계의 빛(_G)..."
-
-#: scripts/alien-glow-logo.sct.h:6
+#: scripts/alien-glow-logo.sct.h:7
 #, fuzzy
 msgid "Glow size (pixels * 4)"
 msgstr "빛 크기 (픽셀 * 4)"
 
-#: scripts/alien-neon-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-msgstr "<Image>/Script-Fu/알파를 로고로/외계의 네온(_N)..."
+#: scripts/alien-neon-logo.sct.h:3
+msgid "Alien _Neon..."
+msgstr ""
 
-#: scripts/alien-neon-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/외계의 네온(_N)..."
-
-#: scripts/alien-neon-logo.sct.h:4
+#: scripts/alien-neon-logo.sct.h:5
 #, fuzzy
 msgid "Fade away"
 msgstr "점점 희미하게"
 
-#: scripts/alien-neon-logo.sct.h:8
+#: scripts/alien-neon-logo.sct.h:9
 #, fuzzy
 msgid "Number of bands"
 msgstr "띠의 갯수"
 
-#: scripts/alien-neon-logo.sct.h:10
+#: scripts/alien-neon-logo.sct.h:11
 #, fuzzy
 msgid "Width of bands"
 msgstr "띠의 너비"
 
-#: scripts/alien-neon-logo.sct.h:11
+#: scripts/alien-neon-logo.sct.h:12
 #, fuzzy
 msgid "Width of gaps"
 msgstr "틈의 너비"
 
-#: scripts/asc2img.sct.h:1
+#: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
+#: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
-msgstr "<Image>/Script-Fu/유틸리티/아스키를 레이어로(_A)..."
-
-#: scripts/asc2img.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-msgstr "<Toolbox>/확장/Script-Fu/유틸리티/아스키를 이미지로(_A)..."
+msgid "<Image>/Tiny-Fu/Utils"
+msgstr "<Image>/Script-Fu/선택/이미지로(_I)"
 
 #: scripts/asc2img.sct.h:5
 #, fuzzy, no-c-format
@@ -652,35 +689,32 @@ msgid "Filename"
 msgstr "파일이름"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:6 scripts/spinning-globe.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
 #, fuzzy
 msgid "Transparent background"
 msgstr "투명 배경"
 
-#: scripts/basic1-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-msgstr "<Image>/Script-Fu/알파를 로고로/기본 I(_B)..."
+#: scripts/asc2img.sct.h:12
+msgid "_ASCII to Image..."
+msgstr ""
 
-#: scripts/basic1-logo.sct.h:2
+#: scripts/asc2img.sct.h:13
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/기본 I(_B)..."
+msgid "_ASCII to Layer..."
+msgstr "<Image>/Script-Fu/유틸리티/아스키를 레이어로(_A)..."
 
-#: scripts/basic2-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-msgstr "<Image>/Script-Fu/알파를 로고로/기본 II(_A)..."
+#: scripts/basic1-logo.sct.h:8
+msgid "_Basic I..."
+msgstr ""
 
-#: scripts/basic2-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/기본 II(_A)..."
+#: scripts/basic2-logo.sct.h:3
+msgid "B_asic II..."
+msgstr ""
 
-#: scripts/beveled-button.sct.h:1
+#: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
-msgstr "<Toolbox>/확장/Script-Fu/버튼/단순 베벨 단추(_B)..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
+msgstr "<Toolbox>/확장/Script-Fu/Script-Fu 콘솔(_C)"
 
 #: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
 #: scripts/pupi-button.sct.h:2
@@ -693,69 +727,64 @@ msgstr "베벨 너비"
 msgid "Lower-right color"
 msgstr "우하단 색상"
 
-#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:5
+#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:6
 #: scripts/pupi-button.sct.h:11
 msgid "Pressed"
 msgstr "눌려짐"
 
-#: scripts/beveled-button.sct.h:10
+#: scripts/beveled-button.sct.h:8
+#, fuzzy
+msgid "Simple _Beveled Button..."
+msgstr "<Toolbox>/확장/Script-Fu/버튼/단순 베벨 단추(_B)..."
+
+#: scripts/beveled-button.sct.h:11
 #, fuzzy
 msgid "Upper-left color"
 msgstr "좌상단 색상"
 
 #: scripts/beveled-pattern-arrow.sct.h:1
+#: scripts/beveled-pattern-bullet.sct.h:1
+#: scripts/beveled-pattern-button.sct.h:1
+#: scripts/beveled-pattern-heading.sct.h:1
+#: scripts/beveled-pattern-hrule.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
 msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/화살표(_A)..."
 
 #: scripts/beveled-pattern-arrow.sct.h:5
 #: scripts/beveled-pattern-bullet.sct.h:3
-#: scripts/beveled-pattern-button.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:4
-#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:12
+#: scripts/beveled-pattern-button.sct.h:5
+#: scripts/beveled-pattern-heading.sct.h:5
+#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:13
 #: scripts/textured-logo.sct.h:11
 msgid "Pattern"
 msgstr "무늬"
-
-#: scripts/beveled-pattern-bullet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/글머리표(_B)..."
 
 #: scripts/beveled-pattern-bullet.sct.h:2
 #, fuzzy
 msgid "Diameter"
 msgstr "지름"
 
-#: scripts/beveled-pattern-button.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/단추(_U)..."
+#: scripts/beveled-pattern-heading.sct.h:4
+msgid "H_eading..."
+msgstr ""
 
-#: scripts/beveled-pattern-heading.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/제목(_E)..."
-
-#: scripts/beveled-pattern-hrule.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/수평선(_H)..."
-
-#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:8
-#: scripts/gradient-example.sct.h:3 scripts/mkbrush.sct.h:8
+#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
+#: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
 #: scripts/swirltile.sct.h:7
 msgid "Height"
 msgstr "높이"
 
-#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:4
-#: scripts/mkbrush.sct.h:10 scripts/swirltile.sct.h:10
+#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:5
+#: scripts/mkbrush.sct.h:9 scripts/swirltile.sct.h:11
 msgid "Width"
 msgstr "너비"
 
-#: scripts/blend-anim.sct.h:1
+#: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
+#: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
+#: scripts/waves-anim.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+msgid "<Image>/Tiny-Fu/Animators"
 msgstr "<Image>/Script-Fu/에니메이터/블렌드(_B)..."
 
 #: scripts/blend-anim.sct.h:2
@@ -776,80 +805,67 @@ msgstr "반복"
 msgid "Max. blur radius"
 msgstr "최대 흐릿한 반지름"
 
-#: scripts/blended-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-msgstr "<Image>/Script-Fu/알파를 로고로/블렌드(_D)..."
-
-#: scripts/blended-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-msgstr "<Toolbox>/Xtns/Script-Fu/로고/블렌드(_D)..."
+#: scripts/blend-anim.sct.h:6
+msgid "_Blend..."
+msgstr ""
 
 #: scripts/blended-logo.sct.h:4
+msgid "Blen_ded..."
+msgstr ""
+
+#: scripts/blended-logo.sct.h:5
 #, fuzzy
 msgid "Blend mode"
 msgstr "혼합 방법"
 
-#: scripts/blended-logo.sct.h:5
+#: scripts/blended-logo.sct.h:6
 msgid "Custom Gradient"
 msgstr "사용자 그라디언트"
 
-#: scripts/blended-logo.sct.h:7
+#: scripts/blended-logo.sct.h:8
 msgid "FG-BG-HSV"
 msgstr "FG-BG-HSV"
 
-#: scripts/blended-logo.sct.h:8
+#: scripts/blended-logo.sct.h:9
 msgid "FG-BG-RGB"
 msgstr "FG-BG-RGB"
 
-#: scripts/blended-logo.sct.h:9
+#: scripts/blended-logo.sct.h:10
 msgid "FG-Transparent"
 msgstr "FG-투명"
 
-#: scripts/blended-logo.sct.h:12 scripts/comic-logo.sct.h:6
-#: scripts/coolmetal-logo.sct.h:7 scripts/land.sct.h:3 scripts/lava.sct.h:2
+#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
+#: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
 #: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
 msgid "Gradient"
 msgstr "그라디언트"
 
-#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
-#: scripts/coolmetal-logo.sct.h:8 scripts/gradient-example.sct.h:2
+#: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
+#: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
 #: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
 #, fuzzy
 msgid "Gradient reverse"
 msgstr "그라디언트 거꾸로"
 
-#: scripts/blended-logo.sct.h:14
+#: scripts/blended-logo.sct.h:15
 msgid "Offset (pixels)"
 msgstr "오프셋 (픽셀)"
-
-#: scripts/bovinated-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-msgstr "<Image>/Script-Fu/알파를 로고로/점박이(_V)..."
-
-#: scripts/bovinated-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/점박이(_V)..."
 
 #: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
 msgid "Background Color"
 msgstr "배경색"
 
-#: scripts/bovinated-logo.sct.h:7
+#: scripts/bovinated-logo.sct.h:5
+msgid "Bo_vination..."
+msgstr ""
+
+#: scripts/bovinated-logo.sct.h:8
 msgid "Spots density X"
 msgstr "X 점박이 밀도"
 
-#: scripts/bovinated-logo.sct.h:8
+#: scripts/bovinated-logo.sct.h:9
 msgid "Spots density Y"
 msgstr "Y 점박이 밀도"
-
-#: scripts/burn-in-anim.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-msgstr "<Image>/Script-Fu/에니메이터/태우기(_U)..."
 
 #: scripts/burn-in-anim.sct.h:2
 #, fuzzy
@@ -862,37 +878,36 @@ msgid "After glow"
 msgstr "후광"
 
 #: scripts/burn-in-anim.sct.h:4
+msgid "B_urn-In..."
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:5
 msgid ""
 "Burn-In: Needs two layers in total!\n"
 "A foreground text layer with transparency and a background layer."
 msgstr ""
 
-#: scripts/burn-in-anim.sct.h:5
+#: scripts/burn-in-anim.sct.h:6
 #, fuzzy
 msgid "Corona width"
 msgstr "화염 너비"
 
-#: scripts/burn-in-anim.sct.h:6
+#: scripts/burn-in-anim.sct.h:7
 msgid "Fadeout"
 msgstr "점점 희미하게"
 
-#: scripts/burn-in-anim.sct.h:7
+#: scripts/burn-in-anim.sct.h:8
 #, fuzzy
 msgid "Fadeout width"
 msgstr "점점 희미하게 너비"
 
-#: scripts/burn-in-anim.sct.h:9
+#: scripts/burn-in-anim.sct.h:10
 msgid "Prepare for GIF"
 msgstr "GIF를 위한 준비"
 
-#: scripts/burn-in-anim.sct.h:10
+#: scripts/burn-in-anim.sct.h:11
 msgid "Speed (pixels/frame)"
 msgstr "속도 (픽셀/프레임)"
-
-#: scripts/camo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-msgstr "<Toolbox>/확장/Script-Fu/무늬/위장(_C)..."
 
 #: scripts/camo.sct.h:2
 msgid "Color 1"
@@ -919,10 +934,9 @@ msgstr "이미지 크기"
 msgid "Smooth"
 msgstr "부드럽게"
 
-#: scripts/carved-logo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/조각..."
+#: scripts/camo.sct.h:9
+msgid "_Camouflage..."
+msgstr ""
 
 #: scripts/carved-logo.sct.h:2
 msgid "Background Image"
@@ -933,50 +947,42 @@ msgstr "배경 이미지"
 msgid "Carve raised text"
 msgstr "튀어나온 글자 조각"
 
-#: scripts/carved-logo.sct.h:6
+#: scripts/carved-logo.sct.h:4
+msgid "Carved..."
+msgstr ""
+
+#: scripts/carved-logo.sct.h:7
 #, fuzzy
 msgid "Padding around text"
 msgstr "글자 주위 채우기"
 
-#: scripts/carve-it.sct.h:1
+#: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+msgid "<Image>/Tiny-Fu/Stencil Ops"
 msgstr "<Image>/Script-Fu/스텐실 효과/조각(_A)..."
 
 #: scripts/carve-it.sct.h:2
+msgid "C_arve-It..."
+msgstr ""
+
+#: scripts/carve-it.sct.h:3
 #, fuzzy
 msgid "Carve white areas"
 msgstr "흰색 영역 조각"
 
-#: scripts/carve-it.sct.h:3
+#: scripts/carve-it.sct.h:4
 #, fuzzy
 msgid "Image to carve"
 msgstr "이미지를 조각으로"
-
-#: scripts/chalk.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-msgstr "<Image>/Script-Fu/알파를 로고로/분필(_C)..."
-
-#: scripts/chalk.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/분필(_C)..."
 
 #: scripts/chalk.sct.h:4
 #, fuzzy
 msgid "Chalk color"
 msgstr "분필 색상"
 
-#: scripts/chip-away.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-msgstr "<Image>/Script-Fu/알파를 로고로/부식(_Y)..."
-
-#: scripts/chip-away.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/부식(_Y)..."
+#: scripts/chalk.sct.h:8
+msgid "_Chalk..."
+msgstr ""
 
 #: scripts/chip-away.sct.h:3
 #, fuzzy
@@ -984,88 +990,87 @@ msgid "Blur amount"
 msgstr "흐릿한 정도"
 
 #: scripts/chip-away.sct.h:4
+msgid "Chip Awa_y..."
+msgstr ""
+
+#: scripts/chip-away.sct.h:5
 #, fuzzy
 msgid "Chip amount"
 msgstr "부식 정도"
 
-#: scripts/chip-away.sct.h:5
+#: scripts/chip-away.sct.h:6
 #, fuzzy
 msgid "Drop shadow"
 msgstr "그림자 효과"
 
-#: scripts/chip-away.sct.h:6
+#: scripts/chip-away.sct.h:7
 #, fuzzy
 msgid "Fill BG with pattern"
 msgstr "배경을 무늬로 채우기"
 
-#: scripts/chip-away.sct.h:9
+#: scripts/chip-away.sct.h:10
 msgid "Invert"
 msgstr "반전"
 
-#: scripts/chip-away.sct.h:10
+#: scripts/chip-away.sct.h:11
 #, fuzzy
 msgid "Keep background"
 msgstr "배경 유지"
 
-#: scripts/chrome-it.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-msgstr "<Image>/Script-Fu/스텐실 효과/크롬..."
+#: scripts/chrome-it.sct.h:2
+msgid "C_hrome-It..."
+msgstr ""
 
-#: scripts/chrome-it.sct.h:2 scripts/sota-chrome-logo.sct.h:2
+#: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
 #, fuzzy
 msgid "Chrome balance"
 msgstr "크롬 균형"
 
-#: scripts/chrome-it.sct.h:3 scripts/crystal-logo.sct.h:3
+#: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
 #: scripts/sota-chrome-logo.sct.h:3
 #, fuzzy
 msgid "Chrome factor"
 msgstr "크롬 인수"
 
-#: scripts/chrome-it.sct.h:4 scripts/sota-chrome-logo.sct.h:4
+#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
 #, fuzzy
 msgid "Chrome lightness"
 msgstr "크롬 명도"
 
-#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:5
+#: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
 #, fuzzy
 msgid "Chrome saturation"
 msgstr "크롬 채도"
 
-#: scripts/chrome-it.sct.h:6
+#: scripts/chrome-it.sct.h:7
 #, fuzzy
 msgid "Chrome white areas"
 msgstr "크롬 백색 영역"
 
-#: scripts/chrome-it.sct.h:7 scripts/crystal-logo.sct.h:4
+#: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
 #: scripts/sota-chrome-logo.sct.h:6
 #, fuzzy
 msgid "Environment map"
 msgstr "환경 매핑"
 
-#: scripts/chrome-it.sct.h:8 scripts/sota-chrome-logo.sct.h:9
+#: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
 #, fuzzy
 msgid "Highlight balance"
 msgstr "하일라이트 균형"
 
-#: scripts/chrome-logo.sct.h:1
+#: scripts/chrome-logo.sct.h:5
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-msgstr "<Image>/Script-Fu/알파를 로고로/크롬(_H)..."
+msgid "C_hrome..."
+msgstr "찾아보기..."
 
-#: scripts/chrome-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/크롬(_H)..."
-
-#: scripts/chrome-logo.sct.h:7
+#: scripts/chrome-logo.sct.h:8
 msgid "Offsets (pixels * 2)"
 msgstr "오프셋 (픽셀수 * 2)"
 
-#: scripts/circuit.sct.h:1
+#: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
+#: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+msgid "<Image>/Tiny-Fu/Render"
 msgstr "<Image>/Script-Fu/렌더/회로(_C)..."
 
 #: scripts/circuit.sct.h:2
@@ -1094,10 +1099,16 @@ msgstr "유화 마스크 크기"
 msgid "Separate layer"
 msgstr "레이어 분리"
 
-#: scripts/clothify.sct.h:1
+#: scripts/circuit.sct.h:7
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-msgstr "<Image>/Script-Fu/연금술/옷감(_C)..."
+msgid "_Circuit..."
+msgstr "회로 씨앗 값"
+
+#: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
+#: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Alchemy"
+msgstr "<Image>/Script-Fu/연금술/직물(_W)..."
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
 msgid "Azimuth"
@@ -1119,10 +1130,9 @@ msgstr "깊이"
 msgid "Elevation"
 msgstr "양각"
 
-#: scripts/coffee.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-msgstr "<Image>/Script-Fu/장식/커피 얼룩(_C)..."
+#: scripts/clothify.sct.h:7
+msgid "_Clothify..."
+msgstr ""
 
 #: scripts/coffee.sct.h:2
 #, fuzzy
@@ -1137,60 +1147,52 @@ msgstr ""
 msgid "Stains"
 msgstr "얼룩"
 
-#: scripts/comic-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-msgstr "<Image>/Script-Fu/알파를 로고로/만화책(_K)..."
+#: scripts/coffee.sct.h:4
+msgid "_Coffee Stain..."
+msgstr ""
 
-#: scripts/comic-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/만화책(_K)..."
+#: scripts/comic-logo.sct.h:4
+msgid "Comic Boo_k..."
+msgstr ""
 
-#: scripts/comic-logo.sct.h:8
+#: scripts/comic-logo.sct.h:9
 #, fuzzy
 msgid "Outline color"
 msgstr "윤곽선 색상"
 
-#: scripts/comic-logo.sct.h:9 scripts/glossy.sct.h:11
+#: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
 #, fuzzy
 msgid "Outline size"
 msgstr "윤곽선 크기"
 
-#: scripts/coolmetal-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-msgstr "<Image>/Script-Fu/알파를 로고로/차가운 금속(_M)..."
+#: scripts/coolmetal-logo.sct.h:4
+msgid "Cool _Metal..."
+msgstr ""
 
-#: scripts/coolmetal-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/차가운 금속(_M)..."
-
-#: scripts/coolmetal-logo.sct.h:4 scripts/frosty-logo.sct.h:4
+#: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
 #, fuzzy
 msgid "Effect size (pixels)"
 msgstr "효과 크기 (픽셀)"
 
 #: scripts/copy-visible.sct.h:1
-#, fuzzy
-msgid "<Image>/Edit/Copy/Copy _Visible"
-msgstr "<Image>/편집/보이는 대로 복사(_V)"
-
-#: scripts/crystal-logo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/크리스탈..."
+msgid "Copy _Visible"
+msgstr ""
 
 #: scripts/crystal-logo.sct.h:2
 #, fuzzy
 msgid "Background image"
 msgstr "배경 이미지"
 
-#: scripts/distress-selection.sct.h:1
+#: scripts/crystal-logo.sct.h:4
+msgid "Crystal..."
+msgstr ""
+
+#: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
+#: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
+#: scripts/select-to-pattern.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
-msgstr "<Image>/Script-Fu/선택/삐뚤 빼뚤하게(_D)..."
+msgid "<Image>/Tiny-Fu/Selection"
+msgstr "<Image>/Script-Fu/선택/이미지로(_I)"
 
 #: scripts/distress-selection.sct.h:2
 #, fuzzy
@@ -1216,10 +1218,16 @@ msgstr "범위"
 msgid "Threshold (bigger 1<-->255 smaller)"
 msgstr "임계값 (1이상 255이하)"
 
-#: scripts/drop-shadow.sct.h:1
+#: scripts/distress-selection.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-msgstr "<Image>/Script-Fu/그림자/그림자 효과(_D)..."
+msgid "_Distress Selection..."
+msgstr "<Image>/Script-Fu/선택/삐뚤 빼뚤하게(_D)..."
+
+#: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
+#: scripts/xach-effect.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow"
+msgstr "<Image>/Script-Fu/그림자/입체적인 그림자 효과(_X)..."
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
 #, fuzzy
@@ -1233,22 +1241,22 @@ msgstr "크기 바꾸기 허용"
 msgid "Blur radius"
 msgstr "흐릿한 반지름"
 
-#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:11
+#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
 msgid "Offset X"
 msgstr "X 오프셋"
 
-#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:12
+#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:9
 msgid "Offset Y"
 msgstr "Y 오프셋"
 
-#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:7
+#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:10
 msgid "Opacity"
 msgstr "불투명도"
 
-#: scripts/erase-rows.sct.h:1
+#: scripts/drop-shadow.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
-msgstr "<Image>/Script-Fu/연금술/한 줄 건너 지우기(_E)..."
+msgid "_Drop-Shadow..."
+msgstr "그림자 효과"
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
@@ -1289,10 +1297,10 @@ msgstr "행"
 msgid "Rows/cols"
 msgstr "행/열"
 
-#: scripts/fade-outline.sct.h:1
+#: scripts/erase-rows.sct.h:11
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-msgstr "<Image>/Script-Fu/선택/윤곽선 희미하게(_F)..."
+msgid "_Erase every other Row..."
+msgstr "<Image>/Script-Fu/연금술/한 줄 건너 지우기(_E)..."
 
 #: scripts/fade-outline.sct.h:2
 #, fuzzy
@@ -1325,10 +1333,9 @@ msgstr "희미하게 끝   %"
 msgid "Use growing selection"
 msgstr "커지는 선택 사용"
 
-#: scripts/flatland.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-msgstr "<Toolbox>/확장/Script-Fu/무늬/평평한 땅(_F)..."
+#: scripts/fade-outline.sct.h:10
+msgid "_Fade Outline..."
+msgstr ""
 
 #: scripts/flatland.sct.h:2 scripts/land.sct.h:2
 #, fuzzy
@@ -1358,10 +1365,9 @@ msgstr "가로 배율"
 msgid "Scale Y"
 msgstr "세로 배율"
 
-#: scripts/font-map.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
-msgstr "<Toolbox>/확장/Script-Fu/유틸리티/글꼴 목록(_F)..."
+#: scripts/flatland.sct.h:8
+msgid "_Flatland..."
+msgstr ""
 
 #: scripts/font-map.sct.h:2
 #, fuzzy
@@ -1397,27 +1403,21 @@ msgid "_Filter (regexp)"
 msgstr "필터(_F) (정규식)"
 
 #: scripts/font-map.sct.h:9
+msgid "_Font Map..."
+msgstr ""
+
+#: scripts/font-map.sct.h:10
 msgid "_Labels"
 msgstr "레이블(_L)"
 
-#: scripts/font-map.sct.h:10
+#: scripts/font-map.sct.h:11
 msgid "_Text"
 msgstr "텍스트(_T)"
 
-#: scripts/frosty-logo.sct.h:1
+#: scripts/frosty-logo.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-msgstr "<Image>/Script-Fu/알파를 로고로/얼어붙은(_F)..."
-
-#: scripts/frosty-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/얼어붙은(_F)..."
-
-#: scripts/fuzzyborder.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-msgstr "<Image>/Script-Fu/장식/보풀있는 경계선(_F)..."
+msgid "_Frosty..."
+msgstr "찾아보기..."
 
 #: scripts/fuzzyborder.sct.h:2
 #, fuzzy
@@ -1438,98 +1438,78 @@ msgstr "입자 크기 (최저 1)"
 msgid "Shadow weight (%)"
 msgstr "그림자 높이(%)"
 
-#: scripts/gimp-headers.sct.h:1
+#: scripts/fuzzyborder.sct.h:11
+msgid "_Fuzzy Border..."
+msgstr ""
+
+#: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
 msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/큰 제목(_B)..."
 
 #: scripts/gimp-headers.sct.h:2
 #, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/작은 제목(_S)..."
-
-#: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Autocrop"
 msgstr "자동 절단"
 
-#: scripts/gimp-headers.sct.h:4
+#: scripts/gimp-headers.sct.h:3
 #, fuzzy
 msgid "Dark color"
 msgstr "어두운 색상"
 
-#: scripts/gimp-headers.sct.h:7 scripts/xach-effect.sct.h:9
+#: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
 #, fuzzy
 msgid "Highlight color"
 msgstr "밝은 색상"
 
-#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:9
+#: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
 #, fuzzy
 msgid "Index image"
 msgstr "인덱스 이미지"
 
-#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
+#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
 #, fuzzy
 msgid "Number of colors"
 msgstr "색상 수"
 
-#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:13
+#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
 #, fuzzy
 msgid "Remove background"
 msgstr "배경 지우기"
 
-#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:14
+#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
 #, fuzzy
 msgid "Select-by-color threshold"
 msgstr "색으로 선택하기 임계값"
 
-#: scripts/gimp-headers.sct.h:12 scripts/gimp-labels.sct.h:15
+#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
 #, fuzzy
 msgid "Shadow color"
 msgstr "그림자 색상"
 
-#: scripts/gimp-labels.sct.h:1
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-"Label..."
+#: scripts/gimp-headers.sct.h:14
+msgid "_Big Header..."
 msgstr ""
-"<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/튜브 아래-단추 레이블(_U)..."
 
-#: scripts/gimp-labels.sct.h:2
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-Button "
-"Label..."
+#: scripts/gimp-headers.sct.h:15
+msgid "_Small Header..."
 msgstr ""
-"<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/튜브 아래-아래-단추 레이블"
-"(_E)..."
 
-#: scripts/gimp-labels.sct.h:3
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-"Labels..."
+#: scripts/gimp-labels.sct.h:13
+msgid "T_ube Sub-Button Label..."
 msgstr ""
-"<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/일반 튜브 레이블(_G)..."
 
-#: scripts/gimp-labels.sct.h:4
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button Label..."
+#: scripts/gimp-labels.sct.h:16
+msgid "Tub_e Sub-Sub-Button Label..."
 msgstr ""
-"<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/튜브 단추 레이블(_T)..."
 
-#: scripts/glossy.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-msgstr "<Image>/Script-Fu/알파를 로고로/광택(_S)..."
+#: scripts/gimp-labels.sct.h:17
+msgid "_General Tube Labels..."
+msgstr ""
 
-#: scripts/glossy.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/광택(_S)..."
+#: scripts/gimp-labels.sct.h:18
+msgid "_Tube Button Label..."
+msgstr ""
 
 #: scripts/glossy.sct.h:4
 #, fuzzy
@@ -1547,78 +1527,66 @@ msgid "Blend gradient (text)"
 msgstr "혼합 그라디언트 (글자)"
 
 #: scripts/glossy.sct.h:10
+msgid "Glo_ssy..."
+msgstr ""
+
+#: scripts/glossy.sct.h:11
 #, fuzzy
 msgid "Outline gradient reverse"
 msgstr "윤곽선 그라디언트 거꾸로"
 
-#: scripts/glossy.sct.h:12
+#: scripts/glossy.sct.h:13
 #, fuzzy
 msgid "Pattern (outline)"
 msgstr "무늬 (윤곽선)"
 
-#: scripts/glossy.sct.h:13
+#: scripts/glossy.sct.h:14
 #, fuzzy
 msgid "Pattern (overlay)"
 msgstr "무늬 (겹치기)"
 
-#: scripts/glossy.sct.h:14
+#: scripts/glossy.sct.h:15
 #, fuzzy
 msgid "Pattern (text)"
 msgstr "무늬 (글자)"
 
-#: scripts/glossy.sct.h:15 scripts/sphere.sct.h:5
+#: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
 msgid "Shadow"
 msgstr "그림자"
 
-#: scripts/glossy.sct.h:19
+#: scripts/glossy.sct.h:20
 #, fuzzy
 msgid "Text gradient reverse"
 msgstr "글자 그라디언트 거꾸로"
 
-#: scripts/glossy.sct.h:20
+#: scripts/glossy.sct.h:21
 #, fuzzy
 msgid "Use pattern for outline instead of gradient"
 msgstr "윤곽선에 그라디언트 대신 무늬 사용"
 
-#: scripts/glossy.sct.h:21
+#: scripts/glossy.sct.h:22
 #, fuzzy
 msgid "Use pattern for text instead of gradient"
 msgstr "글자에 그라디언트 대신 무늬 사용"
 
-#: scripts/glossy.sct.h:22
+#: scripts/glossy.sct.h:23
 #, fuzzy
 msgid "Use pattern overlay"
 msgstr "무늬 겹치기 사용"
 
-#: scripts/glossy.sct.h:23
+#: scripts/glossy.sct.h:24
 #, fuzzy
 msgid "Use tattern for outline instead of gradient"
 msgstr "윤곽선에 그라디언트 대신 무늬 사용"
-
-#: scripts/glowing-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-msgstr "<Image>/Script-Fu/알파를 로고로/작열(_W)..."
-
-#: scripts/glowing-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/작열(_W)..."
 
 #: scripts/glowing-logo.sct.h:4
 #, fuzzy
 msgid "Effect size (pixels * 3)"
 msgstr "효과 크기 (픽셀 * 3)"
 
-#: scripts/gradient-bevel-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-msgstr "<Image>/Script-Fu/알파를 로고로/그라디언트 베벨(_L)..."
-
-#: scripts/gradient-bevel-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/그라디언트 베벨(_L)..."
+#: scripts/glowing-logo.sct.h:7
+msgid "Glo_wing Hot..."
+msgstr ""
 
 #: scripts/gradient-bevel-logo.sct.h:4
 #, fuzzy
@@ -1636,15 +1604,15 @@ msgstr "베벨 높이 (날카로움)"
 msgid "Border size (pixels)"
 msgstr "경계선 크기 (픽셀)"
 
-#: scripts/gradient-example.sct.h:1
+#: scripts/gradient-bevel-logo.sct.h:10
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-msgstr "<Toolbox>/확장/Script-Fu/유틸리티/커스텀 그라디언트(_G)..."
+msgid "Gradient Beve_l..."
+msgstr "그라디언트 거꾸로"
 
-#: scripts/grid-system.sct.h:1
+#: scripts/gradient-example.sct.h:2
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Grid..."
-msgstr "<Image>/Script-Fu/렌더/회로(_C)..."
+msgid "Custom _Gradient..."
+msgstr "사용자 그라디언트"
 
 #: scripts/grid-system.sct.h:2
 #, fuzzy
@@ -1656,16 +1624,21 @@ msgstr "가로 분할 수"
 msgid "Y divisions"
 msgstr "세로 분할 수"
 
-#: scripts/guides-from-selection.sct.h:1
-msgid "<Image>/Image/Guides/New Guides from _Selection"
+#: scripts/grid-system.sct.h:4
+msgid "_Grid..."
+msgstr ""
+
+#: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
+#: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
+msgid "<Image>/Image/Guides"
 msgstr ""
 
 #: scripts/guides-from-selection.sct.h:2
 msgid "Creates four Guides around the bounding box of the current selection."
 msgstr ""
 
-#: scripts/guides-new-percent.sct.h:1
-msgid "<Image>/Image/Guides/New Guide (by _Percent)..."
+#: scripts/guides-from-selection.sct.h:3
+msgid "New Guides from _Selection"
 msgstr ""
 
 #: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
@@ -1678,28 +1651,27 @@ msgstr "SIOD 출력 파이프를 열 수 없습니다"
 msgid "Horizontal"
 msgstr "가로로 흐릿하게"
 
-#: scripts/guides-new-percent.sct.h:5
+#: scripts/guides-new-percent.sct.h:4
+msgid "New Guide (by _Percent)..."
+msgstr ""
+
+#: scripts/guides-new-percent.sct.h:6
 #, no-c-format
 msgid "Position (in %)"
 msgstr ""
 
-#: scripts/guides-new-percent.sct.h:6 scripts/guides-new.sct.h:4
+#: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
 #, fuzzy
 msgid "Vertical"
 msgstr "세로로 흐릿하게"
 
-#: scripts/guides-new.sct.h:1
-msgid "<Image>/Image/Guides/New _Guide..."
+#: scripts/guides-new.sct.h:4
+msgid "New _Guide..."
 msgstr ""
 
-#: scripts/guides-remove-all.sct.h:1
-msgid "<Image>/Image/Guides/_Remove all Guides"
+#: scripts/guides-remove-all.sct.h:2
+msgid "_Remove all Guides"
 msgstr ""
-
-#: scripts/hsv-graph.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
-msgstr "<Image>/Script-Fu/유틸리티/HSV 그래프 그리기(_H)..."
 
 #: scripts/hsv-graph.sct.h:2
 #, fuzzy
@@ -1707,40 +1679,40 @@ msgid "BG opacity"
 msgstr "배경 투명도"
 
 #: scripts/hsv-graph.sct.h:3
+#, fuzzy
+msgid "Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/유틸리티/HSV 그래프 그리기(_H)..."
+
+#: scripts/hsv-graph.sct.h:4
 msgid "End X"
 msgstr "가로 끝"
 
-#: scripts/hsv-graph.sct.h:4
+#: scripts/hsv-graph.sct.h:5
 msgid "End Y"
 msgstr "세로 끝"
 
-#: scripts/hsv-graph.sct.h:5
+#: scripts/hsv-graph.sct.h:6
 #, fuzzy
 msgid "From top-left to bottom-right"
 msgstr "좌상단에서 우하단으로"
 
-#: scripts/hsv-graph.sct.h:6
+#: scripts/hsv-graph.sct.h:7
 #, fuzzy
 msgid "Graph scale"
 msgstr "그래프 배율"
 
-#: scripts/hsv-graph.sct.h:7
+#: scripts/hsv-graph.sct.h:8
 msgid "Start X"
 msgstr "가로 시작"
 
-#: scripts/hsv-graph.sct.h:8
+#: scripts/hsv-graph.sct.h:9
 msgid "Start Y"
 msgstr "세로 시작"
 
-#: scripts/hsv-graph.sct.h:9
+#: scripts/hsv-graph.sct.h:10
 #, fuzzy
 msgid "Use selection bounds instead of values below"
 msgstr "아래 대신에 선택 경계 사용"
-
-#: scripts/i26-gunya2.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/두 색 손 글씨(Imigre-26)..."
 
 #: scripts/i26-gunya2.sct.h:4
 #, fuzzy
@@ -1752,10 +1724,9 @@ msgstr "틀 색상"
 msgid "Frame size"
 msgstr "틀 크기"
 
-#: scripts/image-structure.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
-msgstr "<Image>/Script-Fu/유틸리티/이미지 구조 표시(_S)..."
+#: scripts/i26-gunya2.sct.h:6
+msgid "Imigre-26..."
+msgstr ""
 
 #: scripts/image-structure.sct.h:2
 #, fuzzy
@@ -1804,13 +1775,13 @@ msgstr "휘는 길이"
 
 #: scripts/image-structure.sct.h:12
 #, fuzzy
+msgid "Show Image _Structure..."
+msgstr "<Image>/Script-Fu/유틸리티/이미지 구조 표시(_S)..."
+
+#: scripts/image-structure.sct.h:13
+#, fuzzy
 msgid "Space between layers"
 msgstr "레이어 사이의 공간"
-
-#: scripts/land.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
-msgstr "<Toolbox>/확장/Script-Fu/무늬/땅(_L)..."
 
 #: scripts/land.sct.h:6
 #, fuzzy
@@ -1822,10 +1793,9 @@ msgstr "땅 높이"
 msgid "Sea depth"
 msgstr "바다 깊이"
 
-#: scripts/lava.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Lava..."
-msgstr "<Image>/Script-Fu/렌더/용암(_L)..."
+#: scripts/land.sct.h:11
+msgid "_Land..."
+msgstr ""
 
 #: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
 msgid "Roughness"
@@ -1840,74 +1810,69 @@ msgstr "씨앗 값"
 msgid "Use current gradient"
 msgstr "현재 그라디언트 사용"
 
-#: scripts/line-nova.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-msgstr "<Image>/Script-Fu/렌더/선분으로 그린 별(_N)..."
+#: scripts/lava.sct.h:9
+msgid "_Lava..."
+msgstr ""
 
 #: scripts/line-nova.sct.h:2
+msgid "Line _Nova..."
+msgstr ""
+
+#: scripts/line-nova.sct.h:3
 #, fuzzy
 msgid "Number of lines"
 msgstr "선분 개수"
 
-#: scripts/line-nova.sct.h:3
+#: scripts/line-nova.sct.h:4
 #, fuzzy
 msgid "Offset radius"
 msgstr "오프셋 반지름"
 
-#: scripts/line-nova.sct.h:4
+#: scripts/line-nova.sct.h:5
 msgid "Randomness"
 msgstr "임의 정도"
 
-#: scripts/line-nova.sct.h:5
+#: scripts/line-nova.sct.h:6
 msgid "Sharpness (degrees)"
 msgstr "날카로운 정도 (각도)"
 
 #: scripts/mkbrush.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/타원형, 부드러운 경계(_P)..."
-
-#: scripts/mkbrush.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
-msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/사각형, 부드러운 경계(_C)..."
-
-#: scripts/mkbrush.sct.h:3
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
 msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/타원형(_E)..."
 
-#: scripts/mkbrush.sct.h:4
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/사각형(_R)..."
-
-#: scripts/mkbrush.sct.h:5
+#: scripts/mkbrush.sct.h:2
 msgid "Create size of brush"
 msgstr ""
 
-#: scripts/mkbrush.sct.h:6
+#: scripts/mkbrush.sct.h:3
 msgid "Description"
 msgstr "설명"
 
-#: scripts/mkbrush.sct.h:7
+#: scripts/mkbrush.sct.h:4
+msgid "Elli_ptical, Feathered..."
+msgstr ""
+
+#: scripts/mkbrush.sct.h:5
 msgid "Feathering"
 msgstr "부드러움"
 
-#: scripts/mkbrush.sct.h:9 scripts/select-to-brush.sct.h:4
+#: scripts/mkbrush.sct.h:7
+#, fuzzy
+msgid "Re_ctangular, Feathered..."
+msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/사각형, 부드러운 경계(_C)..."
+
+#: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
 msgid "Spacing"
 msgstr "간격"
 
-#: scripts/neon-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
-msgstr "<Image>/Script-Fu/알파를 로고로/네온(_E)..."
+#: scripts/mkbrush.sct.h:10
+msgid "_Elliptical..."
+msgstr ""
 
-#: scripts/neon-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/네온(_E)..."
+#: scripts/mkbrush.sct.h:11
+msgid "_Rectangular..."
+msgstr ""
 
 #: scripts/neon-logo.sct.h:4
 #, fuzzy
@@ -1919,10 +1884,9 @@ msgstr "그림자 만들기"
 msgid "Effect size (pixels * 5)"
 msgstr "효과 크기 (픽셀 * 5)"
 
-#: scripts/news-text.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/신문 인쇄 글자..."
+#: scripts/neon-logo.sct.h:9
+msgid "N_eon..."
+msgstr ""
 
 #: scripts/news-text.sct.h:4
 #, fuzzy
@@ -1934,10 +1898,9 @@ msgstr "셀 크기 (픽셀)"
 msgid "Density (%)"
 msgstr "밀도 (%)"
 
-#: scripts/old-photo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-msgstr "<Image>/Script-Fu/장식/오래된 사진(_O)..."
+#: scripts/news-text.sct.h:9
+msgid "Newsprint Text..."
+msgstr ""
 
 #: scripts/old-photo.sct.h:3
 msgid "Defocus"
@@ -1951,33 +1914,44 @@ msgstr "얼룩"
 msgid "Sepia"
 msgstr "세피아"
 
-#: scripts/perspective-shadow.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-msgstr "<Image>/Script-Fu/그림자/원근감있는 그림자 효과(_P)..."
+#: scripts/old-photo.sct.h:7
+msgid "_Old Photo..."
+msgstr ""
 
 #: scripts/perspective-shadow.sct.h:3
 msgid "Angle"
 msgstr "각도"
 
 #: scripts/perspective-shadow.sct.h:6
-msgid "Interpolate"
+msgid "Cubic"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:7
+#, fuzzy
+msgid "Interpolation"
 msgstr "보간"
 
 #: scripts/perspective-shadow.sct.h:8
+msgid "Linear"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:9
+msgid "None"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:11
 #, fuzzy
 msgid "Relative distance of horizon"
 msgstr "수평선의 상대 거리"
 
-#: scripts/perspective-shadow.sct.h:9
+#: scripts/perspective-shadow.sct.h:12
 #, fuzzy
 msgid "Relative length of shadow"
 msgstr "그림자의 상대 길이"
 
-#: scripts/predator.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-msgstr "<Image>/Script-Fu/연금술/프레데터(_P)..."
+#: scripts/perspective-shadow.sct.h:13
+msgid "_Perspective..."
+msgstr ""
 
 #: scripts/predator.sct.h:2
 #, fuzzy
@@ -1993,10 +1967,9 @@ msgstr "픽셀 량"
 msgid "Pixelize"
 msgstr "픽셀화"
 
-#: scripts/pupi-button.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-msgstr "<Toolbox>/확장/Script-Fu/버튼/둥근 단추(_R)..."
+#: scripts/predator.sct.h:7
+msgid "_Predator..."
+msgstr ""
 
 #: scripts/pupi-button.sct.h:5
 #, fuzzy
@@ -2046,13 +2019,13 @@ msgstr "올라온 색상"
 msgid "Upper color (active)"
 msgstr "올라온 색상 (활성)"
 
-#: scripts/rendermap.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-msgstr "<Toolbox>/확장/Script-Fu/무늬/지도(_M)..."
+#: scripts/pupi-button.sct.h:18
+msgid "_Round Button..."
+msgstr ""
 
 #: scripts/rendermap.sct.h:2
-msgid "Behaviour"
+#, fuzzy
+msgid "Behavior"
 msgstr "행동"
 
 #: scripts/rendermap.sct.h:3
@@ -2060,13 +2033,12 @@ msgid "Detail in Middle"
 msgstr "내부 정밀도"
 
 #: scripts/rendermap.sct.h:8
+msgid "Render _Map..."
+msgstr ""
+
+#: scripts/rendermap.sct.h:9
 msgid "Tile"
 msgstr "타일"
-
-#: scripts/ripply-anim.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-msgstr "<Image>/Script-Fu/애니메이터/물결(_R)..."
 
 #: scripts/ripply-anim.sct.h:2
 msgid "Black"
@@ -2074,7 +2046,7 @@ msgstr "검정색"
 
 #: scripts/ripply-anim.sct.h:3
 #, fuzzy
-msgid "Edge behaviour"
+msgid "Edge behavior"
 msgstr "모서리 행동"
 
 #: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
@@ -2095,10 +2067,9 @@ msgstr "번지기"
 msgid "Wrap"
 msgstr "반복"
 
-#: scripts/round-corners.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
-msgstr "<Image>/Script-Fu/장식/둥근 모서리(_R)..."
+#: scripts/ripply-anim.sct.h:8
+msgid "_Rippling..."
+msgstr ""
 
 #: scripts/round-corners.sct.h:2
 #, fuzzy
@@ -2115,10 +2086,15 @@ msgstr "그림자 효과 더하기"
 msgid "Edge radius"
 msgstr "모서리 반지름"
 
+#: scripts/round-corners.sct.h:9
+#, fuzzy
+msgid "_Round Corners..."
+msgstr "<Image>/Script-Fu/장식/둥근 모서리(_R)..."
+
 #: scripts/selection-round.sct.h:1
 #, fuzzy
-msgid "<Image>/Select/Rounded R_ectangle..."
-msgstr "<Image>/Script-Fu/선택/둥글게(_R)..."
+msgid "<Image>/Select/Modify"
+msgstr "<Image>/Script-Fu/선택/이미지로(_I)"
 
 #: scripts/selection-round.sct.h:2
 msgid "Concave"
@@ -2129,35 +2105,34 @@ msgstr ""
 msgid "Radius (%)"
 msgstr "반지름"
 
-#: scripts/select-to-brush.sct.h:1
+#: scripts/selection-round.sct.h:5
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-msgstr "<Image>/Script-Fu/선택/브러시로(_B)..."
+msgid "Rounded R_ectangle..."
+msgstr "<Image>/Script-Fu/선택/둥글게(_R)..."
 
 #: scripts/select-to-brush.sct.h:2
 #, fuzzy
 msgid "Brush name"
 msgstr "브러시 이름"
 
-#: scripts/select-to-image.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/To _Image"
-msgstr "<Image>/Script-Fu/선택/이미지로(_I)"
+#: scripts/select-to-brush.sct.h:5
+msgid "To _Brush..."
+msgstr ""
 
-#: scripts/select-to-pattern.sct.h:1
+#: scripts/select-to-image.sct.h:2
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-msgstr "<Image>/Script-Fu/선택/무늬로(_P)..."
+msgid "To _Image"
+msgstr "인덱스 이미지"
 
 #: scripts/select-to-pattern.sct.h:3
 #, fuzzy
 msgid "Pattern name"
 msgstr "무늬 이름"
 
-#: scripts/slide.sct.h:1
+#: scripts/select-to-pattern.sct.h:4
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Slide..."
-msgstr "<Image>/Script-Fu/장식/슬라이드(_S)..."
+msgid "To _Pattern..."
+msgstr "무늬"
 
 #: scripts/slide.sct.h:3
 #, fuzzy
@@ -2168,19 +2143,21 @@ msgstr "글꼴 색"
 msgid "Number"
 msgstr "번호"
 
-#: scripts/sota-chrome-logo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/SOTA 크롬..."
+#: scripts/slide.sct.h:7
+msgid "_Slide..."
+msgstr ""
 
-#: scripts/speed-text.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/빠른 글자..."
+#: scripts/sota-chrome-logo.sct.h:10
+msgid "SOTA Chrome..."
+msgstr ""
+
+#: scripts/speed-text.sct.h:7
+msgid "Speed Text..."
+msgstr ""
 
 #: scripts/sphere.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
 msgstr "<Toolbox>/확장/Script-Fu/기타/구(_S)..."
 
 #: scripts/sphere.sct.h:3
@@ -2196,10 +2173,9 @@ msgstr "반지름 (픽셀)"
 msgid "Sphere color"
 msgstr "구 색"
 
-#: scripts/spinning-globe.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-msgstr "<Image>/Script-Fu/에니메이터/회전하는 지구(_S)..."
+#: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
+msgid "_Sphere..."
+msgstr ""
 
 #: scripts/spinning-globe.sct.h:2
 msgid "Frames"
@@ -2215,10 +2191,9 @@ msgstr "n 색상에 대한 인덱스 (0 = RGB로 남겨둠)"
 msgid "Turn from left to right"
 msgstr "왼쪽에서 오른쪽으로 돌기"
 
-#: scripts/spyrogimp.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-msgstr "<Image>/Script-Fu/렌더러/스파이로김프(_S)..."
+#: scripts/spinning-globe.sct.h:7
+msgid "_Spinning Globe..."
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:2
 msgid "Airbrush"
@@ -2337,15 +2312,10 @@ msgstr "삼각형"
 msgid "Type"
 msgstr "유형"
 
-#: scripts/starburst-logo.sct.h:1
+#: scripts/spyrogimp.sct.h:32
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-msgstr "<Image>/Script-Fu/알파를 로고로/별의 폭발(_U)..."
-
-#: scripts/starburst-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/별의 폭발(_U)..."
+msgid "_Spyrogimp..."
+msgstr "스파이로그래프"
 
 #: scripts/starburst-logo.sct.h:4
 #, fuzzy
@@ -2357,35 +2327,27 @@ msgstr "폭발 색상"
 msgid "Effect size (pixels * 30)"
 msgstr "효과 크기 (픽셀 * 30)"
 
-#: scripts/starscape-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-msgstr "<Image>/Script-Fu/알파를 로고로/우주공간(_R)..."
-
-#: scripts/starscape-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/우주공간(_R)..."
+#: scripts/starburst-logo.sct.h:8
+msgid "Starb_urst..."
+msgstr ""
 
 #: scripts/starscape-logo.sct.h:3
 #, fuzzy
 msgid "Effect size (pixels * 4)"
 msgstr "효과 크기 (픽셀 * 4)"
 
-#: scripts/swirltile.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-msgstr "<Toolbox>/확장/Script-Fu/무늬/소용돌이-타일(_T)..."
+#: scripts/starscape-logo.sct.h:7
+msgid "Sta_rscape..."
+msgstr ""
 
 #: scripts/swirltile.sct.h:9
+msgid "Swirl-_Tile..."
+msgstr ""
+
+#: scripts/swirltile.sct.h:10
 #, fuzzy
 msgid "Whirl amount"
 msgstr "소용돌이 량"
-
-#: scripts/swirly-pattern.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-msgstr "<Toolbox>/확장/Script-Fu/무늬/소용돌이(_S)..."
 
 #: scripts/swirly-pattern.sct.h:2
 #, fuzzy
@@ -2402,15 +2364,9 @@ msgstr "쿼터 크기"
 msgid "Whirl angle"
 msgstr "소용돌이 각도"
 
-#: scripts/t-o-p-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-msgstr "<Image>/Script-Fu/알파를 로고로/입자 추적(_P)..."
-
-#: scripts/t-o-p-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/입자 추적(_P)..."
+#: scripts/swirly-pattern.sct.h:5
+msgid "_Swirly..."
+msgstr ""
 
 #: scripts/t-o-p-logo.sct.h:4
 #, fuzzy
@@ -2432,10 +2388,9 @@ msgstr "모서리 너비"
 msgid "Hit rate"
 msgstr "히트율"
 
-#: scripts/text-circle.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/글자 동그라미..."
+#: scripts/t-o-p-logo.sct.h:12
+msgid "_Particle Trace..."
+msgstr ""
 
 #: scripts/text-circle.sct.h:2
 msgid "Antialias"
@@ -2450,15 +2405,10 @@ msgstr "채우기 각도"
 msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
-#: scripts/textured-logo.sct.h:1
+#: scripts/text-circle.sct.h:10
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-msgstr "<Image>/Script-Fu/알파를 로고로/재질감 주기(_T)..."
-
-#: scripts/textured-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/재질감 주기(_T)..."
+msgid "Text Circle..."
+msgstr "원"
 
 #: scripts/textured-logo.sct.h:5
 #, fuzzy
@@ -2492,8 +2442,13 @@ msgstr "혼합 시작"
 msgid "Text pattern"
 msgstr "글자 패턴"
 
+#: scripts/textured-logo.sct.h:16
+msgid "_Textured..."
+msgstr ""
+
 #: scripts/tileblur.sct.h:1
-msgid "<Image>/Filters/Blur/_Tileable Blur..."
+#, fuzzy
+msgid "<Image>/Filters/Blur"
 msgstr "<Image>/필터/흐릿하게/타일 형태로 흐릿하게(_T)..."
 
 #: scripts/tileblur.sct.h:2
@@ -2519,35 +2474,33 @@ msgstr "IIR"
 msgid "RLE"
 msgstr "RLE"
 
-#: scripts/tiny-fu-set-cmap.sct.h:1
+#: scripts/tileblur.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
-msgstr "<Image>/Script-Fu/선택/이미지로(_I)"
+msgid "_Tileable Blur..."
+msgstr "<Image>/필터/흐릿하게/타일 형태로 흐릿하게(_T)..."
 
 #: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
 msgid "Palette"
 msgstr "무늬"
 
-#: scripts/title-header.sct.h:1
+#: scripts/tiny-fu-set-cmap.sct.h:3
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-msgstr "<Toolbox>/확장/Script-Fu/로고/웹 제목 헤더..."
+msgid "Set Colormap"
+msgstr "글자 색상"
 
-#: scripts/truchet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-msgstr "<Toolbox>/확장/Script-Fu/패턴/트루쳇(_R)..."
+#: scripts/title-header.sct.h:6
+msgid "Web Title Header..."
+msgstr ""
 
 #: scripts/truchet.sct.h:4
 #, fuzzy
 msgid "Foreground color"
 msgstr "전경색"
 
-#: scripts/unsharp-mask.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-msgstr "<Image>/Script-Fu/연금술/마스크 덜 선명하게(_U)..."
+#: scripts/truchet.sct.h:7
+msgid "T_ruchet..."
+msgstr ""
 
 #: scripts/unsharp-mask.sct.h:2
 #, fuzzy
@@ -2559,10 +2512,9 @@ msgstr "마스크 투명도"
 msgid "Mask size"
 msgstr "마스크 크기"
 
-#: scripts/waves-anim.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-msgstr "<Image>/Script-Fu/에니메이터/파동(_W)..."
+#: scripts/unsharp-mask.sct.h:4
+msgid "_Unsharp Mask..."
+msgstr ""
 
 #: scripts/waves-anim.sct.h:2
 msgid "Amplitude"
@@ -2576,10 +2528,9 @@ msgstr "방향 뒤집기"
 msgid "Wavelength"
 msgstr "파장"
 
-#: scripts/weave.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
-msgstr "<Image>/Script-Fu/연금술/직물(_W)..."
+#: scripts/waves-anim.sct.h:6
+msgid "_Waves..."
+msgstr ""
 
 #: scripts/weave.sct.h:2
 #, fuzzy
@@ -2616,22 +2567,26 @@ msgstr "섬유 장력"
 msgid "Thread length"
 msgstr "섬유 길이"
 
+#: scripts/weave.sct.h:9
+msgid "_Weave..."
+msgstr ""
+
 #: scripts/web-browser.sct.h:1
-msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-msgstr "<Toolbox>/도움말/김프 온라인/플로그인 저장소(_R)"
-
-#: scripts/web-browser.sct.h:2
-msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-msgstr "<Toolbox>/도움말/김프 온라인/개발자 웹 사이트(_D)"
-
-#: scripts/web-browser.sct.h:3
-msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+#, fuzzy
+msgid "<Toolbox>/Help/The GIMP Online"
 msgstr "<Toolbox>/도움말/김프 온라인/기본 웹 사이트(_M)"
 
-#: scripts/xach-effect.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
-msgstr "<Image>/Script-Fu/그림자/입체적인 그림자 효과(_X)..."
+#: scripts/web-browser.sct.h:2
+msgid "Plug-in _Registry"
+msgstr ""
+
+#: scripts/web-browser.sct.h:3
+msgid "_Developer Web Site"
+msgstr ""
+
+#: scripts/web-browser.sct.h:4
+msgid "_Main Web Site"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:2
 #, fuzzy
@@ -2672,6 +2627,421 @@ msgstr "하일라이트 Y 오프셋"
 #, fuzzy
 msgid "Highlight opacity"
 msgstr "하일라이트 투명도"
+
+#: scripts/xach-effect.sct.h:12
+msgid "_Xach-Effect..."
+msgstr ""
+
+#, fuzzy
+#~ msgid "<Image>/Edit/Copy"
+#~ msgstr "<Image>/편집/보이는 대로 복사(_V)"
+
+#~ msgid "Text Color"
+#~ msgstr "글자 색상"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "글꼴 크기 (픽셀)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/확장/Script-Fu/유틸리티/글꼴 목록(_F)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/3D 윤곽선(_O)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/3D 윤곽선(_O)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/패턴/3D 트루쳇(_D)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Script-Fu/장식/베벨 더하기(_E)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Script-Fu/장식/테두리 더하기(_B)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/수평선(_H)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/글머리표(_B)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/외계의 빛/단추(_U)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/외계의 빛(_G)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/외계의 빛(_G)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/외계의 네온(_N)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/외계의 네온(_N)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/유틸리티/아스키를 이미지로(_A)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/기본 I(_B)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/기본 I(_B)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/기본 II(_A)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/기본 II(_A)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/글머리표(_B)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/단추(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/제목(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/베벨 무늬/수평선(_H)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/블렌드(_D)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/로고/블렌드(_D)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/점박이(_V)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/점박이(_V)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Script-Fu/에니메이터/태우기(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/무늬/위장(_C)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/조각..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/분필(_C)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/분필(_C)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/부식(_Y)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/부식(_Y)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Script-Fu/스텐실 효과/크롬..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/크롬(_H)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/크롬(_H)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Script-Fu/렌더/회로(_C)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Script-Fu/연금술/옷감(_C)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Script-Fu/장식/커피 얼룩(_C)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/만화책(_K)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/만화책(_K)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/차가운 금속(_M)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/차가운 금속(_M)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/크리스탈..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Script-Fu/그림자/그림자 효과(_D)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Script-Fu/선택/윤곽선 희미하게(_F)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/무늬/평평한 땅(_F)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/얼어붙은(_F)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/얼어붙은(_F)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Script-Fu/장식/보풀있는 경계선(_F)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/작은 제목(_S)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/튜브 아래-단추 레이블"
+#~ "(_U)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/튜브 아래-아래-단추 레이"
+#~ "블(_E)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr ""
+#~ "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/일반 튜브 레이블(_G)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/확장/Script-Fu/웹 페이지 테마/Gimp.Org/튜브 단추 레이블(_T)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/광택(_S)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/광택(_S)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/작열(_W)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/작열(_W)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/그라디언트 베벨(_L)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/그라디언트 베벨(_L)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/유틸리티/커스텀 그라디언트(_G)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/두 색 손 글씨(Imigre-26)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Script-Fu/렌더/용암(_L)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Script-Fu/렌더/선분으로 그린 별(_N)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/타원형, 부드러운 경계(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/브러시 만들기/사각형(_R)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/신문 인쇄 글자..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Script-Fu/장식/오래된 사진(_O)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Script-Fu/그림자/원근감있는 그림자 효과(_P)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Script-Fu/연금술/프레데터(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/버튼/둥근 단추(_R)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/무늬/지도(_M)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Script-Fu/애니메이터/물결(_R)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Script-Fu/선택/브러시로(_B)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Script-Fu/선택/무늬로(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/SOTA 크롬..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/빠른 글자..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Script-Fu/에니메이터/회전하는 지구(_S)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Script-Fu/렌더러/스파이로김프(_S)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/별의 폭발(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/별의 폭발(_U)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/우주공간(_R)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/우주공간(_R)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/무늬/소용돌이-타일(_T)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/무늬/소용돌이(_S)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/입자 추적(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/입자 추적(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/글자 동그라미..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Script-Fu/알파를 로고로/재질감 주기(_T)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/재질감 주기(_T)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/로고/웹 제목 헤더..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/확장/Script-Fu/패턴/트루쳇(_R)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Script-Fu/연금술/마스크 덜 선명하게(_U)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Script-Fu/에니메이터/파동(_W)..."
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/도움말/김프 온라인/플로그인 저장소(_R)"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/도움말/김프 온라인/개발자 웹 사이트(_D)"
 
 #~ msgid "Re-read all available scripts"
 #~ msgstr "모든 가용한 스크립트 다시 읽기"

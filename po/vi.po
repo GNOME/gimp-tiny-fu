@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gimp-scriptfu for Gnome 2.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-29 15:07-0400\n"
+"POT-Creation-Date: 2004-11-22 23:22-0500\n"
 "PO-Revision-Date: 2002-07-20 15:36+0700\n"
 "Last-Translator: Trinh Minh Thanh <tmthanh@linuxmail.org>\n"
 "Language-Team: Gnome-Vi Team <Gnomevi-list@lists.sourceforge.net>\n"
@@ -86,7 +86,7 @@ msgstr ""
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr ""
 
-#: tiny-fu/tiny-fu-scripts.c:552
+#: tiny-fu/tiny-fu-scripts.c:626
 #, fuzzy, c-format
 msgid ""
 "Error while executing\n"
@@ -111,112 +111,126 @@ msgstr "Cổng Máy Chủ:"
 msgid "Server Logfile:"
 msgstr "Logfile của Máy Chủ:"
 
+#: tiny-fu/tiny-fu-interface.c:178
+msgid "Tiny-Fu cannot process two scripts at the same time."
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:180
+#, c-format
+msgid "You are already running the \"%s\" script."
+msgstr ""
+
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:192 tiny-fu/tiny-fu-interface.c:194
+#: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
 #, fuzzy
 msgid "/Tiny-Fu/"
 msgstr "/Script-Fu/"
 
-#: tiny-fu/tiny-fu-interface.c:208
+#: tiny-fu/tiny-fu-interface.c:218
 #, fuzzy, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Script-Fu: %s"
 
 #. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:245
+#: tiny-fu/tiny-fu-interface.c:255
 msgid "Script Arguments"
 msgstr "Đối số của Script"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:276
+#: tiny-fu/tiny-fu-interface.c:286
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:319
+#: tiny-fu/tiny-fu-interface.c:329
 #, fuzzy
 msgid "Tiny-Fu Color Selection"
 msgstr "Chọn Màu của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:425
+#: tiny-fu/tiny-fu-interface.c:432
 #, fuzzy
 msgid "Tiny-Fu File Selection"
 msgstr "Chọn Tập Tin của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:429
+#: tiny-fu/tiny-fu-interface.c:436
 #, fuzzy
 msgid "Tiny-Fu Folder Selection"
 msgstr "Chọn Thư Mục của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:441
+#: tiny-fu/tiny-fu-interface.c:448
 #, fuzzy
 msgid "Tiny-Fu Font Selection"
 msgstr "Chọn Phông của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:448
+#: tiny-fu/tiny-fu-interface.c:455
 #, fuzzy
 msgid "Tiny-Fu Palette Selection"
 msgstr "Chọn Mẫu của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:456
+#: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Chọn Mẫu của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:463
+#: tiny-fu/tiny-fu-interface.c:470
 #, fuzzy
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Chọn Độ Dốc của Script-Fu"
 
-#: tiny-fu/tiny-fu-interface.c:471
+#: tiny-fu/tiny-fu-interface.c:478
 #, fuzzy
 msgid "Tiny-Fu Brush Selection"
 msgstr "Chọn Bút Vẽ của Script-Fu"
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:530
+#: tiny-fu/tiny-fu-interface.c:534
 #, fuzzy
 msgid "Script Progress"
 msgstr "Đối số của Script"
 
-#: tiny-fu/tiny-fu-interface.c:538
+#: tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:1058
+#: tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
 msgstr "Tác giả:"
 
-#: tiny-fu/tiny-fu-interface.c:1065
+#: tiny-fu/tiny-fu-interface.c:1066
 msgid "Copyright:"
 msgstr "Bản quyền:"
 
-#: tiny-fu/tiny-fu-interface.c:1072
+#: tiny-fu/tiny-fu-interface.c:1073
 msgid "Date:"
 msgstr "Ngày:"
 
-#: tiny-fu/tiny-fu-interface.c:1081
+#: tiny-fu/tiny-fu-interface.c:1082
 msgid "Image Types:"
 msgstr "Kiểu Ảnh:"
 
-#: scripts/ts-helloworld.sct.h:1 scripts/drop-shadow.sct.h:4
+#: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
+msgstr "<Toolbox>/Xtns/Script-Fu/Làm tươi lại"
+
+#: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
 #: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
 #: scripts/spyrogimp.sct.h:5
 msgid "Color"
 msgstr "Màu"
 
-#: scripts/ts-helloworld.sct.h:2 scripts/3d-outline.sct.h:5
-#: scripts/alien-glow-button.sct.h:4 scripts/alien-glow-logo.sct.h:3
-#: scripts/alien-neon-logo.sct.h:5 scripts/asc2img.sct.h:8
-#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:4
-#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:2
-#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:10
-#: scripts/bovinated-logo.sct.h:5 scripts/carved-logo.sct.h:4
-#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:7 scripts/chrome-logo.sct.h:5
-#: scripts/comic-logo.sct.h:4 scripts/coolmetal-logo.sct.h:5
-#: scripts/crystal-logo.sct.h:5 scripts/frosty-logo.sct.h:5
-#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:6
+#: scripts/ts-helloworld.sct.h:3 scripts/3d-outline.sct.h:6
+#: scripts/alien-glow-button.sct.h:5 scripts/alien-glow-logo.sct.h:4
+#: scripts/alien-neon-logo.sct.h:6 scripts/asc2img.sct.h:8
+#: scripts/basic1-logo.sct.h:4 scripts/basic2-logo.sct.h:5
+#: scripts/beveled-button.sct.h:3 scripts/beveled-pattern-button.sct.h:3
+#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:11
+#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
+#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
+#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
+#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:5
+#: scripts/gimp-headers.sct.h:4 scripts/gimp-labels.sct.h:3
 #: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
 #: scripts/gradient-bevel-logo.sct.h:8 scripts/i26-gunya2.sct.h:2
 #: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
@@ -228,17 +242,36 @@ msgstr "Màu"
 msgid "Font"
 msgstr "Phông"
 
-#: scripts/ts-helloworld.sct.h:3
-msgid "Font Size (pixels)"
+#: scripts/ts-helloworld.sct.h:4 scripts/3d-outline.sct.h:7
+#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
+#: scripts/alien-neon-logo.sct.h:7 scripts/asc2img.sct.h:9
+#: scripts/basic1-logo.sct.h:5 scripts/basic2-logo.sct.h:6
+#: scripts/beveled-button.sct.h:4 scripts/beveled-pattern-button.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:12
+#: scripts/bovinated-logo.sct.h:7 scripts/carved-logo.sct.h:6
+#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:9 scripts/chrome-logo.sct.h:7
+#: scripts/comic-logo.sct.h:6 scripts/coolmetal-logo.sct.h:7
+#: scripts/crystal-logo.sct.h:7 scripts/frosty-logo.sct.h:6
+#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:4
+#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
+#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:3
+#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
+#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
+#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
+#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
+#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
+#: scripts/title-header.sct.h:3
+#, fuzzy
+msgid "Font size (pixels)"
 msgstr "Cỡ Phông (theo pixel)"
 
-#: scripts/ts-helloworld.sct.h:4
-msgid "Hello, World!"
+#: scripts/ts-helloworld.sct.h:5
+msgid "Hello World"
 msgstr ""
 
-#: scripts/ts-helloworld.sct.h:5
+#: scripts/ts-helloworld.sct.h:6
 #, fuzzy
-msgid "Text String"
+msgid "Text string"
 msgstr "Mẫu"
 
 #: scripts/contactsheet.sct.h:1
@@ -255,20 +288,21 @@ msgstr "Không thể mở SIOD output pipe"
 msgid " images"
 msgstr "Màu Chỉ Mục"
 
-#: scripts/contactsheet.sct.h:4
+#: scripts/contactsheet.sct.h:4 scripts/asc2img.sct.h:2
+#: scripts/font-map.sct.h:1 scripts/gradient-example.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
 msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/Bản đồ Phông..."
 
-#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:2
+#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
 #: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
-#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:2
-#: scripts/alien-neon-logo.sct.h:3 scripts/asc2img.sct.h:3
-#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:3
+#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:3
+#: scripts/alien-neon-logo.sct.h:4 scripts/asc2img.sct.h:3
+#: scripts/basic1-logo.sct.h:3 scripts/basic2-logo.sct.h:4
 #: scripts/blended-logo.sct.h:3 scripts/bovinated-logo.sct.h:4
 #: scripts/chalk.sct.h:3 scripts/chrome-logo.sct.h:4
 #: scripts/comic-logo.sct.h:3 scripts/coolmetal-logo.sct.h:3
-#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:5
+#: scripts/frosty-logo.sct.h:3 scripts/gimp-labels.sct.h:2
 #: scripts/glossy.sct.h:3 scripts/glowing-logo.sct.h:3
 #: scripts/gradient-bevel-logo.sct.h:3 scripts/image-structure.sct.h:3
 #: scripts/neon-logo.sct.h:3 scripts/news-text.sct.h:2
@@ -281,210 +315,240 @@ msgid "Background color"
 msgstr "Màu Nền"
 
 #: scripts/contactsheet.sct.h:6
+msgid "Contact Sheet"
+msgstr ""
+
+#: scripts/contactsheet.sct.h:7
 #, fuzzy
 msgid "Created "
 msgstr "Tạo Bóng"
 
-#: scripts/contactsheet.sct.h:7
+#: scripts/contactsheet.sct.h:8
 #, fuzzy
 msgid "Directory"
 msgstr "Không thể mở SIOD output pipe"
 
-#: scripts/contactsheet.sct.h:8
-msgid "Legend Font"
-msgstr ""
-
 #: scripts/contactsheet.sct.h:9
-msgid "Sheet "
+msgid "Legend font"
 msgstr ""
 
 #: scripts/contactsheet.sct.h:10
-msgid "Sheet Size"
+msgid "Sheet "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:11
-msgid "Text Color"
+#, fuzzy
+msgid "Sheet size"
+msgstr "Cỡ Khung"
+
+#: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
+#: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
+#: scripts/basic2-logo.sct.h:8 scripts/beveled-button.sct.h:10
+#: scripts/beveled-pattern-button.sct.h:8 scripts/blended-logo.sct.h:18
+#: scripts/gimp-headers.sct.h:13 scripts/gimp-labels.sct.h:15
+#: scripts/i26-gunya2.sct.h:8 scripts/news-text.sct.h:11
+#: scripts/pupi-button.sct.h:14 scripts/speed-text.sct.h:9
+#, fuzzy
+msgid "Text color"
 msgstr "Màu Văn Bản"
 
-#: scripts/contactsheet.sct.h:12
-msgid "Title Font"
+#: scripts/contactsheet.sct.h:13
+msgid "Title font"
 msgstr ""
 
-#: scripts/contactsheet.sct.h:13
+#: scripts/contactsheet.sct.h:14
 #, fuzzy
 msgid "Unable to open directory "
 msgstr "Không thể mở SIOD output pipe"
 
 #: scripts/3d-outline.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Hình 3D..."
+msgid "3D _Outline..."
+msgstr ""
 
-#: scripts/3d-outline.sct.h:2
+#: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
+#: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
+#: scripts/basic2-logo.sct.h:1 scripts/blended-logo.sct.h:1
+#: scripts/bovinated-logo.sct.h:1 scripts/chalk.sct.h:1
+#: scripts/chip-away.sct.h:1 scripts/chrome-logo.sct.h:1
+#: scripts/comic-logo.sct.h:1 scripts/coolmetal-logo.sct.h:1
+#: scripts/frosty-logo.sct.h:1 scripts/glossy.sct.h:1
+#: scripts/glowing-logo.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
+#: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
+#: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
+#: scripts/textured-logo.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Hình 3D..."
+msgid "<Image>/Tiny-Fu/Alpha to Logo"
+msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
 
-#: scripts/3d-outline.sct.h:3
+#: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
+#: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
+#: scripts/basic2-logo.sct.h:2 scripts/blended-logo.sct.h:2
+#: scripts/bovinated-logo.sct.h:2 scripts/carved-logo.sct.h:1
+#: scripts/chalk.sct.h:2 scripts/chip-away.sct.h:2 scripts/chrome-logo.sct.h:2
+#: scripts/comic-logo.sct.h:2 scripts/coolmetal-logo.sct.h:2
+#: scripts/crystal-logo.sct.h:1 scripts/frosty-logo.sct.h:2
+#: scripts/glossy.sct.h:2 scripts/glowing-logo.sct.h:2
+#: scripts/gradient-bevel-logo.sct.h:2 scripts/i26-gunya2.sct.h:1
+#: scripts/neon-logo.sct.h:2 scripts/news-text.sct.h:1
+#: scripts/sota-chrome-logo.sct.h:1 scripts/speed-text.sct.h:1
+#: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
+#: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
+#: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
+msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Neon Lạ..."
+
+#: scripts/3d-outline.sct.h:4
 #, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
 msgstr "Bumpmap (Lớp Alpha) Blur Radius"
 
-#: scripts/3d-outline.sct.h:4 scripts/glossy.sct.h:7
+#: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
 #, fuzzy
 msgid "Default bumpmap settings"
 msgstr "Thiết lập Bumpmap Mặc định"
 
-#: scripts/3d-outline.sct.h:6 scripts/alien-glow-button.sct.h:5
-#: scripts/alien-glow-logo.sct.h:4 scripts/alien-neon-logo.sct.h:6
-#: scripts/asc2img.sct.h:9 scripts/basic1-logo.sct.h:5
-#: scripts/basic2-logo.sct.h:5 scripts/beveled-button.sct.h:4
-#: scripts/beveled-pattern-button.sct.h:3
-#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:11
-#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
-#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
-#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
-#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:6
-#: scripts/gimp-headers.sct.h:6 scripts/gimp-labels.sct.h:7
-#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
-#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:3
-#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
-#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
-#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
-#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
-#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
-#: scripts/title-header.sct.h:3
-#, fuzzy
-msgid "Font size (pixels)"
-msgstr "Cỡ Phông (theo pixel)"
-
-#: scripts/3d-outline.sct.h:7
+#: scripts/3d-outline.sct.h:8
 #, fuzzy
 msgid "Outline blur radius"
 msgstr "Outline Blur Radius"
 
-#: scripts/3d-outline.sct.h:8 scripts/glossy.sct.h:16
+#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
 #, fuzzy
 msgid "Shadow X offset"
 msgstr "Shadow X Offset"
 
-#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
+#: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
 #, fuzzy
 msgid "Shadow Y offset"
 msgstr "Shadow Y Offset"
 
-#: scripts/3d-outline.sct.h:10
+#: scripts/3d-outline.sct.h:11
 #, fuzzy
 msgid "Shadow blur radius"
 msgstr "Shadow Blur Radius"
 
-#: scripts/3d-outline.sct.h:11 scripts/alien-glow-button.sct.h:9
-#: scripts/alien-glow-logo.sct.h:7 scripts/alien-neon-logo.sct.h:9
-#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:6
-#: scripts/beveled-button.sct.h:8 scripts/beveled-pattern-button.sct.h:6
-#: scripts/beveled-pattern-heading.sct.h:5 scripts/blended-logo.sct.h:16
-#: scripts/bovinated-logo.sct.h:9 scripts/carved-logo.sct.h:7
-#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:13
-#: scripts/chrome-logo.sct.h:8 scripts/comic-logo.sct.h:10
-#: scripts/coolmetal-logo.sct.h:9 scripts/crystal-logo.sct.h:7
-#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:13
-#: scripts/gimp-labels.sct.h:16 scripts/glossy.sct.h:18
-#: scripts/glowing-logo.sct.h:7 scripts/gradient-bevel-logo.sct.h:10
-#: scripts/i26-gunya2.sct.h:6 scripts/neon-logo.sct.h:9
-#: scripts/news-text.sct.h:9 scripts/pupi-button.sct.h:13
-#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:10
-#: scripts/speed-text.sct.h:7 scripts/starburst-logo.sct.h:8
-#: scripts/starscape-logo.sct.h:7 scripts/t-o-p-logo.sct.h:11
+#: scripts/3d-outline.sct.h:12 scripts/alien-glow-button.sct.h:10
+#: scripts/alien-glow-logo.sct.h:8 scripts/alien-neon-logo.sct.h:10
+#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:7
+#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
+#: scripts/beveled-pattern-heading.sct.h:6 scripts/blended-logo.sct.h:17
+#: scripts/bovinated-logo.sct.h:10 scripts/carved-logo.sct.h:8
+#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:14
+#: scripts/chrome-logo.sct.h:9 scripts/comic-logo.sct.h:11
+#: scripts/coolmetal-logo.sct.h:10 scripts/crystal-logo.sct.h:8
+#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:12
+#: scripts/gimp-labels.sct.h:14 scripts/glossy.sct.h:19
+#: scripts/glowing-logo.sct.h:8 scripts/gradient-bevel-logo.sct.h:11
+#: scripts/i26-gunya2.sct.h:7 scripts/neon-logo.sct.h:10
+#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:13
+#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:11
+#: scripts/speed-text.sct.h:8 scripts/starburst-logo.sct.h:9
+#: scripts/starscape-logo.sct.h:8 scripts/t-o-p-logo.sct.h:11
 #: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
 #: scripts/title-header.sct.h:5
 msgid "Text"
 msgstr "Văn bản"
 
 #: scripts/3dTruchet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/3D Truchet..."
+msgid "3_D Truchet..."
+msgstr ""
 
-#: scripts/3dTruchet.sct.h:3 scripts/truchet.sct.h:3
+#: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
+#: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
+#: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
+msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
 #, fuzzy
 msgid "Block size"
 msgstr "Kích Cỡ Khối"
 
-#: scripts/3dTruchet.sct.h:4 scripts/blended-logo.sct.h:6
+#: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
 #, fuzzy
 msgid "End blend"
 msgstr "Kết thúc Blend"
 
-#: scripts/3dTruchet.sct.h:5 scripts/truchet.sct.h:5
+#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
 #, fuzzy
 msgid "Number of X tiles"
 msgstr "Số lượng Tile X"
 
-#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:6
+#: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
 #, fuzzy
 msgid "Number of Y tiles"
 msgstr "Số lượng Tile Y"
 
-#: scripts/3dTruchet.sct.h:7 scripts/blended-logo.sct.h:15
+#: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
 #, fuzzy
 msgid "Start blend"
 msgstr "Chạy Blend"
 
-#: scripts/3dTruchet.sct.h:8
+#: scripts/3dTruchet.sct.h:9
 msgid "Supersample"
 msgstr "Siêu mẫu"
 
-#: scripts/3dTruchet.sct.h:9 scripts/add-bevel.sct.h:3 scripts/truchet.sct.h:7
+#: scripts/3dTruchet.sct.h:10 scripts/add-bevel.sct.h:4
+#: scripts/truchet.sct.h:8
 msgid "Thickness"
 msgstr "Độ Dày"
 
-#: scripts/add-bevel.sct.h:1
+#: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
+#: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
+#: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Góc xiên..."
+msgid "<Image>/Tiny-Fu/Decor"
+msgstr "<Image>/Script-Fu/Trang trí/Ảnh chụp cũ..."
 
-#: scripts/add-bevel.sct.h:2 scripts/chip-away.sct.h:11
+#: scripts/add-bevel.sct.h:2
+msgid "Add B_evel..."
+msgstr ""
+
+#: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
 #, fuzzy
 msgid "Keep bump layer"
 msgstr "Giữ lớp Bật lên"
 
-#: scripts/add-bevel.sct.h:4 scripts/fuzzyborder.sct.h:10
+#: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
 #: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
 #: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
 #, fuzzy
 msgid "Work on copy"
 msgstr "Làm việc trên Bản Sao"
 
-#: scripts/addborder.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
-
 #: scripts/addborder.sct.h:2
+#, fuzzy
+msgid "Add _Border..."
+msgstr "Đường Viền"
+
+#: scripts/addborder.sct.h:3
 #, fuzzy
 msgid "Border X size"
 msgstr "Kích cỡ X của đường viền"
 
-#: scripts/addborder.sct.h:3
+#: scripts/addborder.sct.h:4
 #, fuzzy
 msgid "Border Y size"
 msgstr "Kích cỡ Y của đường viền"
 
-#: scripts/addborder.sct.h:4
+#: scripts/addborder.sct.h:5
 #, fuzzy
 msgid "Border color"
 msgstr "Màu Viền"
 
-#: scripts/addborder.sct.h:5
+#: scripts/addborder.sct.h:6
 #, fuzzy
 msgid "Delta value on color"
 msgstr "Giá trị Delta trên Màu"
 
-#: scripts/alien-glow-arrow.sct.h:1
+#: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
+#: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
 msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Mũi tên..."
 
 #: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
@@ -492,16 +556,16 @@ msgid "Down"
 msgstr "Xuống"
 
 #: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
-#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:3
+#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
 #: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
 #, fuzzy
 msgid "Flatten image"
 msgstr "Làm phẳng Ảnh"
 
 #: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
-#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:6
-#: scripts/alien-glow-logo.sct.h:5 scripts/alien-neon-logo.sct.h:7
-#: scripts/burn-in-anim.sct.h:8 scripts/neon-logo.sct.h:8
+#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
+#: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
 #, fuzzy
 msgid "Glow color"
@@ -528,10 +592,10 @@ msgstr "Kích cỡ"
 msgid "Up"
 msgstr "Lên"
 
-#: scripts/alien-glow-bar.sct.h:1
+#: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Hrule..."
+msgid "_Arrow..."
+msgstr "Duyệt..."
 
 #: scripts/alien-glow-bar.sct.h:3
 #, fuzzy
@@ -543,95 +607,70 @@ msgstr "Chiều cao của Thanh"
 msgid "Bar length"
 msgstr "Chiều dài của Thanh"
 
-#: scripts/alien-glow-bullet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Bullet..."
+#: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
+msgid "_Hrule..."
+msgstr ""
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
 msgid "Radius"
 msgstr "Tia"
 
-#: scripts/alien-glow-button.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+#: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
+msgid "_Bullet..."
+msgstr ""
 
-#: scripts/alien-glow-button.sct.h:7
+#: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
+msgid "B_utton..."
+msgstr ""
+
+#: scripts/alien-glow-button.sct.h:8
 #, fuzzy
 msgid "Glow radius"
 msgstr "Tia rực rỡ"
 
-#: scripts/alien-glow-button.sct.h:8 scripts/beveled-button.sct.h:6
+#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
 msgid "Padding"
 msgstr "Padding"
 
-#: scripts/alien-glow-button.sct.h:10 scripts/asc2img.sct.h:10
-#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:7
-#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
-#: scripts/blended-logo.sct.h:17 scripts/gimp-headers.sct.h:14
-#: scripts/gimp-labels.sct.h:17 scripts/i26-gunya2.sct.h:7
-#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:14
-#: scripts/speed-text.sct.h:8
-#, fuzzy
-msgid "Text color"
-msgstr "Màu Văn Bản"
+#: scripts/alien-glow-logo.sct.h:3
+msgid "Alien _Glow..."
+msgstr ""
 
-#: scripts/alien-glow-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Ánh sáng Lạ..."
-
-#: scripts/alien-glow-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Ánh sáng Lạ..."
-
-#: scripts/alien-glow-logo.sct.h:6
+#: scripts/alien-glow-logo.sct.h:7
 #, fuzzy
 msgid "Glow size (pixels * 4)"
 msgstr "Kích cỡ Ánh sáng (pixels * 4)"
 
-#: scripts/alien-neon-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
+#: scripts/alien-neon-logo.sct.h:3
+msgid "Alien _Neon..."
+msgstr ""
 
-#: scripts/alien-neon-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Neon Lạ..."
-
-#: scripts/alien-neon-logo.sct.h:4
+#: scripts/alien-neon-logo.sct.h:5
 #, fuzzy
 msgid "Fade away"
 msgstr "Mờ dần đi"
 
-#: scripts/alien-neon-logo.sct.h:8
+#: scripts/alien-neon-logo.sct.h:9
 #, fuzzy
 msgid "Number of bands"
 msgstr "Số lượng Băng"
 
-#: scripts/alien-neon-logo.sct.h:10
+#: scripts/alien-neon-logo.sct.h:11
 #, fuzzy
 msgid "Width of bands"
 msgstr "Độ rộng của Băng"
 
-#: scripts/alien-neon-logo.sct.h:11
+#: scripts/alien-neon-logo.sct.h:12
 #, fuzzy
 msgid "Width of gaps"
 msgstr "Độ rộng của Khe"
 
-#: scripts/asc2img.sct.h:1
+#: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
+#: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
-msgstr "<Image>/Script-Fu/Tiện ích/ASCII cho Lớp Ảnh..."
-
-#: scripts/asc2img.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/ASCII cho Ảnh..."
+msgid "<Image>/Tiny-Fu/Utils"
+msgstr "<Image>/Script-Fu/Chọn/Ảnh"
 
 #: scripts/asc2img.sct.h:5
 #, fuzzy, no-c-format
@@ -648,35 +687,32 @@ msgid "Filename"
 msgstr "Tên Tập Tin"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:6 scripts/spinning-globe.sct.h:4
+#: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
 #, fuzzy
 msgid "Transparent background"
 msgstr "Nền Trong Suốt"
 
-#: scripts/basic1-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
+#: scripts/asc2img.sct.h:12
+msgid "_ASCII to Image..."
+msgstr ""
 
-#: scripts/basic1-logo.sct.h:2
+#: scripts/asc2img.sct.h:13
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+msgid "_ASCII to Layer..."
+msgstr "<Image>/Script-Fu/Tiện ích/ASCII cho Lớp Ảnh..."
 
-#: scripts/basic2-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic II..."
+#: scripts/basic1-logo.sct.h:8
+msgid "_Basic I..."
+msgstr ""
 
-#: scripts/basic2-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic II..."
+#: scripts/basic2-logo.sct.h:3
+msgid "B_asic II..."
+msgstr ""
 
-#: scripts/beveled-button.sct.h:1
+#: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Nút/Nút xiên góc đơn giản..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
+msgstr "<Toolbox>/Xtns/Script-Fu/Console..."
 
 #: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
 #: scripts/pupi-button.sct.h:2
@@ -689,69 +725,64 @@ msgstr "Độ rộng Góc xiên"
 msgid "Lower-right color"
 msgstr "Màu dưới phải"
 
-#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:5
+#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:6
 #: scripts/pupi-button.sct.h:11
 msgid "Pressed"
 msgstr "Được nhấn"
 
-#: scripts/beveled-button.sct.h:10
+#: scripts/beveled-button.sct.h:8
+#, fuzzy
+msgid "Simple _Beveled Button..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Nút/Nút xiên góc đơn giản..."
+
+#: scripts/beveled-button.sct.h:11
 #, fuzzy
 msgid "Upper-left color"
 msgstr "Màu trên trái"
 
 #: scripts/beveled-pattern-arrow.sct.h:1
+#: scripts/beveled-pattern-bullet.sct.h:1
+#: scripts/beveled-pattern-button.sct.h:1
+#: scripts/beveled-pattern-heading.sct.h:1
+#: scripts/beveled-pattern-hrule.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
 msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Mẫu xiên góc/Mũi tên..."
 
 #: scripts/beveled-pattern-arrow.sct.h:5
 #: scripts/beveled-pattern-bullet.sct.h:3
-#: scripts/beveled-pattern-button.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:4
-#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:12
+#: scripts/beveled-pattern-button.sct.h:5
+#: scripts/beveled-pattern-heading.sct.h:5
+#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:13
 #: scripts/textured-logo.sct.h:11
 msgid "Pattern"
 msgstr "Mẫu"
-
-#: scripts/beveled-pattern-bullet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Mẫu góc xiên/Bullet..."
 
 #: scripts/beveled-pattern-bullet.sct.h:2
 #, fuzzy
 msgid "Diameter"
 msgstr "Đường kính"
 
-#: scripts/beveled-pattern-button.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Nút..."
+#: scripts/beveled-pattern-heading.sct.h:4
+msgid "H_eading..."
+msgstr ""
 
-#: scripts/beveled-pattern-heading.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Heading..."
-
-#: scripts/beveled-pattern-hrule.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Hrule..."
-
-#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:8
-#: scripts/gradient-example.sct.h:3 scripts/mkbrush.sct.h:8
+#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
+#: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
 #: scripts/swirltile.sct.h:7
 msgid "Height"
 msgstr "Cao"
 
-#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:4
-#: scripts/mkbrush.sct.h:10 scripts/swirltile.sct.h:10
+#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:5
+#: scripts/mkbrush.sct.h:9 scripts/swirltile.sct.h:11
 msgid "Width"
 msgstr "Rộng"
 
-#: scripts/blend-anim.sct.h:1
+#: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
+#: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
+#: scripts/waves-anim.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+msgid "<Image>/Tiny-Fu/Animators"
 msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
 
 #: scripts/blend-anim.sct.h:2
@@ -772,80 +803,67 @@ msgstr "Được Loop"
 msgid "Max. blur radius"
 msgstr "Tia Sáng Rực Rỡ Tối Đa"
 
-#: scripts/blended-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Blended..."
-
-#: scripts/blended-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+#: scripts/blend-anim.sct.h:6
+msgid "_Blend..."
+msgstr ""
 
 #: scripts/blended-logo.sct.h:4
+msgid "Blen_ded..."
+msgstr ""
+
+#: scripts/blended-logo.sct.h:5
 #, fuzzy
 msgid "Blend mode"
 msgstr "Phương Thức Blend"
 
-#: scripts/blended-logo.sct.h:5
+#: scripts/blended-logo.sct.h:6
 msgid "Custom Gradient"
 msgstr "Tùy Biến Độ Dốc"
 
-#: scripts/blended-logo.sct.h:7
+#: scripts/blended-logo.sct.h:8
 msgid "FG-BG-HSV"
 msgstr "FG-BG-HSV"
 
-#: scripts/blended-logo.sct.h:8
+#: scripts/blended-logo.sct.h:9
 msgid "FG-BG-RGB"
 msgstr "FG-BG-RGB"
 
-#: scripts/blended-logo.sct.h:9
+#: scripts/blended-logo.sct.h:10
 msgid "FG-Transparent"
 msgstr "Độ Trong Suốt FG"
 
-#: scripts/blended-logo.sct.h:12 scripts/comic-logo.sct.h:6
-#: scripts/coolmetal-logo.sct.h:7 scripts/land.sct.h:3 scripts/lava.sct.h:2
+#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
+#: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
 #: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
 msgid "Gradient"
 msgstr "Độ dốc"
 
-#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
-#: scripts/coolmetal-logo.sct.h:8 scripts/gradient-example.sct.h:2
+#: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
+#: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
 #: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
 #, fuzzy
 msgid "Gradient reverse"
 msgstr "Độ dốc"
 
-#: scripts/blended-logo.sct.h:14
+#: scripts/blended-logo.sct.h:15
 msgid "Offset (pixels)"
 msgstr "Offset (pixels)"
-
-#: scripts/bovinated-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Bovination..."
-
-#: scripts/bovinated-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Bovination..."
 
 #: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
 msgid "Background Color"
 msgstr "Màu Nền"
 
-#: scripts/bovinated-logo.sct.h:7
+#: scripts/bovinated-logo.sct.h:5
+msgid "Bo_vination..."
+msgstr ""
+
+#: scripts/bovinated-logo.sct.h:8
 msgid "Spots density X"
 msgstr "Mật Độ Điểm X"
 
-#: scripts/bovinated-logo.sct.h:8
+#: scripts/bovinated-logo.sct.h:9
 msgid "Spots density Y"
 msgstr "Mật Độ Điểm Y"
-
-#: scripts/burn-in-anim.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
 
 #: scripts/burn-in-anim.sct.h:2
 #, fuzzy
@@ -858,37 +876,36 @@ msgid "After glow"
 msgstr "Sau Rực Rỡ"
 
 #: scripts/burn-in-anim.sct.h:4
+msgid "B_urn-In..."
+msgstr ""
+
+#: scripts/burn-in-anim.sct.h:5
 msgid ""
 "Burn-In: Needs two layers in total!\n"
 "A foreground text layer with transparency and a background layer."
 msgstr ""
 
-#: scripts/burn-in-anim.sct.h:5
+#: scripts/burn-in-anim.sct.h:6
 #, fuzzy
 msgid "Corona width"
 msgstr "Bề Rộng Ảnh"
 
-#: scripts/burn-in-anim.sct.h:6
+#: scripts/burn-in-anim.sct.h:7
 msgid "Fadeout"
 msgstr "Giảm dần"
 
-#: scripts/burn-in-anim.sct.h:7
+#: scripts/burn-in-anim.sct.h:8
 #, fuzzy
 msgid "Fadeout width"
 msgstr "Giảm dần Chiều rộng"
 
-#: scripts/burn-in-anim.sct.h:9
+#: scripts/burn-in-anim.sct.h:10
 msgid "Prepare for GIF"
 msgstr "Chuẩn bị cho GIF"
 
-#: scripts/burn-in-anim.sct.h:10
+#: scripts/burn-in-anim.sct.h:11
 msgid "Speed (pixels/frame)"
 msgstr "Tốc độ (pixels/khung)"
-
-#: scripts/camo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
 
 #: scripts/camo.sct.h:2
 msgid "Color 1"
@@ -915,10 +932,9 @@ msgstr "Cỡ Ảnh"
 msgid "Smooth"
 msgstr "Mịn"
 
-#: scripts/carved-logo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+#: scripts/camo.sct.h:9
+msgid "_Camouflage..."
+msgstr ""
 
 #: scripts/carved-logo.sct.h:2
 msgid "Background Image"
@@ -928,47 +944,39 @@ msgstr "Ảnh Nền"
 msgid "Carve raised text"
 msgstr ""
 
-#: scripts/carved-logo.sct.h:6
+#: scripts/carved-logo.sct.h:4
+msgid "Carved..."
+msgstr ""
+
+#: scripts/carved-logo.sct.h:7
 msgid "Padding around text"
 msgstr ""
 
-#: scripts/carve-it.sct.h:1
+#: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+msgid "<Image>/Tiny-Fu/Stencil Ops"
 msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
 
 #: scripts/carve-it.sct.h:2
-msgid "Carve white areas"
+msgid "C_arve-It..."
 msgstr ""
 
 #: scripts/carve-it.sct.h:3
-msgid "Image to carve"
+msgid "Carve white areas"
 msgstr ""
 
-#: scripts/chalk.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
-
-#: scripts/chalk.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+#: scripts/carve-it.sct.h:4
+msgid "Image to carve"
+msgstr ""
 
 #: scripts/chalk.sct.h:4
 #, fuzzy
 msgid "Chalk color"
 msgstr "Màu Phấn"
 
-#: scripts/chip-away.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
-
-#: scripts/chip-away.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+#: scripts/chalk.sct.h:8
+msgid "_Chalk..."
+msgstr ""
 
 #: scripts/chip-away.sct.h:3
 #, fuzzy
@@ -976,83 +984,82 @@ msgid "Blur amount"
 msgstr "Tia Mờ"
 
 #: scripts/chip-away.sct.h:4
+msgid "Chip Awa_y..."
+msgstr ""
+
+#: scripts/chip-away.sct.h:5
 #, fuzzy
 msgid "Chip amount"
 msgstr "Số Pixel"
 
-#: scripts/chip-away.sct.h:5
+#: scripts/chip-away.sct.h:6
 #, fuzzy
 msgid "Drop shadow"
 msgstr "Màu bóng"
 
-#: scripts/chip-away.sct.h:6
+#: scripts/chip-away.sct.h:7
 #, fuzzy
 msgid "Fill BG with pattern"
 msgstr "Tô bằng BG"
 
-#: scripts/chip-away.sct.h:9
+#: scripts/chip-away.sct.h:10
 msgid "Invert"
 msgstr "Xoay Ngược"
 
-#: scripts/chip-away.sct.h:10
+#: scripts/chip-away.sct.h:11
 #, fuzzy
 msgid "Keep background"
 msgstr "Giữ Nền"
 
-#: scripts/chrome-it.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-msgstr "<Image>/Script-Fu/Trang trí/Ảnh chụp cũ..."
+#: scripts/chrome-it.sct.h:2
+msgid "C_hrome-It..."
+msgstr ""
 
-#: scripts/chrome-it.sct.h:2 scripts/sota-chrome-logo.sct.h:2
+#: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
 msgid "Chrome balance"
 msgstr ""
 
-#: scripts/chrome-it.sct.h:3 scripts/crystal-logo.sct.h:3
+#: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
 #: scripts/sota-chrome-logo.sct.h:3
 msgid "Chrome factor"
 msgstr ""
 
-#: scripts/chrome-it.sct.h:4 scripts/sota-chrome-logo.sct.h:4
+#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
 msgid "Chrome lightness"
 msgstr ""
 
-#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:5
+#: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
 msgid "Chrome saturation"
 msgstr ""
 
-#: scripts/chrome-it.sct.h:6
+#: scripts/chrome-it.sct.h:7
 msgid "Chrome white areas"
 msgstr ""
 
-#: scripts/chrome-it.sct.h:7 scripts/crystal-logo.sct.h:4
+#: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
 #: scripts/sota-chrome-logo.sct.h:6
 #, fuzzy
 msgid "Environment map"
 msgstr "Bản Đồ Môi Trường"
 
-#: scripts/chrome-it.sct.h:8 scripts/sota-chrome-logo.sct.h:9
+#: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
 #, fuzzy
 msgid "Highlight balance"
 msgstr "Màu Nổi Bật"
 
-#: scripts/chrome-logo.sct.h:1
+#: scripts/chrome-logo.sct.h:5
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
+msgid "C_hrome..."
+msgstr "Duyệt..."
 
-#: scripts/chrome-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
-
-#: scripts/chrome-logo.sct.h:7
+#: scripts/chrome-logo.sct.h:8
 msgid "Offsets (pixels * 2)"
 msgstr "Offsets (pixels * 2)"
 
-#: scripts/circuit.sct.h:1
+#: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
+#: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+msgid "<Image>/Tiny-Fu/Render"
 msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
 
 #: scripts/circuit.sct.h:2
@@ -1080,9 +1087,14 @@ msgstr "Cỡ Khung"
 msgid "Separate layer"
 msgstr "Lớp Tách Biệt"
 
-#: scripts/clothify.sct.h:1
+#: scripts/circuit.sct.h:7
+msgid "_Circuit..."
+msgstr ""
+
+#: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
+#: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+msgid "<Image>/Tiny-Fu/Alchemy"
 msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
@@ -1108,10 +1120,9 @@ msgstr ""
 msgid "Elevation"
 msgstr "Mức Màu Sắc"
 
-#: scripts/coffee.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Góc xiên..."
+#: scripts/clothify.sct.h:7
+msgid "_Clothify..."
+msgstr ""
 
 #: scripts/coffee.sct.h:2
 msgid ""
@@ -1123,59 +1134,52 @@ msgstr ""
 msgid "Stains"
 msgstr "Vết Bẩn"
 
-#: scripts/comic-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
+#: scripts/coffee.sct.h:4
+msgid "_Coffee Stain..."
+msgstr ""
 
-#: scripts/comic-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+#: scripts/comic-logo.sct.h:4
+msgid "Comic Boo_k..."
+msgstr ""
 
-#: scripts/comic-logo.sct.h:8
+#: scripts/comic-logo.sct.h:9
 #, fuzzy
 msgid "Outline color"
 msgstr "Outline Blur Radius"
 
-#: scripts/comic-logo.sct.h:9 scripts/glossy.sct.h:11
+#: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
 #, fuzzy
 msgid "Outline size"
 msgstr "Kích cỡ Đường Viền"
 
-#: scripts/coolmetal-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
+#: scripts/coolmetal-logo.sct.h:4
+msgid "Cool _Metal..."
+msgstr ""
 
-#: scripts/coolmetal-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
-
-#: scripts/coolmetal-logo.sct.h:4 scripts/frosty-logo.sct.h:4
+#: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
 #, fuzzy
 msgid "Effect size (pixels)"
 msgstr "Offset (pixels)"
 
 #: scripts/copy-visible.sct.h:1
-msgid "<Image>/Edit/Copy/Copy _Visible"
+msgid "Copy _Visible"
 msgstr ""
-
-#: scripts/crystal-logo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
 
 #: scripts/crystal-logo.sct.h:2
 #, fuzzy
 msgid "Background image"
 msgstr "Ảnh Nền"
 
-#: scripts/distress-selection.sct.h:1
+#: scripts/crystal-logo.sct.h:4
+msgid "Crystal..."
+msgstr ""
+
+#: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
+#: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
+#: scripts/select-to-pattern.sct.h:1
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
-msgstr "<Image>/Script-Fu/Chọn/Tròn..."
+msgid "<Image>/Tiny-Fu/Selection"
+msgstr "<Image>/Script-Fu/Chọn/Ảnh"
 
 #: scripts/distress-selection.sct.h:2
 #, fuzzy
@@ -1201,9 +1205,15 @@ msgstr ""
 msgid "Threshold (bigger 1<-->255 smaller)"
 msgstr "Ngưỡng (Lớn hơn 1 <--> 255 Nhỏ hơn)"
 
-#: scripts/drop-shadow.sct.h:1
+#: scripts/distress-selection.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+msgid "_Distress Selection..."
+msgstr "<Image>/Script-Fu/Chọn/Tròn..."
+
+#: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
+#: scripts/xach-effect.sct.h:1
+#, fuzzy
+msgid "<Image>/Tiny-Fu/Shadow"
 msgstr "<Image>/Script-Fu/Bóng/Phối cảnh..."
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
@@ -1218,22 +1228,22 @@ msgstr "Cho Phép Đổi Kích Cỡ"
 msgid "Blur radius"
 msgstr "Tia Mờ"
 
-#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:11
+#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
 msgid "Offset X"
 msgstr "Offset X"
 
-#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:12
+#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:9
 msgid "Offset Y"
 msgstr "Offset Y"
 
-#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:7
+#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:10
 msgid "Opacity"
 msgstr "Độ Mờ Đục"
 
-#: scripts/erase-rows.sct.h:1
+#: scripts/drop-shadow.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
-msgstr "<Image>/Script-Fu/Thuật giả kim/Xoá mọi hàng khác..."
+msgid "_Drop-Shadow..."
+msgstr "Màu bóng"
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
@@ -1274,10 +1284,10 @@ msgstr "Hàng"
 msgid "Rows/cols"
 msgstr "Hàng/Cột"
 
-#: scripts/fade-outline.sct.h:1
+#: scripts/erase-rows.sct.h:11
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-msgstr "<Image>/Script-Fu/Chọn/Tròn..."
+msgid "_Erase every other Row..."
+msgstr "<Image>/Script-Fu/Thuật giả kim/Xoá mọi hàng khác..."
 
 #: scripts/fade-outline.sct.h:2
 msgid "Apply generated layermask"
@@ -1308,10 +1318,9 @@ msgstr ""
 msgid "Use growing selection"
 msgstr "Giữ Phần Chọn"
 
-#: scripts/flatland.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+#: scripts/fade-outline.sct.h:10
+msgid "_Fade Outline..."
+msgstr ""
 
 #: scripts/flatland.sct.h:2 scripts/land.sct.h:2
 #, fuzzy
@@ -1341,10 +1350,9 @@ msgstr "Cân chỉnh X"
 msgid "Scale Y"
 msgstr "Cân chỉnh Y"
 
-#: scripts/font-map.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/Bản đồ Phông..."
+#: scripts/flatland.sct.h:8
+msgid "_Flatland..."
+msgstr ""
 
 #: scripts/font-map.sct.h:2
 #, fuzzy
@@ -1380,28 +1388,22 @@ msgid "_Filter (regexp)"
 msgstr ""
 
 #: scripts/font-map.sct.h:9
-msgid "_Labels"
+msgid "_Font Map..."
 msgstr ""
 
 #: scripts/font-map.sct.h:10
+msgid "_Labels"
+msgstr ""
+
+#: scripts/font-map.sct.h:11
 #, fuzzy
 msgid "_Text"
 msgstr "Văn bản"
 
-#: scripts/frosty-logo.sct.h:1
+#: scripts/frosty-logo.sct.h:8
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Băng giá..."
-
-#: scripts/frosty-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Băng giá..."
-
-#: scripts/fuzzyborder.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-msgstr "<Image>/Script-Fu/Trang trí/Đường Viền Mờ Ảo..."
+msgid "_Frosty..."
+msgstr "Duyệt..."
 
 #: scripts/fuzzyborder.sct.h:2
 #, fuzzy
@@ -1423,93 +1425,78 @@ msgstr "Tính hạt"
 msgid "Shadow weight (%)"
 msgstr "Bóng"
 
-#: scripts/gimp-headers.sct.h:1
+#: scripts/fuzzyborder.sct.h:11
+msgid "_Fuzzy Border..."
+msgstr ""
+
+#: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
 msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Hrule..."
 
 #: scripts/gimp-headers.sct.h:2
 #, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Bullet..."
-
-#: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Autocrop"
 msgstr "Tự động Xén"
 
-#: scripts/gimp-headers.sct.h:4
+#: scripts/gimp-headers.sct.h:3
 #, fuzzy
 msgid "Dark color"
 msgstr "Màu Tối"
 
-#: scripts/gimp-headers.sct.h:7 scripts/xach-effect.sct.h:9
+#: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
 #, fuzzy
 msgid "Highlight color"
 msgstr "Màu Nổi Bật"
 
-#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:9
+#: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
 #, fuzzy
 msgid "Index image"
 msgstr "Màu Chỉ Mục"
 
-#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
+#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
 #, fuzzy
 msgid "Number of colors"
 msgstr "Số Lượng Màu"
 
-#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:13
+#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
 #, fuzzy
 msgid "Remove background"
 msgstr "Bỏ Nền"
 
-#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:14
+#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
 #, fuzzy
 msgid "Select-by-color threshold"
 msgstr "Ngưỡng chọn bằng màu"
 
-#: scripts/gimp-headers.sct.h:12 scripts/gimp-labels.sct.h:15
+#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
 #, fuzzy
 msgid "Shadow color"
 msgstr "Màu bóng"
 
-#: scripts/gimp-labels.sct.h:1
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-"Label..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+#: scripts/gimp-headers.sct.h:14
+msgid "_Big Header..."
+msgstr ""
 
-#: scripts/gimp-labels.sct.h:2
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-Button "
-"Label..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+#: scripts/gimp-headers.sct.h:15
+msgid "_Small Header..."
+msgstr ""
 
-#: scripts/gimp-labels.sct.h:3
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-"Labels..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Hrule..."
+#: scripts/gimp-labels.sct.h:13
+msgid "T_ube Sub-Button Label..."
+msgstr ""
 
-#: scripts/gimp-labels.sct.h:4
-#, fuzzy
-msgid ""
-"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button Label..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+#: scripts/gimp-labels.sct.h:16
+msgid "Tub_e Sub-Sub-Button Label..."
+msgstr ""
 
-#: scripts/glossy.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Bóng nhoáng..."
+#: scripts/gimp-labels.sct.h:17
+msgid "_General Tube Labels..."
+msgstr ""
 
-#: scripts/glossy.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Bóng nhoáng..."
+#: scripts/gimp-labels.sct.h:18
+msgid "_Tube Button Label..."
+msgstr ""
 
 #: scripts/glossy.sct.h:4
 #, fuzzy
@@ -1527,78 +1514,66 @@ msgid "Blend gradient (text)"
 msgstr "Mẫu"
 
 #: scripts/glossy.sct.h:10
+msgid "Glo_ssy..."
+msgstr ""
+
+#: scripts/glossy.sct.h:11
 #, fuzzy
 msgid "Outline gradient reverse"
 msgstr "Outline Blur Radius"
 
-#: scripts/glossy.sct.h:12
+#: scripts/glossy.sct.h:13
 #, fuzzy
 msgid "Pattern (outline)"
 msgstr "Mẫu"
 
-#: scripts/glossy.sct.h:13
+#: scripts/glossy.sct.h:14
 #, fuzzy
 msgid "Pattern (overlay)"
 msgstr "Mẫu"
 
-#: scripts/glossy.sct.h:14
+#: scripts/glossy.sct.h:15
 #, fuzzy
 msgid "Pattern (text)"
 msgstr "Mẫu"
 
-#: scripts/glossy.sct.h:15 scripts/sphere.sct.h:5
+#: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
 msgid "Shadow"
 msgstr "Bóng"
 
-#: scripts/glossy.sct.h:19
+#: scripts/glossy.sct.h:20
 #, fuzzy
 msgid "Text gradient reverse"
 msgstr "Độ dốc"
 
-#: scripts/glossy.sct.h:20
+#: scripts/glossy.sct.h:21
 #, fuzzy
 msgid "Use pattern for outline instead of gradient"
 msgstr "Dùng Độ Dốc Hiện Thời"
 
-#: scripts/glossy.sct.h:21
+#: scripts/glossy.sct.h:22
 #, fuzzy
 msgid "Use pattern for text instead of gradient"
 msgstr "Dùng Độ Dốc Hiện Thời"
 
-#: scripts/glossy.sct.h:22
+#: scripts/glossy.sct.h:23
 #, fuzzy
 msgid "Use pattern overlay"
 msgstr "Mẫu"
 
-#: scripts/glossy.sct.h:23
+#: scripts/glossy.sct.h:24
 #, fuzzy
 msgid "Use tattern for outline instead of gradient"
 msgstr "Dùng Độ Dốc Hiện Thời"
-
-#: scripts/glowing-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
-
-#: scripts/glowing-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Ánh sáng Lạ..."
 
 #: scripts/glowing-logo.sct.h:4
 #, fuzzy
 msgid "Effect size (pixels * 3)"
 msgstr "Offsets (pixels * 2)"
 
-#: scripts/gradient-bevel-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
-
-#: scripts/gradient-bevel-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Ánh sáng Lạ..."
+#: scripts/glowing-logo.sct.h:7
+msgid "Glo_wing Hot..."
+msgstr ""
 
 #: scripts/gradient-bevel-logo.sct.h:4
 msgid "Bevel height (Sharpness)"
@@ -1614,15 +1589,15 @@ msgstr ""
 msgid "Border size (pixels)"
 msgstr "Kích cỡ Đường Viền"
 
-#: scripts/gradient-example.sct.h:1
+#: scripts/gradient-bevel-logo.sct.h:10
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/ASCII cho Ảnh..."
+msgid "Gradient Beve_l..."
+msgstr "Độ dốc"
 
-#: scripts/grid-system.sct.h:1
+#: scripts/gradient-example.sct.h:2
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Grid..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+msgid "Custom _Gradient..."
+msgstr "Tùy Biến Độ Dốc"
 
 #: scripts/grid-system.sct.h:2
 msgid "X divisions"
@@ -1632,16 +1607,21 @@ msgstr ""
 msgid "Y divisions"
 msgstr ""
 
-#: scripts/guides-from-selection.sct.h:1
-msgid "<Image>/Image/Guides/New Guides from _Selection"
+#: scripts/grid-system.sct.h:4
+msgid "_Grid..."
+msgstr ""
+
+#: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
+#: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
+msgid "<Image>/Image/Guides"
 msgstr ""
 
 #: scripts/guides-from-selection.sct.h:2
 msgid "Creates four Guides around the bounding box of the current selection."
 msgstr ""
 
-#: scripts/guides-new-percent.sct.h:1
-msgid "<Image>/Image/Guides/New Guide (by _Percent)..."
+#: scripts/guides-from-selection.sct.h:3
+msgid "New Guides from _Selection"
 msgstr ""
 
 #: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
@@ -1654,28 +1634,27 @@ msgstr "Không thể mở SIOD output pipe"
 msgid "Horizontal"
 msgstr "Mịn Ngang"
 
-#: scripts/guides-new-percent.sct.h:5
+#: scripts/guides-new-percent.sct.h:4
+msgid "New Guide (by _Percent)..."
+msgstr ""
+
+#: scripts/guides-new-percent.sct.h:6
 #, no-c-format
 msgid "Position (in %)"
 msgstr ""
 
-#: scripts/guides-new-percent.sct.h:6 scripts/guides-new.sct.h:4
+#: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
 #, fuzzy
 msgid "Vertical"
 msgstr "Mịn Dọc"
 
-#: scripts/guides-new.sct.h:1
-msgid "<Image>/Image/Guides/New _Guide..."
+#: scripts/guides-new.sct.h:4
+msgid "New _Guide..."
 msgstr ""
 
-#: scripts/guides-remove-all.sct.h:1
-msgid "<Image>/Image/Guides/_Remove all Guides"
+#: scripts/guides-remove-all.sct.h:2
+msgid "_Remove all Guides"
 msgstr ""
-
-#: scripts/hsv-graph.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
-msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
 
 #: scripts/hsv-graph.sct.h:2
 #, fuzzy
@@ -1683,38 +1662,38 @@ msgid "BG opacity"
 msgstr "Độ Đục BG"
 
 #: scripts/hsv-graph.sct.h:3
+#, fuzzy
+msgid "Draw _HSV Graph..."
+msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
+
+#: scripts/hsv-graph.sct.h:4
 msgid "End X"
 msgstr ""
 
-#: scripts/hsv-graph.sct.h:4
+#: scripts/hsv-graph.sct.h:5
 msgid "End Y"
 msgstr ""
 
-#: scripts/hsv-graph.sct.h:5
+#: scripts/hsv-graph.sct.h:6
 #, fuzzy
 msgid "From top-left to bottom-right"
 msgstr "Từ Trái-Trên đến Phải-Dưới"
 
-#: scripts/hsv-graph.sct.h:6
+#: scripts/hsv-graph.sct.h:7
 msgid "Graph scale"
 msgstr ""
 
-#: scripts/hsv-graph.sct.h:7
+#: scripts/hsv-graph.sct.h:8
 msgid "Start X"
 msgstr "Chạy X"
 
-#: scripts/hsv-graph.sct.h:8
+#: scripts/hsv-graph.sct.h:9
 msgid "Start Y"
 msgstr "Chạy Y"
 
-#: scripts/hsv-graph.sct.h:9
+#: scripts/hsv-graph.sct.h:10
 msgid "Use selection bounds instead of values below"
 msgstr ""
-
-#: scripts/i26-gunya2.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
 
 #: scripts/i26-gunya2.sct.h:4
 #, fuzzy
@@ -1726,10 +1705,9 @@ msgstr "Màu Khung"
 msgid "Frame size"
 msgstr "Cỡ Khung"
 
-#: scripts/image-structure.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/Show Image _Structure..."
-msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
+#: scripts/i26-gunya2.sct.h:6
+msgid "Imigre-26..."
+msgstr ""
 
 #: scripts/image-structure.sct.h:2
 msgid "Apply layer mask (or discard)"
@@ -1776,13 +1754,13 @@ msgstr "Độ dài Kéo Cắt"
 
 #: scripts/image-structure.sct.h:12
 #, fuzzy
+msgid "Show Image _Structure..."
+msgstr "<Image>/Script-Fu/Tiện ích/Hiển thị cấu trúc ảnh..."
+
+#: scripts/image-structure.sct.h:13
+#, fuzzy
 msgid "Space between layers"
 msgstr "Khoảng Trống Giữa Các Lớp"
-
-#: scripts/land.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
 
 #: scripts/land.sct.h:6
 #, fuzzy
@@ -1794,10 +1772,9 @@ msgstr "Chiều cao của Thanh"
 msgid "Sea depth"
 msgstr "Độ dài Kéo Cắt"
 
-#: scripts/lava.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Lava..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+#: scripts/land.sct.h:11
+msgid "_Land..."
+msgstr ""
 
 #: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
 #, fuzzy
@@ -1813,75 +1790,70 @@ msgstr ""
 msgid "Use current gradient"
 msgstr "Dùng Độ Dốc Hiện Thời"
 
-#: scripts/line-nova.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+#: scripts/lava.sct.h:9
+msgid "_Lava..."
+msgstr ""
 
 #: scripts/line-nova.sct.h:2
+msgid "Line _Nova..."
+msgstr ""
+
+#: scripts/line-nova.sct.h:3
 #, fuzzy
 msgid "Number of lines"
 msgstr "Số Đường Kẻ"
 
-#: scripts/line-nova.sct.h:3
+#: scripts/line-nova.sct.h:4
 #, fuzzy
 msgid "Offset radius"
 msgstr "Tia Offset"
 
-#: scripts/line-nova.sct.h:4
+#: scripts/line-nova.sct.h:5
 msgid "Randomness"
 msgstr "Sự Ngẫu Nhiên"
 
-#: scripts/line-nova.sct.h:5
+#: scripts/line-nova.sct.h:6
 msgid "Sharpness (degrees)"
 msgstr "Độ Sắc Nét (độ)"
 
 #: scripts/mkbrush.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
 msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
 
 #: scripts/mkbrush.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
-
-#: scripts/mkbrush.sct.h:3
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
-
-#: scripts/mkbrush.sct.h:4
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
-
-#: scripts/mkbrush.sct.h:5
 msgid "Create size of brush"
 msgstr ""
 
-#: scripts/mkbrush.sct.h:6
+#: scripts/mkbrush.sct.h:3
 msgid "Description"
 msgstr "Mô Tả"
 
-#: scripts/mkbrush.sct.h:7
+#: scripts/mkbrush.sct.h:4
+msgid "Elli_ptical, Feathered..."
+msgstr ""
+
+#: scripts/mkbrush.sct.h:5
 msgid "Feathering"
 msgstr ""
 
-#: scripts/mkbrush.sct.h:9 scripts/select-to-brush.sct.h:4
+#: scripts/mkbrush.sct.h:7
+#, fuzzy
+msgid "Re_ctangular, Feathered..."
+msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
 #, fuzzy
 msgid "Spacing"
 msgstr "Vết Bẩn"
 
-#: scripts/neon-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
+#: scripts/mkbrush.sct.h:10
+msgid "_Elliptical..."
+msgstr ""
 
-#: scripts/neon-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Neon Lạ..."
+#: scripts/mkbrush.sct.h:11
+msgid "_Rectangular..."
+msgstr ""
 
 #: scripts/neon-logo.sct.h:4
 #, fuzzy
@@ -1893,10 +1865,9 @@ msgstr "Tạo Bóng"
 msgid "Effect size (pixels * 5)"
 msgstr "Offsets (pixels * 2)"
 
-#: scripts/news-text.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Neon Lạ..."
+#: scripts/neon-logo.sct.h:9
+msgid "N_eon..."
+msgstr ""
 
 #: scripts/news-text.sct.h:4
 #, fuzzy
@@ -1908,10 +1879,9 @@ msgstr "Cỡ Phông (theo pixel)"
 msgid "Density (%)"
 msgstr "Mật Độ (%)"
 
-#: scripts/old-photo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-msgstr "<Image>/Script-Fu/Trang trí/Ảnh chụp cũ..."
+#: scripts/news-text.sct.h:9
+msgid "Newsprint Text..."
+msgstr ""
 
 #: scripts/old-photo.sct.h:3
 msgid "Defocus"
@@ -1925,33 +1895,44 @@ msgstr ""
 msgid "Sepia"
 msgstr "Màu Nâu Đen"
 
-#: scripts/perspective-shadow.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-msgstr "<Image>/Script-Fu/Bóng/Phối cảnh..."
+#: scripts/old-photo.sct.h:7
+msgid "_Old Photo..."
+msgstr ""
 
 #: scripts/perspective-shadow.sct.h:3
 msgid "Angle"
 msgstr "Góc"
 
 #: scripts/perspective-shadow.sct.h:6
-msgid "Interpolate"
+msgid "Cubic"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:7
+#, fuzzy
+msgid "Interpolation"
 msgstr "Nội Suy"
 
 #: scripts/perspective-shadow.sct.h:8
+msgid "Linear"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:9
+msgid "None"
+msgstr ""
+
+#: scripts/perspective-shadow.sct.h:11
 #, fuzzy
 msgid "Relative distance of horizon"
 msgstr "Khoảng Cách Liên Quan của Đường Ngang"
 
-#: scripts/perspective-shadow.sct.h:9
+#: scripts/perspective-shadow.sct.h:12
 #, fuzzy
 msgid "Relative length of shadow"
 msgstr "Độ dài Liên quan của Bóng"
 
-#: scripts/predator.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
+#: scripts/perspective-shadow.sct.h:13
+msgid "_Perspective..."
+msgstr ""
 
 #: scripts/predator.sct.h:2
 #, fuzzy
@@ -1967,10 +1948,9 @@ msgstr "Số Pixel"
 msgid "Pixelize"
 msgstr "Pixel hoá"
 
-#: scripts/pupi-button.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Nút/Nút Tròn..."
+#: scripts/predator.sct.h:7
+msgid "_Predator..."
+msgstr ""
 
 #: scripts/pupi-button.sct.h:5
 #, fuzzy
@@ -2022,13 +2002,13 @@ msgstr "Màu trên trái"
 msgid "Upper color (active)"
 msgstr "Màu văn bản (Hoạt động)"
 
-#: scripts/rendermap.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/3D Truchet..."
+#: scripts/pupi-button.sct.h:18
+msgid "_Round Button..."
+msgstr ""
 
 #: scripts/rendermap.sct.h:2
-msgid "Behaviour"
+#, fuzzy
+msgid "Behavior"
 msgstr "Ứng Xử"
 
 #: scripts/rendermap.sct.h:3
@@ -2037,14 +2017,13 @@ msgid "Detail in Middle"
 msgstr "Mức Độ Chi Tiết"
 
 #: scripts/rendermap.sct.h:8
+msgid "Render _Map..."
+msgstr ""
+
+#: scripts/rendermap.sct.h:9
 #, fuzzy
 msgid "Tile"
 msgstr "Góc"
-
-#: scripts/ripply-anim.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
 
 #: scripts/ripply-anim.sct.h:2
 msgid "Black"
@@ -2052,7 +2031,7 @@ msgstr ""
 
 #: scripts/ripply-anim.sct.h:3
 #, fuzzy
-msgid "Edge behaviour"
+msgid "Edge behavior"
 msgstr "Ứng Xử"
 
 #: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
@@ -2073,10 +2052,9 @@ msgstr "Tìm _Kiếm:"
 msgid "Wrap"
 msgstr ""
 
-#: scripts/round-corners.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+#: scripts/ripply-anim.sct.h:8
+msgid "_Rippling..."
+msgstr ""
 
 #: scripts/round-corners.sct.h:2
 #, fuzzy
@@ -2093,10 +2071,15 @@ msgstr "Thêm Bóng"
 msgid "Edge radius"
 msgstr "Ứng Xử"
 
+#: scripts/round-corners.sct.h:9
+#, fuzzy
+msgid "_Round Corners..."
+msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
 #: scripts/selection-round.sct.h:1
 #, fuzzy
-msgid "<Image>/Select/Rounded R_ectangle..."
-msgstr "<Image>/Script-Fu/Chọn/Tròn..."
+msgid "<Image>/Select/Modify"
+msgstr "<Image>/Script-Fu/Chọn/Ảnh"
 
 #: scripts/selection-round.sct.h:2
 msgid "Concave"
@@ -2107,35 +2090,34 @@ msgstr ""
 msgid "Radius (%)"
 msgstr "Tia"
 
-#: scripts/select-to-brush.sct.h:1
+#: scripts/selection-round.sct.h:5
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-msgstr "<Image>/Script-Fu/Chọn/Bút Vẽ..."
+msgid "Rounded R_ectangle..."
+msgstr "<Image>/Script-Fu/Chọn/Tròn..."
 
 #: scripts/select-to-brush.sct.h:2
 #, fuzzy
 msgid "Brush name"
 msgstr "Dùng Bút Vẽ"
 
-#: scripts/select-to-image.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/To _Image"
-msgstr "<Image>/Script-Fu/Chọn/Ảnh"
+#: scripts/select-to-brush.sct.h:5
+msgid "To _Brush..."
+msgstr ""
 
-#: scripts/select-to-pattern.sct.h:1
+#: scripts/select-to-image.sct.h:2
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-msgstr "<Image>/Script-Fu/Chọn/Bút Vẽ..."
+msgid "To _Image"
+msgstr "Màu Chỉ Mục"
 
 #: scripts/select-to-pattern.sct.h:3
 #, fuzzy
 msgid "Pattern name"
 msgstr "Mẫu"
 
-#: scripts/slide.sct.h:1
+#: scripts/select-to-pattern.sct.h:4
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Decor/_Slide..."
-msgstr "<Image>/Script-Fu/Trang trí/Ảnh chụp cũ..."
+msgid "To _Pattern..."
+msgstr "Mẫu"
 
 #: scripts/slide.sct.h:3
 #, fuzzy
@@ -2146,19 +2128,21 @@ msgstr "Màu Phông"
 msgid "Number"
 msgstr "Số Lượng"
 
-#: scripts/sota-chrome-logo.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+#: scripts/slide.sct.h:7
+msgid "_Slide..."
+msgstr ""
 
-#: scripts/speed-text.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+#: scripts/sota-chrome-logo.sct.h:10
+msgid "SOTA Chrome..."
+msgstr ""
+
+#: scripts/speed-text.sct.h:7
+msgid "Speed Text..."
+msgstr ""
 
 #: scripts/sphere.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
 msgstr "<Toolbox>/Xtns/Script-Fu/Máy chủ..."
 
 #: scripts/sphere.sct.h:3
@@ -2176,10 +2160,9 @@ msgstr "Cỡ Phông (theo pixel)"
 msgid "Sphere color"
 msgstr "Màu trên trái"
 
-#: scripts/spinning-globe.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
+#: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
+msgid "_Sphere..."
+msgstr ""
 
 #: scripts/spinning-globe.sct.h:2
 msgid "Frames"
@@ -2194,10 +2177,9 @@ msgstr ""
 msgid "Turn from left to right"
 msgstr "Quay từ Trái sang Phải"
 
-#: scripts/spyrogimp.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+#: scripts/spinning-globe.sct.h:7
+msgid "_Spinning Globe..."
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:2
 #, fuzzy
@@ -2326,15 +2308,9 @@ msgstr "Góc"
 msgid "Type"
 msgstr ""
 
-#: scripts/starburst-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Băng giá..."
-
-#: scripts/starburst-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Băng giá..."
+#: scripts/spyrogimp.sct.h:32
+msgid "_Spyrogimp..."
+msgstr ""
 
 #: scripts/starburst-logo.sct.h:4
 #, fuzzy
@@ -2346,35 +2322,27 @@ msgstr "Màu Cơ Bản"
 msgid "Effect size (pixels * 30)"
 msgstr "Offsets (pixels * 2)"
 
-#: scripts/starscape-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
-
-#: scripts/starscape-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+#: scripts/starburst-logo.sct.h:8
+msgid "Starb_urst..."
+msgstr ""
 
 #: scripts/starscape-logo.sct.h:3
 #, fuzzy
 msgid "Effect size (pixels * 4)"
 msgstr "Offsets (pixels * 2)"
 
-#: scripts/swirltile.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+#: scripts/starscape-logo.sct.h:7
+msgid "Sta_rscape..."
+msgstr ""
 
 #: scripts/swirltile.sct.h:9
+msgid "Swirl-_Tile..."
+msgstr ""
+
+#: scripts/swirltile.sct.h:10
 #, fuzzy
 msgid "Whirl amount"
 msgstr "Số Pixel"
-
-#: scripts/swirly-pattern.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
 
 #: scripts/swirly-pattern.sct.h:2
 #, fuzzy
@@ -2391,15 +2359,9 @@ msgstr "Kích cỡ Đường Viền"
 msgid "Whirl angle"
 msgstr "Tô Góc"
 
-#: scripts/t-o-p-logo.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
-
-#: scripts/t-o-p-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+#: scripts/swirly-pattern.sct.h:5
+msgid "_Swirly..."
+msgstr ""
 
 #: scripts/t-o-p-logo.sct.h:4
 #, fuzzy
@@ -2420,10 +2382,9 @@ msgstr "Bề Rộng Ảnh"
 msgid "Hit rate"
 msgstr ""
 
-#: scripts/text-circle.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+#: scripts/t-o-p-logo.sct.h:12
+msgid "_Particle Trace..."
+msgstr ""
 
 #: scripts/text-circle.sct.h:2
 msgid "Antialias"
@@ -2438,15 +2399,10 @@ msgstr "Tô Góc"
 msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
-#: scripts/textured-logo.sct.h:1
+#: scripts/text-circle.sct.h:10
 #, fuzzy
-msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-msgstr "<Image>/Script-Fu/Alpha cho Logo/Blended..."
-
-#: scripts/textured-logo.sct.h:2
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+msgid "Text Circle..."
+msgstr "Góc"
 
 #: scripts/textured-logo.sct.h:5
 #, fuzzy
@@ -2479,8 +2435,12 @@ msgstr "Chạy Blend"
 msgid "Text pattern"
 msgstr "Mẫu"
 
+#: scripts/textured-logo.sct.h:16
+msgid "_Textured..."
+msgstr ""
+
 #: scripts/tileblur.sct.h:1
-msgid "<Image>/Filters/Blur/_Tileable Blur..."
+msgid "<Image>/Filters/Blur"
 msgstr ""
 
 #: scripts/tileblur.sct.h:2
@@ -2506,35 +2466,32 @@ msgstr "IIR"
 msgid "RLE"
 msgstr "RLE"
 
-#: scripts/tiny-fu-set-cmap.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
-msgstr "<Image>/Script-Fu/Chọn/Ảnh"
+#: scripts/tileblur.sct.h:8
+msgid "_Tileable Blur..."
+msgstr ""
 
 #: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
 msgid "Palette"
 msgstr "Mẫu"
 
-#: scripts/title-header.sct.h:1
+#: scripts/tiny-fu-set-cmap.sct.h:3
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+msgid "Set Colormap"
+msgstr "Màu Văn Bản"
 
-#: scripts/truchet.sct.h:1
-#, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/3D Truchet..."
+#: scripts/title-header.sct.h:6
+msgid "Web Title Header..."
+msgstr ""
 
 #: scripts/truchet.sct.h:4
 #, fuzzy
 msgid "Foreground color"
 msgstr "Màu Tiền Cảnh"
 
-#: scripts/unsharp-mask.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
+#: scripts/truchet.sct.h:7
+msgid "T_ruchet..."
+msgstr ""
 
 #: scripts/unsharp-mask.sct.h:2
 #, fuzzy
@@ -2546,10 +2503,9 @@ msgstr "Độ Đục BG"
 msgid "Mask size"
 msgstr "Cỡ Khung"
 
-#: scripts/waves-anim.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
+#: scripts/unsharp-mask.sct.h:4
+msgid "_Unsharp Mask..."
+msgstr ""
 
 #: scripts/waves-anim.sct.h:2
 msgid "Amplitude"
@@ -2563,10 +2519,9 @@ msgstr "Đổi Hướng"
 msgid "Wavelength"
 msgstr "Bước sóng"
 
-#: scripts/weave.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
-msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
+#: scripts/waves-anim.sct.h:6
+msgid "_Waves..."
+msgstr ""
 
 #: scripts/weave.sct.h:2
 #, fuzzy
@@ -2603,22 +2558,25 @@ msgstr "Độ dài Kéo Cắt"
 msgid "Thread length"
 msgstr "Độ dài Kéo Cắt"
 
+#: scripts/weave.sct.h:9
+msgid "_Weave..."
+msgstr ""
+
 #: scripts/web-browser.sct.h:1
-msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+msgid "<Toolbox>/Help/The GIMP Online"
 msgstr ""
 
 #: scripts/web-browser.sct.h:2
-msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+msgid "Plug-in _Registry"
 msgstr ""
 
 #: scripts/web-browser.sct.h:3
-msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+msgid "_Developer Web Site"
 msgstr ""
 
-#: scripts/xach-effect.sct.h:1
-#, fuzzy
-msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
-msgstr "<Image>/Script-Fu/Bóng/Phối cảnh..."
+#: scripts/web-browser.sct.h:4
+msgid "_Main Web Site"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:2
 #, fuzzy
@@ -2659,6 +2617,405 @@ msgstr "Màu Nổi Bật"
 #, fuzzy
 msgid "Highlight opacity"
 msgstr "Màu Nổi Bật"
+
+#: scripts/xach-effect.sct.h:12
+msgid "_Xach-Effect..."
+msgstr ""
+
+#~ msgid "Text Color"
+#~ msgstr "Màu Văn Bản"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "Cỡ Phông (theo pixel)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/Bản đồ Phông..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Hình 3D..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Hình 3D..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/3D Truchet..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Góc xiên..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Hrule..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Bullet..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Ánh sáng Lạ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Ánh sáng Lạ..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Neon Lạ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/ASCII cho Ảnh..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Mẫu góc xiên/Bullet..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Nút..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Heading..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Hrule..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Blended..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Bovination..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Bovination..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Ảnh chụp cũ..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Góc xiên..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Phấn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Script-Fu/Bóng/Phối cảnh..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Script-Fu/Chọn/Tròn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Băng giá..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Băng giá..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Đường Viền Mờ Ảo..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Bullet..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Trang Web Themes/Mẫu Góc Xiên/Hrule..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Web Page Themes/Ánh sáng Lạ/Nút..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Bóng nhoáng..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Bóng nhoáng..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Ánh sáng Lạ..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Neon Lạ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Ánh sáng Lạ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Tiện ích/ASCII cho Ảnh..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Neon Lạ..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Ảnh chụp cũ..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Script-Fu/Bóng/Phối cảnh..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Nút/Nút Tròn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/3D Truchet..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Script-Fu/Chọn/Bút Vẽ..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Script-Fu/Chọn/Bút Vẽ..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Phấn..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Script-Fu/Trang trí/Thêm Đường Viền..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Băng giá..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Băng giá..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Basic I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Basic I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Script-Fu/Alpha cho Logo/Blended..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Blended..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/3D Truchet..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Script-Fu/Thuật giả kim/Predator..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Script-Fu/Hoạt Cảnh/Blend..."
 
 #~ msgid "Re-read all available scripts"
 #~ msgstr "Đọc lại toàn bộ các script đang có"
@@ -2735,9 +3092,6 @@ msgstr "Màu Nổi Bật"
 #, fuzzy
 #~ msgid "<Toolbox>/Xtns/Script-Fu/Patterns/_Swirly (tileable)..."
 #~ msgstr "<Toolbox>/Xtns/Script-Fu/Mẫu/Camouflage..."
-
-#~ msgid "Border"
-#~ msgstr "Đường Viền"
 
 #~ msgid "Fonts"
 #~ msgstr "Phông chữ"
