@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh 
 
 # This script does all the magic calls to automake/autoconf and
 # friends that are needed to configure a cvs checkout.  You need a
@@ -8,19 +8,22 @@
 # tools and you shouldn't use this script.  Just call ./configure
 # directly.
 
+
 PROJECT="GIMP Tiny-Fu"
 TEST_TYPE=-f
 FILE=tiny-fu/tiny-fu.c
 
 AUTOCONF_REQUIRED_VERSION=2.54
 AUTOMAKE_REQUIRED_VERSION=1.6
-GLIB_REQUIRED_VERSION=2.0.0
+GLIB_REQUIRED_VERSION=2.2.0
 INTLTOOL_REQUIRED_VERSION=0.17
+
 
 srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 ORIGDIR=`pwd`
 cd $srcdir
+
 
 check_version ()
 {
@@ -33,11 +36,12 @@ check_version ()
 }
 
 echo
-echo "I am testing that you have the required versions of autoconf," 
+echo "I am testing that you have the required versions of libtool, autoconf," 
 echo "automake, glib-gettextize and intltoolize..."
 echo
 
 DIE=0
+
 
 echo -n "checking for autoconf >= $AUTOCONF_REQUIRED_VERSION ... "
 if (autoconf --version) < /dev/null > /dev/null 2>&1; then
@@ -48,9 +52,11 @@ else
     echo
     echo "  You must have autoconf installed to compile $PROJECT."
     echo "  Download the appropriate package for your distribution,"
-    echo "  or get the source tarball at ftp://ftp.gnu.org/pub/gnu/"
+    echo "  or get the source tarball at ftp://ftp.gnu.org/pub/gnu/autoconf/"
+    echo
     DIE=1;
 fi
+
 
 echo -n "checking for automake >= $AUTOMAKE_REQUIRED_VERSION ... "
 if (automake-1.7 --version) < /dev/null > /dev/null 2>&1; then
@@ -59,6 +65,7 @@ if (automake-1.7 --version) < /dev/null > /dev/null 2>&1; then
 elif (automake-1.8 --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=automake-1.8
    ACLOCAL=aclocal-1.8
+   AUTOMAKE_REQUIRED_VERSION=1.8.3
 elif (automake-1.6 --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=automake-1.6
    ACLOCAL=aclocal-1.6
@@ -67,6 +74,7 @@ else
     echo "  You must have automake 1.6 or newer installed to compile $PROJECT."
     echo "  Download the appropriate package for your distribution,"
     echo "  or get the source tarball at ftp://ftp.gnu.org/pub/gnu/automake/"
+    echo
     DIE=1
 fi
 
@@ -75,6 +83,7 @@ if test x$AUTOMAKE != x; then
          | grep automake | sed "s/.* \([0-9.]*\)[-a-z0-9]*$/\1/"`
     check_version $VER $AUTOMAKE_REQUIRED_VERSION
 fi
+
 
 echo -n "checking for glib-gettextize >= $GLIB_REQUIRED_VERSION ... "
 if (glib-gettextize --version) < /dev/null > /dev/null 2>&1; then
@@ -86,8 +95,10 @@ else
     echo "  You must have glib-gettextize installed to compile $PROJECT."
     echo "  glib-gettextize is part of glib-2.0, so you should already"
     echo "  have it. Make sure it is in your PATH."
+    echo
     DIE=1
 fi
+
 
 echo -n "checking for intltool >= $INTLTOOL_REQUIRED_VERSION ... "
 if (intltoolize --version) < /dev/null > /dev/null 2>&1; then
@@ -99,8 +110,10 @@ else
     echo "  You must have intltool installed to compile $PROJECT."
     echo "  Get the latest version from"
     echo "  ftp://ftp.gnome.org/pub/GNOME/sources/intltool/"
+    echo
     DIE=1
 fi
+
 
 if test "$DIE" -eq 1; then
     echo
@@ -119,16 +132,29 @@ test $TEST_TYPE $FILE || {
 
 
 if test -z "$*"; then
-    echo
-    echo "I am going to run ./configure with no arguments - if you wish "
-    echo "to pass any to it, please specify them on the $0 command line."
-    echo
+    if test -z "$AUTOGEN_CONFIGURE_ARGS"; then
+	echo
+	echo "I am going to run ./configure with no arguments - if you wish "
+	echo "to pass any to it, please specify them on the $0 command line "
+	echo "or set the AUTOGEN_CONFIGURE_ARGS environment variable."
+	echo
+    else
+	echo
+	echo "I am going to run ./configure with the following arguments:"
+	echo
+	echo "  $AUTOGEN_CONFIGURE_ARGS"
+	echo
+	echo "If you wish to pass additional arguments, please specify them "
+	echo "on the $0 command line."
+	echo
+    fi
 fi
+
 
 if test -z "$ACLOCAL_FLAGS"; then
 
     acdir=`$ACLOCAL --print-ac-dir`
-    m4list="glib-gettext.m4 intltool.m4"
+    m4list="glib-2.0.m4 glib-gettext.m4 gtk-2.0.m4 intltool.m4 pkg.m4"
 
     for file in $m4list
     do
@@ -145,30 +171,33 @@ if test -z "$ACLOCAL_FLAGS"; then
     done
 fi
 
+
 $ACLOCAL $ACLOCAL_FLAGS
 RC=$?
 if test $RC -ne 0; then
    echo "$ACLOCAL gave errors. Please fix the error conditions and try again."
-   exit 1
+   exit $RC
 fi
 
 # optionally feature autoheader
 (autoheader --version)  < /dev/null > /dev/null 2>&1 && autoheader || exit 1
 
-$AUTOMAKE --add-missing || exit 1
-autoconf || exit 1
+$AUTOMAKE --add-missing || exit $?
+autoconf || exit $?
 
-glib-gettextize --copy --force || exit 1
-intltoolize --copy --force --automake || exit 1
+glib-gettextize --copy --force || exit $?
+intltoolize --copy --force --automake || exit $?
+
 
 cd $ORIGDIR
 
-if $srcdir/configure --enable-maintainer-mode --enable-gtk-doc "$@"; then
-  echo
-  echo "Now type 'make' to compile $PROJECT."
-else
+$srcdir/configure --enable-maintainer-mode $AUTOGEN_CONFIGURE_ARGS "$@"
+RC=$?
+if test $RC -ne 0; then
   echo
   echo "Configure failed or did not finish!"
-  exit 1
+  exit $RC
 fi
 
+echo
+echo "Now type 'make' to compile $PROJECT."
