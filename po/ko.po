@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-16 15:47-0400\n"
+"POT-Creation-Date: 2004-10-29 15:07-0400\n"
 "PO-Revision-Date: 2003-06-05 07:54+0800\n"
 "Last-Translator: Dongsu Jang <iolo@hellocity.net>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -14,52 +14,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: tiny-fu/tiny-fu.c:105
-msgid "A scheme interpreter for scripting GIMP operations"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:106
-msgid "More help here later"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:116
-msgid "Provides a console mode for tiny-fu development"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
-msgid "Provides an interface which allows interactive scheme development."
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:121
+#: tiny-fu/tiny-fu.c:122
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
 msgstr "<Toolbox>/확장/Script-Fu/Script-Fu 콘솔(_C)"
 
-#: tiny-fu/tiny-fu.c:128
-msgid "Provides a text console mode for tiny-fu development"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
-msgid "Provides a server for remote tiny-fu operation"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:146
+#: tiny-fu/tiny-fu.c:148
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
 msgstr "<Toolbox>/확장/Script-Fu/서버 시작(_S)..."
-
-#: tiny-fu/tiny-fu.c:154
-msgid "Evaluate scheme code"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:155
-msgid ""
-"Evaluate the code under the scheme interpeter (primarily for batch mode)"
-msgstr ""
-
-#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
-msgid "Re-read all available scripts"
-msgstr "모든 가용한 스크립트 다시 읽기"
 
 #: tiny-fu/tiny-fu.c:275
 #, fuzzy
@@ -173,69 +136,69 @@ msgstr "스크립트 인수"
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:321
+#: tiny-fu/tiny-fu-interface.c:319
 #, fuzzy
 msgid "Tiny-Fu Color Selection"
 msgstr "Script-Fu 색상 선택"
 
-#: tiny-fu/tiny-fu-interface.c:427
+#: tiny-fu/tiny-fu-interface.c:425
 #, fuzzy
 msgid "Tiny-Fu File Selection"
 msgstr "Script-Fu 파일 선택"
 
-#: tiny-fu/tiny-fu-interface.c:431
+#: tiny-fu/tiny-fu-interface.c:429
 #, fuzzy
 msgid "Tiny-Fu Folder Selection"
 msgstr "Script-Fu 폴더 선택"
 
-#: tiny-fu/tiny-fu-interface.c:443
+#: tiny-fu/tiny-fu-interface.c:441
 #, fuzzy
 msgid "Tiny-Fu Font Selection"
 msgstr "Script-Fu 글꼴 선택"
 
-#: tiny-fu/tiny-fu-interface.c:450
+#: tiny-fu/tiny-fu-interface.c:448
 #, fuzzy
 msgid "Tiny-Fu Palette Selection"
 msgstr "Script-Fu 무늬 선택"
 
-#: tiny-fu/tiny-fu-interface.c:458
+#: tiny-fu/tiny-fu-interface.c:456
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Script-Fu 무늬 선택"
 
-#: tiny-fu/tiny-fu-interface.c:465
+#: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Script-Fu 그라디언트 선택"
 
-#: tiny-fu/tiny-fu-interface.c:473
+#: tiny-fu/tiny-fu-interface.c:471
 #, fuzzy
 msgid "Tiny-Fu Brush Selection"
 msgstr "Script-Fu 브러시 선택"
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:532
+#: tiny-fu/tiny-fu-interface.c:530
 #, fuzzy
 msgid "Script Progress"
 msgstr "스크립트 인수"
 
-#: tiny-fu/tiny-fu-interface.c:540
+#: tiny-fu/tiny-fu-interface.c:538
 msgid "(none)"
 msgstr ""
 
-#: tiny-fu/tiny-fu-interface.c:1060
+#: tiny-fu/tiny-fu-interface.c:1058
 msgid "Author:"
 msgstr "작성자:"
 
-#: tiny-fu/tiny-fu-interface.c:1067
+#: tiny-fu/tiny-fu-interface.c:1065
 msgid "Copyright:"
 msgstr "저작권:"
 
-#: tiny-fu/tiny-fu-interface.c:1074
+#: tiny-fu/tiny-fu-interface.c:1072
 msgid "Date:"
 msgstr "날짜:"
 
-#: tiny-fu/tiny-fu-interface.c:1083
+#: tiny-fu/tiny-fu-interface.c:1081
 msgid "Image Types:"
 msgstr "이미지 유형:"
 
@@ -1771,7 +1734,7 @@ msgstr "세로 시작"
 
 #: scripts/hsv-graph.sct.h:9
 #, fuzzy
-msgid "Use selection bounds instead of belows"
+msgid "Use selection bounds instead of values below"
 msgstr "아래 대신에 선택 경계 사용"
 
 #: scripts/i26-gunya2.sct.h:1
@@ -2709,6 +2672,9 @@ msgstr "하일라이트 Y 오프셋"
 #, fuzzy
 msgid "Highlight opacity"
 msgstr "하일라이트 투명도"
+
+#~ msgid "Re-read all available scripts"
+#~ msgstr "모든 가용한 스크립트 다시 읽기"
 
 #, fuzzy
 #~ msgid "Relative radius"
