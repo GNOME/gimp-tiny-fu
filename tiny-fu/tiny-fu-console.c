@@ -159,7 +159,9 @@ tiny_fu_console_interface (void)
   GtkWidget  *dialog;
   GtkWidget  *main_vbox;
   GtkWidget  *vbox;
+#ifdef GIMP_PROC_BROWSER
   GtkWidget  *button;
+#endif
   GtkWidget  *label;
   GtkWidget  *scrolled_window;
   GtkWidget  *hbox;
