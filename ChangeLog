@@ -1,5 +1,10 @@
 2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
 
+	* tiny-fu/ts-wrapper.c: Oops...the array size limit checks
+	were around the wrong way.
+
+2004-10-25 Kevin Cozens <kcozens@cvs.gimp.org>
+
 	* tiny-fu/ts-wrapper.c: Allow user to specify array size of zero.
 
 	* configure.in: GIMP 2.2 is required by change in the ts-wrapper.c
