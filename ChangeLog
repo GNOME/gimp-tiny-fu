@@ -1,8 +1,19 @@
+2005-03-07  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/perspective-shadow.scm: Changed an SF-TOGGLE in the
+	register block to SF-OPTION which it should have been all along.
+
+	* scripts/Makefile.am: Added reference to new script.
+
+	* scripts/gimp-text-wrapper.sct: Added this file which wraps calls
+	to gimp-text-* in order to test for the passing of an empty string.
+	Fix for bug #163479.
+
 2005-03-04  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tiny-fu/ts-wrapper.c: Added support for SF-REGION. SF-BOUNDARY,
-	and SF-PATH. Used proper structure member when passing/receiving
-	data instead of always using d_int32.
+	and SF-PATH. Use proper structure member when passing/receiving
+	data instead of using d_int32 member when passing gint32 values.
 
 2005-03-03  Kevin Cozens  <kcozens@cvs.gimp.org>
 

@@ -1,0 +1,27 @@
+;; The following defines are simple wrappers around two text related calls
+;; to GIMP to verify that the passed text string is not an empty string.
+
+(define gimp-text-fontname
+  (lambda args
+    (let (
+         (text)
+         )
+
+      (set! text (car (cddddr args)))
+      (if (equal? "" text)
+          (gimp-message "gimp-text-fontname: The text string can not be empty")
+      )
+      (apply gimp-proc-db-call (cons "gimp_text_fontname" args))
+    )
+  )
+)
+
+
+(define gimp-text-get-extents-fontname
+  (lambda args
+    (if (equal? "" (car args))
+      (gimp-message "gimp-text-get-extents-fontname: The text string can not be empty")
+    )
+    (apply gimp-proc-db-call (cons "gimp_text_get_extents_fontname" args))
+  )
+)

@@ -54,6 +54,7 @@ scriptdata_DATA =  \
     fuzzyborder.sct         \
     gimp-headers.sct        \
     gimp-labels.sct         \
+    gimp-text-wrapper.sct   \
     glossy.sct              \
     glowing-logo.sct        \
     gradient-bevel-logo.sct \
