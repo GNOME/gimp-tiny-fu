@@ -59,6 +59,12 @@ named_constant {
 
 struct named_constant
 script_constants[] = {
+  /* Useful values from libgimpbase/gimplimits.h */
+  { "MIN-IMAGE-SIZE", GIMP_MIN_IMAGE_SIZE },
+  { "MAX-IMAGE-SIZE", GIMP_MAX_IMAGE_SIZE },
+  { "MIN-RESOLUTION", GIMP_MIN_RESOLUTION },
+  { "MAX-RESOLUTION", GIMP_MAX_RESOLUTION },
+
   /* Useful misc stuff */
   { "TRUE",           TRUE  },
   { "FALSE",          FALSE },
@@ -237,8 +243,6 @@ ts_interpret_string (const gchar *expr)
   sc.tracing = 1;
 #endif
 
-fprintf(stderr, "string to execute:\n%s\n", expr);
-fprintf(stderr, "length of string :%d\n", strlen(expr));
   sc.vptr->load_string (&sc, (char *)expr);
 
   return sc.retcode;
