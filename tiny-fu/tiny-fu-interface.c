@@ -309,9 +309,7 @@ tiny_fu_interface (SFScript *script)
               break;
             }
 
-          gimp_int_combo_box_set_active (GIMP_INT_COMBO_BOX (widget), *ID_ptr);
-
-          g_signal_connect (widget, "changed",
+          gimp_int_combo_box_connect (GIMP_INT_COMBO_BOX (widget), *ID_ptr,
                             G_CALLBACK (gimp_int_combo_box_get_active),
                             ID_ptr);
           break;

@@ -1,3 +1,10 @@
+2004-10-28 Kevin Cozens <kcozens@cvs.gimp.org>
+
+	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Applied patch
+	from Sven Neumann which uses gimp_int_combo_box_connect() so
+	that the initial selection causes the "changed" callback to be
+	run. Fixes bug #156659.
+
 2004-10-26  Michael Natterer  <mitch@gimp.org>
 
 	* configure.in: actually depend on gimp_required_version. Removed
