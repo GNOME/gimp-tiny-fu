@@ -237,6 +237,8 @@ ts_interpret_string (const gchar *expr)
   sc.tracing = 1;
 #endif
 
+fprintf(stderr, "string to execute:\n%s\n", expr);
+fprintf(stderr, "length of string :%d\n", strlen(expr));
   sc.vptr->load_string (&sc, (char *)expr);
 
   return sc.retcode;
@@ -268,8 +270,11 @@ ts_output_string (FILE *fp, char *string, int len)
 {
   gchar *buff;
 
+  g_return_if_fail (len > 0);
+
   if (ts_console_mode && fp == stdout)
   {
+    len = g_utf8_offset_to_pointer(string, (long)len) - string;
     buff = g_strndup (string, len);
     if (buff == NULL)
        return;  /* Should "No memory" be output here? */
@@ -471,7 +476,6 @@ static void
 init_procedures (void)
 {
   gchar          **proc_list;
-  gchar           *proc_name;
   gchar           *proc_blurb;
   gchar           *proc_help;
   gchar           *proc_author;
@@ -520,11 +524,8 @@ init_procedures (void)
   /*  Register each procedure as a scheme func  */
   for (i = 0; i < num_procs; i++)
   {
-      /*  Register each procedure as a scheme func  */
-      proc_name = g_strdup (proc_list[i]);
-
       /*  lookup the procedure  */
-      if (gimp_procedural_db_proc_info (proc_name,
+      if (gimp_procedural_db_proc_info (proc_list[i],
                                         &proc_blurb,
                                         &proc_help,
                                         &proc_author,
@@ -534,6 +535,9 @@ init_procedures (void)
                                         &nparams, &nreturn_vals,
                                         &params, &return_vals))
       {
+         /*  Register each procedure as a scheme func  */
+         gchar *proc_name = g_strdup (proc_list[i]);
+
          /*  convert the names to scheme-like naming conventions  */
          convert_string (proc_name);
 
@@ -563,11 +567,12 @@ init_procedures (void)
          g_free (proc_author);
          g_free (proc_copyright);
          g_free (proc_date);
+         g_free (proc_name);
          gimp_destroy_paramdefs (params, nparams);
          gimp_destroy_paramdefs (return_vals, nreturn_vals);
       }
 
-      g_free (proc_name);
+      g_free (proc_list[i]);
   }
 
   g_free (proc_list);

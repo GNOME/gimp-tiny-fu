@@ -1,3 +1,8 @@
+2005-02-01  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/ts-wrapper.c (init_procedures): Plugged memory leaks
+	originally spotted by Sven Neumann in Script-Fu.
+
 2005-01-23  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* re/Makefile.am: Added GIMP_CFLAGS to AM_CFLAGS. This is needed by
