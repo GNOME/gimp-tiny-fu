@@ -33,7 +33,7 @@
                                     shadow-blur
                                     shadow-color
                                     shadow-opacity
-                                    interpolate
+                                    interpolation
                                     allow-resize)
   (let* (
         (shadow-blur (max shadow-blur 0))
@@ -137,12 +137,14 @@
                              image-offset-x
                              image-offset-y)))
   
-    (gimp-perspective shadow-layer
-                      interpolate
+    (gimp-drawable-transform-perspective shadow-layer
                       x0 y0
                       x1 y1
                       x2 y2
-                      x3 y3)
+                      x3 y3
+                      TRANSFORM-FORWARD
+                      interpolation
+                      TRUE 3 FALSE)
 
     (if (>= shadow-blur 1.0)
         (begin
@@ -192,6 +194,6 @@
     SF-ADJUSTMENT _"Blur radius" '(3 0 1024 1 10 0 0)
     SF-COLOR      _"Color" '(0 0 0)
     SF-ADJUSTMENT _"Opacity" '(80 0 100 1 10 0 0)
-    SF-TOGGLE     _"Interpolate" TRUE
+    SF-TOGGLE     _"Interpolation" '(_"None" _"Linear" _"Cubic")
     SF-TOGGLE     _"Allow resizing" FALSE
 )

@@ -1,5 +1,19 @@
 2004-11-14  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* scripts/selection-round.sct: Register the compatibility procedure
+	with the correct name. (From a Script-Fu change by Sven Neumann)
+
+	Updates based on changes made by Michael Natterer to Script-Fu.
+
+	* scripts/3dTruchet.sct
+	* scripts/coolmetal-logo.sct
+	* scripts/image-structure.sct
+	* scripts/perspective-shadow.sct
+	* scripts/text-circle.sct
+	* scripts/truchet.sct: Use the new transform API.
+
+2004-11-14  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* scripts/guides-new.sct
 	* scripts/guides-remove-all.sct: Missed script-fu-* references
 	that should be tiny-fu-*.

@@ -166,7 +166,7 @@
    SF-TOGGLE     _"Concave"    FALSE
 )
 
-(tiny-fu-register "tiny-fu-selection-rounded"
+(tiny-fu-register "tiny-fu-selection-round"
     ""
     "Rounds the active selection. This procedure exists for backward compatibility only. Please use tiny-fu-selection-rounded-rectangle instead."
     "Sven Neumann"              ; authors
