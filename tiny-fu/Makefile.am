@@ -4,12 +4,19 @@ libtinyscheme=$(top_builddir)/tinyscheme/libtinyscheme.a
 libftx=$(top_builddir)/ftx/libftx.a
 libre=$(top_builddir)/re/libre.a
 
+if OS_WIN32
+mwindows = -mwindows
+WINSOCK_LIBS = -lwsock32
+endif
+
 AM_CFLAGS = -DUSE_INTERFACE=1 -DUSE_STRCASECMP=1 -DUSE_STRLWR=1
 
 INCLUDES = \
 	-I$(top_srcdir)		\
 	$(GIMP_CFLAGS)		\
 	-I$(includedir)
+
+AM_LDFLAGS = $(mwindows)
 
 libexecdir = $(GIMP_LIBDIR)/plug-ins
 
@@ -39,4 +46,5 @@ LDADD = \
 	$(libftx)			\
 	$(libre)			\
 	$(GIMP_LIBS)		\
+	$(WINSOCK_LIBS)		\
 	$(INTLLIBS)
