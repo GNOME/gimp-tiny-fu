@@ -3,8 +3,41 @@ Version 0.9 of the Tiny-Fu Plug-in for GIMP 2.1/2.2
 
 This is the development branch of Tiny-Fu. This is where new features
 are added, features may be dropped or changed, or other large changes
-to the code are made. Real soon now the next stable Tiny-Fu release,
-Tiny-Fu 1.0, will emerge out of this.
+to the code are made. The next stable Tiny-Fu release, Tiny-Fu 1.0,
+will emerge out of this real soon now.
+
+
+
+Overview of Changes in Tiny-Fu 0.9.6
+====================================
+
+- Actually retrieve the value from the GtkEntry for SF-VALUE.
+
+- Don't call gettext() on strings provided by scripts as they are already
+  translated by the Scheme interpreter.
+
+- Don't silently return when there is already a script running but show a
+  message instead. Fixes bug #123882.
+
+- Re-added the deprecated constants for backwards compatability with
+  Script-Fu and the 2.0 version of GIMP.
+
+- Updates and fixes to various scripts
+
+	* Changed some gimp-selection-clear calls to gimp-selection-none
+      See bug #156765.
+
+    * Changed some scripts which called gimp-edit-* functions on drawables
+      which were not yet added to an image because this will be forbidden
+      soon.
+
+	* In lava.sct, replaced undo-disable/enable by undo-group-start/end.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to parts of
+   GIMP by Michael Natterer and Sven Neumann. 
 
 
 
