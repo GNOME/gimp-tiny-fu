@@ -20,8 +20,8 @@ Dies at the call to (pixelize 1 img -1 3)
 
 
 ToDo:
-- A line beginning with a ; just before some close brackets will result in
-  'syntax error: illegal token 1'.
+- Announce availability of Tiny-Fu via CVS
+- Update web page to mention Tiny-Fu is available via CVS and how to get it.
 - E-mail GIMP devel list to ask plug-in authors to improve error checking.
 - Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
 - Add check to make sure number of args in call matches number of args
@@ -29,24 +29,33 @@ ToDo:
   I added an item to the register list in test-sphere but not to the define
   statement and it didn't catch the discrepancy.
 - Add a script under the Utils menu that turns off tracing and restores undo.
-- Test the ability to call a Tiny-Fu script from within a Tiny-Fu script.
-- (let ((foo (cons-array 1))) (gimp-parasite-attach (list "bar" 0 foo)))
-  gives the message "Error: not enough arguments".
-  It should display the name of the item for which there are missing args.
 - Add UTF-8 support to TinyScheme
   <mitch> a safe place to start is probably to simply g_utf8_validate() the
   whole script upon loading. after that, all strings you get from gtk widgets
   are utf-8 already
+- Re-enable Browse button in Console mode.
+  To enable the Browse buttin in Tiny-Fu means I need to link in the
+  libgimpprocbrowser.a file but it has strings in it which mean I need access
+  to two of the source files so any strings marked for translation will be
+  included in the tiny-fu .po files.
 - Change Tiny-Fu from an extension to a regular plug-in.
 - Create some demonstration scripts using the tsx (and re) extensions
 	o Create thumbnails
 	o Web gallery
 		thumbnails + html pages to show them and link to the originals images
 	o Create a contact sheet (DONE)
+
 - Clean up the changes re: putting error messages in to a buffer. Send the
   code changes to TinyScheme author.
 - The print_flag variable should only be set to 1 for the console mode.
 - Test the plug-ins text console mode.
+- A line beginning with a ; just before some close brackets will result in
+  'syntax error: illegal token 1'.
+- (let ((foo (cons-array 1))) (gimp-parasite-attach (list "bar" 0 foo)))
+  gives the message "Error: not enough arguments".
+  It should display the name of the item for which there are missing args.
+- Some errors about car: argument 1 should be a pair should provide an
+  indication of what the name of the argument is.
 - Check if there are other places where is_pair() is being called instead
   of is_list().
 - Check for valid return values from mk_*() calls to TinyScheme.
@@ -56,7 +65,6 @@ ToDo:
 - Use a call to scheme_define() instead of building a string which is passed
   to scheme_load_string() to define the stuff needed to call a C routine?
 - Create/update gimp-help info for Tiny-Fu plugin.
-- Autoconf/configure issues.
 - Update the information in the ftx-functions.txt file to indicate that ftx
   is based on the TinyScheme tsx extensions.
 - Reformat the source files to conform to GIMP coding standards.
