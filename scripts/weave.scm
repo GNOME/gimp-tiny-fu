@@ -388,7 +388,7 @@
 )
 
 (tiny-fu-register "tiny-fu-weave"
-    _"<Image>/Tiny-Fu/Alchemy/_Weave..."
+    _"_Weave..."
     "Weave effect like Alien Skin"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -404,3 +404,6 @@
     SF-ADJUSTMENT _"Thread density"   '(50  0 100 1 10 1 1)
     SF-ADJUSTMENT _"Thread intensity" '(100 0 512 1 10 1 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-weave"
+                      _"<Image>/Tiny-Fu/Alchemy")

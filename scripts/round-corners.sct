@@ -125,7 +125,7 @@
 )
 
 (tiny-fu-register "tiny-fu-round-corners"
-    _"<Image>/Tiny-Fu/Decor/_Round Corners..."
+    _"_Round Corners..."
     "Round the corners of an image and optionally adds a drop-shadow and a background"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
@@ -141,3 +141,6 @@
     SF-TOGGLE     _"Add background" TRUE
     SF-TOGGLE     _"Work on copy" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-round-corners"
+                      _"<Image>/Tiny-Fu/Decor")

@@ -154,7 +154,7 @@
 
 (tiny-fu-register
     "tiny-fu-fuzzy-border"
-    _"<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+    _"_Fuzzy Border..."
     "Fade border to chosen color"
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
@@ -171,3 +171,6 @@
     SF-TOGGLE _"Work on copy" TRUE
     SF-TOGGLE _"Flatten image" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-fuzzy-border"
+                      _"<Image>/Tiny-Fu/Decor")

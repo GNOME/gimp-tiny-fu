@@ -182,7 +182,7 @@
 )
 
 (tiny-fu-register "tiny-fu-round-button"
-    _"<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+    _"_Round Button..."
     "Round button"
     "Arturo Espinosa (stolen from quartic's beveled button)"
     "Arturo Espinosa & Federico Mena Quintero"
@@ -205,3 +205,6 @@
     SF-TOGGLE     _"Not pressed (active)" TRUE
     SF-TOGGLE     _"Pressed"              TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-round-button"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Buttons")

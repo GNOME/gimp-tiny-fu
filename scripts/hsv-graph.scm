@@ -307,7 +307,7 @@
     (gimp-displays-flush)))
 
 (tiny-fu-register "tiny-fu-hsv-graph"
-    _"<Image>/Tiny-Fu/Utils/Draw _HSV Graph..."
+    _"Draw _HSV Graph..."
     "Draph the graph of H/S/V values on the drawable"
     "Shuji Narazaki <narazaki@InetQ.or.jp>"
     "Shuji Narazaki"
@@ -326,3 +326,6 @@
 )
 
 ;;; hsv-graph.scm ends here
+
+(tiny-fu-menu-register "tiny-fu-hsv-graph"
+                      _"<Image>/Tiny-Fu/Utils")

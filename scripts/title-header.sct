@@ -159,7 +159,7 @@
 )
 
 (tiny-fu-register "tiny-fu-title-header"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+    _"Web Title Header..."
     "Web title header"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -170,3 +170,6 @@
     SF-FONT       _"Font"               "Sans"
     SF-TOGGLE     _"Gradient reverse"   FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-title-header"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

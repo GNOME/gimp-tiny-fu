@@ -43,7 +43,7 @@
 )
 
 (tiny-fu-register "tiny-fu-swirl-tile"
-    _"<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+    _"Swirl-_Tile..."
     "Create an interesting swirled tile"
     "Adrian Likins <aklikins@eos.ncsu.edu>"
     "Adrian Likins"
@@ -59,3 +59,6 @@
     SF-ADJUSTMENT _"Roughness" '(.5 0 1 .1 .01 2 1)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-swirl-tile"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

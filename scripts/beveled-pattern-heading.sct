@@ -97,7 +97,7 @@
 
 
 (tiny-fu-register "tiny-fu-beveled-pattern-heading"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+    _"H_eading..."
     "Beveled pattern heading"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -109,3 +109,6 @@
     SF-PATTERN    _"Pattern"            "Wood"
     SF-TOGGLE     _"Transparent background" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-beveled-pattern-heading"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")

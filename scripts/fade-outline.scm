@@ -177,7 +177,7 @@
 
 (tiny-fu-register
     "tiny-fu-fade-outline"
-    _"<Image>/Tiny-Fu/Selection/_Fade Outline..."
+    _"_Fade Outline..."
     "Blend the Layers outline border from one alpha value (opaque) to another (transparent) by generating a Layermask"
     "Wolfgang Hofer <hof@hotbot.com>"
     "Wolfgang Hofer"
@@ -192,3 +192,6 @@
     SF-TOGGLE _"Apply generated layermask" FALSE
     SF-TOGGLE _"Clear unselected maskarea" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-fade-outline"
+                      _"<Image>/Tiny-Fu/Selection")

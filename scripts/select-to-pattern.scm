@@ -91,7 +91,7 @@
 )
 
 (tiny-fu-register "tiny-fu-selection-to-pattern"
-    _"<Image>/Tiny-Fu/Selection/To _Pattern..."
+    _"To _Pattern..."
     "Convert a selection to a pattern"
     "Cameron Gregory <cameron@bloke.com>"
     "Cameron Gregory"
@@ -102,3 +102,6 @@
     SF-STRING   _"Pattern name" "My Pattern"
     SF-STRING   _"Filename"     "mypattern"
 )
+
+(tiny-fu-menu-register "tiny-fu-selection-to-pattern"
+                      _"<Image>/Tiny-Fu/Selection")

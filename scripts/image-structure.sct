@@ -90,7 +90,7 @@
 
 (tiny-fu-register
  "tiny-fu-show-image-structure"
- _"<Image>/Tiny-Fu/Utils/Show Image _Structure..."
+ _"Show Image _Structure..."
  "Show the layer structure of the image"
  "Shuji Narazaki <narazaki@InetQ.or.jp>"
  "Shuji Narazaki"
@@ -112,3 +112,6 @@
 )
 
 ;;; image-structure.scm ends here
+
+(tiny-fu-menu-register "tiny-fu-show-image-structure"
+                      _"<Image>/Tiny-Fu/Utils")

@@ -190,7 +190,7 @@
 )
 
 (tiny-fu-register "tiny-fu-neon-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+    _"N_eon..."
     "Neon logos"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -203,6 +203,9 @@
     SF-COLOR      _"Glow color" '(38 211 255)
     SF-TOGGLE     _"Create shadow" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-neon-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-neon-logo text
                            size
@@ -224,7 +227,7 @@
 )
 
 (tiny-fu-register "tiny-fu-neon-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+    _"N_eon..."
     "Neon logos"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -237,3 +240,6 @@
     SF-COLOR      _"Glow color" '(38 211 255)
     SF-TOGGLE     _"Create shadow" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-neon-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

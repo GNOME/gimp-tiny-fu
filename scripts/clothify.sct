@@ -46,7 +46,7 @@
 
 
 (tiny-fu-register "tiny-fu-clothify"
-  _"<Image>/Tiny-Fu/Alchemy/_Clothify..."
+  _"_Clothify..."
   "Gives the current layer a cloth-like texture"
   "Tim Newsome <drz@froody.bloke.com>"
   "Tim Newsome"
@@ -60,3 +60,6 @@
   SF-ADJUSTMENT _"Elevation" '(45 0 90 1 10 1 0)
   SF-ADJUSTMENT _"Depth" '(3 1 50 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-clothify"
+                      _"<Image>/Tiny-Fu/Alchemy")

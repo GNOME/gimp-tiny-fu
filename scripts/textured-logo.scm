@@ -114,7 +114,7 @@
 )
 
 (tiny-fu-register "tiny-fu-textured-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+    _"_Textured..."
     "Creates textured logos with blended backgrounds, highlights, and shadows"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -131,6 +131,9 @@
     SF-COLOR      _"Starting blend"       '(32 106 0)
     SF-COLOR      _"Ending blend"         '(0 0 106)
 )
+
+(tiny-fu-menu-register "tiny-fu-textured-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-textured-logo text
                                size
@@ -154,7 +157,7 @@
 )
 
 (tiny-fu-register "tiny-fu-textured-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+    _"_Textured..."
     "Creates textured logos with blended backgrounds, highlights, and shadows"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -171,3 +174,6 @@
     SF-COLOR      _"Starting blend"     '(32 106 0)
     SF-COLOR      _"Ending blend"       '(0 0 106)
 )
+
+(tiny-fu-menu-register "tiny-fu-textured-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

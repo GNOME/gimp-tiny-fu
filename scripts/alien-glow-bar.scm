@@ -79,7 +79,7 @@
 
 
 (tiny-fu-register "tiny-fu-alien-glow-horizontal-ruler"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+    _"_Hrule..."
     "Create an Hrule with the Alien Glow look"
     "Adrian Likins"
     "Adrian Likins"
@@ -91,3 +91,6 @@
     SF-COLOR      _"Background color" '(0 0 0)
     SF-TOGGLE     _"Flatten image"    TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-alien-glow-horizontal-ruler"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")

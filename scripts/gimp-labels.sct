@@ -106,11 +106,12 @@
   (tiny-fu-labels-gimp-org text "helvetica" 12 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 7 10 24))
   
 (define (tiny-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
-  (tiny-fu-labels-gimp-org text "helvetica" 10 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 6 20 18))
+  (tiny-fu-labels-gimp-org text "helvetica" 10 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 6 20 18)
+)
 
 
 (tiny-fu-register "tiny-fu-tube-button-label-gimp-org"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button Label..."
+    _"_Tube Button Label..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
@@ -120,9 +121,12 @@
     SF-TOGGLE _"Remove background" TRUE
     SF-TOGGLE _"Index image" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-tube-button-label-gimp-org"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
 
 (tiny-fu-register "tiny-fu-tube-subbutton-label-gimp-org"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button Label..."
+    _"T_ube Sub-Button Label..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
@@ -132,9 +136,12 @@
     SF-TOGGLE _"Remove background" TRUE
     SF-TOGGLE _"Index image" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-tube-subbutton-label-gimp-org"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
 
 (tiny-fu-register "tiny-fu-tube-subsubbutton-label-gimp-org"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-Button Label..."
+    _"Tub_e Sub-Sub-Button Label..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
@@ -145,8 +152,11 @@
     SF-TOGGLE _"Index image" TRUE
 )
 
+(tiny-fu-menu-register "tiny-fu-tube-subsubbutton-label-gimp-org"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+
 (tiny-fu-register "tiny-fu-labels-gimp-org"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube Labels..."
+    _"_General Tube Labels..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
@@ -166,3 +176,6 @@
     SF-ADJUSTMENT _"Offset Y" '(0 0 50 1 10 0 1)
     SF-ADJUSTMENT _"Height"   '(30 2 1000 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-labels-gimp-org"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")

@@ -90,7 +90,7 @@
 )
 
 (tiny-fu-register "tiny-fu-gradient-bevel-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+    _"Gradient Beve_l..."
     "Makes Shiny Bevelly text"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
@@ -103,6 +103,9 @@
     SF-ADJUSTMENT _"Bevel width"              '(2.5 1 200 1 10 1 1)
     SF-COLOR      _"Background color"         '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-gradient-bevel-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-gradient-bevel-logo text
                                      size
@@ -126,7 +129,7 @@
 )
 
 (tiny-fu-register "tiny-fu-gradient-bevel-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+    _"Gradient Beve_l..."
     "Makes Shiny Bevelly text"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
@@ -139,3 +142,6 @@
     SF-ADJUSTMENT _"Bevel width"              '(2.5 1 200 1 10 1 1)
     SF-COLOR      _"Background color"         '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-gradient-bevel-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

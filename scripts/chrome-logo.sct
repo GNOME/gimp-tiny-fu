@@ -79,22 +79,25 @@
 )
 
 (tiny-fu-register "tiny-fu-chrome-logo-alpha"
-                    _"<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-                    "Somewhat simplistic, but cool chromed logos"
-                    "Spencer Kimball"
-                    "Spencer Kimball & Peter Mattis"
-                    "1997"
-                    "RGBA"
-                    SF-IMAGE      "Image" 0
-                    SF-DRAWABLE   "Drawable" 0
-                    SF-ADJUSTMENT _"Offsets (pixels * 2)" '(10 2 100 1 10 0 1)
-                    SF-COLOR      _"Background Color" '(191 191 191)
-                    )
+    _"C_hrome..."
+    "Somewhat simplistic, but cool chromed logos"
+    "Spencer Kimball"
+    "Spencer Kimball & Peter Mattis"
+    "1997"
+    "RGBA"
+    SF-IMAGE      "Image" 0
+    SF-DRAWABLE   "Drawable" 0
+    SF-ADJUSTMENT _"Offsets (pixels * 2)" '(10 2 100 1 10 0 1)
+    SF-COLOR      _"Background Color" '(191 191 191)
+)
+
+(tiny-fu-menu-register "tiny-fu-chrome-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-chrome-logo text
-                               size
-                               font
-                               bg-color)
+                             size
+                             font
+                             bg-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (b-size (* size 0.2))
@@ -109,7 +112,7 @@
 )
 
 (tiny-fu-register "tiny-fu-chrome-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+    _"C_hrome..."
     "Somewhat simplistic, but cool chromed logos"
     "Spencer Kimball"
     "Spencer Kimball & Peter Mattis"
@@ -120,3 +123,6 @@
     SF-FONT       _"Font" "Bodoni"
     SF-COLOR      _"Background color" '(191 191 191)
 )
+
+(tiny-fu-menu-register "tiny-fu-chrome-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

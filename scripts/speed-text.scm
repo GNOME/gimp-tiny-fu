@@ -81,7 +81,7 @@
 )
 
 (tiny-fu-register "tiny-fu-speed-text"
-  _"<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+  _"Speed Text..."
   "give text a speedy effect"
   "Austin Donnelly"
   "Austin Donnelly"
@@ -94,3 +94,6 @@
   SF-COLOR      _"Text color" '(0 0 0)
   SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-speed-text"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

@@ -198,7 +198,7 @@
 )
 
 (tiny-fu-register "tiny-fu-sota-chrome-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+    _"SOTA Chrome..."
     "State of the art chromed logos"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -218,3 +218,6 @@
     SF-COLOR      _"Highlight balance" '(211 95 0)
     SF-COLOR      _"Chrome balance" '(0 0 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-sota-chrome-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

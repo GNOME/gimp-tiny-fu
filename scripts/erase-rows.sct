@@ -3,7 +3,7 @@
         (width (car (gimp-drawable-width drawable)))
         (height (car (gimp-drawable-height drawable)))
         (x (car (gimp-drawable-offsets drawable)))
-        (y (cadr (gimp-drawable-offsets drawable))))
+        (y (cadr (gimp-drawable-offsets drawable)))
         )
 
     (gimp-image-undo-group-start img)
@@ -32,15 +32,19 @@
 )
 
 (tiny-fu-register "tiny-fu-erase-rows"
-                    _"<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
-                    "Erase every other row/column with the background color"
-                    "Federico Mena Quintero"
-                    "Federico Mena Quintero"
-                    "June 1997"
-                    "RGB* GRAY* INDEXED*"
-                    SF-IMAGE "Image" 0
-                    SF-DRAWABLE "Drawable" 0
-                    SF-OPTION _"Rows/cols" '(_"Rows" _"Columns")
-                    SF-OPTION _"Even/odd"  '(_"Even" _"Odd")
-                    SF-OPTION _"Erase/fill"  '(_"Erase" _"Fill with BG"))
+                  _"_Erase every other Row..."
+                  "Erase every other row/column with the background color"
+                  "Federico Mena Quintero"
+                  "Federico Mena Quintero"
+                  "June 1997"
+                  "RGB* GRAY* INDEXED*"
+                  SF-IMAGE "Image" 0
+                  SF-DRAWABLE "Drawable" 0
+                  SF-OPTION _"Rows/cols" '(_"Rows" _"Columns")
+                  SF-OPTION _"Even/odd"  '(_"Even" _"Odd")
+                  SF-OPTION _"Erase/fill"  '(_"Erase" _"Fill with BG")
+)
 
+
+(tiny-fu-menu-register "tiny-fu-erase-rows"
+                      _"<Image>/Tiny-Fu/Alchemy")

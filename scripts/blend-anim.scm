@@ -223,7 +223,7 @@
 )
 
 (tiny-fu-register "tiny-fu-blend-anim"
-    _"<Image>/Tiny-Fu/Animators/_Blend..."
+    _"_Blend..."
     "Blend two or more layers over a background, so that an animation can be saved"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
@@ -235,3 +235,6 @@
     SF-ADJUSTMENT _"Max. blur radius"    '(0 0 1024 1 10 0 1)
     SF-TOGGLE     _"Looped" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-blend-anim"
+                      _"<Image>/Tiny-Fu/Animators")

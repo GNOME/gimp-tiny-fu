@@ -110,7 +110,7 @@
 )
 
 (tiny-fu-register "tiny-fu-comic-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+    _"Comic Boo_k..."
     "Comic-book Style Logos"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
@@ -124,6 +124,9 @@
     SF-COLOR      _"Outline color"    '(255 255 255)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-comic-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-comic-logo text
@@ -148,7 +151,7 @@
 )
 
 (tiny-fu-register "tiny-fu-comic-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+    _"Comic Boo_k..."
     "Comic-book Style Logos"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
@@ -163,3 +166,6 @@
     SF-COLOR      _"Outline color"      '(255 255 255)
     SF-COLOR      _"Background color"   '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-comic-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

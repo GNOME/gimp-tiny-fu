@@ -87,7 +87,7 @@
 
 (tiny-fu-register
   "tiny-fu-camo-pattern"
-  _"<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+  _"_Camouflage..."
   "Camouflage pattern"
   "Chris Gutteridge: cjg@ecs.soton.ac.uk"
   "28th April 1998"
@@ -102,3 +102,6 @@
   SF-TOGGLE     _"Flatten image" TRUE
 )
 
+
+(tiny-fu-menu-register "tiny-fu-camo-pattern"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

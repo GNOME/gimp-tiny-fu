@@ -70,7 +70,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-rectangular"
-    _"<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+    _"_Rectangular..."
     "Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -81,6 +81,9 @@
     SF-ADJUSTMENT _"Height"  '(20 1 200 1 10 0 1)
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-make-brush-rectangular"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
 
 
 (define (tiny-fu-make-brush-rectangular-feathered description width height feathering spacing)
@@ -141,7 +144,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-rectangular-feathered"
-    _"<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+    _"Re_ctangular, Feathered..."
     _"Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -153,6 +156,10 @@
     SF-ADJUSTMENT _"Feathering" '(4 1 100 1 10 0 1)
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-make-brush-rectangular-feathered"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+
 
 (define (tiny-fu-make-brush-elliptical description width height spacing)
   (let* (
@@ -202,7 +209,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-elliptical"
-    _"<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+    _"_Elliptical..."
     "Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -213,6 +220,9 @@
     SF-ADJUSTMENT _"Height"  '(20 1 200 1 10 0 1)
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-make-brush-elliptical"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
 
 
 (define (tiny-fu-make-brush-elliptical-feathered description width height feathering spacing)
@@ -271,7 +281,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-elliptical-feathered"
-    _"<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+    _"Elli_ptical, Feathered..."
     "Makes a feathered elliptical brush of specified size"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -283,3 +293,6 @@
     SF-ADJUSTMENT _"Feathering" '(4 1 100 1 10 0 1)
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-make-brush-elliptical-feathered"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")

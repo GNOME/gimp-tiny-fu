@@ -91,7 +91,7 @@
 
 (tiny-fu-register
     "tiny-fu-old-photo"
-    _"<Image>/Tiny-Fu/Decor/_Old Photo..."
+    _"_Old Photo..."
     "Makes the image look like an old photo. A border size of 0 means no border."
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
@@ -108,3 +108,6 @@
     SF-TOGGLE     _"Mottle"       FALSE
     SF-TOGGLE     _"Work on copy" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-old-photo"
+                      _"<Image>/Tiny-Fu/Decor")

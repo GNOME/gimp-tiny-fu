@@ -75,7 +75,7 @@
     (gimp-displays-flush)))
 
 (tiny-fu-register "tiny-fu-grid-system"
-		    _"<Image>/Tiny-Fu/Render/_Grid..."
+		    _"_Grid..."
 		    "Draw grid as specified by X-DIVIDES (list of proportions relative to the drawable) and Y-DIVIDES. The color and width of grid is detemined by the current settings of brush."
 		    "Shuji Narazaki <narazaki@InetQ.or.jp>"
 		    "Shuji Narazaki"
@@ -88,3 +88,6 @@
 )
 
 ;;; grid-system.scm ends here
+
+(tiny-fu-menu-register "tiny-fu-grid-system"
+                      _"<Image>/Tiny-Fu/Render")

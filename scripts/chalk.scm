@@ -68,7 +68,7 @@
 )
 
 (tiny-fu-register "tiny-fu-chalk-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+    _"_Chalk..."
     "Chalk scribbled logos"
     "Manish Singh <msingh@uclink4.berkeley.edu>"
     "Manish Singh"
@@ -78,6 +78,9 @@
     SF-DRAWABLE   "Drawable" 0
     SF-COLOR      _"Background color" '(0 0 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-chalk-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-chalk-logo text
@@ -105,7 +108,7 @@
 )
 
 (tiny-fu-register "tiny-fu-chalk-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+    _"_Chalk..."
     "Chalk scribbled logos"
     "Manish Singh <msingh@uclink4.berkeley.edu>"
     "Manish Singh"
@@ -117,3 +120,6 @@
     SF-COLOR      _"Background color" '(0 0 0)
     SF-COLOR      _"Chalk color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-chalk-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

@@ -162,7 +162,7 @@
 )
 
 (tiny-fu-register "tiny-fu-drop-shadow"
-    _"<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+    _"_Drop-Shadow..."
     "Add a drop-shadow of the current selection or alpha-channel"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
@@ -177,3 +177,6 @@
     SF-ADJUSTMENT _"Opacity" '(80 0 100 1 10 0 0)
     SF-TOGGLE     _"Allow resizing" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-drop-shadow"
+                      _"<Image>/Tiny-Fu/Shadow")

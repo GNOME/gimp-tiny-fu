@@ -153,7 +153,7 @@
 )
 
 (tiny-fu-register "tiny-fu-truchet"
-  _"<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+  _"T_ruchet..."
   "Create a Truchet pattern \n\nWorks best with even sized thicknesses"
   "Adrian Likins <aklikins@eos.ncsu.edu>"
   "Adrian Likins"
@@ -166,3 +166,6 @@
   SF-ADJUSTMENT _"Number of X tiles" '(5 1 512 1 10 1 1)
   SF-ADJUSTMENT _"Number of Y tiles" '(5 1 512 1 10 1 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-truchet"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

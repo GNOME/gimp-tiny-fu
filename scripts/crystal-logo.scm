@@ -203,7 +203,7 @@
 
 
 (tiny-fu-register "tiny-fu-crystal-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+    _"Crystal..."
     "Crystal/Gel effect which displaces the image underneath"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -224,3 +224,6 @@
                        "images" DIR-SEPARATOR
                        "beavis.jpg")
 )
+
+(tiny-fu-menu-register "tiny-fu-crystal-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

@@ -13,7 +13,7 @@
     (gimp-displays-flush)))
 
 (tiny-fu-register "tiny-fu-guides-remove"
-		    _"<Image>/Image/Guides/_Remove all Guides"
+		    _"_Remove all Guides"
 		    "Removes all horizontal and vertical guides."
 		    "Alan Horkan"
 		    "Alan Horkan, 2004. Public Domain."
@@ -21,3 +21,6 @@
 		    ""
 		    SF-IMAGE    "Image"    0
 		    SF-DRAWABLE "Drawable" 0)
+
+(tiny-fu-menu-register "tiny-fu-guides-remove"
+                      _"<Image>/Image/Guides")

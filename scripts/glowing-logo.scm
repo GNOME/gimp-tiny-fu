@@ -72,7 +72,7 @@
 )
 
 (tiny-fu-register "tiny-fu-glowing-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+    _"Glo_wing Hot..."
     "Glowing hot logos"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -83,6 +83,9 @@
     SF-ADJUSTMENT _"Effect size (pixels * 3)" '(150 2 1000 1 10 0 1)
     SF-COLOR      _"Background color" '(7 0 20)
 )
+
+(tiny-fu-menu-register "tiny-fu-glowing-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-glowing-logo text
                                 size
@@ -101,7 +104,7 @@
 )
 
 (tiny-fu-register "tiny-fu-glowing-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+    _"Glo_wing Hot..."
     "Glowing hot logos"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -112,3 +115,6 @@
     SF-FONT       _"Font" "Slogan"
     SF-COLOR      _"Background color" '(7 0 20)
 )
+
+(tiny-fu-menu-register "tiny-fu-glowing-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

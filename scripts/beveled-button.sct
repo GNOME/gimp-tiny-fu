@@ -138,7 +138,7 @@
 )
 
 (tiny-fu-register "tiny-fu-button00"
-                    _"<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+                    _"Simple _Beveled Button..."
                     "Simple beveled button"
                     "Federico Mena Quintero"
                     "Federico Mena Quintero"
@@ -153,3 +153,6 @@
                     SF-ADJUSTMENT _"Padding"            '(2 1 100 1 10 0 1)
                     SF-ADJUSTMENT _"Bevel width"        '(4 1 100 1 10 0 1)
                     SF-TOGGLE     _"Pressed"            FALSE)
+
+(tiny-fu-menu-register "tiny-fu-button00"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Buttons")

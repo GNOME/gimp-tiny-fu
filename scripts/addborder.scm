@@ -163,7 +163,7 @@
 )
 
 (tiny-fu-register "tiny-fu-addborder"
-    _"<Image>/Tiny-Fu/Decor/Add _Border..."
+    _"Add _Border..."
     "Add a border around an image"
     "Andy Thomas <alt@picnic.demon.co.uk>"
     "Andy Thomas"
@@ -176,3 +176,6 @@
     SF-COLOR      _"Border color" '(38 31 207)
     SF-ADJUSTMENT _"Delta value on color" '(25 1 255 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-addborder"
+                      _"<Image>/Tiny-Fu/Decor")

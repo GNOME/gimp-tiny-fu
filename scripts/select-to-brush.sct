@@ -127,7 +127,7 @@
 )
 
 (tiny-fu-register "tiny-fu-selection-to-brush"
-    _"<Image>/Tiny-Fu/Selection/To _Brush..."
+    _"To _Brush..."
     "Convert a selection to a brush"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
@@ -139,3 +139,6 @@
     SF-STRING     _"File name"   "mybrush"
     SF-ADJUSTMENT _"Spacing"     '(25 0 1000 1 1 1 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-selection-to-brush"
+                      _"<Image>/Tiny-Fu/Selection")

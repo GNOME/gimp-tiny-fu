@@ -58,7 +58,7 @@
 )
 
 (tiny-fu-register "tiny-fu-flatland"
-    _"<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+    _"_Flatland..."
     "A Land Pattern"
     "Adrian Likins <aklikins@eos.ncsu.edu>"
     "Adrian Likins"
@@ -71,3 +71,6 @@
     SF-ADJUSTMENT _"Scale X" '(4 0.1 16 0.1 2 1 1)
     SF-ADJUSTMENT _"Scale Y" '(4 0.1 16 0.1 2 1 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-flatland"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

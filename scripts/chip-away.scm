@@ -132,7 +132,7 @@
 )
 
 (tiny-fu-register "tiny-fu-chip-away-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+    _"Chip Awa_y..."
     "Chip away effect"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins <adrian@gimp.org>"
@@ -149,6 +149,9 @@
     SF-TOGGLE     _"Keep background" TRUE
     SF-PATTERN    _"Pattern" "Burlwood"
 )
+
+(tiny-fu-menu-register "tiny-fu-chip-away-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-chip-away-logo text
@@ -176,7 +179,7 @@
 )
 
 (tiny-fu-register "tiny-fu-chip-away-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+    _"Chip Awa_y..."
     "Chip away effect"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins <adrian@gimp.org>"
@@ -195,3 +198,5 @@
     SF-PATTERN    _"Pattern" "Burlwood"
 )
 
+(tiny-fu-menu-register "tiny-fu-chip-away-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

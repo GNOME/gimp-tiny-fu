@@ -131,7 +131,7 @@
 )
 
 (tiny-fu-register "tiny-fu-starscape-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+    _"Sta_rscape..."
     "Starscape using the Nova plug-in"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -140,7 +140,11 @@
     SF-IMAGE       "Image"                    0
     SF-DRAWABLE    "Drawable"                 0
     SF-ADJUSTMENT _"Effect size (pixels * 4)" '(150 1 1000 1 10 0 1)
-    SF-COLOR      _"Glow color"               '(28 65 188))
+    SF-COLOR      _"Glow color"               '(28 65 188)
+)
+
+(tiny-fu-menu-register "tiny-fu-starscape-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-starscape-logo text size fontname glow-color)
@@ -159,7 +163,7 @@
 )
 
 (tiny-fu-register "tiny-fu-starscape-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+    _"Sta_rscape..."
     "Starscape using the Nova plug-in"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -170,3 +174,6 @@
     SF-FONT       _"Font"               "Engraver"
     SF-COLOR      _"Glow color"         '(28 65 188)
 )
+
+(tiny-fu-menu-register "tiny-fu-starscape-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

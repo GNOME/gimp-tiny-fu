@@ -77,7 +77,7 @@
 )
 
 (tiny-fu-register "tiny-fu-swirly-pattern"
-    _"<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+    _"_Swirly..."
     "Create a swirly pattern"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -87,3 +87,6 @@
     SF-ADJUSTMENT _"Whirl angle" '(90 0 360 1 1 0 0)
     SF-ADJUSTMENT _"Number of times to whirl" '(4 0 128 1 1 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-swirly-pattern"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

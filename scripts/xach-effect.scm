@@ -118,7 +118,7 @@
 )
 
 (tiny-fu-register "tiny-fu-xach-effect"
-    _"<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+    _"_Xach-Effect..."
     "Add a subtle translucent 3-d effect to the current selection or alpha channel"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
@@ -137,3 +137,6 @@
     SF-ADJUSTMENT _"Drop shadow Y offset" '(5 0 255 1 10 0 1)
     SF-TOGGLE     _"Keep selection" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-xach-effect"
+                      _"<Image>/Tiny-Fu/Shadow")

@@ -96,7 +96,7 @@
 )
 
 (tiny-fu-register "tiny-fu-t-o-p-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+    _"_Particle Trace..."
     "Trace of Particles Effect"
     "Shuji Narazaki (narazaki@InetQ.or.jp)"
     "Shuji Narazaki"
@@ -111,6 +111,9 @@
     SF-COLOR      _"Base color" '(0 40 0)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-t-o-p-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-t-o-p-logo text
@@ -134,7 +137,7 @@
 )
 
 (tiny-fu-register "tiny-fu-t-o-p-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+    _"_Particle Trace..."
     "Trace of Particles Effect"
     "Shuji Narazaki (narazaki@InetQ.or.jp)"
     "Shuji Narazaki"
@@ -149,5 +152,8 @@
     SF-COLOR      _"Base color" '(0 40 0)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-t-o-p-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
 
 ; end of t-o-p.scm

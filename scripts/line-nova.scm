@@ -99,7 +99,7 @@
 
 (tiny-fu-register
     "tiny-fu-line-nova"
-    _"<Image>/Tiny-Fu/Render/Line _Nova..."
+    _"Line _Nova..."
     "Line Nova. Draw lines with Foreground color from the center of image to the edges. 1st undo cancels bucket-fill. 2nd undo gets orignal selection."
     "Shuji Narazaki <narazaki@gimp.org>"
     "Shuji Narazaki"
@@ -113,3 +113,6 @@
     SF-ADJUSTMENT _"Randomness" '(30 0 2000 1 1 0 1)
 )
 ;;; line-nova.scm ends here
+
+(tiny-fu-menu-register "tiny-fu-line-nova"
+                      _"<Image>/Tiny-Fu/Render")

@@ -72,51 +72,63 @@
 )
 
 (define (tiny-fu-frosty-logo-alpha img
-                                     logo-layer
-                                     size
-                                     bg-color)
+                                   logo-layer
+                                   size
+                                   bg-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-frosty-logo-effect img logo-layer size bg-color)
     (gimp-image-undo-group-end img)
-    (gimp-displays-flush)))
-
+    (gimp-displays-flush)
+  )
+)
 
 (tiny-fu-register "tiny-fu-frosty-logo-alpha"
-                    _"<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-                    "Frozen logos with drop shadows"
-                    "Spencer Kimball & Ed Mackey"
-                    "Spencer Kimball & Ed Mackey"
-                    "1997"
-                    "RGBA"
-                    SF-IMAGE      "Image" 0
-                    SF-DRAWABLE   "Drawable" 0
-                    SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
-                    SF-COLOR  _"Background color" '(255 255 255)
-                    )
+    _"_Frosty..."
+    "Frozen logos with drop shadows"
+    "Spencer Kimball & Ed Mackey"
+    "Spencer Kimball & Ed Mackey"
+    "1997"
+    "RGBA"
+    SF-IMAGE      "Image" 0
+    SF-DRAWABLE   "Drawable" 0
+    SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
+    SF-COLOR  _"Background color" '(255 255 255)
+)
+
+(tiny-fu-menu-register "tiny-fu-frosty-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
+
 
 (define (tiny-fu-frosty-logo text
-                               size
-                               font
-                               bg-color)
-  (let* ((img (car (gimp-image-new 256 256 RGB)))
-         (border (/ size 5))
-         (text-layer (car (gimp-text-fontname img -1 0 0 text (* border 2) TRUE size PIXELS font))))
+                             size
+                             font
+                             bg-color)
+  (let* (
+        (img (car (gimp-image-new 256 256 RGB)))
+        (border (/ size 5))
+        (text-layer (car (gimp-text-fontname img -1 0 0 text (* border 2) TRUE size PIXELS font)))
+        )
     (gimp-image-undo-disable img)
     (gimp-drawable-set-name text-layer text)
     (apply-frosty-logo-effect img text-layer size bg-color)
     (gimp-image-undo-enable img)
-    (gimp-display-new img)))
+    (gimp-display-new img)
+  )
+)
 
 (tiny-fu-register "tiny-fu-frosty-logo"
-                    _"<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-                    "Frozen logos with drop shadows"
-                    "Spencer Kimball & Ed Mackey"
-                    "Spencer Kimball & Ed Mackey"
-                    "1997"
-                    ""
-                    SF-STRING _"Text" "The GIMP"
-                    SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
-                    SF-FONT   _"Font" "Becker"
-                    SF-COLOR  _"Background color" '(255 255 255)
-                    )
+    _"_Frosty..."
+    "Frozen logos with drop shadows"
+    "Spencer Kimball & Ed Mackey"
+    "Spencer Kimball & Ed Mackey"
+    "1997"
+    ""
+    SF-STRING _"Text" "The GIMP"
+    SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
+    SF-FONT   _"Font" "Becker"
+    SF-COLOR  _"Background color" '(255 255 255)
+)
+
+(tiny-fu-menu-register "tiny-fu-frosty-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

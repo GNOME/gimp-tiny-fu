@@ -69,7 +69,7 @@
 )
 
 (tiny-fu-register "tiny-fu-newsprint-text"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+    _"Newsprint Text..."
     "Apply a screen to text"
     "Austin Donnelly"
     "Austin Donnelly"
@@ -84,3 +84,6 @@
     SF-COLOR      _"Text color" '(0 0 0)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-newsprint-text"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

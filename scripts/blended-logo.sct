@@ -119,24 +119,28 @@
 
 
 (tiny-fu-register "tiny-fu-blended-logo-alpha"
-                    _"<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-                    "Creates logos with blended backgrounds, highlights, and shadows"
-                    "Spencer Kimball"
-                    "Spencer Kimball"
-                    "1996"
-                    "RGBA"
-                    SF-IMAGE      "Image"             0
-                    SF-DRAWABLE   "Drawable"          0
-                    SF-ADJUSTMENT _"Offset (pixels)"  '(15 1 100 1 10 0 1)
-                    SF-COLOR      _"Background color" '(255 255 255)
-                    SF-OPTION     _"Blend mode"       '(_"FG-BG-RGB"
-                                                        _"FG-BG-HSV"
-                                                        _"FG-Transparent"
-                                                        _"Custom Gradient")
-                    SF-COLOR      _"Start blend"      '(22 9 129)
-                    SF-COLOR      _"End blend"        '(129 9 82)
-                    SF-GRADIENT   _"Gradient"         "Golden"
-                    SF-TOGGLE     _"Gradient reverse" FALSE)
+    _"Blen_ded..."
+    "Creates logos with blended backgrounds, highlights, and shadows"
+    "Spencer Kimball"
+    "Spencer Kimball"
+    "1996"
+    "RGBA"
+    SF-IMAGE      "Image"             0
+    SF-DRAWABLE   "Drawable"          0
+    SF-ADJUSTMENT _"Offset (pixels)"  '(15 1 100 1 10 0 1)
+    SF-COLOR      _"Background color" '(255 255 255)
+    SF-OPTION     _"Blend mode"       '(_"FG-BG-RGB"
+                                        _"FG-BG-HSV"
+                                        _"FG-Transparent"
+                                        _"Custom Gradient")
+    SF-COLOR      _"Start blend"      '(22 9 129)
+    SF-COLOR      _"End blend"        '(129 9 82)
+    SF-GRADIENT   _"Gradient"         "Golden"
+    SF-TOGGLE     _"Gradient reverse" FALSE
+)
+
+(tiny-fu-menu-register "tiny-fu-blended-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-blended-logo text
                                 size
@@ -169,22 +173,26 @@
 )
 
 (tiny-fu-register "tiny-fu-blended-logo"
-                    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-                    "Creates logos with blended backgrounds, highlights, and shadows"
-                    "Spencer Kimball"
-                    "Spencer Kimball"
-                    "1996"
-                    ""
-                    SF-STRING     _"Text"               "The GIMP"
-                    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-                    SF-FONT       _"Font"               "Crillee"
-                    SF-COLOR      _"Text color"         '(124 174 255)
-                    SF-COLOR      _"Background color"   '(255 255 255)
-                    SF-OPTION     _"Blend mode"         '(_"FG-BG-RGB"
-                                                           _"FG-BG-HSV"
-                                                           _"FG-Transparent"
-                                                           _"Custom Gradient")
-                    SF-COLOR      _"Start blend"        '(22 9 129)
-                    SF-COLOR      _"End blend"          '(129 9 82)
-                    SF-GRADIENT   _"Gradient"           "Golden"
-                    SF-TOGGLE     _"Gradient reverse"   FALSE)
+    _"Blen_ded..."
+    "Creates logos with blended backgrounds, highlights, and shadows"
+    "Spencer Kimball"
+    "Spencer Kimball"
+    "1996"
+    ""
+    SF-STRING     _"Text"               "The GIMP"
+    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
+    SF-FONT       _"Font"               "Crillee"
+    SF-COLOR      _"Text color"         '(124 174 255)
+    SF-COLOR      _"Background color"   '(255 255 255)
+    SF-OPTION     _"Blend mode"         '(_"FG-BG-RGB"
+                                          _"FG-BG-HSV"
+                                          _"FG-Transparent"
+                                          _"Custom Gradient")
+    SF-COLOR      _"Start blend"        '(22 9 129)
+    SF-COLOR      _"End blend"          '(129 9 82)
+    SF-GRADIENT   _"Gradient"           "Golden"
+    SF-TOGGLE     _"Gradient reverse"   FALSE
+)
+
+(tiny-fu-menu-register "tiny-fu-blended-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

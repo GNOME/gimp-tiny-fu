@@ -56,8 +56,8 @@
 
 typedef struct
 {
-  gchar *pdb_name;
-  gchar *menu_path;
+  SFScript *script;
+  gchar    *menu_path;
 } SFMenu;
 
 
@@ -68,12 +68,12 @@ typedef struct
 static void       tiny_fu_load_script   (const GimpDatafileData *file_data,
                                                gpointer          user_data);
 static gboolean   tiny_fu_install_script      (gpointer          foo,
-                                               SFScript         *script,
+                                               GList            *scripts,
                                                gpointer          bar);
 static void       tiny_fu_install_menu        (SFMenu           *menu,
                                                gpointer          foo);
 static gboolean   tiny_fu_remove_script       (gpointer          foo,
-                                               SFScript         *script,
+                                               GList            *scripts,
                                                gpointer          bar);
 static void       tiny_fu_script_proc         (const gchar      *name,
                                                gint              nparams,
@@ -84,13 +84,16 @@ static void       tiny_fu_script_proc         (const gchar      *name,
 static SFScript * tiny_fu_find_script         (const gchar      *script_name);
 static void       tiny_fu_free_script         (SFScript         *script);
 
+static gint       tiny_fu_menu_compare        (gconstpointer     a,
+                                               gconstpointer     b);
+
 
 /*
  *  Local variables
  */
 
-static GTree  *script_list       = NULL;
-static GSList *script_menu_list  = NULL;
+static GTree *script_tree      = NULL;
+static GList *script_menu_list = NULL;
 
 
 /*
@@ -103,15 +106,15 @@ tiny_fu_load_all_scripts (void)
   gchar *path_str;
 
   /*  Make sure to clear any existing scripts  */
-  if (script_list != NULL)
+  if (script_tree != NULL)
     {
-      g_tree_foreach (script_list,
+      g_tree_foreach (script_tree,
                       (GTraverseFunc) tiny_fu_remove_script,
                       NULL);
-      g_tree_destroy (script_list);
+      g_tree_destroy (script_tree);
     }
 
-  script_list = g_tree_new ((GCompareFunc) strcoll);
+  script_tree = g_tree_new ((GCompareFunc) g_utf8_collate);
 
   path_str = gimp_gimprc_query ("script-fu-path");
 
@@ -121,22 +124,27 @@ tiny_fu_load_all_scripts (void)
   gimp_datafiles_read_directories (path_str, G_FILE_TEST_IS_REGULAR,
                                    tiny_fu_load_script,
                                    NULL);
+
   g_free (path_str);
 
   /*  Now that all scripts are read in and sorted, tell gimp about them  */
-  g_tree_foreach (script_list,
+  g_tree_foreach (script_tree,
                   (GTraverseFunc) tiny_fu_install_script,
                   NULL);
-  g_slist_foreach (script_menu_list,
-                   (GFunc) tiny_fu_install_menu,
-                   NULL);
+
+  script_menu_list = g_list_sort (script_menu_list,
+                                  (GCompareFunc) tiny_fu_menu_compare);
+
+  g_list_foreach (script_menu_list,
+                  (GFunc) tiny_fu_install_menu,
+                  NULL);
 
   /*  Now we are done with the list of menu entries  */
-  g_slist_free (script_menu_list);
+  g_list_free (script_menu_list);
   script_menu_list = NULL;
 }
 
-#if 1        /* ~~~~~ */
+#if 1   /* ~~~~~ */
 static pointer
 my_err(scheme *sc, char *msg)
 {
@@ -534,7 +542,8 @@ tiny_fu_add_script (scheme *sc, pointer a)
                     {
                       script->arg_defaults[i].sfa_option.list =
                         g_slist_append (script->arg_defaults[i].sfa_option.list,
-                                        g_strdup (sc->vptr->string_value (sc->vptr->pair_car (option_list))));
+                                        g_strdup (sc->vptr->string_value
+                                           (sc->vptr->pair_car (option_list))));
                     }
                   script->arg_defaults[i].sfa_option.history = 0;
                   script->arg_values[i].sfa_option.history = 0;
@@ -556,7 +565,13 @@ tiny_fu_add_script (scheme *sc, pointer a)
     }
 
   script->args = args;
-  g_tree_insert (script_list, script->menu_path, script);
+
+  {
+    gchar *key  = script->menu_path;
+    GList *list = g_tree_lookup (script_tree, key);
+
+    g_tree_insert (script_tree, key, g_list_append (list, script));
+  }
 
   return sc->NIL;
 }
@@ -564,30 +579,43 @@ tiny_fu_add_script (scheme *sc, pointer a)
 pointer
 tiny_fu_add_menu (scheme *sc, pointer a)
 {
-  SFMenu *menu;
-  gchar  *val;
-  gchar  *s;
+  SFScript *script;
+  SFMenu   *menu;
+  gchar    *val;
+  gchar    *s;
 
   /*  Check the length of a  */
   if (sc->vptr->list_length (sc, a) != 2)
     return my_err (sc, "Incorrect number of arguments for tiny-fu-menu-register");
 
-  /*  Create a new list of menus  */
-  menu = g_new0 (SFMenu, 1);
-
   /*  Find the script PDB entry name  */
-  val = sc->vptr->string_value (sc->vptr->pair_car (a));
-  menu->pdb_name = g_strdup (val);
-  for (s = menu->pdb_name; *s; s++)
+  val = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
+  for (s = val; *s; s++)
     if (*s == '-')
       *s = '_';
   a = sc->vptr->pair_cdr (a);
+
+  script = tiny_fu_find_script (val);
+
+  if (! script)
+  {
+    g_message ("Procedure %s in tiny-fu-menu-register does not exist", val);
+    g_free(val);
+    return sc->NIL;
+  }
+
+  g_free(val);
+
+  /*  Create a new list of menus  */
+  menu = g_new0 (SFMenu, 1);
+
+  menu->script = script;
 
   /*  Find the script menu path  */
   val = sc->vptr->string_value (sc->vptr->pair_car (a));
   menu->menu_path = g_strdup (val);
 
-  script_menu_list = g_slist_append (script_menu_list, menu);
+  script_menu_list = g_list_prepend (script_menu_list, menu);
 
   return sc->NIL;
 }
@@ -634,30 +662,36 @@ tiny_fu_load_script (const GimpDatafileData *file_data,
  */
 static gboolean
 tiny_fu_install_script (gpointer  foo,
-                        SFScript *script,
+                        GList    *scripts,
                         gpointer  bar)
 {
-  gchar *menu_path = NULL;
+  GList *list;
 
-  /* Allow scripts with no menus */
-  if (strncmp (script->menu_path, "<None>", 6) != 0)
-    menu_path = script->menu_path;
+  for (list = scripts; list; list = g_list_next (list))
+    {
+      SFScript *script    = list->data;
+      gchar    *menu_path = NULL;
 
-  gimp_install_temp_proc (script->pdb_name,
-                          script->help,
-                          "",
-                          script->author,
-                          script->copyright,
-                          script->date,
-                          menu_path,
-                          script->img_types,
-                          GIMP_TEMPORARY,
-                          script->num_args + 1, 0,
-                          script->args, NULL,
-                          tiny_fu_script_proc);
+      /* Allow scripts with no menus */
+      if (strncmp (script->menu_path, "<None>", 6) != 0)
+        menu_path = script->menu_path;
 
-  g_free (script->args);
-  script->args = NULL;
+      gimp_install_temp_proc (script->pdb_name,
+                              script->help,
+                              "",
+                              script->author,
+                              script->copyright,
+                              script->date,
+                              menu_path,
+                              script->img_types,
+                              GIMP_TEMPORARY,
+                              script->num_args + 1, 0,
+                              script->args, NULL,
+                              tiny_fu_script_proc);
+
+      g_free (script->args);
+      script->args = NULL;
+    }
 
   return FALSE;
 }
@@ -669,9 +703,8 @@ static void
 tiny_fu_install_menu (SFMenu   *menu,
                       gpointer  foo)
 {
-  gimp_plugin_menu_register (menu->pdb_name, menu->menu_path);
+  gimp_plugin_menu_register (menu->script->pdb_name, menu->menu_path);
 
-  g_free (menu->pdb_name);
   g_free (menu->menu_path);
   g_free (menu);
 }
@@ -681,20 +714,29 @@ tiny_fu_install_menu (SFMenu   *menu,
  */
 static gboolean
 tiny_fu_remove_script (gpointer  foo,
-                       SFScript *script,
+                       GList    *scripts,
                        gpointer  bar)
 {
-  tiny_fu_free_script (script);
+  GList *list;
+
+  for (list = scripts; list; list = g_list_next (list))
+    {
+      SFScript *script = list->data;
+
+      tiny_fu_free_script (script);
+    }
+
+  g_list_free (list);
 
   return FALSE;
 }
 
 static void
-tiny_fu_script_proc (const gchar      *name,
-                     gint              nparams,
-                     const GimpParam  *params,
-                     gint             *nreturn_vals,
-                     GimpParam       **return_vals)
+tiny_fu_script_proc (const gchar     *name,
+                     gint             nparams,
+                     const GimpParam *params,
+                     gint            *nreturn_vals,
+                     GimpParam      **return_vals)
 {
   static GimpParam   values[1];
   GimpPDBStatusType  status = GIMP_PDB_SUCCESS;
@@ -854,14 +896,21 @@ tiny_fu_script_proc (const gchar      *name,
 /* this is a GTraverseFunction */
 static gboolean
 tiny_fu_lookup_script (gpointer      *foo,
-                       SFScript      *script,
+                       GList         *scripts,
                        gconstpointer *name)
 {
-  if (strcmp (script->pdb_name, *name) == 0)
+  GList *list;
+
+  for (list = scripts; list; list = g_list_next (list))
     {
-      /* store the script in the name pointer and stop the traversal */
-      *name = script;
-      return TRUE;
+      SFScript *script = list->data;
+
+      if (strcmp (script->pdb_name, *name) == 0)
+        {
+          /* store the script in the name pointer and stop the traversal */
+          *name = script;
+          return TRUE;
+        }
     }
 
   return FALSE;
@@ -872,7 +921,7 @@ tiny_fu_find_script (const gchar *pdb_name)
 {
   gconstpointer script = pdb_name;
 
-  g_tree_foreach (script_list,
+  g_tree_foreach (script_tree,
                   (GTraverseFunc) tiny_fu_lookup_script,
                   &script);
 
@@ -971,4 +1020,26 @@ tiny_fu_free_script (SFScript *script)
 
       g_free (script);
     }
+}
+
+static gint
+tiny_fu_menu_compare (gconstpointer a,
+                      gconstpointer b)
+{
+  const SFMenu *menu_a = a;
+  const SFMenu *menu_b = b;
+  gint          retval = 0;
+
+  if (menu_a->menu_path && menu_b->menu_path)
+    {
+      return g_utf8_collate (gettext (menu_a->menu_path),
+                             gettext (menu_b->menu_path));
+
+      if (retval == 0 &&
+          menu_a->script->menu_path && menu_b->script->menu_path)
+        retval = g_utf8_collate (gettext (menu_a->script->menu_path),
+                                 gettext (menu_b->script->menu_path));
+    }
+
+  return retval;
 }

@@ -172,7 +172,7 @@
 )
 
 (tiny-fu-register "tiny-fu-alien-glow-right-arrow"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+    _"_Arrow..."
     "Create an X-file deal"
     "Adrian Likins"
     "Adrian Likins"
@@ -187,3 +187,6 @@
     SF-COLOR      _"Background color" '(0 0 0)
     SF-TOGGLE     _"Flatten image"    TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-alien-glow-right-arrow"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")

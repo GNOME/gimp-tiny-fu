@@ -135,7 +135,7 @@
 
 
 (tiny-fu-register "tiny-fu-big-header-gimp-org"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+    _"_Big Header..."
     "Big Gimp.org Header"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
@@ -154,8 +154,11 @@
     SF-ADJUSTMENT _"Number of colors" '(15 2 255 1 10 0 1)
 )
 
+(tiny-fu-menu-register "tiny-fu-big-header-gimp-org"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+
 (tiny-fu-register "tiny-fu-small-header-gimp-org"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+    _"_Small Header..."
     "Small Gimp.org Header"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
@@ -175,3 +178,5 @@
     SF-ADJUSTMENT _"Select-by-color threshold" '(1 1 256 1 10 0 1)
 )
 
+(tiny-fu-menu-register "tiny-fu-small-header-gimp-org"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")

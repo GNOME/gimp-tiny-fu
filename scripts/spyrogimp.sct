@@ -325,7 +325,7 @@
 
 
 (tiny-fu-register "tiny-fu-spyrogimp"
-    _"<Image>/Tiny-Fu/Render/_Spyrogimp..."
+    _"_Spyrogimp..."
     "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://netword.com/*spyrogimp"
     "Elad Shahar <elad@wisdom.weizmann.ac.il>"
     "Elad Shahar"
@@ -347,8 +347,8 @@
                                     _"Polygon: 8 sides"
                                     _"Polygon: 9 sides"
                                     _"Polygon: 10 sides")
-    SF-ADJUSTMENT _"Outer teeth"   '(90 1 120 1 10 0 0)
-    SF-ADJUSTMENT _"Inner teeth"   '(70 1 120 1 10 0 0)
+    SF-ADJUSTMENT _"Outer teeth"   '(90 1 120 1 10 1 0)
+    SF-ADJUSTMENT _"Inner teeth"   '(70 1 120 1 10 1 0)
     SF-ADJUSTMENT _"Margin (pixels)" '(0 -10000 10000 1 10 0 1)
     SF-ADJUSTMENT _"Hole ratio"    '(0.4 0.0 1.0 0.01 0.1 2 0)
     SF-ADJUSTMENT _"Start angle"   '(0 0 359 1 10 0 0)
@@ -366,3 +366,6 @@
 )
 
 ;; End of syprogimp.scm
+
+(tiny-fu-menu-register "tiny-fu-spyrogimp"
+                      _"<Image>/Tiny-Fu/Render")

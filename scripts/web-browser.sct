@@ -32,16 +32,19 @@
 )
 
 (tiny-fu-register "gimp-online-main-web-site"
-    _"<Toolbox>/Help/The GIMP Online/_Main Web Site"
+    _"_Main Web Site"
     "Link to http://www.gimp.org/"
     "Henrik Brix Andersen <brix@gimp.org>"
     "Henrik Brix Andersen <brix@gimp.org>"
     "2003"
     ""
 )
+
+(tiny-fu-menu-register "gimp-online-main-web-site"
+                      _"<Toolbox>/Help/The GIMP Online")
 
 (tiny-fu-register "gimp-online-developer-web-site"
-    _"<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+    _"_Developer Web Site"
     "Link to http://www.gimp.org/"
     "Henrik Brix Andersen <brix@gimp.org>"
     "Henrik Brix Andersen <brix@gimp.org>"
@@ -49,11 +52,17 @@
     ""
 )
 
+(tiny-fu-menu-register "gimp-online-developer-web-site"
+                      _"<Toolbox>/Help/The GIMP Online")
+
 (tiny-fu-register "gimp-online-plug-in-web-site"
-    _"<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+    _"Plug-in _Registry"
     "Link to http://www.gimp.org/"
     "Henrik Brix Andersen <brix@gimp.org>"
     "Henrik Brix Andersen <brix@gimp.org>"
     "2003"
     ""
 )
+
+(tiny-fu-menu-register "gimp-online-plug-in-web-site"
+                      _"<Toolbox>/Help/The GIMP Online")

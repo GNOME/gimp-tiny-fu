@@ -53,7 +53,7 @@
 )
 
 (tiny-fu-register "tiny-fu-basic1-logo-alpha"
-  _"<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+  _"_Basic I..."
   "Creates a simple logo with a drop shadow"
   "Spencer Kimball"
   "Spencer Kimball"
@@ -64,6 +64,9 @@
   SF-COLOR      _"Background color" '(255 255 255)
   SF-COLOR      _"Text color"       '(6 6 206)
 )
+
+(tiny-fu-menu-register "tiny-fu-basic1-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-basic1-logo text
                              size
@@ -79,11 +82,12 @@
     (gimp-drawable-set-name text-layer text)
     (apply-basic1-logo-effect img text-layer bg-color text-color)
     (gimp-image-undo-enable img)
-    (gimp-display-new img))
+    (gimp-display-new img)
+  )
 )
 
 (tiny-fu-register "tiny-fu-basic1-logo"
-  _"<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+  _"_Basic I..."
   "Creates a simple logo with a drop shadow"
   "Spencer Kimball"
   "Spencer Kimball"
@@ -95,3 +99,6 @@
   SF-COLOR      _"Background color"   '(255 255 255)
   SF-COLOR      _"Text color"         '(6 6 206)
 )
+
+(tiny-fu-menu-register "tiny-fu-basic1-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

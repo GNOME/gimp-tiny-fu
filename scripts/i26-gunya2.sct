@@ -86,7 +86,7 @@
 
 
 (tiny-fu-register "tiny-fu-i26-gunya2"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+    _"Imigre-26..."
     "Two-colored text by hand"
     "Shuji Narazaki"
     "Shuji Narazaki"
@@ -101,3 +101,6 @@
 )
 
 ;;; i26-gunya2.scm ends here
+
+(tiny-fu-menu-register "tiny-fu-i26-gunya2"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

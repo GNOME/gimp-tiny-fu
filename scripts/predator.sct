@@ -115,7 +115,7 @@
 )
 
 (tiny-fu-register "tiny-fu-predator"
-    _"<Image>/Tiny-Fu/Alchemy/_Predator..."
+    _"_Predator..."
     "Looks like images from the movie Predator"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
@@ -129,3 +129,6 @@
     SF-TOGGLE     _"Keep selection" TRUE
     SF-TOGGLE     _"Separate layer" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-predator"
+                      _"<Image>/Tiny-Fu/Alchemy")

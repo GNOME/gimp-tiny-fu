@@ -75,7 +75,7 @@
 )
 
 (tiny-fu-register "tiny-fu-basic2-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+    _"B_asic II..."
     "Creates a simple logo with a shadow and a highlight"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -101,10 +101,15 @@
     (gimp-drawable-set-name text-layer text)
     (apply-basic2-logo-effect img text-layer bg-color text-color)
     (gimp-image-undo-enable img)
-    (gimp-display-new img)))
+    (gimp-display-new img)
+  )
+)
+
+(tiny-fu-menu-register "tiny-fu-basic2-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (tiny-fu-register "tiny-fu-basic2-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+    _"B_asic II..."
     "Creates a simple logo with a shadow and a highlight"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -116,3 +121,6 @@
     SF-COLOR      _"Background color"   '(255 255 255)
     SF-COLOR      _"Text color"         '(206 6 50)
 )
+
+(tiny-fu-menu-register "tiny-fu-basic2-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

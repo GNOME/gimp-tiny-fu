@@ -69,7 +69,7 @@
 )
 
 (tiny-fu-register "tiny-fu-starburst-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+    _"Starb_urst..."
     "Starburst as inspired by GIMP News"
     "Spencer Kimball & Xach Beane"
     "Spencer Kimball & Xach Beane"
@@ -81,6 +81,9 @@
     SF-COLOR      _"Burst color" '(60 196 33)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-starburst-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-starburst-logo text size fontname burst-color bg-color)
@@ -100,7 +103,7 @@
 )
 
 (tiny-fu-register "tiny-fu-starburst-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+    _"Starb_urst..."
     "Starburst as inspired by GIMP News"
     "Spencer Kimball & Xach Beane"
     "Spencer Kimball & Xach Beane"
@@ -112,3 +115,6 @@
     SF-COLOR      _"Burst color" '(60 196 33)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-starburst-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

@@ -180,7 +180,7 @@
 )
 
 (tiny-fu-register "tiny-fu-perspective-shadow"
-    _"<Image>/Tiny-Fu/Shadow/_Perspective..."
+    _"_Perspective..."
     "Add a perspective shadow"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
@@ -197,3 +197,6 @@
     SF-TOGGLE     _"Interpolation" '(_"None" _"Linear" _"Cubic")
     SF-TOGGLE     _"Allow resizing" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-perspective-shadow"
+                      _"<Image>/Tiny-Fu/Shadow")

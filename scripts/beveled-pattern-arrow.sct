@@ -146,7 +146,7 @@
 
 
 (tiny-fu-register "tiny-fu-beveled-pattern-arrow"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+    _"_Arrow..."
     "Beveled pattern arrow"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -156,3 +156,6 @@
     SF-OPTION     _"Orientation" '(_"Right" _"Left" _"Up" _"Down")
     SF-PATTERN    _"Pattern"     "Wood"
 )
+
+(tiny-fu-menu-register "tiny-fu-beveled-pattern-arrow"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")

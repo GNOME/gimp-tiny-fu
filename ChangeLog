@@ -1,3 +1,18 @@
+2004-11-22  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/*.sct: Updated all scripts to use script-fu-menu-register
+	and pass just the menu label in script-fu-register.
+
+	Updates based on changes made by Michael Natterer to Script-Fu.
+
+	* tiny-fu/tiny-fu-scripts.c: Pass untranslated menu_paths to the
+	core, not translated ones. Don't store the scripts directly in the
+	"script_list" tree but use a list of scripts per key because there
+	can be identical keys for different scripts now. Renamed variable
+	"script_list" to "script_tree" because it's a GTree. Sort the SFMenu
+	structs by their menu_paths *and* the procedure's menu_labels. Fixes
+	menu item sorting after "Refresh".
+
 2004-11-21  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* scripts/erase-rows.sct: Applied patch from BM which makes the

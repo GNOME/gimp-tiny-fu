@@ -128,7 +128,7 @@
 )
 
 (tiny-fu-register "tiny-fu-cool-metal-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+    _"Cool _Metal..."
     "Metallic logos with reflections and perspective shadows"
     "Spencer Kimball & Rob Malda"
     "Spencer Kimball & Rob Malda"
@@ -141,6 +141,9 @@
     SF-GRADIENT   _"Gradient"             "Horizon 1"
     SF-TOGGLE     _"Gradient reverse"     FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-cool-metal-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-cool-metal-logo text
@@ -164,7 +167,7 @@
 )
 
 (tiny-fu-register "tiny-fu-cool-metal-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+    _"Cool _Metal..."
     "Metallic logos with reflections and perspective shadows"
     "Spencer Kimball & Rob Malda"
     "Spencer Kimball & Rob Malda"
@@ -177,3 +180,6 @@
     SF-GRADIENT   _"Gradient"           "Horizon 1"
     SF-TOGGLE     _"Gradient reverse"   FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-cool-metal-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

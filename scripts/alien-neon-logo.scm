@@ -119,7 +119,7 @@
     (gimp-displays-flush)))
 
 (tiny-fu-register "tiny-fu-alien-neon-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+    _"Alien _Neon..."
     "Creates a psychedelic effect with outlines of the specified color around the letters"
     "Raphael Quinet (quinet@gamers.org)"
     "Raphael Quinet"
@@ -134,6 +134,9 @@
     SF-ADJUSTMENT _"Number of bands" '(7 1 100 1 10 0 1)
     SF-TOGGLE     _"Fade away" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-alien-neon-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-alien-neon-logo text 
                                  size 
@@ -159,7 +162,7 @@
 )
 
 (tiny-fu-register "tiny-fu-alien-neon-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+    _"Alien _Neon..."
     "Creates a psychedelic effect with outlines of the specified color around the letters"
     "Raphael Quinet (quinet@gamers.org)"
     "Raphael Quinet"
@@ -176,5 +179,7 @@
     SF-TOGGLE     _"Fade away" TRUE
 )
 
-; end
+(tiny-fu-menu-register "tiny-fu-alien-neon-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
 
+; end

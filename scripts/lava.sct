@@ -108,7 +108,7 @@
 )
 
 (tiny-fu-register "tiny-fu-lava"
-    _"<Image>/Tiny-Fu/Render/_Lava..."
+    _"_Lava..."
     "Fills the current selection with lava."
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
@@ -124,3 +124,6 @@
     SF-TOGGLE     _"Separate layer" TRUE
     SF-TOGGLE     _"Use current gradient" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-lava"
+                      _"<Image>/Tiny-Fu/Render")

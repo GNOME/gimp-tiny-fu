@@ -222,7 +222,7 @@
 ; Register the function with the GIMP:
 
 (tiny-fu-register "tiny-fu-asc-2-img"
-    _"<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+    _"_ASCII to Image..."
     "Create a new image containing text from a simple text file"
     "Chris Gutteridge: cjg@ecs.soton.ac.uk"
     "8th April 1998"
@@ -237,8 +237,11 @@
     SF-ADJUSTMENT _"Buffer amount (% height of text)" '(35 0 100 1 10 0 0)
 )
 
+(tiny-fu-menu-register "tiny-fu-asc-2-img"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Utils")
+
 (tiny-fu-register "tiny-fu-asc-2-img-layer"
-    _"<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+    _"_ASCII to Layer..."
     "Create a new layer of text from a simple text file"
     "Chris Gutteridge: cjg@ecs.soton.ac.uk"
     "30th April 1998"
@@ -251,3 +254,6 @@
     SF-ADJUSTMENT _"Font size (pixels)" '(45 2 1000 1 10 0 1)
     SF-COLOR      _"Text color"         '(0 0 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-asc-2-img-layer"
+                      _"<Image>/Tiny-Fu/Utils")

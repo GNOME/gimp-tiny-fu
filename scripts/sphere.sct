@@ -68,7 +68,7 @@
 )
 
 (tiny-fu-register "tiny-fu-sphere"
-    _"<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+    _"_Sphere..."
     "Simple sphere with a drop shadow"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -80,3 +80,6 @@
     SF-COLOR      _"Background color"   '(255 255 255)
     SF-COLOR      _"Sphere color"       '(255 0 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-sphere"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Misc")

@@ -232,7 +232,7 @@
 )
 
 (tiny-fu-register "tiny-fu-slide"
-  _"<Image>/Tiny-Fu/Decor/_Slide..."
+  _"_Slide..."
   "Gives the image the look of a slide"
   "Sven Neumann <sven@gimp.org>"
   "Sven Neumann"
@@ -246,3 +246,6 @@
   SF-COLOR    _"Font color"    '(255 180 0)
   SF-TOGGLE   _"Work on copy"  TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-slide"
+                      _"<Image>/Tiny-Fu/Decor")

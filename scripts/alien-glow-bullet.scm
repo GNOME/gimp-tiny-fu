@@ -91,7 +91,7 @@
 )
 
 (tiny-fu-register "tiny-fu-alien-glow-bullet"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+    _"_Bullet..."
     "Create a Bullet with an Alien Glow theme for web pages"
     "Adrian Likins"
     "Adrian Likins"
@@ -102,3 +102,6 @@
     SF-COLOR      _"Background color" '(0 0 0)
     SF-TOGGLE     _"Flatten image"    TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-alien-glow-bullet"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")

@@ -182,7 +182,7 @@
 )
 
 (tiny-fu-register "tiny-fu-add-bevel"
-    _"<Image>/Tiny-Fu/Decor/Add B_evel..."
+    _"Add B_evel..."
     "Add a bevel to an image"
     "Andrew Donkin <ard@cs.waikato.ac.nz>"
     "Andrew Donkin"
@@ -194,3 +194,6 @@
     SF-TOGGLE     _"Work on copy"    TRUE
     SF-TOGGLE     _"Keep bump layer" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-add-bevel"
+                      _"<Image>/Tiny-Fu/Decor")

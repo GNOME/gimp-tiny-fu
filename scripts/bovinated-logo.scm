@@ -79,7 +79,7 @@
 )
 
 (tiny-fu-register "tiny-fu-bovinated-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+    _"Bo_vination..."
     "Makes Cow-spotted logos"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
@@ -108,8 +108,11 @@
     (gimp-display-new img))
 )
 
+(tiny-fu-menu-register "tiny-fu-bovinated-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
+
 (tiny-fu-register "tiny-fu-bovinated-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+    _"Bo_vination..."
     "Makes Cow-spotted logos"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
@@ -122,3 +125,6 @@
     SF-ADJUSTMENT _"Spots density Y" '(4 1 16 1 10 0 1)
     SF-COLOR      _"Background color" '(255 255 255)
 )
+
+(tiny-fu-menu-register "tiny-fu-bovinated-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

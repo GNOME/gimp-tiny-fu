@@ -112,7 +112,7 @@
 )
 
 (tiny-fu-register "tiny-fu-3d-outline-logo-alpha"
-  _"<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+  _"3D _Outline..."
   "Creates outlined texts with drop shadow"
   "Hrvoje Horvat (hhorvat@open.hr)"
   "Hrvoje Horvat"
@@ -126,7 +126,11 @@
   SF-ADJUSTMENT _"Bumpmap (alpha layer) blur radius" '(5 1 200 1 10 0 1)
   SF-TOGGLE     _"Default bumpmap settings" TRUE
   SF-ADJUSTMENT _"Shadow X offset" '(0 0 200 1 5 0 1)
-  SF-ADJUSTMENT _"Shadow Y offset" '(0 0 200 1 5 0 1))
+  SF-ADJUSTMENT _"Shadow Y offset" '(0 0 200 1 5 0 1)
+)
+
+(tiny-fu-menu-register "tiny-fu-3d-outline-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-3d-outline-logo text-pattern
                                  text
@@ -153,7 +157,7 @@
 )
 
 (tiny-fu-register "tiny-fu-3d-outline-logo"
-  _"<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+  _"3D _Outline..."
   "Creates outlined texts with drop shadow"
   "Hrvoje Horvat (hhorvat@open.hr)"
   "Hrvoje Horvat"
@@ -170,3 +174,6 @@
   SF-ADJUSTMENT _"Shadow X offset" '(0 0 200 1 5 0 1)
   SF-ADJUSTMENT _"Shadow Y offset" '(0 0 200 1 5 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-3d-outline-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

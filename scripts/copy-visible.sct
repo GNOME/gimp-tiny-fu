@@ -40,34 +40,36 @@
         (visible-layer -1)
         (layer-array (cadr layers))
         )
-
+  
     (gimp-image-undo-disable image)
 
     ; count the number of visible layers
     (while (> num-layers 0)
-      (let* (
-            (layer (list-ref layer-array (- num-layers 1)))
-            (is-visible (car (gimp-drawable-get-visible layer)))
-            )
-        (if (eq? is-visible TRUE)
-            (begin
-              (set! num-visible-layers (+ num-visible-layers 1))
-              (set! visible-layer layer)
-            )
-        )
-        (set! num-layers (- num-layers 1))
-      )
+           (let* (
+                 (layer (aref layer-array (- num-layers 1)))
+                 (is-visible (car (gimp-drawable-get-visible layer)))
+                 )
+             (if (eq? is-visible TRUE)
+                 (begin
+                   (set! num-visible-layers (+ num-visible-layers 1))
+                   (set! visible-layer layer)
+                 )
+             )
+             (set! num-layers (- num-layers 1))
+           )
     )
 
     ; if there are several visible layers, merge them
     (if (> num-visible-layers 1)
-        (set! visible-layer (car (gimp-image-merge-visible-layers
-                                  image
-                                  EXPAND-AS-NECESSARY))))
+         (set! visible-layer (car (gimp-image-merge-visible-layers
+                                   image
+                                   EXPAND-AS-NECESSARY)))
+    )
 
     ; copy the visible layer
     (if (> num-visible-layers 0)
-        (gimp-edit-copy visible-layer))
+        (gimp-edit-copy visible-layer)
+    )
 
     ; delete the temporary copy of the image
     (gimp-image-delete image)
@@ -75,7 +77,7 @@
 )
 
 (tiny-fu-register "tiny-fu-copy-visible"
-    _"<Image>/Edit/Copy/Copy _Visible"
+    _"Copy _Visible"
     "Copy the visible selection"
     "Sven Neumann <sven@gimp.org>, Adrian Likins <adrian@gimp.org>, Raphael Quinet <raphael@gimp.org>"
     "Sven Neumann, Adrian Likins, Raphael Quinet"
@@ -84,3 +86,7 @@
     SF-IMAGE    "Image"    0
     SF-DRAWABLE "Drawable" 0
 )
+
+
+(tiny-fu-menu-register "tiny-fu-copy-visible"
+                       "<Image>/Edit/Copy")

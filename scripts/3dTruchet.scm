@@ -215,7 +215,7 @@
 )
 
 (tiny-fu-register "tiny-fu-3dtruchet"
-  _"<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+  _"3_D Truchet..."
   "3D Truchet pattern"
   "Adrian Likins <aklikins@eos.ncsu.edu>"
   "Adrian Likins"
@@ -230,3 +230,6 @@
   SF-ADJUSTMENT _"Number of X tiles" '(5 1 1000 1 10 0 1)
   SF-ADJUSTMENT _"Number of Y tiles" '(5 1 1000 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-3dtruchet"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

@@ -171,7 +171,7 @@
 
 (tiny-fu-register
     "tiny-fu-text-circle"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+    _"Text Circle..."
     _"Render the specified text along the perimeter of a circle"
     "Shuji Narazaki <narazaki@gimp.org>"
     "Shuji Narazaki"
@@ -187,3 +187,6 @@
 )
 
 ;; text-circle.sct ends here
+
+(tiny-fu-menu-register "tiny-fu-text-circle"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

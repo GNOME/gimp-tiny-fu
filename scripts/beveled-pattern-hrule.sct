@@ -68,7 +68,7 @@
 
 
 (tiny-fu-register "tiny-fu-beveled-pattern-hrule"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+    _"_Hrule..."
     "Beveled pattern hrule"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -78,3 +78,6 @@
     SF-ADJUSTMENT _"Height" '(16 1 100 1 10 0 1)
     SF-PATTERN    _"Pattern" "Wood"
 )
+
+(tiny-fu-menu-register "tiny-fu-beveled-pattern-hrule"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")

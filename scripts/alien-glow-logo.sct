@@ -57,7 +57,7 @@
 )
 
 (tiny-fu-register "tiny-fu-alien-glow-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+    _"Alien _Glow..."
     "Create an X-Files-esque logo with the specified glow color"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -68,6 +68,9 @@
     SF-ADJUSTMENT _"Glow size (pixels * 4)" '(150 2 1000 1 10 0 1)
     SF-COLOR      _"Glow color"             '(63 252 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-alien-glow-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-alien-glow-logo text
                                  size
@@ -92,7 +95,7 @@
 )
 
 (tiny-fu-register "tiny-fu-alien-glow-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+    _"Alien _Glow..."
     "Create an X-Files-esque logo with the specified glow color"
     "Spencer Kimball"
     "Spencer Kimball"
@@ -103,3 +106,6 @@
     SF-FONT       _"Font"               "Sans Bold"
     SF-COLOR      _"Glow color"         '(63 252 0)
 )
+
+(tiny-fu-menu-register "tiny-fu-alien-glow-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

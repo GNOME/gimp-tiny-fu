@@ -63,7 +63,7 @@
 
 (tiny-fu-register
     "tiny-fu-tile-blur"
-    _"<Image>/Filters/Blur/_Tileable Blur..."
+    _"_Tileable Blur..."
     "Blurs image edges so that the final result tiles seamlessly"
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
@@ -76,3 +76,6 @@
     SF-TOGGLE     _"Blur horizontally" TRUE
     SF-OPTION     _"Blur type" '(_"IIR" _"RLE")
 )
+
+(tiny-fu-menu-register "tiny-fu-tile-blur"
+                      _"<Image>/Filters/Blur")

@@ -156,7 +156,7 @@
 )
 
 (tiny-fu-register "tiny-fu-carved-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+    _"Carved..."
     "Carve the text from the specified image.  The image will be automatically tiled to accomodate the rendered text string.  The \"Carve Raised Text\" parameter determines whether to carve the text itself, or around the text."
     "Spencer Kimball"
     "Spencer Kimball"
@@ -173,3 +173,6 @@
     SF-TOGGLE     _"Carve raised text" FALSE
     SF-ADJUSTMENT _"Padding around text" '(10 0 1000 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-carved-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

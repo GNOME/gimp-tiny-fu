@@ -214,7 +214,7 @@
 
 
 (tiny-fu-register "tiny-fu-burn-in-anim"
-    _"<Image>/Tiny-Fu/Animators/B_urn-In..."
+    _"B_urn-In..."
     "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
     "Roland Berger roland@fuchur.leute.server.de"
     "Roland Berger"
@@ -231,3 +231,6 @@
     SF-TOGGLE  _"Prepare for GIF"      FALSE
     SF-VALUE   _"Speed (pixels/frame)" "50"
 )
+
+(tiny-fu-menu-register "tiny-fu-burn-in-anim"
+                      _"<Image>/Tiny-Fu/Animators")

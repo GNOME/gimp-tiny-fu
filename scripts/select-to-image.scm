@@ -74,7 +74,7 @@
 )
 
 (tiny-fu-register "tiny-fu-selection-to-image"
-    _"<Image>/Tiny-Fu/Selection/To _Image"
+    _"To _Image"
     "Convert a selection to an image"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
@@ -83,3 +83,6 @@
     SF-IMAGE "Image" 0
     SF-DRAWABLE "Drawable" 0
 )
+
+(tiny-fu-menu-register "tiny-fu-selection-to-image"
+                      _"<Image>/Tiny-Fu/Selection")

@@ -137,7 +137,7 @@
 )
 
 (tiny-fu-register "tiny-fu-circuit"
-    _"<Image>/Tiny-Fu/Render/_Circuit..."
+    _"_Circuit..."
     "Fills the current selection with something that looks 
     vaguely like a circuit board."
     "Adrian Likins <adrian@gimp.org>"
@@ -152,3 +152,6 @@
     SF-TOGGLE     _"Keep selection" TRUE
     SF-TOGGLE     _"Separate layer" TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-circuit"
+                      _"<Image>/Tiny-Fu/Render")

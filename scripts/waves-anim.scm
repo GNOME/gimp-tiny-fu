@@ -91,7 +91,7 @@
   (gimp-display-new image)))
 
 (tiny-fu-register "tiny-fu-waves-anim"
-  _"<Image>/Tiny-Fu/Animators/_Waves..."
+  _"_Waves..."
   "Animate an image like a stone's been thrown into it"
   "Sven Neumann <sven@gimp.org>"
   "Sven Neumann"
@@ -104,3 +104,6 @@
   SF-ADJUSTMENT _"Number of frames" '(6  1   512 1 10 0 1)
   SF-TOGGLE     _"Invert direction" FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-waves-anim"
+                      _"<Image>/Tiny-Fu/Animators")

@@ -92,7 +92,7 @@
 ; Register the function with the GIMP:
 
 (tiny-fu-register "tiny-fu-distress-selection"
-    _"<Image>/Tiny-Fu/Selection/_Distress Selection..."
+    _"_Distress Selection..."
     "No description"
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
@@ -107,3 +107,6 @@
     SF-TOGGLE     _"Smooth horizontally" TRUE
     SF-TOGGLE     _"Smooth vertically"   TRUE
 )
+
+(tiny-fu-menu-register "tiny-fu-distress-selection"
+                      _"<Image>/Tiny-Fu/Selection")

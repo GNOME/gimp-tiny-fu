@@ -73,7 +73,7 @@
 )
 
 (tiny-fu-register "tiny-fu-render-map"
-  _"<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+  _"Render _Map..."
   "Another pattern which resembles a map"
   "Chris Gutteridge: cjg@ecs.soton.ac.uk"
   "28th April 1998"
@@ -83,5 +83,8 @@
   SF-ADJUSTMENT _"Granularity"      '(4 0 15 1 1 0 0)
   SF-GRADIENT   _"Gradient"         "Land and Sea"
   SF-TOGGLE     _"Gradient reverse" FALSE
-  SF-OPTION     _"Behaviour"        '(_"Tile" _"Detail in Middle")
+  SF-OPTION     _"Behavior"         '(_"Tile" _"Detail in Middle")
 )
+
+(tiny-fu-menu-register "tiny-fu-render-map"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")

@@ -259,6 +259,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-test-sphere"
-                       _"<Toolbox>/Xtns/Tiny-Fu/Test"
-)
-
+                       _"<Toolbox>/Xtns/Tiny-Fu/Test")

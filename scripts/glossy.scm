@@ -187,7 +187,7 @@
 
 
 (tiny-fu-register "tiny-fu-glossy-logo-alpha"
-    _"<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+    _"Glo_ssy..."
     "Creates anything you can create with it :)"
     "Hrvoje Horvat (hhorvat@open.hr)"
     "Hrvoje Horvat"
@@ -212,6 +212,9 @@
     SF-ADJUSTMENT _"Shadow X offset"          '(8 0 100 1 10 0 1)
     SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-glossy-logo-alpha"
+                      _"<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-glossy-logo text
@@ -256,7 +259,7 @@
 )
 
 (tiny-fu-register "tiny-fu-glossy-logo"
-    _"<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+    _"Glo_ssy..."
     "Creates anything you can create with it :)"
     "Hrvoje Horvat (hhorvat@open.hr)"
     "Hrvoje Horvat"
@@ -282,3 +285,6 @@
     SF-ADJUSTMENT _"Shadow X offset"          '(8 0 100 1 10 0 1)
     SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
 )
+
+(tiny-fu-menu-register "tiny-fu-glossy-logo"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")

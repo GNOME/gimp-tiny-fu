@@ -115,7 +115,7 @@
 
 
 (tiny-fu-register "tiny-fu-beveled-pattern-button"
-    _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+    _"B_utton..."
     "Beveled pattern button"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -128,3 +128,6 @@
     SF-PATTERN _"Pattern"    "Wood"
     SF-TOGGLE  _"Pressed"   FALSE
 )
+
+(tiny-fu-menu-register "tiny-fu-beveled-pattern-button"
+                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")
