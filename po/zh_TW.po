@@ -1,0 +1,2343 @@
+# traditional Chinese translation for gimp-script-fu.
+# Copyright (C) 2001, 2003 Free Software Foundation, Inc.
+# Chun-Chung Chen (陳俊仲) <cjj@u.washington.edu>, 2001.
+# 林佳宏 <object@mis.mgt.ncu.edu.tw>, 2001.
+# Abel Cheung <maddog@linux.org.hk>, 2001, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu 1.3.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2003-11-05 13:31+0800\n"
+"Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr "<Toolbox>/擴展/Script-Fu/S_cript-Fu 訊息視窗..."
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr "<Toolbox>/擴展/Script-Fu/啟動伺服程式(_S)..."
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr "重新讀入所有可供使用的 script"
+
+#: tiny-fu/tiny-fu.c:275
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr "<Toolbox>/擴展/Script-Fu/重新整理(_R)"
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+#, fuzzy
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr "Script-Fu 訊息視窗模式只允許以互動方式執行"
+
+#: tiny-fu/tiny-fu-console.c:167
+#, fuzzy
+msgid "Tiny-Fu Console"
+msgstr "Script-Fu 訊息視窗"
+
+#: tiny-fu/tiny-fu-console.c:171
+#, fuzzy
+msgid "_Save Output"
+msgstr "SIOD 輸出"
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+#, fuzzy
+msgid "Tiny-Fu Console - "
+msgstr "Script-Fu 訊息視窗"
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr "目前的指令"
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr "瀏覽..."
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+#, fuzzy
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr "Script-Fu 執行模式只允許以非互動方式執行"
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, fuzzy, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"當執行 %s 時\n"
+"Script-Fu 發生錯誤\n"
+"%s"
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+#, fuzzy
+msgid "Tiny-Fu Server Options"
+msgstr "Script-Fu 伺服程式選項"
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr "伺服程式連接埠："
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr "伺服程式紀錄檔："
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#, fuzzy
+msgid "/Tiny-Fu/"
+msgstr "/Script-Fu/"
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, fuzzy, c-format
+msgid "Tiny-Fu: %s"
+msgstr "Script-Fu：%s"
+
+#: tiny-fu/tiny-fu-interface.c:212
+#, fuzzy
+msgid "_About"
+msgstr "關於"
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr "Script 參數"
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr "%s："
+
+#: tiny-fu/tiny-fu-interface.c:312
+#, fuzzy
+msgid "Tiny-Fu Color Selection"
+msgstr "Script-Fu 顏色選擇"
+
+#: tiny-fu/tiny-fu-interface.c:418
+#, fuzzy
+msgid "Tiny-Fu File Selection"
+msgstr "Script-Fu 檔案選擇"
+
+#: tiny-fu/tiny-fu-interface.c:422
+#, fuzzy
+msgid "Tiny-Fu Folder Selection"
+msgstr "Script-Fu 資料夾選擇"
+
+#: tiny-fu/tiny-fu-interface.c:434
+#, fuzzy
+msgid "Tiny-Fu Font Selection"
+msgstr "Script-Fu 字型選擇"
+
+#: tiny-fu/tiny-fu-interface.c:441
+#, fuzzy
+msgid "Tiny-Fu Palette Selection"
+msgstr "Script-Fu 圖樣選擇"
+
+#: tiny-fu/tiny-fu-interface.c:449
+#, fuzzy
+msgid "Tiny-Fu Pattern Selection"
+msgstr "Script-Fu 圖樣選擇"
+
+#: tiny-fu/tiny-fu-interface.c:457
+#, fuzzy
+msgid "Tiny-Fu Gradient Selection"
+msgstr "Script-Fu 漸層選擇"
+
+#: tiny-fu/tiny-fu-interface.c:465
+#, fuzzy
+msgid "Tiny-Fu Brush Selection"
+msgstr "Script-Fu 筆刷選擇"
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+#, fuzzy
+msgid "Script Progress"
+msgstr "Script 參數"
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr "作者："
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "版權："
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "日期："
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr "圖像類型："
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#~ msgid "Search by _Name"
+#~ msgstr "依名稱搜尋(_N)"
+
+#~ msgid "Search by _Blurb"
+#~ msgstr "依簡介搜尋(_B)"
+
+#~ msgid "_Search:"
+#~ msgstr "搜尋(_S)"
+
+#~ msgid "Searching by name - please wait"
+#~ msgstr "正在依名稱搜尋 ─ 請稍等"
+
+#~ msgid "Searching by blurb - please wait"
+#~ msgstr "正在依簡介搜尋 ─ 請稍等"
+
+#~ msgid "Searching - please wait"
+#~ msgstr "正在搜尋 ─ 請稍等"
+
+#~ msgid "No matches"
+#~ msgstr "沒有任何一項符合條件"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "直徑"
+
+#~ msgid "Color"
+#~ msgstr "顏色"
+
+#~ msgid "Font"
+#~ msgstr "字型"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "字型大小(像素)"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "文字圖樣"
+
+#, fuzzy
+#~ msgid " for directory "
+#~ msgstr "無法開啟 SIOD 輸出管道"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "將圖像平面化"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/擴展/Script-Fu/工具/字型圖(_F)..."
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "背景顏色"
+
+#, fuzzy
+#~ msgid "Created "
+#~ msgstr "產生陰影"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "無法開啟 SIOD 輸出管道"
+
+#, fuzzy
+#~ msgid "Sheet "
+#~ msgstr "種子"
+
+#, fuzzy
+#~ msgid "Sheet Size"
+#~ msgstr "種子"
+
+#~ msgid "Text Color"
+#~ msgstr "文字顏色"
+
+#, fuzzy
+#~ msgid "Unable to open directory "
+#~ msgstr "無法開啟 SIOD 輸出管道"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/3D 輪廓(_O)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/3D 輪廓(_O)..."
+
+#, fuzzy
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Bumpmap (透明圖層) 模糊化半徑"
+
+#, fuzzy
+#~ msgid "Default bumpmap settings"
+#~ msgstr "預設 Bumpmap 設定"
+
+#, fuzzy
+#~ msgid "Font size (pixels)"
+#~ msgstr "字型大小(像素)"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "輪廓模糊半徑"
+
+#, fuzzy
+#~ msgid "Shadow X offset"
+#~ msgstr "陰影的水平位移"
+
+#, fuzzy
+#~ msgid "Shadow Y offset"
+#~ msgstr "陰影的垂直位移"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "陰影模糊半徑"
+
+#~ msgid "Text"
+#~ msgstr "文字"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/立體 _Truchet..."
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "區塊大小"
+
+#, fuzzy
+#~ msgid "End blend"
+#~ msgstr "漸層結束顏色"
+
+#, fuzzy
+#~ msgid "Number of X tiles"
+#~ msgstr "水平區域數目"
+
+#, fuzzy
+#~ msgid "Number of Y tiles"
+#~ msgstr "垂直區域數目"
+
+#, fuzzy
+#~ msgid "Start blend"
+#~ msgstr "漸層開始顏色"
+
+#~ msgid "Supersample"
+#~ msgstr "超量取樣"
+
+#~ msgid "Thickness"
+#~ msgstr "厚度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Script-Fu/裝飾/加斜面(_E)..."
+
+#, fuzzy
+#~ msgid "Keep bump layer"
+#~ msgstr "保留 Bump 圖層"
+
+#, fuzzy
+#~ msgid "Work on copy"
+#~ msgstr "在圖像複製本上進行"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Script-Fu/裝飾/加邊框(_B)..."
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "水平邊框大小"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "垂直邊框大小"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "邊框顏色"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/異樣發光/箭頭(_A)..."
+
+#~ msgid "Down"
+#~ msgstr "下"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "將圖像平面化"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "發光顏色"
+
+#~ msgid "Left"
+#~ msgstr "左"
+
+#~ msgid "Orientation"
+#~ msgstr "方向"
+
+#~ msgid "Right"
+#~ msgstr "右"
+
+#~ msgid "Size"
+#~ msgstr "尺寸"
+
+#~ msgid "Up"
+#~ msgstr "上"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/異樣發光/水平分隔線(_H)..."
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "棒狀圖高度"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "棒狀圖長度"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/異樣發光/圓點(_B)..."
+
+#~ msgid "Radius"
+#~ msgstr "半徑"
+
+# intltool wrongly extract this for translation -- Abel
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-ADJUSTMENT _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-ADJUSTMENT _"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/異樣發光/按鈕(_U)..."
+
+#, fuzzy
+#~ msgid "Glow radius"
+#~ msgstr "發光半徑"
+
+#~ msgid "Padding"
+#~ msgstr "留邊"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "文字顏色"
+
+# intltool wrongly extract this for translation -- Abel
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-COLOR      _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-COLOR      _"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/異樣發光(_G)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/異樣發光(_G)..."
+
+#, fuzzy
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "發光大小(像素×4)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/異樣霓虹管(_N)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/異樣霓虹管(_N)..."
+
+#, fuzzy
+#~ msgid "Fade away"
+#~ msgstr "淡出"
+
+#, fuzzy
+#~ msgid "Number of bands"
+#~ msgstr "色帶數目"
+
+#, fuzzy
+#~ msgid "Width of bands"
+#~ msgstr "色帶寬度"
+
+#, fuzzy
+#~ msgid "Width of gaps"
+#~ msgstr "間隔寬度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+#~ msgstr "<Image>/Script-Fu/工具/ASCII 轉為圖像圖層..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/工具/_ASCII 轉為圖像..."
+
+#, fuzzy
+#~ msgid "Buffer amount (% height of text)"
+#~ msgstr "緩衝區大小(文字高度的百分比)"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "檔案名稱"
+
+#~ msgid "Filename"
+#~ msgstr "檔案名稱"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "透明背景"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/基本 _I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/基本 _I..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/基本 _II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/基本 _II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/按鈕/簡單斜面按鈕(_B)..."
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "斜面寬度"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "右下角顏色"
+
+#~ msgid "Pressed"
+#~ msgstr "已按下"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "左上角顏色"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/斜面圖樣/箭頭(_A)..."
+
+#~ msgid "Pattern"
+#~ msgstr "圖樣"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/斜面圖樣/圓點(_B)..."
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "直徑"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/斜面圖樣/按鈕(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/斜面圖樣/標題(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/斜面圖樣/水平分隔線(_H)..."
+
+#~ msgid "Height"
+#~ msgstr "高度"
+
+#~ msgid "Width"
+#~ msgstr "寬度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+#~ msgstr "<Image>/Script-Fu/動畫/波浪(_W)..."
+
+#, fuzzy
+#~ msgid "Intermediate frames"
+#~ msgstr "中間的畫格數目"
+
+#~ msgid "Looped"
+#~ msgstr "來回漸變"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "最大模糊半徑"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/混色(_D)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/混色(_D)..."
+
+#, fuzzy
+#~ msgid "Blend mode"
+#~ msgstr "混色模式"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "自製漸層範例"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "前景-背景-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "前景-背景-RGB"
+
+#~ msgid "FG-Transparent"
+#~ msgstr "前景-透明"
+
+#~ msgid "Gradient"
+#~ msgstr "漸層"
+
+#, fuzzy
+#~ msgid "Gradient reverse"
+#~ msgstr "漸層"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "偏移量(像素)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/乳牛斑紋(_V)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/乳牛斑紋(_V)..."
+
+#~ msgid "Background Color"
+#~ msgstr "背景顏色"
+
+#~ msgid "Spots density X"
+#~ msgstr "水平斑點密度"
+
+#~ msgid "Spots density Y"
+#~ msgstr "垂直斑點密度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Script-Fu/動畫/漸變(_B)..."
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "絲帶寬度"
+
+#~ msgid "Fadeout"
+#~ msgstr "淡出"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "淡出"
+
+#~ msgid "Prepare for GIF"
+#~ msgstr "準備製作 GIF"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/迷彩圖案(_C)..."
+
+#~ msgid "Color 1"
+#~ msgstr "顏色 1"
+
+#~ msgid "Color 2"
+#~ msgstr "顏色 2"
+
+#~ msgid "Color 3"
+#~ msgstr "顏色 3"
+
+#~ msgid "Granularity"
+#~ msgstr "精細度"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "圖像尺寸"
+
+#~ msgid "Smooth"
+#~ msgstr "平滑"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/雕刻..."
+
+#~ msgid "Background Image"
+#~ msgstr "背景圖像"
+
+#, fuzzy
+#~ msgid "Carve raised text"
+#~ msgstr "文字浮雕"
+
+#, fuzzy
+#~ msgid "Padding around text"
+#~ msgstr "文字之間的間隔"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+#~ msgstr "<Image>/Script-Fu/動畫/波浪(_W)..."
+
+#, fuzzy
+#~ msgid "Carve white areas"
+#~ msgstr "雕刻白色區域"
+
+#, fuzzy
+#~ msgid "Image to carve"
+#~ msgstr "準備雕刻的圖像"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/粉筆(_C)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/粉筆(_C)..."
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "粉筆顏色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/鑿字(_Y)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/鑿字(_Y)..."
+
+#, fuzzy
+#~ msgid "Blur amount"
+#~ msgstr "模糊化程度"
+
+#, fuzzy
+#~ msgid "Chip amount"
+#~ msgstr "模糊化程度"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "影子"
+
+#, fuzzy
+#~ msgid "Fill BG with pattern"
+#~ msgstr "以圖樣填充背景"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "保留背景"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/鍍鉻(_H)..."
+
+#, fuzzy
+#~ msgid "Chrome balance"
+#~ msgstr "雕刻白色區域"
+
+#, fuzzy
+#~ msgid "Chrome lightness"
+#~ msgstr "雕刻白色區域"
+
+#, fuzzy
+#~ msgid "Chrome white areas"
+#~ msgstr "雕刻白色區域"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "高亮度區透明度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/鍍鉻(_H)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/鍍鉻(_H)..."
+
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "偏移量(像素×2)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Script-Fu/描繪/電路(_C)..."
+
+#, fuzzy
+#~ msgid "Circuit seed"
+#~ msgstr "產生電路圖的隨機數來源數字"
+
+#, fuzzy
+#~ msgid "Keep selection"
+#~ msgstr "保留選擇區域"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "遮罩尺寸"
+
+#, fuzzy
+#~ msgid "Separate layer"
+#~ msgstr "使用新圖層"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Script-Fu/變化/布料化(_C)..."
+
+#~ msgid "Blur X"
+#~ msgstr "水平模糊"
+
+#~ msgid "Blur Y"
+#~ msgstr "垂直模糊"
+
+#~ msgid "Depth"
+#~ msgstr "深度"
+
+#, fuzzy
+#~ msgid "Elevation"
+#~ msgstr "邊角圓滑程度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Script-Fu/裝飾/咖啡漬(_C)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "只會變黑\n"
+#~ "(比較適用於淺色圖像)"
+
+#~ msgid "Stains"
+#~ msgstr "污漬"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/漫畫書(_K)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/漫畫書(_K)..."
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "輪廓顏色"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "輪廓顏色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/金屬冷光(_M)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/金屬冷光(_M)..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels)"
+#~ msgstr "效果大小(像素)"
+
+#, fuzzy
+#~ msgid "<Image>/Edit/Copy/Copy _Visible"
+#~ msgstr "<Image>/編輯/複製可見部份(_V)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/水晶..."
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "背景圖像"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+#~ msgstr "<Image>/Script-Fu/選擇區域/侵蝕區域(_D)..."
+
+#, fuzzy
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "精細度(1 表示低)"
+
+#, fuzzy
+#~ msgid "Smooth horizontally"
+#~ msgstr "水平方向模糊化"
+
+#, fuzzy
+#~ msgid "Smooth vertically"
+#~ msgstr "垂直方向模糊化"
+
+#, fuzzy
+#~ msgid "Spread"
+#~ msgstr "種子"
+
+#, fuzzy
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "臨界值 [(較大) 1←→255 (較小)]"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Script-Fu/陰影/影子(_D)..."
+
+#, fuzzy
+#~ msgid "Allow resizing"
+#~ msgstr "可調整尺寸"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "模糊半徑"
+
+#~ msgid "Offset X"
+#~ msgstr "X 偏移量"
+
+#~ msgid "Offset Y"
+#~ msgstr "Y 偏移量"
+
+#~ msgid "Opacity"
+#~ msgstr "透明度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+#~ msgstr "<Image>/Script-Fu/變化/隔行清除(_E)..."
+
+#~ msgid "Columns"
+#~ msgstr "直行"
+
+#~ msgid "Erase"
+#~ msgstr "擦拭"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "擦拭/填色"
+
+#~ msgid "Even"
+#~ msgstr "雙數"
+
+#, fuzzy
+#~ msgid "Even/odd"
+#~ msgstr "雙數/單數"
+
+#~ msgid "Fill with BG"
+#~ msgstr "填上背景顏色"
+
+#~ msgid "Odd"
+#~ msgstr "單數"
+
+#~ msgid "Rows"
+#~ msgstr "橫列"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "行/列"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Script-Fu/選擇區域/輪廓褪色(_F)..."
+
+#, fuzzy
+#~ msgid "Apply generated layermask"
+#~ msgstr "套用所產生的圖層遮罩"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "邊框大小"
+
+#, fuzzy
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "清除未選取的遮罩區域"
+
+#, fuzzy
+#~ msgid "Use growing selection"
+#~ msgstr "保留選擇區域"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/平地(_F)..."
+
+#, fuzzy
+#~ msgid "Detail level"
+#~ msgstr "精細程度"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "圖像高度"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "圖像寬度"
+
+#, fuzzy
+#~ msgid "Random seed"
+#~ msgstr "隨機數來源數字"
+
+#~ msgid "Scale X"
+#~ msgstr "水平比例"
+
+#~ msgid "Scale Y"
+#~ msgstr "垂直比例"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/工具/字型圖(_F)..."
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "文字顏色"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "背景圖像"
+
+#, fuzzy
+#~ msgid "Font _size (pixels)"
+#~ msgstr "字型大小(像素)"
+
+#, fuzzy
+#~ msgid "_Border (pixels)"
+#~ msgstr "邊框大小(像素)"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "顏色 3"
+
+#, fuzzy
+#~ msgid "_Text"
+#~ msgstr "文字"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/結冰(_F)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/結冰(_F)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Script-Fu/裝飾/模糊邊框(_F)..."
+
+#, fuzzy
+#~ msgid "Add shadow"
+#~ msgstr "加上陰影"
+
+#, fuzzy
+#~ msgid "Blur border"
+#~ msgstr "模糊邊框"
+
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "精細度(1 表示低)"
+
+#, fuzzy
+#~ msgid "Shadow weight (%)"
+#~ msgstr "陰影高度(%)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/Gimp.Org/大型標題(_B)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/Gimp.Org/小型標題(_S)..."
+
+#, fuzzy
+#~ msgid "Autocrop"
+#~ msgstr "自動裁剪"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "粉筆顏色"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "高亮度區顏色"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "將圖像平面化"
+
+#, fuzzy
+#~ msgid "Number of colors"
+#~ msgstr "顏色數目"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "移除背景"
+
+#, fuzzy
+#~ msgid "Select-by-color threshold"
+#~ msgstr "依色彩選擇時使用的臨界值"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "陰影顏色"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/擴展/Script-Fu/網頁佈景/Gimp.Org/管狀圖細分項目的按鈕標籤(_U)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/擴展/Script-Fu/網頁佈景/Gimp.Org/管狀圖再細分項目的按鈕標籤"
+#~ "(_E)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/Gimp.Org/一般管狀圖標籤(_G)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/網頁佈景/Gimp.Org/管狀圖按鈕的標籤(_T)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/光面(_S)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/光面(_S)..."
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "混色漸層(文字)"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "混色漸層(輪廓)"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "混色漸層(文字)"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "輪廓模糊半徑"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "圖樣(輪廓)"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "圖樣(文字)"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "圖樣(文字)"
+
+#~ msgid "Shadow"
+#~ msgstr "陰影"
+
+#, fuzzy
+#~ msgid "Text gradient reverse"
+#~ msgstr "漸層"
+
+#, fuzzy
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "使用圖樣而不是漸層來繪畫輪廓"
+
+#, fuzzy
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "使用圖樣而不是漸層來繪畫文字"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "圖樣(文字)"
+
+#, fuzzy
+#~ msgid "Use tattern for outline instead of gradient"
+#~ msgstr "使用圖樣而不是漸層來繪畫輪廓"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/發光文字(_W)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/發光文字(_W)..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "效果大小(像素×3)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/漸層斜面(_L)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/漸層斜面(_L)..."
+
+#, fuzzy
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "斜面高度(清晰度)"
+
+#, fuzzy
+#~ msgid "Border size (pixels)"
+#~ msgstr "邊框大小(像素)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/工具/自製漸層範例(_G)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/Imigre-26..."
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "邊框顏色"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "畫格數目"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/陸地(_L)..."
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "陸地高度"
+
+#, fuzzy
+#~ msgid "Sea depth"
+#~ msgstr "海底深度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Script-Fu/描繪/熔岩(_L)..."
+
+#~ msgid "Roughness"
+#~ msgstr "粗糙度"
+
+#~ msgid "Seed"
+#~ msgstr "種子"
+
+#, fuzzy
+#~ msgid "Use current gradient"
+#~ msgstr "使用目前的漸層"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Script-Fu/描繪/熔岩(_L)..."
+
+#, fuzzy
+#~ msgid "Number of lines"
+#~ msgstr "線條數目"
+
+#, fuzzy
+#~ msgid "Offset radius"
+#~ msgstr "Y 偏移量"
+
+#~ msgid "Randomness"
+#~ msgstr "隨機程度"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/製作筆刷/橢圓、羽化(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/製作筆刷/矩形、羽化(_C)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/製作筆刷/橢圓(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/製作筆刷/矩形(_R)..."
+
+#~ msgid "Description"
+#~ msgstr "說明"
+
+#~ msgid "Feathering"
+#~ msgstr "羽化"
+
+#~ msgid "Spacing"
+#~ msgstr "間隔"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/霓虹管(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/霓虹管(_E)..."
+
+#, fuzzy
+#~ msgid "Create shadow"
+#~ msgstr "產生陰影"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "效果大小(像素×5)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/印刷文字..."
+
+#, fuzzy
+#~ msgid "Cell size (pixels)"
+#~ msgstr "邊框大小(像素)"
+
+#~ msgid "Density (%)"
+#~ msgstr "密度(%)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Script-Fu/裝飾/舊照片(_O)..."
+
+#~ msgid "Sepia"
+#~ msgstr "Sepia"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Script-Fu/陰影/透視法(_P)..."
+
+#~ msgid "Angle"
+#~ msgstr "角度"
+
+#, fuzzy
+#~ msgid "Relative distance of horizon"
+#~ msgstr "陰影相對長度"
+
+#, fuzzy
+#~ msgid "Relative length of shadow"
+#~ msgstr "陰影相對長度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Script-Fu/變化/鐵血戰士(_P)..."
+
+#, fuzzy
+#~ msgid "Edge amount"
+#~ msgstr "邊緣處理方式"
+
+#, fuzzy
+#~ msgid "Pixel amount"
+#~ msgstr "模糊化程度"
+
+#~ msgid "Pixelize"
+#~ msgstr "打格子"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/按鈕/圓角按鈕(_R)..."
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "底部顏色"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "底部顏色(有輸入焦點)"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "未按下"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "未按下(有輸入焦點)"
+
+#~ msgid "Padding X"
+#~ msgstr "水平偏移距離"
+
+#~ msgid "Padding Y"
+#~ msgstr "垂直偏移距離"
+
+#, fuzzy
+#~ msgid "Round ratio"
+#~ msgstr "邊角圓滑程度"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "文字顏色(有輸入焦點)"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "頂部顏色"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "頂部顏色(有輸入焦點)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/描繪地圖(_M)..."
+
+#~ msgid "Behaviour"
+#~ msgstr "描繪方式"
+
+#, fuzzy
+#~ msgid "Detail in Middle"
+#~ msgstr "精細程度"
+
+#~ msgid "Tile"
+#~ msgstr "可鋪排"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Script-Fu/動畫/漣漪(_R)..."
+
+#~ msgid "Black"
+#~ msgstr "黑色"
+
+#, fuzzy
+#~ msgid "Edge behaviour"
+#~ msgstr "邊緣處理方式"
+
+#, fuzzy
+#~ msgid "Number of frames"
+#~ msgstr "畫格數目"
+
+#, fuzzy
+#~ msgid "Rippling strength"
+#~ msgstr "漣漪高度"
+
+#, fuzzy
+#~ msgid "Smear"
+#~ msgstr "搜尋(_S)"
+
+#~ msgid "Wrap"
+#~ msgstr "繞到另一邊"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+#~ msgstr "<Image>/Script-Fu/裝飾/圓角(_R)..."
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "加上背景"
+
+#, fuzzy
+#~ msgid "Add drop-shadow"
+#~ msgstr "加上影子"
+
+#, fuzzy
+#~ msgid "Edge radius"
+#~ msgstr "邊緣處理方式"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
+#~ msgstr "<Image>/Script-Fu/選擇區域/圓角(_R)..."
+
+#, fuzzy
+#~ msgid "Relative radius"
+#~ msgstr "相對半徑"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Script-Fu/選擇區域/變成筆刷(_B)..."
+
+#, fuzzy
+#~ msgid "Brush name"
+#~ msgstr "筆刷名稱"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
+#~ msgstr "<Image>/Script-Fu/選擇區域/變成新圖像(_I)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Script-Fu/選擇區域/變成筆刷(_B)..."
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "圖樣"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+#~ msgstr "<Image>/Script-Fu/裝飾/幻燈片(_S)..."
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "字型顏色"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/新式鍍鉻..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/動感文字..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/其它/球體(_S)..."
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "半徑(像素)"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "球體顏色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Script-Fu/動畫/旋轉球體(_S)..."
+
+#~ msgid "Frames"
+#~ msgstr "畫格數目"
+
+#, fuzzy
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "減少至 n 種顏色(0 = 保持 RGB 模式)"
+
+#, fuzzy
+#~ msgid "Turn from left to right"
+#~ msgstr "由左至右旋轉"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Script-Fu/描繪/旋輪線(_S)..."
+
+#~ msgid "Airbrush"
+#~ msgstr "噴槍"
+
+#~ msgid "Brush"
+#~ msgstr "筆刷"
+
+#~ msgid "Circle"
+#~ msgstr "圓形"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "著色方式"
+
+#~ msgid "Epitrochoid"
+#~ msgstr "外旋輪線"
+
+#, fuzzy
+#~ msgid "Frame"
+#~ msgstr "畫格數目"
+
+#~ msgid "Hexagon"
+#~ msgstr "正六邊形"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "邊角圓滑程度"
+
+#, fuzzy
+#~ msgid "Inner teeth"
+#~ msgstr "模糊邊框"
+
+#~ msgid "Lissajous"
+#~ msgstr "Lissajous"
+
+#, fuzzy
+#~ msgid "Margin (pixels)"
+#~ msgstr "半徑(像素)"
+
+#, fuzzy
+#~ msgid "Outer teeth"
+#~ msgstr "模糊邊框"
+
+#~ msgid "Pencil"
+#~ msgstr "鉛筆"
+
+#~ msgid "Pentagon"
+#~ msgstr "正五邊形"
+
+#~ msgid "Polygon: 10 sides"
+#~ msgstr "正十邊形"
+
+#~ msgid "Polygon: 7 sides"
+#~ msgstr "正七邊形"
+
+#~ msgid "Polygon: 8 sides"
+#~ msgstr "正八邊形"
+
+#~ msgid "Polygon: 9 sides"
+#~ msgstr "正九邊形"
+
+#~ msgid "Shape"
+#~ msgstr "形狀"
+
+#~ msgid "Solid Color"
+#~ msgstr "單色"
+
+#~ msgid "Spyrograph"
+#~ msgstr "旋輪線"
+
+#~ msgid "Square"
+#~ msgstr "正方形"
+
+#, fuzzy
+#~ msgid "Start angle"
+#~ msgstr "開始角度"
+
+#~ msgid "Tool"
+#~ msgstr "工具"
+
+#~ msgid "Triangle"
+#~ msgstr "三角形"
+
+#~ msgid "Type"
+#~ msgstr "類型"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/超新星爆發(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/超新星爆發(_U)..."
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "爆發的顏色"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "效果大小(像素×30)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/星際(_R)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/星際(_R)..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "效果大小(像素×4)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/可鋪排式旋渦(_T)..."
+
+#, fuzzy
+#~ msgid "Whirl amount"
+#~ msgstr "模糊化程度"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/旋渦圖案(_S)..."
+
+#, fuzzy
+#~ msgid "Number of times to whirl"
+#~ msgstr "旋轉次數"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "四分之一的大小是"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "旋轉角度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/粒子軌迹(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/粒子軌迹(_P)..."
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "爆發的顏色"
+
+#, fuzzy
+#~ msgid "Edge only"
+#~ msgstr "邊緣處理方式"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "圖像寬度"
+
+#, fuzzy
+#~ msgid "Hit rate"
+#~ msgstr "撞擊率"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/文字圍圈..."
+
+#~ msgid "Antialias"
+#~ msgstr "平滑化"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "圓弧度數"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Script-Fu/透明度轉為標誌/紋理(_T)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/紋理(_T)..."
+
+#, fuzzy
+#~ msgid "Ending blend"
+#~ msgstr "混合顏色(2)"
+
+#~ msgid "Hexagons"
+#~ msgstr "正六邊形"
+
+#, fuzzy
+#~ msgid "Mosaic tile type"
+#~ msgstr "鑲嵌磚片類型"
+
+#~ msgid "Octagons"
+#~ msgstr "正八邊形"
+
+#~ msgid "Squares"
+#~ msgstr "正方形"
+
+#, fuzzy
+#~ msgid "Starting blend"
+#~ msgstr "混合顏色(1)"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "文字圖樣"
+
+#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
+#~ msgstr "<Image>/濾鏡/模糊化/可鋪排式模糊化(_T)..."
+
+#, fuzzy
+#~ msgid "Blur horizontally"
+#~ msgstr "水平方向模糊化"
+
+#, fuzzy
+#~ msgid "Blur type"
+#~ msgstr "模糊方式"
+
+#, fuzzy
+#~ msgid "Blur vertically"
+#~ msgstr "垂直方向模糊化"
+
+#~ msgid "IIR"
+#~ msgstr "IIR"
+
+#~ msgid "RLE"
+#~ msgstr "RLE"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+#~ msgstr "<Image>/Script-Fu/選擇區域/變成新圖像(_I)..."
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "圖樣"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/網頁標題..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/擴展/Script-Fu/圖樣/T_ruchet..."
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "前景顏色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Script-Fu/變化/交織(_W)..."
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "遮罩透明度"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "遮罩尺寸"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Script-Fu/動畫/波浪(_W)..."
+
+#~ msgid "Amplitude"
+#~ msgstr "波幅"
+
+#~ msgid "Invert direction"
+#~ msgstr "相反方向"
+
+#~ msgid "Wavelength"
+#~ msgstr "波長"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+#~ msgstr "<Image>/Script-Fu/變化/交織(_W)..."
+
+#, fuzzy
+#~ msgid "Ribbon spacing"
+#~ msgstr "絲帶間隔"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "絲帶寬度"
+
+#, fuzzy
+#~ msgid "Shadow darkness"
+#~ msgstr "陰影黑暗度"
+
+#, fuzzy
+#~ msgid "Shadow depth"
+#~ msgstr "陰影深度"
+
+#, fuzzy
+#~ msgid "Thread density"
+#~ msgstr "線條密度"
+
+#, fuzzy
+#~ msgid "Thread intensity"
+#~ msgstr "線條密度"
+
+#, fuzzy
+#~ msgid "Thread length"
+#~ msgstr "線條長度"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/求助/GIMP 線上資源/增效模組登記紀錄(_R)"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/求助/GIMP 線上資源/開發者網頁(_D)"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+#~ msgstr "<Toolbox>/求助/GIMP 線上資源/主網頁(_M)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "<Image>/Script-Fu/陰影/_Xach 效果..."
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "陰影水平偏移量"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "陰影垂直偏移量"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "陰影模糊半徑"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "陰影顏色"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "陰影透明度"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "高亮度區水平偏移量"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "高亮度區垂直偏移量"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "高亮度區透明度"
+
+#~ msgid "Transparent Background"
+#~ msgstr "透明背景"
+
+#~ msgid "DB Browser"
+#~ msgstr "資料庫瀏覽器"
+
+#~ msgid "Name:"
+#~ msgstr "名稱："
+
+#~ msgid "Blurb:"
+#~ msgstr "簡介："
+
+#~ msgid "In:"
+#~ msgstr "輸入參數："
+
+#~ msgid "Out:"
+#~ msgstr "輸出參數："
+
+#~ msgid "Help:"
+#~ msgstr "說明："
+
+#, fuzzy
+#~ msgid "Script-Fu _Console"
+#~ msgstr "Script-Fu 訊息視窗"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Script-Fu"
+#~ msgstr "<Toolbox>/擴展/Script-Fu/文字標誌/霓虹管(_E)..."
+
+#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
+#~ msgstr "<Image>/Script-Fu/工具/繪製 _HSV 分佈圖..."
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "背景透明度"
+
+#~ msgid "End X"
+#~ msgstr "終點的水平座標"
+
+#~ msgid "End Y"
+#~ msgstr "終點的垂直座標"
+
+#, fuzzy
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "從左上角至右下角"
+
+#, fuzzy
+#~ msgid "Graph scale"
+#~ msgstr "圖形比例"
+
+#~ msgid "Start X"
+#~ msgstr "起點的水平座標"
+
+#~ msgid "Start Y"
+#~ msgstr "起點的垂直座標"
+
+#, fuzzy
+#~ msgid "Use selection bounds instead of belows"
+#~ msgstr "使用選擇範圍或圖像範圍，而不理會以下的數值"
+
+#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
+#~ msgstr "<Image>/Script-Fu/工具/顯示圖像結構(_S)..."
+
+#, fuzzy
+#~ msgid "Create new image"
+#~ msgstr "產生新的圖像"
+
+#, fuzzy
+#~ msgid "Insert layer names"
+#~ msgstr "加入圖層名稱"
+
+#, fuzzy
+#~ msgid "Make new background"
+#~ msgstr "製作新的背景圖層"
+
+#, fuzzy
+#~ msgid "Pad color"
+#~ msgstr "填色所用的顏色"
+
+#, fuzzy
+#~ msgid "Pad opacity"
+#~ msgstr "填色的透明度"
+
+#, fuzzy
+#~ msgid "Padding for transparent regions"
+#~ msgstr "填上其它顏色表示透明區域"
+
+#, fuzzy
+#~ msgid "Shear length"
+#~ msgstr "推移長度"
+
+#, fuzzy
+#~ msgid "Space between layers"
+#~ msgstr "圖層之間的空間"
+
+#~ msgid "Unable to open a stream on the SIOD output pipe"
+#~ msgstr "無法在 SIOD 輸出管道開啟資料串流"
+
+#, fuzzy
+#~ msgid "Blend gradient (sext)"
+#~ msgstr "混色漸層(文字)"
+
+#~ msgid "Border"
+#~ msgstr "邊框"
+
+#~ msgid "Fonts"
+#~ msgstr "字型"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Tutorials"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP 教學手冊"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Documenation"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/文件"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Download"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/下載"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/GIMP Art"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/GIMP 藝術"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/GTK"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/GTK"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Links"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/鏈結"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Mailing Lists"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/郵件論壇"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Resources"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/資源"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/The GIMP"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/GIMP.ORG/The GIMP"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Gimp-Savvy.com"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/Gimp-Savvy.com"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Grokking the GIMP"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/Grokking the GIMP"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/User FAQ"
+#~ msgstr "<Toolbox>/擴展/網頁瀏覽器/使用者常問集"
+
+#~ msgid "<Image>/Script-Fu/Render/Make Grid System..."
+#~ msgstr "<Image>/Script-Fu/描繪/製作方格矩陣..."
+
+#~ msgid "Fill with BG Color"
+#~ msgstr "填上背景顏色"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "重設為預設值"
+
+#~ msgid "Close"
+#~ msgstr "關閉"
+
+#~ msgid "OK"
+#~ msgstr "確定"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Apply"
+#~ msgstr "套用"

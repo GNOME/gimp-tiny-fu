@@ -1,0 +1,152 @@
+Bugs:
+- The scripts-update.pl script isn't converting gimp-blend to gimp-edit-blend
+  when the statement is split over two lines.
+- Windows related problems (from schumaml)
+  o no script-fu server
+  DONE??
+
+Script bugs:
+- Image/Alchemy/Predator seg faults when "Separate layer" box is not ticked.
+  Results in call ("plug_in_max_rgb" 1 1 -1 0) and error seg fault
+  #4  main_function (drawable=0x0, preview_mode=0) at max_rgb.c:222
+  #5  0x08049c44 in run (name=0x96e6100 "plug_in_max_rgb", nparams=4,
+  #6  0x00fea8f5 in gimp_proc_run (proc_run=0x96e60c0) at gimp.c:1712
+  #7  0x00fea704 in gimp_loop () at gimp.c:1557
+  #8  0x00fe973e in gimp_main (info=0xbfff49a5, argc=6, argv=0xbffd5ef4)
+  #9  0x08049b52 in main (argc=6, argv=0xbffd5ef4) at max_rgb.c:90
+Dies at the call to (pixelize 1 img -1 3)
+- Image/Render/Circuit seg faults when "Separate layer" box is not ticked.
+  plug-in-maze is the problem.
+
+
+ToDo:
+- A line beginning with a ; just before some close brackets will result in
+  'syntax error: illegal token 1'.
+- E-mail GIMP devel list to ask plug-in authors to improve error checking.
+- Submit patch for updates to Script-Fu scripts so Tiny-Fu can run them.
+- Add check to make sure number of args in call matches number of args
+  specified when script was registered.
+  I added an item to the register list in test-sphere but not to the define
+  statement and it didn't catch the discrepancy.
+- Add a script under the Utils menu that turns off tracing and restores undo.
+- Test the ability to call a Tiny-Fu script from within a Tiny-Fu script.
+- (let ((foo (cons-array 1))) (gimp-parasite-attach (list "bar" 0 foo)))
+  gives the message "Error: not enough arguments".
+  It should display the name of the item for which there are missing args.
+- Add UTF-8 support to TinyScheme
+  <mitch> a safe place to start is probably to simply g_utf8_validate() the
+  whole script upon loading. after that, all strings you get from gtk widgets
+  are utf-8 already
+- Change Tiny-Fu from an extension to a regular plug-in.
+- Create some demonstration scripts using the tsx (and re) extensions
+	o Create thumbnails
+	o Web gallery
+		thumbnails + html pages to show them and link to the originals images
+	o Create a contact sheet (DONE)
+- Check for valid return values from mk_*() calls to TinyScheme.
+  If they can return sc->NIL, test for it before using the pointer.
+- Clean up the changes re: putting error messages in to a buffer. Send the
+  code changes to TinyScheme author.
+- The print_flag variable should only be set to 1 for the console mode.
+- Test the plug-ins text console mode.
+- Check if there are other places where is_pair() is being called instead
+  of is_list().
+- Are there other loops looking for NULL pointer when traversing that is
+  supposed to be a list instead of testing against sc->NIL?
+- Use a call to scheme_define() instead of building a string which is passed
+  to scheme_load_string() to define the stuff needed to call a C routine?
+- Create/update gimp-help info for Tiny-Fu plugin.
+- Autoconf/configure issues.
+- Update the information in the ftx-functions.txt file to indicate that ftx
+  is based on the TinyScheme tsx extensions.
+- Reformat the source files to conform to GIMP coding standards.
+- Document a suggested coding style for Tiny-Fu scripts.
+
+- The SIOD fread routine can not simply be redefined to use read.
+  Mostly done.
+- Scripts should live in their own namespace. This will avoid problems which
+  might arise between scripts with the same name for a function but which have
+  perform different tasks. See Simon Budig's rewrite of the alien-glow-arrow
+  script in Script-Fu.
+  Done?
+- Add extra tests/messages when parsing data to be passed to GIMP in the
+  marshalling routine.
+  DONE
+- The strexp() routine in TinyScheme can only read up to a maximum of 256
+  characters (the size of strbuff[]). 
+  DONE
+- Update script which updates Script-Fu scripts to the current API.
+  DONE
+- Fix the creation of error messages. Don't use g_snprintf()??
+  Don't append to end of sc->linebuff in putchars(). If printing an error
+  it should output to the error[] part of the sc structure.
+  DONE
+- Test PDB routines which return no values.
+  Fixed?
+- Add tests to ensure the right type of array was passed to marshalling code.
+  DONE
+- Test passing of array data to GIMP.
+  DONE (finally AFAICT!)
+- Check for UTF-8 support in the regex and file I/O run-time loadable
+  extensions. Add the support if it isn't already there.
+  DONE
+- Trying to load 96 scripts causes TinyScheme to report "No memory".
+  Need to increase number of cells allocated on startup or have it dynamically
+  add more cells as needed (up to a specified maximum?).
+  DONE
+- Perform further testing on the support for parasites.
+  DONE
+- Add "Save output" button to the console mode screen. (Enhancement)
+  DONE (Won't be done for GIMP 2.0.3)
+- Add "Clear output" button to the console mode screen.
+  DONE
+- A call to gimp-displays-flush results in "car: argument 1 must be: pair"
+  Fixed by change to marshalling code which ensures a list is always returned
+  from all PDB calls?
+- Reformat the scripts to conform to the suggested coding style.
+  Mostly done. Some scripts may still need to be reformatted.
+- Remove the use of a pipe in console mode (see bug #139200)
+  DONE
+- Update compatibility definition for rand to force argument to exact type.
+  DONE
+- Determine where to place the run time loadable extensions which can be
+  used by TinyScheme.
+  DONE.
+
+
+Error handling:
+- If code in ts-wrapper.c detects an error condition when loading or running
+  any of the scripts, it should generate an error message, store the message
+  in a buffer, and return an error indication to the Scheme interpreter.
+- The scheme code which calls the marshalling routine in ts-wrapper.c should
+  check for an error being returned from the called function. If the returned
+  values indicate an error occured it should throw an error (ie. call the
+  Scheme based error handling routine).
+- If a calling or execution error occurs, let the script handle it. If the
+  script isn't set to handle it, then pop up a dialog box and abort the script.
+- The console mode should probably have an error handler to just display the
+  error in the console window.
+
+
+Error reporting:
+o unknown types in register portion of a script
+o wrong types passed for a given argument to a script
+o wrong array type passed as argument where an array type was expected.
+o procedure being executed when an error occured
+o line and position in line where error was encountered when reading a file
+
+
+TinyScheme issues:
+- The printslashstring() routine in scheme.c looks very inefficient.
+- Use a #define instead of a hard-coded value in oblist_initial_value().
+- Use a #define instead of a hard-coded value in new_frame_in_env().
+- Submit additional patches and comments to TinyScheme to original author.
+- In marshall_db_proc_call(), why are some numbers passed to the foreign
+  function as number rather than integer?
+- Why do some interface items take *sc while some do not?
+
+- store_string() should use a memcpy() or memmove() instead of strcpy()
+  to allow it for use in storing binary data that might contain NULs
+  This may also require a fix to the routine which returns the length of
+  stored strings.
+  DONE. No longer needed?

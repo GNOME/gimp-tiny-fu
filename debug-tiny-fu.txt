@@ -1,0 +1,2 @@
+setenv GIMP_PLUGIN_DEBUG_WRAP tiny-fu
+setenv GIMP_PLUGIN_DEBUG_WRAPPER "valgrind -v --leak-check=yes --num-callers=12 --show-reachable=yes"

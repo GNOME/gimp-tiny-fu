@@ -1,0 +1,2496 @@
+# translation of gimp-script-fu.HEAD.sk.po to Slovak
+# gimp-script-fu sk.po
+# Copyright (C) 2002,2003 Free Software Foundation, Inc.
+# Zdenko Podobný <zdpo@mailbox.sk>, 2002,2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu.HEAD 2.3.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2004-01-23 14:59+0100\n"
+"Last-Translator: Zdenko Podobný <zdpo@mailbox.sk>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr "<Toolbox>/Rozš./Script-Fu/Script-Fu _konzola"
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr "<Toolbox>/Rozš./Script-Fu/Spustiť _server..."
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr "Znovu prečítať všetky dostupné skripty"
+
+#: tiny-fu/tiny-fu.c:275
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr "<Toolbox>/Rozš./Script-Fu/_Obnoviť skripty"
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+#, fuzzy
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr "Iba interaktívne spustenie umožňuje režim Script-Fu konzoly"
+
+#: tiny-fu/tiny-fu-console.c:167
+#, fuzzy
+msgid "Tiny-Fu Console"
+msgstr "Script-Fu konzola"
+
+#: tiny-fu/tiny-fu-console.c:171
+#, fuzzy
+msgid "_Save Output"
+msgstr "SIOD výstup"
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+#, fuzzy
+msgid "Tiny-Fu Console - "
+msgstr "Script-Fu konzola"
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr "Aktuálny príkaz"
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr "Prechádzať..."
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+#, fuzzy
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr "Iba neinteraktívne spustenie umožňuje režim vyhodnocovanie Script-Fu"
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, fuzzy, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"Chyba počas spúšťania\n"
+" %s\n"
+"%s"
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+#, fuzzy
+msgid "Tiny-Fu Server Options"
+msgstr "Nastavenia Script-Fu servera"
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr "Port servera:"
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr "Protokol servera:"
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#, fuzzy
+msgid "/Tiny-Fu/"
+msgstr "/Script-Fu/"
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, fuzzy, c-format
+msgid "Tiny-Fu: %s"
+msgstr "Script-Fu: %s"
+
+#: tiny-fu/tiny-fu-interface.c:212
+#, fuzzy
+msgid "_About"
+msgstr "O skripte"
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr "Argumenty skriptu"
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr "%s:"
+
+#: tiny-fu/tiny-fu-interface.c:312
+#, fuzzy
+msgid "Tiny-Fu Color Selection"
+msgstr "Script-Fu výber farby"
+
+#: tiny-fu/tiny-fu-interface.c:418
+#, fuzzy
+msgid "Tiny-Fu File Selection"
+msgstr "Script-Fu výber súboru"
+
+#: tiny-fu/tiny-fu-interface.c:422
+#, fuzzy
+msgid "Tiny-Fu Folder Selection"
+msgstr "Script-Fu výber priečinka"
+
+#: tiny-fu/tiny-fu-interface.c:434
+#, fuzzy
+msgid "Tiny-Fu Font Selection"
+msgstr "Script-Fu výber písma"
+
+#: tiny-fu/tiny-fu-interface.c:441
+#, fuzzy
+msgid "Tiny-Fu Palette Selection"
+msgstr "Script-Fu výber vzorky"
+
+#: tiny-fu/tiny-fu-interface.c:449
+#, fuzzy
+msgid "Tiny-Fu Pattern Selection"
+msgstr "Script-Fu výber vzorky"
+
+#: tiny-fu/tiny-fu-interface.c:457
+#, fuzzy
+msgid "Tiny-Fu Gradient Selection"
+msgstr "Script-Fu výber prechodu"
+
+#: tiny-fu/tiny-fu-interface.c:465
+#, fuzzy
+msgid "Tiny-Fu Brush Selection"
+msgstr "Script-Fu výber štetca"
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+#, fuzzy
+msgid "Script Progress"
+msgstr "Argumenty skriptu"
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr "Autor:"
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "Dátum:"
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr "Typ obrázka:"
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#~ msgid "Search by _Name"
+#~ msgstr "Hľadať podľa _názvu"
+
+#~ msgid "Search by _Blurb"
+#~ msgstr "Hľadanie podľa _popisu"
+
+#~ msgid "_Search:"
+#~ msgstr "_Hľadať:"
+
+#~ msgid "Searching by name - please wait"
+#~ msgstr "Hľadanie podľa názvu - čakajte prosím"
+
+#~ msgid "Searching by blurb - please wait"
+#~ msgstr "Hľadanie podľa popisu - čakajte prosím"
+
+#~ msgid "Searching - please wait"
+#~ msgstr "Hľadanie - čakajte prosím"
+
+#~ msgid "No matches"
+#~ msgstr "Nenájdené"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "Priemer"
+
+#~ msgid "Color"
+#~ msgstr "Farba"
+
+#~ msgid "Font"
+#~ msgstr "Písmo"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "Veľkosť písma (v bodoch)"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "Vzorka textu"
+
+#, fuzzy
+#~ msgid " for directory "
+#~ msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "Indexový obrázok"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_Znaková mapa..."
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "Farba pozadia"
+
+#, fuzzy
+#~ msgid "Created "
+#~ msgstr "Vytvoriť tieň"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+
+#, fuzzy
+#~ msgid "Sheet "
+#~ msgstr "Hniezdo"
+
+#, fuzzy
+#~ msgid "Sheet Size"
+#~ msgstr "Hniezdo"
+
+#~ msgid "Text Color"
+#~ msgstr "Farba textu"
+
+#, fuzzy
+#~ msgid "Unable to open directory "
+#~ msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/3D _obrys..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/3D o_brys..."
+
+#, fuzzy
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Polomer rozmazania mapy vyvýšenia (alfa vrstvy)"
+
+#, fuzzy
+#~ msgid "Default bumpmap settings"
+#~ msgstr "Štandardné nastavenie mapy vyvýšenia"
+
+#, fuzzy
+#~ msgid "Font size (pixels)"
+#~ msgstr "Veľkosť písma (v bodoch)"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "Polomer rozmazania obrysu"
+
+#, fuzzy
+#~ msgid "Shadow X offset"
+#~ msgstr "X posun tieňa"
+
+#, fuzzy
+#~ msgid "Shadow Y offset"
+#~ msgstr "Y posun tieňa"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "Polomer rozmazania tieňa"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/3_D bludisko..."
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "Veľkosť bloku"
+
+#, fuzzy
+#~ msgid "End blend"
+#~ msgstr "Splývanie konca"
+
+#, fuzzy
+#~ msgid "Number of X tiles"
+#~ msgstr "X počet dlaždíc"
+
+#, fuzzy
+#~ msgid "Number of Y tiles"
+#~ msgstr "Y počet dlaždíc"
+
+#, fuzzy
+#~ msgid "Start blend"
+#~ msgstr "Začiatok miešania"
+
+#~ msgid "Supersample"
+#~ msgstr "Prevzorkovanie"
+
+#~ msgid "Thickness"
+#~ msgstr "Hrúbka"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/Pridať skos_enie..."
+
+#, fuzzy
+#~ msgid "Keep bump layer"
+#~ msgstr "Uchovať vrstvu vyvýšenia"
+
+#, fuzzy
+#~ msgid "Work on copy"
+#~ msgstr "Pracovať s kópiou"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/Pridať o_kraj..."
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "Veľkosť ohraničenia X"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "Veľkosť ohraničenia Y"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "Farba ohraničenia"
+
+#, fuzzy
+#~ msgid "Delta value on color"
+#~ msgstr "Delta hodnota farby"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/Šíp_ka..."
+
+#~ msgid "Down"
+#~ msgstr "Dole"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "Do jednej vrstvy"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "Farba žiary"
+
+#~ msgid "Left"
+#~ msgstr "Vľavo"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientácia"
+
+#~ msgid "Right"
+#~ msgstr "Vpravo"
+
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
+
+#~ msgid "Up"
+#~ msgstr "Hore"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/"
+#~ "_Vodorovná čiara..."
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "Výška kusu"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "Dĺžka kusu"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/"
+#~ "_Gulička..."
+
+#~ msgid "Radius"
+#~ msgstr "Polomer"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-ADJUSTMENT _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-ADJUSTMENT _"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/"
+#~ "_Tlačítko..."
+
+#, fuzzy
+#~ msgid "Glow radius"
+#~ msgstr "Polomer žiary"
+
+#~ msgid "Padding"
+#~ msgstr "Výplň"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "Farba textu"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-COLOR      _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-COLOR      _"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Mimo_zemská žiara..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Mimo_zemská žiara..."
+
+#, fuzzy
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "Veľkosť žiary (body * 4)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Mimozemský _neón..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Mimozemský _neón..."
+
+#, fuzzy
+#~ msgid "Fade away"
+#~ msgstr "Vyblednúť"
+
+#, fuzzy
+#~ msgid "Number of bands"
+#~ msgstr "Počet pásov"
+
+#, fuzzy
+#~ msgid "Width of bands"
+#~ msgstr "Šírka pruhov"
+
+#, fuzzy
+#~ msgid "Width of gaps"
+#~ msgstr "Šírka medzier"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+#~ msgstr "<Image>/Script-Fu/Pomôcky/ASCII do vrstvy..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_ASCII do obrázka..."
+
+#, fuzzy
+#~ msgid "Buffer amount (% height of text)"
+#~ msgstr "Veľkosť zásobníka (% výšky textu)"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "Meno súboru"
+
+#~ msgid "Filename"
+#~ msgstr "Meno súboru"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "Priesvitné pozadie"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Základné I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Základné I..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Základné II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Základné II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Tlačítka/Jednoduché s_kosené tlačítko..."
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "Šírka skosenia"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "Dolná pravá farba"
+
+#~ msgid "Pressed"
+#~ msgstr "Stlačené"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "Ľavá horná farba"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/Šíp_ka..."
+
+#~ msgid "Pattern"
+#~ msgstr "Vzorka"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Gulička..."
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "Priemer"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Tlačítko..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Nadpis..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Vodorovná "
+#~ "čiara..."
+
+#~ msgid "Height"
+#~ msgstr "Výška"
+
+#~ msgid "Width"
+#~ msgstr "Šírka"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+#~ msgstr "<Image>/Script-Fu/Animátory/_Miešanie..."
+
+#, fuzzy
+#~ msgid "Intermediate frames"
+#~ msgstr "Medziľahlé políčka"
+
+#~ msgid "Looped"
+#~ msgstr "Slučka"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "Najvyšší polomer rozmazania"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Mie_šané..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Mieš_ané..."
+
+#, fuzzy
+#~ msgid "Blend mode"
+#~ msgstr "Režim miešania"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "Vlastný prechod"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "Popredie-pozadie-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "Popredie-pozadie-RGB"
+
+#~ msgid "FG-Transparent"
+#~ msgstr "Transparentné popredie"
+
+#~ msgid "Gradient"
+#~ msgstr "Prechod"
+
+#, fuzzy
+#~ msgid "Gradient reverse"
+#~ msgstr "Obrátený prechod"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "Posun (v bodoch)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Fľakaté..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Fľakaté..."
+
+#~ msgid "Background Color"
+#~ msgstr "Farba pozadia"
+
+#~ msgid "Spots density X"
+#~ msgstr "X hustota bodiek"
+
+#~ msgid "Spots density Y"
+#~ msgstr "Y hustota bodiek"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Script-Fu/Animátory/_Vpálené..."
+
+#, fuzzy
+#~ msgid "Add glowing"
+#~ msgstr "Povoliť vyžarovanie"
+
+#, fuzzy
+#~ msgid "After glow"
+#~ msgstr "Po žiare"
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "Šírka korony"
+
+#~ msgid "Fadeout"
+#~ msgstr "Zanikanie"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "Šírka zanikania"
+
+#~ msgid "Prepare for GIF"
+#~ msgstr "Prepraviť pre GIF"
+
+#~ msgid "Speed (pixels/frame)"
+#~ msgstr "Rýchlosť (body/políčko)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Kamufláž..."
+
+#~ msgid "Color 1"
+#~ msgstr "Farba 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Farba 2"
+
+#~ msgid "Color 3"
+#~ msgstr "Farba 3"
+
+#~ msgid "Granularity"
+#~ msgstr "Zrnitosť"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "Veľkosť obrázka"
+
+#~ msgid "Smooth"
+#~ msgstr "Vyhladiť"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Vyrezávané..."
+
+#~ msgid "Background Image"
+#~ msgstr "Obrázok na pozadí"
+
+#, fuzzy
+#~ msgid "Carve raised text"
+#~ msgstr "Text vyrezávania do výšky"
+
+#, fuzzy
+#~ msgid "Padding around text"
+#~ msgstr "Výplň okolo textu"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+#~ msgstr "<Image>/Script-Fu/Šablóny/_Vyrezať..."
+
+#, fuzzy
+#~ msgid "Carve white areas"
+#~ msgstr "Vyrezávané biele oblasti"
+
+#, fuzzy
+#~ msgid "Image to carve"
+#~ msgstr "Obrázok k vyrezávaniu"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/K_rieda..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/K_rieda..."
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "Farba kriedy"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Odštiepnuté..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Odštiepnuté..."
+
+#, fuzzy
+#~ msgid "Blur amount"
+#~ msgstr "Miera rozmazania"
+
+#, fuzzy
+#~ msgid "Chip amount"
+#~ msgstr "Veľkosť odštiepenia"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "Vrhanie tieňa"
+
+#, fuzzy
+#~ msgid "Fill BG with pattern"
+#~ msgstr "Vyplniť popredie so vzorkou"
+
+#~ msgid "Invert"
+#~ msgstr "Invertovať"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "Nemeniť pozadie"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Script-Fu/Šablóny/Poc_hrómovať..."
+
+#, fuzzy
+#~ msgid "Chrome balance"
+#~ msgstr "Vyváženosť chrómovanie"
+
+#, fuzzy
+#~ msgid "Chrome factor"
+#~ msgstr "Faktor chrómovania"
+
+#, fuzzy
+#~ msgid "Chrome lightness"
+#~ msgstr "Svetlosť chrómovania"
+
+#, fuzzy
+#~ msgid "Chrome saturation"
+#~ msgstr "Sýtosť chrómovania"
+
+#, fuzzy
+#~ msgid "Chrome white areas"
+#~ msgstr "Pochrómovať biele oblasti"
+
+#, fuzzy
+#~ msgid "Environment map"
+#~ msgstr "Mapa prostredia"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "Vyváženie svetiel"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/C_hrómové..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/C_hrómové..."
+
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "Posun (v bodoch * 2)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Script-Fu/Generovanie/_Okruh..."
+
+#, fuzzy
+#~ msgid "Circuit seed"
+#~ msgstr "Hniezdo okruhu"
+
+#, fuzzy
+#~ msgid "Keep selection"
+#~ msgstr "Uchovať výber"
+
+#, fuzzy
+#~ msgid "No background (only for separate layer)"
+#~ msgstr "Bez pozadia (iba pre samostatné vrstvy)"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "Veľkosť masky olejomaľby"
+
+#, fuzzy
+#~ msgid "Separate layer"
+#~ msgstr "Oddelená vrstva"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Script-Fu/Alchýmia/_Plátno..."
+
+#~ msgid "Azimuth"
+#~ msgstr "Azimut"
+
+#~ msgid "Blur X"
+#~ msgstr "Rozmazanie X"
+
+#~ msgid "Blur Y"
+#~ msgstr "Rozmazanie Y"
+
+#~ msgid "Depth"
+#~ msgstr "Hĺbka"
+
+#~ msgid "Elevation"
+#~ msgstr "Zdvih"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/_Kávová škvrna..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "Iba stmaviť\n"
+#~ "(Lepšie, ale len pre obrázky s množstvom bielej)"
+
+#~ msgid "Stains"
+#~ msgstr "Škvrny"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Kniha komiksov..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Kniha komiksov..."
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "Farba obrysu"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "Veľkosť obrysu"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Stude_ný kov..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Stude_ný kov.."
+
+#, fuzzy
+#~ msgid "Effect size (pixels)"
+#~ msgstr "Veľkosť efektu (v bodoch)"
+
+#, fuzzy
+#~ msgid "<Image>/Edit/Copy/Copy _Visible"
+#~ msgstr "<Image>/Úpravy/Kopírovať _viditeľné"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Kryštálové..."
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "Obrázok na pozadí"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+#~ msgstr "<Image>/Script-Fu/Výber/_Núdzový výber..."
+
+#, fuzzy
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "Zrnitosť (1 je malá)"
+
+#, fuzzy
+#~ msgid "Smooth horizontally"
+#~ msgstr "Vyhladiť vodorovne"
+
+#, fuzzy
+#~ msgid "Smooth vertically"
+#~ msgstr "Vyhladiť zvislo"
+
+#~ msgid "Spread"
+#~ msgstr "Roztiahnuť"
+
+#, fuzzy
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "Prah (väčší 1<-->255 menší)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Script-Fu/Tieň/_Vrhnúť tieň..."
+
+#, fuzzy
+#~ msgid "Allow resizing"
+#~ msgstr "Povoliť zmenu veľkosti"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "Polomer rozmazania"
+
+#~ msgid "Offset X"
+#~ msgstr "Posun X"
+
+#~ msgid "Offset Y"
+#~ msgstr "Posun Y"
+
+#~ msgid "Opacity"
+#~ msgstr "Krytie"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+#~ msgstr "<Image>/Script-Fu/Alchýmia/_Vymazať každý druhý riadok..."
+
+#~ msgid "Columns"
+#~ msgstr "Stĺpce"
+
+#~ msgid "Erase"
+#~ msgstr "Zmazať"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "Zmazať/Vyplniť"
+
+#~ msgid "Even"
+#~ msgstr "Párny"
+
+#, fuzzy
+#~ msgid "Even/odd"
+#~ msgstr "Párny/Nepárny"
+
+#~ msgid "Fill with BG"
+#~ msgstr "Vyplniť s pozadím"
+
+#~ msgid "Odd"
+#~ msgstr "Nepárny"
+
+#~ msgid "Rows"
+#~ msgstr "Riadky"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "Riadky/Stĺpce"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Script-Fu/Výber/_Pozvoľný obrys..."
+
+#, fuzzy
+#~ msgid "Apply generated layermask"
+#~ msgstr "Použiť generovanú masku vrsty"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "Veľkosť ohraničenia"
+
+#, fuzzy
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "Vymazať nevybrané oblasti masky"
+
+#, fuzzy
+#~ msgid "Fade from %"
+#~ msgstr "Vyblednúť z %"
+
+#, fuzzy
+#~ msgid "Fade to   %"
+#~ msgstr "Vyblednúť do   %"
+
+#, fuzzy
+#~ msgid "Use growing selection"
+#~ msgstr "Použiť rastúci výber"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Rovina..."
+
+#, fuzzy
+#~ msgid "Detail level"
+#~ msgstr "Úroveň detailov"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "Výška obrázka"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "Šírka obrázka"
+
+#, fuzzy
+#~ msgid "Random seed"
+#~ msgstr "Hniezdo náhodných čísel"
+
+#~ msgid "Scale X"
+#~ msgstr "Zväčšenie X"
+
+#~ msgid "Scale Y"
+#~ msgstr "Zväčšenie Y"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_Znaková mapa..."
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "Aktívne farby"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "Čierne na bielom"
+
+#, fuzzy
+#~ msgid "Font _size (pixels)"
+#~ msgstr "Veľkosť písma (v bodoch)"
+
+#, fuzzy
+#~ msgid "Use font _name as text"
+#~ msgstr "Používať _názov písma ako text"
+
+#~ msgid "_Border (pixels)"
+#~ msgstr "_Okraj (v bodoch)"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "_Farebná schéma"
+
+#~ msgid "_Filter (regexp)"
+#~ msgstr "_Filter (regexp)"
+
+#~ msgid "_Labels"
+#~ msgstr "_Označenia"
+
+#~ msgid "_Text"
+#~ msgstr "_Text"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Mrazivé..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Mrazivé..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/N_eostrý okraj..."
+
+#, fuzzy
+#~ msgid "Add shadow"
+#~ msgstr "Pridať tieň"
+
+#, fuzzy
+#~ msgid "Blur border"
+#~ msgstr "Hranice rozmazania"
+
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "Zrnitosť (1 je malá)"
+
+#, fuzzy
+#~ msgid "Shadow weight (%)"
+#~ msgstr "Miera tieňa (%)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/_Veľký nadpis..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Ma_lý nadpis..."
+
+#, fuzzy
+#~ msgid "Autocrop"
+#~ msgstr "Automatické orezanie"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "Tmavá farba"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "Farba svetiel"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "Indexový obrázok"
+
+#, fuzzy
+#~ msgid "Number of colors"
+#~ msgstr "Počet farieb"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "Odstrániť pozadie"
+
+#, fuzzy
+#~ msgid "Select-by-color threshold"
+#~ msgstr "Prah výberu podľa farby"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "Farba tieňa"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Nápis podtlačítka "
+#~ "na t_rubici..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Nápis "
+#~ "podpodtlačítka na t_rubici..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/V_šeobecné nápisy "
+#~ "na trubici..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Nápis tlačítka na "
+#~ "_trubici..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Lesklé..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Lesklé..."
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "Prechod miešania (text)"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "Prechod miešania (obrys)"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "Prechod miešania (text)"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "Obrátený prechod obrysu"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "Vzorka (obrys)"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "Vzorka (prerytie)"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "Vzorka (text)"
+
+#~ msgid "Shadow"
+#~ msgstr "Tieň"
+
+#, fuzzy
+#~ msgid "Text gradient reverse"
+#~ msgstr "Obrátený prechod textu"
+
+#, fuzzy
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "Namiesto prechodu použiť na obrys vzorku"
+
+#, fuzzy
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "Namiesto vzorky použiť na text prechod"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "Použiť prekrytie vzoriek"
+
+#, fuzzy
+#~ msgid "Use tattern for outline instead of gradient"
+#~ msgstr "Namiesto prechodu použiť na obrys vzorku"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Sálajúca žiara..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Sálajúce teplo..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "Veľkosť efektu (v bodoch *3)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Š_ikmý prechod..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Š_ikmý prechod..."
+
+#, fuzzy
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "Výška skosenia (ostrosť)"
+
+#, fuzzy
+#~ msgid "Border size (pixels)"
+#~ msgstr "Veľkosť ohraničenia (v bodoch)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/Vlastný pr_echod..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Imigre-26..."
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "Farba rámu"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "Veľkosť rámu"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Zem..."
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "Výška pevniny"
+
+#, fuzzy
+#~ msgid "Sea depth"
+#~ msgstr "Hĺbka mora"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Script-Fu/Generovanie/_Láva..."
+
+#~ msgid "Roughness"
+#~ msgstr "Drsnosť"
+
+#~ msgid "Seed"
+#~ msgstr "Hniezdo"
+
+#, fuzzy
+#~ msgid "Use current gradient"
+#~ msgstr "Použiť aktuálny prechod"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Script-Fu/Generovanie/Čiarová _nova..."
+
+#, fuzzy
+#~ msgid "Number of lines"
+#~ msgstr "Počet čiar"
+
+#, fuzzy
+#~ msgid "Offset radius"
+#~ msgstr "Polomer posunu"
+
+#~ msgid "Randomness"
+#~ msgstr "Náhodnosť"
+
+#~ msgid "Sharpness (degrees)"
+#~ msgstr "Ostrosť (v stupňoch)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/Eli_ptický, neostrý..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/Obdĺžni_kový, neostrý..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/_Eliptický..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/O_bdĺžnikový..."
+
+#~ msgid "Description"
+#~ msgstr "Popis"
+
+#~ msgid "Feathering"
+#~ msgstr "Neostrosť"
+
+#~ msgid "Spacing"
+#~ msgstr "Rozostup"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/N_eón..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/N_eón..."
+
+#, fuzzy
+#~ msgid "Create shadow"
+#~ msgstr "Vytvoriť tieň"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "Veľkosť efektu (v bodoch * 5)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Novinový text..."
+
+#, fuzzy
+#~ msgid "Cell size (pixels)"
+#~ msgstr "Veľkosť bunky (v bodoch)"
+
+#~ msgid "Density (%)"
+#~ msgstr "Intenzita (%)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/_Stará fotografia..."
+
+#~ msgid "Defocus"
+#~ msgstr "Rozostrenie"
+
+#~ msgid "Mottle"
+#~ msgstr "Škvrnka"
+
+#~ msgid "Sepia"
+#~ msgstr "Sépia"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Script-Fu/Tieň/_Perspektíva..."
+
+#~ msgid "Angle"
+#~ msgstr "Uhol"
+
+#~ msgid "Interpolate"
+#~ msgstr "Interpolovať"
+
+#, fuzzy
+#~ msgid "Relative distance of horizon"
+#~ msgstr "Relatívna vzdialenosť horizontu"
+
+#, fuzzy
+#~ msgid "Relative length of shadow"
+#~ msgstr "Relatívna dĺžka tieňa"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Script-Fu/Alchýmia/_Predátor..."
+
+#, fuzzy
+#~ msgid "Edge amount"
+#~ msgstr "Miera hrán"
+
+#, fuzzy
+#~ msgid "Pixel amount"
+#~ msgstr "Veľkosť bodov"
+
+#~ msgid "Pixelize"
+#~ msgstr "Pixelizovať"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Tlačítka/_Oblé tlačítko..."
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "Dolná farba"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "Dolná farba (aktívna)"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "Nestlačené"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "Nestlačené (aktívne)"
+
+#~ msgid "Padding X"
+#~ msgstr "Výplň X"
+
+#~ msgid "Padding Y"
+#~ msgstr "Výplň Y"
+
+#, fuzzy
+#~ msgid "Round ratio"
+#~ msgstr "Pomer zaoblenia"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "Farba text (aktívna)"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "Horná farba"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "Horná farba (aktívna)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/Generovať _mapu..."
+
+#~ msgid "Behaviour"
+#~ msgstr "Chovanie"
+
+#~ msgid "Detail in Middle"
+#~ msgstr "Detaily v strede"
+
+#~ msgid "Tile"
+#~ msgstr "Dlaždice"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Script-Fu/Animátory/_Zvlnenie..."
+
+#~ msgid "Black"
+#~ msgstr "Čierna"
+
+#, fuzzy
+#~ msgid "Edge behaviour"
+#~ msgstr "Chovanie okrajov"
+
+#, fuzzy
+#~ msgid "Number of frames"
+#~ msgstr "Počet políčok"
+
+#, fuzzy
+#~ msgid "Rippling strength"
+#~ msgstr "Sila zvlnenia"
+
+#~ msgid "Smear"
+#~ msgstr "Rozmazať"
+
+#~ msgid "Wrap"
+#~ msgstr "Zalamovať"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/_Oblé rohy..."
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "Pridať pozadie"
+
+#, fuzzy
+#~ msgid "Add drop-shadow"
+#~ msgstr "Pridať vrhanie tieňa"
+
+#, fuzzy
+#~ msgid "Edge radius"
+#~ msgstr "Polomer hrany"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
+#~ msgstr "<Image>/Script-Fu/Výber/Zaob_liť..."
+
+#, fuzzy
+#~ msgid "Relative radius"
+#~ msgstr "Relatívny polomer"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Script-Fu/Výber/Do š_tetca..."
+
+#, fuzzy
+#~ msgid "Brush name"
+#~ msgstr "Názov štetca"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
+#~ msgstr "<Image>/Script-Fu/Výber/Do _obrázka"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Script-Fu/Výber/Do v_zorky..."
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "Názov vzorky"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+#~ msgstr "<Image>/Script-Fu/Dekorácia/_Diapozitív..."
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "Farba písma"
+
+#~ msgid "Number"
+#~ msgstr "Počet"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/SOTA chróm..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Rýchly text..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Rôzne/_Guľa..."
+
+#~ msgid "Lighting (degrees)"
+#~ msgstr "Osvetlenie (v stupňoch)"
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "Polomer (v bodoch)"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "Farba gule"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Script-Fu/Animátory/_Točiaci sa glóbus..."
+
+#~ msgid "Frames"
+#~ msgstr "Rámy"
+
+#, fuzzy
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "Indexovaný v n farbách (0 = nechá RGB)"
+
+#, fuzzy
+#~ msgid "Turn from left to right"
+#~ msgstr "Točiť zľava doprava"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Script-Fu/Generovanie/_Spyrogimp..."
+
+#~ msgid "Airbrush"
+#~ msgstr "Rozprašovač"
+
+#~ msgid "Brush"
+#~ msgstr "Štetec"
+
+#~ msgid "Circle"
+#~ msgstr "Kruh"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "Farebná metóda"
+
+#~ msgid "Epitrochoid"
+#~ msgstr "Epitrochoid"
+
+#~ msgid "Frame"
+#~ msgstr "Rám"
+
+#~ msgid "Gradient: Loop Sawtooth"
+#~ msgstr "Prechod: Cyklická píla"
+
+#~ msgid "Gradient: Loop Triangle"
+#~ msgstr "Prechod: Cyklický trojuholník"
+
+#~ msgid "Hexagon"
+#~ msgstr "Šesťuholník"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "Miera dier"
+
+#, fuzzy
+#~ msgid "Inner teeth"
+#~ msgstr "Vnútorné zuby"
+
+#~ msgid "Lissajous"
+#~ msgstr "Lissajouské"
+
+#~ msgid "Margin (pixels)"
+#~ msgstr "Okraj (v bodoch)"
+
+#, fuzzy
+#~ msgid "Outer teeth"
+#~ msgstr "Vonkajšia zuby"
+
+#~ msgid "Pencil"
+#~ msgstr "Ceruzka"
+
+#~ msgid "Pentagon"
+#~ msgstr "Päťuholník"
+
+#~ msgid "Polygon: 10 sides"
+#~ msgstr "Mnohouholník: 10 strán"
+
+#~ msgid "Polygon: 7 sides"
+#~ msgstr "Mnohouholník: 7 strán"
+
+#~ msgid "Polygon: 8 sides"
+#~ msgstr "Mnohouholník: 8 strán"
+
+#~ msgid "Polygon: 9 sides"
+#~ msgstr "Mnohouholník: 9 strán"
+
+#~ msgid "Shape"
+#~ msgstr "Tvar"
+
+#~ msgid "Solid Color"
+#~ msgstr "Jednoliata farba"
+
+#~ msgid "Spyrograph"
+#~ msgstr "Spyrograf"
+
+#~ msgid "Square"
+#~ msgstr "Štvorec"
+
+#, fuzzy
+#~ msgid "Start angle"
+#~ msgstr "Počiatočný uhol"
+
+#~ msgid "Tool"
+#~ msgstr "Nástroj"
+
+#~ msgid "Triangle"
+#~ msgstr "Trojuholník"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Prenikanie _hviezd..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Prenikanie _hviezd..."
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "Farba prenikania"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "Veľkosť efektu (v bodoch * 30)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/P_opraskaný povrch..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/P_opraskaný povrch..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "Veľkosť efektu (v bodoch * 4)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/Vírivá _dlaždica..."
+
+#, fuzzy
+#~ msgid "Whirl amount"
+#~ msgstr "Miera zvlnenia"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Vírivé..."
+
+#, fuzzy
+#~ msgid "Number of times to whirl"
+#~ msgstr "Počet opakovaní zvlnenia"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "Štvrtinová veľkosť"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "Uhol zvlnenia"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/Stopa _častíc..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Stopa _častíc..."
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "Základná farba"
+
+#, fuzzy
+#~ msgid "Edge only"
+#~ msgstr "Iba hrana"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "Šírka hrany"
+
+#, fuzzy
+#~ msgid "Hit rate"
+#~ msgstr "Pomer úderov"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Textový kruh..."
+
+#~ msgid "Antialias"
+#~ msgstr "Vyhladzovanie"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "Uhol vyplňovania"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Textúrované..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Textúrované..."
+
+#, fuzzy
+#~ msgid "Ending blend"
+#~ msgstr "Koncové splývanie"
+
+#~ msgid "Hexagons"
+#~ msgstr "Šesťuholník"
+
+#, fuzzy
+#~ msgid "Mosaic tile type"
+#~ msgstr "Typ dlaždicovania mozaiky"
+
+#~ msgid "Octagons"
+#~ msgstr "Osemuholník"
+
+#~ msgid "Squares"
+#~ msgstr "Štvorce"
+
+#, fuzzy
+#~ msgid "Starting blend"
+#~ msgstr "Počiatočné miešanie"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "Vzorka textu"
+
+#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
+#~ msgstr "<Image>/Filtere/Rozmazanie/_Dlaždicoviteľné rozmazanie..."
+
+#, fuzzy
+#~ msgid "Blur horizontally"
+#~ msgstr "Rozmazať vodorovne"
+
+#, fuzzy
+#~ msgid "Blur type"
+#~ msgstr "Typ rozmazania"
+
+#, fuzzy
+#~ msgid "Blur vertically"
+#~ msgstr "Rozmazať zvisle"
+
+#~ msgid "IIR"
+#~ msgstr "IIR"
+
+#~ msgid "RLE"
+#~ msgstr "RLE"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+#~ msgstr "<Image>/Script-Fu/Výber/Do _obrázka"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Vzorka"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Hlavička webového titulku..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Bludisko..."
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "Farba popredia"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Script-Fu/Alchýmia/Maskovať _rozostrenie..."
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "Maska krytia"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "Veľkosť masky"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Script-Fu/Animátory/_Vlny..."
+
+#~ msgid "Amplitude"
+#~ msgstr "Rozkmit"
+
+#~ msgid "Invert direction"
+#~ msgstr "Obrátiť smer"
+
+#~ msgid "Wavelength"
+#~ msgstr "Vlnová dĺžka"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+#~ msgstr "<Image>/Script-Fu/Alchýmia/_Pretkávanie..."
+
+#, fuzzy
+#~ msgid "Ribbon spacing"
+#~ msgstr "Rozostup pásov"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "Šírka pásov"
+
+#, fuzzy
+#~ msgid "Shadow darkness"
+#~ msgstr "Tmavosť tieňa"
+
+#, fuzzy
+#~ msgid "Shadow depth"
+#~ msgstr "Hĺbka tieňa"
+
+#, fuzzy
+#~ msgid "Thread density"
+#~ msgstr "Hustota vlákna"
+
+#, fuzzy
+#~ msgid "Thread intensity"
+#~ msgstr "Intenzita vlákna"
+
+#, fuzzy
+#~ msgid "Thread length"
+#~ msgstr "Dĺžka vlákna"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/Pomocník/Online GIMP/_Register zásuvných modulov"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/Help/The GIMP Online/_Vývojárske stránky"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+#~ msgstr "<Toolbox>/Help/The GIMP Online/_Hlavná stránka"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "<Image>/Script-Fu/Tieň/Efekt _Xach..."
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "X posun vrhaného tieňa"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "Y posun vrhaného tieňa"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "Polomer rozmazania vrhaného tieňa"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "Farba vrhaného tieňa"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "Krytie vrhaného tieňa"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "X posun svetiel"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "Y posun svetiel"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "Krytie svetiel"
+
+#~ msgid "Transparent Background"
+#~ msgstr "Priesvitné pozadie"
+
+#~ msgid "DB Browser"
+#~ msgstr "DB Prehliadač"
+
+#~ msgid "Name:"
+#~ msgstr "Názov:"
+
+#~ msgid "Blurb:"
+#~ msgstr "Popis:"
+
+#~ msgid "In:"
+#~ msgstr "Dnu:"
+
+#~ msgid "Out:"
+#~ msgstr "Von:"
+
+#~ msgid "Help:"
+#~ msgstr "Pomocník:"
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
+#~ "                                   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
+#~ "                                 "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                  "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                                 "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "                              "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
+#~ msgstr "Efekt podobný vpáleniu na vrstve popredie (text) a pozadie; V2.1"
+
+#~ msgid ""
+#~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
+#~ "netword.com/*spyrogimp"
+#~ msgstr ""
+#~ "Kreslí Spirografy, Epitrochoidy a Lissajouské krivky. Viac informácií na "
+#~ "http://netword.com/*spyrogimp"
+
+#~ msgid ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (názov súboru (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid "Script-Fu _Console"
+#~ msgstr "Script-Fu konzola"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Script-Fu"
+#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/N_eón..."
+
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "Vpálenie: Potrebné sú celkom dve vrstvy!"
+
+#~ msgid "<Image>/Script-Fu/Render/_Grid..."
+#~ msgstr "<Image>/Script-Fu/Generovanie/_Mriežka..."
+
+#, fuzzy
+#~ msgid "X divisions"
+#~ msgstr "Rozdelenie X"
+
+#, fuzzy
+#~ msgid "Y divisions"
+#~ msgstr "Rozdelenie Y"
+
+#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
+#~ msgstr "<Image>/Script-Fu/Pomôcky/Nakresliť _HSV graf..."
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "Krytie pozadie"
+
+#~ msgid "End X"
+#~ msgstr "Koniec X"
+
+#~ msgid "End Y"
+#~ msgstr "Koniec Y"
+
+#, fuzzy
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "Zľava hore doprava dole"
+
+#, fuzzy
+#~ msgid "Graph scale"
+#~ msgstr "Mierka grafu"
+
+#~ msgid "Start X"
+#~ msgstr "X začiatok"
+
+#~ msgid "Start Y"
+#~ msgstr "Y začiatok"
+
+#, fuzzy
+#~ msgid "Use selection bounds instead of belows"
+#~ msgstr "Namiesto nižšie uvedeného použiť hranice výberu"
+
+#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
+#~ msgstr "<Image>/Script-Fu/Pomôcky/Zobraziť š_truktúru obrázka..."
+
+#, fuzzy
+#~ msgid "Apply layer mask (or discard)"
+#~ msgstr "Použiť masku vrstvy (alebo zahodiť)"
+
+#, fuzzy
+#~ msgid "Create new image"
+#~ msgstr "Vytvoriť nový obrázok"
+
+#, fuzzy
+#~ msgid "Insert layer names"
+#~ msgstr "Vložiť názvy vrstiev"
+
+#, fuzzy
+#~ msgid "Make new background"
+#~ msgstr "Vytvoriť nové pozadie"
+
+#, fuzzy
+#~ msgid "Outer border"
+#~ msgstr "Vonkajšia hranica"
+
+#, fuzzy
+#~ msgid "Pad color"
+#~ msgstr "Farba výplne"
+
+#, fuzzy
+#~ msgid "Pad opacity"
+#~ msgstr "Krytie výplne"
+
+#, fuzzy
+#~ msgid "Padding for transparent regions"
+#~ msgstr "Výplň pre priesvitné oblasti"
+
+#, fuzzy
+#~ msgid "Shear length"
+#~ msgstr "Dĺžka strihu"
+
+#, fuzzy
+#~ msgid "Space between layers"
+#~ msgstr "Rozostup medzi vrstvami"
+
+#~ msgid ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "\t\t\t      "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (názov súboru (string-append data-dir\n"
+#~ "\t\t\t      "
+
+#~ msgid ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+
+#~ msgid ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+
+#~ msgid "Unable to open a stream on the SIOD output pipe"
+#~ msgstr "Nie je možné otvoriť tok na výstupnej rúre SIOD"
+
+#, fuzzy
+#~ msgid "Blend gradient (sext)"
+#~ msgstr "Prechod miešania (text)"

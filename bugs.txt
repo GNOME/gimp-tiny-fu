@@ -1,0 +1,1124 @@
+gimp-drawable-offset and gimp-drawable-offsets
+
+I noticed that a refresh scripts for Tiny-Fu leaves the menu items for
+refresh, start server, and console mode at the bottom of the menu below a
+line. Doing a refresh under Script-Fu menu results in those three menu items
+appearing at the top of the refreshed menu and no separator line in sight.
+
+predator.sct
+- Causes segfault when run with "Selection Layer" not ticked
+
+
+The following problems exist with the core GIMP PDB calls:
+
+  (gimp-quit 32) =>
+  proc name: gimp_quit
+  parms rcvd: 1
+    param 1 - expecting type GIMP_PDB_INT32 (0)
+      passed arg is type T_NUMBER (2)
+      int32 arg is '32'
+    calling gimp_quit...
+(gimp-2.1:20981): Gimp-Plug-In-CRITICAL **: file plug-in.c: line 833
+(plug_in_pop): assertion `GIMP_IS_GIMP (gimp)' failed
+ 
+(#<CLOSURE> 32 #<ARRAY3> 32)  ==>
+(gimp-2.1:30392): Gimp-Core-WARNING **: gimp_gradient_get_segment_at: no
+matching segment for position nan
+gimp-2.1: fatal error: Segmentation fault
+gimp-2.1 (pid:30392): [E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#0  0x004fbbc8 in g_on_error_stack_trace (prg_name=0x9f15d38 "gimp-2.1")
+#1  0x004fbaef in g_on_error_query (prg_name=0x9f15d38 "gimp-2.1")
+#2  0x0808ba29 in gimp_eek (reason=0x8220d77 "fatal error",
+#3  0x0808b956 in gimp_fatal_error (fmt=0xa1af648 "Segmentation fault")
+#4  0x0808b4d5 in gimp_sigfatal_handler (sig_num=1) at main.c:564
+#5  <signal handler called>
+#6  gimp_gradient_get_color_at (gradient=0x9ff8430, pos=0, reverse=1,
+#7  0x081cf26f in gradients_sample_custom_invoker (gimp=0x9f165f8,
+#8  0x081c4d62 in procedural_db_execute (gimp=0x9f165f8, context=0x9ff6550,
+#9  0x08201940 in plug_in_handle_proc_run (plug_in=0xa3a5ec0,
+#10 0x081fef9a in plug_in_recv_message (channel=0xa3a21e8, cond=G_IO_IN,
+#11 0x0052d05f in g_io_unix_dispatch (source=0xa3a56a0,
+#12 0x0050d2b4 in g_main_dispatch (context=0x9ef55c8) at gmain.c:1895
+#13 0x0050e279 in g_main_context_dispatch (context=0x9ef55c8) at gmain.c:2441
+#14 0x0050e59e in g_main_context_iterate (context=0x9ef55c8, block=1,
+#15 0x0050eb06 in g_main_loop_run (loop=0xa6af538) at gmain.c:2726
+#16 0x081ff2a2 in plug_in_main_loop (plug_in=0xa3a5ec0) at plug-in.c:873
+#17 0x08204eaa in plug_in_temp_run (proc_rec=0xa3ac0b0, progress=0x0,
+#18 0x08204bc5 in plug_in_run (gimp=0x9f165f8, context=0x9ff6550,
+#19 0x080bf811 in plug_in_run_cmd_callback (action=0xa3e8d00,
+#20 0x00d8167d in g_cclosure_marshal_VOID__POINTER (closure=0xa3e8ce8,
+#21 0x00d6fc2e in g_closure_invoke (closure=0xa3e8ce8, return_value=0x0,
+#22 0x00d808a6 in signal_emit_unlocked_R (node=0xa3e7f68, detail=0,
+#23 0x00d7f9e2 in g_signal_emit_valist (instance=0xa3e8d00,
+#24 0x00d7fc8b in g_signal_emit (instance=0xa3e8d00, signal_id=266, detail=0)
+#25 0x08144cad in gimp_plug_in_action_selected (action=0xa3e8d00,
+#26 0x08144b11 in gimp_plug_in_action_activate (action=0xa3e8d00)
+#27 0x00d80d13 in g_cclosure_marshal_VOID__VOID (closure=0xa3ad3d8,
+#28 0x00d6fec2 in g_type_class_meta_marshal (closure=0xa3ad3d8,
+#29 0x00d6fc2e in g_closure_invoke (closure=0xa3ad3d8, return_value=0x0,
+#30 0x00d80171 in signal_emit_unlocked_R (node=0xa3ad3f0, detail=0,
+#31 0x00d7f9e2 in g_signal_emit_valist (instance=0xa3e8d00,
+#32 0x00d7fc8b in g_signal_emit (instance=0xa3e8d00, signal_id=261, detail=0)
+#33 0x0016be16 in _gtk_action_emit_activate (action=0xa3e8d00)
+#34 0x0016be95 in gtk_action_activate (action=0xa3e8d00) at gtkaction.c:993
+#35 0x00d80d13 in g_cclosure_marshal_VOID__VOID (closure=0xa467ce8,
+#36 0x00d6fc2e in g_closure_invoke (closure=0xa467ce8, return_value=0x0,
+#37 0x00d808a6 in signal_emit_unlocked_R (node=0xa2171d8, detail=0,
+#38 0x00d7f9e2 in g_signal_emit_valist (instance=0xa467be0,
+#39 0x00d7fc8b in g_signal_emit (instance=0xa467be0, signal_id=205, detail=0)
+#40 0x002dfa08 in gtk_widget_activate (widget=0xa467be0) at gtkwidget.c:3594
+#41 0x0021befd in gtk_menu_shell_activate_item (menu_shell=0xa468a50,
+#42 0x0021b3d6 in gtk_menu_shell_button_release (widget=0xa468a50,
+#43 0x002152fb in gtk_menu_button_release (widget=0xa468a50, event=0x9f3c7b8)
+#44 0x0020ed89 in _gtk_marshal_BOOLEAN__BOXED (closure=0x9f06ab0,
+#45 0x00d6fec2 in g_type_class_meta_marshal (closure=0x9f06ab0,
+#46 0x00d6fc2e in g_closure_invoke (closure=0x9f06ab0,
+#47 0x00d8033f in signal_emit_unlocked_R (node=0x9f06ae8, detail=0,
+#48 0x00d7f801 in g_signal_emit_valist (instance=0xa468a50, signal_id=0,
+#49 0x00d7fc8b in g_signal_emit (instance=0xa468a50, signal_id=28, detail=0)
+#50 0x002df85e in gtk_widget_event_internal (widget=0xa468a50, event=0x9f3c7b8)
+#51 0x0020d90a in gtk_propagate_event (widget=0xa468a50, event=0x9f3c7b8)
+#52 0x0020c9df in gtk_main_do_event (event=0x9f3c7b8) at gtkmain.c:1582
+#53 0x0062490a in gdk_event_dispatch (source=0x0, callback=0, user_data=0x0)
+#54 0x0050d2b4 in g_main_dispatch (context=0x9ef55c8) at gmain.c:1895
+#55 0x0050e279 in g_main_context_dispatch (context=0x9ef55c8) at gmain.c:2441
+#56 0x0050e59e in g_main_context_iterate (context=0x9ef55c8, block=1,
+#57 0x0050eb06 in g_main_loop_run (loop=0xa6780c8) at gmain.c:2726
+#58 0x0808a6ce in app_run (full_prog_name=0xbffa79ad "gimp-2.1", gimp_argc=0,
+#59 0x0808ab9c in main (argc=1, argv=0xbff59af4) at main.c:458
+
+(#<CLOSURE> -1 -1 -1 #<ARRAY2>)  ==>   proc name: gimp_curves_explicit
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu (pid:8094): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#0  0x00218bc8 in g_on_error_stack_trace (
+#1  0x00218aef in g_on_error_query (
+#2  0x00f144b5 in gimp_plugin_sigfatal_handler (sig_num=2609160) at gimp.c:1415
+#3  <signal handler called>
+#4  0x002f6dcc in memcpy () from /lib/tls/libc.so.6
+#5  0x00f14572 in gimp_write (channel=0x91b8070, buf=0x938aa00 "\030¬8\tͺ",
+#6  0x00c9b370 in wire_write (channel=0x91b8070, buf=0x938aa00 "\030¬8\tͺ",
+#7  0x00c9b896 in wire_write_int8 (channel=0x91b8070,
+#8  0x00c9a25b in _gp_params_write (channel=0x91b8070, params=0x938f700,
+#9  0x00c99427 in _gp_proc_run_write (channel=0x91b8070, msg=0x938aa00,
+#10 0x00c9b502 in wire_write_msg (channel=0x91b8070, msg=0xbff23de0,
+#11 0x00c989f7 in gp_proc_run_write (channel=0x91b8070, proc_run=0x938aa00,
+#12 0x00f13ee9 in gimp_run_procedure2 (name=0x91f93f8 "gimp_curves_explicit",
+#13 0x0805495e in marshall_proc_db_call (sc=0x806c1c0, a=0x806c254)
+#14 0x0805a7c2 in opexe_0 (sc=0x806c1c0, op=154708480) at scheme.c:2441
+#15 0x0805df80 in Eval_Cycle (sc=0x806c1c0, op=154708480) at scheme.c:4222
+#16 0x0805e9d9 in scheme_load_string (sc=0x806c1c0,
+#17 0x0805400b in ts_interpret_string (
+#18 0x080525a0 in tiny_fu_ok (script=0x923ab20) at tiny-fu-scripts.c:1825
+#19 0x08052429 in tiny_fu_response (widget=0x92a4a68, response_id=154708480,
+#20 0x001eaf99 in g_cclosure_marshal_VOID__INT (closure=0x92ba0f0,
+#21 0x001d9c2e in g_closure_invoke (closure=0x92ba0f0, return_value=0x0,
+#22 0x001ea8a6 in signal_emit_unlocked_R (node=0x929e9a8, detail=0,
+#23 0x001e99e2 in g_signal_emit_valist (instance=0x92a4a68,
+#24 0x001e9c8b in g_signal_emit (instance=0x92a4a68, signal_id=78, detail=0)
+#25 0x009456f1 in gtk_dialog_response (dialog=0x92a4a68, response_id=-5)
+#26 0x00944f2d in action_widget_activated (widget=0x92b20c8, dialog=0x92a4a68)
+#27 0x001ead13 in g_cclosure_marshal_VOID__VOID (closure=0x92b9eb8,
+#28 0x001d9c2e in g_closure_invoke (closure=0x92b9eb8, return_value=0x0,
+#29 0x001ea8a6 in signal_emit_unlocked_R (node=0x92a4d70, detail=0,
+#30 0x001e99e2 in g_signal_emit_valist (instance=0x92b20c8,
+#31 0x001e9c8b in g_signal_emit (instance=0x92b20c8, signal_id=84, detail=0)
+#32 0x00906d57 in gtk_button_clicked (button=0x92b20c8) at gtkbutton.c:719
+#33 0x00907aab in gtk_real_button_released (button=0x92b20c8)
+#34 0x001ead13 in g_cclosure_marshal_VOID__VOID (closure=0x92b0f28,
+#35 0x001d9ec2 in g_type_class_meta_marshal (closure=0x92b0f28,
+#36 0x001d9c2e in g_closure_invoke (closure=0x92b0f28, return_value=0x0,
+#37 0x001ea171 in signal_emit_unlocked_R (node=0x92b0f70, detail=0,
+#38 0x001e99e2 in g_signal_emit_valist (instance=0x92b20c8,
+#39 0x001e9c8b in g_signal_emit (instance=0x92b20c8, signal_id=83, detail=0)
+#40 0x00906ccf in gtk_button_released (button=0x92b20c8) at gtkbutton.c:711
+#41 0x0090795f in gtk_button_button_release (widget=0x92b20c8, event=0x938aa00)
+#42 0x0099fd89 in _gtk_marshal_BOOLEAN__BOXED (closure=0x929af78,
+#43 0x001d9ec2 in g_type_class_meta_marshal (closure=0x929af78,
+#44 0x001d9c2e in g_closure_invoke (closure=0x929af78,
+#45 0x001ea33f in signal_emit_unlocked_R (node=0x929afb0, detail=0,
+#46 0x001e9801 in g_signal_emit_valist (instance=0x92b20c8, signal_id=0,
+#47 0x001e9c8b in g_signal_emit (instance=0x92b20c8, signal_id=28, detail=0)
+#48 0x00a7085e in gtk_widget_event_internal (widget=0x92b20c8, event=0x9387910)
+#49 0x0099e90a in gtk_propagate_event (widget=0x92b20c8, event=0x9387910)
+#50 0x0099d9df in gtk_main_do_event (event=0x9387910) at gtkmain.c:1582
+#51 0x0014890a in gdk_event_dispatch (source=0x938aa00, callback=0,
+#52 0x0022a2b4 in g_main_dispatch (context=0x91b9508) at gmain.c:1895
+#53 0x0022b279 in g_main_context_dispatch (context=0x91b9508) at gmain.c:2441
+#54 0x0022b59e in g_main_context_iterate (context=0x91b9508, block=1,
+#55 0x0022bb06 in g_main_loop_run (loop=0x9388a28) at gmain.c:2726
+#56 0x0099d367 in gtk_main () at gtkmain.c:1172
+#57 0x0805144e in tiny_fu_script_proc (name=0x9254668 "tiny_fu_pdb_test",
+#58 0x00f1496a in gimp_temp_proc_run (proc_run=0x9271d58) at gimp.c:1747
+#59 0x00f14a71 in gimp_single_message () at gimp.c:1810
+#60 0x00f142b4 in gimp_extension_process (timeout=1073741279) at gimp.c:1283
+#61 0x0804e7f2 in tiny_fu_run (name=0x91ba100 "extension_tiny_fu", nparams=0,
+#62 0x00f148f5 in gimp_proc_run (proc_run=0x91ba0c0) at gimp.c:1712
+#63 0x00f14704 in gimp_loop () at gimp.c:1557
+#64 0x00f1373e in gimp_main (info=0xbff569aa, argc=6, argv=0xbff277f4)
+#65 0x0804e51a in main (argc=6, argv=0xbff277f4) at tiny-fu.c:69
+
+proc name: gimp_drawable_set_pixel
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu: fatal error:
+Segmentatio n fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu (pid:5318): [E]xit,
+[H]al t, show [S]tack trace or [P]roceed: s
+#0  0x001dcbc8 in g_on_error_stack_trace (
+#1  0x001dcaef in g_on_error_query (
+#2  0x00c664b5 in gimp_plugin_sigfatal_handler (sig_num=2363400) at gimp.c:1415
+#3  <signal handler called>
+#4  0x00ad4dcc in memcpy () from /lib/tls/libc.so.6
+#5  0x00c66572 in gimp_write (channel=0x8fb6070,
+#6  0x00dc5370 in wire_write (channel=0x8fb6070,
+#7  0x00dc5896 in wire_write_int8 (channel=0x8fb6070,
+#8  0x00dc425b in _gp_params_write (channel=0x8fb6070, params=0x9190ef0,
+#9  0x00dc3427 in _gp_proc_run_write (channel=0x8fb6070, msg=0x9188360,
+#10 0x00dc5502 in wire_write_msg (channel=0x8fb6070, msg=0xbff0ea20,
+#11 0x00dc29f7 in gp_proc_run_write (channel=0x8fb6070, proc_run=0x9188360,
+#12 0x00c65ee9 in gimp_run_procedure2 (
+#13 0x0805495b in marshall_proc_db_call (sc=0x806c400, a=0x806c494)
+#14 0x0805a9e6 in opexe_0 (sc=0x806c400, op=152601440) at scheme.c:2454
+#15 0x0805e1a4 in Eval_Cycle (sc=0x806c400, op=152601440) at scheme.c:4235
+#16 0x0805ebfd in scheme_load_string (sc=0x806c400,
+#17 0x0805400b in ts_interpret_string (
+#18 0x080525a0 in tiny_fu_ok (script=0x9038d60) at tiny-fu-scripts.c:1825
+#19 0x08052429 in tiny_fu_response (widget=0x90a25b0, response_id=152601440,
+#20 0x001aef99 in g_cclosure_marshal_VOID__INT (closure=0x90b7c28,
+#21 0x0019dc2e in g_closure_invoke (closure=0x90b7c28, return_value=0x0,
+#22 0x001ae8a6 in signal_emit_unlocked_R (node=0x90a1bf8, detail=0,
+#23 0x001ad9e2 in g_signal_emit_valist (instance=0x90a25b0,
+#24 0x001adc8b in g_signal_emit (instance=0x90a25b0, signal_id=78, detail=0)
+#25 0x008806f1 in gtk_dialog_response (dialog=0x90a25b0, response_id=-5)
+#26 0x0087ff2d in action_widget_activated (widget=0x90af800, dialog=0x90a25b0)
+#27 0x001aed13 in g_cclosure_marshal_VOID__VOID (closure=0x90b79f0,
+#28 0x0019dc2e in g_closure_invoke (closure=0x90b79f0, return_value=0x0,
+#29 0x001ae8a6 in signal_emit_unlocked_R (node=0x90a28b8, detail=0,
+#30 0x001ad9e2 in g_signal_emit_valist (instance=0x90af800,
+#31 0x001adc8b in g_signal_emit (instance=0x90af800, signal_id=84, detail=0)
+#32 0x00841d57 in gtk_button_clicked (button=0x90af800) at gtkbutton.c:719
+#33 0x00842aab in gtk_real_button_released (button=0x90af800)
+#34 0x001aed13 in g_cclosure_marshal_VOID__VOID (closure=0x90aea70,
+#35 0x0019dec2 in g_type_class_meta_marshal (closure=0x90aea70,
+#36 0x0019dc2e in g_closure_invoke (closure=0x90aea70, return_value=0x0,
+#37 0x001ae171 in signal_emit_unlocked_R (node=0x90aeab8, detail=0,
+#38 0x001ad9e2 in g_signal_emit_valist (instance=0x90af800,
+#39 0x001adc8b in g_signal_emit (instance=0x90af800, signal_id=83, detail=0)
+#40 0x00841ccf in gtk_button_released (button=0x90af800) at gtkbutton.c:711
+#41 0x0084295f in gtk_button_button_release (widget=0x90af800, event=0x9188360)
+#42 0x008dad89 in _gtk_marshal_BOOLEAN__BOXED (closure=0x9099828,
+#43 0x0019dec2 in g_type_class_meta_marshal (closure=0x9099828,
+#44 0x0019dc2e in g_closure_invoke (closure=0x9099828,
+#45 0x001ae33f in signal_emit_unlocked_R (node=0x9098b20, detail=0,
+#46 0x001ad801 in g_signal_emit_valist (instance=0x90af800, signal_id=0,
+#47 0x001adc8b in g_signal_emit (instance=0x90af800, signal_id=28, detail=0)
+#48 0x009ab85e in gtk_widget_event_internal (widget=0x90af800, event=0x9185458)
+#49 0x008d990a in gtk_propagate_event (widget=0x90af800, event=0x9185458)
+#50 0x008d89df in gtk_main_do_event (event=0x9185458) at gtkmain.c:1582
+#51 0x0014890a in gdk_event_dispatch (source=0x9188360, callback=0,
+#52 0x001ee2b4 in g_main_dispatch (context=0x8fb7508) at gmain.c:1895
+#53 0x001ef279 in g_main_context_dispatch (context=0x8fb7508) at gmain.c:2441
+#54 0x001ef59e in g_main_context_iterate (context=0x8fb7508, block=1,
+#55 0x001efb06 in g_main_loop_run (loop=0x9186570) at gmain.c:2726
+#56 0x008d8367 in gtk_main () at gtkmain.c:1172
+#57 0x0805144e in tiny_fu_script_proc (name=0x903ac60 "tiny_fu_pdb_test",
+#58 0x00c6696a in gimp_temp_proc_run (proc_run=0x906f8f8) at gimp.c:1742
+#59 0x00c66a71 in gimp_single_message () at gimp.c:1803
+#60 0x00c662b4 in gimp_extension_process (timeout=1073741282) at gimp.c:1283
+#61 0x0804e7f2 in tiny_fu_run (name=0x8fb8100 "extension_tiny_fu", nparams=0,
+#62 0x00c668f5 in gimp_proc_run (proc_run=0x8fb80c0) at gimp.c:1712
+#63 0x00c66704 in gimp_loop () at gimp.c:1557
+#64 0x00c6573e in gimp_main (info=0xbff209aa, argc=6, argv=0xbff12474)
+#65 0x0804e51a in main (argc=6, argv=0xbff12474) at tiny-fu.c:69
+
+(#<CLOSURE> "" -1 -1 #<ARRAY2>)  ==>   proc name: gimp_plugin_icon_register
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu: fatal error:
+Segmentatio n fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu (pid:5457): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#0  0x001eabc8 in g_on_error_stack_trace (
+#1  0x001eaaef in g_on_error_query (
+#2  0x005b54b5 in gimp_plugin_sigfatal_handler (sig_num=2420744) at gimp.c:1415
+#3  <signal handler called>
+#4  0x00641dcc in memcpy () from /lib/tls/libc.so.6
+#5  0x005b5572 in gimp_write (channel=0x88b9070, buf=0x8a8aa38 "PΆ¨\b\004",
+#6  0x00118370 in wire_write (channel=0x88b9070, buf=0x8a8aa38 "PΆ¨\b\004",
+#7  0x00118896 in wire_write_int8 (channel=0x88b9070,
+#8  0x0011725b in _gp_params_write (channel=0x88b9070, params=0x8ab3a68,
+#9  0x00116427 in _gp_proc_run_write (channel=0x88b9070, msg=0x8a8aa38,
+#10 0x00118502 in wire_write_msg (channel=0x88b9070, msg=0xbff03120,
+#11 0x001159f7 in gp_proc_run_write (channel=0x88b9070, proc_run=0x8a8aa38,
+#12 0x005b4ee9 in gimp_run_procedure2 (
+#13 0x0805495b in marshall_proc_db_call (sc=0x806c400, a=0x806c494)
+#14 0x0805a9e6 in opexe_0 (sc=0x806c400, op=145271352) at scheme.c:2454
+#15 0x0805e1a4 in Eval_Cycle (sc=0x806c400, op=145271352) at scheme.c:4235
+#16 0x0805ebfd in scheme_load_string (sc=0x806c400,
+#17 0x0805400b in ts_interpret_string (
+#18 0x080525a0 in tiny_fu_ok (script=0x893bd60) at tiny-fu-scripts.c:1825
+#19 0x08052429 in tiny_fu_response (widget=0x89a51f8, response_id=145271352,
+#20 0x00b03f99 in g_cclosure_marshal_VOID__INT (closure=0x89ba870,
+#21 0x00af2c2e in g_closure_invoke (closure=0x89ba870, return_value=0x0,
+#22 0x00b038a6 in signal_emit_unlocked_R (node=0x89a4840, detail=0,
+#23 0x00b029e2 in g_signal_emit_valist (instance=0x89a51f8,
+#24 0x00b02c8b in g_signal_emit (instance=0x89a51f8, signal_id=78, detail=0)
+#25 0x0035d6f1 in gtk_dialog_response (dialog=0x89a51f8, response_id=-5)
+#26 0x0035cf2d in action_widget_activated (widget=0x89b2448, dialog=0x89a51f8)
+#27 0x00b03d13 in g_cclosure_marshal_VOID__VOID (closure=0x89ba638,
+#28 0x00af2c2e in g_closure_invoke (closure=0x89ba638, return_value=0x0,
+#29 0x00b038a6 in signal_emit_unlocked_R (node=0x89a5500, detail=0,
+#30 0x00b029e2 in g_signal_emit_valist (instance=0x89b2448,
+#31 0x00b02c8b in g_signal_emit (instance=0x89b2448, signal_id=84, detail=0)
+#32 0x0031ed57 in gtk_button_clicked (button=0x89b2448) at gtkbutton.c:719
+#33 0x0031faab in gtk_real_button_released (button=0x89b2448)
+#34 0x00b03d13 in g_cclosure_marshal_VOID__VOID (closure=0x89b16b8,
+#35 0x00af2ec2 in g_type_class_meta_marshal (closure=0x89b16b8,
+#36 0x00af2c2e in g_closure_invoke (closure=0x89b16b8, return_value=0x0,
+#37 0x00b03171 in signal_emit_unlocked_R (node=0x89b1700, detail=0,
+#38 0x00b029e2 in g_signal_emit_valist (instance=0x89b2448,
+#39 0x00b02c8b in g_signal_emit (instance=0x89b2448, signal_id=83, detail=0)
+#40 0x0031eccf in gtk_button_released (button=0x89b2448) at gtkbutton.c:711
+#41 0x0031f95f in gtk_button_button_release (widget=0x89b2448, event=0x8a8aa38)
+#42 0x003b7d89 in _gtk_marshal_BOOLEAN__BOXED (closure=0x899c470,
+#43 0x00af2ec2 in g_type_class_meta_marshal (closure=0x899c470,
+#44 0x00af2c2e in g_closure_invoke (closure=0x899c470,
+#45 0x00b0333f in signal_emit_unlocked_R (node=0x899b768, detail=0,
+#46 0x00b02801 in g_signal_emit_valist (instance=0x89b2448, signal_id=0,
+#47 0x00b02c8b in g_signal_emit (instance=0x89b2448, signal_id=28, detail=0)
+#48 0x0048885e in gtk_widget_event_internal (widget=0x89b2448, event=0x8a880c8)
+#49 0x003b690a in gtk_propagate_event (widget=0x89b2448, event=0x8a880c8)
+#50 0x003b59df in gtk_main_do_event (event=0x8a880c8) at gtkmain.c:1582
+#51 0x0015290a in gdk_event_dispatch (source=0x8a8aa38, callback=0,
+#52 0x001fc2b4 in g_main_dispatch (context=0x88ba508) at gmain.c:1895
+#53 0x001fd279 in g_main_context_dispatch (context=0x88ba508) at gmain.c:2441
+#54 0x001fd59e in g_main_context_iterate (context=0x88ba508, block=1,
+#55 0x001fdb06 in g_main_loop_run (loop=0x8a891e0) at gmain.c:2726
+#56 0x003b5367 in gtk_main () at gtkmain.c:1172
+#57 0x0805144e in tiny_fu_script_proc (name=0x89714b0 "tiny_fu_pdb_test",
+#58 0x005b596a in gimp_temp_proc_run (proc_run=0x89720c0) at gimp.c:1742
+#59 0x005b5a71 in gimp_single_message () at gimp.c:1803
+#60 0x005b52b4 in gimp_extension_process (timeout=1073741281) at gimp.c:1283
+#61 0x0804e7f2 in tiny_fu_run (name=0x88bb100 "extension_tiny_fu", nparams=0,
+#62 0x005b58f5 in gimp_proc_run (proc_run=0x88bb0c0) at gimp.c:1712
+#63 0x005b5704 in gimp_loop () at gimp.c:1557
+#64 0x005b473e in gimp_main (info=0xbffe19aa, argc=6, argv=0xbff06b74)
+#65 0x0804e51a in main (argc=6, argv=0xbff06b74) at tiny-fu.c:69
+
+(#<CLOSURE> "" -1 #<ARRAY2>)  ==>   proc name: gimp_procedural_db_set_data
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu: fatal error:
+Segmentatio n fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/tiny-fu (pid:5463): [E]xit,
+[H]al t, show [S]tack trace or [P]roceed: s
+#0  0x001ebbc8 in g_on_error_stack_trace (
+#1  0x001ebaef in g_on_error_query (
+#2  0x00d964b5 in gimp_plugin_sigfatal_handler (sig_num=2424840) at gimp.c:1415
+#3  <signal handler called>
+#4  0x006c6dcc in memcpy () from /lib/tls/libc.so.6
+#5  0x00d96572 in gimp_write (channel=0x9d6c070, buf=0x9f3e710 "\030ησ\t\004",
+#6  0x00d13370 in wire_write (channel=0x9d6c070, buf=0x9f3e710 "\030ησ\t\004",
+#7  0x00d13896 in wire_write_int8 (channel=0x9d6c070,
+#8  0x00d1225b in _gp_params_write (channel=0x9d6c070, params=0x9f671d8,
+#9  0x00d11427 in _gp_proc_run_write (channel=0x9d6c070, msg=0x9f3e710,
+#10 0x00d13502 in wire_write_msg (channel=0x9d6c070, msg=0xbfe683e0,
+#11 0x00d109f7 in gp_proc_run_write (channel=0x9d6c070, proc_run=0x9f3e710,
+#12 0x00d95ee9 in gimp_run_procedure2 (
+#13 0x0805495b in marshall_proc_db_call (sc=0x806c400, a=0x806c494)
+#14 0x0805a9e6 in opexe_0 (sc=0x806c400, op=166979344) at scheme.c:2454
+#15 0x0805e1a4 in Eval_Cycle (sc=0x806c400, op=166979344) at scheme.c:4235
+#16 0x0805ebfd in scheme_load_string (sc=0x806c400,
+#17 0x0805400b in ts_interpret_string (
+#18 0x080525a0 in tiny_fu_ok (script=0x9deed60) at tiny-fu-scripts.c:1825
+#19 0x08052429 in tiny_fu_response (widget=0x9e58168, response_id=166979344,
+#20 0x001c1f99 in g_cclosure_marshal_VOID__INT (closure=0x9e6d7e0,
+#21 0x001b0c2e in g_closure_invoke (closure=0x9e6d7e0, return_value=0x0,
+#22 0x001c18a6 in signal_emit_unlocked_R (node=0x9e520a8, detail=0,
+#23 0x001c09e2 in g_signal_emit_valist (instance=0x9e58168,
+#24 0x001c0c8b in g_signal_emit (instance=0x9e58168, signal_id=78, detail=0)
+#25 0x003a56f1 in gtk_dialog_response (dialog=0x9e58168, response_id=-5)
+#26 0x003a4f2d in action_widget_activated (widget=0x9e653b8, dialog=0x9e58168)
+#27 0x001c1d13 in g_cclosure_marshal_VOID__VOID (closure=0x9e6d5a8,
+#28 0x001b0c2e in g_closure_invoke (closure=0x9e6d5a8, return_value=0x0,
+#29 0x001c18a6 in signal_emit_unlocked_R (node=0x9e58470, detail=0,
+#30 0x001c09e2 in g_signal_emit_valist (instance=0x9e653b8,
+#31 0x001c0c8b in g_signal_emit (instance=0x9e653b8, signal_id=84, detail=0)
+#32 0x00366d57 in gtk_button_clicked (button=0x9e653b8) at gtkbutton.c:719
+#33 0x00367aab in gtk_real_button_released (button=0x9e653b8)
+#34 0x001c1d13 in g_cclosure_marshal_VOID__VOID (closure=0x9e64628,
+#35 0x001b0ec2 in g_type_class_meta_marshal (closure=0x9e64628,
+#36 0x001b0c2e in g_closure_invoke (closure=0x9e64628, return_value=0x0,
+#37 0x001c1171 in signal_emit_unlocked_R (node=0x9e64670, detail=0,
+#38 0x001c09e2 in g_signal_emit_valist (instance=0x9e653b8,
+#39 0x001c0c8b in g_signal_emit (instance=0x9e653b8, signal_id=83, detail=0)
+#40 0x00366ccf in gtk_button_released (button=0x9e653b8) at gtkbutton.c:711
+#41 0x0036795f in gtk_button_button_release (widget=0x9e653b8, event=0x9f3e710)
+#42 0x003ffd89 in _gtk_marshal_BOOLEAN__BOXED (closure=0x9e4f3e8,
+#43 0x001b0ec2 in g_type_class_meta_marshal (closure=0x9e4f3e8,
+#44 0x001b0c2e in g_closure_invoke (closure=0x9e4f3e8,
+#45 0x001c133f in signal_emit_unlocked_R (node=0x9e4e6e0, detail=0,
+#46 0x001c0801 in g_signal_emit_valist (instance=0x9e653b8, signal_id=0,
+#47 0x001c0c8b in g_signal_emit (instance=0x9e653b8, signal_id=28, detail=0)
+#48 0x004d085e in gtk_widget_event_internal (widget=0x9e653b8, event=0x9f3b020)
+#49 0x003fe90a in gtk_propagate_event (widget=0x9e653b8, event=0x9f3b020)
+#50 0x003fd9df in gtk_main_do_event (event=0x9f3b020) at gtkmain.c:1582
+#51 0x0014890a in gdk_event_dispatch (source=0x9f3e710, callback=0,
+#52 0x001fd2b4 in g_main_dispatch (context=0x9d6d508) at gmain.c:1895
+#53 0x001fe279 in g_main_context_dispatch (context=0x9d6d508) at gmain.c:2441
+#54 0x001fe59e in g_main_context_iterate (context=0x9d6d508, block=1,
+#55 0x001feb06 in g_main_loop_run (loop=0x9f3c138) at gmain.c:2726
+#56 0x003fd367 in gtk_main () at gtkmain.c:1172
+#57 0x0805144e in tiny_fu_script_proc (name=0x9e23128 "tiny_fu_pdb_test",
+#58 0x00d9696a in gimp_temp_proc_run (proc_run=0x9e24a10) at gimp.c:1742
+#59 0x00d96a71 in gimp_single_message () at gimp.c:1803
+#60 0x00d962b4 in gimp_extension_process (timeout=1073741279) at gimp.c:1283
+#61 0x0804e7f2 in tiny_fu_run (name=0x9d6e100 "extension_tiny_fu", nparams=0,
+#62 0x00d968f5 in gimp_proc_run (proc_run=0x9d6e0c0) at gimp.c:1712
+#63 0x00d96704 in gimp_loop () at gimp.c:1557
+#64 0x00d9573e in gimp_main (info=0xbff2f9aa, argc=6, argv=0xbfe6be34)
+#65 0x0804e51a in main (argc=6, argv=0xbfe6be34) at tiny-fu.c:69
+
+
+The following problems exist with the various plug-ins:
+
+(#<CLOSURE> 1 -1 0 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159 8 8 8 8)
+==> (AlienMap2:14013): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/AlienMap2: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/AlienMap2 (pid:14013): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a5cf in run (name=0x980b100 "plug_in_alienmap2", nparams=13,
+#5  0x003098f5 in gimp_proc_run (proc_run=0x980b0c0) at gimp.c:1712
+#6  0x00309704 in gimp_loop () at gimp.c:1557
+#7  0x0030873e in gimp_main (info=0xbff659a8, argc=6, argv=0xbfe71474)
+#8  0x0804a1d6 in main (argc=6, argv=0xbfe71474) at AlienMap2.c:180
+
+(#<CLOSURE> 1 -1 -1 32 32)  ==>
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/align_layers: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/align_layers (pid:14025):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049ad7 in align_layers (image_id=-1) at align_layers.c:233
+#5  0x080496bd in run (name=0x90bd108 "plug_in_align_layers", nparams=5,
+#6  0x00e508f5 in gimp_proc_run (proc_run=0x90bd0c8) at gimp.c:1712
+#7  0x00e50704 in gimp_loop () at gimp.c:1557
+#8  0x00e4f73e in gimp_main (info=0xbff819a5, argc=6, argv=0xbff0b144)
+#9  0x080495e6 in main (argc=6, argv=0xbff0b144) at align_layers.c:115
+
+(#<CLOSURE> 1 -1 -1 3.14159 32 32 32)  ==>
+(apply_lens:14045): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/apply_lens: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/apply_lens (pid:14045): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x080499b0 in run (name=0x9dfb100 "plug_in_applylens", nparams=7,
+#5  0x00e458f5 in gimp_proc_run (proc_run=0x9dfb0c0) at gimp.c:1712
+#6  0x00e45704 in gimp_loop () at gimp.c:1557
+#7  0x00e4473e in gimp_main (info=0xbff479a7, argc=6, argv=0xbfeee674)
+#8  0x080498b2 in main (argc=6, argv=0xbfeee674) at apply_lens.c:90
+
+(#<CLOSURE> 1 -1 -1)  ==>
+(autocrop:14063): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/autocrop: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/autocrop (pid:14063): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  run (name=0x9040100 "plug_in_autocrop", n_params=3, param=0xffffffff,
+#5  0x0093a8f5 in gimp_proc_run (proc_run=0x90400c0) at gimp.c:1712
+#6  0x0093a704 in gimp_loop () at gimp.c:1557
+#7  0x0093973e in gimp_main (info=0xbffa59a9, argc=6, argv=0xbfebbed4)
+#8  0x08048c66 in main (argc=6, argv=0xbfebbed4) at autocrop.c:67
+
+(#<CLOSURE> 1 -1 -1)  ==>
+(autostretch_hsv:14098): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/autostretch_hsv: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/autostretch_hsv (pid:14098):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  run (name=0x935c108 "plug_in_autostretch_hsv", nparams=3,
+#5  0x007c68f5 in gimp_proc_run (proc_run=0x935c0c8) at gimp.c:1712
+#6  0x007c6704 in gimp_loop () at gimp.c:1557
+#7  0x007c573e in gimp_main (info=0xbff029ac, argc=6, argv=0xbfef6234)
+#8  0x08048b96 in main (argc=6, argv=0xbfef6234) at autostretch_hsv.c:54
+
+(#<CLOSURE> 1 -1 -1 32 32 32 32)  ==>
+(blinds:14112): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/blinds: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/blinds (pid:14112): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a290 in run (name=0x9522100 "plug_in_blinds", nparams=7,
+#5  0x00f378f5 in gimp_proc_run (proc_run=0x95220c0) at gimp.c:1712
+#6  0x00f37704 in gimp_loop () at gimp.c:1557
+#7  0x00f3673e in gimp_main (info=0xbff4d9b5, argc=6, argv=0xbfe62224)
+#8  0x0804a192 in main (argc=6, argv=0xbfe62224) at blinds.c:123
+
+(blur:14124): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/blur: fatal error: Segmentation
+fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/blur (pid:14124): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08048d3e in run (name=0x1 <Address 0x1 out of bounds>, nparams=3,
+#5  0x003208f5 in gimp_proc_run (proc_run=0x90ba0c0) at gimp.c:1712
+#6  0x00320704 in gimp_loop () at gimp.c:1557
+#7  0x0031f73e in gimp_main (info=0xbffed9b7, argc=6, argv=0xbff14004)
+#8  0x08048c36 in main (argc=6, argv=0xbff14004) at blur.c:110
+
+(#<CLOSURE> 1 -1 -1 32 32)  ==>
+(borderaverage:14138): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/borderaverage: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/borderaverage (pid:14138):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x080497fd in run (name=0x807a108 "plug_in_borderaverage", nparams=5,
+#5  0x009568f5 in gimp_proc_run (proc_run=0x807a0c8) at gimp.c:1712
+#6  0x00956704 in gimp_loop () at gimp.c:1557
+#7  0x0095573e in gimp_main (info=0xbff6d9ae, argc=6, argv=0xbff49954)
+#8  0x0804972a in main (argc=6, argv=0xbff49954) at borderaverage.c:75
+
+(#<CLOSURE> 1 -1 -1 -1 3.14159 3.14159 32 32 32 32 32 32 32 32)  ==>
+(bumpmap:14151): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/bumpmap: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/bumpmap (pid:14151): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a37a in run (name=0x8174100 "plug_in_bump_map", nparams=14,
+#5  0x00b788f5 in gimp_proc_run (proc_run=0x81740c0) at gimp.c:1712
+#6  0x00b78704 in gimp_loop () at gimp.c:1557
+#7  0x00b7773e in gimp_main (info=0xbff319b4, argc=6, argv=0xbfe6bce4)
+#8  0x0804a24a in main (argc=6, argv=0xbfe6bce4) at bumpmap.c:327
+
+(#<CLOSURE> 1 -1 -1 -1 3.14159 3.14159 32 32 32 32 32 32 32 32)  ==>
+(bumpmap:14185): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/bumpmap: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/bumpmap (pid:14185): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a37a in run (name=0x8879100 "plug_in_bump_map_tiled", nparams=14,
+#5  0x00cce8f5 in gimp_proc_run (proc_run=0x88790c0) at gimp.c:1712
+#6  0x00cce704 in gimp_loop () at gimp.c:1557
+#7  0x00ccd73e in gimp_main (info=0xbffa79b4, argc=6, argv=0xbff0a3c4)
+#8  0x0804a24a in main (argc=6, argv=0xbff0a3c4) at bumpmap.c:327
+
+(#<CLOSURE> 1 -1 -1)  ==>
+(c_astretch:14197): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/c_astretch: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/c_astretch (pid:14197): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  run (name=0x86b2100 "plug_in_c_astretch", nparams=3, param=0xffffffff,
+#5  0x00f5b8f5 in gimp_proc_run (proc_run=0x86b20c0) at gimp.c:1712
+#6  0x00f5b704 in gimp_loop () at gimp.c:1557
+#7  0x00f5a73e in gimp_main (info=0xbffac9b1, argc=6, argv=0xbfed2e54)
+#8  0x08048b0e in main (argc=6, argv=0xbfed2e54) at c_astretch.c:54
+
+(#<CLOSURE> 1 -1 -1)  ==>
+(ccanalyze:14209): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/ccanalyze: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/ccanalyze (pid:14209): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049b11 in run (name=0x9049100 "plug_in_ccanalyze", n_params=3,
+#5  0x00e3c8f5 in gimp_proc_run (proc_run=0x90490c0) at gimp.c:1712
+#6  0x00e3c704 in gimp_loop () at gimp.c:1557
+#7  0x00e3b73e in gimp_main (info=0xbff0b9b2, argc=6, argv=0xbfebb514)
+#8  0x08049a2e in main (argc=6, argv=0xbfebb514) at ccanalyze.c:85
+
+(#<CLOSURE> 1 -1 -1 32 32)  ==>
+(checkerboard:14221): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/checkerboard: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/checkerboard (pid:14221):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049911 in run (name=0x826b108 "plug_in_checkerboard", nparams=5,
+#5  0x006c28f5 in gimp_proc_run (proc_run=0x826b0c8) at gimp.c:1712
+#6  0x006c2704 in gimp_loop () at gimp.c:1557
+#7  0x006c173e in gimp_main (info=0xbffbf9af, argc=6, argv=0xbff44a14)
+#8  0x0804980e in main (argc=6, argv=0xbff44a14) at checkerboard.c:74
+
+(plug-in-color-map 1 -1 -1)  ==>
+(mapcolor:14241): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/mapcolor: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/mapcolor (pid:14241): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049e03 in run (name=0x98d6100 "plug_in_color_adjust", nparams=3,
+#5  0x0011a8f5 in gimp_proc_run (proc_run=0x98d60c0) at gimp.c:1712
+#6  0x0011a704 in gimp_loop () at gimp.c:1557
+#7  0x0011973e in gimp_main (info=0xbfff29b3, argc=6, argv=0xbffaf2e4)
+#8  0x08049cb2 in main (argc=6, argv=0xbffaf2e4) at mapcolor.c:295
+
+(plug-in-color-adjust 1 -1 -1)  ==>
+(mapcolor:14283): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/mapcolor: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/mapcolor (pid:14283): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049e03 in run (name=0x9bfc100 "plug_in_color_adjust", nparams=3,
+#5  0x0090f8f5 in gimp_proc_run (proc_run=0x9bfc0c0) at gimp.c:1712
+#6  0x0090f704 in gimp_loop () at gimp.c:1557
+#7  0x0090e73e in gimp_main (info=0xbffe99b3, argc=6, argv=0xbffabbf4)
+#8  0x08049cb2 in main (argc=6, argv=0xbffabbf4) at mapcolor.c:295
+
+(#<CLOSURE> 1 -1 -1)  ==>
+(color_enhance:15382): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/color_enhance: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/color_enhance (pid:15382):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  run (name=0x88a1108 "plug_in_color_enhance", nparams=3, param=0xffffffff,
+#5  0x004a98f5 in gimp_proc_run (proc_run=0x88a10c8) at gimp.c:1712
+#6  0x004a9704 in gimp_loop () at gimp.c:1557
+#7  0x004a873e in gimp_main (info=0xbff549ae, argc=6, argv=0xbfe59c64)
+#8  0x08048ea6 in main (argc=6, argv=0xbfe59c64) at color_enhance.c:55
+
+(#<CLOSURE> 1 -1 -1 (64 128 192))  ==>
+    calling plug_in_colorify...
+(colorify:15395): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawab le_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/colorify: fatal error:
+Segmentati on fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/colorify (pid:15395): [E]xit,
+[H] alt, show [S]tack trace or [P]roceed:
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug -ins/colorify (pid:15395): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  gimp_rgn_iterate2 (drawable=0x0, run_mode=GIMP_RUN_NONINTERACTIVE,
+#5  0x08049701 in colorify (drawable=0x0) at colorify.c:222
+#6  0x08049514 in run (name=0x9f91100 "plug_in_colorify", nparams=4,
+#7  0x005638f5 in gimp_proc_run (proc_run=0x9f910c0) at gimp.c:1712
+#8  0x00563704 in gimp_loop () at gimp.c:1557
+#9  0x0056273e in gimp_main (info=0xbff8f9b3, argc=6, argv=0xbff6a2a4)
+#10 0x08049402 in main (argc=6, argv=0xbff6a2a4) at colorify.c:89
+
+(#<CLOSURE> 1 -1 -1 (64 128 192) (64 128 192) (64 128 192) (64 128 192) 32)
+==> 
+    calling plug_in_color_map...
+(mapcolor:15408): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawab le_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/mapcolor: fatal error:
+Segmentati on fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/mapcolor (pid:15408): [E]xit,
+[H] alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049e03 in run (name=0x806d100 "plug_in_color_map", nparams=8,
+#5  0x0068d8f5 in gimp_proc_run (proc_run=0x806d0c0) at gimp.c:1712
+#6  0x0068d704 in gimp_loop () at gimp.c:1557
+#7  0x0068c73e in gimp_main (info=0xbff3e9b3, argc=6, argv=0xbfefdc64)
+#8  0x08049cb2 in main (argc=6, argv=0xbfefdc64) at mapcolor.c:295
+
+(#<CLOSURE> 1 -1 -1 32 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159
+3 .14159 3.14159)  ==>
+    calling plug_in_colors_channel_mixer...
+(channel_mixer:15450): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/channel_mixer: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/channel_mixer (pid:15450):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a63d in run (name=0x98fb108 "plug_in_colors_channel_mixer",
+#5  0x00f5e8f5 in gimp_proc_run (proc_run=0x98fb0c8) at gimp.c:1712
+#6  0x00f5e704 in gimp_loop () at gimp.c:1557
+#7  0x00f5d73e in gimp_main (info=0xbff249ae, argc=6, argv=0xbff0a784)
+#8  0x0804a55a in main (argc=6, argv=0xbff0a784) at channel_mixer.c:191
+
+(#<CLOSURE> 1 -1 -1 32)  ==>
+    calling plug_in_deinterlace...
+(deinterlace:15470): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_dra wable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/deinterlace: fatal error:
+Segment ation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/deinterlace (pid:15470):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x080494d3 in run (name=0x8149100 "plug_in_deinterlace", nparams=4,
+#5  0x009318f5 in gimp_proc_run (proc_run=0x81490c0) at gimp.c:1712
+#6  0x00931704 in gimp_loop () at gimp.c:1557
+#7  0x0093073e in gimp_main (info=0xbff8f9b0, argc=6, argv=0xbfeabd74)
+#8  0x080493fa in main (argc=6, argv=0xbfeabd74) at deinterlace.c:64
+
+(#<CLOSURE> 1 -1 -1 (64 128 192))  ==>
+    calling plug_in_colortoalpha...
+(colortoalpha:15437): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_dr awable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/colortoalpha: fatal error:
+Segmen tation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/colortoalpha (pid:15437):
+[E]xit,  [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804945b in run (name=0x8c9d108 "plug_in_colortoalpha",
+#5  0x002ed8f5 in gimp_proc_run (proc_run=0x8c9d0c8) at gimp.c:1712
+#6  0x002ed704 in gimp_loop () at gimp.c:1557
+#7  0x002ec73e in gimp_main (info=0xbff2b9af, argc=6, argv=0xbfe3beb4)
+#8  0x0804933e in main (argc=6, argv=0xbfe3beb4) at colortoalpha.c:78
+
+(#<CLOSURE> 1 -1 -1 32)  ==>
+    calling plug_in_deinterlace...
+(deinterlace:15487): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_dra wable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/deinterlace: fatal error:
+Segment ation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/deinterlace (pid:15487):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x080494d3 in run (name=0x899f100 "plug_in_deinterlace", nparams=4,
+#5  0x00a6e8f5 in gimp_proc_run (proc_run=0x899f0c0) at gimp.c:1712
+#6  0x00a6e704 in gimp_loop () at gimp.c:1557
+#7  0x00a6d73e in gimp_main (info=0xbff469b0, argc=6, argv=0xbff263a4)
+#8  0x080493fa in main (argc=6, argv=0xbff263a4) at deinterlace.c:64
+
+(#<CLOSURE> 1 -1 -1 -1 -1 -1 -1 3.14159 3.14159 3.14159 3.14159)  ==>
+In marshall_proc_db_call ()
+    calling plug_in_depth_merge...
+(depthmerge:15505): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_draw able_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/depthmerge: fatal error:
+Segmenta tion fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/depthmerge (pid:15505): [E]xit,
+[ H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a13d in DepthMerge_construct (dm=0xbfed9570) at depthmerge.c:310
+#5  0x0804a076 in run (name=0x81dd100 "plug_in_depth_merge", numParams=11,
+#6  0x00fe08f5 in gimp_proc_run (proc_run=0x81dd0c0) at gimp.c:1712
+#7  0x00fe0704 in gimp_loop () at gimp.c:1557
+#8  0x00fdf73e in gimp_main (info=0xbff759b1, argc=6, argv=0xbfed9784)
+#9  0x08049e76 in main (argc=6, argv=0xbfed9784) at depthmerge.c:161
+
+(#<CLOSURE> 1 -1 -1 32 32 32 32)  ==>
+    calling plug_in_despeckle...
+(despeckle:15524): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawa ble_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/despeckle: fatal error:
+Segmentat ion fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/despeckle (pid:15524): [E]xit,
+[H ]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049cab in run (name=0x91d0100 "plug_in_despeckle", nparams=7,
+#5  0x006578f5 in gimp_proc_run (proc_run=0x91d00c0) at gimp.c:1712
+#6  0x00657704 in gimp_loop () at gimp.c:1557
+#7  0x0065673e in gimp_main (info=0xbffc79b2, argc=6, argv=0xbff503c4)
+#8  0x08049bb6 in main (argc=6, argv=0xbff503c4) at despeckle.c:130
+
+(#<CLOSURE> 1 -1 -1 32)  ==>
+    calling plug_in_destripe...
+(destripe:15560): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawab le_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/destripe: fatal error:
+Segmentati on fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/destripe (pid:15560): [E]xit,
+[H] alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049e88 in run (name=0x9687100 "plug_in_destripe", nparams=4,
+#5  0x00f258f5 in gimp_proc_run (proc_run=0x96870c0) at gimp.c:1712
+#6  0x00f25704 in gimp_loop () at gimp.c:1557
+#7  0x00f2473e in gimp_main (info=0xbff109b3, argc=6, argv=0xbff09054)
+#8  0x08049d9a in main (argc=6, argv=0xbff09054) at destripe.c:113
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159
+3.14 159 3.14159 3.14159 3.14159 3.14159)  ==>
+    calling plug_in_diffraction...
+(diffraction:15577): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/diffraction: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/diffraction (pid:15577):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049a45 in run (name=0x8df5100 "plug_in_diffraction", nparams=15,
+#5  0x002e18f5 in gimp_proc_run (proc_run=0x8df50c0) at gimp.c:1712
+#6  0x002e1704 in gimp_loop () at gimp.c:1557
+#7  0x002e073e in gimp_main (info=0xbffea9b0, argc=6, argv=0xbff5cd64)
+#8  0x08049926 in main (argc=6, argv=0xbff5cd64) at diffraction.c:149
+
+(#<CLOSURE> 1 -1 -1 32 32 3.14159 32 32 32)  ==>
+    calling plug_in_dilate...
+(vpropagate:15596): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_draw able_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/vpropagate: fatal error:
+Segmenta tion fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/vpropagate (pid:15596): [E]xit,
+[ H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049f56 in value_propagate_body (drawable_id=-1) at vpropagate.c:437
+#5  0x08049e9f in value_propagate (drawable_id=-1) at vpropagate.c:405
+#6  0x08049c22 in run (name=0x91c2100 "plug_in_dilate", nparams=9,
+#7  0x0011a8f5 in gimp_proc_run (proc_run=0x91c20c0) at gimp.c:1712
+#8  0x0011a704 in gimp_loop () at gimp.c:1557
+#9  0x0011973e in gimp_main (info=0xbffd59b1, argc=6, argv=0xbff4b824)
+#10 0x08049a92 in main (argc=6, argv=0xbff4b824) at vpropagate.c:219
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159 32 32 -1 -1 32)  ==>
+    calling plug_in_displace...
+(displace:15620): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+ 
+(displace:15620): LibGimp-CRITICAL **: file gimppixelfetcher.c: line 68
+(gimp_pixel_fetcher_new): assertion `drawable != NULL' failed
+ 
+(displace:15620): LibGimp-CRITICAL **: file gimppixelfetcher.c: line 117
+(gimp_pixel_fetcher_set_edge_mode): assertion `pf != NULL' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/displace: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/displace (pid:15620): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a2bb in displace (drawable=0x0) at displace.c:427
+#5  0x08049b47 in run (name=0x8c45100 "plug_in_displace", nparams=10,
+#6  0x00c6d8f5 in gimp_proc_run (proc_run=0x8c450c0) at gimp.c:1712
+#7  0x00c6d704 in gimp_loop () at gimp.c:1557
+#8  0x00c6c73e in gimp_main (info=0xbff1a9b3, argc=6, argv=0xbfe92d04)
+#9  0x080499f2 in main (argc=6, argv=0xbfe92d04) at displace.c:120
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159 32 32)  ==>
+    calling plug_in_dog...
+(dog:15637): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_ge t): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/dog: fatal error: Segmentation
+fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/dog (pid:15637): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a501 in run (name=0x80770bc "\021", nparams=7, param=0x8077100,
+#5  0x00a568f5 in gimp_proc_run (proc_run=0x80770c0) at gimp.c:1712
+#6  0x00a56704 in gimp_loop () at gimp.c:1557
+#7  0x00a5573e in gimp_main (info=0xbff669b8, argc=6, argv=0xbfed5c04)
+#8  0x0804a3ee in main (argc=6, argv=0xbfed5c04) at dog.c:142
+
+(#<CLOSURE> 1 -1 -1 3.14159 32 32)  ==>
+    calling plug_in_edge...
+(edge:15656): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_g et): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/edge: fatal error: Segmentation
+f ault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/edge (pid:15656): [E]xit,
+[H]alt,  show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049b2f in run (name=0x9f82100 "plug_in_edge", nparams=6,
+#5  0x00cca8f5 in gimp_proc_run (proc_run=0x9f820c0) at gimp.c:1712
+#6  0x00cca704 in gimp_loop () at gimp.c:1557
+#7  0x00cc973e in gimp_main (info=0xbff679b7, argc=6, argv=0xbfed5324)
+#8  0x08049a32 in main (argc=6, argv=0xbfed5324) at edge.c:132
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159 32 32)  ==>
+    calling plug_in_emboss...
+(emboss:15674): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable _get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/emboss: fatal error:
+Segmentation  fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/emboss (pid:15674): [E]xit,
+[H]al t, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049d39 in pluginCore (argp=0xbfecafc0) at emboss.c:378
+#5  0x08049cb6 in run (name=0x9ed6100 "plug_in_emboss", nparam=7,
+#6  0x0052c8f5 in gimp_proc_run (proc_run=0x9ed60c0) at gimp.c:1712
+#7  0x0052c704 in gimp_loop () at gimp.c:1557
+#8  0x0052b73e in gimp_main (info=0xbff719b5, argc=6, argv=0xbfecb194)
+#9  0x08049a8e in main (argc=6, argv=0xbfecb194) at emboss.c:126
+
+(#<CLOSURE> 1 -1 -1 32 32)  ==>
+    calling plug_in_engrave...
+(engrave:15692): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawabl e_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/engrave: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/engrave (pid:15692): [E]xit,
+[H]a lt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a015 in engrave_small (drawable=0x0, height=32, limit=1,
+#5  0x08049b15 in engrave (drawable=0x0) at engrave.c:262
+#6  0x080497aa in run (name=0x8660100 "plug_in_engrave", nparams=5,
+#7  0x00e098f5 in gimp_proc_run (proc_run=0x86600c0) at gimp.c:1712
+#8  0x00e09704 in gimp_loop () at gimp.c:1557
+#9  0x00e0873e in gimp_main (info=0xbff4a9b4, argc=6, argv=0xbfe72544)
+#10 0x0804968a in main (argc=6, argv=0xbfe72544) at engrave.c:78
+
+(#<CLOSURE> 1 -1 -1 32 32 3.14159 32 32 32)  ==>
+    calling plug_in_erode...
+(vpropagate:15710): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_draw able_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/vpropagate: fatal error:
+Segmenta tion fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/vpropagate (pid:15710): [E]xit,
+[ H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049f56 in value_propagate_body (drawable_id=-1) at vpropagate.c:437
+#5  0x08049e9f in value_propagate (drawable_id=-1) at vpropagate.c:405
+#6  0x08049c22 in run (name=0x977c100 "plug_in_erode", nparams=9,
+#7  0x008948f5 in gimp_proc_run (proc_run=0x977c0c0) at gimp.c:1712
+#8  0x00894704 in gimp_loop () at gimp.c:1557
+#9  0x0089373e in gimp_main (info=0xbff369b1, argc=6, argv=0xbff0bd84)
+#10 0x08049a92 in main (argc=6, argv=0xbff0bd84) at vpropagate.c:219
+
+(#<CLOSURE> 1 -1 -1 8 8 8 8 8 8 8 8 8)  ==>
+(exchange:15834): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawab le_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/exchange: fatal error:
+Segmentati on fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/exchange (pid:15834): [E]xit,
+[H] alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a2ce in run (name=0x9cb6100 "plug_in_exchange", nparams=12,
+#5  0x00b758f5 in gimp_proc_run (proc_run=0x9cb60c0) at gimp.c:1712
+#6  0x00b75704 in gimp_loop () at gimp.c:1557
+#7  0x00b7473e in gimp_main (info=0xbfff99b3, argc=6, argv=0xbff15b34)
+#8  0x0804a1e6 in main (argc=6, argv=0xbff15b34) at exchange.c:105
+
+(#<CLOSURE> 1 -1 -1 32 (64 128 192) 32 "string" (64 128 192) 32 32 32 #( 32 32
+3 2 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32
+32 32 32 32))  ==>
+(film:15852): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_g et): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/film: fatal error: Segmentation
+f ault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/film (pid:15852): [E]xit,
+[H]alt,  show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804c193 in create_new_image (filename=0xbf31ac32 "Untitled", width=0,
+#5  0x0804b2b8 in film () at film.c:438
+#6  0x0804aea3 in run (name=0x9f76100 "plug_in_film", nparams=12,
+#7  0x00a368f5 in gimp_proc_run (proc_run=0x9f760c0) at gimp.c:1712
+#8  0x00a36704 in gimp_loop () at gimp.c:1557
+#9  0x00a3573e in gimp_main (info=0xbffae9b7, argc=6, argv=0xbfed1fb4)
+#10 0x0804ad52 in main (argc=6, argv=0xbfed1fb4) at film.c:208
+
+(#<CLOSURE> 1 -1 -1)  ==>
+    calling plug_in_filter_pack...
+(fp:15870): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get ): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/fp: fatal error: Segmentation
+fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/fp (pid:15870): [E]xit, [H]alt,
+s how [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a469 in run (name=0x982c100 "plug_in_filter_pack", nparams=3,
+#5  0x004b48f5 in gimp_proc_run (proc_run=0x982c0c0) at gimp.c:1712
+#6  0x004b4704 in gimp_loop () at gimp.c:1557
+#7  0x004b373e in gimp_main (info=0xbff2b9b9, argc=6, argv=0xbfe73794)
+#8  0x0804a366 in main (argc=6, argv=0xbfe73794) at fp.c:304
+
+(#<CLOSURE> 1 -1 -1 32 32)  ==>
+    calling plug_in_flarefx...
+(flarefx:15891): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawabl e_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/flarefx: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/flarefx (pid:15891): [E]xit,
+[H]a lt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a3a3 in run (name=0x9fad100 "plug_in_flarefx", nparams=5,
+#5  0x00ba38f5 in gimp_proc_run (proc_run=0x9fad0c0) at gimp.c:1712
+#6  0x00ba3704 in gimp_loop () at gimp.c:1557
+#7  0x00ba273e in gimp_main (info=0xbffb89b4, argc=6, argv=0xbff324d4)
+#8  0x0804a2aa in main (argc=6, argv=0xbff324d4) at flarefx.c:169
+
+(#<CLOSURE> 1 -1 -1 8 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159 3.14159
+8 3.14159 3.14159 3.14159 8 8 8 8 8 8 32)  ==>
+(FractalExplorer:15912): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/FractalExplorer: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/FractalExplorer (pid:15912):
+[E]xit, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x080509fe in run (name=0x85c8108 "plug_in_fractalexplorer", nparams=22,
+#5  0x001db8f5 in gimp_proc_run (proc_run=0x85c80c8) at gimp.c:1712
+#6  0x001db704 in gimp_loop () at gimp.c:1557
+#7  0x001da73e in gimp_main (info=0xbff379ac, argc=6, argv=0xbff027a4)
+#8  0x0805091e in main (argc=6, argv=0xbff027a4) at FractalExplorer.c:220
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159 3.14159 3.14159 32 32)  ==>
+    calling plug_in_fractal_trace...
+(fractaltrace:15931): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_dr awable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/fractaltrace: fatal error:
+Segmen tation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/fractaltrace (pid:15931):
+[E]xit,  [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049b39 in run (name=0x8899108 "plug_in_fractal_trace", argc=9,
+#5  0x00d7c8f5 in gimp_proc_run (proc_run=0x88990c8) at gimp.c:1712
+#6  0x00d7c704 in gimp_loop () at gimp.c:1557
+#7  0x00d7b73e in gimp_main (info=0xbff7a9af, argc=6, argv=0xbfe857d4)
+#8  0x08049a92 in main (argc=6, argv=0xbfe857d4) at fractaltrace.c:69
+
+(#<CLOSURE> 1 -1 -1 3.14159 32 32)  ==>
+    calling plug_in_gauss_iir...
+(gauss:15970): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_ get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gauss: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gauss (pid:15970): [E]xit,
+[H]alt , show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049a66 in run (name=0x9a15100 "plug_in_gauss_iir", nparams=6,
+#5  0x00a338f5 in gimp_proc_run (proc_run=0x9a150c0) at gimp.c:1712
+#6  0x00a33704 in gimp_loop () at gimp.c:1557
+#7  0x00a3273e in gimp_main (info=0xbff099b6, argc=6, argv=0xbfe55e04)
+#8  0x08049866 in main (argc=6, argv=0xbfe55e04) at gauss.c:106
+
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159)  ==>
+    calling plug_in_gauss_iir2...
+(gauss:15950): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_ get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gauss: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gauss (pid:15950): [E]xit,
+[H]alt , show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049a66 in run (name=0x85bc100 "plug_in_gauss_iir2", nparams=5,
+#5  0x00ee38f5 in gimp_proc_run (proc_run=0x85bc0c0) at gimp.c:1712
+#6  0x00ee3704 in gimp_loop () at gimp.c:1557
+#7  0x00ee273e in gimp_main (info=0xbffc89b6, argc=6, argv=0xbffb3be4)
+#8  0x08049866 in main (argc=6, argv=0xbffb3be4) at gauss.c:106
+
+(#<CLOSURE> 1 -1 -1 3.14159 3.14159 32)  ==>
+    calling plug_in_gauss...
+(gauss:15991): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_ get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gauss: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gauss (pid:15991): [E]xit,
+[H]alt , show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049a66 in run (name=0x8079100 "plug_in_gauss", nparams=6,
+#5  0x0064f8f5 in gimp_proc_run (proc_run=0x80790c0) at gimp.c:1712
+#6  0x0064f704 in gimp_loop () at gimp.c:1557
+#7  0x0064e73e in gimp_main (info=0xbfff89b6, argc=6, argv=0xbffd8424)
+#8  0x08049866 in main (argc=6, argv=0xbffd8424) at gauss.c:106
+
+(#<CLOSURE> 1 -1 -1 32)  ==>
+    calling plug_in_gfig...
+(gfig:16031): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_g et): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gfig: fatal error: Segmentation
+f ault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gfig (pid:16031): [E]xit,
+[H]alt,  show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804e28f in run (name=0x9783100 "plug_in_gfig", nparams=4,
+#5  0x002f68f5 in gimp_proc_run (proc_run=0x97830c0) at gimp.c:1712
+#6  0x002f6704 in gimp_loop () at gimp.c:1557
+#7  0x002f573e in gimp_main (info=0xbff509b7, argc=6, argv=0xbfe8ecd4)
+#8  0x0804e15a in main (argc=6, argv=0xbfe8ecd4) at gfig.c:114
+
+(#<CLOSURE> 1 -1 -1 "string" 32 32 3.14159 3.14159 3.14159 3.14159 3.14159 32
+32  3.14159)  ==>
+(gflare:16070): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gflare: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gflare (pid:16070): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804c111 in plugin_run (name=0x9c97100 "plug_in_gflare", nparams=14,
+#5  0x0088f8f5 in gimp_proc_run (proc_run=0x9c970c0) at gimp.c:1712
+#6  0x0088f704 in gimp_loop () at gimp.c:1557
+#7  0x0088e73e in gimp_main (info=0xbff749b5, argc=6, argv=0xbff18e04)
+#8  0x0804c02a in main (argc=6, argv=0xbff18e04) at gflare.c:791
+
+(#<CLOSURE> 1 -1 -1 "string")  ==>
+    calling plug_in_gimpressionist...
+(gimpressionist:16090): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_ drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gimpressionist: fatal error:
+Segm entation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gimpressionist (pid:16090):
+[E]xi t, [H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804f655 in run (name=0x91db108 "plug_in_gimpressionist", nparams=4,
+#5  0x002548f5 in gimp_proc_run (proc_run=0x91db0c8) at gimp.c:1712
+#6  0x00254704 in gimp_loop () at gimp.c:1557
+#7  0x0025373e in gimp_main (info=0xbffb99ad, argc=6, argv=0xbffb21a4)
+#8  0x0804f542 in main (argc=6, argv=0xbffb21a4) at gimp.c:58
+
+(#<CLOSURE> 1 -1 -1 32 32)  ==>
+    calling plug_in_glasstile...
+(glasstile:16109): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawa ble_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/glasstile: fatal error:
+Segmentat ion fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/glasstile (pid:16109): [E]xit,
+[H ]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08049eab in run (name=0x96bc100 "plug_in_glasstile", nparams=5,
+#5  0x00e128f5 in gimp_proc_run (proc_run=0x96bc0c0) at gimp.c:1712
+#6  0x00e12704 in gimp_loop () at gimp.c:1557
+#7  0x00e1173e in gimp_main (info=0xbff1b9b2, argc=6, argv=0xbfe7c454)
+#8  0x08049db2 in main (argc=6, argv=0xbfe7c454) at glasstile.c:93
+
+(#<CLOSURE> 1 -1 -1)  ==>
+    calling plug_in_gradmap...
+(gradmap:16128): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawabl e_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gradmap: fatal error:
+Segmentation fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/gradmap (pid:16128): [E]xit,
+[H]a lt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x08048c0e in run (name=0x995f100 "plug_in_gradmap", nparams=3,
+#5  0x00f8a8f5 in gimp_proc_run (proc_run=0x995f0c0) at gimp.c:1712
+#6  0x00f8a704 in gimp_loop () at gimp.c:1557
+#7  0x00f8973e in gimp_main (info=0xbff639b4, argc=6, argv=0xbfe87394)
+#8  0x08048b3e in main (argc=6, argv=0xbfe87394) at gradmap.c:62
+
+(#<CLOSURE> 1 -1 -1 32 32 32 (64 128 192) 8 32 32 32 (64 128 192) 8 32 32 32
+(64  128 192) 8)  ==>
+    calling plug_in_grid...
+(grid:16147): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_get): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/grid: fatal error: Segmentation
+fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/grid (pid:16147): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  0x0804a83c in run (name=0x9913100 "plug_in_grid", n_params=18, param=0x40,
+#5  0x001ff8f5 in gimp_proc_run (proc_run=0x99130c0) at gimp.c:1712
+#6  0x001ff704 in gimp_loop () at gimp.c:1557
+#7  0x001fe73e in gimp_main (info=0xbffab9b7, argc=6, argv=0xbfef5c44)
+#8  0x0804a6ba in main (argc=6, argv=0xbfef5c44) at grid.c:115
+
+(#<CLOSURE> 1 -1 -1 32 32 32)  ==>
+    calling plug_in_hot...
+(hot:16167): LibGimp-CRITICAL **: file gimpdrawable.c: line 63
+(gimp_drawable_ge t): assertion `width > 0 && height > 0 && bpp > 0' failed
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/hot: fatal error: Segmentation
+fault
+/home/kcozens/gimp2/test/lib/gimp/2.1/plug-ins/hot (pid:16167): [E]xit,
+[H]alt, show [S]tack trace or [P]roceed: s
+#3  <signal handler called>
+#4  pluginCore (argp=0xbfee0d10) at hot.c:322
+#5  0x08049796 in run (name=0x8bff0b0 "plug_in_hot", nparam=6,
+#6  0x00b398f5 in gimp_proc_run (proc_run=0x8bff0c0) at gimp.c:1712
+#7  0x00b39704 in gimp_loop () at gimp.c:1557
+#8  0x00b3873e in gimp_main (info=0xbffdc9b8, argc=6, argv=0xbfee0ee4)
+#9  0x080495ea in main (argc=6, argv=0xbfee0ee4) at hot.c:191

@@ -1,0 +1,1022 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2003-06-28 22:05+0700\n"
+"Last-Translator: Mohammad DAMT <mdamt@bisnisweb.com>\n"
+"Language-Team: Indonesian <sukarelawan@gnome.linux.or.id>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:275
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:167
+msgid "Tiny-Fu Console"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:171
+msgid "_Save Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+msgid "Tiny-Fu Console - "
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+msgid "Tiny-Fu Server Options"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+msgid "/Tiny-Fu/"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, c-format
+msgid "Tiny-Fu: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:212
+#, fuzzy
+msgid "_About"
+msgstr "Keterangan Program"
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr ""
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:312
+msgid "Tiny-Fu Color Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:418
+msgid "Tiny-Fu File Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:422
+msgid "Tiny-Fu Folder Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:434
+msgid "Tiny-Fu Font Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:441
+msgid "Tiny-Fu Palette Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:449
+msgid "Tiny-Fu Pattern Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:457
+msgid "Tiny-Fu Gradient Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:465
+msgid "Tiny-Fu Brush Selection"
+msgstr ""
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+msgid "Script Progress"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "Hak Cipta:"
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "Tanggal:"
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "Tanggal:"
+
+#~ msgid "Color"
+#~ msgstr "Warna"
+
+#~ msgid "Font"
+#~ msgstr "Font"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Sheet "
+#~ msgstr "Benih"
+
+#, fuzzy
+#~ msgid "Sheet Size"
+#~ msgstr "Benih"
+
+#~ msgid "Text Color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "Warna Teks:"
+
+#~ msgid "Text"
+#~ msgstr "Teks"
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "Warna Teks:"
+
+#~ msgid "Left"
+#~ msgstr "Kiri"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientasi"
+
+#~ msgid "Right"
+#~ msgstr "Kanan"
+
+#~ msgid "Size"
+#~ msgstr "Ukuran"
+
+#~ msgid "Up"
+#~ msgstr "Naik"
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "Tinggi Gambar"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "Tinggi Gambar"
+
+#~ msgid "Padding"
+#~ msgstr "Isian"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "Nama file"
+
+#~ msgid "Filename"
+#~ msgstr "Nama file"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "Warna Teks:"
+
+#~ msgid "Pattern"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "Tanggal:"
+
+#~ msgid "Height"
+#~ msgstr "Tinggi:"
+
+#~ msgid "Width"
+#~ msgstr "Lebar"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "FG-Transparent"
+#~ msgstr "Warna latar belakang"
+
+#~ msgid "Background Color"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Fadeout"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Color 1"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Color 2"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Color 3"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "Lebar Gambar"
+
+#~ msgid "Smooth"
+#~ msgstr "Halus"
+
+#, fuzzy
+#~ msgid "Background Image"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "Opasitas"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Elevation"
+#~ msgstr "Orientasi"
+
+#, fuzzy
+#~ msgid "Stains"
+#~ msgstr "Jarak"
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Spread"
+#~ msgstr "Benih"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "Warna Teks:"
+
+#~ msgid "Opacity"
+#~ msgstr "Opasitas"
+
+#~ msgid "Columns"
+#~ msgstr "Kolom"
+
+#~ msgid "Erase"
+#~ msgstr "Hapus"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "Hapus"
+
+#~ msgid "Rows"
+#~ msgstr "Baris"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "Baris"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "Tinggi Gambar"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "_Text"
+#~ msgstr "Teks"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Shadow"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "Tinggi Gambar"
+
+#~ msgid "Seed"
+#~ msgstr "Benih"
+
+#~ msgid "Description"
+#~ msgstr "Keterangan"
+
+#~ msgid "Spacing"
+#~ msgstr "Jarak"
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Padding X"
+#~ msgstr "Isian"
+
+#, fuzzy
+#~ msgid "Padding Y"
+#~ msgstr "Isian"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "Warna Teks:"
+
+#~ msgid "Black"
+#~ msgstr "Hitam"
+
+#~ msgid "Wrap"
+#~ msgstr "Genap"
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Frames"
+#~ msgstr "Nama file"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Frame"
+#~ msgstr "Nama file"
+
+#, fuzzy
+#~ msgid "Hexagon"
+#~ msgstr "Orientasi"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "Orientasi"
+
+#, fuzzy
+#~ msgid "Pentagon"
+#~ msgstr "Orientasi"
+
+#, fuzzy
+#~ msgid "Solid Color"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Triangle"
+#~ msgstr "Nama file"
+
+#~ msgid "Type"
+#~ msgstr "Tipe"
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "Nama file"
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "Warna Teks:"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "Nama file"
+
+#, fuzzy
+#~ msgid "Hexagons"
+#~ msgstr "Orientasi"
+
+#, fuzzy
+#~ msgid "Octagons"
+#~ msgstr "Orientasi"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Pola"
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "Warna latar belakang"
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "Opasitas"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Wavelength"
+#~ msgstr "Tinggi Gambar"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "Lebar Gambar"
+
+#, fuzzy
+#~ msgid "Thread length"
+#~ msgstr "Tinggi Gambar"
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "Opasitas"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "Opasitas"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "Opasitas"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "Opasitas"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Transparent Background"
+#~ msgstr "Warna latar belakang"
+
+#~ msgid "Name:"
+#~ msgstr "Nama:"
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "Opasitas"

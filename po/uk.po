@@ -1,0 +1,2480 @@
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Yuri Syrota <rasta@renome.rovno.ua>, 2000.
+# Maxim Dziumanenko <mvd@mylinux.com.ua>, 2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu-2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2004-04-14 17:54+0200\n"
+"Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr "<Toolbox>/Розш./Скрипт-Фу/_Консоль Скрипт-Фу..."
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr "<Toolbox>/Розш./Скрипт-Фу/_Сервер..."
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr "Перечитати усі наявні сценарії"
+
+#: tiny-fu/tiny-fu.c:275
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr "<Toolbox>/Розш./Скрипт-Фу/_Оновити сценарії"
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+#, fuzzy
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr "Консольний режим Скрипт-Фу дозволяє лише інтерактивну роботу"
+
+#: tiny-fu/tiny-fu-console.c:167
+#, fuzzy
+msgid "Tiny-Fu Console"
+msgstr "Консоль Скрипт-Фу"
+
+#: tiny-fu/tiny-fu-console.c:171
+#, fuzzy
+msgid "_Save Output"
+msgstr "Вивід SIOD"
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+#, fuzzy
+msgid "Tiny-Fu Console - "
+msgstr "Консоль Скрипт-Фу"
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr "Поточна команда"
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr "Огляд..."
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+#, fuzzy
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr "Режим виконання Скрипт-Фу дозволяє лише не інтерактивну роботу"
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, fuzzy, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"Помилка під час виконання\n"
+"%s\n"
+"%s"
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+#, fuzzy
+msgid "Tiny-Fu Server Options"
+msgstr "Скрипт-Фу: Параметри сервера"
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr "Порт сервера:"
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr "Файл журналу сервера:"
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#, fuzzy
+msgid "/Tiny-Fu/"
+msgstr "/Скрипт-Фу/"
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, fuzzy, c-format
+msgid "Tiny-Fu: %s"
+msgstr "Скрипт-Фу: %s"
+
+#: tiny-fu/tiny-fu-interface.c:212
+#, fuzzy
+msgid "_About"
+msgstr "Про програму"
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr "Аргументи сценарію"
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr "%s:"
+
+#: tiny-fu/tiny-fu-interface.c:312
+#, fuzzy
+msgid "Tiny-Fu Color Selection"
+msgstr "Скрипт-Фу: Вибір кольору"
+
+#: tiny-fu/tiny-fu-interface.c:418
+#, fuzzy
+msgid "Tiny-Fu File Selection"
+msgstr "Скрипт-Фу: Вибір файлу"
+
+#: tiny-fu/tiny-fu-interface.c:422
+#, fuzzy
+msgid "Tiny-Fu Folder Selection"
+msgstr "Скрипт-Фу: Вибір файлу"
+
+#: tiny-fu/tiny-fu-interface.c:434
+#, fuzzy
+msgid "Tiny-Fu Font Selection"
+msgstr "Скрипт-Фу: Вибір шрифту"
+
+#: tiny-fu/tiny-fu-interface.c:441
+#, fuzzy
+msgid "Tiny-Fu Palette Selection"
+msgstr "Скрипт-Фу: Вибір візерунку"
+
+#: tiny-fu/tiny-fu-interface.c:449
+#, fuzzy
+msgid "Tiny-Fu Pattern Selection"
+msgstr "Скрипт-Фу: Вибір візерунку"
+
+#: tiny-fu/tiny-fu-interface.c:457
+#, fuzzy
+msgid "Tiny-Fu Gradient Selection"
+msgstr "Скрипт-Фу: Вибір градієнту"
+
+#: tiny-fu/tiny-fu-interface.c:465
+#, fuzzy
+msgid "Tiny-Fu Brush Selection"
+msgstr "Скрипт-Фу: Вибір пензля"
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+#, fuzzy
+msgid "Script Progress"
+msgstr "Аргументи сценарію"
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr "Автор:"
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "Авторське право:"
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "Дата:"
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr "Типи зображень:"
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#~ msgid "Search by _Name"
+#~ msgstr "Пошук за _назвою"
+
+#~ msgid "Search by _Blurb"
+#~ msgstr "Пошук за _анотаціями"
+
+#~ msgid "_Search:"
+#~ msgstr "З_найти:"
+
+#~ msgid "Searching by name - please wait"
+#~ msgstr "Пошук за назвою - зачекайте, будь ласка"
+
+#~ msgid "Searching by blurb - please wait"
+#~ msgstr "Пошук за анотацією - зачекайте, будь ласка"
+
+#~ msgid "Searching - please wait"
+#~ msgstr "Пошук - зачекайте, будь ласка"
+
+#~ msgid "No matches"
+#~ msgstr "Не знайдено"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "Діаметр"
+
+#~ msgid "Color"
+#~ msgstr "Колір"
+
+#~ msgid "Font"
+#~ msgstr "Шрифт"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "Розмір шрифту (у точках)"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "Візерунок для тексту"
+
+#, fuzzy
+#~ msgid " for directory "
+#~ msgstr "Не вдається відкрити канал виводу SIOD"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "Індексоване зображення"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Утиліти/Мапа _шрифтів..."
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "Колір тла"
+
+#, fuzzy
+#~ msgid "Created "
+#~ msgstr "Створити тінь"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "Не вдається відкрити канал виводу SIOD"
+
+#, fuzzy
+#~ msgid "Sheet "
+#~ msgstr "Швидкість"
+
+#, fuzzy
+#~ msgid "Sheet Size"
+#~ msgstr "Швидкість"
+
+#~ msgid "Text Color"
+#~ msgstr "Колір тексту"
+
+#, fuzzy
+#~ msgid "Unable to open directory "
+#~ msgstr "Не вдається відкрити канал виводу SIOD"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа-канал у емблему/О_б'ємний контур..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/О_б'ємний контур..."
+
+#, fuzzy
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Радіус розмивання рельєфу (альфа-канал)"
+
+#, fuzzy
+#~ msgid "Default bumpmap settings"
+#~ msgstr "Типові установки рельєфу"
+
+#, fuzzy
+#~ msgid "Font size (pixels)"
+#~ msgstr "Розмір шрифту (у точках)"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "Радіус розмивання контуру"
+
+#, fuzzy
+#~ msgid "Shadow X offset"
+#~ msgstr "Зсув тіні по X"
+
+#, fuzzy
+#~ msgid "Shadow Y offset"
+#~ msgstr "Зсув тіні по Y"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "Радіус розмивання тіні"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/_Об'ємний труше..."
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "Розмір блоку"
+
+#, fuzzy
+#~ msgid "End blend"
+#~ msgstr "Кінцевий колір градієнта"
+
+#, fuzzy
+#~ msgid "Number of X tiles"
+#~ msgstr "Кількість розрізів по X"
+
+#, fuzzy
+#~ msgid "Number of Y tiles"
+#~ msgstr "Кількість розрізів по Y"
+
+#, fuzzy
+#~ msgid "Start blend"
+#~ msgstr "Початковий колір градієнта"
+
+#~ msgid "Supersample"
+#~ msgstr "Інтерполювати"
+
+#~ msgid "Thickness"
+#~ msgstr "Товщина"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/Додати _фаску..."
+
+#, fuzzy
+#~ msgid "Keep bump layer"
+#~ msgstr "Зберегти шар рельєфу"
+
+#, fuzzy
+#~ msgid "Work on copy"
+#~ msgstr "Працювати з копією"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/Додати _рамку..."
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "Розмір рамки по X"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "Розмір рамки по Y"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "Колір рамки"
+
+#, fuzzy
+#~ msgid "Delta value on color"
+#~ msgstr "Дельта значення кольору"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Чуже сяйво/_Стрілка..."
+
+#~ msgid "Down"
+#~ msgstr "Вниз"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "Звести зображення"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "Колір сяйва"
+
+#~ msgid "Left"
+#~ msgstr "Ліворуч"
+
+#~ msgid "Orientation"
+#~ msgstr "Орієнтація"
+
+#~ msgid "Right"
+#~ msgstr "Праворуч"
+
+#~ msgid "Size"
+#~ msgstr "Розмір"
+
+#~ msgid "Up"
+#~ msgstr "Вгору"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr ""
+#~ "<Toolbox>/Розш./Теми веб-сторінок/Чуже сяйво/_Горизонтальна лінійка..."
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "Висота лінійки"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "Довжина лінійки"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Чуже сяйво/_Маркер..."
+
+#~ msgid "Radius"
+#~ msgstr "Радіус"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-ADJUSTMENT _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-ADJUSTMENT _"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Чуже сяйво/_Кнопка..."
+
+#, fuzzy
+#~ msgid "Glow radius"
+#~ msgstr "Радіус сяйва"
+
+#~ msgid "Padding"
+#~ msgstr "Заповнення"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "Колір тексту"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-COLOR      _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-COLOR      _"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Чуже сяйво..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Чуже сяйво..."
+
+#, fuzzy
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "Розмір сяйва (точок * 4)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Чу_жий неон..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Чу_жий неон..."
+
+#, fuzzy
+#~ msgid "Fade away"
+#~ msgstr "Згасання"
+
+#, fuzzy
+#~ msgid "Number of bands"
+#~ msgstr "Кількість обводів"
+
+#, fuzzy
+#~ msgid "Width of bands"
+#~ msgstr "Ширина обводів"
+
+#, fuzzy
+#~ msgid "Width of gaps"
+#~ msgstr "Ширина зазору"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+#~ msgstr "<Image>/Скрипт-Фу/Утиліти/_ASCII у шар зображення..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Утиліти/_ASCII у зображення..."
+
+#, fuzzy
+#~ msgid "Buffer amount (% height of text)"
+#~ msgstr "Розмір буферу (% висоти тексту)"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "Назва файлу"
+
+#~ msgid "Filename"
+#~ msgstr "Назва файлу"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "Прозоре тло"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Основа I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Основа I..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Основа II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Основа II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Кнопки/Проста _об'ємна кнопка..."
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "Ширина фаски"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "Нижній правий колір"
+
+#~ msgid "Pressed"
+#~ msgstr "Натиснута"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "Верхній лівий колір"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Опуклий візерунок/_Стрілка..."
+
+#~ msgid "Pattern"
+#~ msgstr "Візерунок"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Опуклий візерунок/_Маркер..."
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "Діаметр"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Опуклий візерунок/_Кнопка..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Опуклий візерунок/_Заголовок..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr ""
+#~ "<Toolbox>/Розш./Теми веб-сторінок/Опуклий візерунок/_Горизонтальна "
+#~ "лінійка..."
+
+#~ msgid "Height"
+#~ msgstr "Висота"
+
+#~ msgid "Width"
+#~ msgstr "Ширина"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+#~ msgstr "<Image>/Скрипт-Фу/Аніматори/_Плавний перехід..."
+
+#, fuzzy
+#~ msgid "Intermediate frames"
+#~ msgstr "Проміжкові кадри"
+
+#~ msgid "Looped"
+#~ msgstr "Циклічне"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "Максимальний радіус розмивання"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Градієнтна..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Градієнтна..."
+
+#, fuzzy
+#~ msgid "Blend mode"
+#~ msgstr "Режим змішування"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "Інший градієнт"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "П.План-тло-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "П.План-тло-RGB"
+
+#~ msgid "FG-Transparent"
+#~ msgstr "П.План-прозоре"
+
+#~ msgid "Gradient"
+#~ msgstr "Градієнт"
+
+#, fuzzy
+#~ msgid "Gradient reverse"
+#~ msgstr "Обернути градієнт"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "Зсув (у точках)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Плямиста корова..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Плямиста корова..."
+
+#~ msgid "Background Color"
+#~ msgstr "Колір тла"
+
+#~ msgid "Spots density X"
+#~ msgstr "Щільність плям по X"
+
+#~ msgid "Spots density Y"
+#~ msgstr "Щільність плям по Y"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Скрипт-Фу/Аніматори/_Плавний перехід..."
+
+#, fuzzy
+#~ msgid "Add glowing"
+#~ msgstr "Додати сяйво"
+
+#, fuzzy
+#~ msgid "After glow"
+#~ msgstr "Напівсяйво"
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "Ширина корони"
+
+#~ msgid "Fadeout"
+#~ msgstr "Згасання"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "Розмір кромки згасання"
+
+#~ msgid "Prepare for GIF"
+#~ msgstr "Підготувати для GIF"
+
+#~ msgid "Speed (pixels/frame)"
+#~ msgstr "Швидкість (точок/кадр)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/_Камуфляж..."
+
+#~ msgid "Color 1"
+#~ msgstr "Колір 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Колір 2"
+
+#~ msgid "Color 3"
+#~ msgstr "Колір 3"
+
+#~ msgid "Granularity"
+#~ msgstr "Зернистість"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "Розмір зображення"
+
+#~ msgid "Smooth"
+#~ msgstr "Згладити"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Різьба..."
+
+#~ msgid "Background Image"
+#~ msgstr "Зображення на тлі"
+
+#, fuzzy
+#~ msgid "Carve raised text"
+#~ msgstr "Вирізати піднятий текст"
+
+#, fuzzy
+#~ msgid "Padding around text"
+#~ msgstr "Заповнення навколо тексту"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+#~ msgstr "<Image>/Скрипт-Фу/Параметри трафарету/_Вирізати..."
+
+#, fuzzy
+#~ msgid "Carve white areas"
+#~ msgstr "Вирізати білі ділянки"
+
+#, fuzzy
+#~ msgid "Image to carve"
+#~ msgstr "Зображення для вирізання"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/К_рейда..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/К_рейда..."
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "Колір крейди"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Осколки..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Осколки..."
+
+#, fuzzy
+#~ msgid "Blur amount"
+#~ msgstr "Округлість рельєфу"
+
+#, fuzzy
+#~ msgid "Chip amount"
+#~ msgstr "Зернистість"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "Падаюча тінь"
+
+#, fuzzy
+#~ msgid "Fill BG with pattern"
+#~ msgstr "Заповнити тло візерунком"
+
+#~ msgid "Invert"
+#~ msgstr "Інвертувати"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "Лишити тло"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Скрипт-Фу/Параметри трафарету/_Хромувати..."
+
+#, fuzzy
+#~ msgid "Chrome balance"
+#~ msgstr "Баланс хрому"
+
+#, fuzzy
+#~ msgid "Chrome factor"
+#~ msgstr "Фактор хрому"
+
+#, fuzzy
+#~ msgid "Chrome lightness"
+#~ msgstr "Світлість хрому"
+
+#, fuzzy
+#~ msgid "Chrome saturation"
+#~ msgstr "Насиченість хрому"
+
+#, fuzzy
+#~ msgid "Chrome white areas"
+#~ msgstr "Білі ділянки хрому"
+
+#, fuzzy
+#~ msgid "Environment map"
+#~ msgstr "Мапа середовища"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "Баланс відблисків"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Toolbox>/Скрипт-Фу/Альфа у емблему/_Хром..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Хром..."
+
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "Зсув (точок * 2)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Скрипт-Фу/Візуалізація/Друкована _плата..."
+
+#, fuzzy
+#~ msgid "Circuit seed"
+#~ msgstr "Гніздо кола"
+
+#, fuzzy
+#~ msgid "Keep selection"
+#~ msgstr "Лишити виділення"
+
+#, fuzzy
+#~ msgid "No background (only for separate layer)"
+#~ msgstr "Без тла (лише для окремого шару)"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "Розмір маски олійної фарби"
+
+#, fuzzy
+#~ msgid "Separate layer"
+#~ msgstr "Відділити шар"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Скрипт-Фу/Алхімія/_Полотнина..."
+
+#~ msgid "Azimuth"
+#~ msgstr "Азимут"
+
+#~ msgid "Blur X"
+#~ msgstr "Розмивання по X"
+
+#~ msgid "Blur Y"
+#~ msgstr "Розмивання по Y"
+
+#~ msgid "Depth"
+#~ msgstr "Глибина"
+
+#~ msgid "Elevation"
+#~ msgstr "Підвищення"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/_Кавова пляма..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "Заміна темним\n"
+#~ "(Краще, але тільки для зображень з великою кількістю білого)"
+
+#~ msgid "Stains"
+#~ msgstr "Плями"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Toolbox>/Скрипт-Фу/Альфа у емблему/_Комікс..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Комікс..."
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "Колір контуру"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "Розмір контуру"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Холодний м_етал..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Холодний м_етал..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels)"
+#~ msgstr "Розмір ефекту (у точках)"
+
+#, fuzzy
+#~ msgid "<Image>/Edit/Copy/Copy _Visible"
+#~ msgstr "<Image>/Правка/Копіювати в_идиме"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Кришталь..."
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "Зображення на тлі"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/В_икривити виділення..."
+
+#, fuzzy
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "Зернистість (1 -- низька)"
+
+#, fuzzy
+#~ msgid "Smooth horizontally"
+#~ msgstr "Згладити горизонтально"
+
+#, fuzzy
+#~ msgid "Smooth vertically"
+#~ msgstr "Згладити вертикально"
+
+#~ msgid "Spread"
+#~ msgstr "Розповсюдження"
+
+#, fuzzy
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "Поріг (більший 1<-->255 менший)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Скрипт-Фу/Тінь/_Тінь..."
+
+#, fuzzy
+#~ msgid "Allow resizing"
+#~ msgstr "Дозволити зміну розміру"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "Радіус розмивання"
+
+#~ msgid "Offset X"
+#~ msgstr "Зсув по X"
+
+#~ msgid "Offset Y"
+#~ msgstr "Зсув по Y"
+
+#~ msgid "Opacity"
+#~ msgstr "Непрозорість"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+#~ msgstr "<Image>/Скрипт-Фу/Алхімія/О_чистити кожен другий рядок..."
+
+#~ msgid "Columns"
+#~ msgstr "Стовпчики"
+
+#~ msgid "Erase"
+#~ msgstr "Очистити"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "Очистити/заповнити"
+
+#~ msgid "Even"
+#~ msgstr "Парні"
+
+#, fuzzy
+#~ msgid "Even/odd"
+#~ msgstr "Парні/непарні"
+
+#~ msgid "Fill with BG"
+#~ msgstr "Заповнити кольором тла"
+
+#~ msgid "Odd"
+#~ msgstr "Непарні"
+
+#~ msgid "Rows"
+#~ msgstr "Рядки"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "Рядки/Стовпчики"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/З_гасання поза контуром..."
+
+#, fuzzy
+#~ msgid "Apply generated layermask"
+#~ msgstr "Застосувати створену маску шару"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "Розмір рамки"
+
+#, fuzzy
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "Очистити невиділені ділянки маски"
+
+#, fuzzy
+#~ msgid "Fade from %"
+#~ msgstr "Згасання від (%)"
+
+#, fuzzy
+#~ msgid "Fade to   %"
+#~ msgstr "Згасання до (%)"
+
+#, fuzzy
+#~ msgid "Use growing selection"
+#~ msgstr "Використовувати зростаюче виділення"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/_Плоска земля..."
+
+#, fuzzy
+#~ msgid "Detail level"
+#~ msgstr "Рівень деталізації"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "Висота зображення"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "Ширина зображення"
+
+#, fuzzy
+#~ msgid "Random seed"
+#~ msgstr "База випадковості"
+
+#~ msgid "Scale X"
+#~ msgstr "Масштаб X"
+
+#~ msgid "Scale Y"
+#~ msgstr "Масштаб Y"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Утиліти/Мапа _шрифтів..."
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "Поточні кольори п.плану та тла"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "Чорний на білому"
+
+#, fuzzy
+#~ msgid "Font _size (pixels)"
+#~ msgstr "Розмір _шрифту (точки)"
+
+#, fuzzy
+#~ msgid "Use font _name as text"
+#~ msgstr "Використовувати _назву шрифту як текст"
+
+#~ msgid "_Border (pixels)"
+#~ msgstr "Розмір _рамки (у точках)"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "Схема _кольорів"
+
+#~ msgid "_Filter (regexp)"
+#~ msgstr "_Фільтр (рег.вираз)"
+
+#~ msgid "_Labels"
+#~ msgstr "_Вказувати назви шрифтів"
+
+#~ msgid "_Text"
+#~ msgstr "_Текст"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Морозна..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Морозна..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/_Нечіткі краї..."
+
+#, fuzzy
+#~ msgid "Add shadow"
+#~ msgstr "Додати тінь"
+
+#, fuzzy
+#~ msgid "Blur border"
+#~ msgstr "Розмивання рамки"
+
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "Зернистість (1 -- низька)"
+
+#, fuzzy
+#~ msgid "Shadow weight (%)"
+#~ msgstr "Сила тіні (%)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Gimp.Org/_Великий заголовок..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/Розш./Теми веб-сторінок/Gimp.Org/_Малий заголовок..."
+
+#, fuzzy
+#~ msgid "Autocrop"
+#~ msgstr "Автокадрування"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "Темний колір"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "Колір відблисків"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "Індексоване зображення"
+
+#, fuzzy
+#~ msgid "Number of colors"
+#~ msgstr "Кількість кольорів"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "Видалити тло"
+
+#, fuzzy
+#~ msgid "Select-by-color threshold"
+#~ msgstr "Поріг вибору за коліром"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "Колір тіні"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Розш./Теми веб-сторінок/Gimp.Org/_Позначки дод.кнопок труби..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Розш./Теми веб-сторінок/Gimp.Org/_Двічі вкладені кнопки..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr ""
+#~ "<Toolbox>/Розш./Теми веб-сторінок/Gimp.Org/Позначки _головної труби..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Розш./Теми веб-сторінок/Gimp.Org/Позначка кнопки _труби..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Г_лянцева..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Г_лянцева..."
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "Градієнт (текст)"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "Градієнт (контур)"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "Градієнт (текст)"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "Обернути градієнт контуру"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "Візерунок (контур)"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "Візерунок (перекривання)"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "Візерунок (текст)"
+
+#~ msgid "Shadow"
+#~ msgstr "Тінь"
+
+#, fuzzy
+#~ msgid "Text gradient reverse"
+#~ msgstr "Обернути градієнт тексту"
+
+#, fuzzy
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "Використовувати для контуру візерунок замість градієнту"
+
+#, fuzzy
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "Використовувати для тексту візерунок замість градієнту"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "Використовувати накладання візерунків"
+
+#, fuzzy
+#~ msgid "Use tattern for outline instead of gradient"
+#~ msgstr "Використовувати для контуру візерунок замість градієнту"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Г_аряче сяйво..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Г_аряче сяйво..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "Розмір ефекту (точки * 3)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Оп_уклий градієнт..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Оп_уклий градієнт..."
+
+#, fuzzy
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "Висота фаски (різкість)"
+
+#, fuzzy
+#~ msgid "Border size (pixels)"
+#~ msgstr "Розмір рамки (у точках)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Утиліти/Користувацький _градієнт..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Imigre-26..."
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "Колір обрамлення"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "Розмір обрамлення"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/_Земля..."
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "Висота землі"
+
+#, fuzzy
+#~ msgid "Sea depth"
+#~ msgstr "Морська глибина"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Скрипт-Фу/Візуалізація/_Лава..."
+
+#~ msgid "Roughness"
+#~ msgstr "Шорсткість"
+
+#~ msgid "Seed"
+#~ msgstr "Швидкість"
+
+#, fuzzy
+#~ msgid "Use current gradient"
+#~ msgstr "Використовувати поточний градієнт"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Скрипт-Фу/Візуалізація/Лінійна _нова..."
+
+#, fuzzy
+#~ msgid "Number of lines"
+#~ msgstr "Кількість ліній"
+
+#, fuzzy
+#~ msgid "Offset radius"
+#~ msgstr "Радіус зсуву"
+
+#~ msgid "Randomness"
+#~ msgstr "Випадковість"
+
+#~ msgid "Sharpness (degrees)"
+#~ msgstr "Різкість (в градусах)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Створити пензель/Е_ліптичний розмитий..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Створити пензель/П_рямокутний розмитий..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Створити пензель/_Еліптичний..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Створити пензель/_Прямокутний..."
+
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#~ msgid "Feathering"
+#~ msgstr "Розмивання"
+
+#~ msgid "Spacing"
+#~ msgstr "Інтервал"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Неон..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Неон..."
+
+#, fuzzy
+#~ msgid "Create shadow"
+#~ msgstr "Створити тінь"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "Розмір ефекту (точок * 5)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Газетний текст..."
+
+#, fuzzy
+#~ msgid "Cell size (pixels)"
+#~ msgstr "Розмір комірки (в точках)"
+
+#~ msgid "Density (%)"
+#~ msgstr "Щільність (%)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/Старе ф_ото..."
+
+#~ msgid "Defocus"
+#~ msgstr "Розфокусувати"
+
+#~ msgid "Mottle"
+#~ msgstr "Накраплення"
+
+#~ msgid "Sepia"
+#~ msgstr "Сепія"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Скрипт-Фу/Тінь/_Перспектива..."
+
+#~ msgid "Angle"
+#~ msgstr "Кут"
+
+#~ msgid "Interpolate"
+#~ msgstr "Інтерполяція"
+
+#, fuzzy
+#~ msgid "Relative distance of horizon"
+#~ msgstr "Відносна відстань до горизонту"
+
+#, fuzzy
+#~ msgid "Relative length of shadow"
+#~ msgstr "Відносна довжина тіні"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Скрипт-Фу/Алхімія/_Хижак..."
+
+#, fuzzy
+#~ msgid "Edge amount"
+#~ msgstr "Розмір грані"
+
+#, fuzzy
+#~ msgid "Pixel amount"
+#~ msgstr "Кількість точок"
+
+#~ msgid "Pixelize"
+#~ msgstr "Пікселізація"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Кнопки/_Кругла кнопка..."
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "Нижній колір"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "Нижній колір (активний)"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "Не натиснута"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "Не натиснута (активна)"
+
+#~ msgid "Padding X"
+#~ msgstr "Заповнення X"
+
+#~ msgid "Padding Y"
+#~ msgstr "Заповнення Y"
+
+#, fuzzy
+#~ msgid "Round ratio"
+#~ msgstr "Відношення радіусів"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "Колір тексту (активний)"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "Верхній колір"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "Верхній колір (активний)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/Візуалізація _мапи..."
+
+#~ msgid "Behaviour"
+#~ msgstr "Поведінка"
+
+#~ msgid "Detail in Middle"
+#~ msgstr "Деталі в середині"
+
+#~ msgid "Tile"
+#~ msgstr "Плитка"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Скрипт-Фу/Аніматори/_Брижі..."
+
+#~ msgid "Black"
+#~ msgstr "Заповнювати чорним"
+
+#, fuzzy
+#~ msgid "Edge behaviour"
+#~ msgstr "Край"
+
+#, fuzzy
+#~ msgid "Number of frames"
+#~ msgstr "Кількість кадрів"
+
+#, fuzzy
+#~ msgid "Rippling strength"
+#~ msgstr "Сила брижів"
+
+#~ msgid "Smear"
+#~ msgstr "Розмазувати"
+
+#~ msgid "Wrap"
+#~ msgstr "Переносити"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/_Закруглені кути..."
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "Додати тло"
+
+#, fuzzy
+#~ msgid "Add drop-shadow"
+#~ msgstr "Додати падаючу тінь"
+
+#, fuzzy
+#~ msgid "Edge radius"
+#~ msgstr "Радіус грані"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/_Закруглити..."
+
+#, fuzzy
+#~ msgid "Relative radius"
+#~ msgstr "Відносний радіус"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/У _пензель..."
+
+#, fuzzy
+#~ msgid "Brush name"
+#~ msgstr "Назва пензля"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/У _зображення"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/У _візерунок..."
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "Візерунок"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+#~ msgstr "<Image>/Скрипт-Фу/Декор/_Слайд..."
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "Колір шрифту"
+
+#~ msgid "Number"
+#~ msgstr "Номер"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/SOTA Хром..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Швидкісний текст..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Різне/_Сфера..."
+
+#~ msgid "Lighting (degrees)"
+#~ msgstr "Освітлення (в градусах)"
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "Радіус (у точках)"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "Колір сфери"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Скрипт-Фу/Аніматори/_Куля, що обертається..."
+
+#~ msgid "Frames"
+#~ msgstr "Кадри"
+
+#, fuzzy
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "Індексувати до N кольорів (0 - залишити RGB)"
+
+#, fuzzy
+#~ msgid "Turn from left to right"
+#~ msgstr "Обертати зліва направо"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Скрипт-Фу/Візуалізація/_Спірограф..."
+
+#~ msgid "Airbrush"
+#~ msgstr "Аерограф"
+
+#~ msgid "Brush"
+#~ msgstr "Пензель"
+
+#~ msgid "Circle"
+#~ msgstr "Коло"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "Метод фарбування"
+
+#~ msgid "Epitrochoid"
+#~ msgstr "Епітрохоїда"
+
+#~ msgid "Frame"
+#~ msgstr "Кадр"
+
+#~ msgid "Gradient: Loop Sawtooth"
+#~ msgstr "Градієнт: Зубчатий цикл"
+
+#~ msgid "Gradient: Loop Triangle"
+#~ msgstr "Градієнт: Трикутний цикл"
+
+#~ msgid "Hexagon"
+#~ msgstr "Шестикутник"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "Розмір отвору"
+
+#, fuzzy
+#~ msgid "Inner teeth"
+#~ msgstr "Внутрішні зубці"
+
+#~ msgid "Lissajous"
+#~ msgstr "Ліссажу"
+
+#~ msgid "Margin (pixels)"
+#~ msgstr "Відступ (у точках)"
+
+#, fuzzy
+#~ msgid "Outer teeth"
+#~ msgstr "Зовнішні зубці"
+
+#~ msgid "Pencil"
+#~ msgstr "Олівець"
+
+#~ msgid "Pentagon"
+#~ msgstr "П'ятикутник"
+
+#~ msgid "Polygon: 10 sides"
+#~ msgstr "Багатокутник: 10 сторін"
+
+#~ msgid "Polygon: 7 sides"
+#~ msgstr "Багатокутник: 7 сторін"
+
+#~ msgid "Polygon: 8 sides"
+#~ msgstr "Багатокутник: 8 сторін"
+
+#~ msgid "Polygon: 9 sides"
+#~ msgstr "Багатокутник: 9 сторін"
+
+#~ msgid "Shape"
+#~ msgstr "Форма"
+
+#~ msgid "Solid Color"
+#~ msgstr "Суцільний колір"
+
+#~ msgid "Spyrograph"
+#~ msgstr "Спірограф"
+
+#~ msgid "Square"
+#~ msgstr "Квадрат"
+
+#, fuzzy
+#~ msgid "Start angle"
+#~ msgstr "Початковий кут"
+
+#~ msgid "Tool"
+#~ msgstr "Інструмент"
+
+#~ msgid "Triangle"
+#~ msgstr "Трикутник"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Спалах зірки..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Спалах зірки..."
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "Колір спалаху"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "Розмір ефекту (точок * 30)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Зоряне тло..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Зоряне тло..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "Розмір ефекту (точки * 4)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/_Вир..."
+
+#, fuzzy
+#~ msgid "Whirl amount"
+#~ msgstr "Кількість вихрів"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/_Узор..."
+
+#, fuzzy
+#~ msgid "Number of times to whirl"
+#~ msgstr "Кількість повторів для вихру"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "Розмір чверті"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "Кут вихру"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/Слід _частинки..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Слід _частинки..."
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "Основний колір"
+
+#, fuzzy
+#~ msgid "Edge only"
+#~ msgstr "Лише грань"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "Ширина грані"
+
+#, fuzzy
+#~ msgid "Hit rate"
+#~ msgstr "Показник потраплянь"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Текст по колу..."
+
+#~ msgid "Antialias"
+#~ msgstr "Згладжування"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "Заповнити кут"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Скрипт-Фу/Альфа у емблему/_Текстура..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Текстура..."
+
+#, fuzzy
+#~ msgid "Ending blend"
+#~ msgstr "Завершення змішування"
+
+#~ msgid "Hexagons"
+#~ msgstr "Шестикутники"
+
+#, fuzzy
+#~ msgid "Mosaic tile type"
+#~ msgstr "Тип елементу мозаїки"
+
+#~ msgid "Octagons"
+#~ msgstr "Восьмикутники"
+
+#~ msgid "Squares"
+#~ msgstr "Квадрати"
+
+#, fuzzy
+#~ msgid "Starting blend"
+#~ msgstr "Початок змішування"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "Візерунок для тексту"
+
+#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
+#~ msgstr "<Image>/Фільтри/Розмивання/Розмивання _кромки..."
+
+#, fuzzy
+#~ msgid "Blur horizontally"
+#~ msgstr "Розмити горизонтально"
+
+#, fuzzy
+#~ msgid "Blur type"
+#~ msgstr "Тип розмивання"
+
+#, fuzzy
+#~ msgid "Blur vertically"
+#~ msgstr "Розмити вертикально"
+
+#~ msgid "IIR"
+#~ msgstr "IIR"
+
+#~ msgid "RLE"
+#~ msgstr "RLE"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+#~ msgstr "<Image>/Скрипт-Фу/Виділення/У _зображення"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Візерунок"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/Заголовок WWW-сторінки..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Візерунки/Т_руше..."
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "Колір переднього плану"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Скрипт-Фу/Алхімія/_Нерізка маска..."
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "Непрозорість маски"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "Розмір маски"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Скрипт-Фу/Аніматори/_Хвилі..."
+
+#~ msgid "Amplitude"
+#~ msgstr "Амплітуда"
+
+#~ msgid "Invert direction"
+#~ msgstr "Зворотній напрямок"
+
+#~ msgid "Wavelength"
+#~ msgstr "Довжина хвилі"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+#~ msgstr "<Image>/Скрипт-Фу/Алхімія/П_летіння..."
+
+#, fuzzy
+#~ msgid "Ribbon spacing"
+#~ msgstr "Інтервал стрічки"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "Ширина стрічки"
+
+#, fuzzy
+#~ msgid "Shadow darkness"
+#~ msgstr "Темність тіні"
+
+#, fuzzy
+#~ msgid "Shadow depth"
+#~ msgstr "Глибина тіні"
+
+#, fuzzy
+#~ msgid "Thread density"
+#~ msgstr "Щільність нитки"
+
+#, fuzzy
+#~ msgid "Thread intensity"
+#~ msgstr "Інтенсивність нитки"
+
+#, fuzzy
+#~ msgid "Thread length"
+#~ msgstr "Довжина нитки"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/Довідка/Веб/_Реєстр доповнень"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/Довідка/Веб/_Сайт розробників"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+#~ msgstr "<Toolbox>/Довідка/Веб/_Офіційний сайт"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "<Image>/Скрипт-Фу/Тінь/Xach-ефект..."
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "Зсув тіні по X"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "Зсув тіні по Y"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "Радіус розмивання тіні"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "Колір тіні"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "Непрозорість тіні"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "Зсув відблисків по X"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "Зсув відблисків по Y"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "Непрозорість відблисків"
+
+#~ msgid "Transparent Background"
+#~ msgstr "Прозоре тло"
+
+#~ msgid "DB Browser"
+#~ msgstr "Перегляд бази даних..."
+
+#~ msgid "Name:"
+#~ msgstr "Назва:"
+
+#~ msgid "Blurb:"
+#~ msgstr "Анотація:"
+
+#~ msgid "In:"
+#~ msgstr "У:"
+
+#~ msgid "Out:"
+#~ msgstr "З:"
+
+#~ msgid "Help:"
+#~ msgstr "Довідка:"
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
+#~ "                                   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
+#~ "                                 "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                  "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                                 "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "                              "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
+#~ msgstr ""
+#~ "Ефект \"Плавний перехід\" на шар переднього плану (текст) та шар тла; V2.1"
+
+#~ msgid ""
+#~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
+#~ "netword.com/*spyrogimp"
+#~ msgstr ""
+#~ "Малювання спірографів, епітрохоїд. Додаткова інформація доступна на сайті "
+#~ "http://netword.com/*spyrogimp"
+
+#~ msgid ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid "Script-Fu _Console"
+#~ msgstr "Консоль Скрипт-Фу"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Script-Fu"
+#~ msgstr "<Toolbox>/Розш./Скрипт-Фу/Емблеми/_Неон..."
+
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "Потрібно принаймні два шари!"
+
+#~ msgid "<Image>/Script-Fu/Render/_Grid..."
+#~ msgstr "<Image>/Скрипт-Фу/Візуалізація/С_ітка..."
+
+#, fuzzy
+#~ msgid "X divisions"
+#~ msgstr "Горизонталі"
+
+#, fuzzy
+#~ msgid "Y divisions"
+#~ msgstr "Вертикалі"
+
+#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
+#~ msgstr "<Image>/Скрипт-Фу/Утиліти/Побудувати _HSV-графік..."
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "Непрозорість тла"
+
+#~ msgid "End X"
+#~ msgstr "Кінець X"
+
+#~ msgid "End Y"
+#~ msgstr "Кінець Y"
+
+#, fuzzy
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "З верхнього лівого до нижнього правого"
+
+#, fuzzy
+#~ msgid "Graph scale"
+#~ msgstr "Масштаб графіка"
+
+#~ msgid "Start X"
+#~ msgstr "Початок по X"
+
+#~ msgid "Start Y"
+#~ msgstr "Початок по Y"
+
+#, fuzzy
+#~ msgid "Use selection bounds instead of belows"
+#~ msgstr "Використовувати межі виділення"
+
+#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
+#~ msgstr "<Image>/Скрипт-Фу/Утиліти/Показати _структуру зображення..."
+
+#, fuzzy
+#~ msgid "Apply layer mask (or discard)"
+#~ msgstr "Застосувати маску шару (чи відмовитись)"
+
+#, fuzzy
+#~ msgid "Create new image"
+#~ msgstr "Створення нового зображення"
+
+#, fuzzy
+#~ msgid "Insert layer names"
+#~ msgstr "Вставити назви шарів"
+
+#, fuzzy
+#~ msgid "Make new background"
+#~ msgstr "Зробити нове тло"
+
+#, fuzzy
+#~ msgid "Outer border"
+#~ msgstr "Зовнішня рамка"
+
+#, fuzzy
+#~ msgid "Pad color"
+#~ msgstr "Колір заповнення"
+
+#, fuzzy
+#~ msgid "Pad opacity"
+#~ msgstr "Непрозорість заповнення"
+
+#, fuzzy
+#~ msgid "Padding for transparent regions"
+#~ msgstr "Заповнення для прозорих ділянок"
+
+#, fuzzy
+#~ msgid "Shear length"
+#~ msgstr "Довжина зсуву"
+
+#, fuzzy
+#~ msgid "Space between layers"
+#~ msgstr "Інтервал між шарами"
+
+#~ msgid ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "\t\t\t      "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "\t\t\t      "
+
+#~ msgid ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+
+#~ msgid ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t "
+#~ msgstr ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t "
+
+#~ msgid "Unable to open a stream on the SIOD output pipe"
+#~ msgstr "Не вдається відкрити потік на каналі виводу SIOD"
+
+#, fuzzy
+#~ msgid "Blend gradient (sext)"
+#~ msgstr "Градієнт (текст)"

@@ -1,0 +1,2622 @@
+# GIMP Script-Fu Japanese message catalog
+# Copyright (C) 2000,2003 Free Software Foundation, Inc.
+# Shirasaki Yasuhiro <yasuhiro@gnome.gr.jp>, 2000
+# Takashi Kido <yositaka@yd5.so-net.ne.jp>, 2000
+# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+# Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2003-09-12 18:36+0900\n"
+"Last-Translator: Ryoichi INAGAKI <ryo1@bc.wakwak.com>\n"
+"Language-Team: Japanese <translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr "<Toolbox>/拡張/Script-Fu/コンソール(_C)..."
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr "<Toolbox>/拡張/Script-Fu/サーバ(_S)..."
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr "全てのスクリプトを再読み込み"
+
+#: tiny-fu/tiny-fu.c:275
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr "<Toolbox>/拡張/Script-Fu/再読み込み(_R)"
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+#, fuzzy
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr "Script-Fu コンソールモードはインタラクティブ動作しかしません"
+
+#: tiny-fu/tiny-fu-console.c:167
+#, fuzzy
+msgid "Tiny-Fu Console"
+msgstr "Script-Fu コンソール"
+
+#: tiny-fu/tiny-fu-console.c:171
+#, fuzzy
+msgid "_Save Output"
+msgstr "SIOD 出力"
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+#, fuzzy
+msgid "Tiny-Fu Console - "
+msgstr "Script-Fu コンソール"
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr "現在実行しているコマンド"
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr "参照..."
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+#, fuzzy
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr "Script-Fu 評価モードは非インタラクティブ動作しかできません"
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, fuzzy, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"%s\n"
+"実行中に Script-Fu エラー発生\n"
+"%s"
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+#, fuzzy
+msgid "Tiny-Fu Server Options"
+msgstr "Script-Fu サーバオプション"
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr "サーバポート:"
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr "サーバログファイル:"
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#, fuzzy
+msgid "/Tiny-Fu/"
+msgstr "/Script-Fu/"
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, fuzzy, c-format
+msgid "Tiny-Fu: %s"
+msgstr "Script-Fu: %s"
+
+#: tiny-fu/tiny-fu-interface.c:212
+#, fuzzy
+msgid "_About"
+msgstr "このプラグインについて"
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr "スクリプト引数"
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr "%s:"
+
+#: tiny-fu/tiny-fu-interface.c:312
+#, fuzzy
+msgid "Tiny-Fu Color Selection"
+msgstr "Script-Fu 色選択"
+
+#: tiny-fu/tiny-fu-interface.c:418
+#, fuzzy
+msgid "Tiny-Fu File Selection"
+msgstr "Script-Fu ファイル選択"
+
+#: tiny-fu/tiny-fu-interface.c:422
+#, fuzzy
+msgid "Tiny-Fu Folder Selection"
+msgstr "Script-Fu フォルダ選択"
+
+#: tiny-fu/tiny-fu-interface.c:434
+#, fuzzy
+msgid "Tiny-Fu Font Selection"
+msgstr "Script-Fu フォント選択"
+
+#: tiny-fu/tiny-fu-interface.c:441
+#, fuzzy
+msgid "Tiny-Fu Palette Selection"
+msgstr "Script-Fu パターン選択"
+
+#: tiny-fu/tiny-fu-interface.c:449
+#, fuzzy
+msgid "Tiny-Fu Pattern Selection"
+msgstr "Script-Fu パターン選択"
+
+#: tiny-fu/tiny-fu-interface.c:457
+#, fuzzy
+msgid "Tiny-Fu Gradient Selection"
+msgstr "Script-Fu グラデーション選択"
+
+#: tiny-fu/tiny-fu-interface.c:465
+#, fuzzy
+msgid "Tiny-Fu Brush Selection"
+msgstr "Script-Fu ブラシ選択"
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+#, fuzzy
+msgid "Script Progress"
+msgstr "スクリプト引数"
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr "作者:"
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "著作権表示:"
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "日付:"
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr "画像種:"
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#~ msgid "Search by _Name"
+#~ msgstr "名前で検索(_N)"
+
+#~ msgid "Search by _Blurb"
+#~ msgstr "説明で検索(_B)"
+
+#~ msgid "_Search:"
+#~ msgstr "検索(_S):"
+
+#~ msgid "Searching by name - please wait"
+#~ msgstr "名前で検索中 - お待ち下さい"
+
+#~ msgid "Searching by blurb - please wait"
+#~ msgstr "説明で検索中 - お待ち下さい"
+
+#~ msgid "Searching - please wait"
+#~ msgstr "検索中 - お待ちください"
+
+#~ msgid "No matches"
+#~ msgstr "該当なし"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "直径"
+
+#~ msgid "Color"
+#~ msgstr "色"
+
+#~ msgid "Font"
+#~ msgstr "フォント"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "フォントサイズ (ピクセル)"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "文字パターン"
+
+#, fuzzy
+#~ msgid " for directory "
+#~ msgstr "SIOD 出力パイプが開けません"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "インデックス画像"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ユーティリティ/フォントマップ(_F)..."
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "背景色"
+
+#, fuzzy
+#~ msgid "Created "
+#~ msgstr "影を作成"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "SIOD 出力パイプが開けません"
+
+#, fuzzy
+#~ msgid "Sheet "
+#~ msgstr "種"
+
+#, fuzzy
+#~ msgid "Sheet Size"
+#~ msgstr "種"
+
+#~ msgid "Text Color"
+#~ msgstr "文字色"
+
+#, fuzzy
+#~ msgid "Unable to open directory "
+#~ msgstr "SIOD 出力パイプが開けません"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/立体縁取り(_O)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/立体縁取り(_O)..."
+
+#, fuzzy
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "バンプマップ (アルファレイヤーの) ぼかし半径"
+
+#, fuzzy
+#~ msgid "Default bumpmap settings"
+#~ msgstr "標準のバンプマップ設定"
+
+#, fuzzy
+#~ msgid "Font size (pixels)"
+#~ msgstr "フォントサイズ (ピクセル)"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "輪郭ぼかし半径"
+
+#, fuzzy
+#~ msgid "Shadow X offset"
+#~ msgstr "影 X オフセット"
+
+#, fuzzy
+#~ msgid "Shadow Y offset"
+#~ msgstr "影 Y オフセット"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "影ぼかし半径"
+
+#~ msgid "Text"
+#~ msgstr "文字"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/立体曲線タイル(_D)..."
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "ブロックサイズ"
+
+#, fuzzy
+#~ msgid "End blend"
+#~ msgstr "ブレンド終了色"
+
+#, fuzzy
+#~ msgid "Number of X tiles"
+#~ msgstr "X タイルの数"
+
+#, fuzzy
+#~ msgid "Number of Y tiles"
+#~ msgstr "Y タイルの数"
+
+#, fuzzy
+#~ msgid "Start blend"
+#~ msgstr "ブレンド開始色"
+
+#~ msgid "Supersample"
+#~ msgstr "スーパーサンプル"
+
+#~ msgid "Thickness"
+#~ msgstr "厚さ"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Script-Fu/装飾/ベベル追加(_E)..."
+
+#, fuzzy
+#~ msgid "Keep bump layer"
+#~ msgstr "バンプマップ画像を残す"
+
+#, fuzzy
+#~ msgid "Work on copy"
+#~ msgstr "コピーで作業する"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Script-Fu/装飾/枠追加(_B)..."
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "枠 X サイズ"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "枠 Y サイズ"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "枠の色"
+
+#, fuzzy
+#~ msgid "Delta value on color"
+#~ msgstr "色の三角値"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/エイリアン発光/矢印(_A)..."
+
+#~ msgid "Down"
+#~ msgstr "下"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "画像統合"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "発光色"
+
+#~ msgid "Left"
+#~ msgstr "左"
+
+#~ msgid "Orientation"
+#~ msgstr "方向"
+
+#~ msgid "Right"
+#~ msgstr "右"
+
+#~ msgid "Size"
+#~ msgstr "サイズ"
+
+#~ msgid "Up"
+#~ msgstr "上"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/エイリアン発光/水平線(_H)..."
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "棒の高さ"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "棒の長さ"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/エイリアン発光/小球(_B)..."
+
+#~ msgid "Radius"
+#~ msgstr "半径"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-ADJUSTMENT _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-ADJUSTMENT _"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/エイリアン発光/ボタン(_U)..."
+
+#, fuzzy
+#~ msgid "Glow radius"
+#~ msgstr "発光半径"
+
+#~ msgid "Padding"
+#~ msgstr "空間"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "文字色"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "    SF-COLOR      _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-COLOR      _"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/エイリアン発光(_G)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/エイリアン発光(_G)..."
+
+#, fuzzy
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "発光サイズ (ピクセル * 4)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/エイリアンネオン(_N)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/エイリアンネオン(_N)..."
+
+#, fuzzy
+#~ msgid "Fade away"
+#~ msgstr "次第にぼかす"
+
+#, fuzzy
+#~ msgid "Number of bands"
+#~ msgstr "帯数"
+
+#, fuzzy
+#~ msgid "Width of bands"
+#~ msgstr "帯幅"
+
+#, fuzzy
+#~ msgid "Width of gaps"
+#~ msgstr "隙間幅"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+#~ msgstr "<Image>/Script-Fu/ユーティリティ/ASCII を画像レイヤーに..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ユーティリティ/ASCII を画像に(_A)..."
+
+#, fuzzy
+#~ msgid "Buffer amount (% height of text)"
+#~ msgstr "バッファ量 (% 文字の高さ)"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "ファイル名"
+
+#~ msgid "Filename"
+#~ msgstr "ファイル名"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "透過背景"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/基本 I(_B)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/基本 I(_B)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/基本 II(_A)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/基本 II(_A)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ボタン/単純面取りボタン(_B)..."
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "ベベル幅"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "右下の色"
+
+#~ msgid "Pressed"
+#~ msgstr "押した時"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "左上色"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/面取りパターン/矢印(_A)..."
+
+#~ msgid "Pattern"
+#~ msgstr "パターン"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/面取りパターン/小球(_B)..."
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "直径"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/面取りパターン/ボタン(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/面取りパターン/見出し(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/面取りパターン/水平線(_H)..."
+
+#~ msgid "Height"
+#~ msgstr "高さ"
+
+#~ msgid "Width"
+#~ msgstr "幅"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+#~ msgstr "<Image>/Script-Fu/動画/ブレンド(_B)..."
+
+#, fuzzy
+#~ msgid "Intermediate frames"
+#~ msgstr "中間生成フレーム"
+
+#~ msgid "Looped"
+#~ msgstr "ループ化"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "最大ぼかし半径"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/ブレンド(_D)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/ブレンド(_D)..."
+
+#, fuzzy
+#~ msgid "Blend mode"
+#~ msgstr "ブレンドモード"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "カスタムグラデーション"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "描画色-背景色-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "描画色-背景色-RGB"
+
+#~ msgid "FG-Transparent"
+#~ msgstr "描画色-透明"
+
+#~ msgid "Gradient"
+#~ msgstr "グラデーション"
+
+#, fuzzy
+#~ msgid "Gradient reverse"
+#~ msgstr "グラデーションの反転"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "オフセット (ピクセル)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/牛模様(_V)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/牛模様(_V)..."
+
+#~ msgid "Background Color"
+#~ msgstr "背景色"
+
+#~ msgid "Spots density X"
+#~ msgstr "斑点密度 X"
+
+#~ msgid "Spots density Y"
+#~ msgstr "斑点密度 Y"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Script-Fu/動画/ブレンド(_B)..."
+
+#, fuzzy
+#~ msgid "Add glowing"
+#~ msgstr "発光を追加"
+
+#, fuzzy
+#~ msgid "After glow"
+#~ msgstr "発光の残像"
+
+#, fuzzy
+#~ msgid ""
+#~ "Burn-In: Needs two layers in total!\n"
+#~ "A foreground text layer with transparency and a background layer."
+#~ msgstr ""
+#~ "Burn-In: 全部で 2 つのレイヤーが必要です!\n"
+#~ "         透明度のある前景のテキストレイヤーと\n"
+#~ "         背景レイヤーが必要になります."
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "コロナの幅"
+
+#~ msgid "Fadeout"
+#~ msgstr "フェイドアウト"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "フェイドアウトの幅"
+
+#~ msgid "Prepare for GIF"
+#~ msgstr "GIF向けに下準備する"
+
+#~ msgid "Speed (pixels/frame)"
+#~ msgstr "速さ(ピクセル/フレーム)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/迷彩(_C)..."
+
+#~ msgid "Color 1"
+#~ msgstr "色 1"
+
+#~ msgid "Color 2"
+#~ msgstr "色 2"
+
+#~ msgid "Color 3"
+#~ msgstr "色 3"
+
+#~ msgid "Granularity"
+#~ msgstr "粒状度"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "画像サイズ"
+
+#~ msgid "Smooth"
+#~ msgstr "滑らか"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/彫刻..."
+
+#~ msgid "Background Image"
+#~ msgstr "背景画像"
+
+#, fuzzy
+#~ msgid "Carve raised text"
+#~ msgstr "文字を浮き彫りにして彫刻化"
+
+#, fuzzy
+#~ msgid "Padding around text"
+#~ msgstr "文字周りの空間"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+#~ msgstr "<Image>/Script-Fu/ステンシル操作/彫刻化(_A)..."
+
+#, fuzzy
+#~ msgid "Carve white areas"
+#~ msgstr "白い部分を彫刻化"
+
+#, fuzzy
+#~ msgid "Image to carve"
+#~ msgstr "彫刻化する画像"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/チョーク(_C)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/チョーク(_C)..."
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "チョークの色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/かじり取り(_Y)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/かじり取り(_Y)..."
+
+#, fuzzy
+#~ msgid "Blur amount"
+#~ msgstr "ぼかす量"
+
+#, fuzzy
+#~ msgid "Chip amount"
+#~ msgstr "切り欠け量"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "ドロップシャドウ"
+
+#, fuzzy
+#~ msgid "Fill BG with pattern"
+#~ msgstr "背景をパターンで塗りつぶす"
+
+#~ msgid "Invert"
+#~ msgstr "反転"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "背景を残す"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Script-Fu/ステンシル操作/クロームメタル化(_H)..."
+
+#, fuzzy
+#~ msgid "Chrome balance"
+#~ msgstr "クロームバランス"
+
+#, fuzzy
+#~ msgid "Chrome factor"
+#~ msgstr "クローム率"
+
+#, fuzzy
+#~ msgid "Chrome lightness"
+#~ msgstr "クローム明度"
+
+#, fuzzy
+#~ msgid "Chrome saturation"
+#~ msgstr "クローム色相"
+
+#, fuzzy
+#~ msgid "Chrome white areas"
+#~ msgstr "白い部分をクローム化"
+
+#, fuzzy
+#~ msgid "Environment map"
+#~ msgstr "環境マップ"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "ハイライトバランス"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/クローム(_H)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/クローム(_H)..."
+
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "オフセット (ピクセル * 2)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Script-Fu/下塗り/回路(_C)..."
+
+#, fuzzy
+#~ msgid "Circuit seed"
+#~ msgstr "回路種"
+
+#, fuzzy
+#~ msgid "Keep selection"
+#~ msgstr "選択領域を残す"
+
+#, fuzzy
+#~ msgid "No background (only for separate layer)"
+#~ msgstr "背景なし (レイヤーを分けるだけ)"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "油絵化マスクサイズ"
+
+#, fuzzy
+#~ msgid "Separate layer"
+#~ msgstr "レイヤーに分ける"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Script-Fu/魔術/覆布化(_C)..."
+
+#~ msgid "Azimuth"
+#~ msgstr "方向"
+
+#~ msgid "Blur X"
+#~ msgstr "ぼかし X"
+
+#~ msgid "Blur Y"
+#~ msgstr "ぼかし Y"
+
+#~ msgid "Depth"
+#~ msgstr "深さ"
+
+#~ msgid "Elevation"
+#~ msgstr "高度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Script-Fu/装飾/コーヒーの染み(_C)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "暗いところのみ\n"
+#~ "(画像に白い部分がたくさんある場合のみ, 好ましい)"
+
+#~ msgid "Stains"
+#~ msgstr "しみ数"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/コミック本(_K)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/コミック本(_K)..."
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "輪郭色"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "輪郭サイズ"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/冷たい金属(_M)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/冷たい金属(_M)..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels)"
+#~ msgstr "効果サイズ (ピクセル)"
+
+#, fuzzy
+#~ msgid "<Image>/Edit/Copy/Copy _Visible"
+#~ msgstr "<Image>/編集/見えている物をコピー(_V)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/水晶..."
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "背景画像"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+#~ msgstr "<Image>/Script-Fu/選択/ふらふら選択(_D)..."
+
+#, fuzzy
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "粒状度 (1 が最低)"
+
+#, fuzzy
+#~ msgid "Smooth horizontally"
+#~ msgstr "水平に滑らか"
+
+#, fuzzy
+#~ msgid "Smooth vertically"
+#~ msgstr "垂直に滑らか"
+
+#~ msgid "Spread"
+#~ msgstr "拡散"
+
+#, fuzzy
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "しきい値 (大きい 1<-->255 小さい)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Script-Fu/影/影付け(_D)..."
+
+#, fuzzy
+#~ msgid "Allow resizing"
+#~ msgstr "画像サイズ変更可"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "ぼかし半径"
+
+#~ msgid "Offset X"
+#~ msgstr "オフセット X"
+
+#~ msgid "Offset Y"
+#~ msgstr "オフセット Y"
+
+#~ msgid "Opacity"
+#~ msgstr "不透明度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+#~ msgstr "<Image>/Script-Fu/魔術/一行おきに消す(_E)..."
+
+#~ msgid "Columns"
+#~ msgstr "列"
+
+#~ msgid "Erase"
+#~ msgstr "消す"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "消す/塗りつぶす"
+
+#~ msgid "Even"
+#~ msgstr "偶数"
+
+#, fuzzy
+#~ msgid "Even/odd"
+#~ msgstr "偶数/奇数"
+
+#~ msgid "Fill with BG"
+#~ msgstr "背景色で塗りつぶす"
+
+#~ msgid "Odd"
+#~ msgstr "奇数"
+
+#~ msgid "Rows"
+#~ msgstr "行"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "行/列"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Script-Fu/選択/フェード化(_F)..."
+
+#, fuzzy
+#~ msgid "Apply generated layermask"
+#~ msgstr "生成したレイヤーマスクを適用"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "枠の大きさ"
+
+#, fuzzy
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "非選択マスク領域を消去する"
+
+#, fuzzy
+#~ msgid "Fade from %"
+#~ msgstr "フェード開始 %"
+
+#, fuzzy
+#~ msgid "Fade to   %"
+#~ msgstr "フェード終了 %"
+
+#, fuzzy
+#~ msgid "Use growing selection"
+#~ msgstr "拡大した選択領域の使用"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/平野地形図(_F)..."
+
+#, fuzzy
+#~ msgid "Detail level"
+#~ msgstr "詳細度"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "画像高さ"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "画像幅"
+
+#, fuzzy
+#~ msgid "Random seed"
+#~ msgstr "ランダム種"
+
+#~ msgid "Scale X"
+#~ msgstr "X 拡大縮小"
+
+#~ msgid "Scale Y"
+#~ msgstr "Y 拡大縮小"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ユーティリティ/フォントマップ(_F)..."
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "輪郭色"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "背景画像"
+
+#, fuzzy
+#~ msgid "Font _size (pixels)"
+#~ msgstr "フォントサイズ (ピクセル)"
+
+#, fuzzy
+#~ msgid "Use font _name as text"
+#~ msgstr "テキストにフォント名を使う"
+
+#, fuzzy
+#~ msgid "_Border (pixels)"
+#~ msgstr "枠の大きさ (ピクセル)"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "色 3"
+
+#, fuzzy
+#~ msgid "_Filter (regexp)"
+#~ msgstr "フィルタ (正規表現)"
+
+#, fuzzy
+#~ msgid "_Labels"
+#~ msgstr "ラベル"
+
+#, fuzzy
+#~ msgid "_Text"
+#~ msgstr "文字"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/霜(_F)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/霜(_F)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Script-Fu/装飾/ファジー縁取り(_F)..."
+
+#, fuzzy
+#~ msgid "Add shadow"
+#~ msgstr "影を付ける"
+
+#, fuzzy
+#~ msgid "Blur border"
+#~ msgstr "枠をぼかす"
+
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "粒状度 (1 が最低)"
+
+#, fuzzy
+#~ msgid "Shadow weight (%)"
+#~ msgstr "影の幅 (%)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/Web ページテーマ/Gimp.Org/大見出し(_B)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/Web ページテーマ/Gimp.Org/小見出し(_S)..."
+
+#, fuzzy
+#~ msgid "Autocrop"
+#~ msgstr "自動切り抜き"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "ダーク色"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "ハイライト色"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "インデックス画像"
+
+#, fuzzy
+#~ msgid "Number of colors"
+#~ msgstr "色数"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "背景消去"
+
+#, fuzzy
+#~ msgid "Select-by-color threshold"
+#~ msgstr "色による選択の閾値"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "影の色"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/Gimp.Org/管副ボタンラベル(_U)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/Gimp.Org/管副々ボタンラベル"
+#~ "(_E)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/Gimp.Org/汎用管ラベル(_G)..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/Web ページテーマ/Gimp.Org/管ボタンラベル(_T)..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/光沢(_S)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/光沢(_S)..."
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "ブレンドグラデーション (文字)"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "ブレンドグラデーション (輪郭)"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "ブレンドグラデーション (文字)"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "輪郭グラデーションの反転"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "パターン (輪郭)"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "パターン (オーバーレイ)"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "パターン (文字)"
+
+#~ msgid "Shadow"
+#~ msgstr "影"
+
+#, fuzzy
+#~ msgid "Text gradient reverse"
+#~ msgstr "テキストグラデーションの反転"
+
+#, fuzzy
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "グラデーションの代わりにパターンを輪郭に使う"
+
+#, fuzzy
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "グラデーションの代わりにパターンを文字に使う"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "パターンをオーバーレイで使う"
+
+#, fuzzy
+#~ msgid "Use tattern for outline instead of gradient"
+#~ msgstr "グラデーションの代わりにパターンを輪郭に使う"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/白熱の輝き(_W)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/白熱の輝き(_W)..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "効果サイズ (ピクセル * 3)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/グラデーション面取り(_L)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/グラデーション面取り(_L)..."
+
+#, fuzzy
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "ベベルの高さ (鋭さ)"
+
+#, fuzzy
+#~ msgid "Border size (pixels)"
+#~ msgstr "枠の大きさ (ピクセル)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr ""
+#~ "<Toolbox>/拡張/Script-Fu/ユーティリティ/カスタムグラデーション(_G)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/ぐにゃぐにゃ..."
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "枠の色"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "枠サイズ"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/地形図(_L)..."
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "島の高さ"
+
+#, fuzzy
+#~ msgid "Sea depth"
+#~ msgstr "海の深さ"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Script-Fu/下塗り/溶岩(_L)..."
+
+#~ msgid "Roughness"
+#~ msgstr "荒さ"
+
+#~ msgid "Seed"
+#~ msgstr "種"
+
+#, fuzzy
+#~ msgid "Use current gradient"
+#~ msgstr "カレントグラデーションを使う"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Script-Fu/下塗り/集中線(_N)..."
+
+#, fuzzy
+#~ msgid "Number of lines"
+#~ msgstr "線数"
+
+#, fuzzy
+#~ msgid "Offset radius"
+#~ msgstr "オフセット半径"
+
+#~ msgid "Randomness"
+#~ msgstr "複雑度"
+
+#~ msgid "Sharpness (degrees)"
+#~ msgstr "鋭さ (角度)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ブラシ作成/ぼけた楕円形(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ブラシ作成/ぼけた矩形(_C)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ブラシ作成/楕円形(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ブラシ作成/矩形(_R)..."
+
+#~ msgid "Description"
+#~ msgstr "説明"
+
+#~ msgid "Feathering"
+#~ msgstr "ぼかし"
+
+#~ msgid "Spacing"
+#~ msgstr "間隔"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/ネオン(_E)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/ネオン(_E)..."
+
+#, fuzzy
+#~ msgid "Create shadow"
+#~ msgstr "影を作成"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "効果サイズ (ピクセル * 5)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/新聞印刷..."
+
+#, fuzzy
+#~ msgid "Cell size (pixels)"
+#~ msgstr "セルサイズ (ピクセル)"
+
+#~ msgid "Density (%)"
+#~ msgstr "密度 (%)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Script-Fu/装飾/古い写真(_O)..."
+
+#~ msgid "Defocus"
+#~ msgstr "ピンぼけ"
+
+#~ msgid "Mottle"
+#~ msgstr "まだら状"
+
+#~ msgid "Sepia"
+#~ msgstr "セピア色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Script-Fu/影/遠近法(_P)..."
+
+#~ msgid "Angle"
+#~ msgstr "角度"
+
+#~ msgid "Interpolate"
+#~ msgstr "補間"
+
+#, fuzzy
+#~ msgid "Relative distance of horizon"
+#~ msgstr "地平線の相対的な距離"
+
+#, fuzzy
+#~ msgid "Relative length of shadow"
+#~ msgstr "影の相対的な長さ"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Script/魔術/プレデター(_P)..."
+
+#, fuzzy
+#~ msgid "Edge amount"
+#~ msgstr "エッジ量"
+
+#, fuzzy
+#~ msgid "Pixel amount"
+#~ msgstr "ピクセル量"
+
+#~ msgid "Pixelize"
+#~ msgstr "ピクセル化"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ボタン/丸ボタン(_R)..."
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "下の色"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "下の色 (アクティブ)"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "押さない時"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "押さない時 (アクティブ)"
+
+#~ msgid "Padding X"
+#~ msgstr "空間 X"
+
+#~ msgid "Padding Y"
+#~ msgstr "空間 Y"
+
+#, fuzzy
+#~ msgid "Round ratio"
+#~ msgstr "円形比率"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "文字色 (アクティブ)"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "上の色"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "上の色 (アクティブ)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/地図(_M)..."
+
+#~ msgid "Behaviour"
+#~ msgstr "振るまい"
+
+#~ msgid "Detail in Middle"
+#~ msgstr "中央を詳しく"
+
+#~ msgid "Tile"
+#~ msgstr "タイル状"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Script-Fu/動画/波紋(_R)..."
+
+#~ msgid "Black"
+#~ msgstr "黒くする"
+
+#, fuzzy
+#~ msgid "Edge behaviour"
+#~ msgstr "縁の処理"
+
+#, fuzzy
+#~ msgid "Number of frames"
+#~ msgstr "コマ数"
+
+#, fuzzy
+#~ msgid "Rippling strength"
+#~ msgstr "波状強度"
+
+#~ msgid "Smear"
+#~ msgstr "こする"
+
+#~ msgid "Wrap"
+#~ msgstr "折り返す"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+#~ msgstr "<Image>/Script-Fu/装飾/角丸め(_R)..."
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "背景追加"
+
+#, fuzzy
+#~ msgid "Add drop-shadow"
+#~ msgstr "影を落す"
+
+#, fuzzy
+#~ msgid "Edge radius"
+#~ msgstr "縁どり半径"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
+#~ msgstr "<Image>/Script-Fu/選択/丸める(_R)..."
+
+#, fuzzy
+#~ msgid "Relative radius"
+#~ msgstr "相対的な半径"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Script-Fu/選択/ブラシ化(_B)..."
+
+#, fuzzy
+#~ msgid "Brush name"
+#~ msgstr "ブラシの名前"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
+#~ msgstr "<Image>/Script-Fu/選択/画像化(_I)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Script-Fu/選択/ブラシ化(_B)..."
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "パターン"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+#~ msgstr "<Image>/Script-Fu/装飾/スライド化(_S)..."
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "フォント色"
+
+#~ msgid "Number"
+#~ msgstr "数"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/SOTA クローム..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/スピード文字..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/その他/球(_S)..."
+
+#~ msgid "Lighting (degrees)"
+#~ msgstr "照明 (角度)"
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "半径 (ピクセル)"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "球体色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Script-Fu/動画/回転球(_S)..."
+
+#~ msgid "Frames"
+#~ msgstr "コマ数"
+
+#, fuzzy
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "n 色にインデックス化 (0 = RGB のまま)"
+
+#, fuzzy
+#~ msgid "Turn from left to right"
+#~ msgstr "左から右に回転"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Script-Fu/下塗り/格子(_G)..."
+
+#~ msgid "Airbrush"
+#~ msgstr "エアブラシ"
+
+#~ msgid "Brush"
+#~ msgstr "ブラシ"
+
+#~ msgid "Circle"
+#~ msgstr "円"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "色の塗り方"
+
+#~ msgid "Epitrochoid"
+#~ msgstr "外トロコイド"
+
+#~ msgid "Frame"
+#~ msgstr "画面"
+
+#~ msgid "Gradient: Loop Sawtooth"
+#~ msgstr "グラデーション: ノコギリ歯のループ"
+
+#~ msgid "Gradient: Loop Triangle"
+#~ msgstr "グラデーション: 三角形のループ"
+
+#~ msgid "Hexagon"
+#~ msgstr "六角形"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "穴の変化率"
+
+#, fuzzy
+#~ msgid "Inner teeth"
+#~ msgstr "内枠"
+
+#~ msgid "Lissajous"
+#~ msgstr "リサージュ図形"
+
+#~ msgid "Margin (pixels)"
+#~ msgstr "マージン (ピクセル)"
+
+#, fuzzy
+#~ msgid "Outer teeth"
+#~ msgstr "外枠"
+
+#~ msgid "Pencil"
+#~ msgstr "鉛筆"
+
+#~ msgid "Pentagon"
+#~ msgstr "五角形"
+
+#~ msgid "Polygon: 10 sides"
+#~ msgstr "十角形"
+
+#~ msgid "Polygon: 7 sides"
+#~ msgstr "七角形"
+
+#~ msgid "Polygon: 8 sides"
+#~ msgstr "八角形"
+
+#~ msgid "Polygon: 9 sides"
+#~ msgstr "九角形"
+
+#~ msgid "Shape"
+#~ msgstr "形"
+
+#~ msgid "Solid Color"
+#~ msgstr "単色"
+
+#~ msgid "Spyrograph"
+#~ msgstr "Spyrograph"
+
+#~ msgid "Square"
+#~ msgstr "四角形"
+
+#, fuzzy
+#~ msgid "Start angle"
+#~ msgstr "開始角度"
+
+#~ msgid "Tool"
+#~ msgstr "道具"
+
+#~ msgid "Triangle"
+#~ msgstr "三角形"
+
+#~ msgid "Type"
+#~ msgstr "種類"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/超新星爆発(_U)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/超新星爆発(_U)..."
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "爆発色"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "効果サイズ (ピクセル * 30)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/星のきらめき(_R)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/星のきらめき(_R)..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "効果サイズ (ピクセル * 4)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/渦巻タイル(_T)..."
+
+#, fuzzy
+#~ msgid "Whirl amount"
+#~ msgstr "回転量"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/渦巻タイル(_T)..."
+
+#, fuzzy
+#~ msgid "Number of times to whirl"
+#~ msgstr "回転数"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "4 分の 1 サイズ"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "回転角"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/粒子の軌跡(_P)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/粒子の軌跡(_P)..."
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "基本色"
+
+#, fuzzy
+#~ msgid "Edge only"
+#~ msgstr "縁だけ"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "縁の幅"
+
+#, fuzzy
+#~ msgid "Hit rate"
+#~ msgstr "ヒット率"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/文字円..."
+
+#~ msgid "Antialias"
+#~ msgstr "アンチエイリアス"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "充てん角度"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Script-Fu/透明度をロゴに/テクスチャ(_T)..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/テクスチャ(_T)..."
+
+#, fuzzy
+#~ msgid "Ending blend"
+#~ msgstr "ブレンド終了色"
+
+#~ msgid "Hexagons"
+#~ msgstr "六角形"
+
+#, fuzzy
+#~ msgid "Mosaic tile type"
+#~ msgstr "モザイクタイル型"
+
+#~ msgid "Octagons"
+#~ msgstr "八角形"
+
+#~ msgid "Squares"
+#~ msgstr "四角形"
+
+#, fuzzy
+#~ msgid "Starting blend"
+#~ msgstr "ブレンド開始色"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "文字パターン"
+
+#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
+#~ msgstr "<Image>/フィルタ/ぼかし/タイル化可能ぼかし(_T)..."
+
+#, fuzzy
+#~ msgid "Blur horizontally"
+#~ msgstr "水平ぼかし"
+
+#, fuzzy
+#~ msgid "Blur type"
+#~ msgstr "ぼかしタイプ"
+
+#, fuzzy
+#~ msgid "Blur vertically"
+#~ msgstr "垂直ぼかし"
+
+#~ msgid "IIR"
+#~ msgstr "IIR"
+
+#~ msgid "RLE"
+#~ msgstr "RLE"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+#~ msgstr "<Image>/Script-Fu/選択/画像化(_I)"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "パターン"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/Web タイトル見出し..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/曲線タイル(_R)..."
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "描画色"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Script-Fu/魔術/非シャープ化マスク(_U)..."
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "マスク不透明度"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "マスクサイズ"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Script-Fu/動画/波(_W)..."
+
+#~ msgid "Amplitude"
+#~ msgstr "強さ"
+
+#~ msgid "Invert direction"
+#~ msgstr "方向を反転"
+
+#~ msgid "Wavelength"
+#~ msgstr "波長"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+#~ msgstr "<Image>/Script-Fu/魔術/織物(_W)..."
+
+#, fuzzy
+#~ msgid "Ribbon spacing"
+#~ msgstr "帯間隔"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "帯幅"
+
+#, fuzzy
+#~ msgid "Shadow darkness"
+#~ msgstr "影の暗さ"
+
+#, fuzzy
+#~ msgid "Shadow depth"
+#~ msgstr "影の深さ"
+
+#, fuzzy
+#~ msgid "Thread density"
+#~ msgstr "糸密度"
+
+#, fuzzy
+#~ msgid "Thread intensity"
+#~ msgstr "糸強度"
+
+#, fuzzy
+#~ msgid "Thread length"
+#~ msgstr "糸の長さ"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/プラグイン登録所"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/プラグイン登録所"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/プラグイン登録所"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "<Image>/Script-Fu/影/Xach 効果(_X)..."
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "ドロップシャドウ X オフセット"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "ドロップシャドウ Y オフセット"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "ドロップシャドウぼかし半径"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "ドロップシャドウ色"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "ドロップシャドウ不透明度"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "ハイライト X オフセット"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "ハイライト Y オフセット"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "ハイライト不透明度"
+
+#~ msgid "Transparent Background"
+#~ msgstr "透過背景"
+
+#~ msgid "DB Browser"
+#~ msgstr "DB ブラウザ"
+
+#~ msgid "Name:"
+#~ msgstr "名称:"
+
+#~ msgid "Blurb:"
+#~ msgstr "説明:"
+
+#~ msgid "In:"
+#~ msgstr "入力:"
+
+#~ msgid "Out:"
+#~ msgstr "出力:"
+
+#~ msgid "Help:"
+#~ msgstr "ヘルプ:"
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
+#~ "                                   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
+#~ "                                 "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                  "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "        (filename (string-append data-dir\n"
+#~ "                                 "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "                              "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "               "
+
+#~ msgid ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (filename (string-append data-dir\n"
+#~ "               "
+
+#, fuzzy
+#~ msgid "Script-Fu _Console"
+#~ msgstr "Script-Fu コンソール"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Script-Fu"
+#~ msgstr "<Toolbox>/拡張/Script-Fu/ロゴ/ネオン(_E)..."
+
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "通電テスト: 二つのレイヤーが必要です!"
+
+#~ msgid "<Image>/Script-Fu/Render/_Grid..."
+#~ msgstr "<Image>/Script-Fu/下塗り/格子(_G)..."
+
+#, fuzzy
+#~ msgid "X divisions"
+#~ msgstr "X 分割数"
+
+#, fuzzy
+#~ msgid "Y divisions"
+#~ msgstr "Y 分割数"
+
+#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
+#~ msgstr "<Image>/Script-Fu/ユーティリティ/HSV グラフ描画(_H)..."
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "背景不透明度"
+
+#~ msgid "End X"
+#~ msgstr "終了 X"
+
+#~ msgid "End Y"
+#~ msgstr "終了 Y"
+
+#, fuzzy
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "左上から右下へ"
+
+#, fuzzy
+#~ msgid "Graph scale"
+#~ msgstr "グラフ寸法"
+
+#~ msgid "Start X"
+#~ msgstr "開始 X"
+
+#~ msgid "Start Y"
+#~ msgstr "開始 Y"
+
+#, fuzzy
+#~ msgid "Use selection bounds instead of belows"
+#~ msgstr "以下の設定ではなく選択領域を使用する"
+
+#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
+#~ msgstr "<Image>/Script-Fu/ユーティリティ/画像構造表示(_S)..."
+
+#, fuzzy
+#~ msgid "Apply layer mask (or discard)"
+#~ msgstr "レイヤーマスク適用 (or 破棄)"
+
+#, fuzzy
+#~ msgid "Create new image"
+#~ msgstr "新規画像を作成"
+
+#, fuzzy
+#~ msgid "Insert layer names"
+#~ msgstr "レイヤー名の挿入"
+
+#, fuzzy
+#~ msgid "Make new background"
+#~ msgstr "新規背景を作成"
+
+#, fuzzy
+#~ msgid "Outer border"
+#~ msgstr "外枠"
+
+#, fuzzy
+#~ msgid "Pad color"
+#~ msgstr "空間の色"
+
+#, fuzzy
+#~ msgid "Pad opacity"
+#~ msgstr "空間の不透明度"
+
+#, fuzzy
+#~ msgid "Padding for transparent regions"
+#~ msgstr "透明な領域のための空間"
+
+#, fuzzy
+#~ msgid "Shear length"
+#~ msgstr "刈り取る長さ"
+
+#, fuzzy
+#~ msgid "Space between layers"
+#~ msgstr "レイヤー間の間隔"
+
+#~ msgid ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "\t\t\t      "
+#~ msgstr ""
+#~ ")))\n"
+#~ "     (filename (string-append data-dir\n"
+#~ "\t\t\t      "
+
+#~ msgid ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+
+#, fuzzy
+#~ msgid ""
+#~ ")))\n"
+#~ "  (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t "
+#~ msgstr ""
+#~ ")))\n"
+#~ "    (set! filename2 (string-append data-dir\n"
+#~ "\t\t\t\t   "
+
+#~ msgid "Unable to open a stream on the SIOD output pipe"
+#~ msgstr "SIOD 出力パイプ上のストリームが開けません"
+
+#, fuzzy
+#~ msgid "Blend gradient (sext)"
+#~ msgstr "ブレンドグラデーション (文字)"
+
+#~ msgid "<Toolbox>/Xtns/Script-Fu/Patterns/_Swirly (tileable)..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/渦巻 (タイル化可能)(_S)..."
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Developer FAQ"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/開発者向け FAQ"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Bugs"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP のバグ"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Manual"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP マニュアル"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP News"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP ニュース"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Tutorials"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP チュートリアル"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Documenation"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/関連文書"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Download"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/ダウンロード"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/GIMP Art"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/GIMP 利用作品"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/GTK"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/GTK"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Links"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/リンク"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Mailing Lists"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/メーリングリスト"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Resources"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/リソース"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/The GIMP"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP.ORG/GIMP"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Gimp-Savvy.com"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP-Savvy.com"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Grokking the GIMP"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/GIMP を理解しよう"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/User FAQ"
+#~ msgstr "<Toolbox>/拡張/Web ブラウザ/利用者向け FAQ"
+
+#~ msgid "Border"
+#~ msgstr "枠"
+
+#~ msgid "Fonts"
+#~ msgstr "フォント"
+
+#~ msgid "<Image>/Script-Fu/Render/Make Grid System..."
+#~ msgstr "<Image>/Script-Fu/下塗り/格子作成..."
+
+#~ msgid "Grids X"
+#~ msgstr "格子 X"
+
+#~ msgid "Grids Y"
+#~ msgstr "格子 Y"
+
+#~ msgid "<Toolbox>/Xtns/Script-Fu/Patterns/Trochoid..."
+#~ msgstr "<Toolbox>/拡張/Script-Fu/パターン/トロコイド曲線..."
+
+#~ msgid "Base Radius (pixels)"
+#~ msgstr "基本半径 (ピクセル)"
+
+#~ msgid "Erase before Draw"
+#~ msgstr "描く前に消去する"
+
+#~ msgid "Pen Rad. / Wheel Rad. [0.0:1.0]"
+#~ msgstr "囲い率 / 輪っか率 [0.0:1.0]"
+
+#~ msgid "Wheel Radius (hypo < 0 < epi)"
+#~ msgstr "輪半径 (hypo < 0 < epi)"
+
+#~ msgid ""
+#~ "At least one font you've choosen is invalid.\n"
+#~ "Please check your settings.\n"
+#~ msgstr ""
+#~ "少なくとも選択したフォント中に一つ以上\n"
+#~ "不正なものがあります.設定を確認して下さい.\n"
+
+#~ msgid "<Image>/Script-Fu/Animators/Selection to AnimImage..."
+#~ msgstr "<Image>/Script-Fu/動画/選択領域を動画画像化..."
+
+#~ msgid "Anim-Filter for all Copies"
+#~ msgstr "全てのコピーに動画フィルタ適用"
+
+#~ msgid "Fill with BG Color"
+#~ msgstr "背景色で塗りつぶす"
+
+#~ msgid "Number of Copies"
+#~ msgstr "コピー回数"
+
+#~ msgid "DB Browser (init...)"
+#~ msgstr "DB ブラウザ (初期化しています...)"
+
+#~ msgid "DB Browser (please wait)"
+#~ msgstr "DB ブラウザ (お待ち下さい)"
+
+#~ msgid "Reset to Defaults"
+#~ msgstr "初期値に戻す"
+
+#, fuzzy
+#~ msgid "Script-Fu Directory Selection"
+#~ msgstr "Script-Fu ファイル選択"
+
+#~ msgid "NOT SET"
+#~ msgstr "未指定"
+
+#~ msgid "Close"
+#~ msgstr "閉じる"
+
+#~ msgid "OK"
+#~ msgstr "了解"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"

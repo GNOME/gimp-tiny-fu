@@ -1,0 +1,508 @@
+2004-10-02 Kevin Cozens <kcozens at interlog.com>
+
+	Released a new tarball as version 0.9.3
+
+	* plug-ins/tiny-fu/scripts/*.sct: Updated all scripts to conform to
+	the current PDB API.
+
+2004-10-01 Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: increased size of
+	strbuff[] in scheme struct to handle scripts with lots of help info.
+
+2004-10-01 Kevin Cozens <kcozens at interlog.com>
+
+	Updates based on Script-Fu changes made by Michael Natterer.
+
+	* plug-ins/tiny-fu/tiny-fu-types.h (struct SFScript): renamed
+	member "description" to "menu_path".
+
+	* plug-ins/tiny-fu/tiny-fu-interface.c: changed accordingly.
+
+	* plug-ins/tiny-fu/tiny-fu-scripts.c: ditto. Don't pass the
+	menu_path as "blurb" to gimp_install_temp_proc(). Instead,
+	pass "help" as "blurb" and nothing as "help".
+
+	* plug-ins/tiny-fu/scripts/test-sphere.scm: shortened overly
+	long and useless help text.
+
+2004-10-01 Kevin Cozens <kcozens at interlog.com>
+
+	* gimp/plug-ins/tiny-fu/ts-wrapper.c: ts_interpret_string() now zeros
+	sc.linebuff to ensure it contains no previous error message.
+
+2004-09-29 Kevin Cozens <kcozens at interlog.com>
+
+	Updates as the result of changes made by Michael Natterer to DB Browser.
+
+	* plug-ins/po-tiny-fu/POTFILES.in: Removed reference to dbbrowser_utils.c
+	and added reference to gimpprocbrowser.c and gimpprocview.c
+
+	* plug-ins/tiny-fu/Makefile.am: Link against the new libarary
+	libgimpprocbrowser.a
+
+	* plug-ins/tiny-fu/tiny-fu-console.c: Changed #includes accordingly.
+	Minor cleanup.
+
+2004-09-23 Kevin Cozens <kcozens at interlog.com>
+
+	Updates based on Script-Fu changes made by Sven Neumann.
+
+	* plug-ins/script-fu/script-fu-interface.c: Put the text view into
+	a scrolled window. Removed "changed" callbacks for GtkEntry and
+	GtkTextView. Instead retrieve the final string when the dialog is
+	confirmed.
+
+2004-09-22 Kevin Cozens <kcozens at interlog.com>
+
+	* gimp/plug-ins/tiny-fu/tiny-fu-enum.h
+	* gimp/plug-ins/tiny-fu/tiny-fu-interface.c
+	* gimp/plug-ins/tiny-fu/tiny-fu-scripts.c
+	* gimp/plug-ins/tiny-fu/ts-wrapper.c: Added support for multi-line
+	text in scripts using SF-TEXT argument type.
+
+2004-09-21 Kevin Cozens <kcozens at interlog.com>
+
+	* gimp/plug-ins/tiny-fu/ts-wrapper.c: Added gimp-*directory constants
+	and marked the gimp*-dir constants as deprecated.
+
+	* gimp/plug-ins/tiny-fu/server-test/*: Added directory and files
+	with information about using server mode plus some sample scripts.
+
+2004-09-21 Kevin Cozens <kcozens at interlog.com>
+
+	Updates based on Script-Fu changes made by Sven Neumann.
+
+	* plug-ins/tiny-fu/tiny-fu-server.c: Got rid of two of the global
+	file descriptor sets. Use the client hash-table instead.
+
+	* plug-ins/tiny-fu/tiny-fu-server.c: Enabled build of the
+	Script-Fu server for the Win32 platform using the winsock API.
+
+	* plug-ins/tiny-fu/Makefile.am: Link with -lwsock32 on Win32.
+
+	* plug-ins/tiny-fu/tiny-fu-console.c
+	* plug-ins/tiny-fu/tiny-fu.c
+	* plug-ins/tiny-fu/siod-wrapper.c: Removed Win32 specific code
+	that isn't needed any longer.
+
+2004-09-19 Kevin Cozens <kcozens at interlog.com>
+
+	Released a new tarball as version 0.9.2
+
+	* po-tiny-fu/en_CA.po
+	* po-tiny-fu/en_GB.po: Updated English language translation files.
+
+	* po-tiny-fu/POTFILES.in: Updated list of files with marked strings.
+
+	* plug-ins/tiny-fu/scripts/Makefile.am: Updated list of scripts.
+
+2004-09-18 Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/mkbrush.sct
+	* plug-ins/tiny-fu/scripts/select-to-brush.sct
+	* plug-ins/tiny-fu/scripts/select-to-pattern.sct: Updated to use new
+	gimp-dir constant.
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Simplified init_constants() routine
+	and added constant "gimp-dir".
+
+	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Fixed 'rand' function.
+
+2004-09-15 Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/burn-in-anim.sct: Fixed glow effect.
+
+2004-09-13 Kevin Cozens <kcozens at interlog.com>
+
+	* po-tiny-fu/ChangeLog
+	* po-tiny-fu/POTFILES.in: Updated list of files to check for strings
+	requiring translation.
+
+	* plug-ins/tiny-fu/tiny-fu.c
+	* plug-ins/tiny-fu/tiny-fu-console.c
+	* plug-ins/tiny-fu/tiny-fu-scripts.c
+	* plug-ins/tiny-fu/tiny-fu-server.c
+	* plug-ins/tiny-fu/tiny-fu-text-console.c
+	* plug-ins/tiny-fu/ts-wrapper.c
+	* plug-ins/tiny-fu/scripts/contactsheet: Marked strings for translation.
+
+	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Oops...now I have
+	fixed the cons-array definition.
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Used the array* definitions to clean
+	up a few lines of code.
+
+	* plug-ins/tiny-fu/tinyscheme/scheme.c
+	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: Moved definitions for
+	arrayvalue, arraylength, and arraytype to the header file.
+
+2004-09-11 Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Fixed problem in the
+	cons-array function and added missing statement for float arrays.
+
+	* plug-ins/tiny-fu/scripts/Makefile.am: Updated to install all scripts.
+
+	* plug-ins/tiny-fu/scripts/*: Moved in all scripts from scripts.done/
+	and removed scripts.done directory.
+
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Doubled number of cell segments
+	that can be allocated. Prevents "No memory!" message when all sample
+	scripts are installed.
+
+2004-09-03 Kevin Cozens <kcozens at interlog.com>
+
+	Released a new tarball as version 0.9.1
+
+	Updates based on even more Script-Fu changes made by Michael Natterer.
+
+	* plug-ins/tiny-fu/tiny-fu-interface.c (tiny_fu_ok)
+	* plug-ins/tiny-fu/tiny-fu-scripts.c (tiny_fu_script_proc):
+	use a GString for assembling the commands string instead of
+	g_sprintf()ing into a buffer. Removes the need for a separate loop
+	over all args to determine the buffer's length and makes the
+	remaining code smaller and more readable.
+
+2004-09-02 Kevin Cozens <kcozens at interlog.com>
+
+	Updates based on some more Script-Fu changes made by Michael Natterer.
+
+	* plug-ins/tiny-fu/tiny-fu-types.h (struct SFOption): changed
+	"guint history" to "gint history".
+
+	* plug-ins/tiny-fu/tiny-fu-interface.c: added callbacks for
+	string entries and combo boxes and connect *all* widgets to callbacks.
+
+	(tiny_fu_ok): don't touch the widgets at all but get the values
+	directly now that the callbacks correctly write them to their
+	structs.
+
+	(tiny_fu_reset): don't copy the default values manually but
+	simply set the default values on the widgets; their callbacks will
+	do the rest.
+
+	* plug-ins/tiny-fu/tiny-fu-scripts.c (tiny_fu_add_script):
+	added some line breaks and spaces to make it more readable.
+
+	* plug-ins/tiny-fu/tiny-fu-interface.c: removed all progress
+	callbacks and simply use a GimpProgressBar.
+
+2004-08-31 Kevin Cozens <kcozens at interlog.com>
+
+	Updates based on more Script-Fu changes made by Michael Natterer.
+
+	* plug-ins/tiny-fu/tiny-fu-scripts.[ch]: Removed the GUI code...
+	* plug-ins/tiny-fu/tiny-fu-interface.[ch]: ...and added it here.
+
+	* plug-ins/tiny-fu/tiny-fu-types.h: New file with struct defs needed
+	by the above sets of files.
+
+	* plug-ins/tiny-fu/Makefile.am
+	* plug-ins/tiny-fu/ts-wrapper.c: Updated due to the other changes.
+
+2004-08-30 Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/ftx/ftx.c: Changed _ to - in names of
+	constants in file_type_constants structure.
+
+	* plug-ins/tiny-fu/tiny-fu-scripts.c: Applied changes made by Michael
+	Natterer to Script-Fu which brought the PDB progress into a working
+	state.
+
+	* plug-ins/tiny-fu/gimp-constants.h: regenerated
+
+2004-08-30 Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tiny-fu-scripts.c: Applied changes made by Michael
+	Natterer to Script-Fu which uses a new API to show the progress bar in
+	the script-fu dialog.  
+
+2004-08-12 Kevin Cozens <kcozens at interlog.com>
+
+	Released a new tarball as version 0.9.0
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Minor changes in handling of string
+	arrays. Optimized PDB array data copying using a memory move.
+
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Garbage collector now frees
+	the strings pointed to in string array data cells.
+
+2004-08-11  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Updated the marshalling code to use
+	the new array type in TinyScheme for handling of PDB *ARRAY data.
+
+2004-08-10  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Updated define blocks
+	for cons-array, aset, and aref to use new array functions.
+
+	* plug-ins/tiny-fu/tinyscheme/opdefines.h 
+	* plug-ins/tiny-fu/tinyscheme/scheme.c
+	* plug-ins/tiny-fu/tinyscheme/scheme.h
+	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: Added support for arrays
+	to properly handle GIMP *ARRAY types. Adds functions make-array, array?,
+	array-length, array-type, array-ref, array-set!, for use in scripts.
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Made constants and procedures defined
+	during initialization immutable except for the defines used to call the
+	marshalling routine.
+
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Made define and set! honour
+	immutable setting of data cells. Eliminated compiler warnings.
+
+2004-08-07  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/ftx/ftx.c: UTF8'ed the file routines.
+
+	Changes to fix handling of SF_PARASITE data:
+
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Changed store_string() to
+	use memcpy() instead of strcpy() to better handle binary data. Also
+	always store a terminating NUL.
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Added extra debugging output in
+	marshalling routine for data passed to GIMP.
+
+2004-08-06  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tiny-fu-console.c: Added buttons "Clear Output"
+	and "Save Output" to console dialog. (Save not added for GIMP 2.0)
+
+2004-08-04  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Change to force
+	argument for random to integer.
+
+	* plug-ins/tiny-fu/tiny-fu.c
+	* plug-ins/tiny-fu/tiny-fu-console.c
+	* plug-ins/tiny-fu/tiny-fu-console.h
+	* plug-ins/tiny-fu/ts-wrapper.c
+	* plug-ins/tiny-fu/ts-wrapper.h
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Removed pipe in console mode.
+
+2004-08-02  Kevin Cozens <kcozens at interlog.com>
+
+	* Updated the public tarball.
+
+	Run-time loading of extensions has been disabled. The two TinyScheme
+	extensions are now directly linked in to Tiny-Fu:
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Added calls to initialize the
+	TinyScheme extensions.
+
+	* plug-ins/tiny-fu/Makefile.am: Added re and ftx to SUBDIRS line.
+
+	* plug-ins/tiny-fu/re/Makefile.am
+	* plug-ins/tiny-fu/ftx/Makefile.am: Now build as standard libraries.
+
+	* plug-ins/tiny-fu/tinyscheme/Makefile.am: Removed SUBDIRS line and
+	turned off dynamic loading of extensions.
+
+	* plug-ins/tiny-fu/re/
+	* plug-ins/tiny-fu/ftx/: Moved out of the tinyscheme directory.
+	Renamed tsx to ftx since it deviates from the original tsx extension.
+
+	* plug-ins/tiny-fu/script-fu-compat.init: The extensions are linked in
+	and no longer need to be loaded.
+
+2004-08-01  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Changed definition for 'fmod'
+	to force arguments to integer.
+
+	* plug-ins/tiny-fu/Makefile.am: Changed the dependency order so that
+	$(REGEXREPL) is linked earlier. Per the change made to Script-Fu.
+
+2004-07-31  Kevin Cozens <kcozens at interlog.com>
+
+	* Updated the public tarball.
+
+	* plug-ins/tiny-fu/scripts/carved-logo.sct
+	* plug-ins/tiny-fu/scripts/crystal-logo.sct
+	* plug-ins/tiny-fu/scripts/sota-chrome-logo.sct: Changed DIR_SEPARATOR
+	to DIR-SEPARATOR.
+
+	* plug-ins/tiny-fu/script-fu-compat.init: Removed define for 'fread'
+	since 'read' is not a direct equivalent.
+
+2004-07-30  Kevin Cozens <kcozens at interlog.com>
+
+	* Fourth public tarball released.
+
+	* plug-ins/tiny-fu/tinyscheme/ts-wrapper.c: Fixed init problem by
+	moving defines for DIR-SEPARATOR and 'load-extension'.
+
+2004-07-29  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/ts-wrapper.c: Constant DIR-SEPARATOR 
+	added to aid in portability when building file paths in scripts.
+	Removed duplicate define for 'load-extension'.
+
+	* plug-ins/tiny-fu/scripts/contactsheet.sct: Updated to use new
+	DIR-SEPARATOR constant.
+
+	* plug-ins/tiny-fu/tinyscheme/re/Makefile.am
+	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Added flags to stop
+	versioning of the .so files. Mostly helps when building for Windows.
+
+2004-07-28  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Changed marshall_proc_db_call() to
+	return a list containing either TRUE or FALSE for PDB calls which
+	return no values to indicate whether the PDB call succeeded or not.
+
+	* plug-ins/tiny-fu/tiny-fu-enums.h
+	* plug-ins/tiny-fu/tiny-fu-scripts.c
+	* plug-ins/tiny-fu/ts-wrapper.c: Applied Script-Fu patches made
+	by Michael Natterer which added SF_PALETTE so it can be used in scripts.
+
+	* plug-ins/script-fu/scripts/test-sphere.sct: Added palette parameter
+	to the test script based on change to Script-Fu version made by Michael
+	Natterer.
+
+2004-07-27  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tiny-fu-scripts.c: In tiny_fu_free_scripts(),
+	script->arg_types was being freed too soon. (Inherited from Script-Fu)
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Fixed error in allocation of memory
+	used to hold argument data for PDB_*ARRAY types.
+
+	* plug-ins/tiny-fu/scripts/contactsheet.sct: Added first version.
+
+2004-07-25  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/script-fu-compat.init: Fixed definition for
+	cons-array.
+
+2004-07-22  Kevin Cozens <kcozens at interlog.com>
+
+	* Third public tarball released.
+
+	* plug-ins/tiny-fu/tinyscheme/re/Makefile.am
+	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Fixed build problem
+	under Windows with information from schumaml on #gimp.
+
+	* plug-ins/tiny-fu/tinyscheme/tsx/tsx.c: Stripped out socket and misc
+	routines. Added 'dir-rewind' and 'file-type'. Modified to use routines
+	from glib to aid in portability.
+
+2004-07-20  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/tsx/tsx.c: Added #if to prevent include
+	of socket related header files when socket routines will not be used.
+	Pointed out by schumaml on #gimp.
+
+	* plug-ins/tiny-fu/tinyscheme/Makefile.am 
+	* plug-ins/tiny-fu/tinyscheme/re/*: Hooked re extension in to a build
+	and install of the Tiny-Fu plugin.
+
+2004-07-16  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Added support for PARASITES.
+
+2004-07-14  Kevin Cozens <kcozens at interlog.com>
+
+	* Second public tarball released.
+
+	* plug-ins/script-fu/scripts/round-corners.scm: Changed from using
+	undo disable/enable to using an undo group if the script doesn't
+	work on a copy. Based on change from Dave Neary originally made to
+	Script-Fu version.
+
+	* plug-ins/tiny-fu/tiny-fu-console.c: Removed display of GPL text.
+
+	* gimp.patch
+	* plug-ins/tiny-fu/tinyscheme/Makefile.am 
+	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Hooked tsx extension
+	in to a build and install of the Tiny-Fu plugin.
+
+2004-07-13  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Added FFI hook for "load-extension".
+
+	* plug-ins/tiny-fu/script-fu-compat.init: Load tsx extension and
+	added compatibility define for SIOD 'realtime' function.
+
+2004-07-12  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/script-fu-compat.init: Added random number
+	generator routines.
+
+2004-07-10  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c
+	* plug-ins/tiny-fu/scripts/Makefile.am
+	* plug-ins/tiny-fu/scripts/tiny-fu.init
+	* plug-ins/tiny-fu/script-fu-compat.init: Added some backwards
+	compatibility routines for scripts written for the SIOD interpreter.
+
+2004-07-09  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/tiny-fu.init
+	* plug-ins/tiny-fu/scripts/tinyscheme/init.scm: Fixed define of lcm.
+
+2004-07-08  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Modified to use vectors for all
+	PDB *ARRAY types.
+
+2004-07-05  Kevin Cozens <kcozens at interlog.com>
+
+	* First public release of a tarball for Tiny-Fu
+
+	* plug-ins/tiny-fu/scripts/blend-anim.scm
+	* plug-ins/tiny-fu/scripts/glossy.scm
+	* plug-ins/tiny-fu/scripts/test-sphere.scm: Fixed typos originally
+	discovered by Roman Joost in Script-Fu.
+
+2004-07-01  Kevin Cozens <kcozens at interlog.com>
+
+	* gimp/tools/pdbgen/enumcode.pl: Modified to generate the
+	gimp-constants.h file needed by Tiny-Fu.
+
+2004-06-28  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c
+	* plug-ins/tiny-fu/tinyscheme/scheme.c: Partial improvement in
+	display of error messages when parsing/running scripts.
+
+2004-06-27  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/tinyscheme/BUILDING
+	* plug-ins/tiny-fu/tinyscheme/CHANGES
+	* plug-ins/tiny-fu/tinyscheme/Manual.txt
+	* plug-ins/tiny-fu/tinyscheme/dynload.c
+	* plug-ins/tiny-fu/tinyscheme/init.scm
+	* plug-ins/tiny-fu/tinyscheme/scheme.c
+	* plug-ins/tiny-fu/tinyscheme/scheme.h
+	* plug-ins/tiny-fu/tinyscheme/scheme-private.h
+	* plug-ins/tiny-fu/scripts/tiny-fu.init: Updated to version 1.35
+	of TinyScheme.
+
+2004-06-26  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/scripts/*: Updated with a fresh copy of the
+	Script-Fu scripts recently HIG-ified by Bill Skaggs.
+
+2004-06-24  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/gimp-constants.c: Updated to match recent
+	changes in Script-Fu constants.
+
+	* plug-ins/tiny-fu/tiny-fu-console.c
+	* plug-ins/tiny-fu/tiny-fu-scripts.c
+	* plug-ins/tiny-fu/tiny-fu-server.c: HIG-ified based on changes
+	made by Sven Neumann to the similar files in Script-Fu.
+
+2004-04-08  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Fixed PDB marshaller to handle
+	NULL strings.
+
+2004-04-06  Kevin Cozens <kcozens at interlog.com>
+
+	* plug-ins/script-fu/scripts/ts-helloworld.sct: First successful run
+	of a script using TinyScheme as the Scheme interpreter.

@@ -1,0 +1,1209 @@
+# translation of gimp-script-fu.HEAD.po to Hebrew
+# translation of gimp-script-fy-he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# dovix <dovix2003@yahoo.com>, 2003
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2003-08-13 22:11+0300\n"
+"Last-Translator: Gil 'Dolfin' Osher <dolfin@rpg.org.il>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:275
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:167
+msgid "Tiny-Fu Console"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:171
+msgid "_Save Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+msgid "Tiny-Fu Console - "
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+msgid "Tiny-Fu Server Options"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+msgid "/Tiny-Fu/"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, c-format
+msgid "Tiny-Fu: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:212
+msgid "_About"
+msgstr ""
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr ""
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:312
+msgid "Tiny-Fu Color Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:418
+msgid "Tiny-Fu File Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:422
+msgid "Tiny-Fu Folder Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:434
+msgid "Tiny-Fu Font Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:441
+msgid "Tiny-Fu Palette Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:449
+msgid "Tiny-Fu Pattern Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:457
+msgid "Tiny-Fu Gradient Selection"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:465
+msgid "Tiny-Fu Brush Selection"
+msgstr ""
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+msgid "Script Progress"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr "יוצר:"
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "זכויות יוצרים:"
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "תאריך:"
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr "סוגי תמונה:"
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "קוטר"
+
+#~ msgid "Color"
+#~ msgstr "צבע"
+
+#~ msgid "Font"
+#~ msgstr "גופן"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Created "
+#~ msgstr "הוספת צל"
+
+#~ msgid "Text Color"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Font size (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "הגדלת מחוג"
+
+#~ msgid "Text"
+#~ msgstr "טקסט"
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "גודל בלוק"
+
+#, fuzzy
+#~ msgid "Number of X tiles"
+#~ msgstr "מספר רצועות"
+
+#, fuzzy
+#~ msgid "Number of Y tiles"
+#~ msgstr "מספר רצועות"
+
+#~ msgid "Thickness"
+#~ msgstr "עובי"
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "גודל גבול X"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "גודל גבול Y"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "צבע גבול"
+
+#~ msgid "Left"
+#~ msgstr "שמאל"
+
+#~ msgid "Orientation"
+#~ msgstr "כיוון"
+
+#~ msgid "Right"
+#~ msgstr "ימין"
+
+#~ msgid "Size"
+#~ msgstr "גודל"
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "גודל תמונה"
+
+#~ msgid "Radius"
+#~ msgstr "מחוג"
+
+#, fuzzy
+#~ msgid "Glow radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Number of bands"
+#~ msgstr "מספר רצועות"
+
+#, fuzzy
+#~ msgid "Width of bands"
+#~ msgstr "עובי רצועות"
+
+#, fuzzy
+#~ msgid "Width of gaps"
+#~ msgstr "עובי מרווחים"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "שם קובץ"
+
+#~ msgid "Filename"
+#~ msgstr "שם קובץ"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "צבע גבול"
+
+#~ msgid "Pressed"
+#~ msgstr "לחוץ"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "צבע גבול"
+
+#~ msgid "Pattern"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "קוטר"
+
+#, fuzzy
+#~ msgid "Height"
+#~ msgstr "ימין"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Custom Gradient"
+#~ msgstr "מדרג צבעים"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "FG-BG-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "FG-BG-RGB"
+
+#, fuzzy
+#~ msgid "FG-Transparent"
+#~ msgstr "תמונת רקע"
+
+#~ msgid "Gradient"
+#~ msgstr "מדרג צבעים"
+
+#, fuzzy
+#~ msgid "Gradient reverse"
+#~ msgstr "מדרג צבעים"
+
+#, fuzzy
+#~ msgid "Offset (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Background Color"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Fadeout"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "גודל תמונה"
+
+#~ msgid "Color 1"
+#~ msgstr "צבע 1"
+
+#~ msgid "Color 2"
+#~ msgstr "צבע 2"
+
+#~ msgid "Color 3"
+#~ msgstr "צבע 3"
+
+#~ msgid "Granularity"
+#~ msgstr "גרעיניות"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "גודל תמונה"
+
+#~ msgid "Smooth"
+#~ msgstr "חלק"
+
+#~ msgid "Background Image"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Blur amount"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Chip amount"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Blur X"
+#~ msgstr "גבול"
+
+#, fuzzy
+#~ msgid "Blur Y"
+#~ msgstr "גבול"
+
+#, fuzzy
+#~ msgid "Elevation"
+#~ msgstr "כיוון"
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Effect size (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "גרעיניות"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Offset X"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Offset Y"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#~ msgid "Opacity"
+#~ msgstr "אטימות"
+
+#~ msgid "Columns"
+#~ msgstr "עמודות"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "גודל תמונה"
+
+#~ msgid "Even"
+#~ msgstr "זוגי"
+
+#, fuzzy
+#~ msgid "Even/odd"
+#~ msgstr "זוגי"
+
+#~ msgid "Odd"
+#~ msgstr "אי-זוגי"
+
+#~ msgid "Rows"
+#~ msgstr "שורות"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "שורות/עמודות"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "גודל גבול X"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Font _size (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "_Border (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "צבע 3"
+
+#, fuzzy
+#~ msgid "_Text"
+#~ msgstr "טקסט"
+
+#, fuzzy
+#~ msgid "Add shadow"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Blur border"
+#~ msgstr "גבול"
+
+#, fuzzy
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "גרעיניות"
+
+#, fuzzy
+#~ msgid "Autocrop"
+#~ msgstr "יוצר:"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Number of colors"
+#~ msgstr "מספר רצועות"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "מדרג צבעים"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Shadow"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Text gradient reverse"
+#~ msgstr "מדרג צבעים"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Border size (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Number of lines"
+#~ msgstr "מספר רצועות"
+
+#, fuzzy
+#~ msgid "Offset radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Create shadow"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Cell size (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Edge amount"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Pixel amount"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "לחוץ"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "לחוץ"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Edge behaviour"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Number of frames"
+#~ msgstr "מספר רצועות"
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "תמונת רקע"
+
+#, fuzzy
+#~ msgid "Add drop-shadow"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Edge radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Relative radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "צבע טקסט"
+
+#, fuzzy
+#~ msgid "Radius (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Frames"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "צבע 3"
+
+#, fuzzy
+#~ msgid "Frame"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Hexagon"
+#~ msgstr "כיוון"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "כיוון"
+
+#, fuzzy
+#~ msgid "Margin (pixels)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Pentagon"
+#~ msgstr "כיוון"
+
+#, fuzzy
+#~ msgid "Solid Color"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Triangle"
+#~ msgstr "שם קובץ"
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "גודל גופן (פיקסלים)"
+
+#, fuzzy
+#~ msgid "Whirl amount"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Number of times to whirl"
+#~ msgstr "מספר רצועות"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "גודל גבול X"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "שם קובץ"
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "שם קובץ"
+
+#, fuzzy
+#~ msgid "Hexagons"
+#~ msgstr "כיוון"
+
+#, fuzzy
+#~ msgid "Octagons"
+#~ msgstr "כיוון"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Blur type"
+#~ msgstr "גבול"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "דוגמה"
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "צבע גבול"
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "אטימות"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "גודל תמונה"
+
+#, fuzzy
+#~ msgid "Shadow depth"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "אטימות"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "אטימות"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "הגדלת מחוג"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "הוספת צל"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "אטימות"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "צבע"
+
+#, fuzzy
+#~ msgid "Transparent Background"
+#~ msgstr "תמונת רקע"
+
+#~ msgid "Name:"
+#~ msgstr "שם:"
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "אטימות"
+
+#~ msgid "Fonts"
+#~ msgstr "גופנים"

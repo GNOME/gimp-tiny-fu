@@ -1,0 +1,2428 @@
+# Norwegian translation of gimp-po-script-fu.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: achtung 1.1.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-05 20:57+0200\n"
+"PO-Revision-Date: 2003-01-26 17:18+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian <no@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: tiny-fu/tiny-fu.c:105
+msgid "A scheme interpreter for scripting GIMP operations"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:106
+msgid "More help here later"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:116
+msgid "Provides a console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:117 tiny-fu/tiny-fu.c:129
+msgid "Provides an interface which allows interactive scheme development."
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:121
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+msgstr "<Toolbox>/Utvidelser/Script-Fu/Konsoll..."
+
+#: tiny-fu/tiny-fu.c:128
+msgid "Provides a text console mode for tiny-fu development"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:141 tiny-fu/tiny-fu.c:142
+msgid "Provides a server for remote tiny-fu operation"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:146
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+msgstr "<Toolbox>/Utvidelser/Script-Fu/Tjener..."
+
+#: tiny-fu/tiny-fu.c:154
+msgid "Evaluate scheme code"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:155
+msgid ""
+"Evaluate the code under the scheme interpeter (primarily for batch mode)"
+msgstr ""
+
+#: tiny-fu/tiny-fu.c:270 tiny-fu/tiny-fu.c:271
+msgid "Re-read all available scripts"
+msgstr "Gjenles alle tilgjengelige skript"
+
+#: tiny-fu/tiny-fu.c:275
+#, fuzzy
+msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+msgstr "<Toolbox>/Utvidelser/Script-Fu/Gjenoppfrisk"
+
+#: tiny-fu/tiny-fu-console.c:140 tiny-fu/tiny-fu-text-console.c:68
+#, fuzzy
+msgid "Tiny-Fu console mode allows only interactive invocation"
+msgstr "Script-Fu konsollmodus tillater bare interaktiv kjøring"
+
+#: tiny-fu/tiny-fu-console.c:167
+#, fuzzy
+msgid "Tiny-Fu Console"
+msgstr "Script-Fu konsoll"
+
+#: tiny-fu/tiny-fu-console.c:171
+#, fuzzy
+msgid "_Save Output"
+msgstr "SIOD utskrift"
+
+#: tiny-fu/tiny-fu-console.c:172
+msgid "Cl_ear Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:194
+msgid "TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:233
+msgid "Welcome to TinyScheme\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:234
+msgid ""
+"Copyright (c) Dimitrios Souflis\n"
+"\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:235
+#, fuzzy
+msgid "Tiny-Fu Console - "
+msgstr "Script-Fu konsoll"
+
+#: tiny-fu/tiny-fu-console.c:236
+msgid "Interactive Scheme Development"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:259
+msgid "Current Command"
+msgstr "Aktiv kommando"
+
+#: tiny-fu/tiny-fu-console.c:277
+msgid "Browse..."
+msgstr "Bla gjennom..."
+
+#: tiny-fu/tiny-fu-console.c:332
+msgid "Save TinyScheme Output"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:369
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-console.c:646
+#, fuzzy
+msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
+msgstr "Script-Fu evalueringsmodus tillater bare ikke-interaktiv kjøring"
+
+#: tiny-fu/tiny-fu-scripts.c:149
+msgid "Too few arguments to tiny-fu-register"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:228
+msgid "tiny-fu-register: argument types must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:233
+msgid "tiny-fu-register: missing type specifier"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:238
+msgid "tiny-fu-register: argument labels must be strings"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:243
+msgid "tiny-fu-register: missing arguments label"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:254
+msgid "tiny-fu-register: drawable defaults must be integer values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:292
+msgid "tiny-fu-register: color defaults must be a list of 3 integers"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:312
+msgid "tiny-fu-register: toggle default must be an integer value"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:326
+msgid "tiny-fu-register: value defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:341
+msgid "tiny-fu-register: string defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:355
+msgid "tiny-fu-register: adjustment defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:390
+msgid "tiny-fu-register: filename defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:395
+msgid "tiny-fu-register: dirname defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:425
+msgid "tiny-fu-register: font defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:439
+msgid "tiny-fu-register: palette defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:453
+msgid "tiny-fu-register: pattern defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:467
+msgid "tiny-fu-register: brush defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:500
+msgid "tiny-fu-register: gradient defaults must be string values"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:514
+msgid "tiny-fu-register: option defaults must be a list"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:539
+msgid "tiny-fu-register: missing default argument"
+msgstr ""
+
+#: tiny-fu/tiny-fu-scripts.c:552
+#, fuzzy, c-format
+msgid ""
+"Error while executing\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"Script-Fu feil under kjøring\n"
+" %s\n"
+"%s"
+
+#: tiny-fu/tiny-fu-server.c:215
+msgid "Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\""
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:355
+msgid "Tiny-Fu server initialized and listening...\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:393
+#, c-format
+msgid "Processing request #%d\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:413
+#, c-format
+msgid "Request #%d processed in %f seconds, finishing on %s"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:463
+msgid "Error reading command header.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:475
+msgid "Error in tiny-fu command transmission.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:491
+#, c-format
+msgid "Error reading command.  Read %d out of %d bytes.\n"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:514
+#, c-format
+msgid ""
+"Received request #%d from IP address %s: %s on %s,[Request queue length: %d]"
+msgstr ""
+
+#: tiny-fu/tiny-fu-server.c:642
+#, fuzzy
+msgid "Tiny-Fu Server Options"
+msgstr "Script-Fu tjeneralternativer"
+
+#: tiny-fu/tiny-fu-server.c:670
+msgid "Server Port:"
+msgstr "Tjenerport:"
+
+#: tiny-fu/tiny-fu-server.c:676
+msgid "Server Logfile:"
+msgstr "Loggfil på tjener:"
+
+#: tiny-fu/tiny-fu-text-console.c:119
+#, c-format
+msgid "error reading from stdin: %s\n"
+msgstr ""
+
+#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#: tiny-fu/tiny-fu-interface.c:191 tiny-fu/tiny-fu-interface.c:193
+#, fuzzy
+msgid "/Tiny-Fu/"
+msgstr "/Script-Fu/"
+
+#: tiny-fu/tiny-fu-interface.c:205
+#, fuzzy, c-format
+msgid "Tiny-Fu: %s"
+msgstr "Script-Fu: %s"
+
+#: tiny-fu/tiny-fu-interface.c:212
+#, fuzzy
+msgid "_About"
+msgstr "Om"
+
+#. the script arguments frame
+#: tiny-fu/tiny-fu-interface.c:237
+msgid "Script Arguments"
+msgstr "Skriptargumenter"
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: tiny-fu/tiny-fu-interface.c:268
+#, c-format
+msgid "%s:"
+msgstr "%s"
+
+#: tiny-fu/tiny-fu-interface.c:312
+#, fuzzy
+msgid "Tiny-Fu Color Selection"
+msgstr "Script-Fu fargevalg"
+
+#: tiny-fu/tiny-fu-interface.c:418
+#, fuzzy
+msgid "Tiny-Fu File Selection"
+msgstr "Script-Fu filvalg"
+
+#: tiny-fu/tiny-fu-interface.c:422
+#, fuzzy
+msgid "Tiny-Fu Folder Selection"
+msgstr "Script-Fu mappevalg"
+
+#: tiny-fu/tiny-fu-interface.c:434
+#, fuzzy
+msgid "Tiny-Fu Font Selection"
+msgstr "Script-Fu skrifttypevalg"
+
+#: tiny-fu/tiny-fu-interface.c:441
+#, fuzzy
+msgid "Tiny-Fu Palette Selection"
+msgstr "Script-Fu mønstervalg"
+
+#: tiny-fu/tiny-fu-interface.c:449
+#, fuzzy
+msgid "Tiny-Fu Pattern Selection"
+msgstr "Script-Fu mønstervalg"
+
+#: tiny-fu/tiny-fu-interface.c:457
+#, fuzzy
+msgid "Tiny-Fu Gradient Selection"
+msgstr "Script-Fu gradientvalg"
+
+#: tiny-fu/tiny-fu-interface.c:465
+#, fuzzy
+msgid "Tiny-Fu Brush Selection"
+msgstr "Script-Fu børstevalg"
+
+#. the script progress frame
+#: tiny-fu/tiny-fu-interface.c:519
+#, fuzzy
+msgid "Script Progress"
+msgstr "Skriptargumenter"
+
+#: tiny-fu/tiny-fu-interface.c:527
+msgid "(none)"
+msgstr ""
+
+#: tiny-fu/tiny-fu-interface.c:1042
+msgid "Author:"
+msgstr "Forfatter:"
+
+#: tiny-fu/tiny-fu-interface.c:1048
+msgid "Copyright:"
+msgstr "Kopirettighet:"
+
+#: tiny-fu/tiny-fu-interface.c:1054
+msgid "Date:"
+msgstr "Dato:"
+
+#: tiny-fu/tiny-fu-interface.c:1062
+msgid "Image Types:"
+msgstr "Bildetyper:"
+
+#: tiny-fu/ts-wrapper.c:231
+msgid "Could not initialize TinyScheme!\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:250
+#, c-format
+msgid "Unable to read initialization file\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:537
+msgid ""
+"Procedure database argument marshaller was called with no arguments. The "
+"procedure to be executed and the arguments it requires  (possibly none) must "
+"be specified."
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:573
+#, c-format
+msgid "Invalid procedure name %s specified"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:598
+#, c-format
+msgid "Invalid number of arguments supplied to %s (got %d, expected %d)"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:697
+#, c-format
+msgid "Expected INT32ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:729
+#, c-format
+msgid "Expected INT16ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:761
+#, c-format
+msgid "Expected INT8ARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:793
+#, c-format
+msgid "Expected FLOATARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:825
+#, c-format
+msgid "Expected STRINGARRAY for argument %d in call to procedure %s\n"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:861
+msgid "Regions are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:926
+msgid "Boundaries are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:931
+msgid "Paths are currently unsupported as arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:994
+msgid "Status is for return types, not arguments"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1001
+#, c-format
+msgid "Argument %d for %s is an unknown type"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1028
+#, c-format
+msgid "Invalid types specified for argument %d to %s"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1040
+#, c-format
+msgid ""
+"Procedural database execution of %s did not return a status:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1055
+#, c-format
+msgid ""
+"Procedural database execution of %s failed:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1062
+#, c-format
+msgid ""
+"Procedural database execution of %s failed on invalid input arguments:\n"
+"    "
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1203
+msgid "Regions are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1237
+msgid "Boundaries are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1241
+msgid "Paths are currently unsupported as return values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1249
+msgid "Error: null parasite"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1280
+msgid "Procedural database execution returned multiple status values"
+msgstr ""
+
+#: tiny-fu/ts-wrapper.c:1284
+msgid "Unknown return type"
+msgstr ""
+
+#~ msgid "Search by _Name"
+#~ msgstr "Søk etter _navn"
+
+#~ msgid "Search by _Blurb"
+#~ msgstr "Søk etter _blurb"
+
+#~ msgid "_Search:"
+#~ msgstr "_Søk:"
+
+#~ msgid "Searching by name - please wait"
+#~ msgstr "Søker etter navn - vennligst vent"
+
+#~ msgid "Searching by blurb - please wait"
+#~ msgstr "Søker etter blurb - vennligst vent"
+
+#~ msgid "Searching - please wait"
+#~ msgstr "Søker - vennligst vent"
+
+#~ msgid "No matches"
+#~ msgstr "Ingen treff"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "Diameter"
+
+#~ msgid "Color"
+#~ msgstr "Farge"
+
+#~ msgid "Font"
+#~ msgstr "Skrifttype"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "Tekststørrelse (piksler)"
+
+#, fuzzy
+#~ msgid "Text String"
+#~ msgstr "Tekstmønster"
+
+#, fuzzy
+#~ msgid " for directory "
+#~ msgstr "Kunne ikke åpne SIOD rør for utskrift"
+
+#, fuzzy
+#~ msgid " images"
+#~ msgstr "Indeksbilde"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Verktøy/Skrifttypekart..."
+
+#, fuzzy
+#~ msgid "Background color"
+#~ msgstr "Bakgrunnsfarge"
+
+#, fuzzy
+#~ msgid "Created "
+#~ msgstr "Lag skygge"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "Kunne ikke åpne SIOD rør for utskrift"
+
+#, fuzzy
+#~ msgid "Sheet "
+#~ msgstr "Utgangsverdi"
+
+#, fuzzy
+#~ msgid "Sheet Size"
+#~ msgstr "Utgangsverdi"
+
+#~ msgid "Text Color"
+#~ msgstr "Tekstfarge"
+
+#, fuzzy
+#~ msgid "Unable to open directory "
+#~ msgstr "Kunne ikke åpne SIOD rør for utskrift"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/3D-omriss..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/3D-omriss..."
+
+#, fuzzy
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Bumpmap (alpha-lag) blur radius"
+
+#, fuzzy
+#~ msgid "Default bumpmap settings"
+#~ msgstr "Forvalgte innstillinger for bumpmap"
+
+#, fuzzy
+#~ msgid "Font size (pixels)"
+#~ msgstr "Tekststørrelse (piksler)"
+
+#, fuzzy
+#~ msgid "Outline blur radius"
+#~ msgstr "Radius for uskarpt omriss"
+
+#, fuzzy
+#~ msgid "Shadow X offset"
+#~ msgstr "X-avstand for skygge"
+
+#, fuzzy
+#~ msgid "Shadow Y offset"
+#~ msgstr "Y-avstand for skygge"
+
+#, fuzzy
+#~ msgid "Shadow blur radius"
+#~ msgstr "Radius for uskarp skygge"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/3D truchet..."
+
+#, fuzzy
+#~ msgid "Block size"
+#~ msgstr "Blokkstørrelse"
+
+#, fuzzy
+#~ msgid "End blend"
+#~ msgstr "Slutt blanding"
+
+#, fuzzy
+#~ msgid "Number of X tiles"
+#~ msgstr "Antall X-fliser"
+
+#, fuzzy
+#~ msgid "Number of Y tiles"
+#~ msgstr "Antall Y-fliser"
+
+#, fuzzy
+#~ msgid "Start blend"
+#~ msgstr "Start blanding"
+
+#~ msgid "Supersample"
+#~ msgstr "Supersample"
+
+#~ msgid "Thickness"
+#~ msgstr "Tykkhet"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Legg til opphøyet kant..."
+
+#, fuzzy
+#~ msgid "Keep bump layer"
+#~ msgstr "Behold \"bump layer\""
+
+#, fuzzy
+#~ msgid "Work on copy"
+#~ msgstr "Jobb med kopi"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Legg til kant..."
+
+#, fuzzy
+#~ msgid "Border X size"
+#~ msgstr "Rammens X-størrelse"
+
+#, fuzzy
+#~ msgid "Border Y size"
+#~ msgstr "Rammens Y-størrelse"
+
+#, fuzzy
+#~ msgid "Border color"
+#~ msgstr "Kantfarge"
+
+#, fuzzy
+#~ msgid "Delta value on color"
+#~ msgstr "Deltaverdi for farge"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Alien glow/Pil..."
+
+#~ msgid "Down"
+#~ msgstr "Ned"
+
+#, fuzzy
+#~ msgid "Flatten image"
+#~ msgstr "Flate ut bilde"
+
+#, fuzzy
+#~ msgid "Glow color"
+#~ msgstr "Farge for glød"
+
+#~ msgid "Left"
+#~ msgstr "Venstre"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientering"
+
+#~ msgid "Right"
+#~ msgstr "Høyre"
+
+#~ msgid "Size"
+#~ msgstr "Størrelse"
+
+#~ msgid "Up"
+#~ msgstr "Opp"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Alien glow/HRule..."
+
+#, fuzzy
+#~ msgid "Bar height"
+#~ msgstr "Høyde for søyle"
+
+#, fuzzy
+#~ msgid "Bar length"
+#~ msgstr "Lengde for søyle"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Alien glow/Kule..."
+
+#~ msgid "Radius"
+#~ msgstr "Radius"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Alien glow/Knapp..."
+
+#, fuzzy
+#~ msgid "Glow radius"
+#~ msgstr "Radius for glød"
+
+#~ msgid "Padding"
+#~ msgstr "Fyll"
+
+#, fuzzy
+#~ msgid "Text color"
+#~ msgstr "Tekstfarge"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Fremmed glød..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Fremmed glød..."
+
+#, fuzzy
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "Størrelse på glød (piksler * 4)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Fremmed neon..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Fremmed neon..."
+
+#, fuzzy
+#~ msgid "Fade away"
+#~ msgstr "Fade ut"
+
+#, fuzzy
+#~ msgid "Number of bands"
+#~ msgstr "Antall bånd"
+
+#, fuzzy
+#~ msgid "Width of bands"
+#~ msgstr "Bredde for bånd"
+
+#, fuzzy
+#~ msgid "Width of gaps"
+#~ msgstr "Bredde for mellomrom"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/_ASCII to Layer..."
+#~ msgstr "<Image>/Script-Fu/Verktøy/ASCII til bildelag..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Verktøy/ASCII til bilde..."
+
+#, fuzzy
+#~ msgid "Buffer amount (% height of text)"
+#~ msgstr "Buffermengde (% høyde av tekst)"
+
+#, fuzzy
+#~ msgid "File name"
+#~ msgstr "Filnavn"
+
+#~ msgid "Filename"
+#~ msgstr "Filnavn"
+
+#, fuzzy
+#~ msgid "Transparent background"
+#~ msgstr "Gjennomsiktig bakgrunn"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Grunnleggende I..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Grunnleggende I..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Grunnleggende II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Grunnleggende II..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/Simple _Beveled Button..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Knapper/Enkel opphevet knapp..."
+
+#, fuzzy
+#~ msgid "Bevel width"
+#~ msgstr "Kantbredde"
+
+#, fuzzy
+#~ msgid "Lower-right color"
+#~ msgstr "Farge nede til høyre"
+
+#~ msgid "Pressed"
+#~ msgstr "Presset"
+
+#, fuzzy
+#~ msgid "Upper-left color"
+#~ msgstr "Farge oppe til venstre"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Arrow..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Hevet mønster/Pil..."
+
+#~ msgid "Pattern"
+#~ msgstr "Mønster"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Hevet mønster/Kule..."
+
+#, fuzzy
+#~ msgid "Diameter"
+#~ msgstr "Diameter"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Hevet mønster/Knapp..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Hevet mønster/Topptekst..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Hevet mønster/HRule..."
+
+#~ msgid "Height"
+#~ msgstr "Høyde"
+
+#~ msgid "Width"
+#~ msgstr "Bredde"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Blend..."
+#~ msgstr "<Image>/Script-Fu/Animatorer/Bland..."
+
+#, fuzzy
+#~ msgid "Intermediate frames"
+#~ msgstr "Midlertidige rammer"
+
+#~ msgid "Looped"
+#~ msgstr "Løkke"
+
+#, fuzzy
+#~ msgid "Max. blur radius"
+#~ msgstr "Maks radius for uklarhet"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Nedblendet..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Nedblendet..."
+
+#, fuzzy
+#~ msgid "Blend mode"
+#~ msgstr "Blandingsmodus"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "Egendefinert gradient"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "FG-BG-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "FG-BG-RGB"
+
+#~ msgid "FG-Transparent"
+#~ msgstr "FG-gjennomsiktig"
+
+#~ msgid "Gradient"
+#~ msgstr "Gradient"
+
+#, fuzzy
+#~ msgid "Gradient reverse"
+#~ msgstr "Gradient"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "Avstand (piksler)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Bovination..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Bovination..."
+
+#~ msgid "Background Color"
+#~ msgstr "Bakgrunnsfarge"
+
+#~ msgid "Spots density X"
+#~ msgstr "Punkttetthet X"
+
+#~ msgid "Spots density Y"
+#~ msgstr "Punkttetthet Y"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Script-Fu/Animatorer/Bland..."
+
+#, fuzzy
+#~ msgid "Add glowing"
+#~ msgstr "Legg til glød"
+
+#, fuzzy
+#~ msgid "After glow"
+#~ msgstr "Etterglød"
+
+#, fuzzy
+#~ msgid ""
+#~ "Burn-In: Needs two layers in total!\n"
+#~ "A foreground text layer with transparency and a background layer."
+#~ msgstr ""
+#~ "Burn-In: Må ha to lag totalt!\n"
+#~ "         Et forgrunnstekstlag med gjennomsiktighet\n"
+#~ "         og et bakgrunnslag."
+
+#, fuzzy
+#~ msgid "Corona width"
+#~ msgstr "Bredde på krone"
+
+#~ msgid "Fadeout"
+#~ msgstr "Fadeut"
+
+#, fuzzy
+#~ msgid "Fadeout width"
+#~ msgstr "Bredde på fade"
+
+#~ msgid "Prepare for GIF"
+#~ msgstr "Forbered for GIF"
+
+#~ msgid "Speed (pixels/frame)"
+#~ msgstr "Hastighet (piksler/ramme)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Kamuflasje..."
+
+#~ msgid "Color 1"
+#~ msgstr "Farge 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Farge 2"
+
+#~ msgid "Color 3"
+#~ msgstr "Farge 3"
+
+#~ msgid "Granularity"
+#~ msgstr "Granularitet"
+
+#, fuzzy
+#~ msgid "Image size"
+#~ msgstr "Bildestørrelse"
+
+#~ msgid "Smooth"
+#~ msgstr "Myk"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Carved..."
+
+#~ msgid "Background Image"
+#~ msgstr "Bakgrunnsbilde"
+
+#, fuzzy
+#~ msgid "Carve raised text"
+#~ msgstr "Skjær ut hevet tekst"
+
+#, fuzzy
+#~ msgid "Padding around text"
+#~ msgstr "Fyll rundt tekst"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_arve-It..."
+#~ msgstr "<Image>/Script-Fu/Stensil-operasjoner/Skjær det..."
+
+#, fuzzy
+#~ msgid "Carve white areas"
+#~ msgstr "Skjær hvite områder"
+
+#, fuzzy
+#~ msgid "Image to carve"
+#~ msgstr "Bilde som skal skjæres ut"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Kritt..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Kritt..."
+
+#, fuzzy
+#~ msgid "Chalk color"
+#~ msgstr "Krittfarge"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Hugg bort..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Hugg ut..."
+
+#, fuzzy
+#~ msgid "Blur amount"
+#~ msgstr "Blur mengde"
+
+#, fuzzy
+#~ msgid "Chip amount"
+#~ msgstr "Mengde hugging"
+
+#, fuzzy
+#~ msgid "Drop shadow"
+#~ msgstr "Fallskygge"
+
+#, fuzzy
+#~ msgid "Fill BG with pattern"
+#~ msgstr "Fyll BG med mønster"
+
+#~ msgid "Invert"
+#~ msgstr "Inverter"
+
+#, fuzzy
+#~ msgid "Keep background"
+#~ msgstr "Behold bakgrunn"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Script-Fu/Stensiloperasjoner/Forkrom det..."
+
+#, fuzzy
+#~ msgid "Chrome balance"
+#~ msgstr "Krom-balanse"
+
+#, fuzzy
+#~ msgid "Chrome factor"
+#~ msgstr "Krom-faktor"
+
+#, fuzzy
+#~ msgid "Chrome lightness"
+#~ msgstr "Krom-lysverdi"
+
+#, fuzzy
+#~ msgid "Chrome saturation"
+#~ msgstr "Krom-metning"
+
+#, fuzzy
+#~ msgid "Chrome white areas"
+#~ msgstr "Forkrom hvite områder"
+
+#, fuzzy
+#~ msgid "Environment map"
+#~ msgstr "Miljøkart"
+
+#, fuzzy
+#~ msgid "Highlight balance"
+#~ msgstr "Balanse for utheving"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Krom..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Krom..."
+
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "Avstander (piksler * 2)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Script-Fu/Render/Krets..."
+
+#, fuzzy
+#~ msgid "Circuit seed"
+#~ msgstr "Utgangsverdi for krets"
+
+#, fuzzy
+#~ msgid "Keep selection"
+#~ msgstr "Behold utvalg"
+
+#, fuzzy
+#~ msgid "No background (only for separate layer)"
+#~ msgstr "Ingen bakgrunn (kun for separat lag)"
+
+#, fuzzy
+#~ msgid "Oilify mask size"
+#~ msgstr "Maskestørrelse for oljeeffekt"
+
+#, fuzzy
+#~ msgid "Separate layer"
+#~ msgstr "Separat lag"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Script-Fu/Alkymi/Klede..."
+
+#~ msgid "Azimuth"
+#~ msgstr "Azimuth"
+
+#~ msgid "Blur X"
+#~ msgstr "Blur X"
+
+#~ msgid "Blur Y"
+#~ msgstr "Blur Y"
+
+#~ msgid "Depth"
+#~ msgstr "Dybde"
+
+#~ msgid "Elevation"
+#~ msgstr "Forhøyning"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Kaffeflekk..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "Kun mørkere\n"
+#~ "(Bedre, men kun for bilder med mye hvitt)"
+
+#~ msgid "Stains"
+#~ msgstr "Flekker"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Tegneserie..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Tegneserie..."
+
+#, fuzzy
+#~ msgid "Outline color"
+#~ msgstr "Farge for omriss"
+
+#, fuzzy
+#~ msgid "Outline size"
+#~ msgstr "Størrelse for omriss"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Kjølig metall..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Kjølig metall..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels)"
+#~ msgstr "Effektstørrelse (piksler)"
+
+#, fuzzy
+#~ msgid "<Image>/Edit/Copy/Copy _Visible"
+#~ msgstr "<Image>/Rediger/Kopier synlig"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Krystall..."
+
+#, fuzzy
+#~ msgid "Background image"
+#~ msgstr "Bakgrunnsbilde"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
+#~ msgstr "<Image>/Script-Fu/Utvalg/Nødutvalg..."
+
+#, fuzzy
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "Granularitet (1 er lav)"
+
+#, fuzzy
+#~ msgid "Smooth horizontally"
+#~ msgstr "Jevn ut horisontalt"
+
+#, fuzzy
+#~ msgid "Smooth vertically"
+#~ msgstr "Jevn ut vertikalt"
+
+#~ msgid "Spread"
+#~ msgstr "Spredning"
+
+#, fuzzy
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "Terskel (Større 1<-->255 mindre)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
+#~ msgstr "<Image>/Script-Fu/Skygge/Fallskygge..."
+
+#, fuzzy
+#~ msgid "Allow resizing"
+#~ msgstr "Tillat endring av størrelse"
+
+#, fuzzy
+#~ msgid "Blur radius"
+#~ msgstr "Blur-raduis"
+
+#~ msgid "Offset X"
+#~ msgstr "Avstand X"
+
+#~ msgid "Offset Y"
+#~ msgstr "Avstand Y"
+
+#~ msgid "Opacity"
+#~ msgstr "Ugjennomsiktighet"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Erase every other Row..."
+#~ msgstr "<Image>/Script-Fu/Alkymi/Slett hver annen rad..."
+
+#~ msgid "Columns"
+#~ msgstr "Kolonner"
+
+#~ msgid "Erase"
+#~ msgstr "Slett"
+
+#, fuzzy
+#~ msgid "Erase/fill"
+#~ msgstr "Slett/Fyll"
+
+#~ msgid "Even"
+#~ msgstr "Lik"
+
+#, fuzzy
+#~ msgid "Even/odd"
+#~ msgstr "Lik/odde"
+
+#~ msgid "Fill with BG"
+#~ msgstr "Fyll med BG"
+
+#~ msgid "Odd"
+#~ msgstr "Odde"
+
+#~ msgid "Rows"
+#~ msgstr "Rader"
+
+#, fuzzy
+#~ msgid "Rows/cols"
+#~ msgstr "Rader/kolonner"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Script-Fu/Utvalg/Visk ut omriss..."
+
+#, fuzzy
+#~ msgid "Apply generated layermask"
+#~ msgstr "Påfør generert lagmaske"
+
+#, fuzzy
+#~ msgid "Border size"
+#~ msgstr "Kantstørrelse"
+
+#, fuzzy
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "Tøm ikke-valgt maskeområde"
+
+#, fuzzy
+#~ msgid "Fade from %"
+#~ msgstr "Glidende overgang fra %"
+
+#, fuzzy
+#~ msgid "Fade to   %"
+#~ msgstr "Gli over til %"
+
+#, fuzzy
+#~ msgid "Use growing selection"
+#~ msgstr "Bruk voksende utvalg"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Flatland..."
+
+#, fuzzy
+#~ msgid "Detail level"
+#~ msgstr "Detaljnivå"
+
+#, fuzzy
+#~ msgid "Image height"
+#~ msgstr "Bildehøyde"
+
+#, fuzzy
+#~ msgid "Image width"
+#~ msgstr "Bildebredde"
+
+#, fuzzy
+#~ msgid "Random seed"
+#~ msgstr "Tilfeldig seed"
+
+#~ msgid "Scale X"
+#~ msgstr "Skala X"
+
+#~ msgid "Scale Y"
+#~ msgstr "Skala Y"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Verktøy/Skrifttypekart..."
+
+#, fuzzy
+#~ msgid "Active colors"
+#~ msgstr "Farge for omriss"
+
+#, fuzzy
+#~ msgid "Black on white"
+#~ msgstr "Bakgrunnsbilde"
+
+#, fuzzy
+#~ msgid "Font _size (pixels)"
+#~ msgstr "Tekststørrelse (piksler)"
+
+#, fuzzy
+#~ msgid "_Border (pixels)"
+#~ msgstr "Kantstørrelse (piksler)"
+
+#, fuzzy
+#~ msgid "_Color scheme"
+#~ msgstr "Farge 3"
+
+#, fuzzy
+#~ msgid "_Text"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Frossen..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Frossen..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Uklar grense..."
+
+#, fuzzy
+#~ msgid "Add shadow"
+#~ msgstr "Legg til skygge"
+
+#, fuzzy
+#~ msgid "Blur border"
+#~ msgstr "Blur grense"
+
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "Granularitet (1 er lav)"
+
+#, fuzzy
+#~ msgid "Shadow weight (%)"
+#~ msgstr "Skyggetyngde (%)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Big Header..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Gimp.Org/Stor topptekst..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Gimp.Org/Liten topptekst..."
+
+#, fuzzy
+#~ msgid "Autocrop"
+#~ msgstr "Automatisk beskjæring"
+
+#, fuzzy
+#~ msgid "Dark color"
+#~ msgstr "Mørk farge"
+
+#, fuzzy
+#~ msgid "Highlight color"
+#~ msgstr "Uthevingsfarge"
+
+#, fuzzy
+#~ msgid "Index image"
+#~ msgstr "Indeksbilde"
+
+#, fuzzy
+#~ msgid "Number of colors"
+#~ msgstr "Antall farger"
+
+#, fuzzy
+#~ msgid "Remove background"
+#~ msgstr "Fjern bakgrunn"
+
+#, fuzzy
+#~ msgid "Select-by-color threshold"
+#~ msgstr "Velg-etter-farge terskel"
+
+#, fuzzy
+#~ msgid "Shadow color"
+#~ msgstr "Skyggefarge"
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Utvd/Script-Fu/Webside tema/Gimp.Org/Tubeetikett under knapp..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Utvd/Script-Fu/Webside tema/Gimp.Org/Tubeetiketter under-under "
+#~ "knapp..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr ""
+#~ "<Toolbox>/Utvd/Script-Fu/Webside tema/Gimp.Org/Vanlige tubeetiketter..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Webside tema/Gimp.Org/Tubeetiketter..."
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Glossy..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Glossy..."
+
+#, fuzzy
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "Blandingsgradient (tekst)"
+
+#, fuzzy
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "Blandingsgradient (omriss)"
+
+#, fuzzy
+#~ msgid "Blend gradient (text)"
+#~ msgstr "Blandingsgradient (tekst)"
+
+#, fuzzy
+#~ msgid "Outline gradient reverse"
+#~ msgstr "Radius for uskarpt omriss"
+
+#, fuzzy
+#~ msgid "Pattern (outline)"
+#~ msgstr "Mønster (omriss)"
+
+#, fuzzy
+#~ msgid "Pattern (overlay)"
+#~ msgstr "Mønster (overlegg)"
+
+#, fuzzy
+#~ msgid "Pattern (text)"
+#~ msgstr "Mønster (tekst)"
+
+#~ msgid "Shadow"
+#~ msgstr "Skygge"
+
+#, fuzzy
+#~ msgid "Text gradient reverse"
+#~ msgstr "Gradient"
+
+#, fuzzy
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "Bruk mønster for omriss istedet for gradient"
+
+#, fuzzy
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "Bruk mønster for tekst istedet for gradient"
+
+#, fuzzy
+#~ msgid "Use pattern overlay"
+#~ msgstr "Bruk overlegg av mønster"
+
+#, fuzzy
+#~ msgid "Use tattern for outline instead of gradient"
+#~ msgstr "Bruk mønster for omriss istedet for gradient"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Glødende het..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Glødende het..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "Effektstørrelse (piksler * 3)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Gradient bevel..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Opphevet gradient..."
+
+#, fuzzy
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "Høyde på forhøyning (skarphet)"
+
+#, fuzzy
+#~ msgid "Border size (pixels)"
+#~ msgstr "Kantstørrelse (piksler)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/Utvidelser/Script-Fu/Verktøy/Egendefinert gradient..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Imigre-26..."
+
+#, fuzzy
+#~ msgid "Frame color"
+#~ msgstr "Rammefarge"
+
+#, fuzzy
+#~ msgid "Frame size"
+#~ msgstr "Rammestørrelse"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Land..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Land..."
+
+#, fuzzy
+#~ msgid "Land height"
+#~ msgstr "Høyde på land"
+
+#, fuzzy
+#~ msgid "Sea depth"
+#~ msgstr "Dybde på sjø"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgstr "<Image>/Script-Fu/Render/Lava..."
+
+#~ msgid "Roughness"
+#~ msgstr "Røffhet"
+
+#~ msgid "Seed"
+#~ msgstr "Utgangsverdi"
+
+#, fuzzy
+#~ msgid "Use current gradient"
+#~ msgstr "Bruk aktiv gradient"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Scripte-Fu/Render/Linjenova..."
+
+#, fuzzy
+#~ msgid "Number of lines"
+#~ msgstr "Antall linjer"
+
+#, fuzzy
+#~ msgid "Offset radius"
+#~ msgstr "Avstandsradius"
+
+#~ msgid "Randomness"
+#~ msgstr "Tilfeldighet"
+
+#~ msgid "Sharpness (degrees)"
+#~ msgstr "Skarphet (grader)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Lag kost/Elliptisk, fjærkost..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Lag kost/Rektangulær, fjærkost..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Elliptical..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Lag kost/Elliptisk..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Lag kost/Rektangulær..."
+
+#~ msgid "Description"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "Feathering"
+#~ msgstr "Fjær"
+
+#~ msgid "Spacing"
+#~ msgstr "Mellomrom"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/N_eon..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Neon..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Neon..."
+
+#, fuzzy
+#~ msgid "Create shadow"
+#~ msgstr "Lag skygge"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "Effektstørrelse (piksler * 5)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Nyhetstekst..."
+
+#, fuzzy
+#~ msgid "Cell size (pixels)"
+#~ msgstr "Cellestørrelse (piksler)"
+
+#~ msgid "Density (%)"
+#~ msgstr "Tetthet (%)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Gammelt fotografi..."
+
+#~ msgid "Defocus"
+#~ msgstr "Fjern fokus"
+
+#~ msgid "Mottle"
+#~ msgstr "Flekklegg"
+
+#~ msgid "Sepia"
+#~ msgstr "Bruntone"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Script-Fu/Skygge/Perspektiv..."
+
+#~ msgid "Angle"
+#~ msgstr "Vinkel"
+
+#~ msgid "Interpolate"
+#~ msgstr "Interpoler"
+
+#, fuzzy
+#~ msgid "Relative distance of horizon"
+#~ msgstr "Relativ avstand til horisonten"
+
+#, fuzzy
+#~ msgid "Relative length of shadow"
+#~ msgstr "Relativ lengde på skygge"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Script-Fu/Alkymi/Rovdyr..."
+
+#, fuzzy
+#~ msgid "Edge amount"
+#~ msgstr "Mengde kant"
+
+#, fuzzy
+#~ msgid "Pixel amount"
+#~ msgstr "Pikselmengde"
+
+#~ msgid "Pixelize"
+#~ msgstr "Lag til piksler"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Knapper/Rund knapp..."
+
+#, fuzzy
+#~ msgid "Lower color"
+#~ msgstr "Nedre farge"
+
+#, fuzzy
+#~ msgid "Lower color (active)"
+#~ msgstr "Nedre farge (aktiv)"
+
+#, fuzzy
+#~ msgid "Not pressed"
+#~ msgstr "Ikke trykket"
+
+#, fuzzy
+#~ msgid "Not pressed (active)"
+#~ msgstr "Ikke trykket (aktiv)"
+
+#~ msgid "Padding X"
+#~ msgstr "Fyll X"
+
+#~ msgid "Padding Y"
+#~ msgstr "Fyll Y"
+
+#, fuzzy
+#~ msgid "Round ratio"
+#~ msgstr "Avrundingsrate"
+
+#, fuzzy
+#~ msgid "Text color (active)"
+#~ msgstr "Tekstfarge (aktiv)"
+
+#, fuzzy
+#~ msgid "Upper color"
+#~ msgstr "Øvre farge"
+
+#, fuzzy
+#~ msgid "Upper color (active)"
+#~ msgstr "Øvre farge (aktiv)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Render kart..."
+
+#~ msgid "Behaviour"
+#~ msgstr "Oppførsel"
+
+#~ msgid "Detail in Middle"
+#~ msgstr "Detalj i midten"
+
+#~ msgid "Tile"
+#~ msgstr "Flis"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Script-Fu/Animatorer/Bølger..."
+
+#~ msgid "Black"
+#~ msgstr "Sort"
+
+#, fuzzy
+#~ msgid "Edge behaviour"
+#~ msgstr "Kantoppførsel"
+
+#, fuzzy
+#~ msgid "Number of frames"
+#~ msgstr "Antall rammer"
+
+#, fuzzy
+#~ msgid "Rippling strength"
+#~ msgstr "Bølgestyrke"
+
+#~ msgid "Smear"
+#~ msgstr "Smør"
+
+#, fuzzy
+#~ msgid "Wrap"
+#~ msgstr "Forvreng"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Runde hjørner..."
+
+#, fuzzy
+#~ msgid "Add background"
+#~ msgstr "Legg til bakgrunn"
+
+#, fuzzy
+#~ msgid "Add drop-shadow"
+#~ msgstr "Legg til drop-shadow"
+
+#, fuzzy
+#~ msgid "Edge radius"
+#~ msgstr "Kantradius"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/_Round..."
+#~ msgstr "<Image>/Script-Fu/Utvalg/Rund..."
+
+#, fuzzy
+#~ msgid "Relative radius"
+#~ msgstr "Relativ radius"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Script-Fu/Utvalg/Til børste..."
+
+#, fuzzy
+#~ msgid "Brush name"
+#~ msgstr "Bruk kost"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Image"
+#~ msgstr "<Image>/Script-Fu/Utvalg/Til bilde"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Script-Fu/Utvalg/Til børste..."
+
+#, fuzzy
+#~ msgid "Pattern name"
+#~ msgstr "Mønster"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Slide..."
+#~ msgstr "<Image>/Script-Fu/Dekor/Gli..."
+
+#, fuzzy
+#~ msgid "Font color"
+#~ msgstr "Tekstfarge"
+
+#~ msgid "Number"
+#~ msgstr "Antall"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/SOTA krom..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Hurtigtekst..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Forskjellig/Sfære..."
+
+#~ msgid "Lighting (degrees)"
+#~ msgstr "Lyssetting (grader)"
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "Radius (piksler)"
+
+#, fuzzy
+#~ msgid "Sphere color"
+#~ msgstr "Farge på sfære"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Script-Fu/Animatorer/Spinnende globus..."
+
+#~ msgid "Frames"
+#~ msgstr "Rammer"
+
+#, fuzzy
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "Indekser til n farger (0 = forbli RGB)"
+
+#, fuzzy
+#~ msgid "Turn from left to right"
+#~ msgstr "Snu fra venstre til høyre"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Script-Fu/Render/Krets..."
+
+#, fuzzy
+#~ msgid "Airbrush"
+#~ msgstr "Bruk kost"
+
+#, fuzzy
+#~ msgid "Brush"
+#~ msgstr "Bruk kost"
+
+#, fuzzy
+#~ msgid "Circle"
+#~ msgstr "Flis"
+
+#, fuzzy
+#~ msgid "Color method"
+#~ msgstr "Farge 3"
+
+#, fuzzy
+#~ msgid "Frame"
+#~ msgstr "Rammer"
+
+#, fuzzy
+#~ msgid "Hexagon"
+#~ msgstr "Heksagoner"
+
+#, fuzzy
+#~ msgid "Hole ratio"
+#~ msgstr "Rate for glød"
+
+#, fuzzy
+#~ msgid "Inner teeth"
+#~ msgstr "Ytre grense"
+
+#, fuzzy
+#~ msgid "Margin (pixels)"
+#~ msgstr "Radius (piksler)"
+
+#, fuzzy
+#~ msgid "Outer teeth"
+#~ msgstr "Ytre grense"
+
+#, fuzzy
+#~ msgid "Pentagon"
+#~ msgstr "Orientering"
+
+#, fuzzy
+#~ msgid "Solid Color"
+#~ msgstr "Fyllfarge"
+
+#, fuzzy
+#~ msgid "Square"
+#~ msgstr "Ruter"
+
+#, fuzzy
+#~ msgid "Start angle"
+#~ msgstr "Utgangsvinkel"
+
+#, fuzzy
+#~ msgid "Triangle"
+#~ msgstr "Flis"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "Blur type"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Stjerneskudd..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Stjerneskudd..."
+
+#, fuzzy
+#~ msgid "Burst color"
+#~ msgstr "Farge på utbrudd"
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "Effektstørrelse (piksler * 30)"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Starscape..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Starscape..."
+
+#, fuzzy
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "Effektstørrelse (piksler * 4)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Swirl-tile..."
+
+#, fuzzy
+#~ msgid "Whirl amount"
+#~ msgstr "Mengde snurr"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Swirl-tile..."
+
+#, fuzzy
+#~ msgid "Number of times to whirl"
+#~ msgstr "Antall ganger det skal snurres"
+
+#, fuzzy
+#~ msgid "Quarter size"
+#~ msgstr "Kvartstørrelse"
+
+#, fuzzy
+#~ msgid "Whirl angle"
+#~ msgstr "Vinkel for snurr"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Partikkelspor..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Partikkelspor..."
+
+#, fuzzy
+#~ msgid "Base color"
+#~ msgstr "Basisfarge"
+
+#, fuzzy
+#~ msgid "Edge only"
+#~ msgstr "Kun kant"
+
+#, fuzzy
+#~ msgid "Edge width"
+#~ msgstr "Kantbredde"
+
+#, fuzzy
+#~ msgid "Hit rate"
+#~ msgstr "Treffrate"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Tekstsirkel..."
+
+#~ msgid "Antialias"
+#~ msgstr "Antialias"
+
+#, fuzzy
+#~ msgid "Fill angle"
+#~ msgstr "Fyllvinkel"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Script-Fu/Alpha til logo/Tekstur..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Tekstur..."
+
+#, fuzzy
+#~ msgid "Ending blend"
+#~ msgstr "Slutt på blanding"
+
+#~ msgid "Hexagons"
+#~ msgstr "Heksagoner"
+
+#, fuzzy
+#~ msgid "Mosaic tile type"
+#~ msgstr "Flistype for mosaikk"
+
+#~ msgid "Octagons"
+#~ msgstr "Oktagoner"
+
+#~ msgid "Squares"
+#~ msgstr "Ruter"
+
+#, fuzzy
+#~ msgid "Starting blend"
+#~ msgstr "Starter blanding"
+
+#, fuzzy
+#~ msgid "Text pattern"
+#~ msgstr "Tekstmønster"
+
+#, fuzzy
+#~ msgid "<Image>/Filters/Blur/_Tileable Blur..."
+#~ msgstr "<Image>/Filtre/Forvreng/Flisbar blur..."
+
+#, fuzzy
+#~ msgid "Blur horizontally"
+#~ msgstr "Blur horisontalt"
+
+#, fuzzy
+#~ msgid "Blur type"
+#~ msgstr "Blur type"
+
+#, fuzzy
+#~ msgid "Blur vertically"
+#~ msgstr "Blur vertikalt"
+
+#~ msgid "IIR"
+#~ msgstr "IIR"
+
+#~ msgid "RLE"
+#~ msgstr "RLE"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Utils/Set Colormap"
+#~ msgstr "<Image>/Script-Fu/Utvalg/Til bilde"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Mønster"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Web titteltopptekst..."
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Truchet..."
+
+#, fuzzy
+#~ msgid "Foreground color"
+#~ msgstr "Forgrunnsfarge"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Script-Fu/Alkymi/Gjør masken mindre skarp..."
+
+#, fuzzy
+#~ msgid "Mask opacity"
+#~ msgstr "Ugjennomsiktighet for maske"
+
+#, fuzzy
+#~ msgid "Mask size"
+#~ msgstr "Maskestørrelse"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Script-Fu/Animatorer/Bølger..."
+
+#~ msgid "Amplitude"
+#~ msgstr "Amplityde"
+
+#~ msgid "Invert direction"
+#~ msgstr "Inverter retning"
+
+#~ msgid "Wavelength"
+#~ msgstr "Bølgelengde"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Weave..."
+#~ msgstr "<Image>/Script-Fu/Alkymi/Vev..."
+
+#, fuzzy
+#~ msgid "Ribbon spacing"
+#~ msgstr "Mellomrom for bånd"
+
+#, fuzzy
+#~ msgid "Ribbon width"
+#~ msgstr "Bredde for bånd"
+
+#, fuzzy
+#~ msgid "Shadow darkness"
+#~ msgstr "Skyggemørkhet"
+
+#, fuzzy
+#~ msgid "Shadow depth"
+#~ msgstr "Skyggedybde"
+
+#, fuzzy
+#~ msgid "Thread density"
+#~ msgstr "Tetthet for tråd"
+
+#, fuzzy
+#~ msgid "Thread intensity"
+#~ msgstr "Intensitet for tråd"
+
+#, fuzzy
+#~ msgid "Thread length"
+#~ msgstr "Lengde på tråd"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/Tilleggsregister"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/Tilleggsregister"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Main Web Site"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/Tilleggsregister"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "<Image>/Script-Fu/Skygge/Xach-effekt..."
+
+#, fuzzy
+#~ msgid "Drop shadow X offset"
+#~ msgstr "X-avstand for fallskygge"
+
+#, fuzzy
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "Y-avstand for fallskygge"
+
+#, fuzzy
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "Radius for uklarhet i fallskygge"
+
+#, fuzzy
+#~ msgid "Drop shadow color"
+#~ msgstr "Farge for fallskygge"
+
+#, fuzzy
+#~ msgid "Drop shadow opacity"
+#~ msgstr "Ugjennomsiktighet for fallskygge"
+
+#, fuzzy
+#~ msgid "Highlight X offset"
+#~ msgstr "X-avstand for utheving"
+
+#, fuzzy
+#~ msgid "Highlight Y offset"
+#~ msgstr "Y-avstand for uthevelse"
+
+#, fuzzy
+#~ msgid "Highlight opacity"
+#~ msgstr "Ugjennomsiktighet for utheving"
+
+#~ msgid "Transparent Background"
+#~ msgstr "Gjennomsiktig bakgrunn"
+
+#~ msgid "DB Browser"
+#~ msgstr "DB-leser"
+
+#~ msgid "Name:"
+#~ msgstr "Navn:"
+
+#~ msgid "Blurb:"
+#~ msgstr "Blurb:"
+
+#~ msgid "In:"
+#~ msgstr "Inn:"
+
+#~ msgid "Out:"
+#~ msgstr "Ut:"
+
+#~ msgid "Help:"
+#~ msgstr "Hjelp:"
+
+#, fuzzy
+#~ msgid "Script-Fu _Console"
+#~ msgstr "Script-Fu konsoll"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Script-Fu"
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Logoer/Neon..."
+
+#, fuzzy
+#~ msgid "<Image>/Script-Fu/Render/_Grid..."
+#~ msgstr "<Image>/Script-Fu/Render/Krets..."
+
+#, fuzzy
+#~ msgid "<Image>/Script-Fu/Utils/Draw _HSV Graph..."
+#~ msgstr "<Image>/Script-Fu/Verktøy/Tegn HSV-graf..."
+
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "BG ugjennomsiktighet"
+
+#~ msgid "End X"
+#~ msgstr "Slutt X"
+
+#~ msgid "End Y"
+#~ msgstr "Slutt Y"
+
+#, fuzzy
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "Fra øverst-venstre til nederst-høyre"
+
+#, fuzzy
+#~ msgid "Graph scale"
+#~ msgstr "Skala for graf"
+
+#~ msgid "Start X"
+#~ msgstr "Startverdi for X"
+
+#~ msgid "Start Y"
+#~ msgstr "Startverdi for Y"
+
+#, fuzzy
+#~ msgid "Use selection bounds instead of belows"
+#~ msgstr "Bruk utvalgsgrenser i stedet for \"belows\""
+
+#, fuzzy
+#~ msgid "<Image>/Script-Fu/Utils/Show Image _Structure..."
+#~ msgstr "<Image>/Script-Fu/Verktøy/Vis bildestruktur..."
+
+#, fuzzy
+#~ msgid "Apply layer mask (or discard)"
+#~ msgstr "Påfør lagmaske (eller forkast)"
+
+#, fuzzy
+#~ msgid "Create new image"
+#~ msgstr "Lag nytt bilde"
+
+#, fuzzy
+#~ msgid "Insert layer names"
+#~ msgstr "Sett inn lagnavn"
+
+#, fuzzy
+#~ msgid "Make new background"
+#~ msgstr "Lag ny bakgrunn"
+
+#, fuzzy
+#~ msgid "Outer border"
+#~ msgstr "Ytre grense"
+
+#, fuzzy
+#~ msgid "Pad color"
+#~ msgstr "Fyllfarge"
+
+#, fuzzy
+#~ msgid "Pad opacity"
+#~ msgstr "Ugjennomsiktighet for fyll"
+
+#, fuzzy
+#~ msgid "Padding for transparent regions"
+#~ msgstr "Fyll for gjennomsiktige områder"
+
+#, fuzzy
+#~ msgid "Shear length"
+#~ msgstr "Lengde for klipp"
+
+#, fuzzy
+#~ msgid "Space between layers"
+#~ msgstr "Mellomrom mellom lag"
+
+#~ msgid "Unable to open a stream on the SIOD output pipe"
+#~ msgstr "Kunne ikke åpne en strøm på SIOD utskriftsrøret"
+
+#, fuzzy
+#~ msgid "Blend gradient (sext)"
+#~ msgstr "Blandingsgradient (tekst)"
+
+#, fuzzy
+#~ msgid "<Toolbox>/Xtns/Script-Fu/Patterns/_Swirly (tileable)..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Swirly (tileable)..."
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Developer FAQ"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/Utvikler OBS"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Bugs"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP feilrapporter"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Manual"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP brukerhåndbok"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP News"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP nyheter"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP Tutorials"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP veiledere"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Documenation"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/Dokumentasjon"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Download"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/Nedlasting"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/GIMP Art"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/GIMP kunst"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/GTK"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/GTK"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Links"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/Lenker"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Mailing Lists"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/E-post lister"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/Resources"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/Ressurser"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/GIMP.ORG/The GIMP"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/GIMP.ORG/GIMP"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Gimp-Savvy.com"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/Gimp-Savvy.com"
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/Grokking the GIMP"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/\"Grokking the GIMP\""
+
+#~ msgid "<Toolbox>/Xtns/Web Browser/User FAQ"
+#~ msgstr "<Toolbox>/Utvd/Nettleser/Bruker OBS"
+
+#~ msgid "Border"
+#~ msgstr "Kant"
+
+#~ msgid "Fonts"
+#~ msgstr "Skrifttyper"
+
+#~ msgid "<Image>/Script-Fu/Render/Make Grid System..."
+#~ msgstr "<Image>/Script-Fu/Render/Lag rutenett..."
+
+#~ msgid "Grids X"
+#~ msgstr "Rutenett X"
+
+#~ msgid "Grids Y"
+#~ msgstr "Rutenett Y"
+
+#~ msgid "<Toolbox>/Xtns/Script-Fu/Patterns/Trochoid..."
+#~ msgstr "<Toolbox>/Utvd/Script-Fu/Mønstre/Trochoid..."
+
+#~ msgid "Base Radius (pixels)"
+#~ msgstr "Basisradius (piksler)"
+
+#~ msgid "Erase before Draw"
+#~ msgstr "Slett før tegning"
+
+#~ msgid "Pen Rad. / Wheel Rad. [0.0:1.0]"
+#~ msgstr "Penneradius / hjulradius [0.0:1.0]"
+
+#~ msgid "Wheel Radius (hypo < 0 < epi)"
+#~ msgstr "Hjulradius (hypo < 0 < epi)"
+
+#~ msgid ""
+#~ "At least one font you've choosen is invalid.\n"
+#~ "Please check your settings.\n"
+#~ msgstr ""
+#~ "Minst en skrifttype du har valgt er ugyldig.\n"
+#~ "Vennligst sjekk dine instillinger.\n"
+
+#~ msgid "<Image>/Script-Fu/Animators/Selection to AnimImage..."
+#~ msgstr "<Image>/Script-Fu/Animatorer/Utvalg til AnimImage..."
+
+#~ msgid "Anim-Filter for all Copies"
+#~ msgstr "Anim-filter for alle kopier"
+
+#~ msgid "Fill with BG Color"
+#~ msgstr "Fyll med BG-farge"
+
+#~ msgid "Number of Copies"
+#~ msgstr "Antall kopier"
