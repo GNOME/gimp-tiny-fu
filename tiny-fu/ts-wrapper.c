@@ -579,13 +579,13 @@ fprintf (stderr, "  Invalid procedure name\n");
   if ( (sc->vptr->list_length (sc, a) - 1) != nparams)
     {
 #if DEBUG_MARSHALL
-fprintf (stderr, "  Invalid number of arguments (got %d, expected %d)",
-                (sc->vptr->list_length (sc, a) - 1), nparams);
+fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
+                nparams, (sc->vptr->list_length (sc, a) - 1));
 #endif
       convert_string (proc_name);
       g_snprintf (error_str, sizeof (error_str),
-                  "Invalid number of arguments supplied to %s (got %d, expected %d)",
-                  proc_name, (sc->vptr->list_length (sc, a) - 1), nparams);
+                  "Invalid number of arguments supplied to %s (expected %d but received %d)",
+                  proc_name, nparams, (sc->vptr->list_length (sc, a) - 1));
       return my_err (error_str, sc->NIL);
     }
 
