@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu\n"
+"Project-Id-Version: gimp-tiny-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-22 23:22-0500\n"
+"POT-Creation-Date: 2004-12-20 11:37-0500\n"
 "PO-Revision-Date: 2000-11-24 15:46+0100\n"
 "Last-Translator: Robert Claudiu Gheorghe <rgheorghe@writeme.com>\n"
 "Language-Team: Română <ro@li.org>\n"
@@ -34,9 +34,8 @@ msgid "Tiny-Fu console mode allows only interactive invocation"
 msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:171
-#, fuzzy
 msgid "Tiny-Fu Console"
-msgstr "Selecţie culoare"
+msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:176
 #, fuzzy
@@ -76,8 +75,9 @@ msgid "Current Command"
 msgstr "Lăţimea curentă:"
 
 #: tiny-fu/tiny-fu-console.c:284
+#, fuzzy
 msgid "Browse..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: tiny-fu/tiny-fu-console.c:340
 msgid "Save TinyScheme Output"
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr ""
 
-#: tiny-fu/tiny-fu-scripts.c:626
+#: tiny-fu/tiny-fu-scripts.c:634
 #, c-format
 msgid ""
 "Error while executing\n"
@@ -120,9 +120,8 @@ msgstr ""
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
 #: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
-#, fuzzy
 msgid "/Tiny-Fu/"
-msgstr "Foarte mic"
+msgstr ""
 
 #: tiny-fu/tiny-fu-interface.c:218
 #, c-format
@@ -358,7 +357,7 @@ msgstr "Culoare adevărată"
 #: scripts/contactsheet.sct.h:13
 #, fuzzy
 msgid "Title font"
-msgstr "Format titlu imagine:"
+msgstr "Modifică punct"
 
 #: scripts/contactsheet.sct.h:14
 #, fuzzy
@@ -597,8 +596,9 @@ msgid "Up"
 msgstr ""
 
 #: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
+#, fuzzy
 msgid "_Arrow..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/alien-glow-bar.sct.h:3
 #, fuzzy
@@ -611,8 +611,9 @@ msgid "Bar length"
 msgstr "Decupare"
 
 #: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
+#, fuzzy
 msgid "_Hrule..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
@@ -621,8 +622,9 @@ msgid "Radius"
 msgstr "Rază:"
 
 #: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
+#, fuzzy
 msgid "_Bullet..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
 msgid "B_utton..."
@@ -660,14 +662,12 @@ msgid "Number of bands"
 msgstr "Numărul minim de culori:"
 
 #: scripts/alien-neon-logo.sct.h:11
-#, fuzzy
 msgid "Width of bands"
-msgstr "Numărul minim de culori:"
+msgstr ""
 
 #: scripts/alien-neon-logo.sct.h:12
-#, fuzzy
 msgid "Width of gaps"
-msgstr "Numărul minim de culori:"
+msgstr ""
 
 #: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
 #: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
@@ -703,7 +703,7 @@ msgstr ""
 #: scripts/asc2img.sct.h:13
 #, fuzzy
 msgid "_ASCII to Layer..."
-msgstr "Micşorează selecţia"
+msgstr "FS -> Strat"
 
 #: scripts/basic1-logo.sct.h:8
 msgid "_Basic I..."
@@ -736,9 +736,8 @@ msgid "Pressed"
 msgstr "Presiune"
 
 #: scripts/beveled-button.sct.h:8
-#, fuzzy
 msgid "Simple _Beveled Button..."
-msgstr "Micşorează selecţia"
+msgstr ""
 
 #: scripts/beveled-button.sct.h:11
 #, fuzzy
@@ -1035,8 +1034,9 @@ msgid "Keep background"
 msgstr "Fundal"
 
 #: scripts/chrome-it.sct.h:2
+#, fuzzy
 msgid "C_hrome-It..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
 #, fuzzy
@@ -1076,13 +1076,13 @@ msgid "Highlight balance"
 msgstr "Balanţa de culori"
 
 #: scripts/chrome-logo.sct.h:5
+#, fuzzy
 msgid "C_hrome..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/chrome-logo.sct.h:8
-#, fuzzy
 msgid "Offsets (pixels * 2)"
-msgstr "Decalaj X:"
+msgstr ""
 
 #: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
 #: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
@@ -1189,10 +1189,6 @@ msgstr ""
 #, fuzzy
 msgid "Effect size (pixels)"
 msgstr "Decalaj X:"
-
-#: scripts/copy-visible.sct.h:1
-msgid "Copy _Visible"
-msgstr ""
 
 #: scripts/crystal-logo.sct.h:2
 #, fuzzy
@@ -1398,9 +1394,8 @@ msgid "Active colors"
 msgstr "Actualizează culoarea activă"
 
 #: scripts/font-map.sct.h:3
-#, fuzzy
 msgid "Black on white"
-msgstr "Fundal"
+msgstr ""
 
 #: scripts/font-map.sct.h:4
 #, fuzzy
@@ -1441,8 +1436,9 @@ msgid "_Text"
 msgstr "text"
 
 #: scripts/frosty-logo.sct.h:8
+#, fuzzy
 msgid "_Frosty..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/fuzzyborder.sct.h:2
 #, fuzzy
@@ -1888,9 +1884,8 @@ msgid "Feathering"
 msgstr "Pană"
 
 #: scripts/mkbrush.sct.h:7
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "Micşorează selecţia"
+msgstr ""
 
 #: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
 #, fuzzy
@@ -2064,9 +2059,8 @@ msgid "Behavior"
 msgstr "Comportament ferestră de dialog"
 
 #: scripts/rendermap.sct.h:3
-#, fuzzy
 msgid "Detail in Middle"
-msgstr "Incarcă nivele"
+msgstr ""
 
 #: scripts/rendermap.sct.h:8
 msgid "Render _Map..."
@@ -2126,14 +2120,13 @@ msgid "Edge radius"
 msgstr "Rază:"
 
 #: scripts/round-corners.sct.h:9
-#, fuzzy
 msgid "_Round Corners..."
-msgstr "Micşorează selecţia"
+msgstr ""
 
 #: scripts/selection-round.sct.h:1
 #, fuzzy
 msgid "<Image>/Select/Modify"
-msgstr "Selectie Strat"
+msgstr "Micşorează selecţia"
 
 #: scripts/selection-round.sct.h:2
 #, fuzzy
@@ -2156,8 +2149,9 @@ msgid "Brush name"
 msgstr "Interfaţă utilizator pentru Pensule"
 
 #: scripts/select-to-brush.sct.h:5
+#, fuzzy
 msgid "To _Brush..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/select-to-image.sct.h:2
 #, fuzzy
@@ -2206,9 +2200,8 @@ msgid "Lighting (degrees)"
 msgstr ""
 
 #: scripts/sphere.sct.h:4
-#, fuzzy
 msgid "Radius (pixels)"
-msgstr "Margine:"
+msgstr ""
 
 #: scripts/sphere.sct.h:6
 #, fuzzy
@@ -2238,9 +2231,8 @@ msgid "_Spinning Globe..."
 msgstr ""
 
 #: scripts/spyrogimp.sct.h:2
-#, fuzzy
 msgid "Airbrush"
-msgstr "Pensule"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:3
 #, fuzzy
@@ -2277,9 +2269,8 @@ msgid "Gradient: Loop Triangle"
 msgstr "Buclează triunghi"
 
 #: scripts/spyrogimp.sct.h:12
-#, fuzzy
 msgid "Hexagon"
-msgstr "Rotire"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:13
 #, fuzzy
@@ -2391,8 +2382,9 @@ msgid "Effect size (pixels * 4)"
 msgstr "Decalaj X:"
 
 #: scripts/starscape-logo.sct.h:7
+#, fuzzy
 msgid "Sta_rscape..."
-msgstr ""
+msgstr "Afişare informaţii de ajutor"
 
 #: scripts/swirltile.sct.h:9
 msgid "Swirl-_Tile..."
@@ -2470,18 +2462,16 @@ msgid "Ending blend"
 msgstr "Amestec:"
 
 #: scripts/textured-logo.sct.h:8
-#, fuzzy
 msgid "Hexagons"
-msgstr "Rotire"
+msgstr ""
 
 #: scripts/textured-logo.sct.h:9
 msgid "Mosaic tile type"
 msgstr ""
 
 #: scripts/textured-logo.sct.h:10
-#, fuzzy
 msgid "Octagons"
-msgstr "Rotire"
+msgstr ""
 
 #: scripts/textured-logo.sct.h:12
 #, fuzzy
@@ -2580,9 +2570,8 @@ msgid "Invert direction"
 msgstr "/Intersectează cu selecţia"
 
 #: scripts/waves-anim.sct.h:5
-#, fuzzy
 msgid "Wavelength"
-msgstr "Decupare"
+msgstr ""
 
 #: scripts/waves-anim.sct.h:6
 msgid "_Waves..."
@@ -2689,20 +2678,52 @@ msgid "_Xach-Effect..."
 msgstr ""
 
 #, fuzzy
-#~ msgid "<Image>/Edit/Copy"
-#~ msgstr "/Modificare/Memorează"
+#~ msgid "Script-fu Pattern Selection"
+#~ msgstr "Selecţie model"
 
 #, fuzzy
-#~ msgid "Text Color"
-#~ msgstr "Culoare adevărată"
+#~ msgid "_Refresh Scripts"
+#~ msgstr "Reîmprospătare"
 
 #, fuzzy
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Margine:"
+#~ msgid "Procedure Browser"
+#~ msgstr "Baza de date procedurală"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "Micşorează selecţia"
+#~ msgid "_Search:"
+#~ msgstr "Decupare"
+
+#, fuzzy
+#~ msgid "1 Procedure"
+#~ msgstr "Proceduri de modificare"
+
+#, fuzzy
+#~ msgid "%d Procedures"
+#~ msgstr "Proceduri de modificare"
+
+#, fuzzy
+#~ msgid "Parameters"
+#~ msgstr "Paraziţi"
+
+#, fuzzy
+#~ msgid "Additional Information"
+#~ msgstr "Informaţii despre rotaţie"
+
+#~ msgid "Internal GIMP procedure"
+#~ msgstr "Procedură internă GIMP"
+
+#~ msgid "GIMP Plug-In"
+#~ msgstr "Modul inserabil GIMP"
+
+#~ msgid "GIMP Extension"
+#~ msgstr "Extensie GIMP"
+
+#~ msgid "Temporary Procedure"
+#~ msgstr "Procedură temporară"
+
+#, fuzzy
+#~ msgid "Name"
+#~ msgstr "Nume:"
 
 #, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
@@ -2710,10 +2731,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2725,23 +2742,7 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2773,22 +2774,6 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
 #~ msgstr "Micşorează selecţia"
 
@@ -2806,14 +2791,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2873,23 +2850,11 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Selection/_Distress Selection..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2907,18 +2872,6 @@ msgstr ""
 #, fuzzy
 #~ msgid ""
 #~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2958,15 +2911,7 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
+#~ msgid "<Image>/Tiny-Fu/Render/_Grid..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2974,15 +2919,7 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -2998,15 +2935,11 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "Micşorează selecţia"
+
+#, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -3015,14 +2948,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -3050,23 +2975,7 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -3078,14 +2987,6 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
 #~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
 #~ msgstr "Micşorează selecţia"
 
@@ -3094,67 +2995,16 @@ msgstr ""
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "Micşorează selecţia"
+
+#, fuzzy
 #~ msgid "Relative radius"
 #~ msgstr "Decalaj X:"
 
 #, fuzzy
-#~ msgid "error reading from stdin: %s\n"
-#~ msgstr "Eroare la deschiderea fişierului: %s\n"
-
-#, fuzzy
 #~ msgid "_About"
 #~ msgstr "Automat"
-
-#, fuzzy
-#~ msgid "Error: null parasite"
-#~ msgstr "elimină parazit"
-
-#, fuzzy
-#~ msgid "Server: disconnect from host %s.\n"
-#~ msgstr "Eroare la deschiderea fişierului: %s\n"
-
-#, fuzzy
-#~ msgid "Procedure Browser"
-#~ msgstr "Baza de date procedurală"
-
-#, fuzzy
-#~ msgid "_Search:"
-#~ msgstr "Decupare"
-
-#, fuzzy
-#~ msgid "%d Procedures"
-#~ msgstr "Proceduri de modificare"
-
-#, fuzzy
-#~ msgid "Parameters"
-#~ msgstr "Paraziţi"
-
-#, fuzzy
-#~ msgid "Additional Information"
-#~ msgstr "Informaţii despre rotaţie"
-
-#~ msgid "Internal GIMP procedure"
-#~ msgstr "Procedură internă GIMP"
-
-#~ msgid "GIMP Plug-In"
-#~ msgstr "Modul inserabil GIMP"
-
-#~ msgid "GIMP Extension"
-#~ msgstr "Extensie GIMP"
-
-#~ msgid "Temporary Procedure"
-#~ msgstr "Procedură temporară"
-
-#, fuzzy
-#~ msgid "Transparent Background"
-#~ msgstr "Transparent"
-
-#, fuzzy
-#~ msgid "DB Browser"
-#~ msgstr "Afişare informaţii de ajutor"
-
-#~ msgid "Name:"
-#~ msgstr "Nume:"
 
 #, fuzzy
 #~ msgid "Blurb:"
@@ -3173,12 +3023,8 @@ msgstr ""
 #~ msgstr "/_Ajutor"
 
 #, fuzzy
-#~ msgid "<Toolbox>/Xtns/Script-Fu"
-#~ msgstr "Micşorează selecţia"
-
-#, fuzzy
-#~ msgid "<Image>/Script-Fu/Render/_Grid..."
-#~ msgstr "Micşorează selecţia"
+#~ msgid "Transparent Background"
+#~ msgstr "Transparent"
 
 #, fuzzy
 #~ msgid "Blend gradient (sext)"
@@ -3189,11 +3035,11 @@ msgstr ""
 #~ msgstr "puncte"
 
 #, fuzzy
-#~ msgid "<Image>/Script-Fu/Render/Make Grid System..."
+#~ msgid "<Image>/Tiny-Fu/Render/Make Grid System..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
-#~ msgid "<Image>/Script-Fu/Animators/Selection to AnimImage..."
+#~ msgid "<Image>/Tiny-Fu/Animators/Selection to AnimImage..."
 #~ msgstr "Micşorează selecţia"
 
 #, fuzzy
@@ -3205,7 +3051,7 @@ msgstr ""
 #~ msgstr "Numărul minim de culori:"
 
 #, fuzzy
-#~ msgid "Script-Fu Directory Selection"
+#~ msgid "Tiny-Fu Directory Selection"
 #~ msgstr "Micşorează selecţia"
 
 #~ msgid "Close"
@@ -4312,6 +4158,9 @@ msgstr ""
 #~ msgid "Invert operation failed."
 #~ msgstr "Operaţia Invert a eşuat."
 
+#~ msgid "Layer Select"
+#~ msgstr "Selectie Strat"
+
 #~ msgid "Layer"
 #~ msgstr "Strat"
 
@@ -4624,6 +4473,9 @@ msgstr ""
 
 #~ msgid "/Edit/Cut"
 #~ msgstr "/Modificare/Taie şi memorează"
+
+#~ msgid "/Edit/Copy"
+#~ msgstr "/Modificare/Memorează"
 
 #~ msgid "/Edit/Paste"
 #~ msgstr "/Modificare/Inserează din memorie"
@@ -5039,6 +4891,9 @@ msgstr ""
 #~ msgid "/Edit Path Attributes..."
 #~ msgstr "/Modifică atribute traseu"
 
+#~ msgid "Error opening file: %s\n"
+#~ msgstr "Eroare la deschiderea fişierului: %s\n"
+
 #~ msgid "Module error"
 #~ msgstr "Eroare în modul"
 
@@ -5053,9 +4908,6 @@ msgstr ""
 
 #~ msgid "Unloaded OK"
 #~ msgstr "Descărcare REUSITA"
-
-#~ msgid "Refresh"
-#~ msgstr "Reîmprospătare"
 
 #~ msgid "load module: \"%s\"\n"
 #~ msgstr "încarc modulul: \"%s\"\n"
@@ -5161,9 +5013,6 @@ msgstr ""
 
 #~ msgid "Delete Point"
 #~ msgstr "Elimină punct"
-
-#~ msgid "Edit Point"
-#~ msgstr "Modifică punct"
 
 #~ msgid "Path %d"
 #~ msgstr "Traseu %d"
@@ -5342,6 +5191,9 @@ msgstr ""
 #~ msgid "Interface"
 #~ msgstr "Interfaţă"
 
+#~ msgid "Tiny"
+#~ msgstr "Foarte mic"
+
 #~ msgid "Huge"
 #~ msgstr "Foarte mare"
 
@@ -5416,6 +5268,9 @@ msgstr ""
 
 #~ msgid "Show reversed zoom ratio"
 #~ msgstr "Arată factorul de scară inversat"
+
+#~ msgid "Image Title Format:"
+#~ msgstr "Format titlu imagine:"
 
 #~ msgid "Pointer Movement Feedback"
 #~ msgstr "Caracteristici pointer(cursor)"
@@ -5709,9 +5564,6 @@ msgstr ""
 #~ msgid "channel mod"
 #~ msgstr "mod canal"
 
-#~ msgid "FS to layer"
-#~ msgstr "FS -> Strat"
-
 #~ msgid "gimage"
 #~ msgstr "gimage"
 
@@ -5750,6 +5602,9 @@ msgstr ""
 
 #~ msgid "attach parasite"
 #~ msgstr "ataşează parazit"
+
+#~ msgid "remove parasite"
+#~ msgstr "elimină parazit"
 
 #~ msgid "resolution change"
 #~ msgstr "schimbare rezoluţie"

@@ -1,44 +1,46 @@
-# translation of gimp-script-fu.HEAD.sk.po to Slovak
-# gimp-script-fu sk.po
-# Copyright (C) 2002,2003 Free Software Foundation, Inc.
-# Zdenko Podobný <zdpo@mailbox.sk>, 2002,2003.
+# translation of gimp-tiny-fu.HEAD.po to Slovak
+# translation of gimp-tiny-fu.HEAD.sk.po to Slovak
+# gimp-tiny-fu sk.po
+# Copyright (C) 2002,2003, 2004 Free Software Foundation, Inc.
+# Zdenko Podobný <zdpo@mailbox.sk>, 2002,2003, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu.HEAD 2.3.22\n"
+"Project-Id-Version: gimp-tiny-fu.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-22 23:22-0500\n"
-"PO-Revision-Date: 2004-01-23 14:59+0100\n"
+"POT-Creation-Date: 2004-12-20 11:37-0500\n"
+"PO-Revision-Date: 2004-11-27 11:58+0100\n"
 "Last-Translator: Zdenko Podobný <zdpo@mailbox.sk>\n"
-"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language-Team: Slovak <<sk-i18n@lists.linux.sk>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: tiny-fu/tiny-fu.c:122
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
-msgstr "<Toolbox>/Rozš./Script-Fu/Script-Fu _konzola"
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Tlačítka"
 
 #: tiny-fu/tiny-fu.c:148
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
-msgstr "<Toolbox>/Rozš./Script-Fu/Spustiť _server..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Vzorky"
 
 #: tiny-fu/tiny-fu.c:275
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
-msgstr "<Toolbox>/Rozš./Script-Fu/_Obnoviť skripty"
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Rôzne"
 
 #: tiny-fu/tiny-fu-console.c:142 tiny-fu/tiny-fu-text-console.c:68
-#, fuzzy
 msgid "Tiny-Fu console mode allows only interactive invocation"
-msgstr "Iba interaktívne spustenie umožňuje režim Script-Fu konzoly"
+msgstr "Iba interaktívne spustenie umožňuje režim Tiny-Fu konzoly"
 
 #: tiny-fu/tiny-fu-console.c:171
-#, fuzzy
 msgid "Tiny-Fu Console"
-msgstr "Script-Fu konzola"
+msgstr "Tiny-Fu konzola"
 
 #: tiny-fu/tiny-fu-console.c:176
 #, fuzzy
@@ -66,7 +68,7 @@ msgstr ""
 #: tiny-fu/tiny-fu-console.c:241
 #, fuzzy
 msgid "Tiny-Fu Console - "
-msgstr "Script-Fu konzola"
+msgstr "Tiny-Fu konzola"
 
 #: tiny-fu/tiny-fu-console.c:242
 msgid "Interactive Scheme Development"
@@ -77,19 +79,19 @@ msgid "Current Command"
 msgstr "Aktuálny príkaz"
 
 #: tiny-fu/tiny-fu-console.c:284
+#, fuzzy
 msgid "Browse..."
-msgstr "Prechádzať..."
+msgstr "_Prechádzať..."
 
 #: tiny-fu/tiny-fu-console.c:340
 msgid "Save TinyScheme Output"
 msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:654
-#, fuzzy
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
-msgstr "Iba neinteraktívne spustenie umožňuje režim vyhodnocovanie Script-Fu"
+msgstr "Iba neinteraktívne spustenie umožňuje režim vyhodnocovanie Tiny-Fu"
 
-#: tiny-fu/tiny-fu-scripts.c:626
+#: tiny-fu/tiny-fu-scripts.c:634
 #, fuzzy, c-format
 msgid ""
 "Error while executing\n"
@@ -102,9 +104,8 @@ msgstr ""
 "%s"
 
 #: tiny-fu/tiny-fu-server.c:642
-#, fuzzy
 msgid "Tiny-Fu Server Options"
-msgstr "Nastavenia Script-Fu servera"
+msgstr "Nastavenia Tiny-Fu servera"
 
 #: tiny-fu/tiny-fu-server.c:670
 msgid "Server Port:"
@@ -116,23 +117,22 @@ msgstr "Protokol servera:"
 
 #: tiny-fu/tiny-fu-interface.c:178
 msgid "Tiny-Fu cannot process two scripts at the same time."
-msgstr ""
+msgstr "Tiny-Fu nemôže spracovať dva skritpy v rovnakom čase"
 
 #: tiny-fu/tiny-fu-interface.c:180
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr ""
+msgstr "Už spúšťate skript  \"%s\"."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
 #: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
-#, fuzzy
 msgid "/Tiny-Fu/"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: tiny-fu/tiny-fu-interface.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "Tiny-Fu: %s"
-msgstr "Script-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #. the script arguments frame
 #: tiny-fu/tiny-fu-interface.c:255
@@ -147,54 +147,46 @@ msgid "%s:"
 msgstr "%s:"
 
 #: tiny-fu/tiny-fu-interface.c:329
-#, fuzzy
 msgid "Tiny-Fu Color Selection"
-msgstr "Script-Fu výber farby"
+msgstr "Tiny-Fu výber farby"
 
 #: tiny-fu/tiny-fu-interface.c:432
-#, fuzzy
 msgid "Tiny-Fu File Selection"
-msgstr "Script-Fu výber súboru"
+msgstr "Tiny-Fu výber súboru"
 
 #: tiny-fu/tiny-fu-interface.c:436
-#, fuzzy
 msgid "Tiny-Fu Folder Selection"
-msgstr "Script-Fu výber priečinka"
+msgstr "Tiny-Fu výber priečinka"
 
 #: tiny-fu/tiny-fu-interface.c:448
-#, fuzzy
 msgid "Tiny-Fu Font Selection"
-msgstr "Script-Fu výber písma"
+msgstr "Tiny-Fu výber písma"
 
 #: tiny-fu/tiny-fu-interface.c:455
-#, fuzzy
 msgid "Tiny-Fu Palette Selection"
-msgstr "Script-Fu výber vzorky"
+msgstr "Tiny-Fu výber farby"
 
 #: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
-msgstr "Script-Fu výber vzorky"
+msgstr "Tiny-Fu výber farby"
 
 #: tiny-fu/tiny-fu-interface.c:470
-#, fuzzy
 msgid "Tiny-Fu Gradient Selection"
-msgstr "Script-Fu výber prechodu"
+msgstr "Tiny-Fu výber prechodu"
 
 #: tiny-fu/tiny-fu-interface.c:478
-#, fuzzy
 msgid "Tiny-Fu Brush Selection"
-msgstr "Script-Fu výber štetca"
+msgstr "Tiny-Fu výber štetca"
 
 #. the script progress frame
 #: tiny-fu/tiny-fu-interface.c:534
-#, fuzzy
 msgid "Script Progress"
-msgstr "Argumenty skriptu"
+msgstr "Priebeh skriptu"
 
 #: tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
-msgstr ""
+msgstr "(nič)"
 
 #: tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
@@ -215,7 +207,7 @@ msgstr "Typ obrázka:"
 #: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
-msgstr "<Toolbox>/Rozš./Script-Fu/_Obnoviť skripty"
+msgstr "<Toolbox>/Rozš./Tiny-Fu"
 
 #: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
 #: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
@@ -264,7 +256,6 @@ msgstr "Písmo"
 #: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
 #: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
 #: scripts/title-header.sct.h:3
-#, fuzzy
 msgid "Font size (pixels)"
 msgstr "Veľkosť písma (v bodoch)"
 
@@ -282,9 +273,8 @@ msgid " contact sheets from a total of "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:2
-#, fuzzy
 msgid " for directory "
-msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+msgstr ""
 
 #: scripts/contactsheet.sct.h:3
 #, fuzzy
@@ -293,9 +283,8 @@ msgstr "Indexový obrázok"
 
 #: scripts/contactsheet.sct.h:4 scripts/asc2img.sct.h:2
 #: scripts/font-map.sct.h:1 scripts/gradient-example.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_Znaková mapa..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Pomôcky"
 
 #: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
 #: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
@@ -313,7 +302,6 @@ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_Znaková mapa..."
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
-#, fuzzy
 msgid "Background color"
 msgstr "Farba pozadia"
 
@@ -329,7 +317,7 @@ msgstr "Vytvoriť tieň"
 #: scripts/contactsheet.sct.h:8
 #, fuzzy
 msgid "Directory"
-msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+msgstr "Smer"
 
 #: scripts/contactsheet.sct.h:9
 msgid "Legend font"
@@ -343,7 +331,7 @@ msgstr "Hniezdo"
 #: scripts/contactsheet.sct.h:11
 #, fuzzy
 msgid "Sheet size"
-msgstr "Hniezdo"
+msgstr "Veľkosť rámu"
 
 #: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
 #: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
@@ -352,7 +340,6 @@ msgstr "Hniezdo"
 #: scripts/gimp-headers.sct.h:13 scripts/gimp-labels.sct.h:15
 #: scripts/i26-gunya2.sct.h:8 scripts/news-text.sct.h:11
 #: scripts/pupi-button.sct.h:14 scripts/speed-text.sct.h:9
-#, fuzzy
 msgid "Text color"
 msgstr "Farba textu"
 
@@ -361,13 +348,12 @@ msgid "Title font"
 msgstr ""
 
 #: scripts/contactsheet.sct.h:14
-#, fuzzy
 msgid "Unable to open directory "
-msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:1
 msgid "3D _Outline..."
-msgstr ""
+msgstr "3D _obrys..."
 
 #: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
 #: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
@@ -380,9 +366,8 @@ msgstr ""
 #: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
 #: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
 #: scripts/textured-logo.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alpha to Logo"
-msgstr "<Image>/Script-Fu/Alfa do loga/N_eón..."
+msgstr "<Image>/Tiny-Fu/Alfa do loga"
 
 #: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
 #: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
@@ -398,39 +383,32 @@ msgstr "<Image>/Script-Fu/Alfa do loga/N_eón..."
 #: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
 #: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
 #: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-msgstr "<Toolbox>/Rozš./Script-Fu/Logá/N_eón..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Logá"
 
 #: scripts/3d-outline.sct.h:4
-#, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
 msgstr "Polomer rozmazania mapy vyvýšenia (alfa vrstvy)"
 
 #: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
-#, fuzzy
 msgid "Default bumpmap settings"
 msgstr "Štandardné nastavenie mapy vyvýšenia"
 
 #: scripts/3d-outline.sct.h:8
-#, fuzzy
 msgid "Outline blur radius"
 msgstr "Polomer rozmazania obrysu"
 
 #: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
-#, fuzzy
 msgid "Shadow X offset"
 msgstr "X posun tieňa"
 
 #: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
-#, fuzzy
 msgid "Shadow Y offset"
 msgstr "Y posun tieňa"
 
 #: scripts/3d-outline.sct.h:11
-#, fuzzy
 msgid "Shadow blur radius"
 msgstr "Polomer rozmazania tieňa"
 
@@ -458,37 +436,31 @@ msgstr "Text"
 
 #: scripts/3dTruchet.sct.h:1
 msgid "3_D Truchet..."
-msgstr ""
+msgstr "3_D Truchet..."
 
 #: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
 #: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
 #: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Zem..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Vzorky"
 
 #: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-#, fuzzy
 msgid "Block size"
 msgstr "Veľkosť bloku"
 
 #: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
-#, fuzzy
 msgid "End blend"
 msgstr "Splývanie konca"
 
 #: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
-#, fuzzy
 msgid "Number of X tiles"
-msgstr "X počet dlaždíc"
+msgstr "Počet X dlaždíc"
 
 #: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
-#, fuzzy
 msgid "Number of Y tiles"
-msgstr "Y počet dlaždíc"
+msgstr "Počet Y dlaždíc"
 
 #: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
-#, fuzzy
 msgid "Start blend"
 msgstr "Začiatok miešania"
 
@@ -504,56 +476,47 @@ msgstr "Hrúbka"
 #: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
 #: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
 #: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Decor"
-msgstr "<Image>/Script-Fu/Dekorácia/_Diapozitív..."
+msgstr "<Image>/Tiny-Fu/Dekorácia"
 
 #: scripts/add-bevel.sct.h:2
 msgid "Add B_evel..."
-msgstr ""
+msgstr "Pridať _skorenie..."
 
 #: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
-#, fuzzy
 msgid "Keep bump layer"
 msgstr "Uchovať vrstvu vyvýšenia"
 
 #: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
 #: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
 #: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
-#, fuzzy
 msgid "Work on copy"
 msgstr "Pracovať s kópiou"
 
 #: scripts/addborder.sct.h:2
 msgid "Add _Border..."
-msgstr ""
+msgstr "Pridať o_kraj..."
 
 #: scripts/addborder.sct.h:3
-#, fuzzy
 msgid "Border X size"
-msgstr "Veľkosť ohraničenia X"
+msgstr "Veľkosť okraja X"
 
 #: scripts/addborder.sct.h:4
-#, fuzzy
 msgid "Border Y size"
-msgstr "Veľkosť ohraničenia Y"
+msgstr "Veľkosť okraja Y"
 
 #: scripts/addborder.sct.h:5
-#, fuzzy
 msgid "Border color"
-msgstr "Farba ohraničenia"
+msgstr "Farba okraja"
 
 #: scripts/addborder.sct.h:6
-#, fuzzy
 msgid "Delta value on color"
 msgstr "Delta hodnota farby"
 
 #: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
 #: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-msgstr ""
-"<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/Šíp_ka..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Témy pre web stránky/Mimozemská žiara"
 
 #: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
 msgid "Down"
@@ -562,7 +525,6 @@ msgstr "Dole"
 #: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
 #: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
 #: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
-#, fuzzy
 msgid "Flatten image"
 msgstr "Do jednej vrstvy"
 
@@ -571,7 +533,6 @@ msgstr "Do jednej vrstvy"
 #: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
 #: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
-#, fuzzy
 msgid "Glow color"
 msgstr "Farba žiary"
 
@@ -597,9 +558,8 @@ msgid "Up"
 msgstr "Hore"
 
 #: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
-#, fuzzy
 msgid "_Arrow..."
-msgstr "Prechádzať..."
+msgstr "Šípk_a..."
 
 #: scripts/alien-glow-bar.sct.h:3
 #, fuzzy
@@ -613,7 +573,7 @@ msgstr "Dĺžka kusu"
 
 #: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
 msgid "_Hrule..."
-msgstr ""
+msgstr "_Vodorovné pravítko..."
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
@@ -622,14 +582,13 @@ msgstr "Polomer"
 
 #: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
 msgid "_Bullet..."
-msgstr ""
+msgstr "_Bodka..."
 
 #: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
 msgid "B_utton..."
-msgstr ""
+msgstr "Tlačí_tko..."
 
 #: scripts/alien-glow-button.sct.h:8
-#, fuzzy
 msgid "Glow radius"
 msgstr "Polomer žiary"
 
@@ -639,52 +598,45 @@ msgstr "Výplň"
 
 #: scripts/alien-glow-logo.sct.h:3
 msgid "Alien _Glow..."
-msgstr ""
+msgstr "Mimo_zemská žiara..."
 
 #: scripts/alien-glow-logo.sct.h:7
-#, fuzzy
 msgid "Glow size (pixels * 4)"
 msgstr "Veľkosť žiary (body * 4)"
 
 #: scripts/alien-neon-logo.sct.h:3
 msgid "Alien _Neon..."
-msgstr ""
+msgstr "Mimozemský _neón..."
 
 #: scripts/alien-neon-logo.sct.h:5
-#, fuzzy
 msgid "Fade away"
 msgstr "Vyblednúť"
 
 #: scripts/alien-neon-logo.sct.h:9
-#, fuzzy
 msgid "Number of bands"
-msgstr "Počet pásov"
+msgstr "Počet pruhov"
 
 #: scripts/alien-neon-logo.sct.h:11
-#, fuzzy
 msgid "Width of bands"
 msgstr "Šírka pruhov"
 
 #: scripts/alien-neon-logo.sct.h:12
-#, fuzzy
 msgid "Width of gaps"
 msgstr "Šírka medzier"
 
 #: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
 #: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Utils"
-msgstr "<Image>/Script-Fu/Výber/Do _obrázka"
+msgstr "<Image>/Tiny-Fu/Pomôcky"
 
 #: scripts/asc2img.sct.h:5
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Buffer amount (% height of text)"
 msgstr "Veľkosť zásobníka (% výšky textu)"
 
 #: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
-#, fuzzy
 msgid "File name"
-msgstr "Meno súboru"
+msgstr "Názov súboru"
 
 #: scripts/asc2img.sct.h:7 scripts/select-to-pattern.sct.h:2
 msgid "Filename"
@@ -692,40 +644,35 @@ msgstr "Meno súboru"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
 #: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-#, fuzzy
 msgid "Transparent background"
 msgstr "Priesvitné pozadie"
 
 #: scripts/asc2img.sct.h:12
 msgid "_ASCII to Image..."
-msgstr ""
+msgstr "_ASCII do obrázku"
 
 #: scripts/asc2img.sct.h:13
-#, fuzzy
 msgid "_ASCII to Layer..."
-msgstr "<Image>/Script-Fu/Pomôcky/ASCII do vrstvy..."
+msgstr "_ASCII do vrstvy"
 
 #: scripts/basic1-logo.sct.h:8
 msgid "_Basic I..."
-msgstr ""
+msgstr "_Základné I..."
 
 #: scripts/basic2-logo.sct.h:3
 msgid "B_asic II..."
-msgstr ""
+msgstr "Z_ákladné II..."
 
 #: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-msgstr "<Toolbox>/Rozš./Script-Fu/Script-Fu _konzola"
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Tlačítka"
 
 #: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
 #: scripts/pupi-button.sct.h:2
-#, fuzzy
 msgid "Bevel width"
-msgstr "Šírka skosenia"
+msgstr "Šírka skosenia:"
 
 #: scripts/beveled-button.sct.h:5
-#, fuzzy
 msgid "Lower-right color"
 msgstr "Dolná pravá farba"
 
@@ -735,12 +682,10 @@ msgid "Pressed"
 msgstr "Stlačené"
 
 #: scripts/beveled-button.sct.h:8
-#, fuzzy
 msgid "Simple _Beveled Button..."
-msgstr "<Toolbox>/Rozš./Script-Fu/Tlačítka/Jednoduché s_kosené tlačítko..."
+msgstr "Jednoduché skosené _tlačítko..."
 
 #: scripts/beveled-button.sct.h:11
-#, fuzzy
 msgid "Upper-left color"
 msgstr "Ľavá horná farba"
 
@@ -749,9 +694,8 @@ msgstr "Ľavá horná farba"
 #: scripts/beveled-pattern-button.sct.h:1
 #: scripts/beveled-pattern-heading.sct.h:1
 #: scripts/beveled-pattern-hrule.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-msgstr "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/Šíp_ka..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Témy pre web stránky/Skosený vzor"
 
 #: scripts/beveled-pattern-arrow.sct.h:5
 #: scripts/beveled-pattern-bullet.sct.h:3
@@ -763,13 +707,12 @@ msgid "Pattern"
 msgstr "Vzorka"
 
 #: scripts/beveled-pattern-bullet.sct.h:2
-#, fuzzy
 msgid "Diameter"
 msgstr "Priemer"
 
 #: scripts/beveled-pattern-heading.sct.h:4
 msgid "H_eading..."
-msgstr ""
+msgstr "Nadp_is..."
 
 #: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
 #: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
@@ -785,16 +728,14 @@ msgstr "Šírka"
 #: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
 #: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
 #: scripts/waves-anim.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Animators"
-msgstr "<Image>/Script-Fu/Animátory/_Miešanie..."
+msgstr "<Image>/Tiny-Fu/Animátory"
 
 #: scripts/blend-anim.sct.h:2
 msgid "Blend Animation needs at least three source layers"
 msgstr ""
 
 #: scripts/blend-anim.sct.h:3
-#, fuzzy
 msgid "Intermediate frames"
 msgstr "Medziľahlé políčka"
 
@@ -803,20 +744,18 @@ msgid "Looped"
 msgstr "Slučka"
 
 #: scripts/blend-anim.sct.h:5
-#, fuzzy
 msgid "Max. blur radius"
-msgstr "Najvyšší polomer rozmazania"
+msgstr "Max. polomer rozmazania"
 
 #: scripts/blend-anim.sct.h:6
 msgid "_Blend..."
-msgstr ""
+msgstr "_Miešať..."
 
 #: scripts/blended-logo.sct.h:4
 msgid "Blen_ded..."
-msgstr ""
+msgstr "Mie_šané..."
 
 #: scripts/blended-logo.sct.h:5
-#, fuzzy
 msgid "Blend mode"
 msgstr "Režim miešania"
 
@@ -845,7 +784,6 @@ msgstr "Prechod"
 #: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
 #: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
 #: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
-#, fuzzy
 msgid "Gradient reverse"
 msgstr "Obrátený prechod"
 
@@ -859,7 +797,7 @@ msgstr "Farba pozadia"
 
 #: scripts/bovinated-logo.sct.h:5
 msgid "Bo_vination..."
-msgstr ""
+msgstr "_Flaky..."
 
 #: scripts/bovinated-logo.sct.h:8
 msgid "Spots density X"
@@ -870,18 +808,16 @@ msgid "Spots density Y"
 msgstr "Y hustota bodiek"
 
 #: scripts/burn-in-anim.sct.h:2
-#, fuzzy
 msgid "Add glowing"
-msgstr "Povoliť vyžarovanie"
+msgstr "Pridať vyžarovanie"
 
 #: scripts/burn-in-anim.sct.h:3
-#, fuzzy
 msgid "After glow"
 msgstr "Po žiare"
 
 #: scripts/burn-in-anim.sct.h:4
 msgid "B_urn-In..."
-msgstr ""
+msgstr "_Vpálenie..."
 
 #: scripts/burn-in-anim.sct.h:5
 msgid ""
@@ -890,7 +826,6 @@ msgid ""
 msgstr ""
 
 #: scripts/burn-in-anim.sct.h:6
-#, fuzzy
 msgid "Corona width"
 msgstr "Šírka korony"
 
@@ -899,9 +834,8 @@ msgid "Fadeout"
 msgstr "Zanikanie"
 
 #: scripts/burn-in-anim.sct.h:8
-#, fuzzy
 msgid "Fadeout width"
-msgstr "Šírka zanikania"
+msgstr "Šírka miznutia"
 
 #: scripts/burn-in-anim.sct.h:10
 msgid "Prepare for GIF"
@@ -928,7 +862,6 @@ msgid "Granularity"
 msgstr "Zrnitosť"
 
 #: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-#, fuzzy
 msgid "Image size"
 msgstr "Veľkosť obrázka"
 
@@ -938,132 +871,113 @@ msgstr "Vyhladiť"
 
 #: scripts/camo.sct.h:9
 msgid "_Camouflage..."
-msgstr ""
+msgstr "_Kamufláž..."
 
 #: scripts/carved-logo.sct.h:2
 msgid "Background Image"
 msgstr "Obrázok na pozadí"
 
 #: scripts/carved-logo.sct.h:3
-#, fuzzy
 msgid "Carve raised text"
-msgstr "Text vyrezávania do výšky"
+msgstr "Vyrezať zvýšený text"
 
 #: scripts/carved-logo.sct.h:4
 msgid "Carved..."
-msgstr ""
+msgstr "Rezba..."
 
 #: scripts/carved-logo.sct.h:7
-#, fuzzy
 msgid "Padding around text"
 msgstr "Výplň okolo textu"
 
 #: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Stencil Ops"
-msgstr "<Image>/Script-Fu/Šablóny/_Vyrezať..."
+msgstr "<Image>/Tiny-Fu/Šablóny"
 
 #: scripts/carve-it.sct.h:2
 msgid "C_arve-It..."
-msgstr ""
+msgstr "_Vyrezať-to..."
 
 #: scripts/carve-it.sct.h:3
-#, fuzzy
 msgid "Carve white areas"
-msgstr "Vyrezávané biele oblasti"
+msgstr "Vyrezať biele oblasti"
 
 #: scripts/carve-it.sct.h:4
-#, fuzzy
 msgid "Image to carve"
-msgstr "Obrázok k vyrezávaniu"
+msgstr "Obrázok na vyrezanie"
 
 #: scripts/chalk.sct.h:4
-#, fuzzy
 msgid "Chalk color"
 msgstr "Farba kriedy"
 
 #: scripts/chalk.sct.h:8
 msgid "_Chalk..."
-msgstr ""
+msgstr "_Krieda..."
 
 #: scripts/chip-away.sct.h:3
-#, fuzzy
 msgid "Blur amount"
 msgstr "Miera rozmazania"
 
 #: scripts/chip-away.sct.h:4
 msgid "Chip Awa_y..."
-msgstr ""
+msgstr "_Odštiepiť..."
 
 #: scripts/chip-away.sct.h:5
-#, fuzzy
 msgid "Chip amount"
-msgstr "Veľkosť odštiepenia"
+msgstr "Miera odštiepenia"
 
 #: scripts/chip-away.sct.h:6
-#, fuzzy
 msgid "Drop shadow"
 msgstr "Vrhanie tieňa"
 
 #: scripts/chip-away.sct.h:7
-#, fuzzy
 msgid "Fill BG with pattern"
-msgstr "Vyplniť popredie so vzorkou"
+msgstr "Vyplniť pozadie so vzorkou"
 
 #: scripts/chip-away.sct.h:10
 msgid "Invert"
 msgstr "Invertovať"
 
 #: scripts/chip-away.sct.h:11
-#, fuzzy
 msgid "Keep background"
 msgstr "Nemeniť pozadie"
 
 #: scripts/chrome-it.sct.h:2
 msgid "C_hrome-It..."
-msgstr ""
+msgstr "Pochrómuj-to..."
 
 #: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
-#, fuzzy
 msgid "Chrome balance"
-msgstr "Vyváženosť chrómovanie"
+msgstr "Vyváženosť chrómovania"
 
 #: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
 #: scripts/sota-chrome-logo.sct.h:3
-#, fuzzy
 msgid "Chrome factor"
 msgstr "Faktor chrómovania"
 
 #: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
-#, fuzzy
 msgid "Chrome lightness"
 msgstr "Svetlosť chrómovania"
 
 #: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
-#, fuzzy
 msgid "Chrome saturation"
 msgstr "Sýtosť chrómovania"
 
 #: scripts/chrome-it.sct.h:7
-#, fuzzy
 msgid "Chrome white areas"
 msgstr "Pochrómovať biele oblasti"
 
 #: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
 #: scripts/sota-chrome-logo.sct.h:6
-#, fuzzy
 msgid "Environment map"
 msgstr "Mapa prostredia"
 
 #: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-#, fuzzy
 msgid "Highlight balance"
 msgstr "Vyváženie svetiel"
 
 #: scripts/chrome-logo.sct.h:5
-#, fuzzy
 msgid "C_hrome..."
-msgstr "Prechádzať..."
+msgstr "Chrómovať..."
 
 #: scripts/chrome-logo.sct.h:8
 msgid "Offsets (pixels * 2)"
@@ -1071,46 +985,38 @@ msgstr "Posun (v bodoch * 2)"
 
 #: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
 #: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Render"
-msgstr "<Image>/Script-Fu/Generovanie/_Okruh..."
+msgstr "<Image>/Tiny-Fu/Generovanie"
 
 #: scripts/circuit.sct.h:2
-#, fuzzy
 msgid "Circuit seed"
 msgstr "Hniezdo okruhu"
 
 #: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
 #: scripts/xach-effect.sct.h:11
-#, fuzzy
 msgid "Keep selection"
 msgstr "Uchovať výber"
 
 #: scripts/circuit.sct.h:4
-#, fuzzy
 msgid "No background (only for separate layer)"
-msgstr "Bez pozadia (iba pre samostatné vrstvy)"
+msgstr "Bez pozadia (iba pre oddelenú vrstvu)"
 
 #: scripts/circuit.sct.h:5
-#, fuzzy
 msgid "Oilify mask size"
 msgstr "Veľkosť masky olejomaľby"
 
 #: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
-#, fuzzy
 msgid "Separate layer"
 msgstr "Oddelená vrstva"
 
 #: scripts/circuit.sct.h:7
-#, fuzzy
 msgid "_Circuit..."
-msgstr "Hniezdo okruhu"
+msgstr "O_bvod..."
 
 #: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
 #: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr "<Image>/Script-Fu/Alchýmia/_Pretkávanie..."
+msgstr "<Image>/Tiny-Fu/Alchýmia"
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
 msgid "Azimuth"
@@ -1134,10 +1040,9 @@ msgstr "Zdvih"
 
 #: scripts/clothify.sct.h:7
 msgid "_Clothify..."
-msgstr ""
+msgstr "_Plátno..."
 
 #: scripts/coffee.sct.h:2
-#, fuzzy
 msgid ""
 "Darken only\n"
 "(Better, but only for images with alot of white)"
@@ -1151,63 +1056,51 @@ msgstr "Škvrny"
 
 #: scripts/coffee.sct.h:4
 msgid "_Coffee Stain..."
-msgstr ""
+msgstr "_Kávová škrna..."
 
 #: scripts/comic-logo.sct.h:4
 msgid "Comic Boo_k..."
-msgstr ""
+msgstr "_Kniha komiksov..."
 
 #: scripts/comic-logo.sct.h:9
-#, fuzzy
 msgid "Outline color"
 msgstr "Farba obrysu"
 
 #: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-#, fuzzy
 msgid "Outline size"
 msgstr "Veľkosť obrysu"
 
 #: scripts/coolmetal-logo.sct.h:4
 msgid "Cool _Metal..."
-msgstr ""
+msgstr "St_udený kov..."
 
 #: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels)"
-msgstr "Veľkosť efektu (v bodoch)"
-
-#: scripts/copy-visible.sct.h:1
-msgid "Copy _Visible"
-msgstr ""
+msgstr "Veľkosť efektu (body)"
 
 #: scripts/crystal-logo.sct.h:2
-#, fuzzy
 msgid "Background image"
-msgstr "Obrázok na pozadí"
+msgstr "Obrázok pozadia"
 
 #: scripts/crystal-logo.sct.h:4
 msgid "Crystal..."
-msgstr ""
+msgstr "Kryštál..."
 
 #: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
 #: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
 #: scripts/select-to-pattern.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Selection"
-msgstr "<Image>/Script-Fu/Výber/Do _obrázka"
+msgstr "<Image>/Tiny-Fu/Výber"
 
 #: scripts/distress-selection.sct.h:2
-#, fuzzy
 msgid "Granularity (1 is low)"
 msgstr "Zrnitosť (1 je malá)"
 
 #: scripts/distress-selection.sct.h:4
-#, fuzzy
 msgid "Smooth horizontally"
 msgstr "Vyhladiť vodorovne"
 
 #: scripts/distress-selection.sct.h:5
-#, fuzzy
 msgid "Smooth vertically"
 msgstr "Vyhladiť zvislo"
 
@@ -1216,32 +1109,27 @@ msgid "Spread"
 msgstr "Roztiahnuť"
 
 #: scripts/distress-selection.sct.h:7
-#, fuzzy
 msgid "Threshold (bigger 1<-->255 smaller)"
 msgstr "Prah (väčší 1<-->255 menší)"
 
 #: scripts/distress-selection.sct.h:8
-#, fuzzy
 msgid "_Distress Selection..."
-msgstr "<Image>/Script-Fu/Výber/_Núdzový výber..."
+msgstr "Nú_dzový výber..."
 
 #: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
 #: scripts/xach-effect.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Shadow"
-msgstr "<Image>/Script-Fu/Tieň/Efekt _Xach..."
+msgstr "<Image>/Tiny-Fu/Tieň"
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
-#, fuzzy
 msgid "Allow resizing"
 msgstr "Povoliť zmenu veľkosti"
 
 #: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
 #: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
 #: scripts/swirltile.sct.h:4
-#, fuzzy
 msgid "Blur radius"
-msgstr "Polomer rozmazania"
+msgstr "Polomer rozostrenia"
 
 #: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
 msgid "Offset X"
@@ -1256,9 +1144,8 @@ msgid "Opacity"
 msgstr "Krytie"
 
 #: scripts/drop-shadow.sct.h:8
-#, fuzzy
 msgid "_Drop-Shadow..."
-msgstr "Vrhanie tieňa"
+msgstr "_Vrhnúť tieň..."
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
@@ -1269,7 +1156,6 @@ msgid "Erase"
 msgstr "Zmazať"
 
 #: scripts/erase-rows.sct.h:4
-#, fuzzy
 msgid "Erase/fill"
 msgstr "Zmazať/Vyplniť"
 
@@ -1278,7 +1164,6 @@ msgid "Even"
 msgstr "Párny"
 
 #: scripts/erase-rows.sct.h:6
-#, fuzzy
 msgid "Even/odd"
 msgstr "Párny/Nepárny"
 
@@ -1295,67 +1180,57 @@ msgid "Rows"
 msgstr "Riadky"
 
 #: scripts/erase-rows.sct.h:10
-#, fuzzy
 msgid "Rows/cols"
 msgstr "Riadky/Stĺpce"
 
 #: scripts/erase-rows.sct.h:11
-#, fuzzy
 msgid "_Erase every other Row..."
-msgstr "<Image>/Script-Fu/Alchýmia/_Vymazať každý druhý riadok..."
+msgstr "_Vymazať každý druhý riadok..."
 
 #: scripts/fade-outline.sct.h:2
-#, fuzzy
 msgid "Apply generated layermask"
 msgstr "Použiť generovanú masku vrsty"
 
 #: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
 #: scripts/old-photo.sct.h:2
-#, fuzzy
 msgid "Border size"
-msgstr "Veľkosť ohraničenia"
+msgstr "Veľkosť okraja"
 
 #: scripts/fade-outline.sct.h:4
-#, fuzzy
 msgid "Clear unselected maskarea"
 msgstr "Vymazať nevybrané oblasti masky"
 
 #: scripts/fade-outline.sct.h:6
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Fade from %"
 msgstr "Vyblednúť z %"
 
 #: scripts/fade-outline.sct.h:8
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Fade to   %"
 msgstr "Vyblednúť do   %"
 
 #: scripts/fade-outline.sct.h:9
-#, fuzzy
 msgid "Use growing selection"
 msgstr "Použiť rastúci výber"
 
 #: scripts/fade-outline.sct.h:10
 msgid "_Fade Outline..."
-msgstr ""
+msgstr "_Pozvolný obrys..."
 
 #: scripts/flatland.sct.h:2 scripts/land.sct.h:2
-#, fuzzy
 msgid "Detail level"
 msgstr "Úroveň detailov"
 
 #: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-#, fuzzy
 msgid "Image height"
 msgstr "Výška obrázka"
 
 #: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-#, fuzzy
 msgid "Image width"
 msgstr "Šírka obrázka"
 
 #: scripts/flatland.sct.h:5 scripts/land.sct.h:7
-#, fuzzy
 msgid "Random seed"
 msgstr "Hniezdo náhodných čísel"
 
@@ -1369,25 +1244,21 @@ msgstr "Zväčšenie Y"
 
 #: scripts/flatland.sct.h:8
 msgid "_Flatland..."
-msgstr ""
+msgstr "_Rovina..."
 
 #: scripts/font-map.sct.h:2
-#, fuzzy
 msgid "Active colors"
 msgstr "Aktívne farby"
 
 #: scripts/font-map.sct.h:3
-#, fuzzy
 msgid "Black on white"
-msgstr "Čierne na bielom"
+msgstr "Čierna na bielom"
 
 #: scripts/font-map.sct.h:4
-#, fuzzy
 msgid "Font _size (pixels)"
-msgstr "Veľkosť písma (v bodoch)"
+msgstr "Veľkosť pí_sma (v bodoch)"
 
 #: scripts/font-map.sct.h:5
-#, fuzzy
 msgid "Use font _name as text"
 msgstr "Používať _názov písma ako text"
 
@@ -1396,7 +1267,6 @@ msgid "_Border (pixels)"
 msgstr "_Okraj (v bodoch)"
 
 #: scripts/font-map.sct.h:7
-#, fuzzy
 msgid "_Color scheme"
 msgstr "_Farebná schéma"
 
@@ -1406,7 +1276,7 @@ msgstr "_Filter (regexp)"
 
 #: scripts/font-map.sct.h:9
 msgid "_Font Map..."
-msgstr ""
+msgstr "_Mapa písma..."
 
 #: scripts/font-map.sct.h:10
 msgid "_Labels"
@@ -1417,139 +1287,119 @@ msgid "_Text"
 msgstr "_Text"
 
 #: scripts/frosty-logo.sct.h:8
-#, fuzzy
 msgid "_Frosty..."
-msgstr "Prechádzať..."
+msgstr "_Mrazivo..."
 
 #: scripts/fuzzyborder.sct.h:2
-#, fuzzy
 msgid "Add shadow"
 msgstr "Pridať tieň"
 
 #: scripts/fuzzyborder.sct.h:3
-#, fuzzy
 msgid "Blur border"
-msgstr "Hranice rozmazania"
+msgstr "Hranica rozmazania"
 
 #: scripts/fuzzyborder.sct.h:7
 msgid "Granularity (1 is Low)"
 msgstr "Zrnitosť (1 je malá)"
 
 #: scripts/fuzzyborder.sct.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
-msgstr "Miera tieňa (%)"
+msgstr "Výška tieňa (%)"
 
 #: scripts/fuzzyborder.sct.h:11
 msgid "_Fuzzy Border..."
-msgstr ""
+msgstr "N_eostrý okraj..."
 
 #: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-msgstr ""
-"<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/_Veľký nadpis..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Témy pre web stránky/Klasický.Gimp.org"
 
 #: scripts/gimp-headers.sct.h:2
-#, fuzzy
 msgid "Autocrop"
 msgstr "Automatické orezanie"
 
 #: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Dark color"
 msgstr "Tmavá farba"
 
 #: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-#, fuzzy
 msgid "Highlight color"
-msgstr "Farba svetiel"
+msgstr "Farba zvýraznenia"
 
 #: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
-#, fuzzy
 msgid "Index image"
 msgstr "Indexový obrázok"
 
 #: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
-#, fuzzy
 msgid "Number of colors"
 msgstr "Počet farieb"
 
 #: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-#, fuzzy
 msgid "Remove background"
 msgstr "Odstrániť pozadie"
 
 #: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
-#, fuzzy
 msgid "Select-by-color threshold"
 msgstr "Prah výberu podľa farby"
 
 #: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-#, fuzzy
 msgid "Shadow color"
 msgstr "Farba tieňa"
 
 #: scripts/gimp-headers.sct.h:14
 msgid "_Big Header..."
-msgstr ""
+msgstr "Ve_ľká hlavička..."
 
 #: scripts/gimp-headers.sct.h:15
 msgid "_Small Header..."
-msgstr ""
+msgstr "_Malá hlavička..."
 
 #: scripts/gimp-labels.sct.h:13
 msgid "T_ube Sub-Button Label..."
-msgstr ""
+msgstr "Nápis podtlačítka na tr_ubici..."
 
 #: scripts/gimp-labels.sct.h:16
 msgid "Tub_e Sub-Sub-Button Label..."
-msgstr ""
+msgstr "Nápis podpodtlačítka na tr_ubici..."
 
 #: scripts/gimp-labels.sct.h:17
 msgid "_General Tube Labels..."
-msgstr ""
+msgstr "_Všeobecné označenia na trubici..."
 
 #: scripts/gimp-labels.sct.h:18
 msgid "_Tube Button Label..."
-msgstr ""
+msgstr "Označenie _tlačítka na trubici..."
 
 #: scripts/glossy.sct.h:4
-#, fuzzy
 msgid "Blend gradient (Text)"
 msgstr "Prechod miešania (text)"
 
 #: scripts/glossy.sct.h:5
-#, fuzzy
 msgid "Blend gradient (outline)"
 msgstr "Prechod miešania (obrys)"
 
 #: scripts/glossy.sct.h:6
-#, fuzzy
 msgid "Blend gradient (text)"
 msgstr "Prechod miešania (text)"
 
 #: scripts/glossy.sct.h:10
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "_Lesk..."
 
 #: scripts/glossy.sct.h:11
-#, fuzzy
 msgid "Outline gradient reverse"
 msgstr "Obrátený prechod obrysu"
 
 #: scripts/glossy.sct.h:13
-#, fuzzy
 msgid "Pattern (outline)"
 msgstr "Vzorka (obrys)"
 
 #: scripts/glossy.sct.h:14
-#, fuzzy
 msgid "Pattern (overlay)"
 msgstr "Vzorka (prerytie)"
 
 #: scripts/glossy.sct.h:15
-#, fuzzy
 msgid "Pattern (text)"
 msgstr "Vzorka (text)"
 
@@ -1558,22 +1408,18 @@ msgid "Shadow"
 msgstr "Tieň"
 
 #: scripts/glossy.sct.h:20
-#, fuzzy
 msgid "Text gradient reverse"
 msgstr "Obrátený prechod textu"
 
 #: scripts/glossy.sct.h:21
-#, fuzzy
 msgid "Use pattern for outline instead of gradient"
 msgstr "Namiesto prechodu použiť na obrys vzorku"
 
 #: scripts/glossy.sct.h:22
-#, fuzzy
 msgid "Use pattern for text instead of gradient"
 msgstr "Namiesto vzorky použiť na text prechod"
 
 #: scripts/glossy.sct.h:23
-#, fuzzy
 msgid "Use pattern overlay"
 msgstr "Použiť prekrytie vzoriek"
 
@@ -1583,53 +1429,45 @@ msgid "Use tattern for outline instead of gradient"
 msgstr "Namiesto prechodu použiť na obrys vzorku"
 
 #: scripts/glowing-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels * 3)"
 msgstr "Veľkosť efektu (v bodoch *3)"
 
 #: scripts/glowing-logo.sct.h:7
 msgid "Glo_wing Hot..."
-msgstr ""
+msgstr "_Sálajúca žiara..."
 
 #: scripts/gradient-bevel-logo.sct.h:4
-#, fuzzy
 msgid "Bevel height (Sharpness)"
 msgstr "Výška skosenia (ostrosť)"
 
 #: scripts/gradient-bevel-logo.sct.h:5
-#, fuzzy
 msgid "Bevel height (sharpness)"
 msgstr "Výška skosenia (ostrosť)"
 
 #: scripts/gradient-bevel-logo.sct.h:7 scripts/t-o-p-logo.sct.h:5
 #: scripts/textured-logo.sct.h:4
-#, fuzzy
 msgid "Border size (pixels)"
 msgstr "Veľkosť ohraničenia (v bodoch)"
 
 #: scripts/gradient-bevel-logo.sct.h:10
-#, fuzzy
 msgid "Gradient Beve_l..."
-msgstr "Obrátený prechod"
+msgstr "_Skosený prechod..."
 
 #: scripts/gradient-example.sct.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "Vlastný prechod"
+msgstr "V_lastný prechod..."
 
 #: scripts/grid-system.sct.h:2
-#, fuzzy
 msgid "X divisions"
 msgstr "Rozdelenie X"
 
 #: scripts/grid-system.sct.h:3
-#, fuzzy
 msgid "Y divisions"
 msgstr "Rozdelenie Y"
 
 #: scripts/grid-system.sct.h:4
 msgid "_Grid..."
-msgstr ""
+msgstr "_Mriežka..."
 
 #: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
 #: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
@@ -1638,53 +1476,48 @@ msgstr ""
 
 #: scripts/guides-from-selection.sct.h:2
 msgid "Creates four Guides around the bounding box of the current selection."
-msgstr ""
+msgstr "Vytvorí štyri vodítka okolo ohraničujúcej plochy zvoleného výberu."
 
 #: scripts/guides-from-selection.sct.h:3
 msgid "New Guides from _Selection"
-msgstr ""
+msgstr "Nové vodítka z výberu"
 
 #: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
-#, fuzzy
 msgid "Direction"
-msgstr "Nie je možné otvoriť výstupnú SIOD rúru"
+msgstr "Smer"
 
 #: scripts/guides-new-percent.sct.h:3 scripts/guides-new.sct.h:3
-#, fuzzy
 msgid "Horizontal"
-msgstr "Rozmazať vodorovne"
+msgstr "Vodorovne"
 
 #: scripts/guides-new-percent.sct.h:4
 msgid "New Guide (by _Percent)..."
-msgstr ""
+msgstr "Nové vodítka (podľa _percent)..."
 
 #: scripts/guides-new-percent.sct.h:6
 #, no-c-format
 msgid "Position (in %)"
-msgstr ""
+msgstr "Pozícia (v %)"
 
 #: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
-#, fuzzy
 msgid "Vertical"
-msgstr "Rozmazať zvisle"
+msgstr "Zvisle"
 
 #: scripts/guides-new.sct.h:4
 msgid "New _Guide..."
-msgstr ""
+msgstr "Nové v_odítko..."
 
 #: scripts/guides-remove-all.sct.h:2
 msgid "_Remove all Guides"
-msgstr ""
+msgstr "_Odstrániť všetky vodítka"
 
 #: scripts/hsv-graph.sct.h:2
-#, fuzzy
 msgid "BG opacity"
-msgstr "Krytie pozadie"
+msgstr "Krytie pozadia"
 
 #: scripts/hsv-graph.sct.h:3
-#, fuzzy
 msgid "Draw _HSV Graph..."
-msgstr "<Image>/Script-Fu/Pomôcky/Nakresliť _HSV graf..."
+msgstr "Kresliť _HSV graf..."
 
 #: scripts/hsv-graph.sct.h:4
 msgid "End X"
@@ -1695,12 +1528,10 @@ msgid "End Y"
 msgstr "Koniec Y"
 
 #: scripts/hsv-graph.sct.h:6
-#, fuzzy
 msgid "From top-left to bottom-right"
 msgstr "Zľava hore doprava dole"
 
 #: scripts/hsv-graph.sct.h:7
-#, fuzzy
 msgid "Graph scale"
 msgstr "Mierka grafu"
 
@@ -1715,7 +1546,7 @@ msgstr "Y začiatok"
 #: scripts/hsv-graph.sct.h:10
 #, fuzzy
 msgid "Use selection bounds instead of values below"
-msgstr "Namiesto nižšie uvedeného použiť hranice výberu"
+msgstr "Použiť hranice výberu namiesto nižšie uvedeného"
 
 #: scripts/i26-gunya2.sct.h:4
 #, fuzzy
@@ -1729,76 +1560,63 @@ msgstr "Veľkosť rámu"
 
 #: scripts/i26-gunya2.sct.h:6
 msgid "Imigre-26..."
-msgstr ""
+msgstr "Imigre-26..."
 
 #: scripts/image-structure.sct.h:2
-#, fuzzy
 msgid "Apply layer mask (or discard)"
 msgstr "Použiť masku vrstvy (alebo zahodiť)"
 
 #: scripts/image-structure.sct.h:4
-#, fuzzy
 msgid "Create new image"
 msgstr "Vytvoriť nový obrázok"
 
 #: scripts/image-structure.sct.h:5
-#, fuzzy
 msgid "Insert layer names"
 msgstr "Vložiť názvy vrstiev"
 
 #: scripts/image-structure.sct.h:6
-#, fuzzy
 msgid "Make new background"
 msgstr "Vytvoriť nové pozadie"
 
 #: scripts/image-structure.sct.h:7
-#, fuzzy
 msgid "Outer border"
 msgstr "Vonkajšia hranica"
 
 #: scripts/image-structure.sct.h:8
-#, fuzzy
 msgid "Pad color"
 msgstr "Farba výplne"
 
 #: scripts/image-structure.sct.h:9
-#, fuzzy
 msgid "Pad opacity"
 msgstr "Krytie výplne"
 
 #: scripts/image-structure.sct.h:10
-#, fuzzy
 msgid "Padding for transparent regions"
 msgstr "Výplň pre priesvitné oblasti"
 
 #: scripts/image-structure.sct.h:11
-#, fuzzy
 msgid "Shear length"
 msgstr "Dĺžka strihu"
 
 #: scripts/image-structure.sct.h:12
-#, fuzzy
 msgid "Show Image _Structure..."
-msgstr "<Image>/Script-Fu/Pomôcky/Zobraziť š_truktúru obrázka..."
+msgstr "Zobraziť _štruktúru dokumentu..."
 
 #: scripts/image-structure.sct.h:13
-#, fuzzy
 msgid "Space between layers"
 msgstr "Rozostup medzi vrstvami"
 
 #: scripts/land.sct.h:6
-#, fuzzy
 msgid "Land height"
-msgstr "Výška pevniny"
+msgstr "Výška zeme"
 
 #: scripts/land.sct.h:10
-#, fuzzy
 msgid "Sea depth"
 msgstr "Hĺbka mora"
 
 #: scripts/land.sct.h:11
 msgid "_Land..."
-msgstr ""
+msgstr "_Zem..."
 
 #: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
 msgid "Roughness"
@@ -1809,25 +1627,22 @@ msgid "Seed"
 msgstr "Hniezdo"
 
 #: scripts/lava.sct.h:8
-#, fuzzy
 msgid "Use current gradient"
 msgstr "Použiť aktuálny prechod"
 
 #: scripts/lava.sct.h:9
 msgid "_Lava..."
-msgstr ""
+msgstr "_Láva..."
 
 #: scripts/line-nova.sct.h:2
 msgid "Line _Nova..."
-msgstr ""
+msgstr "Čiarová _nova..."
 
 #: scripts/line-nova.sct.h:3
-#, fuzzy
 msgid "Number of lines"
 msgstr "Počet čiar"
 
 #: scripts/line-nova.sct.h:4
-#, fuzzy
 msgid "Offset radius"
 msgstr "Polomer posunu"
 
@@ -1840,30 +1655,29 @@ msgid "Sharpness (degrees)"
 msgstr "Ostrosť (v stupňoch)"
 
 #: scripts/mkbrush.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/_Eliptický..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Vytvoriť štetec"
 
 #: scripts/mkbrush.sct.h:2
 msgid "Create size of brush"
 msgstr ""
 
 #: scripts/mkbrush.sct.h:3
+#, fuzzy
 msgid "Description"
-msgstr "Popis"
+msgstr "Smer"
 
 #: scripts/mkbrush.sct.h:4
 msgid "Elli_ptical, Feathered..."
-msgstr ""
+msgstr "Eliptycké, neostré..."
 
 #: scripts/mkbrush.sct.h:5
 msgid "Feathering"
 msgstr "Neostrosť"
 
 #: scripts/mkbrush.sct.h:7
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/Obdĺžni_kový, neostrý..."
+msgstr "Obdĺžníkové , neostré..."
 
 #: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
 msgid "Spacing"
@@ -1871,28 +1685,25 @@ msgstr "Rozostup"
 
 #: scripts/mkbrush.sct.h:10
 msgid "_Elliptical..."
-msgstr ""
+msgstr "_Eliptický..."
 
 #: scripts/mkbrush.sct.h:11
 msgid "_Rectangular..."
-msgstr ""
+msgstr "_Obdĺžnikový..."
 
 #: scripts/neon-logo.sct.h:4
-#, fuzzy
 msgid "Create shadow"
 msgstr "Vytvoriť tieň"
 
 #: scripts/neon-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 5)"
-msgstr "Veľkosť efektu (v bodoch * 5)"
+msgstr "Veľkosť efektu (v bodoch *5)"
 
 #: scripts/neon-logo.sct.h:9
 msgid "N_eon..."
-msgstr ""
+msgstr "N_eón..."
 
 #: scripts/news-text.sct.h:4
-#, fuzzy
 msgid "Cell size (pixels)"
 msgstr "Veľkosť bunky (v bodoch)"
 
@@ -1903,7 +1714,7 @@ msgstr "Intenzita (%)"
 
 #: scripts/news-text.sct.h:9
 msgid "Newsprint Text..."
-msgstr ""
+msgstr "Novinový text..."
 
 #: scripts/old-photo.sct.h:3
 msgid "Defocus"
@@ -1919,7 +1730,7 @@ msgstr "Sépia"
 
 #: scripts/old-photo.sct.h:7
 msgid "_Old Photo..."
-msgstr ""
+msgstr "Stará f_otografia..."
 
 #: scripts/perspective-shadow.sct.h:3
 msgid "Angle"
@@ -1927,42 +1738,37 @@ msgstr "Uhol"
 
 #: scripts/perspective-shadow.sct.h:6
 msgid "Cubic"
-msgstr ""
+msgstr "Kubická"
 
 #: scripts/perspective-shadow.sct.h:7
-#, fuzzy
 msgid "Interpolation"
-msgstr "Interpolovať"
+msgstr "Interpolácia"
 
 #: scripts/perspective-shadow.sct.h:8
 msgid "Linear"
-msgstr ""
+msgstr "Lineárna"
 
 #: scripts/perspective-shadow.sct.h:9
 msgid "None"
-msgstr ""
+msgstr "žiadna"
 
 #: scripts/perspective-shadow.sct.h:11
-#, fuzzy
 msgid "Relative distance of horizon"
 msgstr "Relatívna vzdialenosť horizontu"
 
 #: scripts/perspective-shadow.sct.h:12
-#, fuzzy
 msgid "Relative length of shadow"
 msgstr "Relatívna dĺžka tieňa"
 
 #: scripts/perspective-shadow.sct.h:13
 msgid "_Perspective..."
-msgstr ""
+msgstr "_Perspektíva..."
 
 #: scripts/predator.sct.h:2
-#, fuzzy
 msgid "Edge amount"
 msgstr "Miera hrán"
 
 #: scripts/predator.sct.h:4
-#, fuzzy
 msgid "Pixel amount"
 msgstr "Veľkosť bodov"
 
@@ -1972,25 +1778,21 @@ msgstr "Pixelizovať"
 
 #: scripts/predator.sct.h:7
 msgid "_Predator..."
-msgstr ""
+msgstr "_Predátor..."
 
 #: scripts/pupi-button.sct.h:5
-#, fuzzy
 msgid "Lower color"
 msgstr "Dolná farba"
 
 #: scripts/pupi-button.sct.h:6
-#, fuzzy
 msgid "Lower color (active)"
 msgstr "Dolná farba (aktívna)"
 
 #: scripts/pupi-button.sct.h:7
-#, fuzzy
 msgid "Not pressed"
 msgstr "Nestlačené"
 
 #: scripts/pupi-button.sct.h:8
-#, fuzzy
 msgid "Not pressed (active)"
 msgstr "Nestlačené (aktívne)"
 
@@ -2003,28 +1805,24 @@ msgid "Padding Y"
 msgstr "Výplň Y"
 
 #: scripts/pupi-button.sct.h:12
-#, fuzzy
 msgid "Round ratio"
 msgstr "Pomer zaoblenia"
 
 #: scripts/pupi-button.sct.h:15
-#, fuzzy
 msgid "Text color (active)"
-msgstr "Farba text (aktívna)"
+msgstr "Farba textu (aktívna)"
 
 #: scripts/pupi-button.sct.h:16
-#, fuzzy
 msgid "Upper color"
 msgstr "Horná farba"
 
 #: scripts/pupi-button.sct.h:17
-#, fuzzy
 msgid "Upper color (active)"
 msgstr "Horná farba (aktívna)"
 
 #: scripts/pupi-button.sct.h:18
 msgid "_Round Button..."
-msgstr ""
+msgstr "_Oblé tlačítko..."
 
 #: scripts/rendermap.sct.h:2
 #, fuzzy
@@ -2037,7 +1835,7 @@ msgstr "Detaily v strede"
 
 #: scripts/rendermap.sct.h:8
 msgid "Render _Map..."
-msgstr ""
+msgstr "Generovať _mapu..."
 
 #: scripts/rendermap.sct.h:9
 msgid "Tile"
@@ -2050,15 +1848,13 @@ msgstr "Čierna"
 #: scripts/ripply-anim.sct.h:3
 #, fuzzy
 msgid "Edge behavior"
-msgstr "Chovanie okrajov"
+msgstr "Správanie sa hrán"
 
 #: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
-#, fuzzy
 msgid "Number of frames"
-msgstr "Počet políčok"
+msgstr "Počet s_nímok:"
 
 #: scripts/ripply-anim.sct.h:5
-#, fuzzy
 msgid "Rippling strength"
 msgstr "Sila zvlnenia"
 
@@ -2072,73 +1868,63 @@ msgstr "Zalamovať"
 
 #: scripts/ripply-anim.sct.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "V_lnenie..."
 
 #: scripts/round-corners.sct.h:2
-#, fuzzy
 msgid "Add background"
 msgstr "Pridať pozadie"
 
 #: scripts/round-corners.sct.h:3
-#, fuzzy
 msgid "Add drop-shadow"
 msgstr "Pridať vrhanie tieňa"
 
 #: scripts/round-corners.sct.h:5
-#, fuzzy
 msgid "Edge radius"
 msgstr "Polomer hrany"
 
 #: scripts/round-corners.sct.h:9
-#, fuzzy
 msgid "_Round Corners..."
-msgstr "<Image>/Script-Fu/Dekorácia/_Oblé rohy..."
+msgstr "_Zaobliť rohy..."
 
 #: scripts/selection-round.sct.h:1
 #, fuzzy
 msgid "<Image>/Select/Modify"
-msgstr "<Image>/Script-Fu/Výber/Do _obrázka"
+msgstr "<Image>/Tiny-Fu/Výber"
 
 #: scripts/selection-round.sct.h:2
 msgid "Concave"
-msgstr ""
+msgstr "Konkáva"
 
 #: scripts/selection-round.sct.h:4
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Polomer"
+msgstr "Polomer (%)"
 
 #: scripts/selection-round.sct.h:5
-#, fuzzy
 msgid "Rounded R_ectangle..."
-msgstr "<Image>/Script-Fu/Výber/Zaob_liť..."
+msgstr "Zaobl_ený obdĺžnik..."
 
 #: scripts/select-to-brush.sct.h:2
-#, fuzzy
 msgid "Brush name"
 msgstr "Názov štetca"
 
 #: scripts/select-to-brush.sct.h:5
 msgid "To _Brush..."
-msgstr ""
+msgstr "Do štetca..."
 
 #: scripts/select-to-image.sct.h:2
-#, fuzzy
 msgid "To _Image"
-msgstr "Indexový obrázok"
+msgstr "Do o_brázku"
 
 #: scripts/select-to-pattern.sct.h:3
-#, fuzzy
 msgid "Pattern name"
 msgstr "Názov vzorky"
 
 #: scripts/select-to-pattern.sct.h:4
-#, fuzzy
 msgid "To _Pattern..."
-msgstr "Vzorka"
+msgstr "Do _vzorky..."
 
 #: scripts/slide.sct.h:3
-#, fuzzy
 msgid "Font color"
 msgstr "Farba písma"
 
@@ -2148,20 +1934,19 @@ msgstr "Počet"
 
 #: scripts/slide.sct.h:7
 msgid "_Slide..."
-msgstr ""
+msgstr "_Snímka..."
 
 #: scripts/sota-chrome-logo.sct.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "SOTA chróm..."
 
 #: scripts/speed-text.sct.h:7
 msgid "Speed Text..."
-msgstr ""
+msgstr "Rýchly text..."
 
 #: scripts/sphere.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-msgstr "<Toolbox>/Rozš./Script-Fu/Rôzne/_Guľa..."
+msgstr "<Toolbox>/Rozš./Tiny-Fu/Rôzne"
 
 #: scripts/sphere.sct.h:3
 msgid "Lighting (degrees)"
@@ -2172,31 +1957,28 @@ msgid "Radius (pixels)"
 msgstr "Polomer (v bodoch)"
 
 #: scripts/sphere.sct.h:6
-#, fuzzy
 msgid "Sphere color"
 msgstr "Farba gule"
 
 #: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
 msgid "_Sphere..."
-msgstr ""
+msgstr "_Guľa..."
 
 #: scripts/spinning-globe.sct.h:2
 msgid "Frames"
 msgstr "Rámy"
 
 #: scripts/spinning-globe.sct.h:3
-#, fuzzy
 msgid "Index to n colors (0 = remain RGB)"
 msgstr "Indexovaný v n farbách (0 = nechá RGB)"
 
 #: scripts/spinning-globe.sct.h:5
-#, fuzzy
 msgid "Turn from left to right"
 msgstr "Točiť zľava doprava"
 
 #: scripts/spinning-globe.sct.h:7
 msgid "_Spinning Globe..."
-msgstr ""
+msgstr "_Rotujúci glóbus..."
 
 #: scripts/spyrogimp.sct.h:2
 msgid "Airbrush"
@@ -2211,7 +1993,6 @@ msgid "Circle"
 msgstr "Kruh"
 
 #: scripts/spyrogimp.sct.h:6
-#, fuzzy
 msgid "Color method"
 msgstr "Farebná metóda"
 
@@ -2236,12 +2017,10 @@ msgid "Hexagon"
 msgstr "Šesťuholník"
 
 #: scripts/spyrogimp.sct.h:13
-#, fuzzy
 msgid "Hole ratio"
 msgstr "Miera dier"
 
 #: scripts/spyrogimp.sct.h:14
-#, fuzzy
 msgid "Inner teeth"
 msgstr "Vnútorné zuby"
 
@@ -2254,9 +2033,8 @@ msgid "Margin (pixels)"
 msgstr "Okraj (v bodoch)"
 
 #: scripts/spyrogimp.sct.h:17
-#, fuzzy
 msgid "Outer teeth"
-msgstr "Vonkajšia zuby"
+msgstr "Vonkajšie zuby"
 
 #: scripts/spyrogimp.sct.h:18
 msgid "Pencil"
@@ -2299,7 +2077,6 @@ msgid "Square"
 msgstr "Štvorec"
 
 #: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-#, fuzzy
 msgid "Start angle"
 msgstr "Počiatočný uhol"
 
@@ -2316,105 +2093,90 @@ msgid "Type"
 msgstr "Typ"
 
 #: scripts/spyrogimp.sct.h:32
-#, fuzzy
 msgid "_Spyrogimp..."
-msgstr "Spyrograf"
+msgstr "_Spyrogimp..."
 
 #: scripts/starburst-logo.sct.h:4
-#, fuzzy
 msgid "Burst color"
 msgstr "Farba prenikania"
 
 #: scripts/starburst-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 30)"
 msgstr "Veľkosť efektu (v bodoch * 30)"
 
 #: scripts/starburst-logo.sct.h:8
 msgid "Starb_urst..."
-msgstr ""
+msgstr "_Prenikanie hviezd..."
 
 #: scripts/starscape-logo.sct.h:3
-#, fuzzy
 msgid "Effect size (pixels * 4)"
-msgstr "Veľkosť efektu (v bodoch * 4)"
+msgstr "Veľkosť efektu (v bodoch *4)"
 
 #: scripts/starscape-logo.sct.h:7
 msgid "Sta_rscape..."
-msgstr ""
+msgstr "P_renikanie hviezd..."
 
 #: scripts/swirltile.sct.h:9
 msgid "Swirl-_Tile..."
-msgstr ""
+msgstr "Vírivá _dlaždica..."
 
 #: scripts/swirltile.sct.h:10
-#, fuzzy
 msgid "Whirl amount"
 msgstr "Miera zvlnenia"
 
 #: scripts/swirly-pattern.sct.h:2
-#, fuzzy
 msgid "Number of times to whirl"
 msgstr "Počet opakovaní zvlnenia"
 
 #: scripts/swirly-pattern.sct.h:3
-#, fuzzy
 msgid "Quarter size"
 msgstr "Štvrtinová veľkosť"
 
 #: scripts/swirly-pattern.sct.h:4
-#, fuzzy
 msgid "Whirl angle"
-msgstr "Uhol zvlnenia"
+msgstr "Uhol vírenia:"
 
 #: scripts/swirly-pattern.sct.h:5
 msgid "_Swirly..."
-msgstr ""
+msgstr "_Vírivé..."
 
 #: scripts/t-o-p-logo.sct.h:4
-#, fuzzy
 msgid "Base color"
 msgstr "Základná farba"
 
 #: scripts/t-o-p-logo.sct.h:6
-#, fuzzy
 msgid "Edge only"
 msgstr "Iba hrana"
 
 #: scripts/t-o-p-logo.sct.h:7
-#, fuzzy
 msgid "Edge width"
 msgstr "Šírka hrany"
 
 #: scripts/t-o-p-logo.sct.h:10
-#, fuzzy
 msgid "Hit rate"
 msgstr "Pomer úderov"
 
 #: scripts/t-o-p-logo.sct.h:12
 msgid "_Particle Trace..."
-msgstr ""
+msgstr "Sto_pa častíc..."
 
 #: scripts/text-circle.sct.h:2
 msgid "Antialias"
 msgstr "Vyhladzovanie"
 
 #: scripts/text-circle.sct.h:3
-#, fuzzy
 msgid "Fill angle"
-msgstr "Uhol vyplňovania"
+msgstr "Uhol výplne"
 
 #: scripts/text-circle.sct.h:7
 msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
 #: scripts/text-circle.sct.h:10
-#, fuzzy
 msgid "Text Circle..."
-msgstr "Kruh"
+msgstr "Textový kruh"
 
 #: scripts/textured-logo.sct.h:5
-#, fuzzy
 msgid "Ending blend"
 msgstr "Koncové splývanie"
 
@@ -2423,7 +2185,6 @@ msgid "Hexagons"
 msgstr "Šesťuholník"
 
 #: scripts/textured-logo.sct.h:9
-#, fuzzy
 msgid "Mosaic tile type"
 msgstr "Typ dlaždicovania mozaiky"
 
@@ -2436,36 +2197,30 @@ msgid "Squares"
 msgstr "Štvorce"
 
 #: scripts/textured-logo.sct.h:13
-#, fuzzy
 msgid "Starting blend"
 msgstr "Počiatočné miešanie"
 
 #: scripts/textured-logo.sct.h:15
-#, fuzzy
 msgid "Text pattern"
 msgstr "Vzorka textu"
 
 #: scripts/textured-logo.sct.h:16
 msgid "_Textured..."
-msgstr ""
+msgstr "_Textúrované..."
 
 #: scripts/tileblur.sct.h:1
-#, fuzzy
 msgid "<Image>/Filters/Blur"
-msgstr "<Image>/Filtere/Rozmazanie/_Dlaždicoviteľné rozmazanie..."
+msgstr ""
 
 #: scripts/tileblur.sct.h:2
-#, fuzzy
 msgid "Blur horizontally"
 msgstr "Rozmazať vodorovne"
 
 #: scripts/tileblur.sct.h:3
-#, fuzzy
 msgid "Blur type"
-msgstr "Typ rozmazania"
+msgstr "Typ rozostrenia"
 
 #: scripts/tileblur.sct.h:4
-#, fuzzy
 msgid "Blur vertically"
 msgstr "Rozmazať zvisle"
 
@@ -2478,9 +2233,8 @@ msgid "RLE"
 msgstr "RLE"
 
 #: scripts/tileblur.sct.h:8
-#, fuzzy
 msgid "_Tileable Blur..."
-msgstr "<Image>/Filtere/Rozmazanie/_Dlaždicoviteľné rozmazanie..."
+msgstr "_Dlaždicoviteľné rozmazanie..."
 
 #: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
@@ -2494,30 +2248,27 @@ msgstr "Farba textu"
 
 #: scripts/title-header.sct.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Hlavička web nadpisu..."
 
 #: scripts/truchet.sct.h:4
-#, fuzzy
 msgid "Foreground color"
 msgstr "Farba popredia"
 
 #: scripts/truchet.sct.h:7
 msgid "T_ruchet..."
-msgstr ""
+msgstr "T_ruchet..."
 
 #: scripts/unsharp-mask.sct.h:2
-#, fuzzy
 msgid "Mask opacity"
-msgstr "Maska krytia"
+msgstr "Krytie masky"
 
 #: scripts/unsharp-mask.sct.h:3
-#, fuzzy
 msgid "Mask size"
 msgstr "Veľkosť masky"
 
 #: scripts/unsharp-mask.sct.h:4
 msgid "_Unsharp Mask..."
-msgstr ""
+msgstr "_Rozostriť masku..."
 
 #: scripts/waves-anim.sct.h:2
 msgid "Amplitude"
@@ -2533,559 +2284,106 @@ msgstr "Vlnová dĺžka"
 
 #: scripts/waves-anim.sct.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "_Vlny..."
 
 #: scripts/weave.sct.h:2
-#, fuzzy
 msgid "Ribbon spacing"
 msgstr "Rozostup pásov"
 
 #: scripts/weave.sct.h:3
-#, fuzzy
 msgid "Ribbon width"
 msgstr "Šírka pásov"
 
 #: scripts/weave.sct.h:4
-#, fuzzy
 msgid "Shadow darkness"
 msgstr "Tmavosť tieňa"
 
 #: scripts/weave.sct.h:5
-#, fuzzy
 msgid "Shadow depth"
 msgstr "Hĺbka tieňa"
 
 #: scripts/weave.sct.h:6
-#, fuzzy
 msgid "Thread density"
 msgstr "Hustota vlákna"
 
 #: scripts/weave.sct.h:7
-#, fuzzy
 msgid "Thread intensity"
 msgstr "Intenzita vlákna"
 
 #: scripts/weave.sct.h:8
-#, fuzzy
 msgid "Thread length"
 msgstr "Dĺžka vlákna"
 
 #: scripts/weave.sct.h:9
 msgid "_Weave..."
-msgstr ""
+msgstr "_Tkať..."
 
 #: scripts/web-browser.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Help/The GIMP Online"
-msgstr "<Toolbox>/Help/The GIMP Online/_Hlavná stránka"
+msgstr "<Toolbox>/Pomocník/GIMP online"
 
 #: scripts/web-browser.sct.h:2
 msgid "Plug-in _Registry"
-msgstr ""
+msgstr "_Register zásuvných modulov"
 
 #: scripts/web-browser.sct.h:3
 msgid "_Developer Web Site"
-msgstr ""
+msgstr "_Web stránka pre vývojárov"
 
 #: scripts/web-browser.sct.h:4
 msgid "_Main Web Site"
-msgstr ""
+msgstr "_Hlavná web stránka"
 
 #: scripts/xach-effect.sct.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
-msgstr "X posun vrhaného tieňa"
+msgstr "Posun X vrhaného tieňa"
 
 #: scripts/xach-effect.sct.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
-msgstr "Y posun vrhaného tieňa"
+msgstr "Posun Y vrhaného tieňa"
 
 #: scripts/xach-effect.sct.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
 msgstr "Polomer rozmazania vrhaného tieňa"
 
 #: scripts/xach-effect.sct.h:5
-#, fuzzy
 msgid "Drop shadow color"
 msgstr "Farba vrhaného tieňa"
 
 #: scripts/xach-effect.sct.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
 msgstr "Krytie vrhaného tieňa"
 
 #: scripts/xach-effect.sct.h:7
-#, fuzzy
 msgid "Highlight X offset"
-msgstr "X posun svetiel"
+msgstr "Posun X svetiel"
 
 #: scripts/xach-effect.sct.h:8
-#, fuzzy
 msgid "Highlight Y offset"
-msgstr "Y posun svetiel"
+msgstr "Posun Y svetiel"
 
 #: scripts/xach-effect.sct.h:10
-#, fuzzy
 msgid "Highlight opacity"
 msgstr "Krytie svetiel"
 
 #: scripts/xach-effect.sct.h:12
 msgid "_Xach-Effect..."
-msgstr ""
+msgstr "Efekt _Xach..."
 
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy"
-#~ msgstr "<Image>/Úpravy/Kopírovať _viditeľné"
+#~ msgid "Script-fu Pattern Selection"
+#~ msgstr "Tiny-Fu výber vzorky"
 
-#~ msgid "Text Color"
-#~ msgstr "Farba textu"
+#~ msgid "Tiny-Fu _Console"
+#~ msgstr "Tiny-Fu konzola"
 
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Veľkosť písma (v bodoch)"
+#~ msgid "_Start Server..."
+#~ msgstr "Štart _servera..."
 
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_Znaková mapa..."
+#~ msgid "_Refresh Scripts"
+#~ msgstr "_Znovunačítať skripty"
 
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/3D _obrys..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/3D o_brys..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/3_D bludisko..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Script-Fu/Dekorácia/Pridať skos_enie..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Script-Fu/Dekorácia/Pridať o_kraj..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/"
-#~ "_Vodorovná čiara..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/"
-#~ "_Gulička..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Mimozemská žiara/"
-#~ "_Tlačítko..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Mimo_zemská žiara..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Mimo_zemská žiara..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Mimozemský _neón..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Mimozemský _neón..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/_ASCII do obrázka..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Základné I..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Základné I..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Základné II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Základné II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Gulička..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Tlačítko..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Nadpis..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Skosený vzor/_Vodorovná "
-#~ "čiara..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Mie_šané..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Mieš_ané..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Fľakaté..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Fľakaté..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Script-Fu/Animátory/_Vpálené..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Kamufláž..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Vyrezávané..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/K_rieda..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/K_rieda..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Odštiepnuté..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Odštiepnuté..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Script-Fu/Šablóny/Poc_hrómovať..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/C_hrómové..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/C_hrómové..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Script-Fu/Generovanie/_Okruh..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Script-Fu/Alchýmia/_Plátno..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Script-Fu/Dekorácia/_Kávová škvrna..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Kniha komiksov..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Kniha komiksov..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Stude_ný kov..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Stude_ný kov.."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Kryštálové..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "<Image>/Script-Fu/Tieň/_Vrhnúť tieň..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Script-Fu/Výber/_Pozvoľný obrys..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Rovina..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Mrazivé..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Mrazivé..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Script-Fu/Dekorácia/N_eostrý okraj..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Ma_lý nadpis..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Nápis podtlačítka "
-#~ "na t_rubici..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Nápis "
-#~ "podpodtlačítka na t_rubici..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/V_šeobecné nápisy "
-#~ "na trubici..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Rozš./Script-Fu/Témy pre web stránky/Gimp.org/Nápis tlačítka na "
-#~ "_trubici..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Lesklé..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Lesklé..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Sálajúca žiara..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Sálajúce teplo..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Š_ikmý prechod..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Š_ikmý prechod..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Pomôcky/Vlastný pr_echod..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Imigre-26..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
-#~ msgstr "<Image>/Script-Fu/Generovanie/_Láva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Script-Fu/Generovanie/Čiarová _nova..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/Eli_ptický, neostrý..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vytvoriť štetec/O_bdĺžnikový..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Novinový text..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Script-Fu/Dekorácia/_Stará fotografia..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Script-Fu/Tieň/_Perspektíva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Script-Fu/Alchýmia/_Predátor..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Tlačítka/_Oblé tlačítko..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/Generovať _mapu..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Script-Fu/Animátory/_Zvlnenie..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Script-Fu/Výber/Do š_tetca..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Script-Fu/Výber/Do v_zorky..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/SOTA chróm..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Rýchly text..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Script-Fu/Animátory/_Točiaci sa glóbus..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Script-Fu/Generovanie/_Spyrogimp..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Prenikanie _hviezd..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Prenikanie _hviezd..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/P_opraskaný povrch..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/P_opraskaný povrch..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/Vírivá _dlaždica..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Vírivé..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/Stopa _častíc..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Stopa _častíc..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Textový kruh..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Image>/Script-Fu/Alfa do loga/_Textúrované..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/_Textúrované..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/Hlavička webového titulku..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Vzorky/_Bludisko..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Script-Fu/Alchýmia/Maskovať _rozostrenie..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Script-Fu/Animátory/_Vlny..."
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-#~ msgstr "<Toolbox>/Pomocník/Online GIMP/_Register zásuvných modulov"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-#~ msgstr "<Toolbox>/Help/The GIMP Online/_Vývojárske stránky"
-
-#~ msgid "Re-read all available scripts"
-#~ msgstr "Znovu prečítať všetky dostupné skripty"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-ADJUSTMENT _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-ADJUSTMENT _"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-COLOR      _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-COLOR      _"
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Relatívny polomer"
-
-#, fuzzy
-#~ msgid "_About"
-#~ msgstr "O skripte"
+#~ msgid "Procedure Browser"
+#~ msgstr "Prehliadač procedúr"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Hľadať podľa _názvu"
@@ -3105,96 +2403,41 @@ msgstr ""
 #~ msgid "Searching - please wait"
 #~ msgstr "Hľadanie - čakajte prosím"
 
+#~ msgid "1 Procedure"
+#~ msgstr "1 procedúra"
+
+#~ msgid "%d Procedures"
+#~ msgstr "%d procedúr"
+
 #~ msgid "No matches"
 #~ msgstr "Nenájdené"
 
-#, fuzzy
 #~ msgid "Parameters"
-#~ msgstr "Priemer"
+#~ msgstr "Parametre"
 
-#~ msgid "Transparent Background"
-#~ msgstr "Priesvitné pozadie"
+#~ msgid "Return Values"
+#~ msgstr "Návratové hodnoty"
 
-#~ msgid "DB Browser"
-#~ msgstr "DB Prehliadač"
+#~ msgid "Additional Information"
+#~ msgstr "Ďalšie informácie"
 
-#~ msgid "Name:"
-#~ msgstr "Názov:"
+#~ msgid "Internal GIMP procedure"
+#~ msgstr "Interná procedúra GIMP"
 
-#~ msgid "Blurb:"
-#~ msgstr "Popis:"
+#~ msgid "GIMP Plug-In"
+#~ msgstr "GIMP modul"
 
-#~ msgid "In:"
-#~ msgstr "Dnu:"
+#~ msgid "GIMP Extension"
+#~ msgstr "Rozšírenie programu GIMP"
 
-#~ msgid "Out:"
-#~ msgstr "Von:"
+#~ msgid "Temporary Procedure"
+#~ msgstr "Dočasná procedúra"
 
-#~ msgid "Help:"
-#~ msgstr "Pomocník:"
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "Vpálenie: Potrebné sú celkom dve vrstvy!"
 
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
-#~ "                                   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
-#~ "                                 "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                  "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                                 "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "                              "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
-#~ msgstr "Efekt podobný vpáleniu na vrstve popredie (text) a pozadie; V2.1"
+#~ msgid "Name"
+#~ msgstr "Názov"
 
 #~ msgid ""
 #~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
@@ -3203,59 +2446,5 @@ msgstr ""
 #~ "Kreslí Spirografy, Epitrochoidy a Lissajouské krivky. Viac informácií na "
 #~ "http://netword.com/*spyrogimp"
 
-#~ msgid ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (názov súboru (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid "Script-Fu _Console"
-#~ msgstr "Script-Fu konzola"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Script-Fu"
-#~ msgstr "<Toolbox>/Rozš./Script-Fu/Logá/N_eón..."
-
-#~ msgid "Burn-In: Need two layers in total!"
-#~ msgstr "Vpálenie: Potrebné sú celkom dve vrstvy!"
-
-#~ msgid "<Image>/Script-Fu/Render/_Grid..."
-#~ msgstr "<Image>/Script-Fu/Generovanie/_Mriežka..."
-
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "\t\t\t      "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (názov súboru (string-append data-dir\n"
-#~ "\t\t\t      "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-
-#~ msgid "Unable to open a stream on the SIOD output pipe"
-#~ msgstr "Nie je možné otvoriť tok na výstupnej rúre SIOD"
-
-#, fuzzy
-#~ msgid "Blend gradient (sext)"
-#~ msgstr "Prechod miešania (text)"
+#~ msgid "Copy _Visible"
+#~ msgstr "Kopírovať _viditeľné"

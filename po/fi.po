@@ -1,43 +1,39 @@
-# Gimp 1.2  script-fu finnish translation
+# Gimp tiny-fu finnish translation
 # Copyright (C) 2000 Free Software Foundation, Inc.
 # Ville Hautamäki <villeh@cs.joensuu.fi>, 2000.
-#
+# Päivitti versiota 2.0 varten
+# Mikko Paananen
 msgid ""
 msgstr ""
-"Project-Id-Version: script-fu \n"
+"Project-Id-Version: tiny-fu \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-22 23:22-0500\n"
-"PO-Revision-Date: 2004-03-19 01:51+0200\n"
-"Last-Translator: Ville Hautamäki <villeh@cs.joensuu.fi>\n"
-"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2004-12-20 11:37-0500\n"
+"PO-Revision-Date: 2004-12-18 06:42+0200\n"
+"Last-Translator: Mikko Paananen <mikko@ipi.fi>\n"
+"Language-Team: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: tiny-fu/tiny-fu.c:122
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
-msgstr "<Toolbox>/Xtns/Script-Fu/Script-Fu Konsoli"
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu Konsoli"
 
 #: tiny-fu/tiny-fu.c:148
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Käynnistä palvelin"
 
 #: tiny-fu/tiny-fu.c:275
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
-msgstr "<Toolbox>/Xtns/Script-Fu/Virkistä scriptit"
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Virkistä scriptit"
 
 #: tiny-fu/tiny-fu-console.c:142 tiny-fu/tiny-fu-text-console.c:68
-#, fuzzy
 msgid "Tiny-Fu console mode allows only interactive invocation"
-msgstr "Script-Fu konsoli moodi sallii ainoastaan interaktiivisen käytön"
+msgstr "Tiny-Fu konsoli moodi sallii ainoastaan interaktiivisen käytön"
 
 #: tiny-fu/tiny-fu-console.c:171
-#, fuzzy
 msgid "Tiny-Fu Console"
-msgstr "Script-Fu-konsoli"
+msgstr "Tiny-Fu-konsoli"
 
 #: tiny-fu/tiny-fu-console.c:176
 #, fuzzy
@@ -65,7 +61,7 @@ msgstr ""
 #: tiny-fu/tiny-fu-console.c:241
 #, fuzzy
 msgid "Tiny-Fu Console - "
-msgstr "Script-Fu-konsoli"
+msgstr "Tiny-Fu-konsoli"
 
 #: tiny-fu/tiny-fu-console.c:242
 msgid "Interactive Scheme Development"
@@ -76,19 +72,19 @@ msgid "Current Command"
 msgstr "Nykyinen komento"
 
 #: tiny-fu/tiny-fu-console.c:284
+#, fuzzy
 msgid "Browse..."
-msgstr "Selaa..."
+msgstr "_Selaa..."
 
 #: tiny-fu/tiny-fu-console.c:340
 msgid "Save TinyScheme Output"
 msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:654
-#, fuzzy
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
-msgstr "Script-Fu:n evaluointitila sallii ainoastaan ei-interaktiivisen käytön"
+msgstr "Tiny-Fu:n evaluointitila sallii ainoastaan ei-interaktiivisen käytön"
 
-#: tiny-fu/tiny-fu-scripts.c:626
+#: tiny-fu/tiny-fu-scripts.c:634
 #, fuzzy, c-format
 msgid ""
 "Error while executing\n"
@@ -96,14 +92,13 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Script-Fu Virhe suorittaessa\n"
+"Tiny-Fu Virhe suorittaessa\n"
 " %s\n"
 "%s"
 
 #: tiny-fu/tiny-fu-server.c:642
-#, fuzzy
 msgid "Tiny-Fu Server Options"
-msgstr "Script-Fu palvelimen valinnat"
+msgstr "Tiny-Fu palvelimen valinnat"
 
 #: tiny-fu/tiny-fu-server.c:670
 msgid "Server Port:"
@@ -115,28 +110,27 @@ msgstr "Palvelimen lokitiedosto:"
 
 #: tiny-fu/tiny-fu-interface.c:178
 msgid "Tiny-Fu cannot process two scripts at the same time."
-msgstr ""
+msgstr "Tiny-Fu ei voi suorittaa kahta komentosarjaa samaan aikaan."
 
 #: tiny-fu/tiny-fu-interface.c:180
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr ""
+msgstr "Komentosarja \"%s\" on jo ajossa."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
 #: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
-#, fuzzy
 msgid "/Tiny-Fu/"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: tiny-fu/tiny-fu-interface.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "Tiny-Fu: %s"
-msgstr "Script-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #. the script arguments frame
 #: tiny-fu/tiny-fu-interface.c:255
 msgid "Script Arguments"
-msgstr "Scriptin parametrit"
+msgstr "Komentosarjan parametrit"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
@@ -146,54 +140,46 @@ msgid "%s:"
 msgstr "%s:"
 
 #: tiny-fu/tiny-fu-interface.c:329
-#, fuzzy
 msgid "Tiny-Fu Color Selection"
-msgstr "Script-Fu värien selain"
+msgstr "Tiny-Fu värien selain"
 
 #: tiny-fu/tiny-fu-interface.c:432
-#, fuzzy
 msgid "Tiny-Fu File Selection"
-msgstr "Script-Fu tiedostojen selain"
+msgstr "Tiny-Fu tiedostojen selain"
 
 #: tiny-fu/tiny-fu-interface.c:436
-#, fuzzy
 msgid "Tiny-Fu Folder Selection"
-msgstr "Script-Fu kansioiden valinta"
+msgstr "Tiny-Fu kansioiden valinta"
 
 #: tiny-fu/tiny-fu-interface.c:448
-#, fuzzy
 msgid "Tiny-Fu Font Selection"
-msgstr "Script-Fu merkistön valinta"
+msgstr "Tiny-Fu merkistön valinta"
 
 #: tiny-fu/tiny-fu-interface.c:455
-#, fuzzy
 msgid "Tiny-Fu Palette Selection"
-msgstr "Script-fu kuvioiden selain"
+msgstr "Script-fu palettien selain"
 
 #: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
-msgstr "Script-fu kuvioiden selain"
+msgstr "Script-fu palettien selain"
 
 #: tiny-fu/tiny-fu-interface.c:470
-#, fuzzy
 msgid "Tiny-Fu Gradient Selection"
-msgstr "Script-Fu väriliukumien selain"
+msgstr "Tiny-Fu väriliukumien selain"
 
 #: tiny-fu/tiny-fu-interface.c:478
-#, fuzzy
 msgid "Tiny-Fu Brush Selection"
-msgstr "Script-Fu siveltimien selain"
+msgstr "Tiny-Fu siveltimien selain"
 
 #. the script progress frame
 #: tiny-fu/tiny-fu-interface.c:534
-#, fuzzy
 msgid "Script Progress"
-msgstr "Scriptin parametrit"
+msgstr "Komentosarjan eteneminen"
 
 #: tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
-msgstr ""
+msgstr "(ei mitään)"
 
 #: tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
@@ -214,14 +200,13 @@ msgstr "Kuvatyypit:"
 #: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
-msgstr "<Toolbox>/Xtns/Script-Fu/Virkistä scriptit"
+msgstr "<Toolbox>/Laajennokset/Tiny-Fu"
 
 #: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
 #: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
 #: scripts/spyrogimp.sct.h:5
-#, fuzzy
 msgid "Color"
-msgstr "Väri 1"
+msgstr "Väri"
 
 #: scripts/ts-helloworld.sct.h:3 scripts/3d-outline.sct.h:6
 #: scripts/alien-glow-button.sct.h:5 scripts/alien-glow-logo.sct.h:4
@@ -264,7 +249,6 @@ msgstr "Kirjasin"
 #: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
 #: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
 #: scripts/title-header.sct.h:3
-#, fuzzy
 msgid "Font size (pixels)"
 msgstr "Kirjasinkoko (pikseleinä)"
 
@@ -275,27 +259,25 @@ msgstr ""
 #: scripts/ts-helloworld.sct.h:6
 #, fuzzy
 msgid "Text string"
-msgstr "Kuvio"
+msgstr "Tekstin kuvio"
 
 #: scripts/contactsheet.sct.h:1
 msgid " contact sheets from a total of "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:2
-#, fuzzy
 msgid " for directory "
-msgstr "SIODin tulostusputkea ei saatu avatuksi"
+msgstr ""
 
 #: scripts/contactsheet.sct.h:3
 #, fuzzy
 msgid " images"
-msgstr "Kuvio"
+msgstr "Indeksikuva"
 
 #: scripts/contactsheet.sct.h:4 scripts/asc2img.sct.h:2
 #: scripts/font-map.sct.h:1 scripts/gradient-example.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Työkalut"
 
 #: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
 #: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
@@ -313,7 +295,6 @@ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
-#, fuzzy
 msgid "Background color"
 msgstr "Taustaväri"
 
@@ -324,25 +305,26 @@ msgstr ""
 #: scripts/contactsheet.sct.h:7
 #, fuzzy
 msgid "Created "
-msgstr "Varjon X siirtymä"
+msgstr "Luo varjo"
 
 #: scripts/contactsheet.sct.h:8
 #, fuzzy
 msgid "Directory"
-msgstr "SIODin tulostusputkea ei saatu avatuksi"
+msgstr "Suunta"
 
 #: scripts/contactsheet.sct.h:9
 msgid "Legend font"
 msgstr ""
 
 #: scripts/contactsheet.sct.h:10
+#, fuzzy
 msgid "Sheet "
-msgstr ""
+msgstr "Siemen"
 
 #: scripts/contactsheet.sct.h:11
 #, fuzzy
 msgid "Sheet size"
-msgstr "Kehys"
+msgstr "Ruudun koko"
 
 #: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
 #: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
@@ -351,7 +333,6 @@ msgstr "Kehys"
 #: scripts/gimp-headers.sct.h:13 scripts/gimp-labels.sct.h:15
 #: scripts/i26-gunya2.sct.h:8 scripts/news-text.sct.h:11
 #: scripts/pupi-button.sct.h:14 scripts/speed-text.sct.h:9
-#, fuzzy
 msgid "Text color"
 msgstr "Tekstin väri"
 
@@ -366,7 +347,7 @@ msgstr "SIODin tulostusputkea ei saatu avatuksi"
 
 #: scripts/3d-outline.sct.h:1
 msgid "3D _Outline..."
-msgstr ""
+msgstr "3D reunus..."
 
 #: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
 #: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
@@ -379,9 +360,8 @@ msgstr ""
 #: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
 #: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
 #: scripts/textured-logo.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alpha to Logo"
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
+msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo"
 
 #: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
 #: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
@@ -397,39 +377,32 @@ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
 #: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
 #: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
 #: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
+msgstr "<Toolbox>/Laajennokset/Tiny-Fu/Logot"
 
 #: scripts/3d-outline.sct.h:4
-#, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
 msgstr "Kuhmutuksen säde (Alfatasolla)"
 
 #: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
-#, fuzzy
 msgid "Default bumpmap settings"
-msgstr "Kuhmutuksen asetukset"
+msgstr "Kuhmutuksen perusasetukset"
 
 #: scripts/3d-outline.sct.h:8
-#, fuzzy
 msgid "Outline blur radius"
 msgstr "Ulkoreunan sumennuksen säde"
 
 #: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
-#, fuzzy
 msgid "Shadow X offset"
 msgstr "Varjon X siirtymä"
 
 #: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
-#, fuzzy
 msgid "Shadow Y offset"
 msgstr "Varjon Y siirtymä"
 
 #: scripts/3d-outline.sct.h:11
-#, fuzzy
 msgid "Shadow blur radius"
 msgstr "Varjon sumennuksen säde"
 
@@ -462,30 +435,28 @@ msgstr ""
 #: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
 #: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
 #: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot"
 
 #: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-#, fuzzy
 msgid "Block size"
-msgstr "Reunan X koko"
+msgstr "Palan koko"
 
 #: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
 msgid "End blend"
-msgstr ""
+msgstr "Lopun sekoitus"
 
 #: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
 msgid "Number of X tiles"
-msgstr ""
+msgstr "Lohkoja vaakasuoraan"
 
 #: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
 msgid "Number of Y tiles"
-msgstr ""
+msgstr "Lohkoja pystysuuntaan"
 
 #: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
 msgid "Start blend"
-msgstr ""
+msgstr "Alun sekoitus"
 
 #: scripts/3dTruchet.sct.h:9
 msgid "Supersample"
@@ -499,53 +470,47 @@ msgstr "Paksuus"
 #: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
 #: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
 #: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Decor"
-msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
+msgstr "<Image>/Tiny-Fu/Koristeelliset"
 
 #: scripts/add-bevel.sct.h:2
 msgid "Add B_evel..."
-msgstr ""
+msgstr "Lisää viiste..."
 
 #: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
 msgid "Keep bump layer"
-msgstr ""
+msgstr "Säilytä kuhmutustaso"
 
 #: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
 #: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
 #: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
-#, fuzzy
 msgid "Work on copy"
 msgstr "Työskentele kopiolla"
 
 #: scripts/addborder.sct.h:2
 msgid "Add _Border..."
-msgstr ""
+msgstr "Lisää reunus..."
 
 #: scripts/addborder.sct.h:3
-#, fuzzy
 msgid "Border X size"
 msgstr "Reunan X koko"
 
 #: scripts/addborder.sct.h:4
-#, fuzzy
 msgid "Border Y size"
 msgstr "Reunan Y koko"
 
 #: scripts/addborder.sct.h:5
-#, fuzzy
 msgid "Border color"
 msgstr "Reunan väri"
 
 #: scripts/addborder.sct.h:6
 msgid "Delta value on color"
-msgstr ""
+msgstr "Värin muutosarvo"
 
 #: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
 #: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Alien-hohto"
 
 #: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
 msgid "Down"
@@ -554,18 +519,16 @@ msgstr "Alas"
 #: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
 #: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
 #: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
-#, fuzzy
 msgid "Flatten image"
-msgstr "Kuvio"
+msgstr "Yhdistä kuva"
 
 #: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
 #: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
 #: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
 #: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
-#, fuzzy
 msgid "Glow color"
-msgstr "Oikean alareunan väri"
+msgstr "Hehkun väri"
 
 #: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
 msgid "Left"
@@ -589,23 +552,20 @@ msgid "Up"
 msgstr "Ylös"
 
 #: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
-#, fuzzy
 msgid "_Arrow..."
-msgstr "Selaa..."
+msgstr "_Nuoli..."
 
 #: scripts/alien-glow-bar.sct.h:3
-#, fuzzy
 msgid "Bar height"
-msgstr "Korkeus"
+msgstr "Viivan korkeus"
 
 #: scripts/alien-glow-bar.sct.h:4
-#, fuzzy
 msgid "Bar length"
-msgstr "Korkeus"
+msgstr "Viivan pituus"
 
 #: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
 msgid "_Hrule..."
-msgstr ""
+msgstr "_Vaakaerotin..."
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
@@ -614,16 +574,15 @@ msgstr "Säde"
 
 #: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
 msgid "_Bullet..."
-msgstr ""
+msgstr "_Kohta..."
 
 #: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
 msgid "B_utton..."
-msgstr ""
+msgstr "P_ainike..."
 
 #: scripts/alien-glow-button.sct.h:8
-#, fuzzy
 msgid "Glow radius"
-msgstr "Varjon sumennuksen säde"
+msgstr "Hehkun säde"
 
 #: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
 msgid "Padding"
@@ -631,46 +590,43 @@ msgstr "Reunustus"
 
 #: scripts/alien-glow-logo.sct.h:3
 msgid "Alien _Glow..."
-msgstr ""
+msgstr "Alienhehku..."
 
 #: scripts/alien-glow-logo.sct.h:7
-#, fuzzy
 msgid "Glow size (pixels * 4)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Hehkun koko (pikseliä × 4)"
 
 #: scripts/alien-neon-logo.sct.h:3
 msgid "Alien _Neon..."
-msgstr ""
+msgstr "Alien _neon..."
 
 #: scripts/alien-neon-logo.sct.h:5
 msgid "Fade away"
-msgstr ""
+msgstr "Häivytys"
 
 #: scripts/alien-neon-logo.sct.h:9
 msgid "Number of bands"
-msgstr ""
+msgstr "Kaistojen määrä"
 
 #: scripts/alien-neon-logo.sct.h:11
 msgid "Width of bands"
-msgstr ""
+msgstr "Kaistojen leveys"
 
 #: scripts/alien-neon-logo.sct.h:12
 msgid "Width of gaps"
-msgstr ""
+msgstr "Välien leveys"
 
 #: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
 #: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Utils"
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "<Image>/Tiny-Fu/Työkalut"
 
 #: scripts/asc2img.sct.h:5
 #, no-c-format
 msgid "Buffer amount (% height of text)"
-msgstr ""
+msgstr "Puskurin määrä (% tekstin korkeudesta)"
 
 #: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
-#, fuzzy
 msgid "File name"
 msgstr "Tiedostonimi"
 
@@ -680,40 +636,35 @@ msgstr "Tiedostonimi"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
 #: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-#, fuzzy
 msgid "Transparent background"
 msgstr "Läpinäkyvä tausta"
 
 #: scripts/asc2img.sct.h:12
 msgid "_ASCII to Image..."
-msgstr ""
+msgstr "_ASCII kuvaksi..."
 
 #: scripts/asc2img.sct.h:13
-#, fuzzy
 msgid "_ASCII to Layer..."
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "_ASCII Tasoksi..."
 
 #: scripts/basic1-logo.sct.h:8
 msgid "_Basic I..."
-msgstr ""
+msgstr "Perus I"
 
 #: scripts/basic2-logo.sct.h:3
 msgid "B_asic II..."
-msgstr ""
+msgstr "Perus II"
 
 #: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-msgstr "<Toolbox>/Xtns/Script-Fu/Script-Fu Konsoli"
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Painikkeet"
 
 #: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
 #: scripts/pupi-button.sct.h:2
-#, fuzzy
 msgid "Bevel width"
-msgstr "Kuvan koko"
+msgstr "Viisteen leveys"
 
 #: scripts/beveled-button.sct.h:5
-#, fuzzy
 msgid "Lower-right color"
 msgstr "Oikean alareunan väri"
 
@@ -723,12 +674,10 @@ msgid "Pressed"
 msgstr "Painettu"
 
 #: scripts/beveled-button.sct.h:8
-#, fuzzy
 msgid "Simple _Beveled Button..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "Yksinkertainen viistottu painike..."
 
 #: scripts/beveled-button.sct.h:11
-#, fuzzy
 msgid "Upper-left color"
 msgstr "Vasemman yläreunan väri"
 
@@ -737,9 +686,8 @@ msgstr "Vasemman yläreunan väri"
 #: scripts/beveled-pattern-button.sct.h:1
 #: scripts/beveled-pattern-heading.sct.h:1
 #: scripts/beveled-pattern-hrule.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Viistottu kuvio"
 
 #: scripts/beveled-pattern-arrow.sct.h:5
 #: scripts/beveled-pattern-bullet.sct.h:3
@@ -751,13 +699,12 @@ msgid "Pattern"
 msgstr "Kuvio"
 
 #: scripts/beveled-pattern-bullet.sct.h:2
-#, fuzzy
 msgid "Diameter"
 msgstr "Halkaisija:"
 
 #: scripts/beveled-pattern-heading.sct.h:4
 msgid "H_eading..."
-msgstr ""
+msgstr "Otsikko..."
 
 #: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
 #: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
@@ -773,16 +720,14 @@ msgstr "Leveys"
 #: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
 #: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
 #: scripts/waves-anim.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Animators"
-msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
+msgstr "<Image>/Tiny-Fu/Animaatiot"
 
 #: scripts/blend-anim.sct.h:2
 msgid "Blend Animation needs at least three source layers"
 msgstr ""
 
 #: scripts/blend-anim.sct.h:3
-#, fuzzy
 msgid "Intermediate frames"
 msgstr "Väliruutuja"
 
@@ -791,39 +736,36 @@ msgid "Looped"
 msgstr "Silmukka"
 
 #: scripts/blend-anim.sct.h:5
-#, fuzzy
 msgid "Max. blur radius"
-msgstr "Varjon sumennuksen säde"
+msgstr "Suurin sumennussäde"
 
 #: scripts/blend-anim.sct.h:6
 msgid "_Blend..."
-msgstr ""
+msgstr "_Sekoita..."
 
 #: scripts/blended-logo.sct.h:4
 msgid "Blen_ded..."
-msgstr ""
+msgstr "Sekoitettu..."
 
 #: scripts/blended-logo.sct.h:5
 msgid "Blend mode"
-msgstr ""
+msgstr "Sekoitustila"
 
 #: scripts/blended-logo.sct.h:6
-#, fuzzy
 msgid "Custom Gradient"
-msgstr "Väriliuku"
+msgstr "Oma väriliuku"
 
 #: scripts/blended-logo.sct.h:8
 msgid "FG-BG-HSV"
-msgstr ""
+msgstr "Edusta-tausta-HSV"
 
 #: scripts/blended-logo.sct.h:9
 msgid "FG-BG-RGB"
-msgstr ""
+msgstr "Edusta-tausta-RGB"
 
 #: scripts/blended-logo.sct.h:10
-#, fuzzy
 msgid "FG-Transparent"
-msgstr "Läpinäkyvä tausta"
+msgstr "Edusta-läpinäkyvä"
 
 #: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
 #: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
@@ -834,7 +776,6 @@ msgstr "Väriliuku"
 #: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
 #: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
 #: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
-#, fuzzy
 msgid "Gradient reverse"
 msgstr "Väriliuku takaperin"
 
@@ -848,7 +789,7 @@ msgstr "Taustaväri"
 
 #: scripts/bovinated-logo.sct.h:5
 msgid "Bo_vination..."
-msgstr ""
+msgstr "Lehmätys..."
 
 #: scripts/bovinated-logo.sct.h:8
 msgid "Spots density X"
@@ -859,17 +800,16 @@ msgid "Spots density Y"
 msgstr "Kuvioiden tiheys Y"
 
 #: scripts/burn-in-anim.sct.h:2
-#, fuzzy
 msgid "Add glowing"
-msgstr "Lisää kiilto"
+msgstr "Lisää hohto"
 
 #: scripts/burn-in-anim.sct.h:3
 msgid "After glow"
-msgstr ""
+msgstr "Jälkihohto"
 
 #: scripts/burn-in-anim.sct.h:4
 msgid "B_urn-In..."
-msgstr ""
+msgstr "Polta..."
 
 #: scripts/burn-in-anim.sct.h:5
 msgid ""
@@ -878,27 +818,24 @@ msgid ""
 msgstr ""
 
 #: scripts/burn-in-anim.sct.h:6
-#, fuzzy
 msgid "Corona width"
 msgstr "Koronan paksuus"
 
 #: scripts/burn-in-anim.sct.h:7
-#, fuzzy
 msgid "Fadeout"
-msgstr "Kuvan koko"
+msgstr "Häivytys"
 
 #: scripts/burn-in-anim.sct.h:8
-#, fuzzy
 msgid "Fadeout width"
-msgstr "Kuvan koko"
+msgstr "Häivytyksen leveys"
 
 #: scripts/burn-in-anim.sct.h:10
 msgid "Prepare for GIF"
-msgstr ""
+msgstr "Optimoi GIF"
 
 #: scripts/burn-in-anim.sct.h:11
 msgid "Speed (pixels/frame)"
-msgstr ""
+msgstr "Nopeus (pikseliä/ruutu)"
 
 #: scripts/camo.sct.h:2
 msgid "Color 1"
@@ -917,7 +854,6 @@ msgid "Granularity"
 msgstr "Rakeisuus"
 
 #: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-#, fuzzy
 msgid "Image size"
 msgstr "Kuvan koko"
 
@@ -927,7 +863,7 @@ msgstr "Pehmennys"
 
 #: scripts/camo.sct.h:9
 msgid "_Camouflage..."
-msgstr ""
+msgstr "Naamioväri..."
 
 #: scripts/carved-logo.sct.h:2
 msgid "Background Image"
@@ -935,157 +871,144 @@ msgstr "Taustakuva"
 
 #: scripts/carved-logo.sct.h:3
 msgid "Carve raised text"
-msgstr ""
+msgstr "Kaiverra teksti koholle"
 
 #: scripts/carved-logo.sct.h:4
 msgid "Carved..."
-msgstr ""
+msgstr "Kaiverrettu..."
 
 #: scripts/carved-logo.sct.h:7
 msgid "Padding around text"
-msgstr ""
+msgstr "Tekstin reunustus"
 
 #: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Stencil Ops"
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "<Image>/Tiny-Fu/Stensiilit"
 
 #: scripts/carve-it.sct.h:2
 msgid "C_arve-It..."
-msgstr ""
+msgstr "Kaiverra..."
 
 #: scripts/carve-it.sct.h:3
 msgid "Carve white areas"
-msgstr ""
+msgstr "Kaiverra vaaleat alueet"
 
 #: scripts/carve-it.sct.h:4
 msgid "Image to carve"
-msgstr ""
+msgstr "Kaiverrettava kuva"
 
 #: scripts/chalk.sct.h:4
-#, fuzzy
 msgid "Chalk color"
 msgstr "Liidun väri"
 
 #: scripts/chalk.sct.h:8
 msgid "_Chalk..."
-msgstr ""
+msgstr "_Liitu..."
 
 #: scripts/chip-away.sct.h:3
-#, fuzzy
 msgid "Blur amount"
-msgstr "Varjon sumennuksen säde"
+msgstr "Sumennuksen määrä"
 
 #: scripts/chip-away.sct.h:4
 msgid "Chip Awa_y..."
-msgstr ""
+msgstr "Sirpaleista..."
 
 #: scripts/chip-away.sct.h:5
-#, fuzzy
 msgid "Chip amount"
-msgstr "Varjon sumennuksen säde"
+msgstr "Sirpaleen määrä"
 
 #: scripts/chip-away.sct.h:6
-#, fuzzy
 msgid "Drop shadow"
-msgstr "Varjon X siirtymä"
+msgstr "Varjo"
 
 #: scripts/chip-away.sct.h:7
 msgid "Fill BG with pattern"
-msgstr ""
+msgstr "Täytä tausta kuviolla"
 
 #: scripts/chip-away.sct.h:10
 msgid "Invert"
-msgstr ""
+msgstr "Käännä"
 
 #: scripts/chip-away.sct.h:11
-#, fuzzy
 msgid "Keep background"
-msgstr "Läpinäkyvä tausta"
+msgstr "Säilytä tausta"
 
 #: scripts/chrome-it.sct.h:2
 msgid "C_hrome-It..."
-msgstr ""
+msgstr "_Kromita..."
 
 #: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
 msgid "Chrome balance"
-msgstr ""
+msgstr "Kromitasapaino"
 
 #: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
 #: scripts/sota-chrome-logo.sct.h:3
 msgid "Chrome factor"
-msgstr ""
+msgstr "Kromikerroin"
 
 #: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
 msgid "Chrome lightness"
-msgstr ""
+msgstr "Kromivalotus"
 
 #: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
 msgid "Chrome saturation"
-msgstr ""
+msgstr "Kromikylläisyys"
 
 #: scripts/chrome-it.sct.h:7
 msgid "Chrome white areas"
-msgstr ""
+msgstr "Kromaa valkoiset alueet"
 
 #: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
 #: scripts/sota-chrome-logo.sct.h:6
 msgid "Environment map"
-msgstr ""
+msgstr "Ympäristökartta"
 
 #: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-#, fuzzy
 msgid "Highlight balance"
-msgstr "Oikean alareunan väri"
+msgstr "Valaistustasapaino"
 
 #: scripts/chrome-logo.sct.h:5
-#, fuzzy
 msgid "C_hrome..."
-msgstr "Selaa..."
+msgstr "_Kromi..."
 
 #: scripts/chrome-logo.sct.h:8
-#, fuzzy
 msgid "Offsets (pixels * 2)"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Siirtymä (pikseliä × 2)"
 
 #: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
 #: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Render"
-msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
+msgstr "<Image>/Tiny-Fu/Luo"
 
 #: scripts/circuit.sct.h:2
 msgid "Circuit seed"
-msgstr ""
+msgstr "Siemenluku"
 
 #: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
 #: scripts/xach-effect.sct.h:11
 msgid "Keep selection"
-msgstr ""
+msgstr "Säilytä valinta"
 
 #: scripts/circuit.sct.h:4
 msgid "No background (only for separate layer)"
-msgstr ""
+msgstr "Ei taustaa (vain erilliselle tasolle)"
 
 #: scripts/circuit.sct.h:5
-#, fuzzy
 msgid "Oilify mask size"
-msgstr "Kehys"
+msgstr "Öljyväri-maskin koko"
 
 #: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
-#, fuzzy
 msgid "Separate layer"
 msgstr "Erillinen taso"
 
 #: scripts/circuit.sct.h:7
 msgid "_Circuit..."
-msgstr ""
+msgstr "_Piiri..."
 
 #: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
 #: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "<Image>/Tiny-Fu/Alchemy"
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
 msgid "Azimuth"
@@ -1104,16 +1027,14 @@ msgid "Depth"
 msgstr "Syvyys"
 
 #: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
-#, fuzzy
 msgid "Elevation"
-msgstr "Suunta"
+msgstr "Kohoama"
 
 #: scripts/clothify.sct.h:7
 msgid "_Clothify..."
-msgstr ""
+msgstr "Kangas"
 
 #: scripts/coffee.sct.h:2
-#, fuzzy
 msgid ""
 "Darken only\n"
 "(Better, but only for images with alot of white)"
@@ -1127,343 +1048,304 @@ msgstr "Tahrat"
 
 #: scripts/coffee.sct.h:4
 msgid "_Coffee Stain..."
-msgstr ""
+msgstr "Kahvitahra..."
 
 #: scripts/comic-logo.sct.h:4
 msgid "Comic Boo_k..."
-msgstr ""
+msgstr "Sarjakuva..."
 
 #: scripts/comic-logo.sct.h:9
-#, fuzzy
 msgid "Outline color"
 msgstr "Ulkoreunan väri"
 
 #: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-#, fuzzy
 msgid "Outline size"
 msgstr "Ulkoreunan koko"
 
 #: scripts/coolmetal-logo.sct.h:4
 msgid "Cool _Metal..."
-msgstr ""
+msgstr "Viileä metalli..."
 
 #: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels)"
-msgstr "Siirtymä (pikseliä)"
-
-#: scripts/copy-visible.sct.h:1
-msgid "Copy _Visible"
-msgstr ""
+msgstr "Efektin koko (pikseliä)"
 
 #: scripts/crystal-logo.sct.h:2
-#, fuzzy
 msgid "Background image"
 msgstr "Taustakuva"
 
 #: scripts/crystal-logo.sct.h:4
 msgid "Crystal..."
-msgstr ""
+msgstr "Kristalli..."
 
 #: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
 #: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
 #: scripts/select-to-pattern.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Selection"
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "<Image>/Tiny-Fu/Valinta"
 
 #: scripts/distress-selection.sct.h:2
-#, fuzzy
 msgid "Granularity (1 is low)"
-msgstr "Rakeisuus"
+msgstr "Rakeisuus (1 on matala)"
 
 #: scripts/distress-selection.sct.h:4
 msgid "Smooth horizontally"
-msgstr ""
+msgstr "Pehmennä vaakasuuntaan"
 
 #: scripts/distress-selection.sct.h:5
 msgid "Smooth vertically"
-msgstr ""
+msgstr "Pehmennä pystysuuntaan"
 
 #: scripts/distress-selection.sct.h:6
 msgid "Spread"
-msgstr ""
+msgstr "Levitä"
 
 #: scripts/distress-selection.sct.h:7
 msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr ""
+msgstr "Raja (iso 1<-->255 pieni)"
 
 #: scripts/distress-selection.sct.h:8
-#, fuzzy
 msgid "_Distress Selection..."
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr ""
 
 #: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
 #: scripts/xach-effect.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Shadow"
-msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
+msgstr "<Image>/Tiny-Fu/Varjo"
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
 msgid "Allow resizing"
-msgstr ""
+msgstr "Salli koon muuttaminen"
 
 #: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
 #: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
 #: scripts/swirltile.sct.h:4
-#, fuzzy
 msgid "Blur radius"
-msgstr "Varjon sumennuksen säde"
+msgstr "Pehmennuksen säde"
 
 #: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
-#, fuzzy
 msgid "Offset X"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Siirtymä X"
 
 #: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:9
-#, fuzzy
 msgid "Offset Y"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Siirtymä Y"
 
 #: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:10
 msgid "Opacity"
-msgstr ""
+msgstr "Peitto"
 
 #: scripts/drop-shadow.sct.h:8
-#, fuzzy
 msgid "_Drop-Shadow..."
-msgstr "Varjon X siirtymä"
+msgstr "Varjo..."
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
-msgstr ""
+msgstr "Sarakkeet"
 
 #: scripts/erase-rows.sct.h:3
-#, fuzzy
 msgid "Erase"
-msgstr "Kehys"
+msgstr "Poista"
 
 #: scripts/erase-rows.sct.h:4
-#, fuzzy
 msgid "Erase/fill"
-msgstr "Kehys"
+msgstr "Poista/täytä"
 
 #: scripts/erase-rows.sct.h:5
 msgid "Even"
-msgstr ""
+msgstr "Parillinen"
 
 #: scripts/erase-rows.sct.h:6
 msgid "Even/odd"
-msgstr ""
+msgstr "Parillinen/pariton"
 
 #: scripts/erase-rows.sct.h:7
 msgid "Fill with BG"
-msgstr ""
+msgstr "Täytä taustalla"
 
 #: scripts/erase-rows.sct.h:8
 msgid "Odd"
-msgstr ""
+msgstr "Pariton"
 
 #: scripts/erase-rows.sct.h:9
 msgid "Rows"
-msgstr ""
+msgstr "Rivit"
 
 #: scripts/erase-rows.sct.h:10
 msgid "Rows/cols"
-msgstr ""
+msgstr "Rivit/Sarakkeet"
 
 #: scripts/erase-rows.sct.h:11
-#, fuzzy
 msgid "_Erase every other Row..."
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "_Poista joka toinen rivi..."
 
 #: scripts/fade-outline.sct.h:2
 msgid "Apply generated layermask"
-msgstr ""
+msgstr "Sovella luotua tasomaskia"
 
 #: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
 #: scripts/old-photo.sct.h:2
-#, fuzzy
 msgid "Border size"
-msgstr "Reunan X koko"
+msgstr "Reunuksen koko"
 
 #: scripts/fade-outline.sct.h:4
 msgid "Clear unselected maskarea"
-msgstr ""
+msgstr "Tyhjennä valitsematon maskialue"
 
 #: scripts/fade-outline.sct.h:6
 #, no-c-format
 msgid "Fade from %"
-msgstr ""
+msgstr "Häivytä %:sta"
 
 #: scripts/fade-outline.sct.h:8
 #, no-c-format
 msgid "Fade to   %"
-msgstr ""
+msgstr "Häivytä %:iin"
 
 #: scripts/fade-outline.sct.h:9
 msgid "Use growing selection"
-msgstr ""
+msgstr "Käytä kasvavaa valintaa"
 
 #: scripts/fade-outline.sct.h:10
 msgid "_Fade Outline..."
-msgstr ""
+msgstr "Häivytä reuna..."
 
 #: scripts/flatland.sct.h:2 scripts/land.sct.h:2
 msgid "Detail level"
-msgstr ""
+msgstr "Yksityiskohtataso"
 
 #: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-#, fuzzy
 msgid "Image height"
-msgstr "Kuvan koko"
+msgstr "Kuvan korkeus"
 
 #: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-#, fuzzy
 msgid "Image width"
-msgstr "Kuvan koko"
+msgstr "Kuvan leveys"
 
 #: scripts/flatland.sct.h:5 scripts/land.sct.h:7
 msgid "Random seed"
-msgstr ""
+msgstr "Siemenluku"
 
 #: scripts/flatland.sct.h:6 scripts/land.sct.h:8
 msgid "Scale X"
-msgstr ""
+msgstr "Skaalaa X"
 
 #: scripts/flatland.sct.h:7 scripts/land.sct.h:9
 msgid "Scale Y"
-msgstr ""
+msgstr "Skaalaa Y"
 
 #: scripts/flatland.sct.h:8
 msgid "_Flatland..."
 msgstr ""
 
 #: scripts/font-map.sct.h:2
-#, fuzzy
 msgid "Active colors"
-msgstr "Ulkoreunan väri"
+msgstr "Aktiiviset värit"
 
 #: scripts/font-map.sct.h:3
-#, fuzzy
 msgid "Black on white"
-msgstr "Taustakuva"
+msgstr "Musta valkoisella"
 
 #: scripts/font-map.sct.h:4
-#, fuzzy
 msgid "Font _size (pixels)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Kirjasin_koko (pikseliä)"
 
 #: scripts/font-map.sct.h:5
 msgid "Use font _name as text"
-msgstr ""
+msgstr "Käytä kirjasimen nimeä tekstinä"
 
 #: scripts/font-map.sct.h:6
-#, fuzzy
 msgid "_Border (pixels)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "_Reunus (pikseliä)"
 
 #: scripts/font-map.sct.h:7
-#, fuzzy
 msgid "_Color scheme"
-msgstr "Väri 3"
+msgstr "_Väriskeema"
 
 #: scripts/font-map.sct.h:8
 msgid "_Filter (regexp)"
-msgstr ""
+msgstr "_Suodatin (regexp)"
 
 #: scripts/font-map.sct.h:9
 msgid "_Font Map..."
-msgstr ""
+msgstr "_Kirjasinkartta..."
 
 #: scripts/font-map.sct.h:10
 msgid "_Labels"
-msgstr ""
+msgstr "_Nimiöt"
 
 #: scripts/font-map.sct.h:11
-#, fuzzy
 msgid "_Text"
-msgstr "Teksti"
+msgstr "_Teksti"
 
 #: scripts/frosty-logo.sct.h:8
-#, fuzzy
 msgid "_Frosty..."
-msgstr "Selaa..."
+msgstr "Hileinen..."
 
 #: scripts/fuzzyborder.sct.h:2
-#, fuzzy
 msgid "Add shadow"
-msgstr "Varjon X siirtymä"
+msgstr "Lisää varjo"
 
 #: scripts/fuzzyborder.sct.h:3
-#, fuzzy
 msgid "Blur border"
-msgstr "Varjon sumennuksen säde"
+msgstr "Pehmennysreuna"
 
 #: scripts/fuzzyborder.sct.h:7
-#, fuzzy
 msgid "Granularity (1 is Low)"
-msgstr "Rakeisuus"
+msgstr "Rakeisuus (1 on matala)"
 
 #: scripts/fuzzyborder.sct.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
-msgstr "Varjon Y siirtymä"
+msgstr "Varjon vahvuus (%)"
 
 #: scripts/fuzzyborder.sct.h:11
 msgid "_Fuzzy Border..."
-msgstr ""
+msgstr "Häivytä reuna..."
 
 #: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Gimp.Org (klassinen)"
 
 #: scripts/gimp-headers.sct.h:2
-#, fuzzy
 msgid "Autocrop"
-msgstr "Tekijä:"
+msgstr "Automaattirajaus"
 
 #: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Dark color"
-msgstr "Liidun väri"
+msgstr "Tumma väri"
 
 #: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-#, fuzzy
 msgid "Highlight color"
-msgstr "Oikean alareunan väri"
+msgstr "Korostusväri"
 
 #: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
-#, fuzzy
 msgid "Index image"
-msgstr "Kuvio"
+msgstr "Indeksikuva"
 
 #: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
 msgid "Number of colors"
-msgstr ""
+msgstr "Värien määrä"
 
 #: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-#, fuzzy
 msgid "Remove background"
-msgstr "Läpinäkyvä tausta"
+msgstr "Poista tausta"
 
 #: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
 msgid "Select-by-color threshold"
-msgstr ""
+msgstr "Valitse-värin-mukaan raja"
 
 #: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-#, fuzzy
 msgid "Shadow color"
-msgstr "Liidun väri"
+msgstr "Varjon väri"
 
 #: scripts/gimp-headers.sct.h:14
 msgid "_Big Header..."
-msgstr ""
+msgstr "Iso otsikko..."
 
 #: scripts/gimp-headers.sct.h:15
 msgid "_Small Header..."
-msgstr ""
+msgstr "Pieni otsikko..."
 
 #: scripts/gimp-labels.sct.h:13
 msgid "T_ube Sub-Button Label..."
@@ -1482,115 +1364,101 @@ msgid "_Tube Button Label..."
 msgstr ""
 
 #: scripts/glossy.sct.h:4
-#, fuzzy
 msgid "Blend gradient (Text)"
-msgstr "Kuvio"
+msgstr "Väriliuku (teksti)"
 
 #: scripts/glossy.sct.h:5
-#, fuzzy
 msgid "Blend gradient (outline)"
-msgstr "Kuvio"
+msgstr "Väriliuku (ulkoreuna)"
 
 #: scripts/glossy.sct.h:6
-#, fuzzy
 msgid "Blend gradient (text)"
-msgstr "Kuvio"
+msgstr "Väriliuku (teksti)"
 
 #: scripts/glossy.sct.h:10
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "Kiiltävä..."
 
 #: scripts/glossy.sct.h:11
-#, fuzzy
 msgid "Outline gradient reverse"
-msgstr "Väriliuku takaperin"
+msgstr "Käänteinen ulkoreunan väriliuku"
 
 #: scripts/glossy.sct.h:13
-#, fuzzy
 msgid "Pattern (outline)"
-msgstr "Kuvio"
+msgstr "Kuvio (ulkoreuna)"
 
 #: scripts/glossy.sct.h:14
-#, fuzzy
 msgid "Pattern (overlay)"
-msgstr "Kuvio"
+msgstr "Kuvio (päällystaso)"
 
 #: scripts/glossy.sct.h:15
-#, fuzzy
 msgid "Pattern (text)"
-msgstr "Kuvio"
+msgstr "Kuvio (teksti)"
 
 #: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
-#, fuzzy
 msgid "Shadow"
-msgstr "Varjon Y siirtymä"
+msgstr "Varjo"
 
 #: scripts/glossy.sct.h:20
-#, fuzzy
 msgid "Text gradient reverse"
-msgstr "Väriliuku takaperin"
+msgstr "Tekstiväriliuku takaperin"
 
 #: scripts/glossy.sct.h:21
 msgid "Use pattern for outline instead of gradient"
-msgstr ""
+msgstr "Käytä kuviota ulkoreunalla väriliu'un sijaan"
 
 #: scripts/glossy.sct.h:22
 msgid "Use pattern for text instead of gradient"
-msgstr ""
+msgstr "Käytä kuviota tekstissä väriliu'un sijaan"
 
 #: scripts/glossy.sct.h:23
-#, fuzzy
 msgid "Use pattern overlay"
-msgstr "Kuvio"
+msgstr "Käytä päällystason kuviota"
 
 #: scripts/glossy.sct.h:24
 msgid "Use tattern for outline instead of gradient"
-msgstr ""
+msgstr "Käytä kuviota ulkoreunalla väriliu'un sijaan"
 
 #: scripts/glowing-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels * 3)"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Efektin koko (pikseliä × 3)"
 
 #: scripts/glowing-logo.sct.h:7
 msgid "Glo_wing Hot..."
-msgstr ""
+msgstr "Hehkuva kuuma..."
 
 #: scripts/gradient-bevel-logo.sct.h:4
 msgid "Bevel height (Sharpness)"
-msgstr ""
+msgstr "Viistouksen korkeus (terävyys)"
 
 #: scripts/gradient-bevel-logo.sct.h:5
 msgid "Bevel height (sharpness)"
-msgstr ""
+msgstr "Viistouksen korkeus (terävyys)"
 
 #: scripts/gradient-bevel-logo.sct.h:7 scripts/t-o-p-logo.sct.h:5
 #: scripts/textured-logo.sct.h:4
-#, fuzzy
 msgid "Border size (pixels)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Reunuksen koko (pikseliä)"
 
 #: scripts/gradient-bevel-logo.sct.h:10
-#, fuzzy
 msgid "Gradient Beve_l..."
-msgstr "Väriliuku takaperin"
+msgstr "Viistottu väriliuku..."
 
 #: scripts/gradient-example.sct.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "Väriliuku"
+msgstr "Oma väriliuku..."
 
 #: scripts/grid-system.sct.h:2
 msgid "X divisions"
-msgstr ""
+msgstr "X jako"
 
 #: scripts/grid-system.sct.h:3
 msgid "Y divisions"
-msgstr ""
+msgstr "Y jako"
 
 #: scripts/grid-system.sct.h:4
 msgid "_Grid..."
-msgstr ""
+msgstr "Ristikko..."
 
 #: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
 #: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
@@ -1599,90 +1467,85 @@ msgstr ""
 
 #: scripts/guides-from-selection.sct.h:2
 msgid "Creates four Guides around the bounding box of the current selection."
-msgstr ""
+msgstr "Luo neljä apulinjaa valinnan ympärille."
 
 #: scripts/guides-from-selection.sct.h:3
 msgid "New Guides from _Selection"
-msgstr ""
+msgstr "Uudet apulinjat valinnasta"
 
 #: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
-#, fuzzy
 msgid "Direction"
-msgstr "SIODin tulostusputkea ei saatu avatuksi"
+msgstr "Suunta"
 
 #: scripts/guides-new-percent.sct.h:3 scripts/guides-new.sct.h:3
 msgid "Horizontal"
-msgstr ""
+msgstr "Vaakasuora"
 
 #: scripts/guides-new-percent.sct.h:4
 msgid "New Guide (by _Percent)..."
-msgstr ""
+msgstr "Uusi apulinja (%)..."
 
 #: scripts/guides-new-percent.sct.h:6
 #, no-c-format
 msgid "Position (in %)"
-msgstr ""
+msgstr "Sijainti (%:na)"
 
 #: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
 msgid "Vertical"
-msgstr ""
+msgstr "Pystysuora"
 
 #: scripts/guides-new.sct.h:4
 msgid "New _Guide..."
-msgstr ""
+msgstr "Uusi apulinja..."
 
 #: scripts/guides-remove-all.sct.h:2
 msgid "_Remove all Guides"
-msgstr ""
+msgstr "Poista kaikki apulinjat"
 
 #: scripts/hsv-graph.sct.h:2
 msgid "BG opacity"
-msgstr ""
+msgstr "Taustan peitto"
 
 #: scripts/hsv-graph.sct.h:3
-#, fuzzy
 msgid "Draw _HSV Graph..."
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "Piirrä _HSV graafi..."
 
 #: scripts/hsv-graph.sct.h:4
 msgid "End X"
-msgstr ""
+msgstr "Loppu X"
 
 #: scripts/hsv-graph.sct.h:5
 msgid "End Y"
-msgstr ""
+msgstr "Loppu Y"
 
 #: scripts/hsv-graph.sct.h:6
 msgid "From top-left to bottom-right"
-msgstr ""
+msgstr "Ylhäältä vasemmalta - alas oikealle"
 
 #: scripts/hsv-graph.sct.h:7
 msgid "Graph scale"
-msgstr ""
+msgstr "Graafin skaala"
 
 #: scripts/hsv-graph.sct.h:8
-#, fuzzy
 msgid "Start X"
-msgstr "Tiedostonimi"
+msgstr "Alku X"
 
 #: scripts/hsv-graph.sct.h:9
-#, fuzzy
 msgid "Start Y"
-msgstr "Tiedostonimi"
+msgstr "Alku Y"
 
 #: scripts/hsv-graph.sct.h:10
+#, fuzzy
 msgid "Use selection bounds instead of values below"
-msgstr ""
+msgstr "Käytä valinnan rajoja"
 
 #: scripts/i26-gunya2.sct.h:4
-#, fuzzy
 msgid "Frame color"
-msgstr "Kehys"
+msgstr "Ruudun väri"
 
 #: scripts/i26-gunya2.sct.h:5
-#, fuzzy
 msgid "Frame size"
-msgstr "Kehys"
+msgstr "Ruudun koko"
 
 #: scripts/i26-gunya2.sct.h:6
 msgid "Imigre-26..."
@@ -1690,173 +1553,157 @@ msgstr ""
 
 #: scripts/image-structure.sct.h:2
 msgid "Apply layer mask (or discard)"
-msgstr ""
+msgstr "Käytä tason maskia (tai hylkää)"
 
 #: scripts/image-structure.sct.h:4
-#, fuzzy
 msgid "Create new image"
-msgstr "Kuvio"
+msgstr "Luo uusi kuva"
 
 #: scripts/image-structure.sct.h:5
 msgid "Insert layer names"
-msgstr ""
+msgstr "Lisää tasojen nimet"
 
 #: scripts/image-structure.sct.h:6
-#, fuzzy
 msgid "Make new background"
-msgstr "Läpinäkyvä tausta"
+msgstr "Luo uusi tausta"
 
 #: scripts/image-structure.sct.h:7
-#, fuzzy
 msgid "Outer border"
-msgstr "Varjon sumennuksen säde"
+msgstr "Ulkoreunus"
 
 #: scripts/image-structure.sct.h:8
-#, fuzzy
 msgid "Pad color"
-msgstr "Liidun väri"
+msgstr "Täyttökuvion väri"
 
 #: scripts/image-structure.sct.h:9
-#, fuzzy
 msgid "Pad opacity"
-msgstr "Varjon X siirtymä"
+msgstr "Täyttökuvion peitto"
 
 #: scripts/image-structure.sct.h:10
 msgid "Padding for transparent regions"
-msgstr ""
+msgstr "Täyttö läpinäkyville alueille"
 
 #: scripts/image-structure.sct.h:11
-#, fuzzy
 msgid "Shear length"
-msgstr "Korkeus"
+msgstr "Väännön pituus"
 
 #: scripts/image-structure.sct.h:12
-#, fuzzy
 msgid "Show Image _Structure..."
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "Näytä kuvan _rakenne..."
 
 #: scripts/image-structure.sct.h:13
-#, fuzzy
 msgid "Space between layers"
-msgstr "Erillinen taso"
+msgstr "Tila tasojen välissä"
 
 #: scripts/land.sct.h:6
-#, fuzzy
 msgid "Land height"
-msgstr "Korkeus"
+msgstr "Maan korkeus"
 
 #: scripts/land.sct.h:10
-#, fuzzy
 msgid "Sea depth"
-msgstr "Varjon Y siirtymä"
+msgstr "Veden syvyys"
 
 #: scripts/land.sct.h:11
 msgid "_Land..."
-msgstr ""
+msgstr "Maa..."
 
 #: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
 msgid "Roughness"
-msgstr ""
+msgstr "Epätasaisuus"
 
 #: scripts/lava.sct.h:5
 msgid "Seed"
-msgstr ""
+msgstr "Siemen"
 
 #: scripts/lava.sct.h:8
 msgid "Use current gradient"
-msgstr ""
+msgstr "Käytä valittua väriliukua"
 
 #: scripts/lava.sct.h:9
 msgid "_Lava..."
-msgstr ""
+msgstr "_Lava..."
 
 #: scripts/line-nova.sct.h:2
 msgid "Line _Nova..."
-msgstr ""
+msgstr "Line _Nova..."
 
 #: scripts/line-nova.sct.h:3
 msgid "Number of lines"
-msgstr ""
+msgstr "Viivojen määrä"
 
 #: scripts/line-nova.sct.h:4
-#, fuzzy
 msgid "Offset radius"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Siirtymän säde"
 
 #: scripts/line-nova.sct.h:5
 msgid "Randomness"
-msgstr ""
+msgstr "Satunnaisuus"
 
 #: scripts/line-nova.sct.h:6
 msgid "Sharpness (degrees)"
-msgstr ""
+msgstr "Terävyys (astetta)"
 
 #: scripts/mkbrush.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Luo sivellin"
 
 #: scripts/mkbrush.sct.h:2
 msgid "Create size of brush"
 msgstr ""
 
 #: scripts/mkbrush.sct.h:3
+#, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "Suunta"
 
 #: scripts/mkbrush.sct.h:4
 msgid "Elli_ptical, Feathered..."
-msgstr ""
+msgstr "Elliptinen, sulitettu..."
 
 #: scripts/mkbrush.sct.h:5
 msgid "Feathering"
-msgstr ""
+msgstr "Sulitus"
 
 #: scripts/mkbrush.sct.h:7
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "Nelikulmio, sulitettu..."
 
 #: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
-#, fuzzy
 msgid "Spacing"
-msgstr "Tahrat"
+msgstr "Välistys"
 
 #: scripts/mkbrush.sct.h:10
 msgid "_Elliptical..."
-msgstr ""
+msgstr "Elliptinen..."
 
 #: scripts/mkbrush.sct.h:11
 msgid "_Rectangular..."
-msgstr ""
+msgstr "Neliömäinen..."
 
 #: scripts/neon-logo.sct.h:4
-#, fuzzy
 msgid "Create shadow"
-msgstr "Varjon X siirtymä"
+msgstr "Luo varjo"
 
 #: scripts/neon-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 5)"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Efektin koko (pikseliä × 5)"
 
 #: scripts/neon-logo.sct.h:9
 msgid "N_eon..."
-msgstr ""
+msgstr "N_eon..."
 
 #: scripts/news-text.sct.h:4
-#, fuzzy
 msgid "Cell size (pixels)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Solun koko (pikseliä)"
 
 #: scripts/news-text.sct.h:6 scripts/speed-text.sct.h:4
 #, no-c-format
 msgid "Density (%)"
-msgstr ""
+msgstr "Tiheys (%)"
 
 #: scripts/news-text.sct.h:9
 msgid "Newsprint Text..."
-msgstr ""
+msgstr "Sanomalehtiteksti..."
 
 #: scripts/old-photo.sct.h:3
 msgid "Defocus"
@@ -1872,232 +1719,207 @@ msgstr "Seepia"
 
 #: scripts/old-photo.sct.h:7
 msgid "_Old Photo..."
-msgstr ""
+msgstr "Vanha valokuva..."
 
 #: scripts/perspective-shadow.sct.h:3
-#, fuzzy
 msgid "Angle"
-msgstr "Tiedostonimi"
+msgstr "Kulma"
 
 #: scripts/perspective-shadow.sct.h:6
 msgid "Cubic"
-msgstr ""
+msgstr "Neliöllinen"
 
 #: scripts/perspective-shadow.sct.h:7
 msgid "Interpolation"
-msgstr ""
+msgstr "Interpolaatio"
 
 #: scripts/perspective-shadow.sct.h:8
 msgid "Linear"
-msgstr ""
+msgstr "Lineaarinen"
 
 #: scripts/perspective-shadow.sct.h:9
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
 #: scripts/perspective-shadow.sct.h:11
 msgid "Relative distance of horizon"
-msgstr ""
+msgstr "Suhteellinen etäisyys horisontista"
 
 #: scripts/perspective-shadow.sct.h:12
 msgid "Relative length of shadow"
-msgstr ""
+msgstr "Varjon suhteellinen pituus"
 
 #: scripts/perspective-shadow.sct.h:13
 msgid "_Perspective..."
-msgstr ""
+msgstr "Perspektiivi..."
 
 #: scripts/predator.sct.h:2
-#, fuzzy
 msgid "Edge amount"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Reunan määrä"
 
 #: scripts/predator.sct.h:4
-#, fuzzy
 msgid "Pixel amount"
-msgstr "Varjon sumennuksen säde"
+msgstr "Pikselimäärä"
 
 #: scripts/predator.sct.h:5
 msgid "Pixelize"
-msgstr ""
+msgstr "Pikselöi"
 
 #: scripts/predator.sct.h:7
 msgid "_Predator..."
 msgstr ""
 
 #: scripts/pupi-button.sct.h:5
-#, fuzzy
 msgid "Lower color"
-msgstr "Oikean alareunan väri"
+msgstr "Alempi väri"
 
 #: scripts/pupi-button.sct.h:6
-#, fuzzy
 msgid "Lower color (active)"
-msgstr "Vasemman yläreunan väri"
+msgstr "Alempi väri (aktiivinen)"
 
 #: scripts/pupi-button.sct.h:7
-#, fuzzy
 msgid "Not pressed"
-msgstr "Painettu"
+msgstr "Ei painettu"
 
 #: scripts/pupi-button.sct.h:8
-#, fuzzy
 msgid "Not pressed (active)"
-msgstr "Painettu"
+msgstr "Ei painettu (aktiivinen)"
 
 #: scripts/pupi-button.sct.h:9
-#, fuzzy
 msgid "Padding X"
-msgstr "Reunustus"
+msgstr "Reunustus X"
 
 #: scripts/pupi-button.sct.h:10
-#, fuzzy
 msgid "Padding Y"
-msgstr "Reunustus"
+msgstr "Reunustus Y"
 
 #: scripts/pupi-button.sct.h:12
-#, fuzzy
 msgid "Round ratio"
-msgstr "Suunta"
+msgstr "Pyöreyssuhde"
 
 #: scripts/pupi-button.sct.h:15
-#, fuzzy
 msgid "Text color (active)"
-msgstr "Tekstin väri"
+msgstr "Tekstin väri (aktiivinen)"
 
 #: scripts/pupi-button.sct.h:16
-#, fuzzy
 msgid "Upper color"
-msgstr "Vasemman yläreunan väri"
+msgstr "Ylempi väri"
 
 #: scripts/pupi-button.sct.h:17
-#, fuzzy
 msgid "Upper color (active)"
-msgstr "Vasemman yläreunan väri"
+msgstr "Ylempi väri (aktiivinen)"
 
 #: scripts/pupi-button.sct.h:18
 msgid "_Round Button..."
-msgstr ""
+msgstr "Pyöreä painike..."
 
 #: scripts/rendermap.sct.h:2
 #, fuzzy
 msgid "Behavior"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Käyttäytyminen"
 
 #: scripts/rendermap.sct.h:3
 msgid "Detail in Middle"
-msgstr ""
+msgstr "Yksityiskohdat keskellä"
 
 #: scripts/rendermap.sct.h:8
 msgid "Render _Map..."
-msgstr ""
+msgstr "Luo kartta..."
 
 #: scripts/rendermap.sct.h:9
-#, fuzzy
 msgid "Tile"
-msgstr "Tiedostonimi"
+msgstr "Lohko"
 
 #: scripts/ripply-anim.sct.h:2
 msgid "Black"
-msgstr ""
+msgstr "Musta"
 
 #: scripts/ripply-anim.sct.h:3
 #, fuzzy
 msgid "Edge behavior"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Reunan käytös"
 
 #: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
 msgid "Number of frames"
-msgstr ""
+msgstr "Ruutujen määrä"
 
 #: scripts/ripply-anim.sct.h:5
 msgid "Rippling strength"
-msgstr ""
+msgstr "Aaltoilun voimakkuus"
 
 #: scripts/ripply-anim.sct.h:6
-#, fuzzy
 msgid "Smear"
-msgstr "_Etsi:"
+msgstr "Tuhri"
 
 #: scripts/ripply-anim.sct.h:7
 msgid "Wrap"
-msgstr ""
+msgstr "Kierrä"
 
 #: scripts/ripply-anim.sct.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "Aaltoilu..."
 
 #: scripts/round-corners.sct.h:2
-#, fuzzy
 msgid "Add background"
-msgstr "Taustakuva"
+msgstr "Lisää tausta"
 
 #: scripts/round-corners.sct.h:3
-#, fuzzy
 msgid "Add drop-shadow"
-msgstr "Varjon X siirtymä"
+msgstr "Lisää varjo"
 
 #: scripts/round-corners.sct.h:5
-#, fuzzy
 msgid "Edge radius"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Reunan säde"
 
 #: scripts/round-corners.sct.h:9
-#, fuzzy
 msgid "_Round Corners..."
-msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
+msgstr "Pyöristä reunat..."
 
 #: scripts/selection-round.sct.h:1
 #, fuzzy
 msgid "<Image>/Select/Modify"
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "<Image>/Tiny-Fu/Valinta"
 
 #: scripts/selection-round.sct.h:2
-#, fuzzy
 msgid "Concave"
-msgstr "Peru"
+msgstr "Kovera"
 
 #: scripts/selection-round.sct.h:4
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Säde"
+msgstr "Säde (%)"
 
 #: scripts/selection-round.sct.h:5
-#, fuzzy
 msgid "Rounded R_ectangle..."
-msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
+msgstr "Pyö_ristetty neliö..."
 
 #: scripts/select-to-brush.sct.h:2
 msgid "Brush name"
-msgstr ""
+msgstr "Siveltimen nimi"
 
 #: scripts/select-to-brush.sct.h:5
 msgid "To _Brush..."
-msgstr ""
+msgstr "_Siveltimeksi..."
 
 #: scripts/select-to-image.sct.h:2
-#, fuzzy
 msgid "To _Image"
-msgstr "Kuvio"
+msgstr "_Kuvaksi..."
 
 #: scripts/select-to-pattern.sct.h:3
-#, fuzzy
 msgid "Pattern name"
-msgstr "Kuvio"
+msgstr "Kuvion nimi"
 
 #: scripts/select-to-pattern.sct.h:4
-#, fuzzy
 msgid "To _Pattern..."
-msgstr "Kuvio"
+msgstr "Kuvioksi..."
 
 #: scripts/slide.sct.h:3
-#, fuzzy
 msgid "Font color"
-msgstr "Tekstin väri"
+msgstr "Kirjasinmen väri"
 
 #: scripts/slide.sct.h:4
 msgid "Number"
-msgstr ""
+msgstr "Numero"
 
 #: scripts/slide.sct.h:7
 msgid "_Slide..."
@@ -2105,72 +1927,67 @@ msgstr ""
 
 #: scripts/sota-chrome-logo.sct.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "SOTA kromi..."
 
 #: scripts/speed-text.sct.h:7
 msgid "Speed Text..."
-msgstr ""
+msgstr "Vauhtiteksti..."
 
 #: scripts/sphere.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+msgstr "<Toolbox>/Xtns/Tiny-Fu/Sekalaiset"
 
 #: scripts/sphere.sct.h:3
 msgid "Lighting (degrees)"
-msgstr ""
+msgstr "Valaistus (astetta)"
 
 #: scripts/sphere.sct.h:4
-#, fuzzy
 msgid "Radius (pixels)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Säde (pikseliä)"
 
 #: scripts/sphere.sct.h:6
-#, fuzzy
 msgid "Sphere color"
-msgstr "Vasemman yläreunan väri"
+msgstr "Pallon väri"
 
 #: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
 msgid "_Sphere..."
-msgstr ""
+msgstr "Pallo..."
 
 #: scripts/spinning-globe.sct.h:2
-#, fuzzy
 msgid "Frames"
-msgstr "Kehys"
+msgstr "Ruutuja"
 
 #: scripts/spinning-globe.sct.h:3
 msgid "Index to n colors (0 = remain RGB)"
-msgstr ""
+msgstr "Indeksi n:ksi väriksi (0 = säilytä RGB)"
 
 #: scripts/spinning-globe.sct.h:5
 msgid "Turn from left to right"
-msgstr ""
+msgstr "Käänny vasemmalta oikealle"
 
 #: scripts/spinning-globe.sct.h:7
 msgid "_Spinning Globe..."
-msgstr ""
+msgstr "Pyörivä maapallo..."
 
 #: scripts/spyrogimp.sct.h:2
 msgid "Airbrush"
-msgstr ""
+msgstr "Ruisku"
 
 #: scripts/spyrogimp.sct.h:3
 msgid "Brush"
-msgstr ""
+msgstr "Sivellin"
 
 #: scripts/spyrogimp.sct.h:4
 msgid "Circle"
-msgstr ""
+msgstr "Ympyrä"
 
 #: scripts/spyrogimp.sct.h:6
-#, fuzzy
 msgid "Color method"
-msgstr "Väri 3"
+msgstr "Värimetodi"
 
 #: scripts/spyrogimp.sct.h:7
 msgid "Epitrochoid"
-msgstr ""
+msgstr "Epitrosoidi"
 
 #: scripts/spyrogimp.sct.h:8
 msgid "Frame"
@@ -2178,184 +1995,167 @@ msgstr "Kehys"
 
 #: scripts/spyrogimp.sct.h:10
 msgid "Gradient: Loop Sawtooth"
-msgstr ""
+msgstr "Väriliuku: toistuva saha-aalto"
 
 #: scripts/spyrogimp.sct.h:11
 msgid "Gradient: Loop Triangle"
-msgstr ""
+msgstr "Väriliuku: toistuva kolmio"
 
 #: scripts/spyrogimp.sct.h:12
-#, fuzzy
 msgid "Hexagon"
-msgstr "Suunta"
+msgstr "Heksagoni"
 
 #: scripts/spyrogimp.sct.h:13
-#, fuzzy
 msgid "Hole ratio"
-msgstr "Suunta"
+msgstr "Reiän suhde"
 
 #: scripts/spyrogimp.sct.h:14
 msgid "Inner teeth"
-msgstr ""
+msgstr "Sisähammastus"
 
 #: scripts/spyrogimp.sct.h:15
 msgid "Lissajous"
-msgstr ""
+msgstr "Lissajou"
 
 #: scripts/spyrogimp.sct.h:16
-#, fuzzy
 msgid "Margin (pixels)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Marginaali (pikseliä)"
 
 #: scripts/spyrogimp.sct.h:17
 msgid "Outer teeth"
-msgstr ""
+msgstr "Ulkohammastus"
 
 #: scripts/spyrogimp.sct.h:18
 msgid "Pencil"
-msgstr ""
+msgstr "Kynä"
 
 #: scripts/spyrogimp.sct.h:19
-#, fuzzy
 msgid "Pentagon"
-msgstr "Suunta"
+msgstr "Pentagoni"
 
 #: scripts/spyrogimp.sct.h:20
 msgid "Polygon: 10 sides"
-msgstr ""
+msgstr "10-sivuinen polygoni"
 
 #: scripts/spyrogimp.sct.h:21
 msgid "Polygon: 7 sides"
-msgstr ""
+msgstr "7-sivuinen polygoni"
 
 #: scripts/spyrogimp.sct.h:22
 msgid "Polygon: 8 sides"
-msgstr ""
+msgstr "8-sivuinen polygoni"
 
 #: scripts/spyrogimp.sct.h:23
 msgid "Polygon: 9 sides"
-msgstr ""
+msgstr "9-sivuinen polygoni"
 
 #: scripts/spyrogimp.sct.h:24
 msgid "Shape"
-msgstr ""
+msgstr "Muoto"
 
 #: scripts/spyrogimp.sct.h:25
-#, fuzzy
 msgid "Solid Color"
-msgstr "Reunan väri"
+msgstr "Yhtenäinen väri"
 
 #: scripts/spyrogimp.sct.h:26
 msgid "Spyrograph"
-msgstr ""
+msgstr "Spirograafi"
 
 #: scripts/spyrogimp.sct.h:27
 msgid "Square"
-msgstr ""
+msgstr "Neliö"
 
 #: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-#, fuzzy
 msgid "Start angle"
-msgstr "Tiedostonimi"
+msgstr "Alkukulma"
 
 #: scripts/spyrogimp.sct.h:29
 msgid "Tool"
-msgstr ""
+msgstr "Työkalu"
 
 #: scripts/spyrogimp.sct.h:30
-#, fuzzy
 msgid "Triangle"
-msgstr "Tiedostonimi"
+msgstr "Kolmio"
 
 #: scripts/spyrogimp.sct.h:31
 msgid "Type"
-msgstr ""
+msgstr "Tyyppi"
 
 #: scripts/spyrogimp.sct.h:32
 msgid "_Spyrogimp..."
-msgstr ""
+msgstr "Spirograafi..."
 
 #: scripts/starburst-logo.sct.h:4
-#, fuzzy
 msgid "Burst color"
-msgstr "Reunan väri"
+msgstr "Ryöpyn väri"
 
 #: scripts/starburst-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 30)"
-msgstr "Kirjasinkoko (pikseleinä)"
+msgstr "Efektin koko (pikseliä × 30)"
 
 #: scripts/starburst-logo.sct.h:8
 msgid "Starb_urst..."
-msgstr ""
+msgstr "Tähtiryöppy..."
 
 #: scripts/starscape-logo.sct.h:3
-#, fuzzy
 msgid "Effect size (pixels * 4)"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Efektin koko (pikseliä × 4)"
 
 #: scripts/starscape-logo.sct.h:7
 msgid "Sta_rscape..."
-msgstr ""
+msgstr "Tähdistö"
 
 #: scripts/swirltile.sct.h:9
 msgid "Swirl-_Tile..."
-msgstr ""
+msgstr "Pyörrekuvio"
 
 #: scripts/swirltile.sct.h:10
-#, fuzzy
 msgid "Whirl amount"
-msgstr "Varjon sumennuksen säde"
+msgstr "Pyörteen määrä"
 
 #: scripts/swirly-pattern.sct.h:2
 msgid "Number of times to whirl"
-msgstr ""
+msgstr "Pyörteen kierrokset"
 
 #: scripts/swirly-pattern.sct.h:3
-#, fuzzy
 msgid "Quarter size"
-msgstr "Reunan X koko"
+msgstr "Neljänneskoko"
 
 #: scripts/swirly-pattern.sct.h:4
-#, fuzzy
 msgid "Whirl angle"
-msgstr "Tiedostonimi"
+msgstr "Pyörteen kulma"
 
 #: scripts/swirly-pattern.sct.h:5
 msgid "_Swirly..."
-msgstr ""
+msgstr "Pyörre..."
 
 #: scripts/t-o-p-logo.sct.h:4
-#, fuzzy
 msgid "Base color"
-msgstr "Reunan väri"
+msgstr "Perusväri"
 
 #: scripts/t-o-p-logo.sct.h:6
-#, fuzzy
 msgid "Edge only"
-msgstr "Siirtymä (pikseliä)"
+msgstr "Vain reuna"
 
 #: scripts/t-o-p-logo.sct.h:7
-#, fuzzy
 msgid "Edge width"
-msgstr "Kuvan koko"
+msgstr "Reunan leveys"
 
 #: scripts/t-o-p-logo.sct.h:10
 msgid "Hit rate"
-msgstr ""
+msgstr "Osumasuhde"
 
 #: scripts/t-o-p-logo.sct.h:12
 msgid "_Particle Trace..."
-msgstr ""
+msgstr "Hiukkasen jäljitys"
 
 #: scripts/text-circle.sct.h:2
 msgid "Antialias"
-msgstr ""
+msgstr "Reunan pehmennys"
 
 #: scripts/text-circle.sct.h:3
-#, fuzzy
 msgid "Fill angle"
-msgstr "Tiedostonimi"
+msgstr "Täyttökulma"
 
 #: scripts/text-circle.sct.h:7
 msgid "Render the specified text along the perimeter of a circle"
@@ -2363,42 +2163,39 @@ msgstr ""
 
 #: scripts/text-circle.sct.h:10
 msgid "Text Circle..."
-msgstr ""
+msgstr "Tekstiympyrä"
 
 #: scripts/textured-logo.sct.h:5
 msgid "Ending blend"
-msgstr ""
+msgstr "Lopun sekoitus"
 
 #: scripts/textured-logo.sct.h:8
-#, fuzzy
 msgid "Hexagons"
-msgstr "Suunta"
+msgstr "Heksagonit"
 
 #: scripts/textured-logo.sct.h:9
 msgid "Mosaic tile type"
-msgstr ""
+msgstr "Mosaiikki"
 
 #: scripts/textured-logo.sct.h:10
-#, fuzzy
 msgid "Octagons"
-msgstr "Suunta"
+msgstr "Oktagonit"
 
 #: scripts/textured-logo.sct.h:12
 msgid "Squares"
-msgstr ""
+msgstr "Neliöt"
 
 #: scripts/textured-logo.sct.h:13
 msgid "Starting blend"
-msgstr ""
+msgstr "Alun sekoitus"
 
 #: scripts/textured-logo.sct.h:15
-#, fuzzy
 msgid "Text pattern"
-msgstr "Kuvio"
+msgstr "Tekstin kuvio"
 
 #: scripts/textured-logo.sct.h:16
 msgid "_Textured..."
-msgstr ""
+msgstr "Pinnoitettu..."
 
 #: scripts/tileblur.sct.h:1
 msgid "<Image>/Filters/Blur"
@@ -2406,28 +2203,27 @@ msgstr ""
 
 #: scripts/tileblur.sct.h:2
 msgid "Blur horizontally"
-msgstr ""
+msgstr "Sumenna vaakasuoraan"
 
 #: scripts/tileblur.sct.h:3
-#, fuzzy
 msgid "Blur type"
-msgstr "Sumenna Y"
+msgstr "Sumennustyyppi"
 
 #: scripts/tileblur.sct.h:4
 msgid "Blur vertically"
-msgstr ""
+msgstr "Sumenna pystysuoraan"
 
 #: scripts/tileblur.sct.h:5
 msgid "IIR"
-msgstr ""
+msgstr "IIR"
 
 #: scripts/tileblur.sct.h:6
 msgid "RLE"
-msgstr ""
+msgstr "RLE"
 
 #: scripts/tileblur.sct.h:8
 msgid "_Tileable Blur..."
-msgstr ""
+msgstr "_Saumaton sumennus..."
 
 #: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
@@ -2441,12 +2237,11 @@ msgstr "Tekstin väri"
 
 #: scripts/title-header.sct.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Web-otsikko..."
 
 #: scripts/truchet.sct.h:4
-#, fuzzy
 msgid "Foreground color"
-msgstr "Taustaväri"
+msgstr "Edustaväri"
 
 #: scripts/truchet.sct.h:7
 msgid "T_ruchet..."
@@ -2454,542 +2249,130 @@ msgstr ""
 
 #: scripts/unsharp-mask.sct.h:2
 msgid "Mask opacity"
-msgstr ""
+msgstr "Maskin peitto"
 
 #: scripts/unsharp-mask.sct.h:3
-#, fuzzy
 msgid "Mask size"
-msgstr "Kehys"
+msgstr "Maskin koko"
 
 #: scripts/unsharp-mask.sct.h:4
 msgid "_Unsharp Mask..."
-msgstr ""
+msgstr "Sumennusmaski..."
 
 #: scripts/waves-anim.sct.h:2
 msgid "Amplitude"
-msgstr ""
+msgstr "Voimakkuus"
 
 #: scripts/waves-anim.sct.h:3
 msgid "Invert direction"
-msgstr ""
+msgstr "Käänteinen suunta"
 
 #: scripts/waves-anim.sct.h:5
-#, fuzzy
 msgid "Wavelength"
-msgstr "Korkeus"
+msgstr "Aallonpituus"
 
 #: scripts/waves-anim.sct.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "Aallot..."
 
 #: scripts/weave.sct.h:2
-#, fuzzy
 msgid "Ribbon spacing"
-msgstr "Koronan paksuus"
+msgstr "Nauhojen väli"
 
 #: scripts/weave.sct.h:3
-#, fuzzy
 msgid "Ribbon width"
-msgstr "Koronan paksuus"
+msgstr "Nauhan leveys"
 
 #: scripts/weave.sct.h:4
-#, fuzzy
 msgid "Shadow darkness"
-msgstr "Varjon Y siirtymä"
+msgstr "Varjon tummuus"
 
 #: scripts/weave.sct.h:5
-#, fuzzy
 msgid "Shadow depth"
-msgstr "Varjon Y siirtymä"
+msgstr "Varjon syvyys"
 
 #: scripts/weave.sct.h:6
-#, fuzzy
 msgid "Thread density"
-msgstr "Korkeus"
+msgstr "Langan tiheys"
 
 #: scripts/weave.sct.h:7
-#, fuzzy
 msgid "Thread intensity"
-msgstr "Korkeus"
+msgstr "Langan voimakkuus"
 
 #: scripts/weave.sct.h:8
-#, fuzzy
 msgid "Thread length"
-msgstr "Korkeus"
+msgstr "Langan pituus"
 
 #: scripts/weave.sct.h:9
 msgid "_Weave..."
-msgstr ""
+msgstr "Kudos..."
 
 #: scripts/web-browser.sct.h:1
 msgid "<Toolbox>/Help/The GIMP Online"
-msgstr ""
+msgstr "<Toolbox>/Help/GIMP verkossa"
 
 #: scripts/web-browser.sct.h:2
 msgid "Plug-in _Registry"
-msgstr ""
+msgstr "Liitännäisrekisteri"
 
 #: scripts/web-browser.sct.h:3
 msgid "_Developer Web Site"
-msgstr ""
+msgstr "Kehittäjien sivusto"
 
 #: scripts/web-browser.sct.h:4
 msgid "_Main Web Site"
-msgstr ""
+msgstr "Web-sivusto"
 
 #: scripts/xach-effect.sct.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
 msgstr "Varjon X siirtymä"
 
 #: scripts/xach-effect.sct.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
 msgstr "Varjon Y siirtymä"
 
 #: scripts/xach-effect.sct.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
 msgstr "Varjon sumennuksen säde"
 
 #: scripts/xach-effect.sct.h:5
-#, fuzzy
 msgid "Drop shadow color"
-msgstr "Liidun väri"
+msgstr "Varjon väri"
 
 #: scripts/xach-effect.sct.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
-msgstr "Varjon X siirtymä"
+msgstr "Varjon peitto"
 
 #: scripts/xach-effect.sct.h:7
-#, fuzzy
 msgid "Highlight X offset"
-msgstr "Oikean alareunan väri"
+msgstr "Korostuksen X siirtymä"
 
 #: scripts/xach-effect.sct.h:8
-#, fuzzy
 msgid "Highlight Y offset"
-msgstr "Oikean alareunan väri"
+msgstr "Korostuksen Y siirtymä"
 
 #: scripts/xach-effect.sct.h:10
-#, fuzzy
 msgid "Highlight opacity"
-msgstr "Oikean alareunan väri"
+msgstr "Korostuksen peitto"
 
 #: scripts/xach-effect.sct.h:12
 msgid "_Xach-Effect..."
-msgstr ""
+msgstr "_Xach-efekti..."
 
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy"
-#~ msgstr "<Image>/Edit/Kopioi näkyvä osa"
+#~ msgid "Script-fu Pattern Selection"
+#~ msgstr "Script-fu kuvioiden selain"
 
-#~ msgid "Text Color"
-#~ msgstr "Tekstin väri"
+#~ msgid "Tiny-Fu _Console"
+#~ msgstr "Tiny-Fu-konsoli"
 
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Kirjasinkoko (pikseleinä)"
+#~ msgid "_Start Server..."
+#~ msgstr "Käynnistä palvelin..."
 
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
+#~ msgid "_Refresh Scripts"
+#~ msgstr "Päivitä skriptit"
 
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Logos/Sarjakuva..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Patterns/Maastokuvio..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Script-Fu/Decor/Kahvitahra..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Script-Fu/Decor/Wanha valokuva..."
-
-#~ msgid "Re-read all available scripts"
-#~ msgstr "Lue uudestaan kaikki skriptit"
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Siirtymä (pikseliä)"
-
-#, fuzzy
-#~ msgid "_About"
-#~ msgstr "Tietoja"
+#~ msgid "Procedure Browser"
+#~ msgstr "Proseduuriselain"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Etsi nimellä"
@@ -3009,21 +2392,385 @@ msgstr ""
 #~ msgid "Searching - please wait"
 #~ msgstr "Etsitään – odota"
 
+#~ msgid "1 Procedure"
+#~ msgstr "Yksi proseduuri"
+
+#~ msgid "%d Procedures"
+#~ msgstr "%d proseduuria"
+
 #~ msgid "No matches"
 #~ msgstr "Ei löytynyt"
 
-#, fuzzy
 #~ msgid "Parameters"
-#~ msgstr "Halkaisija:"
+#~ msgstr "Parametrit"
 
-#~ msgid "Transparent Background"
-#~ msgstr "Läpinäkyvä tausta"
+#~ msgid "Return Values"
+#~ msgstr "Paluuarvot"
+
+#~ msgid "Additional Information"
+#~ msgstr "Lisätietoja"
+
+#~ msgid "Internal GIMP procedure"
+#~ msgstr "Sisäinen proseduuri"
+
+#~ msgid "GIMP Plug-In"
+#~ msgstr "GIMP-liitännäinen"
+
+#~ msgid "GIMP Extension"
+#~ msgstr "GIMP-laajennus"
+
+#~ msgid "Temporary Procedure"
+#~ msgstr "Väliaikainen proseduuri"
+
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "Polta: tarvitaan kaksi tasoa!"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid ""
+#~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
+#~ "netword.com/*spyrogimp"
+#~ msgstr ""
+#~ "Piirrä spirograafeja, epitrosoideja ja Lissajoun käyriä. Lisätietoja "
+#~ "http://netword.com/*spyrogimp"
+
+#~ msgid "Copy _Visible"
+#~ msgstr "Kopio näkyvä"
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/3D _Reunus..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/3D _Reunus..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/3_D Truchet..."
+
+#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
+#~ msgstr "<Image>/Tiny-Fu/Koristeelliset/Lisää viiste..."
+
+#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
+#~ msgstr "<Image>/Tiny-Fu/Koristeelliset/Lisää reunus..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Alien-hohto/_Nuoli..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
+#~ msgstr ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Alien-hohto/_Järjestysmerkki..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Alien-hohto/Nappula..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Alien-_hohto..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Alien-_hohto..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Alien-_neoni..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Alien-_neoni..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII Kuvaksi..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/_Perus I..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/_Perus I..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/P_erus II..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/P_erus II..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
+#~ msgstr ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Beveled Pattern/_Järjestysmerkki..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Beveled Pattern/_Nappula..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Beveled Pattern/_Otsikko..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Beveled Pattern/_Erotin..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Blen_ded..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Sekoitettu..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Lehmätys..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Lehmätys..."
+
+#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
+#~ msgstr "<Image>/Tiny-Fu/Animaatiot/_Polta..."
+
+#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
+#~ msgstr "Polttaa tekstitason kuvaan; V2.1"
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/Maastokuvio..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Kaiverrettu..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/_Liitu..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/_Liitu..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Sirpaloitu teksti..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Sirpaloitu teksti..."
+
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
+#~ msgstr "<Image>/Tiny-Fu/Stencil Ops/Kromita..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/_Kromi..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/_Kromi..."
+
+#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
+#~ msgstr "<Image>/Tiny-Fu/Luo/_Piiri..."
+
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
+#~ msgstr "<Image>/Tiny-Fu/Alchemy/_Kangas..."
+
+#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
+#~ msgstr "<Image>/Tiny-Fu/Koristeelliset/K_ahvitahra..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Sarjakuva..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Sarjakuva..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Viileä metalli..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Viileä metalli..."
+
+#~ msgid "<Image>/Edit/Copy/Copy _Visible"
+#~ msgstr "<Image>/Edit/Kopioi _näkyvä osa"
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Kristalli..."
+
+#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
+#~ msgstr "<Image>/Tiny-Fu/Valinta/_Häivytä ulkoreuna..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/_Flatland..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Utils/_Kirjasinkartta..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/_Hileinen..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/_Hileinen..."
+
+#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
+#~ msgstr "<Image>/Tiny-Fu/Koristeelliset/_Pehmeä reunus..."
+
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Gimp.Org/_Pieni otsikko..."
+
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Gimp.Org/T_ube Sub-Button Label..."
+
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
+#~ "Button Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Gimp.Org/Tub_e Sub-Sub-Button "
+#~ "Label..."
+
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
+#~ "Labels..."
+#~ msgstr ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Gimp.Org/_General Tube Labels..."
+
+#~ msgid ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
+#~ "Label..."
+#~ msgstr ""
+#~ "<Toolbox>/Xtns/Tiny-Fu/Web-sivu teemat/Gimp.Org/_Tube Button Label..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Kiiltävä..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Kiiltävä..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Hehkuvan kuuma..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Hehkuvan kuuma..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Väriliuku viistous..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Väriliuku viistous..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Utils/Oma väriliuku..."
+
+#~ msgid "<Image>/Tiny-Fu/Render/_Grid..."
+#~ msgstr "<Image>/Tiny-Fu/Luo/_Ristikko..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Imigre-26..."
+
+#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
+#~ msgstr "<Image>/Tiny-Fu/Luo/Viiva _nova..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptinen, sulitettu..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Re_ctangular, Feathered..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Make Brush/N_eliömäinen, sulitettu..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Neliömäinen..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/N_eon..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Sanomalehtiteksti..."
+
+#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
+#~ msgstr "<Image>/Tiny-Fu/Koristeelliset/Wanha valokuva..."
+
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
+#~ msgstr "<Image>/Tiny-Fu/Shadow/_Perspektiivi..."
+
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
+#~ msgstr "<Image>/Tiny-Fu/Alchemy/_Predator..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Pyöreä nappula..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/Luo kartta..."
+
+#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
+#~ msgstr "<Image>/Tiny-Fu/Animaatiot/_Aaltoilu..."
+
+#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
+#~ msgstr "<Image>/Tiny-Fu/Koristeelliset/_Pyöristä reunat..."
+
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
+#~ msgstr "<Image>/Tiny-Fu/Valinta/_Siveltimeksi..."
+
+#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
+#~ msgstr "<Image>/Tiny-Fu/Valinta/Kuvi_oksi..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/SOTA-Kromi..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Vauhtiteksti..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Sekalaiset/Pallo..."
+
+#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
+#~ msgstr "<Image>/Tiny-Fu/Animaatiot/_Pyörivä maapallo..."
+
+#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
+#~ msgstr "<Image>/Tiny-Fu/Luo/_Spyrogimp..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Tähtiryöppy..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Tähtiryöppy..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/Tähdistö..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Tähdistö..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/Pyörrekuvio..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/_Pyörre..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/_Hiukkasen jäljitys..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/_Hiukkasen jäljitys..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Tekstiympyrä..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
+#~ msgstr "<Image>/Tiny-Fu/Läpinäkyvyydestä logo/_Pinnoitettu..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/_Pinnoitettu..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logot/Web otsikko..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Kuviot/T_ruchet..."
+
+#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
+#~ msgstr "<Image>/Tiny-Fu/Alchemy/_Sumennusmaski..."
+
+#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
+#~ msgstr "<Image>/Tiny-Fu/Animaatiot/_Aallot..."
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
+#~ msgstr "<Toolbox>/Help/GIMP verkossa/Liitännäisrekisteri"
+
+#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
+#~ msgstr "<Toolbox>/Help/GIMP verkossa/_Kehittäjän sivusto"
+
+#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
+#~ msgstr "<Image>/Tiny-Fu/Shadow/_Xach-efekti..."
+
+#~ msgid "About"
+#~ msgstr "Tietoja"
+
+#~ msgid "Re-read all available scripts"
+#~ msgstr "Lue uudestaan kaikki skriptit"
 
 #~ msgid "DB Browser"
 #~ msgstr "Selain"
-
-#~ msgid "Name:"
-#~ msgstr "Nimi:"
 
 #~ msgid "Blurb:"
 #~ msgstr "Kuvaus:"
@@ -3037,13 +2784,28 @@ msgstr ""
 #~ msgid "Help:"
 #~ msgstr "Apu:"
 
-#, fuzzy
-#~ msgid "Script-Fu _Console"
-#~ msgstr "Script-Fu-konsoli"
+#~ msgid ""
+#~ "\n"
+#~ "\t\t    SF-ADJUSTMENT _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-Säätö _"
 
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Script-Fu"
-#~ msgstr "<Toolbox>/Xtns/Script-Fu/Käynnistä palvelin"
+#~ msgid ""
+#~ "\n"
+#~ "\t\t    SF-COLOR      _"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t    SF-Väri      _"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "Kirjasinkoko (pikseleinä)"
+
+#~ msgid "Transparent Background"
+#~ msgstr "Läpinäkyvä tausta"
+
+#~ msgid "Relative radius"
+#~ msgstr "Suhteellinen säde"
 
 #~ msgid "Unable to open a stream on the SIOD output pipe"
 #~ msgstr "SIODin tulostusputkea ei saatu avatuksi"
@@ -3069,8 +2831,8 @@ msgstr ""
 #~ msgstr "OK"
 
 #~ msgid ""
-#~ "Script-Fu Error\n"
+#~ "Tiny-Fu Error\n"
 #~ "%s"
 #~ msgstr ""
-#~ "Script-Fu Virhe\n"
+#~ "Tiny-Fu Virhe\n"
 #~ "%s"

@@ -1,15 +1,17 @@
-# Hungarian translation of gimp-script-fu.
-# Copyright (C) 2001-2004 Free Software Foundation, Inc.
-# Andras Timar <timar@gnome.hu>, 2001.
-# Laszlo Dvornik <dvornik@invitel.hu>, 2004.
+# Hungarian translation of gimp-tiny-fu.
+# Copyright (C) 2001, 2003, 2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gimp-tiny-fu package.
+# Andras Timar <timar@gnome.hu>, 2001, 2003.
+# Emese Kovacs <emese@gnome.hu>, 2001.
+# Laszlo Dvornik <dvornik@gnome.hu>, 2004.
 # Arpad Biro <biro_arpad@yahoo.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu\n"
+"Project-Id-Version: gimp-tiny-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-22 23:22-0500\n"
-"PO-Revision-Date: 2004-06-16 11:34+0200\n"
+"POT-Creation-Date: 2004-12-20 11:37-0500\n"
+"PO-Revision-Date: 2004-12-02 11:06+0100\n"
 "Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
 "MIME-Version: 1.0\n"
@@ -19,27 +21,25 @@ msgstr ""
 #: tiny-fu/tiny-fu.c:122
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Script-Fu-_konzol"
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Gombok"
 
 #: tiny-fu/tiny-fu.c:148
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
-msgstr "<Toolbox>/Kiterj./Script-Fu/Kiszolgáló _indítása..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Minták"
 
 #: tiny-fu/tiny-fu.c:275
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Parancsfájlok _frissítése"
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Egyéb"
 
 #: tiny-fu/tiny-fu-console.c:142 tiny-fu/tiny-fu-text-console.c:68
-#, fuzzy
 msgid "Tiny-Fu console mode allows only interactive invocation"
-msgstr "A Script-Fu konzolmódja csak interaktív meghívást tesz lehetővé"
+msgstr "A Tiny-Fu konzolmódja csak interaktív meghívást tesz lehetővé"
 
 #: tiny-fu/tiny-fu-console.c:171
-#, fuzzy
 msgid "Tiny-Fu Console"
-msgstr "Script-Fu konzol"
+msgstr "Tiny-Fu konzol"
 
 #: tiny-fu/tiny-fu-console.c:176
 #, fuzzy
@@ -67,7 +67,7 @@ msgstr ""
 #: tiny-fu/tiny-fu-console.c:241
 #, fuzzy
 msgid "Tiny-Fu Console - "
-msgstr "Script-Fu konzol"
+msgstr "Tiny-Fu konzol"
 
 #: tiny-fu/tiny-fu-console.c:242
 msgid "Interactive Scheme Development"
@@ -78,20 +78,19 @@ msgid "Current Command"
 msgstr "Aktuális parancs"
 
 #: tiny-fu/tiny-fu-console.c:284
+#, fuzzy
 msgid "Browse..."
-msgstr "Tallózás..."
+msgstr "_Tallózás..."
 
 #: tiny-fu/tiny-fu-console.c:340
 msgid "Save TinyScheme Output"
 msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:654
-#, fuzzy
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
-msgstr ""
-"A Script-Fu kiértékelő módja csak nem-interaktív meghívást tesz lehetővé"
+msgstr "A Tiny-Fu kiértékelő módja csak nem-interaktív meghívást tesz lehetővé"
 
-#: tiny-fu/tiny-fu-scripts.c:626
+#: tiny-fu/tiny-fu-scripts.c:634
 #, fuzzy, c-format
 msgid ""
 "Error while executing\n"
@@ -104,9 +103,8 @@ msgstr ""
 "%s"
 
 #: tiny-fu/tiny-fu-server.c:642
-#, fuzzy
 msgid "Tiny-Fu Server Options"
-msgstr "Script-Fu Kiszolgáló beállításai"
+msgstr "Tiny-Fu Kiszolgáló beállításai"
 
 #: tiny-fu/tiny-fu-server.c:670
 msgid "Server Port:"
@@ -118,23 +116,22 @@ msgstr "Kiszolgáló által használt naplófájl:"
 
 #: tiny-fu/tiny-fu-interface.c:178
 msgid "Tiny-Fu cannot process two scripts at the same time."
-msgstr ""
+msgstr "A Tiny-Fu nem képes egyszerre több szkriptet feldolgozni."
 
 #: tiny-fu/tiny-fu-interface.c:180
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr ""
+msgstr "Már futtatja a(z) \"%s\" szkriptet."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
 #: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
-#, fuzzy
 msgid "/Tiny-Fu/"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: tiny-fu/tiny-fu-interface.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "Tiny-Fu: %s"
-msgstr "Script-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #. the script arguments frame
 #: tiny-fu/tiny-fu-interface.c:255
@@ -149,54 +146,46 @@ msgid "%s:"
 msgstr "%s:"
 
 #: tiny-fu/tiny-fu-interface.c:329
-#, fuzzy
 msgid "Tiny-Fu Color Selection"
-msgstr "Script-Fu színválasztó"
+msgstr "Tiny-Fu színválasztó"
 
 #: tiny-fu/tiny-fu-interface.c:432
-#, fuzzy
 msgid "Tiny-Fu File Selection"
-msgstr "Script-Fu fájlválasztó"
+msgstr "Tiny-Fu fájlválasztó"
 
 #: tiny-fu/tiny-fu-interface.c:436
-#, fuzzy
 msgid "Tiny-Fu Folder Selection"
-msgstr "Script-Fu mappaválasztó"
+msgstr "Tiny-Fu mappaválasztó"
 
 #: tiny-fu/tiny-fu-interface.c:448
-#, fuzzy
 msgid "Tiny-Fu Font Selection"
-msgstr "Script-Fu betűkészlet-választó"
+msgstr "Tiny-Fu betűkészlet-választó"
 
 #: tiny-fu/tiny-fu-interface.c:455
-#, fuzzy
 msgid "Tiny-Fu Palette Selection"
-msgstr "Script-Fu mintaválasztó"
+msgstr "Tiny-Fu palettaválasztó"
 
 #: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
-msgstr "Script-Fu mintaválasztó"
+msgstr "Tiny-Fu palettaválasztó"
 
 #: tiny-fu/tiny-fu-interface.c:470
-#, fuzzy
 msgid "Tiny-Fu Gradient Selection"
-msgstr "Script-Fu színátmenet-választó"
+msgstr "Tiny-Fu színátmenet-választó"
 
 #: tiny-fu/tiny-fu-interface.c:478
-#, fuzzy
 msgid "Tiny-Fu Brush Selection"
-msgstr "Script-Fu ecsetválasztó"
+msgstr "Tiny-Fu ecsetválasztó"
 
 #. the script progress frame
 #: tiny-fu/tiny-fu-interface.c:534
-#, fuzzy
 msgid "Script Progress"
-msgstr "Szkriptargumentumok"
+msgstr "A szkript előrehaladása"
 
 #: tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
-msgstr ""
+msgstr "(nincs)"
 
 #: tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
@@ -217,7 +206,7 @@ msgstr "Képtípusok:"
 #: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Parancsfájlok _frissítése"
+msgstr "<Toolbox>/Kiterj./Tiny-Fu"
 
 #: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
 #: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
@@ -266,7 +255,6 @@ msgstr "Betűkészlet"
 #: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
 #: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
 #: scripts/title-header.sct.h:3
-#, fuzzy
 msgid "Font size (pixels)"
 msgstr "Betűméret (képpont)"
 
@@ -284,9 +272,8 @@ msgid " contact sheets from a total of "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:2
-#, fuzzy
 msgid " for directory "
-msgstr "A SIOD kimeneti csővezeték megnyitása sikertelen"
+msgstr ""
 
 #: scripts/contactsheet.sct.h:3
 #, fuzzy
@@ -295,9 +282,8 @@ msgstr "Kép indexelése"
 
 #: scripts/contactsheet.sct.h:4 scripts/asc2img.sct.h:2
 #: scripts/font-map.sct.h:1 scripts/gradient-example.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/_Betűkészlet-jegyzék..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Segédeszközök"
 
 #: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
 #: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
@@ -315,7 +301,6 @@ msgstr "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/_Betűkészlet-jegyzék..."
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
-#, fuzzy
 msgid "Background color"
 msgstr "Háttérszín"
 
@@ -331,7 +316,7 @@ msgstr "Árnyék létrehozása"
 #: scripts/contactsheet.sct.h:8
 #, fuzzy
 msgid "Directory"
-msgstr "A SIOD kimeneti csővezeték megnyitása sikertelen"
+msgstr "Irány"
 
 #: scripts/contactsheet.sct.h:9
 msgid "Legend font"
@@ -345,7 +330,7 @@ msgstr "Kezdőérték"
 #: scripts/contactsheet.sct.h:11
 #, fuzzy
 msgid "Sheet size"
-msgstr "Kezdőérték"
+msgstr "Keret mérete"
 
 #: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
 #: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
@@ -354,7 +339,6 @@ msgstr "Kezdőérték"
 #: scripts/gimp-headers.sct.h:13 scripts/gimp-labels.sct.h:15
 #: scripts/i26-gunya2.sct.h:8 scripts/news-text.sct.h:11
 #: scripts/pupi-button.sct.h:14 scripts/speed-text.sct.h:9
-#, fuzzy
 msgid "Text color"
 msgstr "Szövegszín"
 
@@ -363,13 +347,12 @@ msgid "Title font"
 msgstr ""
 
 #: scripts/contactsheet.sct.h:14
-#, fuzzy
 msgid "Unable to open directory "
-msgstr "A SIOD kimeneti csővezeték megnyitása sikertelen"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:1
 msgid "3D _Outline..."
-msgstr ""
+msgstr "_3D keret..."
 
 #: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
 #: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
@@ -382,9 +365,8 @@ msgstr ""
 #: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
 #: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
 #: scripts/textured-logo.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alpha to Logo"
-msgstr "<Image>/Script-Fu/Alfából logót/Ne_on..."
+msgstr "<Image>/Tiny-Fu/Alfából logót"
 
 #: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
 #: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
@@ -400,39 +382,32 @@ msgstr "<Image>/Script-Fu/Alfából logót/Ne_on..."
 #: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
 #: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
 #: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Ne_on..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Logók"
 
 #: scripts/3d-outline.sct.h:4
-#, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Buckaleképezés (alfa-csatorna) elmosásának sugara"
+msgstr "Buckaleképezés (alfa-réteg) elmosásának sugara"
 
 #: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
-#, fuzzy
 msgid "Default bumpmap settings"
 msgstr "Buckaleképezés alapértelmezett beállításai"
 
 #: scripts/3d-outline.sct.h:8
-#, fuzzy
 msgid "Outline blur radius"
 msgstr "Körvonal elmosásának sugara"
 
 #: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
-#, fuzzy
 msgid "Shadow X offset"
 msgstr "Árnyék X-eltolása"
 
 #: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
-#, fuzzy
 msgid "Shadow Y offset"
 msgstr "Árnyék Y-eltolása"
 
 #: scripts/3d-outline.sct.h:11
-#, fuzzy
 msgid "Shadow blur radius"
 msgstr "Árnyék elmosásának sugara"
 
@@ -460,37 +435,31 @@ msgstr "Szöveg"
 
 #: scripts/3dTruchet.sct.h:1
 msgid "3_D Truchet..."
-msgstr ""
+msgstr "Három_dimenziós Truchet..."
 
 #: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
 #: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
 #: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/_Térkép..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Minták"
 
 #: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-#, fuzzy
 msgid "Block size"
 msgstr "Blokkméret"
 
 #: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
-#, fuzzy
 msgid "End blend"
 msgstr "Végső szín"
 
 #: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
-#, fuzzy
 msgid "Number of X tiles"
 msgstr "Csempék száma, X"
 
 #: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
-#, fuzzy
 msgid "Number of Y tiles"
 msgstr "Csempék száma, Y"
 
 #: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
-#, fuzzy
 msgid "Start blend"
 msgstr "Kezdőszín"
 
@@ -506,55 +475,47 @@ msgstr "Vastagság"
 #: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
 #: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
 #: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Decor"
-msgstr "<Image>/Script-Fu/Dekor/_Dia..."
+msgstr "<Image>/Tiny-Fu/Dekor"
 
 #: scripts/add-bevel.sct.h:2
 msgid "Add B_evel..."
-msgstr ""
+msgstr "Le_sarkítás..."
 
 #: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
-#, fuzzy
 msgid "Keep bump layer"
 msgstr "Buckaréteg megtartása"
 
 #: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
 #: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
 #: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
-#, fuzzy
 msgid "Work on copy"
 msgstr "Munka a másolaton"
 
 #: scripts/addborder.sct.h:2
 msgid "Add _Border..."
-msgstr ""
+msgstr "Kere_t hozzáadása..."
 
 #: scripts/addborder.sct.h:3
-#, fuzzy
 msgid "Border X size"
 msgstr "Keret X-mérete"
 
 #: scripts/addborder.sct.h:4
-#, fuzzy
 msgid "Border Y size"
 msgstr "Keret Y-mérete"
 
 #: scripts/addborder.sct.h:5
-#, fuzzy
 msgid "Border color"
 msgstr "Keret színe"
 
 #: scripts/addborder.sct.h:6
-#, fuzzy
 msgid "Delta value on color"
 msgstr "Delta-érték a színen"
 
 #: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
 #: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Idegen ragyogás/_Nyíl..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Weblap-témák/Idegen ragyogás"
 
 #: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
 msgid "Down"
@@ -563,7 +524,6 @@ msgstr "Le"
 #: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
 #: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
 #: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
-#, fuzzy
 msgid "Flatten image"
 msgstr "Kép lapítása"
 
@@ -572,7 +532,6 @@ msgstr "Kép lapítása"
 #: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
 #: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
-#, fuzzy
 msgid "Glow color"
 msgstr "Ragyogás színe"
 
@@ -598,23 +557,20 @@ msgid "Up"
 msgstr "Fel"
 
 #: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
-#, fuzzy
 msgid "_Arrow..."
-msgstr "Tallózás..."
+msgstr "_Nyíl..."
 
 #: scripts/alien-glow-bar.sct.h:3
-#, fuzzy
 msgid "Bar height"
 msgstr "Téglalap magassága"
 
 #: scripts/alien-glow-bar.sct.h:4
-#, fuzzy
 msgid "Bar length"
 msgstr "Téglalap hosszúsága"
 
 #: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
 msgid "_Hrule..."
-msgstr ""
+msgstr "_Vízszintes elválasztó..."
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
@@ -623,14 +579,13 @@ msgstr "Sugár"
 
 #: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
 msgid "_Bullet..."
-msgstr ""
+msgstr "_Golyó..."
 
 #: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
 msgid "B_utton..."
-msgstr ""
+msgstr "G_omb..."
 
 #: scripts/alien-glow-button.sct.h:8
-#, fuzzy
 msgid "Glow radius"
 msgstr "Ragyogás sugara"
 
@@ -640,50 +595,43 @@ msgstr "Helykihagyás"
 
 #: scripts/alien-glow-logo.sct.h:3
 msgid "Alien _Glow..."
-msgstr ""
+msgstr "Idegen r_agyogás..."
 
 #: scripts/alien-glow-logo.sct.h:7
-#, fuzzy
 msgid "Glow size (pixels * 4)"
 msgstr "Ragyogás mérete (képpont * 4)"
 
 #: scripts/alien-neon-logo.sct.h:3
 msgid "Alien _Neon..."
-msgstr ""
+msgstr "_Idegen neon..."
 
 #: scripts/alien-neon-logo.sct.h:5
-#, fuzzy
 msgid "Fade away"
 msgstr "Elhalványítás"
 
 #: scripts/alien-neon-logo.sct.h:9
-#, fuzzy
 msgid "Number of bands"
 msgstr "Sávok száma"
 
 #: scripts/alien-neon-logo.sct.h:11
-#, fuzzy
 msgid "Width of bands"
 msgstr "Sávok szélessége"
 
 #: scripts/alien-neon-logo.sct.h:12
-#, fuzzy
 msgid "Width of gaps"
 msgstr "Rések szélessége"
 
 #: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
 #: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Utils"
-msgstr "<Image>/Script-Fu/Kijelölés/Ké_ppé"
+msgstr "<Image>/Tiny-Fu/Segédeszközök"
 
 #: scripts/asc2img.sct.h:5
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Buffer amount (% height of text)"
 msgstr "Pufferelési mennyiség (szövegmagasság %-a)"
 
 #: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
-#, fuzzy
 msgid "File name"
 msgstr "Fájlnév"
 
@@ -693,40 +641,35 @@ msgstr "Fájlnév"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
 #: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-#, fuzzy
 msgid "Transparent background"
 msgstr "Átlátszó háttér"
 
 #: scripts/asc2img.sct.h:12
 msgid "_ASCII to Image..."
-msgstr ""
+msgstr "_ASCII-ből kép..."
 
 #: scripts/asc2img.sct.h:13
-#, fuzzy
 msgid "_ASCII to Layer..."
-msgstr "<Image>/Script-Fu/Segédeszközök/_ASCII-ből képréteg..."
+msgstr "_ASCII-ből képréteg..."
 
 #: scripts/basic1-logo.sct.h:8
 msgid "_Basic I..."
-msgstr ""
+msgstr "_Egyszerű I..."
 
 #: scripts/basic2-logo.sct.h:3
 msgid "B_asic II..."
-msgstr ""
+msgstr "E_gyszerű II..."
 
 #: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Script-Fu-_konzol"
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Gombok"
 
 #: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
 #: scripts/pupi-button.sct.h:2
-#, fuzzy
 msgid "Bevel width"
 msgstr "Rézsútos rész szélessége"
 
 #: scripts/beveled-button.sct.h:5
-#, fuzzy
 msgid "Lower-right color"
 msgstr "Jobb alsó szín"
 
@@ -736,12 +679,10 @@ msgid "Pressed"
 msgstr "Lenyomott"
 
 #: scripts/beveled-button.sct.h:8
-#, fuzzy
 msgid "Simple _Beveled Button..."
-msgstr "<Toolbox>/Kiterj./Script-Fu/Gombok/_Egyszerű 3D gomb..."
+msgstr "_Egyszerű háromdimenziós gomb..."
 
 #: scripts/beveled-button.sct.h:11
-#, fuzzy
 msgid "Upper-left color"
 msgstr "Bal felső szín"
 
@@ -750,9 +691,8 @@ msgstr "Bal felső szín"
 #: scripts/beveled-pattern-button.sct.h:1
 #: scripts/beveled-pattern-heading.sct.h:1
 #: scripts/beveled-pattern-hrule.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Lesarkított minta/_Nyíl..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Weblap-témák/Lesarkított minta"
 
 #: scripts/beveled-pattern-arrow.sct.h:5
 #: scripts/beveled-pattern-bullet.sct.h:3
@@ -764,13 +704,12 @@ msgid "Pattern"
 msgstr "Minta"
 
 #: scripts/beveled-pattern-bullet.sct.h:2
-#, fuzzy
 msgid "Diameter"
 msgstr "Átmérő"
 
 #: scripts/beveled-pattern-heading.sct.h:4
 msgid "H_eading..."
-msgstr ""
+msgstr "_Fejléc..."
 
 #: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
 #: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
@@ -786,16 +725,14 @@ msgstr "Szélesség"
 #: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
 #: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
 #: scripts/waves-anim.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Animators"
-msgstr "<Image>/Script-Fu/Animáció/_Színkeverés..."
+msgstr "<Image>/Tiny-Fu/Animáció"
 
 #: scripts/blend-anim.sct.h:2
 msgid "Blend Animation needs at least three source layers"
 msgstr ""
 
 #: scripts/blend-anim.sct.h:3
-#, fuzzy
 msgid "Intermediate frames"
 msgstr "Közbülső képkockák"
 
@@ -804,20 +741,18 @@ msgid "Looped"
 msgstr "Ismétlés"
 
 #: scripts/blend-anim.sct.h:5
-#, fuzzy
 msgid "Max. blur radius"
-msgstr "Max. elmosás sugara"
+msgstr "Elmosás maximális sugara"
 
 #: scripts/blend-anim.sct.h:6
 msgid "_Blend..."
-msgstr ""
+msgstr "_Színkeverés..."
 
 #: scripts/blended-logo.sct.h:4
 msgid "Blen_ded..."
-msgstr ""
+msgstr "_Színátmenetes..."
 
 #: scripts/blended-logo.sct.h:5
-#, fuzzy
 msgid "Blend mode"
 msgstr "Színátmenet-mód"
 
@@ -846,7 +781,6 @@ msgstr "Színátmenet"
 #: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
 #: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
 #: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
-#, fuzzy
 msgid "Gradient reverse"
 msgstr "Fordított színátmenet"
 
@@ -860,7 +794,7 @@ msgstr "Háttérszín"
 
 #: scripts/bovinated-logo.sct.h:5
 msgid "Bo_vination..."
-msgstr ""
+msgstr "_Tehén..."
 
 #: scripts/bovinated-logo.sct.h:8
 msgid "Spots density X"
@@ -871,18 +805,16 @@ msgid "Spots density Y"
 msgstr "Foltok Y-sűrűsége"
 
 #: scripts/burn-in-anim.sct.h:2
-#, fuzzy
 msgid "Add glowing"
 msgstr "Ragyogás hozzáadása"
 
 #: scripts/burn-in-anim.sct.h:3
-#, fuzzy
 msgid "After glow"
 msgstr "Utó-ragyogás"
 
 #: scripts/burn-in-anim.sct.h:4
 msgid "B_urn-In..."
-msgstr ""
+msgstr "_Beégetés..."
 
 #: scripts/burn-in-anim.sct.h:5
 msgid ""
@@ -891,7 +823,6 @@ msgid ""
 msgstr ""
 
 #: scripts/burn-in-anim.sct.h:6
-#, fuzzy
 msgid "Corona width"
 msgstr "Koronaszélesség"
 
@@ -900,7 +831,6 @@ msgid "Fadeout"
 msgstr "Elhalványítás"
 
 #: scripts/burn-in-anim.sct.h:8
-#, fuzzy
 msgid "Fadeout width"
 msgstr "Elhalványítási szélesség"
 
@@ -929,7 +859,6 @@ msgid "Granularity"
 msgstr "Szemcsézettség"
 
 #: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-#, fuzzy
 msgid "Image size"
 msgstr "Kép mérete"
 
@@ -939,75 +868,65 @@ msgstr "Simítás"
 
 #: scripts/camo.sct.h:9
 msgid "_Camouflage..."
-msgstr ""
+msgstr "_Kamuflázs..."
 
 #: scripts/carved-logo.sct.h:2
 msgid "Background Image"
 msgstr "Háttérkép"
 
 #: scripts/carved-logo.sct.h:3
-#, fuzzy
 msgid "Carve raised text"
 msgstr "Emelt szöveg vésése"
 
 #: scripts/carved-logo.sct.h:4
 msgid "Carved..."
-msgstr ""
+msgstr "Vésett..."
 
 #: scripts/carved-logo.sct.h:7
-#, fuzzy
 msgid "Padding around text"
 msgstr "Helykihagyás a szöveg körül"
 
 #: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Stencil Ops"
-msgstr "<Image>/Script-Fu/Sablon/_Vésés..."
+msgstr "<Image>/Tiny-Fu/Sablon"
 
 #: scripts/carve-it.sct.h:2
 msgid "C_arve-It..."
-msgstr ""
+msgstr "_Vésés..."
 
 #: scripts/carve-it.sct.h:3
-#, fuzzy
 msgid "Carve white areas"
 msgstr "Fehér részek vésése"
 
 #: scripts/carve-it.sct.h:4
-#, fuzzy
 msgid "Image to carve"
 msgstr "Kivésendő kép"
 
 #: scripts/chalk.sct.h:4
-#, fuzzy
 msgid "Chalk color"
 msgstr "Kréta színe"
 
 #: scripts/chalk.sct.h:8
 msgid "_Chalk..."
-msgstr ""
+msgstr "K_réta..."
 
 #: scripts/chip-away.sct.h:3
-#, fuzzy
 msgid "Blur amount"
 msgstr "Elmosás mértéke"
 
 #: scripts/chip-away.sct.h:4
 msgid "Chip Awa_y..."
-msgstr ""
+msgstr "Morzso_lás..."
 
 #: scripts/chip-away.sct.h:5
-#, fuzzy
 msgid "Chip amount"
 msgstr "Morzsolás mértéke"
 
 #: scripts/chip-away.sct.h:6
-#, fuzzy
 msgid "Drop shadow"
 msgstr "Vetett árnyék"
 
 #: scripts/chip-away.sct.h:7
-#, fuzzy
 msgid "Fill BG with pattern"
 msgstr "Háttér kitöltése mintával"
 
@@ -1016,55 +935,46 @@ msgid "Invert"
 msgstr "Megfordítás"
 
 #: scripts/chip-away.sct.h:11
-#, fuzzy
 msgid "Keep background"
 msgstr "Háttér megtartása"
 
 #: scripts/chrome-it.sct.h:2
 msgid "C_hrome-It..."
-msgstr ""
+msgstr "_Krómozás..."
 
 #: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
-#, fuzzy
 msgid "Chrome balance"
 msgstr "Króm-egyensúly"
 
 #: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
 #: scripts/sota-chrome-logo.sct.h:3
-#, fuzzy
 msgid "Chrome factor"
 msgstr "Krómtényező"
 
 #: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
-#, fuzzy
 msgid "Chrome lightness"
 msgstr "Króm világossága"
 
 #: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
-#, fuzzy
 msgid "Chrome saturation"
 msgstr "Króm színtelítettsége"
 
 #: scripts/chrome-it.sct.h:7
-#, fuzzy
 msgid "Chrome white areas"
 msgstr "Fehér részek krómozása"
 
 #: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
 #: scripts/sota-chrome-logo.sct.h:6
-#, fuzzy
 msgid "Environment map"
 msgstr "Környezeti leképezés"
 
 #: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-#, fuzzy
 msgid "Highlight balance"
 msgstr "Kiemelés egyensúlya"
 
 #: scripts/chrome-logo.sct.h:5
-#, fuzzy
 msgid "C_hrome..."
-msgstr "Tallózás..."
+msgstr "Kró_m..."
 
 #: scripts/chrome-logo.sct.h:8
 msgid "Offsets (pixels * 2)"
@@ -1072,46 +982,38 @@ msgstr "Eltolás (képpont * 2)"
 
 #: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
 #: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Render"
-msgstr "<Image>/Script-Fu/Megjelenítés/Ára_mkör..."
+msgstr "<Image>/Tiny-Fu/Megjelenítés"
 
 #: scripts/circuit.sct.h:2
-#, fuzzy
 msgid "Circuit seed"
 msgstr "Áramkör-kezdőérték"
 
 #: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
 #: scripts/xach-effect.sct.h:11
-#, fuzzy
 msgid "Keep selection"
 msgstr "Kijelölés megtartása"
 
 #: scripts/circuit.sct.h:4
-#, fuzzy
 msgid "No background (only for separate layer)"
 msgstr "Nincs háttér (csak különálló rétegre)"
 
 #: scripts/circuit.sct.h:5
-#, fuzzy
 msgid "Oilify mask size"
 msgstr "Olajozó maszk mérete"
 
 #: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
-#, fuzzy
 msgid "Separate layer"
 msgstr "Különálló réteg"
 
 #: scripts/circuit.sct.h:7
-#, fuzzy
 msgid "_Circuit..."
-msgstr "Áramkör-kezdőérték"
+msgstr "Ára_mkör..."
 
 #: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
 #: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr "<Image>/Script-Fu/Alkímia/Szö_vés..."
+msgstr "<Image>/Tiny-Fu/Alkímia"
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
 msgid "Azimuth"
@@ -1135,15 +1037,14 @@ msgstr "Megemelés"
 
 #: scripts/clothify.sct.h:7
 msgid "_Clothify..."
-msgstr ""
+msgstr "_Szövetszerűvé tétel..."
 
 #: scripts/coffee.sct.h:2
-#, fuzzy
 msgid ""
 "Darken only\n"
 "(Better, but only for images with alot of white)"
 msgstr ""
-"Csak sötétít\n"
+"Csak sötétítés\n"
 "(jobb, de csak sok fehéret tartalmazó képeknél)"
 
 #: scripts/coffee.sct.h:3
@@ -1152,63 +1053,51 @@ msgstr "Foltok"
 
 #: scripts/coffee.sct.h:4
 msgid "_Coffee Stain..."
-msgstr ""
+msgstr "_Kávéfolt..."
 
 #: scripts/comic-logo.sct.h:4
 msgid "Comic Boo_k..."
-msgstr ""
+msgstr "_Képregény..."
 
 #: scripts/comic-logo.sct.h:9
-#, fuzzy
 msgid "Outline color"
 msgstr "Körvonal színe"
 
 #: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-#, fuzzy
 msgid "Outline size"
 msgstr "Körvonal mérete"
 
 #: scripts/coolmetal-logo.sct.h:4
 msgid "Cool _Metal..."
-msgstr ""
+msgstr "_Hűvös fém..."
 
 #: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels)"
 msgstr "Hatás mérete (képpont)"
 
-#: scripts/copy-visible.sct.h:1
-msgid "Copy _Visible"
-msgstr ""
-
 #: scripts/crystal-logo.sct.h:2
-#, fuzzy
 msgid "Background image"
 msgstr "Háttérkép"
 
 #: scripts/crystal-logo.sct.h:4
 msgid "Crystal..."
-msgstr ""
+msgstr "Kristály..."
 
 #: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
 #: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
 #: scripts/select-to-pattern.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Selection"
-msgstr "<Image>/Script-Fu/Kijelölés/Ké_ppé"
+msgstr "<Image>/Tiny-Fu/Kijelölés"
 
 #: scripts/distress-selection.sct.h:2
-#, fuzzy
 msgid "Granularity (1 is low)"
 msgstr "Szemcsézettség (1 a legkisebb)"
 
 #: scripts/distress-selection.sct.h:4
-#, fuzzy
 msgid "Smooth horizontally"
 msgstr "Vízszintes simítás"
 
 #: scripts/distress-selection.sct.h:5
-#, fuzzy
 msgid "Smooth vertically"
 msgstr "Függőleges simítás"
 
@@ -1217,30 +1106,25 @@ msgid "Spread"
 msgstr "Szórás"
 
 #: scripts/distress-selection.sct.h:7
-#, fuzzy
 msgid "Threshold (bigger 1<-->255 smaller)"
 msgstr "Küszöb (nagyobb 1 <--> 255 kisebb)"
 
 #: scripts/distress-selection.sct.h:8
-#, fuzzy
 msgid "_Distress Selection..."
-msgstr "<Image>/Script-Fu/Kijelölés/Kijelölés _torzítása..."
+msgstr "Kijelölés _torzítása..."
 
 #: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
 #: scripts/xach-effect.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Shadow"
-msgstr "<Image>/Script-Fu/Árnyék/_Xach-effektus..."
+msgstr "<Image>/Tiny-Fu/Árnyék"
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
-#, fuzzy
 msgid "Allow resizing"
 msgstr "Átméretezés engedélyezése"
 
 #: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
 #: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
 #: scripts/swirltile.sct.h:4
-#, fuzzy
 msgid "Blur radius"
 msgstr "Elmosás sugara"
 
@@ -1257,9 +1141,8 @@ msgid "Opacity"
 msgstr "Átlátszatlanság"
 
 #: scripts/drop-shadow.sct.h:8
-#, fuzzy
 msgid "_Drop-Shadow..."
-msgstr "Vetett árnyék"
+msgstr "_Vetett árnyék..."
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
@@ -1270,7 +1153,6 @@ msgid "Erase"
 msgstr "Törlés"
 
 #: scripts/erase-rows.sct.h:4
-#, fuzzy
 msgid "Erase/fill"
 msgstr "Törlés/kitöltés"
 
@@ -1279,7 +1161,6 @@ msgid "Even"
 msgstr "Páros"
 
 #: scripts/erase-rows.sct.h:6
-#, fuzzy
 msgid "Even/odd"
 msgstr "Páros/páratlan"
 
@@ -1296,67 +1177,57 @@ msgid "Rows"
 msgstr "Sorok"
 
 #: scripts/erase-rows.sct.h:10
-#, fuzzy
 msgid "Rows/cols"
 msgstr "Sorok/oszlopok"
 
 #: scripts/erase-rows.sct.h:11
-#, fuzzy
 msgid "_Erase every other Row..."
-msgstr "<Image>/Script-Fu/Alkímia/_Minden második sor törlése..."
+msgstr "_Minden második sor törlése..."
 
 #: scripts/fade-outline.sct.h:2
-#, fuzzy
 msgid "Apply generated layermask"
 msgstr "Generált rétegmaszk alkalmazása"
 
 #: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
 #: scripts/old-photo.sct.h:2
-#, fuzzy
 msgid "Border size"
 msgstr "Keret mérete"
 
 #: scripts/fade-outline.sct.h:4
-#, fuzzy
 msgid "Clear unselected maskarea"
 msgstr "Nem kijelölt maszkterület törlése"
 
 #: scripts/fade-outline.sct.h:6
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Fade from %"
 msgstr "Elhalványítás kezdete, %"
 
 #: scripts/fade-outline.sct.h:8
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Fade to   %"
 msgstr "Elhalványítás vége, %"
 
 #: scripts/fade-outline.sct.h:9
-#, fuzzy
 msgid "Use growing selection"
 msgstr "Növekvő kijelölés használata"
 
 #: scripts/fade-outline.sct.h:10
 msgid "_Fade Outline..."
-msgstr ""
+msgstr "Körvonal el_halványítása..."
 
 #: scripts/flatland.sct.h:2 scripts/land.sct.h:2
-#, fuzzy
 msgid "Detail level"
 msgstr "Részletezettség"
 
 #: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-#, fuzzy
 msgid "Image height"
 msgstr "Kép magassága"
 
 #: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-#, fuzzy
 msgid "Image width"
 msgstr "Kép szélessége"
 
 #: scripts/flatland.sct.h:5 scripts/land.sct.h:7
-#, fuzzy
 msgid "Random seed"
 msgstr "Véletlenszerűségi kiindulóérték"
 
@@ -1370,25 +1241,21 @@ msgstr "Y-lépték"
 
 #: scripts/flatland.sct.h:8
 msgid "_Flatland..."
-msgstr ""
+msgstr "_Lapos térkép..."
 
 #: scripts/font-map.sct.h:2
-#, fuzzy
 msgid "Active colors"
 msgstr "Aktív színek"
 
 #: scripts/font-map.sct.h:3
-#, fuzzy
 msgid "Black on white"
 msgstr "Fehér alapon fekete"
 
 #: scripts/font-map.sct.h:4
-#, fuzzy
 msgid "Font _size (pixels)"
 msgstr "Betűmér_et (képpont)"
 
 #: scripts/font-map.sct.h:5
-#, fuzzy
 msgid "Use font _name as text"
 msgstr "Betűkészletek _neveinek használata szövegként"
 
@@ -1397,7 +1264,6 @@ msgid "_Border (pixels)"
 msgstr "_Keret (képpont)"
 
 #: scripts/font-map.sct.h:7
-#, fuzzy
 msgid "_Color scheme"
 msgstr "Színsém_a"
 
@@ -1407,7 +1273,7 @@ msgstr "Szű_rő (regexp)"
 
 #: scripts/font-map.sct.h:9
 msgid "_Font Map..."
-msgstr ""
+msgstr "_Betűkészlet-jegyzék..."
 
 #: scripts/font-map.sct.h:10
 msgid "_Labels"
@@ -1418,163 +1284,139 @@ msgid "_Text"
 msgstr "_Szöveg"
 
 #: scripts/frosty-logo.sct.h:8
-#, fuzzy
 msgid "_Frosty..."
-msgstr "Tallózás..."
+msgstr "_Fagyos..."
 
 #: scripts/fuzzyborder.sct.h:2
-#, fuzzy
 msgid "Add shadow"
 msgstr "Árnyék hozzáadása"
 
 #: scripts/fuzzyborder.sct.h:3
-#, fuzzy
 msgid "Blur border"
-msgstr "Szélek elmosása"
+msgstr "Keret elmosása"
 
 #: scripts/fuzzyborder.sct.h:7
 msgid "Granularity (1 is Low)"
 msgstr "Szemcsézettség (1 a legkisebb)"
 
 #: scripts/fuzzyborder.sct.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
 msgstr "Árnyék szélessége (%)"
 
 #: scripts/fuzzyborder.sct.h:11
 msgid "_Fuzzy Border..."
-msgstr ""
+msgstr "_Elmosott szélek..."
 
 #: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-msgstr ""
-"<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Classic.Gimp.Org/_Nagy fejléc..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Weblap-témák/Classic.Gimp.Org"
 
 #: scripts/gimp-headers.sct.h:2
-#, fuzzy
 msgid "Autocrop"
 msgstr "Automatikus levágás"
 
 #: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Dark color"
 msgstr "Sötét szín"
 
 #: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-#, fuzzy
 msgid "Highlight color"
 msgstr "Kiemelés színe"
 
 #: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
-#, fuzzy
 msgid "Index image"
 msgstr "Kép indexelése"
 
 #: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
-#, fuzzy
 msgid "Number of colors"
 msgstr "Színek száma"
 
 #: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-#, fuzzy
 msgid "Remove background"
 msgstr "Háttér törlése"
 
 #: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
-#, fuzzy
 msgid "Select-by-color threshold"
 msgstr "\"Kijelölés szín alapján\" küszöbértéke"
 
 #: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-#, fuzzy
 msgid "Shadow color"
 msgstr "Árnyék színe"
 
 #: scripts/gimp-headers.sct.h:14
 msgid "_Big Header..."
-msgstr ""
+msgstr "_Nagy fejléc..."
 
 #: scripts/gimp-headers.sct.h:15
 msgid "_Small Header..."
-msgstr ""
+msgstr "_Kis fejléc..."
 
 #: scripts/gimp-labels.sct.h:13
 msgid "T_ube Sub-Button Label..."
-msgstr ""
+msgstr "_Algomb-címke..."
 
 #: scripts/gimp-labels.sct.h:16
 msgid "Tub_e Sub-Sub-Button Label..."
-msgstr ""
+msgstr "A_l-algomb-címke..."
 
 #: scripts/gimp-labels.sct.h:17
 msgid "_General Tube Labels..."
-msgstr ""
+msgstr "Ál_talános címke..."
 
 #: scripts/gimp-labels.sct.h:18
 msgid "_Tube Button Label..."
-msgstr ""
+msgstr "_Gombcímke..."
 
 #: scripts/glossy.sct.h:4
-#, fuzzy
 msgid "Blend gradient (Text)"
-msgstr "Szöveg-színátmenet"
+msgstr "Színátmenet (szöveg)"
 
 #: scripts/glossy.sct.h:5
-#, fuzzy
 msgid "Blend gradient (outline)"
-msgstr "Körvonal-színátmenet"
+msgstr "Színátmenet (körvonal)"
 
 #: scripts/glossy.sct.h:6
-#, fuzzy
 msgid "Blend gradient (text)"
-msgstr "Szöveg-színátmenet"
+msgstr "Színátmenet (szöveg)"
 
 #: scripts/glossy.sct.h:10
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "Fé_nyes..."
 
 #: scripts/glossy.sct.h:11
-#, fuzzy
 msgid "Outline gradient reverse"
 msgstr "Fordított körvonal-színátmenet"
 
 #: scripts/glossy.sct.h:13
-#, fuzzy
 msgid "Pattern (outline)"
-msgstr "Körvonal-minta"
+msgstr "Minta (körvonal)"
 
 #: scripts/glossy.sct.h:14
-#, fuzzy
 msgid "Pattern (overlay)"
-msgstr "Átfedés-minta"
+msgstr "Minta (átfedés)"
 
 #: scripts/glossy.sct.h:15
-#, fuzzy
 msgid "Pattern (text)"
-msgstr "Szöveg-minta"
+msgstr "Minta (szöveg)"
 
 #: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
 msgid "Shadow"
 msgstr "Árnyék"
 
 #: scripts/glossy.sct.h:20
-#, fuzzy
 msgid "Text gradient reverse"
 msgstr "Fordított szöveg-színátmenet"
 
 #: scripts/glossy.sct.h:21
-#, fuzzy
 msgid "Use pattern for outline instead of gradient"
 msgstr "Körvonalhoz minta használata színátmenet helyett"
 
 #: scripts/glossy.sct.h:22
-#, fuzzy
 msgid "Use pattern for text instead of gradient"
 msgstr "Szöveghez minta használata színátmenet helyett"
 
 #: scripts/glossy.sct.h:23
-#, fuzzy
 msgid "Use pattern overlay"
 msgstr "Átfedési minta használata"
 
@@ -1584,53 +1426,45 @@ msgid "Use tattern for outline instead of gradient"
 msgstr "Körvonalhoz minta használata színátmenet helyett"
 
 #: scripts/glowing-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels * 3)"
 msgstr "Hatás mérete (képpont * 3)"
 
 #: scripts/glowing-logo.sct.h:7
 msgid "Glo_wing Hot..."
-msgstr ""
+msgstr "I_zzó forró..."
 
 #: scripts/gradient-bevel-logo.sct.h:4
-#, fuzzy
 msgid "Bevel height (Sharpness)"
 msgstr "Rézsútos rész magassága (élesség)"
 
 #: scripts/gradient-bevel-logo.sct.h:5
-#, fuzzy
 msgid "Bevel height (sharpness)"
 msgstr "Rézsútos rész magassága (élesség)"
 
 #: scripts/gradient-bevel-logo.sct.h:7 scripts/t-o-p-logo.sct.h:5
 #: scripts/textured-logo.sct.h:4
-#, fuzzy
 msgid "Border size (pixels)"
 msgstr "Keret mérete (képpont)"
 
 #: scripts/gradient-bevel-logo.sct.h:10
-#, fuzzy
 msgid "Gradient Beve_l..."
-msgstr "Fordított színátmenet"
+msgstr "Három_dimenziós színátmenet..."
 
 #: scripts/gradient-example.sct.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "Egyéni színátmenet"
+msgstr "Egyéni _színátmenet..."
 
 #: scripts/grid-system.sct.h:2
-#, fuzzy
 msgid "X divisions"
 msgstr "X-felosztás"
 
 #: scripts/grid-system.sct.h:3
-#, fuzzy
 msgid "Y divisions"
 msgstr "Y-felosztás"
 
 #: scripts/grid-system.sct.h:4
 msgid "_Grid..."
-msgstr ""
+msgstr "_Rács..."
 
 #: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
 #: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
@@ -1640,52 +1474,48 @@ msgstr ""
 #: scripts/guides-from-selection.sct.h:2
 msgid "Creates four Guides around the bounding box of the current selection."
 msgstr ""
+"Négy segédvonalat hoz létre a jelenlegi kijelölés határoló téglalapja köré."
 
 #: scripts/guides-from-selection.sct.h:3
 msgid "New Guides from _Selection"
-msgstr ""
+msgstr "Új segédvonalak a _kijelölésből"
 
 #: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
-#, fuzzy
 msgid "Direction"
-msgstr "A SIOD kimeneti csővezeték megnyitása sikertelen"
+msgstr "Irány"
 
 #: scripts/guides-new-percent.sct.h:3 scripts/guides-new.sct.h:3
-#, fuzzy
 msgid "Horizontal"
-msgstr "Vízszintes elmosás"
+msgstr "Vízszintes"
 
 #: scripts/guides-new-percent.sct.h:4
 msgid "New Guide (by _Percent)..."
-msgstr ""
+msgstr "Új segédvonal (szá_zalék alapján)..."
 
 #: scripts/guides-new-percent.sct.h:6
 #, no-c-format
 msgid "Position (in %)"
-msgstr ""
+msgstr "Pozíció (százalékban)"
 
 #: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
-#, fuzzy
 msgid "Vertical"
-msgstr "Függőleges elmosás"
+msgstr "Függőleges"
 
 #: scripts/guides-new.sct.h:4
 msgid "New _Guide..."
-msgstr ""
+msgstr "Ú_j segédvonal..."
 
 #: scripts/guides-remove-all.sct.h:2
 msgid "_Remove all Guides"
-msgstr ""
+msgstr "Az összes segédvonal _törlése"
 
 #: scripts/hsv-graph.sct.h:2
-#, fuzzy
 msgid "BG opacity"
 msgstr "Háttér átlátszatlansága"
 
 #: scripts/hsv-graph.sct.h:3
-#, fuzzy
 msgid "Draw _HSV Graph..."
-msgstr "<Image>/Script-Fu/Segédeszközök/_HSV-grafikon rajzolása..."
+msgstr "_HSV-grafikon rajzolása..."
 
 #: scripts/hsv-graph.sct.h:4
 msgid "End X"
@@ -1696,12 +1526,10 @@ msgid "End Y"
 msgstr "Vég, Y"
 
 #: scripts/hsv-graph.sct.h:6
-#, fuzzy
 msgid "From top-left to bottom-right"
 msgstr "Bal felsőtől a jobb alsóig"
 
 #: scripts/hsv-graph.sct.h:7
-#, fuzzy
 msgid "Graph scale"
 msgstr "Grafikon léptéke"
 
@@ -1719,87 +1547,72 @@ msgid "Use selection bounds instead of values below"
 msgstr "A kijelölés határainak használata a lentiek helyett"
 
 #: scripts/i26-gunya2.sct.h:4
-#, fuzzy
 msgid "Frame color"
 msgstr "Keret színe"
 
 #: scripts/i26-gunya2.sct.h:5
-#, fuzzy
 msgid "Frame size"
 msgstr "Keret mérete"
 
 #: scripts/i26-gunya2.sct.h:6
 msgid "Imigre-26..."
-msgstr ""
+msgstr "Imigre-26..."
 
 #: scripts/image-structure.sct.h:2
-#, fuzzy
 msgid "Apply layer mask (or discard)"
 msgstr "Rétegmaszk alkalmazása (vagy eldobása)"
 
 #: scripts/image-structure.sct.h:4
-#, fuzzy
 msgid "Create new image"
 msgstr "Új kép létrehozása"
 
 #: scripts/image-structure.sct.h:5
-#, fuzzy
 msgid "Insert layer names"
 msgstr "Rétegnevek beszúrása"
 
 #: scripts/image-structure.sct.h:6
-#, fuzzy
 msgid "Make new background"
 msgstr "Új háttér készítése"
 
 #: scripts/image-structure.sct.h:7
-#, fuzzy
 msgid "Outer border"
 msgstr "Külső szél"
 
 #: scripts/image-structure.sct.h:8
-#, fuzzy
 msgid "Pad color"
 msgstr "Kitöltés színe"
 
 #: scripts/image-structure.sct.h:9
-#, fuzzy
 msgid "Pad opacity"
 msgstr "Kitöltés átlátszatlansága"
 
 #: scripts/image-structure.sct.h:10
-#, fuzzy
 msgid "Padding for transparent regions"
 msgstr "Helykitöltés az átlátszó részeknél"
 
 #: scripts/image-structure.sct.h:11
-#, fuzzy
 msgid "Shear length"
 msgstr "Nyírás hossza"
 
 #: scripts/image-structure.sct.h:12
-#, fuzzy
 msgid "Show Image _Structure..."
-msgstr "<Image>/Script-Fu/Segédeszközök/Kép_felépítés megjelenítése..."
+msgstr "Kép_felépítés megjelenítése..."
 
 #: scripts/image-structure.sct.h:13
-#, fuzzy
 msgid "Space between layers"
 msgstr "Rétegek közötti tér"
 
 #: scripts/land.sct.h:6
-#, fuzzy
 msgid "Land height"
 msgstr "Terepmagasság"
 
 #: scripts/land.sct.h:10
-#, fuzzy
 msgid "Sea depth"
 msgstr "Tengermélység"
 
 #: scripts/land.sct.h:11
 msgid "_Land..."
-msgstr ""
+msgstr "_Térkép..."
 
 #: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
 msgid "Roughness"
@@ -1810,25 +1623,22 @@ msgid "Seed"
 msgstr "Kezdőérték"
 
 #: scripts/lava.sct.h:8
-#, fuzzy
 msgid "Use current gradient"
 msgstr "Aktuális színátmenet használata"
 
 #: scripts/lava.sct.h:9
 msgid "_Lava..."
-msgstr ""
+msgstr "_Láva..."
 
 #: scripts/line-nova.sct.h:2
 msgid "Line _Nova..."
-msgstr ""
+msgstr "_Vonalak..."
 
 #: scripts/line-nova.sct.h:3
-#, fuzzy
 msgid "Number of lines"
 msgstr "Vonalak száma"
 
 #: scripts/line-nova.sct.h:4
-#, fuzzy
 msgid "Offset radius"
 msgstr "Eltolás sugara"
 
@@ -1841,30 +1651,29 @@ msgid "Sharpness (degrees)"
 msgstr "Élesség (fokban)"
 
 #: scripts/mkbrush.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Ecsetkészítés/_Elliptikus..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Ecsetkészítés"
 
 #: scripts/mkbrush.sct.h:2
 msgid "Create size of brush"
 msgstr ""
 
 #: scripts/mkbrush.sct.h:3
+#, fuzzy
 msgid "Description"
-msgstr "Leírás"
+msgstr "Irány"
 
 #: scripts/mkbrush.sct.h:4
 msgid "Elli_ptical, Feathered..."
-msgstr ""
+msgstr "Elli_ptikus, elmosott..."
 
 #: scripts/mkbrush.sct.h:5
 msgid "Feathering"
 msgstr "Elmosottság"
 
 #: scripts/mkbrush.sct.h:7
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "<Toolbox>/Kiterj./Script-Fu/Ecsetkészítés/Té_glalap, elmosott..."
+msgstr "Té_glalap, elmosott..."
 
 #: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
 msgid "Spacing"
@@ -1872,28 +1681,25 @@ msgstr "Térköz"
 
 #: scripts/mkbrush.sct.h:10
 msgid "_Elliptical..."
-msgstr ""
+msgstr "_Elliptikus..."
 
 #: scripts/mkbrush.sct.h:11
 msgid "_Rectangular..."
-msgstr ""
+msgstr "_Téglalap..."
 
 #: scripts/neon-logo.sct.h:4
-#, fuzzy
 msgid "Create shadow"
 msgstr "Árnyék létrehozása"
 
 #: scripts/neon-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 5)"
 msgstr "Hatás mérete (képpont * 5)"
 
 #: scripts/neon-logo.sct.h:9
 msgid "N_eon..."
-msgstr ""
+msgstr "Ne_on..."
 
 #: scripts/news-text.sct.h:4
-#, fuzzy
 msgid "Cell size (pixels)"
 msgstr "Cellaméret (képpont)"
 
@@ -1904,7 +1710,7 @@ msgstr "Sűrűség (%)"
 
 #: scripts/news-text.sct.h:9
 msgid "Newsprint Text..."
-msgstr ""
+msgstr "Újságszöveg..."
 
 #: scripts/old-photo.sct.h:3
 msgid "Defocus"
@@ -1920,7 +1726,7 @@ msgstr "Szépia"
 
 #: scripts/old-photo.sct.h:7
 msgid "_Old Photo..."
-msgstr ""
+msgstr "_Régi fénykép..."
 
 #: scripts/perspective-shadow.sct.h:3
 msgid "Angle"
@@ -1928,42 +1734,37 @@ msgstr "Szög"
 
 #: scripts/perspective-shadow.sct.h:6
 msgid "Cubic"
-msgstr ""
+msgstr "Köbös"
 
 #: scripts/perspective-shadow.sct.h:7
-#, fuzzy
 msgid "Interpolation"
 msgstr "Interpolálás"
 
 #: scripts/perspective-shadow.sct.h:8
 msgid "Linear"
-msgstr ""
+msgstr "Lineáris"
 
 #: scripts/perspective-shadow.sct.h:9
 msgid "None"
-msgstr ""
+msgstr "Nincs"
 
 #: scripts/perspective-shadow.sct.h:11
-#, fuzzy
 msgid "Relative distance of horizon"
 msgstr "Horizont viszonylagos távolsága"
 
 #: scripts/perspective-shadow.sct.h:12
-#, fuzzy
 msgid "Relative length of shadow"
 msgstr "Árnyék viszonylagos hossza"
 
 #: scripts/perspective-shadow.sct.h:13
 msgid "_Perspective..."
-msgstr ""
+msgstr "_Perspektivikus..."
 
 #: scripts/predator.sct.h:2
-#, fuzzy
 msgid "Edge amount"
 msgstr "Szél mértéke"
 
 #: scripts/predator.sct.h:4
-#, fuzzy
 msgid "Pixel amount"
 msgstr "Képpontok mennyisége"
 
@@ -1973,25 +1774,21 @@ msgstr "Pixelesítés"
 
 #: scripts/predator.sct.h:7
 msgid "_Predator..."
-msgstr ""
+msgstr "_Predator..."
 
 #: scripts/pupi-button.sct.h:5
-#, fuzzy
 msgid "Lower color"
 msgstr "Alsó szín"
 
 #: scripts/pupi-button.sct.h:6
-#, fuzzy
 msgid "Lower color (active)"
 msgstr "Alsó szín (aktív)"
 
 #: scripts/pupi-button.sct.h:7
-#, fuzzy
 msgid "Not pressed"
 msgstr "Nem lenyomott"
 
 #: scripts/pupi-button.sct.h:8
-#, fuzzy
 msgid "Not pressed (active)"
 msgstr "Nem lenyomott (aktív)"
 
@@ -2004,28 +1801,24 @@ msgid "Padding Y"
 msgstr "Y-helykihagyás"
 
 #: scripts/pupi-button.sct.h:12
-#, fuzzy
 msgid "Round ratio"
 msgstr "Lekerekítés mértéke"
 
 #: scripts/pupi-button.sct.h:15
-#, fuzzy
 msgid "Text color (active)"
 msgstr "Szövegszín (aktív)"
 
 #: scripts/pupi-button.sct.h:16
-#, fuzzy
 msgid "Upper color"
 msgstr "Felső szín"
 
 #: scripts/pupi-button.sct.h:17
-#, fuzzy
 msgid "Upper color (active)"
 msgstr "Felső szín (aktív)"
 
 #: scripts/pupi-button.sct.h:18
 msgid "_Round Button..."
-msgstr ""
+msgstr "_Lekerekített gomb..."
 
 #: scripts/rendermap.sct.h:2
 #, fuzzy
@@ -2038,7 +1831,7 @@ msgstr "Részlet középre"
 
 #: scripts/rendermap.sct.h:8
 msgid "Render _Map..."
-msgstr ""
+msgstr "Térkép _megjelenítése..."
 
 #: scripts/rendermap.sct.h:9
 msgid "Tile"
@@ -2054,12 +1847,10 @@ msgid "Edge behavior"
 msgstr "Szél viselkedése"
 
 #: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
-#, fuzzy
 msgid "Number of frames"
 msgstr "Képkockák száma"
 
 #: scripts/ripply-anim.sct.h:5
-#, fuzzy
 msgid "Rippling strength"
 msgstr "Fodrozás erőssége"
 
@@ -2073,73 +1864,63 @@ msgstr "Körbe"
 
 #: scripts/ripply-anim.sct.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "_Fodrozás..."
 
 #: scripts/round-corners.sct.h:2
-#, fuzzy
 msgid "Add background"
 msgstr "Háttér hozzáadása"
 
 #: scripts/round-corners.sct.h:3
-#, fuzzy
 msgid "Add drop-shadow"
 msgstr "Vetett árnyék hozzáadása"
 
 #: scripts/round-corners.sct.h:5
-#, fuzzy
 msgid "Edge radius"
 msgstr "Szél sugara"
 
 #: scripts/round-corners.sct.h:9
-#, fuzzy
 msgid "_Round Corners..."
-msgstr "<Image>/Script-Fu/Dekor/_Gömbölyített sarok..."
+msgstr "_Gömbölyített sarok..."
 
 #: scripts/selection-round.sct.h:1
 #, fuzzy
 msgid "<Image>/Select/Modify"
-msgstr "<Image>/Script-Fu/Kijelölés/Ké_ppé"
+msgstr "<Image>/Tiny-Fu/Kijelölés"
 
 #: scripts/selection-round.sct.h:2
 msgid "Concave"
-msgstr ""
+msgstr "Konkáv"
 
 #: scripts/selection-round.sct.h:4
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Sugár"
+msgstr "Sugár (%)"
 
 #: scripts/selection-round.sct.h:5
-#, fuzzy
 msgid "Rounded R_ectangle..."
-msgstr "<Image>/Script-Fu/Kijelölés/_Kör alakú..."
+msgstr "Leke_rekített téglalap..."
 
 #: scripts/select-to-brush.sct.h:2
-#, fuzzy
 msgid "Brush name"
 msgstr "Ecset neve"
 
 #: scripts/select-to-brush.sct.h:5
 msgid "To _Brush..."
-msgstr ""
+msgstr "_Ecsetté..."
 
 #: scripts/select-to-image.sct.h:2
-#, fuzzy
 msgid "To _Image"
-msgstr "Kép indexelése"
+msgstr "Ké_ppé"
 
 #: scripts/select-to-pattern.sct.h:3
-#, fuzzy
 msgid "Pattern name"
 msgstr "Minta neve"
 
 #: scripts/select-to-pattern.sct.h:4
-#, fuzzy
 msgid "To _Pattern..."
-msgstr "Minta"
+msgstr "_Mintává..."
 
 #: scripts/slide.sct.h:3
-#, fuzzy
 msgid "Font color"
 msgstr "Szövegszín"
 
@@ -2149,20 +1930,19 @@ msgstr "Szám"
 
 #: scripts/slide.sct.h:7
 msgid "_Slide..."
-msgstr ""
+msgstr "_Dia..."
 
 #: scripts/sota-chrome-logo.sct.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "Fejlett króm..."
 
 #: scripts/speed-text.sct.h:7
 msgid "Speed Text..."
-msgstr ""
+msgstr "Száguldó szöveg..."
 
 #: scripts/sphere.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-msgstr "<Toolbox>/Kiterj./Script-Fu/Egyéb/_Gömb..."
+msgstr "<Toolbox>/Kiterj./Tiny-Fu/Egyéb"
 
 #: scripts/sphere.sct.h:3
 msgid "Lighting (degrees)"
@@ -2173,31 +1953,28 @@ msgid "Radius (pixels)"
 msgstr "Sugár (képpont)"
 
 #: scripts/sphere.sct.h:6
-#, fuzzy
 msgid "Sphere color"
 msgstr "Gömb színe"
 
 #: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
 msgid "_Sphere..."
-msgstr ""
+msgstr "_Gömb..."
 
 #: scripts/spinning-globe.sct.h:2
 msgid "Frames"
 msgstr "Képkockák"
 
 #: scripts/spinning-globe.sct.h:3
-#, fuzzy
 msgid "Index to n colors (0 = remain RGB)"
 msgstr "Kép indexelése n színre (0 = RGB marad)"
 
 #: scripts/spinning-globe.sct.h:5
-#, fuzzy
 msgid "Turn from left to right"
 msgstr "Fordítás balról jobbra"
 
 #: scripts/spinning-globe.sct.h:7
 msgid "_Spinning Globe..."
-msgstr ""
+msgstr "Fo_rgó földgömb..."
 
 #: scripts/spyrogimp.sct.h:2
 msgid "Airbrush"
@@ -2212,7 +1989,6 @@ msgid "Circle"
 msgstr "Kör"
 
 #: scripts/spyrogimp.sct.h:6
-#, fuzzy
 msgid "Color method"
 msgstr "Színmód"
 
@@ -2237,12 +2013,10 @@ msgid "Hexagon"
 msgstr "Hatszög"
 
 #: scripts/spyrogimp.sct.h:13
-#, fuzzy
 msgid "Hole ratio"
 msgstr "Lyuk aránya"
 
 #: scripts/spyrogimp.sct.h:14
-#, fuzzy
 msgid "Inner teeth"
 msgstr "Belső fogazat"
 
@@ -2255,7 +2029,6 @@ msgid "Margin (pixels)"
 msgstr "Margó (képpont)"
 
 #: scripts/spyrogimp.sct.h:17
-#, fuzzy
 msgid "Outer teeth"
 msgstr "Külső fogazat"
 
@@ -2300,7 +2073,6 @@ msgid "Square"
 msgstr "Négyzet"
 
 #: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-#, fuzzy
 msgid "Start angle"
 msgstr "Kezdőszög"
 
@@ -2317,91 +2089,78 @@ msgid "Type"
 msgstr "Típus"
 
 #: scripts/spyrogimp.sct.h:32
-#, fuzzy
 msgid "_Spyrogimp..."
-msgstr "Spirográf"
+msgstr "_SpiroGIMP..."
 
 #: scripts/starburst-logo.sct.h:4
-#, fuzzy
 msgid "Burst color"
 msgstr "Kitörés színe"
 
 #: scripts/starburst-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 30)"
 msgstr "Hatás mérete (képpont * 30)"
 
 #: scripts/starburst-logo.sct.h:8
 msgid "Starb_urst..."
-msgstr ""
+msgstr "_Csillagkitörés..."
 
 #: scripts/starscape-logo.sct.h:3
-#, fuzzy
 msgid "Effect size (pixels * 4)"
 msgstr "Hatás mérete (képpont * 4)"
 
 #: scripts/starscape-logo.sct.h:7
 msgid "Sta_rscape..."
-msgstr ""
+msgstr "Starsca_pe..."
 
 #: scripts/swirltile.sct.h:9
 msgid "Swirl-_Tile..."
-msgstr ""
+msgstr "Örvény_csempe..."
 
 #: scripts/swirltile.sct.h:10
-#, fuzzy
 msgid "Whirl amount"
 msgstr "Csavarások száma"
 
 #: scripts/swirly-pattern.sct.h:2
-#, fuzzy
 msgid "Number of times to whirl"
 msgstr "Csavarások száma"
 
 #: scripts/swirly-pattern.sct.h:3
-#, fuzzy
 msgid "Quarter size"
 msgstr "Negyed mérete"
 
 #: scripts/swirly-pattern.sct.h:4
-#, fuzzy
 msgid "Whirl angle"
 msgstr "Csavarási szög"
 
 #: scripts/swirly-pattern.sct.h:5
 msgid "_Swirly..."
-msgstr ""
+msgstr "Ö_rvénylő..."
 
 #: scripts/t-o-p-logo.sct.h:4
-#, fuzzy
 msgid "Base color"
 msgstr "Alapszín"
 
 #: scripts/t-o-p-logo.sct.h:6
-#, fuzzy
 msgid "Edge only"
 msgstr "Csak szél"
 
 #: scripts/t-o-p-logo.sct.h:7
-#, fuzzy
 msgid "Edge width"
 msgstr "Szél szélessége"
 
 #: scripts/t-o-p-logo.sct.h:10
-#, fuzzy
 msgid "Hit rate"
 msgstr "Találati arány"
 
 #: scripts/t-o-p-logo.sct.h:12
 msgid "_Particle Trace..."
-msgstr ""
+msgstr "Részecsken_yom..."
 
 #: scripts/text-circle.sct.h:2
 msgid "Antialias"
 msgstr "Élsimítás"
 
 #: scripts/text-circle.sct.h:3
-#, fuzzy
 msgid "Fill angle"
 msgstr "Kitöltési szög"
 
@@ -2410,12 +2169,10 @@ msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
 #: scripts/text-circle.sct.h:10
-#, fuzzy
 msgid "Text Circle..."
-msgstr "Kör"
+msgstr "Szövegkör..."
 
 #: scripts/textured-logo.sct.h:5
-#, fuzzy
 msgid "Ending blend"
 msgstr "Színátmenet befejezése"
 
@@ -2424,7 +2181,6 @@ msgid "Hexagons"
 msgstr "Hatszögek"
 
 #: scripts/textured-logo.sct.h:9
-#, fuzzy
 msgid "Mosaic tile type"
 msgstr "Mozaikcsempe típusa"
 
@@ -2437,36 +2193,30 @@ msgid "Squares"
 msgstr "Négyzetek"
 
 #: scripts/textured-logo.sct.h:13
-#, fuzzy
 msgid "Starting blend"
 msgstr "Színátmenet indítása"
 
 #: scripts/textured-logo.sct.h:15
-#, fuzzy
 msgid "Text pattern"
 msgstr "Szöveg mintája"
 
 #: scripts/textured-logo.sct.h:16
 msgid "_Textured..."
-msgstr ""
+msgstr "Te_xtúrázás..."
 
 #: scripts/tileblur.sct.h:1
-#, fuzzy
 msgid "<Image>/Filters/Blur"
-msgstr "<Image>/Szűrők/Elmosás/_Tileable Blur..."
+msgstr ""
 
 #: scripts/tileblur.sct.h:2
-#, fuzzy
 msgid "Blur horizontally"
 msgstr "Vízszintes elmosás"
 
 #: scripts/tileblur.sct.h:3
-#, fuzzy
 msgid "Blur type"
 msgstr "Elmosás típusa"
 
 #: scripts/tileblur.sct.h:4
-#, fuzzy
 msgid "Blur vertically"
 msgstr "Függőleges elmosás"
 
@@ -2479,9 +2229,8 @@ msgid "RLE"
 msgstr "RLE"
 
 #: scripts/tileblur.sct.h:8
-#, fuzzy
 msgid "_Tileable Blur..."
-msgstr "<Image>/Szűrők/Elmosás/_Tileable Blur..."
+msgstr "_Csempézhető elmosás..."
 
 #: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
@@ -2495,30 +2244,27 @@ msgstr "Szövegszín"
 
 #: scripts/title-header.sct.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Webes fejléc..."
 
 #: scripts/truchet.sct.h:4
-#, fuzzy
 msgid "Foreground color"
 msgstr "Előtérszín"
 
 #: scripts/truchet.sct.h:7
 msgid "T_ruchet..."
-msgstr ""
+msgstr "Tr_uchet..."
 
 #: scripts/unsharp-mask.sct.h:2
-#, fuzzy
 msgid "Mask opacity"
 msgstr "Maszk átlátszatlansága"
 
 #: scripts/unsharp-mask.sct.h:3
-#, fuzzy
 msgid "Mask size"
 msgstr "Maszk mérete"
 
 #: scripts/unsharp-mask.sct.h:4
 msgid "_Unsharp Mask..."
-msgstr ""
+msgstr "Masz_k életlenítése..."
 
 #: scripts/waves-anim.sct.h:2
 msgid "Amplitude"
@@ -2534,553 +2280,106 @@ msgstr "Hullámhossz"
 
 #: scripts/waves-anim.sct.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "_Hullámok..."
 
 #: scripts/weave.sct.h:2
-#, fuzzy
 msgid "Ribbon spacing"
 msgstr "Szalagok közti hely"
 
 #: scripts/weave.sct.h:3
-#, fuzzy
 msgid "Ribbon width"
 msgstr "Szalagok szélessége"
 
 #: scripts/weave.sct.h:4
-#, fuzzy
 msgid "Shadow darkness"
 msgstr "Árnyék sötétsége"
 
 #: scripts/weave.sct.h:5
-#, fuzzy
 msgid "Shadow depth"
 msgstr "Árnyék mélysége"
 
 #: scripts/weave.sct.h:6
-#, fuzzy
 msgid "Thread density"
 msgstr "Szálsűrűség"
 
 #: scripts/weave.sct.h:7
-#, fuzzy
 msgid "Thread intensity"
 msgstr "Szálintenzitás"
 
 #: scripts/weave.sct.h:8
-#, fuzzy
 msgid "Thread length"
 msgstr "Szálhosszúság"
 
 #: scripts/weave.sct.h:9
 msgid "_Weave..."
-msgstr ""
+msgstr "Szö_vés..."
 
 #: scripts/web-browser.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Help/The GIMP Online"
-msgstr "<Toolbox>/Súgó/A GIMP a weben/_Fő webhely"
+msgstr "<Toolbox>/Súgó/A GIMP a weben"
 
 #: scripts/web-browser.sct.h:2
 msgid "Plug-in _Registry"
-msgstr ""
+msgstr "_Bővítményjegyzék"
 
 #: scripts/web-browser.sct.h:3
 msgid "_Developer Web Site"
-msgstr ""
+msgstr "Fe_jlesztői webhely"
 
 #: scripts/web-browser.sct.h:4
 msgid "_Main Web Site"
-msgstr ""
+msgstr "_Fő webhely"
 
 #: scripts/xach-effect.sct.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
 msgstr "Vetett árnyék X-eltolása"
 
 #: scripts/xach-effect.sct.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
 msgstr "Vetett árnyék Y-eltolása"
 
 #: scripts/xach-effect.sct.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
 msgstr "Vetett árnyék elmosásának sugara"
 
 #: scripts/xach-effect.sct.h:5
-#, fuzzy
 msgid "Drop shadow color"
 msgstr "Vetett árnyék színe"
 
 #: scripts/xach-effect.sct.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
 msgstr "Vetett árnyék átlátszatlansága"
 
 #: scripts/xach-effect.sct.h:7
-#, fuzzy
 msgid "Highlight X offset"
 msgstr "Kiemelés X-eltolása"
 
 #: scripts/xach-effect.sct.h:8
-#, fuzzy
 msgid "Highlight Y offset"
 msgstr "Kiemelés Y-eltolása"
 
 #: scripts/xach-effect.sct.h:10
-#, fuzzy
 msgid "Highlight opacity"
 msgstr "Kiemelés átlátszatlansága"
 
 #: scripts/xach-effect.sct.h:12
 msgid "_Xach-Effect..."
-msgstr ""
+msgstr "_Xach-effektus..."
 
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy"
-#~ msgstr "<Image>/Szerkesztés/_Látható másolása"
+#~ msgid "Script-fu Pattern Selection"
+#~ msgstr "Tiny-Fu mintaválasztó"
 
-#~ msgid "Text Color"
-#~ msgstr "Szövegszín"
+#~ msgid "Tiny-Fu _Console"
+#~ msgstr "Tiny-Fu-_konzol"
 
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Betűméret (képpont)"
+#~ msgid "_Start Server..."
+#~ msgstr "Kiszolgáló _indítása..."
 
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/_Betűkészlet-jegyzék..."
+#~ msgid "_Refresh Scripts"
+#~ msgstr "Parancsfájlok _frissítése"
 
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_3D keret..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_3D keret..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/3_D Truchet..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Script-Fu/Dekor/Le_sarkítás..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Script-Fu/Dekor/Kere_t hozzáadása..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Idegen ragyogás/_Vízszintes "
-#~ "elválasztó..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Idegen ragyogás/_Golyó..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Idegen ragyogás/G_omb..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Idegen r_agyogás..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Idegen r_agyogás..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Idegen neon..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Idegen neon..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/_ASCII-ből képréteg..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Egyszerű I..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Egyszerű I..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/E_gyszerű II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/E_gyszerű II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Lesarkított minta/_Golyó..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Lesarkított minta/G_omb..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Lesarkított minta/_Fejléc..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Lesarkított minta/_Vízszintes "
-#~ "elválasztó..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Színátmenetes..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Színátmenetes..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Tehén..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Tehén..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Script-Fu/Animáció/_Beégetés..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/_Kamuflázs..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Vésett..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/K_réta..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/K_réta..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Morzso_lás..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Morzso_lás..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Script-Fu/Sablon/_Krómozás..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Kró_m..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Kró_m..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Script-Fu/Megjelenítés/Ára_mkör..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Script-Fu/Alkímia/_Szövetszerűvé tétel..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Script-Fu/Dekor/_Kávéfolt..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Képregény..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Képregény..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Hűvös fém..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Hűvös fém..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Kristály..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "<Image>/Script-Fu/Árnyék/_Vetett árnyék..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Script-Fu/Kijelölés/Körvonal el_halványítása..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/_Lapos térkép..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Fagyos..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Fagyos..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Script-Fu/Dekor/_Elmosott szélek..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Classic.Gimp.Org/_Kis fejléc..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Classic.Gimp.Org/_Algomb-címke..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Classic.Gimp.Org/A_l-algomb-"
-#~ "címke..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Classic.Gimp.Org/Ál_talános "
-#~ "címke..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Weblap-témák/Classic.Gimp.Org/_Gombcímke..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Fé_nyes..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Fé_nyes..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/I_zzó forró..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/I_zzó forró..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/3_D színátmenet..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/3_D színátmenet..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr ""
-#~ "<Toolbox>/Kiterj./Script-Fu/Segédeszközök/Testreszabott _színátmenet..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Imigre-26..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
-#~ msgstr "<Image>/Script-Fu/Megjelenítés/_Láva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Script-Fu/Megjelenítés/_Vonalak..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Ecsetkészítés/Elli_ptikus, elmosott..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Ecsetkészítés/_Téglalap..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Újságszöveg..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Script-Fu/Dekor/_Régi fénykép..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Script-Fu/Árnyék/_Perspektivikus..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Script-Fu/Alkímia/_Predator..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Gombok/_Lekerekített gomb..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/Térkép _megjelenítése..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Script-Fu/Animáció/_Fodrozás..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Script-Fu/Kijelölés/_Ecsetté..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Script-Fu/Kijelölés/_Mintává..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Fejlett króm..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Száguldó szöveg..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Script-Fu/Animáció/Fo_rgó földgömb..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Script-Fu/Megjelenítés/_SpiroGIMP..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/_Csillagkitörés..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/_Csillagkitörés..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Starsca_pe..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Starsca_pe..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/Örvény_csempe..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/Ö_rvénylő..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Részecsken_yom..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Részecsken_yom..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Szövegkör..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Image>/Script-Fu/Alfából logót/Te_xtúrázás..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Te_xtúrázás..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Webes fejléc..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Minták/Tr_uchet..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Script-Fu/Alkímia/Masz_k életlenítése..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Script-Fu/Animáció/_Hullámok..."
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-#~ msgstr "<Toolbox>/Súgó/A GIMP a weben/_Bővítményjegyzék"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-#~ msgstr "<Toolbox>/Súgó/A GIMP a weben/Fe_jlesztői webhely"
-
-#~ msgid "Re-read all available scripts"
-#~ msgstr "Az összes elérhető szkript újraolvasása"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-ADJUSTMENT _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-ADJUSTMENT _"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-COLOR      _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-COLOR      _"
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Viszonylagos sugár"
-
-#, fuzzy
-#~ msgid "_About"
-#~ msgstr "Névjegy"
+#~ msgid "Procedure Browser"
+#~ msgstr "Eljárásböngésző"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Keresés _név alapján"
@@ -3100,98 +2399,41 @@ msgstr ""
 #~ msgid "Searching - please wait"
 #~ msgstr "Keresés - kérem várjon"
 
+#~ msgid "1 Procedure"
+#~ msgstr "1 eljárás"
+
+#~ msgid "%d Procedures"
+#~ msgstr "%d eljárás"
+
 #~ msgid "No matches"
 #~ msgstr "Nincs találat"
 
-#, fuzzy
 #~ msgid "Parameters"
-#~ msgstr "Átmérő"
+#~ msgstr "Paraméterek"
 
-#~ msgid "Transparent Background"
-#~ msgstr "Átlátszó háttér"
+#~ msgid "Return Values"
+#~ msgstr "Visszatérési értékek"
 
-#~ msgid "DB Browser"
-#~ msgstr "Adatbázis-böngésző"
+#~ msgid "Additional Information"
+#~ msgstr "További információ"
 
-#~ msgid "Name:"
-#~ msgstr "Név:"
+#~ msgid "Internal GIMP procedure"
+#~ msgstr "Belső GIMP-eljárás"
 
-#~ msgid "Blurb:"
-#~ msgstr "Ismertető:"
+#~ msgid "GIMP Plug-In"
+#~ msgstr "GIMP-bővítmény"
 
-#~ msgid "In:"
-#~ msgstr "Be:"
+#~ msgid "GIMP Extension"
+#~ msgstr "GIMP-kiegészítő"
 
-#~ msgid "Out:"
-#~ msgstr "Ki:"
+#~ msgid "Temporary Procedure"
+#~ msgstr "Ideiglenes eljárás"
 
-#~ msgid "Help:"
-#~ msgstr "Súgó:"
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "Beégetés: összesen két rétegre van szükség."
 
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
-#~ "                                   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
-#~ "                                 "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                  "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                                 "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "                              "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
-#~ msgstr ""
-#~ "Beégetésszerű effektus egy előtér-rétegre (szöveg) és egy háttér-rétegre; "
-#~ "2.1-es verzió"
+#~ msgid "Name"
+#~ msgstr "Név"
 
 #~ msgid ""
 #~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
@@ -3200,59 +2442,5 @@ msgstr ""
 #~ "Spirográfok, epitrochoidok és Lissajous-görbék rajzolása. További "
 #~ "információ: http://netword.com/*spyrogimp"
 
-#~ msgid ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid "Script-Fu _Console"
-#~ msgstr "Script-Fu konzol"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Script-Fu"
-#~ msgstr "<Toolbox>/Kiterj./Script-Fu/Logók/Ne_on..."
-
-#~ msgid "Burn-In: Need two layers in total!"
-#~ msgstr "Beégetés: összesen két rétegre van szükség."
-
-#~ msgid "<Image>/Script-Fu/Render/_Grid..."
-#~ msgstr "<Image>/Script-Fu/Megjelenítés/_Rács..."
-
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "\t\t\t      "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "\t\t\t      "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t "
-#~ msgstr ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t "
-
-#~ msgid "Unable to open a stream on the SIOD output pipe"
-#~ msgstr "A folyam megnyitása a SIOD kimeneti csővezetéken sikertelen"
-
-#, fuzzy
-#~ msgid "Blend gradient (sext)"
-#~ msgstr "Szöveg-színátmenet"
+#~ msgid "Copy _Visible"
+#~ msgstr "_Látható másolása"

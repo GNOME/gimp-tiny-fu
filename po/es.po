@@ -1,48 +1,50 @@
-# Spanish translation for gimp-script-fu.
+# translation of es.po to 
+# translation of es.po to
+# traducción de es.po al Spanish
+# Spanish translation for gimp-tiny-fu.
 # Copyright © 1998-2000,2003 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gimp package.
 # Oscar Cebellán Ramos <cebaman@bigfoot.com>
 # Pablo G. del Campo <pablodc@bigfoot.com>, 2003, 2004.
+# Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu.HEAD\n"
+"Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-22 23:22-0500\n"
-"PO-Revision-Date: 2004-01-27 16:03-0300\n"
-"Last-Translator: Pablo G. del Campo <pablodc@bigfoot.com>\n"
-"Language-Team: Spanish <traductores@es.gnome.org>\n"
+"POT-Creation-Date: 2004-12-20 11:37-0500\n"
+"PO-Revision-Date: 2004-11-22 23:49+0100\n"
+"Last-Translator: \n"
+"Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "\n"
-"X-Generator: KBabel 1.3\n"
+"X-Generator: KBabel 1.3.1\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: tiny-fu/tiny-fu.c:122
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
-msgstr "<Toolbox>/Exts/Script-Fu/_Consola de Script-Fu"
+msgstr "<Toolbox>/Exts/Tiny-Fu/Botones"
 
 #: tiny-fu/tiny-fu.c:148
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
-msgstr "<Toolbox>/Exts/Script-Fu/Iniciar el _servidor..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Patrones/"
 
 #: tiny-fu/tiny-fu.c:275
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
-msgstr "<Toolbox>/Exts/Script-Fu/_Refrescar los guiones"
+msgstr "<Toolbox>/Exts/Tiny-Fu/Misc"
 
 #: tiny-fu/tiny-fu-console.c:142 tiny-fu/tiny-fu-text-console.c:68
-#, fuzzy
 msgid "Tiny-Fu console mode allows only interactive invocation"
-msgstr "El modo de consola de Script-Fu sólo permite invocación interactiva"
+msgstr "El modo de consola de Tiny-Fu sólo permite invocación interactiva"
 
 #: tiny-fu/tiny-fu-console.c:171
-#, fuzzy
 msgid "Tiny-Fu Console"
-msgstr "Consola Script-Fu"
+msgstr "Consola Tiny-Fu"
 
 #: tiny-fu/tiny-fu-console.c:176
 #, fuzzy
@@ -70,7 +72,7 @@ msgstr ""
 #: tiny-fu/tiny-fu-console.c:241
 #, fuzzy
 msgid "Tiny-Fu Console - "
-msgstr "Consola Script-Fu"
+msgstr "Consola Tiny-Fu"
 
 #: tiny-fu/tiny-fu-console.c:242
 msgid "Interactive Scheme Development"
@@ -81,20 +83,20 @@ msgid "Current Command"
 msgstr "Comando actual"
 
 #: tiny-fu/tiny-fu-console.c:284
+#, fuzzy
 msgid "Browse..."
-msgstr "Ojear..."
+msgstr "_Examinar..."
 
 #: tiny-fu/tiny-fu-console.c:340
 msgid "Save TinyScheme Output"
 msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:654
-#, fuzzy
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr ""
-"El modo de evaluación de Script-Fu sólo permite invocación no interactiva"
+"El modo de evaluación de Tiny-Fu sólo permite invocación no interactiva"
 
-#: tiny-fu/tiny-fu-scripts.c:626
+#: tiny-fu/tiny-fu-scripts.c:634
 #, fuzzy, c-format
 msgid ""
 "Error while executing\n"
@@ -107,9 +109,8 @@ msgstr ""
 "%s"
 
 #: tiny-fu/tiny-fu-server.c:642
-#, fuzzy
 msgid "Tiny-Fu Server Options"
-msgstr "Opciones de servidor de Script-Fu"
+msgstr "Opciones de servidor de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-server.c:670
 msgid "Server Port:"
@@ -117,32 +118,31 @@ msgstr "Puerto del servidor:"
 
 #: tiny-fu/tiny-fu-server.c:676
 msgid "Server Logfile:"
-msgstr "Archivo de bitácora del servidor: "
+msgstr "Archivo de registro del servidor: "
 
 #: tiny-fu/tiny-fu-interface.c:178
 msgid "Tiny-Fu cannot process two scripts at the same time."
-msgstr ""
+msgstr "Tiny-Fu no puede procesar dos scripts a la vez."
 
 #: tiny-fu/tiny-fu-interface.c:180
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr ""
+msgstr "Está ya ejecutando el script «%s»."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
 #: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
-#, fuzzy
 msgid "/Tiny-Fu/"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: tiny-fu/tiny-fu-interface.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "Tiny-Fu: %s"
-msgstr "Script-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #. the script arguments frame
 #: tiny-fu/tiny-fu-interface.c:255
 msgid "Script Arguments"
-msgstr "Argumentos del guión"
+msgstr "Argumentos del script"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
@@ -152,54 +152,46 @@ msgid "%s:"
 msgstr "%s: "
 
 #: tiny-fu/tiny-fu-interface.c:329
-#, fuzzy
 msgid "Tiny-Fu Color Selection"
-msgstr "Selección de color de Script-Fu"
+msgstr "Selección de color de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:432
-#, fuzzy
 msgid "Tiny-Fu File Selection"
-msgstr "Selección de archivos de Script-Fu"
+msgstr "Selección de archivos de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:436
-#, fuzzy
 msgid "Tiny-Fu Folder Selection"
-msgstr "Selección de carpetas de Script-Fu"
+msgstr "Selección de carpetas de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:448
-#, fuzzy
 msgid "Tiny-Fu Font Selection"
-msgstr "Selección de tipografía de Script-Fu"
+msgstr "Selección de tipografía de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:455
-#, fuzzy
 msgid "Tiny-Fu Palette Selection"
-msgstr "Selección de patrón de Script-Fu"
+msgstr "Selección de paleta de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:463
 #, fuzzy
 msgid "Tiny-Fu Pattern Selection"
-msgstr "Selección de patrón de Script-Fu"
+msgstr "Selección de paleta de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:470
-#, fuzzy
 msgid "Tiny-Fu Gradient Selection"
-msgstr "Selección de gradiente de Script-Fu"
+msgstr "Selección de degradado de Tiny-Fu"
 
 #: tiny-fu/tiny-fu-interface.c:478
-#, fuzzy
 msgid "Tiny-Fu Brush Selection"
-msgstr "Selección de brocha de Script-Fu"
+msgstr "Selección de brocha de Tiny-Fu"
 
 #. the script progress frame
 #: tiny-fu/tiny-fu-interface.c:534
-#, fuzzy
 msgid "Script Progress"
-msgstr "Argumentos del guión"
+msgstr "Progreso del script"
 
 #: tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
-msgstr ""
+msgstr "(ninguno)"
 
 #: tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
@@ -220,7 +212,7 @@ msgstr "Tipos de imagen:"
 #: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
 #, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
-msgstr "<Toolbox>/Exts/Script-Fu/_Refrescar los guiones"
+msgstr "<Toolbox>/Exts/Tiny-Fu"
 
 #: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
 #: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
@@ -269,7 +261,6 @@ msgstr "Tipografía"
 #: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
 #: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
 #: scripts/title-header.sct.h:3
-#, fuzzy
 msgid "Font size (pixels)"
 msgstr "Tamaño de la tipografía (píxeles)"
 
@@ -287,9 +278,8 @@ msgid " contact sheets from a total of "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:2
-#, fuzzy
 msgid " for directory "
-msgstr "No se puede abrir la tubería SIOD de salida"
+msgstr ""
 
 #: scripts/contactsheet.sct.h:3
 #, fuzzy
@@ -298,9 +288,8 @@ msgstr "Indexar imagen"
 
 #: scripts/contactsheet.sct.h:4 scripts/asc2img.sct.h:2
 #: scripts/font-map.sct.h:1 scripts/gradient-example.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/Mapa de _tipografías..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Utilidades"
 
 #: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
 #: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
@@ -318,7 +307,6 @@ msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/Mapa de _tipografías..."
 #: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
 #: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
 #: scripts/truchet.sct.h:2
-#, fuzzy
 msgid "Background color"
 msgstr "Color de fondo"
 
@@ -334,7 +322,7 @@ msgstr "Crear sombra"
 #: scripts/contactsheet.sct.h:8
 #, fuzzy
 msgid "Directory"
-msgstr "No se puede abrir la tubería SIOD de salida"
+msgstr "Dirección "
 
 #: scripts/contactsheet.sct.h:9
 msgid "Legend font"
@@ -348,7 +336,7 @@ msgstr "Semilla"
 #: scripts/contactsheet.sct.h:11
 #, fuzzy
 msgid "Sheet size"
-msgstr "Semilla"
+msgstr "Tamaño del fotograma"
 
 #: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
 #: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
@@ -357,22 +345,20 @@ msgstr "Semilla"
 #: scripts/gimp-headers.sct.h:13 scripts/gimp-labels.sct.h:15
 #: scripts/i26-gunya2.sct.h:8 scripts/news-text.sct.h:11
 #: scripts/pupi-button.sct.h:14 scripts/speed-text.sct.h:9
-#, fuzzy
 msgid "Text color"
-msgstr "Color del texto"
+msgstr "Color de texto"
 
 #: scripts/contactsheet.sct.h:13
 msgid "Title font"
 msgstr ""
 
 #: scripts/contactsheet.sct.h:14
-#, fuzzy
 msgid "Unable to open directory "
-msgstr "No se puede abrir la tubería SIOD de salida"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:1
 msgid "3D _Outline..."
-msgstr ""
+msgstr "_Contorno 3D..."
 
 #: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
 #: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
@@ -385,9 +371,8 @@ msgstr ""
 #: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
 #: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
 #: scripts/textured-logo.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alpha to Logo"
-msgstr "<Image>/Script-Fu/Alfa a logo/N_eón..."
+msgstr "<Image>/Tiny-Fu/Alfa a logo"
 
 #: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
 #: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
@@ -403,39 +388,32 @@ msgstr "<Image>/Script-Fu/Alfa a logo/N_eón..."
 #: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
 #: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
 #: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/N_eón..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Logos"
 
 #: scripts/3d-outline.sct.h:4
-#, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Radio de desenfoque de la aplicación de relieve (capa alfa)"
+msgstr "Radio de desenfoque del  mapa de relieve (capa alfa)"
 
 #: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
-#, fuzzy
 msgid "Default bumpmap settings"
-msgstr "Ajustes predeterminados de la aplicación de relieve"
+msgstr "Ajustes predeterminados del mapa de relieve"
 
 #: scripts/3d-outline.sct.h:8
-#, fuzzy
 msgid "Outline blur radius"
 msgstr "Radio de desenfoque del contorno"
 
 #: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
-#, fuzzy
 msgid "Shadow X offset"
 msgstr "Desplazamiento X de la sombra"
 
 #: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
-#, fuzzy
 msgid "Shadow Y offset"
 msgstr "Desplazamiento Y de la sombra"
 
 #: scripts/3d-outline.sct.h:11
-#, fuzzy
 msgid "Shadow blur radius"
 msgstr "Radio de desenfoque de la sombra"
 
@@ -463,39 +441,33 @@ msgstr "Texto"
 
 #: scripts/3dTruchet.sct.h:1
 msgid "3_D Truchet..."
-msgstr ""
+msgstr "Truchet 3_D..."
 
 #: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
 #: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
 #: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-msgstr "<Toolbox>/Exts/Script-Fu/Patrones/_Terreno..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Patrones/"
 
 #: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-#, fuzzy
 msgid "Block size"
 msgstr "Tamaño de bloque"
 
 #: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
-#, fuzzy
 msgid "End blend"
-msgstr "Mezcla final"
+msgstr "Fundido final"
 
 #: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
-#, fuzzy
 msgid "Number of X tiles"
-msgstr "Número de mosaicos en X"
+msgstr "Número de baldosas en X"
 
 #: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
-#, fuzzy
 msgid "Number of Y tiles"
-msgstr "Número de mosaicos en Y"
+msgstr "Número de baldosas en Y"
 
 #: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
-#, fuzzy
 msgid "Start blend"
-msgstr "Color inicial"
+msgstr "Iniciar fundido [blend]"
 
 #: scripts/3dTruchet.sct.h:9
 msgid "Supersample"
@@ -509,56 +481,47 @@ msgstr "Grosor"
 #: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
 #: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
 #: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Decor"
-msgstr "<Image>/Script-Fu/Decoración/Pe_lícula..."
+msgstr "<Image>/Tiny-Fu/Decoración"
 
 #: scripts/add-bevel.sct.h:2
 msgid "Add B_evel..."
-msgstr ""
+msgstr "Añadir _bisel..."
 
 #: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
-#, fuzzy
 msgid "Keep bump layer"
 msgstr "Mantener la capa de relieve"
 
 #: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
 #: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
 #: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
-#, fuzzy
 msgid "Work on copy"
 msgstr "Trabajar en copia"
 
 #: scripts/addborder.sct.h:2
 msgid "Add _Border..."
-msgstr ""
+msgstr "Añadir _borde..."
 
 #: scripts/addborder.sct.h:3
-#, fuzzy
 msgid "Border X size"
 msgstr "Tamaño X del borde"
 
 #: scripts/addborder.sct.h:4
-#, fuzzy
 msgid "Border Y size"
 msgstr "Tamaño Y del borde"
 
 #: scripts/addborder.sct.h:5
-#, fuzzy
 msgid "Border color"
 msgstr "Color del borde"
 
 #: scripts/addborder.sct.h:6
-#, fuzzy
 msgid "Delta value on color"
 msgstr "Valor delta en el color"
 
 #: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
 #: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-msgstr ""
-"<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Fulgor alienigena/_Flecha..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Temas de Páginas Web/Resplandor alienígena"
 
 #: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
 msgid "Down"
@@ -567,7 +530,6 @@ msgstr "Abajo"
 #: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
 #: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
 #: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
-#, fuzzy
 msgid "Flatten image"
 msgstr "Aplanar imagen"
 
@@ -576,9 +538,8 @@ msgstr "Aplanar imagen"
 #: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
 #: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
-#, fuzzy
 msgid "Glow color"
-msgstr "Color del fulgor"
+msgstr "Color del resplandor"
 
 #: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
 msgid "Left"
@@ -598,28 +559,24 @@ msgid "Size"
 msgstr "Tamaño"
 
 #: scripts/alien-glow-arrow.sct.h:10 scripts/beveled-pattern-arrow.sct.h:8
-#, fuzzy
 msgid "Up"
 msgstr "Arriba"
 
 #: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
-#, fuzzy
 msgid "_Arrow..."
-msgstr "Ojear..."
+msgstr "_Flecha..."
 
 #: scripts/alien-glow-bar.sct.h:3
-#, fuzzy
 msgid "Bar height"
 msgstr "Altura de la barra"
 
 #: scripts/alien-glow-bar.sct.h:4
-#, fuzzy
 msgid "Bar length"
 msgstr "Longitud de la barra"
 
 #: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
 msgid "_Hrule..."
-msgstr ""
+msgstr "_Regla horizontal..."
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
@@ -628,41 +585,37 @@ msgstr "Radio"
 
 #: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
 msgid "_Bullet..."
-msgstr ""
+msgstr "_Punto..."
 
 #: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
 msgid "B_utton..."
-msgstr ""
+msgstr "_Botón..."
 
 #: scripts/alien-glow-button.sct.h:8
-#, fuzzy
 msgid "Glow radius"
-msgstr "Radio del fulgor"
+msgstr "Radio del resplandor"
 
 #: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
 msgid "Padding"
-msgstr "Relleno"
+msgstr "Relleno [Padding]"
 
 #: scripts/alien-glow-logo.sct.h:3
 msgid "Alien _Glow..."
-msgstr ""
+msgstr "_Resplandor alienígena…"
 
 #: scripts/alien-glow-logo.sct.h:7
-#, fuzzy
 msgid "Glow size (pixels * 4)"
-msgstr "Tamaño del fulgor (píxeles * 4)"
+msgstr "Tamaño del resplandor (píxeles * 4)"
 
 #: scripts/alien-neon-logo.sct.h:3
 msgid "Alien _Neon..."
-msgstr ""
+msgstr "_Neón alienígena…"
 
 #: scripts/alien-neon-logo.sct.h:5
-#, fuzzy
 msgid "Fade away"
 msgstr "Desvanecerse"
 
 #: scripts/alien-neon-logo.sct.h:9
-#, fuzzy
 msgid "Number of bands"
 msgstr "Número de bandas"
 
@@ -673,30 +626,26 @@ msgstr "Número de bandas"
 # plano, ¿mejor así?
 # //R Vale
 #: scripts/alien-neon-logo.sct.h:11
-#, fuzzy
 msgid "Width of bands"
-msgstr "Anchura de los huecos"
+msgstr "Anchura de las bandas"
 
 #: scripts/alien-neon-logo.sct.h:12
-#, fuzzy
 msgid "Width of gaps"
-msgstr "Anchura de las bandas"
+msgstr "Anchura de los huecos"
 
 #: scripts/asc2img.sct.h:1 scripts/hsv-graph.sct.h:1
 #: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Utils"
-msgstr "<Image>/Script-Fu/Selección/A _imagen"
+msgstr "<Image>/Tiny-Fu/Utilidades"
 
 #: scripts/asc2img.sct.h:5
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Buffer amount (% height of text)"
 msgstr "Tamaño del búfer (% altura del texto)"
 
 #: scripts/asc2img.sct.h:6 scripts/select-to-brush.sct.h:3
-#, fuzzy
 msgid "File name"
-msgstr "Archivo"
+msgstr "Nombre de archivo"
 
 #: scripts/asc2img.sct.h:7 scripts/select-to-pattern.sct.h:2
 msgid "Filename"
@@ -704,40 +653,35 @@ msgstr "Archivo"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
 #: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-#, fuzzy
 msgid "Transparent background"
 msgstr "Fondo transparente"
 
 #: scripts/asc2img.sct.h:12
 msgid "_ASCII to Image..."
-msgstr ""
+msgstr "_ASCII a imagen…"
 
 #: scripts/asc2img.sct.h:13
-#, fuzzy
 msgid "_ASCII to Layer..."
-msgstr "<Image>/Script-Fu/Utilidades/_ASCII a capa..."
+msgstr "_ASCII a capa…"
 
 #: scripts/basic1-logo.sct.h:8
 msgid "_Basic I..."
-msgstr ""
+msgstr "_Básico I…"
 
 #: scripts/basic2-logo.sct.h:3
 msgid "B_asic II..."
-msgstr ""
+msgstr "B_ásico II…"
 
 #: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-msgstr "<Toolbox>/Exts/Script-Fu/_Consola de Script-Fu"
+msgstr "<Toolbox>/Exts/Tiny-Fu/Botones"
 
 #: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
 #: scripts/pupi-button.sct.h:2
-#, fuzzy
 msgid "Bevel width"
 msgstr "Anchura del bisel"
 
 #: scripts/beveled-button.sct.h:5
-#, fuzzy
 msgid "Lower-right color"
 msgstr "Color inferior-derecho"
 
@@ -747,12 +691,10 @@ msgid "Pressed"
 msgstr "Pulsado"
 
 #: scripts/beveled-button.sct.h:8
-#, fuzzy
 msgid "Simple _Beveled Button..."
-msgstr "<Toolbox>/Exts/Script-Fu/Botones/Botón simple _biselado..."
+msgstr "Botón simple _biselado..."
 
 #: scripts/beveled-button.sct.h:11
-#, fuzzy
 msgid "Upper-left color"
 msgstr "Color superior-izquierdo"
 
@@ -761,10 +703,8 @@ msgstr "Color superior-izquierdo"
 #: scripts/beveled-pattern-button.sct.h:1
 #: scripts/beveled-pattern-heading.sct.h:1
 #: scripts/beveled-pattern-hrule.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-msgstr ""
-"<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Patrón biselado/_Flecha..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Temas de Páginas Web/Patrón biselado"
 
 #: scripts/beveled-pattern-arrow.sct.h:5
 #: scripts/beveled-pattern-bullet.sct.h:3
@@ -776,13 +716,12 @@ msgid "Pattern"
 msgstr "Patrón"
 
 #: scripts/beveled-pattern-bullet.sct.h:2
-#, fuzzy
 msgid "Diameter"
 msgstr "Diámetro"
 
 #: scripts/beveled-pattern-heading.sct.h:4
 msgid "H_eading..."
-msgstr ""
+msgstr "_Cabecera…"
 
 #: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
 #: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
@@ -798,16 +737,14 @@ msgstr "Anchura"
 #: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
 #: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
 #: scripts/waves-anim.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Animators"
-msgstr "<Image>/Script-Fu/Animación/_Mezclar..."
+msgstr "<Image>/Tiny-Fu/Animadores"
 
 #: scripts/blend-anim.sct.h:2
 msgid "Blend Animation needs at least three source layers"
 msgstr ""
 
 #: scripts/blend-anim.sct.h:3
-#, fuzzy
 msgid "Intermediate frames"
 msgstr "Fotogramas intermedios"
 
@@ -816,26 +753,24 @@ msgid "Looped"
 msgstr "Bucle"
 
 #: scripts/blend-anim.sct.h:5
-#, fuzzy
 msgid "Max. blur radius"
 msgstr "Radio Máx. de desenfoque"
 
 #: scripts/blend-anim.sct.h:6
 msgid "_Blend..."
-msgstr ""
+msgstr "_Fundir..."
 
 #: scripts/blended-logo.sct.h:4
 msgid "Blen_ded..."
-msgstr ""
+msgstr "_Fundido…[Blended]"
 
 #: scripts/blended-logo.sct.h:5
-#, fuzzy
 msgid "Blend mode"
-msgstr "Modo de mezcla"
+msgstr "Modo de fundido"
 
 #: scripts/blended-logo.sct.h:6
 msgid "Custom Gradient"
-msgstr "Gradiente personalizado"
+msgstr "Degradado personalizado"
 
 #: scripts/blended-logo.sct.h:8
 msgid "FG-BG-HSV"
@@ -853,14 +788,13 @@ msgstr "Frente-transparente"
 #: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
 #: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
 msgid "Gradient"
-msgstr "Gradiente"
+msgstr "Degradado"
 
 #: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
 #: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
 #: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
-#, fuzzy
 msgid "Gradient reverse"
-msgstr "Gradiente invertido"
+msgstr "Degradado invertido"
 
 #: scripts/blended-logo.sct.h:15
 msgid "Offset (pixels)"
@@ -872,7 +806,7 @@ msgstr "Color de fondo"
 
 #: scripts/bovinated-logo.sct.h:5
 msgid "Bo_vination..."
-msgstr ""
+msgstr "Bo_vinación…"
 
 # //R ¿Manchas o lunares?
 #: scripts/bovinated-logo.sct.h:8
@@ -884,18 +818,16 @@ msgid "Spots density Y"
 msgstr "Densidad Y de manchas"
 
 #: scripts/burn-in-anim.sct.h:2
-#, fuzzy
 msgid "Add glowing"
 msgstr "Añadir resplandor"
 
 #: scripts/burn-in-anim.sct.h:3
-#, fuzzy
 msgid "After glow"
 msgstr "Después de resplandecer"
 
 #: scripts/burn-in-anim.sct.h:4
 msgid "B_urn-In..."
-msgstr ""
+msgstr "_Quemado…"
 
 #: scripts/burn-in-anim.sct.h:5
 msgid ""
@@ -904,7 +836,6 @@ msgid ""
 msgstr ""
 
 #: scripts/burn-in-anim.sct.h:6
-#, fuzzy
 msgid "Corona width"
 msgstr "Ancho de la corona"
 
@@ -913,7 +844,6 @@ msgid "Fadeout"
 msgstr "Desvanecer"
 
 #: scripts/burn-in-anim.sct.h:8
-#, fuzzy
 msgid "Fadeout width"
 msgstr "Anchura del desvanecimiento"
 
@@ -942,7 +872,6 @@ msgid "Granularity"
 msgstr "Granularidad"
 
 #: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-#, fuzzy
 msgid "Image size"
 msgstr "Tamaño de la imagen"
 
@@ -952,62 +881,55 @@ msgstr "Suave"
 
 #: scripts/camo.sct.h:9
 msgid "_Camouflage..."
-msgstr ""
+msgstr "_Camuflaje…"
 
 #: scripts/carved-logo.sct.h:2
 msgid "Background Image"
 msgstr "Imagen de fondo"
 
 #: scripts/carved-logo.sct.h:3
-#, fuzzy
 msgid "Carve raised text"
 msgstr "Esculpir texto elevado"
 
 #: scripts/carved-logo.sct.h:4
 msgid "Carved..."
-msgstr ""
+msgstr "Esculpido…"
 
 #: scripts/carved-logo.sct.h:7
-#, fuzzy
 msgid "Padding around text"
-msgstr "Espacio alrededor del texto"
+msgstr "Rellenado alrededor del texto [Padding]"
 
 #: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Stencil Ops"
-msgstr "<Image>/Script-Fu/Oper. con plantilla/Esculpirl_a..."
+msgstr "<Image>/Tiny-Fu/Ops. de escultura"
 
 #: scripts/carve-it.sct.h:2
 msgid "C_arve-It..."
-msgstr ""
+msgstr "Esc_ulpir…"
 
 #: scripts/carve-it.sct.h:3
-#, fuzzy
 msgid "Carve white areas"
 msgstr "Esculpir las áreas blancas"
 
 #: scripts/carve-it.sct.h:4
-#, fuzzy
 msgid "Image to carve"
 msgstr "Imagen a esculpir"
 
 #: scripts/chalk.sct.h:4
-#, fuzzy
 msgid "Chalk color"
 msgstr "Color de la tiza"
 
 #: scripts/chalk.sct.h:8
 msgid "_Chalk..."
-msgstr ""
+msgstr "_Tiza…"
 
 #: scripts/chip-away.sct.h:3
-#, fuzzy
 msgid "Blur amount"
-msgstr "Tasa de desenfoque"
+msgstr "Cantidad de desenfoque [blur]"
 
 #: scripts/chip-away.sct.h:4
 msgid "Chip Awa_y..."
-msgstr ""
+msgstr "_Desmenuzar…"
 
 # //R He leído que "desconchado" es la traducción literal
 # //O Sique sin convencerme desconchado, como mucho desmenuzado, porque es lo
@@ -1015,17 +937,14 @@ msgstr ""
 # en la batidora-picadora y... (yo siempre pensando en comida...) X-DD
 # //R Como quieeeerasss :)
 #: scripts/chip-away.sct.h:5
-#, fuzzy
 msgid "Chip amount"
-msgstr "Grado de desmenuzado"
+msgstr "Cantidad de desmenuzado [Chip]"
 
 #: scripts/chip-away.sct.h:6
-#, fuzzy
 msgid "Drop shadow"
 msgstr "Sombra base"
 
 #: scripts/chip-away.sct.h:7
-#, fuzzy
 msgid "Fill BG with pattern"
 msgstr "Rellenar fondo con patrón"
 
@@ -1034,55 +953,46 @@ msgid "Invert"
 msgstr "Invertir"
 
 #: scripts/chip-away.sct.h:11
-#, fuzzy
 msgid "Keep background"
 msgstr "Mantener fondo"
 
 #: scripts/chrome-it.sct.h:2
 msgid "C_hrome-It..."
-msgstr ""
+msgstr "_Cromar..."
 
 #: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
-#, fuzzy
 msgid "Chrome balance"
-msgstr "Color del cromado"
+msgstr "Balance del cromado"
 
 #: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
 #: scripts/sota-chrome-logo.sct.h:3
-#, fuzzy
 msgid "Chrome factor"
 msgstr "Factor de cromado"
 
 #: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
-#, fuzzy
 msgid "Chrome lightness"
 msgstr "Luminosidad del cromado"
 
 #: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
-#, fuzzy
 msgid "Chrome saturation"
 msgstr "Saturación del cromado"
 
 #: scripts/chrome-it.sct.h:7
-#, fuzzy
 msgid "Chrome white areas"
 msgstr "Cromar las áreas blancas"
 
 #: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
 #: scripts/sota-chrome-logo.sct.h:6
-#, fuzzy
 msgid "Environment map"
 msgstr "Mapa de entorno"
 
 #: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-#, fuzzy
 msgid "Highlight balance"
-msgstr "Color del brillo"
+msgstr "Balance del brillo"
 
 #: scripts/chrome-logo.sct.h:5
-#, fuzzy
 msgid "C_hrome..."
-msgstr "Ojear..."
+msgstr "_Cromar..."
 
 #: scripts/chrome-logo.sct.h:8
 msgid "Offsets (pixels * 2)"
@@ -1090,47 +1000,39 @@ msgstr "Desplazamiento (píxeles * 2)"
 
 #: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
 #: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Render"
-msgstr "<Image>/Script-Fu/Render/_Circuito..."
+msgstr "<Image>/Tiny-Fu/Render"
 
 #: scripts/circuit.sct.h:2
-#, fuzzy
 msgid "Circuit seed"
 msgstr "Semilla del circuito"
 
 #: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
 #: scripts/xach-effect.sct.h:11
-#, fuzzy
 msgid "Keep selection"
 msgstr "Mantener la selección"
 
 #: scripts/circuit.sct.h:4
-#, fuzzy
 msgid "No background (only for separate layer)"
 msgstr "Sin fondo (sólo para capa separada)"
 
 # //O Bueno, siguiendo tus maravillosos consejos...
 #: scripts/circuit.sct.h:5
-#, fuzzy
 msgid "Oilify mask size"
 msgstr "Tamaño de la máscara del óleo"
 
 #: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
-#, fuzzy
 msgid "Separate layer"
 msgstr "Capa separada"
 
 #: scripts/circuit.sct.h:7
-#, fuzzy
 msgid "_Circuit..."
-msgstr "Semilla del circuito"
+msgstr "_Circuito..."
 
 #: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
 #: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr "<Image>/Script-Fu/Alquimia/Tre_nzado..."
+msgstr "<Image>/Tiny-Fu/Alquimia"
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
 msgid "Azimuth"
@@ -1154,16 +1056,15 @@ msgstr "Elevación"
 
 #: scripts/clothify.sct.h:7
 msgid "_Clothify..."
-msgstr ""
+msgstr "_Entelar…"
 
 #: scripts/coffee.sct.h:2
-#, fuzzy
 msgid ""
 "Darken only\n"
 "(Better, but only for images with alot of white)"
 msgstr ""
 "Sólo oscurecer\n"
-"(Mejor, pero sólo para imágenes con mucho Blanco"
+"(Mejor, pero sólo para imágenes con mucho blanco)"
 
 #: scripts/coffee.sct.h:3
 msgid "Stains"
@@ -1171,99 +1072,78 @@ msgstr "Manchas"
 
 #: scripts/coffee.sct.h:4
 msgid "_Coffee Stain..."
-msgstr ""
+msgstr "Manchas de _café…"
 
 #: scripts/comic-logo.sct.h:4
 msgid "Comic Boo_k..."
-msgstr ""
+msgstr "_Libro de cómic…"
 
 #: scripts/comic-logo.sct.h:9
-#, fuzzy
 msgid "Outline color"
 msgstr "Color del contorno"
 
 #: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-#, fuzzy
 msgid "Outline size"
 msgstr "Tamaño del contorno"
 
 #: scripts/coolmetal-logo.sct.h:4
 msgid "Cool _Metal..."
-msgstr ""
+msgstr "_Metal frío..."
 
 #: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels)"
 msgstr "Tamaño del efecto (píxeles)"
 
-#: scripts/copy-visible.sct.h:1
-msgid "Copy _Visible"
-msgstr ""
-
 #: scripts/crystal-logo.sct.h:2
-#, fuzzy
 msgid "Background image"
 msgstr "Imagen de fondo"
 
 #: scripts/crystal-logo.sct.h:4
 msgid "Crystal..."
-msgstr ""
+msgstr "Cristal..."
 
 #: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
 #: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
 #: scripts/select-to-pattern.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Selection"
-msgstr "<Image>/Script-Fu/Selección/A _imagen"
+msgstr "<Image>/Tiny-Fu/Selección"
 
 #: scripts/distress-selection.sct.h:2
-#, fuzzy
 msgid "Granularity (1 is low)"
-msgstr "Granularidad (1 es Menor)"
+msgstr "Granularidad (1 es menor)"
 
 #: scripts/distress-selection.sct.h:4
-#, fuzzy
 msgid "Smooth horizontally"
-msgstr "Suavizar horizontalmente"
+msgstr "Suavizado horizontal"
 
 #: scripts/distress-selection.sct.h:5
-#, fuzzy
 msgid "Smooth vertically"
-msgstr "Suavizar verticalmente"
+msgstr "Suavizado vertical"
 
 #: scripts/distress-selection.sct.h:6
 msgid "Spread"
 msgstr "Difusión"
 
 #: scripts/distress-selection.sct.h:7
-#, fuzzy
 msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Umbral (Mayor 1<-->255 Menor)"
+msgstr "Umbral (mayor 1<-->255 menor)"
 
 #: scripts/distress-selection.sct.h:8
-#, fuzzy
 msgid "_Distress Selection..."
-msgstr "<Image>/Script-Fu/Selección/_Distorsionar selección..."
+msgstr "_Distorsionar selección..."
 
-# /O: Otra vez!!!, palabras raras, una traducción libre intentando
-# describir el efecto de forma corta, alguna solución mejor... seguro!!!
-# //R Podemos dejar esto hasta que se nos ocurra algo mejor
-# //R Parece que es el nombre del autor
 #: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
 #: scripts/xach-effect.sct.h:1
-#, fuzzy
 msgid "<Image>/Tiny-Fu/Shadow"
-msgstr "<Image>/Script-Fu/Sombra/Efecto de _Xach..."
+msgstr "<Image>/Tiny-Fu/Sombra"
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
-#, fuzzy
 msgid "Allow resizing"
-msgstr "Permitir cambio de tamaño"
+msgstr "Permitir redimensionado"
 
 #: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
 #: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
 #: scripts/swirltile.sct.h:4
-#, fuzzy
 msgid "Blur radius"
 msgstr "Radio de desenfoque"
 
@@ -1280,9 +1160,8 @@ msgid "Opacity"
 msgstr "Opacidad"
 
 #: scripts/drop-shadow.sct.h:8
-#, fuzzy
 msgid "_Drop-Shadow..."
-msgstr "Sombra base"
+msgstr "_Sombra base"
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
@@ -1294,7 +1173,6 @@ msgstr "Borrar"
 
 # //R COMPROBAR
 #: scripts/erase-rows.sct.h:4
-#, fuzzy
 msgid "Erase/fill"
 msgstr "Borrar/Rellenar"
 
@@ -1303,7 +1181,6 @@ msgid "Even"
 msgstr "Pares"
 
 #: scripts/erase-rows.sct.h:6
-#, fuzzy
 msgid "Even/odd"
 msgstr "Pares/impares"
 
@@ -1320,67 +1197,57 @@ msgid "Rows"
 msgstr "Filas"
 
 #: scripts/erase-rows.sct.h:10
-#, fuzzy
 msgid "Rows/cols"
 msgstr "Filas/columnas"
 
 #: scripts/erase-rows.sct.h:11
-#, fuzzy
 msgid "_Erase every other Row..."
-msgstr "<Image>/Script-Fu/Alquimia/_Borrar las otras Filas..."
+msgstr "_Borrar las otras Filas..."
 
 #: scripts/fade-outline.sct.h:2
-#, fuzzy
 msgid "Apply generated layermask"
 msgstr "Aplicar la máscara de capa generada"
 
 #: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
 #: scripts/old-photo.sct.h:2
-#, fuzzy
 msgid "Border size"
 msgstr "Tamaño del borde"
 
 #: scripts/fade-outline.sct.h:4
-#, fuzzy
 msgid "Clear unselected maskarea"
 msgstr "Borrar el área de máscara no seleccionada"
 
 #: scripts/fade-outline.sct.h:6
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Fade from %"
 msgstr "Desvanecer desde %"
 
 #: scripts/fade-outline.sct.h:8
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Fade to   %"
 msgstr "Desvanecer hasta %"
 
 #: scripts/fade-outline.sct.h:9
-#, fuzzy
 msgid "Use growing selection"
 msgstr "Usar selección creciente"
 
 #: scripts/fade-outline.sct.h:10
 msgid "_Fade Outline..."
-msgstr ""
+msgstr "_Contorno de desvanecimiento..."
 
 #: scripts/flatland.sct.h:2 scripts/land.sct.h:2
-#, fuzzy
 msgid "Detail level"
 msgstr "Nivel de detalle"
 
 #: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-#, fuzzy
 msgid "Image height"
 msgstr "Altura de imagen"
 
 #: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-#, fuzzy
 msgid "Image width"
 msgstr "Anchura de imagen"
 
 #: scripts/flatland.sct.h:5 scripts/land.sct.h:7
-#, fuzzy
 msgid "Random seed"
 msgstr "Semilla aleatoria"
 
@@ -1394,25 +1261,21 @@ msgstr "Escala en Y"
 
 #: scripts/flatland.sct.h:8
 msgid "_Flatland..."
-msgstr ""
+msgstr "_Aplanar... [Flatland]"
 
 #: scripts/font-map.sct.h:2
-#, fuzzy
 msgid "Active colors"
 msgstr "Colores activos"
 
 #: scripts/font-map.sct.h:3
-#, fuzzy
 msgid "Black on white"
 msgstr "Negro sobre blanco"
 
 #: scripts/font-map.sct.h:4
-#, fuzzy
 msgid "Font _size (pixels)"
 msgstr "_Tamaño de la tipografía (píxeles)"
 
 #: scripts/font-map.sct.h:5
-#, fuzzy
 msgid "Use font _name as text"
 msgstr "Usar el _nombre de la tipografía como texto"
 
@@ -1421,7 +1284,6 @@ msgid "_Border (pixels)"
 msgstr "_Borde (píxeles)"
 
 #: scripts/font-map.sct.h:7
-#, fuzzy
 msgid "_Color scheme"
 msgstr "Esquema de _colores"
 
@@ -1431,7 +1293,7 @@ msgstr "_Filtro (exp. reg.)"
 
 #: scripts/font-map.sct.h:9
 msgid "_Font Map..."
-msgstr ""
+msgstr "_Tipografía del mapa..."
 
 #: scripts/font-map.sct.h:10
 msgid "_Labels"
@@ -1442,139 +1304,119 @@ msgid "_Text"
 msgstr "_Texto"
 
 #: scripts/frosty-logo.sct.h:8
-#, fuzzy
 msgid "_Frosty..."
-msgstr "Ojear..."
+msgstr "_Congelado..."
 
 #: scripts/fuzzyborder.sct.h:2
-#, fuzzy
 msgid "Add shadow"
 msgstr "Añadir sombra"
 
 #: scripts/fuzzyborder.sct.h:3
-#, fuzzy
 msgid "Blur border"
 msgstr "Borde de desenfoque"
 
 #: scripts/fuzzyborder.sct.h:7
 msgid "Granularity (1 is Low)"
-msgstr "Granularidad (1 es Menor)"
+msgstr "Granularidad (1 es menor)"
 
 #: scripts/fuzzyborder.sct.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
 msgstr "Peso de la sombra (%)"
 
 #: scripts/fuzzyborder.sct.h:11
 msgid "_Fuzzy Border..."
-msgstr ""
+msgstr "_Difuminar borde..."
 
 #: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-msgstr ""
-"<Toolbox>/Exts/Script-Fu/Temas de páginas Web/Gimp.Org/Enca_bezado grande..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Temas de páginas Web/Classic.Gimp.Org"
 
 #: scripts/gimp-headers.sct.h:2
-#, fuzzy
 msgid "Autocrop"
-msgstr "Ajustar automáticamente"
+msgstr "Recortar automáticamente"
 
 #: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Dark color"
 msgstr "Color oscuro"
 
 #: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-#, fuzzy
 msgid "Highlight color"
 msgstr "Color del brillo"
 
 #: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
-#, fuzzy
 msgid "Index image"
 msgstr "Indexar imagen"
 
 #: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
-#, fuzzy
 msgid "Number of colors"
 msgstr "Número de colores"
 
 #: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-#, fuzzy
 msgid "Remove background"
 msgstr "Quitar fondo"
 
 #: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
-#, fuzzy
 msgid "Select-by-color threshold"
 msgstr "Umbral de selección por color"
 
 #: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-#, fuzzy
 msgid "Shadow color"
 msgstr "Color de la sombra"
 
 #: scripts/gimp-headers.sct.h:14
 msgid "_Big Header..."
-msgstr ""
+msgstr "Cabecera _grande..."
 
 #: scripts/gimp-headers.sct.h:15
 msgid "_Small Header..."
-msgstr ""
+msgstr "Cabecera _pequeña..."
 
 #: scripts/gimp-labels.sct.h:13
 msgid "T_ube Sub-Button Label..."
-msgstr ""
+msgstr "Etiqueta del _tubo de sub-botón..."
 
 #: scripts/gimp-labels.sct.h:16
 msgid "Tub_e Sub-Sub-Button Label..."
-msgstr ""
+msgstr "Etiqueta del sub-sub-botón..."
 
 #: scripts/gimp-labels.sct.h:17
 msgid "_General Tube Labels..."
-msgstr ""
+msgstr "Etiquetas del tubo _general..."
 
 #: scripts/gimp-labels.sct.h:18
 msgid "_Tube Button Label..."
-msgstr ""
+msgstr "Etiqueta del botón del _tubo"
 
 #: scripts/glossy.sct.h:4
-#, fuzzy
 msgid "Blend gradient (Text)"
-msgstr "Gradiente de mezcla (texto)"
+msgstr "Degradado de fundido (texto)"
 
 #: scripts/glossy.sct.h:5
-#, fuzzy
 msgid "Blend gradient (outline)"
-msgstr "Gradiente de mezcla (contorno)"
+msgstr "Degradado de fundido (contorno)"
 
 #: scripts/glossy.sct.h:6
-#, fuzzy
 msgid "Blend gradient (text)"
-msgstr "Gradiente de mezcla (texto)"
+msgstr "Degradado de fundido (texto)"
 
 #: scripts/glossy.sct.h:10
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "_Bruñido..."
 
 #: scripts/glossy.sct.h:11
-#, fuzzy
 msgid "Outline gradient reverse"
-msgstr "Gradiente de contorno invertido"
+msgstr "Degradado de contorno invertido"
 
 #: scripts/glossy.sct.h:13
-#, fuzzy
 msgid "Pattern (outline)"
 msgstr "Patrón (contorno)"
 
 #: scripts/glossy.sct.h:14
-#, fuzzy
 msgid "Pattern (overlay)"
 msgstr "Patrón (superpuesto)"
 
 #: scripts/glossy.sct.h:15
-#, fuzzy
 msgid "Pattern (text)"
 msgstr "Patrón (texto)"
 
@@ -1583,78 +1425,66 @@ msgid "Shadow"
 msgstr "Sombra"
 
 #: scripts/glossy.sct.h:20
-#, fuzzy
 msgid "Text gradient reverse"
-msgstr "Texto gradiente invertido"
+msgstr "Texto degradado invertido"
 
 #: scripts/glossy.sct.h:21
-#, fuzzy
 msgid "Use pattern for outline instead of gradient"
-msgstr "Usar patrón en lugar de gradiente para el contorno"
+msgstr "Usar patrón en lugar de degradado para el contorno"
 
 #: scripts/glossy.sct.h:22
-#, fuzzy
 msgid "Use pattern for text instead of gradient"
-msgstr "Usar patrón para texto en vez de un gradiente"
+msgstr "Usar patrón para texto en vez de un degradado"
 
 #: scripts/glossy.sct.h:23
-#, fuzzy
 msgid "Use pattern overlay"
 msgstr "Usar superposición de patrón"
 
 #: scripts/glossy.sct.h:24
 #, fuzzy
 msgid "Use tattern for outline instead of gradient"
-msgstr "Usar patrón en lugar de gradiente para el contorno"
+msgstr "Usar patrón en lugar de degradado para el contorno"
 
 #: scripts/glowing-logo.sct.h:4
-#, fuzzy
 msgid "Effect size (pixels * 3)"
 msgstr "Tamaño del efecto (píxeles * 3)"
 
 #: scripts/glowing-logo.sct.h:7
 msgid "Glo_wing Hot..."
-msgstr ""
+msgstr "Calor _resplandeciente..."
 
 #: scripts/gradient-bevel-logo.sct.h:4
-#, fuzzy
 msgid "Bevel height (Sharpness)"
 msgstr "Altura del bisel (afilado)"
 
 #: scripts/gradient-bevel-logo.sct.h:5
-#, fuzzy
 msgid "Bevel height (sharpness)"
 msgstr "Altura del bisel (afilado)"
 
 #: scripts/gradient-bevel-logo.sct.h:7 scripts/t-o-p-logo.sct.h:5
 #: scripts/textured-logo.sct.h:4
-#, fuzzy
 msgid "Border size (pixels)"
 msgstr "Tamaño del borde (píxeles)"
 
 #: scripts/gradient-bevel-logo.sct.h:10
-#, fuzzy
 msgid "Gradient Beve_l..."
-msgstr "Gradiente invertido"
+msgstr "Bisel degradado... "
 
 #: scripts/gradient-example.sct.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "Gradiente personalizado"
+msgstr "_Degradado personalizado"
 
 #: scripts/grid-system.sct.h:2
-#, fuzzy
 msgid "X divisions"
 msgstr "Divisiones X"
 
 #: scripts/grid-system.sct.h:3
-#, fuzzy
 msgid "Y divisions"
 msgstr "Divisiones Y"
 
 #: scripts/grid-system.sct.h:4
 msgid "_Grid..."
-msgstr ""
+msgstr "_Rejilla..."
 
 #: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
 #: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
@@ -1663,53 +1493,48 @@ msgstr ""
 
 #: scripts/guides-from-selection.sct.h:2
 msgid "Creates four Guides around the bounding box of the current selection."
-msgstr ""
+msgstr "Crea cuatro guías alrededor de la caja que bordea la selección actual."
 
 #: scripts/guides-from-selection.sct.h:3
 msgid "New Guides from _Selection"
-msgstr ""
+msgstr "Guías nuevas desde la _selección"
 
 #: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
-#, fuzzy
 msgid "Direction"
-msgstr "No se puede abrir la tubería SIOD de salida"
+msgstr "Dirección "
 
 #: scripts/guides-new-percent.sct.h:3 scripts/guides-new.sct.h:3
-#, fuzzy
 msgid "Horizontal"
-msgstr "Desenfocar horizontalmente"
+msgstr "Horizontal"
 
 #: scripts/guides-new-percent.sct.h:4
 msgid "New Guide (by _Percent)..."
-msgstr ""
+msgstr "Guía nueva (por _porcentaje)..."
 
 #: scripts/guides-new-percent.sct.h:6
 #, no-c-format
 msgid "Position (in %)"
-msgstr ""
+msgstr "Posición (en %)"
 
 #: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
-#, fuzzy
 msgid "Vertical"
-msgstr "Desenfocar verticalmente"
+msgstr "Vertical"
 
 #: scripts/guides-new.sct.h:4
 msgid "New _Guide..."
-msgstr ""
+msgstr "_Guía nueva..."
 
 #: scripts/guides-remove-all.sct.h:2
 msgid "_Remove all Guides"
-msgstr ""
+msgstr "_Quitar todas las guías"
 
 #: scripts/hsv-graph.sct.h:2
-#, fuzzy
 msgid "BG opacity"
 msgstr "Opacidad del fondo"
 
 #: scripts/hsv-graph.sct.h:3
-#, fuzzy
 msgid "Draw _HSV Graph..."
-msgstr "<Image>/Script-Fu/Utilidades/Dibujar gráfico _HSV..."
+msgstr "Dibujar gráfico _HSV..."
 
 #: scripts/hsv-graph.sct.h:4
 msgid "End X"
@@ -1720,12 +1545,10 @@ msgid "End Y"
 msgstr "Y final"
 
 #: scripts/hsv-graph.sct.h:6
-#, fuzzy
 msgid "From top-left to bottom-right"
 msgstr "De arriba-izquierda a abajo-derecha"
 
 #: scripts/hsv-graph.sct.h:7
-#, fuzzy
 msgid "Graph scale"
 msgstr "Escala del gráfico"
 
@@ -1743,87 +1566,72 @@ msgid "Use selection bounds instead of values below"
 msgstr "Usar los límites de la selección en vez de los de abajo"
 
 #: scripts/i26-gunya2.sct.h:4
-#, fuzzy
 msgid "Frame color"
 msgstr "Color del fotograma"
 
 #: scripts/i26-gunya2.sct.h:5
-#, fuzzy
 msgid "Frame size"
 msgstr "Tamaño del fotograma"
 
 #: scripts/i26-gunya2.sct.h:6
 msgid "Imigre-26..."
-msgstr ""
+msgstr "Imigre-26..."
 
 #: scripts/image-structure.sct.h:2
-#, fuzzy
 msgid "Apply layer mask (or discard)"
 msgstr "Aplicar la máscara de capa (o descartar)"
 
 #: scripts/image-structure.sct.h:4
-#, fuzzy
 msgid "Create new image"
-msgstr "Crear nueva imagen"
+msgstr "Crear imagen nueva"
 
 #: scripts/image-structure.sct.h:5
-#, fuzzy
 msgid "Insert layer names"
 msgstr "Insertar los nombres de las capas"
 
 #: scripts/image-structure.sct.h:6
-#, fuzzy
 msgid "Make new background"
 msgstr "Crear nuevo fondo"
 
 #: scripts/image-structure.sct.h:7
-#, fuzzy
 msgid "Outer border"
 msgstr "Borde exterior"
 
 #: scripts/image-structure.sct.h:8
-#, fuzzy
 msgid "Pad color"
-msgstr "Color de la lámina"
+msgstr "Color del relleno [pad]"
 
 #: scripts/image-structure.sct.h:9
-#, fuzzy
 msgid "Pad opacity"
-msgstr "Opacidad de la lámina"
+msgstr "Opacidad del relleno [pad]"
 
 #: scripts/image-structure.sct.h:10
-#, fuzzy
 msgid "Padding for transparent regions"
-msgstr "Relleno para las zonas transparentes"
+msgstr "Relleno para las zonas transparentes [Padding]"
 
 #: scripts/image-structure.sct.h:11
-#, fuzzy
 msgid "Shear length"
-msgstr "Inclinación"
+msgstr "Longitud de la inclinación"
 
 #: scripts/image-structure.sct.h:12
-#, fuzzy
 msgid "Show Image _Structure..."
-msgstr "<Image>/Script-Fu/Utilidades/Mostrar la e_structura de la imagen..."
+msgstr "Mostrar la e_structura de la imagen..."
 
 #: scripts/image-structure.sct.h:13
-#, fuzzy
 msgid "Space between layers"
 msgstr "Espacio entre capas"
 
 #: scripts/land.sct.h:6
-#, fuzzy
 msgid "Land height"
 msgstr "Altura del terreno"
 
 #: scripts/land.sct.h:10
-#, fuzzy
 msgid "Sea depth"
 msgstr "Profundidad del océano"
 
 #: scripts/land.sct.h:11
 msgid "_Land..."
-msgstr ""
+msgstr "_Tierra..."
 
 #: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
 msgid "Roughness"
@@ -1834,25 +1642,22 @@ msgid "Seed"
 msgstr "Semilla"
 
 #: scripts/lava.sct.h:8
-#, fuzzy
 msgid "Use current gradient"
-msgstr "Usar el gradiente actual"
+msgstr "Usar el degradado actual"
 
 #: scripts/lava.sct.h:9
 msgid "_Lava..."
-msgstr ""
+msgstr "_Lava..."
 
 #: scripts/line-nova.sct.h:2
 msgid "Line _Nova..."
-msgstr ""
+msgstr "Línea _nova..."
 
 #: scripts/line-nova.sct.h:3
-#, fuzzy
 msgid "Number of lines"
 msgstr "Número de líneas"
 
 #: scripts/line-nova.sct.h:4
-#, fuzzy
 msgid "Offset radius"
 msgstr "Radio de desplazamiento"
 
@@ -1866,30 +1671,29 @@ msgid "Sharpness (degrees)"
 msgstr "Ángulo de la púas"
 
 #: scripts/mkbrush.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-msgstr "<Toolbox>/Exts/Script-Fu/Crear brocha/_Elíptica..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Crear brocha"
 
 #: scripts/mkbrush.sct.h:2
 msgid "Create size of brush"
 msgstr ""
 
 #: scripts/mkbrush.sct.h:3
+#, fuzzy
 msgid "Description"
-msgstr "Descripción"
+msgstr "Dirección "
 
 #: scripts/mkbrush.sct.h:4
 msgid "Elli_ptical, Feathered..."
-msgstr ""
+msgstr "Elíptica,difuminada..."
 
 #: scripts/mkbrush.sct.h:5
 msgid "Feathering"
 msgstr "Difuminar"
 
 #: scripts/mkbrush.sct.h:7
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "<Toolbox>/Exts/Script-Fu/Crear brocha/Re_ctangular, difuminada..."
+msgstr "_Rectangular,difuminada..."
 
 #: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
 msgid "Spacing"
@@ -1897,28 +1701,25 @@ msgstr "Espaciado"
 
 #: scripts/mkbrush.sct.h:10
 msgid "_Elliptical..."
-msgstr ""
+msgstr "_Elíptica..."
 
 #: scripts/mkbrush.sct.h:11
 msgid "_Rectangular..."
-msgstr ""
+msgstr "_Rectangular..."
 
 #: scripts/neon-logo.sct.h:4
-#, fuzzy
 msgid "Create shadow"
 msgstr "Crear sombra"
 
 #: scripts/neon-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 5)"
 msgstr "Tamaño del efecto (píxeles * 5)"
 
 #: scripts/neon-logo.sct.h:9
 msgid "N_eon..."
-msgstr ""
+msgstr "N_eón..."
 
 #: scripts/news-text.sct.h:4
-#, fuzzy
 msgid "Cell size (pixels)"
 msgstr "Tamaño de celda (píxeles)"
 
@@ -1929,7 +1730,7 @@ msgstr "Densidad (%)"
 
 #: scripts/news-text.sct.h:9
 msgid "Newsprint Text..."
-msgstr ""
+msgstr "Texto de nueva impresión..."
 
 #: scripts/old-photo.sct.h:3
 msgid "Defocus"
@@ -1945,7 +1746,7 @@ msgstr "Sepia"
 
 #: scripts/old-photo.sct.h:7
 msgid "_Old Photo..."
-msgstr ""
+msgstr "_Foto antigua..."
 
 #: scripts/perspective-shadow.sct.h:3
 msgid "Angle"
@@ -1953,42 +1754,37 @@ msgstr "Ángulo"
 
 #: scripts/perspective-shadow.sct.h:6
 msgid "Cubic"
-msgstr ""
+msgstr "Cúbico"
 
 #: scripts/perspective-shadow.sct.h:7
-#, fuzzy
 msgid "Interpolation"
-msgstr "Interpolar"
+msgstr "Interpolación"
 
 #: scripts/perspective-shadow.sct.h:8
 msgid "Linear"
-msgstr ""
+msgstr "Lineal"
 
 #: scripts/perspective-shadow.sct.h:9
 msgid "None"
-msgstr ""
+msgstr "Ninguno"
 
 #: scripts/perspective-shadow.sct.h:11
-#, fuzzy
 msgid "Relative distance of horizon"
 msgstr "Distancia relativa del horizonte"
 
 #: scripts/perspective-shadow.sct.h:12
-#, fuzzy
 msgid "Relative length of shadow"
 msgstr "Longitud relativa de la sombra"
 
 #: scripts/perspective-shadow.sct.h:13
 msgid "_Perspective..."
-msgstr ""
+msgstr "_Perspectiva..."
 
 #: scripts/predator.sct.h:2
-#, fuzzy
 msgid "Edge amount"
 msgstr "Grosor del borde"
 
 #: scripts/predator.sct.h:4
-#, fuzzy
 msgid "Pixel amount"
 msgstr "Tamaño del píxel"
 
@@ -1998,25 +1794,21 @@ msgstr "Pixelizar"
 
 #: scripts/predator.sct.h:7
 msgid "_Predator..."
-msgstr ""
+msgstr "_Voraz..."
 
 #: scripts/pupi-button.sct.h:5
-#, fuzzy
 msgid "Lower color"
 msgstr "Color inferior"
 
 #: scripts/pupi-button.sct.h:6
-#, fuzzy
 msgid "Lower color (active)"
 msgstr "Color inferior (activo)"
 
 #: scripts/pupi-button.sct.h:7
-#, fuzzy
 msgid "Not pressed"
 msgstr "No pulsado"
 
 #: scripts/pupi-button.sct.h:8
-#, fuzzy
 msgid "Not pressed (active)"
 msgstr "No pulsado (activo)"
 
@@ -2029,33 +1821,29 @@ msgid "Padding Y"
 msgstr "Relleno en Y"
 
 #: scripts/pupi-button.sct.h:12
-#, fuzzy
 msgid "Round ratio"
 msgstr "Razón de redondeo"
 
 #: scripts/pupi-button.sct.h:15
-#, fuzzy
 msgid "Text color (active)"
 msgstr "Color del texto (activo)"
 
 #: scripts/pupi-button.sct.h:16
-#, fuzzy
 msgid "Upper color"
 msgstr "Color superior"
 
 #: scripts/pupi-button.sct.h:17
-#, fuzzy
 msgid "Upper color (active)"
 msgstr "Color superior (activo)"
 
 #: scripts/pupi-button.sct.h:18
 msgid "_Round Button..."
-msgstr ""
+msgstr "Botón _redondo..."
 
 #: scripts/rendermap.sct.h:2
 #, fuzzy
 msgid "Behavior"
-msgstr "Funcionamiento"
+msgstr "Comportamiento"
 
 #: scripts/rendermap.sct.h:3
 msgid "Detail in Middle"
@@ -2063,7 +1851,7 @@ msgstr "Pequeñas islas"
 
 #: scripts/rendermap.sct.h:8
 msgid "Render _Map..."
-msgstr ""
+msgstr "_Renderizar mapa..."
 
 #: scripts/rendermap.sct.h:9
 msgid "Tile"
@@ -2079,12 +1867,10 @@ msgid "Edge behavior"
 msgstr "Comportamiento del borde"
 
 #: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
-#, fuzzy
 msgid "Number of frames"
 msgstr "Número de fotogramas"
 
 #: scripts/ripply-anim.sct.h:5
-#, fuzzy
 msgid "Rippling strength"
 msgstr "Fuerza de ondulación"
 
@@ -2098,73 +1884,63 @@ msgstr "Desformar"
 
 #: scripts/ripply-anim.sct.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "_Ondas..."
 
 #: scripts/round-corners.sct.h:2
-#, fuzzy
 msgid "Add background"
 msgstr "Añadir fondo"
 
 #: scripts/round-corners.sct.h:3
-#, fuzzy
 msgid "Add drop-shadow"
 msgstr "Añadir sombra base"
 
 #: scripts/round-corners.sct.h:5
-#, fuzzy
 msgid "Edge radius"
 msgstr "Radio del borde"
 
 #: scripts/round-corners.sct.h:9
-#, fuzzy
 msgid "_Round Corners..."
-msgstr "<Image>Script-Fu/Decoración/_Redondear esquinas..."
+msgstr "Esquinas _redondeadas"
 
 #: scripts/selection-round.sct.h:1
 #, fuzzy
 msgid "<Image>/Select/Modify"
-msgstr "<Image>/Script-Fu/Selección/A _imagen"
+msgstr "<Image>/Tiny-Fu/Selección"
 
 #: scripts/selection-round.sct.h:2
 msgid "Concave"
-msgstr ""
+msgstr "Cóncavo"
 
 #: scripts/selection-round.sct.h:4
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Radio"
+msgstr "Radio (%)"
 
 #: scripts/selection-round.sct.h:5
-#, fuzzy
 msgid "Rounded R_ectangle..."
-msgstr "<Image>/Script-Fu/Selección/_Redondear..."
+msgstr "_Rectángulo redondeado..."
 
 #: scripts/select-to-brush.sct.h:2
-#, fuzzy
 msgid "Brush name"
 msgstr "Nombre de la brocha"
 
 #: scripts/select-to-brush.sct.h:5
 msgid "To _Brush..."
-msgstr ""
+msgstr "A _brocha..."
 
 #: scripts/select-to-image.sct.h:2
-#, fuzzy
 msgid "To _Image"
-msgstr "Indexar imagen"
+msgstr "A _imagen"
 
 #: scripts/select-to-pattern.sct.h:3
-#, fuzzy
 msgid "Pattern name"
 msgstr "Nombre del patrón"
 
 #: scripts/select-to-pattern.sct.h:4
-#, fuzzy
 msgid "To _Pattern..."
-msgstr "Patrón"
+msgstr "A _patrón..."
 
 #: scripts/slide.sct.h:3
-#, fuzzy
 msgid "Font color"
 msgstr "Color de la tipografía"
 
@@ -2174,20 +1950,19 @@ msgstr "Número"
 
 #: scripts/slide.sct.h:7
 msgid "_Slide..."
-msgstr ""
+msgstr "_Diapositiva..."
 
 #: scripts/sota-chrome-logo.sct.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "Cromado SOTA..."
 
 #: scripts/speed-text.sct.h:7
 msgid "Speed Text..."
-msgstr ""
+msgstr "Velocidad del texto..."
 
 #: scripts/sphere.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-msgstr "<Toolbox>/Exts/Script-Fu/Misc./E_sfera..."
+msgstr "<Toolbox>/Exts/Tiny-Fu/Misc"
 
 #: scripts/sphere.sct.h:3
 msgid "Lighting (degrees)"
@@ -2198,31 +1973,28 @@ msgid "Radius (pixels)"
 msgstr "Radio (píxeles)"
 
 #: scripts/sphere.sct.h:6
-#, fuzzy
 msgid "Sphere color"
 msgstr "Color de la esfera"
 
 #: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
 msgid "_Sphere..."
-msgstr ""
+msgstr "_Esfera..."
 
 #: scripts/spinning-globe.sct.h:2
 msgid "Frames"
 msgstr "Fotogramas"
 
 #: scripts/spinning-globe.sct.h:3
-#, fuzzy
 msgid "Index to n colors (0 = remain RGB)"
 msgstr "Indexar a n colores (0 = permanece RGB)"
 
 #: scripts/spinning-globe.sct.h:5
-#, fuzzy
 msgid "Turn from left to right"
 msgstr "Girar de izquierda a derecha"
 
 #: scripts/spinning-globe.sct.h:7
 msgid "_Spinning Globe..."
-msgstr ""
+msgstr "Globo _giratorio..."
 
 #: scripts/spyrogimp.sct.h:2
 msgid "Airbrush"
@@ -2237,13 +2009,12 @@ msgid "Circle"
 msgstr "Circulo"
 
 #: scripts/spyrogimp.sct.h:6
-#, fuzzy
 msgid "Color method"
 msgstr "Método de coloración"
 
 #: scripts/spyrogimp.sct.h:7
 msgid "Epitrochoid"
-msgstr "Epitrochoid"
+msgstr "Epitrocoide"
 
 #: scripts/spyrogimp.sct.h:8
 msgid "Frame"
@@ -2251,23 +2022,21 @@ msgstr "Cuadro"
 
 #: scripts/spyrogimp.sct.h:10
 msgid "Gradient: Loop Sawtooth"
-msgstr "Gradiente: Bucle diente de sierra"
+msgstr "Degradado: Bucle diente de sierra"
 
 #: scripts/spyrogimp.sct.h:11
 msgid "Gradient: Loop Triangle"
-msgstr "Gradiente: Bucle de triángulo"
+msgstr "Degradado: Bucle de triángulo"
 
 #: scripts/spyrogimp.sct.h:12
 msgid "Hexagon"
 msgstr "Hexágono"
 
 #: scripts/spyrogimp.sct.h:13
-#, fuzzy
 msgid "Hole ratio"
 msgstr "Radio del hoyo"
 
 #: scripts/spyrogimp.sct.h:14
-#, fuzzy
 msgid "Inner teeth"
 msgstr "Diente interno"
 
@@ -2280,7 +2049,6 @@ msgid "Margin (pixels)"
 msgstr "Margen (píxeles)"
 
 #: scripts/spyrogimp.sct.h:17
-#, fuzzy
 msgid "Outer teeth"
 msgstr "Diente exterior"
 
@@ -2325,7 +2093,6 @@ msgid "Square"
 msgstr "Cuadrado"
 
 #: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-#, fuzzy
 msgid "Start angle"
 msgstr "Ángulo inicial"
 
@@ -2342,94 +2109,81 @@ msgid "Type"
 msgstr "Tipo"
 
 #: scripts/spyrogimp.sct.h:32
-#, fuzzy
 msgid "_Spyrogimp..."
-msgstr "Espirógrafo"
+msgstr "_Espirógrafo..."
 
 #: scripts/starburst-logo.sct.h:4
-#, fuzzy
 msgid "Burst color"
 msgstr "Color de la explosión"
 
 #: scripts/starburst-logo.sct.h:5
-#, fuzzy
 msgid "Effect size (pixels * 30)"
 msgstr "Tamaño del efecto (píxeles * 30)"
 
 #: scripts/starburst-logo.sct.h:8
 msgid "Starb_urst..."
-msgstr ""
+msgstr "Starb_urst..."
 
 #: scripts/starscape-logo.sct.h:3
-#, fuzzy
 msgid "Effect size (pixels * 4)"
 msgstr "Tamaño del efecto (píxeles * 4)"
 
 #: scripts/starscape-logo.sct.h:7
 msgid "Sta_rscape..."
-msgstr ""
+msgstr "Sta_rscape..."
 
 #: scripts/swirltile.sct.h:9
 msgid "Swirl-_Tile..."
-msgstr ""
+msgstr "_Embaldosado de remolinos..."
 
 # //O Algo cutre, pero cuanto mayor es, más "arrastra" la imagen, por eso
 # lo de fuerza.
 #: scripts/swirltile.sct.h:10
-#, fuzzy
 msgid "Whirl amount"
-msgstr "Fuerza de la espiral"
+msgstr "Fuerza del remolino"
 
 #: scripts/swirly-pattern.sct.h:2
-#, fuzzy
 msgid "Number of times to whirl"
 msgstr "Número de veces a girar"
 
 #: scripts/swirly-pattern.sct.h:3
-#, fuzzy
 msgid "Quarter size"
-msgstr "Tamaño de los mosaicos"
+msgstr "Un cuarto del tamaño"
 
 #: scripts/swirly-pattern.sct.h:4
-#, fuzzy
 msgid "Whirl angle"
-msgstr "Ángulo de la espiral"
+msgstr "Ángulo del remolino"
 
 #: scripts/swirly-pattern.sct.h:5
 msgid "_Swirly..."
-msgstr ""
+msgstr "_Remolino..."
 
 #: scripts/t-o-p-logo.sct.h:4
-#, fuzzy
 msgid "Base color"
 msgstr "Color base"
 
 #: scripts/t-o-p-logo.sct.h:6
-#, fuzzy
 msgid "Edge only"
 msgstr "Sólo borde"
 
 #: scripts/t-o-p-logo.sct.h:7
-#, fuzzy
 msgid "Edge width"
 msgstr "Anchura del borde"
 
 # //R Quizás "tasa de choques"
 #: scripts/t-o-p-logo.sct.h:10
-#, fuzzy
 msgid "Hit rate"
 msgstr "Tasa de choques"
 
 #: scripts/t-o-p-logo.sct.h:12
 msgid "_Particle Trace..."
-msgstr ""
+msgstr "_Trazado de partículas..."
 
 #: scripts/text-circle.sct.h:2
 msgid "Antialias"
 msgstr "Alisado"
 
 #: scripts/text-circle.sct.h:3
-#, fuzzy
 msgid "Fill angle"
 msgstr "Ángulo de relleno"
 
@@ -2438,23 +2192,20 @@ msgid "Render the specified text along the perimeter of a circle"
 msgstr ""
 
 #: scripts/text-circle.sct.h:10
-#, fuzzy
 msgid "Text Circle..."
-msgstr "Circulo"
+msgstr "Texto circular..."
 
 #: scripts/textured-logo.sct.h:5
-#, fuzzy
 msgid "Ending blend"
-msgstr "Color final"
+msgstr "Fundido final"
 
 #: scripts/textured-logo.sct.h:8
 msgid "Hexagons"
 msgstr "Hexágonos"
 
 #: scripts/textured-logo.sct.h:9
-#, fuzzy
 msgid "Mosaic tile type"
-msgstr "Tipo de diseño del mosaico"
+msgstr "Tipo de embaldosado del mosaico"
 
 #: scripts/textured-logo.sct.h:10
 msgid "Octagons"
@@ -2465,36 +2216,30 @@ msgid "Squares"
 msgstr "Cuadrados"
 
 #: scripts/textured-logo.sct.h:13
-#, fuzzy
 msgid "Starting blend"
-msgstr "Color inicial"
+msgstr "Color inicial de fundido"
 
 #: scripts/textured-logo.sct.h:15
-#, fuzzy
 msgid "Text pattern"
 msgstr "Patrón del texto"
 
 #: scripts/textured-logo.sct.h:16
 msgid "_Textured..."
-msgstr ""
+msgstr "_Texturizado..."
 
 #: scripts/tileblur.sct.h:1
-#, fuzzy
 msgid "<Image>/Filters/Blur"
-msgstr "<Image>/Filtros/Desenfocado/Desenfoque en_losable..."
+msgstr ""
 
 #: scripts/tileblur.sct.h:2
-#, fuzzy
 msgid "Blur horizontally"
 msgstr "Desenfocar horizontalmente"
 
 #: scripts/tileblur.sct.h:3
-#, fuzzy
 msgid "Blur type"
 msgstr "Tipo de desenfoque"
 
 #: scripts/tileblur.sct.h:4
-#, fuzzy
 msgid "Blur vertically"
 msgstr "Desenfocar verticalmente"
 
@@ -2507,9 +2252,8 @@ msgid "RLE"
 msgstr "RLE"
 
 #: scripts/tileblur.sct.h:8
-#, fuzzy
 msgid "_Tileable Blur..."
-msgstr "<Image>/Filtros/Desenfocado/Desenfoque en_losable..."
+msgstr "Desenfoque en_losable..."
 
 #: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
@@ -2519,34 +2263,31 @@ msgstr "Patrón"
 #: scripts/tiny-fu-set-cmap.sct.h:3
 #, fuzzy
 msgid "Set Colormap"
-msgstr "Color del texto"
+msgstr "Color de texto"
 
 #: scripts/title-header.sct.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Cabecera de título web..."
 
 #: scripts/truchet.sct.h:4
-#, fuzzy
 msgid "Foreground color"
-msgstr "Color de frente"
+msgstr "Color de primer plano"
 
 #: scripts/truchet.sct.h:7
 msgid "T_ruchet..."
-msgstr ""
+msgstr "T_ruchet..."
 
 #: scripts/unsharp-mask.sct.h:2
-#, fuzzy
 msgid "Mask opacity"
 msgstr "Opacidad de máscara"
 
 #: scripts/unsharp-mask.sct.h:3
-#, fuzzy
 msgid "Mask size"
 msgstr "Tamaño de máscara"
 
 #: scripts/unsharp-mask.sct.h:4
 msgid "_Unsharp Mask..."
-msgstr ""
+msgstr "_Desafilar máscara..."
 
 #: scripts/waves-anim.sct.h:2
 msgid "Amplitude"
@@ -2562,573 +2303,106 @@ msgstr "Longitud de onda"
 
 #: scripts/waves-anim.sct.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "_Ondas..."
 
 #: scripts/weave.sct.h:2
-#, fuzzy
 msgid "Ribbon spacing"
 msgstr "Espacio entre lazos"
 
 #: scripts/weave.sct.h:3
-#, fuzzy
 msgid "Ribbon width"
 msgstr "Ancho del lazo"
 
 #: scripts/weave.sct.h:4
-#, fuzzy
 msgid "Shadow darkness"
 msgstr "Oscuridad de la sombra"
 
 #: scripts/weave.sct.h:5
-#, fuzzy
 msgid "Shadow depth"
 msgstr "Profundidad de la sombra"
 
 #: scripts/weave.sct.h:6
-#, fuzzy
 msgid "Thread density"
 msgstr "Densidad de los hilos"
 
 #: scripts/weave.sct.h:7
-#, fuzzy
 msgid "Thread intensity"
 msgstr "Intensidad de los hilos"
 
 #: scripts/weave.sct.h:8
-#, fuzzy
 msgid "Thread length"
 msgstr "Longitud de los hilos"
 
 #: scripts/weave.sct.h:9
 msgid "_Weave..."
-msgstr ""
+msgstr "_Weave..."
 
 #: scripts/web-browser.sct.h:1
-#, fuzzy
 msgid "<Toolbox>/Help/The GIMP Online"
-msgstr "<Toolbox>/Ayuda/El GIMP en línea/Sitio web _principal"
+msgstr "<Toolbox>/Ayuda/El GIMP en línea"
 
 #: scripts/web-browser.sct.h:2
 msgid "Plug-in _Registry"
-msgstr ""
+msgstr "_Registro de complementos"
 
 #: scripts/web-browser.sct.h:3
 msgid "_Developer Web Site"
-msgstr ""
+msgstr "Sitio web del _desarrollador"
 
 #: scripts/web-browser.sct.h:4
 msgid "_Main Web Site"
-msgstr ""
+msgstr "Sitio web _principal"
 
 #: scripts/xach-effect.sct.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
 msgstr "Desplazamiento X de la sombra base"
 
 #: scripts/xach-effect.sct.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
 msgstr "Desplazamiento Y de la sombra base"
 
 #: scripts/xach-effect.sct.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
 msgstr "Radio de desenfoque de la sombra base"
 
 #: scripts/xach-effect.sct.h:5
-#, fuzzy
 msgid "Drop shadow color"
 msgstr "Color de la sombra base"
 
 #: scripts/xach-effect.sct.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
 msgstr "Opacidad de la sombra base"
 
 #: scripts/xach-effect.sct.h:7
-#, fuzzy
 msgid "Highlight X offset"
 msgstr "Desplazamiento X del brillo"
 
 #: scripts/xach-effect.sct.h:8
-#, fuzzy
 msgid "Highlight Y offset"
 msgstr "Desplazamiento Y del brillo"
 
 #: scripts/xach-effect.sct.h:10
-#, fuzzy
 msgid "Highlight opacity"
 msgstr "Opacidad del brillo"
 
 #: scripts/xach-effect.sct.h:12
 msgid "_Xach-Effect..."
-msgstr ""
+msgstr "Efecto  _Xach..."
 
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy"
-#~ msgstr "<Image>/Editar/Copiar _visible"
+#~ msgid "Script-fu Pattern Selection"
+#~ msgstr "Selección de patrón de Tiny-Fu"
 
-#~ msgid "Text Color"
-#~ msgstr "Color del texto"
+#~ msgid "Tiny-Fu _Console"
+#~ msgstr "_Consola Tiny-Fu"
 
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Tamaño de la tipografía (píxeles)"
+#~ msgid "_Start Server..."
+#~ msgstr "_Iniciar servidor..."
 
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Contact Sheet"
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/Mapa de _tipografías..."
+#~ msgid "_Refresh Scripts"
+#~ msgstr "_Refrescar scripts"
 
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/_Contorno 3D..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/C_ontorno en 3D..."
-
-# //O Bueno, "truchet" pasará a la historia como una de las palabras con más
-# misterio, yo lo traduzco por ondulado, pero ya por aburrimeinto, porque en
-# Inet miré una página de estas que buscan muchos diccionarios, busqué truchet
-# y no me devolvió nada, tal vez sería la página equivocada, pero de momento
-# la cosa se queda así, ¿que te parece?
-# //R Demasiado Ondular. Deberíamos dejarlo en inglés hasta que encontremos algo mejor.
-# //O Pues nada, de momento en ingles sin traducir
-# //R Al parecer es un nombre propio, se deja como está
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/Truchet 3_D..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Script-Fu/Decoración/Añadir bis_el..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Script-Fu/Decoración/Añadir _borde..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Fulgor alienigena/Barra "
-#~ "_Hor..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Fulgor alienigena/_Bolita..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Fulgor alienigena/B_otón..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/Ful_gor alienigena..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Ful_gor alienigena..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/_Neón alienigena..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/_Neón alienigena..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/_ASCII a imagen..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/_Básico I..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/_Básico I..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/Bá_sico II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Bá_sico II..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Patrón biselado/_Bolita..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Patrón biselado/B_otón..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Patrón biselado/"
-#~ "E_ncabezado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de Páginas Web/Patrón biselado/Barra "
-#~ "_Hor...."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Me_zclado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Me_zclado..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/_Vacuno..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/_Vacuno..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Script-Fu/Animación/I_ncineración..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/_Camuflaje..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Esculpido..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/_Tiza..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/_Tiza..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Desmen_uzar..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logos/Desmen_uzar..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Script-Fu/Oper. con Plantilla/C_romarla..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/C_romado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/C_romado..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Script-Fu/Render/_Circuito..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Script-Fu/Alquimia/_Dar textura..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Script-Fu/Decoración/Mancha de _café..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Libro de _historietas..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Libro de _historietas..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/_Metal frío..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/_Metal frío..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Cristal..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Drop-Shadow..."
-#~ msgstr "<Image>/Script-Fu/Sombra/_Sombra base..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Script-Fu/Selección/_Desvanecer el perfil..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/Terreno _llano..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/H_elado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/H_elado..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Script-Fu/Decoración/Borde b_orroso..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de páginas Web/Gimp.Org/Encabezado "
-#~ "pe_queño..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de páginas Web/Gimp.Org/Etiqueta de sub-"
-#~ "botón del t_ubo del tubo..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de páginas Web/Gimp.Org/_Etiqueta de sub-"
-#~ "botón del tubo..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de páginas Web/Gimp.Org/Etiquetas "
-#~ "_generales del tubo..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Exts/Script-Fu/Temas de páginas Web/Gimp.Org/Etiqueta de botón "
-#~ "del _tubo..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Br_illante..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Br_illante..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Calor ful_gurante..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Calor ful_gurante..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Gradiente bise_lado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Gradiente bise_lado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Utilidades/_Gradiente personalizado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Imigre-26..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Lava..."
-#~ msgstr "<Image>/Script-Fu/Render/_Lava..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Script-Fu/Render/E_rizar..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/Elli_ptical, Feathered..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Crear brocha/Elí_ptica, difuminada..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Crear brocha/_Rectangular..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Texto de periódico..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Script-Fu/Decoración/Foto _vieja..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Script-Fu/Sombra/_Perspectiva..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Script-Fu/Alquimia/De_predador..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Botones/Botón _redondeado..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/Crear _mapa..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Script-Fu/Animación/Ondula_r..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Script-Fu/Selección/A _brocha..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Script-Fu/Selección/A _patrón..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Cromado espectacular..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logos/Texto rápido..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Script-Fu/Animación/E_sfera giratoria"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Script-Fu/Render/_Espirogimp..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/E_xplosión estelar..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/E_xplosión estelar..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Estela_r..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Estela_r..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/Mosaico en es_piral..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/A_rremolinado..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Image>/Script-Fu/Alfa a Logo/Traza de _partículas..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Traza de _partículas..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Texto circular..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Image>/Script-Fu/Alfa a logo/Con _textura..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Con _textura..."
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/Cabecera página Web..."
-
-# //O Pues nada, otro ondulado...
-# //R Lo mismo, creo que deberías dejarlo en inglés de momento.
-# //R Nombre propio
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Patrones/Tr_uchet..."
-
-# /O: De momento pondre mascara de desenfocado
-# en glosario aprece sharpen como enfocar, aunque no estamos convencidos
-# //R La verdad es que no tengo muy claro lo de unsharp...
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Script-Fu/Alquimia/Máscara de _desenfoque..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Script-Fu/Animación/_Ondas de agua..."
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-#~ msgstr "<Toolbox>/Ayuda/El GIMP en línea/_Registro de complementos"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-#~ msgstr "<Toolbox>/Ayuda/El GIMP en línea/Sitio web de _desarrolladores"
-
-#~ msgid "Re-read all available scripts"
-#~ msgstr "Releer todos los guiones disponibles"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-ADJUSTMENT _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-ADJUSTMENT _"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "    SF-COLOR      _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    SF-COLOR      _"
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Radio relativo"
-
-#, fuzzy
-#~ msgid "_About"
-#~ msgstr "Acerca de"
+#~ msgid "Procedure Browser"
+#~ msgstr "Examinador de procedimientos"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Buscar por _nombre"
@@ -3148,159 +2422,48 @@ msgstr ""
 #~ msgid "Searching - please wait"
 #~ msgstr "Buscar  aguarde"
 
+#~ msgid "1 Procedure"
+#~ msgstr "1 procedimiento"
+
+#~ msgid "%d Procedures"
+#~ msgstr "%d procedimientos"
+
 #~ msgid "No matches"
 #~ msgstr "No hay coincidencias"
 
-#, fuzzy
 #~ msgid "Parameters"
-#~ msgstr "Diámetro"
+#~ msgstr "Parámetros"
 
-#~ msgid "Transparent Background"
-#~ msgstr "Fondo transparente"
+#~ msgid "Return Values"
+#~ msgstr "Valores de retorno"
 
-#~ msgid "DB Browser"
-#~ msgstr "Navegador de BD"
+#~ msgid "Additional Information"
+#~ msgstr "Información adicional"
 
-#~ msgid "Name:"
-#~ msgstr "Nombre:"
+#~ msgid "Internal GIMP procedure"
+#~ msgstr "Procedimiento interno de El Gimp"
 
-#~ msgid "Blurb:"
-#~ msgstr "Propaganda:"
+#~ msgid "GIMP Plug-In"
+#~ msgstr "Extensión de El Gimp"
 
-#~ msgid "In:"
-#~ msgstr "Entrada:"
+#~ msgid "GIMP Extension"
+#~ msgstr "Añadido de El Gimp"
 
-#~ msgid "Out:"
-#~ msgstr "Salida:"
+#~ msgid "Temporary Procedure"
+#~ msgstr "Procedimiento temporal"
 
-#~ msgid "Help:"
-#~ msgstr "Ayuda:"
+#~ msgid "Burn-In: Need two layers in total!"
+#~ msgstr "Quemado: ¡Se necesitan dos capas en total!"
 
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
-#~ "                                   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir DIR-SEPARATOR\n"
-#~ "                                 "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                  "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "        (filename (string-append data-dir\n"
-#~ "                                 "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "                              "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-
-#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
-#~ msgstr ""
-#~ "Efecto similar a una incineración en una capa de texto (frente) y en una "
-#~ "capa de fondo; V2.1"
+#~ msgid "Name"
+#~ msgstr "Nombre"
 
 #~ msgid ""
 #~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
 #~ "netword.com/*spyrogimp"
 #~ msgstr ""
-#~ "Dibuja espirografías, Epitrotopías y curvas de Lissajous. Mas información "
+#~ "Dibuja espirografías, epitrotopías y curvas de Lissajous. Mas información "
 #~ "en http://netword.com/*spyrogimp"
 
-#~ msgid ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-
-#, fuzzy
-#~ msgid "Script-Fu _Console"
-#~ msgstr "Consola Script-Fu"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Script-Fu"
-#~ msgstr "<Toolbox>/Exts/Script-Fu/Logotipos/N_eón..."
-
-#~ msgid "Burn-In: Need two layers in total!"
-#~ msgstr "Quemador: ¡Se necesitan dos capas en total!"
-
-#~ msgid "<Image>/Script-Fu/Render/_Grid..."
-#~ msgstr "<Image>/Script-Fu/Render/Re_jilla..."
-
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "\t\t\t      "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "\t\t\t      "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t "
-
-#~ msgid "Unable to open a stream on the SIOD output pipe"
-#~ msgstr "No se puede abrir un flujo en la tubería de salida de SIOD"
-
-#, fuzzy
-#~ msgid "Blend gradient (sext)"
-#~ msgstr "Gradiente de mezcla (texto)"
+#~ msgid "Copy _Visible"
+#~ msgstr "Copiar _visible"

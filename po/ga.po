@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu HEAD\n"
+"Project-Id-Version: gimp-tiny-fu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-11-22 23:22-0500\n"
+"POT-Creation-Date: 2004-12-20 11:37-0500\n"
 "PO-Revision-Date: 2004-01-20 0740+0000\n"
 "Last-Translator: Alastair McKinstry <mckinstry@computer.org>\n"
 "Language-Team: Gaeilge <gaeilge-a@listserv.heanet.ie>\n"
@@ -32,9 +32,8 @@ msgid "Tiny-Fu console mode allows only interactive invocation"
 msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:171
-#, fuzzy
 msgid "Tiny-Fu Console"
-msgstr "Script-Fu: %s"
+msgstr ""
 
 #: tiny-fu/tiny-fu-console.c:176
 #, fuzzy
@@ -62,7 +61,7 @@ msgstr ""
 #: tiny-fu/tiny-fu-console.c:241
 #, fuzzy
 msgid "Tiny-Fu Console - "
-msgstr "Script-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #: tiny-fu/tiny-fu-console.c:242
 msgid "Interactive Scheme Development"
@@ -73,6 +72,7 @@ msgid "Current Command"
 msgstr "Ordú Reatha"
 
 #: tiny-fu/tiny-fu-console.c:284
+#, fuzzy
 msgid "Browse..."
 msgstr "Brábhsáil...."
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr ""
 
-#: tiny-fu/tiny-fu-scripts.c:626
+#: tiny-fu/tiny-fu-scripts.c:634
 #, c-format
 msgid ""
 "Error while executing\n"
@@ -116,14 +116,13 @@ msgstr ""
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
 #: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
-#, fuzzy
 msgid "/Tiny-Fu/"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: tiny-fu/tiny-fu-interface.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "Tiny-Fu: %s"
-msgstr "Script-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #. the script arguments frame
 #: tiny-fu/tiny-fu-interface.c:255
@@ -303,8 +302,9 @@ msgid "Created "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:8
+#, fuzzy
 msgid "Directory"
-msgstr ""
+msgstr "Treosuíomh"
 
 #: scripts/contactsheet.sct.h:9
 msgid "Legend font"
@@ -315,9 +315,8 @@ msgid "Sheet "
 msgstr ""
 
 #: scripts/contactsheet.sct.h:11
-#, fuzzy
 msgid "Sheet size"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
 #: scripts/asc2img.sct.h:10 scripts/basic1-logo.sct.h:7
@@ -382,26 +381,22 @@ msgid "Default bumpmap settings"
 msgstr ""
 
 #: scripts/3d-outline.sct.h:8
-#, fuzzy
 msgid "Outline blur radius"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
 #: scripts/round-corners.sct.h:6
-#, fuzzy
 msgid "Shadow X offset"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
 #: scripts/round-corners.sct.h:7
-#, fuzzy
 msgid "Shadow Y offset"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:11
-#, fuzzy
 msgid "Shadow blur radius"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/3d-outline.sct.h:12 scripts/alien-glow-button.sct.h:10
 #: scripts/alien-glow-logo.sct.h:8 scripts/alien-neon-logo.sct.h:10
@@ -436,9 +431,8 @@ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
 msgstr ""
 
 #: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-#, fuzzy
 msgid "Block size"
-msgstr "_Teorainn (picsil)"
+msgstr ""
 
 #: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
 msgid "End blend"
@@ -470,7 +464,7 @@ msgstr ""
 #: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
 #, fuzzy
 msgid "<Image>/Tiny-Fu/Decor"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: scripts/add-bevel.sct.h:2
 msgid "Add B_evel..."
@@ -501,9 +495,8 @@ msgid "Border Y size"
 msgstr "_Teorainn (picsil)"
 
 #: scripts/addborder.sct.h:5
-#, fuzzy
 msgid "Border color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/addborder.sct.h:6
 msgid "Delta value on color"
@@ -529,9 +522,8 @@ msgstr ""
 #: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
 #: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
 #: scripts/starscape-logo.sct.h:6
-#, fuzzy
 msgid "Glow color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
 msgid "Left"
@@ -560,18 +552,17 @@ msgid "_Arrow..."
 msgstr "Brábhsáil...."
 
 #: scripts/alien-glow-bar.sct.h:3
-#, fuzzy
 msgid "Bar height"
-msgstr "Deis"
+msgstr ""
 
 #: scripts/alien-glow-bar.sct.h:4
-#, fuzzy
 msgid "Bar length"
-msgstr "Deis"
+msgstr ""
 
 #: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
+#, fuzzy
 msgid "_Hrule..."
-msgstr ""
+msgstr "Brábhsáil...."
 
 #: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
 #: scripts/tileblur.sct.h:7
@@ -579,17 +570,17 @@ msgid "Radius"
 msgstr ""
 
 #: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
+#, fuzzy
 msgid "_Bullet..."
-msgstr ""
+msgstr "Brábhsáil...."
 
 #: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
 msgid "B_utton..."
 msgstr ""
 
 #: scripts/alien-glow-button.sct.h:8
-#, fuzzy
 msgid "Glow radius"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
 msgid "Padding"
@@ -628,7 +619,7 @@ msgstr ""
 #: scripts/image-structure.sct.h:1 scripts/tiny-fu-set-cmap.sct.h:1
 #, fuzzy
 msgid "<Image>/Tiny-Fu/Utils"
-msgstr "/Script-Fu/"
+msgstr "/Tiny-Fu/"
 
 #: scripts/asc2img.sct.h:5
 #, no-c-format
@@ -646,9 +637,8 @@ msgstr "Ainm Chomhad"
 
 #: scripts/asc2img.sct.h:11 scripts/beveled-pattern-bullet.sct.h:4
 #: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-#, fuzzy
 msgid "Transparent background"
-msgstr "Íomha na Chúlra"
+msgstr ""
 
 #: scripts/asc2img.sct.h:12
 msgid "_ASCII to Image..."
@@ -676,24 +666,21 @@ msgid "Bevel width"
 msgstr ""
 
 #: scripts/beveled-button.sct.h:5
-#, fuzzy
 msgid "Lower-right color"
-msgstr "Dath Cúlra"
+msgstr ""
 
 #: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:6
 #: scripts/pupi-button.sct.h:11
-#, fuzzy
 msgid "Pressed"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/beveled-button.sct.h:8
 msgid "Simple _Beveled Button..."
 msgstr ""
 
 #: scripts/beveled-button.sct.h:11
-#, fuzzy
 msgid "Upper-left color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/beveled-pattern-arrow.sct.h:1
 #: scripts/beveled-pattern-bullet.sct.h:1
@@ -713,9 +700,8 @@ msgid "Pattern"
 msgstr ""
 
 #: scripts/beveled-pattern-bullet.sct.h:2
-#, fuzzy
 msgid "Diameter"
-msgstr "Dáta:"
+msgstr ""
 
 #: scripts/beveled-pattern-heading.sct.h:4
 msgid "H_eading..."
@@ -724,9 +710,8 @@ msgstr ""
 #: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
 #: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
 #: scripts/swirltile.sct.h:7
-#, fuzzy
 msgid "Height"
-msgstr "Deis"
+msgstr ""
 
 #: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:5
 #: scripts/mkbrush.sct.h:9 scripts/swirltile.sct.h:11
@@ -752,13 +737,13 @@ msgid "Looped"
 msgstr ""
 
 #: scripts/blend-anim.sct.h:5
-#, fuzzy
 msgid "Max. blur radius"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/blend-anim.sct.h:6
+#, fuzzy
 msgid "_Blend..."
-msgstr ""
+msgstr "Brábhsáil...."
 
 #: scripts/blended-logo.sct.h:4
 msgid "Blen_ded..."
@@ -781,9 +766,8 @@ msgid "FG-BG-RGB"
 msgstr ""
 
 #: scripts/blended-logo.sct.h:10
-#, fuzzy
 msgid "FG-Transparent"
-msgstr "Íomha na Chúlra"
+msgstr ""
 
 #: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
 #: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
@@ -798,9 +782,8 @@ msgid "Gradient reverse"
 msgstr ""
 
 #: scripts/blended-logo.sct.h:15
-#, fuzzy
 msgid "Offset (pixels)"
-msgstr "Méid Clófhoireann (picsil)"
+msgstr ""
 
 #: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
 msgid "Background Color"
@@ -873,9 +856,8 @@ msgid "Granularity"
 msgstr ""
 
 #: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-#, fuzzy
 msgid "Image size"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/camo.sct.h:8 scripts/distress-selection.sct.h:3
 msgid "Smooth"
@@ -939,9 +921,8 @@ msgid "Chip amount"
 msgstr ""
 
 #: scripts/chip-away.sct.h:6
-#, fuzzy
 msgid "Drop shadow"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/chip-away.sct.h:7
 msgid "Fill BG with pattern"
@@ -952,13 +933,13 @@ msgid "Invert"
 msgstr ""
 
 #: scripts/chip-away.sct.h:11
-#, fuzzy
 msgid "Keep background"
-msgstr "Íomha na Chúlra"
+msgstr ""
 
 #: scripts/chrome-it.sct.h:2
+#, fuzzy
 msgid "C_hrome-It..."
-msgstr ""
+msgstr "Brábhsáil...."
 
 #: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
 msgid "Chrome balance"
@@ -987,9 +968,8 @@ msgid "Environment map"
 msgstr ""
 
 #: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-#, fuzzy
 msgid "Highlight balance"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/chrome-logo.sct.h:5
 #, fuzzy
@@ -997,14 +977,14 @@ msgid "C_hrome..."
 msgstr "Brábhsáil...."
 
 #: scripts/chrome-logo.sct.h:8
-#, fuzzy
 msgid "Offsets (pixels * 2)"
-msgstr "Méid Clófhoireann (picsil)"
+msgstr ""
 
 #: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
 #: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
+#, fuzzy
 msgid "<Image>/Tiny-Fu/Render"
-msgstr ""
+msgstr "/Tiny-Fu/"
 
 #: scripts/circuit.sct.h:2
 msgid "Circuit seed"
@@ -1020,9 +1000,8 @@ msgid "No background (only for separate layer)"
 msgstr ""
 
 #: scripts/circuit.sct.h:5
-#, fuzzy
 msgid "Oilify mask size"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
 msgid "Separate layer"
@@ -1034,8 +1013,9 @@ msgstr ""
 
 #: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
 #: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
+#, fuzzy
 msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr ""
+msgstr "/Tiny-Fu/"
 
 #: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
 msgid "Azimuth"
@@ -1054,9 +1034,8 @@ msgid "Depth"
 msgstr ""
 
 #: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
-#, fuzzy
 msgid "Elevation"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/clothify.sct.h:7
 msgid "_Clothify..."
@@ -1081,14 +1060,12 @@ msgid "Comic Boo_k..."
 msgstr ""
 
 #: scripts/comic-logo.sct.h:9
-#, fuzzy
 msgid "Outline color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-#, fuzzy
 msgid "Outline size"
-msgstr "_Teorainn (picsil)"
+msgstr ""
 
 #: scripts/coolmetal-logo.sct.h:4
 msgid "Cool _Metal..."
@@ -1098,10 +1075,6 @@ msgstr ""
 #, fuzzy
 msgid "Effect size (pixels)"
 msgstr "Méid Clófhoireann (picsil)"
-
-#: scripts/copy-visible.sct.h:1
-msgid "Copy _Visible"
-msgstr ""
 
 #: scripts/crystal-logo.sct.h:2
 #, fuzzy
@@ -1144,8 +1117,9 @@ msgstr ""
 
 #: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
 #: scripts/xach-effect.sct.h:1
+#, fuzzy
 msgid "<Image>/Tiny-Fu/Shadow"
-msgstr ""
+msgstr "/Tiny-Fu/"
 
 #: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
 msgid "Allow resizing"
@@ -1154,42 +1128,36 @@ msgstr ""
 #: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
 #: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
 #: scripts/swirltile.sct.h:4
-#, fuzzy
 msgid "Blur radius"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
-#, fuzzy
 msgid "Offset X"
-msgstr "Méid Clófhoireann (picsil)"
+msgstr ""
 
 #: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:9
-#, fuzzy
 msgid "Offset Y"
-msgstr "Méid Clófhoireann (picsil)"
+msgstr ""
 
 #: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:10
 msgid "Opacity"
 msgstr ""
 
 #: scripts/drop-shadow.sct.h:8
-#, fuzzy
 msgid "_Drop-Shadow..."
-msgstr "Dath"
+msgstr ""
 
 #: scripts/erase-rows.sct.h:2
 msgid "Columns"
 msgstr ""
 
 #: scripts/erase-rows.sct.h:3
-#, fuzzy
 msgid "Erase"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/erase-rows.sct.h:4
-#, fuzzy
 msgid "Erase/fill"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/erase-rows.sct.h:5
 msgid "Even"
@@ -1256,14 +1224,12 @@ msgid "Detail level"
 msgstr ""
 
 #: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-#, fuzzy
 msgid "Image height"
-msgstr "Deis"
+msgstr ""
 
 #: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-#, fuzzy
 msgid "Image width"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/flatland.sct.h:5 scripts/land.sct.h:7
 msgid "Random seed"
@@ -1282,14 +1248,12 @@ msgid "_Flatland..."
 msgstr ""
 
 #: scripts/font-map.sct.h:2
-#, fuzzy
 msgid "Active colors"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/font-map.sct.h:3
-#, fuzzy
 msgid "Black on white"
-msgstr "Íomha na Chúlra"
+msgstr ""
 
 #: scripts/font-map.sct.h:4
 #, fuzzy
@@ -1331,9 +1295,8 @@ msgid "_Frosty..."
 msgstr "Brábhsáil...."
 
 #: scripts/fuzzyborder.sct.h:2
-#, fuzzy
 msgid "Add shadow"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/fuzzyborder.sct.h:3
 msgid "Blur border"
@@ -1362,14 +1325,12 @@ msgid "Autocrop"
 msgstr "Údar:"
 
 #: scripts/gimp-headers.sct.h:3
-#, fuzzy
 msgid "Dark color"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-#, fuzzy
 msgid "Highlight color"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
 msgid "Index image"
@@ -1380,18 +1341,16 @@ msgid "Number of colors"
 msgstr ""
 
 #: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-#, fuzzy
 msgid "Remove background"
-msgstr "Íomha na Chúlra"
+msgstr ""
 
 #: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
 msgid "Select-by-color threshold"
 msgstr ""
 
 #: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-#, fuzzy
 msgid "Shadow color"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/gimp-headers.sct.h:14
 msgid "_Big Header..."
@@ -1434,9 +1393,8 @@ msgid "Glo_ssy..."
 msgstr ""
 
 #: scripts/glossy.sct.h:11
-#, fuzzy
 msgid "Outline gradient reverse"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/glossy.sct.h:13
 msgid "Pattern (outline)"
@@ -1451,9 +1409,8 @@ msgid "Pattern (text)"
 msgstr ""
 
 #: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
-#, fuzzy
 msgid "Shadow"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/glossy.sct.h:20
 msgid "Text gradient reverse"
@@ -1586,28 +1543,24 @@ msgid "Graph scale"
 msgstr ""
 
 #: scripts/hsv-graph.sct.h:8
-#, fuzzy
 msgid "Start X"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/hsv-graph.sct.h:9
-#, fuzzy
 msgid "Start Y"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/hsv-graph.sct.h:10
 msgid "Use selection bounds instead of values below"
 msgstr ""
 
 #: scripts/i26-gunya2.sct.h:4
-#, fuzzy
 msgid "Frame color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/i26-gunya2.sct.h:5
-#, fuzzy
 msgid "Frame size"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/i26-gunya2.sct.h:6
 msgid "Imigre-26..."
@@ -1626,32 +1579,28 @@ msgid "Insert layer names"
 msgstr ""
 
 #: scripts/image-structure.sct.h:6
-#, fuzzy
 msgid "Make new background"
-msgstr "Íomha na Chúlra"
+msgstr ""
 
 #: scripts/image-structure.sct.h:7
 msgid "Outer border"
 msgstr ""
 
 #: scripts/image-structure.sct.h:8
-#, fuzzy
 msgid "Pad color"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/image-structure.sct.h:9
-#, fuzzy
 msgid "Pad opacity"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/image-structure.sct.h:10
 msgid "Padding for transparent regions"
 msgstr ""
 
 #: scripts/image-structure.sct.h:11
-#, fuzzy
 msgid "Shear length"
-msgstr "Deis"
+msgstr ""
 
 #: scripts/image-structure.sct.h:12
 msgid "Show Image _Structure..."
@@ -1662,9 +1611,8 @@ msgid "Space between layers"
 msgstr ""
 
 #: scripts/land.sct.h:6
-#, fuzzy
 msgid "Land height"
-msgstr "Deis"
+msgstr ""
 
 #: scripts/land.sct.h:10
 msgid "Sea depth"
@@ -1699,9 +1647,8 @@ msgid "Number of lines"
 msgstr ""
 
 #: scripts/line-nova.sct.h:4
-#, fuzzy
 msgid "Offset radius"
-msgstr "Méid Clófhoireann (picsil)"
+msgstr ""
 
 #: scripts/line-nova.sct.h:5
 msgid "Randomness"
@@ -1720,8 +1667,9 @@ msgid "Create size of brush"
 msgstr ""
 
 #: scripts/mkbrush.sct.h:3
+#, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "Treosuíomh"
 
 #: scripts/mkbrush.sct.h:4
 msgid "Elli_ptical, Feathered..."
@@ -1791,9 +1739,8 @@ msgid "_Old Photo..."
 msgstr ""
 
 #: scripts/perspective-shadow.sct.h:3
-#, fuzzy
 msgid "Angle"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/perspective-shadow.sct.h:6
 msgid "Cubic"
@@ -1840,24 +1787,20 @@ msgid "_Predator..."
 msgstr ""
 
 #: scripts/pupi-button.sct.h:5
-#, fuzzy
 msgid "Lower color"
-msgstr "Dath Cúlra"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:6
-#, fuzzy
 msgid "Lower color (active)"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:7
-#, fuzzy
 msgid "Not pressed"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:8
-#, fuzzy
 msgid "Not pressed (active)"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:9
 msgid "Padding X"
@@ -1868,9 +1811,8 @@ msgid "Padding Y"
 msgstr ""
 
 #: scripts/pupi-button.sct.h:12
-#, fuzzy
 msgid "Round ratio"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:15
 #, fuzzy
@@ -1878,14 +1820,12 @@ msgid "Text color (active)"
 msgstr "Dath Theacs"
 
 #: scripts/pupi-button.sct.h:16
-#, fuzzy
 msgid "Upper color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:17
-#, fuzzy
 msgid "Upper color (active)"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/pupi-button.sct.h:18
 msgid "_Round Button..."
@@ -1904,9 +1844,8 @@ msgid "Render _Map..."
 msgstr ""
 
 #: scripts/rendermap.sct.h:9
-#, fuzzy
 msgid "Tile"
-msgstr "Ciorcál"
+msgstr ""
 
 #: scripts/ripply-anim.sct.h:2
 msgid "Black"
@@ -1946,9 +1885,8 @@ msgid "Add drop-shadow"
 msgstr ""
 
 #: scripts/round-corners.sct.h:5
-#, fuzzy
 msgid "Edge radius"
-msgstr "Méid Clófhoireann (picsil)"
+msgstr ""
 
 #: scripts/round-corners.sct.h:9
 msgid "_Round Corners..."
@@ -1963,9 +1901,9 @@ msgid "Concave"
 msgstr ""
 
 #: scripts/selection-round.sct.h:4
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "_Teorainn (picsil)"
+msgstr ""
 
 #: scripts/selection-round.sct.h:5
 msgid "Rounded R_ectangle..."
@@ -1976,8 +1914,9 @@ msgid "Brush name"
 msgstr ""
 
 #: scripts/select-to-brush.sct.h:5
+#, fuzzy
 msgid "To _Brush..."
-msgstr ""
+msgstr "Brábhsáil...."
 
 #: scripts/select-to-image.sct.h:2
 msgid "To _Image"
@@ -2021,23 +1960,21 @@ msgid "Lighting (degrees)"
 msgstr ""
 
 #: scripts/sphere.sct.h:4
-#, fuzzy
 msgid "Radius (pixels)"
-msgstr "_Teorainn (picsil)"
-
-#: scripts/sphere.sct.h:6
-#, fuzzy
-msgid "Sphere color"
-msgstr "Dath Theacs"
-
-#: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
-msgid "_Sphere..."
 msgstr ""
 
-#: scripts/spinning-globe.sct.h:2
+#: scripts/sphere.sct.h:6
+msgid "Sphere color"
+msgstr ""
+
+#: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
 #, fuzzy
+msgid "_Sphere..."
+msgstr "Brábhsáil...."
+
+#: scripts/spinning-globe.sct.h:2
 msgid "Frames"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/spinning-globe.sct.h:3
 msgid "Index to n colors (0 = remain RGB)"
@@ -2073,9 +2010,8 @@ msgid "Epitrochoid"
 msgstr ""
 
 #: scripts/spyrogimp.sct.h:8
-#, fuzzy
 msgid "Frame"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:10
 msgid "Gradient: Loop Sawtooth"
@@ -2086,14 +2022,12 @@ msgid "Gradient: Loop Triangle"
 msgstr ""
 
 #: scripts/spyrogimp.sct.h:12
-#, fuzzy
 msgid "Hexagon"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:13
-#, fuzzy
 msgid "Hole ratio"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:14
 msgid "Inner teeth"
@@ -2104,9 +2038,8 @@ msgid "Lissajous"
 msgstr ""
 
 #: scripts/spyrogimp.sct.h:16
-#, fuzzy
 msgid "Margin (pixels)"
-msgstr "_Teorainn (picsil)"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:17
 msgid "Outer teeth"
@@ -2117,9 +2050,8 @@ msgid "Pencil"
 msgstr "Peann Lua"
 
 #: scripts/spyrogimp.sct.h:19
-#, fuzzy
 msgid "Pentagon"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:20
 msgid "Polygon: 10 sides"
@@ -2142,9 +2074,8 @@ msgid "Shape"
 msgstr ""
 
 #: scripts/spyrogimp.sct.h:25
-#, fuzzy
 msgid "Solid Color"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:26
 msgid "Spyrograph"
@@ -2155,18 +2086,16 @@ msgid "Square"
 msgstr ""
 
 #: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-#, fuzzy
 msgid "Start angle"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:29
 msgid "Tool"
 msgstr "Uirlís"
 
 #: scripts/spyrogimp.sct.h:30
-#, fuzzy
 msgid "Triangle"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/spyrogimp.sct.h:31
 msgid "Type"
@@ -2177,9 +2106,8 @@ msgid "_Spyrogimp..."
 msgstr ""
 
 #: scripts/starburst-logo.sct.h:4
-#, fuzzy
 msgid "Burst color"
-msgstr "Dath Theacs"
+msgstr ""
 
 #: scripts/starburst-logo.sct.h:5
 #, fuzzy
@@ -2196,31 +2124,29 @@ msgid "Effect size (pixels * 4)"
 msgstr "Méid Clófhoireann (picsil)"
 
 #: scripts/starscape-logo.sct.h:7
+#, fuzzy
 msgid "Sta_rscape..."
-msgstr ""
+msgstr "Brábhsáil...."
 
 #: scripts/swirltile.sct.h:9
 msgid "Swirl-_Tile..."
 msgstr ""
 
 #: scripts/swirltile.sct.h:10
-#, fuzzy
 msgid "Whirl amount"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/swirly-pattern.sct.h:2
 msgid "Number of times to whirl"
 msgstr ""
 
 #: scripts/swirly-pattern.sct.h:3
-#, fuzzy
 msgid "Quarter size"
-msgstr "_Teorainn (picsil)"
+msgstr ""
 
 #: scripts/swirly-pattern.sct.h:4
-#, fuzzy
 msgid "Whirl angle"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/swirly-pattern.sct.h:5
 msgid "_Swirly..."
@@ -2252,9 +2178,8 @@ msgid "Antialias"
 msgstr ""
 
 #: scripts/text-circle.sct.h:3
-#, fuzzy
 msgid "Fill angle"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/text-circle.sct.h:7
 msgid "Render the specified text along the perimeter of a circle"
@@ -2270,18 +2195,16 @@ msgid "Ending blend"
 msgstr ""
 
 #: scripts/textured-logo.sct.h:8
-#, fuzzy
 msgid "Hexagons"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/textured-logo.sct.h:9
 msgid "Mosaic tile type"
 msgstr ""
 
 #: scripts/textured-logo.sct.h:10
-#, fuzzy
 msgid "Octagons"
-msgstr "Treosuíomh"
+msgstr ""
 
 #: scripts/textured-logo.sct.h:12
 msgid "Squares"
@@ -2354,9 +2277,8 @@ msgid "Mask opacity"
 msgstr ""
 
 #: scripts/unsharp-mask.sct.h:3
-#, fuzzy
 msgid "Mask size"
-msgstr "Ainm Chomhad"
+msgstr ""
 
 #: scripts/unsharp-mask.sct.h:4
 msgid "_Unsharp Mask..."
@@ -2391,9 +2313,8 @@ msgid "Shadow darkness"
 msgstr ""
 
 #: scripts/weave.sct.h:5
-#, fuzzy
 msgid "Shadow depth"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/weave.sct.h:6
 msgid "Thread density"
@@ -2428,73 +2349,48 @@ msgid "_Main Web Site"
 msgstr ""
 
 #: scripts/xach-effect.sct.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:5
-#, fuzzy
 msgid "Drop shadow color"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:7
-#, fuzzy
 msgid "Highlight X offset"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:8
-#, fuzzy
 msgid "Highlight Y offset"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:10
-#, fuzzy
 msgid "Highlight opacity"
-msgstr "Dath"
+msgstr ""
 
 #: scripts/xach-effect.sct.h:12
 msgid "_Xach-Effect..."
 msgstr ""
 
-#~ msgid "Text Color"
-#~ msgstr "Dath Theacs"
-
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Méid Clófhoireann (picsil)"
-
 #, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Méid Clófhoireann (picsil)"
+#~ msgid "Name"
+#~ msgstr "Ainm:"
 
 #, fuzzy
 #~ msgid "_About"
 #~ msgstr "Faoi"
-
-#, fuzzy
-#~ msgid "Parameters"
-#~ msgstr "Dáta:"
-
-#, fuzzy
-#~ msgid "Transparent Background"
-#~ msgstr "Íomha na Chúlra"
-
-#~ msgid "Name:"
-#~ msgstr "Ainm:"
 
 #~ msgid "In:"
 #~ msgstr "Isteach:"
@@ -2504,3 +2400,6 @@ msgstr ""
 
 #~ msgid "Help:"
 #~ msgstr "Cuidiú"
+
+#~ msgid "Font Size (pixels)"
+#~ msgstr "Méid Clófhoireann (picsil)"
