@@ -113,7 +113,7 @@
           (set! width (car (gimp-drawable-width new-layer)))
           (if (not tiny-fu-text-circle-debug?)
             (begin
-              (gimp-drawable-transform-rotate-defaults new-layer
+              (gimp-drawable-transform-rotate-default new-layer
                        ((if (< 0 fill-angle-rad) + -) angle rad-90)
                        TRUE 0 0
                        TRUE FALSE)

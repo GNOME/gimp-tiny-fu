@@ -75,7 +75,7 @@
     (gimp-selection-layer-alpha logo-layer)
     (set! fs (car (gimp-selection-float shadow-layer 0 0)))
     (gimp-edit-clear shadow-layer)
-    (gimp-drawable-transform-perspective-defaults fs FALSE
+    (gimp-drawable-transform-perspective-default fs FALSE
                       (+ 5 (* 0.15 height)) (- height (* 0.15 height))
                       (+ 5 width (* 0.15 height)) (- height (* 0.15 height))
                       5 height
@@ -88,7 +88,7 @@
     (gimp-edit-copy logo-layer)
     (set! fs (car (gimp-edit-paste reflect-layer FALSE)))
     (gimp-floating-sel-anchor fs)
-    (gimp-drawable-transform-scale-defaults reflect-layer
+    (gimp-drawable-transform-scale-default reflect-layer
                                             0 0 width (* 0.85 height)
                                             FALSE FALSE)
     (gimp-drawable-transform-flip-simple reflect-layer

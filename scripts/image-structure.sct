@@ -57,7 +57,7 @@
 
       (gimp-layer-translate layer
                             (+ border shear-length) (+ border (* space index)))
-      (gimp-drawable-transform-shear-defaults layer ORIENTATION-HORIZONTAL
+      (gimp-drawable-transform-shear-default layer ORIENTATION-HORIZONTAL
                           (* (/ (car (gimp-drawable-height layer)) old-height)
                              (* -2 shear-length))
                           TRUE FALSE)

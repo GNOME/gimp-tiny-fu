@@ -1,3 +1,15 @@
+2004-11-16  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	Released a new tarball as version 0.9.6
+
+	Updates based on changes made by Michael Natterer to Script-Fu.
+
+	* scripts/coolmetal-logo.sct
+	* scripts/image-structure.sct
+	* scripts/text-circle.sct: Use the new drawable_foo_default()
+	functions instead of drawable_foo_defaults() to be consistent
+	with paintbrush_default() and friends.
+
 2004-11-15  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* Makefile.am: Added NEWS to the list of files in EXTRA_DIST.
