@@ -16,14 +16,14 @@
  * Foundation, Inc., 59 Temple Place - Suite 331, Boston, MA 02111-1307, USA.
  */
 
-#if	0
-#define DEBUG_MARSHALL 0    /* <-- No need to define this until you need it */
-#define DEBUG_SCRIPTS  0
+#if	1
+#define DEBUG_MARSHALL       0	/* No need to define this until you need it */
 #endif
+#define DEBUG_SCRIPTS        0
 
 #include "config.h"
 
-#include <string.h>    /* memcpy, strcpy, strlen */
+#include <string.h> /* memcpy, strcpy, strlen */
 
 #include <gtk/gtk.h>
 
@@ -42,8 +42,6 @@
 #include "tiny-fu-interface.h"
 #include "tiny-fu-scripts.h"
 #include "tiny-fu-server.h"
-
-#include "tiny-fu-intl.h"
 
 #include "ts-wrapper.h"
 
@@ -228,7 +226,7 @@ tinyscheme_init (gboolean local_register_scripts)
   /* init the interpreter */
   if (!scheme_init (&sc))
   {
-     g_message (_("Could not initialize TinyScheme!\n"));
+     g_message ("Could not initialize TinyScheme!\n");
      return;
   }
 
@@ -247,7 +245,7 @@ tinyscheme_init (gboolean local_register_scripts)
               "%s%s", gimp_data_directory (), "/scripts/tiny-fu.init");
   fin = fopen (buff, "r");
   if (fin == NULL)
-     fprintf (stderr, _("Unable to read initialization file\n"));
+     fprintf (stderr, "Unable to read initialization file\n");
   else
   {
      scheme_load_file (&sc, fin);
@@ -361,7 +359,7 @@ init_procedures (void)
   GimpParamDef    *return_vals;
   gint             num_procs;
   gint             i;
-  gchar           *def_buff;
+  gchar           *buff;
   pointer          symbol;
 
 #if USE_DL
@@ -405,37 +403,28 @@ init_procedures (void)
                                         &nparams, &nreturn_vals,
                                         &params, &return_vals))
       {
-         gint buff_len;
-
          /*  convert the names to scheme-like naming conventions  */
          convert_string (proc_name);
 
-         buff_len = strlen (proc_name) + strlen (proc_list[i]) + 60;
-         def_buff = (gchar *)g_malloc (buff_len);
-         if (def_buff == NULL)
-             fprintf (stderr, "  unable to allocate buffer of %d bytes\n", buff_len);
+         /* Build a define that will call the foreign function */
+         /* The Scheme statement was suggested by Simon Budig  */
+         if (nparams == 0)
+         {
+             buff = g_strdup_printf (
+                      " (define (%s) (gimp-proc-db-call \"%s\"))",
+                      proc_name, proc_list[i]);
+         }
          else
          {
-             /* Build a define that will call the foreign function */
-             /* The Scheme statement was suggested by Simon Budig  */
-             if (nparams == 0)
-             {
-                 g_snprintf (def_buff, buff_len,
-                          " (define (%s) (gimp-proc-db-call \"%s\"))",
-                          proc_name, proc_list[i]);
-             }
-             else
-             {
-                 g_snprintf (def_buff, buff_len,
-                          " (define %s (lambda x (apply gimp-proc-db-call (cons \"%s\" x))))",
-                          proc_name, proc_list[i]);
-             }
-
-             /*  Execute the 'define'  */
-             sc.vptr->load_string (&sc, def_buff);
-
-             g_free (def_buff);
+             buff = g_strdup_printf (
+                      " (define %s (lambda x (apply gimp-proc-db-call (cons \"%s\" x))))",
+                      proc_name, proc_list[i]);
          }
+
+         /*  Execute the 'define'  */
+         sc.vptr->load_string (&sc, buff);
+
+         g_free (buff);
 
          /*  free the queried information  */
          g_free (proc_blurb);
@@ -446,6 +435,8 @@ init_procedures (void)
          gimp_destroy_paramdefs (params, nparams);
          gimp_destroy_paramdefs (return_vals, nreturn_vals);
       }
+
+      g_free (proc_name);
   }
 
   g_free (proc_list);
@@ -499,7 +490,8 @@ marshall_proc_db_call (scheme *sc, pointer a)
   pointer          intermediate_val;
   pointer          return_val = sc->NIL;
   gchar           *string;
-  pointer          a_saved;
+  gint32           n_elements;
+  pointer          array;
 #if DEBUG_MARSHALL
 char *ret_types[] = {
   "GIMP_PDB_INT32",       "GIMP_PDB_INT16",     "GIMP_PDB_INT8",
@@ -529,23 +521,17 @@ char *status_types[] = {
 fprintf (stderr, "\nIn marshall_proc_db_call ()\n");
 #endif
 
-  /* Save a in case it is needed for an error message. */
-  a_saved = a;
-
   /*  Make sure there are arguments  */
   if (a == sc->NIL)
-    return my_err (_("Procedure database argument marshaller was called with no arguments. "
+    return my_err ("Procedure database argument marshaller was called with no arguments. "
                    "The procedure to be executed and the arguments it requires "
-                   " (possibly none) must be specified."), sc->NIL);
+                   " (possibly none) must be specified.", sc->NIL);
 
   /*  The PDB procedure name is the argument or first argument of the list  */
   if (sc->vptr->is_pair (a))
-    proc_name = sc->vptr->string_value (sc->vptr->pair_car (a));
+    proc_name = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
   else
-    proc_name = sc->vptr->string_value (a);
-
-  /*  report the current command  */
-  tiny_fu_interface_report_cc (proc_name);
+    proc_name = g_strdup (sc->vptr->string_value (a));
 
 #ifdef DEBUG_MARSHALL
 fprintf (stderr, "  proc name: %s\n", proc_name);
@@ -553,6 +539,9 @@ fprintf (stderr, "  proc name: %s\n", proc_name);
 #if DEBUG_MARSHALL
 fprintf (stderr, "  parms rcvd: %d\n", sc->vptr->list_length (sc, a)-1);
 #endif
+
+  /*  report the current command  */
+  tiny_fu_interface_report_cc (proc_name);
 
   /*  Attempt to fetch the procedure from the database  */
   if (! gimp_procedural_db_proc_info (proc_name,
@@ -570,7 +559,7 @@ fprintf (stderr, "  Invalid procedure name\n");
 #endif
       convert_string (proc_name);
       g_snprintf (error_str, sizeof (error_str),
-                  _("Invalid procedure name %s specified"), proc_name);
+                  "Invalid procedure name %s specified", proc_name);
       return my_err (error_str, sc->NIL);
     }
 
@@ -595,7 +584,7 @@ fprintf (stderr, "  Invalid number of arguments (got %d, expected %d)",
 #endif
       convert_string (proc_name);
       g_snprintf (error_str, sizeof (error_str),
-                  _("Invalid number of arguments supplied to %s (got %d, expected %d)"),
+                  "Invalid number of arguments supplied to %s (got %d, expected %d)",
                   proc_name, (sc->vptr->list_length (sc, a) - 1), nparams);
       return my_err (error_str, sc->NIL);
     }
@@ -687,150 +676,216 @@ fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
         break;
 
       case GIMP_PDB_INT32ARRAY:
-        if (!sc->vptr->is_array (sc->vptr->pair_car (a)))
+        array = sc->vptr->pair_car (a);
+        if (!sc->vptr->is_array (array))
           success = FALSE;
         if (success)
+        {
+          if (arraytype (array) != array_int32)
           {
-            if (arraytype(sc->vptr->pair_car (a)) != array_int32)
-            {
-                g_snprintf (error_str, sizeof (error_str),
-                            _("Expected INT32ARRAY for argument %d in call to procedure %s\n"),
-                            i+1, proc_name);
-                return my_err (error_str, sc->vptr->pair_car (a));
-            }
+              convert_string (proc_name);
+              g_snprintf (error_str, sizeof (error_str),
+                          "Expected INT32ARRAY for argument %d in call to procedure %s\n",
+                          i+1, proc_name);
+              return my_err (error_str, array);
+          }
 
-            args[i].type = GIMP_PDB_INT32ARRAY;
-            args[i].data.d_int32array =
-                (gint32*) arrayvalue(sc->vptr->pair_car(a));
+          n_elements = args[i-1].data.d_int32;
+          if (n_elements != arraylength (array))
+          {
+            convert_string (proc_name);
+            g_snprintf (error_str, sizeof (error_str),
+                        "INT32 array (argument %d) for function %s has "
+                        "size of %d but expected size of %d",
+                        i+1, proc_name, arraylength (array), n_elements);
+            return my_err (error_str, sc->NIL);
+          }
+
+          args[i].type = GIMP_PDB_INT32ARRAY;
+          args[i].data.d_int32array = (gint32*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
-gint32 *array;
-int j, count;
-array = args[i].data.d_int32array;
-count = args[i-1].data.d_int32;
-fprintf (stderr, "      int32 array has %d elements\n", count);
+gint32 *data;
+int j;
+data = (gint32*) arrayvalue (array);
+fprintf (stderr, "      int32 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
-for (j = 0; j < count; ++j)
-    fprintf (stderr, " %d", array[j]);
+for (j = 0; j < n_elements; ++j)
+    fprintf (stderr, " %d", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-          }
+        }
         break;
 
       case GIMP_PDB_INT16ARRAY:
-        if (!sc->vptr->is_array (sc->vptr->pair_car (a)))
+        array = sc->vptr->pair_car (a);
+        if (!sc->vptr->is_array (array))
           success = FALSE;
         if (success)
+        {
+          if (arraytype (array) != array_int16)
           {
-            if (arraytype(sc->vptr->pair_car (a)) != array_int16)
-            {
-                g_snprintf (error_str, sizeof (error_str),
-                            _("Expected INT16ARRAY for argument %d in call to procedure %s\n"),
-                            i+1, proc_name);
-                return my_err (error_str, sc->vptr->pair_car (a));
-            }
+              convert_string (proc_name);
+              g_snprintf (error_str, sizeof (error_str),
+                          "Expected INT16ARRAY for argument %d in call to procedure %s\n",
+                          i+1, proc_name);
+              return my_err (error_str, array);
+          }
 
-            args[i].type = GIMP_PDB_INT16ARRAY;
-            args[i].data.d_int16array =
-                (gint16*) arrayvalue(sc->vptr->pair_car(a));
+          n_elements = args[i-1].data.d_int32;
+          if (n_elements != arraylength (array))
+          {
+            convert_string (proc_name);
+            g_snprintf (error_str, sizeof (error_str),
+                        "INT16 array (argument %d) for function %s has "
+                        "size of %d but expected size of %d",
+                        i+1, proc_name, arraylength (array), n_elements);
+            return my_err (error_str, sc->NIL);
+          }
+
+          args[i].type = GIMP_PDB_INT16ARRAY;
+          args[i].data.d_int16array = (gint16*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
-gint16 *array;
-int j, count;
-array = args[i].data.d_int16array;
-count = args[i-1].data.d_int32;
-fprintf (stderr, "      int16 array has %d elements\n", count);
+gint16 *data;
+int j;
+data = (gint16*) arrayvalue (array);
+fprintf (stderr, "      int16 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
-for (j = 0; j < count; ++j)
-    fprintf (stderr, " %d", array[j]);
+for (j = 0; j < n_elements; ++j)
+    fprintf (stderr, " %d", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-          }
+        }
         break;
 
       case GIMP_PDB_INT8ARRAY:
-        if (!sc->vptr->is_array (sc->vptr->pair_car (a)))
+        array = sc->vptr->pair_car (a);
+        if (!sc->vptr->is_array (array))
           success = FALSE;
         if (success)
+        {
+          if (arraytype (array) != array_int8)
           {
-            if (arraytype(sc->vptr->pair_car (a)) != array_int8)
-            {
-                g_snprintf (error_str, sizeof (error_str),
-                            _("Expected INT8ARRAY for argument %d in call to procedure %s\n"),
-                            i+1, proc_name);
-                return my_err (error_str, sc->vptr->pair_car (a));
-            }
+              convert_string (proc_name);
+              g_snprintf (error_str, sizeof (error_str),
+                          "Expected INT32ARRAY for argument %d in call to procedure %s\n",
+                          i+1, proc_name);
+              return my_err (error_str, array);
+          }
 
-            args[i].type = GIMP_PDB_INT8ARRAY;
-            args[i].data.d_int8array =
-                (gint8*) arrayvalue(sc->vptr->pair_car(a));
+          n_elements = args[i-1].data.d_int32;
+          if (n_elements != arraylength (array))
+          {
+            convert_string (proc_name);
+            g_snprintf (error_str, sizeof (error_str),
+                        "INT8 array (argument %d) for function %s has "
+                        "size of %d but expected size of %d",
+                        i+1, proc_name, arraylength (array), n_elements);
+            return my_err (error_str, sc->NIL);
+          }
+
+          args[i].type = GIMP_PDB_INT8ARRAY;
+          args[i].data.d_int8array = (gint8*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
-gint8 *array;
-int j, count;
-array = args[i].data.d_int8array;
-count = args[i-1].data.d_int32;
-fprintf (stderr, "      int8 array has %d elements\n", count);
+gint8 *data;
+int j;
+data = (gint8*) arrayvalue (array);
+fprintf (stderr, "      int8 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
-for (j = 0; j < count; ++j)
-    fprintf (stderr, " %d", array[j]);
+for (j = 0; j < n_elements; ++j)
+    fprintf (stderr, " %d", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-          }
+        }
         break;
 
       case GIMP_PDB_FLOATARRAY:
-        if (!sc->vptr->is_array (sc->vptr->pair_car (a)))
+        array = sc->vptr->pair_car (a);
+        if (!sc->vptr->is_array (array))
           success = FALSE;
         if (success)
+        {
+          if (arraytype (array) != array_float)
           {
-            if (arraytype(sc->vptr->pair_car (a)) != array_float)
-            {
-                g_snprintf (error_str, sizeof (error_str),
-                            _("Expected FLOATARRAY for argument %d in call to procedure %s\n"),
-                            i+1, proc_name);
-                return my_err (error_str, sc->vptr->pair_car (a));
-            }
+              convert_string (proc_name);
+              g_snprintf (error_str, sizeof (error_str),
+                          "Expected FLOATARRAY for argument %d in call to procedure %s\n",
+                          i+1, proc_name);
+              return my_err (error_str, array);
+          }
 
-            args[i].type = GIMP_PDB_FLOATARRAY;
-            args[i].data.d_floatarray =
-                (gdouble*) arrayvalue(sc->vptr->pair_car(a));
+          n_elements = args[i-1].data.d_int32;
+          if (n_elements != arraylength (array))
+          {
+            convert_string (proc_name);
+            g_snprintf (error_str, sizeof (error_str),
+                        "FLOAT array (argument %d) for function %s has "
+                        "size of %d but expected size of %d",
+                        i+1, proc_name, arraylength (array), n_elements);
+            return my_err (error_str, sc->NIL);
+          }
+
+          args[i].type = GIMP_PDB_FLOATARRAY;
+          args[i].data.d_floatarray = (gdouble*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
-gdouble *array;
-int j, count;
-array = args[i].data.d_floatarray;
-count = args[i-1].data.d_int32;
-fprintf (stderr, "      float array has %d elements\n", count);
+gdouble *data;
+int j;
+data = (gdouble*) arrayvalue (array);
+fprintf (stderr, "      float array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
-for (j = 0; j < count; ++j)
-    fprintf (stderr, " %f", array[j]);
+for (j = 0; j < n_elements; ++j)
+    fprintf (stderr, " %f", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-          }
+        }
         break;
 
       case GIMP_PDB_STRINGARRAY:
-        if (!sc->vptr->is_array (sc->vptr->pair_car (a)))
+        array = sc->vptr->pair_car (a);
+        if (!sc->vptr->is_array (array))
           success = FALSE;
         if (success)
-          {
-            if (arraytype(sc->vptr->pair_car (a)) != array_string)
-            {
-                g_snprintf (error_str, sizeof (error_str),
-                            _("Expected STRINGARRAY for argument %d in call to procedure %s\n"),
-                            i+1, proc_name);
-                return my_err (error_str, sc->vptr->pair_car (a));
-            }
+        {
+          pointer list = array;
+          gint j;
 
-            args[i].type = GIMP_PDB_STRINGARRAY;
-            args[i].data.d_stringarray =
-                (gchar**) arrayvalue(sc->vptr->pair_car(a));
+          if (arraytype (array) != array_string)
+          {
+              convert_string (proc_name);
+              g_snprintf (error_str, sizeof (error_str),
+                          "Expected STRINGARRAY for argument %d in call to procedure %s\n",
+                          i+1, proc_name);
+              return my_err (error_str, sc->vptr->pair_car (a));
           }
+
+          n_elements = args[i-1].data.d_int32;
+          if (n_elements != arraylength (array))
+          {
+            convert_string (proc_name);
+            g_snprintf (error_str, sizeof (error_str),
+                        "STRING array (argument %d) for function %s has "
+                        "length of %d but expected length of %d",
+                        i+1, proc_name, arraylength (array), n_elements);
+            return my_err (error_str, sc->NIL);
+          }
+
+          args[i].type = GIMP_PDB_STRINGARRAY;
+          args[i].data.d_stringarray = (gchar**) arrayvalue (array);
+
+          for (j = 0; j < n_elements; j++)
+          {
+            args[i].data.d_stringarray[j] =
+                sc->vptr->string_value (sc->vptr->pair_car (list));
+            list = sc->vptr->pair_cdr (list);
+          }
+        }
         break;
 
       case GIMP_PDB_COLOR:
@@ -858,7 +913,7 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         break;
 
       case GIMP_PDB_REGION:
-        return my_err (_("Regions are currently unsupported as arguments"),
+        return my_err ("Regions are currently unsupported as arguments",
                        sc->vptr->pair_car (a));
         break;
 
@@ -923,12 +978,12 @@ fprintf (stderr, "      (%d %d %d)\n", r, g, b);
         break;
 
       case GIMP_PDB_BOUNDARY:
-        return my_err (_("Boundaries are currently unsupported as arguments"),
+        return my_err ("Boundaries are currently unsupported as arguments",
                        sc->vptr->pair_car (a));
         break;
 
       case GIMP_PDB_PATH:
-        return my_err (_("Paths are currently unsupported as arguments"),
+        return my_err ("Paths are currently unsupported as arguments",
                        sc->vptr->pair_car (a));
         break;
 
@@ -991,14 +1046,14 @@ fprintf (stderr, "      data '%s'\n", (char *)args[i].data.d_parasite.data);
         break;
 
       case GIMP_PDB_STATUS:
-        return my_err (_("Status is for return types, not arguments"),
+        return my_err ("Status is for return types, not arguments",
                        sc->vptr->pair_car (a));
         break;
 
       default:
         convert_string (proc_name);
         g_snprintf (error_str, sizeof (error_str),
-                    _("Argument %d for %s is an unknown type"),
+                    "Argument %d for %s is an unknown type",
                     i+1, proc_name);
         return my_err (error_str, sc->NIL);
       }
@@ -1025,7 +1080,7 @@ fprintf (stderr, "  done.\n");
 fprintf (stderr, "  Invalid type for argument %d\n", i+1);
 #endif
     g_snprintf (error_str, sizeof (error_str),
-                _("Invalid types specified for argument %d to %s"),
+                "Invalid types specified for argument %d to %s",
                 i+1, proc_name);
     return my_err (error_str, sc->NIL);
   }
@@ -1037,7 +1092,7 @@ fprintf (stderr, "  Invalid type for argument %d\n", i+1);
 fprintf (stderr, "  Did not return status\n");
 #endif
       g_snprintf (error_str, sizeof(error_str),
-               _("Procedural database execution of %s did not return a status:\n    "),
+               "Procedural database execution of %s did not return a status:\n    ",
                proc_name);
 
       return my_err (error_str, sc->NIL);
@@ -1052,14 +1107,14 @@ fprintf (stderr, "    return value is %s\n",
     {
     case GIMP_PDB_EXECUTION_ERROR:
       g_snprintf (error_str, sizeof (error_str),
-              _("Procedural database execution of %s failed:\n    "),
+              "Procedural database execution of %s failed:\n    ",
               proc_name);
       return my_err (error_str, sc->NIL);
       break;
 
     case GIMP_PDB_CALLING_ERROR:
       g_snprintf (error_str, sizeof (error_str),
-               _("Procedural database execution of %s failed on invalid input arguments:\n    "),
+               "Procedural database execution of %s failed on invalid input arguments:\n    ",
                proc_name);
       return my_err (error_str, sc->NIL);
       break;
@@ -1111,7 +1166,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 gint32  num_int32s = values[i].data.d_int32;
                 gint32 *array  = (gint32 *) values[i + 1].data.d_int32array;
                 pointer int_cell = sc->vptr->mk_array (sc, num_int32s, 0);
-                gint32 *avalue = (gint32 *) arrayvalue(int_cell);
+                gint32 *avalue = (gint32 *) arrayvalue (int_cell);
 
                 g_memmove(avalue, array, num_int32s*sizeof(gint32));
                 return_val = sc->vptr->cons (sc, int_cell, return_val);
@@ -1126,7 +1181,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 gint32  num_int16s = values[i].data.d_int32;
                 gint16 *array  = (gint16 *) values[i + 1].data.d_int16array;
                 pointer int_cell = sc->vptr->mk_array (sc, num_int16s, 1);
-                gint16 *avalue = (gint16 *) arrayvalue(int_cell);
+                gint16 *avalue = (gint16 *) arrayvalue (int_cell);
 
                 g_memmove(avalue, array, num_int16s*sizeof(gint16));
                 return_val = sc->vptr->cons (sc, int_cell, return_val);
@@ -1141,7 +1196,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 gint32  num_int8s  = values[i].data.d_int32;
                 gint8  *array  = (gint8 *) values[i + 1].data.d_int8array;
                 pointer int_cell = sc->vptr->mk_array (sc, num_int8s, 2);
-                gint8  *avalue = (gint8 *) arrayvalue(int_cell);
+                gint8  *avalue = (gint8 *) arrayvalue (int_cell);
 
                 g_memmove(avalue, array, num_int8s*sizeof(gint8));
                 return_val = sc->vptr->cons (sc, int_cell, return_val);
@@ -1156,7 +1211,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 gint32   num_floats = values[i].data.d_int32;
                 gdouble *array  = (gdouble *) values[i + 1].data.d_floatarray;
                 pointer  float_cell = sc->vptr->mk_array (sc, num_floats, 3);
-                gdouble *avalue = (gdouble *) arrayvalue(float_cell);
+                gdouble *avalue = (gdouble *) arrayvalue (float_cell);
 
                 g_memmove(avalue, array, num_floats*sizeof(gdouble));
                 return_val = sc->vptr->cons (sc, float_cell, return_val);
@@ -1200,7 +1255,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               }
 
             case GIMP_PDB_REGION:
-              return my_err (_("Regions are currently unsupported as return values"), sc->NIL);
+              return my_err ("Regions are currently unsupported as return values", sc->NIL);
               break;
 
             case GIMP_PDB_DISPLAY:
@@ -1234,11 +1289,11 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               break;
 
             case GIMP_PDB_BOUNDARY:
-              return my_err (_("Boundaries are currently unsupported as return values"), sc->NIL);
+              return my_err ("Boundaries are currently unsupported as return values", sc->NIL);
               break;
 
             case GIMP_PDB_PATH:
-              return my_err (_("Paths are currently unsupported as return values"), sc->NIL);
+              return my_err ("Paths are currently unsupported as return values", sc->NIL);
               break;
 
             case GIMP_PDB_PARASITE:
@@ -1246,7 +1301,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 pointer name, flags, data;
 
                 if (values[i + 1].data.d_parasite.name == NULL)
-                    return_val = my_err (_("Error: null parasite"), sc->NIL);
+                    return_val = my_err ("Error: null parasite", sc->NIL);
                 else
                   {
                     name    = sc->vptr->mk_string (sc,
@@ -1277,11 +1332,11 @@ fprintf (stderr, "      data '%.*s'\n",
               break;
 
             case GIMP_PDB_STATUS:
-              return my_err (_("Procedural database execution returned multiple status values"), sc->NIL);
+              return my_err ("Procedural database execution returned multiple status values", sc->NIL);
               break;
 
             default:
-              return my_err (_("Unknown return type"), sc->NIL);
+              return my_err ("Unknown return type", sc->NIL);
             }
         }
 
@@ -1289,6 +1344,9 @@ fprintf (stderr, "      data '%.*s'\n",
     case GIMP_PDB_CANCEL:   /*  should we do something here?  */
       break;
     }
+
+  /*  free the proc name  */
+  g_free (proc_name);
 
   /*  free up the executed procedure return values  */
   gimp_destroy_params (values, nvalues);
@@ -1343,6 +1401,6 @@ tiny_fu_quit_call (scheme *sc, pointer a)
   tiny_fu_server_quit ();
 
   scheme_deinit (sc);
-
+                                                                                
   return sc->NIL;
 }

@@ -24,6 +24,16 @@
 
 2004-10-04 Kevin Cozens <kcozensATinterlogDOTcom>
 
+	* plug-ins/tiny-fu/ts-wrapper.c: Cleaned init_procedures() by using
+	g_strdup_printf(), g_strdup()/g_free() proc_name, plugged memory leak.
+	Now strdup and free proc_name in marshall_proc_db_call().
+
+	* plug-ins/tiny-fu/ts-wrapper.c: Generate an error message if the size
+	of an array is different from the previous argument specifying the size
+	as suggested by Michael Natterer. (Fixes bug #154266)
+
+2004-10-04 Kevin Cozens <kcozensATinterlogDOTcom>
+
 	Updates based on Script-Fu changes made by Sven Neumann.
 
 	* plug-ins/script-fu/script-fu-interface.c: Added a horizontal
