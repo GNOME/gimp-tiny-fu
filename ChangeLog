@@ -1,5 +1,10 @@
 2005-03-17  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* tinyscheme/scheme.c: Strings are normalized (characters with an
+	accent are combined as one) before being stored in a data cell.
+
+2005-03-17  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* tinyscheme/README
 	* tinyscheme/scheme.h:
 	* tinyscheme/scheme-private.h:
