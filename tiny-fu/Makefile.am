@@ -1,8 +1,8 @@
 ## Process this file with automake to produce Makefile.in
 
+libtinyscheme=$(top_builddir)/tinyscheme/libtinyscheme.a
 libftx=$(top_builddir)/ftx/libftx.a
 libre=$(top_builddir)/re/libre.a
-libtinyscheme=$(top_builddir)/tinyscheme/libtinyscheme.a
 
 AM_CFLAGS = -DUSE_INTERFACE=1 -DUSE_STRCASECMP=1 -DUSE_STRLWR=1
 
