@@ -43,14 +43,14 @@ ToDo:
 	o Web gallery
 		thumbnails + html pages to show them and link to the originals images
 	o Create a contact sheet (DONE)
-- Check for valid return values from mk_*() calls to TinyScheme.
-  If they can return sc->NIL, test for it before using the pointer.
 - Clean up the changes re: putting error messages in to a buffer. Send the
   code changes to TinyScheme author.
 - The print_flag variable should only be set to 1 for the console mode.
 - Test the plug-ins text console mode.
 - Check if there are other places where is_pair() is being called instead
   of is_list().
+- Check for valid return values from mk_*() calls to TinyScheme.
+  If they can return sc->NIL, test for it before using the pointer.
 - Are there other loops looking for NULL pointer when traversing that is
   supposed to be a list instead of testing against sc->NIL?
 - Use a call to scheme_define() instead of building a string which is passed
