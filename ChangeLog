@@ -1,3 +1,34 @@
+2004-10-05 Kevin Cozens <kcozensATinterlogDOTcom>
+
+	Updates based on Script-Fu changes made by Sven Neumann.
+
+	* plug-ins/script-fu/script-fu-interface.c (script_fu_about): Set 
+	the help_func again (but not the help_id). Enabled line wrapping
+	on labels.
+
+	(script_fu_interface): substitute underscores by hyphens to
+	generate the help-id from the procedure name.
+
+	* plug-ins/script-fu/script-fu-interface.c: five buttons are too
+	much for the action area. Renamed the About button to Help and
+	resurrected the help button in the about dialog as a way to get to
+	the actual help pages (pressing F1 will get you there as well).
+
+	* plug-ins/script-fu/script-fu-interface.c (script_fu_interface):
+	set a minimum width for the color button again.
+	(script_fu_about): don't set help_func and help_id on the about
+	dialog.
+
+	* plug-ins/script-fu/script-fu-interface.c (script_fu_reset):
+	fixed reset for SF_TEXT values.
+
+2004-10-04 Kevin Cozens <kcozensATinterlogDOTcom>
+
+	Updates based on Script-Fu changes made by Sven Neumann.
+
+	* plug-ins/script-fu/script-fu-interface.c: Added a horizontal
+	size group for the left-aligned controls.
+
 2004-10-06 Kevin Cozens <kcozens at interlog.com>
 
 	Sven Neumann autoconf'ed version of Tiny-Fu 0.9.3 yesterday. All files

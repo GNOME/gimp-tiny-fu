@@ -40,7 +40,7 @@
 #define RESPONSE_ABOUT         2
 
 #define TEXT_WIDTH           100
-#define COLOR_SAMPLE_WIDTH   100
+#define COLOR_SAMPLE_WIDTH    60
 #define COLOR_SAMPLE_HEIGHT   15
 #define SLIDER_WIDTH          80
 
@@ -58,6 +58,7 @@ typedef struct
   GtkWidget     *about_dialog;
 
   gchar         *title;
+  gchar         *help_id;
   gchar         *last_command;
   gint           command_count;
   gint           consec_command_count;
@@ -78,7 +79,7 @@ static void   tiny_fu_reset               (SFScript         *script);
 static void   tiny_fu_about               (SFScript         *script);
 
 static void   tiny_fu_file_entry_callback (GtkWidget        *widget,
-                                           SFFilename       *fil);
+                                           SFFilename       *file);
 static void   tiny_fu_combo_callback      (GtkWidget        *widget,
                                            SFOption         *option);
 static void   tiny_fu_pattern_callback    (const gchar      *name,
@@ -154,16 +155,16 @@ tiny_fu_interface_report_cc (gchar *command)
 void
 tiny_fu_interface (SFScript *script)
 {
-  GtkWidget *dlg;
-  GtkWidget *frame;
-  GtkWidget *menu;
-  GtkWidget *vbox;
-  GtkWidget *vbox2;
-  GSList    *list;
-  gchar     *title;
-  gchar     *buf;
-  gint       start_args;
-  gint       i;
+  GtkWidget    *dlg;
+  GtkWidget    *frame;
+  GtkWidget    *menu;
+  GtkWidget    *vbox;
+  GtkWidget    *vbox2;
+  GtkSizeGroup *group;
+  GSList       *list;
+  gchar        *title;
+  gchar        *tmp;
+  gint          i;
 
   static gboolean gtk_initted = FALSE;
 
@@ -188,35 +189,42 @@ tiny_fu_interface (SFScript *script)
   sf_interface->args_widgets = g_new0 (GtkWidget *, script->num_args);
 
   /* strip the first part of the menupath if it contains _("/Tiny-Fu/") */
-  buf = strstr (gettext (script->menu_path), _("/Tiny-Fu/"));
-  if (buf)
-    title = g_strdup (buf + strlen (_("/Tiny-Fu/")));
+  tmp = strstr (gettext (script->menu_path), _("/Tiny-Fu/"));
+  if (tmp)
+    title = g_strdup (tmp + strlen (_("/Tiny-Fu/")));
   else
     title = g_strdup (gettext (script->menu_path));
 
   /* strip mnemonics from the menupath */
-  sf_interface->title = gimp_strip_uline (title);
+  tmp = gimp_strip_uline (title);
+
+  g_free (title);
+  title = tmp;
+
+  tmp = strstr (title, "...");
+  if (tmp)
+    *tmp = '\0';
+
+  sf_interface->title = g_strdup_printf (_("Tiny-Fu: %s"), title);
   g_free (title);
 
-  buf = strstr (sf_interface->title, "...");
-  if (buf)
-    *buf = '\0';
+  sf_interface->help_id = g_strdup (script->pdb_name);
 
-  buf = g_strdup_printf (_("Tiny-Fu: %s"), sf_interface->title);
+  for (tmp = sf_interface->help_id; tmp && *tmp; tmp++)
+    if (*tmp == '_')
+      *tmp = '-';
 
   sf_interface->dialog = dlg =
-    gimp_dialog_new (buf, "tiny-fu",
+    gimp_dialog_new (sf_interface->title, "tiny-fu",
                      NULL, 0,
-                     gimp_standard_help_func, script->pdb_name,
+                     gimp_standard_help_func, sf_interface->help_id,
 
-                     _("_About"),      RESPONSE_ABOUT,
+                     GTK_STOCK_HELP,   GTK_RESPONSE_HELP,
                      GIMP_STOCK_RESET, RESPONSE_RESET,
                      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
                      GTK_STOCK_OK,     GTK_RESPONSE_OK,
 
                      NULL);
-
-  g_free (buf);
 
   g_signal_connect (dlg, "response",
                     G_CALLBACK (tiny_fu_response),
@@ -249,16 +257,16 @@ tiny_fu_interface (SFScript *script)
   gtk_container_add (GTK_CONTAINER (frame), sf_interface->args_table);
   gtk_widget_show (sf_interface->args_table);
 
-  start_args = (script->image_based) ? 2 : 0;
+  group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
-  for (i = start_args; i < script->num_args; i++)
+  for (i = script->image_based ? 2 : 0; i < script->num_args; i++)
     {
       GtkWidget *widget       = NULL;
       gchar     *label_text;
       gfloat     label_yalign = 0.5;
-      gboolean   leftalign    = FALSE;
       gint      *ID_ptr       = NULL;
       gint       row          = i;
+      gboolean   left_align     = FALSE;
 
       if (script->image_based)
         row -= 2;
@@ -309,6 +317,7 @@ tiny_fu_interface (SFScript *script)
           break;
 
         case SF_COLOR:
+          left_align = TRUE;
           widget = gimp_color_button_new (_("Tiny-Fu Color Selection"),
                                           COLOR_SAMPLE_WIDTH,
                                           COLOR_SAMPLE_HEIGHT,
@@ -390,7 +399,7 @@ tiny_fu_interface (SFScript *script)
               break;
 
             case SF_SPINNER:
-              leftalign = TRUE;
+              left_align = TRUE;
               script->arg_values[i].sfa_adjustment.adj = (GtkAdjustment *)
                 gtk_adjustment_new (script->arg_values[i].sfa_adjustment.value,
                                     script->arg_defaults[i].sfa_adjustment.lower,
@@ -445,15 +454,14 @@ tiny_fu_interface (SFScript *script)
           break;
 
         case SF_PATTERN:
-          leftalign = TRUE;
+          left_align = TRUE;
           widget = gimp_pattern_select_widget_new (_("Tiny-Fu Pattern Selection"),
                                                    script->arg_values[i].sfa_pattern,
                                                    tiny_fu_pattern_callback,
                                                    &script->arg_values[i].sfa_pattern);
           break;
-
         case SF_GRADIENT:
-          leftalign = TRUE;
+          left_align = TRUE;
           widget = gimp_gradient_select_widget_new (_("Tiny-Fu Gradient Selection"),
                                                     script->arg_values[i].sfa_gradient,
                                                     tiny_fu_gradient_callback,
@@ -461,7 +469,7 @@ tiny_fu_interface (SFScript *script)
           break;
 
         case SF_BRUSH:
-          leftalign = TRUE;
+          left_align = TRUE;
           widget = gimp_brush_select_widget_new (_("Tiny-Fu Brush Selection"),
                                                  script->arg_values[i].sfa_brush.name,
                                                  script->arg_values[i].sfa_brush.opacity,
@@ -500,7 +508,7 @@ tiny_fu_interface (SFScript *script)
               gimp_table_attach_aligned (GTK_TABLE (sf_interface->args_table),
                                          0, row,
                                          label_text, 0.0, label_yalign,
-                                         widget, 2, leftalign);
+                                         widget, 2, left_align);
               g_free (label_text);
             }
           else
@@ -510,10 +518,15 @@ tiny_fu_interface (SFScript *script)
                                 GTK_EXPAND | GTK_FILL, GTK_FILL, 0, 0);
               gtk_widget_show (widget);
             }
+
+          if (left_align)
+            gtk_size_group_add_widget (group, widget);
         }
 
       sf_interface->args_widgets[i] = widget;
     }
+
+  g_object_unref (group);
 
   /* the script progress frame */
   frame = gimp_frame_new (_("Script Progress"));
@@ -549,6 +562,7 @@ tiny_fu_interface_quit (SFScript *script)
   g_return_if_fail (sf_interface != NULL);
 
   g_free (sf_interface->title);
+  g_free (sf_interface->help_id);
 
   if (sf_interface->about_dialog)
     gtk_widget_destroy (sf_interface->about_dialog);
@@ -686,12 +700,12 @@ tiny_fu_brush_callback (const gchar          *name,
 
 static void
 tiny_fu_response (GtkWidget *widget,
-                    gint       response_id,
-                    SFScript  *script)
+                  gint       response_id,
+                  SFScript  *script)
 {
   switch (response_id)
     {
-    case RESPONSE_ABOUT:
+    case GTK_RESPONSE_HELP:
       tiny_fu_about (script);
       break;
 
@@ -887,20 +901,23 @@ tiny_fu_reset (SFScript *script)
 
         case SF_TEXT:
           {
+            GtkWidget     *view;
             GtkTextBuffer *buffer;
 
             g_free (script->arg_values[i].sfa_value);
             script->arg_values[i].sfa_value =
               g_strdup (script->arg_defaults[i].sfa_value);
             
-            buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (widget));
+            view = gtk_bin_get_child (GTK_BIN (widget));
+            buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (view));
+
             gtk_text_buffer_set_text (buffer,
                                       script->arg_values[i].sfa_value, -1);
           }
           break;
 
         case SF_ADJUSTMENT:
-          gtk_adjustment_set_value (script->arg_defaults[i].sfa_adjustment.adj,
+          gtk_adjustment_set_value (script->arg_values[i].sfa_adjustment.adj,
                                     script->arg_defaults[i].sfa_adjustment.value);
           break;
 
@@ -968,7 +985,7 @@ tiny_fu_about (SFScript  *script)
       sf_interface->about_dialog = dialog =
         gimp_dialog_new (sf_interface->title, "tiny-fu-about",
                          sf_interface->dialog, 0,
-                         gimp_standard_help_func, script->pdb_name,
+                         gimp_standard_help_func, sf_interface->help_id,
 
                          GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
 
@@ -1037,29 +1054,33 @@ tiny_fu_about (SFScript  *script)
       gtk_widget_show (table);
 
       label = gtk_label_new (script->author);
-      gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+      gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+      gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
       gimp_table_attach_aligned (GTK_TABLE (table), 0, 0,
-                                 _("Author:"), 0.0, 0.5,
+                                 _("Author:"), 0.0, 0.0,
                                  label, 1, FALSE);
 
       label = gtk_label_new (script->copyright);
-      gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+      gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+      gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
       gimp_table_attach_aligned (GTK_TABLE (table), 0, 1,
-                                 _("Copyright:"), 0.0, 0.5,
+                                 _("Copyright:"), 0.0, 0.0,
                                  label, 1, FALSE);
 
       label = gtk_label_new (script->date);
-      gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+      gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+      gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
       gimp_table_attach_aligned (GTK_TABLE (table), 0, 2,
-                                 _("Date:"), 0.0, 0.5,
+                                 _("Date:"), 0.0, 0.0,
                                  label, 1, FALSE);
 
       if (strlen (script->img_types) > 0)
         {
           label = gtk_label_new (script->img_types);
-          gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+          gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+          gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
           gimp_table_attach_aligned (GTK_TABLE (table), 0, 3,
-                                     _("Image Types:"), 0.0, 0.5,
+                                     _("Image Types:"), 0.0, 0.0,
                                      label, 1, FALSE);
         }
     }
