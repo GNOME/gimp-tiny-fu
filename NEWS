@@ -40,6 +40,9 @@ Overview of Changes in Tiny-Fu 0.9.6
       top-left corner at a position other than the top-left corner of the
       image. Fixes bug #158863.
 
+    * Fixed spyrogimp.scm by forcing number of teeth to integer values.
+    Changed default value for Outer teeth. Fixes bug #158448. 
+
     * Changed some scripts which called gimp-edit-* functions on drawables
       which were not yet added to an image because this will be forbidden
       soon.

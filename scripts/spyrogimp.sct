@@ -37,30 +37,30 @@
              grad          ; Gradient used in Gradient color methods.
         )
 
-    ; Find minimum number n such that it is divisible by both a and b.
-    ; (least common multiplier)
-    (define (calc-min-mult a b)
-      (let* (
-            (c 1)
-            (fac 2)
-            (diva 0)
-            (divb 0)
-            )
-        (while ( <= fac (max a b) )
-          (set! diva ( = 0 (fmod (/ a fac) 1) ) )
-          (set! divb ( = 0 (fmod (/ b fac) 1) ) )
-
-          (if diva (set! a (/ a fac)))
-          (if divb (set! b (/ b fac)))
-
-          (if (or diva divb) 
-              (set! c (* c fac))
-              (set! fac (+ 1 fac))
+  ; Find minimum number n such that it is divisible by both a and b.
+  ; (least common multiplier)
+  (define (calc-min-mult a b)
+    (let* (
+          (c 1)
+          (fac 2)
+          (diva 0)
+          (divb 0)
           )
+      (while ( <= fac (max a b) )
+        (set! diva ( = 0 (fmod (/ a fac) 1) ) )
+        (set! divb ( = 0 (fmod (/ b fac) 1) ) )
+
+        (if diva (set! a (/ a fac)))
+        (if divb (set! b (/ b fac)))
+
+        (if (or diva divb) 
+            (set! c (* c fac))
+            (set! fac (+ 1 fac))
         )
-        c
       )
+      c
     )
+  )
 
 
   ; This function returns a list of samples according to the gradient.
@@ -224,20 +224,19 @@
 
     ;; Draw all the points in *points* with appropriate tool.
     (define (flush-points len)
-
-        (if (= tool 0)
-          (gimp-pencil drw len *points*)              ; Use pencil
-          (if (= tool 1)
-            (gimp-paintbrush-default drw len *points*); use paintbrush
-            (gimp-airbrush-default drw len *points*)  ; use airbrush
-          )
+      (if (= tool 0)
+        (gimp-pencil drw len *points*)              ; Use pencil
+        (if (= tool 1)
+          (gimp-paintbrush-default drw len *points*); use paintbrush
+          (gimp-airbrush-default drw len *points*)  ; use airbrush
         )
+      )
 
-        ; Reset points array, but copy last point to first
-        ; position so it will connect the next time.
-        (aset *points* 0 (aref *points* (- point-index 2)))
-        (aset *points* 1 (aref *points* (- point-index 1)))
-        (set! point-index 2)
+      ; Reset points array, but copy last point to first
+      ; position so it will connect the next time.
+      (aset *points* 0 (aref *points* (- point-index 2)))
+      (aset *points* 1 (aref *points* (- point-index 1)))
+      (set! point-index 2)
     )
 
  ;;
@@ -311,6 +310,9 @@
         (x2 (caddr bounds))
         (y2 (car (cdddr bounds)))
         )
+
+    (set! oteeth (trunc (+ oteeth 0.5)))
+    (set! iteeth (trunc (+ iteeth 0.5)))
 
     (tiny-fu-spyrogimp-internal img drw 
              x1 y1 x2 y2
