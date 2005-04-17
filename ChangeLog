@@ -1,3 +1,15 @@
+2005-04-17  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tinyscheme/scheme.c: Made readstr_upto() stop reading input when it
+	hits a NUL byte. Fixes problem reported by Sam Phillips. Added check
+	for an EOF character in is_one_of() as was in the original version of
+	TinyScheme. Also removed some #if'ed code.
+
+2005-04-05  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	configure.in: Fix for bug #169274 from a change made in GIMP by
+	Sven Neumann.
+
 2005-03-24  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	Released a new tarball as version 0.9.8
