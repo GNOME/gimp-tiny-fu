@@ -1,3 +1,12 @@
+2005-04-19  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* tiny-fu/tiny-fu.c: Use only GETTEXT_PACKAGE without plug-in name
+	when calling gimp_plugin_domain_register() and pass proper locale
+	directory. From a change made to gimp_plugin_template by Michael
+	Natterer. Fixes problem of menus not being translated.
+
+	* tiny-fu/Makefile.am: Define LOCALEDIR needed as part of above fix.
+
 2005-04-17  Kevin Cozens  <kcozens@cvs.gimp.org>
 
 	* tinyscheme/scheme.c: Made readstr_upto() stop reading input when it

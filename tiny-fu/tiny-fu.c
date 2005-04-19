@@ -99,7 +99,7 @@ tiny_fu_query (void)
     { GIMP_PDB_STRING, "logfile",  "The file to log server activity to" }
   };
 
-  gimp_plugin_domain_register (GETTEXT_PACKAGE "-tiny-fu", NULL);
+  gimp_plugin_domain_register (GETTEXT_PACKAGE, LOCALEDIR);
 
   gimp_install_procedure ("extension_tiny_fu",
                           "A scheme interpreter for scripting GIMP operations",

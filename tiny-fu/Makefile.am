@@ -40,6 +40,9 @@ tiny_fu_SOURCES = \
     ts-wrapper.c           \
     ts-wrapper.h
 
+AM_CPPFLAGS = \
+    -DLOCALEDIR=\""$(GIMP_LOCALEDIR)"\"
+
 LDADD = \
     $(libtinyscheme) \
     $(libftx)        \
