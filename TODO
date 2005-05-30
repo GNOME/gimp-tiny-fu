@@ -1,4 +1,17 @@
+Replacing Script-Fu with Tiny-Fu:
+- Move the Procedure Browser code to libgimpui.
+- Pull Script-Fu out of the GIMP source tree.
+- Update Script-Fu to build as a standalone plug-in
+  Use Tiny-Fu as a template for this
+- Update Tiny-Fu to use the Script-Fu namespace.
+
+
 Bugs:
+- Script doesn't abort when encountering an uncaught script error.
+  Found problem in fire-logo when calling gimp-layer-resize-to-image-size
+  on a layer that had not been added to an image.
+- Translation files are not being put in the right directory in Windows.
+  This should be fixed for a 1.0 release.
 - The scripts-update.pl script isn't converting gimp-blend to gimp-edit-blend
   when the statement is split over two lines. It needs to read in the whole
   script at once before doing the search/replace operations.
@@ -35,8 +48,6 @@ ToDo:
 - Modify script which updates scripts from GIMP 2.0 to 2.2 so that it reads
   an entire script in one go rather than line by line before modifying it.
 - Get spyrogimp.sct working.
-- Add bracket counting to Scheme interpreter. It should display a message
-  if it encounters more ')' than '('.
 - Remove conversion of / to \\ in script-fu-scripts since it should
   be handled by other means already?? Either that or it should use
   the #define G_DIR_SEPARATOR
@@ -85,6 +96,9 @@ ToDo:
 - Write up information about the TinyScheme interpreter.
 - Document a suggested coding style for Tiny-Fu scripts.
 
+- Add bracket counting to Scheme interpreter. It should display a message
+  if it encounters more ')' than '('. Use the info in error messages.
+  Already there. Look at sc->nesting_stack[sc->file_i].
 - Add UTF-8 support to TinyScheme
   DONE?
 - The SIOD fread routine can not simply be redefined to use read.
