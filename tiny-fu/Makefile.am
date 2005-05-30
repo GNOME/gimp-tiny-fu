@@ -6,7 +6,7 @@ libre=$(top_builddir)/re/libre.a
 
 if OS_WIN32
 mwindows = -mwindows
-WINSOCK_LIBS = -lwsock32
+WINSOCK_LIBS = -lws2_32
 endif
 
 AM_CFLAGS = \

@@ -1,5 +1,26 @@
 2005-05-30  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	Updates based on changes made by Tor Lillqvist to Script-Fu.
+
+	* configure.in: Don't bother looking for fd_set on Win32, we won't
+	find it in sys/types.h or (the nonexistent) sys/select.h anyway.
+	(It's in winsock2.h.)
+
+	* tiny-fu/tiny-fu-server.c: Give it a chance to work on Win32 by
+	covering for the differences between the WinSock and Unix socket APIs.
+	Use recv() and send() instead of read() and write() on sockets. On
+	Win32, use closesocket() for sockets instead of close(). Don't use
+	perror() or look at errno after socket API errors on Win32. No EINTR
+	failure mode with WinSock 2.
+	(print_socket_api_error): New function. On Unix, just call perror().
+	On Win32, call WSAGetLastError() and produce an appropriate error
+	message on stderr.
+
+	* tiny-fu/Makefile.am (WINSOCK_LIBS): Link with the winsock2 library,
+	as we compile with the winsock2 header.
+
+2005-05-30  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	* TODO: Moved completed entries. Added notes about two problems. Also
 	added some steps needed in order for Tiny-Fu to replace Script-Fu.
 
