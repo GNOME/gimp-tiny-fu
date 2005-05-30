@@ -261,11 +261,18 @@ fi
 
 GIMP_DATADIR=`$PKG_CONFIG --variable=gimpdatadir gimp-2.0`
 GIMP_LIBDIR=`$PKG_CONFIG --variable=gimplibdir gimp-2.0`
-GIMP_LOCALEDIR='${datadir}/locale'
 
+# GNU format message catalogs go into $datadir/locale,
+# standard location is $libdir/locale. DATADIRNAME set accordingly.
+
+GIMP_LOCALEDIR="$datadir/locale"
+if test "$DATADIRNAME" = "lib"; then
+   GIMP_LOCALEDIR="$libdir/locale"
+fi
+
+AC_SUBST(GIMP_DATADIR)
 AC_SUBST(GIMP_LIBDIR)
 AC_SUBST(GIMP_LOCALEDIR)
-AC_SUBST(GIMP_DATADIR)
 
 
 AC_CONFIG_FILES([
