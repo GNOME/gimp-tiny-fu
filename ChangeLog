@@ -1,5 +1,13 @@
 2005-05-30  Kevin Cozens  <kcozens@cvs.gimp.org>
 
+	* scripts/guides-new-percent.scm
+	* scripts/guides-new.scm: Don't use undo groups. It's useless for a
+	single operation and it's wrong to use the undo group unconditionally,
+	but add the guides conditionally. Based on a change made by Michael
+	Natterer to Script-Fu.
+
+2005-05-30  Kevin Cozens  <kcozens@cvs.gimp.org>
+
 	Updates based on changes made by Tor Lillqvist to Script-Fu.
 
 	* configure.in: Don't bother looking for fd_set on Win32, we won't
