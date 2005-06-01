@@ -1,7 +1,12 @@
+2005-06-01  Kevin Cozens  <kcozens@cvs.gimp.org>
+
+	* scripts/tiny-fu-set-cmap.sct: Use 'gimp-image-set-colormap' instead
+	of deprecated call 'gimp-image-set-cmap'. Spotted by Joao S. O. Bueno.
+
 2005-05-30  Kevin Cozens  <kcozens@cvs.gimp.org>
 
-	* scripts/guides-new-percent.scm
-	* scripts/guides-new.scm: Don't use undo groups. It's useless for a
+	* scripts/guides-new-percent.sct
+	* scripts/guides-new.sct: Don't use undo groups. It's useless for a
 	single operation and it's wrong to use the undo group unconditionally,
 	but add the guides conditionally. Based on a change made by Michael
 	Natterer to Script-Fu.
