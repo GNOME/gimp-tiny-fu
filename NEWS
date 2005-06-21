@@ -8,6 +8,35 @@ will emerge out of this real soon now.
 
 
 
+Overview of Changes in Tiny-Fu 0.9.9
+====================================
+
+- Updated tiny-fu-server.c to use the Winsock2 related changes made by
+  Tor Lillqvist to Script-Fu.
+
+- Fixed two minor problems in the TinyScheme interpreter related to the
+  reading and parsing of scripts.
+
+- Fixed problem of menus not being translated.
+
+- Select localedir according to the format of the gettext message catalogs.
+  Fixes bug #169274.
+
+- Updates and fixes to various scripts
+
+    * scripts/tiny-fu-set-cmap.sct: Moved two set!'s in to the let block.
+
+    * scripts/guides-new-percent.scm
+    * scripts/guides-new.scm: Removed improper use of undo groups.
+
+
+Contributors:
+
+   Kevin Cozens. Also used contributions originally made to parts of
+   GIMP by Michael Natterer, Sven Neumann, and Tor Lillqvist. 
+
+
+
 Overview of Changes in Tiny-Fu 0.9.8
 ====================================
 
