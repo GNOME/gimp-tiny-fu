@@ -5,6 +5,12 @@
 ;; Thanks:
 ;;   jseymour@jimsun.LinxNet.com (Jim Seymour)
 ;;   Sven Neumann <neumanns@uni-duesseldorf.de>
+;;
+;;
+;; Modified June 24, 2004 by Kevin Cozens
+;; Incorporated changes made by Daniel P. Stasinski in his text-circle3.scm
+;; script. The letters are now placed properly for both positive and negative
+;; fill angles.
 
 
 (define (tiny-fu-text-circle text radius start-angle fill-angle
@@ -32,20 +38,35 @@
         (font-infos (gimp-text-get-extents-fontname "lAgy" font-size
                                 PIXELS font-name))
         (desc (nth 3 font-infos))
+        (start-angle-rad (* (/ (modulo start-angle 360) 360) 2 *pi*))
         (angle-list #f)
         (letter "")
         (new-layer #f)
         (index 0)
-        (start-angle-rad)
+        (ndx 0)
+        (ndx-start 0)
+        (ndx-step 1)
+        (ccw 0)
         (fill-angle-rad)
+        (rot-op)
         (radian-step)
         )
  
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img BG-layer 0)
     (gimp-edit-fill BG-layer BACKGROUND-FILL)
+
     ;; change units
-    (set! start-angle-rad (* (/ (modulo start-angle 360) 360) 2 *pi*))
+    (if (< fill-angle 0)
+        (begin
+          (set! ccw 1)
+          (set! fill-angle (abs fill-angle))
+          (set! start-angle-rad (* (/ (modulo (+ (- start-angle fill-angle) 360) 360) 360) 2 *pi*))
+          (set! ndx-start (- char-num 1))
+          (set! ndx-step -1)
+        )
+    )
+
     (set! fill-angle-rad (* (/ fill-angle 360) 2 *pi*))
     (set! radian-step (/ fill-angle-rad char-num))
  
@@ -61,9 +82,10 @@
          (scale 0)
          (temp #f)
          )
+      (set! ndx ndx-start)
       (set! index 0)
       (while (< index char-num)
-        (set! temp-str (substring text index (+ index 1)))
+        (set! temp-str (substring text ndx (+ ndx 1)))
         (if (white-space-string? temp-str)
             (set! temp-str "x")
         )
@@ -74,6 +96,7 @@
                               font-name)))
         (set! temp-list (cons (car (gimp-drawable-width temp-layer)) temp-list))
         (gimp-image-remove-layer img temp-layer)
+        (set! ndx (+ ndx ndx-step))
         (set! index (+ index 1))
       )
       (set! angle-list (nreverse temp-list))
@@ -92,9 +115,10 @@
       (set! scale (/ fill-angle-rad temp))
       (set! angle-list (mapcar (lambda (angle) (* scale angle)) angle-list))
     )
+    (set! ndx ndx-start)
     (set! index 0)
     (while (< index char-num)
-      (set! letter (substring text index (+ index 1)))
+      (set! letter (substring text ndx (+ ndx 1)))
       (if (not (white-space-string? letter))
         ;; Running gimp-text with " " causes an error!
         (let* (
@@ -113,8 +137,12 @@
           (set! width (car (gimp-drawable-width new-layer)))
           (if (not tiny-fu-text-circle-debug?)
             (begin
+              (if (= ccw 0)
+                  (set! rot-op (if (< 0 fill-angle-rad) + -))
+                  (set! rot-op (if (> 0 fill-angle-rad) + -))
+              )
               (gimp-drawable-transform-rotate-default new-layer
-                       ((if (< 0 fill-angle-rad) + -) angle rad-90)
+                       (rot-op angle rad-90)
                        TRUE 0 0
                        TRUE FALSE)
               (gimp-layer-translate new-layer
@@ -145,6 +173,7 @@
           )
         )
       )
+      (set! ndx (+ ndx ndx-step))
       (set! index (+ index 1))
     )
 
