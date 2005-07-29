@@ -10,85 +10,84 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-tiny-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-27 23:23-0500\n"
-"PO-Revision-Date: 2004-11-23 14:20+0900\n"
+"POT-Creation-Date: 2005-07-29 15:41+0900\n"
+"PO-Revision-Date: 2005-07-29 15:48+0900\n"
 "Last-Translator: Jan Morén <jan.moren@lucs.lu.se>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: tiny-fu/tiny-fu.c:122
+#: ../tiny-fu/tiny-fu.c:122
 msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
 msgstr "<Toolbox>/Utökningar/Tiny-Fu/Script-fu-_konsoll"
 
-#: tiny-fu/tiny-fu.c:148
+#: ../tiny-fu/tiny-fu.c:148
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
 msgstr "<Toolbox>/Utökningar/Tiny-Fu/Starta _server..."
 
-#: tiny-fu/tiny-fu.c:275
+#: ../tiny-fu/tiny-fu.c:275
 msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
 msgstr "<Toolbox>/Utökningar/Tiny-Fu/_Uppdatera skripts"
 
-#: tiny-fu/tiny-fu-console.c:142
+#: ../tiny-fu/tiny-fu-console.c:142
 msgid "Tiny-Fu console mode allows only interactive invocation"
 msgstr "Tiny-Fu-konsolläget tillåter endast interaktiv användning"
 
-#: tiny-fu/tiny-fu-console.c:171
+#: ../tiny-fu/tiny-fu-console.c:171
 msgid "Tiny-Fu Console"
 msgstr "Tiny-Fu-konsoll"
 
-#: tiny-fu/tiny-fu-console.c:176
-#, fuzzy
+#: ../tiny-fu/tiny-fu-console.c:176
 msgid "_Save Output"
-msgstr "SIOD-utdata"
+msgstr "_Spara utdata"
 
-#: tiny-fu/tiny-fu-console.c:177
+#: ../tiny-fu/tiny-fu-console.c:177
 msgid "Cl_ear Output"
-msgstr ""
+msgstr "R_ensa utdata"
 
-#: tiny-fu/tiny-fu-console.c:200
+#: ../tiny-fu/tiny-fu-console.c:200
 msgid "TinyScheme Output"
-msgstr ""
+msgstr "TinyScheme utdata"
 
-#: tiny-fu/tiny-fu-console.c:239
+#: ../tiny-fu/tiny-fu-console.c:239
 msgid "Welcome to TinyScheme\n"
-msgstr ""
+msgstr "Välkommen till TinyScheme\n"
 
-#: tiny-fu/tiny-fu-console.c:240
+#: ../tiny-fu/tiny-fu-console.c:240
 msgid ""
 "Copyright (c) Dimitrios Souflis\n"
 "\n"
 msgstr ""
+"Copyright © Dimitrios Souflis\n"
+"\n"
 
-#: tiny-fu/tiny-fu-console.c:241
-#, fuzzy
+#: ../tiny-fu/tiny-fu-console.c:241
 msgid "Tiny-Fu Console - "
-msgstr "Tiny-Fu-konsoll"
+msgstr "Tiny-Fu-konsoll - "
 
-#: tiny-fu/tiny-fu-console.c:242
+#: ../tiny-fu/tiny-fu-console.c:242
 msgid "Interactive Scheme Development"
-msgstr ""
+msgstr "Interaktiv Scheme-utveckling"
 
-#: tiny-fu/tiny-fu-console.c:265
+#: ../tiny-fu/tiny-fu-console.c:265
 msgid "Current Command"
 msgstr "Aktuellt kommando"
 
-#: tiny-fu/tiny-fu-console.c:284
-#, fuzzy
+#: ../tiny-fu/tiny-fu-console.c:284
 msgid "Browse..."
-msgstr "_Bläddra..."
+msgstr "Bläddra..."
 
-#: tiny-fu/tiny-fu-console.c:340
+#: ../tiny-fu/tiny-fu-console.c:340
 msgid "Save TinyScheme Output"
-msgstr ""
+msgstr "Spara TinyScheme-utdata"
 
-#: tiny-fu/tiny-fu-console.c:657
+#: ../tiny-fu/tiny-fu-console.c:657
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr "Tiny-Fu-evalueringsläget tillåter endast interaktiv användning"
 
-#: tiny-fu/tiny-fu-scripts.c:634
-#, fuzzy, c-format
+#: ../tiny-fu/tiny-fu-scripts.c:634
+#, c-format
 msgid ""
 "Error while executing\n"
 "%s\n"
@@ -96,2263 +95,1587 @@ msgid ""
 "%s"
 msgstr ""
 "Fel under körning av\n"
-" %s\n"
+"%s\n"
+"\n"
 "%s"
 
-#: tiny-fu/tiny-fu-server.c:642
+#: ../tiny-fu/tiny-fu-server.c:649
 msgid "Tiny-Fu Server Options"
 msgstr "Tiny-Fu-serveralternativ"
 
-#: tiny-fu/tiny-fu-server.c:670
+#: ../tiny-fu/tiny-fu-server.c:677
 msgid "Server Port:"
 msgstr "Serverport:"
 
-#: tiny-fu/tiny-fu-server.c:676
+#: ../tiny-fu/tiny-fu-server.c:683
 msgid "Server Logfile:"
 msgstr "Serverloggfil:"
 
-#: tiny-fu/tiny-fu-text-console.c:67
+#: ../tiny-fu/tiny-fu-text-console.c:67
 msgid "Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""
-msgstr ""
+msgstr "Tiny-Fu textkonsollmod hanterar inte \"RUN_WITH_LAST_VALUES\""
 
-#: tiny-fu/tiny-fu-interface.c:178
+#: ../tiny-fu/tiny-fu-interface.c:178
 msgid "Tiny-Fu cannot process two scripts at the same time."
 msgstr "Tiny-Fu kan inte köra två skript på samma gång."
 
-#: tiny-fu/tiny-fu-interface.c:180
+#: ../tiny-fu/tiny-fu-interface.c:180
 #, c-format
 msgid "You are already running the \"%s\" script."
 msgstr "Du kör redan skriptet \"%s\"."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
+#: ../tiny-fu/tiny-fu-interface.c:203 ../tiny-fu/tiny-fu-interface.c:205
 msgid "/Tiny-Fu/"
 msgstr "/Tiny-Fu/"
 
-#: tiny-fu/tiny-fu-interface.c:218
+#: ../tiny-fu/tiny-fu-interface.c:218
 #, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Tiny-Fu: %s"
 
 #. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:255
+#: ../tiny-fu/tiny-fu-interface.c:255
 msgid "Script Arguments"
 msgstr "Skriptargument"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:286
+#: ../tiny-fu/tiny-fu-interface.c:286
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:329
+#: ../tiny-fu/tiny-fu-interface.c:329
 msgid "Tiny-Fu Color Selection"
-msgstr "Tiny-Fu-färgväljare"
+msgstr "Tiny-Fu färgväljare"
 
-#: tiny-fu/tiny-fu-interface.c:432
+#: ../tiny-fu/tiny-fu-interface.c:432
 msgid "Tiny-Fu File Selection"
-msgstr "Tiny-Fu-filväljare"
+msgstr "Tiny-Fu filväljare"
 
-#: tiny-fu/tiny-fu-interface.c:436
+#: ../tiny-fu/tiny-fu-interface.c:436
 msgid "Tiny-Fu Folder Selection"
-msgstr "Tiny-Fu-mappväljare"
+msgstr "Tiny-Fu mappväljare"
 
-#: tiny-fu/tiny-fu-interface.c:448
+#: ../tiny-fu/tiny-fu-interface.c:448
 msgid "Tiny-Fu Font Selection"
-msgstr "Tiny-Fu-typsnittsväljare"
+msgstr "Tiny-Fu typsnittsväljare"
 
-#: tiny-fu/tiny-fu-interface.c:455
+#: ../tiny-fu/tiny-fu-interface.c:455
 msgid "Tiny-Fu Palette Selection"
-msgstr "Tiny-Fu-palettväljare"
+msgstr "Tiny-Fu palettväljare"
 
-#: tiny-fu/tiny-fu-interface.c:463
-#, fuzzy
+#: ../tiny-fu/tiny-fu-interface.c:463
 msgid "Tiny-Fu Pattern Selection"
-msgstr "Tiny-Fu-palettväljare"
+msgstr "Tiny-Fu mönsterväljare"
 
-#: tiny-fu/tiny-fu-interface.c:470
+#: ../tiny-fu/tiny-fu-interface.c:470
 msgid "Tiny-Fu Gradient Selection"
-msgstr "Tiny-Fu-färgskaleväljare"
+msgstr "Tiny-Fu färgskaleväljare"
 
-#: tiny-fu/tiny-fu-interface.c:478
+#: ../tiny-fu/tiny-fu-interface.c:478
 msgid "Tiny-Fu Brush Selection"
-msgstr "Tiny-Fu-penselväljare"
+msgstr "Tiny-Fu penselväljare"
 
 #. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:534
+#: ../tiny-fu/tiny-fu-interface.c:534
 msgid "Script Progress"
 msgstr "Skriptförlopp"
 
-#: tiny-fu/tiny-fu-interface.c:542
+#: ../tiny-fu/tiny-fu-interface.c:542
 msgid "(none)"
 msgstr "(inget)"
 
-#: tiny-fu/tiny-fu-interface.c:1059
+#: ../tiny-fu/tiny-fu-interface.c:1059
 msgid "Author:"
 msgstr "Författare:"
 
-#: tiny-fu/tiny-fu-interface.c:1066
+#: ../tiny-fu/tiny-fu-interface.c:1066
 msgid "Copyright:"
 msgstr "Copyright:"
 
-#: tiny-fu/tiny-fu-interface.c:1073
+#: ../tiny-fu/tiny-fu-interface.c:1073
 msgid "Date:"
 msgstr "Datum:"
 
-#: tiny-fu/tiny-fu-interface.c:1082
+#: ../tiny-fu/tiny-fu-interface.c:1082
 msgid "Image Types:"
 msgstr "Bildtyper:"
 
-#: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
 #, fuzzy
-msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu"
 
-#: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
-#: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
-#: scripts/spyrogimp.sct.h:5
-msgid "Color"
-msgstr "Färg"
+#~ msgid "Color"
+#~ msgstr "Färg"
 
-#: scripts/ts-helloworld.sct.h:3 scripts/3d-outline.sct.h:6
-#: scripts/alien-glow-button.sct.h:5 scripts/alien-glow-logo.sct.h:4
-#: scripts/alien-neon-logo.sct.h:6 scripts/basic1-logo.sct.h:4
-#: scripts/basic2-logo.sct.h:5 scripts/beveled-button.sct.h:3
-#: scripts/beveled-pattern-button.sct.h:3
-#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:11
-#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
-#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
-#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
-#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:5
-#: scripts/gimp-headers.sct.h:4 scripts/gimp-labels.sct.h:3
-#: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
-#: scripts/gradient-bevel-logo.sct.h:8 scripts/i26-gunya2.sct.h:2
-#: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
-#: scripts/pupi-button.sct.h:3 scripts/slide.sct.h:2
-#: scripts/sota-chrome-logo.sct.h:7 scripts/speed-text.sct.h:5
-#: scripts/starburst-logo.sct.h:6 scripts/starscape-logo.sct.h:4
-#: scripts/t-o-p-logo.sct.h:8 scripts/text-circle.sct.h:4
-#: scripts/textured-logo.sct.h:6 scripts/title-header.sct.h:2
-msgid "Font"
-msgstr "Typsnitt"
+#~ msgid "Font"
+#~ msgstr "Typsnitt"
 
-#: scripts/ts-helloworld.sct.h:4 scripts/3d-outline.sct.h:7
-#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
-#: scripts/alien-neon-logo.sct.h:7 scripts/basic1-logo.sct.h:5
-#: scripts/basic2-logo.sct.h:6 scripts/beveled-button.sct.h:4
-#: scripts/beveled-pattern-button.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:12
-#: scripts/bovinated-logo.sct.h:7 scripts/carved-logo.sct.h:6
-#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:9 scripts/chrome-logo.sct.h:7
-#: scripts/comic-logo.sct.h:6 scripts/coolmetal-logo.sct.h:7
-#: scripts/crystal-logo.sct.h:7 scripts/frosty-logo.sct.h:6
-#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:4
-#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
-#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:3
-#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
-#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
-#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
-#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
-#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
-#: scripts/title-header.sct.h:3
-msgid "Font size (pixels)"
-msgstr "Typsnittsstorlek (bildpunkter)"
+#~ msgid "Font size (pixels)"
+#~ msgstr "Typsnittsstorlek (bildpunkter)"
 
-#: scripts/ts-helloworld.sct.h:5
-msgid "Hello World"
-msgstr ""
-
-#: scripts/ts-helloworld.sct.h:6
 #, fuzzy
-msgid "Text string"
-msgstr "Textmönster"
+#~ msgid "Text string"
+#~ msgstr "Textmönster"
 
-#: scripts/contactsheet.sct.h:1
-msgid " contact sheets from a total of "
-msgstr ""
-
-#: scripts/contactsheet.sct.h:2
-msgid " for directory "
-msgstr ""
-
-#: scripts/contactsheet.sct.h:3
 #, fuzzy
-msgid " images"
-msgstr "Indexbild"
+#~ msgid " images"
+#~ msgstr "Indexbild"
 
-#: scripts/contactsheet.sct.h:4 scripts/font-map.sct.h:1
-#: scripts/gradient-example.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Verktyg"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Verktyg"
 
-#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
-#: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
-#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:3
-#: scripts/alien-neon-logo.sct.h:4 scripts/basic1-logo.sct.h:3
-#: scripts/basic2-logo.sct.h:4 scripts/blended-logo.sct.h:3
-#: scripts/bovinated-logo.sct.h:4 scripts/chalk.sct.h:3
-#: scripts/chrome-logo.sct.h:4 scripts/comic-logo.sct.h:3
-#: scripts/coolmetal-logo.sct.h:3 scripts/frosty-logo.sct.h:3
-#: scripts/gimp-labels.sct.h:2 scripts/glossy.sct.h:3
-#: scripts/glowing-logo.sct.h:3 scripts/gradient-bevel-logo.sct.h:3
-#: scripts/image-structure.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
-#: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
-#: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
-#: scripts/truchet.sct.h:2
-msgid "Background color"
-msgstr "Bakgrundsfärg"
+#~ msgid "Background color"
+#~ msgstr "Bakgrundsfärg"
 
-#: scripts/contactsheet.sct.h:6
-msgid "Contact Sheet"
-msgstr ""
-
-#: scripts/contactsheet.sct.h:7
 #, fuzzy
-msgid "Created "
-msgstr "Skapa skugga"
+#~ msgid "Created "
+#~ msgstr "Skapa skugga"
 
-#: scripts/contactsheet.sct.h:8
 #, fuzzy
-msgid "Directory"
-msgstr "Beskrivning"
+#~ msgid "Directory"
+#~ msgstr "Beskrivning"
 
-#: scripts/contactsheet.sct.h:9
-msgid "Legend font"
-msgstr ""
-
-#: scripts/contactsheet.sct.h:10
 #, fuzzy
-msgid "Sheet "
-msgstr "Slumptalsfrö"
+#~ msgid "Sheet "
+#~ msgstr "Slumptalsfrö"
 
-#: scripts/contactsheet.sct.h:11
 #, fuzzy
-msgid "Sheet size"
-msgstr "Ramstorlek"
+#~ msgid "Sheet size"
+#~ msgstr "Ramstorlek"
 
-#: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
-#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:8
-#: scripts/beveled-button.sct.h:10 scripts/beveled-pattern-button.sct.h:8
-#: scripts/blended-logo.sct.h:18 scripts/gimp-headers.sct.h:13
-#: scripts/gimp-labels.sct.h:15 scripts/i26-gunya2.sct.h:8
-#: scripts/news-text.sct.h:11 scripts/pupi-button.sct.h:14
-#: scripts/speed-text.sct.h:9
-msgid "Text color"
-msgstr "Textfärg"
+#~ msgid "Text color"
+#~ msgstr "Textfärg"
 
-#: scripts/contactsheet.sct.h:13
-msgid "Title font"
-msgstr ""
-
-#: scripts/contactsheet.sct.h:14
 #, fuzzy
-msgid "Unable to open directory "
-msgstr "Kan inte öppna SIOD-utdataröret"
-
-#: scripts/3d-outline.sct.h:1
-msgid "3D _Outline..."
-msgstr "3D _kontur..."
-
-#: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
-#: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
-#: scripts/basic2-logo.sct.h:1 scripts/blended-logo.sct.h:1
-#: scripts/bovinated-logo.sct.h:1 scripts/chalk.sct.h:1
-#: scripts/chip-away.sct.h:1 scripts/chrome-logo.sct.h:1
-#: scripts/comic-logo.sct.h:1 scripts/coolmetal-logo.sct.h:1
-#: scripts/frosty-logo.sct.h:1 scripts/glossy.sct.h:1
-#: scripts/glowing-logo.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
-#: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
-#: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
-#: scripts/textured-logo.sct.h:1
-msgid "<Image>/Tiny-Fu/Alpha to Logo"
-msgstr "<Image>/Tiny-Fu/Alfa till logotyp"
-
-#: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
-#: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
-#: scripts/basic2-logo.sct.h:2 scripts/blended-logo.sct.h:2
-#: scripts/bovinated-logo.sct.h:2 scripts/carved-logo.sct.h:1
-#: scripts/chalk.sct.h:2 scripts/chip-away.sct.h:2 scripts/chrome-logo.sct.h:2
-#: scripts/comic-logo.sct.h:2 scripts/coolmetal-logo.sct.h:2
-#: scripts/crystal-logo.sct.h:1 scripts/frosty-logo.sct.h:2
-#: scripts/glossy.sct.h:2 scripts/glowing-logo.sct.h:2
-#: scripts/gradient-bevel-logo.sct.h:2 scripts/i26-gunya2.sct.h:1
-#: scripts/neon-logo.sct.h:2 scripts/news-text.sct.h:1
-#: scripts/sota-chrome-logo.sct.h:1 scripts/speed-text.sct.h:1
-#: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
-#: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
-#: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Logotyper"
-
-#: scripts/3d-outline.sct.h:4
-msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Bumpmappsutsmetningsradie (alfalager)"
-
-#: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
-msgid "Default bumpmap settings"
-msgstr "Standardinställningar för bumpmapp"
-
-#: scripts/3d-outline.sct.h:8
-msgid "Outline blur radius"
-msgstr "Utsmetningsradie för kontur"
-
-#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
-#: scripts/round-corners.sct.h:6
-msgid "Shadow X offset"
-msgstr "X-avstånd för skugga"
-
-#: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
-#: scripts/round-corners.sct.h:7
-msgid "Shadow Y offset"
-msgstr "Y-avstånd för skugga"
-
-#: scripts/3d-outline.sct.h:11
-msgid "Shadow blur radius"
-msgstr "Skuggutsmetningsradie"
-
-#: scripts/3d-outline.sct.h:12 scripts/alien-glow-button.sct.h:10
-#: scripts/alien-glow-logo.sct.h:8 scripts/alien-neon-logo.sct.h:10
-#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:7
-#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
-#: scripts/beveled-pattern-heading.sct.h:6 scripts/blended-logo.sct.h:17
-#: scripts/bovinated-logo.sct.h:10 scripts/carved-logo.sct.h:8
-#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:14
-#: scripts/chrome-logo.sct.h:9 scripts/comic-logo.sct.h:11
-#: scripts/coolmetal-logo.sct.h:10 scripts/crystal-logo.sct.h:8
-#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:12
-#: scripts/gimp-labels.sct.h:14 scripts/glossy.sct.h:19
-#: scripts/glowing-logo.sct.h:8 scripts/gradient-bevel-logo.sct.h:11
-#: scripts/i26-gunya2.sct.h:7 scripts/neon-logo.sct.h:10
-#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:13
-#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:11
-#: scripts/speed-text.sct.h:8 scripts/starburst-logo.sct.h:9
-#: scripts/starscape-logo.sct.h:8 scripts/t-o-p-logo.sct.h:11
-#: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
-#: scripts/title-header.sct.h:5
-msgid "Text"
-msgstr "Text"
-
-#: scripts/3dTruchet.sct.h:1
-msgid "3_D Truchet..."
-msgstr "3_D Truchet..."
-
-#: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
-#: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
-#: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Mönster"
-
-#: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-msgid "Block size"
-msgstr "Blockstorlek"
-
-#: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
-msgid "End blend"
-msgstr "Avsluta färgtoning"
-
-#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
-msgid "Number of X tiles"
-msgstr "Antal X-brickor"
-
-#: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
-msgid "Number of Y tiles"
-msgstr "Antal Y-brickor"
-
-#: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
-msgid "Start blend"
-msgstr "Starta färgtoning"
-
-#: scripts/3dTruchet.sct.h:9
-msgid "Supersample"
-msgstr "Översampla"
-
-#: scripts/3dTruchet.sct.h:10 scripts/add-bevel.sct.h:4
-#: scripts/truchet.sct.h:8
-msgid "Thickness"
-msgstr "Tjocklek"
-
-#: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
-#: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
-#: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
-msgid "<Image>/Tiny-Fu/Decor"
-msgstr "<Image>/Tiny-Fu/Dekor"
-
-#: scripts/add-bevel.sct.h:2
-msgid "Add B_evel..."
-msgstr "Lägg till av_fasning..."
-
-#: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
-msgid "Keep bump layer"
-msgstr "Behåll bumplager"
-
-#: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
-#: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
-#: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
-msgid "Work on copy"
-msgstr "Arbeta på kopia"
-
-#: scripts/addborder.sct.h:2
-msgid "Add _Border..."
-msgstr "Lägg till _kant..."
-
-#: scripts/addborder.sct.h:3
-msgid "Border X size"
-msgstr "X-storlek för kant"
-
-#: scripts/addborder.sct.h:4
-msgid "Border Y size"
-msgstr "Y-storlek för kant"
-
-#: scripts/addborder.sct.h:5
-msgid "Border color"
-msgstr "Kantfärg"
-
-#: scripts/addborder.sct.h:6
-msgid "Delta value on color"
-msgstr "Deltavärde på färg"
-
-#: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
-#: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Webbsideteman/Rymdglöd"
-
-#: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
-msgid "Down"
-msgstr "Ned"
-
-#: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
-#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
-#: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
-msgid "Flatten image"
-msgstr "Platta till bilden"
-
-#: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
-#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
-#: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
-#: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
-#: scripts/starscape-logo.sct.h:6
-msgid "Glow color"
-msgstr "Glödfärg"
-
-#: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
-msgid "Left"
-msgstr "Vänster"
-
-#: scripts/alien-glow-arrow.sct.h:7 scripts/beveled-pattern-arrow.sct.h:4
-msgid "Orientation"
-msgstr "Orientering"
-
-#: scripts/alien-glow-arrow.sct.h:8 scripts/beveled-pattern-arrow.sct.h:6
-msgid "Right"
-msgstr "Höger"
-
-#: scripts/alien-glow-arrow.sct.h:9 scripts/beveled-pattern-arrow.sct.h:7
-#: scripts/lava.sct.h:7
-msgid "Size"
-msgstr "Storlek"
-
-#: scripts/alien-glow-arrow.sct.h:10 scripts/beveled-pattern-arrow.sct.h:8
-msgid "Up"
-msgstr "Upp"
-
-#: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
-msgid "_Arrow..."
-msgstr "_Pil..."
-
-#: scripts/alien-glow-bar.sct.h:3
-msgid "Bar height"
-msgstr "Stapelhöjd"
-
-#: scripts/alien-glow-bar.sct.h:4
-msgid "Bar length"
-msgstr "Stapellängd"
-
-#: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
-msgid "_Hrule..."
-msgstr "_Horisontell linjal..."
-
-#: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
-#: scripts/tileblur.sct.h:7
-msgid "Radius"
-msgstr "Radie"
-
-#: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
-msgid "_Bullet..."
-msgstr "_Punkt..."
-
-#: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
-msgid "B_utton..."
-msgstr "K_napp..."
-
-#: scripts/alien-glow-button.sct.h:8
-msgid "Glow radius"
-msgstr "Glödradie"
-
-#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
-msgid "Padding"
-msgstr "Utfyllnad"
-
-#: scripts/alien-glow-logo.sct.h:3
-msgid "Alien _Glow..."
-msgstr "Rymd_glöd..."
-
-#: scripts/alien-glow-logo.sct.h:7
-msgid "Glow size (pixels * 4)"
-msgstr "Glödstorlek (bildpunkter × 4)"
-
-#: scripts/alien-neon-logo.sct.h:3
-msgid "Alien _Neon..."
-msgstr "Rymd _neon..."
-
-#: scripts/alien-neon-logo.sct.h:5
-msgid "Fade away"
-msgstr "Tyna bort"
-
-#: scripts/alien-neon-logo.sct.h:9
-msgid "Number of bands"
-msgstr "Antal band"
-
-#: scripts/alien-neon-logo.sct.h:11
-msgid "Width of bands"
-msgstr "Bredd på band"
-
-#: scripts/alien-neon-logo.sct.h:12
-msgid "Width of gaps"
-msgstr "Bredd på mellanrum"
-
-#: scripts/basic1-logo.sct.h:8
-msgid "_Basic I..."
-msgstr "_Basic I..."
-
-#: scripts/basic2-logo.sct.h:3
-msgid "B_asic II..."
-msgstr "_Basic II..."
-
-#: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Knappar"
-
-#: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
-#: scripts/pupi-button.sct.h:2
-msgid "Bevel width"
-msgstr "Avfasningsbredd"
-
-#: scripts/beveled-button.sct.h:5
-msgid "Lower-right color"
-msgstr "Nedre högra färg"
-
-#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:6
-#: scripts/pupi-button.sct.h:11
-msgid "Pressed"
-msgstr "Nedtryckt"
-
-#: scripts/beveled-button.sct.h:8
-msgid "Simple _Beveled Button..."
-msgstr "Enkel a_vfasad knapp..."
-
-#: scripts/beveled-button.sct.h:11
-msgid "Upper-left color"
-msgstr "Övre vänstra färg"
-
-#: scripts/beveled-pattern-arrow.sct.h:1
-#: scripts/beveled-pattern-bullet.sct.h:1
-#: scripts/beveled-pattern-button.sct.h:1
-#: scripts/beveled-pattern-heading.sct.h:1
-#: scripts/beveled-pattern-hrule.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Webbsideteman/Avfasat mönster"
-
-#: scripts/beveled-pattern-arrow.sct.h:5
-#: scripts/beveled-pattern-bullet.sct.h:3
-#: scripts/beveled-pattern-button.sct.h:5
-#: scripts/beveled-pattern-heading.sct.h:5
-#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:13
-#: scripts/textured-logo.sct.h:11
-msgid "Pattern"
-msgstr "Mönster"
-
-#: scripts/beveled-pattern-bullet.sct.h:2
-msgid "Diameter"
-msgstr "Diameter"
-
-#: scripts/beveled-pattern-bullet.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-msgid "Transparent background"
-msgstr "Genomskinlig bakgrund"
-
-#: scripts/beveled-pattern-heading.sct.h:4
-msgid "H_eading..."
-msgstr "R_ubrik..."
-
-#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
-#: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
-#: scripts/swirltile.sct.h:7
-msgid "Height"
-msgstr "Höjd"
-
-#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:5
-#: scripts/mkbrush.sct.h:9 scripts/swirltile.sct.h:11
-msgid "Width"
-msgstr "Bredd"
-
-#: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
-#: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
-#: scripts/waves-anim.sct.h:1
-msgid "<Image>/Tiny-Fu/Animators"
-msgstr "<Image>/Tiny-Fu/Animatörer"
-
-#: scripts/blend-anim.sct.h:2
-msgid "Blend Animation needs at least three source layers"
-msgstr ""
-
-#: scripts/blend-anim.sct.h:3
-msgid "Intermediate frames"
-msgstr "Mellanramar"
-
-#: scripts/blend-anim.sct.h:4
-msgid "Looped"
-msgstr "Evig slinga"
-
-#: scripts/blend-anim.sct.h:5
-msgid "Max. blur radius"
-msgstr "Maximal utsmetningsradie"
-
-#: scripts/blend-anim.sct.h:6
-msgid "_Blend..."
-msgstr "_Intonad..."
-
-#: scripts/blended-logo.sct.h:4
-msgid "Blen_ded..."
-msgstr "In_tonad..."
-
-#: scripts/blended-logo.sct.h:5
-msgid "Blend mode"
-msgstr "Intoningsläge"
-
-#: scripts/blended-logo.sct.h:6
-msgid "Custom Gradient"
-msgstr "Anpassad färgskala"
-
-#: scripts/blended-logo.sct.h:8
-msgid "FG-BG-HSV"
-msgstr "FG-BG-HSV"
-
-#: scripts/blended-logo.sct.h:9
-msgid "FG-BG-RGB"
-msgstr "FG-BG-RGB"
-
-#: scripts/blended-logo.sct.h:10
-msgid "FG-Transparent"
-msgstr "FG-Transparent"
-
-#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
-#: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
-#: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
-msgid "Gradient"
-msgstr "Färgskala"
-
-#: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
-#: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
-#: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
-msgid "Gradient reverse"
-msgstr "Reversera färgskala"
-
-#: scripts/blended-logo.sct.h:15
-msgid "Offset (pixels)"
-msgstr "Avstånd (bildpunkter)"
-
-#: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
-msgid "Background Color"
-msgstr "Bakgrundsfärg"
-
-#: scripts/bovinated-logo.sct.h:5
-msgid "Bo_vination..."
-msgstr "Ko_skinn..."
-
-#: scripts/bovinated-logo.sct.h:8
-msgid "Spots density X"
-msgstr "X-densitet för punkter"
-
-#: scripts/bovinated-logo.sct.h:9
-msgid "Spots density Y"
-msgstr "Y-densitet för punkter"
-
-#: scripts/burn-in-anim.sct.h:2
-msgid "Add glowing"
-msgstr "Lägg till glöd"
-
-#: scripts/burn-in-anim.sct.h:3
-msgid "After glow"
-msgstr "Efterglöd"
-
-#: scripts/burn-in-anim.sct.h:4
-msgid "B_urn-In..."
-msgstr "In_bränning..."
-
-#: scripts/burn-in-anim.sct.h:5
+#~ msgid "Unable to open directory "
+#~ msgstr "Kan inte öppna SIOD-utdataröret"
+
+#~ msgid "3D _Outline..."
+#~ msgstr "3D _kontur..."
+
+#~ msgid "<Image>/Tiny-Fu/Alpha to Logo"
+#~ msgstr "<Image>/Tiny-Fu/Alfa till logotyp"
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Logotyper"
+
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Bumpmappsutsmetningsradie (alfalager)"
+
+#~ msgid "Default bumpmap settings"
+#~ msgstr "Standardinställningar för bumpmapp"
+
+#~ msgid "Outline blur radius"
+#~ msgstr "Utsmetningsradie för kontur"
+
+#~ msgid "Shadow X offset"
+#~ msgstr "X-avstånd för skugga"
+
+#~ msgid "Shadow Y offset"
+#~ msgstr "Y-avstånd för skugga"
+
+#~ msgid "Shadow blur radius"
+#~ msgstr "Skuggutsmetningsradie"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "3_D Truchet..."
+#~ msgstr "3_D Truchet..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Mönster"
+
+#~ msgid "Block size"
+#~ msgstr "Blockstorlek"
+
+#~ msgid "End blend"
+#~ msgstr "Avsluta färgtoning"
+
+#~ msgid "Number of X tiles"
+#~ msgstr "Antal X-brickor"
+
+#~ msgid "Number of Y tiles"
+#~ msgstr "Antal Y-brickor"
+
+#~ msgid "Start blend"
+#~ msgstr "Starta färgtoning"
+
+#~ msgid "Supersample"
+#~ msgstr "Översampla"
+
+#~ msgid "Thickness"
+#~ msgstr "Tjocklek"
+
+#~ msgid "<Image>/Tiny-Fu/Decor"
+#~ msgstr "<Image>/Tiny-Fu/Dekor"
+
+#~ msgid "Add B_evel..."
+#~ msgstr "Lägg till av_fasning..."
+
+#~ msgid "Keep bump layer"
+#~ msgstr "Behåll bumplager"
+
+#~ msgid "Work on copy"
+#~ msgstr "Arbeta på kopia"
+
+#~ msgid "Add _Border..."
+#~ msgstr "Lägg till _kant..."
+
+#~ msgid "Border X size"
+#~ msgstr "X-storlek för kant"
+
+#~ msgid "Border Y size"
+#~ msgstr "Y-storlek för kant"
+
+#~ msgid "Border color"
+#~ msgstr "Kantfärg"
+
+#~ msgid "Delta value on color"
+#~ msgstr "Deltavärde på färg"
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Webbsideteman/Rymdglöd"
+
+#~ msgid "Down"
+#~ msgstr "Ned"
+
+#~ msgid "Flatten image"
+#~ msgstr "Platta till bilden"
+
+#~ msgid "Glow color"
+#~ msgstr "Glödfärg"
+
+#~ msgid "Left"
+#~ msgstr "Vänster"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientering"
+
+#~ msgid "Right"
+#~ msgstr "Höger"
+
+#~ msgid "Size"
+#~ msgstr "Storlek"
+
+#~ msgid "Up"
+#~ msgstr "Upp"
+
+#~ msgid "_Arrow..."
+#~ msgstr "_Pil..."
+
+#~ msgid "Bar height"
+#~ msgstr "Stapelhöjd"
+
+#~ msgid "Bar length"
+#~ msgstr "Stapellängd"
+
+#~ msgid "_Hrule..."
+#~ msgstr "_Horisontell linjal..."
+
+#~ msgid "Radius"
+#~ msgstr "Radie"
+
+#~ msgid "_Bullet..."
+#~ msgstr "_Punkt..."
+
+#~ msgid "B_utton..."
+#~ msgstr "K_napp..."
+
+#~ msgid "Glow radius"
+#~ msgstr "Glödradie"
+
+#~ msgid "Padding"
+#~ msgstr "Utfyllnad"
+
+#~ msgid "Alien _Glow..."
+#~ msgstr "Rymd_glöd..."
+
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "Glödstorlek (bildpunkter × 4)"
+
+#~ msgid "Alien _Neon..."
+#~ msgstr "Rymd _neon..."
+
+#~ msgid "Fade away"
+#~ msgstr "Tyna bort"
+
+#~ msgid "Number of bands"
+#~ msgstr "Antal band"
+
+#~ msgid "Width of bands"
+#~ msgstr "Bredd på band"
+
+#~ msgid "Width of gaps"
+#~ msgstr "Bredd på mellanrum"
+
+#~ msgid "_Basic I..."
+#~ msgstr "_Basic I..."
+
+#~ msgid "B_asic II..."
+#~ msgstr "_Basic II..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Knappar"
+
+#~ msgid "Bevel width"
+#~ msgstr "Avfasningsbredd"
+
+#~ msgid "Lower-right color"
+#~ msgstr "Nedre högra färg"
+
+#~ msgid "Pressed"
+#~ msgstr "Nedtryckt"
+
+#~ msgid "Simple _Beveled Button..."
+#~ msgstr "Enkel a_vfasad knapp..."
+
+#~ msgid "Upper-left color"
+#~ msgstr "Övre vänstra färg"
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Webbsideteman/Avfasat mönster"
+
+#~ msgid "Pattern"
+#~ msgstr "Mönster"
+
+#~ msgid "Diameter"
+#~ msgstr "Diameter"
+
+#~ msgid "Transparent background"
+#~ msgstr "Genomskinlig bakgrund"
+
+#~ msgid "H_eading..."
+#~ msgstr "R_ubrik..."
+
+#~ msgid "Height"
+#~ msgstr "Höjd"
+
+#~ msgid "Width"
+#~ msgstr "Bredd"
+
+#~ msgid "<Image>/Tiny-Fu/Animators"
+#~ msgstr "<Image>/Tiny-Fu/Animatörer"
+
+#~ msgid "Intermediate frames"
+#~ msgstr "Mellanramar"
+
+#~ msgid "Looped"
+#~ msgstr "Evig slinga"
+
+#~ msgid "Max. blur radius"
+#~ msgstr "Maximal utsmetningsradie"
+
+#~ msgid "_Blend..."
+#~ msgstr "_Intonad..."
+
+#~ msgid "Blen_ded..."
+#~ msgstr "In_tonad..."
+
+#~ msgid "Blend mode"
+#~ msgstr "Intoningsläge"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "Anpassad färgskala"
+
+#~ msgid "FG-BG-HSV"
+#~ msgstr "FG-BG-HSV"
+
+#~ msgid "FG-BG-RGB"
+#~ msgstr "FG-BG-RGB"
+
+#~ msgid "FG-Transparent"
+#~ msgstr "FG-Transparent"
+
+#~ msgid "Gradient"
+#~ msgstr "Färgskala"
+
+#~ msgid "Gradient reverse"
+#~ msgstr "Reversera färgskala"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "Avstånd (bildpunkter)"
+
+#~ msgid "Background Color"
+#~ msgstr "Bakgrundsfärg"
+
+#~ msgid "Bo_vination..."
+#~ msgstr "Ko_skinn..."
+
+#~ msgid "Spots density X"
+#~ msgstr "X-densitet för punkter"
+
+#~ msgid "Spots density Y"
+#~ msgstr "Y-densitet för punkter"
+
+#~ msgid "Add glowing"
+#~ msgstr "Lägg till glöd"
+
+#~ msgid "After glow"
+#~ msgstr "Efterglöd"
+
+#~ msgid "B_urn-In..."
+#~ msgstr "In_bränning..."
+
 #, fuzzy
-msgid ""
-"Burn-In: Needs two layers in total!\n"
-"A foreground text layer with transparency and a background layer."
-msgstr ""
-"Inbränning: Behöver totalt två lager!\n"
-"        Ett förgrundstextlager med transparens\n"
-"        och ett bakgrundslager."
-
-#: scripts/burn-in-anim.sct.h:6
-msgid "Corona width"
-msgstr "Koronabredd"
-
-#: scripts/burn-in-anim.sct.h:7
-msgid "Fadeout"
-msgstr "Utfasning"
-
-#: scripts/burn-in-anim.sct.h:8
-msgid "Fadeout width"
-msgstr "Utfasningsbredd"
-
-#: scripts/burn-in-anim.sct.h:10
-msgid "Prepare for GIF"
-msgstr "Förbered för GIF"
-
-#: scripts/burn-in-anim.sct.h:11
-msgid "Speed (pixels/frame)"
-msgstr "Hastighet (bildpunkter/ram)"
-
-#: scripts/camo.sct.h:2
-msgid "Color 1"
-msgstr "Färg 1"
-
-#: scripts/camo.sct.h:3
-msgid "Color 2"
-msgstr "Färg 2"
-
-#: scripts/camo.sct.h:4
-msgid "Color 3"
-msgstr "Färg 3"
-
-#: scripts/camo.sct.h:6 scripts/rendermap.sct.h:6
-msgid "Granularity"
-msgstr "Granularitet"
-
-#: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-msgid "Image size"
-msgstr "Bildstorlek"
-
-#: scripts/camo.sct.h:8 scripts/distress-selection.sct.h:3
-msgid "Smooth"
-msgstr "Utjämna"
-
-#: scripts/camo.sct.h:9
-msgid "_Camouflage..."
-msgstr "_Kamouflage..."
-
-#: scripts/carved-logo.sct.h:2
-msgid "Background Image"
-msgstr "Bakgrundsbild"
-
-#: scripts/carved-logo.sct.h:3
-msgid "Carve raised text"
-msgstr "Skär ut höjd text"
-
-#: scripts/carved-logo.sct.h:4
-msgid "Carved..."
-msgstr "Utskuren..."
-
-#: scripts/carved-logo.sct.h:7
-msgid "Padding around text"
-msgstr "Utfyllnad runt text"
-
-#: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
-msgid "<Image>/Tiny-Fu/Stencil Ops"
-msgstr "<Image>/Tiny-Fu/Stencilåtgärder"
-
-#: scripts/carve-it.sct.h:2
-msgid "C_arve-It..."
-msgstr "Sk_är ut..."
-
-#: scripts/carve-it.sct.h:3
-msgid "Carve white areas"
-msgstr "Skär ut vita ytor"
-
-#: scripts/carve-it.sct.h:4
-msgid "Image to carve"
-msgstr "Bild att skära ut"
-
-#: scripts/chalk.sct.h:4
-msgid "Chalk color"
-msgstr "Kritfärg"
-
-#: scripts/chalk.sct.h:8
-msgid "_Chalk..."
-msgstr "_Krita..."
-
-#: scripts/chip-away.sct.h:3
-msgid "Blur amount"
-msgstr "Utsmetningsmängd"
-
-#: scripts/chip-away.sct.h:4
-msgid "Chip Awa_y..."
-msgstr "Hacka _bort..."
-
-#: scripts/chip-away.sct.h:5
-msgid "Chip amount"
-msgstr "Hackmängd"
-
-#: scripts/chip-away.sct.h:6
-msgid "Drop shadow"
-msgstr "Skuggkastning"
-
-#: scripts/chip-away.sct.h:7
-msgid "Fill BG with pattern"
-msgstr "Fyll bakgrund med mönster"
-
-#: scripts/chip-away.sct.h:10
-msgid "Invert"
-msgstr "Invertera"
-
-#: scripts/chip-away.sct.h:11
-msgid "Keep background"
-msgstr "Behåll bakgrund"
-
-#: scripts/chrome-it.sct.h:2
-msgid "C_hrome-It..."
-msgstr "_Förkroma..."
-
-#: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
-msgid "Chrome balance"
-msgstr "Krombalans"
-
-#: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
-#: scripts/sota-chrome-logo.sct.h:3
-msgid "Chrome factor"
-msgstr "Kromfaktor"
-
-#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
-msgid "Chrome lightness"
-msgstr "Kromljusstyrka"
-
-#: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
-msgid "Chrome saturation"
-msgstr "Krommättnad"
-
-#: scripts/chrome-it.sct.h:7
-msgid "Chrome white areas"
-msgstr "Krom på vita ytor"
-
-#: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
-#: scripts/sota-chrome-logo.sct.h:6
-msgid "Environment map"
-msgstr "Miljökarta"
-
-#: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-msgid "Highlight balance"
-msgstr "Markeringsbalans"
-
-#: scripts/chrome-logo.sct.h:5
-msgid "C_hrome..."
-msgstr "_Krom..."
-
-#: scripts/chrome-logo.sct.h:8
-msgid "Offsets (pixels * 2)"
-msgstr "Avstånd (bildpunkter × 2)"
-
-#: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
-#: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
-msgid "<Image>/Tiny-Fu/Render"
-msgstr "<Image>/Tiny-Fu/Rendering"
-
-#: scripts/circuit.sct.h:2
-msgid "Circuit seed"
-msgstr "Kretsfrö"
-
-#: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
-#: scripts/xach-effect.sct.h:11
-msgid "Keep selection"
-msgstr "Behåll markering"
-
-#: scripts/circuit.sct.h:4
-msgid "No background (only for separate layer)"
-msgstr "Ingen bakgrund (endast för separat lager)"
-
-#: scripts/circuit.sct.h:5
-msgid "Oilify mask size"
-msgstr "Storlek på oljningsmask"
-
-#: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
-msgid "Separate layer"
-msgstr "Separat lager"
-
-#: scripts/circuit.sct.h:7
-msgid "_Circuit..."
-msgstr "_Krets..."
-
-#: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
-#: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
-msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr "<Image>/Tiny-Fu/Alkemi"
-
-#: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
-msgid "Azimuth"
-msgstr "Azimut"
-
-#: scripts/clothify.sct.h:3
-msgid "Blur X"
-msgstr "Utsmetning i X-led"
-
-#: scripts/clothify.sct.h:4
-msgid "Blur Y"
-msgstr "Utsmetning i Y-led"
-
-#: scripts/clothify.sct.h:5 scripts/swirltile.sct.h:5
-msgid "Depth"
-msgstr "Djup"
-
-#: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
-msgid "Elevation"
-msgstr "Höjd"
-
-#: scripts/clothify.sct.h:7
-msgid "_Clothify..."
-msgstr "_Tyggör..."
-
-#: scripts/coffee.sct.h:2
-msgid ""
-"Darken only\n"
-"(Better, but only for images with alot of white)"
-msgstr ""
-"Gör endast mörkare\n"
-"(bättre, men bara för bilder med mycket vitt)"
-
-#: scripts/coffee.sct.h:3
-msgid "Stains"
-msgstr "Stänk"
-
-#: scripts/coffee.sct.h:4
-msgid "_Coffee Stain..."
-msgstr "_Kaffefläck..."
-
-#: scripts/comic-logo.sct.h:4
-msgid "Comic Boo_k..."
-msgstr "S_erietidning..."
-
-#: scripts/comic-logo.sct.h:9
-msgid "Outline color"
-msgstr "Konturfärg"
-
-#: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-msgid "Outline size"
-msgstr "Konturstorlek"
-
-#: scripts/coolmetal-logo.sct.h:4
-msgid "Cool _Metal..."
-msgstr "Kall _metall..."
-
-#: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
-msgid "Effect size (pixels)"
-msgstr "Effektstorlek (bildpunkter)"
-
-#: scripts/crystal-logo.sct.h:2
-msgid "Background image"
-msgstr "Bakgrundsbild"
-
-#: scripts/crystal-logo.sct.h:4
-msgid "Crystal..."
-msgstr "Kristall..."
-
-#: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
-#: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
-#: scripts/select-to-pattern.sct.h:1
-msgid "<Image>/Tiny-Fu/Selection"
-msgstr "<Image>/Tiny-Fu/Markering"
-
-#: scripts/distress-selection.sct.h:2
-msgid "Granularity (1 is low)"
-msgstr "Granularitet (1 är låg)"
-
-#: scripts/distress-selection.sct.h:4
-msgid "Smooth horizontally"
-msgstr "Utjämna horisontellt"
-
-#: scripts/distress-selection.sct.h:5
-msgid "Smooth vertically"
-msgstr "Utjämna vertikalt"
-
-#: scripts/distress-selection.sct.h:6
-msgid "Spread"
-msgstr "Spridning"
-
-#: scripts/distress-selection.sct.h:7
-msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Tröskel (större 1<-->255 mindre)"
-
-#: scripts/distress-selection.sct.h:8
-msgid "_Distress Selection..."
-msgstr "_Matta ut markering..."
-
-#: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
-#: scripts/xach-effect.sct.h:1
-msgid "<Image>/Tiny-Fu/Shadow"
-msgstr "<Image>/Tiny-Fu/Skugga"
-
-#: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
-msgid "Allow resizing"
-msgstr "Tillåt storleksändring"
-
-#: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
-#: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
-#: scripts/swirltile.sct.h:4
-msgid "Blur radius"
-msgstr "Utsmetningsradie"
-
-#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
-msgid "Offset X"
-msgstr "Avstånd i X-led"
-
-#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:9
-msgid "Offset Y"
-msgstr "Avstånd i Y-led"
-
-#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:10
-msgid "Opacity"
-msgstr "Opacitet"
-
-#: scripts/drop-shadow.sct.h:8
-msgid "_Drop-Shadow..."
-msgstr "_Skuggkastning..."
-
-#: scripts/erase-rows.sct.h:2
-msgid "Columns"
-msgstr "Kolumner"
-
-#: scripts/erase-rows.sct.h:3
-msgid "Erase"
-msgstr "Ta bort"
-
-#: scripts/erase-rows.sct.h:4
-msgid "Erase/fill"
-msgstr "Ta bort/Fyll"
-
-#: scripts/erase-rows.sct.h:5
-msgid "Even"
-msgstr "Jämn"
-
-#: scripts/erase-rows.sct.h:6
-msgid "Even/odd"
-msgstr "Jämn/Udda"
-
-#: scripts/erase-rows.sct.h:7
-msgid "Fill with BG"
-msgstr "Fyll med bakgrund"
-
-#: scripts/erase-rows.sct.h:8
-msgid "Odd"
-msgstr "Udda"
-
-#: scripts/erase-rows.sct.h:9
-msgid "Rows"
-msgstr "Rader"
-
-#: scripts/erase-rows.sct.h:10
-msgid "Rows/cols"
-msgstr "Rader/Kolumner"
-
-#: scripts/erase-rows.sct.h:11
-msgid "_Erase every other Row..."
-msgstr "_Ta bort varannan rad..."
-
-#: scripts/fade-outline.sct.h:2
-msgid "Apply generated layermask"
-msgstr "Tillämpa genererad lagermask"
-
-#: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
-#: scripts/old-photo.sct.h:2
-msgid "Border size"
-msgstr "Kantstorlek"
-
-#: scripts/fade-outline.sct.h:4
-msgid "Clear unselected maskarea"
-msgstr "Töm omarkerad maskyta"
-
-#: scripts/fade-outline.sct.h:6
-#, no-c-format
-msgid "Fade from %"
-msgstr "Tyna från %"
-
-#: scripts/fade-outline.sct.h:8
-#, no-c-format
-msgid "Fade to   %"
-msgstr "Tyna till   %"
-
-#: scripts/fade-outline.sct.h:9
-msgid "Use growing selection"
-msgstr "Använd växande markering"
-
-#: scripts/fade-outline.sct.h:10
-msgid "_Fade Outline..."
-msgstr "_Blek kontur..."
-
-#: scripts/flatland.sct.h:2 scripts/land.sct.h:2
-msgid "Detail level"
-msgstr "Detaljnivå"
-
-#: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-msgid "Image height"
-msgstr "Bildhöjd"
-
-#: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-msgid "Image width"
-msgstr "Bildbredd"
-
-#: scripts/flatland.sct.h:5 scripts/land.sct.h:7
-msgid "Random seed"
-msgstr "Slumpfrö"
-
-#: scripts/flatland.sct.h:6 scripts/land.sct.h:8
-msgid "Scale X"
-msgstr "Skala X"
-
-#: scripts/flatland.sct.h:7 scripts/land.sct.h:9
-msgid "Scale Y"
-msgstr "Skala Y"
-
-#: scripts/flatland.sct.h:8
-msgid "_Flatland..."
-msgstr "_Flatland..."
-
-#: scripts/font-map.sct.h:2
-msgid "Active colors"
-msgstr "Aktiva färger"
-
-#: scripts/font-map.sct.h:3
-msgid "Black on white"
-msgstr "Svart på vitt"
-
-#: scripts/font-map.sct.h:4
-msgid "Font _size (pixels)"
-msgstr "Typsnitts_storlek (bildpunkter)"
-
-#: scripts/font-map.sct.h:5
-msgid "Use font _name as text"
-msgstr "Använd typsnitts_namnet som text"
-
-#: scripts/font-map.sct.h:6
-msgid "_Border (pixels)"
-msgstr "_Kant (bildpunkter)"
-
-#: scripts/font-map.sct.h:7
-msgid "_Color scheme"
-msgstr "Färg_schema"
-
-#: scripts/font-map.sct.h:8
-msgid "_Filter (regexp)"
-msgstr "_Filter (regexp)"
-
-#: scripts/font-map.sct.h:9
-msgid "_Font Map..."
-msgstr "_Typsnittskarta..."
-
-#: scripts/font-map.sct.h:10
-msgid "_Labels"
-msgstr "_Etiketter"
-
-#: scripts/font-map.sct.h:11
-msgid "_Text"
-msgstr "_Text"
-
-#: scripts/frosty-logo.sct.h:8
-msgid "_Frosty..."
-msgstr "_Frostad..."
-
-#: scripts/fuzzyborder.sct.h:2
-msgid "Add shadow"
-msgstr "Lägg till skugga"
-
-#: scripts/fuzzyborder.sct.h:3
-msgid "Blur border"
-msgstr "Smeta ut kant"
-
-#: scripts/fuzzyborder.sct.h:7
-msgid "Granularity (1 is Low)"
-msgstr "Granularitet (1 är låg)"
-
-#: scripts/fuzzyborder.sct.h:9
-#, no-c-format
-msgid "Shadow weight (%)"
-msgstr "Skuggvikt (%)"
-
-#: scripts/fuzzyborder.sct.h:11
-msgid "_Fuzzy Border..."
-msgstr "_Suddig kant..."
-
-#: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Webbsideteman/Klassisk.Gimp.org"
-
-#: scripts/gimp-headers.sct.h:2
-msgid "Autocrop"
-msgstr "Beskär automatiskt"
-
-#: scripts/gimp-headers.sct.h:3
-msgid "Dark color"
-msgstr "Mörk färg"
-
-#: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-msgid "Highlight color"
-msgstr "Markeringsfärg"
-
-#: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
-msgid "Index image"
-msgstr "Indexbild"
-
-#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
-msgid "Number of colors"
-msgstr "Antal färger"
-
-#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-msgid "Remove background"
-msgstr "Ta bort bakgrund"
-
-#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
-msgid "Select-by-color threshold"
-msgstr "Tröskel för markera-med-färg"
-
-#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-msgid "Shadow color"
-msgstr "Skuggfärg"
-
-#: scripts/gimp-headers.sct.h:14
-msgid "_Big Header..."
-msgstr "_Stor rubrik..."
-
-#: scripts/gimp-headers.sct.h:15
-msgid "_Small Header..."
-msgstr "_Liten rubrik..."
-
-#: scripts/gimp-labels.sct.h:13
-msgid "T_ube Sub-Button Label..."
-msgstr "T_ub underknappsetikett..."
-
-#: scripts/gimp-labels.sct.h:16
-msgid "Tub_e Sub-Sub-Button Label..."
-msgstr "Tu_b under-underknappsetikett..."
-
-#: scripts/gimp-labels.sct.h:17
-msgid "_General Tube Labels..."
-msgstr "_Generella tubetiketter..."
-
-#: scripts/gimp-labels.sct.h:18
-msgid "_Tube Button Label..."
-msgstr "_Tubtetikett..."
-
-#: scripts/glossy.sct.h:4
-msgid "Blend gradient (Text)"
-msgstr "Färgtoningsskala (text)"
-
-#: scripts/glossy.sct.h:5
-msgid "Blend gradient (outline)"
-msgstr "Färgtoningsskala (kontur)"
-
-#: scripts/glossy.sct.h:6
-msgid "Blend gradient (text)"
-msgstr "Färgtoningsskala (text)"
-
-#: scripts/glossy.sct.h:10
-msgid "Glo_ssy..."
-msgstr "Gl_ansig..."
-
-#: scripts/glossy.sct.h:11
-msgid "Outline gradient reverse"
-msgstr "Reversera konturgradient"
-
-#: scripts/glossy.sct.h:13
-msgid "Pattern (outline)"
-msgstr "Mönster (kontur)"
-
-#: scripts/glossy.sct.h:14
-msgid "Pattern (overlay)"
-msgstr "Mönster (överlagring)"
-
-#: scripts/glossy.sct.h:15
-msgid "Pattern (text)"
-msgstr "Mönster (text)"
-
-#: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
-msgid "Shadow"
-msgstr "Skugga"
-
-#: scripts/glossy.sct.h:20
-msgid "Text gradient reverse"
-msgstr "Reversera textgradient"
-
-#: scripts/glossy.sct.h:21
-msgid "Use pattern for outline instead of gradient"
-msgstr "Använd mönster för kontur istället för färgtoning"
-
-#: scripts/glossy.sct.h:22
-msgid "Use pattern for text instead of gradient"
-msgstr "Använd mönster för text istället för färgtoning"
-
-#: scripts/glossy.sct.h:23
-msgid "Use pattern overlay"
-msgstr "Använd mönsteröverlagring"
-
-#: scripts/glowing-logo.sct.h:4
-msgid "Effect size (pixels * 3)"
-msgstr "Effektstorlek (bildpunkter × 3)"
-
-#: scripts/glowing-logo.sct.h:7
-msgid "Glo_wing Hot..."
-msgstr "Gl_ödhet..."
-
-#: scripts/gradient-bevel-logo.sct.h:4
-msgid "Bevel height (Sharpness)"
-msgstr "Avfasningshöjd (skärpa)"
-
-#: scripts/gradient-bevel-logo.sct.h:5
-msgid "Bevel height (sharpness)"
-msgstr "Avfasningshöjd (skärpa)"
-
-#: scripts/gradient-bevel-logo.sct.h:7 scripts/t-o-p-logo.sct.h:5
-#: scripts/textured-logo.sct.h:4
-msgid "Border size (pixels)"
-msgstr "Kantstorlek (bildpunkter)"
-
-#: scripts/gradient-bevel-logo.sct.h:10
-msgid "Gradient Beve_l..."
-msgstr "Färgskale_fasning..."
-
-#: scripts/gradient-example.sct.h:2
-msgid "Custom _Gradient..."
-msgstr "Anpassad _färgskala..."
-
-#: scripts/grid-system.sct.h:2
-msgid "X divisions"
-msgstr "X-delar"
-
-#: scripts/grid-system.sct.h:3
-msgid "Y divisions"
-msgstr "Y-delar"
-
-#: scripts/grid-system.sct.h:4
-msgid "_Grid..."
-msgstr "_Rutnät..."
-
-#: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
-#: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
+#~ msgid ""
+#~ "Burn-In: Needs two layers in total!\n"
+#~ "A foreground text layer with transparency and a background layer."
+#~ msgstr ""
+#~ "Inbränning: Behöver totalt två lager!\n"
+#~ "        Ett förgrundstextlager med transparens\n"
+#~ "        och ett bakgrundslager."
+
+#~ msgid "Corona width"
+#~ msgstr "Koronabredd"
+
+#~ msgid "Fadeout"
+#~ msgstr "Utfasning"
+
+#~ msgid "Fadeout width"
+#~ msgstr "Utfasningsbredd"
+
+#~ msgid "Prepare for GIF"
+#~ msgstr "Förbered för GIF"
+
+#~ msgid "Speed (pixels/frame)"
+#~ msgstr "Hastighet (bildpunkter/ram)"
+
+#~ msgid "Color 1"
+#~ msgstr "Färg 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Färg 2"
+
+#~ msgid "Color 3"
+#~ msgstr "Färg 3"
+
+#~ msgid "Granularity"
+#~ msgstr "Granularitet"
+
+#~ msgid "Image size"
+#~ msgstr "Bildstorlek"
+
+#~ msgid "Smooth"
+#~ msgstr "Utjämna"
+
+#~ msgid "_Camouflage..."
+#~ msgstr "_Kamouflage..."
+
+#~ msgid "Background Image"
+#~ msgstr "Bakgrundsbild"
+
+#~ msgid "Carve raised text"
+#~ msgstr "Skär ut höjd text"
+
+#~ msgid "Carved..."
+#~ msgstr "Utskuren..."
+
+#~ msgid "Padding around text"
+#~ msgstr "Utfyllnad runt text"
+
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops"
+#~ msgstr "<Image>/Tiny-Fu/Stencilåtgärder"
+
+#~ msgid "C_arve-It..."
+#~ msgstr "Sk_är ut..."
+
+#~ msgid "Carve white areas"
+#~ msgstr "Skär ut vita ytor"
+
+#~ msgid "Image to carve"
+#~ msgstr "Bild att skära ut"
+
+#~ msgid "Chalk color"
+#~ msgstr "Kritfärg"
+
+#~ msgid "_Chalk..."
+#~ msgstr "_Krita..."
+
+#~ msgid "Blur amount"
+#~ msgstr "Utsmetningsmängd"
+
+#~ msgid "Chip Awa_y..."
+#~ msgstr "Hacka _bort..."
+
+#~ msgid "Chip amount"
+#~ msgstr "Hackmängd"
+
+#~ msgid "Drop shadow"
+#~ msgstr "Skuggkastning"
+
+#~ msgid "Fill BG with pattern"
+#~ msgstr "Fyll bakgrund med mönster"
+
+#~ msgid "Invert"
+#~ msgstr "Invertera"
+
+#~ msgid "Keep background"
+#~ msgstr "Behåll bakgrund"
+
+#~ msgid "C_hrome-It..."
+#~ msgstr "_Förkroma..."
+
+#~ msgid "Chrome balance"
+#~ msgstr "Krombalans"
+
+#~ msgid "Chrome factor"
+#~ msgstr "Kromfaktor"
+
+#~ msgid "Chrome lightness"
+#~ msgstr "Kromljusstyrka"
+
+#~ msgid "Chrome saturation"
+#~ msgstr "Krommättnad"
+
+#~ msgid "Chrome white areas"
+#~ msgstr "Krom på vita ytor"
+
+#~ msgid "Environment map"
+#~ msgstr "Miljökarta"
+
+#~ msgid "Highlight balance"
+#~ msgstr "Markeringsbalans"
+
+#~ msgid "C_hrome..."
+#~ msgstr "_Krom..."
+
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "Avstånd (bildpunkter × 2)"
+
+#~ msgid "<Image>/Tiny-Fu/Render"
+#~ msgstr "<Image>/Tiny-Fu/Rendering"
+
+#~ msgid "Circuit seed"
+#~ msgstr "Kretsfrö"
+
+#~ msgid "Keep selection"
+#~ msgstr "Behåll markering"
+
+#~ msgid "No background (only for separate layer)"
+#~ msgstr "Ingen bakgrund (endast för separat lager)"
+
+#~ msgid "Oilify mask size"
+#~ msgstr "Storlek på oljningsmask"
+
+#~ msgid "Separate layer"
+#~ msgstr "Separat lager"
+
+#~ msgid "_Circuit..."
+#~ msgstr "_Krets..."
+
+#~ msgid "<Image>/Tiny-Fu/Alchemy"
+#~ msgstr "<Image>/Tiny-Fu/Alkemi"
+
+#~ msgid "Azimuth"
+#~ msgstr "Azimut"
+
+#~ msgid "Blur X"
+#~ msgstr "Utsmetning i X-led"
+
+#~ msgid "Blur Y"
+#~ msgstr "Utsmetning i Y-led"
+
+#~ msgid "Depth"
+#~ msgstr "Djup"
+
+#~ msgid "Elevation"
+#~ msgstr "Höjd"
+
+#~ msgid "_Clothify..."
+#~ msgstr "_Tyggör..."
+
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "Gör endast mörkare\n"
+#~ "(bättre, men bara för bilder med mycket vitt)"
+
+#~ msgid "Stains"
+#~ msgstr "Stänk"
+
+#~ msgid "_Coffee Stain..."
+#~ msgstr "_Kaffefläck..."
+
+#~ msgid "Comic Boo_k..."
+#~ msgstr "S_erietidning..."
+
+#~ msgid "Outline color"
+#~ msgstr "Konturfärg"
+
+#~ msgid "Outline size"
+#~ msgstr "Konturstorlek"
+
+#~ msgid "Cool _Metal..."
+#~ msgstr "Kall _metall..."
+
+#~ msgid "Effect size (pixels)"
+#~ msgstr "Effektstorlek (bildpunkter)"
+
+#~ msgid "Background image"
+#~ msgstr "Bakgrundsbild"
+
+#~ msgid "Crystal..."
+#~ msgstr "Kristall..."
+
+#~ msgid "<Image>/Tiny-Fu/Selection"
+#~ msgstr "<Image>/Tiny-Fu/Markering"
+
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "Granularitet (1 är låg)"
+
+#~ msgid "Smooth horizontally"
+#~ msgstr "Utjämna horisontellt"
+
+#~ msgid "Smooth vertically"
+#~ msgstr "Utjämna vertikalt"
+
+#~ msgid "Spread"
+#~ msgstr "Spridning"
+
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "Tröskel (större 1<-->255 mindre)"
+
+#~ msgid "_Distress Selection..."
+#~ msgstr "_Matta ut markering..."
+
+#~ msgid "<Image>/Tiny-Fu/Shadow"
+#~ msgstr "<Image>/Tiny-Fu/Skugga"
+
+#~ msgid "Allow resizing"
+#~ msgstr "Tillåt storleksändring"
+
+#~ msgid "Blur radius"
+#~ msgstr "Utsmetningsradie"
+
+#~ msgid "Offset X"
+#~ msgstr "Avstånd i X-led"
+
+#~ msgid "Offset Y"
+#~ msgstr "Avstånd i Y-led"
+
+#~ msgid "Opacity"
+#~ msgstr "Opacitet"
+
+#~ msgid "_Drop-Shadow..."
+#~ msgstr "_Skuggkastning..."
+
+#~ msgid "Columns"
+#~ msgstr "Kolumner"
+
+#~ msgid "Erase"
+#~ msgstr "Ta bort"
+
+#~ msgid "Erase/fill"
+#~ msgstr "Ta bort/Fyll"
+
+#~ msgid "Even"
+#~ msgstr "Jämn"
+
+#~ msgid "Even/odd"
+#~ msgstr "Jämn/Udda"
+
+#~ msgid "Fill with BG"
+#~ msgstr "Fyll med bakgrund"
+
+#~ msgid "Odd"
+#~ msgstr "Udda"
+
+#~ msgid "Rows"
+#~ msgstr "Rader"
+
+#~ msgid "Rows/cols"
+#~ msgstr "Rader/Kolumner"
+
+#~ msgid "_Erase every other Row..."
+#~ msgstr "_Ta bort varannan rad..."
+
+#~ msgid "Apply generated layermask"
+#~ msgstr "Tillämpa genererad lagermask"
+
+#~ msgid "Border size"
+#~ msgstr "Kantstorlek"
+
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "Töm omarkerad maskyta"
+
+#~ msgid "Fade from %"
+#~ msgstr "Tyna från %"
+
+#~ msgid "Fade to   %"
+#~ msgstr "Tyna till   %"
+
+#~ msgid "Use growing selection"
+#~ msgstr "Använd växande markering"
+
+#~ msgid "_Fade Outline..."
+#~ msgstr "_Blek kontur..."
+
+#~ msgid "Detail level"
+#~ msgstr "Detaljnivå"
+
+#~ msgid "Image height"
+#~ msgstr "Bildhöjd"
+
+#~ msgid "Image width"
+#~ msgstr "Bildbredd"
+
+#~ msgid "Random seed"
+#~ msgstr "Slumpfrö"
+
+#~ msgid "Scale X"
+#~ msgstr "Skala X"
+
+#~ msgid "Scale Y"
+#~ msgstr "Skala Y"
+
+#~ msgid "_Flatland..."
+#~ msgstr "_Flatland..."
+
+#~ msgid "Active colors"
+#~ msgstr "Aktiva färger"
+
+#~ msgid "Black on white"
+#~ msgstr "Svart på vitt"
+
+#~ msgid "Font _size (pixels)"
+#~ msgstr "Typsnitts_storlek (bildpunkter)"
+
+#~ msgid "Use font _name as text"
+#~ msgstr "Använd typsnitts_namnet som text"
+
+#~ msgid "_Border (pixels)"
+#~ msgstr "_Kant (bildpunkter)"
+
+#~ msgid "_Color scheme"
+#~ msgstr "Färg_schema"
+
+#~ msgid "_Filter (regexp)"
+#~ msgstr "_Filter (regexp)"
+
+#~ msgid "_Font Map..."
+#~ msgstr "_Typsnittskarta..."
+
+#~ msgid "_Labels"
+#~ msgstr "_Etiketter"
+
+#~ msgid "_Text"
+#~ msgstr "_Text"
+
+#~ msgid "_Frosty..."
+#~ msgstr "_Frostad..."
+
+#~ msgid "Add shadow"
+#~ msgstr "Lägg till skugga"
+
+#~ msgid "Blur border"
+#~ msgstr "Smeta ut kant"
+
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "Granularitet (1 är låg)"
+
+#~ msgid "Shadow weight (%)"
+#~ msgstr "Skuggvikt (%)"
+
+#~ msgid "_Fuzzy Border..."
+#~ msgstr "_Suddig kant..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Webbsideteman/Klassisk.Gimp.org"
+
+#~ msgid "Autocrop"
+#~ msgstr "Beskär automatiskt"
+
+#~ msgid "Dark color"
+#~ msgstr "Mörk färg"
+
+#~ msgid "Highlight color"
+#~ msgstr "Markeringsfärg"
+
+#~ msgid "Index image"
+#~ msgstr "Indexbild"
+
+#~ msgid "Number of colors"
+#~ msgstr "Antal färger"
+
+#~ msgid "Remove background"
+#~ msgstr "Ta bort bakgrund"
+
+#~ msgid "Select-by-color threshold"
+#~ msgstr "Tröskel för markera-med-färg"
+
+#~ msgid "Shadow color"
+#~ msgstr "Skuggfärg"
+
+#~ msgid "_Big Header..."
+#~ msgstr "_Stor rubrik..."
+
+#~ msgid "_Small Header..."
+#~ msgstr "_Liten rubrik..."
+
+#~ msgid "T_ube Sub-Button Label..."
+#~ msgstr "T_ub underknappsetikett..."
+
+#~ msgid "Tub_e Sub-Sub-Button Label..."
+#~ msgstr "Tu_b under-underknappsetikett..."
+
+#~ msgid "_General Tube Labels..."
+#~ msgstr "_Generella tubetiketter..."
+
+#~ msgid "_Tube Button Label..."
+#~ msgstr "_Tubtetikett..."
+
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "Färgtoningsskala (text)"
+
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "Färgtoningsskala (kontur)"
+
+#~ msgid "Blend gradient (text)"
+#~ msgstr "Färgtoningsskala (text)"
+
+#~ msgid "Glo_ssy..."
+#~ msgstr "Gl_ansig..."
+
+#~ msgid "Outline gradient reverse"
+#~ msgstr "Reversera konturgradient"
+
+#~ msgid "Pattern (outline)"
+#~ msgstr "Mönster (kontur)"
+
+#~ msgid "Pattern (overlay)"
+#~ msgstr "Mönster (överlagring)"
+
+#~ msgid "Pattern (text)"
+#~ msgstr "Mönster (text)"
+
+#~ msgid "Shadow"
+#~ msgstr "Skugga"
+
+#~ msgid "Text gradient reverse"
+#~ msgstr "Reversera textgradient"
+
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "Använd mönster för kontur istället för färgtoning"
+
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "Använd mönster för text istället för färgtoning"
+
+#~ msgid "Use pattern overlay"
+#~ msgstr "Använd mönsteröverlagring"
+
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "Effektstorlek (bildpunkter × 3)"
+
+#~ msgid "Glo_wing Hot..."
+#~ msgstr "Gl_ödhet..."
+
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "Avfasningshöjd (skärpa)"
+
+#~ msgid "Bevel height (sharpness)"
+#~ msgstr "Avfasningshöjd (skärpa)"
+
+#~ msgid "Border size (pixels)"
+#~ msgstr "Kantstorlek (bildpunkter)"
+
+#~ msgid "Gradient Beve_l..."
+#~ msgstr "Färgskale_fasning..."
+
+#~ msgid "Custom _Gradient..."
+#~ msgstr "Anpassad _färgskala..."
+
+#~ msgid "X divisions"
+#~ msgstr "X-delar"
+
+#~ msgid "Y divisions"
+#~ msgstr "Y-delar"
+
+#~ msgid "_Grid..."
+#~ msgstr "_Rutnät..."
+
 #, fuzzy
-msgid "<Image>/Image/Guides"
-msgstr "<Image>/Image/Guider/Ny _guide..."
+#~ msgid "<Image>/Image/Guides"
+#~ msgstr "<Image>/Image/Guider/Ny _guide..."
 
-#: scripts/guides-from-selection.sct.h:2
-msgid "Creates four Guides around the bounding box of the current selection."
-msgstr "Skapar fyra guider runt gränsytan för det nurvarande urvalet."
+#~ msgid ""
+#~ "Creates four Guides around the bounding box of the current selection."
+#~ msgstr "Skapar fyra guider runt gränsytan för det nurvarande urvalet."
 
-#: scripts/guides-from-selection.sct.h:3
-msgid "New Guides from _Selection"
-msgstr "Nya guider from _urval"
+#~ msgid "New Guides from _Selection"
+#~ msgstr "Nya guider from _urval"
 
-#: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
-msgid "Direction"
-msgstr "Beskrivning"
+#~ msgid "Direction"
+#~ msgstr "Beskrivning"
 
-#: scripts/guides-new-percent.sct.h:3 scripts/guides-new.sct.h:3
-msgid "Horizontal"
-msgstr "Horisontell"
+#~ msgid "Horizontal"
+#~ msgstr "Horisontell"
 
-#: scripts/guides-new-percent.sct.h:4
-msgid "New Guide (by _Percent)..."
-msgstr "<Image>/Image/Guider/Ny guide (i _procent)..."
+#~ msgid "New Guide (by _Percent)..."
+#~ msgstr "<Image>/Image/Guider/Ny guide (i _procent)..."
 
-#: scripts/guides-new-percent.sct.h:6
-#, no-c-format
-msgid "Position (in %)"
-msgstr "Position (i %)"
+#~ msgid "Position (in %)"
+#~ msgstr "Position (i %)"
 
-#: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
-msgid "Vertical"
-msgstr "Vertikal"
+#~ msgid "Vertical"
+#~ msgstr "Vertikal"
 
-#: scripts/guides-new.sct.h:4
-msgid "New _Guide..."
-msgstr "Ny _guide..."
+#~ msgid "New _Guide..."
+#~ msgstr "Ny _guide..."
 
-#: scripts/guides-remove-all.sct.h:2
-msgid "_Remove all Guides"
-msgstr "_Ta bort alla guider"
+#~ msgid "_Remove all Guides"
+#~ msgstr "_Ta bort alla guider"
 
-#: scripts/hsv-graph.sct.h:1 scripts/image-structure.sct.h:1
-#: scripts/tiny-fu-set-cmap.sct.h:1
-msgid "<Image>/Tiny-Fu/Utils"
-msgstr "<Image>/Tiny-Fu/Verktyg"
+#~ msgid "<Image>/Tiny-Fu/Utils"
+#~ msgstr "<Image>/Tiny-Fu/Verktyg"
 
-#: scripts/hsv-graph.sct.h:2
-msgid "BG opacity"
-msgstr "Bakgrundsopacitet"
+#~ msgid "BG opacity"
+#~ msgstr "Bakgrundsopacitet"
 
-#: scripts/hsv-graph.sct.h:3
-msgid "Draw _HSV Graph..."
-msgstr "Rita _HSV-graf..."
+#~ msgid "Draw _HSV Graph..."
+#~ msgstr "Rita _HSV-graf..."
 
-#: scripts/hsv-graph.sct.h:4
-msgid "End X"
-msgstr "X-slut"
+#~ msgid "End X"
+#~ msgstr "X-slut"
 
-#: scripts/hsv-graph.sct.h:5
-msgid "End Y"
-msgstr "Y-slut"
+#~ msgid "End Y"
+#~ msgstr "Y-slut"
 
-#: scripts/hsv-graph.sct.h:6
-msgid "From top-left to bottom-right"
-msgstr "Från övre vänsterkant till nedre högerkant"
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "Från övre vänsterkant till nedre högerkant"
 
-#: scripts/hsv-graph.sct.h:7
-msgid "Graph scale"
-msgstr "Grafskala"
+#~ msgid "Graph scale"
+#~ msgstr "Grafskala"
 
-#: scripts/hsv-graph.sct.h:8
-msgid "Start X"
-msgstr "Start i X-led"
+#~ msgid "Start X"
+#~ msgstr "Start i X-led"
 
-#: scripts/hsv-graph.sct.h:9
-msgid "Start Y"
-msgstr "Start i Y-led"
+#~ msgid "Start Y"
+#~ msgstr "Start i Y-led"
 
-#: scripts/hsv-graph.sct.h:10
 #, fuzzy
-msgid "Use selection bounds instead of values below"
-msgstr "Använd markeringsgränser istället för trösklar"
+#~ msgid "Use selection bounds instead of values below"
+#~ msgstr "Använd markeringsgränser istället för trösklar"
 
-#: scripts/i26-gunya2.sct.h:4
-msgid "Frame color"
-msgstr "Ramfärg"
+#~ msgid "Frame color"
+#~ msgstr "Ramfärg"
 
-#: scripts/i26-gunya2.sct.h:5
-msgid "Frame size"
-msgstr "Ramstorlek"
+#~ msgid "Frame size"
+#~ msgstr "Ramstorlek"
 
-#: scripts/i26-gunya2.sct.h:6
-msgid "Imigre-26..."
-msgstr "Imigre-26..."
+#~ msgid "Imigre-26..."
+#~ msgstr "Imigre-26..."
 
-#: scripts/image-structure.sct.h:2
-msgid "Apply layer mask (or discard)"
-msgstr "Tillämpa lagermask (eller kasta bort)"
+#~ msgid "Apply layer mask (or discard)"
+#~ msgstr "Tillämpa lagermask (eller kasta bort)"
 
-#: scripts/image-structure.sct.h:4
-msgid "Create new image"
-msgstr "Skapa ny bild"
+#~ msgid "Create new image"
+#~ msgstr "Skapa ny bild"
 
-#: scripts/image-structure.sct.h:5
-msgid "Insert layer names"
-msgstr "Infoga lagernamn"
+#~ msgid "Insert layer names"
+#~ msgstr "Infoga lagernamn"
 
-#: scripts/image-structure.sct.h:6
-msgid "Make new background"
-msgstr "Skapa ny bakgrund"
+#~ msgid "Make new background"
+#~ msgstr "Skapa ny bakgrund"
 
-#: scripts/image-structure.sct.h:7
-msgid "Outer border"
-msgstr "Yttre kant"
+#~ msgid "Outer border"
+#~ msgstr "Yttre kant"
 
-#: scripts/image-structure.sct.h:8
-msgid "Pad color"
-msgstr "Utfyllnadsfärg"
+#~ msgid "Pad color"
+#~ msgstr "Utfyllnadsfärg"
 
-#: scripts/image-structure.sct.h:9
-msgid "Pad opacity"
-msgstr "Utfyllnadsopacitet"
+#~ msgid "Pad opacity"
+#~ msgstr "Utfyllnadsopacitet"
 
-#: scripts/image-structure.sct.h:10
-msgid "Padding for transparent regions"
-msgstr "Utfyllnad för genomskinliga områden"
+#~ msgid "Padding for transparent regions"
+#~ msgstr "Utfyllnad för genomskinliga områden"
 
-#: scripts/image-structure.sct.h:11
-msgid "Shear length"
-msgstr "Skärlängd"
+#~ msgid "Shear length"
+#~ msgstr "Skärlängd"
 
-#: scripts/image-structure.sct.h:12
-msgid "Show Image _Structure..."
-msgstr "Visa bild_struktur..."
+#~ msgid "Show Image _Structure..."
+#~ msgstr "Visa bild_struktur..."
 
-#: scripts/image-structure.sct.h:13
-msgid "Space between layers"
-msgstr "Mellanrum mellan lager"
+#~ msgid "Space between layers"
+#~ msgstr "Mellanrum mellan lager"
 
-#: scripts/land.sct.h:6
-msgid "Land height"
-msgstr "Landhöjd"
+#~ msgid "Land height"
+#~ msgstr "Landhöjd"
 
-#: scripts/land.sct.h:10
-msgid "Sea depth"
-msgstr "Havsdjup"
+#~ msgid "Sea depth"
+#~ msgstr "Havsdjup"
 
-#: scripts/land.sct.h:11
-msgid "_Land..."
-msgstr "_Land..."
+#~ msgid "_Land..."
+#~ msgstr "_Land..."
 
-#: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
-msgid "Roughness"
-msgstr "Strävhet"
+#~ msgid "Roughness"
+#~ msgstr "Strävhet"
 
-#: scripts/lava.sct.h:5
-msgid "Seed"
-msgstr "Slumptalsfrö"
+#~ msgid "Seed"
+#~ msgstr "Slumptalsfrö"
 
-#: scripts/lava.sct.h:8
-msgid "Use current gradient"
-msgstr "Använd aktuell färgtoning"
+#~ msgid "Use current gradient"
+#~ msgstr "Använd aktuell färgtoning"
 
-#: scripts/lava.sct.h:9
-msgid "_Lava..."
-msgstr "_Lava..."
+#~ msgid "_Lava..."
+#~ msgstr "_Lava..."
 
-#: scripts/line-nova.sct.h:2
-msgid "Line _Nova..."
-msgstr "Linje_nova..."
+#~ msgid "Line _Nova..."
+#~ msgstr "Linje_nova..."
 
-#: scripts/line-nova.sct.h:3
-msgid "Number of lines"
-msgstr "Antal linjer"
+#~ msgid "Number of lines"
+#~ msgstr "Antal linjer"
 
-#: scripts/line-nova.sct.h:4
-msgid "Offset radius"
-msgstr "Avståndsradie"
+#~ msgid "Offset radius"
+#~ msgstr "Avståndsradie"
 
-#: scripts/line-nova.sct.h:5
-msgid "Randomness"
-msgstr "Slumpmässighet"
+#~ msgid "Randomness"
+#~ msgstr "Slumpmässighet"
 
-#: scripts/line-nova.sct.h:6
-msgid "Sharpness (degrees)"
-msgstr "Skärpa (grader)"
+#~ msgid "Sharpness (degrees)"
+#~ msgstr "Skärpa (grader)"
 
-#: scripts/mkbrush.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Skapa pensel"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Skapa pensel"
 
-#: scripts/mkbrush.sct.h:2
-msgid "Create size of brush"
-msgstr ""
-
-#: scripts/mkbrush.sct.h:3
 #, fuzzy
-msgid "Description"
-msgstr "Beskrivning"
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
 
-#: scripts/mkbrush.sct.h:4
-msgid "Elli_ptical, Feathered..."
-msgstr "Elli_ptisk, fjädrad..."
+#~ msgid "Elli_ptical, Feathered..."
+#~ msgstr "Elli_ptisk, fjädrad..."
 
-#: scripts/mkbrush.sct.h:5
-msgid "Feathering"
-msgstr "Fjäder"
+#~ msgid "Feathering"
+#~ msgstr "Fjäder"
 
-#: scripts/mkbrush.sct.h:7
-msgid "Re_ctangular, Feathered..."
-msgstr "Re_ktangulär, fjädrad..."
+#~ msgid "Re_ctangular, Feathered..."
+#~ msgstr "Re_ktangulär, fjädrad..."
 
-#: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
-msgid "Spacing"
-msgstr "Mellanrum"
+#~ msgid "Spacing"
+#~ msgstr "Mellanrum"
 
-#: scripts/mkbrush.sct.h:10
-msgid "_Elliptical..."
-msgstr "_Elliptisk..."
+#~ msgid "_Elliptical..."
+#~ msgstr "_Elliptisk..."
 
-#: scripts/mkbrush.sct.h:11
-msgid "_Rectangular..."
-msgstr "_Rektangulär..."
+#~ msgid "_Rectangular..."
+#~ msgstr "_Rektangulär..."
 
-#: scripts/neon-logo.sct.h:4
-msgid "Create shadow"
-msgstr "Skapa skugga"
+#~ msgid "Create shadow"
+#~ msgstr "Skapa skugga"
 
-#: scripts/neon-logo.sct.h:5
-msgid "Effect size (pixels * 5)"
-msgstr "Effektstorlek (bildpunkter × 5)"
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "Effektstorlek (bildpunkter × 5)"
 
-#: scripts/neon-logo.sct.h:9
-msgid "N_eon..."
-msgstr "N_eon..."
+#~ msgid "N_eon..."
+#~ msgstr "N_eon..."
 
-#: scripts/news-text.sct.h:4
-msgid "Cell size (pixels)"
-msgstr "Cellstorlek (bildpunkter)"
+#~ msgid "Cell size (pixels)"
+#~ msgstr "Cellstorlek (bildpunkter)"
 
-#: scripts/news-text.sct.h:6 scripts/speed-text.sct.h:4
-#, no-c-format
-msgid "Density (%)"
-msgstr "Densitet (%)"
+#~ msgid "Density (%)"
+#~ msgstr "Densitet (%)"
 
-#: scripts/news-text.sct.h:9
-msgid "Newsprint Text..."
-msgstr "Dagstidningstext..."
+#~ msgid "Newsprint Text..."
+#~ msgstr "Dagstidningstext..."
 
-#: scripts/old-photo.sct.h:3
-msgid "Defocus"
-msgstr "Avfokusera"
+#~ msgid "Defocus"
+#~ msgstr "Avfokusera"
 
-#: scripts/old-photo.sct.h:4
-msgid "Mottle"
-msgstr "Fläck"
+#~ msgid "Mottle"
+#~ msgstr "Fläck"
 
-#: scripts/old-photo.sct.h:5
-msgid "Sepia"
-msgstr "Sepia"
+#~ msgid "Sepia"
+#~ msgstr "Sepia"
 
-#: scripts/old-photo.sct.h:7
-msgid "_Old Photo..."
-msgstr "_Gammalt fotografi..."
+#~ msgid "_Old Photo..."
+#~ msgstr "_Gammalt fotografi..."
 
-#: scripts/perspective-shadow.sct.h:3
-msgid "Angle"
-msgstr "Vinkel"
+#~ msgid "Angle"
+#~ msgstr "Vinkel"
 
-#: scripts/perspective-shadow.sct.h:6
-msgid "Cubic"
-msgstr "Kubisk"
+#~ msgid "Cubic"
+#~ msgstr "Kubisk"
 
-#: scripts/perspective-shadow.sct.h:7
-msgid "Interpolation"
-msgstr "Interpolation"
+#~ msgid "Interpolation"
+#~ msgstr "Interpolation"
 
-#: scripts/perspective-shadow.sct.h:8
-msgid "Linear"
-msgstr "Linjär"
+#~ msgid "Linear"
+#~ msgstr "Linjär"
 
-#: scripts/perspective-shadow.sct.h:9
-msgid "None"
-msgstr "Ingen"
+#~ msgid "None"
+#~ msgstr "Ingen"
 
-#: scripts/perspective-shadow.sct.h:11
-msgid "Relative distance of horizon"
-msgstr "Relativt avstånd till horisont"
+#~ msgid "Relative distance of horizon"
+#~ msgstr "Relativt avstånd till horisont"
 
-#: scripts/perspective-shadow.sct.h:12
-msgid "Relative length of shadow"
-msgstr "Relativ längd på skugga"
+#~ msgid "Relative length of shadow"
+#~ msgstr "Relativ längd på skugga"
 
-#: scripts/perspective-shadow.sct.h:13
-msgid "_Perspective..."
-msgstr "_Perspektiv..."
+#~ msgid "_Perspective..."
+#~ msgstr "_Perspektiv..."
 
-#: scripts/predator.sct.h:2
-msgid "Edge amount"
-msgstr "Hörnmängd"
+#~ msgid "Edge amount"
+#~ msgstr "Hörnmängd"
 
-#: scripts/predator.sct.h:4
-msgid "Pixel amount"
-msgstr "Mängd bildpunkter"
+#~ msgid "Pixel amount"
+#~ msgstr "Mängd bildpunkter"
 
-#: scripts/predator.sct.h:5
-msgid "Pixelize"
-msgstr "Pixelisera"
+#~ msgid "Pixelize"
+#~ msgstr "Pixelisera"
 
-#: scripts/predator.sct.h:7
-msgid "_Predator..."
-msgstr "_Predator..."
+#~ msgid "_Predator..."
+#~ msgstr "_Predator..."
 
-#: scripts/pupi-button.sct.h:5
-msgid "Lower color"
-msgstr "Nedre färg"
+#~ msgid "Lower color"
+#~ msgstr "Nedre färg"
 
-#: scripts/pupi-button.sct.h:6
-msgid "Lower color (active)"
-msgstr "Nedre färg (aktiv)"
+#~ msgid "Lower color (active)"
+#~ msgstr "Nedre färg (aktiv)"
 
-#: scripts/pupi-button.sct.h:7
-msgid "Not pressed"
-msgstr "Inte nedtryckt"
+#~ msgid "Not pressed"
+#~ msgstr "Inte nedtryckt"
 
-#: scripts/pupi-button.sct.h:8
-msgid "Not pressed (active)"
-msgstr "Inte nedtryckt (aktiv)"
+#~ msgid "Not pressed (active)"
+#~ msgstr "Inte nedtryckt (aktiv)"
 
-#: scripts/pupi-button.sct.h:9
-msgid "Padding X"
-msgstr "Utfyllnad i X-led"
+#~ msgid "Padding X"
+#~ msgstr "Utfyllnad i X-led"
 
-#: scripts/pupi-button.sct.h:10
-msgid "Padding Y"
-msgstr "Utfyllnad i Y-led"
+#~ msgid "Padding Y"
+#~ msgstr "Utfyllnad i Y-led"
 
-#: scripts/pupi-button.sct.h:12
-msgid "Round ratio"
-msgstr "Rundningsförhållande"
+#~ msgid "Round ratio"
+#~ msgstr "Rundningsförhållande"
 
-#: scripts/pupi-button.sct.h:15
-msgid "Text color (active)"
-msgstr "Textfärg (aktiv)"
+#~ msgid "Text color (active)"
+#~ msgstr "Textfärg (aktiv)"
 
-#: scripts/pupi-button.sct.h:16
-msgid "Upper color"
-msgstr "Övre färg"
+#~ msgid "Upper color"
+#~ msgstr "Övre färg"
 
-#: scripts/pupi-button.sct.h:17
-msgid "Upper color (active)"
-msgstr "Övre färg (aktiv)"
+#~ msgid "Upper color (active)"
+#~ msgstr "Övre färg (aktiv)"
 
-#: scripts/pupi-button.sct.h:18
-msgid "_Round Button..."
-msgstr "_Rund knapp..."
+#~ msgid "_Round Button..."
+#~ msgstr "_Rund knapp..."
 
-#: scripts/rendermap.sct.h:2
 #, fuzzy
-msgid "Behavior"
-msgstr "Beteende"
+#~ msgid "Behavior"
+#~ msgstr "Beteende"
 
-#: scripts/rendermap.sct.h:3
-msgid "Detail in Middle"
-msgstr "Detalj i mitten"
+#~ msgid "Detail in Middle"
+#~ msgstr "Detalj i mitten"
 
-#: scripts/rendermap.sct.h:8
-msgid "Render _Map..."
-msgstr "Rendera _karta..."
+#~ msgid "Render _Map..."
+#~ msgstr "Rendera _karta..."
 
-#: scripts/rendermap.sct.h:9
-msgid "Tile"
-msgstr "Bricka"
+#~ msgid "Tile"
+#~ msgstr "Bricka"
 
-#: scripts/ripply-anim.sct.h:2
-msgid "Black"
-msgstr "Svart"
+#~ msgid "Black"
+#~ msgstr "Svart"
 
-#: scripts/ripply-anim.sct.h:3
 #, fuzzy
-msgid "Edge behavior"
-msgstr "Kantbeteende"
+#~ msgid "Edge behavior"
+#~ msgstr "Kantbeteende"
 
-#: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
-msgid "Number of frames"
-msgstr "Antal ramar"
+#~ msgid "Number of frames"
+#~ msgstr "Antal ramar"
 
-#: scripts/ripply-anim.sct.h:5
-msgid "Rippling strength"
-msgstr "Krusningsstyrka"
+#~ msgid "Rippling strength"
+#~ msgstr "Krusningsstyrka"
 
-#: scripts/ripply-anim.sct.h:6
-msgid "Smear"
-msgstr "Smeta"
+#~ msgid "Smear"
+#~ msgstr "Smeta"
 
-#: scripts/ripply-anim.sct.h:7
-msgid "Wrap"
-msgstr "Slå runt"
+#~ msgid "Wrap"
+#~ msgstr "Slå runt"
 
-#: scripts/ripply-anim.sct.h:8
-msgid "_Rippling..."
-msgstr "_Krusning..."
+#~ msgid "_Rippling..."
+#~ msgstr "_Krusning..."
 
-#: scripts/round-corners.sct.h:2
-msgid "Add background"
-msgstr "Lägg till bakgrund"
+#~ msgid "Add background"
+#~ msgstr "Lägg till bakgrund"
 
-#: scripts/round-corners.sct.h:3
-msgid "Add drop-shadow"
-msgstr "Lägg till kastad skugga"
+#~ msgid "Add drop-shadow"
+#~ msgstr "Lägg till kastad skugga"
 
-#: scripts/round-corners.sct.h:5
-msgid "Edge radius"
-msgstr "Hörnradie"
+#~ msgid "Edge radius"
+#~ msgstr "Hörnradie"
 
-#: scripts/round-corners.sct.h:9
-msgid "_Round Corners..."
-msgstr "_Runda hörn..."
+#~ msgid "_Round Corners..."
+#~ msgstr "_Runda hörn..."
 
-#: scripts/selection-round.sct.h:1
 #, fuzzy
-msgid "<Image>/Select/Modify"
-msgstr "<Image>/Tiny-Fu/Markering"
-
-#: scripts/selection-round.sct.h:2
-msgid "Concave"
-msgstr "Konkav"
-
-#: scripts/selection-round.sct.h:4
-#, no-c-format
-msgid "Radius (%)"
-msgstr "Radie (%)"
-
-#: scripts/selection-round.sct.h:5
-msgid "Rounded R_ectangle..."
-msgstr "Rundad r_ektangel..."
-
-#: scripts/select-to-brush.sct.h:2
-msgid "Brush name"
-msgstr "Penselnamn"
-
-#: scripts/select-to-brush.sct.h:3
-msgid "File name"
-msgstr "Filnamn"
-
-#: scripts/select-to-brush.sct.h:5
-msgid "To _Brush..."
-msgstr "Till _pensel..."
-
-#: scripts/select-to-image.sct.h:2
-msgid "To _Image"
-msgstr "Till _bild"
-
-#: scripts/select-to-pattern.sct.h:2
-msgid "Filename"
-msgstr "Filnamn"
-
-#: scripts/select-to-pattern.sct.h:3
-msgid "Pattern name"
-msgstr "Mönsternamn"
-
-#: scripts/select-to-pattern.sct.h:4
-msgid "To _Pattern..."
-msgstr "Till _mönster..."
-
-#: scripts/slide.sct.h:3
-msgid "Font color"
-msgstr "Typsnittsfärg"
-
-#: scripts/slide.sct.h:4
-msgid "Number"
-msgstr "Nummer"
-
-#: scripts/slide.sct.h:7
-msgid "_Slide..."
-msgstr "_Bildspel..."
-
-#: scripts/sota-chrome-logo.sct.h:10
-msgid "SOTA Chrome..."
-msgstr "SOTA-krom..."
-
-#: scripts/speed-text.sct.h:7
-msgid "Speed Text..."
-msgstr "Snabbtext..."
-
-#: scripts/sphere.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-msgstr "<Toolbox>/Utökningar/Tiny-Fu/Diverse"
-
-#: scripts/sphere.sct.h:3
-msgid "Lighting (degrees)"
-msgstr "Ljussättning (grader)"
-
-#: scripts/sphere.sct.h:4
-msgid "Radius (pixels)"
-msgstr "Radie (bildpunkter)"
-
-#: scripts/sphere.sct.h:6
-msgid "Sphere color"
-msgstr "Färg på sfär"
-
-#: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
-msgid "_Sphere..."
-msgstr "_Sfär..."
-
-#: scripts/spinning-globe.sct.h:2
-msgid "Frames"
-msgstr "Ramar"
-
-#: scripts/spinning-globe.sct.h:3
-msgid "Index to n colors (0 = remain RGB)"
-msgstr "Indexera till n färger (0 = behåll RGB)"
-
-#: scripts/spinning-globe.sct.h:5
-msgid "Turn from left to right"
-msgstr "Vänd från vänster till höger"
-
-#: scripts/spinning-globe.sct.h:7
-msgid "_Spinning Globe..."
-msgstr "_Roterande glob..."
-
-#: scripts/spyrogimp.sct.h:2
-msgid "Airbrush"
-msgstr "Airbrush"
-
-#: scripts/spyrogimp.sct.h:3
-msgid "Brush"
-msgstr "Pensel"
-
-#: scripts/spyrogimp.sct.h:4
-msgid "Circle"
-msgstr "Cirkel"
-
-#: scripts/spyrogimp.sct.h:6
-msgid "Color method"
-msgstr "Färgmetod"
-
-#: scripts/spyrogimp.sct.h:7
-msgid "Epitrochoid"
-msgstr "Epitrokoid"
-
-#: scripts/spyrogimp.sct.h:8
-msgid "Frame"
-msgstr "Ram"
-
-#: scripts/spyrogimp.sct.h:10
-msgid "Gradient: Loop Sawtooth"
-msgstr "Gradient: repetera sågtand"
-
-#: scripts/spyrogimp.sct.h:11
-msgid "Gradient: Loop Triangle"
-msgstr "Gradient: repetera triangel"
-
-#: scripts/spyrogimp.sct.h:12
-msgid "Hexagon"
-msgstr "Hexagon"
-
-#: scripts/spyrogimp.sct.h:13
-msgid "Hole ratio"
-msgstr "Hålförhållande"
-
-#: scripts/spyrogimp.sct.h:14
-msgid "Inner teeth"
-msgstr "Inre tänder"
-
-#: scripts/spyrogimp.sct.h:15
-msgid "Lissajous"
-msgstr "Lissajous"
-
-#: scripts/spyrogimp.sct.h:16
-msgid "Margin (pixels)"
-msgstr "Marginal (bildpunkter)"
-
-#: scripts/spyrogimp.sct.h:17
-msgid "Outer teeth"
-msgstr "Yttre tänder"
-
-#: scripts/spyrogimp.sct.h:18
-msgid "Pencil"
-msgstr "Penna"
-
-#: scripts/spyrogimp.sct.h:19
-msgid "Pentagon"
-msgstr "Femhörning"
-
-#: scripts/spyrogimp.sct.h:20
-msgid "Polygon: 10 sides"
-msgstr "Polygon: 10 sidor"
-
-#: scripts/spyrogimp.sct.h:21
-msgid "Polygon: 7 sides"
-msgstr "Polygon: 7 sidor"
-
-#: scripts/spyrogimp.sct.h:22
-msgid "Polygon: 8 sides"
-msgstr "Polygon: 8 sidor"
-
-#: scripts/spyrogimp.sct.h:23
-msgid "Polygon: 9 sides"
-msgstr "Polygon: 9 sidor"
-
-#: scripts/spyrogimp.sct.h:24
-msgid "Shape"
-msgstr "Form"
-
-#: scripts/spyrogimp.sct.h:25
-msgid "Solid Color"
-msgstr "Solid färg"
-
-#: scripts/spyrogimp.sct.h:26
-msgid "Spyrograph"
-msgstr "Spirograf"
-
-#: scripts/spyrogimp.sct.h:27
-msgid "Square"
-msgstr "Fyrkant"
-
-#: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-msgid "Start angle"
-msgstr "Startvinkel"
-
-#: scripts/spyrogimp.sct.h:29
-msgid "Tool"
-msgstr "Verktyg"
-
-#: scripts/spyrogimp.sct.h:30
-msgid "Triangle"
-msgstr "Triangel"
-
-#: scripts/spyrogimp.sct.h:31
-msgid "Type"
-msgstr "Typ"
-
-#: scripts/spyrogimp.sct.h:32
-msgid "_Spyrogimp..."
-msgstr "_Spirogimp..."
-
-#: scripts/starburst-logo.sct.h:4
-msgid "Burst color"
-msgstr "Utbrottsfärg"
-
-#: scripts/starburst-logo.sct.h:5
-msgid "Effect size (pixels * 30)"
-msgstr "Effektstorlek (bildpunkter × 30)"
-
-#: scripts/starburst-logo.sct.h:8
-msgid "Starb_urst..."
-msgstr "Stjärnutbrott..."
-
-#: scripts/starscape-logo.sct.h:3
-msgid "Effect size (pixels * 4)"
-msgstr "Effektstorlek (bildpunkter × 4)"
-
-#: scripts/starscape-logo.sct.h:7
-msgid "Sta_rscape..."
-msgstr "_Stjärnlandskap..."
-
-#: scripts/swirltile.sct.h:9
-msgid "Swirl-_Tile..."
-msgstr "Virvel_plattlägg..."
-
-#: scripts/swirltile.sct.h:10
-msgid "Whirl amount"
-msgstr "Virvelmängd"
-
-#: scripts/swirly-pattern.sct.h:2
-msgid "Number of times to whirl"
-msgstr "Antal virvlelvarv"
-
-#: scripts/swirly-pattern.sct.h:3
-msgid "Quarter size"
-msgstr "Kvartsstor"
-
-#: scripts/swirly-pattern.sct.h:4
-msgid "Whirl angle"
-msgstr "Virvelvinkel"
-
-#: scripts/swirly-pattern.sct.h:5
-msgid "_Swirly..."
-msgstr "_Virvlig..."
-
-#: scripts/t-o-p-logo.sct.h:4
-msgid "Base color"
-msgstr "Basfärg"
-
-#: scripts/t-o-p-logo.sct.h:6
-msgid "Edge only"
-msgstr "Endast hörn"
-
-#: scripts/t-o-p-logo.sct.h:7
-msgid "Edge width"
-msgstr "Hörnbredd"
-
-#: scripts/t-o-p-logo.sct.h:10
-msgid "Hit rate"
-msgstr "Mängd träffar"
-
-#: scripts/t-o-p-logo.sct.h:12
-msgid "_Particle Trace..."
-msgstr "_Partikelspår..."
-
-#: scripts/text-circle.sct.h:2
-msgid "Antialias"
-msgstr "Antialias"
-
-#: scripts/text-circle.sct.h:3
-msgid "Fill angle"
-msgstr "Fyllningsvinkel"
-
-#: scripts/text-circle.sct.h:7
-msgid "Render the specified text along the perimeter of a circle"
-msgstr ""
-
-#: scripts/text-circle.sct.h:10
-msgid "Text Circle..."
-msgstr "Textcirkel..."
-
-#: scripts/textured-logo.sct.h:5
-msgid "Ending blend"
-msgstr "Avslutar färgtoning"
-
-#: scripts/textured-logo.sct.h:8
-msgid "Hexagons"
-msgstr "Hexagoner"
-
-#: scripts/textured-logo.sct.h:9
-msgid "Mosaic tile type"
-msgstr "Mosaikbricktyp"
-
-#: scripts/textured-logo.sct.h:10
-msgid "Octagons"
-msgstr "Oktagoner"
-
-#: scripts/textured-logo.sct.h:12
-msgid "Squares"
-msgstr "Fyrkanter"
-
-#: scripts/textured-logo.sct.h:13
-msgid "Starting blend"
-msgstr "Startar färgtoning"
-
-#: scripts/textured-logo.sct.h:15
-msgid "Text pattern"
-msgstr "Textmönster"
-
-#: scripts/textured-logo.sct.h:16
-msgid "_Textured..."
-msgstr "_Texturerad..."
-
-#: scripts/tileblur.sct.h:1
+#~ msgid "<Image>/Select/Modify"
+#~ msgstr "<Image>/Tiny-Fu/Markering"
+
+#~ msgid "Concave"
+#~ msgstr "Konkav"
+
+#~ msgid "Radius (%)"
+#~ msgstr "Radie (%)"
+
+#~ msgid "Rounded R_ectangle..."
+#~ msgstr "Rundad r_ektangel..."
+
+#~ msgid "Brush name"
+#~ msgstr "Penselnamn"
+
+#~ msgid "File name"
+#~ msgstr "Filnamn"
+
+#~ msgid "To _Brush..."
+#~ msgstr "Till _pensel..."
+
+#~ msgid "To _Image"
+#~ msgstr "Till _bild"
+
+#~ msgid "Filename"
+#~ msgstr "Filnamn"
+
+#~ msgid "Pattern name"
+#~ msgstr "Mönsternamn"
+
+#~ msgid "To _Pattern..."
+#~ msgstr "Till _mönster..."
+
+#~ msgid "Font color"
+#~ msgstr "Typsnittsfärg"
+
+#~ msgid "Number"
+#~ msgstr "Nummer"
+
+#~ msgid "_Slide..."
+#~ msgstr "_Bildspel..."
+
+#~ msgid "SOTA Chrome..."
+#~ msgstr "SOTA-krom..."
+
+#~ msgid "Speed Text..."
+#~ msgstr "Snabbtext..."
+
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
+#~ msgstr "<Toolbox>/Utökningar/Tiny-Fu/Diverse"
+
+#~ msgid "Lighting (degrees)"
+#~ msgstr "Ljussättning (grader)"
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "Radie (bildpunkter)"
+
+#~ msgid "Sphere color"
+#~ msgstr "Färg på sfär"
+
+#~ msgid "_Sphere..."
+#~ msgstr "_Sfär..."
+
+#~ msgid "Frames"
+#~ msgstr "Ramar"
+
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "Indexera till n färger (0 = behåll RGB)"
+
+#~ msgid "Turn from left to right"
+#~ msgstr "Vänd från vänster till höger"
+
+#~ msgid "_Spinning Globe..."
+#~ msgstr "_Roterande glob..."
+
+#~ msgid "Airbrush"
+#~ msgstr "Airbrush"
+
+#~ msgid "Brush"
+#~ msgstr "Pensel"
+
+#~ msgid "Circle"
+#~ msgstr "Cirkel"
+
+#~ msgid "Color method"
+#~ msgstr "Färgmetod"
+
+#~ msgid "Epitrochoid"
+#~ msgstr "Epitrokoid"
+
+#~ msgid "Frame"
+#~ msgstr "Ram"
+
+#~ msgid "Gradient: Loop Sawtooth"
+#~ msgstr "Gradient: repetera sågtand"
+
+#~ msgid "Gradient: Loop Triangle"
+#~ msgstr "Gradient: repetera triangel"
+
+#~ msgid "Hexagon"
+#~ msgstr "Hexagon"
+
+#~ msgid "Hole ratio"
+#~ msgstr "Hålförhållande"
+
+#~ msgid "Inner teeth"
+#~ msgstr "Inre tänder"
+
+#~ msgid "Lissajous"
+#~ msgstr "Lissajous"
+
+#~ msgid "Margin (pixels)"
+#~ msgstr "Marginal (bildpunkter)"
+
+#~ msgid "Outer teeth"
+#~ msgstr "Yttre tänder"
+
+#~ msgid "Pencil"
+#~ msgstr "Penna"
+
+#~ msgid "Pentagon"
+#~ msgstr "Femhörning"
+
+#~ msgid "Polygon: 10 sides"
+#~ msgstr "Polygon: 10 sidor"
+
+#~ msgid "Polygon: 7 sides"
+#~ msgstr "Polygon: 7 sidor"
+
+#~ msgid "Polygon: 8 sides"
+#~ msgstr "Polygon: 8 sidor"
+
+#~ msgid "Polygon: 9 sides"
+#~ msgstr "Polygon: 9 sidor"
+
+#~ msgid "Shape"
+#~ msgstr "Form"
+
+#~ msgid "Solid Color"
+#~ msgstr "Solid färg"
+
+#~ msgid "Spyrograph"
+#~ msgstr "Spirograf"
+
+#~ msgid "Square"
+#~ msgstr "Fyrkant"
+
+#~ msgid "Start angle"
+#~ msgstr "Startvinkel"
+
+#~ msgid "Tool"
+#~ msgstr "Verktyg"
+
+#~ msgid "Triangle"
+#~ msgstr "Triangel"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "_Spyrogimp..."
+#~ msgstr "_Spirogimp..."
+
+#~ msgid "Burst color"
+#~ msgstr "Utbrottsfärg"
+
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "Effektstorlek (bildpunkter × 30)"
+
+#~ msgid "Starb_urst..."
+#~ msgstr "Stjärnutbrott..."
+
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "Effektstorlek (bildpunkter × 4)"
+
+#~ msgid "Sta_rscape..."
+#~ msgstr "_Stjärnlandskap..."
+
+#~ msgid "Swirl-_Tile..."
+#~ msgstr "Virvel_plattlägg..."
+
+#~ msgid "Whirl amount"
+#~ msgstr "Virvelmängd"
+
+#~ msgid "Number of times to whirl"
+#~ msgstr "Antal virvlelvarv"
+
+#~ msgid "Quarter size"
+#~ msgstr "Kvartsstor"
+
+#~ msgid "Whirl angle"
+#~ msgstr "Virvelvinkel"
+
+#~ msgid "_Swirly..."
+#~ msgstr "_Virvlig..."
+
+#~ msgid "Base color"
+#~ msgstr "Basfärg"
+
+#~ msgid "Edge only"
+#~ msgstr "Endast hörn"
+
+#~ msgid "Edge width"
+#~ msgstr "Hörnbredd"
+
+#~ msgid "Hit rate"
+#~ msgstr "Mängd träffar"
+
+#~ msgid "_Particle Trace..."
+#~ msgstr "_Partikelspår..."
+
+#~ msgid "Antialias"
+#~ msgstr "Antialias"
+
+#~ msgid "Fill angle"
+#~ msgstr "Fyllningsvinkel"
+
+#~ msgid "Text Circle..."
+#~ msgstr "Textcirkel..."
+
+#~ msgid "Ending blend"
+#~ msgstr "Avslutar färgtoning"
+
+#~ msgid "Hexagons"
+#~ msgstr "Hexagoner"
+
+#~ msgid "Mosaic tile type"
+#~ msgstr "Mosaikbricktyp"
+
+#~ msgid "Octagons"
+#~ msgstr "Oktagoner"
+
+#~ msgid "Squares"
+#~ msgstr "Fyrkanter"
+
+#~ msgid "Starting blend"
+#~ msgstr "Startar färgtoning"
+
+#~ msgid "Text pattern"
+#~ msgstr "Textmönster"
+
+#~ msgid "_Textured..."
+#~ msgstr "_Texturerad..."
+
 #, fuzzy
-msgid "<Image>/Filters/Blur"
-msgstr "<Image>/Filter/Utsmetning/Brickutsmetning..."
+#~ msgid "<Image>/Filters/Blur"
+#~ msgstr "<Image>/Filter/Utsmetning/Brickutsmetning..."
 
-#: scripts/tileblur.sct.h:2
-msgid "Blur horizontally"
-msgstr "Smeta ut horisontellt"
+#~ msgid "Blur horizontally"
+#~ msgstr "Smeta ut horisontellt"
 
-#: scripts/tileblur.sct.h:3
-msgid "Blur type"
-msgstr "Utsmetningstyp"
+#~ msgid "Blur type"
+#~ msgstr "Utsmetningstyp"
 
-#: scripts/tileblur.sct.h:4
-msgid "Blur vertically"
-msgstr "Smeta ut vertikalt"
+#~ msgid "Blur vertically"
+#~ msgstr "Smeta ut vertikalt"
 
-#: scripts/tileblur.sct.h:5
-msgid "IIR"
-msgstr "IIR"
+#~ msgid "IIR"
+#~ msgstr "IIR"
 
-#: scripts/tileblur.sct.h:6
-msgid "RLE"
-msgstr "RLE"
+#~ msgid "RLE"
+#~ msgstr "RLE"
 
-#: scripts/tileblur.sct.h:8
-msgid "_Tileable Blur..."
-msgstr "_Brickutsmetning..."
+#~ msgid "_Tileable Blur..."
+#~ msgstr "_Brickutsmetning..."
 
-#: scripts/tiny-fu-set-cmap.sct.h:2
 #, fuzzy
-msgid "Palette"
-msgstr "Mönster"
+#~ msgid "Palette"
+#~ msgstr "Mönster"
 
-#: scripts/tiny-fu-set-cmap.sct.h:3
 #, fuzzy
-msgid "Set Colormap"
-msgstr "Textfärg"
+#~ msgid "Set Colormap"
+#~ msgstr "Textfärg"
 
-#: scripts/title-header.sct.h:6
-msgid "Web Title Header..."
-msgstr "Titelrubrik för nät..."
+#~ msgid "Web Title Header..."
+#~ msgstr "Titelrubrik för nät..."
 
-#: scripts/truchet.sct.h:4
-msgid "Foreground color"
-msgstr "Förgrundsfärg"
+#~ msgid "Foreground color"
+#~ msgstr "Förgrundsfärg"
 
-#: scripts/truchet.sct.h:7
-msgid "T_ruchet..."
-msgstr "T_ruchet..."
+#~ msgid "T_ruchet..."
+#~ msgstr "T_ruchet..."
 
-#: scripts/unsharp-mask.sct.h:2
-msgid "Mask opacity"
-msgstr "Maskopacitet"
+#~ msgid "Mask opacity"
+#~ msgstr "Maskopacitet"
 
-#: scripts/unsharp-mask.sct.h:3
-msgid "Mask size"
-msgstr "Maskstorlek"
+#~ msgid "Mask size"
+#~ msgstr "Maskstorlek"
 
-#: scripts/unsharp-mask.sct.h:4
-msgid "_Unsharp Mask..."
-msgstr "_Oskarp mask..."
+#~ msgid "_Unsharp Mask..."
+#~ msgstr "_Oskarp mask..."
 
-#: scripts/waves-anim.sct.h:2
-msgid "Amplitude"
-msgstr "Amplitud"
+#~ msgid "Amplitude"
+#~ msgstr "Amplitud"
 
-#: scripts/waves-anim.sct.h:3
-msgid "Invert direction"
-msgstr "Invertera riktning"
+#~ msgid "Invert direction"
+#~ msgstr "Invertera riktning"
 
-#: scripts/waves-anim.sct.h:5
-msgid "Wavelength"
-msgstr "Våglängd"
+#~ msgid "Wavelength"
+#~ msgstr "Våglängd"
 
-#: scripts/waves-anim.sct.h:6
-msgid "_Waves..."
-msgstr "_Vågor..."
+#~ msgid "_Waves..."
+#~ msgstr "_Vågor..."
 
-#: scripts/weave.sct.h:2
-msgid "Ribbon spacing"
-msgstr "Mellanrum mellan remsor"
+#~ msgid "Ribbon spacing"
+#~ msgstr "Mellanrum mellan remsor"
 
-#: scripts/weave.sct.h:3
-msgid "Ribbon width"
-msgstr "Bredd på remsor"
+#~ msgid "Ribbon width"
+#~ msgstr "Bredd på remsor"
 
-#: scripts/weave.sct.h:4
-msgid "Shadow darkness"
-msgstr "Skuggmörkhet"
+#~ msgid "Shadow darkness"
+#~ msgstr "Skuggmörkhet"
 
-#: scripts/weave.sct.h:5
-msgid "Shadow depth"
-msgstr "Skuggdjup"
+#~ msgid "Shadow depth"
+#~ msgstr "Skuggdjup"
 
-#: scripts/weave.sct.h:6
-msgid "Thread density"
-msgstr "Tråddensitet"
+#~ msgid "Thread density"
+#~ msgstr "Tråddensitet"
 
-#: scripts/weave.sct.h:7
-msgid "Thread intensity"
-msgstr "Trådintensitet"
+#~ msgid "Thread intensity"
+#~ msgstr "Trådintensitet"
 
-#: scripts/weave.sct.h:8
-msgid "Thread length"
-msgstr "Trådlängd"
+#~ msgid "Thread length"
+#~ msgstr "Trådlängd"
 
-#: scripts/weave.sct.h:9
-msgid "_Weave..."
-msgstr "_Väva..."
+#~ msgid "_Weave..."
+#~ msgstr "_Väva..."
 
-#: scripts/web-browser.sct.h:1
-msgid "<Toolbox>/Help/The GIMP Online"
-msgstr "<Toolbox>/Hjälp/GIMP på nätet"
+#~ msgid "<Toolbox>/Help/The GIMP Online"
+#~ msgstr "<Toolbox>/Hjälp/GIMP på nätet"
 
-#: scripts/web-browser.sct.h:2
-msgid "Plug-in _Registry"
-msgstr "_Register för insticksmoduler"
+#~ msgid "Plug-in _Registry"
+#~ msgstr "_Register för insticksmoduler"
 
-#: scripts/web-browser.sct.h:3
-msgid "_Developer Web Site"
-msgstr "_Sajt för utvecklare"
+#~ msgid "_Developer Web Site"
+#~ msgstr "_Sajt för utvecklare"
 
-#: scripts/web-browser.sct.h:4
-msgid "_Main Web Site"
-msgstr "_Huvugsajt"
+#~ msgid "_Main Web Site"
+#~ msgstr "_Huvugsajt"
 
-#: scripts/xach-effect.sct.h:2
-msgid "Drop shadow X offset"
-msgstr "X-avstånd för skuggkastning"
+#~ msgid "Drop shadow X offset"
+#~ msgstr "X-avstånd för skuggkastning"
 
-#: scripts/xach-effect.sct.h:3
-msgid "Drop shadow Y offset"
-msgstr "Y-avstånd för skuggkastning"
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "Y-avstånd för skuggkastning"
 
-#: scripts/xach-effect.sct.h:4
-msgid "Drop shadow blur radius"
-msgstr "Utsmetningsradie för skuggkastning"
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "Utsmetningsradie för skuggkastning"
 
-#: scripts/xach-effect.sct.h:5
-msgid "Drop shadow color"
-msgstr "Skuggkastningsfärg"
+#~ msgid "Drop shadow color"
+#~ msgstr "Skuggkastningsfärg"
 
-#: scripts/xach-effect.sct.h:6
-msgid "Drop shadow opacity"
-msgstr "Skuggkastningsopacitet"
+#~ msgid "Drop shadow opacity"
+#~ msgstr "Skuggkastningsopacitet"
 
-#: scripts/xach-effect.sct.h:7
-msgid "Highlight X offset"
-msgstr "X-avstånd för markering"
+#~ msgid "Highlight X offset"
+#~ msgstr "X-avstånd för markering"
 
-#: scripts/xach-effect.sct.h:8
-msgid "Highlight Y offset"
-msgstr "Y-avstånd för markering"
+#~ msgid "Highlight Y offset"
+#~ msgstr "Y-avstånd för markering"
 
-#: scripts/xach-effect.sct.h:10
-msgid "Highlight opacity"
-msgstr "Markeringsopacitet"
+#~ msgid "Highlight opacity"
+#~ msgstr "Markeringsopacitet"
 
-#: scripts/xach-effect.sct.h:12
-msgid "_Xach-Effect..."
-msgstr "_Xach-effekt..."
+#~ msgid "_Xach-Effect..."
+#~ msgstr "_Xach-effekt..."
 
 #~ msgid "Buffer amount (% height of text)"
 #~ msgstr "Buffertmängd (% höjd av text)"
