@@ -86,7 +86,7 @@
     SF-IMAGE       "The image" 0
     SF-DRAWABLE    "The layer" 0
     SF-ADJUSTMENT _"Stains"    '(3 1 10 1 1 0 0)
-    SF-TOGGLE     _"Darken only\n(Better, but only for images with alot of white)" TRUE
+    SF-TOGGLE     _"Darken only\n(Better, but only for images with a lot of white)" TRUE
 )
 
 (tiny-fu-menu-register "tiny-fu-coffee-stain"
