@@ -1,3 +1,28 @@
+2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Based on changes originally made by Sven Neumann to Script-Fu.
+
+	* configure.in: Added automake conditional TINY_FU_UNSTABLE.
+
+	* scripts/Makefile.am: Install test-sphere.scm in unstable
+	releases only.
+
+2005-08-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Added support for SF-ENUM type (based on changes originally made
+	by Sven Neumann to Script-Fu).
+
+	* tiny-fu/tiny-fu-enums.h
+	* tiny-fu/tiny-fu-interface.c
+	* tiny-fu/tiny-fu-scripts.c
+	* tiny-fu/tiny-fu-types.h
+	* tiny-fu/ts-wrapper.c: added new script-fu parameter SF-ENUM that
+	allows easy creation of a combo-box to choose values from registered
+	enums.
+
+	* scripts/perspective-shadow.sct
+	* scripts/test-sphere.sct: use the new SF-ENUM parameter.
+
 2005-08-04  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* configure.in: Bumped version number to 1.1.0
@@ -267,7 +292,8 @@
 	* scripts/frosty-logo.sct: made sure the shadow is given enough space
 	and then truncated instead of translated to the center of the image,
 	thus preventing the display of shadows with a completely horizontal or
-	vertical edge. From a fix in Script-Fu by Shlomi Fish. Fixes bug #132145.
+	vertical edge. From a fix in Script-Fu by Shlomi Fish. Fixes bug
+	#132145.
 
 2004-12-25  Kevin Cozens  <kcozens@cvs.gnome.org>
 

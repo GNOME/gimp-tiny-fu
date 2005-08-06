@@ -32,6 +32,20 @@ AC_CONFIG_SRCDIR([tiny-fu/tiny-fu.c])
 AM_INIT_AUTOMAKE(no-define)
 AM_CONFIG_HEADER(config.h)
 
+
+TINY_FU_UNSTABLE=tiny_fu_unstable
+AC_SUBST(TINY_FU_UNSTABLE)
+
+dnl The symbol TINY_FU_UNSTABLE is defined above for substitution in
+dnl Makefiles and conditionally defined here as a preprocessor symbol
+dnl and automake conditional.
+if test "x$TINY_FU_UNSTABLE" = "xyes"; then
+  AC_DEFINE(TINY_FU_UNSTABLE,1,
+            [Define to 1 if this is an unstable version of Tiny-Fu])
+fi
+AM_CONDITIONAL(TINY_FU_UNSTABLE, test "x$TINY_FU_UNSTABLE" = "xyes")
+
+
 dnl i18n stuff
 GETTEXT_PACKAGE=plugin_name
 

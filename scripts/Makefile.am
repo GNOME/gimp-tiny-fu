@@ -4,7 +4,7 @@ SUBDIRS = images
 
 scriptdatadir = $(GIMP_DATADIR)/scripts
 
-scriptdata_DATA =  \
+scripts =  \
     tiny-fu.init           \
     script-fu-compat.init  \
     3d-outline.sct         \
@@ -93,7 +93,6 @@ scriptdata_DATA =  \
     starscape-logo.sct      \
     swirltile.sct           \
     swirly-pattern.sct      \
-    test-sphere.sct         \
     text-circle.sct         \
     textured-logo.sct       \
     tileblur.sct            \
@@ -108,5 +107,16 @@ scriptdata_DATA =  \
     weave.sct               \
     web-browser.sct         \
     xach-effect.sct
+
+test_scripts = \
+    test-sphere.sct
+
  
-EXTRA_DIST = $(scriptdata_DATA)
+if TINY_FU_UNSTABLE
+scriptdata_DATA = $(scripts) $(test_scripts)
+else
+scriptdata_DATA = $(scripts)
+endif
+
+
+EXTRA_DIST = $(scripts) $(test_scripts)
