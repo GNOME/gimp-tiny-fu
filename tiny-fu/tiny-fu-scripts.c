@@ -529,7 +529,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
                   script->arg_defaults[i].sfa_gradient =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
                   script->arg_values[i].sfa_gradient =
-                    g_strdup (script->arg_defaults[i].sfa_pattern);
+                    g_strdup (script->arg_defaults[i].sfa_gradient);
 
                   args[i + 1].type        = GIMP_PDB_STRING;
                   args[i + 1].name        = "gradient";
