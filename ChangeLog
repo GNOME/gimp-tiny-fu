@@ -1,5 +1,14 @@
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* scripts/guides-new.sct: Changed guide position limit to use
+	new MAX-IMAGE-SIZE constant.
+
+	* tiny-fu/ts-wrapper.c: Added MIN-IMAGE-SIZE, MAX-IMAGE-SIZE,
+	MIN-RESOLUTION, and MAX-RESOLUTION constants for use in Tiny-Fu
+	scripts. See comment #4 in bug #167529.
+
+2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	Based on changes originally made by Sven Neumann to Script-Fu.
 
 	* configure.in: Added automake conditional TINY_FU_UNSTABLE.
