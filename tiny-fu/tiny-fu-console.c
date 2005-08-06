@@ -18,18 +18,8 @@
 
 #include "config.h"
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include <errno.h>
-#include <sys/types.h>
-#if HAVE_UNISTD_H
-#include <unistd.h>
-#endif
-#include <sys/stat.h>
-
 #include <gdk/gdkkeysyms.h>
-#include <gtk/gtk.h>
 
 #include "libgimp/gimp.h"
 #include "libgimp/gimpui.h"

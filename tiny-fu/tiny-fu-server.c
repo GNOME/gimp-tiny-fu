@@ -18,19 +18,26 @@
 
 #include "config.h"
 
-#include <glib.h>    /* For G_OS_WIN32 */
-
-#include <stdarg.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
-#include <unistd.h>
+#include <errno.h>
 #include <time.h>
+
+#ifdef HAVE_UNISTD_H
+#include <unistd.h>
+#endif
+
+#ifdef HAVE_SYS_TIME_H
 #include <sys/time.h>
+#endif
+
 #include <sys/types.h>
+
+#include <glib.h>
 
 #ifdef G_OS_WIN32
 #include <winsock2.h>
+#include <libgimpbase/gimpwin32-io.h>
 #else
 #include <sys/socket.h>
 #ifdef HAVE_SYS_SELECT_H
@@ -39,10 +46,9 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <netdb.h>
-#include <errno.h>
 #endif
 
-#include <gtk/gtk.h>
+#include <glib/gstdio.h>
 
 #include "libgimp/gimp.h"
 #include "libgimp/gimpui.h"
@@ -344,9 +350,9 @@ server_start (gint   port,
       return;
     }
 
-  /*  Setup up the server log file  */
+  /*  Set up the server log file  */
   if (logfile && *logfile)
-    server_log_file = fopen (logfile, "a");
+    server_log_file = g_fopen (logfile, "a");
   else
     server_log_file = NULL;
 
