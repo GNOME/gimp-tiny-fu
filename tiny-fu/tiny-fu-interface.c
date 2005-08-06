@@ -465,6 +465,7 @@ tiny_fu_interface (SFScript *script)
                                                    tiny_fu_pattern_callback,
                                                    &script->arg_values[i].sfa_pattern);
           break;
+
         case SF_GRADIENT:
           left_align = TRUE;
           widget = gimp_gradient_select_widget_new (_("Tiny-Fu Gradient Selection"),
@@ -500,6 +501,17 @@ tiny_fu_interface (SFScript *script)
           g_signal_connect (widget, "changed",
                             G_CALLBACK (tiny_fu_combo_callback),
                             &script->arg_values[i].sfa_option);
+          break;
+
+        case SF_ENUM:
+          widget = gimp_enum_combo_box_new (g_type_from_name (script->arg_defaults[i].sfa_enum.type_name));
+ 
+          gimp_int_combo_box_set_active (GIMP_INT_COMBO_BOX (widget),
+                                         script->arg_values[i].sfa_enum.history);
+
+          g_signal_connect (widget, "changed",
+                            G_CALLBACK (gimp_int_combo_box_get_active),
+                            &script->arg_values[i].sfa_enum.history);
           break;
         }
 
@@ -854,6 +866,10 @@ tiny_fu_ok (SFScript *script)
         case SF_OPTION:
           g_string_append_printf (s, "%d", arg_value->sfa_option.history);
           break;
+
+        case SF_ENUM:
+          g_string_append_printf (s, "%d", arg_value->sfa_enum.history);
+          break;
         }
     }
 
@@ -961,6 +977,10 @@ tiny_fu_reset (SFScript *script)
         case SF_OPTION:
           gtk_combo_box_set_active (GTK_COMBO_BOX (widget),
                                     script->arg_defaults[i].sfa_option.history);
+
+        case SF_ENUM:
+          gimp_int_combo_box_set_active (GIMP_INT_COMBO_BOX (widget),
+                                         script->arg_defaults[i].sfa_enum.history);
           break;
         }
     }

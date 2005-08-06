@@ -194,7 +194,7 @@
     SF-ADJUSTMENT _"Blur radius" '(3 0 1024 1 10 0 0)
     SF-COLOR      _"Color" '(0 0 0)
     SF-ADJUSTMENT _"Opacity" '(80 0 100 1 10 0 0)
-    SF-OPTION     _"Interpolation" '(_"None" _"Linear" _"Cubic")
+    SF-ENUM       _"Interpolation"  '("InterpolationType" "linear")
     SF-TOGGLE     _"Allow resizing" FALSE
 )
 

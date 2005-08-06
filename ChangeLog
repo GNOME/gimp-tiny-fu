@@ -1,11 +1,17 @@
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tiny-fu/tiny-fu-server.c : Make file compile with MSVC. Based on
+	a change originally made by Hans Breuer to Script-Fu.
+
+2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* scripts/guides-new.sct: Changed guide position limit to use
 	new MAX-IMAGE-SIZE constant.
 
 	* tiny-fu/ts-wrapper.c: Added MIN-IMAGE-SIZE, MAX-IMAGE-SIZE,
 	MIN-RESOLUTION, and MAX-RESOLUTION constants for use in Tiny-Fu
 	scripts. See comment #4 in bug #167529.
+	(Also includes SF-ENUM changes as the file wasn't committed earlier.)
 
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
