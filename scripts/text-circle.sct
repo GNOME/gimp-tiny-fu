@@ -200,7 +200,7 @@
 
 (tiny-fu-register
     "tiny-fu-text-circle"
-    _"Text Circle..."
+    _"Text C_ircle..."
     _"Render the specified text along the perimeter of a circle"
     "Shuji Narazaki <narazaki@gimp.org>"
     "Shuji Narazaki"

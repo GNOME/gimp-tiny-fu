@@ -158,7 +158,6 @@
                                               size PIXELS font)))
         )
     (gimp-image-undo-disable img)
-    (gimp-drawable-set-name text-layer text)
     (apply-cool-metal-logo-effect img text-layer size bg-color
                                   gradient gradient-reverse)
     (gimp-image-undo-enable img)

@@ -1,5 +1,34 @@
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* scripts/alien-glow-logo.scm
+	* scripts/alien-neon-logo.scm
+	* scripts/basic1-logo.scm
+	* scripts/basic2-logo.scm
+	* scripts/blended-logo.scm
+	* scripts/bovinated-logo.scm
+	* scripts/chalk.scm
+	* scripts/chip-away.scm
+	* scripts/chrome-logo.scm
+	* scripts/comic-logo.scm
+	* scripts/coolmetal-logo.scm
+	* scripts/frosty-logo.scm
+	* scripts/glossy.scm
+	* scripts/gradient-bevel-logo.scm
+	* scripts/neon-logo.scm
+	* scripts/starburst-logo.scm
+	* scripts/starscape-logo.scm
+	* scripts/t-o-p-logo.scm
+	* scripts/textured-logo.scm: No need to set the text as name of
+	the text layer. The text layer is created with that name already.
+	Based on changes made to Script-Fu by Sven Neumann.
+
+	* tiny-fu/scripts/i26-gunya2.scm
+	* tiny-fu/scripts/news-text.scm
+	* tiny-fu/scripts/text-circle.scm: Added missing mnemonics based
+	on a patch to Script-Fu from Michael Terry (bug #106991).
+
+2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* tiny-fu/tiny-fu-console.c
 	* tiny-fu/tiny-fu-interface.c
 	* tiny-fu/tiny-fu-scripts.c

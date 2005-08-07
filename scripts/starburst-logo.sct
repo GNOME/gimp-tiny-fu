@@ -95,7 +95,6 @@
         (text-layer (car (gimp-text-fontname img -1 0 0 text border TRUE size PIXELS fontname)))
         )
     (gimp-image-undo-disable img)
-    (gimp-drawable-set-name text-layer text)
     (apply-starburst-logo-effect img text-layer size burst-color bg-color)
     (gimp-image-undo-enable img)
     (gimp-display-new img)

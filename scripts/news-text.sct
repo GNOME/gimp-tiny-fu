@@ -69,7 +69,7 @@
 )
 
 (tiny-fu-register "tiny-fu-newsprint-text"
-    _"Newsprint Text..."
+    _"Newsprint Te_xt..."
     "Apply a screen to text"
     "Austin Donnelly"
     "Austin Donnelly"

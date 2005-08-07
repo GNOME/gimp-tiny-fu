@@ -98,7 +98,6 @@
         )
 
     (gimp-image-undo-disable img)
-    (gimp-drawable-set-name text-layer text)
     (apply-basic2-logo-effect img text-layer bg-color text-color)
     (gimp-image-undo-enable img)
     (gimp-display-new img)
