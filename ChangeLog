@@ -1,3 +1,16 @@
+2005-08-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-intl.h: Don't append -tiny-fu to GETTEXT_PACKAGE.
+	Spotted by Sven Neumann. Fix for bug #312941.
+
+2005-08-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-server.c: Minor cleanup to #include statements.
+	Based on changes made to Script-Fu by Tor Lillqvist.
+
+	* tiny-fu/tiny-fu-interface.c: Use gimp_spin_button_new().
+	Based on changes made to Script-Fu by Sven Neumann.
+
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/alien-glow-logo.scm
