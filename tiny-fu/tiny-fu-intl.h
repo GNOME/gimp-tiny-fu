@@ -7,7 +7,7 @@
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
  * version 2 of the License, or (at your option) any later version.
- * 
+ *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
@@ -41,12 +41,11 @@
 #    define bind_textdomain_codeset(Domain, Codeset) (Domain)
 #endif
 
-#define INIT_I18N()	G_STMT_START{			          \
-  bindtextdomain (GETTEXT_PACKAGE"-tiny-fu",                    \
-                  gimp_locale_directory ());                    \
-  bind_textdomain_codeset (GETTEXT_PACKAGE"-tiny-fu", "UTF-8"); \
-  textdomain (GETTEXT_PACKAGE"-tiny-fu");                       \
-}G_STMT_END
+#define INIT_I18N()     G_STMT_START{        \
+  bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);        \
+  bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8"); \
+  textdomain (GETTEXT_PACKAGE);                       \
+} G_STMT_END
 
 
 #endif /* __TINY_FU_INTL_H__ */
