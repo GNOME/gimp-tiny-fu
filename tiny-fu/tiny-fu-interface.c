@@ -93,9 +93,9 @@ static void   tiny_fu_gradient_callback   (const gchar      *name,
                                            const gdouble    *mask_data,
                                            gboolean          closing,
                                            gpointer          data);
-static void   tiny_fu_font_callback       (const gchar      *name,
-                                           gboolean          closing,
-                                           gpointer          data);
+static void   tiny_fu_font_callback       (gpointer          data,
+                                           const gchar      *name,
+                                           gboolean          closing);
 static void   tiny_fu_palette_callback    (const gchar      *name,
                                            gboolean          closing,
                                            gpointer          data);
@@ -270,6 +270,7 @@ tiny_fu_interface (SFScript *script)
   for (i = script->image_based ? 2 : 0; i < script->num_args; i++)
     {
       GtkWidget *widget       = NULL;
+      GtkObject *adj;
       gchar     *label_text;
       gfloat     label_yalign = 0.5;
       gint      *ID_ptr       = NULL;
@@ -406,15 +407,16 @@ tiny_fu_interface (SFScript *script)
 
             case SF_SPINNER:
               left_align = TRUE;
-              script->arg_values[i].sfa_adjustment.adj = (GtkAdjustment *)
-                gtk_adjustment_new (script->arg_values[i].sfa_adjustment.value,
-                                    script->arg_defaults[i].sfa_adjustment.lower,
-                                    script->arg_defaults[i].sfa_adjustment.upper,
-                                    script->arg_defaults[i].sfa_adjustment.step,
-                                    script->arg_defaults[i].sfa_adjustment.page, 0);
-              widget = gtk_spin_button_new (script->arg_values[i].sfa_adjustment.adj,
-                                            0,
-                                            script->arg_defaults[i].sfa_adjustment.digits);
+              widget =
+                gimp_spin_button_new (&adj,
+                                      script->arg_values[i].sfa_adjustment.value,
+                                      script->arg_defaults[i].sfa_adjustment.lower,
+                                      script->arg_defaults[i].sfa_adjustment.upper,
+                                      script->arg_defaults[i].sfa_adjustment.step,
+                                      script->arg_defaults[i].sfa_adjustment.page,
+                                      0, 0,
+                                      script->arg_defaults[i].sfa_adjustment.digits);
+              script->arg_values[i].sfa_adjustment.adj = GTK_ADJUSTMENT (adj);
               break;
             }
 
@@ -443,10 +445,12 @@ tiny_fu_interface (SFScript *script)
           break;
 
         case SF_FONT:
-          widget = gimp_font_select_widget_new (_("Tiny-Fu Font Selection"),
-                                                script->arg_values[i].sfa_font,
-                                                tiny_fu_font_callback,
-                                                &script->arg_values[i].sfa_font);
+          widget = gimp_font_select_button_new (_("Tiny-Fu Font Selection"),
+                                                script->arg_values[i].sfa_font);
+          g_signal_connect_swapped (widget, "font-set",
+                                    G_CALLBACK (tiny_fu_font_callback),
+                                    &script->arg_values[i].sfa_font);
+
           break;
 
         case SF_PALETTE:
@@ -584,7 +588,8 @@ tiny_fu_interface_quit (SFScript *script)
     switch (script->arg_types[i])
       {
       case SF_FONT:
-          gimp_font_select_widget_close (sf_interface->args_widgets[i]);
+          gimp_font_select_button_close_popup
+             (GIMP_FONT_SELECT_BUTTON (sf_interface->args_widgets[i]));
         break;
 
       case SF_PALETTE:
@@ -673,9 +678,9 @@ tiny_fu_gradient_callback (const gchar   *name,
 }
 
 static void
-tiny_fu_font_callback (const gchar *name,
-                         gboolean     closing,
-                         gpointer     data)
+tiny_fu_font_callback (gpointer     data,
+                       const gchar *name,
+                       gboolean     closing)
 {
   tiny_fu_string_update (data, name);
 }
@@ -945,8 +950,9 @@ tiny_fu_reset (SFScript *script)
           break;
 
         case SF_FONT:
-          gimp_font_select_widget_set (widget,
-                                       script->arg_defaults[i].sfa_font);
+          gimp_font_select_button_set_font_name
+             (GIMP_FONT_SELECT_BUTTON (widget),
+              script->arg_defaults[i].sfa_font);
           break;
 
         case SF_PALETTE:
