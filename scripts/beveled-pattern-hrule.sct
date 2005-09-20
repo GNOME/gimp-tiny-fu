@@ -80,4 +80,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-beveled-pattern-hrule"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")

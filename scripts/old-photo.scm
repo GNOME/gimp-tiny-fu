@@ -110,4 +110,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-old-photo"
-                      _"<Image>/Tiny-Fu/Decor")
+                       "<Image>/Tiny-Fu/Decor")

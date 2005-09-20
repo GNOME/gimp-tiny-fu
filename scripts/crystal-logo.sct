@@ -226,4 +226,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-crystal-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

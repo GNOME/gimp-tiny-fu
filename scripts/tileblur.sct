@@ -78,4 +78,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-tile-blur"
-                      _"<Image>/Filters/Blur")
+                       "<Image>/Filters/Blur")

@@ -83,7 +83,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-rectangular"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
 
 
 (define (tiny-fu-make-brush-rectangular-feathered description width height feathering spacing)
@@ -158,7 +158,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-rectangular-feathered"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
 
 
 (define (tiny-fu-make-brush-elliptical description width height spacing)
@@ -222,7 +222,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-elliptical"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
 
 
 (define (tiny-fu-make-brush-elliptical-feathered description width height feathering spacing)
@@ -295,4 +295,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-elliptical-feathered"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")

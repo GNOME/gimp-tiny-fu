@@ -109,4 +109,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-distress-selection"
-                      _"<Image>/Tiny-Fu/Selection")
+                       "<Image>/Tiny-Fu/Selection")

@@ -7,7 +7,7 @@
 ;;   Sven Neumann <neumanns@uni-duesseldorf.de>
 ;;
 ;;
-;; Modified June 24, 2004 by Kevin Cozens
+;; Modified June 24, 2005 by Kevin Cozens
 ;; Incorporated changes made by Daniel P. Stasinski in his text-circle3.scm
 ;; script. The letters are now placed properly for both positive and negative
 ;; fill angles.
@@ -218,4 +218,4 @@
 ;; text-circle.sct ends here
 
 (tiny-fu-menu-register "tiny-fu-text-circle"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

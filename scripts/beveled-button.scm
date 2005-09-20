@@ -155,4 +155,4 @@
                     SF-TOGGLE     _"Pressed"            FALSE)
 
 (tiny-fu-menu-register "tiny-fu-button00"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Buttons")
+                       "<Toolbox>/Xtns/Tiny-Fu/Buttons")

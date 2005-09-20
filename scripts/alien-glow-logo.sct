@@ -70,7 +70,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-alien-glow-logo text
                                  size
@@ -107,4 +107,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

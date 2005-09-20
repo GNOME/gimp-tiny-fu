@@ -126,7 +126,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-comic-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-comic-logo text
@@ -167,4 +167,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-comic-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

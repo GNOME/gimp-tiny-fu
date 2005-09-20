@@ -111,4 +111,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-beveled-pattern-heading"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")

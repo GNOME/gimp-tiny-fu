@@ -104,4 +104,4 @@
 
 
 (tiny-fu-menu-register "tiny-fu-camo-pattern"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")

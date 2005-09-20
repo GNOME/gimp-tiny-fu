@@ -32,4 +32,4 @@
 		    SF-ADJUSTMENT "Position"   '(0 0 MAX-IMAGE-SIZE 1 10 0 1))
 
 (tiny-fu-menu-register "tiny-fu-guide-new"
-                      _"<Image>/Image/Guides")
+                       "<Image>/Image/Guides")

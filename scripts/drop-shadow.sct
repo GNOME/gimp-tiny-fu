@@ -179,4 +179,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-drop-shadow"
-                      _"<Image>/Tiny-Fu/Shadow")
+                       "<Image>/Tiny-Fu/Shadow")

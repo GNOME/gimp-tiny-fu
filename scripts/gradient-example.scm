@@ -71,4 +71,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-gradient-example"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Utils")
+                       "<Toolbox>/Xtns/Tiny-Fu/Utils")

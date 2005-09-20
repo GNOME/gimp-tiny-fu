@@ -189,4 +189,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-right-arrow"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")

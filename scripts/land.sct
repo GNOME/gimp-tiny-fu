@@ -85,4 +85,4 @@
                     SF-GRADIENT   _"Gradient" "Land 1")
 
 (tiny-fu-menu-register "tiny-fu-land"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")

@@ -90,4 +90,4 @@
 ;;; grid-system.scm ends here
 
 (tiny-fu-menu-register "tiny-fu-grid-system"
-                      _"<Image>/Tiny-Fu/Render")
+                       "<Image>/Tiny-Fu/Render")

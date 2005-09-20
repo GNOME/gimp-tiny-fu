@@ -180,4 +180,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-selection-rounded-rectangle"
-                      _"<Image>/Select/Modify")
+                       "<Image>/Select/Modify")

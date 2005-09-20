@@ -108,7 +108,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-bovinated-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 (tiny-fu-register "tiny-fu-bovinated-logo"
     _"Bo_vination..."
@@ -126,4 +126,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-bovinated-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

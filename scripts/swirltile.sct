@@ -61,4 +61,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-swirl-tile"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")

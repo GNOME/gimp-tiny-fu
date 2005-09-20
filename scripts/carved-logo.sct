@@ -175,4 +175,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-carved-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

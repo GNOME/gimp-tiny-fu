@@ -41,7 +41,7 @@
 )
 
 (tiny-fu-menu-register "gimp-online-main-web-site"
-                      _"<Toolbox>/Help/The GIMP Online")
+                       "<Toolbox>/Help/The GIMP Online")
 
 (tiny-fu-register "gimp-online-developer-web-site"
     _"_Developer Web Site"
@@ -53,7 +53,7 @@
 )
 
 (tiny-fu-menu-register "gimp-online-developer-web-site"
-                      _"<Toolbox>/Help/The GIMP Online")
+                       "<Toolbox>/Help/The GIMP Online")
 
 (tiny-fu-register "gimp-online-plug-in-web-site"
     _"Plug-in _Registry"
@@ -65,4 +65,4 @@
 )
 
 (tiny-fu-menu-register "gimp-online-plug-in-web-site"
-                      _"<Toolbox>/Help/The GIMP Online")
+                       "<Toolbox>/Help/The GIMP Online")

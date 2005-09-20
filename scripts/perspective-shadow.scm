@@ -199,4 +199,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-perspective-shadow"
-                      _"<Image>/Tiny-Fu/Shadow")
+                       "<Image>/Tiny-Fu/Shadow")

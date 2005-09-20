@@ -85,4 +85,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-selection-to-image"
-                      _"<Image>/Tiny-Fu/Selection")
+                       "<Image>/Tiny-Fu/Selection")

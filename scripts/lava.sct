@@ -126,4 +126,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-lava"
-                      _"<Image>/Tiny-Fu/Render")
+                       "<Image>/Tiny-Fu/Render")

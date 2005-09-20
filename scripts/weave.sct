@@ -406,4 +406,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-weave"
-                      _"<Image>/Tiny-Fu/Alchemy")
+                       "<Image>/Tiny-Fu/Alchemy")

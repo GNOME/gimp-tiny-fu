@@ -143,4 +143,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-round-corners"
-                      _"<Image>/Tiny-Fu/Decor")
+                       "<Image>/Tiny-Fu/Decor")

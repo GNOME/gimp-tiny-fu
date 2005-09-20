@@ -96,4 +96,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-speed-text"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

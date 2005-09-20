@@ -173,4 +173,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-fuzzy-border"
-                      _"<Image>/Tiny-Fu/Decor")
+                       "<Image>/Tiny-Fu/Decor")

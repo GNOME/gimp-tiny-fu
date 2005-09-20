@@ -90,4 +90,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-coffee-stain"
-                      _"<Image>/Tiny-Fu/Decor")
+                       "<Image>/Tiny-Fu/Decor")

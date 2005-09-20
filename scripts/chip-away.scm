@@ -151,7 +151,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chip-away-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-chip-away-logo text
@@ -198,4 +198,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chip-away-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

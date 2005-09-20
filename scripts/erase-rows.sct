@@ -47,4 +47,4 @@
 
 
 (tiny-fu-menu-register "tiny-fu-erase-rows"
-                      _"<Image>/Tiny-Fu/Alchemy")
+                       "<Image>/Tiny-Fu/Alchemy")

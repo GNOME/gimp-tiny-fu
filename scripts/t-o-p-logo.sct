@@ -113,7 +113,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-t-o-p-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 
 (define (tiny-fu-t-o-p-logo text
@@ -153,6 +153,6 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-t-o-p-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
 
 ; end of t-o-p.scm

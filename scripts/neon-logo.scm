@@ -205,7 +205,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-neon-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-neon-logo text
                            size
@@ -241,4 +241,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-neon-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

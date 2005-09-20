@@ -92,7 +92,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chrome-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 (define (tiny-fu-chrome-logo text
                              size
@@ -124,4 +124,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chrome-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

@@ -103,4 +103,4 @@
 ;;; i26-gunya2.scm ends here
 
 (tiny-fu-menu-register "tiny-fu-i26-gunya2"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

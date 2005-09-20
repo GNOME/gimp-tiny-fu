@@ -1,5 +1,11 @@
 2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* scripts/*.sct: Don't mark menu branches for translation; the
+	translatable branch name is registered by the Tiny-Fu extension.
+	Based on a change made to Script-Fu by Sven Neumann.
+
+2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* tiny-fu/tiny-fu-scripts.c (tiny_fu_find_scripts): Register menu
 	branches for all included scripts. Fixes bug #170623.
 	Based on a change made to Script-Fu by Michael Natterer.

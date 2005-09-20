@@ -34,4 +34,4 @@
 		    SF-DRAWABLE "Drawable" 0)
 
 (tiny-fu-menu-register "tiny-fu-guides-from-selection"
-                      _"<Image>/Image/Guides")
+                       "<Image>/Image/Guides")

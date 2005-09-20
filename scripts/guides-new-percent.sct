@@ -35,4 +35,4 @@
 		    SF-ADJUSTMENT _"Position (in %)" '(50 0 100 1 10 0 1))
 
 (tiny-fu-menu-register "tiny-fu-guide-new-percent"
-                      _"<Image>/Image/Guides")
+                       "<Image>/Image/Guides")

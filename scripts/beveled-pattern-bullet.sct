@@ -89,4 +89,4 @@
                     SF-TOGGLE     _"Transparent background" FALSE)
 
 (tiny-fu-menu-register "tiny-fu-beveled-pattern-bullet"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")

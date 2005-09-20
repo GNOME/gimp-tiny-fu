@@ -155,7 +155,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-big-header-gimp-org"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
 
 (tiny-fu-register "tiny-fu-small-header-gimp-org"
     _"_Small Header..."
@@ -179,4 +179,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-small-header-gimp-org"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")

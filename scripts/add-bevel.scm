@@ -196,4 +196,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-add-bevel"
-                      _"<Image>/Tiny-Fu/Decor")
+                       "<Image>/Tiny-Fu/Decor")

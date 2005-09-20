@@ -105,7 +105,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-basic2-logo-alpha"
-                      _"<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Tiny-Fu/Alpha to Logo")
 
 (tiny-fu-register "tiny-fu-basic2-logo"
     _"B_asic II..."
@@ -122,4 +122,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-basic2-logo"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Tiny-Fu/Logos")

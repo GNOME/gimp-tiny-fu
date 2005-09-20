@@ -104,4 +104,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-bullet"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")
+                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")

@@ -237,4 +237,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-blend-anim"
-                      _"<Image>/Tiny-Fu/Animators")
+                       "<Image>/Tiny-Fu/Animators")

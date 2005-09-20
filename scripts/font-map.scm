@@ -165,4 +165,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-font-map"
-                      _"<Toolbox>/Xtns/Tiny-Fu/Utils")
+                       "<Toolbox>/Xtns/Tiny-Fu/Utils")

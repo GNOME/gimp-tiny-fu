@@ -248,4 +248,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-slide"
-                      _"<Image>/Tiny-Fu/Decor")
+                       "<Image>/Tiny-Fu/Decor")
