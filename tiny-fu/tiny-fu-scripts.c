@@ -134,6 +134,52 @@ tiny_fu_load_all_scripts (void)
                                    tiny_fu_load_script,
                                    NULL);
 
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
+                                    N_("_Tiny-Fu"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Buttons"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Logos"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("Make Br_ush"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Misc"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Patterns"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Test"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Utils"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Web Page Themes"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+                                    N_("_Alien Glow"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+                                    N_("_Beveled Pattern"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+                                    N_("_Classic.Gimp.Org"));
+
+  gimp_plugin_menu_branch_register ("<Image>",
+                                    N_("S_cript-Fu"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Alchemy"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("Alpha to _Logo"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("A_nimators"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Decor"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Render"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Selection"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("S_hadow"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("Stencil _Ops"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Utils"));
+
   /*  Now that all scripts are read in and sorted, tell gimp about them  */
   g_tree_foreach (script_tree,
                   (GTraverseFunc) tiny_fu_install_script,
