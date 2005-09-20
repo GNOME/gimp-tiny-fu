@@ -99,7 +99,9 @@ static GList *script_menu_list = NULL;
 void
 tiny_fu_load_all_scripts (void)
 {
-  gchar *path_str;
+  gchar  *path_str;
+  gchar  *path;
+  GError *error = NULL;
 
   /*  Make sure to clear any existing scripts  */
   if (script_tree != NULL)
@@ -114,14 +116,23 @@ tiny_fu_load_all_scripts (void)
 
   path_str = gimp_gimprc_query ("script-fu-path");
 
-  if (path_str == NULL)
+  if (! path_str)
     return;
 
-  gimp_datafiles_read_directories (path_str, G_FILE_TEST_IS_REGULAR,
+  path = g_filename_from_utf8 (path_str, -1, NULL, NULL, &error);
+  g_free (path_str);
+
+  if (! path)
+    {
+      g_warning ("Can't convert tiny-fu-path to filesystem encoding: %s",
+                 error->message);
+      g_error_free (error);
+      return;
+    }
+
+  gimp_datafiles_read_directories (path, G_FILE_TEST_IS_REGULAR,
                                    tiny_fu_load_script,
                                    NULL);
-
-  g_free (path_str);
 
   /*  Now that all scripts are read in and sorted, tell gimp about them  */
   g_tree_foreach (script_tree,

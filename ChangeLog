@@ -1,3 +1,9 @@
+2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-scripts.c (tiny_fu_find_scripts): Need to convert
+	tiny-fu-path to filesystem encoding. Should fix bug #165002.
+	Based on a change made to Script-Fu by Sven Neumann.
+
 2005-09-02  Ankit Patel  <ankit644@yahoo.com>
 
 	* configure.in: Added "gu" to ALL_LINGUAS.
