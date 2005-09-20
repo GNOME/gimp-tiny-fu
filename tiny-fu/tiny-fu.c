@@ -42,7 +42,7 @@ static void      tiny_fu_run            (const gchar      *name,
                                          const GimpParam  *params,
                                          gint             *nreturn_vals,
                                          GimpParam       **return_vals);
-static void      tiny_fu_auxillary_init (void);
+static void      tiny_fu_extension_init (void);
 static void      tiny_fu_refresh_proc   (const gchar      *name,
                                          gint              nparams,
                                          const GimpParam  *params,
@@ -176,7 +176,7 @@ tiny_fu_run (const gchar *name,
   if (strcmp (name, "extension_tiny_fu") == 0)
     {
       /*  Setup auxillary temporary procedures for the base extension  */
-      tiny_fu_auxillary_init ();
+      tiny_fu_extension_init ();
 
       /*  Init the interpreter and register scripts  */
       tinyscheme_init (TRUE);
@@ -253,12 +253,58 @@ tiny_fu_run (const gchar *name,
 
 
 static void
-tiny_fu_auxillary_init (void)
+tiny_fu_extension_init (void)
 {
   static GimpParamDef args[] =
   {
     { GIMP_PDB_INT32, "run_mode", "[Interactive], non-interactive" }
   };
+
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
+                                    N_("_Tiny-Fu"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Buttons"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Logos"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("Make Br_ush"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Misc"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Patterns"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Test"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Utils"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+                                    N_("_Web Page Themes"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+                                    N_("_Alien Glow"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+                                    N_("_Beveled Pattern"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+                                    N_("_Classic.Gimp.Org"));
+
+  gimp_plugin_menu_branch_register ("<Image>",
+                                    N_("S_cript-Fu"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Alchemy"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("Alpha to _Logo"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("A_nimators"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Decor"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Render"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Selection"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("S_hadow"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("Stencil _Ops"));
+  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+                                    N_("_Utils"));
 
   gimp_install_temp_proc ("tiny_fu_refresh",
                           "Re-read all available scripts",

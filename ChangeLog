@@ -1,5 +1,16 @@
 2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	Updates based on changes made to Script-Fu by Michael Natterer.
+
+	* tiny-fu/tiny-fu-scripts.c (tiny_fu_find_scripts): Removed menu
+	branch registering here (this function is called on each refresh).
+
+	* tiny-fu/tiny-fu.c (tiny_fu_extension_init): Renamed from
+	script_fu_auxillary_init(), this function is only called once
+	when the extension starts up. Register menu branches here.
+
+2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* scripts/*.sct: Don't mark menu branches for translation; the
 	translatable branch name is registered by the Tiny-Fu extension.
 	Based on a change made to Script-Fu by Sven Neumann.
