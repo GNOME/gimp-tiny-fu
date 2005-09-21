@@ -124,7 +124,7 @@
 				  (if (> max-blur 0)
 				  (let* ((layer-width (car (gimp-drawable-width upper-copy)))
 						 (layer-height (car (gimp-drawable-height upper-copy))))
-					(gimp-layer-set-preserve-trans upper-copy FALSE)
+					(gimp-layer-set-lock-alpha upper-copy FALSE)
 					(gimp-layer-resize upper-copy
 							   (+ layer-width (* blur 2))
 							   (+ layer-height (* blur 2))
@@ -137,7 +137,7 @@
 							   blur
 							   TRUE TRUE))
 					(set! blur (- max-blur blur))
-					(gimp-layer-set-preserve-trans lower-copy FALSE)
+					(gimp-layer-set-lock-alpha lower-copy FALSE)
 					(set! layer-width (car (gimp-drawable-width
 								lower-copy)))
 					(set! layer-height (car (gimp-drawable-height
