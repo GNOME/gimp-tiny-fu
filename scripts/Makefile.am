@@ -65,7 +65,6 @@ scripts =  \
     guides-remove-all.sct   \
     hsv-graph.sct           \
     i26-gunya2.sct          \
-    image-structure.sct     \
     land.sct                \
     lava.sct                \
     line-nova.sct           \
