@@ -147,7 +147,6 @@ static void
 tiny_fu_console_interface (void)
 {
   GtkWidget  *dialog;
-  GtkWidget  *main_vbox;
   GtkWidget  *vbox;
 #ifdef GIMP_PROC_BROWSER
   GtkWidget  *button;
@@ -177,20 +176,11 @@ tiny_fu_console_interface (void)
                     &dialog);
 
   /*  The main vbox  */
-  main_vbox = gtk_vbox_new (FALSE, 12);
-  gtk_container_set_border_width (GTK_CONTAINER (main_vbox), 12);
-  gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dialog)->vbox), main_vbox,
+  vbox = gtk_vbox_new (FALSE, 12);
+  gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
+  gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dialog)->vbox), vbox,
                       TRUE, TRUE, 0);
-  gtk_widget_show (main_vbox);
-
-  vbox = gtk_vbox_new (FALSE, 6);
-  gtk_box_pack_start (GTK_BOX (main_vbox), vbox, TRUE, TRUE, 0);
   gtk_widget_show (vbox);
-
-  label = gtk_label_new (_("TinyScheme Output"));
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
-  gtk_widget_show (label);
 
   /*  The output text widget  */
   scrolled_window = gtk_scrolled_window_new (NULL, NULL);
@@ -248,15 +238,6 @@ tiny_fu_console_interface (void)
   }
 
   /*  The current command  */
-  vbox = gtk_vbox_new (FALSE, 6);
-  gtk_box_pack_start (GTK_BOX (main_vbox), vbox, FALSE, FALSE, 0);
-  gtk_widget_show (vbox);
-
-  label = gtk_label_new (_("Current Command"));
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
-  gtk_widget_show (label);
-
   hbox = gtk_hbox_new (FALSE, 6);
   gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);

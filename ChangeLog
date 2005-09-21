@@ -1,8 +1,15 @@
 2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tiny-fu/tiny-fu-console.c: Removed redundant labels.
+	Based on a change made to Script-Fu by Sven Neumann.
+
+	* tiny-fu/tiny-fu.c: Added missing menu branch registrations.
+
+2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* tiny-fu/tiny-fu.c
-	* scripts/*.sct: Applied menu reorganization changes suggested by
-	Akkana Peck (bug #116145).
+	* scripts/*.sct: Applied menu reorganization changes applied to
+	Script-Fu as suggested by Akkana Peck (bug #116145).
 
 2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
 
@@ -12,7 +19,7 @@
 	branch registering here (this function is called on each refresh).
 
 	* tiny-fu/tiny-fu.c (tiny_fu_extension_init): Renamed from
-	script_fu_auxillary_init(), this function is only called once
+	tiny_fu_auxillary_init(), this function is only called once
 	when the extension starts up. Register menu branches here.
 
 2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
