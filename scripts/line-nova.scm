@@ -115,4 +115,4 @@
 ;;; line-nova.scm ends here
 
 (tiny-fu-menu-register "tiny-fu-line-nova"
-                       "<Image>/Tiny-Fu/Render")
+                       "<Image>/Filters/Render")

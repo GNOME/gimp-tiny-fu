@@ -151,7 +151,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chip-away-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 
 (define (tiny-fu-chip-away-logo text

@@ -196,4 +196,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-add-bevel"
-                       "<Image>/Tiny-Fu/Decor")
+                       "<Image>/Filters/Decor")

@@ -140,7 +140,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-blended-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 (define (tiny-fu-blended-logo text
                                 size

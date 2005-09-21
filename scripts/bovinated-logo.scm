@@ -108,7 +108,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-bovinated-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 (tiny-fu-register "tiny-fu-bovinated-logo"
     _"Bo_vination..."

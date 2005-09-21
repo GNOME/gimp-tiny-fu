@@ -285,26 +285,22 @@ tiny_fu_extension_init (void)
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
                                     N_("_Classic.Gimp.Org"));
 
-  gimp_plugin_menu_branch_register ("<Image>",
-                                    N_("S_cript-Fu"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
-                                    N_("_Alchemy"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Image>/Filters",
                                     N_("Alpha to _Logo"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Image>/Filters/Animation",
                                     N_("A_nimators"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Image>/Filters",
                                     N_("_Decor"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Image>/Filters",
+                                    N_("_Effects"));
+  gimp_plugin_menu_branch_register ("<Image>/Filters",
                                     N_("_Render"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Image>/Filters",
                                     N_("_Selection"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
-                                    N_("S_hadow"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Image>/Filters/Decor",
                                     N_("Stencil _Ops"));
-  gimp_plugin_menu_branch_register ("<Image>/Tiny-Fu",
-                                    N_("_Utils"));
+  gimp_plugin_menu_branch_register ("<Image>/Filters/Effects",
+                                    N_("_Alchemy"));
 
   gimp_install_temp_proc ("tiny_fu_refresh",
                           "Re-read all available scripts",

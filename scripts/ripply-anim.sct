@@ -127,4 +127,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-ripply-anim"
-                       "<Image>/Tiny-Fu/Animators")
+                       "<Image>/Filters/Animation/Animators")

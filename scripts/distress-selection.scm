@@ -109,4 +109,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-distress-selection"
-                       "<Image>/Tiny-Fu/Selection")
+                       "<Image>/Filters/Selection")

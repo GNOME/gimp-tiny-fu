@@ -199,4 +199,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-perspective-shadow"
-                       "<Image>/Tiny-Fu/Shadow")
+                       "<Image>/Filters/Light and Shadow/Shadow")

@@ -85,7 +85,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-glowing-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 (define (tiny-fu-glowing-logo text
                                 size

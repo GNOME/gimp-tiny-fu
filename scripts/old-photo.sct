@@ -110,4 +110,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-old-photo"
-                       "<Image>/Tiny-Fu/Decor")
+                       "<Image>/Filters/Decor")

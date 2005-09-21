@@ -106,4 +106,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-waves-anim"
-                       "<Image>/Tiny-Fu/Animators")
+                       "<Image>/Filters/Animation/Animators")

@@ -155,4 +155,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-circuit"
-                       "<Image>/Tiny-Fu/Render")
+                       "<Image>/Filters/Render")

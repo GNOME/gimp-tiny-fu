@@ -144,7 +144,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-starscape-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 
 (define (tiny-fu-starscape-logo text size fontname glow-color)

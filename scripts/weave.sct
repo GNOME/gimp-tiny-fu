@@ -406,4 +406,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-weave"
-                       "<Image>/Tiny-Fu/Alchemy")
+                       "<Image>/Filters/Artistic")

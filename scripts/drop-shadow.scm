@@ -179,4 +179,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-drop-shadow"
-                       "<Image>/Tiny-Fu/Shadow")
+                       "<Image>/Filters/Light and Shadow/Shadow")

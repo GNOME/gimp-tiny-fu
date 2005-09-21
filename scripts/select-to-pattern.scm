@@ -104,4 +104,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-selection-to-pattern"
-                       "<Image>/Tiny-Fu/Selection")
+                       "<Image>/Filters/Selection")

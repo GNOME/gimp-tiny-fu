@@ -62,4 +62,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-clothify"
-                       "<Image>/Tiny-Fu/Alchemy")
+                       "<Image>/Filters/Artistic")

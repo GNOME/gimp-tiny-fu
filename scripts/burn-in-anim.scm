@@ -233,4 +233,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-burn-in-anim"
-                       "<Image>/Tiny-Fu/Animators")
+                       "<Image>/Filters/Animation/Animators")

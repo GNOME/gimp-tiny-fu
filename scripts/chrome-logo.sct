@@ -92,7 +92,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chrome-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 (define (tiny-fu-chrome-logo text
                              size

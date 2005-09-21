@@ -85,4 +85,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-selection-to-image"
-                       "<Image>/Tiny-Fu/Selection")
+                       "<Image>/Filters/Selection")

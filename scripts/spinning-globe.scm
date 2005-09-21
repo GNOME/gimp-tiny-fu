@@ -110,4 +110,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-spinning-globe"
-                       "<Image>/Tiny-Fu/Animators")
+                       "<Image>/Filters/Animation/Animators")

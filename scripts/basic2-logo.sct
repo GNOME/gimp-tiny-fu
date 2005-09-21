@@ -105,7 +105,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-basic2-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 (tiny-fu-register "tiny-fu-basic2-logo"
     _"B_asic II..."

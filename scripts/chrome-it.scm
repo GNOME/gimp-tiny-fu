@@ -222,4 +222,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-sota-chrome-it"
-                       "<Image>/Tiny-Fu/Stencil Ops")
+                       "<Image>/Filters/Decor/Stencil Ops")

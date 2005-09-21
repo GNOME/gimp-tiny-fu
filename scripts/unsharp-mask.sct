@@ -71,7 +71,7 @@
 )
 
 (tiny-fu-register "tiny-fu-unsharp-mask"
-    _"_Unsharp Mask..."
+    _"Unsharp Mask 2..."
     "Make a sharp image of IMAGE's DRAWABLE by applying unsharp mask method"
     "Shuji Narazaki <narazaki@gimp.org>"
     "Shuji Narazaki"
@@ -84,4 +84,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-unsharp-mask"
-                       "<Image>/Tiny-Fu/Alchemy")
+                       "<Image>/Filters/Enhance")

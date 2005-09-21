@@ -83,7 +83,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-starburst-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 
 (define (tiny-fu-starburst-logo text size fontname burst-color bg-color)

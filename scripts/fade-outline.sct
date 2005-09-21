@@ -194,4 +194,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-fade-outline"
-                       "<Image>/Tiny-Fu/Selection")
+                       "<Image>/Filters/Selection")

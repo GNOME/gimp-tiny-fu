@@ -141,4 +141,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-selection-to-brush"
-                       "<Image>/Tiny-Fu/Selection")
+                       "<Image>/Filters/Selection")

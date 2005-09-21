@@ -370,4 +370,4 @@
 ;; End of syprogimp.scm
 
 (tiny-fu-menu-register "tiny-fu-spyrogimp"
-                       "<Image>/Tiny-Fu/Render")
+                       "<Image>/Filters/Render")

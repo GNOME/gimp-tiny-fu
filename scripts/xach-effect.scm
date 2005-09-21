@@ -139,4 +139,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-xach-effect"
-                       "<Image>/Tiny-Fu/Shadow")
+                       "<Image>/Filters/Light and Shadow/Shadow")

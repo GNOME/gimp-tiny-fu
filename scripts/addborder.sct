@@ -178,4 +178,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-addborder"
-                       "<Image>/Tiny-Fu/Decor")
+                       "<Image>/Filters/Decor")

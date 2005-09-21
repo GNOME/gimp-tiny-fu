@@ -113,7 +113,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-t-o-p-logo-alpha"
-                       "<Image>/Tiny-Fu/Alpha to Logo")
+                       "<Image>/Filters/Alpha to Logo")
 
 
 (define (tiny-fu-t-o-p-logo text

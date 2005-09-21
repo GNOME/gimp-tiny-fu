@@ -126,4 +126,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-lava"
-                       "<Image>/Tiny-Fu/Render")
+                       "<Image>/Filters/Render")
