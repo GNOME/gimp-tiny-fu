@@ -542,25 +542,19 @@ init_procedures (void)
                                         &nparams, &nreturn_vals,
                                         &params, &return_vals))
       {
-         /*  Register each procedure as a scheme func  */
-         gchar *proc_name = g_strdup (proc_list[i]);
-
-         /*  convert the names to scheme-like naming conventions  */
-         convert_string (proc_name);
-
          /* Build a define that will call the foreign function */
          /* The Scheme statement was suggested by Simon Budig  */
          if (nparams == 0)
          {
              buff = g_strdup_printf (
                       " (define (%s) (gimp-proc-db-call \"%s\"))",
-                      proc_name, proc_list[i]);
+                      proc_list[i], proc_list[i]);
          }
          else
          {
              buff = g_strdup_printf (
                       " (define %s (lambda x (apply gimp-proc-db-call (cons \"%s\" x))))",
-                      proc_name, proc_list[i]);
+                      proc_list[i], proc_list[i]);
          }
 
          /*  Execute the 'define'  */
@@ -574,7 +568,6 @@ init_procedures (void)
          g_free (proc_author);
          g_free (proc_copyright);
          g_free (proc_date);
-         g_free (proc_name);
          gimp_destroy_paramdefs (params, nparams);
          gimp_destroy_paramdefs (return_vals, nreturn_vals);
       }
@@ -700,7 +693,6 @@ fprintf (stderr, "  parms rcvd: %d\n", sc->vptr->list_length (sc, a)-1);
 #ifdef DEBUG_MARSHALL
 fprintf (stderr, "  Invalid procedure name\n");
 #endif
-      convert_string (proc_name);
       g_snprintf (error_str, sizeof (error_str),
                   "Invalid procedure name %s specified", proc_name);
       return my_err (error_str, sc->NIL);
@@ -725,7 +717,6 @@ fprintf (stderr, "  Invalid procedure name\n");
 fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
                 nparams, (sc->vptr->list_length (sc, a) - 1));
 #endif
-      convert_string (proc_name);
       g_snprintf (error_str, sizeof (error_str),
                   "Invalid number of arguments supplied to %s (expected %d but received %d)",
                   proc_name, nparams, (sc->vptr->list_length (sc, a) - 1));
@@ -826,7 +817,6 @@ fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
         {
           if (arraytype (array) != array_int32)
           {
-              convert_string (proc_name);
               g_snprintf (error_str, sizeof (error_str),
                           "Expected INT32ARRAY for argument %d in call to procedure %s\n",
                           i+1, proc_name);
@@ -836,7 +826,6 @@ fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
           n_elements = args[i-1].data.d_int32;
           if (n_elements < 0 || n_elements > arraylength (array))
           {
-            convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
                         "INT32 array (argument %d) for function %s has "
                         "size of %d but expected size of %d",
@@ -869,7 +858,6 @@ fprintf (stderr, "\n");
         {
           if (arraytype (array) != array_int16)
           {
-              convert_string (proc_name);
               g_snprintf (error_str, sizeof (error_str),
                           "Expected INT16ARRAY for argument %d in call to procedure %s\n",
                           i+1, proc_name);
@@ -879,7 +867,6 @@ fprintf (stderr, "\n");
           n_elements = args[i-1].data.d_int32;
           if (n_elements < 0 || n_elements > arraylength (array))
           {
-            convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
                         "INT16 array (argument %d) for function %s has "
                         "size of %d but expected size of %d",
@@ -912,7 +899,6 @@ fprintf (stderr, "\n");
         {
           if (arraytype (array) != array_int8)
           {
-              convert_string (proc_name);
               g_snprintf (error_str, sizeof (error_str),
                           "Expected INT32ARRAY for argument %d in call to procedure %s\n",
                           i+1, proc_name);
@@ -922,7 +908,6 @@ fprintf (stderr, "\n");
           n_elements = args[i-1].data.d_int32;
           if (n_elements < 0 || n_elements > arraylength (array))
           {
-            convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
                         "INT8 array (argument %d) for function %s has "
                         "size of %d but expected size of %d",
@@ -955,7 +940,6 @@ fprintf (stderr, "\n");
         {
           if (arraytype (array) != array_float)
           {
-              convert_string (proc_name);
               g_snprintf (error_str, sizeof (error_str),
                           "Expected FLOATARRAY for argument %d in call to procedure %s\n",
                           i+1, proc_name);
@@ -965,7 +949,6 @@ fprintf (stderr, "\n");
           n_elements = args[i-1].data.d_int32;
           if (n_elements < 0 || n_elements > arraylength (array))
           {
-            convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
                         "FLOAT array (argument %d) for function %s has "
                         "size of %d but expected size of %d",
@@ -998,7 +981,6 @@ fprintf (stderr, "\n");
         {
           if (arraytype (array) != array_string)
           {
-              convert_string (proc_name);
               g_snprintf (error_str, sizeof (error_str),
                           "Expected STRINGARRAY for argument %d in call to procedure %s\n",
                           i+1, proc_name);
@@ -1008,7 +990,6 @@ fprintf (stderr, "\n");
           n_elements = args[i-1].data.d_int32;
           if (n_elements < 0 || n_elements > arraylength (array))
           {
-            convert_string (proc_name);
             g_snprintf (error_str, sizeof (error_str),
                         "STRING array (argument %d) for function %s has "
                         "length of %d but expected length of %d",
@@ -1232,7 +1213,6 @@ fprintf (stderr, "      data '%s'\n", (char *)args[i].data.d_parasite.data);
         break;
 
       default:
-        convert_string (proc_name);
         g_snprintf (error_str, sizeof (error_str),
                     "Argument %d for %s is an unknown type",
                     i+1, proc_name);

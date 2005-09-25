@@ -174,7 +174,6 @@ tiny_fu_add_script (scheme *sc, pointer a)
   pointer       adj_list;
   pointer       brush_list;
   pointer       option_list;
-  gchar        *s;
 
   /*  Check the length of a  */
   if (sc->vptr->list_length (sc, a) < 7)
@@ -190,14 +189,6 @@ tiny_fu_add_script (scheme *sc, pointer a)
   val = sc->vptr->string_value (sc->vptr->pair_car (a));
   script->script_name = g_strdup (val);
   a = sc->vptr->pair_cdr (a);
-
-  /* transform the function name into a name containing "_" for each "-".
-   * this does not hurt anybody, yet improves the life of many... ;)
-   */
-  script->pdb_name = g_strdup (val);
-  for (s = script->pdb_name; *s; s++)
-    if (*s == '-')
-      *s = '_';
 
   /*  Find the script menu_path  */
   val = sc->vptr->string_value (sc->vptr->pair_car (a));
@@ -633,32 +624,25 @@ tiny_fu_add_script (scheme *sc, pointer a)
 pointer
 tiny_fu_add_menu (scheme *sc, pointer a)
 {
-  SFScript *script;
-  SFMenu   *menu;
-  gchar    *val;
-  gchar    *s;
+  SFScript    *script;
+  SFMenu      *menu;
+  const gchar *name;
 
   /*  Check the length of a  */
   if (sc->vptr->list_length (sc, a) != 2)
     return my_err (sc, "Incorrect number of arguments for tiny-fu-menu-register");
 
   /*  Find the script PDB entry name  */
-  val = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
-  for (s = val; *s; s++)
-    if (*s == '-')
-      *s = '_';
+  name = sc->vptr->string_value (sc->vptr->pair_car (a));
   a = sc->vptr->pair_cdr (a);
 
-  script = tiny_fu_find_script (val);
+  script = tiny_fu_find_script (name);
 
   if (! script)
   {
-    g_message ("Procedure %s in tiny-fu-menu-register does not exist", val);
-    g_free(val);
+    g_message ("Procedure %s in tiny-fu-menu-register does not exist", name);
     return sc->NIL;
   }
-
-  g_free(val);
 
   /*  Create a new list of menus  */
   menu = g_new0 (SFMenu, 1);
@@ -666,12 +650,7 @@ tiny_fu_add_menu (scheme *sc, pointer a)
   menu->script = script;
 
   /*  Find the script menu path  */
-  val = sc->vptr->string_value (sc->vptr->pair_car (a));
-  menu->menu_path = g_strdup (val);
-  if (strncmp (menu->menu_path, "<Image>", 7) == 0)
-    script->image_based = TRUE;
-  else
-    script->image_based = FALSE;
+  menu->menu_path = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
 
   script_menu_list = g_list_prepend (script_menu_list, menu);
 
@@ -734,7 +713,7 @@ tiny_fu_install_script (gpointer  foo,
       if (strncmp (script->menu_path, "<None>", 6) != 0)
         menu_path = script->menu_path;
 
-      gimp_install_temp_proc (script->pdb_name,
+      gimp_install_temp_proc (script->script_name,
                               script->help,
                               "",
                               script->author,
@@ -761,7 +740,7 @@ static void
 tiny_fu_install_menu (SFMenu   *menu,
                       gpointer  foo)
 {
-  gimp_plugin_menu_register (menu->script->pdb_name, menu->menu_path);
+  gimp_plugin_menu_register (menu->script->script_name, menu->menu_path);
 
   g_free (menu->menu_path);
   g_free (menu);
@@ -960,7 +939,7 @@ tiny_fu_lookup_script (gpointer      *foo,
     {
       SFScript *script = list->data;
 
-      if (strcmp (script->pdb_name, *name) == 0)
+      if (strcmp (script->script_name, *name) == 0)
         {
           /* store the script in the name pointer and stop the traversal */
           *name = script;
@@ -972,15 +951,15 @@ tiny_fu_lookup_script (gpointer      *foo,
 }
 
 static SFScript *
-tiny_fu_find_script (const gchar *pdb_name)
+tiny_fu_find_script (const gchar *script_name)
 {
-  gconstpointer script = pdb_name;
+  gconstpointer script = script_name;
 
   g_tree_foreach (script_tree,
                   (GTraverseFunc) tiny_fu_lookup_script,
                   &script);
 
-  if (script == pdb_name)
+  if (script == script_name)
     return NULL;
 
   return (SFScript *) script;
@@ -994,9 +973,8 @@ tiny_fu_free_script (SFScript *script)
   g_return_if_fail (script != NULL);
 
   /*  Uninstall the temporary procedure for this script  */
-  gimp_uninstall_temp_proc (script->pdb_name);
+  gimp_uninstall_temp_proc (script->script_name);
 
-  g_free (script->pdb_name);
   g_free (script->script_name);
   g_free (script->menu_path);
   g_free (script->help);

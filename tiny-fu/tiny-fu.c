@@ -95,7 +95,7 @@ tiny_fu_query (void)
 
   gimp_plugin_domain_register (GETTEXT_PACKAGE, LOCALEDIR);
 
-  gimp_install_procedure ("extension_tiny_fu",
+  gimp_install_procedure ("extension-tiny-fu",
                           "A scheme interpreter for scripting GIMP operations",
                           "More help here later",
                           "Spencer Kimball & Peter Mattis",
@@ -106,7 +106,7 @@ tiny_fu_query (void)
                           GIMP_EXTENSION,
                           0, 0, NULL, NULL);
 
-  gimp_install_procedure ("plug_in_tiny_fu_console",
+  gimp_install_procedure ("plug-in-tiny-fu-console",
                           "Provides a console mode for tiny-fu development",
                           "Provides an interface which allows interactive "
                                       "scheme development.",
@@ -119,7 +119,7 @@ tiny_fu_query (void)
                           G_N_ELEMENTS (console_args), 0,
                           console_args, NULL);
 
-  gimp_install_procedure ("plug_in_tiny_fu_text_console",
+  gimp_install_procedure ("plug-in-tiny-fu-text-console",
                           "Provides a text console mode for tiny-fu "
                                       "development",
                           "Provides an interface which allows interactive "
@@ -133,7 +133,7 @@ tiny_fu_query (void)
                           G_N_ELEMENTS (textconsole_args), 0,
                           textconsole_args, NULL);
 
-  gimp_install_procedure ("plug_in_tiny_fu_server",
+  gimp_install_procedure ("plug-in-tiny-fu-server",
                           "Provides a server for remote tiny-fu operation",
                           "Provides a server for remote tiny-fu operation",
                           "Spencer Kimball & Peter Mattis",
@@ -145,7 +145,7 @@ tiny_fu_query (void)
                           G_N_ELEMENTS (server_args), 0,
                           server_args, NULL);
 
-  gimp_install_procedure ("plug_in_tiny_fu_eval",
+  gimp_install_procedure ("plug-in-tiny-fu-eval",
                           "Evaluate scheme code",
                           "Evaluate the code under the scheme interpreter "
                                       "(primarily for batch mode)",
@@ -173,7 +173,7 @@ tiny_fu_run (const gchar *name,
   /*  Determine before we allow scripts to register themselves
    *   whether this is the base, automatically installed tiny-fu extension
    */
-  if (strcmp (name, "extension_tiny_fu") == 0)
+  if (strcmp (name, "extension-tiny-fu") == 0)
     {
       /*  Setup auxillary temporary procedures for the base extension  */
       tiny_fu_extension_init ();
@@ -190,7 +190,7 @@ tiny_fu_run (const gchar *name,
   /*  Load all of the available scripts  */
   tiny_fu_load_all_scripts ();
 
-  if (strcmp (name, "extension_tiny_fu") == 0)
+  if (strcmp (name, "extension-tiny-fu") == 0)
     {
       /*
        *  The main, automatically installed tiny fu extension.  For
@@ -213,7 +213,7 @@ tiny_fu_run (const gchar *name,
       values[0].type          = GIMP_PDB_STATUS;
       values[0].data.d_status = status;
     }
-  else if (strcmp (name, "plug_in_tiny_fu_text_console") == 0)
+  else if (strcmp (name, "plug-in-tiny-fu-text-console") == 0)
     {
       /*
        *  The tiny-fu text console for interactive Scheme development
@@ -222,7 +222,7 @@ tiny_fu_run (const gchar *name,
       tiny_fu_text_console_run (name, nparams, param,
                                 nreturn_vals, return_vals);
     }
-  else if (strcmp (name, "plug_in_tiny_fu_console") == 0)
+  else if (strcmp (name, "plug-in-tiny-fu-console") == 0)
     {
       /*
        *  The tiny-fu console for interactive Scheme development
@@ -231,7 +231,7 @@ tiny_fu_run (const gchar *name,
       tiny_fu_console_run (name, nparams, param,
                            nreturn_vals, return_vals);
     }
-  else if (strcmp (name, "plug_in_tiny_fu_server") == 0)
+  else if (strcmp (name, "plug-in-tiny-fu-server") == 0)
     {
       /*
        *  The tiny-fu server for remote operation
@@ -240,7 +240,7 @@ tiny_fu_run (const gchar *name,
       tiny_fu_server_run (name, nparams, param,
                           nreturn_vals, return_vals);
     }
-  else if (strcmp (name, "plug_in_tiny_fu_eval") == 0)
+  else if (strcmp (name, "plug-in-tiny-fu-eval") == 0)
     {
       /*
        *  A non-interactive "console" (for batch mode)

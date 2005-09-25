@@ -1,3 +1,13 @@
+2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-interface.c
+	* tiny-fu/tiny-fu-scripts.c
+	* tiny-fu/tiny-fu-types.h
+	* tiny-fu/ts-wrapper.c: Removed all sorts of conversions between
+	'-' and '_' for procedure names.
+
+	* tiny-fu/tiny-fu.c: Use canonical names for tiny-fu's procedures.
+
 2005-09-24  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Re-enabled "Browse" button now that
