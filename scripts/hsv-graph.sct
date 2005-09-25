@@ -328,4 +328,4 @@
 ;;; hsv-graph.scm ends here
 
 (tiny-fu-menu-register "tiny-fu-hsv-graph"
-                       "<Image>/Colors")
+                       "<Image>/Filters/Colors")

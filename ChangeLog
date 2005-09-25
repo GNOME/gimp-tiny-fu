@@ -1,10 +1,24 @@
 2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	Updates based on changes made to Script-Fu by Akkana Peck.
+
+	* scripts/grid-system.sct: Rename "Grid" to "Divisions" to avoid
+	confusion with the existing grid plug-in; move into Render->Pattern
+	along with the other Grid plug-in.
+
+	* scripts/hsv-graph.sct: Move all color-related functions from the
+	Image and Filters menus to a new toplevel Colors menu (as discussed
+	in bug 116145).
+
+2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Updates based on changes made to Script-Fu by Michael Natterer.
+
 	* tiny-fu/tiny-fu-interface.c
 	* tiny-fu/tiny-fu-scripts.c
 	* tiny-fu/tiny-fu-types.h
 	* tiny-fu/ts-wrapper.c: Removed all sorts of conversions between
-	'-' and '_' for procedure names.
+	'-' and '_' for procedure names and arguments.
 
 	* tiny-fu/tiny-fu.c: Use canonical names for tiny-fu's procedures.
 
