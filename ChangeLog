@@ -1,5 +1,19 @@
 2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tiny-fu/tiny-fu-interface.c (script_fu_response): Bail out if the
+	action_area is insensitive. Ignores attempts to close the window
+	while the script is running. Fixes bug #308662. From a change made
+	to Script-Fu by Michael Natterer.
+
+	* scripts/hsv-graph.sct: Move it to the "Info" placeholder so it is
+	next to histogram and ccanalyze. From a change made to Script-Fu by
+	Michael Natterer.
+
+	* scripts/web-browser.sct: Changed "The GIMP Online" to just
+	"GIMP Online". Based on a change made to Script-Fu by Sven Neumann.
+
+2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* tiny-fu/tiny-fu-server.c: Use verb instead of "OK" in the
 	confirmative dialog button. From a change made to Script-Fu by
 	Sven Neumann.
