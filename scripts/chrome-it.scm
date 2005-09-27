@@ -200,7 +200,7 @@
 )
 
 (tiny-fu-register "tiny-fu-sota-chrome-it"
-    _"C_hrome-It..."
+    _"Stencil C_hrome..."
     "Use the specified [GRAY] drawable as a stencil to run the chrome effect on."
     "Spencer Kimball"
     "Spencer Kimball"
@@ -222,4 +222,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-sota-chrome-it"
-                       "<Image>/Filters/Decor/Stencil Ops")
+                       "<Image>/Filters/Decor")

@@ -59,7 +59,7 @@
 )
 
 (tiny-fu-register "tiny-fu-gradient-example"
-    _"Custom _Gradient..."
+    _"Render _Image..."
     "Create an example image of a custom gradient"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
@@ -71,4 +71,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-gradient-example"
-                       "<Toolbox>/Xtns/Tiny-Fu/Utils")
+                       "<Gradients>")

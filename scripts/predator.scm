@@ -131,4 +131,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-predator"
-                       "<Image>/Filters/Effects/Alchemy")
+                       "<Image>/Filters/Artistic")

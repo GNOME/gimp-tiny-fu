@@ -176,7 +176,7 @@
 )
 
 (tiny-fu-register "tiny-fu-carve-it"
-    _"C_arve-It..."
+    _"Stencil C_arve..."
     "Use the specified [GRAY] drawable as a stencil to carve from the specified image. The specified image must be either RGB colour or grayscale, not indexed."
     "Spencer Kimball"
     "Spencer Kimball"
@@ -189,4 +189,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-carve-it"
-                       "<Image>/Filters/Decor/Stencil Ops")
+                       "<Image>/Filters/Decor")

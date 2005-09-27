@@ -149,7 +149,7 @@
 )
 
 (tiny-fu-register "tiny-fu-font-map"
-  _"_Font Map..."
+  _"Render _Font Map..."
   "Generate a listing of fonts matching a filter"
   "Spencer Kimball"
   "Spencer Kimball"
@@ -165,4 +165,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-font-map"
-                       "<Toolbox>/Xtns/Tiny-Fu/Utils")
+                       "<Fonts>")

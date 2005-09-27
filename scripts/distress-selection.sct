@@ -92,7 +92,7 @@
 ; Register the function with the GIMP:
 
 (tiny-fu-register "tiny-fu-distress-selection"
-    _"_Distress Selection..."
+    _"_Disort..."
     "No description"
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
@@ -109,4 +109,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-distress-selection"
-                       "<Image>/Filters/Selection")
+                       "<Image>/Select/Modify")

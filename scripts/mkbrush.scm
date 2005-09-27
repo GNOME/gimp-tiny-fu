@@ -25,7 +25,9 @@
 (define (tiny-fu-make-brush-rectangular description width height spacing )
   (let* (
         (img (car (gimp-image-new width height GRAY)))
-        (drawable (car (gimp-layer-new img width height GRAY-IMAGE "MakeBrush" 100 NORMAL-MODE)))
+        (drawable (car (gimp-layer-new img
+                                       width height GRAY-IMAGE
+                                       "MakeBrush" 100 NORMAL-MODE)))
 
         ; construct variables 
 
@@ -34,8 +36,7 @@
                   (number->string width)
                   "x"
                   (number->string height)
-                  ".gbr")
-                  )
+                  ".gbr"))
         (desc (string-append description " "
                      (number->string width)
                      "x"
@@ -70,7 +71,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-rectangular"
-    _"_Rectangular..."
+    _"New Re_ctangular..."
     "Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -83,7 +84,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-rectangular"
-                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Brushes>")
 
 
 (define (tiny-fu-make-brush-rectangular-feathered description width height feathering spacing)
@@ -144,7 +145,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-rectangular-feathered"
-    _"Re_ctangular, Feathered..."
+    _"New Rec_tangular, Feathered..."
     _"Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -158,7 +159,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-rectangular-feathered"
-                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Brushes>")
 
 
 (define (tiny-fu-make-brush-elliptical description width height spacing)
@@ -209,7 +210,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-elliptical"
-    _"_Elliptical..."
+    _"New Ell_iptical..."
     "Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -222,7 +223,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-elliptical"
-                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Brushes>")
 
 
 (define (tiny-fu-make-brush-elliptical-feathered description width height feathering spacing)
@@ -281,7 +282,7 @@
 ; Register with the PDB
 
 (tiny-fu-register "tiny-fu-make-brush-elliptical-feathered"
-    _"Elli_ptical, Feathered..."
+    _"New Elli_ptical, Feathered..."
     "Makes a feathered elliptical brush of specified size"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
@@ -295,4 +296,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-make-brush-elliptical-feathered"
-                       "<Toolbox>/Xtns/Tiny-Fu/Make Brush")
+                       "<Brushes>")

@@ -47,4 +47,4 @@
 
 
 (tiny-fu-menu-register "tiny-fu-erase-rows"
-                       "<Image>/Filters/Effects/Alchemy")
+                       "<Image>/Filters/Distorts")

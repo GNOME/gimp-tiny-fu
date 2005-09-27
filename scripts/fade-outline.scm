@@ -177,7 +177,7 @@
 
 (tiny-fu-register
     "tiny-fu-fade-outline"
-    _"_Fade Outline..."
+    _"_Fade to Layer Mask..."
     "Blend the Layers outline border from one alpha value (opaque) to another (transparent) by generating a Layermask"
     "Wolfgang Hofer <hof@hotbot.com>"
     "Wolfgang Hofer"
@@ -187,7 +187,7 @@
     SF-DRAWABLE "The layer" 0
     SF-ADJUSTMENT _"Border size" '(10 1 300 1 10 0 1)
     SF-ADJUSTMENT _"Fade from %" '(100 0 100 1 10 0 0)
-    SF-ADJUSTMENT _"Fade to   %" '(0 0 100 1 10 0 0)
+    SF-ADJUSTMENT _"Fade to %" '(0 0 100 1 10 0 0)
     SF-TOGGLE _"Use growing selection" FALSE
     SF-TOGGLE _"Apply generated layermask" FALSE
     SF-TOGGLE _"Clear unselected maskarea" TRUE
