@@ -1,3 +1,19 @@
+2005-09-26  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Fixed _ to -
+	in signal name used in a call to g_signal_connect(). 
+
+	* tiny-fu/tiny-fu.c (tiny_fu_extension_init): Don't register the
+	"Make Brush" menu branch. From a change made to Script-Fu by
+	Michael Natterer.
+
+	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Set
+	"activates-default" on all entries. From changes made to
+	Script-Fu by Michael Natterer.
+
+	* tiny-fu/tiny-fu-interface.c: Removed some frames from the
+	Tiny-Fu dialogs. From changes made to Script-Fu by Sven Neumann.
+
 2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* TODO: Updated based on fact that I have caught up with CVS GIMP.

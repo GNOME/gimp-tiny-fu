@@ -261,7 +261,7 @@ tiny_fu_console_interface (void)
   gtk_widget_grab_focus (console->cc);
   gtk_widget_show (console->cc);
 
-  g_signal_connect (console->cc, "key_press_event",
+  g_signal_connect (console->cc, "key-press-event",
                     G_CALLBACK (tiny_fu_cc_key_function),
                     console);
 
