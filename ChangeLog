@@ -1,21 +1,26 @@
+2005-09-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/fade-outline.sct: Oops...it was supposed to be moved
+	to the Select menu.
+
 2005-09-26  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	Updates based on changes made to Script-Fu by Michael Natterer.
 
-	* scripts/erase-rows.scm: -> Filters/Distorts
-	* scripts/font-map.scm: -> <Fonts>
-	* scripts/gradient-example.scm: -> <Gradients>
-	* scripts/mkbrush.scm: -> <Brushes>
-	* scripts/predator.scm: -> Filters/Artistic
+	* scripts/erase-rows.sct: -> Filters/Distorts
+	* scripts/font-map.sct: -> <Fonts>
+	* scripts/gradient-example.sct: -> <Gradients>
+	* scripts/mkbrush.sct: -> <Brushes>
+	* scripts/predator.sct: -> Filters/Artistic
 
-	* scripts/carve-it.scm
-	* scripts/chrome-it.scm: renamed to "Stencil Carve"
+	* scripts/carve-it.sct
+	* scripts/chrome-it.sct: renamed to "Stencil Carve"
 	and "Stencil Chrome" and moved to Filters/Decor.
 
-	* scripts/distress-selection.scm: Renamed to "Distort..." and
+	* scripts/distress-selection.sct: Renamed to "Distort..." and
 	moved to Select/Modify.
 
-	* scripts/fade-outline.scm: Renamed to "Fade to Layer Mask..."
+	* scripts/fade-outline.sct: Renamed to "Fade to Layer Mask..."
 	and moved to the Filters/Selection menu.
 
 	* tiny-fu/tiny-fu.c: Don't register the menu branches
@@ -95,7 +100,7 @@
 2005-09-21  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/Makefile.am
-	* scripts/image-structure.scm: Removed script (see bug #307016).
+	* scripts/image-structure.sct: Removed script (see bug #307016).
 	Based on a change made to Script-Fu by Sven Neumann.
 
 2005-09-21  Kevin Cozens  <kcozens@cvs.gnome.org>
@@ -205,31 +210,31 @@
 
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
-	* scripts/alien-glow-logo.scm
-	* scripts/alien-neon-logo.scm
-	* scripts/basic1-logo.scm
-	* scripts/basic2-logo.scm
-	* scripts/blended-logo.scm
-	* scripts/bovinated-logo.scm
-	* scripts/chalk.scm
-	* scripts/chip-away.scm
-	* scripts/chrome-logo.scm
-	* scripts/comic-logo.scm
-	* scripts/coolmetal-logo.scm
-	* scripts/frosty-logo.scm
-	* scripts/glossy.scm
-	* scripts/gradient-bevel-logo.scm
-	* scripts/neon-logo.scm
-	* scripts/starburst-logo.scm
-	* scripts/starscape-logo.scm
-	* scripts/t-o-p-logo.scm
-	* scripts/textured-logo.scm: No need to set the text as name of
+	* scripts/alien-glow-logo.sct
+	* scripts/alien-neon-logo.sct
+	* scripts/basic1-logo.sct
+	* scripts/basic2-logo.sct
+	* scripts/blended-logo.sct
+	* scripts/bovinated-logo.sct
+	* scripts/chalk.sct
+	* scripts/chip-away.sct
+	* scripts/chrome-logo.sct
+	* scripts/comic-logo.sct
+	* scripts/coolmetal-logo.sct
+	* scripts/frosty-logo.sct
+	* scripts/glossy.sct
+	* scripts/gradient-bevel-logo.sct
+	* scripts/neon-logo.sct
+	* scripts/starburst-logo.sct
+	* scripts/starscape-logo.sct
+	* scripts/t-o-p-logo.sct
+	* scripts/textured-logo.sct: No need to set the text as name of
 	the text layer. The text layer is created with that name already.
 	Based on changes made to Script-Fu by Sven Neumann.
 
-	* tiny-fu/scripts/i26-gunya2.scm
-	* tiny-fu/scripts/news-text.scm
-	* tiny-fu/scripts/text-circle.scm: Added missing mnemonics based
+	* tiny-fu/scripts/i26-gunya2.sct
+	* tiny-fu/scripts/news-text.sct
+	* tiny-fu/scripts/text-circle.sct: Added missing mnemonics based
 	on a patch to Script-Fu from Michael Terry (bug #106991).
 
 2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
@@ -267,7 +272,7 @@
 
 	* configure.in: Added automake conditional TINY_FU_UNSTABLE.
 
-	* scripts/Makefile.am: Install test-sphere.scm in unstable
+	* scripts/Makefile.am: Install test-sphere.sct in unstable
 	releases only.
 
 2005-08-05  Kevin Cozens  <kcozens@cvs.gnome.org>
@@ -483,7 +488,7 @@
 
 2005-03-07  Kevin Cozens  <kcozens@cvs.gnome.org>
 
-	* scripts/perspective-shadow.scm: Changed an SF-TOGGLE in the
+	* scripts/perspective-shadow.sct: Changed an SF-TOGGLE in the
 	register block to SF-OPTION which it should have been all along.
 
 	* scripts/Makefile.am: Added reference to new script.
