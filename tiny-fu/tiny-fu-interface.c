@@ -230,6 +230,13 @@ tiny_fu_interface (SFScript *script)
 
                      NULL);
 
+  gtk_dialog_set_alternative_button_order (GTK_DIALOG (sf_interface->dialog),
+                                           GTK_RESPONSE_HELP,
+                                           RESPONSE_RESET,
+                                           GTK_RESPONSE_OK,
+                                           GTK_RESPONSE_CANCEL,
+                                           -1);
+
   g_signal_connect (dlg, "response",
                     G_CALLBACK (tiny_fu_response),
                     script);
@@ -1021,13 +1028,13 @@ tiny_fu_about (SFScript  *script)
                         G_CALLBACK (gtk_widget_destroyed),
                         &sf_interface->about_dialog);
 
-      /* the name */
       vbox = gtk_vbox_new (FALSE, 12);
       gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
       gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dialog)->vbox), vbox,
                           TRUE, TRUE, 0);
       gtk_widget_show (vbox);
 
+      /* the name */
       label = gtk_label_new (script->script_name);
       gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
       gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
