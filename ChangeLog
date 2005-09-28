@@ -1,5 +1,12 @@
 2005-09-28  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tiny-fu/tiny-fu-console.c: Updated now that
+	gimp_proc_browser_dialog_new() takes standard dialog parameters,
+	similar to gimp_dialog_new(). Based on changes made to Script-Fu
+	by Sven Neumann.
+
+2005-09-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Make dialogs
 	obey the "gtk-alternative-button-order" setting (bug #166678).
 	Based on a change to Script-Fu by Sven Neumann from a patch by
