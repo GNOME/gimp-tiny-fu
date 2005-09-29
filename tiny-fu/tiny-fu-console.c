@@ -401,8 +401,6 @@ tiny_fu_browse_callback (GtkWidget        *widget,
 
       g_object_add_weak_pointer (G_OBJECT (console->proc_browser),
                                  (gpointer) &console->proc_browser);
-      gtk_window_set_transient_for (GTK_WINDOW (console->proc_browser),
-                                    GTK_WINDOW (console->dialog));
 
       g_signal_connect (console->proc_browser, "response",
                         G_CALLBACK (tiny_fu_browse_response),
