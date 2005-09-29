@@ -1,3 +1,9 @@
+2005-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-interface.c: Made progress bars HIG compliant
+	(with italic label below). From changes made to Script-Fu by
+	Michael Natterer.
+
 2005-09-28  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Updated now that
@@ -48,8 +54,9 @@
 
 2005-09-26  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tiny-fu/tiny-fu-console.c (tiny_fu_console_interface)
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Fixed _ to -
-	in signal name used in a call to g_signal_connect(). 
+	in signal names used in a call to g_signal_connect(). 
 
 	* tiny-fu/tiny-fu.c (tiny_fu_extension_init): Don't register the
 	"Make Brush" menu branch. From a change made to Script-Fu by
