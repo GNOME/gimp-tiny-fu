@@ -45,35 +45,17 @@ tiny_fu_text_console_run (const gchar      *name,
                           GimpParam       **return_vals)
 {
   static GimpParam  values[1];
-  GimpPDBStatusType status = GIMP_PDB_SUCCESS;
-  GimpRunMode       run_mode;
 
-  run_mode = params[0].data.d_int32;
+  /*  Enable Tiny-Fu output  */
+  ts_set_output_file (stdout);
+  ts_set_verbose_level (2);
+  ts_print_welcome ();
 
-  switch (run_mode)
-    {
-    case GIMP_RUN_INTERACTIVE:
-    case GIMP_RUN_NONINTERACTIVE:  /* Always called with RUN_NONINTERACTIVE */
-      /*  Enable Tiny-Fu output  */
-      ts_set_output_file (stdout);
-      ts_set_verbose_level (2);
-      ts_print_welcome ();
-
-      /*  Run the interface  */
-      tiny_fu_text_console_interface ();
-      break;
-
-    case GIMP_RUN_WITH_LAST_VALS:
-      status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""));
-      break;
-
-    default:
-      break;
-    }
+  /*  Run the interface  */
+  tiny_fu_text_console_interface ();
 
   values[0].type          = GIMP_PDB_STATUS;
-  values[0].data.d_status = status;
+  values[0].data.d_status = GIMP_PDB_SUCCESS;
 
   *nreturn_vals = 1;
   *return_vals  = values;
