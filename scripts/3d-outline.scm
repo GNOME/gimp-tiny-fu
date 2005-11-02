@@ -66,7 +66,8 @@
 
     (gimp-selection-all img)
     (gimp-context-set-pattern text-pattern)
-    (gimp-edit-bucket-fill pattern PATTERN-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
+    (gimp-edit-bucket-fill pattern PATTERN-BUCKET-FILL
+                           NORMAL-MODE 100 0 FALSE 0 0)
     (plug-in-bump-map noninteractive img pattern layer2
                       110.0 45.0 4 0 0 0 0 TRUE FALSE 0)
 
