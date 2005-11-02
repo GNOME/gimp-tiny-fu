@@ -1,5 +1,18 @@
 2005-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	Updates based on changes made to Script-Fu by Michael Natterer.
+
+	* scripts/Makefile.am
+	* scripts/paste-as-brush.sct
+	* scripts/paste-as-pattern.sct: New scripts roughly derived from
+	select-to-brush and select-to-pattern.
+
+	* scripts/select-to-brush.sct
+	* scripts/select-to-image.sct
+	* scripts/select-to-pattern.sct: Don't register menu entries.
+
+2005-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* tiny-fu/tiny-fu-text-console.c: Removed the run-mode check.
 	From a change made to Script-Fu by Sven Neumann. (See bug #167964).
 

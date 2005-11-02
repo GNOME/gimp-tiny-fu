@@ -102,6 +102,3 @@
     SF-STRING   _"Pattern name" "My Pattern"
     SF-STRING   _"Filename"     "mypattern"
 )
-
-(tiny-fu-menu-register "tiny-fu-selection-to-pattern"
-                       "<Image>/Filters/Selection")

@@ -83,6 +83,3 @@
     SF-IMAGE "Image" 0
     SF-DRAWABLE "Drawable" 0
 )
-
-(tiny-fu-menu-register "tiny-fu-selection-to-image"
-                       "<Image>/Filters/Selection")

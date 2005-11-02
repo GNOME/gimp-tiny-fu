@@ -139,6 +139,3 @@
     SF-STRING     _"File name"   "mybrush"
     SF-ADJUSTMENT _"Spacing"     '(25 0 1000 1 1 1 0)
 )
-
-(tiny-fu-menu-register "tiny-fu-selection-to-brush"
-                       "<Image>/Filters/Selection")

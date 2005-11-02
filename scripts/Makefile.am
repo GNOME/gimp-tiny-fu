@@ -72,6 +72,8 @@ scripts =  \
     neon-logo.sct           \
     news-text.sct           \
     old-photo.sct           \
+    paste-as-brush.sct      \
+    paste-as-pattern.sct    \
     perspective-shadow.sct  \
     predator.sct            \
     pupi-button.sct         \
