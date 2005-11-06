@@ -75,7 +75,7 @@
     (gimp-selection-layer-alpha logo-layer)
     (set! fs (car (gimp-selection-float shadow-layer 0 0)))
     (gimp-edit-clear shadow-layer)
-    (gimp-drawable-transform-perspective-default fs FALSE
+    (gimp-drawable-transform-perspective-default fs 
                       (+ 5 (* 0.15 height)) (- height (* 0.15 height))
                       (+ 5 width (* 0.15 height)) (- height (* 0.15 height))
                       5 height
