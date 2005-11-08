@@ -59,9 +59,6 @@
     (gimp-edit-fill text-layer FOREGROUND-FILL)
     (gimp-layer-remove-mask text-layer MASK-APPLY)
 
-    (gimp-context-set-foreground old-fg)
-    (gimp-context-set-background old-bg)
-
     (gimp-image-undo-enable img)
     (gimp-context-pop)
     (gimp-display-new img)
