@@ -5,31 +5,37 @@
 ;; feel free to use it for whatever you like.  
 
 (define (tiny-fu-guide-new image
-			     drawable
-			     direction
-			     position)
-  (let* ((width (car (gimp-drawable-width drawable)))
-	 (height (car (gimp-drawable-height drawable))))
+			   drawable
+			   direction
+			   position)
+  (let* (
+        (width (car (gimp-image-width image)))
+	(height (car (gimp-image-height image)))
+        )
 
     (if (= direction 0) 
 	;; check position is inside the image boundaries
 	(if (< position height) (gimp-image-add-hguide image position))
-	(if (< position width) (gimp-image-add-vguide image position)))
+	(if (< position width) (gimp-image-add-vguide image position))
+    )
 
-    (gimp-displays-flush)))
+    (gimp-displays-flush)
+  )
+)
     
 (tiny-fu-register "tiny-fu-guide-new" 
-		    _"New _Guide..." 
-		    "Add a single Line Guide with the specified postion and orientation. Postion is specified in Pixels (px)."
-		    "Alan Horkan"
-		    "Alan Horkan, 2004.  Public Domain."
-		    "2004-04-02"
-		    ""
-		    SF-IMAGE      "Image"      0 
-		    SF-DRAWABLE   "Drawable"   0
-		    SF-OPTION     _"Direction" '(_"Horizontal" 
-						 _"Vertical")
-		    SF-ADJUSTMENT "Position"   '(0 0 MAX-IMAGE-SIZE 1 10 0 1))
+    _"New _Guide..." 
+    "Add a single Line Guide with the specified postion and orientation. Postion is specified in Pixels (px)."
+    "Alan Horkan"
+    "Alan Horkan, 2004.  Public Domain."
+    "2004-04-02"
+    ""
+    SF-IMAGE      "Image"      0 
+    SF-DRAWABLE   "Drawable"   0
+    SF-OPTION     _"Direction" '(_"Horizontal" 
+				 _"Vertical")
+    SF-ADJUSTMENT "Position"   '(0 0 MAX-IMAGE-SIZE 1 10 0 1)
+)
 
 (tiny-fu-menu-register "tiny-fu-guide-new"
                        "<Image>/Image/Guides")

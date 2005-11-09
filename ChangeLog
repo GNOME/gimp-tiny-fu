@@ -1,12 +1,19 @@
+2005-11-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/guides-new.sct
+	* scripts/guides-new-percent.sct: Look at the image's width/height,
+	not the drawable's. Fixes bug #320933. From changes made to
+	Script-Fu by Michael Natterer. Also minor formatting changes.
+
 2005-11-08  Carol Spears  <carol@gimp.org>
 
 	* scripts/news-text.sct: Removed some references to old-fg and old-bg
-        which are no longer in the script.
+	which are no longer in the script.
 
 2005-11-06  Carol Spears  <carol@gimp.org>
 
-	* scripts/coolmetal-logo.sct: Removed an unneeded and unwanted parameter
-        in perspective call.
+	* scripts/coolmetal-logo.sct: Removed an unneeded and unwanted
+	parameter in perspective call.
 
 2005-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
 
