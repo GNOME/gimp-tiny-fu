@@ -63,8 +63,9 @@
     (gimp-selection-all img)
 
     (if (= bg-fill TRUE)
-        (gimp-edit-bucket-fill bg-layer 2 NORMAL-MODE 100 255 FALSE 1 1)
-        (gimp-edit-fill bg-layer BACKGROUND-FILL))
+        (gimp-edit-bucket-fill bg-layer PATTERN-BUCKET-FILL NORMAL-MODE 100 255 FALSE 1 1)
+        (gimp-edit-fill bg-layer BACKGROUND-FILL)
+    )
 
     (gimp-image-add-layer img bump-layer 1)
 
@@ -73,7 +74,7 @@
     (gimp-selection-none img)
     (gimp-selection-layer-alpha logo-layer)
     (gimp-edit-fill bump-layer BACKGROUND-FILL)
-    (gimp-edit-bucket-fill logo-layer 2 NORMAL-MODE 100 255 FALSE 1 1)
+    (gimp-edit-bucket-fill logo-layer PATTERN-BUCKET-FILL NORMAL-MODE 100 255 FALSE 1 1)
     (gimp-selection-none img)
 
     (gimp-layer-set-lock-alpha bump-layer FALSE)
