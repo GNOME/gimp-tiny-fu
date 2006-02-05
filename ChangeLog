@@ -1,3 +1,21 @@
+2006-02-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/guides-new.sct
+	* scripts/guides-new-percent.sct: Look at the image's width/height,
+	not the drawable's. Fixes bug #320933. From changes made to
+	Script-Fu by Michael Natterer.
+
+	* scripts/web-browser.sct: Adds eight bookmarks to the user manual
+	(Basics, Dialogs and Docks, Drawing Simple Objects, Fileformats,
+	Photography, Preparing for the Web, Using Paths). It also adds a
+	new link to http://docs.gimp.org. From changes made to Script-Fu
+	by Roman Joost.
+
+2005-12-31  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* plug-ins/script-fu/siod-wrapper.c: s/GIMP_PDB_PATH/GIMP_PDB_VECTORS/
+	From a change made to Script-Fu by Michael Natterer.
+
 2005-12-03  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/chip-away.sct: Replaced a constant with named constant.
