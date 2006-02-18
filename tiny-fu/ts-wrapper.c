@@ -636,7 +636,7 @@ char *ret_types[] = {
   "GIMP_PDB_STRINGARRAY", "GIMP_PDB_COLOR",     "GIMP_PDB_REGION",
   "GIMP_PDB_DISPLAY",     "GIMP_PDB_IMAGE",     "GIMP_PDB_LAYER",
   "GIMP_PDB_CHANNEL",     "GIMP_PDB_DRAWABLE",  "GIMP_PDB_SELECTION",
-  "GIMP_PDB_BOUNDARY",    "GIMP_PDB_PATH",      "GIMP_PDB_PARASITE",
+  "GIMP_PDB_BOUNDARY",    "GIMP_PDB_VECTORS",      "GIMP_PDB_PARASITE",
   "GIMP_PDB_STATUS",      "GIMP_PDB_END"
 };
 
@@ -1139,12 +1139,12 @@ fprintf (stderr, "      (%d %d %d %d)\n",
           }
         break;
 
-      case GIMP_PDB_PATH:
+      case GIMP_PDB_VECTORS:
         if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
           success = FALSE;
         if (success)
           {
-            args[i].type = GIMP_PDB_PATH;
+            args[i].type = GIMP_PDB_VECTORS;
             args[i].data.d_path = sc->vptr->ivalue (sc->vptr->pair_car (a));
           }
         break;
@@ -1470,7 +1470,7 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                                  return_val);
               break;
 
-            case GIMP_PDB_PATH:
+            case GIMP_PDB_VECTORS:
               return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_path),
                                  return_val);
               break;
