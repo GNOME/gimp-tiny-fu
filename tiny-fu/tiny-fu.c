@@ -260,6 +260,9 @@ tiny_fu_extension_init (void)
     { GIMP_PDB_INT32, "run_mode", "[Interactive], non-interactive" }
   };
 
+  gimp_plugin_menu_branch_register ("<Toolbox>/Help", N_("_GIMP Online"));
+  gimp_plugin_menu_branch_register ("<Toolbox>/Help", N_("_User Manual"));
+
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Tiny-Fu"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
