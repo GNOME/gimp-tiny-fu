@@ -1,3 +1,17 @@
+2006-05-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* autogen.sh: Updated check_version() with version from GIMP. The
+	routine now properly checks major, minor, and micro version numbers.
+	Fixes bug #337586.
+
+2006-02-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/spyrogimp.sct: The entry fields for inner and outer teeth
+	were not supposed to have decimal points. Fixes bug #331584.
+
+	* scripts/script-fu-compat.init: Redefined trunc to return an
+	integer as stated in the SIOD documentation.
+
 2005-11-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/coolmetal-logo.sct: Removed an extra parameter in
