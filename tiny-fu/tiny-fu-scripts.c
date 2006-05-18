@@ -612,10 +612,10 @@ tiny_fu_add_script (scheme *sc, pointer a)
   script->args = args;
 
   {
-    gchar *key  = script->menu_path;
-    GList *list = g_tree_lookup (script_tree, key);
+    const gchar *key  = script->menu_path;
+    GList       *list = g_tree_lookup (script_tree, key);
 
-    g_tree_insert (script_tree, key, g_list_append (list, script));
+    g_tree_insert (script_tree, (gpointer) key, g_list_append (list, script));
   }
 
   return sc->NIL;
@@ -1074,8 +1074,10 @@ tiny_fu_menu_compare (gconstpointer a,
 
       if (retval == 0 &&
           menu_a->script->menu_path && menu_b->script->menu_path)
-        retval = g_utf8_collate (gettext (menu_a->script->menu_path),
-                                 gettext (menu_b->script->menu_path));
+        {
+          retval = g_utf8_collate (gettext (menu_a->script->menu_path),
+                                   gettext (menu_b->script->menu_path));
+        }
     }
 
   return retval;
