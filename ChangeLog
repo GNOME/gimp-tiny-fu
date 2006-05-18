@@ -1,5 +1,13 @@
 2006-05-18  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tinyscheme/CHANGES
+	* tinyscheme/scheme.c
+	* tinyscheme/scheme.h: Updated to version 1.37 of TinyScheme. Adds
+	'reserve_cells' to TinyScheme interface, moves the comment handling
+	which fixes an obscure bug, and a patch for the allocator.
+
+2006-05-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	Based on changes made to Script-Fu by Sven Neumann.
 
 	* plug-ins/script-fu/script-fu.c: removed empty quit() method.
