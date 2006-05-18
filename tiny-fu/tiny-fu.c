@@ -35,7 +35,6 @@
 
 /* Declare local functions. */
 
-static void      tiny_fu_quit           (void);
 static void      tiny_fu_query          (void);
 static void      tiny_fu_run            (const gchar      *name,
                                          gint              nparams,
@@ -50,43 +49,38 @@ static void      tiny_fu_refresh_proc   (const gchar      *name,
                                          GimpParam       **return_vals);
 
 
-GimpPlugInInfo PLUG_IN_INFO =
+const GimpPlugInInfo PLUG_IN_INFO =
 {
   NULL,                /* init_proc  */
-  tiny_fu_quit,        /* quit_proc  */
+  NULL,                /* quit_proc  */
   tiny_fu_query,       /* query_proc */
   tiny_fu_run          /* run_proc   */
 };
 
 
-
 MAIN ()
 
-static void
-tiny_fu_quit (void)
-{
-}
 
 static void
 tiny_fu_query (void)
 {
-  static GimpParamDef console_args[] =
+  static const GimpParamDef console_args[] =
   {
     { GIMP_PDB_INT32,  "run_mode", "Interactive, [non-interactive]" }
   };
 
-  static GimpParamDef textconsole_args[] =
+  static const GimpParamDef textconsole_args[] =
   {
     { GIMP_PDB_INT32,  "run_mode", "Interactive, [non-interactive]" }
   };
 
-  static GimpParamDef eval_args[] =
+  static const GimpParamDef eval_args[] =
   {
     { GIMP_PDB_INT32,  "run_mode", "[Interactive], non-interactive" },
     { GIMP_PDB_STRING, "code",     "The code to evaluate" }
   };
 
-  static GimpParamDef server_args[] =
+  static const GimpParamDef server_args[] =
   {
     { GIMP_PDB_INT32,  "run_mode", "[Interactive], non-interactive" },
     { GIMP_PDB_INT32,  "port",     "The port on which to listen for requests" },
@@ -193,25 +187,24 @@ tiny_fu_run (const gchar *name,
   if (strcmp (name, "extension-tiny-fu") == 0)
     {
       /*
-       *  The main, automatically installed tiny fu extension.  For
-       *  things like logos and effects that are runnable from GIMP
-       *  menus.
+       *  The main tiny-fu extension.
        */
 
       static GimpParam  values[1];
-      GimpPDBStatusType status = GIMP_PDB_SUCCESS;
 
       /*  Acknowledge that the extension is properly initialized  */
       gimp_extension_ack ();
 
+      /*  Go into an endless loop  */
       while (TRUE)
         gimp_extension_process (0);
 
+      /*  Set return values; pointless because we never get out of the loop  */
       *nreturn_vals = 1;
       *return_vals  = values;
 
       values[0].type          = GIMP_PDB_STATUS;
-      values[0].data.d_status = status;
+      values[0].data.d_status = GIMP_PDB_SUCCESS;
     }
   else if (strcmp (name, "plug-in-tiny-fu-text-console") == 0)
     {
@@ -255,7 +248,7 @@ tiny_fu_run (const gchar *name,
 static void
 tiny_fu_extension_init (void)
 {
-  static GimpParamDef args[] =
+  static const GimpParamDef args[] =
   {
     { GIMP_PDB_INT32, "run_mode", "[Interactive], non-interactive" }
   };
