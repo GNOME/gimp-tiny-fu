@@ -217,7 +217,7 @@ ts_print_welcome (void)
 {
   if (ts_verbose_level >= 2)
   {
-     fprintf (ts_output, "Welcome to TinyScheme, Version 1.35\n");
+     fprintf (ts_output, "Welcome to TinyScheme, Version 1.37\n");
      fprintf (ts_output, "Copyright (c) Dimitrios Souflis\n");
   }
 }
@@ -1603,6 +1603,6 @@ tiny_fu_quit_call (scheme *sc, pointer a)
   tiny_fu_server_quit ();
 
   scheme_deinit (sc);
-                                                                                
+
   return sc->NIL;
 }
