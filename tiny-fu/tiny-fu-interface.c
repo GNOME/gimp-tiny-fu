@@ -77,7 +77,7 @@ static void   tiny_fu_ok                  (SFScript         *script);
 static void   tiny_fu_reset               (SFScript         *script);
 static void   tiny_fu_about               (SFScript         *script);
 
-static void   tiny_fu_file_entry_callback (GtkWidget        *widget,
+static void   tiny_fu_file_callback       (GtkWidget        *widget,
                                            SFFilename       *file);
 static void   tiny_fu_combo_callback      (GtkWidget        *widget,
                                            SFOption         *option);
@@ -272,7 +272,7 @@ tiny_fu_interface (SFScript *script)
       gfloat     label_yalign = 0.5;
       gint      *ID_ptr       = NULL;
       gint       row          = i;
-      gboolean   left_align     = FALSE;
+      gboolean   left_align   = FALSE;
 
       if (script->image_based)
         row -= 2;
@@ -429,19 +429,18 @@ tiny_fu_interface (SFScript *script)
         case SF_FILENAME:
         case SF_DIRNAME:
           if (script->arg_types[i] == SF_FILENAME)
-            widget = gimp_file_entry_new (_("Tiny-Fu File Selection"),
-                                          script->arg_values[i].sfa_file.filename,
-                                          FALSE, TRUE);
+            widget = gtk_file_chooser_button_new (_("Tiny-Fu File Selection"),
+                                                  GTK_FILE_CHOOSER_ACTION_OPEN);
+
           else
-            widget = gimp_file_entry_new (_("Tiny-Fu Folder Selection"),
-                                          script->arg_values[i].sfa_file.filename,
-                                          TRUE, TRUE);
-          gtk_entry_set_activates_default (GTK_ENTRY (GIMP_FILE_ENTRY (widget)->entry), TRUE);
+            widget = gtk_file_chooser_button_new (_("Tiny-Fu Folder Selection"),
+                                                  GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
+          if (script->arg_values[i].sfa_file.filename)
+            gtk_file_chooser_set_filename (GTK_FILE_CHOOSER (widget),
+                                           script->arg_values[i].sfa_file.filename);
 
-          script->arg_values[i].sfa_file.file_entry = widget;
-
-          g_signal_connect (widget, "filename-changed",
-                            G_CALLBACK (tiny_fu_file_entry_callback),
+          g_signal_connect (widget, "selection-changed",
+                            G_CALLBACK (tiny_fu_file_callback),
                             &script->arg_values[i].sfa_file);
           break;
 
@@ -508,7 +507,7 @@ tiny_fu_interface (SFScript *script)
 
         case SF_ENUM:
           widget = gimp_enum_combo_box_new (g_type_from_name (script->arg_defaults[i].sfa_enum.type_name));
- 
+
           gimp_int_combo_box_set_active (GIMP_INT_COMBO_BOX (widget),
                                          script->arg_values[i].sfa_enum.history);
 
@@ -628,26 +627,25 @@ tiny_fu_interface_quit (SFScript *script)
 }
 
 static void
-tiny_fu_file_entry_callback (GtkWidget  *widget,
-                             SFFilename *file)
+tiny_fu_file_callback (GtkWidget  *widget,
+                       SFFilename *file)
 {
   if (file->filename)
     g_free (file->filename);
 
-  file->filename =
-    gimp_file_entry_get_filename (GIMP_FILE_ENTRY(file->file_entry));
+  file->filename = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (widget));
 }
 
 static void
 tiny_fu_combo_callback (GtkWidget *widget,
-                          SFOption  *option)
+                        SFOption  *option)
 {
   option->history = gtk_combo_box_get_active (GTK_COMBO_BOX (widget));
 }
 
 static void
 tiny_fu_string_update (gchar       **dest,
-                         const gchar  *src)
+                       const gchar  *src)
 {
   if (*dest)
     g_free (*dest);
@@ -669,10 +667,10 @@ tiny_fu_pattern_callback (const gchar  *name,
 
 static void
 tiny_fu_gradient_callback (const gchar   *name,
-                             gint           width,
-                             const gdouble *mask_data,
-                             gboolean       closing,
-                             gpointer       data)
+                           gint           width,
+                           const gdouble *mask_data,
+                           gboolean       closing,
+                           gpointer       data)
 {
   tiny_fu_string_update (data, name);
 }
@@ -695,14 +693,14 @@ tiny_fu_palette_callback (const gchar *name,
 
 static void
 tiny_fu_brush_callback (const gchar          *name,
-                          gdouble               opacity,
-                          gint                  spacing,
-                          GimpLayerModeEffects  paint_mode,
-                          gint                  width,
-                          gint                  height,
-                          const guchar         *mask_data,
-                          gboolean              closing,
-                          gpointer              data)
+                        gdouble               opacity,
+                        gint                  spacing,
+                        GimpLayerModeEffects  paint_mode,
+                        gint                  width,
+                        gint                  height,
+                        const guchar         *mask_data,
+                        gboolean              closing,
+                        gpointer              data)
 {
   SFBrush *brush = data;
 
@@ -861,7 +859,7 @@ tiny_fu_ok (SFScript *script)
         case SF_BRUSH:
           g_ascii_dtostr (buffer, sizeof (buffer),
                           arg_value->sfa_brush.opacity);
-                                                                              
+
           g_string_append_printf (s, "'(\"%s\" %s %d %d)",
                                   arg_value->sfa_brush.name,
                                   buffer,
@@ -931,7 +929,7 @@ tiny_fu_reset (SFScript *script)
             g_free (script->arg_values[i].sfa_value);
             script->arg_values[i].sfa_value =
               g_strdup (script->arg_defaults[i].sfa_value);
-            
+
             view = gtk_bin_get_child (GTK_BIN (widget));
             buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (view));
 
@@ -947,9 +945,8 @@ tiny_fu_reset (SFScript *script)
 
         case SF_FILENAME:
         case SF_DIRNAME:
-          gimp_file_entry_set_filename
-            (GIMP_FILE_ENTRY (script->arg_values[i].sfa_file.file_entry),
-             script->arg_defaults[i].sfa_file.filename);
+          gtk_file_chooser_set_filename (GTK_FILE_CHOOSER (widget),
+                                         script->arg_defaults[i].sfa_file.filename);
           break;
 
         case SF_FONT:
@@ -984,6 +981,7 @@ tiny_fu_reset (SFScript *script)
         case SF_OPTION:
           gtk_combo_box_set_active (GTK_COMBO_BOX (widget),
                                     script->arg_defaults[i].sfa_option.history);
+          break;
 
         case SF_ENUM:
           gimp_int_combo_box_set_active (GIMP_INT_COMBO_BOX (widget),
