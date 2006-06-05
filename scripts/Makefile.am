@@ -5,8 +5,6 @@ SUBDIRS = images
 scriptdatadir = $(GIMP_DATADIR)/scripts
 
 scriptdata_DATA =  \
-    tiny-fu.init           \
-    script-fu-compat.init  \
     3d-outline.sct         \
     3dTruchet.sct          \
     add-bevel.sct          \
@@ -109,4 +107,7 @@ scriptdata_DATA =  \
     web-browser.sct         \
     xach-effect.sct
  
-EXTRA_DIST = $(scriptdata_DATA)
+EXTRA_DIST = \
+    tiny-fu.init           \
+    script-fu-compat.init  \
+    $(scriptdata_DATA)
