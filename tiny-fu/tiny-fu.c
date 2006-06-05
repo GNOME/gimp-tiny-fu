@@ -350,7 +350,7 @@ tiny_fu_refresh_proc (const gchar      *name,
   else
     {
       /*  Reload all of the available scripts  */
-      tiny_fu_find_scripts ();
+      tiny_fu_load_all_scripts ();
     }
 
   *nreturn_vals = 1;
