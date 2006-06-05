@@ -1,3 +1,17 @@
+2006-06-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu.c
+	* tiny-fu/tiny-fu-interface.c
+	* tiny-fu/tiny-fu-interface.h: Display a message if user tries to use
+	"Refresh Scripts" menu entry when a Tiny-Fu script has already opened
+	a dialog box. Fixes bug #330981.
+
+	* tiny-fu/tiny-fu.c: Moved the language specific tools
+	(e.g. Refresh, Console) into Xtns->Tiny-Fu.
+
+	* tiny-fu/ts-wrapper.c (init_procedures): The gimp-proc-db-call
+	symbol was not being marked as immutable.
+
 2006-06-02  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Forgot to update TinyScheme version number.

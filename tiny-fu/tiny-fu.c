@@ -21,11 +21,15 @@
 #include <string.h>
 
 #include <libgimp/gimp.h>
+#include <libgimp/gimpui.h>
 
 #include "tinyscheme/scheme.h"
 
+#include "tiny-fu-types.h"
+
 #include "ts-wrapper.h"
 #include "tiny-fu-console.h"
+#include "tiny-fu-interface.h"
 #include "tiny-fu-scripts.h"
 #include "tiny-fu-server.h"
 #include "tiny-fu-text-console.h"
@@ -107,11 +111,14 @@ tiny_fu_query (void)
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
-                          N_("<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"),
+                          N_("Tiny-Fu _Console"),
                           NULL,
                           GIMP_PLUGIN,
                           G_N_ELEMENTS (console_args), 0,
                           console_args, NULL);
+
+  gimp_plugin_menu_register ("plug-in-tiny-fu-console",
+                             N_("<Toolbox>/Xtns/Languages/Tiny-Fu"));
 
   gimp_install_procedure ("plug-in-tiny-fu-text-console",
                           "Provides a text console mode for tiny-fu "
@@ -133,11 +140,14 @@ tiny_fu_query (void)
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
-                          N_("<Toolbox>/Xtns/Tiny-Fu/_Start Server..."),
+                          N_("_Start Server..."),
                           NULL,
                           GIMP_PLUGIN,
                           G_N_ELEMENTS (server_args), 0,
                           server_args, NULL);
+
+  gimp_plugin_menu_register ("plug-in-tiny-fu-server",
+                             N_("<Toolbox>/Xtns/Languages/Tiny-Fu"));
 
   gimp_install_procedure ("plug-in-tiny-fu-eval",
                           "Evaluate scheme code",
@@ -256,7 +266,7 @@ tiny_fu_extension_init (void)
   gimp_plugin_menu_branch_register ("<Toolbox>/Help", N_("_GIMP Online"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Help", N_("_User Manual"));
 
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages",
                                     N_("_Tiny-Fu"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
                                     N_("_Buttons"));
@@ -266,7 +276,7 @@ tiny_fu_extension_init (void)
                                     N_("_Misc"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
                                     N_("_Patterns"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages/Tiny-Fu",
                                     N_("_Test"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
                                     N_("_Utils"));
@@ -310,12 +320,16 @@ tiny_fu_extension_init (void)
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
-                          N_("<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"),
+                          N_("_Refresh Scripts"),
                           NULL,
                           GIMP_TEMPORARY,
                           G_N_ELEMENTS (args), 0,
                           args, NULL,
                           tiny_fu_refresh_proc);
+
+  gimp_plugin_menu_register ("tiny_fu_refresh",
+                             N_("<Toolbox>/Xtns/Languages/Tiny-Fu"));
+
 }
 
 static void
@@ -328,8 +342,16 @@ tiny_fu_refresh_proc (const gchar      *name,
   static GimpParam  values[1];
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;
 
-  /*  Reload all of the available scripts  */
-  tiny_fu_load_all_scripts ();
+  if (tiny_fu_interface_is_dialog_open ())
+    {
+      g_message ( _("When a Tiny-Fu dialog box is open you "
+                    "can not use \"Refresh Scripts\".") );
+    }
+  else
+    {
+      /*  Reload all of the available scripts  */
+      tiny_fu_find_scripts ();
+    }
 
   *nreturn_vals = 1;
   *return_vals  = values;

@@ -122,6 +122,12 @@ static SFInterface *sf_interface = NULL;  /*  there can only be at most one
  *  Function definitions
  */
 
+gboolean
+tiny_fu_interface_is_dialog_open (void)
+{
+  return (sf_interface != NULL);
+}
+
 void
 tiny_fu_interface_report_cc (gchar *command)
 {

@@ -524,6 +524,7 @@ init_procedures (void)
   symbol = sc.vptr->mk_symbol (&sc, "gimp-proc-db-call");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                   sc.vptr->mk_foreign_func (&sc, marshall_proc_db_call));
+  sc.vptr->setimmutable(symbol);
 
   gimp_procedural_db_query (".*", ".*", ".*", ".*", ".*", ".*", ".*",
                             &num_procs, &proc_list);
