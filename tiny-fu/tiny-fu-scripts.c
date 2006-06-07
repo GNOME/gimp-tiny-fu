@@ -66,8 +66,7 @@ static void       tiny_fu_load_script   (const GimpDatafileData *file_data,
 static gboolean   tiny_fu_install_script      (gpointer          foo,
                                                GList            *scripts,
                                                gpointer          bar);
-static void       tiny_fu_install_menu        (SFMenu           *menu,
-                                               gpointer          foo);
+static void       tiny_fu_install_menu        (SFMenu           *menu);
 static gboolean   tiny_fu_remove_script       (gpointer          foo,
                                                GList            *scripts,
                                                gpointer          bar);
@@ -693,20 +692,20 @@ tiny_fu_load_script (const GimpDatafileData *file_data,
 }
 
 /*
- *  The following function is a GTraverseFunction.  Please
- *  note that it frees the script->args structure.  --Sven
+ *  The following function is a GTraverseFunction.
+ *  Please note that it frees the script->args structure.
  */
 static gboolean
-tiny_fu_install_script (gpointer  foo,
+tiny_fu_install_script (gpointer  foo G_GNUC_UNUSED,
                         GList    *scripts,
-                        gpointer  bar)
+                        gpointer  bar G_GNUC_UNUSED)
 {
   GList *list;
 
   for (list = scripts; list; list = g_list_next (list))
     {
-      SFScript *script    = list->data;
-      gchar    *menu_path = NULL;
+      SFScript    *script    = list->data;
+      const gchar *menu_path = NULL;
 
       /* Allow scripts with no menus */
       if (strncmp (script->menu_path, "<None>", 6) != 0)
@@ -732,12 +731,8 @@ tiny_fu_install_script (gpointer  foo,
   return FALSE;
 }
 
-/*
- *  The following function is a GFunc.
- */
 static void
-tiny_fu_install_menu (SFMenu   *menu,
-                      gpointer  foo)
+tiny_fu_install_menu (SFMenu *menu)
 {
   gimp_plugin_menu_register (menu->script->script_name, menu->menu_path);
 
@@ -749,9 +744,9 @@ tiny_fu_install_menu (SFMenu   *menu,
  *  The following function is a GTraverseFunction.
  */
 static gboolean
-tiny_fu_remove_script (gpointer  foo,
+tiny_fu_remove_script (gpointer  foo G_GNUC_UNUSED,
                        GList    *scripts,
-                       gpointer  bar)
+                       gpointer  bar G_GNUC_UNUSED)
 {
   GList *list;
 
@@ -779,7 +774,6 @@ tiny_fu_script_proc (const gchar     *name,
   GimpRunMode        run_mode;
   SFScript          *script;
   gint               min_args;
-  gchar             *escaped;
 
   run_mode = params[0].data.d_int32;
 
@@ -872,9 +866,12 @@ tiny_fu_script_proc (const gchar     *name,
                     case SF_TEXT:
                     case SF_FILENAME:
                     case SF_DIRNAME:
-                      escaped = g_strescape (param->data.d_string, NULL);
-                      g_string_append_printf (s, "\"%s\"", escaped);
-                      g_free (escaped);
+                      {
+                        gchar *tmp = g_strescape (param->data.d_string, NULL);
+
+                        g_string_append_printf (s, "\"%s\"", tmp);
+                        g_free (tmp);
+                      }
                       break;
 
                     case SF_ADJUSTMENT:
@@ -928,7 +925,7 @@ tiny_fu_script_proc (const gchar     *name,
 
 /* this is a GTraverseFunction */
 static gboolean
-tiny_fu_lookup_script (gpointer      *foo,
+tiny_fu_lookup_script (gpointer      *foo G_GNUC_UNUSED,
                        GList         *scripts,
                        gconstpointer *name)
 {
