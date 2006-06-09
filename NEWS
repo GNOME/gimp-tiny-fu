@@ -7,6 +7,31 @@ be released as version 1.2 of Tiny-Fu.
 
 
 
+Overview of Changes in Tiny-Fu 1.0.2
+====================================
+
+- Updated TinyScheme interpreter to the 1.37 version.
+
+- Updates to the script files
+
+    * scripts/script-fu-compat.init: Fixed the fmod definition. This allows
+    the spyrogimp script to run properly. Redefined trunc to return an
+    integer as stated in the SIOD documentation.
+
+- Updates and fixes to two scripts
+
+    * scripts/spyrogimp.sct: The entry fields for number of teeth are now
+    integers. Fixes bug #331584. Changed defaults for number of teeth.
+    Made tiny-fu-spyrogimp-internal a private procedure.
+
+    * scripts/coolmetal-logo.sct: Removed extra parameter in perspective call.
+
+
+Contributors:
+
+   Kevin Cozens, and Carol Spears.
+
+
 
 Overview of Changes in Tiny-Fu 1.0.1
 ====================================
@@ -30,13 +55,13 @@ Overview of Changes in Tiny-Fu 1.0.0
 
 - Updates and fixes to various scripts
 
-	* scripts/text-circle.sct: Letters are now placed properly for both
-	positive and negative fill angles. Last(?) fix for bug #144588.
+    * scripts/text-circle.sct: Letters are now placed properly for both
+    positive and negative fill angles. Last(?) fix for bug #144588.
 
-	* scripts/font-map.sct: Updated to fix problems related to change in
-	handling of string arrays (see bug #168290). Fixes bug #308681.
+    * scripts/font-map.sct: Updated to fix problems related to change in
+    handling of string arrays (see bug #168290). Fixes bug #308681.
 
-	* scripts/coffee.sct: Fixed "alot" in a string to read "a lot".
+    * scripts/coffee.sct: Fixed "alot" in a string to read "a lot".
 
 
 Contributors:
@@ -116,20 +141,20 @@ Overview of Changes in Tiny-Fu 0.9.7
 
 - Updates and fixes to various scripts
 
-	* Removed the asc2img.sct script as it is supposedly broken
-	beyond repair and the functionality is in the text tool itself.
+    * Removed the asc2img.sct script as it is supposedly broken
+    beyond repair and the functionality is in the text tool itself.
 
-	* scripts/circuit.sct: Don't try to desaturate a grayscale layer.
-	From a fix in Script-Fu by Bill Skaggs.  Fixes bug #161470.
+    * scripts/circuit.sct: Don't try to desaturate a grayscale layer.
+    From a fix in Script-Fu by Bill Skaggs.  Fixes bug #161470.
 
-	* scripts/copy-visible.sct: Apply the layer mask when copying a
-	single layer with a layer mask. Fixes bug #138662. Deprecated since
-	feature added to core.
+    * scripts/copy-visible.sct: Apply the layer mask when copying a
+    single layer with a layer mask. Fixes bug #138662. Deprecated since
+    feature added to core.
 
-	* scripts/frosty-logo.sct: made sure the shadow is given enough space
-	and then truncated instead of translated to the center of the image,
-	thus preventing the display of shadows with a completely horizontal or
-	vertical edge. Fixes bug #132145.
+    * scripts/frosty-logo.sct: made sure the shadow is given enough space
+    and then truncated instead of translated to the center of the image,
+    thus preventing the display of shadows with a completely horizontal or
+    vertical edge. Fixes bug #132145.
 
     * Other minor script changes.
 

@@ -1,11 +1,3 @@
-Replacing Script-Fu with Tiny-Fu:
-- Move the Procedure Browser code to libgimpui.
-- Pull Script-Fu out of the GIMP source tree.
-- Update Script-Fu to build as a standalone plug-in
-  Use Tiny-Fu as a template for this
-- Update Tiny-Fu to use the Script-Fu namespace.
-
-
 Bugs:
 - Script doesn't abort when encountering an uncaught script error.
   Found problem in fire-logo when calling gimp-layer-resize-to-image-size
@@ -27,19 +19,6 @@ Compatability errors with Script-Fu:
   is no matching compatability define in Tiny-Fu.
 
 
-ToDo (for CVS GIMP after branching Tiny-Fu):
-- Add test scripts for server mode to CVS
-- Add SF-ENUM parameter type
-- Put the gimp-text-wrapper.sct stuff in one of the .init routines??
-  Or should the routines be deleted?
-- Re-enable Browse button in Console mode.
-  To enable the Browse buttin in Tiny-Fu means I need to link in the
-  libgimpprocbrowser.a file but it has strings in it which mean I need access
-  to two of the source files so any strings marked for translation will be
-  included in the tiny-fu .po files.
-- Change Tiny-Fu from an extension to a regular plug-in.
-
-
 ToDo:
 - Finish updating the list of tests for plug-ins in pdb-test.sct
 - Do the re and ftx extensions need to be updated for UTF-8?
@@ -48,7 +27,6 @@ ToDo:
 - Send e-mail about Tiny-Fu, its status, and how it compares to Script-Fu.
 - Modify script which updates scripts from GIMP 2.0 to 2.2 so that it reads
   an entire script in one go rather than line by line before modifying it.
-- Get spyrogimp.sct working.
 - Remove conversion of / to \\ in script-fu-scripts since it should
   be handled by other means already?? Either that or it should use
   the #define G_DIR_SEPARATOR
@@ -63,10 +41,10 @@ ToDo:
   I added an item to the register list in test-sphere but not to the define
   statement and it didn't catch the discrepancy.
 - Create some demonstration scripts using the tsx (and re) extensions
-	o Create thumbnails
-	o Web gallery
-		thumbnails + html pages to show them and link to the originals images
-	o Create a contact sheet (DONE)
+    o Create thumbnails
+    o Web gallery
+        thumbnails + html pages to show them and link to the originals images
+    o Create a contact sheet (DONE)
 
 - Dynamically allocate the number of data cell segments on an as needed basis.
   Need to modify alloc_cellseg()
