@@ -313,18 +313,30 @@ tiny_fu_add_script (scheme *sc, pointer a)
                   break;
 
                 case SF_COLOR:
-                  if (!(sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
-                                sc->vptr->list_length(sc, sc->vptr->pair_car (a)) == 3))
-                     return my_err (sc, "tiny-fu-register: color defaults must be a list of 3 integers");
+                  if (sc->vptr->is_string (sc->vptr->pair_car (a)))
+                    {
+                      if (! gimp_rgb_parse_css (&script->arg_defaults[i].sfa_color,
+                                                get_c_string (car (a)), -1))
+                        return my_err ("tiny-fu-register: invalid default color name", NIL);
+                      gimp_rgb_set_alpha (&script->arg_defaults[i].sfa_color,
+                                          1.0);
+                    }
+                  else if (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
+                           sc->vptr->list_length(sc, sc->vptr->pair_car (a)) == 3)
+                    {
+                      color_list = sc->vptr->pair_car (a);
+                      r = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
+                      color_list = sc->vptr->pair_cdr (color_list);
+                      g = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
+                      color_list = sc->vptr->pair_cdr (color_list);
+                      b = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
 
-                  color_list = sc->vptr->pair_car (a);
-                  r = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
-                  color_list = sc->vptr->pair_cdr (color_list);
-                  g = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
-                  color_list = sc->vptr->pair_cdr (color_list);
-                  b = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
-
-                  gimp_rgb_set_uchar (&script->arg_defaults[i].sfa_color, r, g, b);
+                      gimp_rgb_set_uchar (&script->arg_defaults[i].sfa_color, r, g, b);
+                    }
+                  else
+                    {
+                      return my_err (sc, "tiny-fu-register: color defaults must be a list of 3 integers or a color name");
+                    }
 
                   script->arg_values[i].sfa_color = script->arg_defaults[i].sfa_color;
 

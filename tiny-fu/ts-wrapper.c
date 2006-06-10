@@ -1016,10 +1016,21 @@ fprintf (stderr, "\n");
         break;
 
       case GIMP_PDB_COLOR:
-        if (! (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
-          sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 3))
-          success = FALSE;
-        if (success)
+        if (sc->vptr->is_string (sc, sc->vptr->pair_car (a)))
+          {
+            if (! gimp_rgb_parse_css (&args[i].data.d_color,
+                                      sc->vptr->string_value (sc->vptr->pair_car (a)),
+                                      -1))
+              success = FALSE;
+
+            gimp_rgb_set_alpha (&args[i].data.d_color, 1.0);
+#if DEBUG_MARSHALL
+fprintf (stderr, "      (%s)\n",
+                 sc->vptr->string_value (sc->vptr->pair_car (a)));
+#endif
+          }
+        else if (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
+                 sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 3)
           {
             pointer color_list;
             guchar  r, g, b;
@@ -1036,6 +1047,10 @@ fprintf (stderr, "\n");
 #if DEBUG_MARSHALL
 fprintf (stderr, "      (%d %d %d)\n", r, g, b);
 #endif
+          }
+        else
+          {
+            success = FALSE;
           }
         break;
 

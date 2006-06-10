@@ -1,5 +1,5 @@
-; This is a slightly modified copy of the sphere script to show and test
-; the possibilities of the new Tiny-Fu API extensions.
+; This is a a test script to show and test the possibilities of the
+; Tiny-Fu parameter API.
 ;
 ; ----------------------------------------------------------------------
 ; SF-ADJUSTMENT
@@ -8,9 +8,20 @@
 ; In interactive mode it creates an adjustment widget in the dialog.
 ;
 ; Usage:
-; SF-ADJUSTMENT "label" '(value, lower, upper, step_inc, page_inc, digits, type)
+; SF-ADJUSTMENT "label" '(value lower upper step_inc page_inc digits type)
 ;
 ; type is one of: SF-SLIDER(0), SF-SPINNER(1)
+;
+; ----------------------------------------------------------------------
+; SF-COLOR
+; creates a color button in the dialog. It accepts either a list of three
+; values for the red, green and blue components or a color name in CSS
+; notatation
+;
+; Usage:
+; SF-COLOR "label" '(red green blue)
+; SF-COLOR "label" "color"
+;
 ; ----------------------------------------------------------------------
 ; SF-FONT
 ; creates a font-selection widget in the dialog. It returns a fontname as
@@ -28,6 +39,7 @@
 ;
 ; Usage:
 ; SF-FONT "label" "fontname"
+;
 ; ----------------------------------------------------------------------
 ; SF-BRUSH
 ; is only useful in interactive mode. It will create a widget in the control
@@ -49,6 +61,7 @@
 ; paramater would be '("Circle (03)" 1.0 44 0). BTW the widget used
 ; is generally available in the libgimpui library for any plugin that
 ; wishes to select a brush.
+;
 ; ----------------------------------------------------------------------
 ; SF-PATTERN
 ; Only useful in interactive mode. It will create a widget in the control
@@ -62,6 +75,7 @@
 ; The value returned when the script is invoked is a string containing the
 ; pattern name. If the above selection was not altered the string would
 ; contain "Maple Leaves"
+;
 ; ----------------------------------------------------------------------
 ; SF-GRADIENT
 ; Only useful in interactive mode. It will create a widget in the control
@@ -74,6 +88,7 @@
 ; The value returned when the script is invoked is a string containing the
 ; gradient name. If the above selection was not altered the string would
 ; contain "Deep Sea"
+;
 ; ----------------------------------------------------------------------
 ; SF-PALETTE
 ; Only useful in interactive mode. It will create a widget in the control
@@ -86,6 +101,7 @@
 ; The value returned when the script is invoked is a string containing the
 ; palette name. If the above selection was not altered the string would
 ; contain "Named Colors"
+;
 ; ----------------------------------------------------------------------
 ; SF-FILENAME
 ; Only useful in interactive mode. It will create a widget in the control
@@ -98,6 +114,7 @@
 ;
 ; The value returned when the script is invoked is a string containing the
 ; filename.
+;
 ; ----------------------------------------------------------------------
 ; SF-DIRNAME
 ; Only useful in interactive mode. Very similar to SF-FILENAME, but the
@@ -119,6 +136,7 @@
 ;
 ; The value returned when the script is invoked is the number of the
 ; chosen option, where the option first is counted as 0.
+;
 ; ----------------------------------------------------------------------
 ; SF-ENUM
 ; Only useful in interactive mode. It will create a widget in the control
@@ -132,8 +150,8 @@
 ;
 ; The value returned when the script is invoked corresponds to chosen
 ; enum value.
+;
 ; ----------------------------------------------------------------------
-
 
 
 (define (tiny-fu-test-sphere radius
@@ -243,17 +261,17 @@
 )
 
 (tiny-fu-register "tiny-fu-test-sphere"
-    _"_Sphere..."
+    _"_Sphere"
     "Simple script to test and show the usage of the new Script-Fu API extensions."
     "Spencer Kimball, Sven Neumann"
     "Spencer Kimball"
     "1996, 1998"
     ""
-    SF-ADJUSTMENT "Radius (in pixels)" '(100 1 5000 1 10 0 1)
-    SF-ADJUSTMENT "Lighting (degrees)" '(45 0 360 1 10 1 0)
+    SF-ADJUSTMENT "Radius (in pixels)" '(100 1 5000 1 10 0 SF-SPINNER)
+    SF-ADJUSTMENT "Lighting (degrees)" '(45 0 360 1 10 1 SF-SLIDER)
     SF-TOGGLE     "Shadow"             TRUE
-    SF-COLOR      "Background color"   '(255 255 255)
-    SF-COLOR      "Sphere color"       '(255 0 0)
+    SF-COLOR      "Background color"   "white"
+    SF-COLOR      "Sphere color"       "#FF0000"
     SF-BRUSH      "Brush"              '("Circle (03)" 1.0 44 0)
     SF-STRING     "Text"               "Tiny-Fu rocks!"
     SF-TEXT       "Multi-line text"    "Hello,\nWorld!"
@@ -261,7 +279,7 @@
     SF-GRADIENT   "Gradient"           "Deep Sea"
     SF-TOGGLE     "Gradient reverse"   FALSE
     SF-FONT       "Font"               "Agate"
-    SF-ADJUSTMENT "Font size (pixels)" '(50 1 1000 1 10 0 1)
+    SF-ADJUSTMENT "Font size (pixels)" '(50 1 1000 1 10 0 SF-SPINNER)
     SF-PALETTE    "Palette"            "Default"
     SF-FILENAME   "Environment map"
                   (string-append gimp-data-directory
@@ -269,6 +287,7 @@
     SF-OPTION     "Orientation"        '("Horizontal"
                                          "Vertical")
     SF-ENUM       "Interpolation"      '("InterpolationType" "linear")
+    SF-RADIO      "Pick a side"        '(1 "Left" "Right")
     SF-DIRNAME    "Output directory"   "/var/tmp/"
     SF-IMAGE      "Image"              -1
     SF-LAYER      "Layer"              -1
@@ -277,4 +296,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-test-sphere"
-                        "<Toolbox>/Xtns/Tiny-Fu/Test")
+                       "<Toolbox>/Xtns/Tiny-Fu/Test")
