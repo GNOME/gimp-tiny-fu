@@ -7,6 +7,11 @@
 	* TODO: Removed some items no longer applicable as well as some
 	fixed items.
 
+2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Was using wrong
+	member name for INT16 and INT8 return types.
+
 2006-06-05  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	scripts/Makefile.am: Oops...can't put .init files in EXTRA_DIST.

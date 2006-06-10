@@ -1313,12 +1313,12 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               break;
 
             case GIMP_PDB_INT16:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int16),
                                  return_val);
               break;
 
             case GIMP_PDB_INT8:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int8),
                                  return_val);
               break;
 
