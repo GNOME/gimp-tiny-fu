@@ -716,7 +716,7 @@ fprintf (stderr, "  Invalid procedure name\n");
     {
 #if DEBUG_MARSHALL
 fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
-                nparams, (sc->vptr->list_length (sc, a) - 1));
+                 nparams, (sc->vptr->list_length (sc, a) - 1));
 #endif
       g_snprintf (error_str, sizeof (error_str),
                   "Invalid number of arguments supplied to %s (expected %d but received %d)",
@@ -730,112 +730,117 @@ fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
   else
     args = NULL;
 
-  a = sc->vptr->pair_cdr (a);
   /* The checks on 'if (success)' below stop some code execution */
   /* when the first error in the argument list is encountered.   */
   for (i = 0; i < nparams; i++)
     {
+      a = sc->vptr->pair_cdr (a);
+
 #if DEBUG_MARSHALL
 fprintf (stderr, "    param %d - expecting type %s (%d)\n",
-                i+1, ret_types[ params[i].type ], params[i].type);
+                 i+1, ret_types[ params[i].type ], params[i].type);
 fprintf (stderr, "      passed arg is type %s (%d)\n",
-                ts_types[ type(sc->vptr->pair_car (a)) ],
-                type(sc->vptr->pair_car (a)));
+                 ts_types[ type(sc->vptr->pair_car (a)) ],
+                 type(sc->vptr->pair_car (a)));
 #endif
 
-    switch (params[i].type)
-      {
-      case GIMP_PDB_INT32:
-        if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_INT32;
-            args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
+      args[i].type = params[i].type;
+
+      switch (params[i].type)
+        {
+        case GIMP_PDB_INT32:
+        case GIMP_PDB_DISPLAY:
+        case GIMP_PDB_IMAGE:
+        case GIMP_PDB_LAYER:
+        case GIMP_PDB_CHANNEL:
+        case GIMP_PDB_DRAWABLE:
+        case GIMP_PDB_SELECTION:
+        case GIMP_PDB_BOUNDARY:
+        case GIMP_PDB_VECTORS:
+          if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
+            success = FALSE;
+          if (success)
+            {
+              args[i].data.d_int32 = sc->vptr->ivalue (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      int32 arg is '%d'\n", args[i].data.d_int32);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_INT16:
-        if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_INT16;
-            args[i].data.d_int16 = (gint16) sc->vptr->ivalue (sc->vptr->pair_car (a));
+        case GIMP_PDB_INT16:
+          if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
+            success = FALSE;
+          if (success)
+            {
+              args[i].data.d_int16 = (gint16) sc->vptr->ivalue (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      int16 arg is '%d'\n", args[i].data.d_int16);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_INT8:
-        if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_INT8;
-            args[i].data.d_int8 = (gint8) sc->vptr->ivalue (sc->vptr->pair_car (a));
+        case GIMP_PDB_INT8:
+          if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
+            success = FALSE;
+          if (success)
+            {
+              args[i].data.d_int8 = (gint8) sc->vptr->ivalue (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      int8 arg is '%d'\n", args[i].data.d_int8);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_FLOAT:
-        if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_FLOAT;
-            args[i].data.d_float = sc->vptr->rvalue (sc->vptr->pair_car (a));
+        case GIMP_PDB_FLOAT:
+          if (!sc->vptr->is_number (sc->vptr->pair_car (a)))
+            success = FALSE;
+          if (success)
+            {
+              args[i].data.d_float = sc->vptr->rvalue (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      float arg is '%f'\n", args[i].data.d_float);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_STRING:
-        if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_STRING;
-            args[i].data.d_string = sc->vptr->string_value (sc->vptr->pair_car (a));
+        case GIMP_PDB_STRING:
+          if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
+            success = FALSE;
+          if (success)
+            {
+              args[i].data.d_string = sc->vptr->string_value (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_INT32ARRAY:
-        array = sc->vptr->pair_car (a);
-        if (!sc->vptr->is_array (array))
-          success = FALSE;
-        if (success)
-        {
-          if (arraytype (array) != array_int32)
+        case GIMP_PDB_INT32ARRAY:
+          array = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_array (array))
+            success = FALSE;
+          if (success)
           {
+            if (arraytype (array) != array_int32)
+            {
+                g_snprintf (error_str, sizeof (error_str),
+                            "Expected INT32ARRAY for argument %d in call to procedure %s\n",
+                            i+1, proc_name);
+                return my_err (error_str, array);
+            }
+
+            n_elements = args[i-1].data.d_int32;
+            if (n_elements < 0 || n_elements > arraylength (array))
+            {
               g_snprintf (error_str, sizeof (error_str),
-                          "Expected INT32ARRAY for argument %d in call to procedure %s\n",
-                          i+1, proc_name);
-              return my_err (error_str, array);
-          }
+                          "INT32 array (argument %d) for function %s has "
+                          "size of %d but expected size of %d",
+                          i+1, proc_name, arraylength (array), n_elements);
+              return my_err (error_str, sc->NIL);
+            }
 
-          n_elements = args[i-1].data.d_int32;
-          if (n_elements < 0 || n_elements > arraylength (array))
-          {
-            g_snprintf (error_str, sizeof (error_str),
-                        "INT32 array (argument %d) for function %s has "
-                        "size of %d but expected size of %d",
-                        i+1, proc_name, arraylength (array), n_elements);
-            return my_err (error_str, sc->NIL);
-          }
-
-          args[i].type = GIMP_PDB_INT32ARRAY;
-          args[i].data.d_int32array = (gint32*) arrayvalue (array);
+            args[i].data.d_int32array = (gint32*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
 gint32 *data;
@@ -844,39 +849,38 @@ data = (gint32*) arrayvalue (array);
 fprintf (stderr, "      int32 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
-    fprintf (stderr, " %d", data[j]);
+  fprintf (stderr, " %d", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-        }
-        break;
+  }
+  break;
 
-      case GIMP_PDB_INT16ARRAY:
-        array = sc->vptr->pair_car (a);
-        if (!sc->vptr->is_array (array))
-          success = FALSE;
-        if (success)
-        {
-          if (arraytype (array) != array_int16)
-          {
-              g_snprintf (error_str, sizeof (error_str),
-                          "Expected INT16ARRAY for argument %d in call to procedure %s\n",
-                          i+1, proc_name);
-              return my_err (error_str, array);
-          }
+case GIMP_PDB_INT16ARRAY:
+  array = sc->vptr->pair_car (a);
+  if (!sc->vptr->is_array (array))
+    success = FALSE;
+  if (success)
+  {
+    if (arraytype (array) != array_int16)
+    {
+        g_snprintf (error_str, sizeof (error_str),
+                    "Expected INT16ARRAY for argument %d in call to procedure %s\n",
+                    i+1, proc_name);
+        return my_err (error_str, array);
+    }
 
-          n_elements = args[i-1].data.d_int32;
-          if (n_elements < 0 || n_elements > arraylength (array))
-          {
-            g_snprintf (error_str, sizeof (error_str),
-                        "INT16 array (argument %d) for function %s has "
-                        "size of %d but expected size of %d",
-                        i+1, proc_name, arraylength (array), n_elements);
-            return my_err (error_str, sc->NIL);
-          }
+    n_elements = args[i-1].data.d_int32;
+    if (n_elements < 0 || n_elements > arraylength (array))
+    {
+      g_snprintf (error_str, sizeof (error_str),
+                  "INT16 array (argument %d) for function %s has "
+                  "size of %d but expected size of %d",
+                  i+1, proc_name, arraylength (array), n_elements);
+      return my_err (error_str, sc->NIL);
+    }
 
-          args[i].type = GIMP_PDB_INT16ARRAY;
-          args[i].data.d_int16array = (gint16*) arrayvalue (array);
+    args[i].data.d_int16array = (gint16*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
 gint16 *data;
@@ -885,39 +889,38 @@ data = (gint16*) arrayvalue (array);
 fprintf (stderr, "      int16 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
-    fprintf (stderr, " %d", data[j]);
+  fprintf (stderr, " %d", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-        }
-        break;
+          }
+          break;
 
-      case GIMP_PDB_INT8ARRAY:
-        array = sc->vptr->pair_car (a);
-        if (!sc->vptr->is_array (array))
-          success = FALSE;
-        if (success)
-        {
-          if (arraytype (array) != array_int8)
+        case GIMP_PDB_INT8ARRAY:
+          array = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_array (array))
+            success = FALSE;
+          if (success)
           {
+            if (arraytype (array) != array_int8)
+            {
+                g_snprintf (error_str, sizeof (error_str),
+                            "Expected INT32ARRAY for argument %d in call to procedure %s\n",
+                            i+1, proc_name);
+                return my_err (error_str, array);
+            }
+
+            n_elements = args[i-1].data.d_int32;
+            if (n_elements < 0 || n_elements > arraylength (array))
+            {
               g_snprintf (error_str, sizeof (error_str),
-                          "Expected INT32ARRAY for argument %d in call to procedure %s\n",
-                          i+1, proc_name);
-              return my_err (error_str, array);
-          }
+                          "INT8 array (argument %d) for function %s has "
+                          "size of %d but expected size of %d",
+                          i+1, proc_name, arraylength (array), n_elements);
+              return my_err (error_str, sc->NIL);
+            }
 
-          n_elements = args[i-1].data.d_int32;
-          if (n_elements < 0 || n_elements > arraylength (array))
-          {
-            g_snprintf (error_str, sizeof (error_str),
-                        "INT8 array (argument %d) for function %s has "
-                        "size of %d but expected size of %d",
-                        i+1, proc_name, arraylength (array), n_elements);
-            return my_err (error_str, sc->NIL);
-          }
-
-          args[i].type = GIMP_PDB_INT8ARRAY;
-          args[i].data.d_int8array = (gint8*) arrayvalue (array);
+            args[i].data.d_int8array = (gint8*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
 gint8 *data;
@@ -926,39 +929,38 @@ data = (gint8*) arrayvalue (array);
 fprintf (stderr, "      int8 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
-    fprintf (stderr, " %d", data[j]);
+  fprintf (stderr, " %d", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-        }
-        break;
+          }
+          break;
 
-      case GIMP_PDB_FLOATARRAY:
-        array = sc->vptr->pair_car (a);
-        if (!sc->vptr->is_array (array))
-          success = FALSE;
-        if (success)
-        {
-          if (arraytype (array) != array_float)
+        case GIMP_PDB_FLOATARRAY:
+          array = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_array (array))
+            success = FALSE;
+          if (success)
           {
+            if (arraytype (array) != array_float)
+            {
+                g_snprintf (error_str, sizeof (error_str),
+                            "Expected FLOATARRAY for argument %d in call to procedure %s\n",
+                            i+1, proc_name);
+                return my_err (error_str, array);
+            }
+
+            n_elements = args[i-1].data.d_int32;
+            if (n_elements < 0 || n_elements > arraylength (array))
+            {
               g_snprintf (error_str, sizeof (error_str),
-                          "Expected FLOATARRAY for argument %d in call to procedure %s\n",
-                          i+1, proc_name);
-              return my_err (error_str, array);
-          }
+                          "FLOAT array (argument %d) for function %s has "
+                          "size of %d but expected size of %d",
+                          i+1, proc_name, arraylength (array), n_elements);
+              return my_err (error_str, sc->NIL);
+            }
 
-          n_elements = args[i-1].data.d_int32;
-          if (n_elements < 0 || n_elements > arraylength (array))
-          {
-            g_snprintf (error_str, sizeof (error_str),
-                        "FLOAT array (argument %d) for function %s has "
-                        "size of %d but expected size of %d",
-                        i+1, proc_name, arraylength (array), n_elements);
-            return my_err (error_str, sc->NIL);
-          }
-
-          args[i].type = GIMP_PDB_FLOATARRAY;
-          args[i].data.d_floatarray = (gdouble*) arrayvalue (array);
+            args[i].data.d_floatarray = (gdouble*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
 gdouble *data;
@@ -967,39 +969,38 @@ data = (gdouble*) arrayvalue (array);
 fprintf (stderr, "      float array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
-    fprintf (stderr, " %f", data[j]);
+  fprintf (stderr, " %f", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-        }
-        break;
+          }
+          break;
 
-      case GIMP_PDB_STRINGARRAY:
-        array = sc->vptr->pair_car (a);
-        if (!sc->vptr->is_array (array))
-          success = FALSE;
-        if (success)
-        {
-          if (arraytype (array) != array_string)
+        case GIMP_PDB_STRINGARRAY:
+          array = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_array (array))
+            success = FALSE;
+          if (success)
           {
+            if (arraytype (array) != array_string)
+            {
+                g_snprintf (error_str, sizeof (error_str),
+                            "Expected STRINGARRAY for argument %d in call to procedure %s\n",
+                            i+1, proc_name);
+                return my_err (error_str, sc->vptr->pair_car (a));
+            }
+
+            n_elements = args[i-1].data.d_int32;
+            if (n_elements < 0 || n_elements > arraylength (array))
+            {
               g_snprintf (error_str, sizeof (error_str),
-                          "Expected STRINGARRAY for argument %d in call to procedure %s\n",
-                          i+1, proc_name);
-              return my_err (error_str, sc->vptr->pair_car (a));
-          }
+                          "STRING array (argument %d) for function %s has "
+                          "length of %d but expected length of %d",
+                          i+1, proc_name, arraylength (array), n_elements);
+              return my_err (error_str, sc->NIL);
+            }
 
-          n_elements = args[i-1].data.d_int32;
-          if (n_elements < 0 || n_elements > arraylength (array))
-          {
-            g_snprintf (error_str, sizeof (error_str),
-                        "STRING array (argument %d) for function %s has "
-                        "length of %d but expected length of %d",
-                        i+1, proc_name, arraylength (array), n_elements);
-            return my_err (error_str, sc->NIL);
-          }
-
-          args[i].type = GIMP_PDB_STRINGARRAY;
-          args[i].data.d_stringarray = (gchar**) arrayvalue (array);
+            args[i].data.d_stringarray = (gchar**) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
 gchar **data;
@@ -1008,73 +1009,71 @@ data = (gchar**) arrayvalue (array);
 fprintf (stderr, "      string array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
-    fprintf (stderr, " \"%s\"", data[j]);
+  fprintf (stderr, " \"%s\"", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
-        }
-        break;
+          }
+          break;
 
-      case GIMP_PDB_COLOR:
-        if (sc->vptr->is_string (sc, sc->vptr->pair_car (a)))
-          {
-            if (! gimp_rgb_parse_css (&args[i].data.d_color,
-                                      sc->vptr->string_value (sc->vptr->pair_car (a)),
-                                      -1))
-              success = FALSE;
+        case GIMP_PDB_COLOR:
+          if (sc->vptr->is_string (sc->vptr->pair_car (a)))
+            {
+              if (! gimp_rgb_parse_css (&args[i].data.d_color,
+                                        sc->vptr->string_value (sc->vptr->pair_car (a)),
+                                        -1))
+                success = FALSE;
 
-            gimp_rgb_set_alpha (&args[i].data.d_color, 1.0);
+              gimp_rgb_set_alpha (&args[i].data.d_color, 1.0);
 #if DEBUG_MARSHALL
 fprintf (stderr, "      (%s)\n",
                  sc->vptr->string_value (sc->vptr->pair_car (a)));
 #endif
-          }
-        else if (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
-                 sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 3)
-          {
-            pointer color_list;
-            guchar  r, g, b;
+            }
+          else if (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
+                   sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 3)
+            {
+              pointer color_list;
+              guchar  r, g, b;
 
-            args[i].type = GIMP_PDB_COLOR;
-            color_list = sc->vptr->pair_car (a);
-            r = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
-            color_list = sc->vptr->pair_cdr (color_list);
-            g = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
-            color_list = sc->vptr->pair_cdr (color_list);
-            b = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
+              color_list = sc->vptr->pair_car (a);
+              r = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
+              color_list = sc->vptr->pair_cdr (color_list);
+              g = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
+              color_list = sc->vptr->pair_cdr (color_list);
+              b = CLAMP (sc->vptr->ivalue (sc->vptr->pair_car (color_list)), 0, 255);
 
-            gimp_rgba_set_uchar (&args[i].data.d_color, r, g, b, 255);
+              gimp_rgba_set_uchar (&args[i].data.d_color, r, g, b, 255);
 #if DEBUG_MARSHALL
 fprintf (stderr, "      (%d %d %d)\n", r, g, b);
 #endif
-          }
-        else
-          {
+            }
+          else
+            {
+              success = FALSE;
+            }
+          break;
+
+        case GIMP_PDB_REGION:
+          if (! (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
+            sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 4))
             success = FALSE;
-          }
-        break;
+          if (success)
+            {
+              pointer region;
 
-      case GIMP_PDB_REGION:
-        if (! (sc->vptr->is_list (sc, sc->vptr->pair_car (a)) &&
-          sc->vptr->list_length (sc, sc->vptr->pair_car (a)) == 4))
-          success = FALSE;
-        if (success)
-          {
-            pointer region;
-
-            args[i].type = GIMP_PDB_REGION;
-            region = sc->vptr->pair_car (a);
-            args[i].data.d_region.x =
-                         sc->vptr->ivalue (sc->vptr->pair_car (region));
-            region = sc->vptr->pair_cdr (region);
-            args[i].data.d_region.y =
-                         sc->vptr->ivalue (sc->vptr->pair_car (region));
-            region = sc->vptr->pair_cdr (region);
-            args[i].data.d_region.width =
-                         sc->vptr->ivalue (sc->vptr->pair_car (region));
-            region = sc->vptr->pair_cdr (region);
-            args[i].data.d_region.height =
-                         sc->vptr->ivalue (sc->vptr->pair_car (region));
+              region = sc->vptr->pair_car (a);
+              args[i].data.d_region.x =
+                           sc->vptr->ivalue (sc->vptr->pair_car (region));
+              region = sc->vptr->pair_cdr (region);
+              args[i].data.d_region.y =
+                           sc->vptr->ivalue (sc->vptr->pair_car (region));
+              region = sc->vptr->pair_cdr (region);
+              args[i].data.d_region.width =
+                           sc->vptr->ivalue (sc->vptr->pair_car (region));
+              region = sc->vptr->pair_cdr (region);
+              args[i].data.d_region.height =
+                           sc->vptr->ivalue (sc->vptr->pair_car (region));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      (%d %d %d %d)\n",
                  args[i].data.d_region.x,
@@ -1082,163 +1081,79 @@ fprintf (stderr, "      (%d %d %d %d)\n",
                  args[i].data.d_region.width,
                  args[i].data.d_region.height);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_DISPLAY:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_DISPLAY;
-            args[i].data.d_display = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
+        case GIMP_PDB_PARASITE:
+          if (!sc->vptr->is_list (sc, sc->vptr->pair_car (a)) ||
+              sc->vptr->list_length (sc, sc->vptr->pair_car (a)) != 3)
+            success = FALSE;
+          if (success)
+            {
+              /* parasite->name */
+              intermediate_val = sc->vptr->pair_car (a);
 
-      case GIMP_PDB_IMAGE:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_IMAGE;
-            args[i].data.d_image = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
+              if (!sc->vptr->is_string (sc->vptr->pair_car (intermediate_val)))
+                {
+                  success = FALSE;
+                  break;
+                }
 
-      case GIMP_PDB_LAYER:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_LAYER;
-            args[i].data.d_layer = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
-
-      case GIMP_PDB_CHANNEL:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_CHANNEL;
-            args[i].data.d_channel = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
-
-      case GIMP_PDB_DRAWABLE:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_DRAWABLE;
-            args[i].data.d_drawable = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
-
-      case GIMP_PDB_SELECTION:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_SELECTION;
-            args[i].data.d_selection = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
-
-      case GIMP_PDB_BOUNDARY:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_BOUNDARY;
-            args[i].data.d_boundary = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
-
-      case GIMP_PDB_VECTORS:
-        if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_VECTORS;
-            args[i].data.d_path = sc->vptr->ivalue (sc->vptr->pair_car (a));
-          }
-        break;
-
-      case GIMP_PDB_PARASITE:
-        if (!sc->vptr->is_list (sc, sc->vptr->pair_car (a)) ||
-            sc->vptr->list_length (sc, sc->vptr->pair_car (a)) != 3)
-          success = FALSE;
-        if (success)
-          {
-            args[i].type = GIMP_PDB_PARASITE;
-
-            /* parasite->name */
-            intermediate_val = sc->vptr->pair_car (a);
-
-            if (!sc->vptr->is_string (sc->vptr->pair_car (intermediate_val)))
-              {
-                success = FALSE;
-                break;
-              }
-
-            args[i].data.d_parasite.name =
-              sc->vptr->string_value (sc->vptr->pair_car (intermediate_val));
+              args[i].data.d_parasite.name =
+                sc->vptr->string_value (sc->vptr->pair_car (intermediate_val));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      name '%s'\n", args[i].data.d_parasite.name);
 #endif
 
-            /* parasite->flags */
-            intermediate_val = sc->vptr->pair_cdr (intermediate_val);
+              /* parasite->flags */
+              intermediate_val = sc->vptr->pair_cdr (intermediate_val);
 
-            if (!sc->vptr->is_number (sc->vptr->pair_car (intermediate_val)))
-              {
-                success = FALSE;
-                break;
-              }
+              if (!sc->vptr->is_number (sc->vptr->pair_car (intermediate_val)))
+                {
+                  success = FALSE;
+                  break;
+                }
 
-            args[i].data.d_parasite.flags =
-              sc->vptr->ivalue (sc->vptr->pair_car (intermediate_val));
+              args[i].data.d_parasite.flags =
+                sc->vptr->ivalue (sc->vptr->pair_car (intermediate_val));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      flags %d", args[i].data.d_parasite.flags);
 #endif
 
-            /* parasite->data */
-            intermediate_val = sc->vptr->pair_cdr (intermediate_val);
+              /* parasite->data */
+              intermediate_val = sc->vptr->pair_cdr (intermediate_val);
 
-            if (!sc->vptr->is_string (sc->vptr->pair_car (intermediate_val)))
-              {
-                success = FALSE;
-                break;
-              }
+              if (!sc->vptr->is_string (sc->vptr->pair_car (intermediate_val)))
+                {
+                  success = FALSE;
+                  break;
+                }
 
-            args[i].data.d_parasite.size =
-              sc->vptr->ivalue (sc->vptr->pair_car (intermediate_val));
-            args[i].data.d_parasite.data =
-              sc->vptr->string_value (sc->vptr->pair_car (intermediate_val));
+              args[i].data.d_parasite.size =
+                sc->vptr->ivalue (sc->vptr->pair_car (intermediate_val));
+              args[i].data.d_parasite.data =
+                sc->vptr->string_value (sc->vptr->pair_car (intermediate_val));
 #if DEBUG_MARSHALL
 fprintf (stderr, ", size %d\n", args[i].data.d_parasite.size);
 fprintf (stderr, "      data '%s'\n", (char *)args[i].data.d_parasite.data);
 #endif
-          }
-        break;
+            }
+          break;
 
-      case GIMP_PDB_STATUS:
-        return my_err ("Status is for return types, not arguments",
-                       sc->vptr->pair_car (a));
-        break;
+        case GIMP_PDB_STATUS:
+          return my_err ("Status is for return types, not arguments",
+                         sc->vptr->pair_car (a));
+          break;
 
-      default:
-        g_snprintf (error_str, sizeof (error_str),
-                    "Argument %d for %s is an unknown type",
-                    i+1, proc_name);
-        return my_err (error_str, sc->NIL);
-      }
+        default:
+          g_snprintf (error_str, sizeof (error_str),
+                      "Argument %d for %s is an unknown type",
+                      i+1, proc_name);
+          return my_err (error_str, sc->NIL);
+        }
 
       if (!success)
          break;
-
-      a = sc->vptr->pair_cdr (a);
     }
 
   if (success)
@@ -1277,7 +1192,7 @@ fprintf (stderr, "  Did not return status\n");
 
 #if DEBUG_MARSHALL
 fprintf (stderr, "    return value is %s\n",
-                status_types[ values[0].data.d_status ]);
+                 status_types[ values[0].data.d_status ]);
 #endif
 
   switch (values[0].data.d_status)
@@ -1304,22 +1219,30 @@ fprintf (stderr, "    values returned: %d\n", nvalues-1);
         {
 #if DEBUG_MARSHALL
 fprintf (stderr, "      value %d is type %s (%d)\n",
-                i, ret_types[ return_vals[i].type ], return_vals[i].type);
+                 i, ret_types[ return_vals[i].type ], return_vals[i].type);
 #endif
           switch (return_vals[i].type)
             {
             case GIMP_PDB_INT32:
+            case GIMP_PDB_DISPLAY:
+            case GIMP_PDB_IMAGE:
+            case GIMP_PDB_LAYER:
+            case GIMP_PDB_CHANNEL:
+            case GIMP_PDB_DRAWABLE:
+            case GIMP_PDB_SELECTION:
+            case GIMP_PDB_BOUNDARY:
+            case GIMP_PDB_VECTORS:
               return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
                                  return_val);
               break;
 
             case GIMP_PDB_INT16:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int16),
                                  return_val);
               break;
 
             case GIMP_PDB_INT8:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
+              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int8),
                                  return_val);
               break;
 
@@ -1449,46 +1372,6 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 return_val = sc->vptr->cons (sc, intermediate_val, return_val);
                 break;
               }
-              break;
-
-            case GIMP_PDB_DISPLAY:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_display),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_IMAGE:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_image),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_LAYER:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_layer),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_CHANNEL:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_channel),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_DRAWABLE:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_drawable),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_SELECTION:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_selection),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_BOUNDARY:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_boundary),
-                                 return_val);
-              break;
-
-            case GIMP_PDB_VECTORS:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_path),
-                                 return_val);
               break;
 
             case GIMP_PDB_PARASITE:

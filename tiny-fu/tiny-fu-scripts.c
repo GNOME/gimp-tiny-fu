@@ -316,8 +316,9 @@ tiny_fu_add_script (scheme *sc, pointer a)
                   if (sc->vptr->is_string (sc->vptr->pair_car (a)))
                     {
                       if (! gimp_rgb_parse_css (&script->arg_defaults[i].sfa_color,
-                                                get_c_string (car (a)), -1))
-                        return my_err ("tiny-fu-register: invalid default color name", NIL);
+                                                sc->vptr->string_value (sc->vptr->pair_car (a)),
+                                                -1))
+                        return my_err (sc, "tiny-fu-register: invalid default color name");
                       gimp_rgb_set_alpha (&script->arg_defaults[i].sfa_color,
                                           1.0);
                     }

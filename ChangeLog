@@ -1,5 +1,14 @@
 2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Reduced redundant
+	code by using the same code for all INT32 PDB types. Based in part
+	on changes made in Script-Fu by Sven Neumann. Wrong member name was
+	being used for INT16 and INT8 return types.
+
+	* tiny-fu/tiny-fu-scripts.c: Missed 'sc' in one call to my_err().
+
+2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	Based on changes made to Script-Fu by Sven Neumann.
 
 	* tiny-fu/tiny-fu-scripts.c
