@@ -76,7 +76,7 @@ static void       tiny_fu_script_proc         (const gchar      *name,
                                                gint             *nreturn_vals,
                                                GimpParam       **return_vals);
 
-static SFScript * tiny_fu_find_script         (const gchar      *script_name);
+static SFScript * tiny_fu_find_script         (const gchar      *name);
 static void       tiny_fu_free_script         (SFScript         *script);
 
 static gint       tiny_fu_menu_compare        (gconstpointer     a,
@@ -186,7 +186,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
   /*  Find the script name  */
   val = sc->vptr->string_value (sc->vptr->pair_car (a));
-  script->script_name = g_strdup (val);
+  script->name = g_strdup (val);
   a = sc->vptr->pair_cdr (a);
 
   /*  Find the script menu_path  */
@@ -198,9 +198,9 @@ tiny_fu_add_script (scheme *sc, pointer a)
     script->image_based = FALSE;
   a = sc->vptr->pair_cdr (a);
 
-  /*  Find the script help  */
+  /*  Find the script blurb  */
   val = sc->vptr->string_value (sc->vptr->pair_car (a));
-  script->help = g_strdup (val);
+  script->blurb = g_strdup (val);
   a = sc->vptr->pair_cdr (a);
 
   /*  Find the script author  */
@@ -235,8 +235,9 @@ tiny_fu_add_script (scheme *sc, pointer a)
   script->num_args = sc->vptr->list_length (sc, a) / 3;
 
   args = g_new0 (GimpParamDef, script->num_args + 1);
+
   args[0].type        = GIMP_PDB_INT32;
-  args[0].name        = "run_mode";
+  args[0].name        = "run-mode";
   args[0].description = "Interactive, non-interactive";
 
   script->arg_types    = g_new0 (SFArgType, script->num_args);
@@ -724,8 +725,8 @@ tiny_fu_install_script (gpointer  foo G_GNUC_UNUSED,
       if (strncmp (script->menu_path, "<None>", 6) != 0)
         menu_path = script->menu_path;
 
-      gimp_install_temp_proc (script->script_name,
-                              script->help,
+      gimp_install_temp_proc (script->name,
+                              script->blurb,
                               "",
                               script->author,
                               script->copyright,
@@ -747,7 +748,7 @@ tiny_fu_install_script (gpointer  foo G_GNUC_UNUSED,
 static void
 tiny_fu_install_menu (SFMenu *menu)
 {
-  gimp_plugin_menu_register (menu->script->script_name, menu->menu_path);
+  gimp_plugin_menu_register (menu->script->name, menu->menu_path);
 
   g_free (menu->menu_path);
   g_free (menu);
@@ -839,7 +840,7 @@ tiny_fu_script_proc (const gchar     *name,
               gint     i;
 
               s = g_string_new ("(");
-              g_string_append (s, script->script_name);
+              g_string_append (s, script->name);
 
               for (i = 0; i < script->num_args; i++)
                 {
@@ -948,7 +949,7 @@ tiny_fu_lookup_script (gpointer      *foo G_GNUC_UNUSED,
     {
       SFScript *script = list->data;
 
-      if (strcmp (script->script_name, *name) == 0)
+      if (strcmp (script->name, *name) == 0)
         {
           /* store the script in the name pointer and stop the traversal */
           *name = script;
@@ -960,15 +961,15 @@ tiny_fu_lookup_script (gpointer      *foo G_GNUC_UNUSED,
 }
 
 static SFScript *
-tiny_fu_find_script (const gchar *script_name)
+tiny_fu_find_script (const gchar *name)
 {
-  gconstpointer script = script_name;
+  gconstpointer script = name;
 
   g_tree_foreach (script_tree,
                   (GTraverseFunc) tiny_fu_lookup_script,
                   &script);
 
-  if (script == script_name)
+  if (script == name)
     return NULL;
 
   return (SFScript *) script;
@@ -982,11 +983,11 @@ tiny_fu_free_script (SFScript *script)
   g_return_if_fail (script != NULL);
 
   /*  Uninstall the temporary procedure for this script  */
-  gimp_uninstall_temp_proc (script->script_name);
+  gimp_uninstall_temp_proc (script->name);
 
-  g_free (script->script_name);
+  g_free (script->name);
   g_free (script->menu_path);
-  g_free (script->help);
+  g_free (script->blurb);
   g_free (script->author);
   g_free (script->copyright);
   g_free (script->date);

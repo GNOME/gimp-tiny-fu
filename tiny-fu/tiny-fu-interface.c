@@ -129,7 +129,7 @@ tiny_fu_interface_is_dialog_open (void)
 }
 
 void
-tiny_fu_interface_report_cc (gchar *command)
+tiny_fu_interface_report_cc (const gchar *command)
 {
   if (sf_interface == NULL)
     return;
@@ -221,7 +221,7 @@ tiny_fu_interface (SFScript *script)
   sf_interface->title = g_strdup_printf (_("Tiny-Fu: %s"),
                                          sf_interface->short_title);
 
-  sf_interface->help_id = g_strdup (script->script_name);
+  sf_interface->help_id = g_strdup (script->name);
 
   sf_interface->dialog = dlg =
     gimp_dialog_new (sf_interface->title, "tiny-fu",
@@ -760,7 +760,7 @@ tiny_fu_ok (SFScript *script)
   gint     i;
 
   s = g_string_new ("(");
-  g_string_append (s, script->script_name);
+  g_string_append (s, script->name);
 
   for (i = 0; i < script->num_args; i++)
     {
@@ -1037,7 +1037,7 @@ tiny_fu_about (SFScript  *script)
       gtk_widget_show (vbox);
 
       /* the name */
-      label = gtk_label_new (script->script_name);
+      label = gtk_label_new (script->name);
       gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.0);
       gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
       gtk_widget_show (label);
@@ -1062,7 +1062,7 @@ tiny_fu_about (SFScript  *script)
       gtk_container_add (GTK_CONTAINER (scrolled_window), text_view);
       gtk_widget_show (text_view);
 
-      gtk_text_buffer_set_text (text_buffer, script->help, -1);
+      gtk_text_buffer_set_text (text_buffer, script->blurb, -1);
 
       /* author, copyright, etc. */
       table = gtk_table_new (2, 4, FALSE);

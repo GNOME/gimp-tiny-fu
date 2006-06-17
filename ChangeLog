@@ -1,3 +1,17 @@
+2006-06-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Based on changes made to Script-Fu by Sven Neumann.
+
+	* tiny-fu/tiny-fu-types.h (struct SFScript): Renamed member "help"
+	to "blurb" since that's what it is being used for when the script
+	procedure is registered.
+
+	* tiny-fu/tiny-fu-interface.c
+	* tiny-fu/tiny-fu-scripts.c: Changed accordingly.
+
+	* tiny-fu/tiny-fu-scripts.c (tiny_fu_add_script): Use a canonical
+	name for the automatically added run-mode parameter.
+
 2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Reduced redundant
