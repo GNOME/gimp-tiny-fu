@@ -19,9 +19,8 @@
 #ifndef __TINY_FU_INTERFACE_H__
 #define __TINY_FU_INTERFACE_H__
 
-gboolean tiny_fu_interface_is_dialog_open (void);
-
-void  tiny_fu_interface           (SFScript *script);
-void  tiny_fu_interface_report_cc (gchar    *command);
+void       tiny_fu_interface                (SFScript    *script);
+void       tiny_fu_interface_report_cc      (const gchar *command);
+gboolean   tiny_fu_interface_is_dialog_open (void);
 
 #endif /*  __TINY_FU_INTERFACE__  */
