@@ -14,10 +14,15 @@ PROJECT="GIMP Tiny-Fu"
 TEST_TYPE=-f
 FILE=tiny-fu/tiny-fu.c
 
+ACLOCAL=${ACLOCAL-aclocal-1.9}
+AUTOCONF=${AUTOCONF-autoconf}
+AUTOHEADER=${AUTOHEADER-autoheader}
+AUTOMAKE=${AUTOMAKE-automake-1.9}
+
 AUTOCONF_REQUIRED_VERSION=2.54
-AUTOMAKE_REQUIRED_VERSION=1.6
+AUTOMAKE_REQUIRED_VERSION=1.8.3
 GLIB_REQUIRED_VERSION=2.2.0
-INTLTOOL_REQUIRED_VERSION=0.17
+INTLTOOL_REQUIRED_VERSION=0.31
 
 
 srcdir=`dirname $0`
@@ -75,8 +80,8 @@ DIE=0
 
 
 echo -n "checking for autoconf >= $AUTOCONF_REQUIRED_VERSION ... "
-if (autoconf --version) < /dev/null > /dev/null 2>&1; then
-    VER=`autoconf --version \
+if ($AUTOCONF --version) < /dev/null > /dev/null 2>&1; then
+    VER=`$AUTOCONF --version | head -n 1 \
          | grep -iw autoconf | sed "s/.* \([0-9.]*\)[-a-z0-9]*$/\1/"`
     check_version $VER $AUTOCONF_REQUIRED_VERSION
 else
@@ -90,22 +95,18 @@ fi
 
 
 echo -n "checking for automake >= $AUTOMAKE_REQUIRED_VERSION ... "
-if (automake-1.7 --version) < /dev/null > /dev/null 2>&1; then
-   AUTOMAKE=automake-1.7
-   ACLOCAL=aclocal-1.7
-elif (automake-1.8 --version) < /dev/null > /dev/null 2>&1; then
-   AUTOMAKE=automake-1.8
-   ACLOCAL=aclocal-1.8
-   AUTOMAKE_REQUIRED_VERSION=1.8.3
+if ($AUTOMAKE --version) < /dev/null > /dev/null 2>&1; then
+   AUTOMAKE=$AUTOMAKE
+   ACLOCAL=$ACLOCAL
 elif (automake-1.9 --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=automake-1.9
    ACLOCAL=aclocal-1.9
-elif (automake-1.6 --version) < /dev/null > /dev/null 2>&1; then
-   AUTOMAKE=automake-1.6
-   ACLOCAL=aclocal-1.6
+elif (automake-1.8 --version) < /dev/null > /dev/null 2>&1; then
+   AUTOMAKE=automake-1.8
+   ACLOCAL=aclocal-1.8
 else
     echo
-    echo "  You must have automake 1.6 or newer installed to compile $PROJECT."
+    echo "  You must have automake $AUTOMAKE_REQUIRED_VERSION or newer installed to compile $PROJECT."
     echo "  Download the appropriate package for your distribution,"
     echo "  or get the source tarball at ftp://ftp.gnu.org/pub/gnu/automake/"
     echo
@@ -148,35 +149,6 @@ else
     DIE=1
 fi
 
-# Special test for problematic versions of intltool.  Details at:
-#   http://bugzilla.gnome.org/show_bug.cgi?id=137502
-# Print a warning message, but do not exit.
-INTLTOOL_BUG_MIN_VERSION=0.28
-INTLTOOL_BUG_MAX_VERSION=0.31
-echo -n "checking for intltool < $INTLTOOL_BUG_MIN_VERSION or > $INTLTOOL_BUG_MAX_VERSION ... "
-if (intltoolize --version) < /dev/null > /dev/null 2>&1; then
-    VER=`intltoolize --version \
-         | grep intltoolize | sed "s/.* \([0-9.]*\)/\1/"`
-    if expr $VER \>= $INTLTOOL_BUG_MIN_VERSION > /dev/null; then
-        if expr $VER \<= $INTLTOOL_BUG_MAX_VERSION > /dev/null; then
-            echo "no"
-            echo
-            echo "  Versions of intltool between 0.28 and 0.31 are known to"
-            echo "  generate incorrect XML output.  Please consider using an"
-            echo "  earlier version of intltool in order to avoid these"
-            echo "  problems until a newer version of intltool is released."
-	    echo
-	    echo "  This problem is harmless, you may continue the build." 
-	    echo
-        else
-            echo "yes"
-        fi
-    else
-        echo "yes"
-    fi
-else
-    echo "not found"
-fi
 
 if test "$DIE" -eq 1; then
     echo
@@ -220,9 +192,9 @@ if test -z "$ACLOCAL_FLAGS"; then
 	    echo "WARNING: aclocal's directory is $acdir, but..."
             echo "         no file $acdir/$file"
             echo "         You may see fatal macro warnings below."
-            echo "         If these files are installed in /some/dir, set the ACLOCAL_FLAGS "
-            echo "         environment variable to \"-I /some/dir\", or install"
-            echo "         $acdir/$file."
+            echo "         If these files are installed in /some/dir, set the "
+            echo "         ACLOCAL_FLAGS environment variable to \"-I /some/dir\""
+            echo "         or install $acdir/$file."
             echo
         fi
     done
@@ -238,10 +210,10 @@ if test $RC -ne 0; then
 fi
 
 # optionally feature autoheader
-(autoheader --version)  < /dev/null > /dev/null 2>&1 && autoheader || exit 1
+($AUTOHEADER --version)  < /dev/null > /dev/null 2>&1 && $AUTOHEADER || exit 1
 
 $AUTOMAKE --add-missing || exit $?
-autoconf || exit $?
+$AUTOCONF || exit $?
 
 glib-gettextize --force || exit $?
 intltoolize --force --automake || exit $?

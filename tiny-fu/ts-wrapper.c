@@ -637,7 +637,7 @@ char *ret_types[] = {
   "GIMP_PDB_STRINGARRAY", "GIMP_PDB_COLOR",     "GIMP_PDB_REGION",
   "GIMP_PDB_DISPLAY",     "GIMP_PDB_IMAGE",     "GIMP_PDB_LAYER",
   "GIMP_PDB_CHANNEL",     "GIMP_PDB_DRAWABLE",  "GIMP_PDB_SELECTION",
-  "GIMP_PDB_BOUNDARY",    "GIMP_PDB_VECTORS",      "GIMP_PDB_PARASITE",
+  "GIMP_PDB_BOUNDARY",    "GIMP_PDB_VECTORS",   "GIMP_PDB_PARASITE",
   "GIMP_PDB_STATUS",      "GIMP_PDB_END"
 };
 
@@ -732,7 +732,7 @@ fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
 
   /* The checks on 'if (success)' below stop some code execution */
   /* when the first error in the argument list is encountered.   */
-  for (i = 0; i < nparams; i++)
+  for (i = 0; i < nparams && success; i++)
     {
       a = sc->vptr->pair_cdr (a);
 
@@ -785,7 +785,7 @@ fprintf (stderr, "      int16 arg is '%d'\n", args[i].data.d_int16);
             success = FALSE;
           if (success)
             {
-              args[i].data.d_int8 = (gint8) sc->vptr->ivalue (sc->vptr->pair_car (a));
+              args[i].data.d_int8 = (guint8) sc->vptr->ivalue (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
 fprintf (stderr, "      int8 arg is '%d'\n", args[i].data.d_int8);
 #endif
@@ -920,12 +920,12 @@ fprintf (stderr, "\n");
               return my_err (error_str, sc->NIL);
             }
 
-            args[i].data.d_int8array = (gint8*) arrayvalue (array);
+            args[i].data.d_int8array = (guint8*) arrayvalue (array);
 #if DEBUG_MARSHALL
 {
-gint8 *data;
+guint8 *data;
 int j;
-data = (gint8*) arrayvalue (array);
+data = (guint8*) arrayvalue (array);
 fprintf (stderr, "      int8 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
@@ -1151,9 +1151,6 @@ fprintf (stderr, "      data '%s'\n", (char *)args[i].data.d_parasite.data);
                       i+1, proc_name);
           return my_err (error_str, sc->NIL);
         }
-
-      if (!success)
-         break;
     }
 
   if (success)
@@ -1294,11 +1291,11 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                */
               {
                 gint32  num_int8s  = values[i].data.d_int32;
-                gint8  *array  = (gint8 *) values[i + 1].data.d_int8array;
+                guint8 *array  = (guint8 *) values[i + 1].data.d_int8array;
                 pointer int_cell = sc->vptr->mk_array (sc, num_int8s, array_int8);
-                gint8  *avalue = (gint8 *) arrayvalue (int_cell);
+                guint8 *avalue = (guint8 *) arrayvalue (int_cell);
 
-                g_memmove(avalue, array, num_int8s*sizeof(gint8));
+                g_memmove(avalue, array, num_int8s*sizeof(guint8));
                 return_val = sc->vptr->cons (sc, int_cell, return_val);
               }
               break;
