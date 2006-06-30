@@ -1,3 +1,28 @@
+2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-interface.c: Dropped the _name suffix from the
+	getter and setter API for consistency with GimpBrushSelectButton.
+	Based on changes made by Sven Neumann to Script-Fu.
+
+2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/guides-new.scm: Marked string for translation. Based on
+	a patch from Zbigniew Chyla to Script-Fu.
+
+2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-interface.c: Updated due to change in API CVS
+	version of GIMP. Use replacements for gimp_foo_select widgets,
+	akin to GimpFontSelectButton. Based on changes made by Manish
+	Singh to Script-Fu.
+
+	* tiny-fu/ts-wrapper.c: Updated now that INT8 is an unsigned data
+	type. Moved 'success' test when parsing arguments to 'for' loop.
+
+	* configure.in: Updated to require version 2.3.10 of GIMP.
+
+	* autogen.sh: Updated to require newer versions of build tools.
+
 2006-06-23  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Ellipsize the
