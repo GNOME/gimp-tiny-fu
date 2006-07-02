@@ -287,7 +287,6 @@
     SF-OPTION     "Orientation"        '("Horizontal"
                                          "Vertical")
     SF-ENUM       "Interpolation"      '("InterpolationType" "linear")
-    SF-RADIO      "Pick a side"        '(1 "Left" "Right")
     SF-DIRNAME    "Output directory"   "/var/tmp/"
     SF-IMAGE      "Image"              -1
     SF-LAYER      "Layer"              -1
@@ -296,4 +295,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-test-sphere"
-                       "<Toolbox>/Xtns/Test")
+                       "<Toolbox>/Xtns/Languages/Tiny-Fu/Test")
