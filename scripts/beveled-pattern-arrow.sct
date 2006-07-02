@@ -158,4 +158,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-beveled-pattern-arrow"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern")
+                       "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

@@ -100,4 +100,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-basic1-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

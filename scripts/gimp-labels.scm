@@ -123,7 +123,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-tube-button-label-gimp-org"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (tiny-fu-register "tiny-fu-tube-subbutton-label-gimp-org"
     _"T_ube Sub-Button Label..."
@@ -138,7 +138,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-tube-subbutton-label-gimp-org"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (tiny-fu-register "tiny-fu-tube-subsubbutton-label-gimp-org"
     _"Tub_e Sub-Sub-Button Label..."
@@ -153,7 +153,7 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-tube-subsubbutton-label-gimp-org"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (tiny-fu-register "tiny-fu-labels-gimp-org"
     _"_General Tube Labels..."
@@ -178,4 +178,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-labels-gimp-org"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org")
+                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")

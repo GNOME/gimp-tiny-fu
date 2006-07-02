@@ -144,4 +144,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-frosty-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

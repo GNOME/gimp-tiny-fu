@@ -124,4 +124,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chrome-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

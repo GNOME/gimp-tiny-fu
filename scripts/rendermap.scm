@@ -87,4 +87,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-render-map"
-                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Patterns")

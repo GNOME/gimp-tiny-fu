@@ -296,4 +296,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-test-sphere"
-                       "<Toolbox>/Xtns/Tiny-Fu/Test")
+                       "<Toolbox>/Xtns/Test")

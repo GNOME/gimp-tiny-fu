@@ -1,8 +1,8 @@
 ;; -*-scheme-*-
 
-;; Alan Horkan 2004.  Public Domain.  
+;; Alan Horkan 2004.  Public Domain.
 ;; so long as remove this block of comments from your script
-;; feel free to use it for whatever you like.  
+;; feel free to use it for whatever you like.
 
 (define (tiny-fu-guide-new image
 			   drawable
@@ -13,7 +13,7 @@
 	(height (car (gimp-image-height image)))
         )
 
-    (if (= direction 0) 
+    (if (= direction 0)
 	;; check position is inside the image boundaries
 	(if (<= position height) (gimp-image-add-hguide image position))
 	(if (<= position width) (gimp-image-add-vguide image position))
@@ -22,19 +22,19 @@
     (gimp-displays-flush)
   )
 )
-    
-(tiny-fu-register "tiny-fu-guide-new" 
-    _"New _Guide..." 
+
+(tiny-fu-register "tiny-fu-guide-new"
+    _"New _Guide..."
     "Add a single Line Guide with the specified postion and orientation. Postion is specified in Pixels (px)."
     "Alan Horkan"
     "Alan Horkan, 2004.  Public Domain."
     "2004-04-02"
     ""
-    SF-IMAGE      "Image"      0 
+    SF-IMAGE      "Image"      0
     SF-DRAWABLE   "Drawable"   0
-    SF-OPTION     _"Direction" '(_"Horizontal" 
+    SF-OPTION     _"Direction" '(_"Horizontal"
 				 _"Vertical")
-    SF-ADJUSTMENT "Position"   '(0 0 MAX-IMAGE-SIZE 1 10 0 1)
+    SF-ADJUSTMENT _"Position"  '(0 0 MAX-IMAGE-SIZE 1 10 0 1)
 )
 
 (tiny-fu-menu-register "tiny-fu-guide-new"

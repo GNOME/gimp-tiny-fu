@@ -5,17 +5,17 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ;
-;    3dTruchet  - a script to create Truchet patterns 
+;    3dTruchet  - a script to create Truchet patterns
 ;                 by Adrian Likins <aklikins@eos.ncsu.edu>
 ;                 http://www4.ncsu.edu/~aklikins/
 ;    version about .8 give or take
@@ -98,7 +98,7 @@
                       CHANNEL-OP-REPLACE TRUE FALSE 0)
       (center-ellipse temp-img size size inner-radius inner-radius
                       CHANNEL-OP-SUBTRACT TRUE FALSE 0)
-      
+
       (center-ellipse temp-img (* size 2) (*  size 2)  outer-radius outer-radius
                       CHANNEL-OP-ADD TRUE FALSE 0)
       (center-ellipse temp-img (* size 2) (*  size 2)  inner-radius inner-radius
@@ -144,7 +144,7 @@
       ;(let ((drawble (car (gimp-drawable-transform-flip-simple img drawable1
       ;                     ORIENTATION-HORIZONTAL
       ;                     TRUE 0 TRUE)))))
-        
+
 
       ;(gimp-display-new temp-img)
       (gimp-image-delete temp-img)
@@ -183,7 +183,7 @@
     (gimp-image-add-layer img layer-one 0)
     (gimp-image-add-layer tile tiledraw1 0)
     (gimp-image-add-layer tile tiledraw2 0)
- 
+
     ;just to look a little better
     (gimp-selection-all img)
     (gimp-context-set-background backcolor)
@@ -223,13 +223,13 @@
   ""
   SF-ADJUSTMENT _"Block size"        '(64 5 1000 1 10 0 1)
   SF-ADJUSTMENT _"Thickness"         '(12 2 100 1 10 0 1)
-  SF-COLOR      _"Background color"  '(255 255 255)
-  SF-COLOR      _"Start blend"       '(0 0 0)
-  SF-COLOR      _"End blend"         '(255 255 255)
+  SF-COLOR      _"Background color"  "white"
+  SF-COLOR      _"Start blend"       "black"
+  SF-COLOR      _"End blend"         "white"
   SF-TOGGLE     _"Supersample"       TRUE
   SF-ADJUSTMENT _"Number of X tiles" '(5 1 1000 1 10 0 1)
   SF-ADJUSTMENT _"Number of Y tiles" '(5 1 1000 1 10 0 1)
 )
 
 (tiny-fu-menu-register "tiny-fu-3dtruchet"
-                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Patterns")

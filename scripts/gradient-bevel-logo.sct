@@ -143,4 +143,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-gradient-bevel-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

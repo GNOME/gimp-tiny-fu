@@ -177,4 +177,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-3d-outline-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

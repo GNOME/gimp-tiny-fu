@@ -163,4 +163,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-button"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")
+                       "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

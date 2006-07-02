@@ -172,4 +172,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-title-header"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

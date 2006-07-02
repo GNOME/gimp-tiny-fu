@@ -175,4 +175,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-starscape-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

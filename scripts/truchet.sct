@@ -168,4 +168,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-truchet"
-                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Patterns")

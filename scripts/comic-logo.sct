@@ -167,4 +167,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-comic-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

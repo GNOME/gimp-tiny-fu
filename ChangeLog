@@ -1,3 +1,71 @@
+2006-07-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/Makefile.am: Added reverse-layers.sct. Moved
+	ts-helloworld.sct to the list of test scripts.
+
+	* scripts/reverse-layers.sct: new script from Akkana Peck which
+	reverses the layers in an image.
+
+	* tiny-fu/tiny-fu.c
+	* scripts/3d-outline.sct
+	* scripts/3dTruchet.sct
+	* scripts/alien-glow-arrow.sct
+	* scripts/alien-glow-bar.sct
+	* scripts/alien-glow-bullet.sct
+	* scripts/alien-glow-button.sct
+	* scripts/alien-glow-logo.sct
+	* scripts/alien-neon-logo.sct
+	* scripts/basic1-logo.sct
+	* scripts/basic2-logo.sct
+	* scripts/beveled-button.sct
+	* scripts/beveled-pattern-arrow.sct
+	* scripts/beveled-pattern-bullet.sct
+	* scripts/beveled-pattern-button.sct
+	* scripts/beveled-pattern-heading.sct
+	* scripts/beveled-pattern-hrule.sct
+	* scripts/blended-logo.sct
+	* scripts/bovinated-logo.sct
+	* scripts/camo.sct
+	* scripts/carved-logo.sct
+	* scripts/chalk.sct
+	* scripts/chip-away.sct
+	* scripts/chrome-logo.sct
+	* scripts/comic-logo.sct
+	* scripts/contactsheet.sct
+	* scripts/coolmetal-logo.sct
+	* scripts/crystal-logo.sct
+	* scripts/flatland.sct
+	* scripts/frosty-logo.sct
+	* scripts/gimp-headers.sct
+	* scripts/gimp-labels.sct
+	* scripts/glossy.sct
+	* scripts/glowing-logo.sct
+	* scripts/gradient-bevel-logo.sct
+	* scripts/guides-new.sct
+	* scripts/i26-gunya2.sct
+	* scripts/land.sct
+	* scripts/neon-logo.sct
+	* scripts/news-text.sct
+	* scripts/pupi-button.sct
+	* scripts/rendermap.sct
+	* scripts/sota-chrome-logo.sct
+	* scripts/speed-text.sct
+	* scripts/sphere.sct
+	* scripts/starburst-logo.sct
+	* scripts/starscape-logo.sct
+	* scripts/swirltile.sct
+	* scripts/swirly-pattern.sct
+	* scripts/t-o-p-logo.sct
+	* scripts/test-sphere.sct
+	* scripts/text-circle.sct
+	* scripts/textured-logo.sct
+	* scripts/title-header.sct
+	* scripts/truchet.sct
+	* scripts/ts-helloworld.sct: Move the script categories that were
+	in Xtns->Tiny-Fu directly into Xtns. Language specific tools (e.g.
+	Refresh, Console) remain in language-specific menus. Bug #145507.
+	Based on changes made by Akkana Peck to Script-Fu.
+
 2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Dropped the _name suffix from the

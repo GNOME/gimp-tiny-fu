@@ -89,4 +89,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-swirly-pattern"
-                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Patterns")

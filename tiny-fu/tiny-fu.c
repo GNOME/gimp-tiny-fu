@@ -105,7 +105,7 @@ tiny_fu_query (void)
                           0, 0, NULL, NULL);
 
   gimp_install_procedure ("plug-in-tiny-fu-console",
-                          "Provides a console mode for tiny-fu development",
+                          N_("Interactive console for Script-Fu development"),
                           "Provides an interface which allows interactive "
                                       "scheme development.",
                           "Spencer Kimball & Peter Mattis",
@@ -268,25 +268,25 @@ tiny_fu_extension_init (void)
 
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages",
                                     N_("_Tiny-Fu"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Buttons"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Logos"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Misc"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Patterns"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages/Tiny-Fu",
                                     N_("_Test"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Utils"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Web Page Themes"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Web Page Themes",
                                     N_("_Alien Glow"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Web Page Themes",
                                     N_("_Beveled Pattern"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Tiny-Fu/Web Page Themes",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Web Page Themes",
                                     N_("_Classic.Gimp.Org"));
 
   gimp_plugin_menu_branch_register ("<Image>/Filters",

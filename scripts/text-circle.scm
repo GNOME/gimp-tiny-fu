@@ -218,4 +218,4 @@
 ;; text-circle.sct ends here
 
 (tiny-fu-menu-register "tiny-fu-text-circle"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

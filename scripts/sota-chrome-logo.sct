@@ -220,4 +220,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-sota-chrome-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

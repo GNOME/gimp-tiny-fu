@@ -82,4 +82,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-sphere"
-                       "<Toolbox>/Xtns/Tiny-Fu/Misc")
+                       "<Toolbox>/Xtns/Misc")

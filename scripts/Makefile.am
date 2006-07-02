@@ -78,6 +78,7 @@ scripts =  \
     predator.sct            \
     pupi-button.sct         \
     rendermap.sct           \
+    reverse-layers.sct      \
     ripply-anim.sct         \
     round-corners.sct       \
     selection-round.sct     \
@@ -102,7 +103,6 @@ scripts =  \
     title-header.sct        \
     t-o-p-logo.sct          \
     truchet.sct             \
-    ts-helloworld.sct       \
     unsharp-mask.sct        \
     waves-anim.sct          \
     weave.sct               \
@@ -110,7 +110,8 @@ scripts =  \
     xach-effect.sct
 
 test_scripts = \
-    test-sphere.sct
+    test-sphere.sct   \
+    ts-helloworld.sct
 
  
 if TINY_FU_UNSTABLE

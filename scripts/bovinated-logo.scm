@@ -126,4 +126,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-bovinated-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

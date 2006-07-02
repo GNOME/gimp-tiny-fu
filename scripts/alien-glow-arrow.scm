@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; Alien Glow themed arrows for web pages
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
@@ -9,17 +9,17 @@
 ; Based on code from
 ; Federico Mena Quintero
 ; federico@nuclecu.unam.mx
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -134,7 +134,7 @@
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img glow-layer -1)
     (gimp-image-add-layer img ruler-layer -1)
-    
+
     (gimp-edit-clear glow-layer)
     (gimp-edit-clear ruler-layer)
 
@@ -147,7 +147,7 @@
                      GRADIENT-SHAPEBURST-ANGULAR 100 0 REPEAT-NONE FALSE
                      FALSE 0 0 TRUE
                      0 0 size size)
-    
+
     (gimp-selection-grow img grow-amount)
     (gimp-context-set-foreground glow-color)
     (gimp-edit-fill glow-layer FOREGROUND-FILL)
@@ -159,7 +159,7 @@
 
     (gimp-context-set-background bg-color)
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
-    
+
     (gimp-context-set-background old-bg)
     (gimp-context-set-foreground old-fg)
 
@@ -179,14 +179,14 @@
     "1997"
     ""
     SF-ADJUSTMENT _"Size"             '(32 5 150 1 10 0 1)
-    SF-OPTION     _"Orientation"      '(_"Right" 
-                                       _"Left" 
-                                       _"Up" 
+    SF-OPTION     _"Orientation"      '(_"Right"
+                                       _"Left"
+                                       _"Up"
                                        _"Down")
     SF-COLOR      _"Glow color"       '(63 252 0)
-    SF-COLOR      _"Background color" '(0 0 0)
+    SF-COLOR      _"Background color" "black"
     SF-TOGGLE     _"Flatten image"    TRUE
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-right-arrow"
-                       "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow")
+                       "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

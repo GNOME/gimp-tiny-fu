@@ -241,4 +241,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-neon-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

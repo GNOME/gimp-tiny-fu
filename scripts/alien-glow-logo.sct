@@ -107,4 +107,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-glow-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

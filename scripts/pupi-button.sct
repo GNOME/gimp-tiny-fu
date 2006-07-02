@@ -207,4 +207,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-round-button"
-                       "<Toolbox>/Xtns/Tiny-Fu/Buttons")
+                       "<Toolbox>/Xtns/Buttons")

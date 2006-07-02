@@ -83,4 +83,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-newsprint-text"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

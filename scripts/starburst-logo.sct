@@ -116,4 +116,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-starburst-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

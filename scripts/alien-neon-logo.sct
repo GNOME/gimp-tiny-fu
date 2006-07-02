@@ -179,6 +179,6 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-alien-neon-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")
 
 ; end

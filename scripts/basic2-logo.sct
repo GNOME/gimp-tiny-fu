@@ -122,4 +122,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-basic2-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")

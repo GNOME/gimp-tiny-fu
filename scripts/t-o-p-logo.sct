@@ -153,6 +153,6 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-t-o-p-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")
 
 ; end of t-o-p.scm

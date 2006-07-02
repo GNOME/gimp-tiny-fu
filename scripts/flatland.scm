@@ -73,4 +73,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-flatland"
-                       "<Toolbox>/Xtns/Tiny-Fu/Patterns")
+                       "<Toolbox>/Xtns/Patterns")

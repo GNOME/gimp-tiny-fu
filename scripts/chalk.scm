@@ -121,4 +121,4 @@
 )
 
 (tiny-fu-menu-register "tiny-fu-chalk-logo"
-                       "<Toolbox>/Xtns/Tiny-Fu/Logos")
+                       "<Toolbox>/Xtns/Logos")
