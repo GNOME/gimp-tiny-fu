@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-06 15:06+0200\n"
-"PO-Revision-Date: 2006-06-07 14:37+0200\n"
+"POT-Creation-Date: 2006-07-11 14:05+0200\n"
+"PO-Revision-Date: 2006-07-11 14:07+0200\n"
 "Last-Translator: Jakub Friedl <jfriedl@suse.cz>\n"
 "Language-Team:  <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms:  nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../tiny-fu/tiny-fu.c:108
+msgid "Interactive console for Script-Fu development"
+msgstr "Interaktivní konzole pro vývoj v Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:114
 msgid "Tiny-Fu _Console"
@@ -193,7 +197,7 @@ msgstr "Prohlížeč procedur Tiny-Fu"
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr "Pouze neinteraktivní spuštění umožňuje režim provádění Skript-fu"
 
-#: ../tiny-fu/tiny-fu-scripts.c:662
+#: ../tiny-fu/tiny-fu-scripts.c:675
 #, c-format
 msgid ""
 "Error while executing\n"
@@ -222,53 +226,53 @@ msgstr "Port serveru:"
 msgid "Server Logfile:"
 msgstr "Žurnálový soubor serveru:"
 
-#: ../tiny-fu/tiny-fu-interface.c:181
+#: ../tiny-fu/tiny-fu-interface.c:177
 msgid "Tiny-Fu cannot process two scripts at the same time."
 msgstr "Skript-fu nemůže zároveň zpracovávat dva skripty."
 
-#: ../tiny-fu/tiny-fu-interface.c:183
+#: ../tiny-fu/tiny-fu-interface.c:179
 #, c-format
 msgid "You are already running the \"%s\" script."
 msgstr "Již spouštíte skript \"%s\"."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: ../tiny-fu/tiny-fu-interface.c:206 ../tiny-fu/tiny-fu-interface.c:208
+#: ../tiny-fu/tiny-fu-interface.c:202 ../tiny-fu/tiny-fu-interface.c:204
 msgid "/Tiny-Fu/"
 msgstr "/Skript-fu/"
 
-#: ../tiny-fu/tiny-fu-interface.c:221
+#: ../tiny-fu/tiny-fu-interface.c:222
 #, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Skript-fu: %s"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: ../tiny-fu/tiny-fu-interface.c:288
+#: ../tiny-fu/tiny-fu-interface.c:286
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: ../tiny-fu/tiny-fu-interface.c:331
+#: ../tiny-fu/tiny-fu-interface.c:329
 msgid "Tiny-Fu Color Selection"
 msgstr "Skript-fu výběr barvy"
 
-#: ../tiny-fu/tiny-fu-interface.c:438
+#: ../tiny-fu/tiny-fu-interface.c:436
 msgid "Tiny-Fu File Selection"
 msgstr "Skript-fu výběr souboru"
 
-#: ../tiny-fu/tiny-fu-interface.c:442
+#: ../tiny-fu/tiny-fu-interface.c:440
 msgid "Tiny-Fu Folder Selection"
 msgstr "Skript-fu výběr adresáře"
 
-#: ../tiny-fu/tiny-fu-interface.c:454
+#: ../tiny-fu/tiny-fu-interface.c:452
 msgid "Tiny-Fu Font Selection"
 msgstr "Skript-fu výběr písma"
 
-#: ../tiny-fu/tiny-fu-interface.c:463
+#: ../tiny-fu/tiny-fu-interface.c:461
 msgid "Tiny-Fu Palette Selection"
 msgstr "Skript-fu výběr palety"
 
-#: ../tiny-fu/tiny-fu-interface.c:471
+#: ../tiny-fu/tiny-fu-interface.c:470
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Tiny-fu výběr palety"
 
@@ -276,28 +280,7 @@ msgstr "Tiny-fu výběr palety"
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Skript-fu výběr přechodu"
 
-#: ../tiny-fu/tiny-fu-interface.c:487
+#: ../tiny-fu/tiny-fu-interface.c:488
 msgid "Tiny-Fu Brush Selection"
 msgstr "Skript-fu výběr stopy"
-
-#: ../tiny-fu/tiny-fu-interface.c:1013
-#, c-format
-msgid "About %s"
-msgstr "O %s"
-
-#: ../tiny-fu/tiny-fu-interface.c:1078
-msgid "Author:"
-msgstr "Autor:"
-
-#: ../tiny-fu/tiny-fu-interface.c:1085
-msgid "Copyright:"
-msgstr "Copyright:"
-
-#: ../tiny-fu/tiny-fu-interface.c:1092
-msgid "Date:"
-msgstr "Datum:"
-
-#: ../tiny-fu/tiny-fu-interface.c:1101
-msgid "Image Types:"
-msgstr "Typy obrázku:"
 
