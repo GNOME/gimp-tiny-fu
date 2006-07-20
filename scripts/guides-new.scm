@@ -32,8 +32,7 @@
     ""
     SF-IMAGE      "Image"      0
     SF-DRAWABLE   "Drawable"   0
-    SF-OPTION     _"Direction" '(_"Horizontal"
-				 _"Vertical")
+    SF-OPTION     _"Direction" '(_"Horizontal" _"Vertical")
     SF-ADJUSTMENT _"Position"  '(0 0 MAX-IMAGE-SIZE 1 10 0 1)
 )
 
