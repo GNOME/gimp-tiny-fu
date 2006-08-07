@@ -1,3 +1,9 @@
+2006-08-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/tiny-fu-interface.c: Added missing call to
+	gimp_window_set_transient(). Fixes bug #348249.
+	From a change made by Sven Neumann to Script-Fu.
+
 2006-07-28  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* configure.in: Added macros that use the minor version number to

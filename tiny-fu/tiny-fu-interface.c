@@ -35,7 +35,6 @@
 
 
 #define RESPONSE_RESET         1
-#define RESPONSE_ABOUT         2
 
 #define TEXT_WIDTH           100
 #define COLOR_SAMPLE_WIDTH    60
@@ -238,6 +237,8 @@ tiny_fu_interface (SFScript *script)
                                            GTK_RESPONSE_OK,
                                            GTK_RESPONSE_CANCEL,
                                            -1);
+
+  gimp_window_set_transient (GTK_WINDOW (dialog));
 
   g_signal_connect (dialog, "response",
                     G_CALLBACK (tiny_fu_response),
