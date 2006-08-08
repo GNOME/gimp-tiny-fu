@@ -1,19 +1,33 @@
+- Review handling of brushes.
+  The non-deprecated set and get calls only take one parameter and not a list.
+- Update the autogen.sh script based on the newer version in GIMP.
+- Update the Tiny-Fu web page to mention the translation files are incomplete
+  since the intltool-update script doesn't recognize file names which end in
+  .sct as ones containing Scheme code.
+- Is tiny-fu-util-image-resize-from-layer still needed or can the built-in
+  function 'Fit Canvas to Layers' be used instead?
+
+In tiny-fu-scripts.c
+  - Check number of items in list for SF_ADJUSTMENT type
+  - Check number of items in list for SF_SELECT type
+
 Replacing Script-Fu with Tiny-Fu:
+- Add something to autogen.sh(? or at least TF) to make it easier for TF to
+  be reconfigured so that it steals the namespace of Script-Fu.
+  Use --enable-script-fu-namespace?
 - Pull Script-Fu out of the GIMP source tree.
-- Update Script-Fu to build as a standalone plug-in
-  Use Tiny-Fu as a template for this
+  Update Script-Fu to build as a standalone plug-in.
+  Use Tiny-Fu as a template for this.
+  * Sven doesn't seem to want Script-Fu as a separate module
+    Building of Script-Fu is now optional.
 - Update Tiny-Fu to use the Script-Fu namespace.
+- Fix up the Tiny-Fu scripts to register in the right menu locations.
 
 
 Bugs:
 - Script doesn't abort when encountering an uncaught script error.
   Found problem in fire-logo when calling gimp-layer-resize-to-image-size
   on a layer that had not been added to an image.
-- Translation files are not being put in the right directory in Windows.
-  This should be fixed for a 1.0 release.
-- The scripts-update.pl script isn't converting gimp-blend to gimp-edit-blend
-  when the statement is split over two lines. It needs to read in the whole
-  script at once before doing the search/replace operations.
 - circuit.scm doesn't work right when separate layer is turned off. The white
   lines are drawn with a black background which obscures the original layer.
   Create circuit paths on separate layer, remove the background, then merge
@@ -27,19 +41,21 @@ Compatability errors with Script-Fu:
 
 
 ToDo (for CVS GIMP after branching Tiny-Fu):
+- Test Tiny-Fu batch mode
+- Test Tiny-Fu server mode
 - Add test scripts for server mode to CVS
-- Add SF-ENUM parameter type
+- Add SF-RADIO parameter type to register block
+  Comments from joao on #gimp:
+  It is really simple in Python. No more than a few gtk calls - all of which
+  have C equivalents. The whole code uses less than 20 lines. Should be less
+  then 35 lines in C.
+  Try looking at the code for SF_SPINNER and class SpinnerEntry in gimpfu.py
+  then look at class RadioEntry in gimpfu.py
+- Add SF-MULTI(?) parameter type to register block
+  It would allow a user to choose multiple items and return a STRINGARRAY
 - Put the gimp-text-wrapper.sct stuff in one of the .init routines??
   Or should the routines be deleted?
-- Re-enable Browse button in Console mode.
-  To enable the Browse buttin in Tiny-Fu means I need to link in the
-  libgimpprocbrowser.a file but it has strings in it which mean I need access
-  to two of the source files so any strings marked for translation will be
-  included in the tiny-fu .po files.
 - Change Tiny-Fu from an extension to a regular plug-in.
-
-
-ToDo:
 - Finish updating the list of tests for plug-ins in pdb-test.sct
 - Do the re and ftx extensions need to be updated for UTF-8?
 - configure should test for existance of strcasecmp and if it exists use it
@@ -47,7 +63,6 @@ ToDo:
 - Send e-mail about Tiny-Fu, its status, and how it compares to Script-Fu.
 - Modify script which updates scripts from GIMP 2.0 to 2.2 so that it reads
   an entire script in one go rather than line by line before modifying it.
-- Get spyrogimp.sct working.
 - Remove conversion of / to \\ in script-fu-scripts since it should
   be handled by other means already?? Either that or it should use
   the #define G_DIR_SEPARATOR
@@ -62,22 +77,20 @@ ToDo:
   I added an item to the register list in test-sphere but not to the define
   statement and it didn't catch the discrepancy.
 - Create some demonstration scripts using the tsx (and re) extensions
-	o Create thumbnails
-	o Web gallery
-		thumbnails + html pages to show them and link to the originals images
-	o Create a contact sheet (DONE)
-
+    o Create thumbnails
+    o Web gallery
+      thumbnails + html pages to show them and link to the originals images
+    o Create a contact sheet (DONE)
 - Dynamically allocate the number of data cell segments on an as needed basis.
   Need to modify alloc_cellseg()
 - Clean up the changes re: putting error messages in to a buffer. Send the
   code changes to TinyScheme author.
 - The print_flag variable should only be set to 1 for the console mode.
 - Test the plug-ins text console mode.
-- A line beginning with a ; just before some close brackets will result in
-  'syntax error: illegal token 1'.
 - (let ((foo (cons-array 1))) (gimp-parasite-attach (list "bar" 0 foo)))
   gives the message "Error: not enough arguments".
   It should display the name of the item for which there are missing args.
+  (This message comes from tinyscheme)
 - Some errors about car: argument 1 should be a pair should provide an
   indication of what the name of the argument is.
 - Check if there are other places where is_pair() is being called instead
@@ -96,6 +109,9 @@ ToDo:
 - Write up information about the TinyScheme interpreter.
 - Document a suggested coding style for Tiny-Fu scripts.
 
+- A line beginning with a ; just before some close brackets will result in
+  'syntax error: illegal token 1'.
+  Fixed in TinyScheme 1.37 with change in parsing of comments?
 - Add bracket counting to Scheme interpreter. It should display a message
   if it encounters more ')' than '('. Use the info in error messages.
   Already there. Look at sc->nesting_stack[sc->file_i].
