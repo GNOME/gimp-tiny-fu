@@ -1,3 +1,10 @@
+2006-09-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* scripts/gradient-example.sct: pop the context before rendering the
+	gradient so we draw the gradient with the user's colors, not with the
+	ones the script uses temporarily. From a change made by Michael
+	Natterer to Script-Fu.
+
 2006-08-11  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Set packing of the main vbox to

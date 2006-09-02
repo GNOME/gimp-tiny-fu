@@ -33,15 +33,18 @@
         (bg-color (* 255 (/ 1 3)))
         )
 
-    (gimp-context-push)
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
 
     ; Render background checkerboard
 
+    (gimp-context-push)
+
     (gimp-context-set-foreground (list fg-color fg-color fg-color))
     (gimp-context-set-background (list bg-color bg-color bg-color))
     (plug-in-checkerboard 1 img drawable 0 8)
+
+    (gimp-context-pop)
 
     ; Render gradient
 
@@ -54,7 +57,6 @@
 
     (gimp-image-undo-enable img)
     (gimp-display-new img)
-    (gimp-context-pop)
   )
 )
 
