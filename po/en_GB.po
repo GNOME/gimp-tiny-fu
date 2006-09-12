@@ -1,58 +1,168 @@
 # Canadian English translations of gimp tiny-fu
 # Copyright (C) 2004 Adam Weinberger and the GNOME Foundation
 # This file is distributed under the same license as the gimp tiny-fu package.
-# Maintainer: 
-# 
-# 
+# Maintainer:
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp tiny-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-27 23:23-0500\n"
-"PO-Revision-Date: 2004-09-06 00:14-0400\n"
-"Last-Translator: Kevin Cozens <kcozens@interlog.com>\n"
-"Language-Team: English/Canada \n"
+"POT-Creation-Date: 2006-09-12 22:51+0100\n"
+"PO-Revision-Date: 2006-09-12 22:52-0000\n"
+"Last-Translator: David Lodge <dave@cirt.net>\n"
+"Language-Team: English/Canada\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: tiny-fu/tiny-fu.c:122
-msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+#: ../tiny-fu/tiny-fu.c:108
+msgid "Interactive console for Script-Fu development"
+msgstr "Interactive console for Script-Fu development"
 
-#: tiny-fu/tiny-fu.c:148
-msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
-msgstr "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+#: ../tiny-fu/tiny-fu.c:114
+msgid "Tiny-Fu _Console"
+msgstr "Tiny-Fu _Console"
 
-#: tiny-fu/tiny-fu.c:275
-msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+#: ../tiny-fu/tiny-fu.c:121
+#: ../tiny-fu/tiny-fu.c:150
+#: ../tiny-fu/tiny-fu.c:331
+msgid "<Toolbox>/Xtns/Languages/Tiny-Fu"
+msgstr "<Toolbox>/Xtns/Languages/Tiny-Fu"
 
-#: tiny-fu/tiny-fu-console.c:142
+#: ../tiny-fu/tiny-fu.c:143
+msgid "_Start Server..."
+msgstr "_Start Server..."
+
+#: ../tiny-fu/tiny-fu.c:266
+msgid "_GIMP Online"
+msgstr "_GIMP Online"
+
+#: ../tiny-fu/tiny-fu.c:267
+msgid "_User Manual"
+msgstr "_User Manual"
+
+#: ../tiny-fu/tiny-fu.c:270
+msgid "_Tiny-Fu"
+msgstr "_Tiny-Fu"
+
+#: ../tiny-fu/tiny-fu.c:272
+msgid "_Buttons"
+msgstr "_Buttons"
+
+#: ../tiny-fu/tiny-fu.c:274
+msgid "_Logos"
+msgstr "_Logos"
+
+#: ../tiny-fu/tiny-fu.c:276
+msgid "_Misc"
+msgstr "_Misc"
+
+#: ../tiny-fu/tiny-fu.c:278
+msgid "_Patterns"
+msgstr "_Patterns"
+
+#: ../tiny-fu/tiny-fu.c:280
+msgid "_Test"
+msgstr "_Test"
+
+#: ../tiny-fu/tiny-fu.c:282
+msgid "_Utils"
+msgstr "_Utils"
+
+#: ../tiny-fu/tiny-fu.c:284
+msgid "_Web Page Themes"
+msgstr "_Web Page Themes"
+
+#: ../tiny-fu/tiny-fu.c:286
+msgid "_Alien Glow"
+msgstr "_Alien Glow"
+
+#: ../tiny-fu/tiny-fu.c:288
+msgid "_Beveled Pattern"
+msgstr "_Bevelled Pattern"
+
+#: ../tiny-fu/tiny-fu.c:290
+msgid "_Classic.Gimp.Org"
+msgstr "_Classic.Gimp.Org"
+
+#: ../tiny-fu/tiny-fu.c:293
+msgid "Alpha to _Logo"
+msgstr "Alpha to _Logo"
+
+#: ../tiny-fu/tiny-fu.c:295
+msgid "An_imation"
+msgstr "An_imation"
+
+#: ../tiny-fu/tiny-fu.c:297
+msgid "_Animators"
+msgstr "_Animators"
+
+#: ../tiny-fu/tiny-fu.c:299
+msgid "_Artistic"
+msgstr "_Artistic"
+
+#: ../tiny-fu/tiny-fu.c:301
+msgid "_Blur"
+msgstr "_Blur"
+
+#: ../tiny-fu/tiny-fu.c:303
+msgid "_Decor"
+msgstr "_Decor"
+
+#: ../tiny-fu/tiny-fu.c:305
+msgid "_Effects"
+msgstr "_Effects"
+
+#: ../tiny-fu/tiny-fu.c:307
+msgid "En_hance"
+msgstr "En_hance"
+
+#: ../tiny-fu/tiny-fu.c:309
+msgid "_Light and Shadow"
+msgstr "_Light and Shadow"
+
+#: ../tiny-fu/tiny-fu.c:311
+msgid "S_hadow"
+msgstr "S_hadow"
+
+#: ../tiny-fu/tiny-fu.c:313
+msgid "_Render"
+msgstr "_Render"
+
+#: ../tiny-fu/tiny-fu.c:315
+msgid "_Alchemy"
+msgstr "_Alchemy"
+
+#: ../tiny-fu/tiny-fu.c:323
+msgid "_Refresh Scripts"
+msgstr "_Refresh Scripts"
+
+#: ../tiny-fu/tiny-fu.c:347
+msgid "When a Tiny-Fu dialog box is open you can not use \"Refresh Scripts\"."
+msgstr "When a Tiny-Fu dialog box is open you can not use \"Refresh Scripts\"."
+
+#: ../tiny-fu/tiny-fu-console.c:142
 msgid "Tiny-Fu console mode allows only interactive invocation"
 msgstr "Tiny-Fu console mode allows only interactive invocation"
 
-#: tiny-fu/tiny-fu-console.c:171
+#: ../tiny-fu/tiny-fu-console.c:175
 msgid "Tiny-Fu Console"
 msgstr "Tiny-Fu Console"
 
-#: tiny-fu/tiny-fu-console.c:176
+#: ../tiny-fu/tiny-fu-console.c:180
 msgid "_Save Output"
 msgstr "_Save Output"
 
-#: tiny-fu/tiny-fu-console.c:177
+#: ../tiny-fu/tiny-fu-console.c:181
 msgid "Cl_ear Output"
 msgstr "Cl_ear Output"
 
-#: tiny-fu/tiny-fu-console.c:200
-msgid "TinyScheme Output"
-msgstr "TinyScheme Output"
-
-#: tiny-fu/tiny-fu-console.c:239
+#: ../tiny-fu/tiny-fu-console.c:234
 msgid "Welcome to TinyScheme\n"
 msgstr "Welcome to TinyScheme\n"
 
-#: tiny-fu/tiny-fu-console.c:240
+#: ../tiny-fu/tiny-fu-console.c:235
 msgid ""
 "Copyright (c) Dimitrios Souflis\n"
 "\n"
@@ -60,31 +170,31 @@ msgstr ""
 "Copyright (c) Dimitrios Souflis\n"
 "\n"
 
-#: tiny-fu/tiny-fu-console.c:241
+#: ../tiny-fu/tiny-fu-console.c:236
 msgid "Tiny-Fu Console - "
 msgstr "Tiny-Fu Console - "
 
-#: tiny-fu/tiny-fu-console.c:242
+#: ../tiny-fu/tiny-fu-console.c:237
 msgid "Interactive Scheme Development"
 msgstr "Interactive Scheme Development"
 
-#: tiny-fu/tiny-fu-console.c:265
-msgid "Current Command"
-msgstr "Current Command"
+#: ../tiny-fu/tiny-fu-console.c:269
+msgid "_Browse..."
+msgstr "_Browse..."
 
-#: tiny-fu/tiny-fu-console.c:284
-msgid "Browse..."
-msgstr "Browse..."
-
-#: tiny-fu/tiny-fu-console.c:340
+#: ../tiny-fu/tiny-fu-console.c:324
 msgid "Save TinyScheme Output"
 msgstr "Save TinyScheme Output"
 
-#: tiny-fu/tiny-fu-console.c:657
+#: ../tiny-fu/tiny-fu-console.c:390
+msgid "Tiny-Fu Procedure Browser"
+msgstr "Tiny-Fu Procedure Browser"
+
+#: ../tiny-fu/tiny-fu-console.c:704
 msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
 msgstr "Tiny-Fu evaluate mode allows only noninteractive invocation"
 
-#: tiny-fu/tiny-fu-scripts.c:634
+#: ../tiny-fu/tiny-fu-scripts.c:675
 #, c-format
 msgid ""
 "Error while executing\n"
@@ -97,2237 +207,1073 @@ msgstr ""
 "\n"
 "%s"
 
-#: tiny-fu/tiny-fu-server.c:642
+#: ../tiny-fu/tiny-fu-server.c:711
 msgid "Tiny-Fu Server Options"
 msgstr "Tiny-Fu Server Options"
 
-#: tiny-fu/tiny-fu-server.c:670
+#: ../tiny-fu/tiny-fu-server.c:716
+msgid "_Start Server"
+msgstr "_Start Server"
+
+#: ../tiny-fu/tiny-fu-server.c:744
 msgid "Server Port:"
 msgstr "Server Port:"
 
-#: tiny-fu/tiny-fu-server.c:676
+#: ../tiny-fu/tiny-fu-server.c:750
 msgid "Server Logfile:"
 msgstr "Server Logfile:"
 
-#: tiny-fu/tiny-fu-text-console.c:67
-msgid "Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""
-msgstr "Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""
-
-#: tiny-fu/tiny-fu-interface.c:178
+#: ../tiny-fu/tiny-fu-interface.c:176
 msgid "Tiny-Fu cannot process two scripts at the same time."
 msgstr "Tiny-Fu cannot process two scripts at the same time."
 
-#: tiny-fu/tiny-fu-interface.c:180
+#: ../tiny-fu/tiny-fu-interface.c:178
 #, c-format
 msgid "You are already running the \"%s\" script."
 msgstr "You are already running the \"%s\" script."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: tiny-fu/tiny-fu-interface.c:203 tiny-fu/tiny-fu-interface.c:205
+#: ../tiny-fu/tiny-fu-interface.c:201
+#: ../tiny-fu/tiny-fu-interface.c:203
 msgid "/Tiny-Fu/"
 msgstr "/Tiny-Fu/"
 
-#: tiny-fu/tiny-fu-interface.c:218
+#: ../tiny-fu/tiny-fu-interface.c:221
 #, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Tiny-Fu: %s"
 
-#. the script arguments frame
-#: tiny-fu/tiny-fu-interface.c:255
-msgid "Script Arguments"
-msgstr "Script Arguments"
-
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: tiny-fu/tiny-fu-interface.c:286
+#: ../tiny-fu/tiny-fu-interface.c:287
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: tiny-fu/tiny-fu-interface.c:329
+#: ../tiny-fu/tiny-fu-interface.c:330
 msgid "Tiny-Fu Color Selection"
 msgstr "Tiny-Fu Colour Selection"
 
-#: tiny-fu/tiny-fu-interface.c:432
+#: ../tiny-fu/tiny-fu-interface.c:437
 msgid "Tiny-Fu File Selection"
 msgstr "Tiny-Fu File Selection"
 
-#: tiny-fu/tiny-fu-interface.c:436
+#: ../tiny-fu/tiny-fu-interface.c:441
 msgid "Tiny-Fu Folder Selection"
 msgstr "Tiny-Fu Folder Selection"
 
-#: tiny-fu/tiny-fu-interface.c:448
+#: ../tiny-fu/tiny-fu-interface.c:453
 msgid "Tiny-Fu Font Selection"
 msgstr "Tiny-Fu Font Selection"
 
-#: tiny-fu/tiny-fu-interface.c:455
+#: ../tiny-fu/tiny-fu-interface.c:462
 msgid "Tiny-Fu Palette Selection"
 msgstr "Tiny-Fu Palette Selection"
 
-#: tiny-fu/tiny-fu-interface.c:463
+#: ../tiny-fu/tiny-fu-interface.c:471
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Tiny-Fu Pattern Selection"
 
-#: tiny-fu/tiny-fu-interface.c:470
+#: ../tiny-fu/tiny-fu-interface.c:480
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Tiny-Fu Gradient Selection"
 
-#: tiny-fu/tiny-fu-interface.c:478
+#: ../tiny-fu/tiny-fu-interface.c:489
 msgid "Tiny-Fu Brush Selection"
 msgstr "Tiny-Fu Brush Selection"
 
-#. the script progress frame
-#: tiny-fu/tiny-fu-interface.c:534
-msgid "Script Progress"
-msgstr "Script Progress"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
+#~ msgid "TinyScheme Output"
+#~ msgstr "TinyScheme Output"
+#~ msgid "Current Command"
+#~ msgstr "Current Command"
+#~ msgid "Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""
+#~ msgstr "Tiny-Fu text console mode does not handle \"RUN_WITH_LAST_VALUES\""
+#~ msgid "Script Arguments"
+#~ msgstr "Script Arguments"
+#~ msgid "Script Progress"
+#~ msgstr "Script Progress"
+#~ msgid "(none)"
+#~ msgstr "(none)"
+#~ msgid "Author:"
+#~ msgstr "Author:"
+#~ msgid "Copyright:"
+#~ msgstr "Copyright:"
+#~ msgid "Date:"
+#~ msgstr "Date:"
+#~ msgid "Image Types:"
+#~ msgstr "Image Types:"
+#~ msgid "Color"
+#~ msgstr "Colour"
+#~ msgid "Font"
+#~ msgstr "Font"
+#~ msgid "Font size (pixels)"
+#~ msgstr "Font size (pixels)"
+#~ msgid "Hello World"
+#~ msgstr "Hello World"
+#~ msgid "Text string"
+#~ msgstr "Text string"
+#~ msgid " contact sheets from a total of "
+#~ msgstr " contact sheets from a total of "
+#~ msgid " for directory "
+#~ msgstr " for directory "
+#~ msgid " images"
+#~ msgstr " images"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Utils"
+#~ msgid "Background color"
+#~ msgstr "Background colour"
+#~ msgid "Contact Sheet"
+#~ msgstr "Contact Sheet"
+#~ msgid "Created "
+#~ msgstr "Created "
+#~ msgid "Legend font"
+#~ msgstr "Legend font"
+#~ msgid "Sheet "
+#~ msgstr "Sheet "
+#~ msgid "Sheet size"
+#~ msgstr "Sheet size"
+#~ msgid "Text color"
+#~ msgstr "Text colour"
+#~ msgid "Title font"
+#~ msgstr "Title font"
+#~ msgid "Unable to open directory "
+#~ msgstr "Unable to open directory "
+#~ msgid "3D _Outline..."
+#~ msgstr "3D _Outline..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Logos"
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Bumpmap (alpha layer) blur radius"
+#~ msgid "Default bumpmap settings"
+#~ msgstr "Default bumpmap settings"
+#~ msgid "Outline blur radius"
+#~ msgstr "Outline blur radius"
+#~ msgid "Shadow X offset"
+#~ msgstr "Shadow X offset"
+#~ msgid "Shadow Y offset"
+#~ msgstr "Shadow Y offset"
+#~ msgid "Shadow blur radius"
+#~ msgstr "Shadow blur radius"
+#~ msgid "Text"
+#~ msgstr "Text"
+#~ msgid "3_D Truchet..."
+#~ msgstr "3_D Truchet..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Patterns"
+#~ msgid "Block size"
+#~ msgstr "Block size"
+#~ msgid "End blend"
+#~ msgstr "End blend"
+#~ msgid "Number of X tiles"
+#~ msgstr "Number of X tiles"
+#~ msgid "Number of Y tiles"
+#~ msgstr "Number of Y tiles"
+#~ msgid "Start blend"
+#~ msgstr "Start blend"
+#~ msgid "Supersample"
+#~ msgstr "Supersample"
+#~ msgid "Thickness"
+#~ msgstr "Thickness"
+#~ msgid "<Image>/Tiny-Fu/Decor"
+#~ msgstr "<Image>/Tiny-Fu/Decor"
+#~ msgid "Add B_evel..."
+#~ msgstr "Add B_evel..."
+#~ msgid "Keep bump layer"
+#~ msgstr "Keep bump layer"
+#~ msgid "Work on copy"
+#~ msgstr "Work on copy"
+#~ msgid "Add _Border..."
+#~ msgstr "Add _Border..."
+#~ msgid "Border X size"
+#~ msgstr "Border X size"
+#~ msgid "Border Y size"
+#~ msgstr "Border Y size"
+#~ msgid "Border color"
+#~ msgstr "Border colour"
+#~ msgid "Delta value on color"
+#~ msgstr "Delta value on colour"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
+#~ msgid "Down"
+#~ msgstr "Down"
+#~ msgid "Flatten image"
+#~ msgstr "Flatten image"
+#~ msgid "Glow color"
+#~ msgstr "Glow colour"
+#~ msgid "Left"
+#~ msgstr "Left"
+#~ msgid "Orientation"
+#~ msgstr "Orientation"
+#~ msgid "Right"
+#~ msgstr "Right"
+#~ msgid "Size"
+#~ msgstr "Size"
+#~ msgid "Up"
+#~ msgstr "Up"
+#~ msgid "_Arrow..."
+#~ msgstr "_Arrow..."
+#~ msgid "Bar height"
+#~ msgstr "Bar height"
+#~ msgid "Bar length"
+#~ msgstr "Bar length"
+#~ msgid "_Hrule..."
+#~ msgstr "_Hrule..."
+#~ msgid "Radius"
+#~ msgstr "Radius"
+#~ msgid "_Bullet..."
+#~ msgstr "_Bullet..."
+#~ msgid "Glow radius"
+#~ msgstr "Glow radius"
+#~ msgid "Padding"
+#~ msgstr "Padding"
+#~ msgid "Glow size (pixels * 4)"
+#~ msgstr "Glow size (pixels * 4)"
+#~ msgid "Alien _Neon..."
+#~ msgstr "Alien _Neon..."
+#~ msgid "Fade away"
+#~ msgstr "Fade away"
+#~ msgid "Number of bands"
+#~ msgstr "Number of bands"
+#~ msgid "Width of bands"
+#~ msgstr "Width of bands"
+#~ msgid "Width of gaps"
+#~ msgstr "Width of gaps"
+#~ msgid "_Basic I..."
+#~ msgstr "_Basic I..."
+#~ msgid "B_asic II..."
+#~ msgstr "B_asic II..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Buttons"
+#~ msgid "Bevel width"
+#~ msgstr "Bevel width"
+#~ msgid "Lower-right color"
+#~ msgstr "Lower-right colour"
+#~ msgid "Pressed"
+#~ msgstr "Pressed"
+#~ msgid "Simple _Beveled Button..."
+#~ msgstr "Simple _Beveled Button..."
+#~ msgid "Upper-left color"
+#~ msgstr "Upper-left colour"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
+#~ msgid "Diameter"
+#~ msgstr "Diameter"
+#~ msgid "Transparent background"
+#~ msgstr "Transparent background"
+#~ msgid "H_eading..."
+#~ msgstr "H_eading..."
+#~ msgid "Height"
+#~ msgstr "Height"
+#~ msgid "Width"
+#~ msgstr "Width"
+#~ msgid "<Image>/Tiny-Fu/Animators"
+#~ msgstr "<Image>/Tiny-Fu/Animators"
+#~ msgid "Blend Animation needs at least three source layers"
+#~ msgstr "Blend Animation needs at least three source layers"
+#~ msgid "Intermediate frames"
+#~ msgstr "Intermediate frames"
+#~ msgid "Looped"
+#~ msgstr "Looped"
+#~ msgid "Max. blur radius"
+#~ msgstr "Max. blur radius"
+#~ msgid "_Blend..."
+#~ msgstr "_Blend..."
+#~ msgid "Blen_ded..."
+#~ msgstr "Blen_ded..."
+#~ msgid "Blend mode"
+#~ msgstr "Blend mode"
+#~ msgid "Custom Gradient"
+#~ msgstr "Custom Gradient"
+#~ msgid "FG-BG-HSV"
+#~ msgstr "FG-BG-HSV"
+#~ msgid "FG-BG-RGB"
+#~ msgstr "FG-BG-RGB"
+#~ msgid "FG-Transparent"
+#~ msgstr "FG-Transparent"
+#~ msgid "Gradient"
+#~ msgstr "Gradient"
+#~ msgid "Gradient reverse"
+#~ msgstr "Gradient reverse"
+#~ msgid "Offset (pixels)"
+#~ msgstr "Offset (pixels)"
+#~ msgid "Background Color"
+#~ msgstr "Background Colour"
+#~ msgid "Bo_vination..."
+#~ msgstr "Bo_vination..."
+#~ msgid "Spots density X"
+#~ msgstr "Spots density X"
+#~ msgid "Spots density Y"
+#~ msgstr "Spots density Y"
+#~ msgid "Add glowing"
+#~ msgstr "Add glowing"
+#~ msgid "After glow"
+#~ msgstr "After glow"
+#~ msgid "B_urn-In..."
+#~ msgstr "B_urn-In..."
+#~ msgid ""
+#~ "Burn-In: Needs two layers in total!\n"
+#~ "A foreground text layer with transparency and a background layer."
+#~ msgstr ""
+#~ "Burn-In: Needs two layers in total!\n"
+#~ "A foreground text layer with transparency and a background layer."
+#~ msgid "Corona width"
+#~ msgstr "Corona width"
+#~ msgid "Fadeout"
+#~ msgstr "Fadeout"
+#~ msgid "Fadeout width"
+#~ msgstr "Fadeout width"
+#~ msgid "Prepare for GIF"
+#~ msgstr "Prepare for GIF"
+#~ msgid "Speed (pixels/frame)"
+#~ msgstr "Speed (pixels/frame)"
+#~ msgid "Color 1"
+#~ msgstr "Colour 1"
+#~ msgid "Color 2"
+#~ msgstr "Colour 2"
+#~ msgid "Color 3"
+#~ msgstr "Colour 3"
+#~ msgid "Granularity"
+#~ msgstr "Granularity"
+#~ msgid "Image size"
+#~ msgstr "Image size"
+#~ msgid "Smooth"
+#~ msgstr "Smooth"
+#~ msgid "_Camouflage..."
+#~ msgstr "_Camouflage..."
+#~ msgid "Background Image"
+#~ msgstr "Background Image"
+#~ msgid "Carve raised text"
+#~ msgstr "Carve raised text"
+#~ msgid "Carved..."
+#~ msgstr "Carved..."
+#~ msgid "Padding around text"
+#~ msgstr "Padding around text"
+#~ msgid "<Image>/Tiny-Fu/Stencil Ops"
+#~ msgstr "<Image>/Tiny-Fu/Stencil Ops"
+#~ msgid "C_arve-It..."
+#~ msgstr "C_arve-It..."
+#~ msgid "Carve white areas"
+#~ msgstr "Carve white areas"
+#~ msgid "Image to carve"
+#~ msgstr "Image to carve"
+#~ msgid "Chalk color"
+#~ msgstr "Chalk colour"
+#~ msgid "_Chalk..."
+#~ msgstr "_Chalk..."
+#~ msgid "Blur amount"
+#~ msgstr "Blur amount"
+#~ msgid "Chip Awa_y..."
+#~ msgstr "Chip Awa_y..."
+#~ msgid "Chip amount"
+#~ msgstr "Chip amount"
+#~ msgid "Drop shadow"
+#~ msgstr "Drop shadow"
+#~ msgid "Fill BG with pattern"
+#~ msgstr "Fill BG with pattern"
+#~ msgid "Invert"
+#~ msgstr "Invert"
+#~ msgid "Keep background"
+#~ msgstr "Keep background"
+#~ msgid "C_hrome-It..."
+#~ msgstr "C_hrome-It..."
+#~ msgid "Chrome balance"
+#~ msgstr "Chrome balance"
+#~ msgid "Chrome factor"
+#~ msgstr "Chrome factor"
+#~ msgid "Chrome lightness"
+#~ msgstr "Chrome lightness"
+#~ msgid "Chrome saturation"
+#~ msgstr "Chrome saturation"
+#~ msgid "Chrome white areas"
+#~ msgstr "Chrome white areas"
+#~ msgid "Environment map"
+#~ msgstr "Environment map"
+#~ msgid "Highlight balance"
+#~ msgstr "Highlight balance"
+#~ msgid "C_hrome..."
+#~ msgstr "C_hrome..."
+#~ msgid "Offsets (pixels * 2)"
+#~ msgstr "Offsets (pixels * 2)"
+#~ msgid "<Image>/Tiny-Fu/Render"
+#~ msgstr "<Image>/Tiny-Fu/Render"
+#~ msgid "Circuit seed"
+#~ msgstr "Circuit seed"
+#~ msgid "Keep selection"
+#~ msgstr "Keep selection"
+#~ msgid "No background (only for separate layer)"
+#~ msgstr "No background (only for separate layer)"
+#~ msgid "Oilify mask size"
+#~ msgstr "Oilify mask size"
+#~ msgid "Separate layer"
+#~ msgstr "Separate layer"
+#~ msgid "_Circuit..."
+#~ msgstr "_Circuit..."
+#~ msgid "<Image>/Tiny-Fu/Alchemy"
+#~ msgstr "<Image>/Tiny-Fu/Alchemy"
+#~ msgid "Azimuth"
+#~ msgstr "Azimuth"
+#~ msgid "Blur Y"
+#~ msgstr "Blur Y"
+#~ msgid "Depth"
+#~ msgstr "Depth"
+#~ msgid "Elevation"
+#~ msgstr "Elevation"
+#~ msgid "_Clothify..."
+#~ msgstr "_Clothify..."
+#~ msgid ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgstr ""
+#~ "Darken only\n"
+#~ "(Better, but only for images with alot of white)"
+#~ msgid "Stains"
+#~ msgstr "Stains"
+#~ msgid "_Coffee Stain..."
+#~ msgstr "_Coffee Stain..."
+#~ msgid "Comic Boo_k..."
+#~ msgstr "Comic Boo_k..."
+#~ msgid "Outline color"
+#~ msgstr "Outline colour"
+#~ msgid "Outline size"
+#~ msgstr "Outline size"
+#~ msgid "Cool _Metal..."
+#~ msgstr "Cool _Metal..."
+#~ msgid "Effect size (pixels)"
+#~ msgstr "Effect size (pixels)"
+#~ msgid "Background image"
+#~ msgstr "Background image"
+#~ msgid "Crystal..."
+#~ msgstr "Crystal..."
+#~ msgid "<Image>/Tiny-Fu/Selection"
+#~ msgstr "<Image>/Tiny-Fu/Selection"
+#~ msgid "Granularity (1 is low)"
+#~ msgstr "Granularity (1 is low)"
+#~ msgid "Smooth horizontally"
+#~ msgstr "Smooth horizontally"
+#~ msgid "Smooth vertically"
+#~ msgstr "Smooth vertically"
+#~ msgid "Spread"
+#~ msgstr "Spread"
+#~ msgid "Threshold (bigger 1<-->255 smaller)"
+#~ msgstr "Threshold (bigger 1<-->255 smaller)"
+#~ msgid "_Distress Selection..."
+#~ msgstr "_Distress Selection..."
+#~ msgid "<Image>/Tiny-Fu/Shadow"
+#~ msgstr "<Image>/Tiny-Fu/Shadow"
+#~ msgid "Allow resizing"
+#~ msgstr "Allow resizing"
+#~ msgid "Blur radius"
+#~ msgstr "Blur radius"
+#~ msgid "Offset X"
+#~ msgstr "Offset X"
+#~ msgid "Offset Y"
+#~ msgstr "Offset Y"
+#~ msgid "Opacity"
+#~ msgstr "Opacity"
+#~ msgid "_Drop-Shadow..."
+#~ msgstr "_Drop shadow..."
+#~ msgid "Columns"
+#~ msgstr "Columns"
+#~ msgid "Erase"
+#~ msgstr "Erase"
+#~ msgid "Erase/fill"
+#~ msgstr "Erase/fill"
+#~ msgid "Even"
+#~ msgstr "Even"
+#~ msgid "Even/odd"
+#~ msgstr "Even/odd"
+#~ msgid "Fill with BG"
+#~ msgstr "Fill with BG"
+#~ msgid "Odd"
+#~ msgstr "Odd"
+#~ msgid "Rows"
+#~ msgstr "Rows"
+#~ msgid "Rows/cols"
+#~ msgstr "Rows/cols"
+#~ msgid "_Erase every other Row..."
+#~ msgstr "_Erase every other Row..."
+#~ msgid "Apply generated layermask"
+#~ msgstr "Apply generated layermask"
+#~ msgid "Border size"
+#~ msgstr "Border size"
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "Clear unselected maskarea"
+#~ msgid "Fade from %"
+#~ msgstr "Fade from %"
+#~ msgid "Fade to   %"
+#~ msgstr "Fade to   %"
+#~ msgid "Use growing selection"
+#~ msgstr "Use growing selection"
+#~ msgid "_Fade Outline..."
+#~ msgstr "_Fade Outline..."
+#~ msgid "Detail level"
+#~ msgstr "Detail level"
+#~ msgid "Image height"
+#~ msgstr "Image height"
+#~ msgid "Image width"
+#~ msgstr "Image width"
+#~ msgid "Random seed"
+#~ msgstr "Random seed"
+#~ msgid "Scale X"
+#~ msgstr "Scale X"
+#~ msgid "Scale Y"
+#~ msgstr "Scale Y"
+#~ msgid "_Flatland..."
+#~ msgstr "_Flatland..."
+#~ msgid "Active colors"
+#~ msgstr "Active colours"
+#~ msgid "Black on white"
+#~ msgstr "Black on white"
+#~ msgid "Font _size (pixels)"
+#~ msgstr "Font _size (pixels)"
+#~ msgid "Use font _name as text"
+#~ msgstr "Use font _name as text"
+#~ msgid "_Border (pixels)"
+#~ msgstr "_Border (pixels)"
+#~ msgid "_Color scheme"
+#~ msgstr "_Colour scheme"
+#~ msgid "_Filter (regexp)"
+#~ msgstr "_Filter (regexp)"
+#~ msgid "_Font Map..."
+#~ msgstr "_Font Map..."
+#~ msgid "_Labels"
+#~ msgstr "_Labels"
+#~ msgid "_Frosty..."
+#~ msgstr "_Frotsy..."
+#~ msgid "Add shadow"
+#~ msgstr "Add shadow"
+#~ msgid "Blur border"
+#~ msgstr "Blur border"
+#~ msgid "Granularity (1 is Low)"
+#~ msgstr "Granularity (1 is Low)"
+#~ msgid "Shadow weight (%)"
+#~ msgstr "Shadow weight (%)"
+#~ msgid "_Fuzzy Border..."
+#~ msgstr "_Fuzzy Border..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
+#~ msgid "Autocrop"
+#~ msgstr "Autocrop"
+#~ msgid "Dark color"
+#~ msgstr "Dark colour"
+#~ msgid "Highlight color"
+#~ msgstr "Highlight colour"
+#~ msgid "Index image"
+#~ msgstr "Index image"
+#~ msgid "Number of colors"
+#~ msgstr "Number of colours"
+#~ msgid "Remove background"
+#~ msgstr "Remove background"
+#~ msgid "Select-by-color threshold"
+#~ msgstr "Select-by-colour threshold"
+#~ msgid "Shadow color"
+#~ msgstr "Shadow colour"
+#~ msgid "_Big Header..."
+#~ msgstr "_Big Header..."
+#~ msgid "T_ube Sub-Button Label..."
+#~ msgstr "T_ube Sub-Button Label..."
+#~ msgid "Tub_e Sub-Sub-Button Label..."
+#~ msgstr "Tub_e Sub-Sub-Button Label..."
+#~ msgid "_General Tube Labels..."
+#~ msgstr "_General Tube Labels..."
+#~ msgid "_Tube Button Label..."
+#~ msgstr "_Tube Button Label..."
+#~ msgid "Blend gradient (Text)"
+#~ msgstr "Blend gradient (Text)"
+#~ msgid "Blend gradient (outline)"
+#~ msgstr "Blend gradient (outline)"
+#~ msgid "Blend gradient (text)"
+#~ msgstr "Blend gradient (text)"
+#~ msgid "Glo_ssy..."
+#~ msgstr "Glo_ssy..."
+#~ msgid "Outline gradient reverse"
+#~ msgstr "Outline gradient reverse"
+#~ msgid "Pattern (outline)"
+#~ msgstr "Pattern (outline)"
+#~ msgid "Pattern (overlay)"
+#~ msgstr "Pattern (overlay)"
+#~ msgid "Pattern (text)"
+#~ msgstr "Pattern (text)"
+#~ msgid "Text gradient reverse"
+#~ msgstr "Text gradient reverse"
+#~ msgid "Use pattern for outline instead of gradient"
+#~ msgstr "Use pattern for outline instead of gradient"
+#~ msgid "Use pattern for text instead of gradient"
+#~ msgstr "Use pattern for text instead of gradient"
+#~ msgid "Use pattern overlay"
+#~ msgstr "Use pattern overlay"
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "Effect size (pixels * 3)"
+#~ msgid "Glo_wing Hot..."
+#~ msgstr "Glo_wing Hot..."
+#~ msgid "Bevel height (Sharpness)"
+#~ msgstr "Bevel height (Sharpness)"
+#~ msgid "Bevel height (sharpness)"
+#~ msgstr "Bevel height (sharpness)"
+#~ msgid "Border size (pixels)"
+#~ msgstr "Border size (pixels)"
+#~ msgid "Gradient Beve_l..."
+#~ msgstr "Gradient reverse"
+#~ msgid "Custom _Gradient..."
+#~ msgstr "Custom Gradient"
+#~ msgid "X divisions"
+#~ msgstr "X divisions"
+#~ msgid "Y divisions"
+#~ msgstr "Y divisions"
+#~ msgid "_Grid..."
+#~ msgstr "_Grid..."
+#~ msgid "<Image>/Image/Guides"
+#~ msgstr "<Image>/Image/Guides"
+#~ msgid ""
+#~ "Creates four Guides around the bounding box of the current selection."
+#~ msgstr ""
+#~ "Creates four Guides around the bounding box of the current selection."
+#~ msgid "New Guides from _Selection"
+#~ msgstr "New Guides from _Selection"
+#~ msgid "Direction"
+#~ msgstr "Direction"
+#~ msgid "Horizontal"
+#~ msgstr "Horizontal"
+#~ msgid "New Guide (by _Percent)..."
+#~ msgstr "New Guide (by _Percent)..."
+#~ msgid "Position (in %)"
+#~ msgstr "Position (in %)"
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+#~ msgid "New _Guide..."
+#~ msgstr "New _Guide..."
+#~ msgid "_Remove all Guides"
+#~ msgstr "_Remove all Guides"
+#~ msgid "<Image>/Tiny-Fu/Utils"
+#~ msgstr "<Image>/Tiny-Fu/Utils"
+#~ msgid "BG opacity"
+#~ msgstr "BG opacity"
+#~ msgid "Draw _HSV Graph..."
+#~ msgstr "Draw _HSV Graph..."
+#~ msgid "End X"
+#~ msgstr "End X"
+#~ msgid "End Y"
+#~ msgstr "End Y"
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "From top-left to bottom-right"
+#~ msgid "Graph scale"
+#~ msgstr "Graph scale"
+#~ msgid "Start X"
+#~ msgstr "Start X"
+#~ msgid "Use selection bounds instead of values below"
+#~ msgstr "Use selection bounds instead of values below"
+#~ msgid "Frame color"
+#~ msgstr "Frame colour"
+#~ msgid "Frame size"
+#~ msgstr "Frame size"
+#~ msgid "Imigre-26..."
+#~ msgstr "Imigre-26..."
+#~ msgid "Apply layer mask (or discard)"
+#~ msgstr "Apply layer mask (or discard)"
+#~ msgid "Create new image"
+#~ msgstr "Create new image"
+#~ msgid "Insert layer names"
+#~ msgstr "Insert layer names"
+#~ msgid "Make new background"
+#~ msgstr "Make new background"
+#~ msgid "Outer border"
+#~ msgstr "Outer border"
+#~ msgid "Pad color"
+#~ msgstr "Pad colour"
+#~ msgid "Pad opacity"
+#~ msgstr "Pad opacity"
+#~ msgid "Padding for transparent regions"
+#~ msgstr "Padding for transparent regions"
+#~ msgid "Shear length"
+#~ msgstr "Shear length"
+#~ msgid "Show Image _Structure..."
+#~ msgstr "Show Image _Structure..."
+#~ msgid "Space between layers"
+#~ msgstr "Space between layers"
+#~ msgid "Land height"
+#~ msgstr "Land height"
+#~ msgid "Sea depth"
+#~ msgstr "Sea depth"
+#~ msgid "_Land..."
+#~ msgstr "_Land..."
+#~ msgid "Roughness"
+#~ msgstr "Roughness"
+#~ msgid "Seed"
+#~ msgstr "Seed"
+#~ msgid "Use current gradient"
+#~ msgstr "Use current gradient"
+#~ msgid "_Lava..."
+#~ msgstr "_Lava..."
+#~ msgid "Line _Nova..."
+#~ msgstr "Line _Nova..."
+#~ msgid "Number of lines"
+#~ msgstr "Number of lines"
+#~ msgid "Offset radius"
+#~ msgstr "Offset radius"
+#~ msgid "Randomness"
+#~ msgstr "Randomness"
+#~ msgid "Sharpness (degrees)"
+#~ msgstr "Sharpness (degrees)"
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
+#~ msgid "Create size of brush"
+#~ msgstr "Create size of brush"
+#~ msgid "Description"
+#~ msgstr "Description"
+#~ msgid "Elli_ptical, Feathered..."
+#~ msgstr "Elli_ptical, Feathered..."
+#~ msgid "Feathering"
+#~ msgstr "Feathering"
+#~ msgid "Re_ctangular, Feathered..."
+#~ msgstr "Re_ctangular, Feathered..."
+#~ msgid "Spacing"
+#~ msgstr "Spacing"
+#~ msgid "_Elliptical..."
+#~ msgstr "_Elliptical..."
+#~ msgid "_Rectangular..."
+#~ msgstr "_Rectangular..."
+#~ msgid "Create shadow"
+#~ msgstr "Create shadow"
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "Effect size (pixels * 5)"
+#~ msgid "N_eon..."
+#~ msgstr "N_eon..."
+#~ msgid "Cell size (pixels)"
+#~ msgstr "Cell size (pixels)"
+#~ msgid "Density (%)"
+#~ msgstr "Density (%)"
+#~ msgid "Newsprint Text..."
+#~ msgstr "Newsprint Text..."
+#~ msgid "Defocus"
+#~ msgstr "Defocus"
+#~ msgid "Mottle"
+#~ msgstr "Mottle"
+#~ msgid "Sepia"
+#~ msgstr "Sepia"
+#~ msgid "_Old Photo..."
+#~ msgstr "_Old Photo..."
+#~ msgid "Angle"
+#~ msgstr "Angle"
+#~ msgid "Cubic"
+#~ msgstr "Cubic"
+#~ msgid "Interpolation"
+#~ msgstr "Interpolate"
+#~ msgid "Linear"
+#~ msgstr "Linear"
+#~ msgid "None"
+#~ msgstr "(none)"
+#~ msgid "Relative distance of horizon"
+#~ msgstr "Relative distance of horizon"
+#~ msgid "Relative length of shadow"
+#~ msgstr "Relative length of shadow"
+#~ msgid "_Perspective..."
+#~ msgstr "_Perspective..."
+#~ msgid "Edge amount"
+#~ msgstr "Edge amount"
+#~ msgid "Pixel amount"
+#~ msgstr "Pixel amount"
+#~ msgid "Pixelize"
+#~ msgstr "Pixelise"
+#~ msgid "_Predator..."
+#~ msgstr "_Predator..."
+#~ msgid "Lower color"
+#~ msgstr "Lower colour"
+#~ msgid "Lower color (active)"
+#~ msgstr "Lower colour (active)"
+#~ msgid "Not pressed"
+#~ msgstr "Not pressed"
+#~ msgid "Not pressed (active)"
+#~ msgstr "Not pressed (active)"
+#~ msgid "Padding X"
+#~ msgstr "Padding X"
+#~ msgid "Padding Y"
+#~ msgstr "Padding Y"
+#~ msgid "Round ratio"
+#~ msgstr "Round ratio"
+#~ msgid "Text color (active)"
+#~ msgstr "Text colour (active)"
+#~ msgid "Upper color"
+#~ msgstr "Upper colour"
+#~ msgid "Upper color (active)"
+#~ msgstr "Upper colour (active)"
+#~ msgid "_Round Button..."
+#~ msgstr "_Round Button..."
+#~ msgid "Behavior"
+#~ msgstr "Behaviour"
+#~ msgid "Detail in Middle"
+#~ msgstr "Detail in Middle"
+#~ msgid "Render _Map..."
+#~ msgstr "Render _Map..."
+#~ msgid "Tile"
+#~ msgstr "Tile"
+#~ msgid "Black"
+#~ msgstr "Black"
+#~ msgid "Edge behavior"
+#~ msgstr "Edge behaviour"
+#~ msgid "Number of frames"
+#~ msgstr "Number of frames"
+#~ msgid "Rippling strength"
+#~ msgstr "Rippling strength"
+#~ msgid "Smear"
+#~ msgstr "Smear"
+#~ msgid "Wrap"
+#~ msgstr "Wrap"
+#~ msgid "_Rippling..."
+#~ msgstr "_Rippling..."
+#~ msgid "Add background"
+#~ msgstr "Add background"
+#~ msgid "Add drop-shadow"
+#~ msgstr "Add drop-shadow"
+#~ msgid "Edge radius"
+#~ msgstr "Edge radius"
+#~ msgid "_Round Corners..."
+#~ msgstr "_Round Corners..."
+#~ msgid "<Image>/Select/Modify"
+#~ msgstr "<Image>/Select/Modify"
+#~ msgid "Concave"
+#~ msgstr "Concave"
+#~ msgid "Radius (%)"
+#~ msgstr "Radius (%)"
+#~ msgid "Rounded R_ectangle..."
+#~ msgstr "Rounded R_ectangle..."
+#~ msgid "Brush name"
+#~ msgstr "Brush name"
+#~ msgid "File name"
+#~ msgstr "File name"
+#~ msgid "To _Brush..."
+#~ msgstr "To _Brush..."
+#~ msgid "To _Image"
+#~ msgstr "To _Image"
+#~ msgid "Filename"
+#~ msgstr "Filename"
+#~ msgid "Pattern name"
+#~ msgstr "Pattern name"
+#~ msgid "To _Pattern..."
+#~ msgstr "To _Pattern"
+#~ msgid "Font color"
+#~ msgstr "Font colour"
+#~ msgid "Number"
+#~ msgstr "Number"
+#~ msgid "_Slide..."
+#~ msgstr "_Slide..."
+#~ msgid "SOTA Chrome..."
+#~ msgstr "SOTA Chrome..."
+#~ msgid "Speed Text..."
+#~ msgstr "Speed Text..."
+#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
+#~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Misc"
+#~ msgid "Lighting (degrees)"
+#~ msgstr "Lighting (degrees)"
+#~ msgid "Radius (pixels)"
+#~ msgstr "Radius (pixels)"
+#~ msgid "Sphere color"
+#~ msgstr "Sphere colour"
+#~ msgid "_Sphere..."
+#~ msgstr "_Sphere..."
+#~ msgid "Frames"
+#~ msgstr "Frames"
+#~ msgid "Index to n colors (0 = remain RGB)"
+#~ msgstr "Index to n colours (0 = remain RGB)"
+#~ msgid "Turn from left to right"
+#~ msgstr "Turn from left to right"
+#~ msgid "_Spinning Globe..."
+#~ msgstr "_Spinning Globe..."
+#~ msgid "Airbrush"
+#~ msgstr "Airbrush"
+#~ msgid "Brush"
+#~ msgstr "Brush"
+#~ msgid "Circle"
+#~ msgstr "Circle"
+#~ msgid "Color method"
+#~ msgstr "Colour method"
+#~ msgid "Epitrochoid"
+#~ msgstr "Epitrochoid"
+#~ msgid "Frame"
+#~ msgstr "Frame"
+#~ msgid "Gradient: Loop Sawtooth"
+#~ msgstr "Gradient: Loop Sawtooth"
+#~ msgid "Gradient: Loop Triangle"
+#~ msgstr "Gradient: Loop Triangle"
+#~ msgid "Hexagon"
+#~ msgstr "Hexagon"
+#~ msgid "Hole ratio"
+#~ msgstr "Hole ratio"
+#~ msgid "Inner teeth"
+#~ msgstr "Inner teeth"
+#~ msgid "Lissajous"
+#~ msgstr "Lissajous"
+#~ msgid "Margin (pixels)"
+#~ msgstr "Margin (pixels)"
+#~ msgid "Outer teeth"
+#~ msgstr "Outer teeth"
+#~ msgid "Pencil"
+#~ msgstr "Pencil"
+#~ msgid "Pentagon"
+#~ msgstr "Pentagon"
+#~ msgid "Polygon: 10 sides"
+#~ msgstr "Polygon: 10 sides"
+#~ msgid "Polygon: 7 sides"
+#~ msgstr "Polygon: 7 sides"
+#~ msgid "Polygon: 8 sides"
+#~ msgstr "Polygon: 8 sides"
+#~ msgid "Polygon: 9 sides"
+#~ msgstr "Polygon: 9 sides"
+#~ msgid "Shape"
+#~ msgstr "Shape"
+#~ msgid "Solid Color"
+#~ msgstr "Solid Colour"
+#~ msgid "Spyrograph"
+#~ msgstr "Spyrograph"
+#~ msgid "Square"
+#~ msgstr "Square"
+#~ msgid "Start angle"
+#~ msgstr "Start angle"
+#~ msgid "Tool"
+#~ msgstr "Tool"
+#~ msgid "Triangle"
+#~ msgstr "Triangle"
+#~ msgid "Type"
+#~ msgstr "Type"
+#~ msgid "_Spyrogimp..."
+#~ msgstr "_Spyrogimp..."
+#~ msgid "Burst color"
+#~ msgstr "Burst colour"
+#~ msgid "Effect size (pixels * 30)"
+#~ msgstr "Effect size (pixels * 30)"
+#~ msgid "Starb_urst..."
+#~ msgstr "Starb_urst..."
+#~ msgid "Effect size (pixels * 4)"
+#~ msgstr "Effect size (pixels * 4)"
+#~ msgid "Sta_rscape..."
+#~ msgstr "Sta_rscape..."
+#~ msgid "Swirl-_Tile..."
+#~ msgstr "Swirl-_Tile..."
+#~ msgid "Whirl amount"
+#~ msgstr "Whirl amount"
+#~ msgid "Number of times to whirl"
+#~ msgstr "Number of times to whirl"
+#~ msgid "Quarter size"
+#~ msgstr "Quarter size"
+#~ msgid "Whirl angle"
+#~ msgstr "Whirl angle"
+#~ msgid "_Swirly..."
+#~ msgstr "_Swirly..."
+#~ msgid "Base color"
+#~ msgstr "Base colour"
+#~ msgid "Edge only"
+#~ msgstr "Edge only"
+#~ msgid "Edge width"
+#~ msgstr "Edge width"
+#~ msgid "Hit rate"
+#~ msgstr "Hit rate"
+#~ msgid "_Particle Trace..."
+#~ msgstr "_Particle Trace..."
+#~ msgid "Antialias"
+#~ msgstr "Antialias"
+#~ msgid "Fill angle"
+#~ msgstr "Fill angle"
+#~ msgid "Render the specified text along the perimeter of a circle"
+#~ msgstr "Render the specified text along the perimeter of a circle"
+#~ msgid "Text Circle..."
+#~ msgstr "Text Circle..."
+#~ msgid "Ending blend"
+#~ msgstr "Ending blend"
+#~ msgid "Hexagons"
+#~ msgstr "Hexagons"
+#~ msgid "Mosaic tile type"
+#~ msgstr "Mosaic tile type"
+#~ msgid "Octagons"
+#~ msgstr "Octagons"
+#~ msgid "Squares"
+#~ msgstr "Squares"
+#~ msgid "Starting blend"
+#~ msgstr "Starting blend"
+#~ msgid "Text pattern"
+#~ msgstr "Text pattern"
+#~ msgid "_Textured..."
+#~ msgstr "_Textured..."
+#~ msgid "<Image>/Filters/Blur"
+#~ msgstr "<Image>/Filters/Blur"
+#~ msgid "Blur horizontally"
+#~ msgstr "Blur horizontally"
+#~ msgid "Blur type"
+#~ msgstr "Blur type"
+#~ msgid "Blur vertically"
+#~ msgstr "Blur vertically"
+#~ msgid "IIR"
+#~ msgstr "IIR"
+#~ msgid "RLE"
+#~ msgstr "RLE"
+#~ msgid "_Tileable Blur..."
+#~ msgstr "_Tileable Blur..."
+#~ msgid "Palette"
+#~ msgstr "Palette"
+#~ msgid "Set Colormap"
+#~ msgstr "Set Colormap"
+#~ msgid "Web Title Header..."
+#~ msgstr "Web Title Header..."
+#~ msgid "Foreground color"
+#~ msgstr "Foreground colour"
+#~ msgid "T_ruchet..."
+#~ msgstr "T_ruchet..."
+#~ msgid "Mask opacity"
+#~ msgstr "Mask opacity"
+#~ msgid "Mask size"
+#~ msgstr "Mask size"
+#~ msgid "_Unsharp Mask..."
+#~ msgstr "_Unsharp Mask..."
+#~ msgid "Amplitude"
+#~ msgstr "Amplitude"
+#~ msgid "Invert direction"
+#~ msgstr "Invert direction"
+#~ msgid "Wavelength"
+#~ msgstr "Wavelength"
+#~ msgid "_Waves..."
+#~ msgstr "_Waves..."
+#~ msgid "Ribbon spacing"
+#~ msgstr "Ribbon spacing"
+#~ msgid "Ribbon width"
+#~ msgstr "Ribbon width"
+#~ msgid "Shadow darkness"
+#~ msgstr "Shadow darkness"
+#~ msgid "Shadow depth"
+#~ msgstr "Shadow depth"
+#~ msgid "Thread density"
+#~ msgstr "Thread density"
+#~ msgid "Thread intensity"
+#~ msgstr "Thread intensity"
+#~ msgid "Thread length"
+#~ msgstr "Thread length"
+#~ msgid "_Weave..."
+#~ msgstr "_Weave..."
+#~ msgid "<Toolbox>/Help/The GIMP Online"
+#~ msgstr "<Toolbox>/Help/The GIMP Online"
+#~ msgid "Plug-in _Registry"
+#~ msgstr "Plug-in _Registry"
+#~ msgid "_Developer Web Site"
+#~ msgstr "_Developer Web Site"
+#~ msgid "_Main Web Site"
+#~ msgstr "_Main Web Site"
+#~ msgid "Drop shadow X offset"
+#~ msgstr "Drop shadow X offset"
+#~ msgid "Drop shadow Y offset"
+#~ msgstr "Drop shadow Y offset"
+#~ msgid "Drop shadow blur radius"
+#~ msgstr "Drop shadow blur radius"
+#~ msgid "Drop shadow color"
+#~ msgstr "Drop shadow colour"
+#~ msgid "Drop shadow opacity"
+#~ msgstr "Drop shadow opacity"
+#~ msgid "Highlight X offset"
+#~ msgstr "Highlight X offset"
+#~ msgid "Highlight Y offset"
+#~ msgstr "Highlight Y offset"
+#~ msgid "Highlight opacity"
+#~ msgstr "Highlight opacity"
 
-#: tiny-fu/tiny-fu-interface.c:542
-msgid "(none)"
-msgstr "(none)"
-
-#: tiny-fu/tiny-fu-interface.c:1059
-msgid "Author:"
-msgstr "Author:"
-
-#: tiny-fu/tiny-fu-interface.c:1066
-msgid "Copyright:"
-msgstr "Copyright:"
-
-#: tiny-fu/tiny-fu-interface.c:1073
-msgid "Date:"
-msgstr "Date:"
-
-#: tiny-fu/tiny-fu-interface.c:1082
-msgid "Image Types:"
-msgstr "Image Types:"
-
-#: scripts/ts-helloworld.sct.h:1 scripts/test-sphere.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Test"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Test"
-
-#: scripts/ts-helloworld.sct.h:2 scripts/drop-shadow.sct.h:4
-#: scripts/fuzzyborder.sct.h:5 scripts/perspective-shadow.sct.h:5
-#: scripts/spyrogimp.sct.h:5
-msgid "Color"
-msgstr "Colour"
-
-#: scripts/ts-helloworld.sct.h:3 scripts/3d-outline.sct.h:6
-#: scripts/alien-glow-button.sct.h:5 scripts/alien-glow-logo.sct.h:4
-#: scripts/alien-neon-logo.sct.h:6 scripts/basic1-logo.sct.h:4
-#: scripts/basic2-logo.sct.h:5 scripts/beveled-button.sct.h:3
-#: scripts/beveled-pattern-button.sct.h:3
-#: scripts/beveled-pattern-heading.sct.h:2 scripts/blended-logo.sct.h:11
-#: scripts/bovinated-logo.sct.h:6 scripts/carved-logo.sct.h:5
-#: scripts/chalk.sct.h:5 scripts/chip-away.sct.h:8 scripts/chrome-logo.sct.h:6
-#: scripts/comic-logo.sct.h:5 scripts/coolmetal-logo.sct.h:6
-#: scripts/crystal-logo.sct.h:6 scripts/frosty-logo.sct.h:5
-#: scripts/gimp-headers.sct.h:4 scripts/gimp-labels.sct.h:3
-#: scripts/glossy.sct.h:8 scripts/glowing-logo.sct.h:5
-#: scripts/gradient-bevel-logo.sct.h:8 scripts/i26-gunya2.sct.h:2
-#: scripts/neon-logo.sct.h:6 scripts/news-text.sct.h:7
-#: scripts/pupi-button.sct.h:3 scripts/slide.sct.h:2
-#: scripts/sota-chrome-logo.sct.h:7 scripts/speed-text.sct.h:5
-#: scripts/starburst-logo.sct.h:6 scripts/starscape-logo.sct.h:4
-#: scripts/t-o-p-logo.sct.h:8 scripts/text-circle.sct.h:4
-#: scripts/textured-logo.sct.h:6 scripts/title-header.sct.h:2
-msgid "Font"
-msgstr "Font"
-
-#: scripts/ts-helloworld.sct.h:4 scripts/3d-outline.sct.h:7
-#: scripts/alien-glow-button.sct.h:6 scripts/alien-glow-logo.sct.h:5
-#: scripts/alien-neon-logo.sct.h:7 scripts/basic1-logo.sct.h:5
-#: scripts/basic2-logo.sct.h:6 scripts/beveled-button.sct.h:4
-#: scripts/beveled-pattern-button.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:3 scripts/blended-logo.sct.h:12
-#: scripts/bovinated-logo.sct.h:7 scripts/carved-logo.sct.h:6
-#: scripts/chalk.sct.h:6 scripts/chip-away.sct.h:9 scripts/chrome-logo.sct.h:7
-#: scripts/comic-logo.sct.h:6 scripts/coolmetal-logo.sct.h:7
-#: scripts/crystal-logo.sct.h:7 scripts/frosty-logo.sct.h:6
-#: scripts/gimp-headers.sct.h:5 scripts/gimp-labels.sct.h:4
-#: scripts/glossy.sct.h:9 scripts/glowing-logo.sct.h:6
-#: scripts/gradient-bevel-logo.sct.h:9 scripts/i26-gunya2.sct.h:3
-#: scripts/neon-logo.sct.h:7 scripts/news-text.sct.h:8
-#: scripts/pupi-button.sct.h:4 scripts/sota-chrome-logo.sct.h:8
-#: scripts/speed-text.sct.h:6 scripts/starburst-logo.sct.h:7
-#: scripts/starscape-logo.sct.h:5 scripts/t-o-p-logo.sct.h:9
-#: scripts/text-circle.sct.h:5 scripts/textured-logo.sct.h:7
-#: scripts/title-header.sct.h:3
-msgid "Font size (pixels)"
-msgstr "Font size (pixels)"
-
-#: scripts/ts-helloworld.sct.h:5
-msgid "Hello World"
-msgstr "Hello World"
-
-#: scripts/ts-helloworld.sct.h:6
-msgid "Text string"
-msgstr "Text string"
-
-#: scripts/contactsheet.sct.h:1
-msgid " contact sheets from a total of "
-msgstr " contact sheets from a total of "
-
-#: scripts/contactsheet.sct.h:2
-msgid " for directory "
-msgstr " for directory "
-
-#: scripts/contactsheet.sct.h:3
-msgid " images"
-msgstr " images"
-
-#: scripts/contactsheet.sct.h:4 scripts/font-map.sct.h:1
-#: scripts/gradient-example.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Utils"
-
-#: scripts/contactsheet.sct.h:5 scripts/3dTruchet.sct.h:3
-#: scripts/alien-glow-arrow.sct.h:2 scripts/alien-glow-bar.sct.h:2
-#: scripts/alien-glow-bullet.sct.h:2 scripts/alien-glow-button.sct.h:3
-#: scripts/alien-neon-logo.sct.h:4 scripts/basic1-logo.sct.h:3
-#: scripts/basic2-logo.sct.h:4 scripts/blended-logo.sct.h:3
-#: scripts/bovinated-logo.sct.h:4 scripts/chalk.sct.h:3
-#: scripts/chrome-logo.sct.h:4 scripts/comic-logo.sct.h:3
-#: scripts/coolmetal-logo.sct.h:3 scripts/frosty-logo.sct.h:3
-#: scripts/gimp-labels.sct.h:2 scripts/glossy.sct.h:3
-#: scripts/glowing-logo.sct.h:3 scripts/gradient-bevel-logo.sct.h:3
-#: scripts/image-structure.sct.h:3 scripts/neon-logo.sct.h:3
-#: scripts/news-text.sct.h:2 scripts/speed-text.sct.h:2 scripts/sphere.sct.h:2
-#: scripts/starburst-logo.sct.h:3 scripts/swirltile.sct.h:3
-#: scripts/t-o-p-logo.sct.h:3 scripts/textured-logo.sct.h:3
-#: scripts/truchet.sct.h:2
-msgid "Background color"
-msgstr "Background colour"
-
-#: scripts/contactsheet.sct.h:6
-msgid "Contact Sheet"
-msgstr "Contact Sheet"
-
-#: scripts/contactsheet.sct.h:7
-msgid "Created "
-msgstr "Created "
-
-#: scripts/contactsheet.sct.h:8
-msgid "Directory"
-msgstr "Directory"
-
-#: scripts/contactsheet.sct.h:9
-msgid "Legend font"
-msgstr "Legend font"
-
-#: scripts/contactsheet.sct.h:10
-msgid "Sheet "
-msgstr "Sheet "
-
-#: scripts/contactsheet.sct.h:11
-msgid "Sheet size"
-msgstr "Sheet size"
-
-#: scripts/contactsheet.sct.h:12 scripts/alien-glow-button.sct.h:11
-#: scripts/basic1-logo.sct.h:7 scripts/basic2-logo.sct.h:8
-#: scripts/beveled-button.sct.h:10 scripts/beveled-pattern-button.sct.h:8
-#: scripts/blended-logo.sct.h:18 scripts/gimp-headers.sct.h:13
-#: scripts/gimp-labels.sct.h:15 scripts/i26-gunya2.sct.h:8
-#: scripts/news-text.sct.h:11 scripts/pupi-button.sct.h:14
-#: scripts/speed-text.sct.h:9
-msgid "Text color"
-msgstr "Text colour"
-
-#: scripts/contactsheet.sct.h:13
-msgid "Title font"
-msgstr "Title font"
-
-#: scripts/contactsheet.sct.h:14
-msgid "Unable to open directory "
-msgstr "Unable to open directory "
-
-#: scripts/3d-outline.sct.h:1
-msgid "3D _Outline..."
-msgstr "3D _Outline..."
-
-#: scripts/3d-outline.sct.h:2 scripts/alien-glow-logo.sct.h:1
-#: scripts/alien-neon-logo.sct.h:1 scripts/basic1-logo.sct.h:1
-#: scripts/basic2-logo.sct.h:1 scripts/blended-logo.sct.h:1
-#: scripts/bovinated-logo.sct.h:1 scripts/chalk.sct.h:1
-#: scripts/chip-away.sct.h:1 scripts/chrome-logo.sct.h:1
-#: scripts/comic-logo.sct.h:1 scripts/coolmetal-logo.sct.h:1
-#: scripts/frosty-logo.sct.h:1 scripts/glossy.sct.h:1
-#: scripts/glowing-logo.sct.h:1 scripts/gradient-bevel-logo.sct.h:1
-#: scripts/neon-logo.sct.h:1 scripts/starburst-logo.sct.h:1
-#: scripts/starscape-logo.sct.h:1 scripts/t-o-p-logo.sct.h:1
-#: scripts/textured-logo.sct.h:1
-msgid "<Image>/Tiny-Fu/Alpha to Logo"
-msgstr "<Image>/Tiny-Fu/Alpha to Logo"
-
-#: scripts/3d-outline.sct.h:3 scripts/alien-glow-logo.sct.h:2
-#: scripts/alien-neon-logo.sct.h:2 scripts/basic1-logo.sct.h:2
-#: scripts/basic2-logo.sct.h:2 scripts/blended-logo.sct.h:2
-#: scripts/bovinated-logo.sct.h:2 scripts/carved-logo.sct.h:1
-#: scripts/chalk.sct.h:2 scripts/chip-away.sct.h:2 scripts/chrome-logo.sct.h:2
-#: scripts/comic-logo.sct.h:2 scripts/coolmetal-logo.sct.h:2
-#: scripts/crystal-logo.sct.h:1 scripts/frosty-logo.sct.h:2
-#: scripts/glossy.sct.h:2 scripts/glowing-logo.sct.h:2
-#: scripts/gradient-bevel-logo.sct.h:2 scripts/i26-gunya2.sct.h:1
-#: scripts/neon-logo.sct.h:2 scripts/news-text.sct.h:1
-#: scripts/sota-chrome-logo.sct.h:1 scripts/speed-text.sct.h:1
-#: scripts/starburst-logo.sct.h:2 scripts/starscape-logo.sct.h:2
-#: scripts/t-o-p-logo.sct.h:2 scripts/text-circle.sct.h:1
-#: scripts/textured-logo.sct.h:2 scripts/title-header.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Logos"
-
-#: scripts/3d-outline.sct.h:4
-msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Bumpmap (alpha layer) blur radius"
-
-#: scripts/3d-outline.sct.h:5 scripts/glossy.sct.h:7
-msgid "Default bumpmap settings"
-msgstr "Default bumpmap settings"
-
-#: scripts/3d-outline.sct.h:8
-msgid "Outline blur radius"
-msgstr "Outline blur radius"
-
-#: scripts/3d-outline.sct.h:9 scripts/glossy.sct.h:17
-#: scripts/round-corners.sct.h:6
-msgid "Shadow X offset"
-msgstr "Shadow X offset"
-
-#: scripts/3d-outline.sct.h:10 scripts/glossy.sct.h:18
-#: scripts/round-corners.sct.h:7
-msgid "Shadow Y offset"
-msgstr "Shadow Y offset"
-
-#: scripts/3d-outline.sct.h:11
-msgid "Shadow blur radius"
-msgstr "Shadow blur radius"
-
-#: scripts/3d-outline.sct.h:12 scripts/alien-glow-button.sct.h:10
-#: scripts/alien-glow-logo.sct.h:8 scripts/alien-neon-logo.sct.h:10
-#: scripts/basic1-logo.sct.h:6 scripts/basic2-logo.sct.h:7
-#: scripts/beveled-button.sct.h:9 scripts/beveled-pattern-button.sct.h:7
-#: scripts/beveled-pattern-heading.sct.h:6 scripts/blended-logo.sct.h:17
-#: scripts/bovinated-logo.sct.h:10 scripts/carved-logo.sct.h:8
-#: scripts/chalk.sct.h:7 scripts/chip-away.sct.h:14
-#: scripts/chrome-logo.sct.h:9 scripts/comic-logo.sct.h:11
-#: scripts/coolmetal-logo.sct.h:10 scripts/crystal-logo.sct.h:8
-#: scripts/frosty-logo.sct.h:7 scripts/gimp-headers.sct.h:12
-#: scripts/gimp-labels.sct.h:14 scripts/glossy.sct.h:19
-#: scripts/glowing-logo.sct.h:8 scripts/gradient-bevel-logo.sct.h:11
-#: scripts/i26-gunya2.sct.h:7 scripts/neon-logo.sct.h:10
-#: scripts/news-text.sct.h:10 scripts/pupi-button.sct.h:13
-#: scripts/slide.sct.h:5 scripts/sota-chrome-logo.sct.h:11
-#: scripts/speed-text.sct.h:8 scripts/starburst-logo.sct.h:9
-#: scripts/starscape-logo.sct.h:8 scripts/t-o-p-logo.sct.h:11
-#: scripts/text-circle.sct.h:9 scripts/textured-logo.sct.h:14
-#: scripts/title-header.sct.h:5
-msgid "Text"
-msgstr "Text"
-
-#: scripts/3dTruchet.sct.h:1
-msgid "3_D Truchet..."
-msgstr "3_D Truchet..."
-
-#: scripts/3dTruchet.sct.h:2 scripts/camo.sct.h:1 scripts/flatland.sct.h:1
-#: scripts/land.sct.h:1 scripts/rendermap.sct.h:1 scripts/swirltile.sct.h:1
-#: scripts/swirly-pattern.sct.h:1 scripts/truchet.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-
-#: scripts/3dTruchet.sct.h:4 scripts/truchet.sct.h:3
-msgid "Block size"
-msgstr "Block size"
-
-#: scripts/3dTruchet.sct.h:5 scripts/blended-logo.sct.h:7
-msgid "End blend"
-msgstr "End blend"
-
-#: scripts/3dTruchet.sct.h:6 scripts/truchet.sct.h:5
-msgid "Number of X tiles"
-msgstr "Number of X tiles"
-
-#: scripts/3dTruchet.sct.h:7 scripts/truchet.sct.h:6
-msgid "Number of Y tiles"
-msgstr "Number of Y tiles"
-
-#: scripts/3dTruchet.sct.h:8 scripts/blended-logo.sct.h:16
-msgid "Start blend"
-msgstr "Start blend"
-
-#: scripts/3dTruchet.sct.h:9
-msgid "Supersample"
-msgstr "Supersample"
-
-#: scripts/3dTruchet.sct.h:10 scripts/add-bevel.sct.h:4
-#: scripts/truchet.sct.h:8
-msgid "Thickness"
-msgstr "Thickness"
-
-#: scripts/add-bevel.sct.h:1 scripts/addborder.sct.h:1 scripts/coffee.sct.h:1
-#: scripts/fuzzyborder.sct.h:1 scripts/old-photo.sct.h:1
-#: scripts/round-corners.sct.h:1 scripts/slide.sct.h:1
-msgid "<Image>/Tiny-Fu/Decor"
-msgstr "<Image>/Tiny-Fu/Decor"
-
-#: scripts/add-bevel.sct.h:2
-msgid "Add B_evel..."
-msgstr "Add B_evel..."
-
-#: scripts/add-bevel.sct.h:3 scripts/chip-away.sct.h:12
-msgid "Keep bump layer"
-msgstr "Keep bump layer"
-
-#: scripts/add-bevel.sct.h:5 scripts/fuzzyborder.sct.h:10
-#: scripts/old-photo.sct.h:6 scripts/round-corners.sct.h:8
-#: scripts/slide.sct.h:6 scripts/spinning-globe.sct.h:6
-msgid "Work on copy"
-msgstr "Work on copy"
-
-#: scripts/addborder.sct.h:2
-msgid "Add _Border..."
-msgstr "Add _Border..."
-
-#: scripts/addborder.sct.h:3
-msgid "Border X size"
-msgstr "Border X size"
-
-#: scripts/addborder.sct.h:4
-msgid "Border Y size"
-msgstr "Border Y size"
-
-#: scripts/addborder.sct.h:5
-msgid "Border color"
-msgstr "Border colour"
-
-#: scripts/addborder.sct.h:6
-msgid "Delta value on color"
-msgstr "Delta value on colour"
-
-#: scripts/alien-glow-arrow.sct.h:1 scripts/alien-glow-bar.sct.h:1
-#: scripts/alien-glow-bullet.sct.h:1 scripts/alien-glow-button.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-
-#: scripts/alien-glow-arrow.sct.h:3 scripts/beveled-pattern-arrow.sct.h:2
-msgid "Down"
-msgstr "Down"
-
-#: scripts/alien-glow-arrow.sct.h:4 scripts/alien-glow-bar.sct.h:5
-#: scripts/alien-glow-bullet.sct.h:3 scripts/alien-glow-button.sct.h:4
-#: scripts/camo.sct.h:5 scripts/fuzzyborder.sct.h:6
-msgid "Flatten image"
-msgstr "Flatten image"
-
-#: scripts/alien-glow-arrow.sct.h:5 scripts/alien-glow-bar.sct.h:6
-#: scripts/alien-glow-bullet.sct.h:4 scripts/alien-glow-button.sct.h:7
-#: scripts/alien-glow-logo.sct.h:6 scripts/alien-neon-logo.sct.h:8
-#: scripts/burn-in-anim.sct.h:9 scripts/neon-logo.sct.h:8
-#: scripts/starscape-logo.sct.h:6
-msgid "Glow color"
-msgstr "Glow colour"
-
-#: scripts/alien-glow-arrow.sct.h:6 scripts/beveled-pattern-arrow.sct.h:3
-msgid "Left"
-msgstr "Left"
-
-#: scripts/alien-glow-arrow.sct.h:7 scripts/beveled-pattern-arrow.sct.h:4
-msgid "Orientation"
-msgstr "Orientation"
-
-#: scripts/alien-glow-arrow.sct.h:8 scripts/beveled-pattern-arrow.sct.h:6
-msgid "Right"
-msgstr "Right"
-
-#: scripts/alien-glow-arrow.sct.h:9 scripts/beveled-pattern-arrow.sct.h:7
-#: scripts/lava.sct.h:7
-msgid "Size"
-msgstr "Size"
-
-#: scripts/alien-glow-arrow.sct.h:10 scripts/beveled-pattern-arrow.sct.h:8
-msgid "Up"
-msgstr "Up"
-
-#: scripts/alien-glow-arrow.sct.h:11 scripts/beveled-pattern-arrow.sct.h:9
-msgid "_Arrow..."
-msgstr "_Arrow..."
-
-#: scripts/alien-glow-bar.sct.h:3
-msgid "Bar height"
-msgstr "Bar height"
-
-#: scripts/alien-glow-bar.sct.h:4
-msgid "Bar length"
-msgstr "Bar length"
-
-#: scripts/alien-glow-bar.sct.h:7 scripts/beveled-pattern-hrule.sct.h:5
-msgid "_Hrule..."
-msgstr "_Hrule..."
-
-#: scripts/alien-glow-bullet.sct.h:5 scripts/text-circle.sct.h:6
-#: scripts/tileblur.sct.h:7
-msgid "Radius"
-msgstr "Radius"
-
-#: scripts/alien-glow-bullet.sct.h:6 scripts/beveled-pattern-bullet.sct.h:5
-msgid "_Bullet..."
-msgstr "_Bullet..."
-
-#: scripts/alien-glow-button.sct.h:2 scripts/beveled-pattern-button.sct.h:2
-msgid "B_utton..."
-msgstr "B_utton..."
-
-#: scripts/alien-glow-button.sct.h:8
-msgid "Glow radius"
-msgstr "Glow radius"
-
-#: scripts/alien-glow-button.sct.h:9 scripts/beveled-button.sct.h:6
-msgid "Padding"
-msgstr "Padding"
-
-#: scripts/alien-glow-logo.sct.h:3
-msgid "Alien _Glow..."
-msgstr "Alien _Glow..."
-
-#: scripts/alien-glow-logo.sct.h:7
-msgid "Glow size (pixels * 4)"
-msgstr "Glow size (pixels * 4)"
-
-#: scripts/alien-neon-logo.sct.h:3
-msgid "Alien _Neon..."
-msgstr "Alien _Neon..."
-
-#: scripts/alien-neon-logo.sct.h:5
-msgid "Fade away"
-msgstr "Fade away"
-
-#: scripts/alien-neon-logo.sct.h:9
-msgid "Number of bands"
-msgstr "Number of bands"
-
-#: scripts/alien-neon-logo.sct.h:11
-msgid "Width of bands"
-msgstr "Width of bands"
-
-#: scripts/alien-neon-logo.sct.h:12
-msgid "Width of gaps"
-msgstr "Width of gaps"
-
-#: scripts/basic1-logo.sct.h:8
-msgid "_Basic I..."
-msgstr "_Basic I..."
-
-#: scripts/basic2-logo.sct.h:3
-msgid "B_asic II..."
-msgstr "B_asic II..."
-
-#: scripts/beveled-button.sct.h:1 scripts/pupi-button.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-
-#: scripts/beveled-button.sct.h:2 scripts/gradient-bevel-logo.sct.h:6
-#: scripts/pupi-button.sct.h:2
-msgid "Bevel width"
-msgstr "Bevel width"
-
-#: scripts/beveled-button.sct.h:5
-msgid "Lower-right color"
-msgstr "Lower-right colour"
-
-#: scripts/beveled-button.sct.h:7 scripts/beveled-pattern-button.sct.h:6
-#: scripts/pupi-button.sct.h:11
-msgid "Pressed"
-msgstr "Pressed"
-
-#: scripts/beveled-button.sct.h:8
-msgid "Simple _Beveled Button..."
-msgstr "Simple _Beveled Button..."
-
-#: scripts/beveled-button.sct.h:11
-msgid "Upper-left color"
-msgstr "Upper-left colour"
-
-#: scripts/beveled-pattern-arrow.sct.h:1
-#: scripts/beveled-pattern-bullet.sct.h:1
-#: scripts/beveled-pattern-button.sct.h:1
-#: scripts/beveled-pattern-heading.sct.h:1
-#: scripts/beveled-pattern-hrule.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-
-#: scripts/beveled-pattern-arrow.sct.h:5
-#: scripts/beveled-pattern-bullet.sct.h:3
-#: scripts/beveled-pattern-button.sct.h:5
-#: scripts/beveled-pattern-heading.sct.h:5
-#: scripts/beveled-pattern-hrule.sct.h:3 scripts/chip-away.sct.h:13
-#: scripts/textured-logo.sct.h:11
-msgid "Pattern"
-msgstr "Pattern"
-
-#: scripts/beveled-pattern-bullet.sct.h:2
-msgid "Diameter"
-msgstr "Diameter"
-
-#: scripts/beveled-pattern-bullet.sct.h:4
-#: scripts/beveled-pattern-heading.sct.h:7 scripts/spinning-globe.sct.h:4
-msgid "Transparent background"
-msgstr "Transparent background"
-
-#: scripts/beveled-pattern-heading.sct.h:4
-msgid "H_eading..."
-msgstr "H_eading..."
-
-#: scripts/beveled-pattern-hrule.sct.h:2 scripts/gimp-labels.sct.h:5
-#: scripts/gradient-example.sct.h:4 scripts/mkbrush.sct.h:6
-#: scripts/swirltile.sct.h:7
-msgid "Height"
-msgstr "Height"
-
-#: scripts/beveled-pattern-hrule.sct.h:4 scripts/gradient-example.sct.h:5
-#: scripts/mkbrush.sct.h:9 scripts/swirltile.sct.h:11
-msgid "Width"
-msgstr "Width"
-
-#: scripts/blend-anim.sct.h:1 scripts/burn-in-anim.sct.h:1
-#: scripts/ripply-anim.sct.h:1 scripts/spinning-globe.sct.h:1
-#: scripts/waves-anim.sct.h:1
-msgid "<Image>/Tiny-Fu/Animators"
-msgstr "<Image>/Tiny-Fu/Animators"
-
-#: scripts/blend-anim.sct.h:2
-msgid "Blend Animation needs at least three source layers"
-msgstr "Blend Animation needs at least three source layers"
-
-#: scripts/blend-anim.sct.h:3
-msgid "Intermediate frames"
-msgstr "Intermediate frames"
-
-#: scripts/blend-anim.sct.h:4
-msgid "Looped"
-msgstr "Looped"
-
-#: scripts/blend-anim.sct.h:5
-msgid "Max. blur radius"
-msgstr "Max. blur radius"
-
-#: scripts/blend-anim.sct.h:6
-msgid "_Blend..."
-msgstr "_Blend..."
-
-#: scripts/blended-logo.sct.h:4
-msgid "Blen_ded..."
-msgstr "Blen_ded..."
-
-#: scripts/blended-logo.sct.h:5
-msgid "Blend mode"
-msgstr "Blend mode"
-
-#: scripts/blended-logo.sct.h:6
-msgid "Custom Gradient"
-msgstr "Custom Gradient"
-
-#: scripts/blended-logo.sct.h:8
-msgid "FG-BG-HSV"
-msgstr "FG-BG-HSV"
-
-#: scripts/blended-logo.sct.h:9
-msgid "FG-BG-RGB"
-msgstr "FG-BG-RGB"
-
-#: scripts/blended-logo.sct.h:10
-msgid "FG-Transparent"
-msgstr "FG-Transparent"
-
-#: scripts/blended-logo.sct.h:13 scripts/comic-logo.sct.h:7
-#: scripts/coolmetal-logo.sct.h:8 scripts/land.sct.h:3 scripts/lava.sct.h:2
-#: scripts/rendermap.sct.h:4 scripts/spyrogimp.sct.h:9
-msgid "Gradient"
-msgstr "Gradient"
-
-#: scripts/blended-logo.sct.h:14 scripts/comic-logo.sct.h:8
-#: scripts/coolmetal-logo.sct.h:9 scripts/gradient-example.sct.h:3
-#: scripts/rendermap.sct.h:5 scripts/title-header.sct.h:4
-msgid "Gradient reverse"
-msgstr "Gradient reverse"
-
-#: scripts/blended-logo.sct.h:15
-msgid "Offset (pixels)"
-msgstr "Offset (pixels)"
-
-#: scripts/bovinated-logo.sct.h:3 scripts/chrome-logo.sct.h:3
-msgid "Background Color"
-msgstr "Background Colour"
-
-#: scripts/bovinated-logo.sct.h:5
-msgid "Bo_vination..."
-msgstr "Bo_vination..."
-
-#: scripts/bovinated-logo.sct.h:8
-msgid "Spots density X"
-msgstr "Spots density X"
-
-#: scripts/bovinated-logo.sct.h:9
-msgid "Spots density Y"
-msgstr "Spots density Y"
-
-#: scripts/burn-in-anim.sct.h:2
-msgid "Add glowing"
-msgstr "Add glowing"
-
-#: scripts/burn-in-anim.sct.h:3
-msgid "After glow"
-msgstr "After glow"
-
-#: scripts/burn-in-anim.sct.h:4
-msgid "B_urn-In..."
-msgstr "B_urn-In..."
-
-#: scripts/burn-in-anim.sct.h:5
-msgid ""
-"Burn-In: Needs two layers in total!\n"
-"A foreground text layer with transparency and a background layer."
-msgstr ""
-"Burn-In: Needs two layers in total!\n"
-"A foreground text layer with transparency and a background layer."
-
-#: scripts/burn-in-anim.sct.h:6
-msgid "Corona width"
-msgstr "Corona width"
-
-#: scripts/burn-in-anim.sct.h:7
-msgid "Fadeout"
-msgstr "Fadeout"
-
-#: scripts/burn-in-anim.sct.h:8
-msgid "Fadeout width"
-msgstr "Fadeout width"
-
-#: scripts/burn-in-anim.sct.h:10
-msgid "Prepare for GIF"
-msgstr "Prepare for GIF"
-
-#: scripts/burn-in-anim.sct.h:11
-msgid "Speed (pixels/frame)"
-msgstr "Speed (pixels/frame)"
-
-#: scripts/camo.sct.h:2
-msgid "Color 1"
-msgstr "Colour 1"
-
-#: scripts/camo.sct.h:3
-msgid "Color 2"
-msgstr "Colour 2"
-
-#: scripts/camo.sct.h:4
-msgid "Color 3"
-msgstr "Colour 3"
-
-#: scripts/camo.sct.h:6 scripts/rendermap.sct.h:6
-msgid "Granularity"
-msgstr "Granularity"
-
-#: scripts/camo.sct.h:7 scripts/rendermap.sct.h:7
-msgid "Image size"
-msgstr "Image size"
-
-#: scripts/camo.sct.h:8 scripts/distress-selection.sct.h:3
-msgid "Smooth"
-msgstr "Smooth"
-
-#: scripts/camo.sct.h:9
-msgid "_Camouflage..."
-msgstr "_Camouflage..."
-
-#: scripts/carved-logo.sct.h:2
-msgid "Background Image"
-msgstr "Background Image"
-
-#: scripts/carved-logo.sct.h:3
-msgid "Carve raised text"
-msgstr "Carve raised text"
-
-#: scripts/carved-logo.sct.h:4
-msgid "Carved..."
-msgstr "Carved..."
-
-#: scripts/carved-logo.sct.h:7
-msgid "Padding around text"
-msgstr "Padding around text"
-
-#: scripts/carve-it.sct.h:1 scripts/chrome-it.sct.h:1
-msgid "<Image>/Tiny-Fu/Stencil Ops"
-msgstr "<Image>/Tiny-Fu/Stencil Ops"
-
-#: scripts/carve-it.sct.h:2
-msgid "C_arve-It..."
-msgstr "C_arve-It..."
-
-#: scripts/carve-it.sct.h:3
-msgid "Carve white areas"
-msgstr "Carve white areas"
-
-#: scripts/carve-it.sct.h:4
-msgid "Image to carve"
-msgstr "Image to carve"
-
-#: scripts/chalk.sct.h:4
-msgid "Chalk color"
-msgstr "Chalk colour"
-
-#: scripts/chalk.sct.h:8
-msgid "_Chalk..."
-msgstr "_Chalk..."
-
-#: scripts/chip-away.sct.h:3
-msgid "Blur amount"
-msgstr "Blur amount"
-
-#: scripts/chip-away.sct.h:4
-msgid "Chip Awa_y..."
-msgstr "Chip Awa_y..."
-
-#: scripts/chip-away.sct.h:5
-msgid "Chip amount"
-msgstr "Chip amount"
-
-#: scripts/chip-away.sct.h:6
-msgid "Drop shadow"
-msgstr "Drop shadow"
-
-#: scripts/chip-away.sct.h:7
-msgid "Fill BG with pattern"
-msgstr "Fill BG with pattern"
-
-#: scripts/chip-away.sct.h:10
-msgid "Invert"
-msgstr "Invert"
-
-#: scripts/chip-away.sct.h:11
-msgid "Keep background"
-msgstr "Keep background"
-
-#: scripts/chrome-it.sct.h:2
-msgid "C_hrome-It..."
-msgstr "C_hrome-It..."
-
-#: scripts/chrome-it.sct.h:3 scripts/sota-chrome-logo.sct.h:2
-msgid "Chrome balance"
-msgstr "Chrome balance"
-
-#: scripts/chrome-it.sct.h:4 scripts/crystal-logo.sct.h:3
-#: scripts/sota-chrome-logo.sct.h:3
-msgid "Chrome factor"
-msgstr "Chrome factor"
-
-#: scripts/chrome-it.sct.h:5 scripts/sota-chrome-logo.sct.h:4
-msgid "Chrome lightness"
-msgstr "Chrome lightness"
-
-#: scripts/chrome-it.sct.h:6 scripts/sota-chrome-logo.sct.h:5
-msgid "Chrome saturation"
-msgstr "Chrome saturation"
-
-#: scripts/chrome-it.sct.h:7
-msgid "Chrome white areas"
-msgstr "Chrome white areas"
-
-#: scripts/chrome-it.sct.h:8 scripts/crystal-logo.sct.h:5
-#: scripts/sota-chrome-logo.sct.h:6
-msgid "Environment map"
-msgstr "Environment map"
-
-#: scripts/chrome-it.sct.h:9 scripts/sota-chrome-logo.sct.h:9
-msgid "Highlight balance"
-msgstr "Highlight balance"
-
-#: scripts/chrome-logo.sct.h:5
-msgid "C_hrome..."
-msgstr "C_hrome..."
-
-#: scripts/chrome-logo.sct.h:8
-msgid "Offsets (pixels * 2)"
-msgstr "Offsets (pixels * 2)"
-
-#: scripts/circuit.sct.h:1 scripts/grid-system.sct.h:1 scripts/lava.sct.h:1
-#: scripts/line-nova.sct.h:1 scripts/spyrogimp.sct.h:1
-msgid "<Image>/Tiny-Fu/Render"
-msgstr "<Image>/Tiny-Fu/Render"
-
-#: scripts/circuit.sct.h:2
-msgid "Circuit seed"
-msgstr "Circuit seed"
-
-#: scripts/circuit.sct.h:3 scripts/lava.sct.h:3 scripts/predator.sct.h:3
-#: scripts/xach-effect.sct.h:11
-msgid "Keep selection"
-msgstr "Keep selection"
-
-#: scripts/circuit.sct.h:4
-msgid "No background (only for separate layer)"
-msgstr "No background (only for separate layer)"
-
-#: scripts/circuit.sct.h:5
-msgid "Oilify mask size"
-msgstr "Oilify mask size"
-
-#: scripts/circuit.sct.h:6 scripts/lava.sct.h:6 scripts/predator.sct.h:6
-msgid "Separate layer"
-msgstr "Separate layer"
-
-#: scripts/circuit.sct.h:7
-msgid "_Circuit..."
-msgstr "_Circuit..."
-
-#: scripts/clothify.sct.h:1 scripts/erase-rows.sct.h:1
-#: scripts/predator.sct.h:1 scripts/unsharp-mask.sct.h:1 scripts/weave.sct.h:1
-msgid "<Image>/Tiny-Fu/Alchemy"
-msgstr "<Image>/Tiny-Fu/Alchemy"
-
-#: scripts/clothify.sct.h:2 scripts/swirltile.sct.h:2
-msgid "Azimuth"
-msgstr "Azimuth"
-
-#: scripts/clothify.sct.h:3
-msgid "Blur X"
-msgstr "Blur X"
-
-#: scripts/clothify.sct.h:4
-msgid "Blur Y"
-msgstr "Blur Y"
-
-#: scripts/clothify.sct.h:5 scripts/swirltile.sct.h:5
-msgid "Depth"
-msgstr "Depth"
-
-#: scripts/clothify.sct.h:6 scripts/swirltile.sct.h:6
-msgid "Elevation"
-msgstr "Elevation"
-
-#: scripts/clothify.sct.h:7
-msgid "_Clothify..."
-msgstr "_Clothify..."
-
-#: scripts/coffee.sct.h:2
-msgid ""
-"Darken only\n"
-"(Better, but only for images with alot of white)"
-msgstr ""
-"Darken only\n"
-"(Better, but only for images with alot of white)"
-
-#: scripts/coffee.sct.h:3
-msgid "Stains"
-msgstr "Stains"
-
-#: scripts/coffee.sct.h:4
-msgid "_Coffee Stain..."
-msgstr "_Coffee Stain..."
-
-#: scripts/comic-logo.sct.h:4
-msgid "Comic Boo_k..."
-msgstr "Comic Boo_k..."
-
-#: scripts/comic-logo.sct.h:9
-msgid "Outline color"
-msgstr "Outline colour"
-
-#: scripts/comic-logo.sct.h:10 scripts/glossy.sct.h:12
-msgid "Outline size"
-msgstr "Outline size"
-
-#: scripts/coolmetal-logo.sct.h:4
-msgid "Cool _Metal..."
-msgstr "Cool _Metal..."
-
-#: scripts/coolmetal-logo.sct.h:5 scripts/frosty-logo.sct.h:4
-msgid "Effect size (pixels)"
-msgstr "Effect size (pixels)"
-
-#: scripts/crystal-logo.sct.h:2
-msgid "Background image"
-msgstr "Background image"
-
-#: scripts/crystal-logo.sct.h:4
-msgid "Crystal..."
-msgstr "Crystal..."
-
-#: scripts/distress-selection.sct.h:1 scripts/fade-outline.sct.h:1
-#: scripts/select-to-brush.sct.h:1 scripts/select-to-image.sct.h:1
-#: scripts/select-to-pattern.sct.h:1
-msgid "<Image>/Tiny-Fu/Selection"
-msgstr "<Image>/Tiny-Fu/Selection"
-
-#: scripts/distress-selection.sct.h:2
-msgid "Granularity (1 is low)"
-msgstr "Granularity (1 is low)"
-
-#: scripts/distress-selection.sct.h:4
-msgid "Smooth horizontally"
-msgstr "Smooth horizontally"
-
-#: scripts/distress-selection.sct.h:5
-msgid "Smooth vertically"
-msgstr "Smooth vertically"
-
-#: scripts/distress-selection.sct.h:6
-msgid "Spread"
-msgstr "Spread"
-
-#: scripts/distress-selection.sct.h:7
-msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Threshold (bigger 1<-->255 smaller)"
-
-#: scripts/distress-selection.sct.h:8
-msgid "_Distress Selection..."
-msgstr "_Distress Selection..."
-
-#: scripts/drop-shadow.sct.h:1 scripts/perspective-shadow.sct.h:1
-#: scripts/xach-effect.sct.h:1
-msgid "<Image>/Tiny-Fu/Shadow"
-msgstr "<Image>/Tiny-Fu/Shadow"
-
-#: scripts/drop-shadow.sct.h:2 scripts/perspective-shadow.sct.h:2
-msgid "Allow resizing"
-msgstr "Allow resizing"
-
-#: scripts/drop-shadow.sct.h:3 scripts/news-text.sct.h:3
-#: scripts/perspective-shadow.sct.h:4 scripts/round-corners.sct.h:4
-#: scripts/swirltile.sct.h:4
-msgid "Blur radius"
-msgstr "Blur radius"
-
-#: scripts/drop-shadow.sct.h:5 scripts/gimp-labels.sct.h:8
-msgid "Offset X"
-msgstr "Offset X"
-
-#: scripts/drop-shadow.sct.h:6 scripts/gimp-labels.sct.h:9
-msgid "Offset Y"
-msgstr "Offset Y"
-
-#: scripts/drop-shadow.sct.h:7 scripts/perspective-shadow.sct.h:10
-msgid "Opacity"
-msgstr "Opacity"
-
-#: scripts/drop-shadow.sct.h:8
-msgid "_Drop-Shadow..."
-msgstr "_Drop shadow..."
-
-#: scripts/erase-rows.sct.h:2
-msgid "Columns"
-msgstr "Columns"
-
-#: scripts/erase-rows.sct.h:3
-msgid "Erase"
-msgstr "Erase"
-
-#: scripts/erase-rows.sct.h:4
-msgid "Erase/fill"
-msgstr "Erase/fill"
-
-#: scripts/erase-rows.sct.h:5
-msgid "Even"
-msgstr "Even"
-
-#: scripts/erase-rows.sct.h:6
-msgid "Even/odd"
-msgstr "Even/odd"
-
-#: scripts/erase-rows.sct.h:7
-msgid "Fill with BG"
-msgstr "Fill with BG"
-
-#: scripts/erase-rows.sct.h:8
-msgid "Odd"
-msgstr "Odd"
-
-#: scripts/erase-rows.sct.h:9
-msgid "Rows"
-msgstr "Rows"
-
-#: scripts/erase-rows.sct.h:10
-msgid "Rows/cols"
-msgstr "Rows/cols"
-
-#: scripts/erase-rows.sct.h:11
-msgid "_Erase every other Row..."
-msgstr "_Erase every other Row..."
-
-#: scripts/fade-outline.sct.h:2
-msgid "Apply generated layermask"
-msgstr "Apply generated layermask"
-
-#: scripts/fade-outline.sct.h:3 scripts/fuzzyborder.sct.h:4
-#: scripts/old-photo.sct.h:2
-msgid "Border size"
-msgstr "Border size"
-
-#: scripts/fade-outline.sct.h:4
-msgid "Clear unselected maskarea"
-msgstr "Clear unselected maskarea"
-
-#: scripts/fade-outline.sct.h:6
-#, no-c-format
-msgid "Fade from %"
-msgstr "Fade from %"
-
-#: scripts/fade-outline.sct.h:8
-#, no-c-format
-msgid "Fade to   %"
-msgstr "Fade to   %"
-
-#: scripts/fade-outline.sct.h:9
-msgid "Use growing selection"
-msgstr "Use growing selection"
-
-#: scripts/fade-outline.sct.h:10
-msgid "_Fade Outline..."
-msgstr "_Fade Outline..."
-
-#: scripts/flatland.sct.h:2 scripts/land.sct.h:2
-msgid "Detail level"
-msgstr "Detail level"
-
-#: scripts/flatland.sct.h:3 scripts/land.sct.h:4
-msgid "Image height"
-msgstr "Image height"
-
-#: scripts/flatland.sct.h:4 scripts/land.sct.h:5
-msgid "Image width"
-msgstr "Image width"
-
-#: scripts/flatland.sct.h:5 scripts/land.sct.h:7
-msgid "Random seed"
-msgstr "Random seed"
-
-#: scripts/flatland.sct.h:6 scripts/land.sct.h:8
-msgid "Scale X"
-msgstr "Scale X"
-
-#: scripts/flatland.sct.h:7 scripts/land.sct.h:9
-msgid "Scale Y"
-msgstr "Scale Y"
-
-#: scripts/flatland.sct.h:8
-msgid "_Flatland..."
-msgstr "_Flatland..."
-
-#: scripts/font-map.sct.h:2
-msgid "Active colors"
-msgstr "Active colours"
-
-#: scripts/font-map.sct.h:3
-msgid "Black on white"
-msgstr "Black on white"
-
-#: scripts/font-map.sct.h:4
-msgid "Font _size (pixels)"
-msgstr "Font _size (pixels)"
-
-#: scripts/font-map.sct.h:5
-msgid "Use font _name as text"
-msgstr "Use font _name as text"
-
-#: scripts/font-map.sct.h:6
-msgid "_Border (pixels)"
-msgstr "_Border (pixels)"
-
-#: scripts/font-map.sct.h:7
-msgid "_Color scheme"
-msgstr "_Colour scheme"
-
-#: scripts/font-map.sct.h:8
-msgid "_Filter (regexp)"
-msgstr "_Filter (regexp)"
-
-#: scripts/font-map.sct.h:9
-msgid "_Font Map..."
-msgstr "_Font Map..."
-
-#: scripts/font-map.sct.h:10
-msgid "_Labels"
-msgstr "_Labels"
-
-#: scripts/font-map.sct.h:11
-msgid "_Text"
-msgstr "_Text"
-
-#: scripts/frosty-logo.sct.h:8
-msgid "_Frosty..."
-msgstr "_Frotsy..."
-
-#: scripts/fuzzyborder.sct.h:2
-msgid "Add shadow"
-msgstr "Add shadow"
-
-#: scripts/fuzzyborder.sct.h:3
-msgid "Blur border"
-msgstr "Blur border"
-
-#: scripts/fuzzyborder.sct.h:7
-msgid "Granularity (1 is Low)"
-msgstr "Granularity (1 is Low)"
-
-#: scripts/fuzzyborder.sct.h:9
-#, no-c-format
-msgid "Shadow weight (%)"
-msgstr "Shadow weight (%)"
-
-#: scripts/fuzzyborder.sct.h:11
-msgid "_Fuzzy Border..."
-msgstr "_Fuzzy Border..."
-
-#: scripts/gimp-headers.sct.h:1 scripts/gimp-labels.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-
-#: scripts/gimp-headers.sct.h:2
-msgid "Autocrop"
-msgstr "Autocrop"
-
-#: scripts/gimp-headers.sct.h:3
-msgid "Dark color"
-msgstr "Dark colour"
-
-#: scripts/gimp-headers.sct.h:6 scripts/xach-effect.sct.h:9
-msgid "Highlight color"
-msgstr "Highlight colour"
-
-#: scripts/gimp-headers.sct.h:7 scripts/gimp-labels.sct.h:6
-msgid "Index image"
-msgstr "Index image"
-
-#: scripts/gimp-headers.sct.h:8 scripts/gimp-labels.sct.h:7
-msgid "Number of colors"
-msgstr "Number of colours"
-
-#: scripts/gimp-headers.sct.h:9 scripts/gimp-labels.sct.h:10
-msgid "Remove background"
-msgstr "Remove background"
-
-#: scripts/gimp-headers.sct.h:10 scripts/gimp-labels.sct.h:11
-msgid "Select-by-color threshold"
-msgstr "Select-by-colour threshold"
-
-#: scripts/gimp-headers.sct.h:11 scripts/gimp-labels.sct.h:12
-msgid "Shadow color"
-msgstr "Shadow colour"
-
-#: scripts/gimp-headers.sct.h:14
-msgid "_Big Header..."
-msgstr "_Big Header..."
-
-#: scripts/gimp-headers.sct.h:15
-msgid "_Small Header..."
-msgstr "_Small Header..."
-
-#: scripts/gimp-labels.sct.h:13
-msgid "T_ube Sub-Button Label..."
-msgstr "T_ube Sub-Button Label..."
-
-#: scripts/gimp-labels.sct.h:16
-msgid "Tub_e Sub-Sub-Button Label..."
-msgstr "Tub_e Sub-Sub-Button Label..."
-
-#: scripts/gimp-labels.sct.h:17
-msgid "_General Tube Labels..."
-msgstr "_General Tube Labels..."
-
-#: scripts/gimp-labels.sct.h:18
-msgid "_Tube Button Label..."
-msgstr "_Tube Button Label..."
-
-#: scripts/glossy.sct.h:4
-msgid "Blend gradient (Text)"
-msgstr "Blend gradient (Text)"
-
-#: scripts/glossy.sct.h:5
-msgid "Blend gradient (outline)"
-msgstr "Blend gradient (outline)"
-
-#: scripts/glossy.sct.h:6
-msgid "Blend gradient (text)"
-msgstr "Blend gradient (text)"
-
-#: scripts/glossy.sct.h:10
-msgid "Glo_ssy..."
-msgstr "Glo_ssy..."
-
-#: scripts/glossy.sct.h:11
-msgid "Outline gradient reverse"
-msgstr "Outline gradient reverse"
-
-#: scripts/glossy.sct.h:13
-msgid "Pattern (outline)"
-msgstr "Pattern (outline)"
-
-#: scripts/glossy.sct.h:14
-msgid "Pattern (overlay)"
-msgstr "Pattern (overlay)"
-
-#: scripts/glossy.sct.h:15
-msgid "Pattern (text)"
-msgstr "Pattern (text)"
-
-#: scripts/glossy.sct.h:16 scripts/sphere.sct.h:5
-msgid "Shadow"
-msgstr "Shadow"
-
-#: scripts/glossy.sct.h:20
-msgid "Text gradient reverse"
-msgstr "Text gradient reverse"
-
-#: scripts/glossy.sct.h:21
-msgid "Use pattern for outline instead of gradient"
-msgstr "Use pattern for outline instead of gradient"
-
-#: scripts/glossy.sct.h:22
-msgid "Use pattern for text instead of gradient"
-msgstr "Use pattern for text instead of gradient"
-
-#: scripts/glossy.sct.h:23
-msgid "Use pattern overlay"
-msgstr "Use pattern overlay"
-
-#: scripts/glowing-logo.sct.h:4
-msgid "Effect size (pixels * 3)"
-msgstr "Effect size (pixels * 3)"
-
-#: scripts/glowing-logo.sct.h:7
-msgid "Glo_wing Hot..."
-msgstr "Glo_wing Hot..."
-
-#: scripts/gradient-bevel-logo.sct.h:4
-msgid "Bevel height (Sharpness)"
-msgstr "Bevel height (Sharpness)"
-
-#: scripts/gradient-bevel-logo.sct.h:5
-msgid "Bevel height (sharpness)"
-msgstr "Bevel height (sharpness)"
-
-#: scripts/gradient-bevel-logo.sct.h:7 scripts/t-o-p-logo.sct.h:5
-#: scripts/textured-logo.sct.h:4
-msgid "Border size (pixels)"
-msgstr "Border size (pixels)"
-
-#: scripts/gradient-bevel-logo.sct.h:10
-msgid "Gradient Beve_l..."
-msgstr "Gradient reverse"
-
-#: scripts/gradient-example.sct.h:2
-msgid "Custom _Gradient..."
-msgstr "Custom Gradient"
-
-#: scripts/grid-system.sct.h:2
-msgid "X divisions"
-msgstr "X divisions"
-
-#: scripts/grid-system.sct.h:3
-msgid "Y divisions"
-msgstr "Y divisions"
-
-#: scripts/grid-system.sct.h:4
-msgid "_Grid..."
-msgstr "_Grid..."
-
-#: scripts/guides-from-selection.sct.h:1 scripts/guides-new-percent.sct.h:1
-#: scripts/guides-new.sct.h:1 scripts/guides-remove-all.sct.h:1
-msgid "<Image>/Image/Guides"
-msgstr "<Image>/Image/Guides"
-
-#: scripts/guides-from-selection.sct.h:2
-msgid "Creates four Guides around the bounding box of the current selection."
-msgstr "Creates four Guides around the bounding box of the current selection."
-
-#: scripts/guides-from-selection.sct.h:3
-msgid "New Guides from _Selection"
-msgstr "New Guides from _Selection"
-
-#: scripts/guides-new-percent.sct.h:2 scripts/guides-new.sct.h:2
-msgid "Direction"
-msgstr "Direction"
-
-#: scripts/guides-new-percent.sct.h:3 scripts/guides-new.sct.h:3
-msgid "Horizontal"
-msgstr "Horizontal"
-
-#: scripts/guides-new-percent.sct.h:4
-msgid "New Guide (by _Percent)..."
-msgstr "New Guide (by _Percent)..."
-
-#: scripts/guides-new-percent.sct.h:6
-#, no-c-format
-msgid "Position (in %)"
-msgstr "Position (in %)"
-
-#: scripts/guides-new-percent.sct.h:7 scripts/guides-new.sct.h:5
-msgid "Vertical"
-msgstr "Vertical"
-
-#: scripts/guides-new.sct.h:4
-msgid "New _Guide..."
-msgstr "New _Guide..."
-
-#: scripts/guides-remove-all.sct.h:2
-msgid "_Remove all Guides"
-msgstr "_Remove all Guides"
-
-#: scripts/hsv-graph.sct.h:1 scripts/image-structure.sct.h:1
-#: scripts/tiny-fu-set-cmap.sct.h:1
-msgid "<Image>/Tiny-Fu/Utils"
-msgstr "<Image>/Tiny-Fu/Utils"
-
-#: scripts/hsv-graph.sct.h:2
-msgid "BG opacity"
-msgstr "BG opacity"
-
-#: scripts/hsv-graph.sct.h:3
-msgid "Draw _HSV Graph..."
-msgstr "Draw _HSV Graph..."
-
-#: scripts/hsv-graph.sct.h:4
-msgid "End X"
-msgstr "End X"
-
-#: scripts/hsv-graph.sct.h:5
-msgid "End Y"
-msgstr "End Y"
-
-#: scripts/hsv-graph.sct.h:6
-msgid "From top-left to bottom-right"
-msgstr "From top-left to bottom-right"
-
-#: scripts/hsv-graph.sct.h:7
-msgid "Graph scale"
-msgstr "Graph scale"
-
-#: scripts/hsv-graph.sct.h:8
-msgid "Start X"
-msgstr "Start X"
-
-#: scripts/hsv-graph.sct.h:9
-msgid "Start Y"
-msgstr "Start Y"
-
-#: scripts/hsv-graph.sct.h:10
-msgid "Use selection bounds instead of values below"
-msgstr "Use selection bounds instead of values below"
-
-#: scripts/i26-gunya2.sct.h:4
-msgid "Frame color"
-msgstr "Frame colour"
-
-#: scripts/i26-gunya2.sct.h:5
-msgid "Frame size"
-msgstr "Frame size"
-
-#: scripts/i26-gunya2.sct.h:6
-msgid "Imigre-26..."
-msgstr "Imigre-26..."
-
-#: scripts/image-structure.sct.h:2
-msgid "Apply layer mask (or discard)"
-msgstr "Apply layer mask (or discard)"
-
-#: scripts/image-structure.sct.h:4
-msgid "Create new image"
-msgstr "Create new image"
-
-#: scripts/image-structure.sct.h:5
-msgid "Insert layer names"
-msgstr "Insert layer names"
-
-#: scripts/image-structure.sct.h:6
-msgid "Make new background"
-msgstr "Make new background"
-
-#: scripts/image-structure.sct.h:7
-msgid "Outer border"
-msgstr "Outer border"
-
-#: scripts/image-structure.sct.h:8
-msgid "Pad color"
-msgstr "Pad colour"
-
-#: scripts/image-structure.sct.h:9
-msgid "Pad opacity"
-msgstr "Pad opacity"
-
-#: scripts/image-structure.sct.h:10
-msgid "Padding for transparent regions"
-msgstr "Padding for transparent regions"
-
-#: scripts/image-structure.sct.h:11
-msgid "Shear length"
-msgstr "Shear length"
-
-#: scripts/image-structure.sct.h:12
-msgid "Show Image _Structure..."
-msgstr "Show Image _Structure..."
-
-#: scripts/image-structure.sct.h:13
-msgid "Space between layers"
-msgstr "Space between layers"
-
-#: scripts/land.sct.h:6
-msgid "Land height"
-msgstr "Land height"
-
-#: scripts/land.sct.h:10
-msgid "Sea depth"
-msgstr "Sea depth"
-
-#: scripts/land.sct.h:11
-msgid "_Land..."
-msgstr "_Land..."
-
-#: scripts/lava.sct.h:4 scripts/swirltile.sct.h:8
-msgid "Roughness"
-msgstr "Roughness"
-
-#: scripts/lava.sct.h:5
-msgid "Seed"
-msgstr "Seed"
-
-#: scripts/lava.sct.h:8
-msgid "Use current gradient"
-msgstr "Use current gradient"
-
-#: scripts/lava.sct.h:9
-msgid "_Lava..."
-msgstr "_Lava..."
-
-#: scripts/line-nova.sct.h:2
-msgid "Line _Nova..."
-msgstr "Line _Nova..."
-
-#: scripts/line-nova.sct.h:3
-msgid "Number of lines"
-msgstr "Number of lines"
-
-#: scripts/line-nova.sct.h:4
-msgid "Offset radius"
-msgstr "Offset radius"
-
-#: scripts/line-nova.sct.h:5
-msgid "Randomness"
-msgstr "Randomness"
-
-#: scripts/line-nova.sct.h:6
-msgid "Sharpness (degrees)"
-msgstr "Sharpness (degrees)"
-
-#: scripts/mkbrush.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-
-#: scripts/mkbrush.sct.h:2
-msgid "Create size of brush"
-msgstr "Create size of brush"
-
-#: scripts/mkbrush.sct.h:3
-msgid "Description"
-msgstr "Description"
-
-#: scripts/mkbrush.sct.h:4
-msgid "Elli_ptical, Feathered..."
-msgstr "Elli_ptical, Feathered..."
-
-#: scripts/mkbrush.sct.h:5
-msgid "Feathering"
-msgstr "Feathering"
-
-#: scripts/mkbrush.sct.h:7
-msgid "Re_ctangular, Feathered..."
-msgstr "Re_ctangular, Feathered..."
-
-#: scripts/mkbrush.sct.h:8 scripts/select-to-brush.sct.h:4
-msgid "Spacing"
-msgstr "Spacing"
-
-#: scripts/mkbrush.sct.h:10
-msgid "_Elliptical..."
-msgstr "_Elliptical..."
-
-#: scripts/mkbrush.sct.h:11
-msgid "_Rectangular..."
-msgstr "_Rectangular..."
-
-#: scripts/neon-logo.sct.h:4
-msgid "Create shadow"
-msgstr "Create shadow"
-
-#: scripts/neon-logo.sct.h:5
-msgid "Effect size (pixels * 5)"
-msgstr "Effect size (pixels * 5)"
-
-#: scripts/neon-logo.sct.h:9
-msgid "N_eon..."
-msgstr "N_eon..."
-
-#: scripts/news-text.sct.h:4
-msgid "Cell size (pixels)"
-msgstr "Cell size (pixels)"
-
-#: scripts/news-text.sct.h:6 scripts/speed-text.sct.h:4
-#, no-c-format
-msgid "Density (%)"
-msgstr "Density (%)"
-
-#: scripts/news-text.sct.h:9
-msgid "Newsprint Text..."
-msgstr "Newsprint Text..."
-
-#: scripts/old-photo.sct.h:3
-msgid "Defocus"
-msgstr "Defocus"
-
-#: scripts/old-photo.sct.h:4
-msgid "Mottle"
-msgstr "Mottle"
-
-#: scripts/old-photo.sct.h:5
-msgid "Sepia"
-msgstr "Sepia"
-
-#: scripts/old-photo.sct.h:7
-msgid "_Old Photo..."
-msgstr "_Old Photo..."
-
-#: scripts/perspective-shadow.sct.h:3
-msgid "Angle"
-msgstr "Angle"
-
-#: scripts/perspective-shadow.sct.h:6
-msgid "Cubic"
-msgstr "Cubic"
-
-#: scripts/perspective-shadow.sct.h:7
-msgid "Interpolation"
-msgstr "Interpolate"
-
-#: scripts/perspective-shadow.sct.h:8
-msgid "Linear"
-msgstr "Linear"
-
-#: scripts/perspective-shadow.sct.h:9
-msgid "None"
-msgstr "(none)"
-
-#: scripts/perspective-shadow.sct.h:11
-msgid "Relative distance of horizon"
-msgstr "Relative distance of horizon"
-
-#: scripts/perspective-shadow.sct.h:12
-msgid "Relative length of shadow"
-msgstr "Relative length of shadow"
-
-#: scripts/perspective-shadow.sct.h:13
-msgid "_Perspective..."
-msgstr "_Perspective..."
-
-#: scripts/predator.sct.h:2
-msgid "Edge amount"
-msgstr "Edge amount"
-
-#: scripts/predator.sct.h:4
-msgid "Pixel amount"
-msgstr "Pixel amount"
-
-#: scripts/predator.sct.h:5
-msgid "Pixelize"
-msgstr "Pixelise"
-
-#: scripts/predator.sct.h:7
-msgid "_Predator..."
-msgstr "_Predator..."
-
-#: scripts/pupi-button.sct.h:5
-msgid "Lower color"
-msgstr "Lower colour"
-
-#: scripts/pupi-button.sct.h:6
-msgid "Lower color (active)"
-msgstr "Lower colour (active)"
-
-#: scripts/pupi-button.sct.h:7
-msgid "Not pressed"
-msgstr "Not pressed"
-
-#: scripts/pupi-button.sct.h:8
-msgid "Not pressed (active)"
-msgstr "Not pressed (active)"
-
-#: scripts/pupi-button.sct.h:9
-msgid "Padding X"
-msgstr "Padding X"
-
-#: scripts/pupi-button.sct.h:10
-msgid "Padding Y"
-msgstr "Padding Y"
-
-#: scripts/pupi-button.sct.h:12
-msgid "Round ratio"
-msgstr "Round ratio"
-
-#: scripts/pupi-button.sct.h:15
-msgid "Text color (active)"
-msgstr "Text colour (active)"
-
-#: scripts/pupi-button.sct.h:16
-msgid "Upper color"
-msgstr "Upper colour"
-
-#: scripts/pupi-button.sct.h:17
-msgid "Upper color (active)"
-msgstr "Upper colour (active)"
-
-#: scripts/pupi-button.sct.h:18
-msgid "_Round Button..."
-msgstr "_Round Button..."
-
-#: scripts/rendermap.sct.h:2
-msgid "Behavior"
-msgstr "Behaviour"
-
-#: scripts/rendermap.sct.h:3
-msgid "Detail in Middle"
-msgstr "Detail in Middle"
-
-#: scripts/rendermap.sct.h:8
-msgid "Render _Map..."
-msgstr "Render _Map..."
-
-#: scripts/rendermap.sct.h:9
-msgid "Tile"
-msgstr "Tile"
-
-#: scripts/ripply-anim.sct.h:2
-msgid "Black"
-msgstr "Black"
-
-#: scripts/ripply-anim.sct.h:3
-msgid "Edge behavior"
-msgstr "Edge behaviour"
-
-#: scripts/ripply-anim.sct.h:4 scripts/waves-anim.sct.h:4
-msgid "Number of frames"
-msgstr "Number of frames"
-
-#: scripts/ripply-anim.sct.h:5
-msgid "Rippling strength"
-msgstr "Rippling strength"
-
-#: scripts/ripply-anim.sct.h:6
-msgid "Smear"
-msgstr "Smear"
-
-#: scripts/ripply-anim.sct.h:7
-msgid "Wrap"
-msgstr "Wrap"
-
-#: scripts/ripply-anim.sct.h:8
-msgid "_Rippling..."
-msgstr "_Rippling..."
-
-#: scripts/round-corners.sct.h:2
-msgid "Add background"
-msgstr "Add background"
-
-#: scripts/round-corners.sct.h:3
-msgid "Add drop-shadow"
-msgstr "Add drop-shadow"
-
-#: scripts/round-corners.sct.h:5
-msgid "Edge radius"
-msgstr "Edge radius"
-
-#: scripts/round-corners.sct.h:9
-msgid "_Round Corners..."
-msgstr "_Round Corners..."
-
-#: scripts/selection-round.sct.h:1
-msgid "<Image>/Select/Modify"
-msgstr "<Image>/Select/Modify"
-
-#: scripts/selection-round.sct.h:2
-msgid "Concave"
-msgstr "Concave"
-
-#: scripts/selection-round.sct.h:4
-#, no-c-format
-msgid "Radius (%)"
-msgstr "Radius (%)"
-
-#: scripts/selection-round.sct.h:5
-msgid "Rounded R_ectangle..."
-msgstr "Rounded R_ectangle..."
-
-#: scripts/select-to-brush.sct.h:2
-msgid "Brush name"
-msgstr "Brush name"
-
-#: scripts/select-to-brush.sct.h:3
-msgid "File name"
-msgstr "File name"
-
-#: scripts/select-to-brush.sct.h:5
-msgid "To _Brush..."
-msgstr "To _Brush..."
-
-#: scripts/select-to-image.sct.h:2
-msgid "To _Image"
-msgstr "To _Image"
-
-#: scripts/select-to-pattern.sct.h:2
-msgid "Filename"
-msgstr "Filename"
-
-#: scripts/select-to-pattern.sct.h:3
-msgid "Pattern name"
-msgstr "Pattern name"
-
-#: scripts/select-to-pattern.sct.h:4
-msgid "To _Pattern..."
-msgstr "To _Pattern"
-
-#: scripts/slide.sct.h:3
-msgid "Font color"
-msgstr "Font colour"
-
-#: scripts/slide.sct.h:4
-msgid "Number"
-msgstr "Number"
-
-#: scripts/slide.sct.h:7
-msgid "_Slide..."
-msgstr "_Slide..."
-
-#: scripts/sota-chrome-logo.sct.h:10
-msgid "SOTA Chrome..."
-msgstr "SOTA Chrome..."
-
-#: scripts/speed-text.sct.h:7
-msgid "Speed Text..."
-msgstr "Speed Text..."
-
-#: scripts/sphere.sct.h:1
-msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-msgstr "<Toolbox>/Xtns/Tiny-Fu/Misc"
-
-#: scripts/sphere.sct.h:3
-msgid "Lighting (degrees)"
-msgstr "Lighting (degrees)"
-
-#: scripts/sphere.sct.h:4
-msgid "Radius (pixels)"
-msgstr "Radius (pixels)"
-
-#: scripts/sphere.sct.h:6
-msgid "Sphere color"
-msgstr "Sphere colour"
-
-#: scripts/sphere.sct.h:7 scripts/test-sphere.sct.h:2
-msgid "_Sphere..."
-msgstr "_Sphere..."
-
-#: scripts/spinning-globe.sct.h:2
-msgid "Frames"
-msgstr "Frames"
-
-#: scripts/spinning-globe.sct.h:3
-msgid "Index to n colors (0 = remain RGB)"
-msgstr "Index to n colours (0 = remain RGB)"
-
-#: scripts/spinning-globe.sct.h:5
-msgid "Turn from left to right"
-msgstr "Turn from left to right"
-
-#: scripts/spinning-globe.sct.h:7
-msgid "_Spinning Globe..."
-msgstr "_Spinning Globe..."
-
-#: scripts/spyrogimp.sct.h:2
-msgid "Airbrush"
-msgstr "Airbrush"
-
-#: scripts/spyrogimp.sct.h:3
-msgid "Brush"
-msgstr "Brush"
-
-#: scripts/spyrogimp.sct.h:4
-msgid "Circle"
-msgstr "Circle"
-
-#: scripts/spyrogimp.sct.h:6
-msgid "Color method"
-msgstr "Colour method"
-
-#: scripts/spyrogimp.sct.h:7
-msgid "Epitrochoid"
-msgstr "Epitrochoid"
-
-#: scripts/spyrogimp.sct.h:8
-msgid "Frame"
-msgstr "Frame"
-
-#: scripts/spyrogimp.sct.h:10
-msgid "Gradient: Loop Sawtooth"
-msgstr "Gradient: Loop Sawtooth"
-
-#: scripts/spyrogimp.sct.h:11
-msgid "Gradient: Loop Triangle"
-msgstr "Gradient: Loop Triangle"
-
-#: scripts/spyrogimp.sct.h:12
-msgid "Hexagon"
-msgstr "Hexagon"
-
-#: scripts/spyrogimp.sct.h:13
-msgid "Hole ratio"
-msgstr "Hole ratio"
-
-#: scripts/spyrogimp.sct.h:14
-msgid "Inner teeth"
-msgstr "Inner teeth"
-
-#: scripts/spyrogimp.sct.h:15
-msgid "Lissajous"
-msgstr "Lissajous"
-
-#: scripts/spyrogimp.sct.h:16
-msgid "Margin (pixels)"
-msgstr "Margin (pixels)"
-
-#: scripts/spyrogimp.sct.h:17
-msgid "Outer teeth"
-msgstr "Outer teeth"
-
-#: scripts/spyrogimp.sct.h:18
-msgid "Pencil"
-msgstr "Pencil"
-
-#: scripts/spyrogimp.sct.h:19
-msgid "Pentagon"
-msgstr "Pentagon"
-
-#: scripts/spyrogimp.sct.h:20
-msgid "Polygon: 10 sides"
-msgstr "Polygon: 10 sides"
-
-#: scripts/spyrogimp.sct.h:21
-msgid "Polygon: 7 sides"
-msgstr "Polygon: 7 sides"
-
-#: scripts/spyrogimp.sct.h:22
-msgid "Polygon: 8 sides"
-msgstr "Polygon: 8 sides"
-
-#: scripts/spyrogimp.sct.h:23
-msgid "Polygon: 9 sides"
-msgstr "Polygon: 9 sides"
-
-#: scripts/spyrogimp.sct.h:24
-msgid "Shape"
-msgstr "Shape"
-
-#: scripts/spyrogimp.sct.h:25
-msgid "Solid Color"
-msgstr "Solid Colour"
-
-#: scripts/spyrogimp.sct.h:26
-msgid "Spyrograph"
-msgstr "Spyrograph"
-
-#: scripts/spyrogimp.sct.h:27
-msgid "Square"
-msgstr "Square"
-
-#: scripts/spyrogimp.sct.h:28 scripts/text-circle.sct.h:8
-msgid "Start angle"
-msgstr "Start angle"
-
-#: scripts/spyrogimp.sct.h:29
-msgid "Tool"
-msgstr "Tool"
-
-#: scripts/spyrogimp.sct.h:30
-msgid "Triangle"
-msgstr "Triangle"
-
-#: scripts/spyrogimp.sct.h:31
-msgid "Type"
-msgstr "Type"
-
-#: scripts/spyrogimp.sct.h:32
-msgid "_Spyrogimp..."
-msgstr "_Spyrogimp..."
-
-#: scripts/starburst-logo.sct.h:4
-msgid "Burst color"
-msgstr "Burst colour"
-
-#: scripts/starburst-logo.sct.h:5
-msgid "Effect size (pixels * 30)"
-msgstr "Effect size (pixels * 30)"
-
-#: scripts/starburst-logo.sct.h:8
-msgid "Starb_urst..."
-msgstr "Starb_urst..."
-
-#: scripts/starscape-logo.sct.h:3
-msgid "Effect size (pixels * 4)"
-msgstr "Effect size (pixels * 4)"
-
-#: scripts/starscape-logo.sct.h:7
-msgid "Sta_rscape..."
-msgstr "Sta_rscape..."
-
-#: scripts/swirltile.sct.h:9
-msgid "Swirl-_Tile..."
-msgstr "Swirl-_Tile..."
-
-#: scripts/swirltile.sct.h:10
-msgid "Whirl amount"
-msgstr "Whirl amount"
-
-#: scripts/swirly-pattern.sct.h:2
-msgid "Number of times to whirl"
-msgstr "Number of times to whirl"
-
-#: scripts/swirly-pattern.sct.h:3
-msgid "Quarter size"
-msgstr "Quarter size"
-
-#: scripts/swirly-pattern.sct.h:4
-msgid "Whirl angle"
-msgstr "Whirl angle"
-
-#: scripts/swirly-pattern.sct.h:5
-msgid "_Swirly..."
-msgstr "_Swirly..."
-
-#: scripts/t-o-p-logo.sct.h:4
-msgid "Base color"
-msgstr "Base colour"
-
-#: scripts/t-o-p-logo.sct.h:6
-msgid "Edge only"
-msgstr "Edge only"
-
-#: scripts/t-o-p-logo.sct.h:7
-msgid "Edge width"
-msgstr "Edge width"
-
-#: scripts/t-o-p-logo.sct.h:10
-msgid "Hit rate"
-msgstr "Hit rate"
-
-#: scripts/t-o-p-logo.sct.h:12
-msgid "_Particle Trace..."
-msgstr "_Particle Trace..."
-
-#: scripts/text-circle.sct.h:2
-msgid "Antialias"
-msgstr "Antialias"
-
-#: scripts/text-circle.sct.h:3
-msgid "Fill angle"
-msgstr "Fill angle"
-
-#: scripts/text-circle.sct.h:7
-msgid "Render the specified text along the perimeter of a circle"
-msgstr "Render the specified text along the perimeter of a circle"
-
-#: scripts/text-circle.sct.h:10
-msgid "Text Circle..."
-msgstr "Text Circle..."
-
-#: scripts/textured-logo.sct.h:5
-msgid "Ending blend"
-msgstr "Ending blend"
-
-#: scripts/textured-logo.sct.h:8
-msgid "Hexagons"
-msgstr "Hexagons"
-
-#: scripts/textured-logo.sct.h:9
-msgid "Mosaic tile type"
-msgstr "Mosaic tile type"
-
-#: scripts/textured-logo.sct.h:10
-msgid "Octagons"
-msgstr "Octagons"
-
-#: scripts/textured-logo.sct.h:12
-msgid "Squares"
-msgstr "Squares"
-
-#: scripts/textured-logo.sct.h:13
-msgid "Starting blend"
-msgstr "Starting blend"
-
-#: scripts/textured-logo.sct.h:15
-msgid "Text pattern"
-msgstr "Text pattern"
-
-#: scripts/textured-logo.sct.h:16
-msgid "_Textured..."
-msgstr "_Textured..."
-
-#: scripts/tileblur.sct.h:1
-msgid "<Image>/Filters/Blur"
-msgstr "<Image>/Filters/Blur"
-
-#: scripts/tileblur.sct.h:2
-msgid "Blur horizontally"
-msgstr "Blur horizontally"
-
-#: scripts/tileblur.sct.h:3
-msgid "Blur type"
-msgstr "Blur type"
-
-#: scripts/tileblur.sct.h:4
-msgid "Blur vertically"
-msgstr "Blur vertically"
-
-#: scripts/tileblur.sct.h:5
-msgid "IIR"
-msgstr "IIR"
-
-#: scripts/tileblur.sct.h:6
-msgid "RLE"
-msgstr "RLE"
-
-#: scripts/tileblur.sct.h:8
-msgid "_Tileable Blur..."
-msgstr "_Tileable Blur..."
-
-#: scripts/tiny-fu-set-cmap.sct.h:2
-msgid "Palette"
-msgstr "Palette"
-
-#: scripts/tiny-fu-set-cmap.sct.h:3
-msgid "Set Colormap"
-msgstr "Set Colormap"
-
-#: scripts/title-header.sct.h:6
-msgid "Web Title Header..."
-msgstr "Web Title Header..."
-
-#: scripts/truchet.sct.h:4
-msgid "Foreground color"
-msgstr "Foreground colour"
-
-#: scripts/truchet.sct.h:7
-msgid "T_ruchet..."
-msgstr "T_ruchet..."
-
-#: scripts/unsharp-mask.sct.h:2
-msgid "Mask opacity"
-msgstr "Mask opacity"
-
-#: scripts/unsharp-mask.sct.h:3
-msgid "Mask size"
-msgstr "Mask size"
-
-#: scripts/unsharp-mask.sct.h:4
-msgid "_Unsharp Mask..."
-msgstr "_Unsharp Mask..."
-
-#: scripts/waves-anim.sct.h:2
-msgid "Amplitude"
-msgstr "Amplitude"
-
-#: scripts/waves-anim.sct.h:3
-msgid "Invert direction"
-msgstr "Invert direction"
-
-#: scripts/waves-anim.sct.h:5
-msgid "Wavelength"
-msgstr "Wavelength"
-
-#: scripts/waves-anim.sct.h:6
-msgid "_Waves..."
-msgstr "_Waves..."
-
-#: scripts/weave.sct.h:2
-msgid "Ribbon spacing"
-msgstr "Ribbon spacing"
-
-#: scripts/weave.sct.h:3
-msgid "Ribbon width"
-msgstr "Ribbon width"
-
-#: scripts/weave.sct.h:4
-msgid "Shadow darkness"
-msgstr "Shadow darkness"
-
-#: scripts/weave.sct.h:5
-msgid "Shadow depth"
-msgstr "Shadow depth"
-
-#: scripts/weave.sct.h:6
-msgid "Thread density"
-msgstr "Thread density"
-
-#: scripts/weave.sct.h:7
-msgid "Thread intensity"
-msgstr "Thread intensity"
-
-#: scripts/weave.sct.h:8
-msgid "Thread length"
-msgstr "Thread length"
-
-#: scripts/weave.sct.h:9
-msgid "_Weave..."
-msgstr "_Weave..."
-
-#: scripts/web-browser.sct.h:1
-msgid "<Toolbox>/Help/The GIMP Online"
-msgstr "<Toolbox>/Help/The GIMP Online"
-
-#: scripts/web-browser.sct.h:2
-msgid "Plug-in _Registry"
-msgstr "Plug-in _Registry"
-
-#: scripts/web-browser.sct.h:3
-msgid "_Developer Web Site"
-msgstr "_Developer Web Site"
-
-#: scripts/web-browser.sct.h:4
-msgid "_Main Web Site"
-msgstr "_Main Web Site"
-
-#: scripts/xach-effect.sct.h:2
-msgid "Drop shadow X offset"
-msgstr "Drop shadow X offset"
-
-#: scripts/xach-effect.sct.h:3
-msgid "Drop shadow Y offset"
-msgstr "Drop shadow Y offset"
-
-#: scripts/xach-effect.sct.h:4
-msgid "Drop shadow blur radius"
-msgstr "Drop shadow blur radius"
-
-#: scripts/xach-effect.sct.h:5
-msgid "Drop shadow color"
-msgstr "Drop shadow colour"
-
-#: scripts/xach-effect.sct.h:6
-msgid "Drop shadow opacity"
-msgstr "Drop shadow opacity"
-
-#: scripts/xach-effect.sct.h:7
-msgid "Highlight X offset"
-msgstr "Highlight X offset"
-
-#: scripts/xach-effect.sct.h:8
-msgid "Highlight Y offset"
-msgstr "Highlight Y offset"
-
-#: scripts/xach-effect.sct.h:10
-msgid "Highlight opacity"
-msgstr "Highlight opacity"
-
-#: scripts/xach-effect.sct.h:12
-msgid "_Xach-Effect..."
-msgstr "_Xach-Effect..."
