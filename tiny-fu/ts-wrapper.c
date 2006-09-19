@@ -787,7 +787,7 @@ fprintf (stderr, "      int16 arg is '%d'\n", args[i].data.d_int16);
             {
               args[i].data.d_int8 = (guint8) sc->vptr->ivalue (sc->vptr->pair_car (a));
 #if DEBUG_MARSHALL
-fprintf (stderr, "      int8 arg is '%d'\n", args[i].data.d_int8);
+fprintf (stderr, "      int8 arg is '%u'\n", args[i].data.d_int8);
 #endif
             }
           break;
@@ -929,7 +929,7 @@ data = (guint8*) arrayvalue (array);
 fprintf (stderr, "      int8 array has %d elements\n", n_elements);
 fprintf (stderr, "     ");
 for (j = 0; j < n_elements; ++j)
-  fprintf (stderr, " %d", data[j]);
+  fprintf (stderr, " %u", data[j]);
 fprintf (stderr, "\n");
 }
 #endif
