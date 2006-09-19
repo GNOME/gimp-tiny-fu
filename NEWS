@@ -10,39 +10,52 @@ in the 2.3 version of GIMP.
 Overview of Changes in Tiny-Fu 1.1.0
 ====================================
 
-2006-07-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+- Updated to use version 1.37 of the TinyScheme interpreter.
 
-- Build requires GIMP version 2.3.10 or higher.
-- Updated autogen.sh to require newer versions of build tools.
-- Updated to use version 1.37 of TinyScheme interpreter.
-- Display a message if user tries to use "Refresh Scripts" menu entry when
-  a script has already opened a dialog box. Fixes bug #330981.
-- Make dialogs obey the "gtk-alternative-button-order" setting (bug #166678).
-- Re-enabled "Browse" button now that the procedure browser is now a
-  widget called GimpProcBrowserDialog. Fixes bug #165009.
-- Move all color-related functions from the Image and Filters menus to a
-  new toplevel Colors menu (as discussed in bug 116145).
-- Added missing mnemonics. (bug #106991)
-- Applied menu reorganization changes. (bug #116145)
-- Register menu branches for all included scripts. Fixes bug #170623.
-- Convert tiny-fu-path to filesystem encoding. Should fix bug #165002.
-- Don't append -tiny-fu to GETTEXT_PACKAGE. Fix for bug #312941.
-- Move the script categories that were in Xtns->Tiny-Fu directly into
-  Xtns. Language specific tools (e.g. Refresh, Console) remain in
-  language-specific menus. Bug #145507.
-- Script-Fu filters now appear over top of the image window. Fixes bug #348249.
-- CSS color keywords can be used in place of the '(r g b) color notation.
-- Changed GIMP_PDB_PATH to GIMP_PDB_VECTORS
-- Added support for SF-ENUM type
-- Added MIN-IMAGE-SIZE, MAX-IMAGE-SIZE, MIN-RESOLUTION, and MAX-RESOLUTION
-  constants for use in Tiny-Fu
-- scripts/reverse-layers.sct: New script
-- scripts/image-structure.sct: Removed script (see bug #307016).
+- Changes to the build requirements.
+
+    * Build requires GIMP version 2.3.10 or higher.
+    * Updated autogen.sh to require newer versions of build tools.
+
+- Some minor enhancements.
+
+    * CSS color keywords can be used in place of the '(r g b) color notation.
+    * Added support for SF-ENUM type
+    * Added MIN-IMAGE-SIZE, MAX-IMAGE-SIZE, MIN-RESOLUTION, and MAX-RESOLUTION
+      constants for use in Tiny-Fu
+
+- Numerous changes and bug fixes.
+
+    * Re-enabled "Browse" button now that the procedure browser is now a
+      widget called GimpProcBrowserDialog. Fixes bug #165009.
+    * Display a message if user tries to use "Refresh Scripts" menu entry when
+      a script has already opened a dialog box. Fixes bug #330981.
+    * Move all color-related functions from the Image and Filters menus to a
+      new toplevel Colors menu (as discussed in bug 116145).
+    * Convert tiny-fu-path to filesystem encoding. Should fix bug #165002.
+    * Move the script categories that were in Xtns->Tiny-Fu directly into
+      Xtns. Language specific tools (e.g. Refresh, Console) remain in
+      language-specific menus. Bug #145507.
+    * Applied menu reorganization changes. (bug #116145)
+    * Added missing mnemonics. (bug #106991)
+    * Register menu branches for all included scripts. Fixes bug #170623.
+    * Don't append -tiny-fu to GETTEXT_PACKAGE. Fix for bug #312941.
+    * Script-Fu filters now appear over top of the image window. Fixes bug #348249.
+    * Make dialogs obey the "gtk-alternative-button-order" setting (bug #166678).
+    * See the ChangeLog file for other changes not worth mentioning here.
+
+- Changes to script files.
+
+    * scripts/gradient-example.sct: Draw gradient with the users colors.
+    * scripts/reverse-layers.sct: New script
+    * scripts/image-structure.sct: Removed script (see bug #307016).
+    * Other minor changes and/or fixes to script files.
+
+- Updates to many of the string translation files.
 
 
 Contributors:
 
    Kevin Cozens. Also used changes made to Script-Fu by Hans Breuer, Simon
    Budig, Tor Lillqvist, Michael Natterer, Sven Neumann, Akkana Peck, Manish
-   Singh, and Daniel P. Stasinski.
-
+   Singh, Daniel P. Stasinski. 
