@@ -683,7 +683,7 @@ static void
 tiny_fu_load_script (const GimpDatafileData *file_data,
                      gpointer                user_data)
 {
-  if (gimp_datafiles_check_extension (file_data->filename, ".sct"))
+  if (gimp_datafiles_check_extension (file_data->filename, ".scm"))
     {
       gchar *command;
       gchar *escaped = g_strescape (file_data->filename, NULL);

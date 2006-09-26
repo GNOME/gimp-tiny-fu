@@ -3,7 +3,7 @@
 - Update the autogen.sh script based on the newer version in GIMP.
 - Update the Tiny-Fu web page to mention the translation files are incomplete
   since the intltool-update script doesn't recognize file names which end in
-  .sct as ones containing Scheme code.
+  .scm as ones containing Scheme code.
 - Is tiny-fu-util-image-resize-from-layer still needed or can the built-in
   function 'Fit Canvas to Layers' be used instead?
 
@@ -53,10 +53,10 @@ ToDo (for CVS GIMP after branching Tiny-Fu):
   then look at class RadioEntry in gimpfu.py
 - Add SF-MULTI(?) parameter type to register block
   It would allow a user to choose multiple items and return a STRINGARRAY
-- Put the gimp-text-wrapper.sct stuff in one of the .init routines??
+- Put the gimp-text-wrapper.scm stuff in one of the .init routines??
   Or should the routines be deleted?
 - Change Tiny-Fu from an extension to a regular plug-in.
-- Finish updating the list of tests for plug-ins in pdb-test.sct
+- Finish updating the list of tests for plug-ins in pdb-test.scm
 - Do the re and ftx extensions need to be updated for UTF-8?
 - configure should test for existance of strcasecmp and if it exists use it
   instead of the stricmp() in TinyScheme.

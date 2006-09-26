@@ -1,5 +1,16 @@
 2006-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	Changes to use the same filename ending for scripts as Script-Fu.
+
+	* tiny-fu/tiny-fu-scripts.c: Look for scripts with .scm extension.
+
+	* TODO
+	* po/POTFILES.in
+	* scripts/Makefile.am
+	* scripts/*.scm: All script files now have .scm extension.
+
+2006-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* scripts/line-nova.sct: Changed min. value for randomness from 0 to
 	1. From a change to Script-Fu by Bill Skaggs. Should fix bug #357433.
 
