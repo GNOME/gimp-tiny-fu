@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-tiny-fu.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-25 12:20+0200\n"
+"POT-Creation-Date: 2006-09-25 23:04-0400\n"
 "PO-Revision-Date: 2006-07-26 18:40+0200\n"
 "Last-Translator: Francisco Vila Doncel <francisco.vila@hispalinux.es>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
@@ -142,7 +142,9 @@ msgstr "Actualiza_r guiones"
 
 #: ../tiny-fu/tiny-fu.c:347
 msgid "When a Tiny-Fu dialog box is open you can not use \"Refresh Scripts\"."
-msgstr "Cuando un cuadro de diálogo de Tiny-Fu está abierto, no puede usar «Actualizar guiones»."
+msgstr ""
+"Cuando un cuadro de diálogo de Tiny-Fu está abierto, no puede usar "
+"«Actualizar guiones»."
 
 #: ../tiny-fu/tiny-fu-console.c:142
 msgid "Tiny-Fu console mode allows only interactive invocation"
@@ -226,63 +228,2098 @@ msgstr "Puerto del servidor:"
 msgid "Server Logfile:"
 msgstr "Archivo de registro del servidor: "
 
-#: ../tiny-fu/tiny-fu-interface.c:177
+#: ../tiny-fu/tiny-fu-interface.c:176
 msgid "Tiny-Fu cannot process two scripts at the same time."
 msgstr "Tiny-Fu no puede procesar dos scripts a la vez."
 
-#: ../tiny-fu/tiny-fu-interface.c:179
+#: ../tiny-fu/tiny-fu-interface.c:178
 #, c-format
 msgid "You are already running the \"%s\" script."
 msgstr "Ya estÃ¡ ejecutando el script Â«%sÂ»."
 
 #. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: ../tiny-fu/tiny-fu-interface.c:202 ../tiny-fu/tiny-fu-interface.c:204
+#: ../tiny-fu/tiny-fu-interface.c:201 ../tiny-fu/tiny-fu-interface.c:203
 msgid "/Tiny-Fu/"
 msgstr "/Tiny-Fu/"
 
-#: ../tiny-fu/tiny-fu-interface.c:222
+#: ../tiny-fu/tiny-fu-interface.c:221
 #, c-format
 msgid "Tiny-Fu: %s"
 msgstr "Tiny-Fu: %s"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
-#: ../tiny-fu/tiny-fu-interface.c:286
+#: ../tiny-fu/tiny-fu-interface.c:287
 #, c-format
 msgid "%s:"
 msgstr "%s: "
 
-#: ../tiny-fu/tiny-fu-interface.c:329
+#: ../tiny-fu/tiny-fu-interface.c:330
 msgid "Tiny-Fu Color Selection"
 msgstr "SelecciÃ³n de color de Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:436
+#: ../tiny-fu/tiny-fu-interface.c:437
 msgid "Tiny-Fu File Selection"
 msgstr "SelecciÃ³n de archivos de Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:440
+#: ../tiny-fu/tiny-fu-interface.c:441
 msgid "Tiny-Fu Folder Selection"
 msgstr "SelecciÃ³n de carpetas de Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:452
+#: ../tiny-fu/tiny-fu-interface.c:453
 msgid "Tiny-Fu Font Selection"
 msgstr "SelecciÃ³n de tipografÃ­as de Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:461
+#: ../tiny-fu/tiny-fu-interface.c:462
 msgid "Tiny-Fu Palette Selection"
 msgstr "SelecciÃ³n de paletas de Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:470
+#: ../tiny-fu/tiny-fu-interface.c:471
 msgid "Tiny-Fu Pattern Selection"
 msgstr "SelecciÃ³n de patrones Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:479
+#: ../tiny-fu/tiny-fu-interface.c:480
 msgid "Tiny-Fu Gradient Selection"
 msgstr "SelecciÃ³n de degradados de Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:488
+#: ../tiny-fu/tiny-fu-interface.c:489
 msgid "Tiny-Fu Brush Selection"
 msgstr "SelecciÃ³n de brochas de Tiny-Fu"
+
+#: ../scripts/ts-helloworld.scm.h:1 ../scripts/drop-shadow.scm.h:3
+#: ../scripts/fuzzyborder.scm.h:4 ../scripts/perspective-shadow.scm.h:4
+#: ../scripts/spyrogimp.scm.h:4
+msgid "Color"
+msgstr "Color"
+
+#: ../scripts/ts-helloworld.scm.h:2 ../scripts/3d-outline.scm.h:4
+#: ../scripts/alien-glow-button.scm.h:4 ../scripts/alien-glow-logo.scm.h:2
+#: ../scripts/alien-neon-logo.scm.h:4 ../scripts/basic1-logo.scm.h:2
+#: ../scripts/basic2-logo.scm.h:3 ../scripts/beveled-button.scm.h:2
+#: ../scripts/beveled-pattern-button.scm.h:2
+#: ../scripts/beveled-pattern-heading.scm.h:1 ../scripts/blended-logo.scm.h:9
+#: ../scripts/bovinated-logo.scm.h:4 ../scripts/carved-logo.scm.h:4
+#: ../scripts/chalk.scm.h:3 ../scripts/chip-away.scm.h:6
+#: ../scripts/chrome-logo.scm.h:4 ../scripts/comic-logo.scm.h:3
+#: ../scripts/coolmetal-logo.scm.h:4 ../scripts/crystal-logo.scm.h:5
+#: ../scripts/frosty-logo.scm.h:3 ../scripts/gimp-headers.scm.h:3
+#: ../scripts/gimp-labels.scm.h:2 ../scripts/glossy.scm.h:5
+#: ../scripts/glowing-logo.scm.h:3 ../scripts/gradient-bevel-logo.scm.h:5
+#: ../scripts/i26-gunya2.scm.h:1 ../scripts/neon-logo.scm.h:4
+#: ../scripts/news-text.scm.h:6 ../scripts/pupi-button.scm.h:2
+#: ../scripts/slide.scm.h:1 ../scripts/sota-chrome-logo.scm.h:6
+#: ../scripts/speed-text.scm.h:4 ../scripts/starburst-logo.scm.h:4
+#: ../scripts/starscape-logo.scm.h:2 ../scripts/t-o-p-logo.scm.h:6
+#: ../scripts/text-circle.scm.h:3 ../scripts/textured-logo.scm.h:4
+#: ../scripts/title-header.scm.h:1
+msgid "Font"
+msgstr "TipografÃ­a"
+
+#: ../scripts/ts-helloworld.scm.h:3 ../scripts/3d-outline.scm.h:5
+#: ../scripts/alien-glow-button.scm.h:5 ../scripts/alien-glow-logo.scm.h:3
+#: ../scripts/alien-neon-logo.scm.h:5 ../scripts/basic1-logo.scm.h:3
+#: ../scripts/basic2-logo.scm.h:4 ../scripts/beveled-button.scm.h:3
+#: ../scripts/beveled-pattern-button.scm.h:3
+#: ../scripts/beveled-pattern-heading.scm.h:2 ../scripts/blended-logo.scm.h:10
+#: ../scripts/bovinated-logo.scm.h:5 ../scripts/carved-logo.scm.h:5
+#: ../scripts/chalk.scm.h:4 ../scripts/chip-away.scm.h:7
+#: ../scripts/chrome-logo.scm.h:5 ../scripts/comic-logo.scm.h:4
+#: ../scripts/coolmetal-logo.scm.h:5 ../scripts/crystal-logo.scm.h:6
+#: ../scripts/frosty-logo.scm.h:4 ../scripts/gimp-headers.scm.h:4
+#: ../scripts/gimp-labels.scm.h:3 ../scripts/glossy.scm.h:6
+#: ../scripts/glowing-logo.scm.h:4 ../scripts/gradient-bevel-logo.scm.h:6
+#: ../scripts/i26-gunya2.scm.h:2 ../scripts/neon-logo.scm.h:5
+#: ../scripts/news-text.scm.h:7 ../scripts/pupi-button.scm.h:3
+#: ../scripts/sota-chrome-logo.scm.h:7 ../scripts/speed-text.scm.h:5
+#: ../scripts/starburst-logo.scm.h:5 ../scripts/starscape-logo.scm.h:3
+#: ../scripts/t-o-p-logo.scm.h:7 ../scripts/text-circle.scm.h:4
+#: ../scripts/textured-logo.scm.h:5 ../scripts/title-header.scm.h:2
+msgid "Font size (pixels)"
+msgstr "TamaÃ±o de la tipografÃ­a (pÃ­xeles)"
+
+#: ../scripts/ts-helloworld.scm.h:4
+msgid "Hello World"
+msgstr "Hola mundo"
+
+#: ../scripts/ts-helloworld.scm.h:5
+msgid "Text string"
+msgstr "Cadena de texto"
+
+#: ../scripts/contactsheet.scm.h:1
+msgid " contact sheets from a total of "
+msgstr " hojas de contacto de un total de "
+
+#: ../scripts/contactsheet.scm.h:2
+msgid " for directory "
+msgstr " para el directorio "
+
+#: ../scripts/contactsheet.scm.h:3
+msgid " images"
+msgstr " imÃ¡genes"
+
+#: ../scripts/contactsheet.scm.h:4 ../scripts/3dTruchet.scm.h:2
+#: ../scripts/alien-glow-arrow.scm.h:1 ../scripts/alien-glow-bar.scm.h:1
+#: ../scripts/alien-glow-bullet.scm.h:1 ../scripts/alien-glow-button.scm.h:2
+#: ../scripts/alien-neon-logo.scm.h:2 ../scripts/basic1-logo.scm.h:1
+#: ../scripts/basic2-logo.scm.h:2 ../scripts/blended-logo.scm.h:1
+#: ../scripts/bovinated-logo.scm.h:2 ../scripts/chalk.scm.h:1
+#: ../scripts/chrome-logo.scm.h:2 ../scripts/comic-logo.scm.h:1
+#: ../scripts/coolmetal-logo.scm.h:1 ../scripts/frosty-logo.scm.h:1
+#: ../scripts/gimp-labels.scm.h:1 ../scripts/glossy.scm.h:1
+#: ../scripts/glowing-logo.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:1
+#: ../scripts/neon-logo.scm.h:1 ../scripts/news-text.scm.h:1
+#: ../scripts/speed-text.scm.h:1 ../scripts/sphere.scm.h:1
+#: ../scripts/starburst-logo.scm.h:1 ../scripts/swirltile.scm.h:2
+#: ../scripts/t-o-p-logo.scm.h:1 ../scripts/textured-logo.scm.h:1
+#: ../scripts/truchet.scm.h:1
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: ../scripts/contactsheet.scm.h:5
+msgid "Contact Sheet"
+msgstr "Hoja de contacto"
+
+#: ../scripts/contactsheet.scm.h:6
+msgid "Created "
+msgstr "Creado "
+
+#: ../scripts/contactsheet.scm.h:7
+#, fuzzy
+msgid "Directory"
+msgstr "DirecciÃ³n "
+
+#: ../scripts/contactsheet.scm.h:8
+msgid "Legend font"
+msgstr "TipografÃ­a de la leyenda"
+
+#: ../scripts/contactsheet.scm.h:9
+msgid "Sheet "
+msgstr "Hoja "
+
+#: ../scripts/contactsheet.scm.h:10
+msgid "Sheet size"
+msgstr "TamaÃ±o de la hoja"
+
+#: ../scripts/contactsheet.scm.h:11 ../scripts/alien-glow-button.scm.h:10
+#: ../scripts/basic1-logo.scm.h:5 ../scripts/basic2-logo.scm.h:6
+#: ../scripts/beveled-button.scm.h:9 ../scripts/beveled-pattern-button.scm.h:7
+#: ../scripts/blended-logo.scm.h:16 ../scripts/gimp-headers.scm.h:12
+#: ../scripts/gimp-labels.scm.h:14 ../scripts/i26-gunya2.scm.h:7
+#: ../scripts/news-text.scm.h:10 ../scripts/pupi-button.scm.h:13
+#: ../scripts/speed-text.scm.h:8
+msgid "Text color"
+msgstr "Color de texto"
+
+#: ../scripts/contactsheet.scm.h:12
+msgid "Title font"
+msgstr "TipografÃ­a del tÃ­tulo"
+
+#: ../scripts/contactsheet.scm.h:13
+msgid "Unable to open directory "
+msgstr "Imposible abrir el directorio "
+
+#: ../scripts/3d-outline.scm.h:1
+msgid "3D _Outline..."
+msgstr "_Contorno 3Dâ?Š"
+
+#: ../scripts/3d-outline.scm.h:2
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr "Radio de desenfoque del mapa de relieve (capa alfa)"
+
+#: ../scripts/3d-outline.scm.h:3 ../scripts/glossy.scm.h:4
+msgid "Default bumpmap settings"
+msgstr "Ajustes predeterminados del mapa de relieve"
+
+#: ../scripts/3d-outline.scm.h:6
+msgid "Outline blur radius"
+msgstr "Radio de desenfoque del contorno"
+
+#: ../scripts/3d-outline.scm.h:7 ../scripts/glossy.scm.h:14
+#: ../scripts/round-corners.scm.h:5
+msgid "Shadow X offset"
+msgstr "Desplazamiento X de la sombra"
+
+#: ../scripts/3d-outline.scm.h:8 ../scripts/glossy.scm.h:15
+#: ../scripts/round-corners.scm.h:6
+msgid "Shadow Y offset"
+msgstr "Desplazamiento Y de la sombra"
+
+#: ../scripts/3d-outline.scm.h:9
+msgid "Shadow blur radius"
+msgstr "Radio de desenfoque de la sombra"
+
+#: ../scripts/3d-outline.scm.h:10 ../scripts/alien-glow-button.scm.h:9
+#: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
+#: ../scripts/basic1-logo.scm.h:4 ../scripts/basic2-logo.scm.h:5
+#: ../scripts/beveled-button.scm.h:8 ../scripts/beveled-pattern-button.scm.h:6
+#: ../scripts/beveled-pattern-heading.scm.h:5 ../scripts/blended-logo.scm.h:15
+#: ../scripts/bovinated-logo.scm.h:8 ../scripts/carved-logo.scm.h:7
+#: ../scripts/chalk.scm.h:5 ../scripts/chip-away.scm.h:12
+#: ../scripts/chrome-logo.scm.h:7 ../scripts/comic-logo.scm.h:9
+#: ../scripts/coolmetal-logo.scm.h:8 ../scripts/crystal-logo.scm.h:7
+#: ../scripts/frosty-logo.scm.h:5 ../scripts/gimp-headers.scm.h:11
+#: ../scripts/gimp-labels.scm.h:13 ../scripts/glossy.scm.h:16
+#: ../scripts/glowing-logo.scm.h:6 ../scripts/gradient-bevel-logo.scm.h:8
+#: ../scripts/i26-gunya2.scm.h:6 ../scripts/neon-logo.scm.h:8
+#: ../scripts/news-text.scm.h:9 ../scripts/pupi-button.scm.h:12
+#: ../scripts/slide.scm.h:4 ../scripts/sota-chrome-logo.scm.h:10
+#: ../scripts/speed-text.scm.h:7 ../scripts/starburst-logo.scm.h:7
+#: ../scripts/starscape-logo.scm.h:6 ../scripts/t-o-p-logo.scm.h:9
+#: ../scripts/text-circle.scm.h:8 ../scripts/textured-logo.scm.h:12
+#: ../scripts/title-header.scm.h:4
+msgid "Text"
+msgstr "Texto"
+
+#: ../scripts/3dTruchet.scm.h:1
+msgid "3_D Truchet..."
+msgstr "Truchet 3_Dâ?Š"
+
+#: ../scripts/3dTruchet.scm.h:3 ../scripts/truchet.scm.h:2
+msgid "Block size"
+msgstr "TamaÃ±o de bloque"
+
+#: ../scripts/3dTruchet.scm.h:4 ../scripts/blended-logo.scm.h:5
+msgid "End blend"
+msgstr "Fundido final"
+
+#: ../scripts/3dTruchet.scm.h:5 ../scripts/truchet.scm.h:4
+msgid "Number of X tiles"
+msgstr "NÃºmero de baldosas en X"
+
+#: ../scripts/3dTruchet.scm.h:6 ../scripts/truchet.scm.h:5
+msgid "Number of Y tiles"
+msgstr "NÃºmero de baldosas en Y"
+
+#: ../scripts/3dTruchet.scm.h:7 ../scripts/blended-logo.scm.h:14
+msgid "Start blend"
+msgstr "Iniciar fundido [blend]"
+
+#: ../scripts/3dTruchet.scm.h:8
+msgid "Supersample"
+msgstr "Sobremuestreo"
+
+#: ../scripts/3dTruchet.scm.h:9 ../scripts/add-bevel.scm.h:3
+#: ../scripts/truchet.scm.h:7
+msgid "Thickness"
+msgstr "Grosor"
+
+#: ../scripts/add-bevel.scm.h:1
+msgid "Add B_evel..."
+msgstr "AÃ±adir _biselâ?Š"
+
+#: ../scripts/add-bevel.scm.h:2 ../scripts/chip-away.scm.h:10
+msgid "Keep bump layer"
+msgstr "Mantener la capa de relieve"
+
+#: ../scripts/add-bevel.scm.h:4 ../scripts/fuzzyborder.scm.h:9
+#: ../scripts/old-photo.scm.h:5 ../scripts/round-corners.scm.h:7
+#: ../scripts/slide.scm.h:5 ../scripts/spinning-globe.scm.h:5
+msgid "Work on copy"
+msgstr "Trabajar en copia"
+
+#: ../scripts/addborder.scm.h:1
+msgid "Add _Border..."
+msgstr "AÃ±adir _bordeâ?Š"
+
+#: ../scripts/addborder.scm.h:2
+msgid "Border X size"
+msgstr "TamaÃ±o X del borde"
+
+#: ../scripts/addborder.scm.h:3
+msgid "Border Y size"
+msgstr "TamaÃ±o Y del borde"
+
+#: ../scripts/addborder.scm.h:4
+msgid "Border color"
+msgstr "Color del borde"
+
+#: ../scripts/addborder.scm.h:5
+msgid "Delta value on color"
+msgstr "Valor delta en el color"
+
+#: ../scripts/alien-glow-arrow.scm.h:2
+#: ../scripts/beveled-pattern-arrow.scm.h:1
+msgid "Down"
+msgstr "Abajo"
+
+#: ../scripts/alien-glow-arrow.scm.h:3 ../scripts/alien-glow-bar.scm.h:4
+#: ../scripts/alien-glow-bullet.scm.h:2 ../scripts/alien-glow-button.scm.h:3
+#: ../scripts/camo.scm.h:4 ../scripts/fuzzyborder.scm.h:5
+msgid "Flatten image"
+msgstr "Aplanar imagen"
+
+#: ../scripts/alien-glow-arrow.scm.h:4 ../scripts/alien-glow-bar.scm.h:5
+#: ../scripts/alien-glow-bullet.scm.h:3 ../scripts/alien-glow-button.scm.h:6
+#: ../scripts/alien-glow-logo.scm.h:4 ../scripts/alien-neon-logo.scm.h:6
+#: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:6
+#: ../scripts/starscape-logo.scm.h:4
+msgid "Glow color"
+msgstr "Color del resplandor"
+
+#: ../scripts/alien-glow-arrow.scm.h:5
+#: ../scripts/beveled-pattern-arrow.scm.h:2
+msgid "Left"
+msgstr "Izquierda"
+
+#: ../scripts/alien-glow-arrow.scm.h:6
+#: ../scripts/beveled-pattern-arrow.scm.h:3
+msgid "Orientation"
+msgstr "OrientaciÃ³n"
+
+#: ../scripts/alien-glow-arrow.scm.h:7
+#: ../scripts/beveled-pattern-arrow.scm.h:5
+msgid "Right"
+msgstr "Derecha"
+
+#: ../scripts/alien-glow-arrow.scm.h:8
+#: ../scripts/beveled-pattern-arrow.scm.h:6 ../scripts/lava.scm.h:6
+msgid "Size"
+msgstr "TamaÃ±o"
+
+#: ../scripts/alien-glow-arrow.scm.h:9
+#: ../scripts/beveled-pattern-arrow.scm.h:7
+msgid "Up"
+msgstr "Arriba"
+
+#: ../scripts/alien-glow-arrow.scm.h:10
+#: ../scripts/beveled-pattern-arrow.scm.h:8
+msgid "_Arrow..."
+msgstr "_Flechaâ?Š"
+
+#: ../scripts/alien-glow-bar.scm.h:2
+msgid "Bar height"
+msgstr "Altura de la barra"
+
+#: ../scripts/alien-glow-bar.scm.h:3
+msgid "Bar length"
+msgstr "Longitud de la barra"
+
+#: ../scripts/alien-glow-bar.scm.h:6 ../scripts/beveled-pattern-hrule.scm.h:4
+msgid "_Hrule..."
+msgstr "_Regla horizontalâ?Š"
+
+#: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/text-circle.scm.h:5
+#: ../scripts/tileblur.scm.h:6
+msgid "Radius"
+msgstr "Radio"
+
+#: ../scripts/alien-glow-bullet.scm.h:5
+#: ../scripts/beveled-pattern-bullet.scm.h:4
+msgid "_Bullet..."
+msgstr "_Puntoâ?Š"
+
+#: ../scripts/alien-glow-button.scm.h:1
+#: ../scripts/beveled-pattern-button.scm.h:1
+#, fuzzy
+msgid "B_utton..."
+msgstr "BotÃ³n _redondoâ?Š"
+
+#: ../scripts/alien-glow-button.scm.h:7
+msgid "Glow radius"
+msgstr "Radio del resplandor"
+
+#: ../scripts/alien-glow-button.scm.h:8 ../scripts/beveled-button.scm.h:5
+msgid "Padding"
+msgstr "Relleno [Padding]"
+
+#: ../scripts/alien-glow-logo.scm.h:1
+#, fuzzy
+msgid "Alien _Glow..."
+msgstr "_Resplandor alienÃ­gena"
+
+#: ../scripts/alien-glow-logo.scm.h:5
+msgid "Glow size (pixels * 4)"
+msgstr "TamaÃ±o del resplandor (pÃ­xeles * 4)"
+
+#: ../scripts/alien-neon-logo.scm.h:1
+msgid "Alien _Neon..."
+msgstr "_NeÃ³n alienÃ­genaâ?Š"
+
+#: ../scripts/alien-neon-logo.scm.h:3
+msgid "Fade away"
+msgstr "Desvanecer"
+
+#: ../scripts/alien-neon-logo.scm.h:7
+msgid "Number of bands"
+msgstr "NÃºmero de bandas"
+
+# //O Nuevas traducciones desde cero, las "Bands" sos bandas con el color de
+# fondo que se elige en el "script", los "gaps" son las bandas con el color de
+# primer plano, por lo que voy a traducir "bands" como huecos en referencia
+# al uso de color de fondo y "gap" como las bandas, por usar el color de primer
+# plano, Â¿mejor asÃ­?
+# //R Vale
+#: ../scripts/alien-neon-logo.scm.h:9
+msgid "Width of bands"
+msgstr "Anchura de las bandas"
+
+#: ../scripts/alien-neon-logo.scm.h:10
+msgid "Width of gaps"
+msgstr "Anchura de los huecos"
+
+#: ../scripts/basic1-logo.scm.h:6
+msgid "_Basic I..."
+msgstr "_BÃ¡sico Iâ?Š"
+
+#: ../scripts/basic2-logo.scm.h:1
+msgid "B_asic II..."
+msgstr "B_Ã¡sico IIâ?Š"
+
+#: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:3
+#: ../scripts/pupi-button.scm.h:1
+msgid "Bevel width"
+msgstr "Anchura del bisel"
+
+#: ../scripts/beveled-button.scm.h:4
+msgid "Lower-right color"
+msgstr "Color inferior derecho"
+
+#: ../scripts/beveled-button.scm.h:6 ../scripts/beveled-pattern-button.scm.h:5
+#: ../scripts/pupi-button.scm.h:10
+msgid "Pressed"
+msgstr "Pulsado"
+
+#: ../scripts/beveled-button.scm.h:7
+msgid "Simple _Beveled Button..."
+msgstr "BotÃ³n simple _biseladoâ?Š"
+
+#: ../scripts/beveled-button.scm.h:10
+msgid "Upper-left color"
+msgstr "Color superior izquierdo"
+
+#: ../scripts/beveled-pattern-arrow.scm.h:4
+#: ../scripts/beveled-pattern-bullet.scm.h:2
+#: ../scripts/beveled-pattern-button.scm.h:4
+#: ../scripts/beveled-pattern-heading.scm.h:4
+#: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/chip-away.scm.h:11
+#: ../scripts/textured-logo.scm.h:9
+#, fuzzy
+msgid "Pattern"
+msgstr "_Patrones"
+
+#: ../scripts/beveled-pattern-bullet.scm.h:1
+msgid "Diameter"
+msgstr "DiÃ¡metro"
+
+#: ../scripts/beveled-pattern-bullet.scm.h:3
+#: ../scripts/beveled-pattern-heading.scm.h:6
+#: ../scripts/spinning-globe.scm.h:3
+msgid "Transparent background"
+msgstr "Fondo transparente"
+
+#: ../scripts/beveled-pattern-heading.scm.h:3
+msgid "H_eading..."
+msgstr "_Cabeceraâ?Š"
+
+#: ../scripts/beveled-pattern-hrule.scm.h:1 ../scripts/gimp-labels.scm.h:4
+#: ../scripts/gradient-example.scm.h:2 ../scripts/mkbrush.scm.h:4
+#: ../scripts/swirltile.scm.h:6
+msgid "Height"
+msgstr "Altura"
+
+#: ../scripts/beveled-pattern-hrule.scm.h:3
+#: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:10
+#: ../scripts/swirltile.scm.h:10
+msgid "Width"
+msgstr "Anchura"
+
+#: ../scripts/blend-anim.scm.h:1
+msgid "Blend Animation needs at least three source layers"
+msgstr "La animaciÃ³n de fundido necesita al menos tres capas fuente"
+
+#: ../scripts/blend-anim.scm.h:2
+msgid "Intermediate frames"
+msgstr "Fotogramas intermedios"
+
+#: ../scripts/blend-anim.scm.h:3
+msgid "Looped"
+msgstr "Bucle"
+
+#: ../scripts/blend-anim.scm.h:4
+msgid "Max. blur radius"
+msgstr "Radio MÃ¡x. de desenfoque"
+
+#: ../scripts/blend-anim.scm.h:5
+msgid "_Blend..."
+msgstr "_Fundirâ?Š"
+
+#: ../scripts/blended-logo.scm.h:2
+msgid "Blen_ded..."
+msgstr "_Fundido [Blended]â?Š"
+
+#: ../scripts/blended-logo.scm.h:3
+msgid "Blend mode"
+msgstr "Modo de fundido"
+
+#: ../scripts/blended-logo.scm.h:4
+msgid "Custom Gradient"
+msgstr "Degradado personalizado"
+
+#: ../scripts/blended-logo.scm.h:6
+msgid "FG-BG-HSV"
+msgstr "Frente-fondo-HSV"
+
+#: ../scripts/blended-logo.scm.h:7
+msgid "FG-BG-RGB"
+msgstr "Frente-fondo-RGB"
+
+#: ../scripts/blended-logo.scm.h:8
+msgid "FG-Transparent"
+msgstr "Frente-transparente"
+
+#: ../scripts/blended-logo.scm.h:11 ../scripts/comic-logo.scm.h:5
+#: ../scripts/coolmetal-logo.scm.h:6 ../scripts/land.scm.h:2
+#: ../scripts/lava.scm.h:1 ../scripts/rendermap.scm.h:3
+#: ../scripts/spyrogimp.scm.h:8
+msgid "Gradient"
+msgstr "Degradado"
+
+#: ../scripts/blended-logo.scm.h:12 ../scripts/comic-logo.scm.h:6
+#: ../scripts/coolmetal-logo.scm.h:7 ../scripts/gradient-example.scm.h:1
+#: ../scripts/rendermap.scm.h:4 ../scripts/title-header.scm.h:3
+msgid "Gradient reverse"
+msgstr "Degradado invertido"
+
+#: ../scripts/blended-logo.scm.h:13
+msgid "Offset (pixels)"
+msgstr "Desplazamiento (pÃ­xeles)"
+
+#: ../scripts/bovinated-logo.scm.h:1 ../scripts/chrome-logo.scm.h:1
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: ../scripts/bovinated-logo.scm.h:3
+msgid "Bo_vination..."
+msgstr "Bo_vinaciÃ³nâ?Š"
+
+# //R Â¿Manchas o lunares?
+#: ../scripts/bovinated-logo.scm.h:6
+msgid "Spots density X"
+msgstr "Densidad X de manchas"
+
+#: ../scripts/bovinated-logo.scm.h:7
+msgid "Spots density Y"
+msgstr "Densidad Y de manchas"
+
+#: ../scripts/burn-in-anim.scm.h:1
+msgid "Add glowing"
+msgstr "AÃ±adir resplandor"
+
+#: ../scripts/burn-in-anim.scm.h:2
+msgid "After glow"
+msgstr "DespuÃ©s del resplandor"
+
+#: ../scripts/burn-in-anim.scm.h:3
+msgid "B_urn-In..."
+msgstr "_Quemadoâ?Š"
+
+#: ../scripts/burn-in-anim.scm.h:4
+msgid ""
+"Burn-In: Needs two layers in total!\n"
+"A foreground text layer with transparency and a background layer."
+msgstr ""
+"Â¡Burn-In necesita dos capas en total!\n"
+"Una capa de texto en primer plano con transparencia y una capa de fondo."
+
+#: ../scripts/burn-in-anim.scm.h:5
+msgid "Corona width"
+msgstr "Ancho de la corona"
+
+#: ../scripts/burn-in-anim.scm.h:6
+msgid "Fadeout"
+msgstr "Desvanecer"
+
+#: ../scripts/burn-in-anim.scm.h:7
+msgid "Fadeout width"
+msgstr "Anchura del desvanecimiento"
+
+#: ../scripts/burn-in-anim.scm.h:9
+msgid "Prepare for GIF"
+msgstr "Preparar para GIF"
+
+#: ../scripts/burn-in-anim.scm.h:10
+msgid "Speed (pixels/frame)"
+msgstr "Velocidad (pÃ­xeles/cuadro)"
+
+#: ../scripts/camo.scm.h:1
+msgid "Color 1"
+msgstr "Color 1"
+
+#: ../scripts/camo.scm.h:2
+msgid "Color 2"
+msgstr "Color 2"
+
+#: ../scripts/camo.scm.h:3
+msgid "Color 3"
+msgstr "Color 3"
+
+#: ../scripts/camo.scm.h:5 ../scripts/rendermap.scm.h:5
+msgid "Granularity"
+msgstr "Granularidad"
+
+#: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
+msgid "Image size"
+msgstr "TamaÃ±o de la imagen"
+
+#: ../scripts/camo.scm.h:7 ../scripts/distress-selection.scm.h:2
+msgid "Smooth"
+msgstr "Suave"
+
+#: ../scripts/camo.scm.h:8
+msgid "_Camouflage..."
+msgstr "_Camuflajeâ?Š"
+
+#: ../scripts/carved-logo.scm.h:1
+msgid "Background Image"
+msgstr "Imagen de fondo"
+
+#: ../scripts/carved-logo.scm.h:2
+msgid "Carve raised text"
+msgstr "Esculpir texto elevado"
+
+#: ../scripts/carved-logo.scm.h:3
+msgid "Carved..."
+msgstr "Esculpidoâ?Š"
+
+#: ../scripts/carved-logo.scm.h:6
+msgid "Padding around text"
+msgstr "Rellenado alrededor del texto [Padding]"
+
+#: ../scripts/carve-it.scm.h:1
+msgid "Carve white areas"
+msgstr "Esculpir las Ã¡reas blancas"
+
+#: ../scripts/carve-it.scm.h:2
+msgid "Image to carve"
+msgstr "Imagen a esculpir"
+
+#: ../scripts/carve-it.scm.h:3
+#, fuzzy
+msgid "Stencil C_arve..."
+msgstr "Esc_ulpirâ?Š"
+
+#: ../scripts/chalk.scm.h:2
+msgid "Chalk color"
+msgstr "Color de la tiza"
+
+#: ../scripts/chalk.scm.h:6
+msgid "_Chalk..."
+msgstr "_Tizaâ?Š"
+
+#: ../scripts/chip-away.scm.h:1
+msgid "Blur amount"
+msgstr "Cantidad de desenfoque [blur]"
+
+#: ../scripts/chip-away.scm.h:2
+msgid "Chip Awa_y..."
+msgstr "_Desmenuzarâ?Š"
+
+# //R He leÃ­do que "desconchado" es la traducciÃ³n literal
+# //O Sique sin convencerme desconchado, como mucho desmenuzado, porque es lo
+# que parece, como si fueses a hacer un bizcocho cuando metes todas las cosas
+# en la batidora-picadora y... (yo siempre pensando en comida...) X-DD
+# //R Como quieeeerasss :)
+#: ../scripts/chip-away.scm.h:3
+msgid "Chip amount"
+msgstr "Cantidad de desmenuzado [Chip]"
+
+#: ../scripts/chip-away.scm.h:4
+msgid "Drop shadow"
+msgstr "Sombra base"
+
+#: ../scripts/chip-away.scm.h:5
+msgid "Fill BG with pattern"
+msgstr "Rellenar fondo con patrÃ³n"
+
+#: ../scripts/chip-away.scm.h:8
+msgid "Invert"
+msgstr "Invertir"
+
+#: ../scripts/chip-away.scm.h:9
+msgid "Keep background"
+msgstr "Mantener fondo"
+
+#: ../scripts/chrome-it.scm.h:1 ../scripts/sota-chrome-logo.scm.h:1
+msgid "Chrome balance"
+msgstr "Balance del cromado"
+
+#: ../scripts/chrome-it.scm.h:2 ../scripts/crystal-logo.scm.h:2
+#: ../scripts/sota-chrome-logo.scm.h:2
+msgid "Chrome factor"
+msgstr "Factor de cromado"
+
+#: ../scripts/chrome-it.scm.h:3 ../scripts/sota-chrome-logo.scm.h:3
+msgid "Chrome lightness"
+msgstr "Luminosidad del cromado"
+
+#: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:4
+msgid "Chrome saturation"
+msgstr "SaturaciÃ³n del cromado"
+
+#: ../scripts/chrome-it.scm.h:5
+msgid "Chrome white areas"
+msgstr "Cromar las Ã¡reas blancas"
+
+#: ../scripts/chrome-it.scm.h:6 ../scripts/crystal-logo.scm.h:4
+#: ../scripts/sota-chrome-logo.scm.h:5
+msgid "Environment map"
+msgstr "Mapa de entorno"
+
+#: ../scripts/chrome-it.scm.h:7 ../scripts/sota-chrome-logo.scm.h:8
+msgid "Highlight balance"
+msgstr "Balance del brillo"
+
+#: ../scripts/chrome-it.scm.h:8
+#, fuzzy
+msgid "Stencil C_hrome..."
+msgstr "_Cromarâ?Š"
+
+#: ../scripts/chrome-logo.scm.h:3
+msgid "C_hrome..."
+msgstr "_Cromarâ?Š"
+
+#: ../scripts/chrome-logo.scm.h:6
+msgid "Offsets (pixels * 2)"
+msgstr "Desplazamiento (pÃ­xeles * 2)"
+
+#: ../scripts/circuit.scm.h:1
+msgid "Circuit seed"
+msgstr "Semilla del circuito"
+
+#: ../scripts/circuit.scm.h:2 ../scripts/lava.scm.h:2
+#: ../scripts/predator.scm.h:2 ../scripts/xach-effect.scm.h:10
+msgid "Keep selection"
+msgstr "Mantener la selecciÃ³n"
+
+#: ../scripts/circuit.scm.h:3
+msgid "No background (only for separate layer)"
+msgstr "Sin fondo (sÃ³lo para capa separada)"
+
+# //O Bueno, siguiendo tus maravillosos consejos...
+#: ../scripts/circuit.scm.h:4
+msgid "Oilify mask size"
+msgstr "TamaÃ±o de la mÃ¡scara del Ã³leo"
+
+#: ../scripts/circuit.scm.h:5 ../scripts/lava.scm.h:5
+#: ../scripts/predator.scm.h:5
+msgid "Separate layer"
+msgstr "Capa separada"
+
+#: ../scripts/circuit.scm.h:6
+msgid "_Circuit..."
+msgstr "_Circuitoâ?Š"
+
+#: ../scripts/clothify.scm.h:1 ../scripts/swirltile.scm.h:1
+msgid "Azimuth"
+msgstr "Azimut"
+
+#: ../scripts/clothify.scm.h:2
+#, fuzzy
+msgid "Blur X"
+msgstr "Desenfoque en Y"
+
+#: ../scripts/clothify.scm.h:3
+msgid "Blur Y"
+msgstr "Desenfoque en Y"
+
+#: ../scripts/clothify.scm.h:4 ../scripts/swirltile.scm.h:4
+msgid "Depth"
+msgstr "Profundidad"
+
+#: ../scripts/clothify.scm.h:5 ../scripts/swirltile.scm.h:5
+msgid "Elevation"
+msgstr "ElevaciÃ³n"
+
+#: ../scripts/clothify.scm.h:6
+msgid "_Clothify..."
+msgstr "_Entelarâ?Š"
+
+#: ../scripts/coffee.scm.h:1
+#, fuzzy
+msgid ""
+"Darken only\n"
+"(Better, but only for images with a lot of white)"
+msgstr ""
+"SÃ³lo oscurecer\n"
+"(Mejor, pero sÃ³lo para imÃ¡genes con mucho blanco)"
+
+#: ../scripts/coffee.scm.h:2
+msgid "Stains"
+msgstr "Manchas"
+
+#: ../scripts/coffee.scm.h:3
+msgid "_Coffee Stain..."
+msgstr "Manchas de _cafÃ©â?Š"
+
+#: ../scripts/comic-logo.scm.h:2
+msgid "Comic Boo_k..."
+msgstr "_Libro de cÃ³micâ?Š"
+
+#: ../scripts/comic-logo.scm.h:7
+msgid "Outline color"
+msgstr "Color del contorno"
+
+#: ../scripts/comic-logo.scm.h:8 ../scripts/glossy.scm.h:9
+msgid "Outline size"
+msgstr "TamaÃ±o del contorno"
+
+#: ../scripts/coolmetal-logo.scm.h:2
+msgid "Cool _Metal..."
+msgstr "_Metal frÃ­oâ?Š"
+
+#: ../scripts/coolmetal-logo.scm.h:3 ../scripts/frosty-logo.scm.h:2
+msgid "Effect size (pixels)"
+msgstr "TamaÃ±o del efecto (pÃ­xeles)"
+
+#: ../scripts/crystal-logo.scm.h:1
+msgid "Background image"
+msgstr "Imagen de fondo"
+
+#: ../scripts/crystal-logo.scm.h:3
+msgid "Crystal..."
+msgstr "Cristalâ?Š"
+
+#: ../scripts/distress-selection.scm.h:1
+msgid "Granularity (1 is low)"
+msgstr "Granularidad (1 es menor)"
+
+#: ../scripts/distress-selection.scm.h:3
+msgid "Smooth horizontally"
+msgstr "Suavizado horizontal"
+
+#: ../scripts/distress-selection.scm.h:4
+msgid "Smooth vertically"
+msgstr "Suavizado vertical"
+
+#: ../scripts/distress-selection.scm.h:5
+msgid "Spread"
+msgstr "DifusiÃ³n"
+
+#: ../scripts/distress-selection.scm.h:6
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Umbral (mayor 1<-->255 menor)"
+
+#: ../scripts/distress-selection.scm.h:7
+#, fuzzy
+msgid "_Disort..."
+msgstr "_Circuitoâ?Š"
+
+#: ../scripts/drop-shadow.scm.h:1 ../scripts/perspective-shadow.scm.h:1
+msgid "Allow resizing"
+msgstr "Permitir redimensionado"
+
+#: ../scripts/drop-shadow.scm.h:2 ../scripts/news-text.scm.h:2
+#: ../scripts/perspective-shadow.scm.h:3 ../scripts/round-corners.scm.h:3
+#: ../scripts/swirltile.scm.h:3
+msgid "Blur radius"
+msgstr "Radio de desenfoque"
+
+#: ../scripts/drop-shadow.scm.h:4 ../scripts/gimp-labels.scm.h:7
+msgid "Offset X"
+msgstr "Desplazamiento en X"
+
+#: ../scripts/drop-shadow.scm.h:5 ../scripts/gimp-labels.scm.h:8
+msgid "Offset Y"
+msgstr "Desplazamiento en Y"
+
+#: ../scripts/drop-shadow.scm.h:6 ../scripts/perspective-shadow.scm.h:6
+msgid "Opacity"
+msgstr "Opacidad"
+
+#: ../scripts/drop-shadow.scm.h:7
+msgid "_Drop-Shadow..."
+msgstr "_Sombra baseâ?Š"
+
+#: ../scripts/erase-rows.scm.h:1
+msgid "Columns"
+msgstr "Columnas"
+
+#: ../scripts/erase-rows.scm.h:2
+msgid "Erase"
+msgstr "Borrar"
+
+# //R COMPROBAR
+#: ../scripts/erase-rows.scm.h:3
+msgid "Erase/fill"
+msgstr "Borrar/Rellenar"
+
+#: ../scripts/erase-rows.scm.h:4
+msgid "Even"
+msgstr "Pares"
+
+#: ../scripts/erase-rows.scm.h:5
+msgid "Even/odd"
+msgstr "Pares/impares"
+
+#: ../scripts/erase-rows.scm.h:6
+msgid "Fill with BG"
+msgstr "Rellenar con fondo"
+
+#: ../scripts/erase-rows.scm.h:7
+msgid "Odd"
+msgstr "Impares"
+
+#: ../scripts/erase-rows.scm.h:8
+msgid "Rows"
+msgstr "Filas"
+
+#: ../scripts/erase-rows.scm.h:9
+msgid "Rows/cols"
+msgstr "Filas/columnas"
+
+#: ../scripts/erase-rows.scm.h:10
+msgid "_Erase every other Row..."
+msgstr "_Borrar las otras Filasâ?Š"
+
+#: ../scripts/fade-outline.scm.h:1
+msgid "Apply generated layermask"
+msgstr "Aplicar la mÃ¡scara de capa generada"
+
+#: ../scripts/fade-outline.scm.h:2 ../scripts/fuzzyborder.scm.h:3
+#: ../scripts/old-photo.scm.h:1
+msgid "Border size"
+msgstr "TamaÃ±o del borde"
+
+#: ../scripts/fade-outline.scm.h:3
+msgid "Clear unselected maskarea"
+msgstr "Borrar el Ã¡rea de mÃ¡scara no seleccionada"
+
+#: ../scripts/fade-outline.scm.h:5
+#, no-c-format
+msgid "Fade from %"
+msgstr "Desvanecer desde %"
+
+#: ../scripts/fade-outline.scm.h:7
+#, fuzzy, no-c-format
+msgid "Fade to %"
+msgstr "Desvanecer hasta   %"
+
+#: ../scripts/fade-outline.scm.h:8
+msgid "Use growing selection"
+msgstr "Usar selecciÃ³n creciente"
+
+#: ../scripts/fade-outline.scm.h:9
+msgid "_Fade to Layer Mask..."
+msgstr ""
+
+#: ../scripts/flatland.scm.h:1 ../scripts/land.scm.h:1
+msgid "Detail level"
+msgstr "Nivel de detalle"
+
+#: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:3
+msgid "Image height"
+msgstr "Altura de imagen"
+
+#: ../scripts/flatland.scm.h:3 ../scripts/land.scm.h:4
+msgid "Image width"
+msgstr "Anchura de imagen"
+
+#: ../scripts/flatland.scm.h:4 ../scripts/land.scm.h:6
+msgid "Random seed"
+msgstr "Semilla aleatoria"
+
+#: ../scripts/flatland.scm.h:5 ../scripts/land.scm.h:7
+msgid "Scale X"
+msgstr "Escala en X"
+
+#: ../scripts/flatland.scm.h:6 ../scripts/land.scm.h:8
+msgid "Scale Y"
+msgstr "Escala en Y"
+
+#: ../scripts/flatland.scm.h:7
+msgid "_Flatland..."
+msgstr "Plani_landiaâ?Š"
+
+#: ../scripts/font-map.scm.h:1
+msgid "Active colors"
+msgstr "Colores activos"
+
+#: ../scripts/font-map.scm.h:2
+msgid "Black on white"
+msgstr "Negro sobre blanco"
+
+#: ../scripts/font-map.scm.h:3
+msgid "Font _size (pixels)"
+msgstr "_TamaÃ±o de la tipografÃ­a (pÃ­xeles)"
+
+#: ../scripts/font-map.scm.h:4
+#, fuzzy
+msgid "Render _Font Map..."
+msgstr "_Renderizar mapaâ?Š"
+
+#: ../scripts/font-map.scm.h:5
+msgid "Use font _name as text"
+msgstr "Usar el _nombre de la tipografÃ­a como texto"
+
+#: ../scripts/font-map.scm.h:6
+msgid "_Border (pixels)"
+msgstr "_Borde (pÃ­xeles)"
+
+#: ../scripts/font-map.scm.h:7
+msgid "_Color scheme"
+msgstr "Esquema de _colores"
+
+#: ../scripts/font-map.scm.h:8
+msgid "_Filter (regexp)"
+msgstr "_Filtro (exp. reg.)"
+
+#: ../scripts/font-map.scm.h:9
+msgid "_Labels"
+msgstr "E_tiquetas"
+
+#: ../scripts/font-map.scm.h:10
+#, fuzzy
+msgid "_Text"
+msgstr "Texto"
+
+#: ../scripts/frosty-logo.scm.h:6
+msgid "_Frosty..."
+msgstr "_Escarchadoâ?Š"
+
+#: ../scripts/fuzzyborder.scm.h:1
+msgid "Add shadow"
+msgstr "AÃ±adir sombra"
+
+#: ../scripts/fuzzyborder.scm.h:2
+msgid "Blur border"
+msgstr "Borde de desenfoque"
+
+#: ../scripts/fuzzyborder.scm.h:6
+msgid "Granularity (1 is Low)"
+msgstr "Granularidad (1 es baja)"
+
+#: ../scripts/fuzzyborder.scm.h:8
+#, no-c-format
+msgid "Shadow weight (%)"
+msgstr "Peso de la sombra (%)"
+
+#: ../scripts/fuzzyborder.scm.h:10
+msgid "_Fuzzy Border..."
+msgstr "_Difuminar bordeâ?Š"
+
+#: ../scripts/gimp-headers.scm.h:1
+msgid "Autocrop"
+msgstr "Recortar automÃ¡ticamente"
+
+#: ../scripts/gimp-headers.scm.h:2
+msgid "Dark color"
+msgstr "Color oscuro"
+
+#: ../scripts/gimp-headers.scm.h:5 ../scripts/xach-effect.scm.h:8
+msgid "Highlight color"
+msgstr "Color del brillo"
+
+#: ../scripts/gimp-headers.scm.h:6 ../scripts/gimp-labels.scm.h:5
+msgid "Index image"
+msgstr "Indexar imagen"
+
+#: ../scripts/gimp-headers.scm.h:7 ../scripts/gimp-labels.scm.h:6
+msgid "Number of colors"
+msgstr "NÃºmero de colores"
+
+#: ../scripts/gimp-headers.scm.h:8 ../scripts/gimp-labels.scm.h:9
+msgid "Remove background"
+msgstr "Quitar fondo"
+
+#: ../scripts/gimp-headers.scm.h:9 ../scripts/gimp-labels.scm.h:10
+msgid "Select-by-color threshold"
+msgstr "Umbral de selecciÃ³n por color"
+
+#: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:11
+msgid "Shadow color"
+msgstr "Color de la sombra"
+
+#: ../scripts/gimp-headers.scm.h:13
+msgid "_Big Header..."
+msgstr "Cabecera _grandeâ?Š"
+
+#: ../scripts/gimp-headers.scm.h:14
+msgid "_Small Header..."
+msgstr "Cabecera _pequeÃ±aâ?Š"
+
+#: ../scripts/gimp-labels.scm.h:12
+msgid "T_ube Sub-Button Label..."
+msgstr "Etiqueta del sub-botÃ³n del t_uboâ?Š"
+
+#: ../scripts/gimp-labels.scm.h:15
+msgid "Tub_e Sub-Sub-Button Label..."
+msgstr "_Etiqueta del sub-sub-botÃ³n del tuboâ?Š"
+
+#: ../scripts/gimp-labels.scm.h:16
+msgid "_General Tube Labels..."
+msgstr "Etiquetas _generales del tuboâ?Š"
+
+#: ../scripts/gimp-labels.scm.h:17
+msgid "_Tube Button Label..."
+msgstr "Etiqueta del botÃ³n del _tubo"
+
+#: ../scripts/glossy.scm.h:2
+msgid "Blend gradient (outline)"
+msgstr "Degradado de fundido (contorno)"
+
+#: ../scripts/glossy.scm.h:3
+msgid "Blend gradient (text)"
+msgstr "Degradado de fundido (texto)"
+
+#: ../scripts/glossy.scm.h:7
+msgid "Glo_ssy..."
+msgstr "_BruÃ±idoâ?Š"
+
+#: ../scripts/glossy.scm.h:8
+msgid "Outline gradient reverse"
+msgstr "Degradado de contorno invertido"
+
+#: ../scripts/glossy.scm.h:10
+msgid "Pattern (outline)"
+msgstr "PatrÃ³n (contorno)"
+
+#: ../scripts/glossy.scm.h:11
+msgid "Pattern (overlay)"
+msgstr "PatrÃ³n (superpuesto)"
+
+#: ../scripts/glossy.scm.h:12
+msgid "Pattern (text)"
+msgstr "PatrÃ³n (texto)"
+
+#: ../scripts/glossy.scm.h:13 ../scripts/sphere.scm.h:4
+#, fuzzy
+msgid "Shadow"
+msgstr "So_mbra"
+
+#: ../scripts/glossy.scm.h:17
+msgid "Text gradient reverse"
+msgstr "Texto degradado invertido"
+
+#: ../scripts/glossy.scm.h:18
+msgid "Use pattern for outline instead of gradient"
+msgstr "Usar patrÃ³n en lugar de degradado para el contorno"
+
+#: ../scripts/glossy.scm.h:19
+msgid "Use pattern for text instead of gradient"
+msgstr "Usar patrÃ³n para texto en vez de un degradado"
+
+#: ../scripts/glossy.scm.h:20
+msgid "Use pattern overlay"
+msgstr "Usar superposiciÃ³n de patrÃ³n"
+
+#: ../scripts/glowing-logo.scm.h:2
+msgid "Effect size (pixels * 3)"
+msgstr "TamaÃ±o del efecto (pÃ­xeles * 3)"
+
+#: ../scripts/glowing-logo.scm.h:5
+msgid "Glo_wing Hot..."
+msgstr "Calor _resplandecienteâ?Š"
+
+#: ../scripts/gradient-bevel-logo.scm.h:2
+msgid "Bevel height (sharpness)"
+msgstr "Altura del bisel (afilado)"
+
+#: ../scripts/gradient-bevel-logo.scm.h:4 ../scripts/t-o-p-logo.scm.h:3
+#: ../scripts/textured-logo.scm.h:2
+msgid "Border size (pixels)"
+msgstr "TamaÃ±o del borde (pÃ­xeles)"
+
+#: ../scripts/gradient-bevel-logo.scm.h:7
+msgid "Gradient Beve_l..."
+msgstr "Bisel de degradadoâ?Š "
+
+#: ../scripts/gradient-example.scm.h:3
+#, fuzzy
+msgid "Render _Image..."
+msgstr "_Renderizar mapaâ?Š"
+
+#: ../scripts/grid-system.scm.h:1
+msgid "X divisions"
+msgstr "Divisiones X"
+
+#: ../scripts/grid-system.scm.h:2
+msgid "Y divisions"
+msgstr "Divisiones Y"
+
+#: ../scripts/grid-system.scm.h:3
+msgid "_Grid..."
+msgstr "_Rejillaâ?Š"
+
+#: ../scripts/guides-from-selection.scm.h:1
+msgid "Creates four Guides around the bounding box of the current selection."
+msgstr ""
+"Crea cuatro guÃ­as alrededor de la caja que bordea la selecciÃ³n actual."
+
+#: ../scripts/guides-from-selection.scm.h:2
+msgid "New Guides from _Selection"
+msgstr "GuÃ­as nuevas desde la _selecciÃ³n"
+
+#: ../scripts/guides-new-percent.scm.h:1 ../scripts/guides-new.scm.h:1
+msgid "Direction"
+msgstr "DirecciÃ³n "
+
+#: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: ../scripts/guides-new-percent.scm.h:3
+msgid "New Guide (by _Percent)..."
+msgstr "GuÃ­a nueva (por _porcentaje)â?Š"
+
+#: ../scripts/guides-new-percent.scm.h:5
+#, no-c-format
+msgid "Position (in %)"
+msgstr "PosiciÃ³n (en %)"
+
+#: ../scripts/guides-new-percent.scm.h:6 ../scripts/guides-new.scm.h:5
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../scripts/guides-new.scm.h:3
+msgid "New _Guide..."
+msgstr "_GuÃ­a nuevaâ?Š"
+
+#: ../scripts/guides-new.scm.h:4
+#, fuzzy
+msgid "Position"
+msgstr "PosiciÃ³n (en %)"
+
+#: ../scripts/guides-remove-all.scm.h:1
+msgid "_Remove all Guides"
+msgstr "_Quitar todas las guÃ­as"
+
+#: ../scripts/hsv-graph.scm.h:1
+msgid "BG opacity"
+msgstr "Opacidad del fondo"
+
+#: ../scripts/hsv-graph.scm.h:2
+msgid "Draw _HSV Graph..."
+msgstr "Dibujar grÃ¡fico _HSVâ?Š"
+
+#: ../scripts/hsv-graph.scm.h:3
+msgid "End X"
+msgstr "X final"
+
+#: ../scripts/hsv-graph.scm.h:4
+msgid "End Y"
+msgstr "Y final"
+
+#: ../scripts/hsv-graph.scm.h:5
+msgid "From top-left to bottom-right"
+msgstr "De arriba-izquierda a abajo-derecha"
+
+#: ../scripts/hsv-graph.scm.h:6
+msgid "Graph scale"
+msgstr "Escala del grÃ¡fico"
+
+#: ../scripts/hsv-graph.scm.h:7
+msgid "Start X"
+msgstr "X inicial"
+
+#: ../scripts/hsv-graph.scm.h:8
+#, fuzzy
+msgid "Start Y"
+msgstr "X inicial"
+
+#: ../scripts/hsv-graph.scm.h:9
+msgid "Use selection bounds instead of values below"
+msgstr "Usar los lÃ­mites de la selecciÃ³n en vez de los valores de abajo"
+
+#: ../scripts/i26-gunya2.scm.h:3
+msgid "Frame color"
+msgstr "Color del borde"
+
+#: ../scripts/i26-gunya2.scm.h:4
+msgid "Frame size"
+msgstr "TamaÃ±o del borde"
+
+#: ../scripts/i26-gunya2.scm.h:5
+#, fuzzy
+msgid "Imigre-_26..."
+msgstr "Imigre-26â?Š"
+
+#: ../scripts/land.scm.h:5
+msgid "Land height"
+msgstr "Altura del terreno"
+
+#: ../scripts/land.scm.h:9
+msgid "Sea depth"
+msgstr "Profundidad del ocÃ©ano"
+
+#: ../scripts/land.scm.h:10
+msgid "_Land..."
+msgstr "_Tierraâ?Š"
+
+#: ../scripts/lava.scm.h:3 ../scripts/swirltile.scm.h:7
+msgid "Roughness"
+msgstr "Rugosidad"
+
+#: ../scripts/lava.scm.h:4
+msgid "Seed"
+msgstr "Semilla"
+
+#: ../scripts/lava.scm.h:7
+msgid "Use current gradient"
+msgstr "Usar el degradado actual"
+
+#: ../scripts/lava.scm.h:8
+msgid "_Lava..."
+msgstr "_Lavaâ?Š"
+
+#: ../scripts/line-nova.scm.h:1
+msgid "Line _Nova..."
+msgstr "_Nova de lÃ­neasâ?Š"
+
+#: ../scripts/line-nova.scm.h:2
+msgid "Number of lines"
+msgstr "NÃºmero de lÃ­neas"
+
+#: ../scripts/line-nova.scm.h:3
+msgid "Offset radius"
+msgstr "Radio de desplazamiento"
+
+#: ../scripts/line-nova.scm.h:4
+msgid "Randomness"
+msgstr "Aleatoriedad"
+
+# //O Gracias de nuevo por los consejos.
+#: ../scripts/line-nova.scm.h:5
+msgid "Sharpness (degrees)"
+msgstr "Ã?ngulo de la pÃºas"
+
+#: ../scripts/mkbrush.scm.h:1
+msgid "Create size of brush"
+msgstr "Crear del tamaÃ±o de la brocha"
+
+#: ../scripts/mkbrush.scm.h:2
+msgid "Description"
+msgstr "DescripciÃ³n"
+
+#: ../scripts/mkbrush.scm.h:3
+msgid "Feathering"
+msgstr "Difuminar"
+
+#: ../scripts/mkbrush.scm.h:5
+#, fuzzy
+msgid "New Ell_iptical..."
+msgstr "_ElÃ­pticaâ?Š"
+
+#: ../scripts/mkbrush.scm.h:6
+#, fuzzy
+msgid "New Elli_ptical, Feathered..."
+msgstr "ElÃ­ptica, difuminadaâ?Š"
+
+#: ../scripts/mkbrush.scm.h:7
+#, fuzzy
+msgid "New Re_ctangular..."
+msgstr "_Rectangularâ?Š"
+
+#: ../scripts/mkbrush.scm.h:8
+#, fuzzy
+msgid "New Rec_tangular, Feathered..."
+msgstr "_Rectangular, difuminadaâ?Š"
+
+#: ../scripts/mkbrush.scm.h:9 ../scripts/select-to-brush.scm.h:3
+msgid "Spacing"
+msgstr "Espaciado"
+
+#: ../scripts/neon-logo.scm.h:2
+msgid "Create shadow"
+msgstr "Crear sombra"
+
+#: ../scripts/neon-logo.scm.h:3
+msgid "Effect size (pixels * 5)"
+msgstr "TamaÃ±o del efecto (pÃ­xeles * 5)"
+
+#: ../scripts/neon-logo.scm.h:7
+msgid "N_eon..."
+msgstr "N_eÃ³nâ?Š"
+
+#: ../scripts/news-text.scm.h:3
+msgid "Cell size (pixels)"
+msgstr "TamaÃ±o de celda (pÃ­xeles)"
+
+#: ../scripts/news-text.scm.h:5 ../scripts/speed-text.scm.h:3
+#, no-c-format
+msgid "Density (%)"
+msgstr "Densidad (%)"
+
+#: ../scripts/news-text.scm.h:8
+#, fuzzy
+msgid "Newsprint Te_xt..."
+msgstr "Texto de periÃ³dicoâ?Š"
+
+#: ../scripts/old-photo.scm.h:2
+msgid "Defocus"
+msgstr "Desenfocar"
+
+#: ../scripts/old-photo.scm.h:3
+msgid "Mottle"
+msgstr "Moteado"
+
+#: ../scripts/old-photo.scm.h:4
+msgid "Sepia"
+msgstr "Sepia"
+
+#: ../scripts/old-photo.scm.h:6
+msgid "_Old Photo..."
+msgstr "_Foto antiguaâ?Š"
+
+#: ../scripts/perspective-shadow.scm.h:2
+msgid "Angle"
+msgstr "Ã?ngulo"
+
+#: ../scripts/perspective-shadow.scm.h:5
+msgid "Interpolation"
+msgstr "InterpolaciÃ³n"
+
+#: ../scripts/perspective-shadow.scm.h:7
+msgid "Relative distance of horizon"
+msgstr "Distancia relativa del horizonte"
+
+#: ../scripts/perspective-shadow.scm.h:8
+msgid "Relative length of shadow"
+msgstr "Longitud relativa de la sombra"
+
+#: ../scripts/perspective-shadow.scm.h:9
+msgid "_Perspective..."
+msgstr "_Perspectivaâ?Š"
+
+#: ../scripts/predator.scm.h:1
+msgid "Edge amount"
+msgstr "Grosor del borde"
+
+#: ../scripts/predator.scm.h:3
+msgid "Pixel amount"
+msgstr "TamaÃ±o del pÃ­xel"
+
+#: ../scripts/predator.scm.h:4
+msgid "Pixelize"
+msgstr "Pixelizar"
+
+#: ../scripts/predator.scm.h:6
+msgid "_Predator..."
+msgstr "De_predadorâ?Š"
+
+#: ../scripts/pupi-button.scm.h:4
+msgid "Lower color"
+msgstr "Color inferior"
+
+#: ../scripts/pupi-button.scm.h:5
+msgid "Lower color (active)"
+msgstr "Color inferior (activo)"
+
+#: ../scripts/pupi-button.scm.h:6
+msgid "Not pressed"
+msgstr "No pulsado"
+
+#: ../scripts/pupi-button.scm.h:7
+msgid "Not pressed (active)"
+msgstr "No pulsado (activo)"
+
+#: ../scripts/pupi-button.scm.h:8
+msgid "Padding X"
+msgstr "Relleno en X"
+
+#: ../scripts/pupi-button.scm.h:9
+msgid "Padding Y"
+msgstr "Relleno en Y"
+
+#: ../scripts/pupi-button.scm.h:11
+msgid "Round ratio"
+msgstr "RazÃ³n de redondeo"
+
+#: ../scripts/pupi-button.scm.h:14
+msgid "Text color (active)"
+msgstr "Color del texto (activo)"
+
+#: ../scripts/pupi-button.scm.h:15
+msgid "Upper color"
+msgstr "Color superior"
+
+#: ../scripts/pupi-button.scm.h:16
+msgid "Upper color (active)"
+msgstr "Color superior (activo)"
+
+#: ../scripts/pupi-button.scm.h:17
+msgid "_Round Button..."
+msgstr "BotÃ³n _redondoâ?Š"
+
+#: ../scripts/rendermap.scm.h:1
+msgid "Behavior"
+msgstr "Comportamiento"
+
+#: ../scripts/rendermap.scm.h:2
+msgid "Detail in Middle"
+msgstr "PequeÃ±as islas"
+
+#: ../scripts/rendermap.scm.h:7
+msgid "Render _Map..."
+msgstr "_Renderizar mapaâ?Š"
+
+#: ../scripts/rendermap.scm.h:8
+msgid "Tile"
+msgstr "Mosaico"
+
+#: ../scripts/ripply-anim.scm.h:1
+msgid "Black"
+msgstr "Negro"
+
+#: ../scripts/ripply-anim.scm.h:2
+msgid "Edge behavior"
+msgstr "Comportamiento del borde"
+
+#: ../scripts/ripply-anim.scm.h:3 ../scripts/waves-anim.scm.h:3
+msgid "Number of frames"
+msgstr "NÃºmero de fotogramas"
+
+#: ../scripts/ripply-anim.scm.h:4
+msgid "Rippling strength"
+msgstr "Fuerza de ondulaciÃ³n"
+
+#: ../scripts/ripply-anim.scm.h:5
+msgid "Smear"
+msgstr "Manchar"
+
+#: ../scripts/ripply-anim.scm.h:6
+msgid "Wrap"
+msgstr "Desformar"
+
+#: ../scripts/ripply-anim.scm.h:7
+msgid "_Rippling..."
+msgstr "_Ondasâ?Š"
+
+#: ../scripts/round-corners.scm.h:1
+msgid "Add background"
+msgstr "AÃ±adir fondo"
+
+#: ../scripts/round-corners.scm.h:2
+msgid "Add drop-shadow"
+msgstr "AÃ±adir sombra base"
+
+#: ../scripts/round-corners.scm.h:4
+msgid "Edge radius"
+msgstr "Radio del borde"
+
+#: ../scripts/round-corners.scm.h:8
+msgid "_Round Corners..."
+msgstr "Esquinas _redondeadas"
+
+#: ../scripts/selection-round.scm.h:1
+msgid "Concave"
+msgstr "CÃ³ncavo"
+
+#: ../scripts/selection-round.scm.h:3
+#, no-c-format
+msgid "Radius (%)"
+msgstr "Radio (%)"
+
+#: ../scripts/selection-round.scm.h:4
+msgid "Rounded R_ectangle..."
+msgstr "_RectÃ¡ngulo redondeadoâ?Š"
+
+#: ../scripts/select-to-brush.scm.h:1
+msgid "Brush name"
+msgstr "Nombre de la brocha"
+
+#: ../scripts/select-to-brush.scm.h:2 ../scripts/select-to-pattern.scm.h:1
+msgid "File name"
+msgstr "Nombre del archivo"
+
+#: ../scripts/select-to-brush.scm.h:4
+msgid "To _Brush..."
+msgstr "A _brochaâ?Š"
+
+#: ../scripts/select-to-image.scm.h:1
+msgid "To _Image"
+msgstr "A _imagen"
+
+#: ../scripts/select-to-pattern.scm.h:2
+msgid "Pattern name"
+msgstr "Nombre del patrÃ³n"
+
+#: ../scripts/select-to-pattern.scm.h:3
+msgid "To _Pattern..."
+msgstr "A _patrÃ³nâ?Š"
+
+#: ../scripts/slide.scm.h:2
+msgid "Font color"
+msgstr "Color de la tipografÃ­a"
+
+#: ../scripts/slide.scm.h:3
+msgid "Number"
+msgstr "NÃºmero"
+
+#: ../scripts/slide.scm.h:6
+msgid "_Slide..."
+msgstr "_Diapositivaâ?Š"
+
+#: ../scripts/sota-chrome-logo.scm.h:9
+msgid "SOTA Chrome..."
+msgstr "Cromado SOTAâ?Š"
+
+#: ../scripts/speed-text.scm.h:6
+msgid "Speed Text..."
+msgstr "Velocidad del textoâ?Š"
+
+#: ../scripts/sphere.scm.h:2
+msgid "Lighting (degrees)"
+msgstr "IluminaciÃ³n (grados)"
+
+#: ../scripts/sphere.scm.h:3
+msgid "Radius (pixels)"
+msgstr "Radio (pÃ­xeles)"
+
+#: ../scripts/sphere.scm.h:5
+msgid "Sphere color"
+msgstr "Color de la esfera"
+
+#: ../scripts/sphere.scm.h:6
+msgid "_Sphere..."
+msgstr "_Esferaâ?Š"
+
+#: ../scripts/spinning-globe.scm.h:1
+msgid "Frames"
+msgstr "Fotogramas"
+
+#: ../scripts/spinning-globe.scm.h:2
+msgid "Index to n colors (0 = remain RGB)"
+msgstr "Indexar a n colores (0 = permanece RGB)"
+
+#: ../scripts/spinning-globe.scm.h:4
+msgid "Turn from left to right"
+msgstr "Girar de izquierda a derecha"
+
+#: ../scripts/spinning-globe.scm.h:6
+msgid "_Spinning Globe..."
+msgstr "Globo _giratorioâ?Š"
+
+#: ../scripts/spyrogimp.scm.h:1
+msgid "Airbrush"
+msgstr "AerÃ³grafo"
+
+#: ../scripts/spyrogimp.scm.h:2
+msgid "Brush"
+msgstr "Brocha"
+
+#: ../scripts/spyrogimp.scm.h:3
+msgid "Circle"
+msgstr "CÃ­rculo"
+
+#: ../scripts/spyrogimp.scm.h:5
+msgid "Color method"
+msgstr "MÃ©todo de coloraciÃ³n"
+
+#: ../scripts/spyrogimp.scm.h:6
+msgid "Epitrochoid"
+msgstr "Epitrocoide"
+
+#: ../scripts/spyrogimp.scm.h:7
+msgid "Frame"
+msgstr "Cuadro"
+
+#: ../scripts/spyrogimp.scm.h:9
+msgid "Gradient: Loop Sawtooth"
+msgstr "Degradado: Bucle diente de sierra"
+
+#: ../scripts/spyrogimp.scm.h:10
+msgid "Gradient: Loop Triangle"
+msgstr "Degradado: Bucle de triÃ¡ngulo"
+
+#: ../scripts/spyrogimp.scm.h:11
+msgid "Hexagon"
+msgstr "HexÃ¡gono"
+
+#: ../scripts/spyrogimp.scm.h:12
+msgid "Hole ratio"
+msgstr "Radio del hoyo"
+
+#: ../scripts/spyrogimp.scm.h:13
+msgid "Inner teeth"
+msgstr "Diente interno"
+
+#: ../scripts/spyrogimp.scm.h:14
+msgid "Lissajous"
+msgstr "Lissajous"
+
+#: ../scripts/spyrogimp.scm.h:15
+msgid "Margin (pixels)"
+msgstr "Margen (pÃ­xeles)"
+
+#: ../scripts/spyrogimp.scm.h:16
+msgid "Outer teeth"
+msgstr "Diente exterior"
+
+#: ../scripts/spyrogimp.scm.h:17
+msgid "Pencil"
+msgstr "LÃ¡piz"
+
+#: ../scripts/spyrogimp.scm.h:18
+msgid "Pentagon"
+msgstr "PentÃ¡gono"
+
+#: ../scripts/spyrogimp.scm.h:19
+msgid "Polygon: 10 sides"
+msgstr "PolÃ­gono: 10 lados"
+
+#: ../scripts/spyrogimp.scm.h:20
+msgid "Polygon: 7 sides"
+msgstr "PolÃ­gono: 7 lados"
+
+#: ../scripts/spyrogimp.scm.h:21
+msgid "Polygon: 8 sides"
+msgstr "PolÃ­gono: 8 lados"
+
+#: ../scripts/spyrogimp.scm.h:22
+msgid "Polygon: 9 sides"
+msgstr "PolÃ­gono: 9 lados"
+
+#: ../scripts/spyrogimp.scm.h:23
+msgid "Shape"
+msgstr "Forma"
+
+#: ../scripts/spyrogimp.scm.h:24
+msgid "Solid Color"
+msgstr "Color sÃ³lido"
+
+# Yo lo dejarÃ­a como Spyrograph, es marca comercial. FVD
+#: ../scripts/spyrogimp.scm.h:25
+msgid "Spyrograph"
+msgstr "EspirÃ³grafo"
+
+#: ../scripts/spyrogimp.scm.h:26
+msgid "Square"
+msgstr "Cuadrado"
+
+#: ../scripts/spyrogimp.scm.h:27 ../scripts/text-circle.scm.h:7
+msgid "Start angle"
+msgstr "Ã?ngulo inicial"
+
+#: ../scripts/spyrogimp.scm.h:28
+msgid "Tool"
+msgstr "Herramienta"
+
+#: ../scripts/spyrogimp.scm.h:29
+msgid "Triangle"
+msgstr "TriÃ¡ngulo"
+
+#: ../scripts/spyrogimp.scm.h:30
+msgid "Type"
+msgstr "Tipo"
+
+#: ../scripts/spyrogimp.scm.h:31
+msgid "_Spyrogimp..."
+msgstr "_Espiro-GIMPâ?Š"
+
+#: ../scripts/starburst-logo.scm.h:2
+msgid "Burst color"
+msgstr "Color de la explosiÃ³n"
+
+#: ../scripts/starburst-logo.scm.h:3
+msgid "Effect size (pixels * 30)"
+msgstr "TamaÃ±o del efecto (pÃ­xeles * 30)"
+
+#: ../scripts/starburst-logo.scm.h:6
+msgid "Starb_urst..."
+msgstr "Starb_urstâ?Š"
+
+#: ../scripts/starscape-logo.scm.h:1
+msgid "Effect size (pixels * 4)"
+msgstr "TamaÃ±o del efecto (pÃ­xeles * 4)"
+
+#: ../scripts/starscape-logo.scm.h:5
+msgid "Sta_rscape..."
+msgstr "Sta_rscapeâ?Š"
+
+#: ../scripts/swirltile.scm.h:8
+msgid "Swirl-_Tile..."
+msgstr "_Embaldosado de remolinosâ?Š"
+
+# //O Algo cutre, pero cuanto mayor es, mÃ¡s "arrastra" la imagen, por eso
+# lo de fuerza.
+#: ../scripts/swirltile.scm.h:9
+msgid "Whirl amount"
+msgstr "Fuerza del remolino"
+
+#: ../scripts/swirly-pattern.scm.h:1
+msgid "Number of times to whirl"
+msgstr "NÃºmero de veces a girar"
+
+#: ../scripts/swirly-pattern.scm.h:2
+msgid "Quarter size"
+msgstr "Un cuarto del tamaÃ±o"
+
+#: ../scripts/swirly-pattern.scm.h:3
+msgid "Whirl angle"
+msgstr "Ã?ngulo del remolino"
+
+#: ../scripts/swirly-pattern.scm.h:4
+msgid "_Swirly..."
+msgstr "_Remolinoâ?Š"
+
+#: ../scripts/t-o-p-logo.scm.h:2
+msgid "Base color"
+msgstr "Color base"
+
+#: ../scripts/t-o-p-logo.scm.h:4
+msgid "Edge only"
+msgstr "SÃ³lo borde"
+
+#: ../scripts/t-o-p-logo.scm.h:5
+msgid "Edge width"
+msgstr "Anchura del borde"
+
+# //R QuizÃ¡s "tasa de choques"
+#: ../scripts/t-o-p-logo.scm.h:8
+msgid "Hit rate"
+msgstr "Tasa de choques"
+
+#: ../scripts/t-o-p-logo.scm.h:10
+msgid "_Particle Trace..."
+msgstr "_Traza de partÃ­culasâ?Š"
+
+#: ../scripts/test-sphere.scm.h:1
+#, fuzzy
+msgid "_Sphere"
+msgstr "_Esferaâ?Š"
+
+#: ../scripts/text-circle.scm.h:1
+msgid "Antialias"
+msgstr "Alisado"
+
+#: ../scripts/text-circle.scm.h:2
+msgid "Fill angle"
+msgstr "Ã?ngulo de relleno"
+
+#: ../scripts/text-circle.scm.h:6
+msgid "Render the specified text along the perimeter of a circle"
+msgstr ""
+"Renderizar el texto especificado a lo largo del perÃ­metro de un cÃ­rculo"
+
+#: ../scripts/text-circle.scm.h:9
+#, fuzzy
+msgid "Text C_ircle..."
+msgstr "Texto circularâ?Š"
+
+#: ../scripts/textured-logo.scm.h:3
+msgid "Ending blend"
+msgstr "Fundido final"
+
+#: ../scripts/textured-logo.scm.h:6
+msgid "Hexagons"
+msgstr "HexÃ¡gonos"
+
+#: ../scripts/textured-logo.scm.h:7
+msgid "Mosaic tile type"
+msgstr "Tipo de embaldosado del mosaico"
+
+#: ../scripts/textured-logo.scm.h:8
+msgid "Octagons"
+msgstr "OctÃ³gonos"
+
+#: ../scripts/textured-logo.scm.h:10
+msgid "Squares"
+msgstr "Cuadrados"
+
+#: ../scripts/textured-logo.scm.h:11
+msgid "Starting blend"
+msgstr "Color inicial de fundido"
+
+#: ../scripts/textured-logo.scm.h:13
+msgid "Text pattern"
+msgstr "PatrÃ³n del texto"
+
+#: ../scripts/textured-logo.scm.h:14
+msgid "_Textured..."
+msgstr "_Texturizadoâ?Š"
+
+#: ../scripts/tileblur.scm.h:1
+msgid "Blur horizontally"
+msgstr "Desenfocar horizontalmente"
+
+#: ../scripts/tileblur.scm.h:2
+msgid "Blur type"
+msgstr "Tipo de desenfoque"
+
+#: ../scripts/tileblur.scm.h:3
+msgid "Blur vertically"
+msgstr "Desenfocar verticalmente"
+
+#: ../scripts/tileblur.scm.h:4
+msgid "IIR"
+msgstr "IIR"
+
+#: ../scripts/tileblur.scm.h:5
+msgid "RLE"
+msgstr "RLE"
+
+#: ../scripts/tileblur.scm.h:7
+msgid "_Tileable Blur..."
+msgstr "Desenfoque en_losableâ?Š"
+
+#: ../scripts/tiny-fu-set-cmap.scm.h:1
+msgid "Palette"
+msgstr "Paleta"
+
+#: ../scripts/tiny-fu-set-cmap.scm.h:2
+msgid "Set Colormap"
+msgstr "Establecer mapa de color"
+
+#: ../scripts/title-header.scm.h:5
+msgid "Web Title Header..."
+msgstr "Cabecera de tÃ­tulo webâ?Š"
+
+#: ../scripts/truchet.scm.h:3
+msgid "Foreground color"
+msgstr "Color de primer plano"
+
+#: ../scripts/truchet.scm.h:6
+msgid "T_ruchet..."
+msgstr "T_ruchetâ?Š"
+
+#: ../scripts/unsharp-mask.scm.h:1
+msgid "Mask opacity"
+msgstr "Opacidad de mÃ¡scara"
+
+#: ../scripts/unsharp-mask.scm.h:2
+msgid "Mask size"
+msgstr "TamaÃ±o de mÃ¡scara"
+
+# Se llama asÃ­ en PhotoShop. FVD
+#: ../scripts/unsharp-mask.scm.h:3
+#, fuzzy
+msgid "Unsharp Mask 2..."
+msgstr "MÃ¡scara de _desenfoqueâ?Š"
+
+#: ../scripts/waves-anim.scm.h:1
+msgid "Amplitude"
+msgstr "Amplitud"
+
+#: ../scripts/waves-anim.scm.h:2
+msgid "Invert direction"
+msgstr "Invertir direcciÃ³n"
+
+#: ../scripts/waves-anim.scm.h:4
+msgid "Wavelength"
+msgstr "Longitud de onda"
+
+#: ../scripts/waves-anim.scm.h:5
+msgid "_Waves..."
+msgstr "_Ondasâ?Š"
+
+#: ../scripts/weave.scm.h:1
+msgid "Ribbon spacing"
+msgstr "Espacio entre cintas"
+
+#: ../scripts/weave.scm.h:2
+msgid "Ribbon width"
+msgstr "Ancho de la cinta"
+
+#: ../scripts/weave.scm.h:3
+msgid "Shadow darkness"
+msgstr "Oscuridad de la sombra"
+
+#: ../scripts/weave.scm.h:4
+msgid "Shadow depth"
+msgstr "Profundidad de la sombra"
+
+#: ../scripts/weave.scm.h:5
+msgid "Thread density"
+msgstr "Densidad de los hilos"
+
+#: ../scripts/weave.scm.h:6
+msgid "Thread intensity"
+msgstr "Intensidad de los hilos"
+
+#: ../scripts/weave.scm.h:7
+msgid "Thread length"
+msgstr "Longitud de los hilos"
+
+#: ../scripts/weave.scm.h:8
+msgid "_Weave..."
+msgstr "_Weaveâ?Š"
+
+#: ../scripts/web-browser.scm.h:1
+#, fuzzy
+msgid "Create and Use _Selections"
+msgstr "Mantener la selecciÃ³n"
+
+#: ../scripts/web-browser.scm.h:2
+msgid "Create, Open and Save _Files"
+msgstr ""
+
+#: ../scripts/web-browser.scm.h:3
+msgid "Drawing _Simple Objects"
+msgstr ""
+
+#: ../scripts/web-browser.scm.h:4
+msgid "How to Use _Dialogs"
+msgstr ""
+
+#: ../scripts/web-browser.scm.h:5
+msgid "Plug-in _Registry"
+msgstr "_Registro de complementos"
+
+#: ../scripts/web-browser.scm.h:6
+msgid "Using _Paths"
+msgstr ""
+
+#: ../scripts/web-browser.scm.h:7
+msgid "_Basic Concepts"
+msgstr ""
+
+#: ../scripts/web-browser.scm.h:8
+msgid "_Developer Web Site"
+msgstr "Sitio web del _desarrollador"
+
+#: ../scripts/web-browser.scm.h:9
+msgid "_Main Web Site"
+msgstr "Sitio web _principal"
+
+#: ../scripts/web-browser.scm.h:10
+msgid "_Preparing your Images for the Web"
+msgstr ""
+
+#: ../scripts/web-browser.scm.h:11
+#, fuzzy
+msgid "_User Manual Web Site"
+msgstr "Sitio web _principal"
+
+#: ../scripts/web-browser.scm.h:12
+msgid "_Working with Digital Camera Photos"
+msgstr ""
+
+#: ../scripts/xach-effect.scm.h:1
+msgid "Drop shadow X offset"
+msgstr "Desplazamiento X de la sombra base"
+
+#: ../scripts/xach-effect.scm.h:2
+msgid "Drop shadow Y offset"
+msgstr "Desplazamiento Y de la sombra base"
+
+#: ../scripts/xach-effect.scm.h:3
+msgid "Drop shadow blur radius"
+msgstr "Radio de desenfoque de la sombra base"
+
+#: ../scripts/xach-effect.scm.h:4
+msgid "Drop shadow color"
+msgstr "Color de la sombra base"
+
+#: ../scripts/xach-effect.scm.h:5
+msgid "Drop shadow opacity"
+msgstr "Opacidad de la sombra base"
+
+#: ../scripts/xach-effect.scm.h:6
+msgid "Highlight X offset"
+msgstr "Desplazamiento X del brillo"
+
+#: ../scripts/xach-effect.scm.h:7
+msgid "Highlight Y offset"
+msgstr "Desplazamiento Y del brillo"
+
+#: ../scripts/xach-effect.scm.h:9
+msgid "Highlight opacity"
+msgstr "Opacidad del brillo"
+
+#: ../scripts/xach-effect.scm.h:11
+#, fuzzy
+msgid "_Xach-Effect..."
+msgstr "T_ruchetâ?Š"
 
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/_Consola de Tiny-Fu"
@@ -328,545 +2365,44 @@ msgstr "SelecciÃ³n de brochas de Tiny-Fu"
 #~ msgid "(none)"
 #~ msgstr "(ninguno)"
 
-#~ msgid "Color"
-#~ msgstr "Color"
-
-#~ msgid "Font"
-#~ msgstr "TipografÃ­a"
-
-#~ msgid "Font size (pixels)"
-#~ msgstr "TamaÃ±o de la tipografÃ­a (pÃ­xeles)"
-
-#~ msgid "Hello World"
-#~ msgstr "Hola mundo"
-
-#~ msgid "Text string"
-#~ msgstr "Cadena de texto"
-
-#~ msgid " contact sheets from a total of "
-#~ msgstr " hojas de contacto de un total de "
-
-#~ msgid " for directory "
-#~ msgstr " para el directorio "
-
-#~ msgid " images"
-#~ msgstr " imÃ¡genes"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Utilidades"
-
-#~ msgid "Background color"
-#~ msgstr "Color de fondo"
-
-#~ msgid "Contact Sheet"
-#~ msgstr "Hoja de contacto"
-
-#~ msgid "Created "
-#~ msgstr "Creado "
-
-#~ msgid "Legend font"
-#~ msgstr "TipografÃ­a de la leyenda"
-
-#~ msgid "Sheet "
-#~ msgstr "Hoja "
-
-#~ msgid "Sheet size"
-#~ msgstr "TamaÃ±o de la hoja"
-
-#~ msgid "Text color"
-#~ msgstr "Color de texto"
-
-#~ msgid "Title font"
-#~ msgstr "TipografÃ­a del tÃ­tulo"
-
-#~ msgid "Unable to open directory "
-#~ msgstr "Imposible abrir el directorio "
-
-#~ msgid "3D _Outline..."
-#~ msgstr "_Contorno 3Dâ?Š"
 
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Logos"
 
-#~ msgid "Bumpmap (alpha layer) blur radius"
-#~ msgstr "Radio de desenfoque del mapa de relieve (capa alfa)"
-
-#~ msgid "Default bumpmap settings"
-#~ msgstr "Ajustes predeterminados del mapa de relieve"
-
-#~ msgid "Outline blur radius"
-#~ msgstr "Radio de desenfoque del contorno"
-
-#~ msgid "Shadow X offset"
-#~ msgstr "Desplazamiento X de la sombra"
-
-#~ msgid "Shadow Y offset"
-#~ msgstr "Desplazamiento Y de la sombra"
-
-#~ msgid "Shadow blur radius"
-#~ msgstr "Radio de desenfoque de la sombra"
-
-#~ msgid "Text"
-#~ msgstr "Texto"
-
-#~ msgid "3_D Truchet..."
-#~ msgstr "Truchet 3_Dâ?Š"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Patrones/"
-
-#~ msgid "Block size"
-#~ msgstr "TamaÃ±o de bloque"
-
-#~ msgid "End blend"
-#~ msgstr "Fundido final"
-
-#~ msgid "Number of X tiles"
-#~ msgstr "NÃºmero de baldosas en X"
-
-#~ msgid "Number of Y tiles"
-#~ msgstr "NÃºmero de baldosas en Y"
-
-#~ msgid "Start blend"
-#~ msgstr "Iniciar fundido [blend]"
-
-#~ msgid "Supersample"
-#~ msgstr "Sobremuestreo"
-
-#~ msgid "Thickness"
-#~ msgstr "Grosor"
 
 #~ msgid "<Image>/Tiny-Fu/Decor"
 #~ msgstr "<Image>/Tiny-Fu/DecoraciÃ³n"
 
-#~ msgid "Add B_evel..."
-#~ msgstr "AÃ±adir _biselâ?Š"
-
-#~ msgid "Keep bump layer"
-#~ msgstr "Mantener la capa de relieve"
-
-#~ msgid "Work on copy"
-#~ msgstr "Trabajar en copia"
-
-#~ msgid "Add _Border..."
-#~ msgstr "AÃ±adir _bordeâ?Š"
-
-#~ msgid "Border X size"
-#~ msgstr "TamaÃ±o X del borde"
-
-#~ msgid "Border Y size"
-#~ msgstr "TamaÃ±o Y del borde"
-
-#~ msgid "Border color"
-#~ msgstr "Color del borde"
-
-#~ msgid "Delta value on color"
-#~ msgstr "Valor delta en el color"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Temas de PÃ¡ginas Web/Resplandor alienÃ­gena"
-
-#~ msgid "Down"
-#~ msgstr "Abajo"
-
-#~ msgid "Flatten image"
-#~ msgstr "Aplanar imagen"
-
-#~ msgid "Glow color"
-#~ msgstr "Color del resplandor"
-
-#~ msgid "Left"
-#~ msgstr "Izquierda"
-
-#~ msgid "Orientation"
-#~ msgstr "OrientaciÃ³n"
-
-#~ msgid "Right"
-#~ msgstr "Derecha"
-
-#~ msgid "Size"
-#~ msgstr "TamaÃ±o"
-
-#~ msgid "Up"
-#~ msgstr "Arriba"
-
-#~ msgid "_Arrow..."
-#~ msgstr "_Flechaâ?Š"
-
-#~ msgid "Bar height"
-#~ msgstr "Altura de la barra"
-
-#~ msgid "Bar length"
-#~ msgstr "Longitud de la barra"
-
-#~ msgid "_Hrule..."
-#~ msgstr "_Regla horizontalâ?Š"
-
-#~ msgid "Radius"
-#~ msgstr "Radio"
-
-#~ msgid "_Bullet..."
-#~ msgstr "_Puntoâ?Š"
-
-#~ msgid "Glow radius"
-#~ msgstr "Radio del resplandor"
-
-#~ msgid "Padding"
-#~ msgstr "Relleno [Padding]"
-
-#~ msgid "Glow size (pixels * 4)"
-#~ msgstr "TamaÃ±o del resplandor (pÃ­xeles * 4)"
-
-#~ msgid "Alien _Neon..."
-#~ msgstr "_NeÃ³n alienÃ­genaâ?Š"
-
-#~ msgid "Fade away"
-#~ msgstr "Desvanecer"
-
-#~ msgid "Number of bands"
-#~ msgstr "NÃºmero de bandas"
-
-# //O Nuevas traducciones desde cero, las "Bands" sos bandas con el color de
-# fondo que se elige en el "script", los "gaps" son las bandas con el color de
-# primer plano, por lo que voy a traducir "bands" como huecos en referencia
-# al uso de color de fondo y "gap" como las bandas, por usar el color de primer
-# plano, Â¿mejor asÃ­?
-# //R Vale
-#~ msgid "Width of bands"
-#~ msgstr "Anchura de las bandas"
-
-#~ msgid "Width of gaps"
-#~ msgstr "Anchura de los huecos"
-
-#~ msgid "_Basic I..."
-#~ msgstr "_BÃ¡sico Iâ?Š"
-
-#~ msgid "B_asic II..."
-#~ msgstr "B_Ã¡sico IIâ?Š"
 
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Botones"
 
-#~ msgid "Bevel width"
-#~ msgstr "Anchura del bisel"
-
-#~ msgid "Lower-right color"
-#~ msgstr "Color inferior derecho"
-
-#~ msgid "Pressed"
-#~ msgstr "Pulsado"
-
-#~ msgid "Simple _Beveled Button..."
-#~ msgstr "BotÃ³n simple _biseladoâ?Š"
-
-#~ msgid "Upper-left color"
-#~ msgstr "Color superior izquierdo"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Temas de PÃ¡ginas Web/PatrÃ³n biselado"
-
-#~ msgid "Diameter"
-#~ msgstr "DiÃ¡metro"
-
-#~ msgid "Transparent background"
-#~ msgstr "Fondo transparente"
-
-#~ msgid "H_eading..."
-#~ msgstr "_Cabeceraâ?Š"
-
-#~ msgid "Height"
-#~ msgstr "Altura"
-
-#~ msgid "Width"
-#~ msgstr "Anchura"
 
 #~ msgid "<Image>/Tiny-Fu/Animators"
 #~ msgstr "<Image>/Tiny-Fu/Animadores"
 
-#~ msgid "Blend Animation needs at least three source layers"
-#~ msgstr "La animaciÃ³n de fundido necesita al menos tres capas fuente"
-
-#~ msgid "Intermediate frames"
-#~ msgstr "Fotogramas intermedios"
-
-#~ msgid "Looped"
-#~ msgstr "Bucle"
-
-#~ msgid "Max. blur radius"
-#~ msgstr "Radio MÃ¡x. de desenfoque"
-
-#~ msgid "_Blend..."
-#~ msgstr "_Fundirâ?Š"
-
-#~ msgid "Blen_ded..."
-#~ msgstr "_Fundido [Blended]â?Š"
-
-#~ msgid "Blend mode"
-#~ msgstr "Modo de fundido"
-
-#~ msgid "Custom Gradient"
-#~ msgstr "Degradado personalizado"
-
-#~ msgid "FG-BG-HSV"
-#~ msgstr "Frente-fondo-HSV"
-
-#~ msgid "FG-BG-RGB"
-#~ msgstr "Frente-fondo-RGB"
-
-#~ msgid "FG-Transparent"
-#~ msgstr "Frente-transparente"
-
-#~ msgid "Gradient"
-#~ msgstr "Degradado"
-
-#~ msgid "Gradient reverse"
-#~ msgstr "Degradado invertido"
-
-#~ msgid "Offset (pixels)"
-#~ msgstr "Desplazamiento (pÃ­xeles)"
-
-#~ msgid "Background Color"
-#~ msgstr "Color de fondo"
-
-#~ msgid "Bo_vination..."
-#~ msgstr "Bo_vinaciÃ³nâ?Š"
-
-# //R Â¿Manchas o lunares?
-#~ msgid "Spots density X"
-#~ msgstr "Densidad X de manchas"
-
-#~ msgid "Spots density Y"
-#~ msgstr "Densidad Y de manchas"
-
-#~ msgid "Add glowing"
-#~ msgstr "AÃ±adir resplandor"
-
-#~ msgid "After glow"
-#~ msgstr "DespuÃ©s del resplandor"
-
-#~ msgid "B_urn-In..."
-#~ msgstr "_Quemadoâ?Š"
-
-#~ msgid ""
-#~ "Burn-In: Needs two layers in total!\n"
-#~ "A foreground text layer with transparency and a background layer."
-#~ msgstr ""
-#~ "Â¡Burn-In necesita dos capas en total!\n"
-#~ "Una capa de texto en primer plano con transparencia y una capa de fondo."
-
-#~ msgid "Corona width"
-#~ msgstr "Ancho de la corona"
-
-#~ msgid "Fadeout"
-#~ msgstr "Desvanecer"
-
-#~ msgid "Fadeout width"
-#~ msgstr "Anchura del desvanecimiento"
-
-#~ msgid "Prepare for GIF"
-#~ msgstr "Preparar para GIF"
-
-#~ msgid "Speed (pixels/frame)"
-#~ msgstr "Velocidad (pÃ­xeles/cuadro)"
-
-#~ msgid "Color 1"
-#~ msgstr "Color 1"
-
-#~ msgid "Color 2"
-#~ msgstr "Color 2"
-
-#~ msgid "Color 3"
-#~ msgstr "Color 3"
-
-#~ msgid "Granularity"
-#~ msgstr "Granularidad"
-
-#~ msgid "Image size"
-#~ msgstr "TamaÃ±o de la imagen"
-
-#~ msgid "Smooth"
-#~ msgstr "Suave"
-
-#~ msgid "_Camouflage..."
-#~ msgstr "_Camuflajeâ?Š"
-
-#~ msgid "Background Image"
-#~ msgstr "Imagen de fondo"
-
-#~ msgid "Carve raised text"
-#~ msgstr "Esculpir texto elevado"
-
-#~ msgid "Carved..."
-#~ msgstr "Esculpidoâ?Š"
-
-#~ msgid "Padding around text"
-#~ msgstr "Rellenado alrededor del texto [Padding]"
-
 #~ msgid "<Image>/Tiny-Fu/Stencil Ops"
 #~ msgstr "<Image>/Tiny-Fu/Ops. de escultura"
-
-#~ msgid "C_arve-It..."
-#~ msgstr "Esc_ulpirâ?Š"
-
-#~ msgid "Carve white areas"
-#~ msgstr "Esculpir las Ã¡reas blancas"
-
-#~ msgid "Image to carve"
-#~ msgstr "Imagen a esculpir"
-
-#~ msgid "Chalk color"
-#~ msgstr "Color de la tiza"
-
-#~ msgid "_Chalk..."
-#~ msgstr "_Tizaâ?Š"
-
-#~ msgid "Blur amount"
-#~ msgstr "Cantidad de desenfoque [blur]"
-
-#~ msgid "Chip Awa_y..."
-#~ msgstr "_Desmenuzarâ?Š"
-
-# //R He leÃ­do que "desconchado" es la traducciÃ³n literal
-# //O Sique sin convencerme desconchado, como mucho desmenuzado, porque es lo
-# que parece, como si fueses a hacer un bizcocho cuando metes todas las cosas
-# en la batidora-picadora y... (yo siempre pensando en comida...) X-DD
-# //R Como quieeeerasss :)
-#~ msgid "Chip amount"
-#~ msgstr "Cantidad de desmenuzado [Chip]"
-
-#~ msgid "Drop shadow"
-#~ msgstr "Sombra base"
-
-#~ msgid "Fill BG with pattern"
-#~ msgstr "Rellenar fondo con patrÃ³n"
-
-#~ msgid "Invert"
-#~ msgstr "Invertir"
-
-#~ msgid "Keep background"
-#~ msgstr "Mantener fondo"
 
 #~ msgid "C_hrome-It..."
 #~ msgstr "_Cromarâ?Š"
 
-#~ msgid "Chrome balance"
-#~ msgstr "Balance del cromado"
-
-#~ msgid "Chrome factor"
-#~ msgstr "Factor de cromado"
-
-#~ msgid "Chrome lightness"
-#~ msgstr "Luminosidad del cromado"
-
-#~ msgid "Chrome saturation"
-#~ msgstr "SaturaciÃ³n del cromado"
-
-#~ msgid "Chrome white areas"
-#~ msgstr "Cromar las Ã¡reas blancas"
-
-#~ msgid "Environment map"
-#~ msgstr "Mapa de entorno"
-
-#~ msgid "Highlight balance"
-#~ msgstr "Balance del brillo"
-
-#~ msgid "C_hrome..."
-#~ msgstr "_Cromarâ?Š"
-
-#~ msgid "Offsets (pixels * 2)"
-#~ msgstr "Desplazamiento (pÃ­xeles * 2)"
-
 #~ msgid "<Image>/Tiny-Fu/Render"
 #~ msgstr "<Image>/Tiny-Fu/Render"
-
-#~ msgid "Circuit seed"
-#~ msgstr "Semilla del circuito"
-
-#~ msgid "Keep selection"
-#~ msgstr "Mantener la selecciÃ³n"
-
-#~ msgid "No background (only for separate layer)"
-#~ msgstr "Sin fondo (sÃ³lo para capa separada)"
-
-# //O Bueno, siguiendo tus maravillosos consejos...
-#~ msgid "Oilify mask size"
-#~ msgstr "TamaÃ±o de la mÃ¡scara del Ã³leo"
-
-#~ msgid "Separate layer"
-#~ msgstr "Capa separada"
-
-#~ msgid "_Circuit..."
-#~ msgstr "_Circuitoâ?Š"
 
 #~ msgid "<Image>/Tiny-Fu/Alchemy"
 #~ msgstr "<Image>/Tiny-Fu/Alquimia"
 
-#~ msgid "Azimuth"
-#~ msgstr "Azimut"
-
-#~ msgid "Blur Y"
-#~ msgstr "Desenfoque en Y"
-
-#~ msgid "Depth"
-#~ msgstr "Profundidad"
-
-#~ msgid "Elevation"
-#~ msgstr "ElevaciÃ³n"
-
-#~ msgid "_Clothify..."
-#~ msgstr "_Entelarâ?Š"
-
-#~ msgid ""
-#~ "Darken only\n"
-#~ "(Better, but only for images with alot of white)"
-#~ msgstr ""
-#~ "SÃ³lo oscurecer\n"
-#~ "(Mejor, pero sÃ³lo para imÃ¡genes con mucho blanco)"
-
-#~ msgid "Stains"
-#~ msgstr "Manchas"
-
-#~ msgid "_Coffee Stain..."
-#~ msgstr "Manchas de _cafÃ©â?Š"
-
-#~ msgid "Comic Boo_k..."
-#~ msgstr "_Libro de cÃ³micâ?Š"
-
-#~ msgid "Outline color"
-#~ msgstr "Color del contorno"
-
-#~ msgid "Outline size"
-#~ msgstr "TamaÃ±o del contorno"
-
-#~ msgid "Cool _Metal..."
-#~ msgstr "_Metal frÃ­oâ?Š"
-
-#~ msgid "Effect size (pixels)"
-#~ msgstr "TamaÃ±o del efecto (pÃ­xeles)"
-
-#~ msgid "Background image"
-#~ msgstr "Imagen de fondo"
-
-#~ msgid "Crystal..."
-#~ msgstr "Cristalâ?Š"
-
 #~ msgid "<Image>/Tiny-Fu/Selection"
 #~ msgstr "<Image>/Tiny-Fu/SelecciÃ³n"
-
-#~ msgid "Granularity (1 is low)"
-#~ msgstr "Granularidad (1 es menor)"
-
-#~ msgid "Smooth horizontally"
-#~ msgstr "Suavizado horizontal"
-
-#~ msgid "Smooth vertically"
-#~ msgstr "Suavizado vertical"
-
-#~ msgid "Spread"
-#~ msgstr "DifusiÃ³n"
-
-#~ msgid "Threshold (bigger 1<-->255 smaller)"
-#~ msgstr "Umbral (mayor 1<-->255 menor)"
 
 #~ msgid "_Distress Selection..."
 #~ msgstr "_Distorsionar selecciÃ³nâ?Š"
@@ -874,320 +2410,29 @@ msgstr "SelecciÃ³n de brochas de Tiny-Fu"
 #~ msgid "<Image>/Tiny-Fu/Shadow"
 #~ msgstr "<Image>/Tiny-Fu/Sombra"
 
-#~ msgid "Allow resizing"
-#~ msgstr "Permitir redimensionado"
-
-#~ msgid "Blur radius"
-#~ msgstr "Radio de desenfoque"
-
-#~ msgid "Offset X"
-#~ msgstr "Desplazamiento en X"
-
-#~ msgid "Offset Y"
-#~ msgstr "Desplazamiento en Y"
-
-#~ msgid "Opacity"
-#~ msgstr "Opacidad"
-
-#~ msgid "_Drop-Shadow..."
-#~ msgstr "_Sombra baseâ?Š"
-
-#~ msgid "Columns"
-#~ msgstr "Columnas"
-
-#~ msgid "Erase"
-#~ msgstr "Borrar"
-
-# //R COMPROBAR
-#~ msgid "Erase/fill"
-#~ msgstr "Borrar/Rellenar"
-
-#~ msgid "Even"
-#~ msgstr "Pares"
-
-#~ msgid "Even/odd"
-#~ msgstr "Pares/impares"
-
-#~ msgid "Fill with BG"
-#~ msgstr "Rellenar con fondo"
-
-#~ msgid "Odd"
-#~ msgstr "Impares"
-
-#~ msgid "Rows"
-#~ msgstr "Filas"
-
-#~ msgid "Rows/cols"
-#~ msgstr "Filas/columnas"
-
-#~ msgid "_Erase every other Row..."
-#~ msgstr "_Borrar las otras Filasâ?Š"
-
-#~ msgid "Apply generated layermask"
-#~ msgstr "Aplicar la mÃ¡scara de capa generada"
-
-#~ msgid "Border size"
-#~ msgstr "TamaÃ±o del borde"
-
-#~ msgid "Clear unselected maskarea"
-#~ msgstr "Borrar el Ã¡rea de mÃ¡scara no seleccionada"
-
-#~ msgid "Fade from %"
-#~ msgstr "Desvanecer desde %"
-
-#~ msgid "Fade to   %"
-#~ msgstr "Desvanecer hasta   %"
-
-#~ msgid "Use growing selection"
-#~ msgstr "Usar selecciÃ³n creciente"
-
 #~ msgid "_Fade Outline..."
 #~ msgstr "_Contorno de desvanecimientoâ?Š"
-
-#~ msgid "Detail level"
-#~ msgstr "Nivel de detalle"
-
-#~ msgid "Image height"
-#~ msgstr "Altura de imagen"
-
-#~ msgid "Image width"
-#~ msgstr "Anchura de imagen"
-
-#~ msgid "Random seed"
-#~ msgstr "Semilla aleatoria"
-
-#~ msgid "Scale X"
-#~ msgstr "Escala en X"
-
-#~ msgid "Scale Y"
-#~ msgstr "Escala en Y"
-
-#~ msgid "_Flatland..."
-#~ msgstr "Plani_landiaâ?Š"
-
-#~ msgid "Active colors"
-#~ msgstr "Colores activos"
-
-#~ msgid "Black on white"
-#~ msgstr "Negro sobre blanco"
-
-#~ msgid "Font _size (pixels)"
-#~ msgstr "_TamaÃ±o de la tipografÃ­a (pÃ­xeles)"
-
-#~ msgid "Use font _name as text"
-#~ msgstr "Usar el _nombre de la tipografÃ­a como texto"
-
-#~ msgid "_Border (pixels)"
-#~ msgstr "_Borde (pÃ­xeles)"
-
-#~ msgid "_Color scheme"
-#~ msgstr "Esquema de _colores"
-
-#~ msgid "_Filter (regexp)"
-#~ msgstr "_Filtro (exp. reg.)"
 
 #~ msgid "_Font Map..."
 #~ msgstr "Mapa de _tipografÃ­aâ?Š"
 
-#~ msgid "_Labels"
-#~ msgstr "E_tiquetas"
-
-#~ msgid "_Frosty..."
-#~ msgstr "_Escarchadoâ?Š"
-
-#~ msgid "Add shadow"
-#~ msgstr "AÃ±adir sombra"
-
-#~ msgid "Blur border"
-#~ msgstr "Borde de desenfoque"
-
-#~ msgid "Granularity (1 is Low)"
-#~ msgstr "Granularidad (1 es baja)"
-
-#~ msgid "Shadow weight (%)"
-#~ msgstr "Peso de la sombra (%)"
-
-#~ msgid "_Fuzzy Border..."
-#~ msgstr "_Difuminar bordeâ?Š"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Temas de pÃ¡ginas Web/Classic.Gimp.Org"
-
-#~ msgid "Autocrop"
-#~ msgstr "Recortar automÃ¡ticamente"
-
-#~ msgid "Dark color"
-#~ msgstr "Color oscuro"
-
-#~ msgid "Highlight color"
-#~ msgstr "Color del brillo"
-
-#~ msgid "Index image"
-#~ msgstr "Indexar imagen"
-
-#~ msgid "Number of colors"
-#~ msgstr "NÃºmero de colores"
-
-#~ msgid "Remove background"
-#~ msgstr "Quitar fondo"
-
-#~ msgid "Select-by-color threshold"
-#~ msgstr "Umbral de selecciÃ³n por color"
-
-#~ msgid "Shadow color"
-#~ msgstr "Color de la sombra"
-
-#~ msgid "_Big Header..."
-#~ msgstr "Cabecera _grandeâ?Š"
-
-#~ msgid "_Small Header..."
-#~ msgstr "Cabecera _pequeÃ±aâ?Š"
-
-#~ msgid "T_ube Sub-Button Label..."
-#~ msgstr "Etiqueta del sub-botÃ³n del t_uboâ?Š"
-
-#~ msgid "Tub_e Sub-Sub-Button Label..."
-#~ msgstr "_Etiqueta del sub-sub-botÃ³n del tuboâ?Š"
-
-#~ msgid "_General Tube Labels..."
-#~ msgstr "Etiquetas _generales del tuboâ?Š"
-
-#~ msgid "_Tube Button Label..."
-#~ msgstr "Etiqueta del botÃ³n del _tubo"
 
 #~ msgid "Blend gradient (Text)"
 #~ msgstr "Degradado de fundido (texto)"
 
-#~ msgid "Blend gradient (outline)"
-#~ msgstr "Degradado de fundido (contorno)"
-
-#~ msgid "Blend gradient (text)"
-#~ msgstr "Degradado de fundido (texto)"
-
-#~ msgid "Glo_ssy..."
-#~ msgstr "_BruÃ±idoâ?Š"
-
-#~ msgid "Outline gradient reverse"
-#~ msgstr "Degradado de contorno invertido"
-
-#~ msgid "Pattern (outline)"
-#~ msgstr "PatrÃ³n (contorno)"
-
-#~ msgid "Pattern (overlay)"
-#~ msgstr "PatrÃ³n (superpuesto)"
-
-#~ msgid "Pattern (text)"
-#~ msgstr "PatrÃ³n (texto)"
-
-#~ msgid "Text gradient reverse"
-#~ msgstr "Texto degradado invertido"
-
-#~ msgid "Use pattern for outline instead of gradient"
-#~ msgstr "Usar patrÃ³n en lugar de degradado para el contorno"
-
-#~ msgid "Use pattern for text instead of gradient"
-#~ msgstr "Usar patrÃ³n para texto en vez de un degradado"
-
-#~ msgid "Use pattern overlay"
-#~ msgstr "Usar superposiciÃ³n de patrÃ³n"
-
-#~ msgid "Effect size (pixels * 3)"
-#~ msgstr "TamaÃ±o del efecto (pÃ­xeles * 3)"
-
-#~ msgid "Glo_wing Hot..."
-#~ msgstr "Calor _resplandecienteâ?Š"
-
 #~ msgid "Bevel height (Sharpness)"
 #~ msgstr "Altura del bisel (afilado)"
-
-#~ msgid "Bevel height (sharpness)"
-#~ msgstr "Altura del bisel (afilado)"
-
-#~ msgid "Border size (pixels)"
-#~ msgstr "TamaÃ±o del borde (pÃ­xeles)"
-
-#~ msgid "Gradient Beve_l..."
-#~ msgstr "Bisel de degradadoâ?Š "
 
 #~ msgid "Custom _Gradient..."
 #~ msgstr "_Degradado personalizado"
 
-#~ msgid "X divisions"
-#~ msgstr "Divisiones X"
-
-#~ msgid "Y divisions"
-#~ msgstr "Divisiones Y"
-
-#~ msgid "_Grid..."
-#~ msgstr "_Rejillaâ?Š"
-
 #~ msgid "<Image>/Image/Guides"
 #~ msgstr "<Image>/Imagen/GuÃ­as"
 
-#~ msgid ""
-#~ "Creates four Guides around the bounding box of the current selection."
-#~ msgstr ""
-#~ "Crea cuatro guÃ­as alrededor de la caja que bordea la selecciÃ³n actual."
-
-#~ msgid "New Guides from _Selection"
-#~ msgstr "GuÃ­as nuevas desde la _selecciÃ³n"
-
-#~ msgid "Direction"
-#~ msgstr "DirecciÃ³n "
-
-#~ msgid "Horizontal"
-#~ msgstr "Horizontal"
-
-#~ msgid "New Guide (by _Percent)..."
-#~ msgstr "GuÃ­a nueva (por _porcentaje)â?Š"
-
-#~ msgid "Position (in %)"
-#~ msgstr "PosiciÃ³n (en %)"
-
-#~ msgid "Vertical"
-#~ msgstr "Vertical"
-
-#~ msgid "New _Guide..."
-#~ msgstr "_GuÃ­a nuevaâ?Š"
-
-#~ msgid "_Remove all Guides"
-#~ msgstr "_Quitar todas las guÃ­as"
-
 #~ msgid "<Image>/Tiny-Fu/Utils"
 #~ msgstr "<Image>/Tiny-Fu/Utilidades"
-
-#~ msgid "BG opacity"
-#~ msgstr "Opacidad del fondo"
-
-#~ msgid "Draw _HSV Graph..."
-#~ msgstr "Dibujar grÃ¡fico _HSVâ?Š"
-
-#~ msgid "End X"
-#~ msgstr "X final"
-
-#~ msgid "End Y"
-#~ msgstr "Y final"
-
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "De arriba-izquierda a abajo-derecha"
-
-#~ msgid "Graph scale"
-#~ msgstr "Escala del grÃ¡fico"
-
-#~ msgid "Start X"
-#~ msgstr "X inicial"
-
-#~ msgid "Use selection bounds instead of values below"
-#~ msgstr "Usar los lÃ­mites de la selecciÃ³n en vez de los valores de abajo"
-
-#~ msgid "Frame color"
-#~ msgstr "Color del borde"
-
-#~ msgid "Frame size"
-#~ msgstr "TamaÃ±o del borde"
-
-#~ msgid "Imigre-26..."
-#~ msgstr "Imigre-26â?Š"
 
 #~ msgid "Apply layer mask (or discard)"
 #~ msgstr "Aplicar la mÃ¡scara de capa (o descartar)"
@@ -1222,108 +2467,11 @@ msgstr "SelecciÃ³n de brochas de Tiny-Fu"
 #~ msgid "Space between layers"
 #~ msgstr "Espacio entre capas"
 
-#~ msgid "Land height"
-#~ msgstr "Altura del terreno"
-
-#~ msgid "Sea depth"
-#~ msgstr "Profundidad del ocÃ©ano"
-
-#~ msgid "_Land..."
-#~ msgstr "_Tierraâ?Š"
-
-#~ msgid "Roughness"
-#~ msgstr "Rugosidad"
-
-#~ msgid "Seed"
-#~ msgstr "Semilla"
-
-#~ msgid "Use current gradient"
-#~ msgstr "Usar el degradado actual"
-
-#~ msgid "_Lava..."
-#~ msgstr "_Lavaâ?Š"
-
-#~ msgid "Line _Nova..."
-#~ msgstr "_Nova de lÃ­neasâ?Š"
-
-#~ msgid "Number of lines"
-#~ msgstr "NÃºmero de lÃ­neas"
-
-#~ msgid "Offset radius"
-#~ msgstr "Radio de desplazamiento"
-
-#~ msgid "Randomness"
-#~ msgstr "Aleatoriedad"
-
-# //O Gracias de nuevo por los consejos.
-#~ msgid "Sharpness (degrees)"
-#~ msgstr "Ã?ngulo de la pÃºas"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Crear brocha"
 
-#~ msgid "Create size of brush"
-#~ msgstr "Crear del tamaÃ±o de la brocha"
-
-#~ msgid "Description"
-#~ msgstr "DescripciÃ³n"
-
-#~ msgid "Elli_ptical, Feathered..."
-#~ msgstr "ElÃ­ptica, difuminadaâ?Š"
-
-#~ msgid "Feathering"
-#~ msgstr "Difuminar"
-
-#~ msgid "Re_ctangular, Feathered..."
-#~ msgstr "_Rectangular, difuminadaâ?Š"
-
-#~ msgid "Spacing"
-#~ msgstr "Espaciado"
-
-#~ msgid "_Elliptical..."
-#~ msgstr "_ElÃ­pticaâ?Š"
-
-#~ msgid "_Rectangular..."
-#~ msgstr "_Rectangularâ?Š"
-
-#~ msgid "Create shadow"
-#~ msgstr "Crear sombra"
-
-#~ msgid "Effect size (pixels * 5)"
-#~ msgstr "TamaÃ±o del efecto (pÃ­xeles * 5)"
-
-#~ msgid "N_eon..."
-#~ msgstr "N_eÃ³nâ?Š"
-
-#~ msgid "Cell size (pixels)"
-#~ msgstr "TamaÃ±o de celda (pÃ­xeles)"
-
-#~ msgid "Density (%)"
-#~ msgstr "Densidad (%)"
-
-#~ msgid "Newsprint Text..."
-#~ msgstr "Texto de periÃ³dicoâ?Š"
-
-#~ msgid "Defocus"
-#~ msgstr "Desenfocar"
-
-#~ msgid "Mottle"
-#~ msgstr "Moteado"
-
-#~ msgid "Sepia"
-#~ msgstr "Sepia"
-
-#~ msgid "_Old Photo..."
-#~ msgstr "_Foto antiguaâ?Š"
-
-#~ msgid "Angle"
-#~ msgstr "Ã?ngulo"
-
 #~ msgid "Cubic"
 #~ msgstr "CÃºbico"
-
-#~ msgid "Interpolation"
-#~ msgstr "InterpolaciÃ³n"
 
 #~ msgid "Linear"
 #~ msgstr "Lineal"
@@ -1331,470 +2479,17 @@ msgstr "SelecciÃ³n de brochas de Tiny-Fu"
 #~ msgid "None"
 #~ msgstr "Ninguno"
 
-#~ msgid "Relative distance of horizon"
-#~ msgstr "Distancia relativa del horizonte"
-
-#~ msgid "Relative length of shadow"
-#~ msgstr "Longitud relativa de la sombra"
-
-#~ msgid "_Perspective..."
-#~ msgstr "_Perspectivaâ?Š"
-
-#~ msgid "Edge amount"
-#~ msgstr "Grosor del borde"
-
-#~ msgid "Pixel amount"
-#~ msgstr "TamaÃ±o del pÃ­xel"
-
-#~ msgid "Pixelize"
-#~ msgstr "Pixelizar"
-
-#~ msgid "_Predator..."
-#~ msgstr "De_predadorâ?Š"
-
-#~ msgid "Lower color"
-#~ msgstr "Color inferior"
-
-#~ msgid "Lower color (active)"
-#~ msgstr "Color inferior (activo)"
-
-#~ msgid "Not pressed"
-#~ msgstr "No pulsado"
-
-#~ msgid "Not pressed (active)"
-#~ msgstr "No pulsado (activo)"
-
-#~ msgid "Padding X"
-#~ msgstr "Relleno en X"
-
-#~ msgid "Padding Y"
-#~ msgstr "Relleno en Y"
-
-#~ msgid "Round ratio"
-#~ msgstr "RazÃ³n de redondeo"
-
-#~ msgid "Text color (active)"
-#~ msgstr "Color del texto (activo)"
-
-#~ msgid "Upper color"
-#~ msgstr "Color superior"
-
-#~ msgid "Upper color (active)"
-#~ msgstr "Color superior (activo)"
-
-#~ msgid "_Round Button..."
-#~ msgstr "BotÃ³n _redondoâ?Š"
-
-#~ msgid "Behavior"
-#~ msgstr "Comportamiento"
-
-#~ msgid "Detail in Middle"
-#~ msgstr "PequeÃ±as islas"
-
-#~ msgid "Render _Map..."
-#~ msgstr "_Renderizar mapaâ?Š"
-
-#~ msgid "Tile"
-#~ msgstr "Mosaico"
-
-#~ msgid "Black"
-#~ msgstr "Negro"
-
-#~ msgid "Edge behavior"
-#~ msgstr "Comportamiento del borde"
-
-#~ msgid "Number of frames"
-#~ msgstr "NÃºmero de fotogramas"
-
-#~ msgid "Rippling strength"
-#~ msgstr "Fuerza de ondulaciÃ³n"
-
-#~ msgid "Smear"
-#~ msgstr "Manchar"
-
-#~ msgid "Wrap"
-#~ msgstr "Desformar"
-
-#~ msgid "_Rippling..."
-#~ msgstr "_Ondasâ?Š"
-
-#~ msgid "Add background"
-#~ msgstr "AÃ±adir fondo"
-
-#~ msgid "Add drop-shadow"
-#~ msgstr "AÃ±adir sombra base"
-
-#~ msgid "Edge radius"
-#~ msgstr "Radio del borde"
-
-#~ msgid "_Round Corners..."
-#~ msgstr "Esquinas _redondeadas"
-
 #~ msgid "<Image>/Select/Modify"
 #~ msgstr "<Image>/Seleccionar/Modificar"
-
-#~ msgid "Concave"
-#~ msgstr "CÃ³ncavo"
-
-#~ msgid "Radius (%)"
-#~ msgstr "Radio (%)"
-
-#~ msgid "Rounded R_ectangle..."
-#~ msgstr "_RectÃ¡ngulo redondeadoâ?Š"
-
-#~ msgid "Brush name"
-#~ msgstr "Nombre de la brocha"
-
-#~ msgid "File name"
-#~ msgstr "Nombre del archivo"
-
-#~ msgid "To _Brush..."
-#~ msgstr "A _brochaâ?Š"
-
-#~ msgid "To _Image"
-#~ msgstr "A _imagen"
 
 #~ msgid "Filename"
 #~ msgstr "Nombre del archivo"
 
-#~ msgid "Pattern name"
-#~ msgstr "Nombre del patrÃ³n"
-
-#~ msgid "To _Pattern..."
-#~ msgstr "A _patrÃ³nâ?Š"
-
-#~ msgid "Font color"
-#~ msgstr "Color de la tipografÃ­a"
-
-#~ msgid "Number"
-#~ msgstr "NÃºmero"
-
-#~ msgid "_Slide..."
-#~ msgstr "_Diapositivaâ?Š"
-
-#~ msgid "SOTA Chrome..."
-#~ msgstr "Cromado SOTAâ?Š"
-
-#~ msgid "Speed Text..."
-#~ msgstr "Velocidad del textoâ?Š"
-
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
 #~ msgstr "<Toolbox>/Exts/Tiny-Fu/Misc"
-
-#~ msgid "Lighting (degrees)"
-#~ msgstr "IluminaciÃ³n (grados)"
-
-#~ msgid "Radius (pixels)"
-#~ msgstr "Radio (pÃ­xeles)"
-
-#~ msgid "Sphere color"
-#~ msgstr "Color de la esfera"
-
-#~ msgid "_Sphere..."
-#~ msgstr "_Esferaâ?Š"
-
-#~ msgid "Frames"
-#~ msgstr "Fotogramas"
-
-#~ msgid "Index to n colors (0 = remain RGB)"
-#~ msgstr "Indexar a n colores (0 = permanece RGB)"
-
-#~ msgid "Turn from left to right"
-#~ msgstr "Girar de izquierda a derecha"
-
-#~ msgid "_Spinning Globe..."
-#~ msgstr "Globo _giratorioâ?Š"
-
-#~ msgid "Airbrush"
-#~ msgstr "AerÃ³grafo"
-
-#~ msgid "Brush"
-#~ msgstr "Brocha"
-
-#~ msgid "Circle"
-#~ msgstr "CÃ­rculo"
-
-#~ msgid "Color method"
-#~ msgstr "MÃ©todo de coloraciÃ³n"
-
-#~ msgid "Epitrochoid"
-#~ msgstr "Epitrocoide"
-
-#~ msgid "Frame"
-#~ msgstr "Cuadro"
-
-#~ msgid "Gradient: Loop Sawtooth"
-#~ msgstr "Degradado: Bucle diente de sierra"
-
-#~ msgid "Gradient: Loop Triangle"
-#~ msgstr "Degradado: Bucle de triÃ¡ngulo"
-
-#~ msgid "Hexagon"
-#~ msgstr "HexÃ¡gono"
-
-#~ msgid "Hole ratio"
-#~ msgstr "Radio del hoyo"
-
-#~ msgid "Inner teeth"
-#~ msgstr "Diente interno"
-
-#~ msgid "Lissajous"
-#~ msgstr "Lissajous"
-
-#~ msgid "Margin (pixels)"
-#~ msgstr "Margen (pÃ­xeles)"
-
-#~ msgid "Outer teeth"
-#~ msgstr "Diente exterior"
-
-#~ msgid "Pencil"
-#~ msgstr "LÃ¡piz"
-
-#~ msgid "Pentagon"
-#~ msgstr "PentÃ¡gono"
-
-#~ msgid "Polygon: 10 sides"
-#~ msgstr "PolÃ­gono: 10 lados"
-
-#~ msgid "Polygon: 7 sides"
-#~ msgstr "PolÃ­gono: 7 lados"
-
-#~ msgid "Polygon: 8 sides"
-#~ msgstr "PolÃ­gono: 8 lados"
-
-#~ msgid "Polygon: 9 sides"
-#~ msgstr "PolÃ­gono: 9 lados"
-
-#~ msgid "Shape"
-#~ msgstr "Forma"
-
-#~ msgid "Solid Color"
-#~ msgstr "Color sÃ³lido"
-
-# Yo lo dejarÃ­a como Spyrograph, es marca comercial. FVD
-#~ msgid "Spyrograph"
-#~ msgstr "EspirÃ³grafo"
-
-#~ msgid "Square"
-#~ msgstr "Cuadrado"
-
-#~ msgid "Start angle"
-#~ msgstr "Ã?ngulo inicial"
-
-#~ msgid "Tool"
-#~ msgstr "Herramienta"
-
-#~ msgid "Triangle"
-#~ msgstr "TriÃ¡ngulo"
-
-#~ msgid "Type"
-#~ msgstr "Tipo"
-
-#~ msgid "_Spyrogimp..."
-#~ msgstr "_Espiro-GIMPâ?Š"
-
-#~ msgid "Burst color"
-#~ msgstr "Color de la explosiÃ³n"
-
-#~ msgid "Effect size (pixels * 30)"
-#~ msgstr "TamaÃ±o del efecto (pÃ­xeles * 30)"
-
-#~ msgid "Starb_urst..."
-#~ msgstr "Starb_urstâ?Š"
-
-#~ msgid "Effect size (pixels * 4)"
-#~ msgstr "TamaÃ±o del efecto (pÃ­xeles * 4)"
-
-#~ msgid "Sta_rscape..."
-#~ msgstr "Sta_rscapeâ?Š"
-
-#~ msgid "Swirl-_Tile..."
-#~ msgstr "_Embaldosado de remolinosâ?Š"
-
-# //O Algo cutre, pero cuanto mayor es, mÃ¡s "arrastra" la imagen, por eso
-# lo de fuerza.
-#~ msgid "Whirl amount"
-#~ msgstr "Fuerza del remolino"
-
-#~ msgid "Number of times to whirl"
-#~ msgstr "NÃºmero de veces a girar"
-
-#~ msgid "Quarter size"
-#~ msgstr "Un cuarto del tamaÃ±o"
-
-#~ msgid "Whirl angle"
-#~ msgstr "Ã?ngulo del remolino"
-
-#~ msgid "_Swirly..."
-#~ msgstr "_Remolinoâ?Š"
-
-#~ msgid "Base color"
-#~ msgstr "Color base"
-
-#~ msgid "Edge only"
-#~ msgstr "SÃ³lo borde"
-
-#~ msgid "Edge width"
-#~ msgstr "Anchura del borde"
-
-# //R QuizÃ¡s "tasa de choques"
-#~ msgid "Hit rate"
-#~ msgstr "Tasa de choques"
-
-#~ msgid "_Particle Trace..."
-#~ msgstr "_Traza de partÃ­culasâ?Š"
-
-#~ msgid "Antialias"
-#~ msgstr "Alisado"
-
-#~ msgid "Fill angle"
-#~ msgstr "Ã?ngulo de relleno"
-
-#~ msgid "Render the specified text along the perimeter of a circle"
-#~ msgstr ""
-#~ "Renderizar el texto especificado a lo largo del perÃ­metro de un cÃ­rculo"
-
-#~ msgid "Text Circle..."
-#~ msgstr "Texto circularâ?Š"
-
-#~ msgid "Ending blend"
-#~ msgstr "Fundido final"
-
-#~ msgid "Hexagons"
-#~ msgstr "HexÃ¡gonos"
-
-#~ msgid "Mosaic tile type"
-#~ msgstr "Tipo de embaldosado del mosaico"
-
-#~ msgid "Octagons"
-#~ msgstr "OctÃ³gonos"
-
-#~ msgid "Squares"
-#~ msgstr "Cuadrados"
-
-#~ msgid "Starting blend"
-#~ msgstr "Color inicial de fundido"
-
-#~ msgid "Text pattern"
-#~ msgstr "PatrÃ³n del texto"
-
-#~ msgid "_Textured..."
-#~ msgstr "_Texturizadoâ?Š"
 
 #~ msgid "<Image>/Filters/Blur"
 #~ msgstr "<Image>/Filtros/Difuminar"
 
-#~ msgid "Blur horizontally"
-#~ msgstr "Desenfocar horizontalmente"
-
-#~ msgid "Blur type"
-#~ msgstr "Tipo de desenfoque"
-
-#~ msgid "Blur vertically"
-#~ msgstr "Desenfocar verticalmente"
-
-#~ msgid "IIR"
-#~ msgstr "IIR"
-
-#~ msgid "RLE"
-#~ msgstr "RLE"
-
-#~ msgid "_Tileable Blur..."
-#~ msgstr "Desenfoque en_losableâ?Š"
-
-#~ msgid "Palette"
-#~ msgstr "Paleta"
-
-#~ msgid "Set Colormap"
-#~ msgstr "Establecer mapa de color"
-
-#~ msgid "Web Title Header..."
-#~ msgstr "Cabecera de tÃ­tulo webâ?Š"
-
-#~ msgid "Foreground color"
-#~ msgstr "Color de primer plano"
-
-#~ msgid "T_ruchet..."
-#~ msgstr "T_ruchetâ?Š"
-
-#~ msgid "Mask opacity"
-#~ msgstr "Opacidad de mÃ¡scara"
-
-#~ msgid "Mask size"
-#~ msgstr "TamaÃ±o de mÃ¡scara"
-
-# Se llama asÃ­ en PhotoShop. FVD
-#~ msgid "_Unsharp Mask..."
-#~ msgstr "MÃ¡scara de _desenfoqueâ?Š"
-
-#~ msgid "Amplitude"
-#~ msgstr "Amplitud"
-
-#~ msgid "Invert direction"
-#~ msgstr "Invertir direcciÃ³n"
-
-#~ msgid "Wavelength"
-#~ msgstr "Longitud de onda"
-
-#~ msgid "_Waves..."
-#~ msgstr "_Ondasâ?Š"
-
-#~ msgid "Ribbon spacing"
-#~ msgstr "Espacio entre cintas"
-
-#~ msgid "Ribbon width"
-#~ msgstr "Ancho de la cinta"
-
-#~ msgid "Shadow darkness"
-#~ msgstr "Oscuridad de la sombra"
-
-#~ msgid "Shadow depth"
-#~ msgstr "Profundidad de la sombra"
-
-#~ msgid "Thread density"
-#~ msgstr "Densidad de los hilos"
-
-#~ msgid "Thread intensity"
-#~ msgstr "Intensidad de los hilos"
-
-#~ msgid "Thread length"
-#~ msgstr "Longitud de los hilos"
-
-#~ msgid "_Weave..."
-#~ msgstr "_Weaveâ?Š"
-
 #~ msgid "<Toolbox>/Help/The GIMP Online"
 #~ msgstr "<Toolbox>/Ayuda/El GIMP en lÃ­nea"
-
-#~ msgid "Plug-in _Registry"
-#~ msgstr "_Registro de complementos"
-
-#~ msgid "_Developer Web Site"
-#~ msgstr "Sitio web del _desarrollador"
-
-#~ msgid "_Main Web Site"
-#~ msgstr "Sitio web _principal"
-
-#~ msgid "Drop shadow X offset"
-#~ msgstr "Desplazamiento X de la sombra base"
-
-#~ msgid "Drop shadow Y offset"
-#~ msgstr "Desplazamiento Y de la sombra base"
-
-#~ msgid "Drop shadow blur radius"
-#~ msgstr "Radio de desenfoque de la sombra base"
-
-#~ msgid "Drop shadow color"
-#~ msgstr "Color de la sombra base"
-
-#~ msgid "Drop shadow opacity"
-#~ msgstr "Opacidad de la sombra base"
-
-#~ msgid "Highlight X offset"
-#~ msgstr "Desplazamiento X del brillo"
-
-#~ msgid "Highlight Y offset"
-#~ msgstr "Desplazamiento Y del brillo"
-
-#~ msgid "Highlight opacity"
-#~ msgstr "Opacidad del brillo"
