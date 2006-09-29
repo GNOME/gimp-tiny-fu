@@ -23,7 +23,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-selection-to-image image drawable)
+(define (script-fu-selection-to-image image drawable)
   (let* (
         (draw-type (car (gimp-drawable-type-with-alpha drawable)))
         (image-type (car (gimp-image-base-type image)))
@@ -73,7 +73,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-selection-to-image"
+(script-fu-register "script-fu-selection-to-image"
     _"To _Image"
     "Convert a selection to an image"
     "Adrian Likins <adrian@gimp.org>"

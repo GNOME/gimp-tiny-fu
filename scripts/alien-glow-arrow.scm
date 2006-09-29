@@ -24,7 +24,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-(define (tiny-fu-alien-glow-right-arrow size
+(define (script-fu-alien-glow-right-arrow size
                                           orientation
                                           glow-color
                                           bg-color
@@ -171,7 +171,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-alien-glow-right-arrow"
+(script-fu-register "script-fu-alien-glow-right-arrow"
     _"_Arrow..."
     "Create an X-file deal"
     "Adrian Likins"
@@ -188,5 +188,5 @@
     SF-TOGGLE     _"Flatten image"    TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-glow-right-arrow"
+(script-fu-menu-register "script-fu-alien-glow-right-arrow"
                        "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

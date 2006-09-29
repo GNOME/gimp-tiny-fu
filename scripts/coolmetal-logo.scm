@@ -112,7 +112,7 @@
 )
 
 
-(define (tiny-fu-cool-metal-logo-alpha img
+(define (script-fu-cool-metal-logo-alpha img
                                        logo-layer
                                        size
                                        bg-color
@@ -127,7 +127,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-cool-metal-logo-alpha"
+(script-fu-register "script-fu-cool-metal-logo-alpha"
     _"Cool _Metal..."
     "Metallic logos with reflections and perspective shadows"
     "Spencer Kimball & Rob Malda"
@@ -142,11 +142,11 @@
     SF-TOGGLE     _"Gradient reverse"     FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-cool-metal-logo-alpha"
+(script-fu-menu-register "script-fu-cool-metal-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-cool-metal-logo text
+(define (script-fu-cool-metal-logo text
                                  size
                                  font
                                  bg-color
@@ -165,7 +165,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-cool-metal-logo"
+(script-fu-register "script-fu-cool-metal-logo"
     _"Cool _Metal..."
     "Metallic logos with reflections and perspective shadows"
     "Spencer Kimball & Rob Malda"
@@ -180,5 +180,5 @@
     SF-TOGGLE     _"Gradient reverse"   FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-cool-metal-logo"
+(script-fu-menu-register "script-fu-cool-metal-logo"
                        "<Toolbox>/Xtns/Logos")

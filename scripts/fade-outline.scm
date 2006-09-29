@@ -37,7 +37,7 @@
 
 ; Define the main function:
 
-(define (tiny-fu-fade-outline inImage
+(define (script-fu-fade-outline inImage
                               inLayer
                               inBorderSize
                               inFadeFrom
@@ -175,8 +175,8 @@
 ; Register the function with the GIMP:
 ; ------------------------------------
 
-(tiny-fu-register
-    "tiny-fu-fade-outline"
+(script-fu-register
+    "script-fu-fade-outline"
     _"_Fade to Layer Mask..."
     "Blend the Layers outline border from one alpha value (opaque) to another (transparent) by generating a Layermask"
     "Wolfgang Hofer <hof@hotbot.com>"
@@ -193,5 +193,5 @@
     SF-TOGGLE _"Clear unselected maskarea" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-fade-outline"
+(script-fu-menu-register "script-fu-fade-outline"
                        "<Image>/Filters/Selection")

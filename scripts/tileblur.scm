@@ -16,7 +16,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-tile-blur inImage inLayer inRadius inVert inHoriz inType)
+(define (script-fu-tile-blur inImage inLayer inRadius inVert inHoriz inType)
 
   (define (cjg-pasteat xoff yoff)
      (let ( (theFloat (car (gimp-edit-paste theLayer 0))) )
@@ -61,8 +61,8 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register
-    "tiny-fu-tile-blur"
+(script-fu-register
+    "script-fu-tile-blur"
     _"_Tileable Blur..."
     "Blurs image edges so that the final result tiles seamlessly"
     "Chris Gutteridge"
@@ -77,5 +77,5 @@
     SF-OPTION     _"Blur type" '(_"IIR" _"RLE")
 )
 
-(tiny-fu-menu-register "tiny-fu-tile-blur"
+(script-fu-menu-register "script-fu-tile-blur"
                        "<Image>/Filters/Blur")

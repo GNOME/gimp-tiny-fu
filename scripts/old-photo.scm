@@ -24,7 +24,7 @@
 
 ; Define the function:
 
-(define (tiny-fu-old-photo inImage inLayer inDefocus inBorderSize inSepia inMottle inCopy)
+(define (script-fu-old-photo inImage inLayer inDefocus inBorderSize inSepia inMottle inCopy)
   (let (
        (theImage)
        (theLayer)
@@ -44,7 +44,7 @@
       ()
       )
   (if (> inBorderSize 0)
-      (tiny-fu-fuzzy-border theImage theLayer '(255 255 255)
+      (script-fu-fuzzy-border theImage theLayer '(255 255 255)
                               inBorderSize TRUE 8 FALSE 100 FALSE TRUE )
       ()
       )
@@ -89,8 +89,8 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register
-    "tiny-fu-old-photo"
+(script-fu-register
+    "script-fu-old-photo"
     _"_Old Photo..."
     "Makes the image look like an old photo. A border size of 0 means no border."
     "Chris Gutteridge"
@@ -109,5 +109,5 @@
     SF-TOGGLE     _"Work on copy" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-old-photo"
+(script-fu-menu-register "script-fu-old-photo"
                        "<Image>/Filters/Decor")

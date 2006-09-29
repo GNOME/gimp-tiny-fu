@@ -19,7 +19,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-camo-pattern inSize inGrain inColor1 inColor2 inColor3 inSmooth inFlatten)
+(define (script-fu-camo-pattern inSize inGrain inColor1 inColor2 inColor3 inSmooth inFlatten)
   (let* (
         (theWidth inSize)
         (theHeight inSize)
@@ -58,7 +58,7 @@
     (gimp-edit-fill thickLayer BACKGROUND-FILL)
     (gimp-selection-none theImage)
     (if (= inSmooth TRUE)
-        (tiny-fu-tile-blur theImage thickLayer theBlur TRUE TRUE FALSE)
+        (script-fu-tile-blur theImage thickLayer theBlur TRUE TRUE FALSE)
     )
 
 
@@ -69,7 +69,7 @@
     (gimp-edit-fill thinLayer BACKGROUND-FILL)
     (gimp-selection-none theImage)
     (if (= inSmooth TRUE)
-        (tiny-fu-tile-blur theImage thinLayer (/ theBlur 2) TRUE TRUE FALSE)
+        (script-fu-tile-blur theImage thinLayer (/ theBlur 2) TRUE TRUE FALSE)
     )
 
 
@@ -85,8 +85,8 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register
-  "tiny-fu-camo-pattern"
+(script-fu-register
+  "script-fu-camo-pattern"
   _"_Camouflage..."
   "Camouflage pattern"
   "Chris Gutteridge: cjg@ecs.soton.ac.uk"
@@ -103,5 +103,5 @@
 )
 
 
-(tiny-fu-menu-register "tiny-fu-camo-pattern"
+(script-fu-menu-register "script-fu-camo-pattern"
                        "<Toolbox>/Xtns/Patterns")

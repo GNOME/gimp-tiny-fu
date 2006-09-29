@@ -51,7 +51,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-drawable-set-name grow-me "Grow-me")
     (gimp-image-add-layer img grow-me 1)
     (gimp-layer-translate grow-me posx posy)
@@ -136,7 +136,7 @@
     (if (= shadow-toggle TRUE)
       (begin
         (gimp-selection-layer-alpha logo-layer)
-        (set! dont-drop-me (car (tiny-fu-drop-shadow img logo-layer s-offset-x s-offset-y 15 '(0 0 0) 80 TRUE)))
+        (set! dont-drop-me (car (script-fu-drop-shadow img logo-layer s-offset-x s-offset-y 15 '(0 0 0) 80 TRUE)))
         (set! width (car (gimp-image-width img)))
         (set! height (car (gimp-image-height img)))
         (gimp-selection-none img)
@@ -148,7 +148,7 @@
 )
 
 
-(define (tiny-fu-glossy-logo-alpha img
+(define (script-fu-glossy-logo-alpha img
                                    logo-layer
                                    blend-gradient-text
                                    blend-gradient-text-reverse
@@ -186,7 +186,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-glossy-logo-alpha"
+(script-fu-register "script-fu-glossy-logo-alpha"
     _"Glo_ssy..."
     "Creates anything you can create with it :)"
     "Hrvoje Horvat (hhorvat@open.hr)"
@@ -213,11 +213,11 @@
     SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-glossy-logo-alpha"
+(script-fu-menu-register "script-fu-glossy-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-glossy-logo text
+(define (script-fu-glossy-logo text
                              size
                              font
                              blend-gradient-text
@@ -257,7 +257,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-glossy-logo"
+(script-fu-register "script-fu-glossy-logo"
     _"Glo_ssy..."
     "Creates anything you can create with it :)"
     "Hrvoje Horvat (hhorvat@open.hr)"
@@ -285,5 +285,5 @@
     SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-glossy-logo"
+(script-fu-menu-register "script-fu-glossy-logo"
                        "<Toolbox>/Xtns/Logos")

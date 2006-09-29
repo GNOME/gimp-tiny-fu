@@ -20,7 +20,7 @@
 
     (gimp-context-push)
     (gimp-layer-add-mask logo-layer logo-layer-mask)
-    (tiny-fu-util-image-resize-from-layer img shadow-layer)
+    (script-fu-util-image-resize-from-layer img shadow-layer)
     (gimp-image-add-layer img sparkle-layer 2)
     (gimp-image-add-layer img matte-layer 3)
     (gimp-image-add-layer img shadow-layer 4)
@@ -80,12 +80,12 @@
 
     (gimp-layer-translate shadow-layer border border)
 
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-context-pop)
   )
 )
 
-(define (tiny-fu-frosty-logo-alpha img
+(define (script-fu-frosty-logo-alpha img
                                    logo-layer
                                    size
                                    bg-color)
@@ -97,7 +97,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-frosty-logo-alpha"
+(script-fu-register "script-fu-frosty-logo-alpha"
     _"_Frosty..."
     "Frozen logos with drop shadows"
     "Spencer Kimball & Ed Mackey"
@@ -110,11 +110,11 @@
     SF-COLOR  _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-frosty-logo-alpha"
+(script-fu-menu-register "script-fu-frosty-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-frosty-logo text
+(define (script-fu-frosty-logo text
                              size
                              font
                              bg-color)
@@ -130,7 +130,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-frosty-logo"
+(script-fu-register "script-fu-frosty-logo"
     _"_Frosty..."
     "Frozen logos with drop shadows"
     "Spencer Kimball & Ed Mackey"
@@ -143,5 +143,5 @@
     SF-COLOR  _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-frosty-logo"
+(script-fu-menu-register "script-fu-frosty-logo"
                        "<Toolbox>/Xtns/Logos")

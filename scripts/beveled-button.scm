@@ -49,7 +49,7 @@
                    FALSE 0 0 TRUE
                    x1 y1 x2 y2))
 
-(define (tiny-fu-button00 text
+(define (script-fu-button00 text
                           size
                           font
                           ul-color
@@ -137,7 +137,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-button00"
+(script-fu-register "script-fu-button00"
                     _"Simple _Beveled Button..."
                     "Simple beveled button"
                     "Federico Mena Quintero"
@@ -154,5 +154,5 @@
                     SF-ADJUSTMENT _"Bevel width"        '(4 1 100 1 10 0 1)
                     SF-TOGGLE     _"Pressed"            FALSE)
 
-(tiny-fu-menu-register "tiny-fu-button00"
+(script-fu-menu-register "script-fu-button00"
                        "<Toolbox>/Xtns/Buttons")

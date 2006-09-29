@@ -6,7 +6,7 @@
 ; of saving animations (i.e. the GIF plugin).
 ;
 
-(define (tiny-fu-ripply-anim img drawable displacement num-frames edge-type)
+(define (script-fu-ripply-anim img drawable displacement num-frames edge-type)
 
   (define (copy-layer-ripple dest-image dest-drawable source-image source-drawable)
     (gimp-selection-all dest-image)
@@ -112,7 +112,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-ripply-anim"
+(script-fu-register "script-fu-ripply-anim"
   _"_Rippling..."
   "Ripple any image by creating animation frames as layers"
   "Adam D. Moss (adam@foxbox.org)"
@@ -126,5 +126,5 @@
   SF-OPTION _"Edge behavior"         '(_"Wrap" _"Smear" _"Black")
 )
 
-(tiny-fu-menu-register "tiny-fu-ripply-anim"
+(script-fu-menu-register "script-fu-ripply-anim"
                        "<Image>/Filters/Animation/Animators")

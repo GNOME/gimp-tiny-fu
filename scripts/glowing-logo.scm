@@ -19,7 +19,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img glow-layer 1)
     (gimp-layer-translate glow-layer posx posy)
@@ -59,7 +59,7 @@
 )
 
 
-(define (tiny-fu-glowing-logo-alpha img
+(define (script-fu-glowing-logo-alpha img
                                     logo-layer
                                     size
                                     bg-color)
@@ -71,7 +71,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-glowing-logo-alpha"
+(script-fu-register "script-fu-glowing-logo-alpha"
     _"Glo_wing Hot..."
     "Glowing hot logos"
     "Spencer Kimball"
@@ -84,10 +84,10 @@
     SF-COLOR      _"Background color" '(7 0 20)
 )
 
-(tiny-fu-menu-register "tiny-fu-glowing-logo-alpha"
+(script-fu-menu-register "script-fu-glowing-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-glowing-logo text
+(define (script-fu-glowing-logo text
                                 size
                                 font
                                 bg-color)
@@ -103,7 +103,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-glowing-logo"
+(script-fu-register "script-fu-glowing-logo"
     _"Glo_wing Hot..."
     "Glowing hot logos"
     "Spencer Kimball"
@@ -116,5 +116,5 @@
     SF-COLOR      _"Background color" '(7 0 20)
 )
 
-(tiny-fu-menu-register "tiny-fu-glowing-logo"
+(script-fu-menu-register "script-fu-glowing-logo"
                        "<Toolbox>/Xtns/Logos")

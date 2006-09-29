@@ -32,7 +32,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img highlight-layer 1)
@@ -64,7 +64,7 @@
   )
 )
 
-(define (tiny-fu-basic2-logo-alpha img
+(define (script-fu-basic2-logo-alpha img
                                    logo-layer
                                    bg-color
                                    text-color)
@@ -74,7 +74,7 @@
   (gimp-displays-flush)
 )
 
-(tiny-fu-register "tiny-fu-basic2-logo-alpha"
+(script-fu-register "script-fu-basic2-logo-alpha"
     _"B_asic II..."
     "Creates a simple logo with a shadow and a highlight"
     "Spencer Kimball"
@@ -87,7 +87,7 @@
     SF-COLOR      _"Text color" '(206 6 50)
 )
 
-(define (tiny-fu-basic2-logo text
+(define (script-fu-basic2-logo text
                              size
                              font
                              bg-color
@@ -104,10 +104,10 @@
   )
 )
 
-(tiny-fu-menu-register "tiny-fu-basic2-logo-alpha"
+(script-fu-menu-register "script-fu-basic2-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(tiny-fu-register "tiny-fu-basic2-logo"
+(script-fu-register "script-fu-basic2-logo"
     _"B_asic II..."
     "Creates a simple logo with a shadow and a highlight"
     "Spencer Kimball"
@@ -121,5 +121,5 @@
     SF-COLOR      _"Text color"         '(206 6 50)
 )
 
-(tiny-fu-menu-register "tiny-fu-basic2-logo"
+(script-fu-menu-register "script-fu-basic2-logo"
                        "<Toolbox>/Xtns/Logos")

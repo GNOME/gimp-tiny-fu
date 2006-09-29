@@ -20,7 +20,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img burst-layer 0)
@@ -61,14 +61,14 @@
 )
 
 
-(define (tiny-fu-starburst-logo-alpha img logo-layer size burst-color bg-color)
+(define (script-fu-starburst-logo-alpha img logo-layer size burst-color bg-color)
   (gimp-image-undo-group-start img)
   (apply-starburst-logo-effect img logo-layer size burst-color bg-color)
   (gimp-image-undo-group-end img)
   (gimp-displays-flush)
 )
 
-(tiny-fu-register "tiny-fu-starburst-logo-alpha"
+(script-fu-register "script-fu-starburst-logo-alpha"
     _"Starb_urst..."
     "Starburst as inspired by GIMP News"
     "Spencer Kimball & Xach Beane"
@@ -82,11 +82,11 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-starburst-logo-alpha"
+(script-fu-menu-register "script-fu-starburst-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-starburst-logo text size fontname burst-color bg-color)
+(define (script-fu-starburst-logo text size fontname burst-color bg-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (off (* size 0.03))
@@ -101,7 +101,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-starburst-logo"
+(script-fu-register "script-fu-starburst-logo"
     _"Starb_urst..."
     "Starburst as inspired by GIMP News"
     "Spencer Kimball & Xach Beane"
@@ -115,5 +115,5 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-starburst-logo"
+(script-fu-menu-register "script-fu-starburst-logo"
                        "<Toolbox>/Xtns/Logos")

@@ -23,7 +23,7 @@
 
 ; Define the function:
 
-(define (tiny-fu-fuzzy-border   inImage
+(define (script-fu-fuzzy-border   inImage
                                 inLayer
                                 inColor
                                 inSize
@@ -152,8 +152,8 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register
-    "tiny-fu-fuzzy-border"
+(script-fu-register
+    "script-fu-fuzzy-border"
     _"_Fuzzy Border..."
     "Fade border to chosen color"
     "Chris Gutteridge"
@@ -172,5 +172,5 @@
     SF-TOGGLE _"Flatten image" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-fuzzy-border"
+(script-fu-menu-register "script-fu-fuzzy-border"
                        "<Image>/Filters/Decor")

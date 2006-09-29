@@ -23,7 +23,7 @@
     (cond ((< mean 127) (+ 1.0 (* 0.5 (/ (- 127 mean) 127.0))))
           ((>= mean 127) (- 1.0 (* 0.5 (/ (- mean 127) 127.0)))))))
 
-(define (tiny-fu-carved-logo text size font bg-img carve-raised padding)
+(define (script-fu-carved-logo text size font bg-img carve-raised padding)
   (let* (
         (img (car (gimp-file-load 1 bg-img bg-img)))
         (offx (carve-scale size 0.33))
@@ -155,7 +155,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-carved-logo"
+(script-fu-register "script-fu-carved-logo"
     _"Carved..."
     "Carve the text from the specified image.  The image will be automatically tiled to accomodate the rendered text string.  The \"Carve Raised Text\" parameter determines whether to carve the text itself, or around the text."
     "Spencer Kimball"
@@ -174,5 +174,5 @@
     SF-ADJUSTMENT _"Padding around text" '(10 0 1000 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-carved-logo"
+(script-fu-menu-register "script-fu-carved-logo"
                        "<Toolbox>/Xtns/Logos")

@@ -19,7 +19,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-(define (tiny-fu-alien-glow-bullet radius
+(define (script-fu-alien-glow-bullet radius
                                    glow-color
                                    bg-color
                                    flatten)
@@ -90,7 +90,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-alien-glow-bullet"
+(script-fu-register "script-fu-alien-glow-bullet"
     _"_Bullet..."
     "Create a Bullet with an Alien Glow theme for web pages"
     "Adrian Likins"
@@ -103,5 +103,5 @@
     SF-TOGGLE     _"Flatten image"    TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-glow-bullet"
+(script-fu-menu-register "script-fu-alien-glow-bullet"
                        "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

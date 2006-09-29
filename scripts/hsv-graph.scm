@@ -10,7 +10,7 @@
 ; ************************************************************************
 ;;; Code:
 
-(define (tiny-fu-hsv-graph img drawable scale opacity bounds?
+(define (script-fu-hsv-graph img drawable scale opacity bounds?
                            left2right? beg-x beg-y end-x end-y)
   (define (floor x) (- x (fmod x 1)))
   (define *pos* #f)
@@ -173,7 +173,7 @@
         (set! x maxv))
     x)
 
-  ;; start of tiny-fu-hsv-graph
+  ;; start of script-fu-hsv-graph
   (if (= TRUE bounds?)
       (if (= TRUE (car (gimp-selection-bounds img)))
           (let ((results (gimp-selection-bounds img)))
@@ -306,7 +306,7 @@
     (gimp-context-pop)
     (gimp-displays-flush)))
 
-(tiny-fu-register "tiny-fu-hsv-graph"
+(script-fu-register "script-fu-hsv-graph"
     _"Draw _HSV Graph..."
     "Draph the graph of H/S/V values on the drawable"
     "Shuji Narazaki <narazaki@InetQ.or.jp>"
@@ -327,5 +327,5 @@
 
 ;;; hsv-graph.scm ends here
 
-(tiny-fu-menu-register "tiny-fu-hsv-graph"
+(script-fu-menu-register "script-fu-hsv-graph"
                        "<Image>/Colors/Info")

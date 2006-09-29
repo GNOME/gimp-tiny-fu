@@ -48,7 +48,7 @@
 ;       bumpmap plugin.     (Simon)
 ;
 
-(define (tiny-fu-add-bevel img
+(define (script-fu-add-bevel img
                            drawable
                            thickness
                            work-on-copy
@@ -181,7 +181,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-add-bevel"
+(script-fu-register "script-fu-add-bevel"
     _"Add B_evel..."
     "Add a bevel to an image"
     "Andrew Donkin <ard@cs.waikato.ac.nz>"
@@ -195,5 +195,5 @@
     SF-TOGGLE     _"Keep bump layer" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-add-bevel"
+(script-fu-menu-register "script-fu-add-bevel"
                        "<Image>/Filters/Decor")

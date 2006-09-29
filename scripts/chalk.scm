@@ -32,7 +32,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-context-set-background bg-color)
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
@@ -56,7 +56,7 @@
 )
 
 
-(define (tiny-fu-chalk-logo-alpha img
+(define (script-fu-chalk-logo-alpha img
                                   logo-layer
                                   bg-color)
   (begin
@@ -67,7 +67,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-chalk-logo-alpha"
+(script-fu-register "script-fu-chalk-logo-alpha"
     _"_Chalk..."
     "Chalk scribbled logos"
     "Manish Singh <msingh@uclink4.berkeley.edu>"
@@ -79,11 +79,11 @@
     SF-COLOR      _"Background color" '(0 0 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-chalk-logo-alpha"
+(script-fu-menu-register "script-fu-chalk-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-chalk-logo text
+(define (script-fu-chalk-logo text
                             size
                             font
                             bg-color
@@ -106,7 +106,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-chalk-logo"
+(script-fu-register "script-fu-chalk-logo"
     _"_Chalk..."
     "Chalk scribbled logos"
     "Manish Singh <msingh@uclink4.berkeley.edu>"
@@ -120,5 +120,5 @@
     SF-COLOR      _"Chalk color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-chalk-logo"
+(script-fu-menu-register "script-fu-chalk-logo"
                        "<Toolbox>/Xtns/Logos")

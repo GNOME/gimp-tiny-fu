@@ -30,7 +30,7 @@
 
 
 
-(define (tiny-fu-land width height seed detail landheight seadepth xscale yscale gradient)
+(define (script-fu-land width height seed detail landheight seadepth xscale yscale gradient)
   (let* (
          (img (car (gimp-image-new width height RGB)))
          (layer-one (car (gimp-layer-new img width height
@@ -67,7 +67,7 @@
   (gimp-image-undo-enable img)
 ))
 
-(tiny-fu-register "tiny-fu-land"
+(script-fu-register "script-fu-land"
                     _"_Land..."
                     "A Topgraphic map pattern"
                     "Adrian Likins <aklikins@eos.ncsu.edu>"
@@ -84,5 +84,5 @@
                     SF-ADJUSTMENT _"Scale Y" '(4 0.1 16 1 5 0.1 0)
                     SF-GRADIENT   _"Gradient" "Land 1")
 
-(tiny-fu-menu-register "tiny-fu-land"
+(script-fu-menu-register "script-fu-land"
                        "<Toolbox>/Xtns/Patterns")

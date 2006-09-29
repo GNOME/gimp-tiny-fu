@@ -46,7 +46,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img bands-layer 1)
     (gimp-selection-none img)
@@ -103,7 +103,7 @@
   )
 )
 
-(define (tiny-fu-alien-neon-logo-alpha img
+(define (script-fu-alien-neon-logo-alpha img
                                        logo-layer
                                        fg-color
                                        bg-color
@@ -118,7 +118,7 @@
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)))
 
-(tiny-fu-register "tiny-fu-alien-neon-logo-alpha"
+(script-fu-register "script-fu-alien-neon-logo-alpha"
     _"Alien _Neon..."
     "Creates a psychedelic effect with outlines of the specified color around the letters"
     "Raphael Quinet (quinet@gamers.org)"
@@ -135,10 +135,10 @@
     SF-TOGGLE     _"Fade away" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-neon-logo-alpha"
+(script-fu-menu-register "script-fu-alien-neon-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-alien-neon-logo text 
+(define (script-fu-alien-neon-logo text 
                                  size 
                                  fontname 
                                  fg-color 
@@ -160,7 +160,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-alien-neon-logo"
+(script-fu-register "script-fu-alien-neon-logo"
     _"Alien _Neon..."
     "Creates a psychedelic effect with outlines of the specified color around the letters"
     "Raphael Quinet (quinet@gamers.org)"
@@ -178,7 +178,7 @@
     SF-TOGGLE     _"Fade away" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-neon-logo"
+(script-fu-menu-register "script-fu-alien-neon-logo"
                        "<Toolbox>/Xtns/Logos")
 
 ; end

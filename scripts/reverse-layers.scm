@@ -1,10 +1,10 @@
-;; reverse-layers.sct: Reverse the order of layers in the current image.
+;; reverse-layers.scm: Reverse the order of layers in the current image.
 ;; Copyright (C) 2006 by Akkana Peck.
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License.
 
-(define (tiny-fu-reverse-layers img drawable)
+(define (script-fu-reverse-layers img drawable)
   (let* (
         (layers (gimp-image-get-layers img))
         (num-layers (car layers))
@@ -28,7 +28,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-reverse-layers"
+(script-fu-register "script-fu-reverse-layers"
                  _"Reverse Layer Order"
                  _"Reverse the order of layers in the image"
                  "Akkana Peck"
@@ -38,5 +38,5 @@
                  SF-IMAGE    "Image"    0
                  SF-DRAWABLE "Drawable" 0)
 
-(tiny-fu-menu-register "tiny-fu-reverse-layers"
+(script-fu-menu-register "script-fu-reverse-layers"
                        "<Image>/Layer/Stack")

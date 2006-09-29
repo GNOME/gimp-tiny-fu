@@ -14,7 +14,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img bg-layer 2)
     (gimp-context-set-foreground text-color)
@@ -40,7 +40,7 @@
   )
 )
 
-(define (tiny-fu-basic1-logo-alpha img
+(define (script-fu-basic1-logo-alpha img
                                    logo-layer
                                    bg-color
                                    text-color)
@@ -52,7 +52,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-basic1-logo-alpha"
+(script-fu-register "script-fu-basic1-logo-alpha"
   _"_Basic I..."
   "Creates a simple logo with a drop shadow"
   "Spencer Kimball"
@@ -65,10 +65,10 @@
   SF-COLOR      _"Text color"       '(6 6 206)
 )
 
-(tiny-fu-menu-register "tiny-fu-basic1-logo-alpha"
+(script-fu-menu-register "script-fu-basic1-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-basic1-logo text
+(define (script-fu-basic1-logo text
                              size
                              font
                              bg-color
@@ -85,7 +85,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-basic1-logo"
+(script-fu-register "script-fu-basic1-logo"
   _"_Basic I..."
   "Creates a simple logo with a drop shadow"
   "Spencer Kimball"
@@ -99,5 +99,5 @@
   SF-COLOR      _"Text color"         '(6 6 206)
 )
 
-(tiny-fu-menu-register "tiny-fu-basic1-logo"
+(script-fu-menu-register "script-fu-basic1-logo"
                        "<Toolbox>/Xtns/Logos")

@@ -29,7 +29,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-circuit image
+(define (script-fu-circuit image
                          drawable
                          mask-size
                          seed
@@ -137,7 +137,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-circuit"
+(script-fu-register "script-fu-circuit"
     _"_Circuit..."
     "Fills the current selection with something that looks vaguely like a circuit board."
     "Adrian Likins <adrian@gimp.org>"
@@ -153,5 +153,5 @@
     SF-TOGGLE     _"Separate layer" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-circuit"
+(script-fu-menu-register "script-fu-circuit"
                        "<Image>/Filters/Render")

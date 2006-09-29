@@ -23,7 +23,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-selection-to-pattern image drawable desc filename)
+(define (script-fu-selection-to-pattern image drawable desc filename)
 
   (let* (
         (selection-width)
@@ -90,7 +90,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-selection-to-pattern"
+(script-fu-register "script-fu-selection-to-pattern"
     _"To _Pattern..."
     "Convert a selection to a pattern"
     "Cameron Gregory <cameron@bloke.com>"

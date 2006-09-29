@@ -37,7 +37,7 @@
 ; ************************************************************************
 
 
-(define (tiny-fu-labels-gimp-org text font font-size text-color
+(define (script-fu-labels-gimp-org text font font-size text-color
                                  shadow-color bg-color rm-bg index
                                  num-colors color-thresh yoff xoff height)
   (let* (
@@ -89,28 +89,28 @@
 )
 
 
-;;;(define (tiny-fu-tube-button-label-gimp-org text rm-bg index)
-;;;  (tiny-fu-labels-gimp-org text "nimbus sans" 14 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 8 0 30))
+;;;(define (script-fu-tube-button-label-gimp-org text rm-bg index)
+;;;  (script-fu-labels-gimp-org text "nimbus sans" 14 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 8 0 30))
 ;;;
-;;;(define (tiny-fu-tube-subbutton-label-gimp-org text rm-bg index)
-;;;  (tiny-fu-labels-gimp-org text "nimbus sans" 12 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 7 0 24))
+;;;(define (script-fu-tube-subbutton-label-gimp-org text rm-bg index)
+;;;  (script-fu-labels-gimp-org text "nimbus sans" 12 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 7 0 24))
 ;;;  
-;;;(define (tiny-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
-;;;  (tiny-fu-labels-gimp-org text "nimbus sans" 10 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 6 0 18))
+;;;(define (script-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
+;;;  (script-fu-labels-gimp-org text "nimbus sans" 10 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 6 0 18))
 ;;;
 
-(define (tiny-fu-tube-button-label-gimp-org text rm-bg index)
-  (tiny-fu-labels-gimp-org text "helvetica" 14 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 8 0 30))
+(define (script-fu-tube-button-label-gimp-org text rm-bg index)
+  (script-fu-labels-gimp-org text "helvetica" 14 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 8 0 30))
 
-(define (tiny-fu-tube-subbutton-label-gimp-org text rm-bg index)
-  (tiny-fu-labels-gimp-org text "helvetica" 12 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 7 10 24))
+(define (script-fu-tube-subbutton-label-gimp-org text rm-bg index)
+  (script-fu-labels-gimp-org text "helvetica" 12 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 7 10 24))
   
-(define (tiny-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
-  (tiny-fu-labels-gimp-org text "helvetica" 10 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 6 20 18)
+(define (script-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
+  (script-fu-labels-gimp-org text "helvetica" 10 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 6 20 18)
 )
 
 
-(tiny-fu-register "tiny-fu-tube-button-label-gimp-org"
+(script-fu-register "script-fu-tube-button-label-gimp-org"
     _"_Tube Button Label..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
@@ -122,10 +122,10 @@
     SF-TOGGLE _"Index image" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-tube-button-label-gimp-org"
+(script-fu-menu-register "script-fu-tube-button-label-gimp-org"
                        "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
-(tiny-fu-register "tiny-fu-tube-subbutton-label-gimp-org"
+(script-fu-register "script-fu-tube-subbutton-label-gimp-org"
     _"T_ube Sub-Button Label..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
@@ -137,10 +137,10 @@
     SF-TOGGLE _"Index image" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-tube-subbutton-label-gimp-org"
+(script-fu-menu-register "script-fu-tube-subbutton-label-gimp-org"
                        "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
-(tiny-fu-register "tiny-fu-tube-subsubbutton-label-gimp-org"
+(script-fu-register "script-fu-tube-subsubbutton-label-gimp-org"
     _"Tub_e Sub-Sub-Button Label..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
@@ -152,10 +152,10 @@
     SF-TOGGLE _"Index image" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-tube-subsubbutton-label-gimp-org"
+(script-fu-menu-register "script-fu-tube-subsubbutton-label-gimp-org"
                        "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
-(tiny-fu-register "tiny-fu-labels-gimp-org"
+(script-fu-register "script-fu-labels-gimp-org"
     _"_General Tube Labels..."
     "Tube Button Label Header for gimp.org"
     "Adrian Likins & Jens Lautenbacher"
@@ -177,5 +177,5 @@
     SF-ADJUSTMENT _"Height"   '(30 2 1000 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-labels-gimp-org"
+(script-fu-menu-register "script-fu-labels-gimp-org"
                        "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")

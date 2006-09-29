@@ -43,7 +43,7 @@
                                                      ADD-BLACK-MASK)))
         )
 
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img blend-layer 1)
     (gimp-image-add-layer img drop-shadow-layer 1)
@@ -96,7 +96,7 @@
   )
 )
 
-(define (tiny-fu-blended-logo-alpha img
+(define (script-fu-blended-logo-alpha img
                                     logo-layer
                                     b-size
                                     bg-color
@@ -118,7 +118,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-blended-logo-alpha"
+(script-fu-register "script-fu-blended-logo-alpha"
     _"Blen_ded..."
     "Creates logos with blended backgrounds, highlights, and shadows"
     "Spencer Kimball"
@@ -139,10 +139,10 @@
     SF-TOGGLE     _"Gradient reverse" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-blended-logo-alpha"
+(script-fu-menu-register "script-fu-blended-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-blended-logo text
+(define (script-fu-blended-logo text
                                 size
                                 font
                                 text-color
@@ -171,7 +171,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-blended-logo"
+(script-fu-register "script-fu-blended-logo"
     _"Blen_ded..."
     "Creates logos with blended backgrounds, highlights, and shadows"
     "Spencer Kimball"
@@ -193,5 +193,5 @@
     SF-TOGGLE     _"Gradient reverse"   FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-blended-logo"
+(script-fu-menu-register "script-fu-blended-logo"
                        "<Toolbox>/Xtns/Logos")

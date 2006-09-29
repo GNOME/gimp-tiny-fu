@@ -342,7 +342,7 @@
 
 ; The main weave function
 
-(define (tiny-fu-weave img
+(define (script-fu-weave img
                        drawable
                        ribbon-width
                        ribbon-spacing
@@ -387,7 +387,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-weave"
+(script-fu-register "script-fu-weave"
     _"_Weave..."
     "Weave effect like Alien Skin"
     "Federico Mena Quintero"
@@ -405,5 +405,5 @@
     SF-ADJUSTMENT _"Thread intensity" '(100 0 100 1 10 1 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-weave"
+(script-fu-menu-register "script-fu-weave"
                        "<Image>/Filters/Artistic")

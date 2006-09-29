@@ -19,7 +19,7 @@
 ; The resulting image has the selected layer size.
 ; Copyright (C) 2002 Chauk-Mean PROUM
 ;
-(define (tiny-fu-util-image-resize-from-layer image layer)
+(define (script-fu-util-image-resize-from-layer image layer)
     (let* (
         (width (car (gimp-drawable-width layer)))
         (height (car (gimp-drawable-height layer)))

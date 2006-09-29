@@ -98,7 +98,7 @@
 )
 
 
-(define (tiny-fu-truchet size thickness backcolor forecolor xtiles ytiles)
+(define (script-fu-truchet size thickness backcolor forecolor xtiles ytiles)
   (let* (
         (width (* size xtiles))
         (height (* size ytiles))
@@ -152,7 +152,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-truchet"
+(script-fu-register "script-fu-truchet"
   _"T_ruchet..."
   "Create a Truchet pattern \n\nWorks best with even sized thicknesses"
   "Adrian Likins <aklikins@eos.ncsu.edu>"
@@ -167,5 +167,5 @@
   SF-ADJUSTMENT _"Number of Y tiles" '(5 1 512 1 10 1 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-truchet"
+(script-fu-menu-register "script-fu-truchet"
                        "<Toolbox>/Xtns/Patterns")

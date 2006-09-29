@@ -37,7 +37,7 @@
 (define (text-descent extents)
   (cadr (cddr extents)))
 
-(define (tiny-fu-beveled-pattern-button
+(define (script-fu-beveled-pattern-button
          text text-size font text-color pattern pressed)
   (let* (
         (text-extents (gimp-text-get-extents-fontname
@@ -114,7 +114,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-beveled-pattern-button"
+(script-fu-register "script-fu-beveled-pattern-button"
     _"B_utton..."
     "Beveled pattern button"
     "Federico Mena Quintero"
@@ -129,5 +129,5 @@
     SF-TOGGLE  _"Pressed"   FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-beveled-pattern-button"
+(script-fu-menu-register "script-fu-beveled-pattern-button"
                        "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

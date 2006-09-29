@@ -23,7 +23,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-alien-glow-button text
+(define (script-fu-alien-glow-button text
                                    font
                                    size
                                    text-color
@@ -144,7 +144,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-alien-glow-button"
+(script-fu-register "script-fu-alien-glow-button"
     _"B_utton..."
     "Button with an eerie glow"
     "Adrian Likins"
@@ -162,5 +162,5 @@
     SF-TOGGLE     _"Flatten image"      TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-glow-button"
+(script-fu-menu-register "script-fu-alien-glow-button"
                        "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

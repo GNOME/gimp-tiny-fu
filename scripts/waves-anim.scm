@@ -29,7 +29,7 @@
 ; as if a stone was thrown into the image. The animation may be saved with 
 ; the gif-plug-in. 
 
-(define (tiny-fu-waves-anim img
+(define (script-fu-waves-anim img
                               drawable
                               amplitude
                               wavelength
@@ -90,7 +90,7 @@
   (gimp-image-undo-enable image)
   (gimp-display-new image)))
 
-(tiny-fu-register "tiny-fu-waves-anim"
+(script-fu-register "script-fu-waves-anim"
   _"_Waves..."
   "Animate an image like a stone's been thrown into it"
   "Sven Neumann <sven@gimp.org>"
@@ -105,5 +105,5 @@
   SF-TOGGLE     _"Invert direction" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-waves-anim"
+(script-fu-menu-register "script-fu-waves-anim"
                        "<Image>/Filters/Animation/Animators")

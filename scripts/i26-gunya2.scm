@@ -12,7 +12,7 @@
 ;;;  This is the first font decoration of Imigre-26 (i26)
 ;;; Code:
 
-(define (tiny-fu-i26-gunya2 text text-color frame-color font font-size frame-size)
+(define (script-fu-i26-gunya2 text text-color frame-color font font-size frame-size)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ font-size 10))
@@ -85,7 +85,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-i26-gunya2"
+(script-fu-register "script-fu-i26-gunya2"
     _"Imigre-_26..."
     "Two-colored text by hand"
     "Shuji Narazaki"
@@ -102,5 +102,5 @@
 
 ;;; i26-gunya2.scm ends here
 
-(tiny-fu-menu-register "tiny-fu-i26-gunya2"
+(script-fu-menu-register "script-fu-i26-gunya2"
                        "<Toolbox>/Xtns/Logos")

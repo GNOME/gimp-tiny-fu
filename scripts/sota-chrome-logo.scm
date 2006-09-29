@@ -2,7 +2,7 @@
 ;   State of the art chrome logos
 ;
 
-(define (tiny-fu-sota-chrome-logo chrome-saturation chrome-lightness
+(define (script-fu-sota-chrome-logo chrome-saturation chrome-lightness
                                   chrome-factor text size fontname
                                   env-map hc cc)
 
@@ -197,7 +197,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-sota-chrome-logo"
+(script-fu-register "script-fu-sota-chrome-logo"
     _"SOTA Chrome..."
     "State of the art chromed logos"
     "Spencer Kimball"
@@ -219,5 +219,5 @@
     SF-COLOR      _"Chrome balance" '(0 0 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-sota-chrome-logo"
+(script-fu-menu-register "script-fu-sota-chrome-logo"
                        "<Toolbox>/Xtns/Logos")

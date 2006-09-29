@@ -1,3 +1,15 @@
+2006-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Changes for increased compatability with Script-Fu scripts.
+
+	* tiny-fu/tiny-fu-scripts.c:
+	* tiny-fu/ts-wrapper.c: Changed references of tiny-fu*-register to
+	script-fu*-register, tiny-fu-path to script-fu-path, and tiny-fu-quit
+	to script-fu-quit.
+
+	* scripts/*.scm: All scripts changed to use script-fu-... instead
+	of tiny-fu-... in function names and in the register call.
+
 2006-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	Changes to use the same filename ending for scripts as Script-Fu.

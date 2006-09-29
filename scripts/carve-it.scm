@@ -40,7 +40,7 @@
 
 
 
-(define (tiny-fu-carve-it mask-img mask-drawable bg-layer carve-white)
+(define (script-fu-carve-it mask-img mask-drawable bg-layer carve-white)
   (let* (
         (width (car (gimp-drawable-width mask-drawable)))
         (height (car (gimp-drawable-height mask-drawable)))
@@ -175,7 +175,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-carve-it"
+(script-fu-register "script-fu-carve-it"
     _"Stencil C_arve..."
     "Use the specified [GRAY] drawable as a stencil to carve from the specified image. The specified image must be either RGB colour or grayscale, not indexed."
     "Spencer Kimball"
@@ -188,5 +188,5 @@
     SF-TOGGLE   _"Carve white areas" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-carve-it"
+(script-fu-menu-register "script-fu-carve-it"
                        "<Image>/Filters/Decor")

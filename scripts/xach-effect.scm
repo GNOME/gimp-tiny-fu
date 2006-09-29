@@ -23,7 +23,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-xach-effect image
+(define (script-fu-xach-effect image
                              drawable
                              hl-offset-x
                              hl-offset-y
@@ -117,7 +117,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-xach-effect"
+(script-fu-register "script-fu-xach-effect"
     _"_Xach-Effect..."
     "Add a subtle translucent 3-d effect to the current selection or alpha channel"
     "Adrian Likins <adrian@gimp.org>"
@@ -138,5 +138,5 @@
     SF-TOGGLE     _"Keep selection" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-xach-effect"
+(script-fu-menu-register "script-fu-xach-effect"
                        "<Image>/Filters/Light and Shadow/Shadow")

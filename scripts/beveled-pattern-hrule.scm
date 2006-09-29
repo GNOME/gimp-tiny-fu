@@ -20,7 +20,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-beveled-pattern-hrule width height pattern)
+(define (script-fu-beveled-pattern-hrule width height pattern)
   (let* (
         (img (car (gimp-image-new width height RGB)))
         (background (car (gimp-layer-new img width height RGB-IMAGE "Hrule" 100 NORMAL-MODE)))
@@ -67,7 +67,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-beveled-pattern-hrule"
+(script-fu-register "script-fu-beveled-pattern-hrule"
     _"_Hrule..."
     "Beveled pattern hrule"
     "Federico Mena Quintero"
@@ -79,5 +79,5 @@
     SF-PATTERN    _"Pattern" "Wood"
 )
 
-(tiny-fu-menu-register "tiny-fu-beveled-pattern-hrule"
+(script-fu-menu-register "script-fu-beveled-pattern-hrule"
                        "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

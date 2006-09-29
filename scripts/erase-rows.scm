@@ -1,4 +1,4 @@
-(define (tiny-fu-erase-rows img drawable orientation which type)
+(define (script-fu-erase-rows img drawable orientation which type)
   (let* (
         (width (car (gimp-drawable-width drawable)))
         (height (car (gimp-drawable-height drawable)))
@@ -31,7 +31,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-erase-rows"
+(script-fu-register "script-fu-erase-rows"
                   _"_Erase every other Row..."
                   "Erase every other row/column with the background color"
                   "Federico Mena Quintero"
@@ -46,5 +46,5 @@
 )
 
 
-(tiny-fu-menu-register "tiny-fu-erase-rows"
+(script-fu-menu-register "script-fu-erase-rows"
                        "<Image>/Filters/Distorts")

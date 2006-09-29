@@ -21,7 +21,7 @@
 
 ; Define the function:
 
-(define (tiny-fu-spinning-globe inImage 
+(define (script-fu-spinning-globe inImage 
                                   inLayer 
                                   inFrames 
                                   inFromLeft 
@@ -92,8 +92,8 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register
-    "tiny-fu-spinning-globe"
+(script-fu-register
+    "script-fu-spinning-globe"
     _"_Spinning Globe..."
     "Maps the image on an animated spinning globe"
     "Chris Gutteridge"
@@ -109,5 +109,5 @@
     SF-TOGGLE     _"Work on copy" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-spinning-globe"
+(script-fu-menu-register "script-fu-spinning-globe"
                        "<Image>/Filters/Animation/Animators")

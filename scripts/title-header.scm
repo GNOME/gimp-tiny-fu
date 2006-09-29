@@ -28,7 +28,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-title-header text
+(define (script-fu-title-header text
                               size
                               fontname
                               gradient-reverse)
@@ -158,7 +158,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-title-header"
+(script-fu-register "script-fu-title-header"
     _"Web Title Header..."
     "Web title header"
     "Federico Mena Quintero"
@@ -171,5 +171,5 @@
     SF-TOGGLE     _"Gradient reverse"   FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-title-header"
+(script-fu-menu-register "script-fu-title-header"
                        "<Toolbox>/Xtns/Logos")

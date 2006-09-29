@@ -54,7 +54,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
     (gimp-context-set-pattern pattern)
@@ -112,7 +112,7 @@
   )
 )
 
-(define (tiny-fu-chip-away-logo-alpha img
+(define (script-fu-chip-away-logo-alpha img
                                       logo-layer
                                       spread-amount
                                       blur-amount
@@ -132,7 +132,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-chip-away-logo-alpha"
+(script-fu-register "script-fu-chip-away-logo-alpha"
     _"Chip Awa_y..."
     "Chip away effect"
     "Adrian Likins <adrian@gimp.org>"
@@ -151,11 +151,11 @@
     SF-PATTERN    _"Pattern" "Burlwood"
 )
 
-(tiny-fu-menu-register "tiny-fu-chip-away-logo-alpha"
+(script-fu-menu-register "script-fu-chip-away-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-chip-away-logo text
+(define (script-fu-chip-away-logo text
                                 font
                                 font-size
                                 spread-amount
@@ -178,7 +178,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-chip-away-logo"
+(script-fu-register "script-fu-chip-away-logo"
     _"Chip Awa_y..."
     "Chip away effect"
     "Adrian Likins <adrian@gimp.org>"
@@ -198,5 +198,5 @@
     SF-PATTERN    _"Pattern" "Burlwood"
 )
 
-(tiny-fu-menu-register "tiny-fu-chip-away-logo"
+(script-fu-menu-register "script-fu-chip-away-logo"
                        "<Toolbox>/Xtns/Logos")

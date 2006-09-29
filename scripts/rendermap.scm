@@ -16,7 +16,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-render-map inSize
+(define (script-fu-render-map inSize
                             inGrain
                             inGrad
                             inWiden)
@@ -72,7 +72,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-render-map"
+(script-fu-register "script-fu-render-map"
   _"Render _Map..."
   "Another pattern which resembles a map"
   "Chris Gutteridge: cjg@ecs.soton.ac.uk"
@@ -86,5 +86,5 @@
   SF-OPTION     _"Behavior"         '(_"Tile" _"Detail in Middle")
 )
 
-(tiny-fu-menu-register "tiny-fu-render-map"
+(script-fu-menu-register "script-fu-render-map"
                        "<Toolbox>/Xtns/Patterns")

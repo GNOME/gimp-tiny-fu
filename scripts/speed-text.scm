@@ -19,7 +19,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-speed-text string font font-size density text-color bg-color)
+(define (script-fu-speed-text string font font-size density text-color bg-color)
   (let* (
         (text-ext (gimp-text-get-extents-fontname string font-size PIXELS font))
         (wid (+ (car text-ext) 20))
@@ -80,7 +80,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-speed-text"
+(script-fu-register "script-fu-speed-text"
   _"Speed Text..."
   "give text a speedy effect"
   "Austin Donnelly"
@@ -95,5 +95,5 @@
   SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-speed-text"
+(script-fu-menu-register "script-fu-speed-text"
                        "<Toolbox>/Xtns/Logos")

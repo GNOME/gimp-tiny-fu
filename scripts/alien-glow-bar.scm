@@ -20,7 +20,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-(define (tiny-fu-alien-glow-horizontal-ruler length
+(define (script-fu-alien-glow-horizontal-ruler length
                                                height
                                                glow-color
                                                bg-color
@@ -78,7 +78,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-alien-glow-horizontal-ruler"
+(script-fu-register "script-fu-alien-glow-horizontal-ruler"
     _"_Hrule..."
     "Create an Hrule with the Alien Glow look"
     "Adrian Likins"
@@ -92,5 +92,5 @@
     SF-TOGGLE     _"Flatten image"    TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-glow-horizontal-ruler"
+(script-fu-menu-register "script-fu-alien-glow-horizontal-ruler"
                        "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

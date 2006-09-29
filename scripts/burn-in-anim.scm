@@ -1,5 +1,5 @@
 ;
-;  burn-in-anim.scm V2.1  -  tiny-fu for the GIMP 1.1 and higher
+;  burn-in-anim.scm V2.1  -  script-fu for the GIMP 1.1 and higher
 ;
 ;  Copyright (C) 9/2000  Roland Berger
 ;  roland@fuchur.leute.server.de
@@ -11,7 +11,7 @@
 ;  Copying Policy:  GNU Public License http://www.gnu.org
 ;
 
-(define (tiny-fu-burn-in-anim org-img
+(define (script-fu-burn-in-anim org-img
                               org-layer
                               glow-color
                               fadeout
@@ -213,7 +213,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-burn-in-anim"
+(script-fu-register "script-fu-burn-in-anim"
     _"B_urn-In..."
     "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
     "Roland Berger roland@fuchur.leute.server.de"
@@ -232,5 +232,5 @@
     SF-VALUE   _"Speed (pixels/frame)" "50"
 )
 
-(tiny-fu-menu-register "tiny-fu-burn-in-anim"
+(script-fu-menu-register "script-fu-burn-in-anim"
                        "<Image>/Filters/Animation/Animators")

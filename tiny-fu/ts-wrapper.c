@@ -505,17 +505,17 @@ init_procedures (void)
   sc.vptr->setimmutable(symbol);
 #endif
 
-  symbol = sc.vptr->mk_symbol (&sc, "tiny-fu-register");
+  symbol = sc.vptr->mk_symbol (&sc, "script-fu-register");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                   sc.vptr->mk_foreign_func (&sc, tiny_fu_register_call));
   sc.vptr->setimmutable(symbol);
 
-  symbol = sc.vptr->mk_symbol (&sc, "tiny-fu-menu-register");
+  symbol = sc.vptr->mk_symbol (&sc, "script-fu-menu-register");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                   sc.vptr->mk_foreign_func (&sc, tiny_fu_menu_register_call));
   sc.vptr->setimmutable(symbol);
 
-  symbol = sc.vptr->mk_symbol (&sc, "tiny-fu-quit");
+  symbol = sc.vptr->mk_symbol (&sc, "script-fu-quit");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                   sc.vptr->mk_foreign_func (&sc, tiny_fu_quit_call));
   sc.vptr->setimmutable(symbol);

@@ -3,7 +3,7 @@
 ;; Alan Horkan 2004.  Copyright.  
 ;; I'll fix it and license it differntly later if anyone cares to ask
 
-(define (tiny-fu-guide-new-percent image drawable direction position)
+(define (script-fu-guide-new-percent image drawable direction position)
   (let* (
         (width (car (gimp-image-width image)))
 	(height (car (gimp-image-height image)))
@@ -22,7 +22,7 @@
   )
 )
     
-(tiny-fu-register "tiny-fu-guide-new-percent"
+(script-fu-register "script-fu-guide-new-percent"
     _"New Guide (by _Percent)..." 
     "Add a single Line Guide with the specified postion. Position specified as a percent of the image size."
     "Alan Horkan"
@@ -36,5 +36,5 @@
     SF-ADJUSTMENT _"Position (in %)" '(50 0 100 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-guide-new-percent"
+(script-fu-menu-register "script-fu-guide-new-percent"
                        "<Image>/Image/Guides")

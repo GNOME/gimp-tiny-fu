@@ -16,7 +16,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-coffee-stain inImage inLayer inNumber inDark)
+(define (script-fu-coffee-stain inImage inLayer inNumber inDark)
   (let* (
         (theImage inImage)
         (theHeight (car (gimp-image-height theImage)))
@@ -49,7 +49,7 @@
                              blobSize blobSize CHANNEL-OP-REPLACE TRUE 0 FALSE)
       )
 
-      (tiny-fu-distress-selection theImage theStain
+      (script-fu-distress-selection theImage theStain
                                     (* (+ (rand 15) 1) (+ (rand 15) 1))
                                     (/ theSize 25) 4 2 TRUE TRUE)
 
@@ -76,7 +76,7 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register "tiny-fu-coffee-stain"
+(script-fu-register "script-fu-coffee-stain"
     _"_Coffee Stain..."
     "Draws realistic looking coffee stains"
     "Chris Gutteridge"
@@ -89,5 +89,5 @@
     SF-TOGGLE     _"Darken only\n(Better, but only for images with a lot of white)" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-coffee-stain"
+(script-fu-menu-register "script-fu-coffee-stain"
                        "<Image>/Filters/Decor")

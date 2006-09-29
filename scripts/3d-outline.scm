@@ -45,7 +45,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img pattern 1)
     (gimp-image-add-layer img bg-layer 2)
     (gimp-context-set-background '(255 255 255))
@@ -92,7 +92,7 @@
   )
 )
 
-(define (tiny-fu-3d-outline-logo-alpha img
+(define (script-fu-3d-outline-logo-alpha img
                                        logo-layer
                                        text-pattern
                                        outline-blur-radius
@@ -112,7 +112,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-3d-outline-logo-alpha"
+(script-fu-register "script-fu-3d-outline-logo-alpha"
   _"3D _Outline..."
   "Creates outlined texts with drop shadow"
   "Hrvoje Horvat (hhorvat@open.hr)"
@@ -130,10 +130,10 @@
   SF-ADJUSTMENT _"Shadow Y offset" '(0 0 200 1 5 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-3d-outline-logo-alpha"
+(script-fu-menu-register "script-fu-3d-outline-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-3d-outline-logo text-pattern
+(define (script-fu-3d-outline-logo text-pattern
                                  text
                                  size
                                  font
@@ -157,7 +157,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-3d-outline-logo"
+(script-fu-register "script-fu-3d-outline-logo"
   _"3D _Outline..."
   "Creates outlined texts with drop shadow"
   "Hrvoje Horvat (hhorvat@open.hr)"
@@ -176,5 +176,5 @@
   SF-ADJUSTMENT _"Shadow Y offset" '(0 0 200 1 5 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-3d-outline-logo"
+(script-fu-menu-register "script-fu-3d-outline-logo"
                        "<Toolbox>/Xtns/Logos")

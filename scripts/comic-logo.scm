@@ -38,7 +38,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img white-layer 1)
     (gimp-layer-translate white-layer posx posy)
@@ -92,7 +92,7 @@
   )
 )
 
-(define (tiny-fu-comic-logo-alpha img
+(define (script-fu-comic-logo-alpha img
                                   logo-layer
                                   gradient
                                   gradient-reverse
@@ -109,7 +109,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-comic-logo-alpha"
+(script-fu-register "script-fu-comic-logo-alpha"
     _"Comic Boo_k..."
     "Comic-book Style Logos"
     "Brian McFee <keebler@wco.com>"
@@ -125,11 +125,11 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-comic-logo-alpha"
+(script-fu-menu-register "script-fu-comic-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-comic-logo text
+(define (script-fu-comic-logo text
                             size
                             font
                             gradient
@@ -149,7 +149,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-comic-logo"
+(script-fu-register "script-fu-comic-logo"
     _"Comic Boo_k..."
     "Comic-book Style Logos"
     "Brian McFee <keebler@wco.com>"
@@ -166,5 +166,5 @@
     SF-COLOR      _"Background color"   '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-comic-logo"
+(script-fu-menu-register "script-fu-comic-logo"
                        "<Toolbox>/Xtns/Logos")

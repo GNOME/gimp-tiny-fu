@@ -154,7 +154,7 @@
 ; ----------------------------------------------------------------------
 
 
-(define (tiny-fu-test-sphere radius
+(define (script-fu-test-sphere radius
                              light
                              shadow
                              bg-color
@@ -260,7 +260,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-test-sphere"
+(script-fu-register "script-fu-test-sphere"
     _"_Sphere"
     "Simple script to test and show the usage of the new Script-Fu API extensions."
     "Spencer Kimball, Sven Neumann"
@@ -294,5 +294,5 @@
     SF-DRAWABLE   "Drawable"           -1
 )
 
-(tiny-fu-menu-register "tiny-fu-test-sphere"
+(script-fu-menu-register "script-fu-test-sphere"
                        "<Toolbox>/Xtns/Languages/Tiny-Fu/Test")

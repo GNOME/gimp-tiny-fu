@@ -35,7 +35,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img blur-layer 1)
 
@@ -76,7 +76,7 @@
   )
 )
 
-(define (tiny-fu-gradient-bevel-logo-alpha img
+(define (script-fu-gradient-bevel-logo-alpha img
                                            logo-layer
                                            b-size
                                            bevel-height
@@ -89,7 +89,7 @@
   (gimp-displays-flush)
 )
 
-(tiny-fu-register "tiny-fu-gradient-bevel-logo-alpha"
+(script-fu-register "script-fu-gradient-bevel-logo-alpha"
     _"Gradient Beve_l..."
     "Makes Shiny Bevelly text"
     "Brian McFee <keebler@wco.com>"
@@ -104,10 +104,10 @@
     SF-COLOR      _"Background color"         '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-gradient-bevel-logo-alpha"
+(script-fu-menu-register "script-fu-gradient-bevel-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-gradient-bevel-logo text
+(define (script-fu-gradient-bevel-logo text
                                      size
                                      font
                                      bevel-height
@@ -127,7 +127,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-gradient-bevel-logo"
+(script-fu-register "script-fu-gradient-bevel-logo"
     _"Gradient Beve_l..."
     "Makes Shiny Bevelly text"
     "Brian McFee <keebler@wco.com>"
@@ -142,5 +142,5 @@
     SF-COLOR      _"Background color"         '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-gradient-bevel-logo"
+(script-fu-menu-register "script-fu-gradient-bevel-logo"
                        "<Toolbox>/Xtns/Logos")

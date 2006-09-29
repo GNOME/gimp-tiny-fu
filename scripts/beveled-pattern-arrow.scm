@@ -20,7 +20,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-beveled-pattern-arrow size orientation pattern)
+(define (script-fu-beveled-pattern-arrow size orientation pattern)
 
   (define (make-point x y)
     (cons x y)
@@ -145,7 +145,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-beveled-pattern-arrow"
+(script-fu-register "script-fu-beveled-pattern-arrow"
     _"_Arrow..."
     "Beveled pattern arrow"
     "Federico Mena Quintero"
@@ -157,5 +157,5 @@
     SF-PATTERN    _"Pattern"     "Wood"
 )
 
-(tiny-fu-menu-register "tiny-fu-beveled-pattern-arrow"
+(script-fu-menu-register "script-fu-beveled-pattern-arrow"
                        "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

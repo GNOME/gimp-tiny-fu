@@ -3,7 +3,7 @@
 ;   This script requires a grayscale image containing a single layer.
 ;   This layer is used as the mask for the SOTA chrome effect
 
-(define (tiny-fu-sota-chrome-it mask-img mask-drawable chrome-saturation
+(define (script-fu-sota-chrome-it mask-img mask-drawable chrome-saturation
                                   chrome-lightness chrome-factor env-map hc cc carve-white)
 
   (define (set-pt a index x y)
@@ -199,7 +199,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-sota-chrome-it"
+(script-fu-register "script-fu-sota-chrome-it"
     _"Stencil C_hrome..."
     "Use the specified [GRAY] drawable as a stencil to run the chrome effect on."
     "Spencer Kimball"
@@ -221,5 +221,5 @@
     SF-TOGGLE     _"Chrome white areas" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-sota-chrome-it"
+(script-fu-menu-register "script-fu-sota-chrome-it"
                        "<Image>/Filters/Decor")

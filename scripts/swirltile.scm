@@ -8,7 +8,7 @@
 ;
 
 
-(define (tiny-fu-swirl-tile depth azimuth elevation blurRadius height width whirl-amount noise-level bg-color)
+(define (script-fu-swirl-tile depth azimuth elevation blurRadius height width whirl-amount noise-level bg-color)
   (let* (
         (img (car (gimp-image-new width height RGB)))
         (layer-one (car (gimp-layer-new img width height
@@ -42,7 +42,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-swirl-tile"
+(script-fu-register "script-fu-swirl-tile"
     _"Swirl-_Tile..."
     "Create an interesting swirled tile"
     "Adrian Likins <aklikins@eos.ncsu.edu>"
@@ -60,5 +60,5 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-swirl-tile"
+(script-fu-menu-register "script-fu-swirl-tile"
                        "<Toolbox>/Xtns/Patterns")

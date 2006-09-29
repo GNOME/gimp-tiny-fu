@@ -21,7 +21,7 @@
 
 ; Define the function:
 
-(define (tiny-fu-distress-selection inImage
+(define (script-fu-distress-selection inImage
                                     inLayer
                                     inThreshold
                                     inSpread
@@ -91,7 +91,7 @@
 
 ; Register the function with the GIMP:
 
-(tiny-fu-register "tiny-fu-distress-selection"
+(script-fu-register "script-fu-distress-selection"
     _"_Disort..."
     "No description"
     "Chris Gutteridge"
@@ -108,5 +108,5 @@
     SF-TOGGLE     _"Smooth vertically"   TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-distress-selection"
+(script-fu-menu-register "script-fu-distress-selection"
                        "<Image>/Select/Modify")

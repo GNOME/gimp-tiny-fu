@@ -1,7 +1,7 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ; 
-; tiny-fu-paste-as-brush
+; script-fu-paste-as-brush
 ; Based on select-to-brush by Copyright (c) 1997 Adrian Likins
 ;
 ; This program is free software; you can redistribute it and/or modify
@@ -19,7 +19,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-paste-as-brush name filename spacing)
+(define (script-fu-paste-as-brush name filename spacing)
 
   (set! brush-image (car (gimp-edit-paste-as-new)))
   (set! brush-draw (car (gimp-image-get-active-drawable brush-image)))
@@ -50,7 +50,7 @@
   (gimp-context-set-brush name)
 )
 
-(tiny-fu-register "tiny-fu-paste-as-brush"
+(script-fu-register "script-fu-paste-as-brush"
                     _"New _Brush..."
                     "Pastes the clipboard contents into a new brush"
                     "Michael Natterer <mitch@gimp.org>"
@@ -62,5 +62,5 @@
                     SF-ADJUSTMENT _"Spacing"     '(25 0 1000 1 1 1 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-paste-as-brush"
+(script-fu-menu-register "script-fu-paste-as-brush"
                          "<Image>/Edit/Paste as")

@@ -20,7 +20,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-beveled-pattern-bullet diameter pattern transparent)
+(define (script-fu-beveled-pattern-bullet diameter pattern transparent)
   (let* (
         (img (car (gimp-image-new diameter diameter RGB)))
         (background (car (gimp-layer-new img diameter diameter RGBA-IMAGE "Bullet" 100 NORMAL-MODE)))
@@ -77,7 +77,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-beveled-pattern-bullet"
+(script-fu-register "script-fu-beveled-pattern-bullet"
                     _"_Bullet..."
                     "Beveled pattern bullet"
                     "Federico Mena Quintero"
@@ -88,5 +88,5 @@
                     SF-PATTERN    _"Pattern"                "Wood"
                     SF-TOGGLE     _"Transparent background" FALSE)
 
-(tiny-fu-menu-register "tiny-fu-beveled-pattern-bullet"
+(script-fu-menu-register "script-fu-beveled-pattern-bullet"
                        "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

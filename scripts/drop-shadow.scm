@@ -35,7 +35,7 @@
 ; idea to add alpha-support to add-shadow.
 
   
-(define (tiny-fu-drop-shadow image
+(define (script-fu-drop-shadow image
                              drawable
                              shadow-transl-x
                              shadow-transl-y
@@ -161,7 +161,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-drop-shadow"
+(script-fu-register "script-fu-drop-shadow"
     _"_Drop-Shadow..."
     "Add a drop-shadow of the current selection or alpha-channel"
     "Sven Neumann <sven@gimp.org>"
@@ -178,5 +178,5 @@
     SF-TOGGLE     _"Allow resizing" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-drop-shadow"
+(script-fu-menu-register "script-fu-drop-shadow"
                        "<Image>/Filters/Light and Shadow/Shadow")

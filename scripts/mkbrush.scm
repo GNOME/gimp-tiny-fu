@@ -22,7 +22,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-make-brush-rectangular description width height spacing )
+(define (script-fu-make-brush-rectangular description width height spacing )
   (let* (
         (img (car (gimp-image-new width height GRAY)))
         (drawable (car (gimp-layer-new img
@@ -70,7 +70,7 @@
 
 ; Register with the PDB
 
-(tiny-fu-register "tiny-fu-make-brush-rectangular"
+(script-fu-register "script-fu-make-brush-rectangular"
     _"New Re_ctangular..."
     "Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
@@ -83,11 +83,11 @@
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-make-brush-rectangular"
+(script-fu-menu-register "script-fu-make-brush-rectangular"
                        "<Brushes>")
 
 
-(define (tiny-fu-make-brush-rectangular-feathered description width height feathering spacing)
+(define (script-fu-make-brush-rectangular-feathered description width height feathering spacing)
   (let* (
         (widthplus (+ width feathering))
         (heightplus (+ height feathering))
@@ -144,7 +144,7 @@
 
 ; Register with the PDB
 
-(tiny-fu-register "tiny-fu-make-brush-rectangular-feathered"
+(script-fu-register "script-fu-make-brush-rectangular-feathered"
     _"New Rec_tangular, Feathered..."
     _"Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
@@ -158,11 +158,11 @@
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-make-brush-rectangular-feathered"
+(script-fu-menu-register "script-fu-make-brush-rectangular-feathered"
                        "<Brushes>")
 
 
-(define (tiny-fu-make-brush-elliptical description width height spacing)
+(define (script-fu-make-brush-elliptical description width height spacing)
   (let* (
         (img (car (gimp-image-new width height GRAY)))
         (drawable (car (gimp-layer-new img width height GRAY-IMAGE "MakeBrush" 100 NORMAL-MODE)))
@@ -209,7 +209,7 @@
 
 ; Register with the PDB
 
-(tiny-fu-register "tiny-fu-make-brush-elliptical"
+(script-fu-register "script-fu-make-brush-elliptical"
     _"New Ell_iptical..."
     "Create size of brush"
     "Seth Burgess <sjburges@ou.edu>"
@@ -222,11 +222,11 @@
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-make-brush-elliptical"
+(script-fu-menu-register "script-fu-make-brush-elliptical"
                        "<Brushes>")
 
 
-(define (tiny-fu-make-brush-elliptical-feathered description width height feathering spacing)
+(define (script-fu-make-brush-elliptical-feathered description width height feathering spacing)
   (let* (
         (widthplus (+ feathering width)) ; add 3 for blurring
         (heightplus (+ feathering height))
@@ -281,7 +281,7 @@
 
 ; Register with the PDB
 
-(tiny-fu-register "tiny-fu-make-brush-elliptical-feathered"
+(script-fu-register "script-fu-make-brush-elliptical-feathered"
     _"New Elli_ptical, Feathered..."
     "Makes a feathered elliptical brush of specified size"
     "Seth Burgess <sjburges@ou.edu>"
@@ -295,5 +295,5 @@
     SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-make-brush-elliptical-feathered"
+(script-fu-menu-register "script-fu-make-brush-elliptical-feathered"
                        "<Brushes>")

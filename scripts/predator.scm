@@ -24,7 +24,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-predator image
+(define (script-fu-predator image
                           drawable
                           edge-amount
                           pixelize
@@ -114,7 +114,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-predator"
+(script-fu-register "script-fu-predator"
     _"_Predator..."
     "Looks like images from the movie Predator"
     "Adrian Likins <adrian@gimp.org>"
@@ -130,5 +130,5 @@
     SF-TOGGLE     _"Separate layer" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-predator"
+(script-fu-menu-register "script-fu-predator"
                        "<Image>/Filters/Artistic")

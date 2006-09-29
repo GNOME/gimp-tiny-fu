@@ -1,6 +1,6 @@
 ;; -*-scheme-*-
 
-(define (tiny-fu-guides-remove image drawable)
+(define (script-fu-guides-remove image drawable)
   (let* ((guide-id 0))
     (gimp-image-undo-group-start image)
 
@@ -15,7 +15,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-guides-remove"
+(script-fu-register "script-fu-guides-remove"
 		    _"_Remove all Guides"
 		    "Removes all horizontal and vertical guides."
 		    "Alan Horkan"
@@ -26,5 +26,5 @@
 		    SF-DRAWABLE "Drawable" 0
 )
 
-(tiny-fu-menu-register "tiny-fu-guides-remove"
+(script-fu-menu-register "script-fu-guides-remove"
                        "<Image>/Image/Guides")

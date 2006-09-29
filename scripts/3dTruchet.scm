@@ -153,7 +153,7 @@
 )
 
 
-(define (tiny-fu-3dtruchet size
+(define (script-fu-3dtruchet size
                            thickness
                            backcolor
                            begincolor
@@ -214,7 +214,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-3dtruchet"
+(script-fu-register "script-fu-3dtruchet"
   _"3_D Truchet..."
   "3D Truchet pattern"
   "Adrian Likins <aklikins@eos.ncsu.edu>"
@@ -231,5 +231,5 @@
   SF-ADJUSTMENT _"Number of Y tiles" '(5 1 1000 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-3dtruchet"
+(script-fu-menu-register "script-fu-3dtruchet"
                        "<Toolbox>/Xtns/Patterns")

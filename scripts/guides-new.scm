@@ -4,7 +4,7 @@
 ;; so long as remove this block of comments from your script
 ;; feel free to use it for whatever you like.
 
-(define (tiny-fu-guide-new image
+(define (script-fu-guide-new image
 			   drawable
 			   direction
 			   position)
@@ -23,7 +23,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-guide-new"
+(script-fu-register "script-fu-guide-new"
     _"New _Guide..."
     "Add a single Line Guide with the specified postion and orientation. Postion is specified in Pixels (px)."
     "Alan Horkan"
@@ -36,5 +36,5 @@
     SF-ADJUSTMENT _"Position"  '(0 0 MAX-IMAGE-SIZE 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-guide-new"
+(script-fu-menu-register "script-fu-guide-new"
                        "<Image>/Image/Guides")

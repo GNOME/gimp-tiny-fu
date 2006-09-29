@@ -1,4 +1,4 @@
-;; text-circle.sct -- a script for The GIMP
+;; text-circle.scm -- a script for The GIMP
 ;; Author: Shuji Narazaki <narazaki@gimp.org>
 ;; Time-stamp: <1998/11/25 13:26:51 narazaki@gimp.org>
 ;; Version 2.5
@@ -13,7 +13,7 @@
 ;; fill angles.
 
 
-(define (tiny-fu-text-circle text radius start-angle fill-angle
+(define (script-fu-text-circle text radius start-angle fill-angle
                    font-size antialias font-name)
 
   (define (wrap-string str)
@@ -25,7 +25,7 @@
 
   (let* (
         (drawable-size (* 2.0 (+ radius (* 2 font-size))))
-        (tiny-fu-text-circle-debug? #f)
+        (script-fu-text-circle-debug? #f)
         (img (car (gimp-image-new drawable-size drawable-size RGB)))
         (BG-layer (car (gimp-layer-new img drawable-size drawable-size
                        RGBA-IMAGE "background" 100 NORMAL-MODE)))
@@ -51,7 +51,7 @@
         (rot-op)
         (radian-step)
         )
- 
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img BG-layer 0)
     (gimp-edit-fill BG-layer BACKGROUND-FILL)
@@ -69,7 +69,7 @@
 
     (set! fill-angle-rad (* (/ fill-angle 360) 2 *pi*))
     (set! radian-step (/ fill-angle-rad char-num))
- 
+
     ;; make width-list
     ;;  In a situation,
     ;; (car (gimp-drawable-width (car (gimp-text ...)))
@@ -132,10 +132,10 @@
               (rotate-radius (- (/ height 2) desc))
               (angle (+ start-angle-rad (- (nth index angle-list) rad-90)))
               )
-  
+
           (gimp-layer-resize new-layer width height 0 0)
           (set! width (car (gimp-drawable-width new-layer)))
-          (if (not tiny-fu-text-circle-debug?)
+          (if (not script-fu-text-circle-debug?)
             (begin
               (if (= ccw 0)
                   (set! rot-op (if (< 0 fill-angle-rad) + -))
@@ -178,7 +178,7 @@
     )
 
     (gimp-drawable-set-visible BG-layer 0)
-    (if (not tiny-fu-text-circle-debug?)
+    (if (not script-fu-text-circle-debug?)
       (begin
         (set! merged-layer
                 (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))
@@ -198,8 +198,8 @@
   )
 )
 
-(tiny-fu-register
-    "tiny-fu-text-circle"
+(script-fu-register
+    "script-fu-text-circle"
     _"Text C_ircle..."
     _"Render the specified text along the perimeter of a circle"
     "Shuji Narazaki <narazaki@gimp.org>"
@@ -215,7 +215,7 @@
     SF-FONT       _"Font"               "Sans"
 )
 
-;; text-circle.sct ends here
+;; text-circle.scm ends here
 
-(tiny-fu-menu-register "tiny-fu-text-circle"
+(script-fu-menu-register "script-fu-text-circle"
                        "<Toolbox>/Xtns/Logos")

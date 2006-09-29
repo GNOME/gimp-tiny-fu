@@ -36,7 +36,7 @@
 ; The corresponding parameters have been replaced by an SF-FONT parameter.
 ; ************************************************************************
 
-(define (tiny-fu-headers-gimp-org text font font-size text-color high-color side-color shadow-color crop rm-bg index num-colors)
+(define (script-fu-headers-gimp-org text font font-size text-color high-color side-color shadow-color crop rm-bg index num-colors)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (text-layer (car (gimp-text-fontname img -1 0 0
@@ -116,25 +116,25 @@
 )
 
 
-(define (tiny-fu-big-header-gimp-org text font font-size text-color
+(define (script-fu-big-header-gimp-org text font font-size text-color
                                       high-color side-color shadow-color
                                       crop rm-bg index num-colors)
-  (tiny-fu-headers-gimp-org (string-append " " text)
+  (script-fu-headers-gimp-org (string-append " " text)
                               font font-size
                               text-color high-color side-color shadow-color
                               crop rm-bg index num-colors))
 
 
-(define (tiny-fu-small-header-gimp-org text font font-size text-color
+(define (script-fu-small-header-gimp-org text font font-size text-color
                                        high-color side-color shadow-color
                                        crop rm-bg index num-colors)
-  (tiny-fu-headers-gimp-org text font
+  (script-fu-headers-gimp-org text font
                               font-size text-color high-color
                               side-color shadow-color
                               crop rm-bg index num-colors))
 
 
-(tiny-fu-register "tiny-fu-big-header-gimp-org"
+(script-fu-register "script-fu-big-header-gimp-org"
     _"_Big Header..."
     "Big Gimp.org Header"
     "Adrian Likins & Jens Lautenbacher"
@@ -154,10 +154,10 @@
     SF-ADJUSTMENT _"Number of colors" '(15 2 255 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-big-header-gimp-org"
+(script-fu-menu-register "script-fu-big-header-gimp-org"
                        "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
-(tiny-fu-register "tiny-fu-small-header-gimp-org"
+(script-fu-register "script-fu-small-header-gimp-org"
     _"_Small Header..."
     "Small Gimp.org Header"
     "Adrian Likins & Jens Lautenbacher"
@@ -178,5 +178,5 @@
     SF-ADJUSTMENT _"Select-by-color threshold" '(1 1 256 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-small-header-gimp-org"
+(script-fu-menu-register "script-fu-small-header-gimp-org"
                        "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")

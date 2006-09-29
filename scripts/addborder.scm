@@ -17,7 +17,7 @@
 ;
 ; Copyright (C) 1997 Andy Thomas alt@picnic.demon.co.uk
 ;
-; Version 0.2 10.6.97 Changed to new tiny-fu interface in 0.99.10
+; Version 0.2 10.6.97 Changed to new script-fu interface in 0.99.10
 
 ; Delta the colour by the given amount. Check for boundary conditions
 ; If < 0 set to zero 
@@ -96,7 +96,7 @@
     n_array)
 )
 
-(define (tiny-fu-addborder aimg adraw xsize ysize colour dvalue)
+(define (script-fu-addborder aimg adraw xsize ysize colour dvalue)
   (let* ((img (car (gimp-drawable-get-image adraw)))
          (owidth (car (gimp-image-width img)))
          (oheight (car (gimp-image-height img)))
@@ -162,7 +162,7 @@
     )
 )
 
-(tiny-fu-register "tiny-fu-addborder"
+(script-fu-register "script-fu-addborder"
     _"Add _Border..."
     "Add a border around an image"
     "Andy Thomas <alt@picnic.demon.co.uk>"
@@ -177,5 +177,5 @@
     SF-ADJUSTMENT _"Delta value on color" '(25 1 255 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-addborder"
+(script-fu-menu-register "script-fu-addborder"
                        "<Image>/Filters/Decor")

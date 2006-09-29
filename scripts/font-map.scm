@@ -1,7 +1,7 @@
 ;; font-select
 ;; Spencer Kimball
 
-(define (tiny-fu-font-map text
+(define (script-fu-font-map text
                           use-name
                           labels
                           font-filter
@@ -148,7 +148,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-font-map"
+(script-fu-register "script-fu-font-map"
   _"Render _Font Map..."
   "Generate a listing of fonts matching a filter"
   "Spencer Kimball"
@@ -164,5 +164,5 @@
   SF-OPTION     _"_Color scheme"          '(_"Black on white" _"Active colors")
 )
 
-(tiny-fu-menu-register "tiny-fu-font-map"
+(script-fu-menu-register "script-fu-font-map"
                        "<Fonts>")

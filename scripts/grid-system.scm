@@ -6,7 +6,7 @@
 ;;; Version 0.6
 
 ;;; Code:
-(define (tiny-fu-grid-system img drw x-divides-orig y-divides-orig)
+(define (script-fu-grid-system img drw x-divides-orig y-divides-orig)
   (define (update-segment! s x0 y0 x1 y1)
     (aset s 0 x0)
     (aset s 1 y0)
@@ -74,7 +74,7 @@
     (gimp-context-pop)
     (gimp-displays-flush)))
 
-(tiny-fu-register "tiny-fu-grid-system"
+(script-fu-register "script-fu-grid-system"
 		    _"_Grid..."
 		    "Draw grid as specified by X-DIVIDES (list of proportions relative to the drawable) and Y-DIVIDES. The color and width of grid is detemined by the current settings of brush."
 		    "Shuji Narazaki <narazaki@InetQ.or.jp>"
@@ -89,5 +89,5 @@
 
 ;;; grid-system.scm ends here
 
-(tiny-fu-menu-register "tiny-fu-grid-system"
+(script-fu-menu-register "script-fu-grid-system"
                        "<Image>/Filters/Render/Pattern")

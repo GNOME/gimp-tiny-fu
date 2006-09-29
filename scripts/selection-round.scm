@@ -33,7 +33,7 @@
 ;; Alan Horkan relinquishes all rights to his changes, 
 ;; full ownership of this script belongs to Sven Neumann.  
 
-(define (tiny-fu-selection-rounded-rectangle image drawable radius concave)
+(define (script-fu-selection-rounded-rectangle image drawable radius concave)
   (gimp-image-undo-group-start image)
 
   (if (= (car (gimp-selection-is-empty image)) TRUE) (gimp-selection-all image))
@@ -147,12 +147,12 @@
 )
 
 
-(define (tiny-fu-selection-round image drawable radius)
-  (tiny-fu-selection-rounded-rectangle image drawable (* radius 100))
+(define (script-fu-selection-round image drawable radius)
+  (script-fu-selection-rounded-rectangle image drawable (* radius 100))
 )
 
 
-(tiny-fu-register "tiny-fu-selection-rounded-rectangle"
+(script-fu-register "script-fu-selection-rounded-rectangle"
     _"Rounded R_ectangle..."  
     "Converts the current selection, to a rectangular selection with rounded edges. The radius is a percentage of half the selection width or height, whichever is smaller. Select 'Concave' if you want the round edges will to be indented. Round Edges works by subtracting and adding circles to the selection.  "
     "Alan Horkan, Sven Neumann" ; authors
@@ -166,9 +166,9 @@
    SF-TOGGLE     _"Concave"    FALSE
 )
 
-(tiny-fu-register "tiny-fu-selection-round"
+(script-fu-register "script-fu-selection-round"
     ""
-    "Rounds the active selection. This procedure exists for backward compatibility only. Please use tiny-fu-selection-rounded-rectangle instead."
+    "Rounds the active selection. This procedure exists for backward compatibility only. Please use script-fu-selection-rounded-rectangle instead."
     "Sven Neumann"              ; authors
     "Sven Neumann"              ; copyright
     "1998/02/06"
@@ -179,5 +179,5 @@
    SF-ADJUSTMENT  "Relative radius" '(1 0 128 .1 1 1 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-selection-rounded-rectangle"
+(script-fu-menu-register "script-fu-selection-rounded-rectangle"
                        "<Image>/Select/Modify")

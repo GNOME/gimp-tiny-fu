@@ -7,7 +7,7 @@
 ;   light:  angle of light source in degrees
 ;   shadow: whather to create a shadow as well
 
-(define (tiny-fu-sphere radius
+(define (script-fu-sphere radius
                           light
                           shadow
                           bg-color
@@ -67,7 +67,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-sphere"
+(script-fu-register "script-fu-sphere"
     _"_Sphere..."
     "Simple sphere with a drop shadow"
     "Spencer Kimball"
@@ -81,5 +81,5 @@
     SF-COLOR      _"Sphere color"       '(255 0 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-sphere"
+(script-fu-menu-register "script-fu-sphere"
                        "<Toolbox>/Xtns/Misc")

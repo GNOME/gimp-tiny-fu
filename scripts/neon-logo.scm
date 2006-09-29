@@ -93,7 +93,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img tube-layer)
+    (script-fu-util-image-resize-from-layer img tube-layer)
     (gimp-image-add-layer img bg-layer 1)
     (if (not (= shadow 0))
         (begin
@@ -175,7 +175,7 @@
   )
 )
 
-(define (tiny-fu-neon-logo-alpha img
+(define (script-fu-neon-logo-alpha img
                                  tube-layer
                                  size
                                  bg-color
@@ -189,7 +189,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-neon-logo-alpha"
+(script-fu-register "script-fu-neon-logo-alpha"
     _"N_eon..."
     "Neon logos"
     "Spencer Kimball"
@@ -204,10 +204,10 @@
     SF-TOGGLE     _"Create shadow" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-neon-logo-alpha"
+(script-fu-menu-register "script-fu-neon-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-neon-logo text
+(define (script-fu-neon-logo text
                            size
                            font
                            bg-color
@@ -225,7 +225,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-neon-logo"
+(script-fu-register "script-fu-neon-logo"
     _"N_eon..."
     "Neon logos"
     "Spencer Kimball"
@@ -240,5 +240,5 @@
     SF-TOGGLE     _"Create shadow" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-neon-logo"
+(script-fu-menu-register "script-fu-neon-logo"
                        "<Toolbox>/Xtns/Logos")

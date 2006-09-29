@@ -3,7 +3,7 @@
 ;;; Author Shuji Narazaki <narazaki@gimp.org>
 ;;; Version 0.7
 
-(define (tiny-fu-line-nova img drw num-of-lines corn-deg offset variation)
+(define (script-fu-line-nova img drw num-of-lines corn-deg offset variation)
   (let* (
         (*points* (cons-array (* 3 2) 'double))
 	    (modulo fmod)			; in R4RS way
@@ -97,8 +97,8 @@
   )
 )
 
-(tiny-fu-register
-    "tiny-fu-line-nova"
+(script-fu-register
+    "script-fu-line-nova"
     _"Line _Nova..."
     "Line Nova. Draw lines with Foreground color from the center of image to the edges. 1st undo cancels bucket-fill. 2nd undo gets orignal selection."
     "Shuji Narazaki <narazaki@gimp.org>"
@@ -114,5 +114,5 @@
 )
 ;;; line-nova.scm ends here
 
-(tiny-fu-menu-register "tiny-fu-line-nova"
+(script-fu-menu-register "script-fu-line-nova"
                        "<Image>/Filters/Render")

@@ -19,7 +19,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-newsprint-text string font font-size cell-size density blur-radius text-color bg-color)
+(define (script-fu-newsprint-text string font font-size cell-size density blur-radius text-color bg-color)
   (let* (
         (text-ext (gimp-text-get-extents-fontname string font-size PIXELS font))
         (width (+ (car text-ext) 20 blur-radius))
@@ -65,7 +65,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-newsprint-text"
+(script-fu-register "script-fu-newsprint-text"
     _"Newsprint Te_xt..."
     "Apply a screen to text"
     "Austin Donnelly"
@@ -82,5 +82,5 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-newsprint-text"
+(script-fu-menu-register "script-fu-newsprint-text"
                        "<Toolbox>/Xtns/Logos")

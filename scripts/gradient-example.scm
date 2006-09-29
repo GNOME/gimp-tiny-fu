@@ -19,7 +19,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-(define (tiny-fu-gradient-example width
+(define (script-fu-gradient-example width
                                     height
                                     gradient-reverse)
   (let* (
@@ -60,7 +60,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-gradient-example"
+(script-fu-register "script-fu-gradient-example"
     _"Render _Image..."
     "Create an example image of a custom gradient"
     "Federico Mena Quintero"
@@ -72,5 +72,5 @@
     SF-TOGGLE     _"Gradient reverse" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-gradient-example"
+(script-fu-menu-register "script-fu-gradient-example"
                        "<Gradients>")

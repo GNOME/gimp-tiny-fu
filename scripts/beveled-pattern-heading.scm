@@ -26,7 +26,7 @@
 ; ************************************************************************
 
 
-(define (tiny-fu-beveled-pattern-heading
+(define (script-fu-beveled-pattern-heading
          text text-size font pattern transparent)
   (let* (
         (img (car (gimp-image-new 10 10 RGB)))
@@ -96,7 +96,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-beveled-pattern-heading"
+(script-fu-register "script-fu-beveled-pattern-heading"
     _"H_eading..."
     "Beveled pattern heading"
     "Federico Mena Quintero"
@@ -110,5 +110,5 @@
     SF-TOGGLE     _"Transparent background" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-beveled-pattern-heading"
+(script-fu-menu-register "script-fu-beveled-pattern-heading"
                        "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

@@ -1,4 +1,4 @@
-;; spyrogimp.sct -*-scheme-*-
+;; spyrogimp.scm -*-scheme-*-
 ;; Draws Spirographs, Epitrochoids and Lissajous Curves.
 ;; More info at http://www.wisdom.weizmann.ac.il/~elad/spyrogimp/
 ;; Version 1.2
@@ -24,7 +24,7 @@
 
 ; This routine is invoked by a dialog.
 ; It is the main routine in this file.
-(define (tiny-fu-spyrogimp img drw
+(define (script-fu-spyrogimp img drw
                            type shape
                            oteeth iteeth
                            margin hole-ratio start-angle
@@ -32,7 +32,7 @@
                            color-method color grad)
 
   ; Internal function to draw the spyro.
-  (define (tiny-fu-spyrogimp-internal img drw
+  (define (script-fu-spyrogimp-internal img drw
                x1 y1 x2 y2   ; Bounding box.
                type          ; = 0 (Spirograph), 1 (Epitrochoid), 2(Lissajous) .
                shape         ; = 0 (Circle), 1 (Frame), >2 (Polygons) .
@@ -292,7 +292,7 @@
     (set! oteeth (trunc (+ oteeth 0.5)))
     (set! iteeth (trunc (+ iteeth 0.5)))
 
-    (tiny-fu-spyrogimp-internal img drw
+    (script-fu-spyrogimp-internal img drw
              x1 y1 x2 y2
              type shape
              oteeth iteeth
@@ -304,7 +304,7 @@
 
 
 
-(tiny-fu-register "tiny-fu-spyrogimp"
+(script-fu-register "script-fu-spyrogimp"
     _"_Spyrogimp..."
     "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://www.wisdom.weizmann.ac.il/~elad/spyrogimp/"
     "Elad Shahar <elad@wisdom.weizmann.ac.il>"
@@ -347,5 +347,5 @@
 
 ;; End of syprogimp.scm
 
-(tiny-fu-menu-register "tiny-fu-spyrogimp"
+(script-fu-menu-register "script-fu-spyrogimp"
                        "<Image>/Filters/Render")

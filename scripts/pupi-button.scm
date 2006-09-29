@@ -25,7 +25,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-(define (tiny-fu-round-button text
+(define (script-fu-round-button text
                                 size
                                 font
                                 ul-color
@@ -181,7 +181,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-round-button"
+(script-fu-register "script-fu-round-button"
     _"_Round Button..."
     "Round button"
     "Arturo Espinosa (stolen from quartic's beveled button)"
@@ -206,5 +206,5 @@
     SF-TOGGLE     _"Pressed"              TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-round-button"
+(script-fu-menu-register "script-fu-round-button"
                        "<Toolbox>/Xtns/Buttons")

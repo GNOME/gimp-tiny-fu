@@ -25,7 +25,7 @@
 ; as a layer below the active layer
 ;
   
-(define (tiny-fu-perspective-shadow image
+(define (script-fu-perspective-shadow image
                                     drawable
                                     alpha
                                     rel-distance
@@ -179,7 +179,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-perspective-shadow"
+(script-fu-register "script-fu-perspective-shadow"
     _"_Perspective..."
     "Add a perspective shadow"
     "Sven Neumann <sven@gimp.org>"
@@ -198,5 +198,5 @@
     SF-TOGGLE     _"Allow resizing" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-perspective-shadow"
+(script-fu-menu-register "script-fu-perspective-shadow"
                        "<Image>/Filters/Light and Shadow/Shadow")

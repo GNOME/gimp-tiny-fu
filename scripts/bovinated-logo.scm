@@ -29,7 +29,7 @@
          (bg-layer (car (gimp-layer-new img width height RGBA-IMAGE "Background" 100 NORMAL-MODE)))
          (blur-layer (car (gimp-layer-new img width height RGBA-IMAGE "Blur" 100 NORMAL-MODE))))
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img blur-layer 1)
 
@@ -65,7 +65,7 @@
   )
 )
 
-(define (tiny-fu-bovinated-logo-alpha img
+(define (script-fu-bovinated-logo-alpha img
                                         logo-layer
                                         spots-x
                                         spots-y
@@ -78,7 +78,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-bovinated-logo-alpha"
+(script-fu-register "script-fu-bovinated-logo-alpha"
     _"Bo_vination..."
     "Makes Cow-spotted logos"
     "Brian McFee <keebler@wco.com>"
@@ -92,7 +92,7 @@
     SF-COLOR      _"Background Color" '(255 255 255)
 )
 
-(define (tiny-fu-bovinated-logo text
+(define (script-fu-bovinated-logo text
                                 size
                                 font
                                 spots-x
@@ -107,10 +107,10 @@
     (gimp-display-new img))
 )
 
-(tiny-fu-menu-register "tiny-fu-bovinated-logo-alpha"
+(script-fu-menu-register "script-fu-bovinated-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(tiny-fu-register "tiny-fu-bovinated-logo"
+(script-fu-register "script-fu-bovinated-logo"
     _"Bo_vination..."
     "Makes Cow-spotted logos"
     "Brian McFee <keebler@wco.com>"
@@ -125,5 +125,5 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-bovinated-logo"
+(script-fu-menu-register "script-fu-bovinated-logo"
                        "<Toolbox>/Xtns/Logos")

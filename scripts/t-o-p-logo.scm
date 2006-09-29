@@ -23,7 +23,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img sparkle-layer 2)
     (gimp-image-add-layer img shadow-layer 3)
     (gimp-image-add-layer img bg-layer 4)
@@ -78,7 +78,7 @@
 )
 
 
-(define (tiny-fu-t-o-p-logo-alpha img
+(define (script-fu-t-o-p-logo-alpha img
                                   logo-layer
                                   b-size
                                   hit-rate
@@ -95,7 +95,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-t-o-p-logo-alpha"
+(script-fu-register "script-fu-t-o-p-logo-alpha"
     _"_Particle Trace..."
     "Trace of Particles Effect"
     "Shuji Narazaki (narazaki@InetQ.or.jp)"
@@ -112,11 +112,11 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-t-o-p-logo-alpha"
+(script-fu-menu-register "script-fu-t-o-p-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-t-o-p-logo text
+(define (script-fu-t-o-p-logo text
                             size
                             fontname
                             hit-rate
@@ -135,7 +135,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-t-o-p-logo"
+(script-fu-register "script-fu-t-o-p-logo"
     _"_Particle Trace..."
     "Trace of Particles Effect"
     "Shuji Narazaki (narazaki@InetQ.or.jp)"
@@ -152,7 +152,7 @@
     SF-COLOR      _"Background color" '(255 255 255)
 )
 
-(tiny-fu-menu-register "tiny-fu-t-o-p-logo"
+(script-fu-menu-register "script-fu-t-o-p-logo"
                        "<Toolbox>/Xtns/Logos")
 
 ; end of t-o-p.scm

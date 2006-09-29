@@ -4,7 +4,7 @@
 ;
 ; Tim Newsome <drz@froody.bloke.com> 4/11/97
 
-(define (tiny-fu-clothify timg tdrawable bx by azimuth elevation depth)
+(define (script-fu-clothify timg tdrawable bx by azimuth elevation depth)
   (let* (
         (width (car (gimp-drawable-width tdrawable)))
         (height (car (gimp-drawable-height tdrawable)))
@@ -45,7 +45,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-clothify"
+(script-fu-register "script-fu-clothify"
   _"_Clothify..."
   "Gives the current layer a cloth-like texture"
   "Tim Newsome <drz@froody.bloke.com>"
@@ -61,5 +61,5 @@
   SF-ADJUSTMENT _"Depth" '(3 1 50 1 10 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-clothify"
+(script-fu-menu-register "script-fu-clothify"
                        "<Image>/Filters/Artistic")

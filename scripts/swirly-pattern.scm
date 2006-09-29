@@ -20,7 +20,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-swirly-pattern qsize angle times)
+(define (script-fu-swirly-pattern qsize angle times)
   (define (whirl-it img drawable angle times)
     (if (> times 0)
         (begin
@@ -76,7 +76,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-swirly-pattern"
+(script-fu-register "script-fu-swirly-pattern"
     _"_Swirly..."
     "Create a swirly pattern"
     "Federico Mena Quintero"
@@ -88,5 +88,5 @@
     SF-ADJUSTMENT _"Number of times to whirl" '(4 0 128 1 1 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-swirly-pattern"
+(script-fu-menu-register "script-fu-swirly-pattern"
                        "<Toolbox>/Xtns/Patterns")

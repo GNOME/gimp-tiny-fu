@@ -1,7 +1,7 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ; 
-; tiny-fu-paste-as-pattern
+; script-fu-paste-as-pattern
 ; Based on select-to-pattern by Cameron Gregory, http://www.flamingtext.com/
 ;
 ; This program is free software; you can redistribute it and/or modify
@@ -19,7 +19,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-paste-as-pattern name filename)
+(define (script-fu-paste-as-pattern name filename)
 
   (set! pattern-image (car (gimp-edit-paste-as-new)))
   (set! pattern-draw (car (gimp-image-get-active-drawable pattern-image)))
@@ -40,7 +40,7 @@
   (gimp-context-set-pattern name)
 )
 
-(tiny-fu-register "tiny-fu-paste-as-pattern"
+(script-fu-register "script-fu-paste-as-pattern"
                     _"New _Pattern..."
                     "Pastes the clipboard contents into a new pattern"
                     "Michael Natterer <mitch@gimp.org>"
@@ -51,5 +51,5 @@
                     SF-STRING _"File name"    "mypattern"
 )
 
-(tiny-fu-menu-register "tiny-fu-paste-as-pattern"
+(script-fu-menu-register "script-fu-paste-as-pattern"
                          "<Image>/Edit/Paste as")

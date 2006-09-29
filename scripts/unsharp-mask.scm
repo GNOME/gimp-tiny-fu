@@ -3,7 +3,7 @@
 ;;; Author: Narazaki Shuji <narazaki@gimp.org>
 ;;; Version 0.8
 
-(define (tiny-fu-unsharp-mask img drw mask-size mask-opacity)
+(define (script-fu-unsharp-mask img drw mask-size mask-opacity)
   (let* (
         (drawable-width (car (gimp-drawable-width drw)))
         (drawable-height (car (gimp-drawable-height drw)))
@@ -70,7 +70,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-unsharp-mask"
+(script-fu-register "script-fu-unsharp-mask"
     _"Unsharp Mask 2..."
     "Make a sharp image of IMAGE's DRAWABLE by applying unsharp mask method"
     "Shuji Narazaki <narazaki@gimp.org>"
@@ -83,5 +83,5 @@
     SF-ADJUSTMENT _"Mask opacity"      '(50 0 100 1 1 0 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-unsharp-mask"
+(script-fu-menu-register "script-fu-unsharp-mask"
                        "<Image>/Filters/Enhance")

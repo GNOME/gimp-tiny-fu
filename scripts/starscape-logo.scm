@@ -73,7 +73,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img glow-layer 1)
     (gimp-image-add-layer img shadow-layer 1)
@@ -121,7 +121,7 @@
   )
 )
 
-(define (tiny-fu-starscape-logo-alpha img logo-layer size glow-color)
+(define (script-fu-starscape-logo-alpha img logo-layer size glow-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-starscape-logo-effect img logo-layer size glow-color)
@@ -130,7 +130,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-starscape-logo-alpha"
+(script-fu-register "script-fu-starscape-logo-alpha"
     _"Sta_rscape..."
     "Starscape using the Nova plug-in"
     "Spencer Kimball"
@@ -143,11 +143,11 @@
     SF-COLOR      _"Glow color"               '(28 65 188)
 )
 
-(tiny-fu-menu-register "tiny-fu-starscape-logo-alpha"
+(script-fu-menu-register "script-fu-starscape-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
 
-(define (tiny-fu-starscape-logo text size fontname glow-color)
+(define (script-fu-starscape-logo text size fontname glow-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ size 4))
@@ -161,7 +161,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-starscape-logo"
+(script-fu-register "script-fu-starscape-logo"
     _"Sta_rscape..."
     "Starscape using the Nova plug-in"
     "Spencer Kimball"
@@ -174,5 +174,5 @@
     SF-COLOR      _"Glow color"         '(28 65 188)
 )
 
-(tiny-fu-menu-register "tiny-fu-starscape-logo"
+(script-fu-menu-register "script-fu-starscape-logo"
                        "<Toolbox>/Xtns/Logos")

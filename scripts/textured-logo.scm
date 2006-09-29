@@ -37,7 +37,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img blend-layer 1)
     (gimp-image-add-layer img drop-shadow-layer 1)
@@ -97,7 +97,7 @@
   )
 )
 
-(define (tiny-fu-textured-logo-alpha img
+(define (script-fu-textured-logo-alpha img
                                      logo-layer
                                      b-size
                                      text-pattern
@@ -113,7 +113,7 @@
     (gimp-displays-flush))
 )
 
-(tiny-fu-register "tiny-fu-textured-logo-alpha"
+(script-fu-register "script-fu-textured-logo-alpha"
     _"_Textured..."
     "Creates textured logos with blended backgrounds, highlights, and shadows"
     "Spencer Kimball"
@@ -132,10 +132,10 @@
     SF-COLOR      _"Ending blend"         '(0 0 106)
 )
 
-(tiny-fu-menu-register "tiny-fu-textured-logo-alpha"
+(script-fu-menu-register "script-fu-textured-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-textured-logo text
+(define (script-fu-textured-logo text
                                size
                                fontname
                                text-pattern
@@ -155,7 +155,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-textured-logo"
+(script-fu-register "script-fu-textured-logo"
     _"_Textured..."
     "Creates textured logos with blended backgrounds, highlights, and shadows"
     "Spencer Kimball"
@@ -174,5 +174,5 @@
     SF-COLOR      _"Ending blend"       '(0 0 106)
 )
 
-(tiny-fu-menu-register "tiny-fu-textured-logo"
+(script-fu-menu-register "script-fu-textured-logo"
                        "<Toolbox>/Xtns/Logos")

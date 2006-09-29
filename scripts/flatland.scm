@@ -33,7 +33,7 @@
 ;
 
 
-(define (tiny-fu-flatland width height seed detail xscale yscale)
+(define (script-fu-flatland width height seed detail xscale yscale)
   (let* (
         (img (car (gimp-image-new width height RGB)))
         (layer-one (car (gimp-layer-new img width height
@@ -57,7 +57,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-flatland"
+(script-fu-register "script-fu-flatland"
     _"_Flatland..."
     "A Land Pattern"
     "Adrian Likins <aklikins@eos.ncsu.edu>"
@@ -72,5 +72,5 @@
     SF-ADJUSTMENT _"Scale Y" '(4 0.1 16 0.1 2 1 1)
 )
 
-(tiny-fu-menu-register "tiny-fu-flatland"
+(script-fu-menu-register "script-fu-flatland"
                        "<Toolbox>/Xtns/Patterns")

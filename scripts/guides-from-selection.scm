@@ -1,6 +1,6 @@
 ;; -*-scheme-*- 
 
-(define (tiny-fu-guides-from-selection image
+(define (script-fu-guides-from-selection image
 					 drawable) 
   (let* ((boundries (gimp-selection-bounds image))
 	 ;; non-empty INT32 TRUE if there is a selection
@@ -23,7 +23,7 @@
 	  (gimp-image-undo-group-end image)       
 	  (gimp-displays-flush)))))
 
-(tiny-fu-register "tiny-fu-guides-from-selection" 
+(script-fu-register "script-fu-guides-from-selection" 
 		    _"New Guides from _Selection"
 		    _"Creates four Guides around the bounding box of the current selection."
 		    "Alan Horkan"
@@ -33,5 +33,5 @@
 		    SF-IMAGE    "Image"    0 
 		    SF-DRAWABLE "Drawable" 0)
 
-(tiny-fu-menu-register "tiny-fu-guides-from-selection"
+(script-fu-menu-register "script-fu-guides-from-selection"
                        "<Image>/Image/Guides")

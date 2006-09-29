@@ -26,7 +26,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-selection-to-brush image
+(define (script-fu-selection-to-brush image
                                     drawable
                                     desc
                                     filename
@@ -126,7 +126,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-selection-to-brush"
+(script-fu-register "script-fu-selection-to-brush"
     _"To _Brush..."
     "Convert a selection to a brush"
     "Adrian Likins <adrian@gimp.org>"

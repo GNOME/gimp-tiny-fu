@@ -38,7 +38,7 @@
 
 
 
-(define (tiny-fu-round-corners img
+(define (script-fu-round-corners img
                                drawable
                                radius
                                shadow-toggle
@@ -87,7 +87,7 @@
   ; optionally add a shadow
   (if (= shadow-toggle TRUE)
       (begin
-        (tiny-fu-drop-shadow image
+        (script-fu-drop-shadow image
                                pic-layer
                                shadow-x
                                shadow-y
@@ -124,7 +124,7 @@
   (gimp-displays-flush))
 )
 
-(tiny-fu-register "tiny-fu-round-corners"
+(script-fu-register "script-fu-round-corners"
     _"_Round Corners..."
     "Round the corners of an image and optionally adds a drop-shadow and a background"
     "Sven Neumann <sven@gimp.org>"
@@ -142,5 +142,5 @@
     SF-TOGGLE     _"Work on copy" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-round-corners"
+(script-fu-menu-register "script-fu-round-corners"
                        "<Image>/Filters/Decor")

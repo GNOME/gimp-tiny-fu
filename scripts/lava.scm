@@ -23,7 +23,7 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (tiny-fu-lava image
+(define (script-fu-lava image
                       drawable
                       seed
                       tile_size
@@ -107,7 +107,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-lava"
+(script-fu-register "script-fu-lava"
     _"_Lava..."
     "Fills the current selection with lava."
     "Adrian Likins <adrian@gimp.org>"
@@ -125,5 +125,5 @@
     SF-TOGGLE     _"Use current gradient" FALSE
 )
 
-(tiny-fu-menu-register "tiny-fu-lava"
+(script-fu-menu-register "script-fu-lava"
                        "<Image>/Filters/Render")

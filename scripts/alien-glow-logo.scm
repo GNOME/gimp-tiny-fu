@@ -21,7 +21,7 @@
 
     (gimp-context-push)
     (gimp-selection-none img)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img glow-layer 1)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
@@ -46,7 +46,7 @@
   )
 )
 
-(define (tiny-fu-alien-glow-logo-alpha img
+(define (script-fu-alien-glow-logo-alpha img
                                        logo-layer
                                        size
                                        glow-color)
@@ -56,7 +56,7 @@
   (gimp-displays-flush)
 )
 
-(tiny-fu-register "tiny-fu-alien-glow-logo-alpha"
+(script-fu-register "script-fu-alien-glow-logo-alpha"
     _"Alien _Glow..."
     "Create an X-Files-esque logo with the specified glow color"
     "Spencer Kimball"
@@ -69,10 +69,10 @@
     SF-COLOR      _"Glow color"             '(63 252 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-glow-logo-alpha"
+(script-fu-menu-register "script-fu-alien-glow-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-alien-glow-logo text
+(define (script-fu-alien-glow-logo text
                                  size
                                  font
                                  glow-color)
@@ -93,7 +93,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-alien-glow-logo"
+(script-fu-register "script-fu-alien-glow-logo"
     _"Alien _Glow..."
     "Create an X-Files-esque logo with the specified glow color"
     "Spencer Kimball"
@@ -106,5 +106,5 @@
     SF-COLOR      _"Glow color"         '(63 252 0)
 )
 
-(tiny-fu-menu-register "tiny-fu-alien-glow-logo"
+(script-fu-menu-register "script-fu-alien-glow-logo"
                        "<Toolbox>/Xtns/Logos")

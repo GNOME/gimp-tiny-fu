@@ -21,7 +21,7 @@
         )
 
     (gimp-context-push)
-    (tiny-fu-util-image-resize-from-layer img logo-layer)
+    (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img background 1)
     (gimp-image-add-layer img shadow 1)
     (gimp-image-add-layer img layer3 1)
@@ -66,7 +66,7 @@
   )
 )
 
-(define (tiny-fu-chrome-logo-alpha img
+(define (script-fu-chrome-logo-alpha img
                                    logo-layer
                                    offsets
                                    bg-color)
@@ -78,7 +78,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-chrome-logo-alpha"
+(script-fu-register "script-fu-chrome-logo-alpha"
     _"C_hrome..."
     "Somewhat simplistic, but cool chromed logos"
     "Spencer Kimball"
@@ -91,10 +91,10 @@
     SF-COLOR      _"Background Color" '(191 191 191)
 )
 
-(tiny-fu-menu-register "tiny-fu-chrome-logo-alpha"
+(script-fu-menu-register "script-fu-chrome-logo-alpha"
                        "<Image>/Filters/Alpha to Logo")
 
-(define (tiny-fu-chrome-logo text
+(define (script-fu-chrome-logo text
                              size
                              font
                              bg-color)
@@ -110,7 +110,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-chrome-logo"
+(script-fu-register "script-fu-chrome-logo"
     _"C_hrome..."
     "Somewhat simplistic, but cool chromed logos"
     "Spencer Kimball"
@@ -123,5 +123,5 @@
     SF-COLOR      _"Background color" '(191 191 191)
 )
 
-(tiny-fu-menu-register "tiny-fu-chrome-logo"
+(script-fu-menu-register "script-fu-chrome-logo"
                        "<Toolbox>/Xtns/Logos")

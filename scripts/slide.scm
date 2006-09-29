@@ -44,7 +44,7 @@
 ; layer.
 
 
-(define (tiny-fu-slide img
+(define (script-fu-slide img
                        drawable
                        text
                        number
@@ -231,7 +231,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-slide"
+(script-fu-register "script-fu-slide"
   _"_Slide..."
   "Gives the image the look of a slide"
   "Sven Neumann <sven@gimp.org>"
@@ -247,5 +247,5 @@
   SF-TOGGLE   _"Work on copy"  TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-slide"
+(script-fu-menu-register "script-fu-slide"
                        "<Image>/Filters/Decor")

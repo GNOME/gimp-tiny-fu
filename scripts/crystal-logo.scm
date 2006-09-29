@@ -1,7 +1,7 @@
 ;  CRYSTAL
 ;  Create a text effect that simulates crystal
 
-(define (tiny-fu-crystal-logo chrome-factor text size font bg-img env-map)
+(define (script-fu-crystal-logo chrome-factor text size font bg-img env-map)
 
   (define (set-pt a index x y)
     (begin
@@ -202,7 +202,7 @@
 )
 
 
-(tiny-fu-register "tiny-fu-crystal-logo"
+(script-fu-register "script-fu-crystal-logo"
     _"Crystal..."
     "Crystal/Gel effect which displaces the image underneath"
     "Spencer Kimball"
@@ -225,5 +225,5 @@
                        "beavis.jpg")
 )
 
-(tiny-fu-menu-register "tiny-fu-crystal-logo"
+(script-fu-menu-register "script-fu-crystal-logo"
                        "<Toolbox>/Xtns/Logos")

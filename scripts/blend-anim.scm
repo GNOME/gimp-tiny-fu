@@ -1,22 +1,22 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.  
-; 
+; (at your option) any later version.
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ;
 ;
-; blend-anim.sct   version 1.03   1999/12/21
+; blend-anim.scm   version 1.03   1999/12/21
 ;
 ; CHANGE-LOG:
 ; 1.00 - initial release
@@ -26,7 +26,7 @@
 ; 1.03 - only call blur plugin when blut-radius >= 1.0
 ;
 ; Copyright (C) 1997-1999 Sven Neumann <sven@gimp.org>
-;  
+;
 ;
 ; Blends two or more layers over a backgound, so that an animation can
 ; be saved. A minimum of three layers is required.
@@ -35,9 +35,9 @@
   (while (> times 0)
      (gimp-image-raise-layer image layer)
      (set! times (- times 1))))
-       
-  
-(define (tiny-fu-blend-anim img
+
+
+(define (script-fu-blend-anim img
                             drawable
                             frames
                             max-blur
@@ -58,13 +58,13 @@
         (offset-x 0)
         (offset-y 0)
         )
-        
+
     (if (> num-layers 2)
         (begin
 		  (gimp-image-undo-disable image)
 
 		  (if (= looped TRUE)
-			  ; add a copy of the lowest blend layer on top 
+			  ; add a copy of the lowest blend layer on top
 			  (let* ((copy (car (gimp-layer-copy
 						 (aref layer-array (- num-layers 2)) TRUE))))
 				(gimp-image-add-layer image copy 0)
@@ -98,9 +98,9 @@
 					  min-offset-x))
 			(set! offset-y (- (cadr (gimp-drawable-offsets bg-layer))
 					  min-offset-y)))
-		  
-		  ; create intermediate frames by merging copies of adjascent layers 
-		  ; with the background layer 
+
+		  ; create intermediate frames by merging copies of adjascent layers
+		  ; with the background layer
 		  (let* ((layer-count slots))
 			(while (> layer-count 0)
 			   (let* ((frame-count frames)
@@ -163,9 +163,9 @@
 					(gimp-drawable-set-visible merged-layer FALSE))
 				  (set! frame-count (- frame-count 1))))
 				 (set! layer-count (- layer-count 1)))))
-		  
-		  ; merge all original blend layers but the lowest one 
-			  ; with copies of the background layer 
+
+		  ; merge all original blend layers but the lowest one
+			  ; with copies of the background layer
 		  (let* ((layer-count 0))
 			(while (< layer-count slots)
 				   (let* ((orig-layer (aref layer-array layer-count))
@@ -187,13 +187,13 @@
 						  image CLIP-TO-IMAGE))))
 			   (gimp-drawable-set-visible merged-layer FALSE))
 			   (set! layer-count (+ layer-count 1)))))
-		  
-		  ; merge the lowest blend layer with the background layer  
+
+		  ; merge the lowest blend layer with the background layer
 		  (let* ((orig-layer (aref layer-array (- num-layers 2))))
 			(gimp-drawable-set-visible bg-layer TRUE)
 			(gimp-drawable-set-visible orig-layer TRUE)
 			(gimp-image-merge-visible-layers image CLIP-TO-IMAGE))
-		  
+
 		  ; make all layers visible again
 		  (let* ((result-layers (gimp-image-get-layers image))
 				 (num-result-layers (car result-layers))
@@ -207,11 +207,11 @@
 				 (gimp-drawable-set-visible layer TRUE)
 				 (gimp-drawable-set-name layer name)
 				 (set! layer-count (- layer-count 1))))
-		  
+
 			(if (= looped TRUE)
 				; remove the topmost layer
 				(gimp-image-remove-layer image (aref result-layer-array 0))))
-				
+
 		  (gimp-image-undo-enable image)
 		  (gimp-display-new image)
 		  (gimp-displays-flush)
@@ -222,7 +222,7 @@
   )
 )
 
-(tiny-fu-register "tiny-fu-blend-anim"
+(script-fu-register "script-fu-blend-anim"
     _"_Blend..."
     "Blend two or more layers over a background, so that an animation can be saved"
     "Sven Neumann <sven@gimp.org>"
@@ -236,5 +236,5 @@
     SF-TOGGLE     _"Looped" TRUE
 )
 
-(tiny-fu-menu-register "tiny-fu-blend-anim"
+(script-fu-menu-register "script-fu-blend-anim"
                        "<Image>/Filters/Animation/Animators")

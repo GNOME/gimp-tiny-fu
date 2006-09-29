@@ -123,7 +123,7 @@ tiny_fu_load_all_scripts (void)
 
   if (! path)
     {
-      g_warning ("Can't convert tiny-fu-path to filesystem encoding: %s",
+      g_warning ("Can't convert script-fu-path to filesystem encoding: %s",
                  error->message);
       g_error_free (error);
       return;
@@ -177,7 +177,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
   /*  Check the length of a  */
   if (sc->vptr->list_length (sc, a) < 7)
   {
-    g_message ("Too few arguments to tiny-fu-register");
+    g_message ("Too few arguments to script-fu-register");
     return sc->NIL;
   }
 
@@ -252,22 +252,22 @@ tiny_fu_add_script (scheme *sc, pointer a)
           if (a != sc->NIL)
             {
               if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-                return my_err (sc, "tiny-fu-register: argument types must be integer values");
+                return my_err (sc, "script-fu-register: argument types must be integer values");
               script->arg_types[i] = sc->vptr->ivalue (sc->vptr->pair_car (a));
               a = sc->vptr->pair_cdr (a);
             }
           else
-            return my_err (sc, "tiny-fu-register: missing type specifier");
+            return my_err (sc, "script-fu-register: missing type specifier");
 
           if (a != sc->NIL)
             {
               if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                return my_err (sc, "tiny-fu-register: argument labels must be strings");
+                return my_err (sc, "script-fu-register: argument labels must be strings");
               script->arg_labels[i] = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
               a = sc->vptr->pair_cdr (a);
             }
           else
-            return my_err (sc, "tiny-fu-register: missing arguments label");
+            return my_err (sc, "script-fu-register: missing arguments label");
 
           if (a != sc->NIL)
             {
@@ -278,7 +278,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
                 case SF_LAYER:
                 case SF_CHANNEL:
                   if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: drawable defaults must be integer values");
+                    return my_err (sc, "script-fu-register: drawable defaults must be integer values");
                   script->arg_defaults[i].sfa_image =
                       sc->vptr->ivalue (sc->vptr->pair_car (a));
                   script->arg_values[i].sfa_image =
@@ -319,7 +319,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
                       if (! gimp_rgb_parse_css (&script->arg_defaults[i].sfa_color,
                                                 sc->vptr->string_value (sc->vptr->pair_car (a)),
                                                 -1))
-                        return my_err (sc, "tiny-fu-register: invalid default color name");
+                        return my_err (sc, "script-fu-register: invalid default color name");
                       gimp_rgb_set_alpha (&script->arg_defaults[i].sfa_color,
                                           1.0);
                     }
@@ -337,7 +337,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
                     }
                   else
                     {
-                      return my_err (sc, "tiny-fu-register: color defaults must be a list of 3 integers or a color name");
+                      return my_err (sc, "script-fu-register: color defaults must be a list of 3 integers or a color name");
                     }
 
                   script->arg_values[i].sfa_color = script->arg_defaults[i].sfa_color;
@@ -349,7 +349,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_TOGGLE:
                   if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: toggle default must be an integer value");
+                    return my_err (sc, "script-fu-register: toggle default must be an integer value");
 
                   script->arg_defaults[i].sfa_toggle =
                     (sc->vptr->ivalue (sc->vptr->pair_car (a))) ? TRUE : FALSE;
@@ -363,7 +363,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_VALUE:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: value defaults must be string values");
+                    return my_err (sc, "script-fu-register: value defaults must be string values");
 
                   script->arg_defaults[i].sfa_value =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -378,7 +378,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
                 case SF_STRING:
                 case SF_TEXT:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: string defaults must be string values");
+                    return my_err (sc, "script-fu-register: string defaults must be string values");
 
                   script->arg_defaults[i].sfa_value =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -392,7 +392,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_ADJUSTMENT:
                   if (!sc->vptr->is_list (sc, a))
-                    return my_err (sc, "tiny-fu-register: adjustment defaults must be a list");
+                    return my_err (sc, "script-fu-register: adjustment defaults must be a list");
 
                   adj_list = sc->vptr->pair_car (a);
                   script->arg_defaults[i].sfa_adjustment.value =
@@ -427,12 +427,12 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_FILENAME:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: filename defaults must be string values");
+                    return my_err (sc, "script-fu-register: filename defaults must be string values");
                   /* fallthrough */
 
                 case SF_DIRNAME:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: dirname defaults must be string values");
+                    return my_err (sc, "script-fu-register: dirname defaults must be string values");
 
                   script->arg_defaults[i].sfa_file.filename =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -461,7 +461,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_FONT:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: font defaults must be string values");
+                    return my_err (sc, "script-fu-register: font defaults must be string values");
 
                   script->arg_defaults[i].sfa_font =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -475,7 +475,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_PALETTE:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: palette defaults must be string values");
+                    return my_err (sc, "script-fu-register: palette defaults must be string values");
 
                   script->arg_defaults[i].sfa_palette =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -489,7 +489,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_PATTERN:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: pattern defaults must be string values");
+                    return my_err (sc, "script-fu-register: pattern defaults must be string values");
 
                   script->arg_defaults[i].sfa_pattern =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -503,7 +503,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_BRUSH:
                   if (!sc->vptr->is_list (sc, a))
-                    return my_err (sc, "tiny-fu-register: brush defaults must be a list");
+                    return my_err (sc, "script-fu-register: brush defaults must be a list");
 
                   brush_list = sc->vptr->pair_car (a);
                   script->arg_defaults[i].sfa_brush.name =
@@ -536,7 +536,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_GRADIENT:
                   if (!sc->vptr->is_string (sc->vptr->pair_car (a)))
-                    return my_err (sc, "tiny-fu-register: gradient defaults must be string values");
+                    return my_err (sc, "script-fu-register: gradient defaults must be string values");
 
                   script->arg_defaults[i].sfa_gradient =
                     g_strdup (sc->vptr->string_value (sc->vptr->pair_car (a)));
@@ -550,7 +550,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_OPTION:
                   if (!sc->vptr->is_list (sc, a))
-                    return my_err (sc, "tiny-fu-register: option defaults must be a list");
+                    return my_err (sc, "script-fu-register: option defaults must be a list");
 
                   for (option_list = sc->vptr->pair_car (a);
                        option_list != sc->NIL;
@@ -572,11 +572,11 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                 case SF_ENUM:
                   if (!sc->vptr->is_list (sc, a))
-                    return my_err (sc, "tiny-fu-register: enum defaults must be a list");
+                    return my_err (sc, "script-fu-register: enum defaults must be a list");
 
                   option_list = sc->vptr->pair_car (a);
                   if (!sc->vptr->is_string (sc->vptr->pair_car (option_list)))
-                    return my_err (sc, "tiny-fu-register: first element in enum defaults must be a type-name");
+                    return my_err (sc, "script-fu-register: first element in enum defaults must be a type-name");
 
                   val =
                     sc->vptr->string_value (sc->vptr->pair_car (option_list));
@@ -589,14 +589,14 @@ tiny_fu_add_script (scheme *sc, pointer a)
                   if (! G_TYPE_IS_ENUM (enum_type))
                     {
                       g_free (val);
-                      return my_err (sc, "tiny-fu-register: first element in enum defaults must be the name of a registered type");
+                      return my_err (sc, "script-fu-register: first element in enum defaults must be the name of a registered type");
                     }
 
                   script->arg_defaults[i].sfa_enum.type_name = val;
 
                   option_list = sc->vptr->pair_cdr (option_list);
                   if (!sc->vptr->is_string (sc->vptr->pair_car (option_list)))
-                    return my_err (sc, "tiny-fu-register: second element in enum defaults must be a string");
+                    return my_err (sc, "script-fu-register: second element in enum defaults must be a string");
 
                   enum_value =
                     g_enum_get_value_by_nick (g_type_class_peek (enum_type),
@@ -617,7 +617,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
               a = sc->vptr->pair_cdr (a);
             }
           else
-            return my_err (sc, "tiny-fu-register: missing default argument");
+            return my_err (sc, "script-fu-register: missing default argument");
         }
     }
 
