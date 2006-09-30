@@ -66,7 +66,7 @@
 )
 
 (script-fu-menu-register "script-fu-basic1-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-basic1-logo text
                              size
@@ -100,4 +100,4 @@
 )
 
 (script-fu-menu-register "script-fu-basic1-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

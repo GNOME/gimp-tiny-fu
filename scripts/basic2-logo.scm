@@ -105,7 +105,7 @@
 )
 
 (script-fu-menu-register "script-fu-basic2-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (script-fu-register "script-fu-basic2-logo"
     _"B_asic II..."
@@ -122,4 +122,4 @@
 )
 
 (script-fu-menu-register "script-fu-basic2-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

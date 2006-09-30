@@ -1,16 +1,16 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -22,7 +22,7 @@
 ; 0.20 - first public release
 ; 0.30 - some code cleanup
 ;        now uses the rotate plug-in to improve speed
-; 0.40 - changes to work with gimp-1.1 
+; 0.40 - changes to work with gimp-1.1
 ;        if the image was rotated, rotate the whole thing back when finished
 ; 0.41 - changes to work with gimp-2.0, slightly correct text offsets,
 ;        Nils Philippsen <nphilipp@redhat.com> 2004/03/28
@@ -34,13 +34,13 @@
 ;       - ?
 ;
 ; Copyright (C) 1997-1999 Sven Neumann <sven@gimp.org>
-;  
+;
 ; makes your picture look like a slide
 ;
-; The script works on RGB and grayscale images that contain only 
+; The script works on RGB and grayscale images that contain only
 ; one layer. The image is cropped to fit into an aspect ratio of 1:1,5.
-; It creates a copy of the image or can optionally work on the original. 
-; The script uses the current background color to create a background 
+; It creates a copy of the image or can optionally work on the original.
+; The script uses the current background color to create a background
 ; layer.
 
 
@@ -100,7 +100,7 @@
 ; add an alpha channel to the image
   (gimp-layer-add-alpha pic-layer)
 
-; crop, resize and eventually rotate the image 
+; crop, resize and eventually rotate the image
   (gimp-image-crop image
                    crop-width
                    crop-height
@@ -216,7 +216,7 @@
   (gimp-image-raise-layer image pic-layer)
 
 ; eventually rotate the whole thing back
-  (if (< ratio 1) 
+  (if (< ratio 1)
       (plug-in-rotate 1 image pic-layer 3 TRUE)
   )
 
@@ -248,4 +248,4 @@
 )
 
 (script-fu-menu-register "script-fu-slide"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

@@ -77,7 +77,7 @@
         (bevelling-whole-image)
         )
 
-    (gimp-context-push) 
+    (gimp-context-push)
 
     ; disable undo on copy, start group otherwise
     (if (= work-on-copy TRUE)
@@ -168,7 +168,7 @@
     (gimp-image-set-active-layer image pic-layer)
 
     ; enable undo / end undo group
-    (if (= work-on-copy TRUE) 
+    (if (= work-on-copy TRUE)
       (begin
         (gimp-display-new image)
         (gimp-image-undo-enable image)
@@ -196,4 +196,4 @@
 )
 
 (script-fu-menu-register "script-fu-add-bevel"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

@@ -92,7 +92,7 @@
 )
 
 (script-fu-menu-register "script-fu-chrome-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-chrome-logo text
                              size
@@ -124,4 +124,4 @@
 )
 
 (script-fu-menu-register "script-fu-chrome-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

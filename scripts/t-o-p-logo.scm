@@ -113,7 +113,7 @@
 )
 
 (script-fu-menu-register "script-fu-t-o-p-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-t-o-p-logo text
@@ -153,6 +153,6 @@
 )
 
 (script-fu-menu-register "script-fu-t-o-p-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")
 
 ; end of t-o-p.scm

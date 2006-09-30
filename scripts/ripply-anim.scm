@@ -38,7 +38,7 @@
         (dup-layer)
         )
 
-    (gimp-context-push) 
+    (gimp-context-push)
 
 ; this script generates its own displacement map
 
@@ -75,12 +75,12 @@
     (let* ((out-imagestack (car (gimp-image-new width height RGB))))
 
     (gimp-image-undo-disable out-imagestack)
-      
+
     (while (> remaining-frames 0)
       (set! dup-image (car (gimp-image-duplicate rippletiled-image)))
       (gimp-image-undo-disable dup-image)
       (gimp-image-crop dup-image width height xpos ypos)
-           
+
       (set! layer-name (string-append "Frame "
                  (number->string (- num-frames remaining-frames) 10)
                  " (replace)"))
@@ -103,7 +103,7 @@
       (set! xpos (+ xoffset xpos))
       (set! ypos (+ yoffset ypos))
     )
-      
+
     (gimp-image-undo-enable rippletiled-image)
     (gimp-image-delete rippletiled-image)
     (gimp-image-undo-enable out-imagestack)
@@ -127,4 +127,4 @@
 )
 
 (script-fu-menu-register "script-fu-ripply-anim"
-                       "<Image>/Filters/Animation/Animators")
+                         "<Image>/Filters/Animation/Animators")

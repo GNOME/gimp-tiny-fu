@@ -5,17 +5,17 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ;
-;    Truchet  - a script to create Truchet patterns 
+;    Truchet  - a script to create Truchet patterns
 ;                 by Adrian Likins <aklikins@eos.ncsu.edu>
 ;                 http://www4.ncsu.edu/~aklikins/
 ;    version about .8 give or take
@@ -59,16 +59,16 @@
       (gimp-image-add-layer temp-img temp-draw 0)
       (gimp-context-set-background backcolor)
       (gimp-edit-fill temp-draw BACKGROUND-FILL)
-      
-      
+
+
       (center-ellipse temp-img size size outer-radius outer-radius CHANNEL-OP-REPLACE TRUE FALSE 0)
       (center-ellipse temp-img size size inner-radius inner-radius CHANNEL-OP-SUBTRACT TRUE FALSE 0)
-      
+
       (center-ellipse temp-img (* size 2) (*  size 2)  outer-radius outer-radius CHANNEL-OP-ADD TRUE FALSE 0)
       (center-ellipse temp-img (* size 2) (*  size 2)  inner-radius inner-radius CHANNEL-OP-SUBTRACT TRUE FALSE 0)
       (gimp-context-set-background forecolor)
       (gimp-edit-fill temp-draw BACKGROUND-FILL)
-      
+
       (gimp-selection-none temp-img)
 
       (gimp-image-resize temp-img size size (- size) (- size))
@@ -80,7 +80,7 @@
       (let ((floating-sel (car (gimp-edit-paste drawable2 FALSE))))
         (gimp-floating-sel-anchor floating-sel))
 
-      
+
       (let ((floating-sel (car (gimp-edit-paste drawable1 FALSE))))
         (gimp-floating-sel-anchor floating-sel)
       )
@@ -89,7 +89,7 @@
                            ORIENTATION-VERTICAL
                            TRUE 0 TRUE))))
       )
-        
+
 
       ;(gimp-display-new temp-img)
       (gimp-image-delete temp-img)
@@ -117,12 +117,12 @@
     (gimp-context-push)
     (gimp-image-undo-disable img)
     (gimp-image-undo-disable tile)
-    
+
     (gimp-image-add-layer img layer-one 0)
     (gimp-image-add-layer tile tiledraw1 0)
     (gimp-image-add-layer tile tiledraw2 0)
 
- 
+
     ;just to look a little better
     (gimp-selection-all img)
     (gimp-context-set-background backcolor)
@@ -130,7 +130,7 @@
     (gimp-selection-none img)
 
     (create-tiles tile tiledraw1 tiledraw2 size thickness backcolor forecolor)
-    
+
 
     (while (<= Xindex xtiles)
       (while (<= Yindex ytiles)
@@ -144,7 +144,7 @@
       (set! Xindex (+ Xindex 1))
     )
 
- 
+
     (gimp-image-delete tile)
     (gimp-image-undo-enable img)
     (gimp-context-pop)
@@ -168,4 +168,4 @@
 )
 
 (script-fu-menu-register "script-fu-truchet"
-                       "<Toolbox>/Xtns/Patterns")
+                         "<Toolbox>/Xtns/Patterns")

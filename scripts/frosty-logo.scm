@@ -111,7 +111,7 @@
 )
 
 (script-fu-menu-register "script-fu-frosty-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-frosty-logo text
@@ -144,4 +144,4 @@
 )
 
 (script-fu-menu-register "script-fu-frosty-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

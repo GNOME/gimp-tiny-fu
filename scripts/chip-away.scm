@@ -152,7 +152,7 @@
 )
 
 (script-fu-menu-register "script-fu-chip-away-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-chip-away-logo text
@@ -199,4 +199,4 @@
 )
 
 (script-fu-menu-register "script-fu-chip-away-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

@@ -189,4 +189,4 @@
 )
 
 (script-fu-menu-register "script-fu-carve-it"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

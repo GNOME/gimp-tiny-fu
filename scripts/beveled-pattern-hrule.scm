@@ -80,4 +80,4 @@
 )
 
 (script-fu-menu-register "script-fu-beveled-pattern-hrule"
-                       "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")
+                         "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

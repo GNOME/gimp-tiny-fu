@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; alien-neon-logo.scm - creates multiple outlines around the letters
 ; Copyright (C) 1999-2000 Raphael Quinet <quinet@gamers.org>
 ;
@@ -8,12 +8,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -27,15 +27,15 @@
 ; To do: use a channel mask for creating the bands, instead of working in the
 ; image.  gimp-invert would then work on one grayscale channel instead of
 ; wasting CPU cycles on three identical R, G, B channels.
-; 
+;
 
 (define (apply-alien-neon-logo-effect img
                                       logo-layer
                                       fg-color
-                                      bg-color 
-                                      band-size 
-                                      gap-size 
-                                      num-bands 
+                                      bg-color
+                                      band-size
+                                      gap-size
+                                      num-bands
                                       do-fade)
   (let* (
         (fade-size (- (* (+ band-size gap-size) num-bands) 1))
@@ -113,7 +113,7 @@
                                        do-fade)
   (begin
     (gimp-image-undo-group-start img)
-    (apply-alien-neon-logo-effect img logo-layer fg-color bg-color 
+    (apply-alien-neon-logo-effect img logo-layer fg-color bg-color
                                   band-size gap-size num-bands do-fade)
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)))
@@ -136,16 +136,16 @@
 )
 
 (script-fu-menu-register "script-fu-alien-neon-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
-(define (script-fu-alien-neon-logo text 
-                                 size 
-                                 fontname 
-                                 fg-color 
-                                 bg-color 
-                                 band-size 
-                                 gap-size 
-                                 num-bands 
+(define (script-fu-alien-neon-logo text
+                                 size
+                                 fontname
+                                 fg-color
+                                 bg-color
+                                 band-size
+                                 gap-size
+                                 num-bands
                                  do-fade)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
@@ -179,6 +179,6 @@
 )
 
 (script-fu-menu-register "script-fu-alien-neon-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")
 
 ; end

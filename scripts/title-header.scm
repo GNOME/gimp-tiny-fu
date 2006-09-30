@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; Bump-mapped title script --- create a bump-mapped title image for web pages
 ; Copyright (C) 1997 Federico Mena Quintero
 ; federico@nuclecu.unam.mx
@@ -12,17 +12,17 @@
 ; The call to gimp-context-set-background has been given a real layer
 ; (although it is not used) otherwise gimp 1.1 crashed.
 ; ************************************************************************
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -33,11 +33,11 @@
                               fontname
                               gradient-reverse)
   (let* (; Parameters
-         
+
          (padding 8)
          (fade-width 64)
 
-         ; Image 
+         ; Image
 
          (img (car (gimp-image-new 256 256 RGB)))
 
@@ -65,7 +65,7 @@
          (img-height text-height)
 
          ; Additional layers
-         
+
          (bg-layer (car (gimp-layer-new img img-width img-height RGBA-IMAGE
                                         "bg-layer" 100 NORMAL-MODE)))
          (bumpmap-layer (car (gimp-layer-new img
@@ -150,7 +150,7 @@
     (gimp-selection-none img)
 
     ; Done
-    
+
 ;    (gimp-image-flatten img)
     (gimp-image-undo-enable img)
     (gimp-context-pop)
@@ -172,4 +172,4 @@
 )
 
 (script-fu-menu-register "script-fu-title-header"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

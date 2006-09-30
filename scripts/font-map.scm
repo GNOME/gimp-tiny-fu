@@ -165,4 +165,4 @@
 )
 
 (script-fu-menu-register "script-fu-font-map"
-                       "<Fonts>")
+                         "<Fonts>")

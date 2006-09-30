@@ -39,4 +39,4 @@
                  SF-DRAWABLE "Drawable" 0)
 
 (script-fu-menu-register "script-fu-reverse-layers"
-                       "<Image>/Layer/Stack")
+                         "<Image>/Layer/Stack")

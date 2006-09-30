@@ -84,4 +84,4 @@
 )
 
 (script-fu-menu-register "script-fu-unsharp-mask"
-                       "<Image>/Filters/Enhance")
+                         "<Image>/Filters/Enhance")

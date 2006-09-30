@@ -70,7 +70,7 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-alien-glow-logo text
                                  size
@@ -107,4 +107,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

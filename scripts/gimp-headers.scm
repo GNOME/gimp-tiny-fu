@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; www.gimp.org web headers
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
@@ -12,12 +12,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -47,7 +47,7 @@
         (bg-layer (car (gimp-layer-new img width height RGB-IMAGE "Background" 100 NORMAL-MODE)))
         )
 
-    (gimp-context-push) 
+    (gimp-context-push)
     (gimp-image-undo-disable img)
     (gimp-image-resize img width height 0 0)
     (gimp-image-add-layer img bg-layer 1)
@@ -64,17 +64,17 @@
 
       (gimp-image-add-layer img highlight-layer 1)
       (gimp-layer-set-lock-alpha highlight-layer TRUE)
-      
+
       (gimp-image-add-layer img side-layer 1)
       (gimp-layer-set-lock-alpha side-layer TRUE)
-      
+
       (gimp-image-add-layer img shadow-layer 1)
       (gimp-layer-set-lock-alpha shadow-layer TRUE)
-      
+
       (gimp-context-set-background high-color)
       (gimp-edit-fill highlight-layer BACKGROUND-FILL)
       (gimp-layer-translate highlight-layer -1 -1)
-      
+
       (gimp-context-set-background side-color)
       (gimp-edit-fill side-layer BACKGROUND-FILL)
       (gimp-layer-translate side-layer 1 1)
@@ -82,17 +82,17 @@
       (gimp-context-set-background shadow-color)
       (gimp-edit-fill shadow-layer BACKGROUND-FILL)
       (gimp-layer-translate shadow-layer 5 5)
-      
+
       (gimp-layer-set-lock-alpha shadow-layer FALSE)
       (plug-in-gauss-rle 1 img shadow-layer 5 TRUE TRUE)
       (gimp-layer-set-opacity shadow-layer 60)
       (gimp-image-lower-layer img shadow-layer)
       (gimp-image-lower-layer img shadow-layer))
-  
+
 
     (set! text-layer (car (gimp-image-flatten img)))
     (gimp-layer-add-alpha text-layer)
-          
+
 
     (if (= rm-bg TRUE)
         (begin
@@ -100,7 +100,7 @@
                                 1 CHANNEL-OP-REPLACE TRUE FALSE 0 FALSE)
           (gimp-edit-clear text-layer)
           (gimp-selection-none img)))
-        
+
     (if (= crop TRUE)
          (plug-in-autocrop 1 img text-layer))
 
@@ -155,7 +155,7 @@
 )
 
 (script-fu-menu-register "script-fu-big-header-gimp-org"
-                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
+                         "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-small-header-gimp-org"
     _"_Small Header..."
@@ -179,4 +179,4 @@
 )
 
 (script-fu-menu-register "script-fu-small-header-gimp-org"
-                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
+                         "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")

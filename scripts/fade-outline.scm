@@ -14,22 +14,22 @@
 ; or from the layers alpha channel if no selection is active.
 ;
 ; Optional you may keep the generated layermask or apply
-; it to the layer 
+; it to the layer
 
 ;
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -64,7 +64,7 @@
     (if (< inFadeFrom 0)   (set! inFadeFrom 0) )
     (if (> inFadeTo 100)   (set! inFadeTo 100) )
     (if (< inFadeTo 0)     (set! inFadeTo 0) )
-     
+
     (set! l-from-gray (* inFadeFrom 255))
     (set! l-to-gray (* inFadeTo 255))
     (set! l-step (/  (- l-from-gray l-to-gray) (+ inBorderSize 1)))
@@ -74,7 +74,7 @@
     (if (= (car (gimp-drawable-is-layer-mask inLayer)) 0)
         (begin
           (gimp-image-undo-group-start inImage)
-          
+
           ; if the layer has no alpha add alpha channel
           (if (= (car (gimp-drawable-has-alpha inLayer)) FALSE)
               (gimp-layer-add-alpha inLayer)
@@ -117,7 +117,7 @@
                 (gimp-selection-invert inImage)
               )
           )
-                                       
+
           (while (<= l-idx inBorderSize)
              (if (= l-idx inBorderSize)
                  (set! l-gray l-from-gray)
@@ -132,7 +132,7 @@
                  (set! l-idx (+ inBorderSize 100))     ; break the while loop
              )
           )
-          
+
           (if (= inGrowingSelection  TRUE)
               (begin
                 (gimp-selection-load l-orig-selection)
@@ -194,4 +194,4 @@
 )
 
 (script-fu-menu-register "script-fu-fade-outline"
-                       "<Image>/Filters/Selection")
+                         "<Image>/Filters/Selection")

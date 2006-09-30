@@ -17,7 +17,7 @@
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ font-size 10))
         (text-layer (car (gimp-text-fontname img -1 0 0 text (* border 2)
-                                             TRUE font-size PIXELS font))) 
+                                             TRUE font-size PIXELS font)))
         (width (car (gimp-drawable-width text-layer)))
         (height (car (gimp-drawable-height text-layer)))
         (dist-text-layer (car (gimp-layer-new img width height RGBA-IMAGE
@@ -103,4 +103,4 @@
 ;;; i26-gunya2.scm ends here
 
 (script-fu-menu-register "script-fu-i26-gunya2"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

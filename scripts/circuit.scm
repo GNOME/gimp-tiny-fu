@@ -154,4 +154,4 @@
 )
 
 (script-fu-menu-register "script-fu-circuit"
-                       "<Image>/Filters/Render")
+                         "<Image>/Filters/Render")

@@ -406,4 +406,4 @@
 )
 
 (script-fu-menu-register "script-fu-weave"
-                       "<Image>/Filters/Artistic")
+                         "<Image>/Filters/Artistic")

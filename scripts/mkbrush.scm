@@ -29,7 +29,7 @@
                                        width height GRAY-IMAGE
                                        "MakeBrush" 100 NORMAL-MODE)))
 
-        ; construct variables 
+        ; construct variables
 
         (filename (string-append gimp-directory
                   "/brushes/r"
@@ -52,10 +52,10 @@
     (gimp-drawable-fill drawable BACKGROUND-FILL)
     (gimp-context-set-background '(0 0 0))
     (gimp-rect-select img 0 0 width height CHANNEL-OP-REPLACE FALSE 0)
-    
+
     (gimp-edit-fill    drawable BACKGROUND-FILL)
     (file-gbr-save 1 img drawable filename "" spacing desc)
-    
+
     (gimp-brushes-refresh)
     (gimp-context-set-brush desc)
 
@@ -84,7 +84,7 @@
 )
 
 (script-fu-menu-register "script-fu-make-brush-rectangular"
-                       "<Brushes>")
+                         "<Brushes>")
 
 
 (define (script-fu-make-brush-rectangular-feathered description width height feathering spacing)
@@ -112,7 +112,7 @@
                   (number->string feathering)))
         )
 
-    (gimp-context-push) 
+    (gimp-context-push)
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
 
@@ -129,7 +129,7 @@
     )
     (gimp-edit-fill drawable BACKGROUND-FILL)
     (file-gbr-save 1 img drawable filename "" spacing desc)
-    
+
     (gimp-brushes-refresh)
     (gimp-context-set-brush desc)
 
@@ -159,7 +159,7 @@
 )
 
 (script-fu-menu-register "script-fu-make-brush-rectangular-feathered"
-                       "<Brushes>")
+                         "<Brushes>")
 
 
 (define (script-fu-make-brush-elliptical description width height spacing)
@@ -191,10 +191,10 @@
     (gimp-drawable-fill drawable BACKGROUND-FILL)
     (gimp-context-set-background '(0 0 0))
     (gimp-ellipse-select img 0 0 width height CHANNEL-OP-REPLACE TRUE FALSE 0)
-        
+
     (gimp-edit-fill    drawable BACKGROUND-FILL)
     (file-gbr-save 1 img drawable filename "" spacing desc)
-        
+
     (gimp-brushes-refresh)
     (gimp-context-set-brush desc)
 
@@ -223,7 +223,7 @@
 )
 
 (script-fu-menu-register "script-fu-make-brush-elliptical"
-                       "<Brushes>")
+                         "<Brushes>")
 
 
 (define (script-fu-make-brush-elliptical-feathered description width height feathering spacing)
@@ -259,14 +259,14 @@
     (gimp-context-set-background '(255 255 255))
     (gimp-drawable-fill drawable BACKGROUND-FILL)
     (gimp-context-set-background '(0 0 0))
-    (cond ((> feathering 0)   ; keep from taking out gimp with stupid entry. 
+    (cond ((> feathering 0)   ; keep from taking out gimp with stupid entry.
         (gimp-ellipse-select img (/ feathering 2) (/ feathering 2) width height CHANNEL-OP-REPLACE TRUE TRUE feathering))
           ((<= feathering 0)
         (gimp-ellipse-select img 0 0 width height CHANNEL-OP-REPLACE TRUE FALSE 0))
         )
     (gimp-edit-fill    drawable BACKGROUND-FILL)
     (file-gbr-save 1 img drawable filename "" spacing desc)
-    
+
     (gimp-brushes-refresh)
     (gimp-context-set-brush desc)
 
@@ -296,4 +296,4 @@
 )
 
 (script-fu-menu-register "script-fu-make-brush-elliptical-feathered"
-                       "<Brushes>")
+                         "<Brushes>")

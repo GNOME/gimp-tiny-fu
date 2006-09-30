@@ -295,4 +295,4 @@
 )
 
 (script-fu-menu-register "script-fu-test-sphere"
-                       "<Toolbox>/Xtns/Languages/Tiny-Fu/Test")
+                         "<Toolbox>/Xtns/Languages/Script-Fu/Test")

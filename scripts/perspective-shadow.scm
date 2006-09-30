@@ -1,16 +1,16 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.  
-; 
+; (at your option) any later version.
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -19,12 +19,12 @@
 ; perspective-shadow.scm   version 1.2   2000/11/08
 ;
 ; Copyright (C) 1997-2000 Sven Neumann <sven@gimp.org>
-; 
-;  
-; Adds a perspective shadow of the current selection or alpha-channel 
+;
+;
+; Adds a perspective shadow of the current selection or alpha-channel
 ; as a layer below the active layer
 ;
-  
+
 (define (script-fu-perspective-shadow image
                                     drawable
                                     alpha
@@ -51,11 +51,11 @@
         )
 
   (gimp-context-push)
- 
+
   (if (= rel-distance 0) (set! rel-distance 999999))
 
   (gimp-image-undo-group-start image)
-  
+
   (gimp-layer-add-alpha drawable)
   (if (= (car (gimp-selection-is-empty image)) TRUE)
       (begin
@@ -64,19 +64,19 @@
       (begin
         (set! from-selection TRUE)
         (set! active-selection (car (gimp-selection-save image)))))
-  
+
   (let* ((selection-bounds (gimp-selection-bounds image))
          (select-offset-x (cadr selection-bounds))
          (select-offset-y (caddr selection-bounds))
          (select-width (- (cadr (cddr selection-bounds)) select-offset-x))
          (select-height (- (caddr (cddr selection-bounds)) select-offset-y))
- 
+
          (abs-length (* rel-length select-height))
          (abs-distance (* rel-distance select-height))
          (half-bottom-width (/ select-width 2))
          (half-top-width (* half-bottom-width
                           (/ (- rel-distance rel-length) rel-distance)))
-  
+
          (x0 (+ select-offset-x (+ (- half-bottom-width half-top-width)
                                  (* (cos alpha) abs-length))))
          (y0 (+ select-offset-y (- select-height
@@ -92,8 +92,8 @@
          (shadow-height (+ (- (max y1 y3) (min y0 y2)) (* 2 shadow-blur)))
          (shadow-offset-x (- (min x0 x2) shadow-blur))
          (shadow-offset-y (- (min y0 y2) shadow-blur)))
-         
-  
+
+
     (set! shadow-layer (car (gimp-layer-new image
                                             select-width
                                             select-height
@@ -125,10 +125,10 @@
               (begin
                 (set! image-offset-y (- 0 shadow-offset-y))
                 (set! new-image-height (- new-image-height image-offset-y))))
-          
+
           (if (> (+ shadow-width shadow-offset-x) new-image-width)
               (set! new-image-width (+ shadow-width shadow-offset-x)))
-          
+
           (if (> (+ shadow-height shadow-offset-y) new-image-height)
               (set! new-image-height (+ shadow-height shadow-offset-y)))
           (gimp-image-resize image
@@ -136,7 +136,7 @@
                              new-image-height
                              image-offset-x
                              image-offset-y)))
-  
+
     (gimp-drawable-transform-perspective shadow-layer
                       x0 y0
                       x1 y1
@@ -199,4 +199,4 @@
 )
 
 (script-fu-menu-register "script-fu-perspective-shadow"
-                       "<Image>/Filters/Light and Shadow/Shadow")
+                         "<Image>/Filters/Light and Shadow/Shadow")

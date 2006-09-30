@@ -232,4 +232,4 @@
 )
 
 (script-fu-menu-register "script-fu-3dtruchet"
-                       "<Toolbox>/Xtns/Patterns")
+                         "<Toolbox>/Xtns/Patterns")

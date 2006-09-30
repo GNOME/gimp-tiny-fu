@@ -1,16 +1,16 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -20,7 +20,7 @@
 ; Version 0.2 10.6.97 Changed to new script-fu interface in 0.99.10
 
 ; Delta the colour by the given amount. Check for boundary conditions
-; If < 0 set to zero 
+; If < 0 set to zero
 ; If > 255 set to 255
 ; Return the new value
 
@@ -178,4 +178,4 @@
 )
 
 (script-fu-menu-register "script-fu-addborder"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

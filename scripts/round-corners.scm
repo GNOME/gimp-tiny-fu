@@ -1,16 +1,16 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -22,18 +22,18 @@
 ; 1.00 - initial release
 ; 1.01 - some code cleanup, no real changes
 ;
-; Copyright (C) 1997-1999 Sven Neumann <sven@gimp.org> 
-;  
+; Copyright (C) 1997-1999 Sven Neumann <sven@gimp.org>
+;
 ;
 ; Rounds the corners of an image, optionally adding a drop-shadow and
 ; a background layer
 ;
-; The script works on RGB and grayscale images that contain only 
-; one layer. It creates a copy of the image or can optionally work 
-; on the original. The script uses the current background color to 
+; The script works on RGB and grayscale images that contain only
+; one layer. It creates a copy of the image or can optionally work
+; on the original. The script uses the current background color to
 ; create a background layer. It makes a call to the script drop-shadow.
 ;
-; This script is derived from my script add-shadow, which has become 
+; This script is derived from my script add-shadow, which has become
 ; obsolete now.
 
 
@@ -68,8 +68,8 @@
 
   ; add an alpha channel to the image
   (gimp-layer-add-alpha pic-layer)
-  
-  ; round the edges  
+
+  ; round the edges
   (gimp-selection-none image)
   (gimp-rect-select image 0 0 radius radius CHANNEL-OP-ADD 0 0)
   (gimp-ellipse-select image 0 0 diam diam CHANNEL-OP-SUBTRACT TRUE 0 0)
@@ -83,7 +83,7 @@
                        diam diam CHANNEL-OP-SUBTRACT TRUE 0 0)
   (gimp-edit-clear pic-layer)
   (gimp-selection-none image)
-  
+
   ; optionally add a shadow
   (if (= shadow-toggle TRUE)
       (begin
@@ -97,7 +97,7 @@
                                TRUE)
         (set! width (car (gimp-image-width image)))
         (set! height (car (gimp-image-height image)))))
-      
+
   ; optionally add a background
   (if (= background-toggle TRUE)
       (let* ((bg-layer (car (gimp-layer-new image
@@ -143,4 +143,4 @@
 )
 
 (script-fu-menu-register "script-fu-round-corners"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

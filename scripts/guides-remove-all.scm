@@ -5,7 +5,7 @@
     (gimp-image-undo-group-start image)
 
     (set! guide-id (car (gimp-image-find-next-guide image 0)))
-    (while (> guide-id 0) 
+    (while (> guide-id 0)
 	   (gimp-image-delete-guide image guide-id)
 	   (set! guide-id (car (gimp-image-find-next-guide image 0)))
     )
@@ -27,4 +27,4 @@
 )
 
 (script-fu-menu-register "script-fu-guides-remove"
-                       "<Image>/Image/Guides")
+                         "<Image>/Image/Guides")

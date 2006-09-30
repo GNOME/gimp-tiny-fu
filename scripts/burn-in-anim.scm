@@ -173,7 +173,7 @@
                                         CLIP-TO-IMAGE)))
               ;(set! blended-layer bl-layer)
               (gimp-drawable-set-visible blended-layer FALSE)
-                                                                                
+
               ;--- end of "while" loop
               (set! frame-nr (+ frame-nr 1))
               (set! bl-x     (+ bl-x speed))
@@ -233,4 +233,4 @@
 )
 
 (script-fu-menu-register "script-fu-burn-in-anim"
-                       "<Image>/Filters/Animation/Animators")
+                         "<Image>/Filters/Animation/Animators")

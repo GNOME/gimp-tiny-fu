@@ -1,18 +1,18 @@
-;; selection-rounded-rectangle.scm -*-scheme-*- 
+;; selection-rounded-rectangle.scm -*-scheme-*-
 
 ;; The GIMP -- an image manipulation program
 ;; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-;; 
+;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation; either version 2 of the License, or
-;; (at your option) any later version.  
-;; 
+;; (at your option) any later version.
+;;
 ;; This program is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;; GNU General Public License for more details.
-;; 
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program; if not, write to the Free Software
 ;; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -23,24 +23,24 @@
 ;; 1.02 - made script undoable
 
 ;; 2.00 - ALAN's Branch.  changed name, menu, location, and description
-;; 2.01 - fixed to work if there was no current selection. 
-;; 2.02 - changed scale to percentages, usability tweaking.  
-;; 2.10 - added concave round edges, updated description.  
-;; 2.11 - tweeked description, changed comments, relinquished any rights.  
+;; 2.01 - fixed to work if there was no current selection.
+;; 2.02 - changed scale to percentages, usability tweaking.
+;; 2.10 - added concave round edges, updated description.
+;; 2.11 - tweeked description, changed comments, relinquished any rights.
 
 ;; Copyright (C) 1997, 1998, Sven Neumann
-;; Copyright (C) 2004, Alan Horkan.  
-;; Alan Horkan relinquishes all rights to his changes, 
-;; full ownership of this script belongs to Sven Neumann.  
+;; Copyright (C) 2004, Alan Horkan.
+;; Alan Horkan relinquishes all rights to his changes,
+;; full ownership of this script belongs to Sven Neumann.
 
 (define (script-fu-selection-rounded-rectangle image drawable radius concave)
   (gimp-image-undo-group-start image)
 
   (if (= (car (gimp-selection-is-empty image)) TRUE) (gimp-selection-all image))
   (let* (
-        (radius (/ radius 100)) ; convert from percentages 
-        (radius (min radius 1.0)) 
-        (radius (max radius 0.0)) 
+        (radius (/ radius 100)) ; convert from percentages
+        (radius (min radius 1.0))
+        (radius (max radius 0.0))
         (select-bounds (gimp-selection-bounds image))
         (has-selection (car select-bounds))
         (select-x1 (cadr select-bounds))
@@ -68,9 +68,9 @@
     ;; cut away rounded (concave) corners
     ; top right
     (gimp-ellipse-select image
-             (- select-x1 cut-radius) 
-             (- select-y1 cut-radius) 
-             (* cut-radius 2) 
+             (- select-x1 cut-radius)
+             (- select-y1 cut-radius)
+             (* cut-radius 2)
              (* cut-radius 2)
              CHANNEL-OP-SUBTRACT
              TRUE
@@ -79,8 +79,8 @@
     (gimp-ellipse-select image
              (- select-x1 cut-radius)
              (- select-y2 cut-radius)
-             (* cut-radius 2) 
-             (* cut-radius 2) 
+             (* cut-radius 2)
+             (* cut-radius 2)
              CHANNEL-OP-SUBTRACT
              TRUE
              FALSE 0)
@@ -88,8 +88,8 @@
     (gimp-ellipse-select image
              (- select-x2 cut-radius)
              (- select-y1 cut-radius)
-             (* cut-radius 2) 
-             (* cut-radius 2) 
+             (* cut-radius 2)
+             (* cut-radius 2)
              CHANNEL-OP-SUBTRACT
              TRUE
              FALSE 0)
@@ -97,15 +97,15 @@
     (gimp-ellipse-select image
              (- select-x2 cut-radius)
              (- select-y2 cut-radius)
-             (* cut-radius 2) 
-             (* cut-radius 2) 
+             (* cut-radius 2)
+             (* cut-radius 2)
              CHANNEL-OP-SUBTRACT
              TRUE
              FALSE 0)
 
     ;; add in rounded (convex) corners
     (if (= concave FALSE)
-      (begin 
+      (begin
         (gimp-ellipse-select image
                      select-x1
                      select-y1
@@ -153,7 +153,7 @@
 
 
 (script-fu-register "script-fu-selection-rounded-rectangle"
-    _"Rounded R_ectangle..."  
+    _"Rounded R_ectangle..."
     "Converts the current selection, to a rectangular selection with rounded edges. The radius is a percentage of half the selection width or height, whichever is smaller. Select 'Concave' if you want the round edges will to be indented. Round Edges works by subtracting and adding circles to the selection.  "
     "Alan Horkan, Sven Neumann" ; authors
     "Sven Neumann"              ; copyright
@@ -161,7 +161,7 @@
     "*"
     SF-IMAGE       "Image"      0
     SF-DRAWABLE    "Drawable"   0
-    
+
    SF-ADJUSTMENT _"Radius (%)" '(50 0 100 1 10 0 0)
    SF-TOGGLE     _"Concave"    FALSE
 )
@@ -180,4 +180,4 @@
 )
 
 (script-fu-menu-register "script-fu-selection-rounded-rectangle"
-                       "<Image>/Select/Modify")
+                         "<Image>/Select/Modify")

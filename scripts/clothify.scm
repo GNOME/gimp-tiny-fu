@@ -62,4 +62,4 @@
 )
 
 (script-fu-menu-register "script-fu-clothify"
-                       "<Image>/Filters/Artistic")
+                         "<Image>/Filters/Artistic")

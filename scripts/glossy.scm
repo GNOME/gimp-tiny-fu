@@ -214,7 +214,7 @@
 )
 
 (script-fu-menu-register "script-fu-glossy-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-glossy-logo text
@@ -286,4 +286,4 @@
 )
 
 (script-fu-menu-register "script-fu-glossy-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

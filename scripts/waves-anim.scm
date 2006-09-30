@@ -1,16 +1,16 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.  
-; 
+; (at your option) any later version.
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -23,11 +23,11 @@
 ; 1.01 - some code cleanup, no real changes
 ;
 ; Copyright (C) 1997 Sven Neumann <sven@gimp.org>
-; 
-;  
+;
+;
 ; Makes a copy of your image and creates an animation of the active layer
-; as if a stone was thrown into the image. The animation may be saved with 
-; the gif-plug-in. 
+; as if a stone was thrown into the image. The animation may be saved with
+; the gif-plug-in.
 
 (define (script-fu-waves-anim img
                               drawable
@@ -43,12 +43,12 @@
          (phaseshift (/ 360 num-frames))
          (image (car (gimp-image-duplicate img)))
          (source-layer (car (gimp-image-get-active-layer image))))
-   
+
   (gimp-image-undo-disable image)
 
   (if (= invert TRUE)
       (set! phaseshift (- 0 phaseshift)))
-  
+
   (while (> remaining-frames 1)
     (let* (
           (waves-layer (car (gimp-layer-copy source-layer TRUE)))
@@ -62,7 +62,7 @@
     (gimp-layer-set-lock-alpha waves-layer FALSE)
     (gimp-image-add-layer image waves-layer -1)
     (gimp-drawable-set-name waves-layer layer-name)
-    
+
     (plug-in-waves 1
                    image
                    waves-layer
@@ -71,7 +71,7 @@
                    wavelength
                    0
                    FALSE)
-     
+
     (set! remaining-frames (- remaining-frames 1))
     (set! phase (- phase phaseshift))
     )
@@ -106,4 +106,4 @@
 )
 
 (script-fu-menu-register "script-fu-waves-anim"
-                       "<Image>/Filters/Animation/Animators")
+                         "<Image>/Filters/Animation/Animators")

@@ -237,4 +237,4 @@
 )
 
 (script-fu-menu-register "script-fu-blend-anim"
-                       "<Image>/Filters/Animation/Animators")
+                         "<Image>/Filters/Animation/Animators")

@@ -131,7 +131,7 @@
 )
 
 (script-fu-menu-register "script-fu-3d-outline-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-3d-outline-logo text-pattern
                                  text
@@ -177,4 +177,4 @@
 )
 
 (script-fu-menu-register "script-fu-3d-outline-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

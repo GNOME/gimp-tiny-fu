@@ -133,7 +133,7 @@
 )
 
 (script-fu-menu-register "script-fu-textured-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-textured-logo text
                                size
@@ -175,4 +175,4 @@
 )
 
 (script-fu-menu-register "script-fu-textured-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

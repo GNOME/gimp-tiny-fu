@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; xach effect script
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
@@ -12,12 +12,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -54,8 +54,8 @@
     (gimp-context-push)
     (gimp-image-undo-group-start image)
     (gimp-layer-add-alpha drawable)
-    
- 
+
+
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
           (gimp-selection-layer-alpha drawable)
@@ -71,17 +71,17 @@
     (gimp-selection-none image)
     (gimp-edit-clear hl-layer)
     (gimp-selection-load active-selection)
-    
+
     (gimp-context-set-background hl-color)
     (gimp-edit-fill hl-layer BACKGROUND-FILL)
     (gimp-selection-translate image hl-offset-x hl-offset-y)
     (gimp-edit-fill hl-layer BACKGROUND-FILL)
     (gimp-selection-none image)
     (gimp-selection-load active-selection)
-    
+
     (set! mask (car (gimp-layer-create-mask hl-layer ADD-WHITE-MASK)))
     (gimp-layer-add-mask hl-layer mask)
-    
+
     (gimp-context-set-background hl-opacity)
     (gimp-edit-fill mask BACKGROUND-FILL)
 
@@ -139,4 +139,4 @@
 )
 
 (script-fu-menu-register "script-fu-xach-effect"
-                       "<Image>/Filters/Light and Shadow/Shadow")
+                         "<Image>/Filters/Light and Shadow/Shadow")

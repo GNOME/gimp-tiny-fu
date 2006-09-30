@@ -75,7 +75,7 @@
     (gimp-selection-layer-alpha logo-layer)
     (set! fs (car (gimp-selection-float shadow-layer 0 0)))
     (gimp-edit-clear shadow-layer)
-    (gimp-drawable-transform-perspective-default fs 
+    (gimp-drawable-transform-perspective-default fs
                       (+ 5 (* 0.15 height)) (- height (* 0.15 height))
                       (+ 5 width (* 0.15 height)) (- height (* 0.15 height))
                       5 height
@@ -143,7 +143,7 @@
 )
 
 (script-fu-menu-register "script-fu-cool-metal-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-cool-metal-logo text
@@ -181,4 +181,4 @@
 )
 
 (script-fu-menu-register "script-fu-cool-metal-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

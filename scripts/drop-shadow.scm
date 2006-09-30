@@ -1,22 +1,22 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
-; (at your option) any later version.  
-; 
+; (at your option) any later version.
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 ;
 ;
-; drop-shadow.scm   version 1.04   1999/12/21 
+; drop-shadow.scm   version 1.04   1999/12/21
 ;
 ; CHANGE-LOG:
 ; 1.00 - initial release
@@ -26,15 +26,15 @@
 ;
 ;
 ; Copyright (C) 1997-1999 Sven Neumann <sven@gimp.org>
-; 
-;  
-; Adds a drop-shadow of the current selection or alpha-channel. 
 ;
-; This script is derived from my script add-shadow, which has become 
-; obsolete now. Thanks to Andrew Donkin (ard@cs.waikato.ac.nz) for his 
+;
+; Adds a drop-shadow of the current selection or alpha-channel.
+;
+; This script is derived from my script add-shadow, which has become
+; obsolete now. Thanks to Andrew Donkin (ard@cs.waikato.ac.nz) for his
 ; idea to add alpha-support to add-shadow.
 
-  
+
 (define (script-fu-drop-shadow image
                              drawable
                              shadow-transl-x
@@ -59,7 +59,7 @@
   (gimp-image-set-active-layer image drawable)
 
   (gimp-image-undo-group-start image)
-  
+
   (gimp-layer-add-alpha drawable)
   (if (= (car (gimp-selection-is-empty image)) TRUE)
       (begin
@@ -68,13 +68,13 @@
       (begin
         (set! from-selection TRUE)
         (set! active-selection (car (gimp-selection-save image)))))
-  
+
   (let* ((selection-bounds (gimp-selection-bounds image))
          (select-offset-x (cadr selection-bounds))
          (select-offset-y (caddr selection-bounds))
          (select-width (- (cadr (cddr selection-bounds)) select-offset-x))
          (select-height (- (caddr (cddr selection-bounds)) select-offset-y))
-  
+
          (shadow-width (+ select-width (* 2 shadow-blur)))
          (shadow-height (+ select-height (* 2 shadow-blur)))
 
@@ -179,4 +179,4 @@
 )
 
 (script-fu-menu-register "script-fu-drop-shadow"
-                       "<Image>/Filters/Light and Shadow/Shadow")
+                         "<Image>/Filters/Light and Shadow/Shadow")

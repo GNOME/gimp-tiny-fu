@@ -1,20 +1,20 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; Alien Glow themed bullets for web pages
 ; Copyright (c) 1997 Adrian Likins
-; aklikins@eos.ncsu.edu 
+; aklikins@eos.ncsu.edu
 ;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -60,7 +60,7 @@
 
     (center-ellipse img radius radius half-radius half-radius
                     CHANNEL-OP-REPLACE TRUE FALSE 0)
-    
+
     ; (gimp-rect-select img (/ height 2) (/ height 2) length height CHANNEL-OP-REPLACE FALSE 0)
     (gimp-context-set-foreground '(90 90 90))
     (gimp-context-set-background '(0 0 0))
@@ -104,4 +104,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-bullet"
-                       "<Toolbox>/Xtns/Web Page Themes/Alien Glow")
+                         "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

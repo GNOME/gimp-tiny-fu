@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; www.gimp.org web labels
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
@@ -12,12 +12,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -49,15 +49,15 @@
                                         RGB-IMAGE "Background" 100 NORMAL-MODE)))
         (shadow-layer (car (gimp-layer-copy text-layer TRUE)))
         )
-   
-    (gimp-context-push) 
+
+    (gimp-context-push)
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img bg-layer 2)
-    
+
     (gimp-layer-set-lock-alpha text-layer TRUE)
     (gimp-layer-set-lock-alpha shadow-layer TRUE)
-    
+
     (gimp-context-set-background text-color)
     (gimp-edit-fill text-layer BACKGROUND-FILL)
 
@@ -77,7 +77,7 @@
                                 color-thresh CHANNEL-OP-REPLACE TRUE FALSE 0 FALSE)
           (gimp-edit-clear text-layer)
           (gimp-selection-none img)))
-    
+
     (if (= index TRUE)
            (gimp-image-convert-indexed img FS-DITHER MAKE-PALETTE num-colors
                                     FALSE FALSE ""))
@@ -94,7 +94,7 @@
 ;;;
 ;;;(define (script-fu-tube-subbutton-label-gimp-org text rm-bg index)
 ;;;  (script-fu-labels-gimp-org text "nimbus sans" 12 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 7 0 24))
-;;;  
+;;;
 ;;;(define (script-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
 ;;;  (script-fu-labels-gimp-org text "nimbus sans" 10 "medium" "r" "normal" '(151 177 192) '(0 0 0) '(255 255 255) rm-bg index 15 1 6 0 18))
 ;;;
@@ -104,7 +104,7 @@
 
 (define (script-fu-tube-subbutton-label-gimp-org text rm-bg index)
   (script-fu-labels-gimp-org text "helvetica" 12 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 7 10 24))
-  
+
 (define (script-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
   (script-fu-labels-gimp-org text "helvetica" 10 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 6 20 18)
 )
@@ -123,7 +123,7 @@
 )
 
 (script-fu-menu-register "script-fu-tube-button-label-gimp-org"
-                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
+                         "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-tube-subbutton-label-gimp-org"
     _"T_ube Sub-Button Label..."
@@ -138,7 +138,7 @@
 )
 
 (script-fu-menu-register "script-fu-tube-subbutton-label-gimp-org"
-                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
+                         "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-tube-subsubbutton-label-gimp-org"
     _"Tub_e Sub-Sub-Button Label..."
@@ -153,7 +153,7 @@
 )
 
 (script-fu-menu-register "script-fu-tube-subsubbutton-label-gimp-org"
-                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
+                         "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-labels-gimp-org"
     _"_General Tube Labels..."
@@ -178,4 +178,4 @@
 )
 
 (script-fu-menu-register "script-fu-labels-gimp-org"
-                       "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
+                         "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")

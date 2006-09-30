@@ -222,4 +222,4 @@
 )
 
 (script-fu-menu-register "script-fu-sota-chrome-it"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

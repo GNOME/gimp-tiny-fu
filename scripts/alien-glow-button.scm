@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; Alien Glow themed button
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
@@ -12,12 +12,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -64,7 +64,7 @@
                                                       font))
         (ascent (text-ascent text-extents))
         (descent (text-descent text-extents))
-        
+
         (img-width (+ (* 2  padding)
                       (text-width text-extents)))
         (img-height (+ (* 2 padding)
@@ -89,7 +89,7 @@
     (gimp-image-undo-disable img)
 
     ; Create bumpmap layer
-    
+
     (gimp-image-add-layer img bg-layer -1)
     (gimp-context-set-foreground '(0 0 0))
     (gimp-context-set-background bg-color)
@@ -163,4 +163,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-button"
-                       "<Toolbox>/Xtns/Web Page Themes/Alien Glow")
+                         "<Toolbox>/Xtns/Web Page Themes/Alien Glow")

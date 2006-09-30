@@ -348,4 +348,4 @@
 ;; End of syprogimp.scm
 
 (script-fu-menu-register "script-fu-spyrogimp"
-                       "<Image>/Filters/Render")
+                         "<Image>/Filters/Render")

@@ -83,7 +83,7 @@
 )
 
 (script-fu-menu-register "script-fu-starburst-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-starburst-logo text size fontname burst-color bg-color)
@@ -116,4 +116,4 @@
 )
 
 (script-fu-menu-register "script-fu-starburst-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

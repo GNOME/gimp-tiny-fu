@@ -144,7 +144,7 @@
 )
 
 (script-fu-menu-register "script-fu-starscape-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 
 (define (script-fu-starscape-logo text size fontname glow-color)
@@ -175,4 +175,4 @@
 )
 
 (script-fu-menu-register "script-fu-starscape-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

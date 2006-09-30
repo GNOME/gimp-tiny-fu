@@ -218,4 +218,4 @@
 ;; text-circle.scm ends here
 
 (script-fu-menu-register "script-fu-text-circle"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

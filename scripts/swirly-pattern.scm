@@ -89,4 +89,4 @@
 )
 
 (script-fu-menu-register "script-fu-swirly-pattern"
-                       "<Toolbox>/Xtns/Patterns")
+                         "<Toolbox>/Xtns/Patterns")

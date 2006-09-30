@@ -61,4 +61,4 @@
 )
 
 (script-fu-menu-register "script-fu-swirl-tile"
-                       "<Toolbox>/Xtns/Patterns")
+                         "<Toolbox>/Xtns/Patterns")

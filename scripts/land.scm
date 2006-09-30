@@ -1,29 +1,29 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; Land --- create a pattern that resembles a Topographic map
 ; Copyright (C) 1997 Adrian Karstan Likins
 ; aklikins@eos.ncsu.edu
-; 
 ;
-;      This script works on the current gradient you have loaded. 
-;      Some suggested gradients: 
+;
+;      This script works on the current gradient you have loaded.
+;      Some suggested gradients:
 ;            Land                  (produces a earthlike map)
 ;            Brushed_aluminum      (looks like the moon)
-;  
 ;
-; Thanks to Quartic for helping me debug this thing. 
+;
+; Thanks to Quartic for helping me debug this thing.
 ;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -85,4 +85,4 @@
                     SF-GRADIENT   _"Gradient" "Land 1")
 
 (script-fu-menu-register "script-fu-land"
-                       "<Toolbox>/Xtns/Patterns")
+                         "<Toolbox>/Xtns/Patterns")

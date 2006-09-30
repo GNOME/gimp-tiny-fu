@@ -140,7 +140,7 @@
 )
 
 (script-fu-menu-register "script-fu-blended-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-blended-logo text
                                 size
@@ -194,4 +194,4 @@
 )
 
 (script-fu-menu-register "script-fu-blended-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")

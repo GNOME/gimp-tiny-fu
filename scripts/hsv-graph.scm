@@ -328,4 +328,4 @@
 ;;; hsv-graph.scm ends here
 
 (script-fu-menu-register "script-fu-hsv-graph"
-                       "<Image>/Colors/Info")
+                         "<Image>/Colors/Info")

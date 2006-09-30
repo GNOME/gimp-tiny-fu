@@ -37,4 +37,4 @@
 )
 
 (script-fu-menu-register "script-fu-guide-new"
-                       "<Image>/Image/Guides")
+                         "<Image>/Image/Guides")

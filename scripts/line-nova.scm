@@ -115,4 +115,4 @@
 ;;; line-nova.scm ends here
 
 (script-fu-menu-register "script-fu-line-nova"
-                       "<Image>/Filters/Render")
+                         "<Image>/Filters/Render")

@@ -90,4 +90,4 @@
 ;;; grid-system.scm ends here
 
 (script-fu-menu-register "script-fu-grid-system"
-                       "<Image>/Filters/Render/Pattern")
+                         "<Image>/Filters/Render/Pattern")

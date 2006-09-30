@@ -82,4 +82,4 @@
 )
 
 (script-fu-menu-register "script-fu-sphere"
-                       "<Toolbox>/Xtns/Misc")
+                         "<Toolbox>/Xtns/Misc")

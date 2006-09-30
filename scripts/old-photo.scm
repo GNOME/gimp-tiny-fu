@@ -9,12 +9,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -37,7 +37,7 @@
                      (car (gimp-image-duplicate inImage))
                      inImage)
         )
-  
+
   (set! theLayer (car (gimp-image-flatten theImage)))
   (if (= inDefocus TRUE)
       (plug-in-gauss-rle TRUE theImage theLayer 1.5 TRUE TRUE)
@@ -49,7 +49,7 @@
       ()
       )
   (set! theLayer (car (gimp-image-flatten theImage)))
-  
+
   (if (= inSepia TRUE)
       (begin (gimp-desaturate theLayer)
              (gimp-brightness-contrast theLayer -20 -40)
@@ -61,7 +61,7 @@
   (set! theHeight (car (gimp-image-height theImage)))
   (if (= inMottle TRUE)
       (begin (set! mLayer (car (gimp-layer-new theImage theWidth theHeight RGBA-IMAGE "Mottle" 100 DARKEN-ONLY-MODE)))
-             
+
              (gimp-image-add-layer theImage mLayer 0)
              (gimp-selection-all theImage)
              (gimp-edit-clear mLayer)
@@ -72,9 +72,9 @@
              )
       ()
       )
-  
-  
-  
+
+
+
   (if     (= inCopy TRUE)
           (begin  (gimp-image-clean-all theImage)
                   (gimp-display-new theImage)
@@ -110,4 +110,4 @@
 )
 
 (script-fu-menu-register "script-fu-old-photo"
-                       "<Image>/Filters/Decor")
+                         "<Image>/Filters/Decor")

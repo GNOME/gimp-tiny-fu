@@ -105,7 +105,7 @@
 )
 
 (script-fu-menu-register "script-fu-gradient-bevel-logo-alpha"
-                       "<Image>/Filters/Alpha to Logo")
+                         "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-gradient-bevel-logo text
                                      size
@@ -143,4 +143,4 @@
 )
 
 (script-fu-menu-register "script-fu-gradient-bevel-logo"
-                       "<Toolbox>/Xtns/Logos")
+                         "<Toolbox>/Xtns/Logos")
