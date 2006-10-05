@@ -173,7 +173,7 @@ tiny_fu_interface (SFScript *script)
     {
       gchar *message =
         g_strdup_printf ("%s\n\n%s",
-                         _("Tiny-Fu cannot process two scripts "
+                         _("Script-Fu cannot process two scripts "
                            "at the same time."),
                          _("You are already running the \"%s\" script."));
 
@@ -197,10 +197,10 @@ tiny_fu_interface (SFScript *script)
   sf_interface = g_new0 (SFInterface, 1);
   sf_interface->widgets = g_new0 (GtkWidget *, script->num_args);
 
-  /* strip the first part of the menupath if it contains _("/Tiny-Fu/") */
-  tmp = strstr (gettext (script->menu_path), _("/Tiny-Fu/"));
+  /* strip the first part of the menupath if it contains _("/Script-Fu/") */
+  tmp = strstr (gettext (script->menu_path), _("/Script-Fu/"));
   if (tmp)
-    sf_interface->title = g_strdup (tmp + strlen (_("/Tiny-Fu/")));
+    sf_interface->title = g_strdup (tmp + strlen (_("/Script-Fu/")));
   else
     sf_interface->title = g_strdup (gettext (script->menu_path));
 
@@ -218,10 +218,10 @@ tiny_fu_interface (SFScript *script)
   if (tmp && tmp == (sf_interface->title + strlen (sf_interface->title) - 3))
     *tmp = '\0';
 
-  title = g_strdup_printf (_("Tiny-Fu: %s"), sf_interface->title);
+  title = g_strdup_printf (_("Script-Fu: %s"), sf_interface->title);
 
   sf_interface->dialog = dialog =
-    gimp_dialog_new (title, "tiny-fu",
+    gimp_dialog_new (title, "script-fu",
                      NULL, 0,
                      gimp_standard_help_func, script->name,
 
@@ -327,7 +327,7 @@ tiny_fu_interface (SFScript *script)
 
         case SF_COLOR:
           left_align = TRUE;
-          widget = gimp_color_button_new (_("Tiny-Fu Color Selection"),
+          widget = gimp_color_button_new (_("Script-Fu Color Selection"),
                                           COLOR_SAMPLE_WIDTH,
                                           COLOR_SAMPLE_HEIGHT,
                                           &script->arg_values[i].sfa_color,
@@ -434,11 +434,11 @@ tiny_fu_interface (SFScript *script)
         case SF_FILENAME:
         case SF_DIRNAME:
           if (script->arg_types[i] == SF_FILENAME)
-            widget = gtk_file_chooser_button_new (_("Tiny-Fu File Selection"),
+            widget = gtk_file_chooser_button_new (_("Script-Fu File Selection"),
                                                   GTK_FILE_CHOOSER_ACTION_OPEN);
 
           else
-            widget = gtk_file_chooser_button_new (_("Tiny-Fu Folder Selection"),
+            widget = gtk_file_chooser_button_new (_("Script-Fu Folder Selection"),
                                                   GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
           if (script->arg_values[i].sfa_file.filename)
             gtk_file_chooser_set_filename (GTK_FILE_CHOOSER (widget),
@@ -450,7 +450,7 @@ tiny_fu_interface (SFScript *script)
           break;
 
         case SF_FONT:
-          widget = gimp_font_select_button_new (_("Tiny-Fu Font Selection"),
+          widget = gimp_font_select_button_new (_("Script-Fu Font Selection"),
                                                 script->arg_values[i].sfa_font);
           g_signal_connect_swapped (widget, "font-set",
                                     G_CALLBACK (tiny_fu_font_callback),
@@ -459,7 +459,7 @@ tiny_fu_interface (SFScript *script)
           break;
 
         case SF_PALETTE:
-          widget = gimp_palette_select_button_new (_("Tiny-Fu Palette Selection"),
+          widget = gimp_palette_select_button_new (_("Script-Fu Palette Selection"),
                                                    script->arg_values[i].sfa_palette);
           g_signal_connect_swapped (widget, "palette-set",
                                     G_CALLBACK (tiny_fu_palette_callback),
@@ -468,7 +468,7 @@ tiny_fu_interface (SFScript *script)
 
         case SF_PATTERN:
           left_align = TRUE;
-          widget = gimp_pattern_select_button_new (_("Tiny-Fu Pattern Selection"),
+          widget = gimp_pattern_select_button_new (_("Script-Fu Pattern Selection"),
                                                    script->arg_values[i].sfa_pattern);
           g_signal_connect_swapped (widget, "pattern-set",
                                     G_CALLBACK (tiny_fu_pattern_callback),
@@ -477,7 +477,7 @@ tiny_fu_interface (SFScript *script)
 
         case SF_GRADIENT:
           left_align = TRUE;
-          widget = gimp_gradient_select_button_new (_("Tiny-Fu Gradient Selection"),
+          widget = gimp_gradient_select_button_new (_("Script-Fu Gradient Selection"),
                                                     script->arg_values[i].sfa_gradient);
           g_signal_connect_swapped (widget, "gradient-set",
                                     G_CALLBACK (tiny_fu_gradient_callback),
@@ -486,7 +486,7 @@ tiny_fu_interface (SFScript *script)
 
         case SF_BRUSH:
           left_align = TRUE;
-          widget = gimp_brush_select_button_new (_("Tiny-Fu Brush Selection"),
+          widget = gimp_brush_select_button_new (_("Script-Fu Brush Selection"),
                                                  script->arg_values[i].sfa_brush.name,
                                                  script->arg_values[i].sfa_brush.opacity,
                                                  script->arg_values[i].sfa_brush.spacing,

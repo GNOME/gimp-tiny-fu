@@ -223,7 +223,7 @@ tiny_fu_server_run (const gchar      *name,
 
     case GIMP_RUN_WITH_LAST_VALS:
       status = GIMP_PDB_CALLING_ERROR;
-      g_warning ("Tiny-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\"");
+      g_warning ("Script-Fu server does not handle \"GIMP_RUN_WITH_LAST_VALS\"");
 
     default:
       break;
@@ -417,7 +417,7 @@ server_start (gint   port,
 
   progress = server_progress_install ();
 
-  server_log ("Tiny-Fu server initialized and listening...\n");
+  server_log ("Script-Fu server initialized and listening...\n");
 
   /*  Loop until the server is finished  */
   while (! tiny_fu_done)
@@ -708,9 +708,9 @@ server_interface (void)
 
   gimp_ui_init ("tiny-fu", FALSE);
 
-  dlg = gimp_dialog_new (_("Tiny-Fu Server Options"), "tiny-fu",
+  dlg = gimp_dialog_new (_("Script-Fu Server Options"), "script-fu",
                          NULL, 0,
-                         gimp_standard_help_func, "plug-in-tiny-fu-server",
+                         gimp_standard_help_func, "plug-in-script-fu-server",
 
                          GTK_STOCK_CANCEL,   GTK_RESPONSE_CANCEL,
                          _("_Start Server"), GTK_RESPONSE_OK,

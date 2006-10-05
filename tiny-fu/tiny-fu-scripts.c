@@ -642,7 +642,7 @@ tiny_fu_add_menu (scheme *sc, pointer a)
 
   /*  Check the length of a  */
   if (sc->vptr->list_length (sc, a) != 2)
-    return my_err (sc, "Incorrect number of arguments for tiny-fu-menu-register");
+    return my_err (sc, "Incorrect number of arguments for script-fu-menu-register");
 
   /*  Find the script PDB entry name  */
   name = sc->vptr->string_value (sc->vptr->pair_car (a));
@@ -652,7 +652,7 @@ tiny_fu_add_menu (scheme *sc, pointer a)
 
   if (! script)
   {
-    g_message ("Procedure %s in tiny-fu-menu-register does not exist", name);
+    g_message ("Procedure %s in script-fu-menu-register does not exist", name);
     return sc->NIL;
   }
 

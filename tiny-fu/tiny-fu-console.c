@@ -36,7 +36,7 @@
 
 #define BUFSIZE     256
 
-#define PROC_NAME   "plug-in-tiny-fu-console"
+#define PROC_NAME   "plug-in-script-fu-console"
 
 
 typedef struct
@@ -139,7 +139,7 @@ tiny_fu_console_run (const gchar      *name,
     case GIMP_RUN_WITH_LAST_VALS:
     case GIMP_RUN_NONINTERACTIVE:
       status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Tiny-Fu console mode allows only interactive invocation"));
+      g_message (_("Script-Fu console mode allows only interactive invocation"));
       break;
 
     default:
@@ -172,8 +172,8 @@ tiny_fu_console_interface (void)
   console->history_cur = 0;
   console->history_max = 50;
 
-  console->dialog = gimp_dialog_new (_("Tiny-Fu Console"),
-                                     "tiny-fu-console",
+  console->dialog = gimp_dialog_new (_("Script-Fu Console"),
+                                     "script-fu-console",
                                      NULL, 0,
                                      gimp_standard_help_func, PROC_NAME,
 
@@ -233,7 +233,7 @@ tiny_fu_console_interface (void)
     {
       "strong",   _("Welcome to TinyScheme\n"),
       "weak",     _("Copyright (c) Dimitrios Souflis\n\n"),
-      "strong",   _("Tiny-Fu Console - "),
+      "strong",   _("Script-Fu Console - "),
       "emphasis", _("Interactive Scheme Development"),
       NULL
     };
@@ -387,8 +387,8 @@ tiny_fu_browse_callback (GtkWidget        *widget,
   if (! console->proc_browser)
     {
       console->proc_browser =
-        gimp_proc_browser_dialog_new (_("Tiny-Fu Procedure Browser"),
-                                      "tiny-fu-procedure-browser",
+        gimp_proc_browser_dialog_new (_("Script-Fu Procedure Browser"),
+                                      "script-fu-procedure-browser",
                                       gimp_standard_help_func, PROC_NAME,
 
                                       GTK_STOCK_APPLY, GTK_RESPONSE_APPLY,
@@ -508,16 +508,16 @@ void
 tiny_fu_output_to_console (gchar *text)
 {
   GtkTextIter cursor;
-  
+
   gtk_text_buffer_get_end_iter (cint.console, &cursor);
   gtk_text_buffer_insert_with_tags_by_name (cint.console, &cursor,
                                             text, -1,
                                             "weak",
                                             NULL);
-  
+
   tiny_fu_console_scroll_end (&cint);
 }
-  
+
 static gboolean
 tiny_fu_cc_is_empty (ConsoleInterface *console)
 {
@@ -701,7 +701,7 @@ tiny_fu_eval_run (const gchar      *name,
     case GIMP_RUN_INTERACTIVE:
     case GIMP_RUN_WITH_LAST_VALS:
       status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Tiny-Fu evaluate mode allows only noninteractive invocation"));
+      g_message (_("Script-Fu evaluate mode allows only noninteractive invocation"));
       break;
 
     default:

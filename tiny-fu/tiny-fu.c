@@ -94,7 +94,7 @@ tiny_fu_query (void)
   gimp_plugin_domain_register (GETTEXT_PACKAGE, LOCALEDIR);
 
   gimp_install_procedure ("extension-tiny-fu",
-                          "A scheme interpreter for scripting GIMP operations",
+                          "A Scheme interpreter for scripting GIMP operations",
                           "More help here later",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
@@ -104,27 +104,27 @@ tiny_fu_query (void)
                           GIMP_EXTENSION,
                           0, 0, NULL, NULL);
 
-  gimp_install_procedure ("plug-in-tiny-fu-console",
+  gimp_install_procedure ("plug-in-script-fu-console",
                           N_("Interactive console for Script-Fu development"),
                           "Provides an interface which allows interactive "
-                                      "scheme development.",
+                                      "Scheme development.",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
-                          N_("Tiny-Fu _Console"),
+                          N_("Script-Fu _Console"),
                           NULL,
                           GIMP_PLUGIN,
                           G_N_ELEMENTS (console_args), 0,
                           console_args, NULL);
 
-  gimp_plugin_menu_register ("plug-in-tiny-fu-console",
-                             N_("<Toolbox>/Xtns/Languages/Tiny-Fu"));
+  gimp_plugin_menu_register ("plug-in-script-fu-console",
+                             N_("<Toolbox>/Xtns/Languages/Script-Fu"));
 
-  gimp_install_procedure ("plug-in-tiny-fu-text-console",
-                          "Provides a text console mode for tiny-fu "
+  gimp_install_procedure ("plug-in-script-fu-text-console",
+                          "Provides a text console mode for Scheme "
                                       "development",
                           "Provides an interface which allows interactive "
-                                      "scheme development.",
+                                      "Scheme development.",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -134,9 +134,9 @@ tiny_fu_query (void)
                           G_N_ELEMENTS (textconsole_args), 0,
                           textconsole_args, NULL);
 
-  gimp_install_procedure ("plug-in-tiny-fu-server",
-                          "Provides a server for remote tiny-fu operation",
-                          "Provides a server for remote tiny-fu operation",
+  gimp_install_procedure ("plug-in-script-fu-server",
+                          "Provides a server for remote script-fu operation",
+                          "Provides a server for remote script-fu operation",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -146,12 +146,12 @@ tiny_fu_query (void)
                           G_N_ELEMENTS (server_args), 0,
                           server_args, NULL);
 
-  gimp_plugin_menu_register ("plug-in-tiny-fu-server",
-                             N_("<Toolbox>/Xtns/Languages/Tiny-Fu"));
+  gimp_plugin_menu_register ("plug-in-script-fu-server",
+                             N_("<Toolbox>/Xtns/Languages/Script-Fu"));
 
-  gimp_install_procedure ("plug-in-tiny-fu-eval",
-                          "Evaluate scheme code",
-                          "Evaluate the code under the scheme interpreter "
+  gimp_install_procedure ("plug-in-script-fu-eval",
+                          "Evaluate Scheme code",
+                          "Evaluate the code under the Scheme interpreter "
                                       "(primarily for batch mode)",
                           "Manish Singh",
                           "Manish Singh",
@@ -216,7 +216,7 @@ tiny_fu_run (const gchar *name,
       values[0].type          = GIMP_PDB_STATUS;
       values[0].data.d_status = GIMP_PDB_SUCCESS;
     }
-  else if (strcmp (name, "plug-in-tiny-fu-text-console") == 0)
+  else if (strcmp (name, "plug-in-script-fu-text-console") == 0)
     {
       /*
        *  The tiny-fu text console for interactive Scheme development
@@ -225,7 +225,7 @@ tiny_fu_run (const gchar *name,
       tiny_fu_text_console_run (name, nparams, param,
                                 nreturn_vals, return_vals);
     }
-  else if (strcmp (name, "plug-in-tiny-fu-console") == 0)
+  else if (strcmp (name, "plug-in-script-fu-console") == 0)
     {
       /*
        *  The tiny-fu console for interactive Scheme development
@@ -234,7 +234,7 @@ tiny_fu_run (const gchar *name,
       tiny_fu_console_run (name, nparams, param,
                            nreturn_vals, return_vals);
     }
-  else if (strcmp (name, "plug-in-tiny-fu-server") == 0)
+  else if (strcmp (name, "plug-in-script-fu-server") == 0)
     {
       /*
        *  The tiny-fu server for remote operation
@@ -243,7 +243,7 @@ tiny_fu_run (const gchar *name,
       tiny_fu_server_run (name, nparams, param,
                           nreturn_vals, return_vals);
     }
-  else if (strcmp (name, "plug-in-tiny-fu-eval") == 0)
+  else if (strcmp (name, "plug-in-script-fu-eval") == 0)
     {
       /*
        *  A non-interactive "console" (for batch mode)
@@ -267,7 +267,7 @@ tiny_fu_extension_init (void)
   gimp_plugin_menu_branch_register ("<Toolbox>/Help", N_("_User Manual"));
 
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages",
-                                    N_("_Tiny-Fu"));
+                                    N_("_Script-Fu"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Buttons"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
@@ -276,7 +276,7 @@ tiny_fu_extension_init (void)
                                     N_("_Misc"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Patterns"));
-  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages/Tiny-Fu",
+  gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages/Script-Fu",
                                     N_("_Test"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Utils"));
@@ -314,7 +314,7 @@ tiny_fu_extension_init (void)
   gimp_plugin_menu_branch_register ("<Image>/Filters/Effects",
                                     N_("_Alchemy"));
 
-  gimp_install_temp_proc ("tiny_fu_refresh",
+  gimp_install_temp_proc ("script-fu-refresh",
                           "Re-read all available scripts",
                           "Re-read all available scripts",
                           "Spencer Kimball & Peter Mattis",
@@ -327,8 +327,8 @@ tiny_fu_extension_init (void)
                           args, NULL,
                           tiny_fu_refresh_proc);
 
-  gimp_plugin_menu_register ("tiny_fu_refresh",
-                             N_("<Toolbox>/Xtns/Languages/Tiny-Fu"));
+  gimp_plugin_menu_register ("script-fu-refresh",
+                             N_("<Toolbox>/Xtns/Languages/Script-Fu"));
 
 }
 
@@ -344,7 +344,7 @@ tiny_fu_refresh_proc (const gchar      *name,
 
   if (tiny_fu_interface_is_dialog_open ())
     {
-      g_message ( _("When a Tiny-Fu dialog box is open you "
+      g_message ( _("When a Script-Fu dialog box is open you "
                     "can not use \"Refresh Scripts\".") );
     }
   else
