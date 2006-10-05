@@ -223,7 +223,7 @@ ts_print_welcome (void)
 {
   if (ts_verbose_level >= 2)
   {
-     fprintf (ts_output, "Welcome to TinyScheme, Version 1.37\n");
+     fprintf (ts_output, "Welcome to TinyScheme, Version 1.38\n");
      fprintf (ts_output, "Copyright (c) Dimitrios Souflis\n");
   }
 }
