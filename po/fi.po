@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tiny-fu \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-03 12:44+0300\n"
-"PO-Revision-Date: 2006-10-03 12:56+0300\n"
+"POT-Creation-Date: 2006-10-08 19:01+0300\n"
+"PO-Revision-Date: 2006-10-08 19:07+0300\n"
 "Last-Translator: Mikko Paananen <mikko@ipi.fi>\n"
 "Language-Team: fi\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgid "Interactive console for Script-Fu development"
 msgstr "Interaktiivinen konsoli Script-Fu-kehitykseen"
 
 #: ../tiny-fu/tiny-fu.c:114
-msgid "Tiny-Fu _Console"
-msgstr "Tiny-Fu-konsoli"
+msgid "Script-Fu _Console"
+msgstr "Script-Fu-konsoli"
 
 #: ../tiny-fu/tiny-fu.c:121 ../tiny-fu/tiny-fu.c:150 ../tiny-fu/tiny-fu.c:331
-msgid "<Toolbox>/Xtns/Languages/Tiny-Fu"
+msgid "<Toolbox>/Xtns/Languages/Script-Fu"
 msgstr "<Toolbox>/Laajennokset/Kielet/Tiny-Fu"
 
 #: ../tiny-fu/tiny-fu.c:143
@@ -40,8 +40,8 @@ msgid "_User Manual"
 msgstr "_Käyttöohje"
 
 #: ../tiny-fu/tiny-fu.c:270
-msgid "_Tiny-Fu"
-msgstr "_Tiny-Fu"
+msgid "_Script-Fu"
+msgstr "_Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:272
 msgid "_Buttons"
@@ -136,17 +136,18 @@ msgid "_Refresh Scripts"
 msgstr "Päivitä skriptit"
 
 #: ../tiny-fu/tiny-fu.c:347
-msgid "When a Tiny-Fu dialog box is open you can not use \"Refresh Scripts\"."
+msgid ""
+"When a Script-Fu dialog box is open you can not use \"Refresh Scripts\"."
 msgstr ""
-"Kun Tiny-Fu-ikkuna on auki et voi käyttää \"Päivitä skriptit\"-valintaa"
+"Kun Script-Fu-ikkuna on auki, et voi käyttää \"Päivitä skriptit\"-valintaa."
 
 #: ../tiny-fu/tiny-fu-console.c:142
-msgid "Tiny-Fu console mode allows only interactive invocation"
-msgstr "Tiny-Fu konsoli moodi sallii ainoastaan interaktiivisen käytön"
+msgid "Script-Fu console mode allows only interactive invocation"
+msgstr "Script-Fu-konsolitila sallii ainoastaan interaktiivisen käytön"
 
 #: ../tiny-fu/tiny-fu-console.c:175
-msgid "Tiny-Fu Console"
-msgstr "Tiny-Fu-konsoli"
+msgid "Script-Fu Console"
+msgstr "Script-Fu-konsoli"
 
 #: ../tiny-fu/tiny-fu-console.c:180
 msgid "_Save Output"
@@ -169,8 +170,8 @@ msgstr ""
 "\n"
 
 #: ../tiny-fu/tiny-fu-console.c:236
-msgid "Tiny-Fu Console - "
-msgstr "Tiny-Fu-konsoli - "
+msgid "Script-Fu Console - "
+msgstr "Script-Fu-konsoli - "
 
 #: ../tiny-fu/tiny-fu-console.c:237
 msgid "Interactive Scheme Development"
@@ -185,12 +186,12 @@ msgid "Save TinyScheme Output"
 msgstr "Tallenna TinySchemen tuloste"
 
 #: ../tiny-fu/tiny-fu-console.c:390
-msgid "Tiny-Fu Procedure Browser"
-msgstr "Tiny-Fu:n proseduuriselain"
+msgid "Script-Fu Procedure Browser"
+msgstr "Script-Fu:n proseduuriselain"
 
 #: ../tiny-fu/tiny-fu-console.c:704
-msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
-msgstr "Tiny-Fu:n evaluointitila sallii ainoastaan ei-interaktiivisen käytön"
+msgid "Script-Fu evaluate mode allows only noninteractive invocation"
+msgstr "Script-Fu:n evaluointitila sallii ainoastaan ei-interaktiivisen käytön"
 
 #: ../tiny-fu/tiny-fu-scripts.c:675
 #, c-format
@@ -206,8 +207,8 @@ msgstr ""
 "%s"
 
 #: ../tiny-fu/tiny-fu-server.c:711
-msgid "Tiny-Fu Server Options"
-msgstr "Tiny-Fu palvelimen valinnat"
+msgid "Script-Fu Server Options"
+msgstr "Script-Fu palvelimen valinnat"
 
 #: ../tiny-fu/tiny-fu-server.c:716
 msgid "_Start Server"
@@ -222,23 +223,23 @@ msgid "Server Logfile:"
 msgstr "Palvelimen lokitiedosto:"
 
 #: ../tiny-fu/tiny-fu-interface.c:176
-msgid "Tiny-Fu cannot process two scripts at the same time."
-msgstr "Tiny-Fu ei voi suorittaa kahta komentosarjaa samaan aikaan."
+msgid "Script-Fu cannot process two scripts at the same time."
+msgstr "Script-Fu ei voi suorittaa kahta komentosarjaa samaan aikaan."
 
 #: ../tiny-fu/tiny-fu-interface.c:178
 #, c-format
 msgid "You are already running the \"%s\" script."
 msgstr "Komentosarja \"%s\" on jo ajossa."
 
-#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
+#. strip the first part of the menupath if it contains _("/Script-Fu/")
 #: ../tiny-fu/tiny-fu-interface.c:201 ../tiny-fu/tiny-fu-interface.c:203
-msgid "/Tiny-Fu/"
-msgstr "/Tiny-Fu/"
+msgid "/Script-Fu/"
+msgstr "/Script-Fu/"
 
 #: ../tiny-fu/tiny-fu-interface.c:221
 #, c-format
-msgid "Tiny-Fu: %s"
-msgstr "Tiny-Fu: %s"
+msgid "Script-Fu: %s"
+msgstr "Script-Fu: %s"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
@@ -248,36 +249,36 @@ msgid "%s:"
 msgstr "%s:"
 
 #: ../tiny-fu/tiny-fu-interface.c:330
-msgid "Tiny-Fu Color Selection"
-msgstr "Tiny-Fu värien selain"
+msgid "Script-Fu Color Selection"
+msgstr "Script-Fu värin valinta"
 
 #: ../tiny-fu/tiny-fu-interface.c:437
-msgid "Tiny-Fu File Selection"
-msgstr "Tiny-Fu tiedostojen selain"
+msgid "Script-Fu File Selection"
+msgstr "Tiny-Fu tiedoston valinta"
 
 #: ../tiny-fu/tiny-fu-interface.c:441
-msgid "Tiny-Fu Folder Selection"
-msgstr "Tiny-Fu kansioiden valinta"
+msgid "Script-Fu Folder Selection"
+msgstr "Script-Fu kansion valinta"
 
 #: ../tiny-fu/tiny-fu-interface.c:453
-msgid "Tiny-Fu Font Selection"
-msgstr "Tiny-Fu merkistön valinta"
+msgid "Script-Fu Font Selection"
+msgstr "Script-Fu kirjasimen valinta"
 
 #: ../tiny-fu/tiny-fu-interface.c:462
-msgid "Tiny-Fu Palette Selection"
-msgstr "Script-fu palettien selain"
+msgid "Script-Fu Palette Selection"
+msgstr "Script-fu paletin selain"
 
 #: ../tiny-fu/tiny-fu-interface.c:471
-msgid "Tiny-Fu Pattern Selection"
-msgstr "Tiny-fu palettien valinta"
+msgid "Script-Fu Pattern Selection"
+msgstr "Script-Fu kuvion valinta"
 
 #: ../tiny-fu/tiny-fu-interface.c:480
-msgid "Tiny-Fu Gradient Selection"
-msgstr "Tiny-Fu väriliukumien selain"
+msgid "Script-Fu Gradient Selection"
+msgstr "Script-Fu väriliu'un valinta"
 
 #: ../tiny-fu/tiny-fu-interface.c:489
-msgid "Tiny-Fu Brush Selection"
-msgstr "Tiny-Fu siveltimien selain"
+msgid "Script-Fu Brush Selection"
+msgstr "Script-Fu siveltimen valinta"
 
 #: ../scripts/ts-helloworld.scm.h:1 ../scripts/drop-shadow.scm.h:3
 #: ../scripts/fuzzyborder.scm.h:4 ../scripts/perspective-shadow.scm.h:4
@@ -340,7 +341,7 @@ msgstr "Merkkijono"
 
 #: ../scripts/contactsheet.scm.h:1
 msgid " contact sheets from a total of "
-msgstr ""
+msgstr " yhteystietoarkit joukosta "
 
 #: ../scripts/contactsheet.scm.h:2
 msgid " for directory "
@@ -370,7 +371,7 @@ msgstr "Taustaväri"
 
 #: ../scripts/contactsheet.scm.h:5
 msgid "Contact Sheet"
-msgstr ""
+msgstr "Yhteystietoarkki"
 
 #: ../scripts/contactsheet.scm.h:6
 msgid "Created "
@@ -382,15 +383,15 @@ msgstr "Kansio"
 
 #: ../scripts/contactsheet.scm.h:8
 msgid "Legend font"
-msgstr ""
+msgstr "Historiakirjasin"
 
 #: ../scripts/contactsheet.scm.h:9
 msgid "Sheet "
-msgstr ""
+msgstr "Arkki "
 
 #: ../scripts/contactsheet.scm.h:10
 msgid "Sheet size"
-msgstr ""
+msgstr "Arkin koko"
 
 #: ../scripts/contactsheet.scm.h:11 ../scripts/alien-glow-button.scm.h:10
 #: ../scripts/basic1-logo.scm.h:5 ../scripts/basic2-logo.scm.h:6
@@ -2118,7 +2119,6 @@ msgid "Foreground color"
 msgstr "Edustaväri"
 
 #: ../scripts/truchet.scm.h:6
-#, fuzzy
 msgid "T_ruchet..."
 msgstr "_Vaakaerotin..."
 
@@ -2265,6 +2265,15 @@ msgstr "Korostuksen peitto"
 #: ../scripts/xach-effect.scm.h:11
 msgid "_Xach-Effect..."
 msgstr "_Xach-efekti..."
+
+#~ msgid "_Tiny-Fu"
+#~ msgstr "_Tiny-Fu"
+
+#~ msgid "Tiny-Fu Palette Selection"
+#~ msgstr "Script-fu palettien selain"
+
+#~ msgid "Tiny-Fu Pattern Selection"
+#~ msgstr "Tiny-fu palettien valinta"
 
 #~ msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
 #~ msgstr "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu Konsoli"
@@ -2424,9 +2433,6 @@ msgstr "_Xach-efekti..."
 
 #~ msgid "Use tattern for outline instead of gradient"
 #~ msgstr "Käytä kuviota ulkoreunalla väriliu'un sijaan"
-
-#~ msgid "Script-fu Pattern Selection"
-#~ msgstr "Script-fu kuvioiden selain"
 
 #~ msgid "Search by _Name"
 #~ msgstr "Etsi nimellä"
