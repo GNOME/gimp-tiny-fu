@@ -58,9 +58,7 @@
 ; Here the brush dialog will be popped up with a default brush of Circle (03)
 ; opacity 1.0, spacing 44 and paint mode of Normal (value 0).
 ; If this selection was unchanged the value passed to the function as a
-; paramater would be '("Circle (03)" 1.0 44 0). BTW the widget used
-; is generally available in the libgimpui library for any plugin that
-; wishes to select a brush.
+; parameter would be '("Circle (03)" 1.0 44 0).
 ;
 ; ----------------------------------------------------------------------
 ; SF-PATTERN
@@ -155,27 +153,27 @@
 
 
 (define (script-fu-test-sphere radius
-                             light
-                             shadow
-                             bg-color
-                             sphere-color
-                             brush
-                             text
-                             multi-text
-                             pattern
-                             gradient
-                             gradient-reverse
-                             font
-                             size
-                             unused-palette
-                             unused-filename
-                             unused-orientation
-                             unused-interpolation
-                             unused-dirname
-                             unused-image
-                             unused-layer
-                             unused-channel
-                             unused-drawable)
+                               light
+                               shadow
+                               bg-color
+                               sphere-color
+                               brush
+                               text
+                               multi-text
+                               pattern
+                               gradient
+                               gradient-reverse
+                               font
+                               size
+                               unused-palette
+                               unused-filename
+                               unused-orientation
+                               unused-interpolation
+                               unused-dirname
+                               unused-image
+                               unused-layer
+                               unused-channel
+                               unused-drawable)
   (let* (
         (width (* radius 3.75))
         (height (* radius 2.5))

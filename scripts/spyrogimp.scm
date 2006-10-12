@@ -25,11 +25,11 @@
 ; This routine is invoked by a dialog.
 ; It is the main routine in this file.
 (define (script-fu-spyrogimp img drw
-                           type shape
-                           oteeth iteeth
-                           margin hole-ratio start-angle
-                           tool brush
-                           color-method color grad)
+                             type shape
+                             oteeth iteeth
+                             margin hole-ratio start-angle
+                             tool brush
+                             color-method color grad)
 
   ; Internal function to draw the spyro.
   (define (script-fu-spyrogimp-internal img drw
@@ -306,7 +306,7 @@
 
 (script-fu-register "script-fu-spyrogimp"
     _"_Spyrogimp..."
-    "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://www.wisdom.weizmann.ac.il/~elad/spyrogimp/"
+    _"Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
     "Elad Shahar <elad@wisdom.weizmann.ac.il>"
     "Elad Shahar"
     "June 2003"

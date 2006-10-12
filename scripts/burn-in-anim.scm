@@ -12,15 +12,15 @@
 ;
 
 (define (script-fu-burn-in-anim org-img
-                              org-layer
-                              glow-color
-                              fadeout
-                              bl-width
-                              corona-width
-                              after-glow
-                              show-glow
-                              optimize
-                              speed)
+                                org-layer
+                                glow-color
+                                fadeout
+                                bl-width
+                                corona-width
+                                after-glow
+                                show-glow
+                                optimize
+                                speed)
 
   (let* (
         ;--- main variable: "bl-x" runs from 0 to layer-width
@@ -215,7 +215,7 @@
 
 (script-fu-register "script-fu-burn-in-anim"
     _"B_urn-In..."
-    "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
+    _"Create intermediate layers to produce an animated 'burn-in' transition between two layers"
     "Roland Berger roland@fuchur.leute.server.de"
     "Roland Berger"
     "January 2001"

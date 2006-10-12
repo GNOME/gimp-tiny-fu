@@ -149,23 +149,23 @@
 
 
 (define (script-fu-glossy-logo-alpha img
-                                   logo-layer
-                                   blend-gradient-text
-                                   blend-gradient-text-reverse
-                                   blend-gradient-outline
-                                   blend-gradient-outline-reverse
-                                   grow-size
-                                   bg-color
-                                   use-pattern-text
-                                   pattern-text
-                                   use-pattern-outline
-                                   pattern-outline
-                                   use-pattern-overlay
-                                   pattern-overlay
-                                   noninteractive
-                                   shadow-toggle
-                                   s-offset-x
-                                   s-offset-y)
+                                     logo-layer
+                                     blend-gradient-text
+                                     blend-gradient-text-reverse
+                                     blend-gradient-outline
+                                     blend-gradient-outline-reverse
+                                     grow-size
+                                     bg-color
+                                     use-pattern-text
+                                     pattern-text
+                                     use-pattern-outline
+                                     pattern-outline
+                                     use-pattern-overlay
+                                     pattern-overlay
+                                     noninteractive
+                                     shadow-toggle
+                                     s-offset-x
+                                     s-offset-y)
 
   (begin
     (gimp-image-undo-group-start img)
@@ -188,7 +188,7 @@
 
 (script-fu-register "script-fu-glossy-logo-alpha"
     _"Glo_ssy..."
-    "Creates anything you can create with it :)"
+    _"Add gradients, patterns, shadows, and bump maps to the selected region (or alpha)"
     "Hrvoje Horvat (hhorvat@open.hr)"
     "Hrvoje Horvat"
     "14/04/1998"
@@ -218,24 +218,24 @@
 
 
 (define (script-fu-glossy-logo text
-                             size
-                             font
-                             blend-gradient-text
-                             blend-gradient-text-reverse
-                             blend-gradient-outline
-                             blend-gradient-outline-reverse
-                             grow-size
-                             bg-color
-                             use-pattern-text
-                             pattern-text
-                             use-pattern-outline
-                             pattern-outline
-                             use-pattern-overlay
-                             pattern-overlay
-                             noninteractive
-                             shadow-toggle
-                             s-offset-x
-                             s-offset-y)
+                               size
+                               font
+                               blend-gradient-text
+                               blend-gradient-text-reverse
+                               blend-gradient-outline
+                               blend-gradient-outline-reverse
+                               grow-size
+                               bg-color
+                               use-pattern-text
+                               pattern-text
+                               use-pattern-outline
+                               pattern-outline
+                               use-pattern-overlay
+                               pattern-overlay
+                               noninteractive
+                               shadow-toggle
+                               s-offset-x
+                               s-offset-y)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (text-layer (car (gimp-text-fontname img -1 0 0 text 30 TRUE size PIXELS font)))
@@ -259,7 +259,7 @@
 
 (script-fu-register "script-fu-glossy-logo"
     _"Glo_ssy..."
-    "Creates anything you can create with it :)"
+    _"Create a logo with gradients, patterns, shadows, and bump maps"
     "Hrvoje Horvat (hhorvat@open.hr)"
     "Hrvoje Horvat"
     "14/04/1998"

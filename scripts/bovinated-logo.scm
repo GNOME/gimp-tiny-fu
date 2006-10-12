@@ -80,7 +80,7 @@
 
 (script-fu-register "script-fu-bovinated-logo-alpha"
     _"Bo_vination..."
-    "Makes Cow-spotted logos"
+    _"Add 'cow spots' to the selected region (or alpha)"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
     "April 1998"
@@ -93,11 +93,11 @@
 )
 
 (define (script-fu-bovinated-logo text
-                                size
-                                font
-                                spots-x
-                                spots-y
-                                bg-color)
+                                  size
+                                  font
+                                  spots-x
+                                  spots-y
+                                  bg-color)
   (let* ((img (car (gimp-image-new 256 256 RGB)))
          (border (/ size 4))
          (text-layer (car (gimp-text-fontname img -1 0 0 text border TRUE size PIXELS font))))
@@ -112,7 +112,7 @@
 
 (script-fu-register "script-fu-bovinated-logo"
     _"Bo_vination..."
-    "Makes Cow-spotted logos"
+    _"Create a logo with text in the style of 'cow spots'"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
     "April 1998"

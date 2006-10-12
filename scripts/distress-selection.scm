@@ -22,13 +22,13 @@
 ; Define the function:
 
 (define (script-fu-distress-selection inImage
-                                    inLayer
-                                    inThreshold
-                                    inSpread
-                                    inGranu
-                                    inSmooth
-                                    inSmoothH
-                                    inSmoothV)
+                                      inLayer
+                                      inThreshold
+                                      inSpread
+                                      inGranu
+                                      inSmooth
+                                      inSmoothH
+                                      inSmoothV)
 
   (let (
        (theImage inImage)
@@ -93,7 +93,7 @@
 
 (script-fu-register "script-fu-distress-selection"
     _"_Disort..."
-    "No description"
+    _"Distress the selection"
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
     "23rd April 1998"

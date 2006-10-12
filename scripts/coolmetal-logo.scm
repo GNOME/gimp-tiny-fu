@@ -129,7 +129,7 @@
 
 (script-fu-register "script-fu-cool-metal-logo-alpha"
     _"Cool _Metal..."
-    "Metallic logos with reflections and perspective shadows"
+    _"Add a metallic effect to the selected region (or alpha) with reflections and perspective shadows"
     "Spencer Kimball & Rob Malda"
     "Spencer Kimball & Rob Malda"
     "1997"
@@ -147,11 +147,11 @@
 
 
 (define (script-fu-cool-metal-logo text
-                                 size
-                                 font
-                                 bg-color
-                                 gradient
-                                 gradient-reverse)
+                                   size
+                                   font
+                                   bg-color
+                                   gradient
+                                   gradient-reverse)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (text-layer (car (gimp-text-fontname img -1 0 0 text 0 TRUE
@@ -167,7 +167,7 @@
 
 (script-fu-register "script-fu-cool-metal-logo"
     _"Cool _Metal..."
-    "Metallic logos with reflections and perspective shadows"
+    _"Create a metallic logo with reflections and perspective shadows"
     "Spencer Kimball & Rob Malda"
     "Spencer Kimball & Rob Malda"
     "1997"

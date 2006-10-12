@@ -47,9 +47,9 @@
 )
 
 (define (script-fu-alien-glow-logo-alpha img
-                                       logo-layer
-                                       size
-                                       glow-color)
+                                         logo-layer
+                                         size
+                                         glow-color)
   (gimp-image-undo-group-start img)
   (apply-alien-glow-logo-effect img logo-layer size glow-color)
   (gimp-image-undo-group-end img)
@@ -58,7 +58,7 @@
 
 (script-fu-register "script-fu-alien-glow-logo-alpha"
     _"Alien _Glow..."
-    "Create an X-Files-esque logo with the specified glow color"
+    _"Add an eerie glow around the selected region (or alpha)"
     "Spencer Kimball"
     "Spencer Kimball"
     "1997"
@@ -73,9 +73,9 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-alien-glow-logo text
-                                 size
-                                 font
-                                 glow-color)
+                                   size
+                                   font
+                                   glow-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ size 4))
@@ -95,7 +95,7 @@
 
 (script-fu-register "script-fu-alien-glow-logo"
     _"Alien _Glow..."
-    "Create an X-Files-esque logo with the specified glow color"
+    _"Create a logo with an alien glow around the text"
     "Spencer Kimball"
     "Spencer Kimball"
     "1997"

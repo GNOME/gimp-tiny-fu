@@ -69,7 +69,7 @@
 
 (script-fu-register "script-fu-beveled-pattern-hrule"
     _"_Hrule..."
-    "Beveled pattern hrule"
+    _"Create a beveled pattern hrule for webpages"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
     "July 1997"

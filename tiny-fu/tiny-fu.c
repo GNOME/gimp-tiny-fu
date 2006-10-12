@@ -27,12 +27,13 @@
 
 #include "tiny-fu-types.h"
 
-#include "ts-wrapper.h"
 #include "tiny-fu-console.h"
 #include "tiny-fu-interface.h"
 #include "tiny-fu-scripts.h"
 #include "tiny-fu-server.h"
 #include "tiny-fu-text-console.h"
+
+#include "ts-wrapper.h"
 
 #include "tiny-fu-intl.h"
 
@@ -70,23 +71,23 @@ tiny_fu_query (void)
 {
   static const GimpParamDef console_args[] =
   {
-    { GIMP_PDB_INT32,  "run_mode", "Interactive, [non-interactive]" }
+    { GIMP_PDB_INT32,  "run-mode", "Interactive, [non-interactive]" }
   };
 
   static const GimpParamDef textconsole_args[] =
   {
-    { GIMP_PDB_INT32,  "run_mode", "Interactive, [non-interactive]" }
+    { GIMP_PDB_INT32,  "run-mode", "Interactive, [non-interactive]" }
   };
 
   static const GimpParamDef eval_args[] =
   {
-    { GIMP_PDB_INT32,  "run_mode", "[Interactive], non-interactive" },
+    { GIMP_PDB_INT32,  "run-mode", "[Interactive], non-interactive" },
     { GIMP_PDB_STRING, "code",     "The code to evaluate" }
   };
 
   static const GimpParamDef server_args[] =
   {
-    { GIMP_PDB_INT32,  "run_mode", "[Interactive], non-interactive" },
+    { GIMP_PDB_INT32,  "run-mode", "[Interactive], non-interactive" },
     { GIMP_PDB_INT32,  "port",     "The port on which to listen for requests" },
     { GIMP_PDB_STRING, "logfile",  "The file to log server activity to" }
   };
@@ -219,7 +220,7 @@ tiny_fu_run (const gchar *name,
   else if (strcmp (name, "plug-in-script-fu-text-console") == 0)
     {
       /*
-       *  The tiny-fu text console for interactive Scheme development
+       *  The script-fu text console for interactive Scheme development
        */
 
       tiny_fu_text_console_run (name, nparams, param,
@@ -228,7 +229,7 @@ tiny_fu_run (const gchar *name,
   else if (strcmp (name, "plug-in-script-fu-console") == 0)
     {
       /*
-       *  The tiny-fu console for interactive Scheme development
+       *  The script-fu console for interactive Scheme development
        */
 
       tiny_fu_console_run (name, nparams, param,
@@ -237,7 +238,7 @@ tiny_fu_run (const gchar *name,
   else if (strcmp (name, "plug-in-script-fu-server") == 0)
     {
       /*
-       *  The tiny-fu server for remote operation
+       *  The script-fu server for remote operation
        */
 
       tiny_fu_server_run (name, nparams, param,
@@ -260,7 +261,7 @@ tiny_fu_extension_init (void)
 {
   static const GimpParamDef args[] =
   {
-    { GIMP_PDB_INT32, "run_mode", "[Interactive], non-interactive" }
+    { GIMP_PDB_INT32, "run-mode", "[Interactive], non-interactive" }
   };
 
   gimp_plugin_menu_branch_register ("<Toolbox>/Help", N_("_GIMP Online"));
@@ -315,8 +316,8 @@ tiny_fu_extension_init (void)
                                     N_("_Alchemy"));
 
   gimp_install_temp_proc ("script-fu-refresh",
-                          "Re-read all available scripts",
-                          "Re-read all available scripts",
+                          N_("Re-read all available Script-Fu scripts"),
+                          "Re-read all available Script-Fu scripts",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",

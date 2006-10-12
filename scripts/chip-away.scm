@@ -113,15 +113,15 @@
 )
 
 (define (script-fu-chip-away-logo-alpha img
-                                      logo-layer
-                                      spread-amount
-                                      blur-amount
-                                      invert
-                                      drop-shadow
-                                      keep-bump
-                                      bg-fill
-                                      keep-back
-                                      pattern)
+                                        logo-layer
+                                        spread-amount
+                                        blur-amount
+                                        invert
+                                        drop-shadow
+                                        keep-bump
+                                        bg-fill
+                                        keep-back
+                                        pattern)
   (begin
     (gimp-image-undo-group-start img)
     (apply-chip-away-logo-effect img logo-layer spread-amount blur-amount
@@ -134,7 +134,7 @@
 
 (script-fu-register "script-fu-chip-away-logo-alpha"
     _"Chip Awa_y..."
-    "Chip away effect"
+    _"Add a chipped woodcarving effect to the selected region (or alpha)"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins <adrian@gimp.org>"
     "1997"
@@ -156,16 +156,16 @@
 
 
 (define (script-fu-chip-away-logo text
-                                font
-                                font-size
-                                spread-amount
-                                blur-amount
-                                invert
-                                drop-shadow
-                                keep-bump
-                                bg-fill
-                                keep-back
-                                pattern)
+                                  font
+                                  font-size
+                                  spread-amount
+                                  blur-amount
+                                  invert
+                                  drop-shadow
+                                  keep-bump
+                                  bg-fill
+                                  keep-back
+                                  pattern)
   (let* ((img (car (gimp-image-new 256 256 RGB)))
          (text-layer (car (gimp-text-fontname img -1 0 0
                                      text 30 TRUE font-size PIXELS font))))
@@ -180,7 +180,7 @@
 
 (script-fu-register "script-fu-chip-away-logo"
     _"Chip Awa_y..."
-    "Chip away effect"
+    _"Create a logo resembling a chipped wood carving"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins <adrian@gimp.org>"
     "1997"

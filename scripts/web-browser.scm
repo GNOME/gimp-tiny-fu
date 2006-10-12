@@ -56,8 +56,8 @@
 
 ; shortcuts to help topics
 (script-fu-register "gimp-help-2-concepts-paths"
-    _"Using _Paths"
-     "Bookmark to gimp-concepts-paths"
+   _"Using _Paths"
+    "Bookmark to gimp-concepts-paths"
     "Roman Joost <romanofski@gimp.org>"
     "Roman Joost <romanofski@gimp.org>"
     "2006"

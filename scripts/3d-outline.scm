@@ -93,14 +93,14 @@
 )
 
 (define (script-fu-3d-outline-logo-alpha img
-                                       logo-layer
-                                       text-pattern
-                                       outline-blur-radius
-                                       shadow-blur-radius
-                                       bump-map-blur-radius
-                                       noninteractive
-                                       s-offset-x
-                                       s-offset-y)
+                                         logo-layer
+                                         text-pattern
+                                         outline-blur-radius
+                                         shadow-blur-radius
+                                         bump-map-blur-radius
+                                         noninteractive
+                                         s-offset-x
+                                         s-offset-y)
   (begin
     (gimp-image-undo-group-start img)
     (apply-3d-outline-logo-effect img logo-layer text-pattern
@@ -114,7 +114,7 @@
 
 (script-fu-register "script-fu-3d-outline-logo-alpha"
   _"3D _Outline..."
-  "Creates outlined texts with drop shadow"
+  _"Outline the selected region (or alpha) with a pattern and add a drop shadow"
   "Hrvoje Horvat (hhorvat@open.hr)"
   "Hrvoje Horvat"
   "07 April, 1998"
@@ -134,19 +134,19 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-3d-outline-logo text-pattern
-                                 text
-                                 size
-                                 font
-                                 outline-blur-radius
-                                 shadow-blur-radius
-                                 bump-map-blur-radius
-                                 noninteractive
-                                 s-offset-x
-                                 s-offset-y)
+                                   text
+                                   size
+                                   font
+                                   outline-blur-radius
+                                   shadow-blur-radius
+                                   bump-map-blur-radius
+                                   noninteractive
+                                   s-offset-x
+                                   s-offset-y)
   (let* (
-    (img (car (gimp-image-new 256 256 RGB)))
-    (text-layer (car (gimp-text-fontname img -1 0 0 text 30 TRUE size PIXELS font)))
-    )
+        (img (car (gimp-image-new 256 256 RGB)))
+        (text-layer (car (gimp-text-fontname img -1 0 0 text 30 TRUE size PIXELS font)))
+        )
     (gimp-image-undo-disable img)
     (apply-3d-outline-logo-effect img text-layer text-pattern
                                   outline-blur-radius shadow-blur-radius
@@ -159,7 +159,7 @@
 
 (script-fu-register "script-fu-3d-outline-logo"
   _"3D _Outline..."
-  "Creates outlined texts with drop shadow"
+  _"Create a logo with outlined text and a drop shadow"
   "Hrvoje Horvat (hhorvat@open.hr)"
   "Hrvoje Horvat"
   "07 April, 1998"

@@ -38,13 +38,13 @@
 ; Define the main function:
 
 (define (script-fu-fade-outline inImage
-                              inLayer
-                              inBorderSize
-                              inFadeFrom
-                              inFadeTo
-                              inGrowingSelection
-                              inApplyMask
-                              inClearUnselected)
+                                inLayer
+                                inBorderSize
+                                inFadeFrom
+                                inFadeTo
+                                inGrowingSelection
+                                inApplyMask
+                                inClearUnselected)
 
   (let* (
         (l-idx)
@@ -178,7 +178,7 @@
 (script-fu-register
     "script-fu-fade-outline"
     _"_Fade to Layer Mask..."
-    "Blend the Layers outline border from one alpha value (opaque) to another (transparent) by generating a Layermask"
+    _"Create a layermask that fades the edges of the selected region (or alpha)"
     "Wolfgang Hofer <hof@hotbot.com>"
     "Wolfgang Hofer"
     "10 Nov 1999"

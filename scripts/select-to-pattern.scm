@@ -92,7 +92,7 @@
 
 (script-fu-register "script-fu-selection-to-pattern"
     _"To _Pattern..."
-    "Convert a selection to a pattern"
+    _"Convert a selection to a pattern"
     "Cameron Gregory <cameron@bloke.com>"
     "Cameron Gregory"
     "09/02/2003"

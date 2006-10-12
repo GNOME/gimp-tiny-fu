@@ -24,14 +24,14 @@
 
 
 (define (script-fu-alien-glow-button text
-                                   font
-                                   size
-                                   text-color
-                                   glow-color
-                                   bg-color
-                                   padding
-                                   glow-radius
-                                   flatten)
+                                     font
+                                     size
+                                     text-color
+                                     glow-color
+                                     bg-color
+                                     padding
+                                     glow-radius
+                                     flatten)
 
   (define (text-width extents)
 	(car extents))
@@ -146,7 +146,7 @@
 
 (script-fu-register "script-fu-alien-glow-button"
     _"B_utton..."
-    "Button with an eerie glow"
+    _"Create a button graphic with an eerie glow for web pages"
     "Adrian Likins"
     "Adrian Likins"
     "July 1997"

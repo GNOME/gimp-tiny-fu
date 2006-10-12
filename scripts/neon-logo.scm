@@ -176,11 +176,11 @@
 )
 
 (define (script-fu-neon-logo-alpha img
-                                 tube-layer
-                                 size
-                                 bg-color
-                                 glow-color
-                                 shadow)
+                                   tube-layer
+                                   size
+                                   bg-color
+                                   glow-color
+                                   shadow)
   (begin
     (gimp-image-undo-group-start img)
     (apply-neon-logo-effect img tube-layer size bg-color glow-color shadow)
@@ -191,7 +191,7 @@
 
 (script-fu-register "script-fu-neon-logo-alpha"
     _"N_eon..."
-    "Neon logos"
+    _"Convert the selected region (or alpha) into a neon-sign like object"
     "Spencer Kimball"
     "Spencer Kimball"
     "1997"
@@ -208,11 +208,11 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-neon-logo text
-                           size
-                           font
-                           bg-color
-                           glow-color
-                           shadow)
+                             size
+                             font
+                             bg-color
+                             glow-color
+                             shadow)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ size 4))
@@ -227,7 +227,7 @@
 
 (script-fu-register "script-fu-neon-logo"
     _"N_eon..."
-    "Neon logos"
+    _"Create a logo in the style of a neon sign"
     "Spencer Kimball"
     "Spencer Kimball"
     "1997"

@@ -41,9 +41,9 @@
 )
 
 (define (script-fu-basic1-logo-alpha img
-                                   logo-layer
-                                   bg-color
-                                   text-color)
+                                     logo-layer
+                                     bg-color
+                                     text-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-basic1-logo-effect img logo-layer bg-color text-color)
@@ -54,7 +54,7 @@
 
 (script-fu-register "script-fu-basic1-logo-alpha"
   _"_Basic I..."
-  "Creates a simple logo with a drop shadow"
+  _"Add a gradient effect, a drop shadow, and a background to the selected region (or alpha)"
   "Spencer Kimball"
   "Spencer Kimball"
   "1996"
@@ -69,10 +69,10 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-basic1-logo text
-                             size
-                             font
-                             bg-color
-                             text-color)
+                               size
+                               font
+                               bg-color
+                               text-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (text-layer (car (gimp-text-fontname img -1 0 0 text 10 TRUE size PIXELS font)))
@@ -87,7 +87,7 @@
 
 (script-fu-register "script-fu-basic1-logo"
   _"_Basic I..."
-  "Creates a simple logo with a drop shadow"
+  _"Create a plain text logo with a gradient effect, a drop shadow, and a background"
   "Spencer Kimball"
   "Spencer Kimball"
   "1996"

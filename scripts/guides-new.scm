@@ -25,7 +25,7 @@
 
 (script-fu-register "script-fu-guide-new"
     _"New _Guide..."
-    "Add a single Line Guide with the specified postion and orientation. Postion is specified in Pixels (px)."
+    _"Add a guide at the orientation and position specified (in pixels)"
     "Alan Horkan"
     "Alan Horkan, 2004.  Public Domain."
     "2004-04-02"

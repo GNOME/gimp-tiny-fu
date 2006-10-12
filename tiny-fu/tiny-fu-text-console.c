@@ -18,8 +18,6 @@
 
 #include "config.h"
 
-#include <glib.h>
-
 #include <stdio.h>
 #include <errno.h>
 

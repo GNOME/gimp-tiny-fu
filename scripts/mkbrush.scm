@@ -72,7 +72,7 @@
 
 (script-fu-register "script-fu-make-brush-rectangular"
     _"New Re_ctangular..."
-    "Create size of brush"
+    _"Create a rectangular brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
     "1997"
@@ -146,7 +146,7 @@
 
 (script-fu-register "script-fu-make-brush-rectangular-feathered"
     _"New Rec_tangular, Feathered..."
-    _"Create size of brush"
+    _"Create a rectangular brush with feathered edges"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
     "1997"
@@ -211,7 +211,7 @@
 
 (script-fu-register "script-fu-make-brush-elliptical"
     _"New Ell_iptical..."
-    "Create size of brush"
+    _"Create an elliptical brush"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
     "1997"
@@ -283,7 +283,7 @@
 
 (script-fu-register "script-fu-make-brush-elliptical-feathered"
     _"New Elli_ptical, Feathered..."
-    "Makes a feathered elliptical brush of specified size"
+    _"Create an elliptical brush with feathered edges"
     "Seth Burgess <sjburges@ou.edu>"
     "Seth Burgess"
     "1997"

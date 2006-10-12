@@ -540,7 +540,7 @@ read_from_client (gint filedes)
 
   if (buffer[MAGIC_BYTE] != MAGIC)
     {
-      server_log ("Error in tiny-fu command transmission.\n");
+      server_log ("Error in script-fu command transmission.\n");
       return -1;
     }
 

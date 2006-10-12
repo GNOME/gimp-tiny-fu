@@ -36,13 +36,13 @@
 
 
 (define (script-fu-drop-shadow image
-                             drawable
-                             shadow-transl-x
-                             shadow-transl-y
-                             shadow-blur
-                             shadow-color
-                             shadow-opacity
-                             allow-resize)
+                               drawable
+                               shadow-transl-x
+                               shadow-transl-y
+                               shadow-blur
+                               shadow-color
+                               shadow-opacity
+                               allow-resize)
   (let* (
         (shadow-blur (max shadow-blur 0))
         (shadow-opacity (min shadow-opacity 100))
@@ -163,7 +163,7 @@
 
 (script-fu-register "script-fu-drop-shadow"
     _"_Drop-Shadow..."
-    "Add a drop-shadow of the current selection or alpha-channel"
+    _"Add a drop-shadow to the selected region (or alpha)"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
     "1999/12/21"

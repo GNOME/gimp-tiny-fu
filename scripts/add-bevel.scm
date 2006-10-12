@@ -49,10 +49,10 @@
 ;
 
 (define (script-fu-add-bevel img
-                           drawable
-                           thickness
-                           work-on-copy
-                           keep-bump-layer)
+                             drawable
+                             thickness
+                             work-on-copy
+                             keep-bump-layer)
 
   (let* (
         (index 0)
@@ -183,7 +183,7 @@
 
 (script-fu-register "script-fu-add-bevel"
     _"Add B_evel..."
-    "Add a bevel to an image"
+    _"Add a bevelled border to an image"
     "Andrew Donkin <ard@cs.waikato.ac.nz>"
     "Andrew Donkin"
     "1997/11/06"

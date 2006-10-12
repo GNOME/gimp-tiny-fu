@@ -9,6 +9,22 @@
 ; The corresponding parameters have been replaced by an SF-FONT parameter.
 ; ************************************************************************
 ;;; Code:
+(if (not (symbol-bound? 'script-fu-hsv-graph-scale (current-environment)))
+    (define script-fu-hsv-graph-scale 1))
+(if (not (symbol-bound? 'script-fu-hsv-graph-opacity (current-environment)))
+    (define script-fu-hsv-graph-opacity 100))
+(if (not (symbol-bound? 'script-fu-hsv-graph-bounds? (current-environment)))
+    (define script-fu-hsv-graph-bounds? TRUE))
+(if (not (symbol-bound? 'script-fu-hsv-graph-left2right? (current-environment)))
+    (define script-fu-hsv-graph-left2right? FALSE))
+(if (not (symbol-bound? 'script-fu-hsv-graph-beg-x (current-environment)))
+    (define script-fu-hsv-graph-beg-x 0))
+(if (not (symbol-bound? 'script-fu-hsv-graph-beg-y (current-environment)))
+    (define script-fu-hsv-graph-beg-y 0))
+(if (not (symbol-bound? 'script-fu-hsv-graph-end-x (current-environment)))
+    (define script-fu-hsv-graph-end-x 1))
+(if (not (symbol-bound? 'script-fu-hsv-graph-end-y (current-environment)))
+    (define script-fu-hsv-graph-end-y 1))
 
 (define (script-fu-hsv-graph img drawable scale opacity bounds?
                            left2right? beg-x beg-y end-x end-y)
@@ -308,7 +324,7 @@
 
 (script-fu-register "script-fu-hsv-graph"
     _"Draw _HSV Graph..."
-    "Draph the graph of H/S/V values on the drawable"
+    _"Create a graph of the Hue, Saturation, and Value distributions of the current drawable"
     "Shuji Narazaki <narazaki@InetQ.or.jp>"
     "Shuji Narazaki"
     "1997"

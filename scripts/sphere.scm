@@ -69,7 +69,7 @@
 
 (script-fu-register "script-fu-sphere"
     _"_Sphere..."
-    "Simple sphere with a drop shadow"
+    _"Create a simple sphere with a drop shadow"
     "Spencer Kimball"
     "Spencer Kimball"
     "1996"

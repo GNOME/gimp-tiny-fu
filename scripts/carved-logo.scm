@@ -157,7 +157,7 @@
 
 (script-fu-register "script-fu-carved-logo"
     _"Carved..."
-    "Carve the text from the specified image.  The image will be automatically tiled to accomodate the rendered text string.  The \"Carve Raised Text\" parameter determines whether to carve the text itself, or around the text."
+    _"Create a logo with text raised above or carved in to the specified background image"
     "Spencer Kimball"
     "Spencer Kimball"
     "1997"

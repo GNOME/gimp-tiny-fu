@@ -20,9 +20,9 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 (define (script-fu-alien-glow-bullet radius
-                                   glow-color
-                                   bg-color
-                                   flatten)
+                                     glow-color
+                                     bg-color
+                                     flatten)
 
   (define (center-ellipse img cx cy rx ry op aa feather frad)
     (gimp-ellipse-select img (- cx rx) (- cy ry) (+ rx rx) (+ ry ry)
@@ -92,7 +92,7 @@
 
 (script-fu-register "script-fu-alien-glow-bullet"
     _"_Bullet..."
-    "Create a Bullet with an Alien Glow theme for web pages"
+    _"Create a bullet graphic with an eerie glow for web pages"
     "Adrian Likins"
     "Adrian Likins"
     "1997"

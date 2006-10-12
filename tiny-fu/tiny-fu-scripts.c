@@ -44,11 +44,6 @@
 #define RESPONSE_RESET         1
 #define RESPONSE_ABOUT         2
 
-#define TEXT_WIDTH           100
-#define COLOR_SAMPLE_WIDTH   100
-#define COLOR_SAMPLE_HEIGHT   15
-#define SLIDER_WIDTH          80
-
 
 typedef struct
 {
@@ -132,6 +127,7 @@ tiny_fu_load_all_scripts (void)
   gimp_datafiles_read_directories (path, G_FILE_TEST_IS_REGULAR,
                                    tiny_fu_load_script,
                                    NULL);
+  g_free (path);
 
   /*  Now that all scripts are read in and sorted, tell gimp about them  */
   g_tree_foreach (script_tree,
@@ -439,7 +435,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
 #ifdef G_OS_WIN32
                   /* Replace POSIX slashes with Win32 backslashes. This
-                   * is just so tiny-fus can be written with only
+                   * is just so script-fus can be written with only
                    * POSIX directory separators.
                    */
                   val = script->arg_defaults[i].sfa_file.filename;
@@ -617,14 +613,17 @@ tiny_fu_add_script (scheme *sc, pointer a)
               a = sc->vptr->pair_cdr (a);
             }
           else
-            return my_err (sc, "script-fu-register: missing default argument");
+            {
+              return my_err (sc,
+                             "script-fu-register: missing default argument");
+            }
         }
     }
 
   script->args = args;
 
   {
-    const gchar *key  = script->menu_path;
+    const gchar *key  = gettext (script->menu_path);
     GList       *list = g_tree_lookup (script_tree, key);
 
     g_tree_insert (script_tree, (gpointer) key, g_list_append (list, script));
@@ -771,7 +770,7 @@ tiny_fu_remove_script (gpointer  foo G_GNUC_UNUSED,
       tiny_fu_free_script (script);
     }
 
-  g_list_free (list);
+  g_list_free (scripts);
 
   return FALSE;
 }
@@ -814,7 +813,9 @@ tiny_fu_script_proc (const gchar     *name,
               script->image_based = TRUE;
             }
           else
-            script->image_based = FALSE;
+            {
+              script->image_based = FALSE;
+            }
 
 
           /*  First acquire information with a dialog  */
@@ -1079,8 +1080,8 @@ tiny_fu_menu_compare (gconstpointer a,
 
   if (menu_a->menu_path && menu_b->menu_path)
     {
-      return g_utf8_collate (gettext (menu_a->menu_path),
-                             gettext (menu_b->menu_path));
+      retval = g_utf8_collate (gettext (menu_a->menu_path),
+                               gettext (menu_b->menu_path));
 
       if (retval == 0 &&
           menu_a->script->menu_path && menu_b->script->menu_path)

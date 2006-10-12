@@ -104,14 +104,14 @@
 )
 
 (define (script-fu-alien-neon-logo-alpha img
-                                       logo-layer
-                                       fg-color
-                                       bg-color
-                                       band-size
-                                       gap-size
-                                       num-bands
-                                       do-fade)
-  (begin
+                                         logo-layer
+                                         fg-color
+                                         bg-color
+                                         band-size
+                                         gap-size
+                                         num-bands
+                                         do-fade)
+    (begin
     (gimp-image-undo-group-start img)
     (apply-alien-neon-logo-effect img logo-layer fg-color bg-color
                                   band-size gap-size num-bands do-fade)
@@ -120,7 +120,7 @@
 
 (script-fu-register "script-fu-alien-neon-logo-alpha"
     _"Alien _Neon..."
-    "Creates a psychedelic effect with outlines of the specified color around the letters"
+    _"Add psychedelic outlines to the selected region (or alpha)"
     "Raphael Quinet (quinet@gamers.org)"
     "Raphael Quinet"
     "1999-2000"
@@ -139,14 +139,14 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-alien-neon-logo text
-                                 size
-                                 fontname
-                                 fg-color
-                                 bg-color
-                                 band-size
-                                 gap-size
-                                 num-bands
-                                 do-fade)
+                                   size
+                                   fontname
+                                   fg-color
+                                   bg-color
+                                   band-size
+                                   gap-size
+                                   num-bands
+                                   do-fade)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (fade-size (- (* (+ band-size gap-size) num-bands) 1))
@@ -162,7 +162,7 @@
 
 (script-fu-register "script-fu-alien-neon-logo"
     _"Alien _Neon..."
-    "Creates a psychedelic effect with outlines of the specified color around the letters"
+    _"Create a logo with psychedelic outlines around the text"
     "Raphael Quinet (quinet@gamers.org)"
     "Raphael Quinet"
     "1999-2000"

@@ -2,12 +2,12 @@
 ;; Spencer Kimball
 
 (define (script-fu-font-map text
-                          use-name
-                          labels
-                          font-filter
-                          font-size
-                          border
-                          colors)
+                            use-name
+                            labels
+                            font-filter
+                            font-size
+                            border
+                            colors)
 
   (define (max-font-width text use-name font-list font-size)
     (let* ((list     (cadr font-list))
@@ -150,7 +150,7 @@
 
 (script-fu-register "script-fu-font-map"
   _"Render _Font Map..."
-  "Generate a listing of fonts matching a filter"
+  _"Create an image filled with previews of fonts matching a fontname filter"
   "Spencer Kimball"
   "Spencer Kimball"
   "1997"

@@ -17,9 +17,9 @@
 
 
 (define (script-fu-render-map inSize
-                            inGrain
-                            inGrad
-                            inWiden)
+                              inGrain
+                              inGrad
+                              inWiden)
 
   (let* (
         (theWidth inSize)
@@ -74,7 +74,7 @@
 
 (script-fu-register "script-fu-render-map"
   _"Render _Map..."
-  "Another pattern which resembles a map"
+  _"Create an image filled with an Earth-like map pattern"
   "Chris Gutteridge: cjg@ecs.soton.ac.uk"
   "28th April 1998"
   "Chris Gutteridge / ECS @ University of Southampton, England"

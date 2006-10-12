@@ -26,15 +26,15 @@
 ;
 
 (define (script-fu-perspective-shadow image
-                                    drawable
-                                    alpha
-                                    rel-distance
-                                    rel-length
-                                    shadow-blur
-                                    shadow-color
-                                    shadow-opacity
-                                    interpolation
-                                    allow-resize)
+                                      drawable
+                                      alpha
+                                      rel-distance
+                                      rel-length
+                                      shadow-blur
+                                      shadow-color
+                                      shadow-opacity
+                                      interpolation
+                                      allow-resize)
   (let* (
         (shadow-blur (max shadow-blur 0))
         (shadow-opacity (min shadow-opacity 100))
@@ -181,7 +181,7 @@
 
 (script-fu-register "script-fu-perspective-shadow"
     _"_Perspective..."
-    "Add a perspective shadow"
+    _"Add a perspective shadow to the selected region (or alpha)"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
     "2000/11/08"

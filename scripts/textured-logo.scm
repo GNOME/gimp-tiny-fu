@@ -98,13 +98,13 @@
 )
 
 (define (script-fu-textured-logo-alpha img
-                                     logo-layer
-                                     b-size
-                                     text-pattern
-                                     tile-type
-                                     bg-color
-                                     blend-fg
-                                     blend-bg)
+                                       logo-layer
+                                       b-size
+                                       text-pattern
+                                       tile-type
+                                       bg-color
+                                       blend-fg
+                                       blend-bg)
   (begin
     (gimp-image-undo-group-start img)
     (apply-textured-logo-effect img logo-layer b-size text-pattern tile-type
@@ -115,7 +115,7 @@
 
 (script-fu-register "script-fu-textured-logo-alpha"
     _"_Textured..."
-    "Creates textured logos with blended backgrounds, highlights, and shadows"
+    _"Fill the selected region (or alpha) with a texture and add highlights, shadows, and a mosaic background"
     "Spencer Kimball"
     "Spencer Kimball"
     "1996"
@@ -136,13 +136,13 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-textured-logo text
-                               size
-                               fontname
-                               text-pattern
-                               tile-type
-                               bg-color
-                               blend-fg
-                               blend-bg)
+                                 size
+                                 fontname
+                                 text-pattern
+                                 tile-type
+                                 bg-color
+                                 blend-fg
+                                 blend-bg)
   (let* ((img (car (gimp-image-new 256 256 RGB)))
          (b-size (scale size 0.1))
          (text-layer (car (gimp-text-fontname img -1 0 0 text b-size
@@ -157,7 +157,7 @@
 
 (script-fu-register "script-fu-textured-logo"
     _"_Textured..."
-    "Creates textured logos with blended backgrounds, highlights, and shadows"
+    _"Create a textured logo with highlights, shadows, and a mosaic background"
     "Spencer Kimball"
     "Spencer Kimball"
     "1996"

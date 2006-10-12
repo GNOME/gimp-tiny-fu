@@ -79,13 +79,13 @@
 
 
 (define (script-fu-t-o-p-logo-alpha img
-                                  logo-layer
-                                  b-size
-                                  hit-rate
-                                  edge-size
-                                  edge-only
-                                  base-color
-                                  bg-color)
+                                    logo-layer
+                                    b-size
+                                    hit-rate
+                                    edge-size
+                                    edge-only
+                                    base-color
+                                    bg-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-t-o-p-logo-effect img logo-layer b-size hit-rate
@@ -97,7 +97,7 @@
 
 (script-fu-register "script-fu-t-o-p-logo-alpha"
     _"_Particle Trace..."
-    "Trace of Particles Effect"
+    _"Add a Trace of Particles effect to the selected region (or alpha)"
     "Shuji Narazaki (narazaki@InetQ.or.jp)"
     "Shuji Narazaki"
     "1997"
@@ -117,13 +117,13 @@
 
 
 (define (script-fu-t-o-p-logo text
-                            size
-                            fontname
-                            hit-rate
-                            edge-size
-                            edge-only
-                            base-color
-                            bg-color)
+                              size
+                              fontname
+                              hit-rate
+                              edge-size
+                              edge-only
+                              base-color
+                              bg-color)
   (let* ((img (car (gimp-image-new 256 256 RGB)))
          (border (/ size 5))
          (text-layer (car (gimp-text-fontname img -1 0 0 text (* border 2) TRUE size PIXELS fontname))))
@@ -137,7 +137,7 @@
 
 (script-fu-register "script-fu-t-o-p-logo"
     _"_Particle Trace..."
-    "Trace of Particles Effect"
+    _"Create a logo using a Trace Of Particles effect"
     "Shuji Narazaki (narazaki@InetQ.or.jp)"
     "Shuji Narazaki"
     "1997"

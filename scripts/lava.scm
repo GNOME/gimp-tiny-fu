@@ -24,14 +24,14 @@
 
 
 (define (script-fu-lava image
-                      drawable
-                      seed
-                      tile_size
-                      mask_size
-                      gradient
-                      keep-selection
-                      separate-layer
-                      current-grad)
+                        drawable
+                        seed
+                        tile_size
+                        mask_size
+                        gradient
+                        keep-selection
+                        separate-layer
+                        current-grad)
   (let* (
         (type (car (gimp-drawable-type-with-alpha drawable)))
         (image-width (car (gimp-image-width image)))
@@ -109,7 +109,7 @@
 
 (script-fu-register "script-fu-lava"
     _"_Lava..."
-    "Fills the current selection with lava."
+    _"Fill the current selection with lava"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
     "10/12/97"

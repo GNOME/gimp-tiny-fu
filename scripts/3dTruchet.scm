@@ -154,13 +154,13 @@
 
 
 (define (script-fu-3dtruchet size
-                           thickness
-                           backcolor
-                           begincolor
-                           endcolor
-                           supersample
-                           xtiles
-                           ytiles)
+                             thickness
+                             backcolor
+                             begincolor
+                             endcolor
+                             supersample
+                             xtiles
+                             ytiles)
   (let* (
         (width (* size xtiles))
         (height (* size ytiles))
@@ -216,7 +216,7 @@
 
 (script-fu-register "script-fu-3dtruchet"
   _"3_D Truchet..."
-  "3D Truchet pattern"
+  _"Create an image filled with a 3D Truchet pattern"
   "Adrian Likins <aklikins@eos.ncsu.edu>"
   "Adrian Likins"
   "1997"

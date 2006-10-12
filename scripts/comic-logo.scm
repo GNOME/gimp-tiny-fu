@@ -93,12 +93,12 @@
 )
 
 (define (script-fu-comic-logo-alpha img
-                                  logo-layer
-                                  gradient
-                                  gradient-reverse
-                                  ol-width
-                                  ol-color
-                                  bg-color)
+                                    logo-layer
+                                    gradient
+                                    gradient-reverse
+                                    ol-width
+                                    ol-color
+                                    bg-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-comic-logo-effect img logo-layer
@@ -111,7 +111,7 @@
 
 (script-fu-register "script-fu-comic-logo-alpha"
     _"Comic Boo_k..."
-    "Comic-book Style Logos"
+    _"Add a comic-book effect to the selected region (or alpha) by outlining and filling with a gradient"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
     "April 1998"
@@ -130,13 +130,13 @@
 
 
 (define (script-fu-comic-logo text
-                            size
-                            font
-                            gradient
-                            gradient-reverse
-                            ol-width
-                            ol-color
-                            bg-color)
+                              size
+                              font
+                              gradient
+                              gradient-reverse
+                              ol-width
+                              ol-color
+                              bg-color)
   (let* ((img (car (gimp-image-new 256 256 RGB)))
          (border (/ size 4))
          (text-layer (car (gimp-text-fontname
@@ -151,7 +151,7 @@
 
 (script-fu-register "script-fu-comic-logo"
     _"Comic Boo_k..."
-    "Comic-book Style Logos"
+    _"Create a comic-book style logo by outlining and filling with a gradient"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
     "April 1998"

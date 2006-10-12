@@ -65,9 +65,9 @@
 )
 
 (define (script-fu-basic2-logo-alpha img
-                                   logo-layer
-                                   bg-color
-                                   text-color)
+                                     logo-layer
+                                     bg-color
+                                     text-color)
   (gimp-image-undo-group-start img)
   (apply-basic2-logo-effect img logo-layer bg-color text-color)
   (gimp-image-undo-group-end img)
@@ -76,7 +76,7 @@
 
 (script-fu-register "script-fu-basic2-logo-alpha"
     _"B_asic II..."
-    "Creates a simple logo with a shadow and a highlight"
+    _"Add a shadow and a highlight to the selected region (or alpha)"
     "Spencer Kimball"
     "Spencer Kimball"
     "1996"
@@ -88,10 +88,10 @@
 )
 
 (define (script-fu-basic2-logo text
-                             size
-                             font
-                             bg-color
-                             text-color)
+                               size
+                               font
+                               bg-color
+                               text-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (text-layer (car (gimp-text-fontname img -1 0 0 text 10 TRUE size PIXELS font)))
@@ -109,7 +109,7 @@
 
 (script-fu-register "script-fu-basic2-logo"
     _"B_asic II..."
-    "Creates a simple logo with a shadow and a highlight"
+    _"Create a simple logo with a shadow and a highlight"
     "Spencer Kimball"
     "Spencer Kimball"
     "1996"

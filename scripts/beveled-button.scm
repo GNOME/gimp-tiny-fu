@@ -50,19 +50,19 @@
                    x1 y1 x2 y2))
 
 (define (script-fu-button00 text
-                          size
-                          font
-                          ul-color
-                          lr-color
-                          text-color
-                          padding
-                          bevel-width
-                          pressed)
+                            size
+                            font
+                            ul-color
+                            lr-color
+                            text-color
+                            padding
+                            bevel-width
+                            pressed)
   (let* (
         (text-extents (gimp-text-get-extents-fontname text
-                                             size
-                                             PIXELS
-                                             font))
+                                                      size
+                                                      PIXELS
+                                                      font))
         (ascent (text-ascent text-extents))
         (descent (text-descent text-extents))
 
@@ -139,7 +139,7 @@
 
 (script-fu-register "script-fu-button00"
                     _"Simple _Beveled Button..."
-                    "Simple beveled button"
+                    _"Create a simple, beveled button graphic for webpages"
                     "Federico Mena Quintero"
                     "Federico Mena Quintero"
                     "June 1997"

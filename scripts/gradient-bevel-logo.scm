@@ -77,11 +77,11 @@
 )
 
 (define (script-fu-gradient-bevel-logo-alpha img
-                                           logo-layer
-                                           b-size
-                                           bevel-height
-                                           bevel-width
-                                           bg-color)
+                                             logo-layer
+                                             b-size
+                                             bevel-height
+                                             bevel-width
+                                             bg-color)
   (gimp-image-undo-group-start img)
   (apply-gradient-bevel-logo-effect img logo-layer b-size
                                     bevel-height bevel-width bg-color)
@@ -91,7 +91,7 @@
 
 (script-fu-register "script-fu-gradient-bevel-logo-alpha"
     _"Gradient Beve_l..."
-    "Makes Shiny Bevelly text"
+    _"Add a shiny look and bevel effect to the selected region (or alpha)"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
     "April 1998"
@@ -108,11 +108,11 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-gradient-bevel-logo text
-                                     size
-                                     font
-                                     bevel-height
-                                     bevel-width
-                                     bg-color)
+                                       size
+                                       font
+                                       bevel-height
+                                       bevel-width
+                                       bg-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ size 4))
@@ -129,7 +129,7 @@
 
 (script-fu-register "script-fu-gradient-bevel-logo"
     _"Gradient Beve_l..."
-    "Makes Shiny Bevelly text"
+    _"Create a logo with a shiny look and beveled edges"
     "Brian McFee <keebler@wco.com>"
     "Brian McFee"
     "April 1998"

@@ -118,39 +118,18 @@ tiny_fu_console_run (const gchar      *name,
                      GimpParam       **return_vals)
 {
   static GimpParam  values[1];
-  GimpPDBStatusType status = GIMP_PDB_SUCCESS;
-  GimpRunMode       run_mode;
 
-  run_mode = params[0].data.d_int32;
+  tiny_fu_open_ts_console ();
 
-  switch (run_mode)
-    {
-    case GIMP_RUN_INTERACTIVE:
-      /*  Enable TinyScheme output  */
-      tiny_fu_open_ts_console ();
+  tiny_fu_console_interface ();
 
-      /*  Run the interface  */
-      tiny_fu_console_interface ();
-
-      /*  Clean up  */
-      tiny_fu_close_ts_console ();
-      break;
-
-    case GIMP_RUN_WITH_LAST_VALS:
-    case GIMP_RUN_NONINTERACTIVE:
-      status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Script-Fu console mode allows only interactive invocation"));
-      break;
-
-    default:
-      break;
-    }
+  tiny_fu_close_ts_console ();
 
   *nreturn_vals = 1;
-  *return_vals = values;
+  *return_vals  = values;
 
   values[0].type          = GIMP_PDB_STATUS;
-  values[0].data.d_status = status;
+  values[0].data.d_status = GIMP_PDB_SUCCESS;
 }
 
 static void
@@ -701,7 +680,8 @@ tiny_fu_eval_run (const gchar      *name,
     case GIMP_RUN_INTERACTIVE:
     case GIMP_RUN_WITH_LAST_VALS:
       status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Script-Fu evaluate mode allows only noninteractive invocation"));
+      g_message (_("Script-Fu evaluation mode only allows "
+                   "non-interactive invocation"));
       break;
 
     default:

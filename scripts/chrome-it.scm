@@ -4,7 +4,7 @@
 ;   This layer is used as the mask for the SOTA chrome effect
 
 (define (script-fu-sota-chrome-it mask-img mask-drawable chrome-saturation
-                                  chrome-lightness chrome-factor env-map hc cc carve-white)
+         chrome-lightness chrome-factor env-map hc cc carve-white)
 
   (define (set-pt a index x y)
     (begin
@@ -201,7 +201,7 @@
 
 (script-fu-register "script-fu-sota-chrome-it"
     _"Stencil C_hrome..."
-    "Use the specified [GRAY] drawable as a stencil to run the chrome effect on."
+    _"Add a chrome effect to the selected region (or alpha) using a specified (grayscale) stencil"
     "Spencer Kimball"
     "Spencer Kimball"
     "1997"

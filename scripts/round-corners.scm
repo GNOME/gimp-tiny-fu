@@ -39,14 +39,14 @@
 
 
 (define (script-fu-round-corners img
-                               drawable
-                               radius
-                               shadow-toggle
-                               shadow-x
-                               shadow-y
-                               shadow-blur
-                               background-toggle
-                               work-on-copy)
+                                 drawable
+                                 radius
+                                 shadow-toggle
+                                 shadow-x
+                                 shadow-y
+                                 shadow-blur
+                                 background-toggle
+                                 work-on-copy)
   (let* ((shadow-blur (abs shadow-blur))
          (radius (abs radius))
          (diam (* 2 radius))
@@ -126,7 +126,7 @@
 
 (script-fu-register "script-fu-round-corners"
     _"_Round Corners..."
-    "Round the corners of an image and optionally adds a drop-shadow and a background"
+    _"Round the corners of an image and optionally add a drop-shadow and background"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
     "1999/12/21"

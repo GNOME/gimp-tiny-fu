@@ -19,7 +19,6 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-
 (define (script-fu-beveled-pattern-arrow size orientation pattern)
 
   (define (make-point x y)
@@ -147,7 +146,7 @@
 
 (script-fu-register "script-fu-beveled-pattern-arrow"
     _"_Arrow..."
-    "Beveled pattern arrow"
+    _"Create a beveled pattern arrow for webpages"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
     "July 1997"

@@ -24,7 +24,7 @@
 
 (script-fu-register "script-fu-guide-new-percent"
     _"New Guide (by _Percent)..."
-    "Add a single Line Guide with the specified postion. Position specified as a percent of the image size."
+    _"Add a guide at the position specified as a percentage of the image size"
     "Alan Horkan"
     "Alan Horkan, 2004"
     "April 2004"

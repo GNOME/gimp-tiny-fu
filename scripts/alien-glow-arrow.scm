@@ -173,16 +173,13 @@
 
 (script-fu-register "script-fu-alien-glow-right-arrow"
     _"_Arrow..."
-    "Create an X-file deal"
+    _"Create an arrow graphic with an eerie glow for web pages"
     "Adrian Likins"
     "Adrian Likins"
     "1997"
     ""
     SF-ADJUSTMENT _"Size"             '(32 5 150 1 10 0 1)
-    SF-OPTION     _"Orientation"      '(_"Right"
-                                       _"Left"
-                                       _"Up"
-                                       _"Down")
+    SF-OPTION     _"Orientation"      '(_"Right" _"Left" _"Up" _"Down")
     SF-COLOR      _"Glow color"       '(63 252 0)
     SF-COLOR      _"Background color" "black"
     SF-TOGGLE     _"Flatten image"    TRUE

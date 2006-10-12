@@ -11,10 +11,14 @@
         (width (+ (car (gimp-drawable-width logo-layer)) border))
         (height (+ (car (gimp-drawable-height logo-layer)) border))
         (logo-layer-mask (car (gimp-layer-create-mask logo-layer ADD-BLACK-MASK)))
-        (sparkle-layer (car (gimp-layer-new img width height RGBA-IMAGE "Sparkle" 100 NORMAL-MODE)))
-        (matte-layer (car (gimp-layer-new img width height RGBA-IMAGE "Matte" 100 NORMAL-MODE)))
-        (shadow-layer (car (gimp-layer-new img width height RGBA-IMAGE "Shadow" 90 MULTIPLY-MODE)))
-        (bg-layer (car (gimp-layer-new img width height RGB-IMAGE "Background" 100 NORMAL-MODE)))
+        (sparkle-layer (car (gimp-layer-new img width height RGBA-IMAGE
+                                            "Sparkle" 100 NORMAL-MODE)))
+        (matte-layer (car (gimp-layer-new img width height RGBA-IMAGE
+                                          "Matte" 100 NORMAL-MODE)))
+        (shadow-layer (car (gimp-layer-new img width height RGBA-IMAGE
+                                           "Shadow" 90 MULTIPLY-MODE)))
+        (bg-layer (car (gimp-layer-new img width height RGB-IMAGE
+                                       "Background" 100 NORMAL-MODE)))
         (selection 0)
         )
 
@@ -86,9 +90,9 @@
 )
 
 (define (script-fu-frosty-logo-alpha img
-                                   logo-layer
-                                   size
-                                   bg-color)
+                                     logo-layer
+                                     size
+                                     bg-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-frosty-logo-effect img logo-layer size bg-color)
@@ -99,7 +103,7 @@
 
 (script-fu-register "script-fu-frosty-logo-alpha"
     _"_Frosty..."
-    "Frozen logos with drop shadows"
+    _"Add a frost effect to the selected region (or alpha) with an added drop shadow"
     "Spencer Kimball & Ed Mackey"
     "Spencer Kimball & Ed Mackey"
     "1997"
@@ -107,7 +111,7 @@
     SF-IMAGE      "Image" 0
     SF-DRAWABLE   "Drawable" 0
     SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
-    SF-COLOR  _"Background color" '(255 255 255)
+    SF-COLOR      _"Background color"     '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-frosty-logo-alpha"
@@ -115,9 +119,9 @@
 
 
 (define (script-fu-frosty-logo text
-                             size
-                             font
-                             bg-color)
+                               size
+                               font
+                               bg-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ size 5))
@@ -132,7 +136,7 @@
 
 (script-fu-register "script-fu-frosty-logo"
     _"_Frosty..."
-    "Frozen logos with drop shadows"
+    _"Create frozen logo with an added drop shadow"
     "Spencer Kimball & Ed Mackey"
     "Spencer Kimball & Ed Mackey"
     "1997"

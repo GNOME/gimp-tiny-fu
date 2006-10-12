@@ -19,7 +19,8 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (script-fu-newsprint-text string font font-size cell-size density blur-radius text-color bg-color)
+(define (script-fu-newsprint-text string font font-size cell-size
+                                  density blur-radius text-color bg-color)
   (let* (
         (text-ext (gimp-text-get-extents-fontname string font-size PIXELS font))
         (width (+ (car text-ext) 20 blur-radius))
@@ -67,7 +68,7 @@
 
 (script-fu-register "script-fu-newsprint-text"
     _"Newsprint Te_xt..."
-    "Apply a screen to text"
+    _"Create a logo in the style newpaper printing"
     "Austin Donnelly"
     "Austin Donnelly"
     "1998"

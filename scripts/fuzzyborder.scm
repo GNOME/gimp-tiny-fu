@@ -11,19 +11,19 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 ; Define the function:
 
-(define (script-fu-fuzzy-border   inImage
+(define (script-fu-fuzzy-border inImage
                                 inLayer
                                 inColor
                                 inSize
@@ -82,7 +82,7 @@
        )
        (chris-color-edge theImage theLayer inColor 1)
        (gimp-layer-scale theLayer theWidth theHeight TRUE)
-        
+
        (gimp-selection-layer-alpha theLayer)
        (gimp-selection-invert theImage)
        (gimp-edit-clear theLayer)
@@ -92,7 +92,7 @@
        (gimp-edit-fill theLayer BACKGROUND-FILL)
        (gimp-selection-none inImage)
        (chris-color-edge theImage theLayer inColor 1)
-        
+
        (if     (= inBlur TRUE)
                (plug-in-gauss-rle TRUE theImage theLayer inSize TRUE TRUE)
                ()
@@ -155,7 +155,7 @@
 (script-fu-register
     "script-fu-fuzzy-border"
     _"_Fuzzy Border..."
-    "Fade border to chosen color"
+    _"Add a jagged, fuzzy border to an image"
     "Chris Gutteridge"
     "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
     "3rd April 1998"

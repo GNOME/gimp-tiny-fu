@@ -67,9 +67,9 @@
 )
 
 (define (script-fu-chrome-logo-alpha img
-                                   logo-layer
-                                   offsets
-                                   bg-color)
+                                     logo-layer
+                                     offsets
+                                     bg-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-chrome-logo-effect img logo-layer offsets bg-color)
@@ -80,7 +80,7 @@
 
 (script-fu-register "script-fu-chrome-logo-alpha"
     _"C_hrome..."
-    "Somewhat simplistic, but cool chromed logos"
+    _"Add a simple chrome effect to the selected region (or alpha)"
     "Spencer Kimball"
     "Spencer Kimball & Peter Mattis"
     "1997"
@@ -95,9 +95,9 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (define (script-fu-chrome-logo text
-                             size
-                             font
-                             bg-color)
+                               size
+                               font
+                               bg-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (b-size (* size 0.2))
@@ -112,7 +112,7 @@
 
 (script-fu-register "script-fu-chrome-logo"
     _"C_hrome..."
-    "Somewhat simplistic, but cool chromed logos"
+    _"Create a simplistic, but cool, chromed logo"
     "Spencer Kimball"
     "Spencer Kimball & Peter Mattis"
     "1997"

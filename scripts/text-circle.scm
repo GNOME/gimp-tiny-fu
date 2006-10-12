@@ -12,6 +12,8 @@
 ;; script. The letters are now placed properly for both positive and negative
 ;; fill angles.
 
+(if (not (symbol-bound? 'script-fu-text-circle-debug? (current-environment)))
+    (define script-fu-text-circle-debug? #f))
 
 (define (script-fu-text-circle text radius start-angle fill-angle
                    font-size antialias font-name)
@@ -201,7 +203,7 @@
 (script-fu-register
     "script-fu-text-circle"
     _"Text C_ircle..."
-    _"Render the specified text along the perimeter of a circle"
+    _"Create a logo by rendering the specified text along the perimeter of a circle"
     "Shuji Narazaki <narazaki@gimp.org>"
     "Shuji Narazaki"
     "1997-1998"

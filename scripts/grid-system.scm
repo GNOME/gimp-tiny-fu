@@ -6,6 +6,11 @@
 ;;; Version 0.6
 
 ;;; Code:
+(if (not (symbol-bound? 'script-fu-grid-system-x-divides (current-environment)))
+    (define script-fu-grid-system-x-divides "'(1 g 1)"))
+(if (not (symbol-bound? 'script-fu-grid-system-y-divides (current-environment)))
+    (define script-fu-grid-system-y-divides "'(1 g 1)"))
+
 (define (script-fu-grid-system img drw x-divides-orig y-divides-orig)
   (define (update-segment! s x0 y0 x1 y1)
     (aset s 0 x0)
@@ -76,7 +81,7 @@
 
 (script-fu-register "script-fu-grid-system"
 		    _"_Grid..."
-		    "Draw grid as specified by X-DIVIDES (list of proportions relative to the drawable) and Y-DIVIDES. The color and width of grid is detemined by the current settings of brush."
+		    _"Draw a grid as specified by the lists of X and Y locations using the current brush"
 		    "Shuji Narazaki <narazaki@InetQ.or.jp>"
 		    "Shuji Narazaki"
 		    "1997"

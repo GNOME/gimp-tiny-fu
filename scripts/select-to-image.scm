@@ -1,6 +1,6 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
-; 
+;
 ; Selection to Image
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
@@ -12,12 +12,12 @@
 ; it under the terms of the GNU General Public License as published by
 ; the Free Software Foundation; either version 2 of the License, or
 ; (at your option) any later version.
-; 
+;
 ; This program is distributed in the hope that it will be useful,
 ; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ; GNU General Public License for more details.
-; 
+;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -40,7 +40,7 @@
 
     (gimp-context-push)
     (gimp-image-undo-disable image)
-    
+
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
           (gimp-selection-layer-alpha drawable)
@@ -75,7 +75,7 @@
 
 (script-fu-register "script-fu-selection-to-image"
     _"To _Image"
-    "Convert a selection to an image"
+    _"Convert a selection to an image"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
     "10/07/97"

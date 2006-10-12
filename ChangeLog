@@ -1,4 +1,23 @@
-2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	The changes below (except for init.scm) were found during the work
+	of updating the GIMP Script-Fu plug-in to become Tiny-Fu.
+
+	* tiny-fu/tiny-fu-console.c
+	* tiny-fu/tiny-fu-interface.c
+	* tiny-fu/tiny-fu-scripts.c
+	* tiny-fu/tiny-fu-server.c
+	* tiny-fu/tiny-fu-text-console.c
+	* tiny-fu/tiny-fu.c: Various minor bug fixes and changes to bring
+	Tiny-Fu up-to-date with changes made in Script-Fu.
+
+	* scripts/*.scm: Applied patch from Saul Goode with review and
+	localisation of Script-Fu procedure blurbs (bug #351283). Also
+	some formatting changes.
+
+	* tinyscheme/init.scm: Updated based on version 1.38 of TinyScheme.
+
+2006-10-09  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/script-fu-compat.init: Added 'butlast' and 'last'.
 

@@ -19,7 +19,6 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-
 (define (script-fu-beveled-pattern-bullet diameter pattern transparent)
   (let* (
         (img (car (gimp-image-new diameter diameter RGB)))
@@ -79,7 +78,7 @@
 
 (script-fu-register "script-fu-beveled-pattern-bullet"
                     _"_Bullet..."
-                    "Beveled pattern bullet"
+                    _"Create a beveled pattern bullet for webpages"
                     "Federico Mena Quintero"
                     "Federico Mena Quintero"
                     "July 1997"

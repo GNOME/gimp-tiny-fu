@@ -45,12 +45,12 @@
 
 
 (define (script-fu-slide img
-                       drawable
-                       text
-                       number
-                       fontname
-                       font-color
-                       work-on-copy)
+                         drawable
+                         text
+                         number
+                         fontname
+                         font-color
+                         work-on-copy)
 
   (define (crop width height ratio)
     (cond ((>= width (* ratio height)) (* ratio height))
@@ -233,7 +233,7 @@
 
 (script-fu-register "script-fu-slide"
   _"_Slide..."
-  "Gives the image the look of a slide"
+  _"Add a slide-film like frame, sprocket holes, and labels to an image"
   "Sven Neumann <sven@gimp.org>"
   "Sven Neumann"
   "2004/03/28"

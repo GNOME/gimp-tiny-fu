@@ -29,9 +29,9 @@
 
 
 (define (script-fu-title-header text
-                              size
-                              fontname
-                              gradient-reverse)
+                                size
+                                fontname
+                                gradient-reverse)
   (let* (; Parameters
 
          (padding 8)
@@ -160,7 +160,7 @@
 
 (script-fu-register "script-fu-title-header"
     _"Web Title Header..."
-    "Web title header"
+    _"Create a decorative web title header"
     "Federico Mena Quintero"
     "Federico Mena Quintero"
     "June 1997"

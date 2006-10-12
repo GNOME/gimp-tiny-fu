@@ -24,17 +24,17 @@
 
 
 (define (script-fu-xach-effect image
-                             drawable
-                             hl-offset-x
-                             hl-offset-y
-                             hl-color
-                             hl-opacity-comp
-                             ds-color
-                             ds-opacity
-                             ds-blur
-                             ds-offset-x
-                             ds-offset-y
-                             keep-selection)
+                               drawable
+                               hl-offset-x
+                               hl-offset-y
+                               hl-color
+                               hl-opacity-comp
+                               ds-color
+                               ds-opacity
+                               ds-blur
+                               ds-offset-x
+                               ds-offset-y
+                               keep-selection)
   (let* (
         (ds-blur (max ds-blur 0))
         (ds-opacity (min ds-opacity 100))
@@ -119,7 +119,7 @@
 
 (script-fu-register "script-fu-xach-effect"
     _"_Xach-Effect..."
-    "Add a subtle translucent 3-d effect to the current selection or alpha channel"
+    _"Add a subtle translucent 3D effect to the selected region (or alpha)"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
     "9/28/97"

@@ -38,10 +38,10 @@
 
 
 (define (script-fu-blend-anim img
-                            drawable
-                            frames
-                            max-blur
-                            looped)
+                              drawable
+                              frames
+                              max-blur
+                              looped)
   (let* (
         (max-blur (max max-blur 0))
         (frames (max frames 0))
@@ -224,7 +224,7 @@
 
 (script-fu-register "script-fu-blend-anim"
     _"_Blend..."
-    "Blend two or more layers over a background, so that an animation can be saved"
+    _"Create intermediate layers to blend two or more layers over a background as an animation"
     "Sven Neumann <sven@gimp.org>"
     "Sven Neumann"
     "1999/12/21"

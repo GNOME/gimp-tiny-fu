@@ -57,8 +57,8 @@
 
 
 (define (script-fu-chalk-logo-alpha img
-                                  logo-layer
-                                  bg-color)
+                                    logo-layer
+                                    bg-color)
   (begin
     (gimp-image-undo-group-start img)
     (apply-chalk-logo-effect img logo-layer bg-color)
@@ -69,7 +69,7 @@
 
 (script-fu-register "script-fu-chalk-logo-alpha"
     _"_Chalk..."
-    "Chalk scribbled logos"
+    _"Create a chalk drawing effect for the selected region (or alpha)"
     "Manish Singh <msingh@uclink4.berkeley.edu>"
     "Manish Singh"
     "October 1997"
@@ -84,10 +84,10 @@
 
 
 (define (script-fu-chalk-logo text
-                            size
-                            font
-                            bg-color
-                            chalk-color)
+                              size
+                              font
+                              bg-color
+                              chalk-color)
   (let* (
         (img (car (gimp-image-new 256 256 RGB)))
         (border (/ size 4))
@@ -108,7 +108,7 @@
 
 (script-fu-register "script-fu-chalk-logo"
     _"_Chalk..."
-    "Chalk scribbled logos"
+    _"Create a logo resembling chalk scribbled on a blackboard"
     "Manish Singh <msingh@uclink4.berkeley.edu>"
     "Manish Singh"
     "October 1997"

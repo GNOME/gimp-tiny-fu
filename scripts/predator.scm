@@ -25,12 +25,12 @@
 
 
 (define (script-fu-predator image
-                          drawable
-                          edge-amount
-                          pixelize
-                          pixel-size
-                          keep-selection
-                          separate-layer)
+                            drawable
+                            edge-amount
+                            pixelize
+                            pixel-size
+                            keep-selection
+                            separate-layer)
   (let* (
         (type (car (gimp-drawable-type-with-alpha drawable)))
         (image-width (car (gimp-image-width image)))
@@ -116,7 +116,7 @@
 
 (script-fu-register "script-fu-predator"
     _"_Predator..."
-    "Looks like images from the movie Predator"
+    _"Add a 'Predator' effect to the selected region (or alpha)"
     "Adrian Likins <adrian@gimp.org>"
     "Adrian Likins"
     "10/12/97"
