@@ -197,7 +197,7 @@
   )
 )
 
-escript-fu-register "script-fu-sota-chrome-logo"
+(script-fu-register "script-fu-sota-chrome-logo"
     _"SOTA Chrome..."
     _"Create a State Of The Art chromed logo"
     "Spencer Kimball"

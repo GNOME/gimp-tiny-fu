@@ -127,7 +127,7 @@
 
 (script-fu-register "script-fu-tube-subbutton-label-gimp-org"
     _"T_ube Sub-Button Label..."
-    _"Create an image of a second level Tube Button Label using the gimp.org webpage theme
+    _"Create an image of a second level Tube Button Label using the gimp.org webpage theme"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
     "1997"
@@ -142,7 +142,7 @@
 
 (script-fu-register "script-fu-tube-subsubbutton-label-gimp-org"
     _"Tub_e Sub-Sub-Button Label..."
-    _"Create an image of a third level Tube Button Label using the gimp.org webpage theme
+    _"Create an image of a third level Tube Button Label using the gimp.org webpage theme"
     "Adrian Likins & Jens Lautenbacher"
     "Adrian Likins & Jens Lautenbacher"
     "1997"
