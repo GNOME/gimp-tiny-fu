@@ -31,6 +31,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
@@ -60,6 +61,7 @@
     (gimp-layer-translate shadow-layer 3 3)
     (gimp-layer-translate highlight-layer (- posx 2) (- posy 2))
     (gimp-drawable-set-name highlight-layer "Highlight")
+
     (gimp-context-pop)
   )
 )

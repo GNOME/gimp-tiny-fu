@@ -80,16 +80,16 @@
     (gimp-displays-flush)))
 
 (script-fu-register "script-fu-grid-system"
-		    _"_Grid..."
-		    _"Draw a grid as specified by the lists of X and Y locations using the current brush"
-		    "Shuji Narazaki <narazaki@InetQ.or.jp>"
-		    "Shuji Narazaki"
-		    "1997"
-		    "RGB*, INDEXED*, GRAY*"
-		    SF-IMAGE     "Image to use"          0
-		    SF-DRAWABLE  "Drawable to draw grid" 0
-		    SF-VALUE    _"X divisions"           "'(1 g 1)"
-		    SF-VALUE    _"Y divisions"           "'(1 g 1)"
+  _"_Grid..."
+  _"Draw a grid as specified by the lists of X and Y locations using the current brush"
+  "Shuji Narazaki <narazaki@InetQ.or.jp>"
+  "Shuji Narazaki"
+  "1997"
+  "RGB*, INDEXED*, GRAY*"
+  SF-IMAGE     "Image to use"          0
+  SF-DRAWABLE  "Drawable to draw grid" 0
+  SF-VALUE    _"X divisions"           "'(1 g 1)"
+  SF-VALUE    _"Y divisions"           "'(1 g 1)"
 )
 
 ;;; grid-system.scm ends here

@@ -48,6 +48,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable image)
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
@@ -108,8 +109,6 @@
                                    ".gbr"))
 
     (file-gbr-save 1 brush-image brush-draw filename2 "" spacing desc)
-    (gimp-brushes-refresh)
-    (gimp-context-set-brush desc)
 
     (if (= from-selection TRUE)
         (begin
@@ -119,23 +118,27 @@
     )
 
     (gimp-image-undo-enable image)
-    (gimp-context-pop)
     (gimp-image-set-active-layer image drawable)
     (gimp-image-delete brush-image)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
+
+    (gimp-brushes-refresh)
+    (gimp-context-set-brush desc)
   )
 )
 
 (script-fu-register "script-fu-selection-to-brush"
-    _"To _Brush..."
-    _"Convert a selection to a brush"
-    "Adrian Likins <adrian@gimp.org>"
-    "Adrian Likins"
-    "10/07/97"
-    "RGB* GRAY*"
-    SF-IMAGE       "Image"       0
-    SF-DRAWABLE    "Drawable"    0
-    SF-STRING     _"Brush name"  "My Brush"
-    SF-STRING     _"File name"   "mybrush"
-    SF-ADJUSTMENT _"Spacing"     '(25 0 1000 1 1 1 0)
+  _"To _Brush..."
+  _"Convert a selection to a brush"
+  "Adrian Likins <adrian@gimp.org>"
+  "Adrian Likins"
+  "10/07/97"
+  "RGB* GRAY*"
+  SF-IMAGE       "Image"       0
+  SF-DRAWABLE    "Drawable"    0
+  SF-STRING     _"Brush name"  "My Brush"
+  SF-STRING     _"File name"   "mybrush"
+  SF-ADJUSTMENT _"Spacing"     '(25 0 1000 1 1 1 0)
 )

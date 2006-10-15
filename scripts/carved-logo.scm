@@ -51,6 +51,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
 
     (gimp-image-set-filename img "")
@@ -149,9 +150,10 @@
     (gimp-drawable-set-name cast-shadow-layer "Cast Shadow")
     (gimp-drawable-set-name inset-layer "Inset")
 
-    (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+    (gimp-image-undo-enable img)
+
+    (gimp-context-pop)
   )
 )
 

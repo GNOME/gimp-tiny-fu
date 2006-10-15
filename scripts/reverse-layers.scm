@@ -29,14 +29,15 @@
 )
 
 (script-fu-register "script-fu-reverse-layers"
-                 _"Reverse Layer Order"
-                 _"Reverse the order of layers in the image"
-                 "Akkana Peck"
-                 "Akkana Peck"
-                 "August 2006"
-                 "*"
-                 SF-IMAGE    "Image"    0
-                 SF-DRAWABLE "Drawable" 0)
+  _"Reverse Layer Order"
+  _"Reverse the order of layers in the image"
+  "Akkana Peck"
+  "Akkana Peck"
+  "August 2006"
+  "*"
+  SF-IMAGE    "Image"    0
+  SF-DRAWABLE "Drawable" 0
+)
 
 (script-fu-menu-register "script-fu-reverse-layers"
                          "<Image>/Layer/Stack")

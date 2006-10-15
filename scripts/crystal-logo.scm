@@ -112,6 +112,7 @@
         (disp-map 0)
         )
     (gimp-context-push)
+
     (gimp-image-delete back-img)
     (gimp-image-undo-disable img)
     (gimp-image-resize img width height 0 0)
@@ -196,33 +197,34 @@
     (gimp-drawable-set-name text-layer "Shadow")
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 
 (script-fu-register "script-fu-crystal-logo"
-    _"Crystal..."
-    _"Create a logo with a crystal/gel effect displacing the image underneath"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    ""
-    SF-ADJUSTMENT _"Chrome factor" '(1.0 0.2 4 0.1 1 1 0)
-    SF-STRING     _"Text" "Crystal"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "Engraver"
-    SF-FILENAME   _"Background image"
-        (string-append gimp-data-directory DIR-SEPARATOR
-                       "scripts" DIR-SEPARATOR
-                       "images" DIR-SEPARATOR
-                       "texture1.jpg")
-    SF-FILENAME   _"Environment map"
-        (string-append gimp-data-directory DIR-SEPARATOR
-                       "scripts" DIR-SEPARATOR
-                       "images" DIR-SEPARATOR
-                       "beavis.jpg")
+  _"Crystal..."
+  _"Create a logo with a crystal/gel effect displacing the image underneath"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  ""
+  SF-ADJUSTMENT _"Chrome factor"      '(1.0 0.2 4 0.1 1 1 0)
+  SF-STRING     _"Text"               "Crystal"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Engraver"
+  SF-FILENAME   _"Background image"
+                 (string-append gimp-data-directory DIR-SEPARATOR
+                                "scripts" DIR-SEPARATOR
+                                "images" DIR-SEPARATOR
+                                "texture1.jpg")
+  SF-FILENAME   _"Environment map"
+                 (string-append gimp-data-directory DIR-SEPARATOR
+                                "scripts" DIR-SEPARATOR
+                                "images" DIR-SEPARATOR
+                                "beavis.jpg")
 )
 
 (script-fu-menu-register "script-fu-crystal-logo"

@@ -107,8 +107,9 @@
     (gimp-image-undo-enable rippletiled-image)
     (gimp-image-delete rippletiled-image)
     (gimp-image-undo-enable out-imagestack)
-    (gimp-context-pop)
     (gimp-display-new out-imagestack))
+
+    (gimp-context-pop)
   )
 )
 
@@ -119,11 +120,11 @@
   "Adam D. Moss"
   "1997"
   "RGB* GRAY*"
-  SF-IMAGE "Image to animage" 0
-  SF-DRAWABLE "Drawable to animate" 0
+  SF-IMAGE      "Image to animage"    0
+  SF-DRAWABLE   "Drawable to animate" 0
   SF-ADJUSTMENT _"Rippling strength" '(3 0 256 1 10 1 0)
   SF-ADJUSTMENT _"Number of frames"  '(15 0 256 1 10 0 1)
-  SF-OPTION _"Edge behavior"         '(_"Wrap" _"Smear" _"Black")
+  SF-OPTION     _"Edge behavior"     '(_"Wrap" _"Smear" _"Black")
 )
 
 (script-fu-menu-register "script-fu-ripply-anim"

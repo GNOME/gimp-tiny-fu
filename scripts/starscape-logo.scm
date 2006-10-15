@@ -72,6 +72,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
@@ -131,16 +132,16 @@
 )
 
 (script-fu-register "script-fu-starscape-logo-alpha"
-    _"Sta_rscape..."
-    _"Fill the selected region (or alpha) with a rock-like texture, a nova glow, and shadow"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    "RGBA"
-    SF-IMAGE       "Image"                    0
-    SF-DRAWABLE    "Drawable"                 0
-    SF-ADJUSTMENT _"Effect size (pixels * 4)" '(150 1 1000 1 10 0 1)
-    SF-COLOR      _"Glow color"               '(28 65 188)
+  _"Sta_rscape..."
+  _"Fill the selected region (or alpha) with a rock-like texture, a nova glow, and shadow"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  "RGBA"
+  SF-IMAGE       "Image"                    0
+  SF-DRAWABLE    "Drawable"                 0
+  SF-ADJUSTMENT _"Effect size (pixels * 4)" '(150 1 1000 1 10 0 1)
+  SF-COLOR      _"Glow color"               '(28 65 188)
 )
 
 (script-fu-menu-register "script-fu-starscape-logo-alpha"
@@ -162,16 +163,16 @@
 )
 
 (script-fu-register "script-fu-starscape-logo"
-    _"Sta_rscape..."
-    _"Create a logo using a rock-like texture, a nova glow, and shadow"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    ""
-    SF-STRING     _"Text"               "Nova"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 1 1000 1 10 0 1)
-    SF-FONT       _"Font"               "Engraver"
-    SF-COLOR      _"Glow color"         '(28 65 188)
+  _"Sta_rscape..."
+  _"Create a logo using a rock-like texture, a nova glow, and shadow"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "Nova"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 1 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Engraver"
+  SF-COLOR      _"Glow color"         '(28 65 188)
 )
 
 (script-fu-menu-register "script-fu-starscape-logo"

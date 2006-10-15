@@ -55,7 +55,7 @@
                              keep-bump-layer)
 
   (let* (
-        (index 0)
+        (index 1)
         (bevelling-whole-image FALSE)
         (greyness 0)
         (thickness (abs thickness))
@@ -188,8 +188,8 @@
     "Andrew Donkin"
     "1997/11/06"
     "RGB* GRAY*"
-    SF-IMAGE "Image" 0
-    SF-DRAWABLE "Drawable" 0
+    SF-IMAGE       "Image"           0
+    SF-DRAWABLE    "Drawable"        0
     SF-ADJUSTMENT _"Thickness"       '(5 0 30 1 2 0 0)
     SF-TOGGLE     _"Work on copy"    TRUE
     SF-TOGGLE     _"Keep bump layer" FALSE

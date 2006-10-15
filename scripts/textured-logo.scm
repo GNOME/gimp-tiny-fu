@@ -37,6 +37,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img blend-layer 1)
@@ -93,6 +94,7 @@
     (gimp-edit-fill dsl-layer-mask BACKGROUND-FILL)
     (gimp-layer-remove-mask drop-shadow-layer MASK-APPLY)
     (gimp-selection-none img)
+
     (gimp-context-pop)
   )
 )
@@ -114,22 +116,22 @@
 )
 
 (script-fu-register "script-fu-textured-logo-alpha"
-    _"_Textured..."
-    _"Fill the selected region (or alpha) with a texture and add highlights, shadows, and a mosaic background"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1996"
-    "RGBA"
-    SF-IMAGE      "Image"                 0
-    SF-DRAWABLE   "Drawable"              0
-    SF-ADJUSTMENT _"Border size (pixels)" '(20 1 100 1 10 0 1)
-    SF-PATTERN    _"Pattern"              "Fibers"
-    SF-OPTION     _"Mosaic tile type"     '(_"Squares"
-                                            _"Hexagons"
-                                            _"Octagons")
-    SF-COLOR      _"Background color"     '(255 255 255)
-    SF-COLOR      _"Starting blend"       '(32 106 0)
-    SF-COLOR      _"Ending blend"         '(0 0 106)
+  _"_Textured..."
+  _"Fill the selected region (or alpha) with a texture and add highlights, shadows, and a mosaic background"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1996"
+  "RGBA"
+  SF-IMAGE      "Image"                 0
+  SF-DRAWABLE   "Drawable"              0
+  SF-ADJUSTMENT _"Border size (pixels)" '(20 1 100 1 10 0 1)
+  SF-PATTERN    _"Pattern"              "Fibers"
+  SF-OPTION     _"Mosaic tile type"     '(_"Squares"
+                                          _"Hexagons"
+                                          _"Octagons")
+  SF-COLOR      _"Background color"     '(255 255 255)
+  SF-COLOR      _"Starting blend"       '(32 106 0)
+  SF-COLOR      _"Ending blend"         '(0 0 106)
 )
 
 (script-fu-menu-register "script-fu-textured-logo-alpha"
@@ -156,22 +158,22 @@
 )
 
 (script-fu-register "script-fu-textured-logo"
-    _"_Textured..."
-    _"Create a textured logo with highlights, shadows, and a mosaic background"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1996"
-    ""
-    SF-STRING     _"Text"               "The GIMP"
-    SF-ADJUSTMENT _"Font size (pixels)" '(200 1 1000 1 10 0 1)
-    SF-FONT       _"Font"               "CuneiFont"
-    SF-PATTERN    _"Text pattern"       "Fibers"
-    SF-OPTION     _"Mosaic tile type"   '(_"Squares"
-                                          _"Hexagons"
-                                          _"Octagons")
-    SF-COLOR      _"Background color"   '(255 255 255)
-    SF-COLOR      _"Starting blend"     '(32 106 0)
-    SF-COLOR      _"Ending blend"       '(0 0 106)
+  _"_Textured..."
+  _"Create a textured logo with highlights, shadows, and a mosaic background"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1996"
+  ""
+  SF-STRING     _"Text"               "The GIMP"
+  SF-ADJUSTMENT _"Font size (pixels)" '(200 1 1000 1 10 0 1)
+  SF-FONT       _"Font"               "CuneiFont"
+  SF-PATTERN    _"Text pattern"       "Fibers"
+  SF-OPTION     _"Mosaic tile type"   '(_"Squares"
+                                        _"Hexagons"
+                                        _"Octagons")
+  SF-COLOR      _"Background color"   '(255 255 255)
+  SF-COLOR      _"Starting blend"     '(32 106 0)
+  SF-COLOR      _"Ending blend"       '(0 0 106)
 )
 
 (script-fu-menu-register "script-fu-textured-logo"

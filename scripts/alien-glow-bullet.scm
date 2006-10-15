@@ -85,8 +85,9 @@
         (gimp-image-flatten img)
     )
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 

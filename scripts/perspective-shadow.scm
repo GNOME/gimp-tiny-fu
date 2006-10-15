@@ -174,28 +174,29 @@
 
   (gimp-image-set-active-layer image drawable)
   (gimp-image-undo-group-end image)
-  (gimp-context-pop)
   (gimp-displays-flush)
+
+  (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-perspective-shadow"
-    _"_Perspective..."
-    _"Add a perspective shadow to the selected region (or alpha)"
-    "Sven Neumann <sven@gimp.org>"
-    "Sven Neumann"
-    "2000/11/08"
-    "RGB* GRAY*"
-    SF-IMAGE       "Image" 0
-    SF-DRAWABLE    "Drawable" 0
-    SF-ADJUSTMENT _"Angle" '(45 0 180 1 10 1 0)
-    SF-ADJUSTMENT _"Relative distance of horizon" '(5 0 24 .1 1 1 1)
-    SF-ADJUSTMENT _"Relative length of shadow" '(1 0 24 .1 1 1 1)
-    SF-ADJUSTMENT _"Blur radius" '(3 0 1024 1 10 0 0)
-    SF-COLOR      _"Color" '(0 0 0)
-    SF-ADJUSTMENT _"Opacity" '(80 0 100 1 10 0 0)
-    SF-ENUM       _"Interpolation"  '("InterpolationType" "linear")
-    SF-TOGGLE     _"Allow resizing" FALSE
+  _"_Perspective..."
+  _"Add a perspective shadow to the selected region (or alpha)"
+  "Sven Neumann <sven@gimp.org>"
+  "Sven Neumann"
+  "2000/11/08"
+  "RGB* GRAY*"
+  SF-IMAGE       "Image"                        0
+  SF-DRAWABLE    "Drawable"                     0
+  SF-ADJUSTMENT _"Angle"                        '(45 0 180 1 10 1 0)
+  SF-ADJUSTMENT _"Relative distance of horizon" '(5 0 24 .1 1 1 1)
+  SF-ADJUSTMENT _"Relative length of shadow"    '(1 0 24 .1 1 1 1)
+  SF-ADJUSTMENT _"Blur radius"                  '(3 0 1024 1 10 0 0)
+  SF-COLOR      _"Color"                        '(0 0 0)
+  SF-ADJUSTMENT _"Opacity"                      '(80 0 100 1 10 0 0)
+  SF-ENUM       _"Interpolation"                '("InterpolationType" "linear")
+  SF-TOGGLE     _"Allow resizing"               FALSE
 )
 
 (script-fu-menu-register "script-fu-perspective-shadow"

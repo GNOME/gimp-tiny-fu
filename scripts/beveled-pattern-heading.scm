@@ -31,8 +31,8 @@
   (let* (
         (img (car (gimp-image-new 10 10 RGB)))
         (textl
-         (car
-          (gimp-text-fontname img -1 0 0 text 0 TRUE text-size PIXELS font)))
+          (car
+            (gimp-text-fontname img -1 0 0 text 0 TRUE text-size PIXELS font)))
 
         (width (car (gimp-drawable-width textl)))
         (height (car (gimp-drawable-height textl)))
@@ -42,6 +42,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-resize img width height 0 0)
     (gimp-image-add-layer img background 1)
@@ -52,7 +53,8 @@
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill background BACKGROUND-FILL)
     (gimp-context-set-pattern pattern)
-    (gimp-edit-bucket-fill background PATTERN-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
+    (gimp-edit-bucket-fill background
+                           PATTERN-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
 
     ; Create bumpmap layer
 
@@ -90,24 +92,25 @@
         (gimp-image-flatten img))
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 
 (script-fu-register "script-fu-beveled-pattern-heading"
-    _"H_eading..."
-    _"Create a beveled pattern heading for webpages"
-    "Federico Mena Quintero"
-    "Federico Mena Quintero"
-    "July 1997"
-    ""
-    SF-STRING     _"Text"               "Hello world!"
-    SF-ADJUSTMENT _"Font size (pixels)" '(72 2 200 1 1 0 1)
-    SF-FONT       _"Font" "Sans"
-    SF-PATTERN    _"Pattern"            "Wood"
-    SF-TOGGLE     _"Transparent background" FALSE
+  _"H_eading..."
+  _"Create a beveled pattern heading for webpages"
+  "Federico Mena Quintero"
+  "Federico Mena Quintero"
+  "July 1997"
+  ""
+  SF-STRING     _"Text"               "Hello world!"
+  SF-ADJUSTMENT _"Font size (pixels)" '(72 2 200 1 1 0 1)
+  SF-FONT       _"Font"               "Sans"
+  SF-PATTERN    _"Pattern"            "Wood"
+  SF-TOGGLE     _"Transparent background" FALSE
 )
 
 (script-fu-menu-register "script-fu-beveled-pattern-heading"

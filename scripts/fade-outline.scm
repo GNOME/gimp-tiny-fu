@@ -170,27 +170,22 @@
 )
 
 
-
-
-; Register the function with the GIMP:
-; ------------------------------------
-
 (script-fu-register
-    "script-fu-fade-outline"
-    _"_Fade to Layer Mask..."
-    _"Create a layermask that fades the edges of the selected region (or alpha)"
-    "Wolfgang Hofer <hof@hotbot.com>"
-    "Wolfgang Hofer"
-    "10 Nov 1999"
-    "RGB* GRAY*"
-    SF-IMAGE "The image" 0
-    SF-DRAWABLE "The layer" 0
-    SF-ADJUSTMENT _"Border size" '(10 1 300 1 10 0 1)
-    SF-ADJUSTMENT _"Fade from %" '(100 0 100 1 10 0 0)
-    SF-ADJUSTMENT _"Fade to %" '(0 0 100 1 10 0 0)
-    SF-TOGGLE _"Use growing selection" FALSE
-    SF-TOGGLE _"Apply generated layermask" FALSE
-    SF-TOGGLE _"Clear unselected maskarea" TRUE
+  "script-fu-fade-outline"
+  _"_Fade to Layer Mask..."
+  _"Create a layermask that fades the edges of the selected region (or alpha)"
+  "Wolfgang Hofer <hof@hotbot.com>"
+  "Wolfgang Hofer"
+  "10 Nov 1999"
+  "RGB* GRAY*"
+  SF-IMAGE      "The image"                  0
+  SF-DRAWABLE   "The layer"                  0
+  SF-ADJUSTMENT _"Border size"               '(10 1 300 1 10 0 1)
+  SF-ADJUSTMENT _"Fade from %"               '(100 0 100 1 10 0 0)
+  SF-ADJUSTMENT _"Fade to %"                 '(0 0 100 1 10 0 0)
+  SF-TOGGLE     _"Use growing selection"     FALSE
+  SF-TOGGLE     _"Apply generated layermask" FALSE
+  SF-TOGGLE     _"Clear unselected maskarea" TRUE
 )
 
 (script-fu-menu-register "script-fu-fade-outline"

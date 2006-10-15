@@ -29,6 +29,7 @@
          (bg-layer (car (gimp-layer-new img width height RGBA-IMAGE "Background" 100 NORMAL-MODE)))
          (blur-layer (car (gimp-layer-new img width height RGBA-IMAGE "Blur" 100 NORMAL-MODE))))
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img blur-layer 1)
@@ -56,11 +57,13 @@
     (gimp-brightness-contrast logo-layer 0 127)
     (gimp-selection-none img)
     (gimp-layer-set-lock-alpha logo-layer FALSE)
-    (plug-in-bump-map 1 img logo-layer blur-layer 135 50 10 0 0 0 30 TRUE FALSE 0)
+    (plug-in-bump-map 1 img logo-layer blur-layer
+                      135 50 10 0 0 0 30 TRUE FALSE 0)
     (gimp-layer-set-offsets blur-layer 5 5)
     (gimp-invert blur-layer)
     (gimp-layer-set-opacity blur-layer 50.0)
     (gimp-image-set-active-layer img logo-layer)
+
     (gimp-context-pop)
   )
 )
@@ -85,10 +88,10 @@
     "Brian McFee"
     "April 1998"
     "RGBA"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-ADJUSTMENT _"Spots density X" '(16 1 16 1 10 0 1)
-    SF-ADJUSTMENT _"Spots density Y" '(4 1 16 1 10 0 1)
+    SF-IMAGE       "Image"            0
+    SF-DRAWABLE    "Drawable"         0
+    SF-ADJUSTMENT _"Spots density X"  '(16 1 16 1 10 0 1)
+    SF-ADJUSTMENT _"Spots density Y"  '(4 1 16 1 10 0 1)
     SF-COLOR      _"Background Color" '(255 255 255)
 )
 
@@ -111,18 +114,18 @@
                          "<Image>/Filters/Alpha to Logo")
 
 (script-fu-register "script-fu-bovinated-logo"
-    _"Bo_vination..."
-    _"Create a logo with text in the style of 'cow spots'"
-    "Brian McFee <keebler@wco.com>"
-    "Brian McFee"
-    "April 1998"
-    ""
-    SF-STRING     _"Text" "Fear the Cow"
-    SF-ADJUSTMENT _"Font size (pixels)" '(80 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "RoostHeavy"
-    SF-ADJUSTMENT _"Spots density X" '(16 1 16 1 10 0 1)
-    SF-ADJUSTMENT _"Spots density Y" '(4 1 16 1 10 0 1)
-    SF-COLOR      _"Background color" '(255 255 255)
+  _"Bo_vination..."
+  _"Create a logo with text in the style of 'cow spots'"
+  "Brian McFee <keebler@wco.com>"
+  "Brian McFee"
+  "April 1998"
+  ""
+  SF-STRING     _"Text"               "Fear the Cow"
+  SF-ADJUSTMENT _"Font size (pixels)" '(80 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "RoostHeavy"
+  SF-ADJUSTMENT _"Spots density X"    '(16 1 16 1 10 0 1)
+  SF-ADJUSTMENT _"Spots density Y"    '(4 1 16 1 10 0 1)
+  SF-COLOR      _"Background color"   '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-bovinated-logo"

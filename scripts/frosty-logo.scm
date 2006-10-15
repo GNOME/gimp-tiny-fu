@@ -23,6 +23,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-layer-add-mask logo-layer logo-layer-mask)
     (script-fu-util-image-resize-from-layer img shadow-layer)
     (gimp-image-add-layer img sparkle-layer 2)
@@ -85,6 +86,7 @@
     (gimp-layer-translate shadow-layer border border)
 
     (script-fu-util-image-resize-from-layer img logo-layer)
+
     (gimp-context-pop)
   )
 )
@@ -102,16 +104,16 @@
 )
 
 (script-fu-register "script-fu-frosty-logo-alpha"
-    _"_Frosty..."
-    _"Add a frost effect to the selected region (or alpha) with an added drop shadow"
-    "Spencer Kimball & Ed Mackey"
-    "Spencer Kimball & Ed Mackey"
-    "1997"
-    "RGBA"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
-    SF-COLOR      _"Background color"     '(255 255 255)
+  _"_Frosty..."
+  _"Add a frost effect to the selected region (or alpha) with an added drop shadow"
+  "Spencer Kimball & Ed Mackey"
+  "Spencer Kimball & Ed Mackey"
+  "1997"
+  "RGBA"
+  SF-IMAGE      "Image"                 0
+  SF-DRAWABLE   "Drawable"              0
+  SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
+  SF-COLOR      _"Background color"     '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-frosty-logo-alpha"
@@ -135,16 +137,16 @@
 )
 
 (script-fu-register "script-fu-frosty-logo"
-    _"_Frosty..."
-    _"Create frozen logo with an added drop shadow"
-    "Spencer Kimball & Ed Mackey"
-    "Spencer Kimball & Ed Mackey"
-    "1997"
-    ""
-    SF-STRING _"Text" "The GIMP"
-    SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
-    SF-FONT   _"Font" "Becker"
-    SF-COLOR  _"Background color" '(255 255 255)
+  _"_Frosty..."
+  _"Create frozen logo with an added drop shadow"
+  "Spencer Kimball & Ed Mackey"
+  "Spencer Kimball & Ed Mackey"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "The GIMP"
+  SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Becker"
+  SF-COLOR      _"Background color"   '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-frosty-logo"

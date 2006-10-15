@@ -82,6 +82,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
 
     ; Create bumpmap layer
@@ -132,8 +133,9 @@
 
     (gimp-selection-none img)
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 

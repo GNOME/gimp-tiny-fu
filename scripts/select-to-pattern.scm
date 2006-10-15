@@ -91,14 +91,14 @@
 )
 
 (script-fu-register "script-fu-selection-to-pattern"
-    _"To _Pattern..."
-    _"Convert a selection to a pattern"
-    "Cameron Gregory <cameron@bloke.com>"
-    "Cameron Gregory"
-    "09/02/2003"
-    "RGB* GRAY*"
-    SF-IMAGE     "Image"        0
-    SF-DRAWABLE  "Drawable"     0
-    SF-STRING   _"Pattern name" "My Pattern"
-    SF-STRING   _"File name"    "mypattern"
+  _"To _Pattern..."
+  _"Convert a selection to a pattern"
+  "Cameron Gregory <cameron@bloke.com>"
+  "Cameron Gregory"
+  "09/02/2003"
+  "RGB* GRAY*"
+  SF-IMAGE     "Image"        0
+  SF-DRAWABLE  "Drawable"     0
+  SF-STRING   _"Pattern name" "My Pattern"
+  SF-STRING   _"File name"    "mypattern"
 )

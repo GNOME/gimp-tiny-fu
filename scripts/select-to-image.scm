@@ -39,6 +39,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable image)
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
@@ -55,8 +56,11 @@
 
     (gimp-edit-copy drawable)
 
-    (set! new-image (car (gimp-image-new selection-width selection-height image-type)))
-    (set! new-draw (car (gimp-layer-new new-image selection-width selection-height draw-type "Selection" 100 NORMAL-MODE)))
+    (set! new-image (car (gimp-image-new selection-width
+                                         selection-height image-type)))
+    (set! new-draw (car (gimp-layer-new new-image
+                                        selection-width selection-height
+                                        draw-type "Selection" 100 NORMAL-MODE)))
     (gimp-image-add-layer new-image new-draw 0)
     (gimp-drawable-fill new-draw BACKGROUND-FILL)
 
@@ -64,22 +68,22 @@
       (gimp-floating-sel-anchor floating-sel)
     )
 
-    (gimp-context-set-background old-bg)
     (gimp-image-undo-enable image)
-    (gimp-context-pop)
     (gimp-image-set-active-layer image drawable)
     (gimp-display-new new-image)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-selection-to-image"
-    _"To _Image"
-    _"Convert a selection to an image"
-    "Adrian Likins <adrian@gimp.org>"
-    "Adrian Likins"
-    "10/07/97"
-    "RGB* GRAY*"
-    SF-IMAGE "Image" 0
-    SF-DRAWABLE "Drawable" 0
+  _"To _Image"
+  _"Convert a selection to an image"
+  "Adrian Likins <adrian@gimp.org>"
+  "Adrian Likins"
+  "10/07/97"
+  "RGB* GRAY*"
+  SF-IMAGE "Image"       0
+  SF-DRAWABLE "Drawable" 0
 )

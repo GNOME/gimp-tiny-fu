@@ -93,6 +93,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img tube-layer)
     (gimp-image-add-layer img bg-layer 1)
     (if (not (= shadow 0))
@@ -171,6 +172,7 @@
 
     (gimp-drawable-set-name tube-layer "Neon Tubes")
     (gimp-image-remove-channel img selection)
+
     (gimp-context-pop)
   )
 )
@@ -190,18 +192,18 @@
 )
 
 (script-fu-register "script-fu-neon-logo-alpha"
-    _"N_eon..."
-    _"Convert the selected region (or alpha) into a neon-sign like object"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    "RGBA"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-ADJUSTMENT _"Effect size (pixels * 5)" '(150 2 1000 1 10 0 1)
-    SF-COLOR      _"Background color" '(0 0 0)
-    SF-COLOR      _"Glow color" '(38 211 255)
-    SF-TOGGLE     _"Create shadow" FALSE
+  _"N_eon..."
+  _"Convert the selected region (or alpha) into a neon-sign like object"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  "RGBA"
+  SF-IMAGE      "Image"                     0
+  SF-DRAWABLE   "Drawable"                  0
+  SF-ADJUSTMENT _"Effect size (pixels * 5)" '(150 2 1000 1 10 0 1)
+  SF-COLOR      _"Background color"         '(0 0 0)
+  SF-COLOR      _"Glow color"               '(38 211 255)
+  SF-TOGGLE     _"Create shadow"            FALSE
 )
 
 (script-fu-menu-register "script-fu-neon-logo-alpha"
@@ -226,18 +228,18 @@
 )
 
 (script-fu-register "script-fu-neon-logo"
-    _"N_eon..."
-    _"Create a logo in the style of a neon sign"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    ""
-    SF-STRING     _"Text" "NEON"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "Blippo"
-    SF-COLOR      _"Background color" '(0 0 0)
-    SF-COLOR      _"Glow color" '(38 211 255)
-    SF-TOGGLE     _"Create shadow" FALSE
+  _"N_eon..."
+  _"Create a logo in the style of a neon sign"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "NEON"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Blippo"
+  SF-COLOR      _"Background color"   '(0 0 0)
+  SF-COLOR      _"Glow color"         '(38 211 255)
+  SF-TOGGLE     _"Create shadow"      FALSE
 )
 
 (script-fu-menu-register "script-fu-neon-logo"

@@ -21,6 +21,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img background 1)
     (gimp-image-add-layer img shadow 1)
@@ -62,6 +63,7 @@
     (gimp-drawable-set-visible background TRUE)
     (gimp-drawable-set-name layer1 (car (gimp-drawable-get-name logo-layer)))
     (gimp-image-remove-layer img logo-layer)
+
     (gimp-context-pop)
   )
 )
@@ -79,16 +81,16 @@
 )
 
 (script-fu-register "script-fu-chrome-logo-alpha"
-    _"C_hrome..."
-    _"Add a simple chrome effect to the selected region (or alpha)"
-    "Spencer Kimball"
-    "Spencer Kimball & Peter Mattis"
-    "1997"
-    "RGBA"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-ADJUSTMENT _"Offsets (pixels * 2)" '(10 2 100 1 10 0 1)
-    SF-COLOR      _"Background Color" '(191 191 191)
+  _"C_hrome..."
+  _"Add a simple chrome effect to the selected region (or alpha)"
+  "Spencer Kimball"
+  "Spencer Kimball & Peter Mattis"
+  "1997"
+  "RGBA"
+  SF-IMAGE       "Image"                0
+  SF-DRAWABLE    "Drawable"             0
+  SF-ADJUSTMENT _"Offsets (pixels * 2)" '(10 2 100 1 10 0 1)
+  SF-COLOR      _"Background Color"     '(191 191 191)
 )
 
 (script-fu-menu-register "script-fu-chrome-logo-alpha"
@@ -111,16 +113,16 @@
 )
 
 (script-fu-register "script-fu-chrome-logo"
-    _"C_hrome..."
-    _"Create a simplistic, but cool, chromed logo"
-    "Spencer Kimball"
-    "Spencer Kimball & Peter Mattis"
-    "1997"
-    ""
-    SF-STRING     _"Text" "The GIMP"
-    SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "Bodoni"
-    SF-COLOR      _"Background color" '(191 191 191)
+  _"C_hrome..."
+  _"Create a simplistic, but cool, chromed logo"
+  "Spencer Kimball"
+  "Spencer Kimball & Peter Mattis"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "The GIMP"
+  SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Bodoni"
+  SF-COLOR      _"Background color"   '(191 191 191)
 )
 
 (script-fu-menu-register "script-fu-chrome-logo"

@@ -38,6 +38,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img white-layer 1)
@@ -88,6 +89,7 @@
     (gimp-brightness-contrast logo-layer 0 30)
     (plug-in-threshold-alpha 1 img logo-layer 60)
     (gimp-image-set-active-layer img logo-layer)
+
     (gimp-context-pop)
   )
 )
@@ -110,19 +112,19 @@
 )
 
 (script-fu-register "script-fu-comic-logo-alpha"
-    _"Comic Boo_k..."
-    _"Add a comic-book effect to the selected region (or alpha) by outlining and filling with a gradient"
-    "Brian McFee <keebler@wco.com>"
-    "Brian McFee"
-    "April 1998"
-    "RGBA"
-    SF-IMAGE      "Image"             0
-    SF-DRAWABLE   "Drawable"          0
-    SF-GRADIENT   _"Gradient"         "Incandescent"
-    SF-TOGGLE     _"Gradient reverse" FALSE
-    SF-ADJUSTMENT _"Outline size"     '(5 1 100 1 10 0 1)
-    SF-COLOR      _"Outline color"    '(255 255 255)
-    SF-COLOR      _"Background color" '(255 255 255)
+  _"Comic Boo_k..."
+  _"Add a comic-book effect to the selected region (or alpha) by outlining and filling with a gradient"
+  "Brian McFee <keebler@wco.com>"
+  "Brian McFee"
+  "April 1998"
+  "RGBA"
+  SF-IMAGE      "Image"             0
+  SF-DRAWABLE   "Drawable"          0
+  SF-GRADIENT   _"Gradient"         "Incandescent"
+  SF-TOGGLE     _"Gradient reverse" FALSE
+  SF-ADJUSTMENT _"Outline size"     '(5 1 100 1 10 0 1)
+  SF-COLOR      _"Outline color"    '(255 255 255)
+  SF-COLOR      _"Background color" '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-comic-logo-alpha"
@@ -150,20 +152,20 @@
 )
 
 (script-fu-register "script-fu-comic-logo"
-    _"Comic Boo_k..."
-    _"Create a comic-book style logo by outlining and filling with a gradient"
-    "Brian McFee <keebler@wco.com>"
-    "Brian McFee"
-    "April 1998"
-    ""
-    SF-STRING     _"Text"               "Moo"
-    SF-ADJUSTMENT _"Font size (pixels)" '(85 2 1000 1 10 0 1)
-    SF-FONT       _"Font"               "Tribeca"
-    SF-GRADIENT   _"Gradient"           "Incandescent"
-    SF-TOGGLE     _"Gradient reverse"   FALSE
-    SF-ADJUSTMENT _"Outline size"       '(5 1 100 1 10 0 1)
-    SF-COLOR      _"Outline color"      '(255 255 255)
-    SF-COLOR      _"Background color"   '(255 255 255)
+  _"Comic Boo_k..."
+  _"Create a comic-book style logo by outlining and filling with a gradient"
+  "Brian McFee <keebler@wco.com>"
+  "Brian McFee"
+  "April 1998"
+  ""
+  SF-STRING     _"Text"               "Moo"
+  SF-ADJUSTMENT _"Font size (pixels)" '(85 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Tribeca"
+  SF-GRADIENT   _"Gradient"           "Incandescent"
+  SF-TOGGLE     _"Gradient reverse"   FALSE
+  SF-ADJUSTMENT _"Outline size"       '(5 1 100 1 10 0 1)
+  SF-COLOR      _"Outline color"      '(255 255 255)
+  SF-COLOR      _"Background color"   '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-comic-logo"

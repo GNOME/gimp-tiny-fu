@@ -30,6 +30,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
     (gimp-context-set-foreground sphere-color)
@@ -62,23 +63,24 @@
 
     (gimp-selection-none img)
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-sphere"
-    _"_Sphere..."
-    _"Create a simple sphere with a drop shadow"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1996"
-    ""
-    SF-ADJUSTMENT _"Radius (pixels)"    '(100 5 500 1 10 0 1)
-    SF-ADJUSTMENT _"Lighting (degrees)" '(45 0 360 1 10 0 0)
-    SF-TOGGLE     _"Shadow"             TRUE
-    SF-COLOR      _"Background color"   '(255 255 255)
-    SF-COLOR      _"Sphere color"       '(255 0 0)
+  _"_Sphere..."
+  _"Create a simple sphere with a drop shadow"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1996"
+  ""
+  SF-ADJUSTMENT _"Radius (pixels)"    '(100 5 500 1 10 0 1)
+  SF-ADJUSTMENT _"Lighting (degrees)" '(45 0 360 1 10 0 0)
+  SF-TOGGLE     _"Shadow"             TRUE
+  SF-COLOR      _"Background color"   '(255 255 255)
+  SF-COLOR      _"Sphere color"       '(255 0 0)
 )
 
 (script-fu-menu-register "script-fu-sphere"

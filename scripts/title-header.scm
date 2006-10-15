@@ -82,6 +82,7 @@
     ; Create image
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-resize img img-width img-height 0 0)
 
@@ -153,22 +154,23 @@
 
 ;    (gimp-image-flatten img)
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-title-header"
-    _"Web Title Header..."
-    _"Create a decorative web title header"
-    "Federico Mena Quintero"
-    "Federico Mena Quintero"
-    "June 1997"
-    ""
-    SF-STRING     _"Text"               "Hello world!"
-    SF-ADJUSTMENT _"Font size (pixels)" '(32 2 256 1 10 0 0)
-    SF-FONT       _"Font"               "Sans"
-    SF-TOGGLE     _"Gradient reverse"   FALSE
+  _"Web Title Header..."
+  _"Create a decorative web title header"
+  "Federico Mena Quintero"
+  "Federico Mena Quintero"
+  "June 1997"
+  ""
+  SF-STRING     _"Text"               "Hello world!"
+  SF-ADJUSTMENT _"Font size (pixels)" '(32 2 256 1 10 0 0)
+  SF-FONT       _"Font"               "Sans"
+  SF-TOGGLE     _"Gradient reverse"   FALSE
 )
 
 (script-fu-menu-register "script-fu-title-header"

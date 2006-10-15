@@ -16,6 +16,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
 
     (gimp-image-add-layer img layer-one 0)
@@ -39,8 +40,9 @@
 
     (plug-in-bump-map 1 img tdrawable bump-layer azimuth elevation depth 0 0 0 0 FALSE FALSE 0)
     (gimp-image-delete img)
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
@@ -52,13 +54,13 @@
   "Tim Newsome"
   "4/11/97"
   "RGB* GRAY*"
-  SF-IMAGE "Input image" 0
-  SF-DRAWABLE "Input drawable" 0
-  SF-ADJUSTMENT _"Blur X" '(9 3 100 1 10 0 1)
-  SF-ADJUSTMENT _"Blur Y" '(9 3 100 1 10 0 1)
-  SF-ADJUSTMENT _"Azimuth" '(135 0 360 1 10 1 0)
-  SF-ADJUSTMENT _"Elevation" '(45 0 90 1 10 1 0)
-  SF-ADJUSTMENT _"Depth" '(3 1 50 1 10 0 1)
+  SF-IMAGE       "Input image"    0
+  SF-DRAWABLE    "Input drawable" 0
+  SF-ADJUSTMENT _"Blur X"         '(9 3 100 1 10 0 1)
+  SF-ADJUSTMENT _"Blur Y"         '(9 3 100 1 10 0 1)
+  SF-ADJUSTMENT _"Azimuth"        '(135 0 360 1 10 1 0)
+  SF-ADJUSTMENT _"Elevation"      '(45 0 90 1 10 1 0)
+  SF-ADJUSTMENT _"Depth"          '(3 1 50 1 10 0 1)
 )
 
 (script-fu-menu-register "script-fu-clothify"

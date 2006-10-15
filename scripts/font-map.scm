@@ -86,6 +86,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
 
     (set! font-list (cadr font-list))
@@ -143,8 +144,9 @@
     (gimp-image-set-active-layer img drawable)
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
@@ -155,7 +157,7 @@
   "Spencer Kimball"
   "1997"
   ""
-  SF-STRING     _"_Text" "How quickly daft jumping zebras vex."
+  SF-STRING     _"_Text"                  "How quickly daft jumping zebras vex."
   SF-TOGGLE     _"Use font _name as text" FALSE
   SF-TOGGLE     _"_Labels"                TRUE
   SF-STRING     _"_Filter (regexp)"       "Sans"

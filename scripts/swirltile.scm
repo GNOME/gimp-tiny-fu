@@ -16,7 +16,11 @@
         (cx (/ width 2))
         (cy (/ height 2))
         )
+
+    (gimp-context-push)
+
     (gimp-image-undo-disable img)
+
     (gimp-image-add-layer img layer-one 0)
     (gimp-context-set-background bg-color)
     (gimp-edit-fill layer-one BACKGROUND-FILL)
@@ -36,28 +40,29 @@
 
     (plug-in-bump-map 1 img layer-one layer-one azimuth elevation depth 0 0 0 0 FALSE FALSE 0)
 
-    (gimp-context-pop)
     (gimp-display-new img)
     (gimp-image-undo-enable img)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-swirl-tile"
-    _"Swirl-_Tile..."
-    _"Create an image filled with a swirled tile effect"
-    "Adrian Likins <aklikins@eos.ncsu.edu>"
-    "Adrian Likins"
-    "1997"
-    ""
-    SF-ADJUSTMENT _"Depth" '(10 0 64 1 1 0 0)
-    SF-ADJUSTMENT _"Azimuth" '(135 0 360 1 10 0 0)
-    SF-ADJUSTMENT _"Elevation" '(45 0 90 1 10 0 0)
-    SF-ADJUSTMENT _"Blur radius" '(3 0 128 1 10 0 0)
-    SF-ADJUSTMENT _"Height" '(256 0 1024 1 10 0 1)
-    SF-ADJUSTMENT _"Width" '(256 0 1024 1 10 0 1)
-    SF-ADJUSTMENT _"Whirl amount" '(320 0 360 1 10 0 0)
-    SF-ADJUSTMENT _"Roughness" '(.5 0 1 .1 .01 2 1)
-    SF-COLOR      _"Background color" '(255 255 255)
+  _"Swirl-_Tile..."
+  _"Create an image filled with a swirled tile effect"
+  "Adrian Likins <aklikins@eos.ncsu.edu>"
+  "Adrian Likins"
+  "1997"
+  ""
+  SF-ADJUSTMENT _"Depth"            '(10 0 64 1 1 0 0)
+  SF-ADJUSTMENT _"Azimuth"          '(135 0 360 1 10 0 0)
+  SF-ADJUSTMENT _"Elevation"        '(45 0 90 1 10 0 0)
+  SF-ADJUSTMENT _"Blur radius"      '(3 0 128 1 10 0 0)
+  SF-ADJUSTMENT _"Height"           '(256 0 1024 1 10 0 1)
+  SF-ADJUSTMENT _"Width"            '(256 0 1024 1 10 0 1)
+  SF-ADJUSTMENT _"Whirl amount"     '(320 0 360 1 10 0 0)
+  SF-ADJUSTMENT _"Roughness"        '(.5 0 1 .1 .01 2 1)
+  SF-COLOR      _"Background color" '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-swirl-tile"

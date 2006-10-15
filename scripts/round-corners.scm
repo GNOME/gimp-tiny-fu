@@ -125,21 +125,21 @@
 )
 
 (script-fu-register "script-fu-round-corners"
-    _"_Round Corners..."
-    _"Round the corners of an image and optionally add a drop-shadow and background"
-    "Sven Neumann <sven@gimp.org>"
-    "Sven Neumann"
-    "1999/12/21"
-    "RGB GRAY"
-    SF-IMAGE "Image" 0
-    SF-DRAWABLE "Drawable" 0
-    SF-ADJUSTMENT _"Edge radius" '(15 0 4096 1 10 0 1)
-    SF-TOGGLE     _"Add drop-shadow" TRUE
-    SF-ADJUSTMENT _"Shadow X offset" '(8 -4096 4096 1 10 0 1)
-    SF-ADJUSTMENT _"Shadow Y offset" '(8 -4096 4096 1 10 0 1)
-    SF-ADJUSTMENT _"Blur radius" '(15 0 1024 1 10 0 1)
-    SF-TOGGLE     _"Add background" TRUE
-    SF-TOGGLE     _"Work on copy" TRUE
+  _"_Round Corners..."
+  _"Round the corners of an image and optionally add a drop-shadow and background"
+  "Sven Neumann <sven@gimp.org>"
+  "Sven Neumann"
+  "1999/12/21"
+  "RGB GRAY"
+  SF-IMAGE      "Image"            0
+  SF-DRAWABLE   "Drawable"         0
+  SF-ADJUSTMENT _"Edge radius"     '(15 0 4096 1 10 0 1)
+  SF-TOGGLE     _"Add drop-shadow" TRUE
+  SF-ADJUSTMENT _"Shadow X offset" '(8 -4096 4096 1 10 0 1)
+  SF-ADJUSTMENT _"Shadow Y offset" '(8 -4096 4096 1 10 0 1)
+  SF-ADJUSTMENT _"Blur radius"     '(15 0 1024 1 10 0 1)
+  SF-TOGGLE     _"Add background"  TRUE
+  SF-TOGGLE     _"Work on copy"    TRUE
 )
 
 (script-fu-menu-register "script-fu-round-corners"

@@ -54,6 +54,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
@@ -63,7 +64,9 @@
     (gimp-selection-all img)
 
     (if (= bg-fill TRUE)
-        (gimp-edit-bucket-fill bg-layer PATTERN-BUCKET-FILL NORMAL-MODE 100 255 FALSE 1 1)
+        (gimp-edit-bucket-fill bg-layer
+                               PATTERN-BUCKET-FILL NORMAL-MODE
+                               100 255 FALSE 1 1)
         (gimp-edit-fill bg-layer BACKGROUND-FILL)
     )
 
@@ -74,7 +77,8 @@
     (gimp-selection-none img)
     (gimp-selection-layer-alpha logo-layer)
     (gimp-edit-fill bump-layer BACKGROUND-FILL)
-    (gimp-edit-bucket-fill logo-layer PATTERN-BUCKET-FILL NORMAL-MODE 100 255 FALSE 1 1)
+    (gimp-edit-bucket-fill logo-layer
+                           PATTERN-BUCKET-FILL NORMAL-MODE 100 255 FALSE 1 1)
     (gimp-selection-none img)
 
     (gimp-layer-set-lock-alpha bump-layer FALSE)
@@ -84,7 +88,8 @@
 
     (gimp-selection-none img)
 
-    (plug-in-bump-map 1 img logo-layer bump-layer 135.00 25.0 60 0 0 0 0 TRUE invert 1)
+    (plug-in-bump-map 1 img logo-layer bump-layer
+                      135.00 25.0 60 0 0 0 0 TRUE invert 1)
 
     (gimp-drawable-set-visible bump-layer FALSE)
 

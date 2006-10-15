@@ -38,8 +38,8 @@
 
 
 (define (script-fu-labels-gimp-org text font font-size text-color
-                                 shadow-color bg-color rm-bg index
-                                 num-colors color-thresh yoff xoff height)
+                                   shadow-color bg-color rm-bg index
+                                   num-colors color-thresh yoff xoff height)
   (let* (
         (img (car (gimp-image-new 125 height RGB)))
         (text-layer (car (gimp-text-fontname img -1 xoff yoff text 0
@@ -51,6 +51,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img shadow-layer 1)
     (gimp-image-add-layer img bg-layer 2)
@@ -83,8 +84,9 @@
                                     FALSE FALSE ""))
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
@@ -100,10 +102,12 @@
 ;;;
 
 (define (script-fu-tube-button-label-gimp-org text rm-bg index)
-  (script-fu-labels-gimp-org text "helvetica" 14 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 8 0 30))
+  (script-fu-labels-gimp-org text "helvetica" 14 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 8 0 30)
+)
 
 (define (script-fu-tube-subbutton-label-gimp-org text rm-bg index)
-  (script-fu-labels-gimp-org text "helvetica" 12 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 7 10 24))
+  (script-fu-labels-gimp-org text "helvetica" 12 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 7 10 24)
+)
 
 (define (script-fu-tube-subsubbutton-label-gimp-org text rm-bg index)
   (script-fu-labels-gimp-org text "helvetica" 10 '(86 114 172) '(255 255 255) '(255 255 255) rm-bg index 15 1 6 20 18)
@@ -111,70 +115,70 @@
 
 
 (script-fu-register "script-fu-tube-button-label-gimp-org"
-    _"_Tube Button Label..."
-    _"Create an image of a Tube Button Label using the gimp.org webpage theme"
-    "Adrian Likins & Jens Lautenbacher"
-    "Adrian Likins & Jens Lautenbacher"
-    "1997"
-    ""
-    SF-STRING _"Text" "?"
-    SF-TOGGLE _"Remove background" TRUE
-    SF-TOGGLE _"Index image" TRUE
+  _"_Tube Button Label..."
+  _"Create an image of a Tube Button Label using the gimp.org webpage theme"
+  "Adrian Likins & Jens Lautenbacher"
+  "Adrian Likins & Jens Lautenbacher"
+  "1997"
+  ""
+  SF-STRING _"Text"              "?"
+  SF-TOGGLE _"Remove background" TRUE
+  SF-TOGGLE _"Index image"       TRUE
 )
 
 (script-fu-menu-register "script-fu-tube-button-label-gimp-org"
                          "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-tube-subbutton-label-gimp-org"
-    _"T_ube Sub-Button Label..."
-    _"Create an image of a second level Tube Button Label using the gimp.org webpage theme"
-    "Adrian Likins & Jens Lautenbacher"
-    "Adrian Likins & Jens Lautenbacher"
-    "1997"
-    ""
-    SF-STRING _"Text" "?"
-    SF-TOGGLE _"Remove background" TRUE
-    SF-TOGGLE _"Index image" TRUE
+  _"T_ube Sub-Button Label..."
+  _"Create an image of a second level Tube Button Label using the gimp.org webpage theme"
+  "Adrian Likins & Jens Lautenbacher"
+  "Adrian Likins & Jens Lautenbacher"
+  "1997"
+  ""
+  SF-STRING _"Text"              "?"
+  SF-TOGGLE _"Remove background" TRUE
+  SF-TOGGLE _"Index image"       TRUE
 )
 
 (script-fu-menu-register "script-fu-tube-subbutton-label-gimp-org"
                          "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-tube-subsubbutton-label-gimp-org"
-    _"Tub_e Sub-Sub-Button Label..."
-    _"Create an image of a third level Tube Button Label using the gimp.org webpage theme"
-    "Adrian Likins & Jens Lautenbacher"
-    "Adrian Likins & Jens Lautenbacher"
-    "1997"
-    ""
-    SF-STRING _"Text" "?"
-    SF-TOGGLE _"Remove background" TRUE
-    SF-TOGGLE _"Index image" TRUE
+  _"Tub_e Sub-Sub-Button Label..."
+  _"Create an image of a third level Tube Button Label using the gimp.org webpage theme"
+  "Adrian Likins & Jens Lautenbacher"
+  "Adrian Likins & Jens Lautenbacher"
+  "1997"
+  ""
+  SF-STRING _"Text"              "?"
+  SF-TOGGLE _"Remove background" TRUE
+  SF-TOGGLE _"Index image"       TRUE
 )
 
 (script-fu-menu-register "script-fu-tube-subsubbutton-label-gimp-org"
                          "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-labels-gimp-org"
-    _"_General Tube Labels..."
-    _"Create an image of a Tube Button Label Header using the gimp.org webpage theme"
-    "Adrian Likins & Jens Lautenbacher"
-    "Adrian Likins & Jens Lautenbacher"
-    "1997"
-    ""
-    SF-STRING _"Text" "Gimp.Org"
-    SF-FONT   _"Font" "Sans"
-    SF-ADJUSTMENT _"Font size (pixels)" '(18 2 1000 1 10 0 1)
-    SF-COLOR  _"Text color" '(130 165 235)
-    SF-COLOR  _"Shadow color" '(0 0 0)
-    SF-COLOR  _"Background color" '(255 255 255)
-    SF-TOGGLE _"Remove background" TRUE
-    SF-TOGGLE _"Index image" TRUE
-    SF-ADJUSTMENT _"Number of colors" '(15 2 255 1 10 0 1)
-    SF-ADJUSTMENT _"Select-by-color threshold" '(1 1 256 1 10 0 1)
-    SF-ADJUSTMENT _"Offset X" '(8 0 50 1 10 0 1)
-    SF-ADJUSTMENT _"Offset Y" '(0 0 50 1 10 0 1)
-    SF-ADJUSTMENT _"Height"   '(30 2 1000 1 10 0 1)
+  _"_General Tube Labels..."
+  _"Create an image of a Tube Button Label Header using the gimp.org webpage theme"
+  "Adrian Likins & Jens Lautenbacher"
+  "Adrian Likins & Jens Lautenbacher"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "Gimp.Org"
+  SF-FONT       _"Font"               "Sans"
+  SF-ADJUSTMENT _"Font size (pixels)" '(18 2 1000 1 10 0 1)
+  SF-COLOR      _"Text color"         '(130 165 235)
+  SF-COLOR      _"Shadow color"       '(0 0 0)
+  SF-COLOR      _"Background color"   '(255 255 255)
+  SF-TOGGLE     _"Remove background"  TRUE
+  SF-TOGGLE     _"Index image"        TRUE
+  SF-ADJUSTMENT _"Number of colors"   '(15 2 255 1 10 0 1)
+  SF-ADJUSTMENT _"Select-by-color threshold" '(1 1 256 1 10 0 1)
+  SF-ADJUSTMENT _"Offset X"           '(8 0 50 1 10 0 1)
+  SF-ADJUSTMENT _"Offset Y"           '(0 0 50 1 10 0 1)
+  SF-ADJUSTMENT _"Height"             '(30 2 1000 1 10 0 1)
 )
 
 (script-fu-menu-register "script-fu-labels-gimp-org"

@@ -22,218 +22,189 @@
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-(define (script-fu-make-brush-rectangular description width height spacing )
+(define (script-fu-make-brush-rectangular name width height spacing)
   (let* (
         (img (car (gimp-image-new width height GRAY)))
         (drawable (car (gimp-layer-new img
                                        width height GRAY-IMAGE
                                        "MakeBrush" 100 NORMAL-MODE)))
-
-        ; construct variables
-
         (filename (string-append gimp-directory
-                  "/brushes/r"
-                  (number->string width)
-                  "x"
-                  (number->string height)
-                  ".gbr"))
-        (desc (string-append description " "
-                     (number->string width)
-                     "x"
-                     (number->string height)))
+                                 "/brushes/r"
+                                 (number->string width)
+                                 "x"
+                                 (number->string height)
+                                 ".gbr"))
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
 
-; Actual code starts...
     (gimp-context-set-background '(255 255 255))
     (gimp-drawable-fill drawable BACKGROUND-FILL)
-    (gimp-context-set-background '(0 0 0))
+
     (gimp-rect-select img 0 0 width height CHANNEL-OP-REPLACE FALSE 0)
 
-    (gimp-edit-fill    drawable BACKGROUND-FILL)
-    (file-gbr-save 1 img drawable filename "" spacing desc)
+    (gimp-context-set-background '(0 0 0))
+    (gimp-edit-fill drawable BACKGROUND-FILL)
+
+    (file-gbr-save 1 img drawable filename "" spacing name)
+    (gimp-image-delete img)
+
+    (gimp-context-pop)
 
     (gimp-brushes-refresh)
-    (gimp-context-set-brush desc)
-
-; Terminate
-
-    (gimp-selection-none img)
-    (gimp-image-undo-enable img)
-    (gimp-image-delete img)
-    (gimp-context-pop)
+    (gimp-context-set-brush name)
   )
 )
 
-; Register with the PDB
-
 (script-fu-register "script-fu-make-brush-rectangular"
-    _"New Re_ctangular..."
-    _"Create a rectangular brush"
-    "Seth Burgess <sjburges@ou.edu>"
-    "Seth Burgess"
-    "1997"
-    ""
-    SF-STRING     _"Description" "Rectangle"
-    SF-ADJUSTMENT _"Width"   '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Height"  '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
+  _"_Rectangular..."
+  _"Create a rectangular brush"
+  "Seth Burgess <sjburges@ou.edu>"
+  "Seth Burgess"
+  "1997"
+  ""
+  SF-STRING     _"Name"    "Rectangle"
+  SF-ADJUSTMENT _"Width"   '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Height"  '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
 
 (script-fu-menu-register "script-fu-make-brush-rectangular"
                          "<Brushes>")
 
 
-(define (script-fu-make-brush-rectangular-feathered description width height feathering spacing)
+(define (script-fu-make-brush-rectangular-feathered name
+                                                    width height
+                                                    feathering spacing)
   (let* (
         (widthplus (+ width feathering))
         (heightplus (+ height feathering))
         (img (car (gimp-image-new widthplus heightplus GRAY)))
-        (drawable (car (gimp-layer-new img widthplus heightplus GRAY-IMAGE "MakeBrush" 100 NORMAL-MODE)))
-
-
+        (drawable (car (gimp-layer-new img
+                                       widthplus heightplus GRAY-IMAGE
+                                       "MakeBrush" 100 NORMAL-MODE)))
         (filename (string-append gimp-directory
-                   "/brushes/r"
-                   (number->string width)
-                   "x"
-                   (number->string height)
-                   "f"
-                   (number->string feathering)
-                   ".gbr")
-        )
-        (desc (string-append description " "
-                  (number->string width)
-                  "x"
-                  (number->string height)
-                  ","
-                  (number->string feathering)))
+                                 "/brushes/r"
+                                 (number->string width)
+                                 "x"
+                                 (number->string height)
+                                 "f"
+                                 (number->string feathering)
+                                 ".gbr"))
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
 
-; Actual code starts...
     (gimp-context-set-background '(255 255 255))
     (gimp-drawable-fill drawable BACKGROUND-FILL)
-    (gimp-context-set-background '(0 0 0))
+
     (cond ((< 0 feathering)
-           (gimp-rect-select img (/ feathering 2) (/ feathering 2) width height CHANNEL-OP-REPLACE TRUE feathering)
-          )
-          ((>= 0 feathering)
-           (gimp-rect-select img 0 0 width height CHANNEL-OP-REPLACE FALSE 0)
-          )
-    )
+     (gimp-rect-select img
+           (/ feathering 2) (/ feathering 2)
+           width height CHANNEL-OP-REPLACE TRUE feathering))
+    ((>= 0 feathering)
+     (gimp-rect-select img 0 0 width height CHANNEL-OP-REPLACE FALSE 0)))
+
+    (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill drawable BACKGROUND-FILL)
-    (file-gbr-save 1 img drawable filename "" spacing desc)
+
+    (file-gbr-save 1 img drawable filename "" spacing name)
+    (gimp-image-delete img)
+
+    (gimp-context-pop)
 
     (gimp-brushes-refresh)
-    (gimp-context-set-brush desc)
-
-; Terminate
-
-    (gimp-selection-none img)
-    (gimp-image-undo-enable img)
-    (gimp-image-delete img)
-    (gimp-context-pop)
+    (gimp-context-set-brush name)
   )
 )
 
-; Register with the PDB
-
 (script-fu-register "script-fu-make-brush-rectangular-feathered"
-    _"New Rec_tangular, Feathered..."
-    _"Create a rectangular brush with feathered edges"
-    "Seth Burgess <sjburges@ou.edu>"
-    "Seth Burgess"
-    "1997"
-    ""
-    SF-STRING     _"Description" "Rectangle"
-    SF-ADJUSTMENT _"Width" '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Height" '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Feathering" '(4 1 100 1 10 0 1)
-    SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
+  _"Re_ctangular, Feathered..."
+  _"Create a rectangular brush with feathered edges"
+  "Seth Burgess <sjburges@ou.edu>"
+  "Seth Burgess"
+  "1997"
+  ""
+  SF-STRING     _"Name"       "Rectangle"
+  SF-ADJUSTMENT _"Width"      '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Height"     '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Feathering" '(4 1 100 1 10 0 1)
+  SF-ADJUSTMENT _"Spacing"    '(25 1 100 1 10 1 0)
 )
 
 (script-fu-menu-register "script-fu-make-brush-rectangular-feathered"
                          "<Brushes>")
 
 
-(define (script-fu-make-brush-elliptical description width height spacing)
+(define (script-fu-make-brush-elliptical name width height spacing)
   (let* (
         (img (car (gimp-image-new width height GRAY)))
-        (drawable (car (gimp-layer-new img width height GRAY-IMAGE "MakeBrush" 100 NORMAL-MODE)))
-
-        ; Construct variables...
-
+        (drawable (car (gimp-layer-new img
+                                       width height GRAY-IMAGE
+                                       "MakeBrush" 100 NORMAL-MODE)))
         (filename (string-append gimp-directory
                                  "/brushes/e"
                                  (number->string width)
                                  "x"
                                  (number->string height)
                                  ".gbr"))
-        (desc (string-append description " "
-                             (number->string width)
-                             "x"
-                             (number->string height)))
         )
-        ; End of variables.  Couple of necessary things here.
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
 
-    ; Actual code starts...
     (gimp-context-set-background '(255 255 255))
     (gimp-drawable-fill drawable BACKGROUND-FILL)
     (gimp-context-set-background '(0 0 0))
     (gimp-ellipse-select img 0 0 width height CHANNEL-OP-REPLACE TRUE FALSE 0)
 
-    (gimp-edit-fill    drawable BACKGROUND-FILL)
-    (file-gbr-save 1 img drawable filename "" spacing desc)
+    (gimp-edit-fill drawable BACKGROUND-FILL)
+
+    (file-gbr-save 1 img drawable filename "" spacing name)
+    (gimp-image-delete img)
+
+    (gimp-context-pop)
 
     (gimp-brushes-refresh)
-    (gimp-context-set-brush desc)
-
-    ; Terminate
-
-    (gimp-selection-none img)
-    (gimp-image-undo-enable img)
-    (gimp-image-delete img)
-    (gimp-context-pop)
+    (gimp-context-set-brush name)
   )
 )
 
-; Register with the PDB
-
 (script-fu-register "script-fu-make-brush-elliptical"
-    _"New Ell_iptical..."
-    _"Create an elliptical brush"
-    "Seth Burgess <sjburges@ou.edu>"
-    "Seth Burgess"
-    "1997"
-    ""
-    SF-STRING     _"Description" "Ellipse"
-    SF-ADJUSTMENT _"Width"   '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Height"  '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
+  _"_Elliptical..."
+  _"Create an elliptical brush"
+  "Seth Burgess <sjburges@ou.edu>"
+  "Seth Burgess"
+  "1997"
+  ""
+  SF-STRING     _"Name"    "Ellipse"
+  SF-ADJUSTMENT _"Width"   '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Height"  '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
 )
 
 (script-fu-menu-register "script-fu-make-brush-elliptical"
                          "<Brushes>")
 
 
-(define (script-fu-make-brush-elliptical-feathered description width height feathering spacing)
+(define (script-fu-make-brush-elliptical-feathered name
+                                                   width height
+                                                   feathering spacing)
   (let* (
         (widthplus (+ feathering width)) ; add 3 for blurring
         (heightplus (+ feathering height))
         (img (car (gimp-image-new widthplus heightplus GRAY)))
-        (drawable (car (gimp-layer-new img widthplus heightplus GRAY-IMAGE "MakeBrush" 100 NORMAL-MODE)))
-
-        ; Construct variables...
+        (drawable (car (gimp-layer-new img
+                                       widthplus heightplus GRAY-IMAGE
+                                       "MakeBrush" 100 NORMAL-MODE)))
         (filename (string-append gimp-directory
                                  "/brushes/e"
                                  (number->string width)
@@ -242,57 +213,50 @@
                                  "f"
                                  (number->string feathering)
                                  ".gbr"))
-        (desc (string-append description " "
-                             (number->string width)
-                             "x"
-                             (number->string height)
-                             " f"
-                             (number->string feathering)))
         )
-; End of variables.  Couple of necessary things here.
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
 
-; Actual code starts...
     (gimp-context-set-background '(255 255 255))
     (gimp-drawable-fill drawable BACKGROUND-FILL)
-    (gimp-context-set-background '(0 0 0))
+
     (cond ((> feathering 0)   ; keep from taking out gimp with stupid entry.
-        (gimp-ellipse-select img (/ feathering 2) (/ feathering 2) width height CHANNEL-OP-REPLACE TRUE TRUE feathering))
+        (gimp-ellipse-select img
+           (/ feathering 2) (/ feathering 2)
+           width height CHANNEL-OP-REPLACE
+           TRUE TRUE feathering))
           ((<= feathering 0)
-        (gimp-ellipse-select img 0 0 width height CHANNEL-OP-REPLACE TRUE FALSE 0))
-        )
-    (gimp-edit-fill    drawable BACKGROUND-FILL)
-    (file-gbr-save 1 img drawable filename "" spacing desc)
+        (gimp-ellipse-select img 0 0 width height
+           CHANNEL-OP-REPLACE TRUE FALSE 0)))
+
+    (gimp-context-set-background '(0 0 0))
+    (gimp-edit-fill drawable BACKGROUND-FILL)
+
+    (file-gbr-save 1 img drawable filename "" spacing name)
+    (gimp-image-delete img)
+
+    (gimp-context-pop)
 
     (gimp-brushes-refresh)
-    (gimp-context-set-brush desc)
-
-; Terminate
-
-    (gimp-selection-none img)
-    (gimp-image-undo-enable img)
-    (gimp-image-delete img)
-    (gimp-context-pop)
+    (gimp-context-set-brush name)
   )
 )
 
-; Register with the PDB
-
 (script-fu-register "script-fu-make-brush-elliptical-feathered"
-    _"New Elli_ptical, Feathered..."
-    _"Create an elliptical brush with feathered edges"
-    "Seth Burgess <sjburges@ou.edu>"
-    "Seth Burgess"
-    "1997"
-    ""
-    SF-STRING _"Description" "Ellipse"
-    SF-ADJUSTMENT _"Width" '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Height" '(20 1 200 1 10 0 1)
-    SF-ADJUSTMENT _"Feathering" '(4 1 100 1 10 0 1)
-    SF-ADJUSTMENT _"Spacing" '(25 1 100 1 10 1 0)
+  _"Elli_ptical, Feathered..."
+  _"Create an elliptical brush with feathered edges"
+  "Seth Burgess <sjburges@ou.edu>"
+  "Seth Burgess"
+  "1997"
+  ""
+  SF-STRING     _"Name"       "Ellipse"
+  SF-ADJUSTMENT _"Width"      '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Height"     '(20 1 200 1 10 0 1)
+  SF-ADJUSTMENT _"Feathering" '(4 1 100 1 10 0 1)
+  SF-ADJUSTMENT _"Spacing"    '(25 1 100 1 10 1 0)
 )
 
 (script-fu-menu-register "script-fu-make-brush-elliptical-feathered"

@@ -32,6 +32,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-selection-none img)
     (gimp-image-resize img img-width img-height posx posy)
     (gimp-image-add-layer img bg-layer 1)
@@ -128,18 +129,18 @@
 )
 
 (script-fu-register "script-fu-cool-metal-logo-alpha"
-    _"Cool _Metal..."
-    _"Add a metallic effect to the selected region (or alpha) with reflections and perspective shadows"
-    "Spencer Kimball & Rob Malda"
-    "Spencer Kimball & Rob Malda"
-    "1997"
-    "RGBA"
-    SF-IMAGE      "Image"                 0
-    SF-DRAWABLE   "Drawable"              0
-    SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
-    SF-COLOR      _"Background color"     '(255 255 255)
-    SF-GRADIENT   _"Gradient"             "Horizon 1"
-    SF-TOGGLE     _"Gradient reverse"     FALSE
+  _"Cool _Metal..."
+  _"Add a metallic effect to the selected region (or alpha) with reflections and perspective shadows"
+  "Spencer Kimball & Rob Malda"
+  "Spencer Kimball & Rob Malda"
+  "1997"
+  "RGBA"
+  SF-IMAGE      "Image"                 0
+  SF-DRAWABLE   "Drawable"              0
+  SF-ADJUSTMENT _"Effect size (pixels)" '(100 2 1000 1 10 0 1)
+  SF-COLOR      _"Background color"     '(255 255 255)
+  SF-GRADIENT   _"Gradient"             "Horizon 1"
+  SF-TOGGLE     _"Gradient reverse"     FALSE
 )
 
 (script-fu-menu-register "script-fu-cool-metal-logo-alpha"
@@ -166,18 +167,18 @@
 )
 
 (script-fu-register "script-fu-cool-metal-logo"
-    _"Cool _Metal..."
-    _"Create a metallic logo with reflections and perspective shadows"
-    "Spencer Kimball & Rob Malda"
-    "Spencer Kimball & Rob Malda"
-    "1997"
-    ""
-    SF-STRING     _"Text"               "Cool Metal"
-    SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
-    SF-FONT       _"Font"               "Crillee"
-    SF-COLOR      _"Background color"   '(255 255 255)
-    SF-GRADIENT   _"Gradient"           "Horizon 1"
-    SF-TOGGLE     _"Gradient reverse"   FALSE
+  _"Cool _Metal..."
+  _"Create a metallic logo with reflections and perspective shadows"
+  "Spencer Kimball & Rob Malda"
+  "Spencer Kimball & Rob Malda"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "Cool Metal"
+  SF-ADJUSTMENT _"Font size (pixels)" '(100 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Crillee"
+  SF-COLOR      _"Background color"   '(255 255 255)
+  SF-GRADIENT   _"Gradient"           "Horizon 1"
+  SF-TOGGLE     _"Gradient reverse"   FALSE
 )
 
 (script-fu-menu-register "script-fu-cool-metal-logo"

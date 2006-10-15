@@ -160,14 +160,13 @@
     (gimp-context-set-background bg-color)
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
 
-    (gimp-context-set-background old-bg)
-    (gimp-context-set-foreground old-fg)
-
     (if (= flatten TRUE)
-        (gimp-image-flatten img))
+        (gimp-image-flatten img)
+    )
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 

@@ -73,7 +73,7 @@
         (layer-width img-width)
         (img-width (+ img-width glow-radius))
         (img-height (+ img-height glow-radius))
-        (img (car (gimp-image-new  img-width   img-height  RGB)))
+        (img (car (gimp-image-new img-width img-height RGB)))
         (bg-layer (car (gimp-layer-new img
                                        img-width img-height RGBA-IMAGE
                                        "Background" 100 NORMAL-MODE)))
@@ -139,8 +139,9 @@
         (gimp-image-flatten img)
     )
 
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 

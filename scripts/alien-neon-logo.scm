@@ -98,8 +98,9 @@
     ; Clean up and exit.
     (gimp-drawable-set-visible logo-layer 0)
     (gimp-image-set-active-layer img bands-layer)
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 

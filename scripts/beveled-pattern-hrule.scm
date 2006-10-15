@@ -28,6 +28,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img background -1)
     (gimp-image-add-layer img bumpmap -1)
@@ -61,8 +62,9 @@
     (gimp-image-remove-layer img bumpmap)
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
@@ -74,8 +76,8 @@
     "Federico Mena Quintero"
     "July 1997"
     ""
-    SF-ADJUSTMENT _"Width" '(480 5 1500 1 10 0 1)
-    SF-ADJUSTMENT _"Height" '(16 1 100 1 10 0 1)
+    SF-ADJUSTMENT _"Width"   '(480 5 1500 1 10 0 1)
+    SF-ADJUSTMENT _"Height"  '(16 1 100 1 10 0 1)
     SF-PATTERN    _"Pattern" "Wood"
 )
 

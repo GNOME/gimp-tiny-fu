@@ -41,14 +41,14 @@
 )
 
 (script-fu-register "script-fu-paste-as-pattern"
-                    _"New _Pattern..."
-                    _"Paste the clipboard contents into a new pattern"
-                    "Michael Natterer <mitch@gimp.org>"
-                    "Michael Natterer"
-                    "2005-09-25"
-                    ""
-                    SF-STRING _"Pattern name" "My Pattern"
-                    SF-STRING _"File name"    "mypattern"
+  _"New _Pattern..."
+  _"Paste the clipboard contents into a new pattern"
+  "Michael Natterer <mitch@gimp.org>"
+  "Michael Natterer"
+  "2005-09-25"
+  ""
+  SF-STRING _"Pattern name" "My Pattern"
+  SF-STRING _"File name"    "mypattern"
 )
 
 (script-fu-menu-register "script-fu-paste-as-pattern"

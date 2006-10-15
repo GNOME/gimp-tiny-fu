@@ -107,16 +107,18 @@
                                      "Border-Layer" 100 NORMAL-MODE))))
 
     (gimp-context-push)
-    (gimp-image-undo-group-start img)
 
-    (gimp-drawable-fill layer TRANSPARENT-FILL)
-    (gimp-image-add-layer img layer 0)
+    (gimp-image-undo-group-start img)
 
     (gimp-image-resize img
                        width
                        height
                        xsize
                        ysize)
+
+    (gimp-image-add-layer img layer 0)
+    (gimp-drawable-fill layer TRANSPARENT-FILL)
+
     (gimp-context-set-background (adjcolour colour dvalue))
     (gimp-free-select img
                       10
@@ -157,8 +159,9 @@
     (gimp-edit-fill layer BACKGROUND-FILL)
     (gimp-selection-none img)
     (gimp-image-undo-group-end img)
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
     )
 )
 

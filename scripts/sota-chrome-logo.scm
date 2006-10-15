@@ -71,14 +71,14 @@
   )
 
   (define (copy-layer-sota dest-image dest-drawable source-image source-drawable)
-	(gimp-selection-all dest-image)
-	(gimp-edit-clear dest-drawable)
-	(gimp-selection-none dest-image)
-	(gimp-selection-all source-image)
-	(gimp-edit-copy source-drawable)
-	(let ((floating-sel (car (gimp-edit-paste dest-drawable FALSE))))
-	   (gimp-floating-sel-anchor floating-sel)
-	)
+  	(gimp-selection-all dest-image)
+	  (gimp-edit-clear dest-drawable)
+	  (gimp-selection-none dest-image)
+	  (gimp-selection-all source-image)
+	  (gimp-edit-copy source-drawable)
+	  (let ((floating-sel (car (gimp-edit-paste dest-drawable FALSE))))
+	    (gimp-floating-sel-anchor floating-sel)
+	  )
   )
 
   (let* (
@@ -106,6 +106,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-resize img width height 0 0)
     (gimp-image-add-layer img shadow 0)
@@ -192,31 +193,32 @@
     (gimp-layer-translate layer1 (/ b-size -4) (/ b-size -4))
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-sota-chrome-logo"
-    _"SOTA Chrome..."
-    _"Create a State Of The Art chromed logo"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    ""
-    SF-ADJUSTMENT _"Chrome saturation" '(-80 -100 100 1 10 0 0)
-    SF-ADJUSTMENT _"Chrome lightness" '(-47 -100 100 1 10 0 0)
-    SF-ADJUSTMENT _"Chrome factor" '(.75 0 1 .1 .01 2 0)
-    SF-STRING     _"Text" "The GIMP"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "RoostHeavy"
-    SF-FILENAME   _"Environment map"
-        (string-append gimp-data-directory DIR-SEPARATOR
-                       "scripts" DIR-SEPARATOR
-                       "images" DIR-SEPARATOR
-                       "beavis.jpg")
-    SF-COLOR      _"Highlight balance" '(211 95 0)
-    SF-COLOR      _"Chrome balance" '(0 0 0)
+  _"SOTA Chrome..."
+  _"Create a State Of The Art chromed logo"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  ""
+  SF-ADJUSTMENT _"Chrome saturation"  '(-80 -100 100 1 10 0 0)
+  SF-ADJUSTMENT _"Chrome lightness"   '(-47 -100 100 1 10 0 0)
+  SF-ADJUSTMENT _"Chrome factor"      '(.75 0 1 .1 .01 2 0)
+  SF-STRING     _"Text"               "The GIMP"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "RoostHeavy"
+  SF-FILENAME   _"Environment map"
+      (string-append gimp-data-directory DIR-SEPARATOR
+                     "scripts" DIR-SEPARATOR
+                     "images" DIR-SEPARATOR
+                     "beavis.jpg")
+  SF-COLOR      _"Highlight balance"  '(211 95 0)
+  SF-COLOR      _"Chrome balance"     '(0 0 0)
 )
 
 (script-fu-menu-register "script-fu-sota-chrome-logo"

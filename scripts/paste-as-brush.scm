@@ -20,46 +20,48 @@
 
 
 (define (script-fu-paste-as-brush name filename spacing)
+  (let* (
+        (brush-image (car (gimp-edit-paste-as-new)))
+        (brush-draw (car (gimp-image-get-active-drawable brush-image)))
+        (type (car (gimp-drawable-type brush-draw)))
+        )
 
-  (set! brush-image (car (gimp-edit-paste-as-new)))
-  (set! brush-draw (car (gimp-image-get-active-drawable brush-image)))
-  (set! type (car (gimp-drawable-type brush-draw)))
-
-  (if (= type GRAYA-IMAGE)
-      (begin
-          (gimp-context-push)
-          (gimp-context-set-background '(255 255 255))
-          (set! brush-draw (car (gimp-image-flatten brush-image)))
-          (gimp-context-pop)
+    (if (= type GRAYA-IMAGE)
+        (begin
+            (gimp-context-push)
+            (gimp-context-set-background '(255 255 255))
+            (set! brush-draw (car (gimp-image-flatten brush-image)))
+            (gimp-context-pop)
         )
     )
 
-  (set! path (string-append gimp-directory
-                            "/brushes/"
-                            filename
-                            (number->string brush-image)
-                            ".gbr"))
+    (set! path (string-append gimp-directory
+                              "/brushes/"
+                              filename
+                              (number->string brush-image)
+                              ".gbr"))
 
-  (file-gbr-save RUN-NONINTERACTIVE
-                 brush-image brush-draw path path
-                 spacing name)
+    (file-gbr-save RUN-NONINTERACTIVE
+                   brush-image brush-draw path path
+                   spacing name)
 
-  (gimp-image-delete brush-image)
+    (gimp-image-delete brush-image)
 
-  (gimp-brushes-refresh)
-  (gimp-context-set-brush name)
+    (gimp-brushes-refresh)
+    (gimp-context-set-brush name)
+  )
 )
 
-(script-fu-register "script-fu-paste-as-brush"
-                    _"New _Brush..."
-                    _"Paste the clipboard contents into a new brush"
-                    "Michael Natterer <mitch@gimp.org>"
-                    "Michael Natterer"
-                    "2005-09-25"
-                    ""
-                    SF-STRING     _"Brush name"  "My Brush"
-                    SF-STRING     _"File name"   "mybrush"
-                    SF-ADJUSTMENT _"Spacing"     '(25 0 1000 1 1 1 0)
+  (script-fu-register "script-fu-paste-as-brush"
+  _"New _Brush..."
+  _"Paste the clipboard contents into a new brush"
+  "Michael Natterer <mitch@gimp.org>"
+  "Michael Natterer"
+  "2005-09-25"
+  ""
+  SF-STRING     _"Brush name" "My Brush"
+  SF-STRING     _"File name"  "mybrush"
+  SF-ADJUSTMENT _"Spacing"    '(25 0 1000 1 1 1 0)
 )
 
 (script-fu-menu-register "script-fu-paste-as-brush"

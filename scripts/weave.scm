@@ -371,6 +371,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-selection-all w-img)
     (gimp-edit-copy w-layer)
     (gimp-image-delete w-img)
@@ -382,27 +383,28 @@
       (gimp-floating-sel-to-layer floating-sel)
     )
 
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-weave"
-    _"_Weave..."
-    _"Create a new layer filled with a weave effect to be used as an overlay or bump map"
-    "Federico Mena Quintero"
-    "Federico Mena Quintero"
-    "June 1997"
-    "RGB* GRAY*"
-    SF-IMAGE       "Image to Weave"    0
-    SF-DRAWABLE    "Drawable to Weave" 0
-    SF-ADJUSTMENT _"Ribbon width"     '(30  0 256 1 10 1 1)
-    SF-ADJUSTMENT _"Ribbon spacing"   '(10  0 256 1 10 1 1)
-    SF-ADJUSTMENT _"Shadow darkness"  '(75  0 100 1 10 1 1)
-    SF-ADJUSTMENT _"Shadow depth"     '(75  0 100 1 10 1 1)
-    SF-ADJUSTMENT _"Thread length"    '(200 0 256 1 10 1 1)
-    SF-ADJUSTMENT _"Thread density"   '(50  0 100 1 10 1 1)
-    SF-ADJUSTMENT _"Thread intensity" '(100 0 100 1 10 1 1)
+  _"_Weave..."
+  _"Create a new layer filled with a weave effect to be used as an overlay or bump map"
+  "Federico Mena Quintero"
+  "Federico Mena Quintero"
+  "June 1997"
+  "RGB* GRAY*"
+  SF-IMAGE       "Image to Weave"    0
+  SF-DRAWABLE    "Drawable to Weave" 0
+  SF-ADJUSTMENT _"Ribbon width"     '(30  0 256 1 10 1 1)
+  SF-ADJUSTMENT _"Ribbon spacing"   '(10  0 256 1 10 1 1)
+  SF-ADJUSTMENT _"Shadow darkness"  '(75  0 100 1 10 1 1)
+  SF-ADJUSTMENT _"Shadow depth"     '(75  0 100 1 10 1 1)
+  SF-ADJUSTMENT _"Thread length"    '(200 0 256 1 10 1 1)
+  SF-ADJUSTMENT _"Thread density"   '(50  0 100 1 10 1 1)
+  SF-ADJUSTMENT _"Thread intensity" '(100 0 100 1 10 1 1)
 )
 
 (script-fu-menu-register "script-fu-weave"

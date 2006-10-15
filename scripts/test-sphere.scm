@@ -1,5 +1,5 @@
 ; This is a a test script to show and test the possibilities of the
-; Tiny-Fu parameter API.
+; Script-Fu parameter API.
 ;
 ; ----------------------------------------------------------------------
 ; SF-ADJUSTMENT
@@ -53,12 +53,12 @@
 ; units as passed in as the default value.
 ;
 ; Usage:
-; SF-BRUSH "Brush" '("Circle (03)" 1.0 44 0)
+; SF-BRUSH "Brush" '("Circle (03)" 100 44 0)
 ;
 ; Here the brush dialog will be popped up with a default brush of Circle (03)
-; opacity 1.0, spacing 44 and paint mode of Normal (value 0).
+; opacity 100 spacing 44 and paint mode of Normal (value 0).
 ; If this selection was unchanged the value passed to the function as a
-; parameter would be '("Circle (03)" 1.0 44 0).
+; parameter would be '("Circle (03)" 100 44 0).
 ;
 ; ----------------------------------------------------------------------
 ; SF-PATTERN
@@ -123,6 +123,7 @@
 ;
 ; The value returned when the script is invoked is a string containing the
 ; dirname.
+;
 ; ----------------------------------------------------------------------
 ; SF-OPTION
 ; Only useful in interactive mode. It will create a widget in the control
@@ -199,6 +200,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img drawable 0)
     (gimp-context-set-foreground sphere-color)
@@ -253,43 +255,44 @@
                                                        font)))
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-test-sphere"
-    _"_Sphere"
-    "Simple script to test and show the usage of the new Script-Fu API extensions."
-    "Spencer Kimball, Sven Neumann"
-    "Spencer Kimball"
-    "1996, 1998"
-    ""
-    SF-ADJUSTMENT "Radius (in pixels)" '(100 1 5000 1 10 0 SF-SPINNER)
-    SF-ADJUSTMENT "Lighting (degrees)" '(45 0 360 1 10 1 SF-SLIDER)
-    SF-TOGGLE     "Shadow"             TRUE
-    SF-COLOR      "Background color"   "white"
-    SF-COLOR      "Sphere color"       "#FF0000"
-    SF-BRUSH      "Brush"              '("Circle (03)" 1.0 44 0)
-    SF-STRING     "Text"               "Tiny-Fu rocks!"
-    SF-TEXT       "Multi-line text"    "Hello,\nWorld!"
-    SF-PATTERN    "Pattern"            "Maple Leaves"
-    SF-GRADIENT   "Gradient"           "Deep Sea"
-    SF-TOGGLE     "Gradient reverse"   FALSE
-    SF-FONT       "Font"               "Agate"
-    SF-ADJUSTMENT "Font size (pixels)" '(50 1 1000 1 10 0 SF-SPINNER)
-    SF-PALETTE    "Palette"            "Default"
-    SF-FILENAME   "Environment map"
-                  (string-append gimp-data-directory
-                                 "/scripts/images/beavis.jpg")
-    SF-OPTION     "Orientation"        '("Horizontal"
-                                         "Vertical")
-    SF-ENUM       "Interpolation"      '("InterpolationType" "linear")
-    SF-DIRNAME    "Output directory"   "/var/tmp/"
-    SF-IMAGE      "Image"              -1
-    SF-LAYER      "Layer"              -1
-    SF-CHANNEL    "Channel"            -1
-    SF-DRAWABLE   "Drawable"           -1
+  _"_Sphere"
+  "Simple script to test and show the usage of the new Script-Fu API extensions."
+  "Spencer Kimball, Sven Neumann"
+  "Spencer Kimball"
+  "1996, 1998"
+  ""
+  SF-ADJUSTMENT "Radius (in pixels)" '(100 1 5000 1 10 0 SF-SPINNER)
+  SF-ADJUSTMENT "Lighting (degrees)" '(45 0 360 1 10 1 SF-SLIDER)
+  SF-TOGGLE     "Shadow"             TRUE
+  SF-COLOR      "Background color"   "white"
+  SF-COLOR      "Sphere color"       "#FF0000"
+  SF-BRUSH      "Brush"              '("Circle (03)" 1.0 44 0)
+  SF-STRING     "Text"               "Tiny-Fu rocks!"
+  SF-TEXT       "Multi-line text"    "Hello,\nWorld!"
+  SF-PATTERN    "Pattern"            "Maple Leaves"
+  SF-GRADIENT   "Gradient"           "Deep Sea"
+  SF-TOGGLE     "Gradient reverse"   FALSE
+  SF-FONT       "Font"               "Agate"
+  SF-ADJUSTMENT "Font size (pixels)" '(50 1 1000 1 10 0 SF-SPINNER)
+  SF-PALETTE    "Palette"            "Default"
+  SF-FILENAME   "Environment map"
+                (string-append gimp-data-directory
+                               "/scripts/images/beavis.jpg")
+  SF-OPTION     "Orientation"        '("Horizontal"
+                                       "Vertical")
+  SF-ENUM       "Interpolation"      '("InterpolationType" "linear")
+  SF-DIRNAME    "Output directory"   "/var/tmp/"
+  SF-IMAGE      "Image"              -1
+  SF-LAYER      "Layer"              -1
+  SF-CHANNEL    "Channel"            -1
+  SF-DRAWABLE   "Drawable"           -1
 )
 
 (script-fu-menu-register "script-fu-test-sphere"

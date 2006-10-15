@@ -6,7 +6,6 @@
 ;;   jseymour@jimsun.LinxNet.com (Jim Seymour)
 ;;   Sven Neumann <neumanns@uni-duesseldorf.de>
 ;;
-;;
 ;; Modified June 24, 2005 by Kevin Cozens
 ;; Incorporated changes made by Daniel P. Stasinski in his text-circle2.scm
 ;; script. The letters are now placed properly for both positive and negative
@@ -200,21 +199,20 @@
   )
 )
 
-(script-fu-register
-    "script-fu-text-circle"
-    _"Text C_ircle..."
-    _"Create a logo by rendering the specified text along the perimeter of a circle"
-    "Shuji Narazaki <narazaki@gimp.org>"
-    "Shuji Narazaki"
-    "1997-1998"
-    ""
-    SF-STRING     _"Text" "The GNU Image Manipulation Program Version 2.0 "
-    SF-ADJUSTMENT _"Radius"             '(80 1 8000 1 1 0 1)
-    SF-ADJUSTMENT _"Start angle"        '(0 -180 180 1 1 0 1)
-    SF-ADJUSTMENT _"Fill angle"         '(360 -360 360 1 1 0 1)
-    SF-ADJUSTMENT _"Font size (pixels)" '(18 1 1000 1 1 0 1)
-    SF-TOGGLE     _"Antialias"          TRUE
-    SF-FONT       _"Font"               "Sans"
+(script-fu-register "script-fu-text-circle"
+  _"Text C_ircle..."
+  _"Create a logo by rendering the specified text along the perimeter of a circle"
+  "Shuji Narazaki <narazaki@gimp.org>"
+  "Shuji Narazaki"
+  "1997-1998"
+  ""
+  SF-STRING     _"Text" "The GNU Image Manipulation Program Version 2.0 "
+  SF-ADJUSTMENT _"Radius"             '(80 1 8000 1 1 0 1)
+  SF-ADJUSTMENT _"Start angle"        '(0 -180 180 1 1 0 1)
+  SF-ADJUSTMENT _"Fill angle"         '(360 -360 360 1 1 0 1)
+  SF-ADJUSTMENT _"Font size (pixels)" '(18 1 1000 1 1 0 1)
+  SF-TOGGLE     _"Antialias"          TRUE
+  SF-FONT       _"Font"               "Sans"
 )
 
 ;; text-circle.scm ends here

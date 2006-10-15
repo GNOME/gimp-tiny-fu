@@ -96,11 +96,10 @@
     )
     (set! active-layer effect-layer)
 
-    (if (and
-         (= remove-bg TRUE)
-         (= old-bg '(0 0 0)))
+    (if (= remove-bg TRUE)
         (gimp-context-set-foreground '(0 0 0))
-        (gimp-context-set-foreground '(14 14 14)))
+        (gimp-context-set-foreground '(14 14 14))
+    )
 
     (gimp-selection-load active-selection)
     (plug-in-maze 1 image active-layer 5 5 TRUE 0 seed 57 1)
@@ -131,26 +130,27 @@
     (gimp-image-set-active-layer image drawable)
 
     (gimp-image-undo-group-end image)
-    (gimp-context-pop)
 
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-circuit"
-    _"_Circuit..."
-    _"Fill the selected region (or alpha) with traces like those on a circuit board"
-    "Adrian Likins <adrian@gimp.org>"
-    "Adrian Likins"
-    "10/17/97"
-    "RGB* GRAY*"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-ADJUSTMENT _"Oilify mask size" '(17 3 50 1 10 0 1)
-    SF-ADJUSTMENT _"Circuit seed" '(3 1 3000000 1 10 0 1)
-    SF-TOGGLE     _"No background (only for separate layer)" FALSE
-    SF-TOGGLE     _"Keep selection" TRUE
-    SF-TOGGLE     _"Separate layer" TRUE
+  _"_Circuit..."
+  _"Fill the selected region (or alpha) with traces like those on a circuit board"
+  "Adrian Likins <adrian@gimp.org>"
+  "Adrian Likins"
+  "10/17/97"
+  "RGB* GRAY*"
+  SF-IMAGE       "Image"            0
+  SF-DRAWABLE    "Drawable"         0
+  SF-ADJUSTMENT _"Oilify mask size" '(17 3 50 1 10 0 1)
+  SF-ADJUSTMENT _"Circuit seed"     '(3 1 3000000 1 10 0 1)
+  SF-TOGGLE     _"No background (only for separate layer)" FALSE
+  SF-TOGGLE     _"Keep selection"   TRUE
+  SF-TOGGLE     _"Separate layer"   TRUE
 )
 
 (script-fu-menu-register "script-fu-circuit"

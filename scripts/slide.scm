@@ -95,6 +95,7 @@
         )
 
   (gimp-context-push)
+
   (gimp-image-undo-disable image)
 
 ; add an alpha channel to the image
@@ -225,9 +226,9 @@
   (gimp-image-undo-enable image)
   (if (= work-on-copy TRUE)
     (gimp-display-new image)
-  )
-  (gimp-context-pop)
   (gimp-displays-flush)
+
+  (gimp-context-pop)
   )
 )
 
@@ -238,8 +239,8 @@
   "Sven Neumann"
   "2004/03/28"
   "RGB GRAY"
-  SF-IMAGE     "Image"          0
-  SF-DRAWABLE  "Drawable"       0
+  SF-IMAGE     "Image"         0
+  SF-DRAWABLE  "Drawable"      0
   SF-STRING   _"Text"          "The GIMP"
   SF-STRING   _"Number"        "32"
   SF-FONT     _"Font"          "Serif"

@@ -9,6 +9,7 @@
 ; The corresponding parameters have been replaced by an SF-FONT parameter.
 ; ************************************************************************
 ;;; Code:
+
 (if (not (symbol-bound? 'script-fu-hsv-graph-scale (current-environment)))
     (define script-fu-hsv-graph-scale 1))
 (if (not (symbol-bound? 'script-fu-hsv-graph-opacity (current-environment)))
@@ -33,10 +34,12 @@
   (define (set-point! fvec index x y)
     (aset fvec (* 2 index) x)
     (aset fvec (+ (* 2 index) 1) y)
-    fvec)
+    fvec
+  )
 
   (define (plot-dot img drawable x y)
-    (gimp-pencil drawable 1 (set-point! *pos* 0 x y)))
+    (gimp-pencil drawable 1 (set-point! *pos* 0 x y))
+  )
 
   (define (rgb-to-hsv rgb hsv)
     (let* ((red (floor (nth 0 rgb)))
@@ -68,21 +71,24 @@
                 (set! h (- h 255.0)))))
       (set-car! hsv (floor h))
       (set-car! (cdr hsv) (floor s))
-      (set-car! (cddr hsv) (floor v))))
+      (set-car! (cddr hsv) (floor v))
+    )
+  )
 
   ;; segment is
   ;;   filled-index (integer)
   ;;   size as number of points (integer)
   ;;   vector (which size is 2 * size)
   (define (make-segment length x y)
-    (if (< 64 length)
-        (set! length 64))
-    (if (< length 5)
-        (set! length 5))
-    (let ((vec (cons-array (* 2 length) 'double)))
-      (aset vec 0 x)
-      (aset vec 1 y)
-      (list 1 length vec)))
+    (if (< 64 length) (set! length 64))
+    (if (< length 5)  (set! length 5))
+    (let (
+         (vec (cons-array (* 2 length) 'double)))
+         (aset vec 0 x)
+         (aset vec 1 y)
+         (list 1 length vec)
+    )
+  )
 
   ;; accessors
   (define (segment-filled-size segment) (car segment))
@@ -124,7 +130,9 @@
                   #t)
                 (begin
                   (set-car! segment base)
-                  #f))))))
+                  #f))))
+    )
+  )
 
   (define (draw-segment img drawable segment limit rgb)
     (gimp-context-set-foreground rgb)
@@ -148,13 +156,15 @@
           (gimp-context-set-foreground color)
           (draw-segment img drawable segment (segment-max-size segment) color)
           #t)
-        #f))
+        #f)
+  )
 
   (define (fill-color-band img drawable x scale x-base y-base color)
     (gimp-context-set-foreground color)
     (gimp-rect-select img (+ x-base (* scale x)) 0 scale y-base CHANNEL-OP-REPLACE FALSE 0)
     (gimp-edit-bucket-fill drawable FG-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
-    (gimp-selection-none img))
+    (gimp-selection-none img)
+  )
 
   (define (plot-hsv img drawable x scale x-base y-base hsv)
     (let ((real-x (* scale x))
@@ -167,7 +177,8 @@
                 saturation-segment green-color)
       (if (fill-dot img drawable (+ x-base real-x) (- y-base v)
                     value-segment blue-color)
-          (gimp-displays-flush))))
+          (gimp-displays-flush)))
+  )
 
   (define (plot-rgb img drawable x scale x-base y-base hsv)
     (let ((real-x (* scale x))
@@ -180,14 +191,16 @@
                 green-segment green-color)
       (if (fill-dot img drawable (+ x-base real-x) (- y-base v)
                     blue-segment blue-color)
-          (gimp-displays-flush))))
+          (gimp-displays-flush)))
+  )
 
   (define (clamp-value x minv maxv)
     (if (< x minv)
         (set! x minv))
     (if (< maxv x)
         (set! x maxv))
-    x)
+    x
+  )
 
   ;; start of script-fu-hsv-graph
   (if (= TRUE bounds?)
@@ -254,6 +267,7 @@
          (index 0))
 
     (gimp-context-push)
+
     (gimp-image-undo-disable gimg)
     (gimp-image-add-layer gimg bglayer -1)
     (gimp-selection-all gimg)
@@ -319,8 +333,11 @@
     (gimp-image-clean-all gimg)
     ;; return back the state
     (gimp-image-undo-enable gimg)
+    (gimp-displays-flush)
+
     (gimp-context-pop)
-    (gimp-displays-flush)))
+  )
+)
 
 (script-fu-register "script-fu-hsv-graph"
     _"Draw _HSV Graph..."
@@ -331,14 +348,14 @@
     "RGB*"
     SF-IMAGE       "Image to analyze"    0
     SF-DRAWABLE    "Drawable to analyze" 0
-    SF-ADJUSTMENT _"Graph scale" '(1 0.1 5 0.1 1 1 1)
-    SF-ADJUSTMENT _"BG opacity"  '(100 0 100 1 10 0 1)
+    SF-ADJUSTMENT _"Graph scale"         '(1 0.1 5 0.1 1 1 1)
+    SF-ADJUSTMENT _"BG opacity"          '(100 0 100 1 10 0 1)
     SF-TOGGLE     _"Use selection bounds instead of values below" TRUE
     SF-TOGGLE     _"From top-left to bottom-right"                FALSE
-    SF-ADJUSTMENT _"Start X" '(0 0 5000 1 10 0 1)
-    SF-ADJUSTMENT _"Start Y" '(0 0 5000 1 10 0 1)
-    SF-ADJUSTMENT _"End X" '(1 0 5000 1 10 0 1)
-    SF-ADJUSTMENT _"End Y" '(1 0 5000 1 10 0 1)
+    SF-ADJUSTMENT _"Start X"             '(0 0 5000 1 10 0 1)
+    SF-ADJUSTMENT _"Start Y"             '(0 0 5000 1 10 0 1)
+    SF-ADJUSTMENT _"End X"               '(1 0 5000 1 10 0 1)
+    SF-ADJUSTMENT _"End Y"               '(1 0 5000 1 10 0 1)
 )
 
 ;;; hsv-graph.scm ends here

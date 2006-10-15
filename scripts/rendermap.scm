@@ -30,6 +30,7 @@
         )
 
   (gimp-context-push)
+
   (gimp-selection-all theImage)
 
   (set! theLayer (car (gimp-layer-new theImage theWidth theHeight
@@ -67,8 +68,9 @@
   (gimp-selection-none theImage)
   (gimp-context-set-gradient inGrad)
   (plug-in-gradmap TRUE theImage theLayer)
-  (gimp-context-pop)
   (gimp-display-new theImage)
+
+  (gimp-context-pop)
   )
 )
 

@@ -19,6 +19,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
@@ -75,11 +76,11 @@
     "Spencer Kimball & Xach Beane"
     "1997"
     "RGBA"
-    SF-IMAGE       "Image" 0
-    SF-DRAWABLE    "Drawable" 0
+    SF-IMAGE       "Image"                     0
+    SF-DRAWABLE    "Drawable"                  0
     SF-ADJUSTMENT _"Effect size (pixels * 30)" '(150 0 512 1 10 0 1)
-    SF-COLOR      _"Burst color" '(60 196 33)
-    SF-COLOR      _"Background color" '(255 255 255)
+    SF-COLOR      _"Burst color"               '(60 196 33)
+    SF-COLOR      _"Background color"          '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-starburst-logo-alpha"
@@ -102,17 +103,17 @@
 )
 
 (script-fu-register "script-fu-starburst-logo"
-    _"Starb_urst..."
-    _"Create a logo using a starburst gradient"
-    "Spencer Kimball & Xach Beane"
-    "Spencer Kimball & Xach Beane"
-    "1997"
-    ""
-    SF-STRING     _"Text" "GIMP"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 0 512 1 10 0 1)
-    SF-FONT       _"Font" "Blippo"
-    SF-COLOR      _"Burst color" '(60 196 33)
-    SF-COLOR      _"Background color" '(255 255 255)
+  _"Starb_urst..."
+  _"Create a logo using a starburst gradient"
+  "Spencer Kimball & Xach Beane"
+  "Spencer Kimball & Xach Beane"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "GIMP"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 0 512 1 10 0 1)
+  SF-FONT       _"Font"               "Blippo"
+  SF-COLOR      _"Burst color"        '(60 196 33)
+  SF-COLOR      _"Background color"   '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-starburst-logo"

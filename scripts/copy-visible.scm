@@ -39,12 +39,12 @@
 )
 
 (script-fu-register "script-fu-copy-visible"
-    "Copy Visible"
-    _"This procedure is deprecated! use \'gimp-edit-copy-visible\' instead."
-    ""
-    ""
-    ""
-    "RGB* INDEXED* GRAY*"
-    SF-IMAGE    "Image"    0
-    SF-DRAWABLE "Drawable" 0
+  "Copy Visible"
+  _"This procedure is deprecated! use \'gimp-edit-copy-visible\' instead."
+  ""
+  ""
+  ""
+  "RGB* INDEXED* GRAY*"
+  SF-IMAGE    "Image"    0
+  SF-DRAWABLE "Drawable" 0
 )

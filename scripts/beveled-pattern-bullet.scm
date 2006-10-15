@@ -19,6 +19,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
+
 (define (script-fu-beveled-pattern-bullet diameter pattern transparent)
   (let* (
         (img (car (gimp-image-new diameter diameter RGB)))
@@ -27,6 +28,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img background -1)
     (gimp-image-add-layer img bumpmap -1)
@@ -72,20 +74,23 @@
 
     (gimp-image-undo-enable img)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 
 (script-fu-register "script-fu-beveled-pattern-bullet"
-                    _"_Bullet..."
-                    _"Create a beveled pattern bullet for webpages"
-                    "Federico Mena Quintero"
-                    "Federico Mena Quintero"
-                    "July 1997"
-                    ""
-                    SF-ADJUSTMENT _"Diameter"               '(16 1 150 1 10 0 1)
-                    SF-PATTERN    _"Pattern"                "Wood"
-                    SF-TOGGLE     _"Transparent background" FALSE)
+  _"_Bullet..."
+  _"Create a beveled pattern bullet for webpages"
+  "Federico Mena Quintero"
+  "Federico Mena Quintero"
+  "July 1997"
+  ""
+  SF-ADJUSTMENT _"Diameter"               '(16 1 150 1 10 0 1)
+  SF-PATTERN    _"Pattern"                "Wood"
+  SF-TOGGLE     _"Transparent background" FALSE
+)
 
 (script-fu-menu-register "script-fu-beveled-pattern-bullet"
                          "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")

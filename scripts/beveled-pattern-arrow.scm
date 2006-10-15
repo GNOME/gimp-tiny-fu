@@ -19,6 +19,7 @@
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
+
 (define (script-fu-beveled-pattern-arrow size orientation pattern)
 
   (define (make-point x y)
@@ -85,6 +86,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-add-layer img background -1)
     (gimp-image-add-layer img bumpmap -1)
@@ -138,8 +140,9 @@
     (gimp-image-flatten img)
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 

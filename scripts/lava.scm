@@ -48,6 +48,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-group-start image)
     (gimp-layer-add-alpha drawable)
 
@@ -102,27 +103,28 @@
     (gimp-image-set-active-layer image drawable)
     (gimp-image-remove-channel image active-selection)
     (gimp-image-undo-group-end image)
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-lava"
-    _"_Lava..."
-    _"Fill the current selection with lava"
-    "Adrian Likins <adrian@gimp.org>"
-    "Adrian Likins"
-    "10/12/97"
-    "RGB* GRAY*"
-    SF-IMAGE       "Image" 0
-    SF-DRAWABLE    "Drawable" 0
-    SF-ADJUSTMENT _"Seed" '(10 1 30000 1 10 0 1)
-    SF-ADJUSTMENT _"Size" '(10 0 100 1 10 0 1)
-    SF-ADJUSTMENT _"Roughness" '(7 3 50 1 10 0 0)
-    SF-GRADIENT   _"Gradient" "German flag smooth"
-    SF-TOGGLE     _"Keep selection" TRUE
-    SF-TOGGLE     _"Separate layer" TRUE
-    SF-TOGGLE     _"Use current gradient" FALSE
+  _"_Lava..."
+  _"Fill the current selection with lava"
+  "Adrian Likins <adrian@gimp.org>"
+  "Adrian Likins"
+  "10/12/97"
+  "RGB* GRAY*"
+  SF-IMAGE       "Image"          0
+  SF-DRAWABLE    "Drawable"       0
+  SF-ADJUSTMENT _"Seed"           '(10 1 30000 1 10 0 1)
+  SF-ADJUSTMENT _"Size"           '(10 0 100 1 10 0 1)
+  SF-ADJUSTMENT _"Roughness"      '(7 3 50 1 10 0 0)
+  SF-GRADIENT   _"Gradient"       "German flag smooth"
+  SF-TOGGLE     _"Keep selection" TRUE
+  SF-TOGGLE     _"Separate layer" TRUE
+  SF-TOGGLE     _"Use current gradient" FALSE
 )
 
 (script-fu-menu-register "script-fu-lava"

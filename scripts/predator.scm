@@ -115,19 +115,19 @@
 )
 
 (script-fu-register "script-fu-predator"
-    _"_Predator..."
-    _"Add a 'Predator' effect to the selected region (or alpha)"
-    "Adrian Likins <adrian@gimp.org>"
-    "Adrian Likins"
-    "10/12/97"
-    "RGB*"
-    SF-IMAGE       "Image"          0
-    SF-DRAWABLE    "Drawable"       0
-    SF-ADJUSTMENT _"Edge amount"    '(2 0 24 1 1 0 0)
-    SF-TOGGLE     _"Pixelize"       TRUE
-    SF-ADJUSTMENT _"Pixel amount"   '(3 1 16 1 1 0 0)
-    SF-TOGGLE     _"Keep selection" TRUE
-    SF-TOGGLE     _"Separate layer" TRUE
+  _"_Predator..."
+  _"Add a 'Predator' effect to the selected region (or alpha)"
+  "Adrian Likins <adrian@gimp.org>"
+  "Adrian Likins"
+  "10/12/97"
+  "RGB*"
+  SF-IMAGE       "Image"          0
+  SF-DRAWABLE    "Drawable"       0
+  SF-ADJUSTMENT _"Edge amount"    '(2 0 24 1 1 0 0)
+  SF-TOGGLE     _"Pixelize"       TRUE
+  SF-ADJUSTMENT _"Pixel amount"   '(3 1 16 1 1 0 0)
+  SF-TOGGLE     _"Keep selection" TRUE
+  SF-TOGGLE     _"Separate layer" TRUE
 )
 
 (script-fu-menu-register "script-fu-predator"

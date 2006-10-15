@@ -24,6 +24,8 @@
 ;
 ;
 ;         The utility of this script is left as an exercise for the reader.
+;
+;  NOTE: This script works best with even values for 'thickness'.
 
 (define (center-ellipse img cx cy rx ry op aa feather frad)
   (gimp-ellipse-select img (- cx rx) (- cy ry) (+ rx rx ) (+ ry ry )
@@ -41,10 +43,10 @@
 
 (define (create-tiles img drawable1 drawable2 size thickness backcolor forecolor)
   (let* (
-         (half-thickness (/ thickness 2))
-         (outer-radius (+ (/ size 2) half-thickness))
-         (inner-radius (- (/ size 2) half-thickness))
-         )
+        (half-thickness (/ thickness 2))
+        (outer-radius (+ (/ size 2) half-thickness))
+        (inner-radius (- (/ size 2) half-thickness))
+        )
 
     (gimp-selection-all img)
     (gimp-context-set-background backcolor)
@@ -110,11 +112,12 @@
                                         RGB-IMAGE "Johnson" 100 NORMAL-MODE)))
         (tiledraw2 (car (gimp-layer-new tile size size
                                         RGB-IMAGE "Cooper" 100 NORMAL-MODE)))
-        (Xindex)
-        (Yindex)
+        (Xindex 0)
+        (Yindex 0)
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-undo-disable tile)
 
@@ -147,8 +150,9 @@
 
     (gimp-image-delete tile)
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
@@ -159,10 +163,10 @@
   "Adrian Likins"
   "1997"
   ""
-  SF-ADJUSTMENT _"Block size" '(32 2 512 1 10 1 1)
-  SF-ADJUSTMENT _"Thickness" '(2 1 512 1 10 1 1)
-  SF-COLOR      _"Background color" '(255 255 255)
-  SF-COLOR      _"Foreground color" '(0 0 0)
+  SF-ADJUSTMENT _"Block size"        '(32 2 512 1 10 1 1)
+  SF-ADJUSTMENT _"Thickness"         '(2 1 512 1 10 1 1)
+  SF-COLOR      _"Background color"  '(255 255 255)
+  SF-COLOR      _"Foreground color"  '(0 0 0)
   SF-ADJUSTMENT _"Number of X tiles" '(5 1 512 1 10 1 1)
   SF-ADJUSTMENT _"Number of Y tiles" '(5 1 512 1 10 1 1)
 )

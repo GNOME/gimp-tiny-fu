@@ -35,6 +35,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img blur-layer 1)
@@ -72,6 +73,7 @@
     (gimp-invert blur-layer)
     (gimp-layer-set-opacity blur-layer 50.0)
     (gimp-image-set-active-layer img logo-layer)
+
     (gimp-context-pop)
   )
 )
@@ -90,18 +92,18 @@
 )
 
 (script-fu-register "script-fu-gradient-bevel-logo-alpha"
-    _"Gradient Beve_l..."
-    _"Add a shiny look and bevel effect to the selected region (or alpha)"
-    "Brian McFee <keebler@wco.com>"
-    "Brian McFee"
-    "April 1998"
-    "RGBA"
-    SF-IMAGE      "Image"                     0
-    SF-DRAWABLE   "Drawable"                  0
-    SF-ADJUSTMENT _"Border size (pixels)"     '(22 1 300 1 10 0 1)
-    SF-ADJUSTMENT _"Bevel height (sharpness)" '(40 1 250 1 10 0 1)
-    SF-ADJUSTMENT _"Bevel width"              '(2.5 1 200 1 10 1 1)
-    SF-COLOR      _"Background color"         '(255 255 255)
+  _"Gradient Beve_l..."
+  _"Add a shiny look and bevel effect to the selected region (or alpha)"
+  "Brian McFee <keebler@wco.com>"
+  "Brian McFee"
+  "April 1998"
+  "RGBA"
+  SF-IMAGE      "Image"                     0
+  SF-DRAWABLE   "Drawable"                  0
+  SF-ADJUSTMENT _"Border size (pixels)"     '(22 1 300 1 10 0 1)
+  SF-ADJUSTMENT _"Bevel height (sharpness)" '(40 1 250 1 10 0 1)
+  SF-ADJUSTMENT _"Bevel width"              '(2.5 1 200 1 10 1 1)
+  SF-COLOR      _"Background color"         '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-gradient-bevel-logo-alpha"
@@ -128,18 +130,18 @@
 )
 
 (script-fu-register "script-fu-gradient-bevel-logo"
-    _"Gradient Beve_l..."
-    _"Create a logo with a shiny look and beveled edges"
-    "Brian McFee <keebler@wco.com>"
-    "Brian McFee"
-    "April 1998"
-    ""
-    SF-STRING     _"Text"                     "Moo"
-    SF-ADJUSTMENT _"Font size (pixels)"       '(90 2 1000 1 10 0 1)
-    SF-FONT       _"Font"                     "Sans Bold"
-    SF-ADJUSTMENT _"Bevel height (sharpness)" '(40 1 250 1 10 0 1)
-    SF-ADJUSTMENT _"Bevel width"              '(2.5 1 200 1 10 1 1)
-    SF-COLOR      _"Background color"         '(255 255 255)
+  _"Gradient Beve_l..."
+  _"Create a logo with a shiny look and beveled edges"
+  "Brian McFee <keebler@wco.com>"
+  "Brian McFee"
+  "April 1998"
+  ""
+  SF-STRING     _"Text"                     "Moo"
+  SF-ADJUSTMENT _"Font size (pixels)"       '(90 2 1000 1 10 0 1)
+  SF-FONT       _"Font"                     "Sans Bold"
+  SF-ADJUSTMENT _"Bevel height (sharpness)" '(40 1 250 1 10 0 1)
+  SF-ADJUSTMENT _"Bevel width"              '(2.5 1 200 1 10 1 1)
+  SF-COLOR      _"Background color"         '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-gradient-bevel-logo"

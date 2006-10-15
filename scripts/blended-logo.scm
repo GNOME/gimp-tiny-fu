@@ -107,13 +107,15 @@
                                       blend-gradient-reverse)
   (begin
     (gimp-context-push)
+
     (gimp-image-undo-group-start img)
     (apply-blended-logo-effect img logo-layer b-size bg-color
                                blend-mode blend-fg blend-bg
                                blend-gradient blend-gradient-reverse)
     (gimp-image-undo-group-end img)
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
@@ -158,6 +160,7 @@
         (text-layer (car (gimp-text-fontname img -1 0 0 text b-size TRUE size PIXELS font)))
         )
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-context-set-foreground text-color)
     (gimp-layer-set-lock-alpha text-layer TRUE)
@@ -166,8 +169,9 @@
                                blend-mode blend-fg blend-bg
                                blend-gradient blend-gradient-reverse)
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 

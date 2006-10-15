@@ -19,6 +19,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
     (gimp-image-add-layer img glow-layer 1)
@@ -72,16 +73,16 @@
 )
 
 (script-fu-register "script-fu-glowing-logo-alpha"
-    _"Glo_wing Hot..."
-    _"Add a glowing hot metal effect to the selected region (or alpha)"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    "RGBA"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-ADJUSTMENT _"Effect size (pixels * 3)" '(150 2 1000 1 10 0 1)
-    SF-COLOR      _"Background color" '(7 0 20)
+  _"Glo_wing Hot..."
+  _"Add a glowing hot metal effect to the selected region (or alpha)"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  "RGBA"
+  SF-IMAGE      "Image" 0
+  SF-DRAWABLE   "Drawable" 0
+  SF-ADJUSTMENT _"Effect size (pixels * 3)" '(150 2 1000 1 10 0 1)
+  SF-COLOR      _"Background color" '(7 0 20)
 )
 
 (script-fu-menu-register "script-fu-glowing-logo-alpha"
@@ -104,16 +105,16 @@
 )
 
 (script-fu-register "script-fu-glowing-logo"
-    _"Glo_wing Hot..."
-    _"Create a logo that looks like glowing hot metal"
-    "Spencer Kimball"
-    "Spencer Kimball"
-    "1997"
-    ""
-    SF-STRING     _"Text" "GLOWING"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "Slogan"
-    SF-COLOR      _"Background color" '(7 0 20)
+  _"Glo_wing Hot..."
+  _"Create a logo that looks like glowing hot metal"
+  "Spencer Kimball"
+  "Spencer Kimball"
+  "1997"
+  ""
+  SF-STRING     _"Text" "GLOWING"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
+  SF-FONT       _"Font" "Slogan"
+  SF-COLOR      _"Background color" '(7 0 20)
 )
 
 (script-fu-menu-register "script-fu-glowing-logo"

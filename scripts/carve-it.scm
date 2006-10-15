@@ -77,6 +77,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
 
     (gimp-image-add-layer img layer1 0)
@@ -147,8 +148,8 @@
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill csl-mask BACKGROUND-FILL)
 
-   (set! inset-layer (car (gimp-layer-copy layer1 TRUE)))
-   (gimp-image-add-layer img inset-layer 1)
+    (set! inset-layer (car (gimp-layer-copy layer1 TRUE)))
+    (gimp-image-add-layer img inset-layer 1)
 
     (set! il-mask (car (gimp-layer-create-mask inset-layer ADD-BLACK-MASK)))
     (gimp-layer-add-mask inset-layer il-mask)
@@ -169,9 +170,10 @@
     (gimp-drawable-set-name cast-shadow-layer "Cast Shadow")
     (gimp-drawable-set-name inset-layer "Inset")
 
-    (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+    (gimp-image-undo-enable img)
+
+    (gimp-context-pop)
   )
 )
 
@@ -182,9 +184,9 @@
     "Spencer Kimball"
     "1997"
     "GRAY"
-    SF-IMAGE "Mask image" 0
-    SF-DRAWABLE "Mask drawable" 0
-    SF-DRAWABLE _"Image to carve" 0
+    SF-IMAGE     "Mask image"        0
+    SF-DRAWABLE  "Mask drawable"     0
+    SF-DRAWABLE _"Image to carve"    0
     SF-TOGGLE   _"Carve white areas" TRUE
 )
 

@@ -38,7 +38,7 @@
   (let* ((amplitude (max 0 amplitude))
          (wavelength (max 0 wavelength))
          (num-frames (max 1 num-frames))
-         (remaining-frames)
+         (remaining-frames num-frames)
          (phase 0)
          (phaseshift (/ 360 num-frames))
          (image (car (gimp-image-duplicate img)))

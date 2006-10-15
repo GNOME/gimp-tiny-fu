@@ -80,8 +80,9 @@
           (temp-img (car (gimp-image-new tempSize tempSize RGB)))
           (temp-draw (car (gimp-layer-new temp-img tempSize tempSize
                                           RGB-IMAGE "Jabar" 100 NORMAL-MODE)))
-                (temp-draw2 (car (gimp-layer-new temp-img tempSize tempSize
-                                          RGB-IMAGE "Jabar" 100 NORMAL-MODE))))
+          (temp-draw2 (car (gimp-layer-new temp-img tempSize tempSize
+                                          RGB-IMAGE "Jabar" 100 NORMAL-MODE)))
+          )
 
       (gimp-image-undo-disable temp-img)
       (gimp-image-add-layer temp-img temp-draw 0)
@@ -172,8 +173,8 @@
                                         RGB-IMAGE "Johnson" 100 NORMAL-MODE)))
         (tiledraw2 (car (gimp-layer-new tile size size
                                         RGB-IMAGE "Cooper" 100 NORMAL-MODE)))
-        (Xindex)
-        (Yindex)
+        (Xindex 0)
+        (Yindex 0)
         )
 
     (gimp-context-push)

@@ -31,6 +31,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-image-add-layer img bg-layer 1)
@@ -51,6 +52,7 @@
     (gimp-rect-select img 0 0 width 1 CHANNEL-OP-ADD FALSE 0)
     (gimp-edit-clear logo-layer)
     (gimp-selection-none img)
+
     (gimp-context-pop)
   )
 )
@@ -68,15 +70,15 @@
 )
 
 (script-fu-register "script-fu-chalk-logo-alpha"
-    _"_Chalk..."
-    _"Create a chalk drawing effect for the selected region (or alpha)"
-    "Manish Singh <msingh@uclink4.berkeley.edu>"
-    "Manish Singh"
-    "October 1997"
-    "RGBA"
-    SF-IMAGE      "Image" 0
-    SF-DRAWABLE   "Drawable" 0
-    SF-COLOR      _"Background color" '(0 0 0)
+  _"_Chalk..."
+  _"Create a chalk drawing effect for the selected region (or alpha)"
+  "Manish Singh <msingh@uclink4.berkeley.edu>"
+  "Manish Singh"
+  "October 1997"
+  "RGBA"
+  SF-IMAGE    "Image"             0
+  SF-DRAWABLE "Drawable"          0
+  SF-COLOR    _"Background color" '(0 0 0)
 )
 
 (script-fu-menu-register "script-fu-chalk-logo-alpha"
@@ -95,29 +97,31 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-context-set-foreground chalk-color)
     (gimp-layer-set-lock-alpha text-layer TRUE)
     (gimp-edit-fill text-layer FOREGROUND-FILL)
     (apply-chalk-logo-effect img text-layer bg-color)
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-chalk-logo"
-    _"_Chalk..."
-    _"Create a logo resembling chalk scribbled on a blackboard"
-    "Manish Singh <msingh@uclink4.berkeley.edu>"
-    "Manish Singh"
-    "October 1997"
-    ""
-    SF-STRING     _"Text" "CHALK"
-    SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-    SF-FONT       _"Font" "Cooper"
-    SF-COLOR      _"Background color" '(0 0 0)
-    SF-COLOR      _"Chalk color" '(255 255 255)
+  _"_Chalk..."
+  _"Create a logo resembling chalk scribbled on a blackboard"
+  "Manish Singh <msingh@uclink4.berkeley.edu>"
+  "Manish Singh"
+  "October 1997"
+  ""
+  SF-STRING     _"Text"               "CHALK"
+  SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
+  SF-FONT       _"Font"               "Cooper"
+  SF-COLOR      _"Background color"   '(0 0 0)
+  SF-COLOR      _"Chalk color         " '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-chalk-logo"

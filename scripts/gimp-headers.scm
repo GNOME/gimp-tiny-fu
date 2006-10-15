@@ -48,6 +48,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-disable img)
     (gimp-image-resize img width height 0 0)
     (gimp-image-add-layer img bg-layer 1)
@@ -58,9 +59,11 @@
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
 
-    (let* ((highlight-layer (car (gimp-layer-copy text-layer TRUE)))
-           (side-layer (car (gimp-layer-copy text-layer TRUE)))
-           (shadow-layer (car (gimp-layer-copy text-layer TRUE))))
+    (let* (
+          (highlight-layer (car (gimp-layer-copy text-layer TRUE)))
+          (side-layer (car (gimp-layer-copy text-layer TRUE)))
+          (shadow-layer (car (gimp-layer-copy text-layer TRUE)))
+          )
 
       (gimp-image-add-layer img highlight-layer 1)
       (gimp-layer-set-lock-alpha highlight-layer TRUE)
@@ -87,7 +90,8 @@
       (plug-in-gauss-rle 1 img shadow-layer 5 TRUE TRUE)
       (gimp-layer-set-opacity shadow-layer 60)
       (gimp-image-lower-layer img shadow-layer)
-      (gimp-image-lower-layer img shadow-layer))
+      (gimp-image-lower-layer img shadow-layer)
+    )
 
 
     (set! text-layer (car (gimp-image-flatten img)))
@@ -99,83 +103,90 @@
           (gimp-by-color-select text-layer '(255 255 255)
                                 1 CHANNEL-OP-REPLACE TRUE FALSE 0 FALSE)
           (gimp-edit-clear text-layer)
-          (gimp-selection-none img)))
+          (gimp-selection-none img)
+        )
+    )
 
     (if (= crop TRUE)
-         (plug-in-autocrop 1 img text-layer))
+         (plug-in-autocrop 1 img text-layer)
+    )
 
     (if (= index TRUE)
         (gimp-image-convert-indexed img FS-DITHER MAKE-PALETTE num-colors
-                                    FALSE FALSE ""))
+                                    FALSE FALSE "")
+    )
 
 
     (gimp-image-undo-enable img)
-    (gimp-context-pop)
     (gimp-display-new img)
+
+    (gimp-context-pop)
   )
 )
 
 
 (define (script-fu-big-header-gimp-org text font font-size text-color
-                                      high-color side-color shadow-color
-                                      crop rm-bg index num-colors)
+                                       high-color side-color shadow-color
+                                       crop rm-bg index num-colors)
   (script-fu-headers-gimp-org (string-append " " text)
-                              font font-size
-                              text-color high-color side-color shadow-color
-                              crop rm-bg index num-colors))
+                               font font-size
+                               text-color high-color side-color shadow-color
+                               crop rm-bg index num-colors)
+)
 
 
 (define (script-fu-small-header-gimp-org text font font-size text-color
-                                       high-color side-color shadow-color
-                                       crop rm-bg index num-colors)
+                                         high-color side-color shadow-color
+                                         crop rm-bg index num-colors)
   (script-fu-headers-gimp-org text font
                               font-size text-color high-color
                               side-color shadow-color
-                              crop rm-bg index num-colors))
+                              crop rm-bg index num-colors)
+)
 
 
 (script-fu-register "script-fu-big-header-gimp-org"
-    _"_Big Header..."
-    _"Create an image of a large header using the gimp.org webpage theme"
-    "Adrian Likins & Jens Lautenbacher"
-    "Adrian Likins & Jens Lautenbacher"
-    "1997"
-    ""
-    SF-STRING _"Text" "gimp.org"
-    SF-FONT   _"Font" "Serif"
-    SF-ADJUSTMENT _"Font size (pixels)" '(50 2 1000 1 10 0 1)
-    SF-COLOR  _"Text color" '(82 108 159)
-    SF-COLOR  _"Highlight color" '(190 220 250)
-    SF-COLOR  _"Dark color" '(46 74 92)
-    SF-COLOR  _"Shadow color" '(0 0 0)
-    SF-TOGGLE _"Autocrop" TRUE
-    SF-TOGGLE _"Remove background" TRUE
-    SF-TOGGLE _"Index image" TRUE
-    SF-ADJUSTMENT _"Number of colors" '(15 2 255 1 10 0 1)
+  _"_Big Header..."
+  _"Create an image of a large header using the gimp.org webpage theme"
+  "Adrian Likins & Jens Lautenbacher"
+  "Adrian Likins & Jens Lautenbacher"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "gimp.org"
+  SF-FONT       _"Font"               "Serif"
+  SF-ADJUSTMENT _"Font size (pixels)" '(50 2 1000 1 10 0 1)
+  SF-COLOR      _"Text color"         '(82 108 159)
+  SF-COLOR      _"Highlight color"    '(190 220 250)
+  SF-COLOR      _"Dark color"         '(46 74 92)
+  SF-COLOR      _"Shadow color"       '(0 0 0)
+  SF-TOGGLE     _"Autocrop"           TRUE
+  SF-TOGGLE     _"Remove background"  TRUE
+  SF-TOGGLE     _"Index image"        TRUE
+  SF-ADJUSTMENT _"Number of colors"   '(15 2 255 1 10 0 1)
 )
 
 (script-fu-menu-register "script-fu-big-header-gimp-org"
                          "<Toolbox>/Xtns/Web Page Themes/Classic.Gimp.Org")
 
 (script-fu-register "script-fu-small-header-gimp-org"
-    _"_Small Header..."
-    _"Create an image of a small header using the gimp.org webpage theme"
-    "Adrian Likins & Jens Lautenbacher"
-    "Adrian Likins & Jens Lautenbacher"
-    "1997"
-    ""
-    SF-STRING _"Text" "gimp.org"
-    SF-FONT   _"Font" "Sans"
-    SF-ADJUSTMENT _"Font size (pixels)" '(24 2 1000 1 10 0 1)
-    SF-COLOR  _"Text color" '(135 220 220)
-    SF-COLOR  _"Highlight color" '(210 240 245)
-    SF-COLOR  _"Dark color" '(46 74 92)
-    SF-COLOR  _"Shadow color" '(0 0 0)
-    SF-TOGGLE _"Autocrop" TRUE
-    SF-TOGGLE _"Remove background" TRUE
-    SF-TOGGLE _"Index image" TRUE
-    SF-ADJUSTMENT _"Number of colors" '(15 2 255 1 10 0 1)
-    SF-ADJUSTMENT _"Select-by-color threshold" '(1 1 256 1 10 0 1)
+  _"_Small Header..."
+  _"Create an image of a small header using the gimp.org webpage theme"
+  "Adrian Likins & Jens Lautenbacher"
+  "Adrian Likins & Jens Lautenbacher"
+  "1997"
+  ""
+  SF-STRING     _"Text"               "gimp.org"
+  SF-FONT       _"Font"               "Sans"
+  SF-ADJUSTMENT _"Font size (pixels)" '(24 2 1000 1 10 0 1)
+  SF-COLOR      _"Text color"         '(135 220 220)
+  SF-COLOR      _"Highlight color"    '(210 240 245)
+  SF-COLOR      _"Dark color"         '(46 74 92)
+  SF-COLOR      _"Shadow color"       '(0 0 0)
+  SF-TOGGLE     _"Autocrop"           TRUE
+  SF-TOGGLE     _"Remove background"  TRUE
+  SF-TOGGLE     _"Index image"        TRUE
+  SF-ADJUSTMENT _"Number of colors"   '(15 2 255 1 10 0 1)
+  SF-ADJUSTMENT _"Select-by-color threshold" '(1 1 256 1 10 0 1)
 )
 
 (script-fu-menu-register "script-fu-small-header-gimp-org"

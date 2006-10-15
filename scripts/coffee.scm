@@ -27,6 +27,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-group-start theImage)
 
     (while (> theNumber 0)
@@ -69,24 +70,25 @@
 
     (gimp-image-undo-group-end theImage)
 
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
 ; Register the function with the GIMP:
 
 (script-fu-register "script-fu-coffee-stain"
-    _"_Coffee Stain..."
-    _"Add realistic looking coffee stains to the image"
-    "Chris Gutteridge"
-    "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
-    "25th April 1998"
-    "RGB*"
-    SF-IMAGE       "The image" 0
-    SF-DRAWABLE    "The layer" 0
-    SF-ADJUSTMENT _"Stains"    '(3 1 10 1 1 0 0)
-    SF-TOGGLE     _"Darken only\n(Better, but only for images with a lot of white)" TRUE
+  _"_Coffee Stain..."
+  _"Add realistic looking coffee stains to the image"
+  "Chris Gutteridge"
+  "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
+  "25th April 1998"
+  "RGB*"
+  SF-IMAGE       "The image" 0
+  SF-DRAWABLE    "The layer" 0
+  SF-ADJUSTMENT _"Stains"    '(3 1 10 1 1 0 0)
+  SF-TOGGLE     _"Darken only\n(Better, but only for images with a lot of white)" TRUE
 )
 
 (script-fu-menu-register "script-fu-coffee-stain"

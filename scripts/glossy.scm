@@ -51,6 +51,7 @@
         )
 
     (gimp-context-push)
+
     (script-fu-util-image-resize-from-layer img logo-layer)
     (gimp-drawable-set-name grow-me "Grow-me")
     (gimp-image-add-layer img grow-me 1)
@@ -187,30 +188,30 @@
 
 
 (script-fu-register "script-fu-glossy-logo-alpha"
-    _"Glo_ssy..."
-    _"Add gradients, patterns, shadows, and bump maps to the selected region (or alpha)"
-    "Hrvoje Horvat (hhorvat@open.hr)"
-    "Hrvoje Horvat"
-    "14/04/1998"
-    "RGBA"
-    SF-IMAGE      "Image"                     0
-    SF-DRAWABLE   "Drawable"                  0
-    SF-GRADIENT   _"Blend gradient (text)"    "Shadows 2"
-    SF-TOGGLE     _"Text gradient reverse"    FALSE
-    SF-GRADIENT   _"Blend gradient (outline)" "Shadows 2"
-    SF-TOGGLE     _"Outline gradient reverse" FALSE
-    SF-ADJUSTMENT _"Outline size"             '(5 0 250 1 10 0 1)
-    SF-COLOR      _"Background color"         '(255 255 255)
-    SF-TOGGLE     _"Use pattern for text instead of gradient" FALSE
-    SF-PATTERN    _"Pattern (text)"           "Electric Blue"
-    SF-TOGGLE     _"Use pattern for outline instead of gradient" FALSE
-    SF-PATTERN    _"Pattern (outline)"        "Electric Blue"
-    SF-TOGGLE     _"Use pattern overlay"      FALSE
-    SF-PATTERN    _"Pattern (overlay)"        "Parque #1"
-    SF-TOGGLE     _"Default bumpmap settings" TRUE
-    SF-TOGGLE     _"Shadow"                   TRUE
-    SF-ADJUSTMENT _"Shadow X offset"          '(8 0 100 1 10 0 1)
-    SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
+  _"Glo_ssy..."
+  _"Add gradients, patterns, shadows, and bump maps to the selected region (or alpha)"
+  "Hrvoje Horvat (hhorvat@open.hr)"
+  "Hrvoje Horvat"
+  "14/04/1998"
+  "RGBA"
+  SF-IMAGE      "Image"                     0
+  SF-DRAWABLE   "Drawable"                  0
+  SF-GRADIENT   _"Blend gradient (text)"    "Shadows 2"
+  SF-TOGGLE     _"Text gradient reverse"    FALSE
+  SF-GRADIENT   _"Blend gradient (outline)" "Shadows 2"
+  SF-TOGGLE     _"Outline gradient reverse" FALSE
+  SF-ADJUSTMENT _"Outline size"             '(5 0 250 1 10 0 1)
+  SF-COLOR      _"Background color"         '(255 255 255)
+  SF-TOGGLE     _"Use pattern for text instead of gradient" FALSE
+  SF-PATTERN    _"Pattern (text)"           "Electric Blue"
+  SF-TOGGLE     _"Use pattern for outline instead of gradient" FALSE
+  SF-PATTERN    _"Pattern (outline)"        "Electric Blue"
+  SF-TOGGLE     _"Use pattern overlay"      FALSE
+  SF-PATTERN    _"Pattern (overlay)"        "Parque #1"
+  SF-TOGGLE     _"Default bumpmap settings" TRUE
+  SF-TOGGLE     _"Shadow"                   TRUE
+  SF-ADJUSTMENT _"Shadow X offset"          '(8 0 100 1 10 0 1)
+  SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
 )
 
 (script-fu-menu-register "script-fu-glossy-logo-alpha"
@@ -258,31 +259,31 @@
 )
 
 (script-fu-register "script-fu-glossy-logo"
-    _"Glo_ssy..."
-    _"Create a logo with gradients, patterns, shadows, and bump maps"
-    "Hrvoje Horvat (hhorvat@open.hr)"
-    "Hrvoje Horvat"
-    "14/04/1998"
-    ""
-    SF-STRING     _"Text"                     "Galaxy"
-    SF-ADJUSTMENT _"Font size (pixels)"       '(100 2 1000 1 10 0 1)
-    SF-FONT       _"Font"                     "Eras"
-    SF-GRADIENT   _"Blend gradient (text)"    "Shadows 2"
-    SF-TOGGLE     _"Text gradient reverse"    FALSE
-    SF-GRADIENT   _"Blend gradient (outline)" "Shadows 2"
-    SF-TOGGLE     _"Outline gradient reverse" FALSE
-    SF-ADJUSTMENT _"Outline size"             '(5 0 250 1 10 0 1)
-    SF-COLOR      _"Background color"         '(255 255 255)
-    SF-TOGGLE     _"Use pattern for text instead of gradient" FALSE
-    SF-PATTERN    _"Pattern (text)"           "Electric Blue"
-    SF-TOGGLE     _"Use pattern for outline instead of gradient" FALSE
-    SF-PATTERN    _"Pattern (outline)"        "Electric Blue"
-    SF-TOGGLE     _"Use pattern overlay"      FALSE
-    SF-PATTERN    _"Pattern (overlay)"        "Parque #1"
-    SF-TOGGLE     _"Default bumpmap settings" TRUE
-    SF-TOGGLE     _"Shadow"                   TRUE
-    SF-ADJUSTMENT _"Shadow X offset"          '(8 0 100 1 10 0 1)
-    SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
+  _"Glo_ssy..."
+  _"Create a logo with gradients, patterns, shadows, and bump maps"
+  "Hrvoje Horvat (hhorvat@open.hr)"
+  "Hrvoje Horvat"
+  "14/04/1998"
+  ""
+  SF-STRING     _"Text"                     "Galaxy"
+  SF-ADJUSTMENT _"Font size (pixels)"       '(100 2 1000 1 10 0 1)
+  SF-FONT       _"Font"                     "Eras"
+  SF-GRADIENT   _"Blend gradient (text)"    "Shadows 2"
+  SF-TOGGLE     _"Text gradient reverse"    FALSE
+  SF-GRADIENT   _"Blend gradient (outline)" "Shadows 2"
+  SF-TOGGLE     _"Outline gradient reverse" FALSE
+  SF-ADJUSTMENT _"Outline size"             '(5 0 250 1 10 0 1)
+  SF-COLOR      _"Background color"         '(255 255 255)
+  SF-TOGGLE     _"Use pattern for text instead of gradient" FALSE
+  SF-PATTERN    _"Pattern (text)"           "Electric Blue"
+  SF-TOGGLE     _"Use pattern for outline instead of gradient" FALSE
+  SF-PATTERN    _"Pattern (outline)"        "Electric Blue"
+  SF-TOGGLE     _"Use pattern overlay"      FALSE
+  SF-PATTERN    _"Pattern (overlay)"        "Parque #1"
+  SF-TOGGLE     _"Default bumpmap settings" TRUE
+  SF-TOGGLE     _"Shadow"                   TRUE
+  SF-ADJUSTMENT _"Shadow X offset"          '(8 0 100 1 10 0 1)
+  SF-ADJUSTMENT _"Shadow Y offset"          '(8 0 100 1 10 0 1)
 )
 
 (script-fu-menu-register "script-fu-glossy-logo"
