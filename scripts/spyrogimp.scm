@@ -320,7 +320,7 @@
                                    _"Epitrochoid"
                                    _"Lissajous")
   SF-OPTION     _"Shape"         '(_"Circle"
-                                   _"Frame"
+                                    _"Frame"
                                    _"Triangle"
                                    _"Square"
                                    _"Pentagon"
@@ -343,11 +343,9 @@
   SF-OPTION     _"Color method"  '(_"Solid Color"
                                    _"Gradient: Loop Sawtooth"
                                    _"Gradient: Loop Triangle")
-  SF-COLOR      _"Color"         '(0 0 0)
+  SF-COLOR      _"Color"          "black"
   SF-GRADIENT   _"Gradient"       "Deep Sea"
 )
-
-;; End of syprogimp.scm
 
 (script-fu-menu-register "script-fu-spyrogimp"
                          "<Image>/Filters/Render")

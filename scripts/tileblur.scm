@@ -18,13 +18,6 @@
 
 (define (script-fu-tile-blur inImage inLayer inRadius inVert inHoriz inType)
 
-  (define (cjg-pasteat xoff yoff)
-     (let ( (theFloat (car (gimp-edit-paste theLayer 0))) )
-       (gimp-layer-set-offsets theFloat (* xoff theWidth) (* yoff theHeight) )
-       (gimp-floating-sel-anchor theFloat)
-     )
-  )
-
   (let* (
         (theImage inImage)
         (theLayer inLayer)
@@ -32,37 +25,41 @@
         (theWidth (car (gimp-drawable-width theLayer)))
         )
 
-  (gimp-image-undo-group-start theImage)
-  (gimp-layer-resize theLayer (* 3 theWidth) (* 3 theHeight) 0 0)
+    (define (pasteat xoff yoff)
+      (let ((theFloat (car(gimp-edit-paste theLayer 0))))
+        (gimp-layer-set-offsets theFloat (* xoff theWidth) (* yoff theHeight) )
+        (gimp-floating-sel-anchor theFloat)
+       )
+    )
 
-  (gimp-rect-select theImage 0 0 theWidth theHeight CHANNEL-OP-REPLACE 0 0)
-  (gimp-edit-cut theLayer)
+    (gimp-image-undo-group-start theImage)
+    (gimp-layer-resize theLayer (* 3 theWidth) (* 3 theHeight) 0 0)
 
-  (gimp-selection-none theImage)
-  (gimp-layer-set-offsets theLayer theWidth theHeight)
+    (gimp-rect-select theImage 0 0 theWidth theHeight CHANNEL-OP-REPLACE 0 0)
+    (gimp-edit-cut theLayer)
 
-  (cjg-pasteat 1 1) (cjg-pasteat 1 2) (cjg-pasteat 1 3)
-  (cjg-pasteat 2 1) (cjg-pasteat 2 2) (cjg-pasteat 2 3)
-  (cjg-pasteat 3 1) (cjg-pasteat 3 2) (cjg-pasteat 3 3)
+    (gimp-selection-none theImage)
+    (gimp-layer-set-offsets theLayer theWidth theHeight)
 
-  (gimp-selection-none theImage)
-  (if (= inType 0)
-      (plug-in-gauss-iir TRUE theImage theLayer inRadius inHoriz inVert)
-      (plug-in-gauss-rle TRUE theImage theLayer inRadius inHoriz inVert)
-  )
+    (pasteat 1 1) (pasteat 1 2) (pasteat 1 3)
+    (pasteat 2 1) (pasteat 2 2) (pasteat 2 3)
+    (pasteat 3 1) (pasteat 3 2) (pasteat 3 3)
 
-  (gimp-layer-resize theLayer theWidth theHeight
-                              (- 0 theWidth) (- 0 theHeight))
-  (gimp-layer-set-offsets theLayer 0 0)
-  (gimp-image-undo-group-end theImage)
-  (gimp-displays-flush)
+    (gimp-selection-none theImage)
+    (if (= inType 0)
+        (plug-in-gauss-iir TRUE theImage theLayer inRadius inHoriz inVert)
+        (plug-in-gauss-rle TRUE theImage theLayer inRadius inHoriz inVert)
+    )
+
+    (gimp-layer-resize theLayer
+                       theWidth theHeight (- 0 theWidth) (- 0 theHeight))
+    (gimp-layer-set-offsets theLayer 0 0)
+    (gimp-image-undo-group-end theImage)
+    (gimp-displays-flush)
   )
 )
 
-; Register the function with the GIMP:
-
-(script-fu-register
-  "script-fu-tile-blur"
+(script-fu-register "script-fu-tile-blur"
   _"_Tileable Blur..."
   _"Blur the edges of an image so the result tiles seamlessly"
   "Chris Gutteridge"

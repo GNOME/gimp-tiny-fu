@@ -6,18 +6,18 @@
 (define (script-fu-guide-new-percent image drawable direction position)
   (let* (
         (width (car (gimp-image-width image)))
-        (height (car (gimp-image-height image)))
+      	(height (car (gimp-image-height image)))
         )
 
     (if (= direction 0)
-        (set! position (/ (* height position) 100))
-        (set! position (/ (* width position) 100))
+      	(set! position (/ (* height position) 100))
+	      (set! position (/ (* width position) 100))
     )
 
     (if (= direction 0)
-        ;; convert position to pixel
-        (if (<= position height) (gimp-image-add-hguide image position))
-        (if (<= position width) (gimp-image-add-vguide image position))
+	      ;; convert position to pixel
+	      (if (<= position height) (gimp-image-add-hguide image position))
+	      (if (<= position width) (gimp-image-add-vguide image position))
     )
 
     (gimp-displays-flush)

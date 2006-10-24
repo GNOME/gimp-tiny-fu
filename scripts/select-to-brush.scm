@@ -28,7 +28,7 @@
 
 (define (script-fu-selection-to-brush image
                                       drawable
-                                      desc
+                                      name
                                       filename
                                       spacing)
   (let* (
@@ -102,13 +102,13 @@
       (gimp-floating-sel-anchor floating-sel)
     )
 
-    (set! filename2 (string-append gimp-directory DIR-SEPARATOR
-                                   "brushes" DIR-SEPARATOR
+    (set! filename2 (string-append gimp-directory
+                                   "/brushes/"
                                    filename
                                    (number->string image)
                                    ".gbr"))
 
-    (file-gbr-save 1 brush-image brush-draw filename2 "" spacing desc)
+    (file-gbr-save 1 brush-image brush-draw filename2 "" spacing name)
 
     (if (= from-selection TRUE)
         (begin
@@ -125,7 +125,7 @@
     (gimp-context-pop)
 
     (gimp-brushes-refresh)
-    (gimp-context-set-brush desc)
+    (gimp-context-set-brush name)
   )
 )
 

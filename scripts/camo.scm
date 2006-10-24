@@ -77,12 +77,12 @@
     (if (= inFlatten TRUE)
         (gimp-image-flatten theImage)
     )
+
     (gimp-display-new theImage)
 
     (gimp-context-pop)
   )
 )
-
 
 
 ; Register the function with the GIMP:

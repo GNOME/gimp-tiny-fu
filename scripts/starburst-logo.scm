@@ -70,17 +70,17 @@
 )
 
 (script-fu-register "script-fu-starburst-logo-alpha"
-    _"Starb_urst..."
-    _"Fill the selected region (or alpha) with a starburst gradient and add a shadow"
-    "Spencer Kimball & Xach Beane"
-    "Spencer Kimball & Xach Beane"
-    "1997"
-    "RGBA"
-    SF-IMAGE       "Image"                     0
-    SF-DRAWABLE    "Drawable"                  0
-    SF-ADJUSTMENT _"Effect size (pixels * 30)" '(150 0 512 1 10 0 1)
-    SF-COLOR      _"Burst color"               '(60 196 33)
-    SF-COLOR      _"Background color"          '(255 255 255)
+  _"Starb_urst..."
+  _"Fill the selected region (or alpha) with a starburst gradient and add a shadow"
+  "Spencer Kimball & Xach Beane"
+  "Spencer Kimball & Xach Beane"
+  "1997"
+  "RGBA"
+  SF-IMAGE       "Image"                     0
+  SF-DRAWABLE    "Drawable"                  0
+  SF-ADJUSTMENT _"Effect size (pixels * 30)" '(150 0 512 1 10 0 1)
+  SF-COLOR      _"Burst color"               '(60 196 33)
+  SF-COLOR      _"Background color"          '(255 255 255)
 )
 
 (script-fu-menu-register "script-fu-starburst-logo-alpha"
@@ -113,7 +113,7 @@
   SF-ADJUSTMENT _"Font size (pixels)" '(150 0 512 1 10 0 1)
   SF-FONT       _"Font"               "Blippo"
   SF-COLOR      _"Burst color"        '(60 196 33)
-  SF-COLOR      _"Background color"   '(255 255 255)
+  SF-COLOR      _"Background color"   "white"
 )
 
 (script-fu-menu-register "script-fu-starburst-logo"

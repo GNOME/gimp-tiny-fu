@@ -20,6 +20,7 @@
 
 
 (define (script-fu-paste-as-brush name filename spacing)
+
   (let* (
         (brush-image (car (gimp-edit-paste-as-new)))
         (brush-draw (car (gimp-image-get-active-drawable brush-image)))
@@ -52,7 +53,7 @@
   )
 )
 
-  (script-fu-register "script-fu-paste-as-brush"
+(script-fu-register "script-fu-paste-as-brush"
   _"New _Brush..."
   _"Paste the clipboard contents into a new brush"
   "Michael Natterer <mitch@gimp.org>"

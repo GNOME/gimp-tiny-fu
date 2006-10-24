@@ -52,6 +52,7 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-group-start image)
 
     (gimp-layer-add-alpha drawable)
@@ -144,8 +145,8 @@
   "Adrian Likins"
   "10/17/97"
   "RGB* GRAY*"
-  SF-IMAGE       "Image"            0
-  SF-DRAWABLE    "Drawable"         0
+  SF-IMAGE      "Image"             0
+  SF-DRAWABLE   "Drawable"          0
   SF-ADJUSTMENT _"Oilify mask size" '(17 3 50 1 10 0 1)
   SF-ADJUSTMENT _"Circuit seed"     '(3 1 3000000 1 10 0 1)
   SF-TOGGLE     _"No background (only for separate layer)" FALSE

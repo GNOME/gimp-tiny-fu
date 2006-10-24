@@ -52,9 +52,9 @@
         )
 
     (gimp-context-push)
+
     (gimp-image-undo-group-start image)
     (gimp-layer-add-alpha drawable)
-
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
@@ -105,15 +105,15 @@
     (gimp-edit-clear shadow-layer)
     (gimp-image-lower-layer image shadow-layer)
 
-
     (if (= keep-selection FALSE)
         (gimp-selection-none image))
 
     (gimp-image-set-active-layer image drawable)
     (gimp-image-remove-channel image active-selection)
     (gimp-image-undo-group-end image)
-    (gimp-context-pop)
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 
@@ -128,9 +128,9 @@
   SF-DRAWABLE    "Drawable"                0
   SF-ADJUSTMENT _"Highlight X offset"      '(-1 -100 100 1 10 0 1)
   SF-ADJUSTMENT _"Highlight Y offset"      '(-1 -100 100 1 10 0 1)
-  SF-COLOR      _"Highlight color"         '(255 255 255)
+  SF-COLOR      _"Highlight color"         "white"
   SF-ADJUSTMENT _"Highlight opacity"       '(66 0 255 1 10 0 0)
-  SF-COLOR      _"Drop shadow color"       '(0 0 0)
+  SF-COLOR      _"Drop shadow color"       "black"
   SF-ADJUSTMENT _"Drop shadow opacity"     '(100 0 100 1 10 0 0)
   SF-ADJUSTMENT _"Drop shadow blur radius" '(12 0 255 1 10 0 1)
   SF-ADJUSTMENT _"Drop shadow X offset"    '(5 0 255 1 10 0 1)

@@ -31,17 +31,19 @@
 ; Blends two or more layers over a backgound, so that an animation can
 ; be saved. A minimum of three layers is required.
 
-(define (multi-raise-layer image layer times)
-  (while (> times 0)
-     (gimp-image-raise-layer image layer)
-     (set! times (- times 1))))
-
-
 (define (script-fu-blend-anim img
                               drawable
                               frames
                               max-blur
                               looped)
+
+  (define (multi-raise-layer image layer times)
+    (while (> times 0)
+       (gimp-image-raise-layer image layer)
+       (set! times (- times 1))
+    )
+  )
+
   (let* (
         (max-blur (max max-blur 0))
         (frames (max frames 0))

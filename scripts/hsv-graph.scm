@@ -42,18 +42,21 @@
   )
 
   (define (rgb-to-hsv rgb hsv)
-    (let* ((red (floor (nth 0 rgb)))
-           (green (floor (nth 1 rgb)))
-           (blue (floor (nth 2 rgb)))
-           (h 0.0)
-           (s 0.0)
-           (minv (min red (min green blue)))
-           (maxv (max red (max green blue)))
-           (v maxv)
-           (delta 0))
+    (let* (
+          (red (floor (nth 0 rgb)))
+          (green (floor (nth 1 rgb)))
+          (blue (floor (nth 2 rgb)))
+          (h 0.0)
+          (s 0.0)
+          (minv (min red (min green blue)))
+          (maxv (max red (max green blue)))
+          (v maxv)
+          (delta 0)
+          )
       (if (not (= 0 maxv))
           (set! s (/ (* (- maxv minv) 255.0) maxv))
-          (set! s 0.0))
+          (set! s 0.0)
+      )
       (if (= 0.0 s)
           (set! h 0.0)
           (begin
@@ -68,7 +71,8 @@
             (if (< h 0.0)
                 (set! h (+ h 255.0)))
             (if (< 255 h)
-                (set! h (- h 255.0)))))
+                (set! h (- h 255.0))))
+      )
       (set-car! hsv (floor h))
       (set-car! (cdr hsv) (floor s))
       (set-car! (cddr hsv) (floor v))
@@ -108,7 +112,8 @@
                (aset vec (+ (* 2 base) 1)
                      (aref vec (+ (* 2 (- size (- offset base))) 1)))
                (set! base (+ base 1)))
-        (set-car! segment base)))
+        (set-car! segment base))
+    )
 
     (let ((base (car segment))
           (size (cadr segment))
@@ -324,15 +329,23 @@
     (let ((text-layer (car (gimp-text-fontname gimg -1 0 0
                             "Red: Hue, Green: Sat, Blue: Val"
                             1 1 12 PIXELS
-                            "-*-helvetica-*-r-*-*-12-*-*-*-p-*-*-*")))
+                            "Sans")))
           (offset-y (- y-base (car (gimp-drawable-height clayer)))))
       (gimp-layer-set-mode text-layer DIFFERENCE-MODE)
       (gimp-layer-translate clayer 0 offset-y)
       (gimp-layer-translate text-layer border-size (+ offset-y 15)))
     (gimp-image-set-active-layer gimg bglayer)
     (gimp-image-clean-all gimg)
-    ;; return back the state
     (gimp-image-undo-enable gimg)
+
+    (set! script-fu-hsv-graph-scale scale)
+    (set! script-fu-hsv-graph-opacity opacity)
+    (set! script-fu-hsv-graph-bounds? bounds?)
+    (set! script-fu-hsv-graph-left2right? left2right?)
+    (set! script-fu-hsv-graph-beg-x beg-x)
+    (set! script-fu-hsv-graph-beg-y beg-y)
+    (set! script-fu-hsv-graph-end-x end-x)
+    (set! script-fu-hsv-graph-end-y end-y)
     (gimp-displays-flush)
 
     (gimp-context-pop)
@@ -340,25 +353,23 @@
 )
 
 (script-fu-register "script-fu-hsv-graph"
-    _"Draw _HSV Graph..."
-    _"Create a graph of the Hue, Saturation, and Value distributions of the current drawable"
-    "Shuji Narazaki <narazaki@InetQ.or.jp>"
-    "Shuji Narazaki"
-    "1997"
-    "RGB*"
-    SF-IMAGE       "Image to analyze"    0
-    SF-DRAWABLE    "Drawable to analyze" 0
-    SF-ADJUSTMENT _"Graph scale"         '(1 0.1 5 0.1 1 1 1)
-    SF-ADJUSTMENT _"BG opacity"          '(100 0 100 1 10 0 1)
-    SF-TOGGLE     _"Use selection bounds instead of values below" TRUE
-    SF-TOGGLE     _"From top-left to bottom-right"                FALSE
-    SF-ADJUSTMENT _"Start X"             '(0 0 5000 1 10 0 1)
-    SF-ADJUSTMENT _"Start Y"             '(0 0 5000 1 10 0 1)
-    SF-ADJUSTMENT _"End X"               '(1 0 5000 1 10 0 1)
-    SF-ADJUSTMENT _"End Y"               '(1 0 5000 1 10 0 1)
+  _"Draw _HSV Graph..."
+  _"Create a graph of the Hue, Saturation, and Value distributions of the current drawable"
+  "Shuji Narazaki <narazaki@InetQ.or.jp>"
+  "Shuji Narazaki"
+  "1997"
+  "RGB*"
+  SF-IMAGE       "Image to analyze"    0
+  SF-DRAWABLE    "Drawable to analyze" 0
+  SF-ADJUSTMENT _"Graph scale"         '(1 0.1 5 0.1 1 1 1)
+  SF-ADJUSTMENT _"BG opacity"          '(100 0 100 1 10 0 1)
+  SF-TOGGLE     _"Use selection bounds instead of values below" TRUE
+  SF-TOGGLE     _"From top-left to bottom-right"                FALSE
+  SF-ADJUSTMENT _"Start X"             '(0 0 5000 1 10 0 1)
+  SF-ADJUSTMENT _"Start Y"             '(0 0 5000 1 10 0 1)
+  SF-ADJUSTMENT _"End X"               '(1 0 5000 1 10 0 1)
+  SF-ADJUSTMENT _"End Y"               '(1 0 5000 1 10 0 1)
 )
-
-;;; hsv-graph.scm ends here
 
 (script-fu-menu-register "script-fu-hsv-graph"
                          "<Image>/Colors/Info")

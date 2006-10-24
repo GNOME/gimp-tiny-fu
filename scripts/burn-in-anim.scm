@@ -45,8 +45,6 @@
         (img-display)
         )
 
-    (gimp-context-push)
-
     (if (< speed 1)
         (set! speed (* -1 speed)) )
 
@@ -55,6 +53,8 @@
 
         ;--- main program structure starts here, begin of "if-1"
         (begin
+          (gimp-context-push)
+
           (set! img (car (gimp-image-duplicate org-img)))
           (gimp-image-undo-disable img)
           (if (> (car (gimp-drawable-type org-layer)) 1 )
@@ -138,26 +138,26 @@
                         (gimp-brightness-contrast bl-layer 100 0)
                     )
 
-					;--- blend glow color inside the letters
-					(gimp-context-set-foreground glow-color)
-					(gimp-edit-blend bl-layer FG-TRANSPARENT-MODE NORMAL-MODE
-									 GRADIENT-LINEAR 100 0 REPEAT-NONE FALSE
-									 FALSE 0 0 TRUE
-									 (+ bl-x-off bl-width) 0
-									 (- (+ bl-x-off bl-width) after-glow) 0)
+          ;--- blend glow color inside the letters
+          (gimp-context-set-foreground glow-color)
+          (gimp-edit-blend bl-layer FG-TRANSPARENT-MODE NORMAL-MODE
+                   GRADIENT-LINEAR 100 0 REPEAT-NONE FALSE
+                   FALSE 0 0 TRUE
+                   (+ bl-x-off bl-width) 0
+                   (- (+ bl-x-off bl-width) after-glow) 0)
 
-					;--- add corona effect
-					(gimp-selection-layer-alpha bl-layer)
-					(gimp-selection-sharpen img)
-					(gimp-selection-grow img corona-width)
-					(gimp-layer-set-lock-alpha bl-layer FALSE)
-					(gimp-selection-feather img corona-width)
-					(gimp-context-set-foreground glow-color)
-					(gimp-edit-blend bl-layer FG-TRANSPARENT-MODE NORMAL-MODE
-									 GRADIENT-LINEAR 100 0 REPEAT-NONE FALSE
-									 FALSE 0 0 TRUE
-									 (- (+ bl-x-off bl-width) corona-width) 0
-									 (- (+ bl-x-off bl-width) after-glow) 0)
+          ;--- add corona effect
+          (gimp-selection-layer-alpha bl-layer)
+          (gimp-selection-sharpen img)
+          (gimp-selection-grow img corona-width)
+          (gimp-layer-set-lock-alpha bl-layer FALSE)
+          (gimp-selection-feather img corona-width)
+          (gimp-context-set-foreground glow-color)
+          (gimp-edit-blend bl-layer FG-TRANSPARENT-MODE NORMAL-MODE
+                   GRADIENT-LINEAR 100 0 REPEAT-NONE FALSE
+                   FALSE 0 0 TRUE
+                   (- (+ bl-x-off bl-width) corona-width) 0
+                   (- (+ bl-x-off bl-width) after-glow) 0)
                   )
               )
 
@@ -202,13 +202,13 @@
           (set! img-display (car (gimp-display-new img)))
 
           (gimp-displays-flush)
+
+          (gimp-context-pop)
         )
 
         ;--- false form of "if-1"
         (gimp-message _"Burn-In: Needs two layers in total!\nA foreground text layer with transparency and a background layer.")
     )
-
-    (gimp-context-pop)
   )
 )
 
@@ -222,7 +222,7 @@
     "RGBA GRAYA INDEXEDA"
     SF-IMAGE    "The image"            0
     SF-DRAWABLE "Layer to animate"     0
-    SF-COLOR   _"Glow color"           '(255 255 255)
+    SF-COLOR   _"Glow color"           "white"
     SF-TOGGLE  _"Fadeout"              FALSE
     SF-VALUE   _"Fadeout width"        "100"
     SF-VALUE   _"Corona width"         "7"

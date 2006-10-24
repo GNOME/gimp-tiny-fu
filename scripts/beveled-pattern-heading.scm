@@ -37,8 +37,12 @@
         (width (car (gimp-drawable-width textl)))
         (height (car (gimp-drawable-height textl)))
 
-        (background (car (gimp-layer-new img width height RGBA-IMAGE "Background" 100 NORMAL-MODE)))
-        (bumpmap (car (gimp-layer-new img width height RGBA-IMAGE "Bumpmap" 100 NORMAL-MODE)))
+        (background (car (gimp-layer-new img
+                                         width height RGBA-IMAGE
+                                         "Background" 100 NORMAL-MODE)))
+        (bumpmap (car (gimp-layer-new img
+                                      width height RGBA-IMAGE
+                                      "Bumpmap" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
