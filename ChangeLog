@@ -1,3 +1,8 @@
+2006-11-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Set return_val before
+	destroying values[] as it may still be needed.
+
 2006-11-08  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/script-fu-compat.init: Added strbreakup, strcat, strcmp,
