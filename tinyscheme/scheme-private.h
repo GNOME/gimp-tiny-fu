@@ -45,20 +45,20 @@ enum scheme_types {
 #define arraylength(p)   ((p)->_object._array._length)
 #define arraytype(p)     ((p)->_object._array._type)
 
-enum array_type { 
-  array_int32=0, 
-  array_int16=1, 
-  array_int8=2, 
-  array_float=3, 
-  array_string=4 
+enum array_type {
+  array_int32=0,
+  array_int16=1,
+  array_int8=2,
+  array_float=3,
+  array_string=4
 };
 
-enum scheme_port_kind { 
-  port_free=0, 
-  port_file=1, 
-  port_string=2, 
-  port_input=16, 
-  port_output=32 
+enum scheme_port_kind {
+  port_free=0,
+  port_file=1,
+  port_string=2,
+  port_input=16,
+  port_output=32
 };
 
 typedef struct port {
@@ -180,19 +180,19 @@ void *ext_data;     /* For the benefit of foreign functions */
 long gensym_cnt;
 
 struct scheme_interface *vptr;
-void *dump_base;	 /* pointer to base of allocated dump stack */
-int dump_size;		 /* number of frames allocated for dump stack */
+void *dump_base;     /* pointer to base of allocated dump stack */
+int dump_size;       /* number of frames allocated for dump stack */
 
 gunichar backchar;
 int bc_flag;
 };
 
 /* operator code */
-enum scheme_opcodes { 
-#define _OP_DEF(A,B,C,D,E,OP) OP, 
-#include "opdefines.h" 
-  OP_MAXDEFINED 
-}; 
+enum scheme_opcodes {
+#define _OP_DEF(A,B,C,D,E,OP) OP,
+#include "opdefines.h"
+  OP_MAXDEFINED
+};
 
 
 #define cons(sc,a,b) _cons(sc,a,b,0)
@@ -206,7 +206,9 @@ long ivalue(pointer p);
 double rvalue(pointer p);
 int is_integer(pointer p);
 int is_real(pointer p);
+int is_array(pointer p);
 int is_character(pointer p);
+int string_length(pointer p);
 gunichar charvalue(pointer p);
 int is_vector(pointer p);
 
@@ -227,9 +229,7 @@ int is_proc(pointer p);
 int is_foreign(pointer p);
 char *syntaxname(pointer p);
 int is_closure(pointer p);
-#ifdef USE_MACRO
 int is_macro(pointer p);
-#endif
 pointer closure_code(pointer p);
 pointer closure_env(pointer p);
 

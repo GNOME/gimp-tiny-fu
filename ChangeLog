@@ -1,3 +1,31 @@
+2006-11-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* Makefile.am: Start lines with tabs instead of spaces.
+
+	* tinyscheme/Makefile.am: Removed setting of USE_STRCASECMP.
+
+	* tinyscheme/scheme-private.h: Added some function prototypes. Don't
+	use USE_MACRO.
+
+	* tinyscheme/scheme.h: Removed references to USE_STRCASECMP. Added
+	SCHEME_EXPORT to prototype for scheme_set_input_port_file().
+
+	* tinyscheme/scheme.c: Open files in binary mode. Added SCHEME_EXPORT
+	to scheme_set_input_port_file() and scheme_set_output_port_file()
+	declarations. Removed references to USE_STRCASECMP. Renamed stricmp()
+	to utf8_stricmp and updated it to call g_utf8_strcasefold instead of
+	g_utf8_strdown. Added #define to map stricmp to utf8_stricmp.
+
+	* scripts/Makefile.am: Fixed ordering in lists.
+
+	* scripts/grid-system.scm: Don't register in the menus since the
+	script duplicates functionality of a better plug-in.
+
+	* scripts/paste-as-brush.scm: Moved set! to let* block.
+	* scripts/paste-as-pattern.scm: Added let* block to defined variables.
+	* scripts/tiny-fu.init: Don't load script-fu-compat.init here.
+	* scripts/ts-helloworld.scm: Don't translate strings in test scripts.
+
 2006-11-18  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Set return_val before

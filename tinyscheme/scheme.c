@@ -72,16 +72,15 @@
 # include <malloc.h>
 #endif /* macintosh */
 
-#ifndef USE_STRCASECMP
-#define stricmp g_utf8_collate
-#else
-static int stricmp(const char *s1, const char *s2)
+#define stricmp utf8_stricmp
+
+static int utf8_stricmp(const char *s1, const char *s2)
 {
   char *s1a, *s2a;
   int result;
 
-  s1a = g_utf8_strdown(s1, -1);
-  s2a = g_utf8_strdown(s2, -1);
+  s1a = g_utf8_strcasefold(s1, -1);
+  s2a = g_utf8_strcasefold(s2, -1);
 
   result = g_utf8_collate(s1a, s2a);
 
@@ -89,7 +88,6 @@ static int stricmp(const char *s1, const char *s2)
   g_free(s2a);
   return result;
 }
-#endif
 
 #define min(a, b)  ((a <= b) ? a : b)
 
@@ -1391,7 +1389,7 @@ static void finalize_cell(scheme *sc, pointer a) {
 /* ========== Routines for Reading ========== */
 
 static int file_push(scheme *sc, const char *fname) {
-  FILE *fin=fopen(fname,"r");
+  FILE *fin=fopen(fname,"rb");
   if(fin!=0) {
     sc->file_i++;
     sc->load_stack[sc->file_i].kind=port_file|port_input;
@@ -1425,11 +1423,11 @@ static port *port_rep_from_filename(scheme *sc, const char *fn, int prop) {
   char *rw;
   port *pt;
   if(prop==(port_input|port_output)) {
-    rw="a+";
+    rw="a+b";
   } else if(prop==port_output) {
-    rw="w";
+    rw="wb";
   } else {
-    rw="r";
+    rw="rb";
   }
   f=fopen(fn,rw);
   if(f==0) {
@@ -4718,7 +4716,7 @@ int scheme_init_custom_alloc(scheme *sc, func_alloc malloc, func_dealloc free) {
   return !sc->no_memory;
 }
 
-void scheme_set_input_port_file(scheme *sc, FILE *fin) {
+SCHEME_EXPORT void scheme_set_input_port_file(scheme *sc, FILE *fin) {
   sc->inport=port_from_file(sc,fin,port_input);
 }
 
@@ -4726,7 +4724,7 @@ void scheme_set_input_port_string(scheme *sc, char *start, char *past_the_end) {
   sc->inport=port_from_string(sc,start,past_the_end,port_input);
 }
 
-void scheme_set_output_port_file(scheme *sc, FILE *fout) {
+SCHEME_EXPORT void scheme_set_output_port_file(scheme *sc, FILE *fout) {
   sc->outport=port_from_file(sc,fout,port_output);
 }
 
