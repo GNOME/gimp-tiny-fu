@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -24,9 +24,6 @@ void          ts_set_output_file   (FILE *file);
 
 void          ts_set_console_mode  (int flag);
 
-gint          ts_get_verbose_level (void);
-void          ts_set_verbose_level (gint);
-
 void          ts_set_print_flag    (gint);
 void          ts_print_welcome     (void);
 
@@ -35,7 +32,6 @@ const gchar * ts_get_success_msg   (void);
 
 void          tinyscheme_init      (const gchar *path,
                                     gboolean     local_register_scripts);
-
 void          tinyscheme_deinit    (void);
 
 void          ts_output_string     (FILE *fp, char *string, int len);

@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -16,23 +16,23 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#ifndef __TINY_FU_CONSOLE_H__
-#define __TINY_FU_CONSOLE_H__
+#ifndef __SCRIPT_FU_CONSOLE_H__
+#define __SCRIPT_FU_CONSOLE_H__
 
 
-void   tiny_fu_console_run       (const gchar      *name,
-                                  gint              nparams,
-                                  const GimpParam  *params,
-                                  gint             *nreturn_vals,
-                                  GimpParam       **return_vals);
-void   tiny_fu_eval_run          (const gchar      *name,
-                                  gint              nparams,
-                                  const GimpParam  *params,
-                                  gint             *nreturn_vals,
-                                  GimpParam       **return_vals);
+void   script_fu_console_run       (const gchar      *name,
+                                    gint              nparams,
+                                    const GimpParam  *params,
+                                    gint             *nreturn_vals,
+                                    GimpParam       **return_vals);
+void   script_fu_eval_run          (const gchar      *name,
+                                    gint              nparams,
+                                    const GimpParam  *params,
+                                    gint             *nreturn_vals,
+                                    GimpParam       **return_vals);
 
-void   tiny_fu_output_to_console (gchar            *text,
-                                  gint              len);
+void   script_fu_output_to_console (const gchar      *text,
+                                    gint              len);
 
 
-#endif /*  __TINY_FU_CONSOLE__  */
+#endif /*  __SCRIPT_FU_CONSOLE__  */

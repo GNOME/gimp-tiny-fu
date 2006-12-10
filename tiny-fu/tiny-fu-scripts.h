@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -16,12 +16,12 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#ifndef __TINY_FU_SCRIPTS_H__
-#define __TINY_FU_SCRIPTS_H__
+#ifndef __SCRIPT_FU_SCRIPTS_H__
+#define __SCRIPT_FU_SCRIPTS_H__
 
-void     tiny_fu_load_all_scripts (const gchar *path);
-pointer  tiny_fu_add_script       (scheme *sc, pointer a);
-pointer  tiny_fu_add_menu         (scheme *sc, pointer a);
-void     tiny_fu_error_msg        (const gchar *command);
+void     script_fu_find_scripts  (const gchar *path);
+pointer  script_fu_add_script    (scheme *sc, pointer a);
+pointer  script_fu_add_menu      (scheme *sc, pointer a);
+void     script_fu_error_msg     (const gchar *command);
 
-#endif /*  __TINY_FU_SCRIPTS__  */
+#endif /*  __SCRIPT_FU_SCRIPTS__  */

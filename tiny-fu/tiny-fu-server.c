@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -148,7 +148,6 @@ static void      response_callback  (GtkWidget   *widget,
                                      gpointer     data);
 static void      print_socket_api_error (const gchar *api_name);
 
-
 /*
  *  Local variables
  */
@@ -158,7 +157,7 @@ static gint         queue_length    = 0;
 static gint         request_no      = 0;
 static FILE        *server_log_file = NULL;
 static GHashTable  *clients         = NULL;
-static gboolean     tiny_fu_done  = FALSE;
+static gboolean     script_fu_done  = FALSE;
 static gboolean     server_mode     = FALSE;
 
 static ServerInterface sint =
@@ -177,23 +176,23 @@ static ServerInterface sint =
  */
 
 void
-tiny_fu_server_quit (void)
+script_fu_server_quit (void)
 {
-  tiny_fu_done = TRUE;
+  script_fu_done = TRUE;
 }
 
 gint
-tiny_fu_server_get_mode (void)
+script_fu_server_get_mode (void)
 {
   return server_mode;
 }
 
 void
-tiny_fu_server_run (const gchar      *name,
-                    gint              nparams,
-                    const GimpParam  *params,
-                    gint             *nreturn_vals,
-                    GimpParam       **return_vals)
+script_fu_server_run (const gchar      *name,
+                      gint              nparams,
+                      const GimpParam  *params,
+                      gint             *nreturn_vals,
+                      GimpParam       **return_vals)
 {
   static GimpParam   values[1];
   GimpPDBStatusType  status = GIMP_PDB_SUCCESS;
@@ -237,7 +236,7 @@ tiny_fu_server_run (const gchar      *name,
 }
 
 static void
-tiny_fu_server_add_fd (gpointer key,
+script_fu_server_add_fd (gpointer key,
                          gpointer value,
                          gpointer data)
 {
@@ -245,7 +244,7 @@ tiny_fu_server_add_fd (gpointer key,
 }
 
 static gboolean
-tiny_fu_server_read_fd (gpointer key,
+script_fu_server_read_fd (gpointer key,
                           gpointer value,
                           gpointer data)
 {
@@ -279,11 +278,11 @@ tiny_fu_server_read_fd (gpointer key,
 }
 
 void
-tiny_fu_server_listen (gint timeout)
+script_fu_server_listen (gint timeout)
 {
-  struct timeval      tv;
-  struct timeval     *tvp = NULL;
-  SELECT_MASK         fds;
+  struct timeval  tv;
+  struct timeval *tvp = NULL;
+  SELECT_MASK     fds;
 
   /*  Set time struct  */
   if (timeout)
@@ -293,13 +292,13 @@ tiny_fu_server_listen (gint timeout)
       tvp = &tv;
     }
 
-
   FD_ZERO (&fds);
   FD_SET (server_sock, &fds);
-  g_hash_table_foreach (clients, tiny_fu_server_add_fd, &fds);
+  g_hash_table_foreach (clients, script_fu_server_add_fd, &fds);
 
   /* Block until input arrives on one or more active sockets
      or timeout occurs. */
+
   if (select (FD_SETSIZE, &fds, NULL, NULL, tvp) < 0)
     {
       print_socket_api_error ("select");
@@ -333,7 +332,7 @@ tiny_fu_server_listen (gint timeout)
     }
 
   /* Service the client sockets. */
-  g_hash_table_foreach_remove (clients, tiny_fu_server_read_fd, &fds);
+  g_hash_table_foreach_remove (clients, script_fu_server_read_fd, &fds);
 }
 
 static void
@@ -364,6 +363,7 @@ server_progress_set_value (gdouble   percentage,
   /* do nothing */
 }
 
+
 /*
  * Suppress progress popups by installing progress handlers that do nothing.
  */
@@ -387,8 +387,8 @@ server_progress_uninstall (const gchar *progress)
 }
 
 static void
-server_start (gint   port,
-        const gchar *logfile)
+server_start (gint         port,
+              const gchar *logfile)
 {
   const gchar *progress;
 
@@ -402,7 +402,7 @@ server_start (gint   port,
       return;
     }
 
-  /*  Set up the server log file  */
+  /*  Setup up the server log file  */
   if (logfile && *logfile)
     server_log_file = g_fopen (logfile, "a");
   else
@@ -420,9 +420,9 @@ server_start (gint   port,
   server_log ("Script-Fu server initialized and listening...\n");
 
   /*  Loop until the server is finished  */
-  while (! tiny_fu_done)
+  while (! script_fu_done)
     {
-      tiny_fu_server_listen (0);
+      script_fu_server_listen (0);
 
       while (command_queue)
         {
@@ -438,7 +438,7 @@ server_start (gint   port,
           /*  Free the request  */
           g_free (cmd->command);
           g_free (cmd);
-        }
+      }
     }
 
   server_progress_uninstall (progress);
@@ -583,8 +583,8 @@ read_from_client (gint filedes)
   server_log ("Received request #%d from IP address %s: %s on %s,"
               "[Request queue length: %d]",
               cmd->request_no,
-              clientaddr ? clientaddr : "<invalid>",
-              cmd->command, ctime (&clock), queue_length);
+                  clientaddr ? clientaddr : "<invalid>",
+                      cmd->command, ctime (&clock), queue_length);
 
   return 0;
 }
@@ -660,7 +660,7 @@ server_log (const gchar *format,
 }
 
 static void
-tiny_fu_server_shutdown_fd (gpointer key,
+script_fu_server_shutdown_fd (gpointer key,
                               gpointer value,
                               gpointer data)
 {
@@ -674,7 +674,7 @@ server_quit (void)
 
   if (clients)
     {
-      g_hash_table_foreach (clients, tiny_fu_server_shutdown_fd, NULL);
+      g_hash_table_foreach (clients, script_fu_server_shutdown_fd, NULL);
       g_hash_table_destroy (clients);
       clients = NULL;
     }
@@ -741,13 +741,13 @@ server_interface (void)
   sint.port_entry = gtk_entry_new ();
   gtk_entry_set_text (GTK_ENTRY (sint.port_entry), "10008");
   gimp_table_attach_aligned (GTK_TABLE (table), 0, 0,
-                             _("Server Port:"), 0.0, 0.5,
+                             _("Server port:"), 0.0, 0.5,
                              sint.port_entry, 1, FALSE);
 
   /*  The server logfile  */
   sint.log_entry = gtk_entry_new ();
   gimp_table_attach_aligned (GTK_TABLE (table), 0, 1,
-                             _("Server Logfile:"), 0.0, 0.5,
+                             _("Server logfile:"), 0.0, 0.5,
                              sint.log_entry, 1, FALSE);
 
   gtk_widget_show (table);

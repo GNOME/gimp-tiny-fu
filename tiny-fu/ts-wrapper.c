@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -13,7 +13,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 331, Boston, MA 02111-1307, USA.
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
 #if 0
@@ -22,8 +22,6 @@
 #endif
 
 #include "config.h"
-
-#include <glib/gstdio.h>
 
 #include <string.h> /* memcpy, strcpy, strlen */
 
@@ -61,8 +59,8 @@ named_constant {
     int value;
 };
 
-struct named_constant
-script_constants[] = {
+struct named_constant const script_constants[] =
+{
   /* Useful values from libgimpbase/gimplimits.h */
   { "MIN-IMAGE-SIZE", GIMP_MIN_IMAGE_SIZE },
   { "MAX-IMAGE-SIZE", GIMP_MAX_IMAGE_SIZE },
@@ -73,11 +71,12 @@ script_constants[] = {
   { "TRUE",           TRUE  },
   { "FALSE",          FALSE },
 
-  /* Tiny-Fu types */
+  /* Script-Fu types */
   { "SF-IMAGE",       SF_IMAGE      },
   { "SF-DRAWABLE",    SF_DRAWABLE   },
   { "SF-LAYER",       SF_LAYER      },
   { "SF-CHANNEL",     SF_CHANNEL    },
+  { "SF-VECTORS",     SF_VECTORS    },
   { "SF-COLOR",       SF_COLOR      },
   { "SF-TOGGLE",      SF_TOGGLE     },
   { "SF-VALUE",       SF_VALUE      },
@@ -94,7 +93,7 @@ script_constants[] = {
   { "SF-TEXT",        SF_TEXT       },
   { "SF-ENUM",        SF_ENUM       },
 
-  /* For SF_ADJUSTMENT */
+  /* For SF-ADJUSTMENT */
   { "SF-SLIDER",      SF_SLIDER     },
   { "SF-SPINNER",     SF_SPINNER    },
 
@@ -104,8 +103,8 @@ script_constants[] = {
 /* The following constants are deprecated. They are */
 /* included to keep backwards compatability with    */
 /* older scripts used with version 2.0 of GIMP.     */
-struct named_constant
-old_constants[] = {
+struct named_constant const old_constants[] =
+{
   { "NORMAL",       GIMP_NORMAL_MODE       },
   { "DISSOLVE",     GIMP_DISSOLVE_MODE     },
   { "BEHIND",       GIMP_BEHIND_MODE       },
@@ -184,7 +183,6 @@ old_constants[] = {
 
 static scheme sc;
 static FILE  *ts_output;
-static int    ts_verbose_level;
 
 
 /* wrapper functions */
@@ -207,18 +205,6 @@ ts_set_console_mode (int flag)
   ts_console_mode = flag;
 }
 
-int
-ts_get_verbose_level (void)
-{
-  return ts_verbose_level;
-}
-
-void
-ts_set_verbose_level (gint verbose_level)
-{
-  ts_verbose_level = verbose_level;
-}
-
 void
 ts_set_print_flag (gint print_flag)
 {
@@ -228,11 +214,8 @@ ts_set_print_flag (gint print_flag)
 void
 ts_print_welcome (void)
 {
-  if (ts_verbose_level >= 2)
-  {
-     fprintf (ts_output, "Welcome to TinyScheme, Version 1.38\n");
-     fprintf (ts_output, "Copyright (c) Dimitrios Souflis\n");
-  }
+  fprintf (ts_output, "Welcome to TinyScheme, Version 1.38\n");
+  fprintf (ts_output, "Copyright (c) Dimitrios Souflis\n");
 }
 
 gint
@@ -284,9 +267,9 @@ ts_output_string (FILE *fp, char *string, int len)
   if (len > 0 && ts_console_mode && fp == stdout)
   {
     /* len is the number of UTF-8 characters; we need the number of bytes */
-    len = g_utf8_offset_to_pointer(string, (long)len) - string;
+    len = g_utf8_offset_to_pointer (string, len) - string;
 
-    tiny_fu_output_to_console (string, len);
+    script_fu_output_to_console (string, len);
   }
 }
 
@@ -305,10 +288,10 @@ tinyscheme_init (const gchar *path,
 
   /* init the interpreter */
   if (!scheme_init (&sc))
-  {
-     g_message ("Could not initialize TinyScheme!");
-     return;
-  }
+    {
+      g_message ("Could not initialize TinyScheme!");
+      return;
+    }
 
   scheme_set_input_port_file (&sc, stdin);
   ts_set_output_file (stdout);
@@ -323,14 +306,14 @@ tinyscheme_init (const gchar *path,
 
   if (path)
     {
-     GList *dir_list = gimp_path_parse (path, 16, TRUE, NULL);
+      GList *dir_list = gimp_path_parse (path, 16, TRUE, NULL);
       GList *list;
 
       for (list = dir_list; list; list = g_list_next (list))
         {
           gchar *filename = g_build_filename (list->data,
                                               "script-fu.init", NULL);
-         FILE  *fin      = g_fopen (filename, "rb");
+          FILE  *fin      = g_fopen (filename, "rb");
 
           g_free (filename);
 
@@ -349,8 +332,8 @@ tinyscheme_init (const gchar *path,
 
               if (fin)
                 {
-                   scheme_load_file (&sc, fin);
-                   fclose (fin);
+                  scheme_load_file (&sc, fin);
+                  fclose (fin);
                 }
 
               break;
@@ -370,16 +353,16 @@ tinyscheme_deinit (void)
   scheme_deinit (&sc);
 }
 
-static void     convert_string             (gchar  *str);
-static pointer  marshall_proc_db_call      (scheme *sc, pointer  a);
-static pointer  tiny_fu_register_call      (scheme *sc, pointer  a);
-static pointer  tiny_fu_menu_register_call (scheme *sc, pointer  a);
-static pointer  tiny_fu_quit_call          (scheme *sc, pointer  a);
+static void     convert_string               (gchar  *str);
+static pointer  marshall_proc_db_call        (scheme *sc, pointer  a);
+static pointer  script_fu_register_call      (scheme *sc, pointer  a);
+static pointer  script_fu_menu_register_call (scheme *sc, pointer  a);
+static pointer  script_fu_quit_call          (scheme *sc, pointer  a);
 
 
 /*
  * Below can be found the functions responsible for registering the
- * gimp types and functions against the scheme interpreter.
+ * gimp functions and types against the scheme interpreter.
  */
 
 
@@ -535,17 +518,17 @@ init_procedures (void)
 
   symbol = sc.vptr->mk_symbol (&sc, "script-fu-register");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
-                  sc.vptr->mk_foreign_func (&sc, tiny_fu_register_call));
+                  sc.vptr->mk_foreign_func (&sc, script_fu_register_call));
   sc.vptr->setimmutable(symbol);
 
   symbol = sc.vptr->mk_symbol (&sc, "script-fu-menu-register");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
-                  sc.vptr->mk_foreign_func (&sc, tiny_fu_menu_register_call));
+                  sc.vptr->mk_foreign_func (&sc, script_fu_menu_register_call));
   sc.vptr->setimmutable(symbol);
 
   symbol = sc.vptr->mk_symbol (&sc, "script-fu-quit");
   sc.vptr->scheme_define (&sc, sc.global_env, symbol,
-                  sc.vptr->mk_foreign_func (&sc, tiny_fu_quit_call));
+                  sc.vptr->mk_foreign_func (&sc, script_fu_quit_call));
   sc.vptr->setimmutable(symbol);
 
   /*  register the database execution procedure  */
@@ -559,7 +542,7 @@ init_procedures (void)
 
   /*  Register each procedure as a scheme func  */
   for (i = 0; i < num_procs; i++)
-  {
+    {
       /*  lookup the procedure  */
       if (gimp_procedural_db_proc_info (proc_list[i],
                                         &proc_blurb,
@@ -574,17 +557,17 @@ init_procedures (void)
          /* Build a define that will call the foreign function */
          /* The Scheme statement was suggested by Simon Budig  */
          if (nparams == 0)
-         {
+           {
              buff = g_strdup_printf (
                       " (define (%s) (gimp-proc-db-call \"%s\"))",
                       proc_list[i], proc_list[i]);
-         }
+           }
          else
-         {
+           {
              buff = g_strdup_printf (
                       " (define %s (lambda x (apply gimp-proc-db-call (cons \"%s\" x))))",
                       proc_list[i], proc_list[i]);
-         }
+           }
 
          /*  Execute the 'define'  */
          sc.vptr->load_string (&sc, buff);
@@ -602,7 +585,7 @@ init_procedures (void)
       }
 
       g_free (proc_list[i]);
-  }
+    }
 
   g_free (proc_list);
 }
@@ -617,17 +600,23 @@ convert_string (gchar *str)
     }
 }
 
-/* This routine will eventually display a dialog box containing */
-/* the error message. For now, just print the message to stderr */
 static pointer
 my_err (char *msg, pointer a)
 {
-//        if (run_mode == GIMP_RUN_INTERACTIVE)
-                g_message (msg);
-//        else
-//                fprintf (stderr, "%s\n", msg);
+  if (ts_console_mode)
+    {
+      gchar *tmp = g_strdup_printf ("Error: %s\n", msg);
 
-        return sc.NIL;
+      script_fu_output_to_console (tmp, -1);
+
+      g_free (tmp);
+    }
+  else
+    {
+      g_message (msg);
+    }
+
+  return sc.NIL;
 }
 
 
@@ -645,18 +634,19 @@ marshall_proc_db_call (scheme *sc, pointer a)
   gchar           *proc_copyright;
   gchar           *proc_date;
   GimpPDBProcType  proc_type;
-  GimpParamDef    *params;
   gint             nparams;
-  GimpParamDef    *return_vals;
   gint             nreturn_vals;
+  GimpParamDef    *params;
+  GimpParamDef    *return_vals;
   gchar            error_str[256];
   gint             i;
+  gint             j;
   gint             success = TRUE;
   pointer          intermediate_val;
   pointer          return_val = sc->NIL;
   gchar           *string;
   gint32           n_elements;
-  pointer          array;
+  pointer          vector;
 #if DEBUG_MARSHALL
 char *ret_types[] = {
   "GIMP_PDB_INT32",       "GIMP_PDB_INT16",     "GIMP_PDB_INT8",
@@ -706,7 +696,7 @@ fprintf (stderr, "  parms rcvd: %d\n", sc->vptr->list_length (sc, a)-1);
 #endif
 
   /*  report the current command  */
-  tiny_fu_interface_report_cc (proc_name);
+  script_fu_interface_report_cc (proc_name);
 
   /*  Attempt to fetch the procedure from the database  */
   if (! gimp_procedural_db_proc_info (proc_name,
@@ -758,7 +748,7 @@ fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
   else
     args = NULL;
 
-  for (i = 0; i < nparams && success; i++)
+  for (i = 0; i < nparams; i++)
     {
       a = sc->vptr->pair_cdr (a);
 
@@ -843,203 +833,260 @@ fprintf (stderr, "      string arg is '%s'\n", args[i].data.d_string);
           break;
 
         case GIMP_PDB_INT32ARRAY:
-          array = sc->vptr->pair_car (a);
-          if (!sc->vptr->is_array (array))
+          vector = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_vector (vector))
             success = FALSE;
           if (success)
-          {
-            if (arraytype (array) != array_int32)
             {
-                g_snprintf (error_str, sizeof (error_str),
-                            "Expected INT32ARRAY for argument %d in call to procedure %s\n",
-                            i+1, proc_name);
-                return my_err (error_str, array);
-            }
+              n_elements = args[i-1].data.d_int32;
+              if (n_elements < 0 || n_elements > sc->vptr->vector_length (vector))
+                {
+                  g_snprintf (error_str, sizeof (error_str),
+                              "INT32 vector (argument %d) for function %s has "
+                              "size of %ld but expected size of %d",
+                              i+1, proc_name, sc->vptr->vector_length (vector), n_elements);
+                  return my_err (error_str, sc->NIL);
+                }
 
-            n_elements = args[i-1].data.d_int32;
-            if (n_elements < 0 || n_elements > arraylength (array))
-            {
-              g_snprintf (error_str, sizeof (error_str),
-                          "INT32 array (argument %d) for function %s has "
-                          "size of %d but expected size of %d",
-                          i+1, proc_name, arraylength (array), n_elements);
-              return my_err (error_str, sc->NIL);
-            }
+              /* FIXME: Check that g_new returned non-NULL value. */
+              args[i].data.d_int32array = g_new (gint32, n_elements);
 
-            args[i].data.d_int32array = (gint32*) arrayvalue (array);
+              for (j = 0; j < n_elements; j++)
+                {
+                  pointer v_element = sc->vptr->vector_elem (vector, j);
+
+                  /* FIXME: Check values in vector stay within range for each type. */
+                  if (!sc->vptr->is_integer (v_element))
+                    {
+                      g_snprintf (error_str, sizeof (error_str),
+                                  "Item %d in vector is not INT32 (argument %d for function %s)\n",
+                                  j+1, i+1, proc_name);
+                      return my_err (error_str, vector);
+                    }
+
+                  args[i].data.d_int32array[j] =
+                      (gint32) sc->vptr->ivalue (v_element);
+                }
+
 #if DEBUG_MARSHALL
 {
-gint32 *data;
-int j;
-data = (gint32*) arrayvalue (array);
-fprintf (stderr, "      int32 array has %d elements\n", n_elements);
-fprintf (stderr, "     ");
-for (j = 0; j < n_elements; ++j)
-  fprintf (stderr, " %d", data[j]);
-fprintf (stderr, "\n");
-}
-#endif
-  }
-  break;
-
-case GIMP_PDB_INT16ARRAY:
-  array = sc->vptr->pair_car (a);
-  if (!sc->vptr->is_array (array))
-    success = FALSE;
-  if (success)
+glong count = sc->vptr->vector_length (vector);
+fprintf (stderr, "      int32 vector has %ld elements\n", count);
+if (count > 0)
   {
-    if (arraytype (array) != array_int16)
-    {
-        g_snprintf (error_str, sizeof (error_str),
-                    "Expected INT16ARRAY for argument %d in call to procedure %s\n",
-                    i+1, proc_name);
-        return my_err (error_str, array);
-    }
-
-    n_elements = args[i-1].data.d_int32;
-    if (n_elements < 0 || n_elements > arraylength (array))
-    {
-      g_snprintf (error_str, sizeof (error_str),
-                  "INT16 array (argument %d) for function %s has "
-                  "size of %d but expected size of %d",
-                  i+1, proc_name, arraylength (array), n_elements);
-      return my_err (error_str, sc->NIL);
-    }
-
-    args[i].data.d_int16array = (gint16*) arrayvalue (array);
-#if DEBUG_MARSHALL
-{
-gint16 *data;
-int j;
-data = (gint16*) arrayvalue (array);
-fprintf (stderr, "      int16 array has %d elements\n", n_elements);
-fprintf (stderr, "     ");
-for (j = 0; j < n_elements; ++j)
-  fprintf (stderr, " %d", data[j]);
-fprintf (stderr, "\n");
+    fprintf (stderr, "     ");
+    for (j = 0; j < count; ++j)
+      fprintf (stderr, " %ld",
+               sc->vptr->ivalue ( sc->vptr->vector_elem (vector, j) ));
+    fprintf (stderr, "\n");
+  }
 }
 #endif
-          }
+            }
+          break;
+
+        case GIMP_PDB_INT16ARRAY:
+          vector = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_vector (vector))
+            success = FALSE;
+          if (success)
+            {
+              n_elements = args[i-1].data.d_int32;
+              if (n_elements < 0 || n_elements > sc->vptr->vector_length (vector))
+                {
+                  g_snprintf (error_str, sizeof (error_str),
+                              "INT16 vector (argument %d) for function %s has "
+                              "size of %ld but expected size of %d",
+                              i+1, proc_name, sc->vptr->vector_length (vector), n_elements);
+                  return my_err (error_str, sc->NIL);
+                }
+
+              args[i].data.d_int16array = g_new (gint16, n_elements);
+
+              for (j = 0; j < n_elements; j++)
+                {
+                  pointer v_element = sc->vptr->vector_elem (vector, j);
+
+                  if (!sc->vptr->is_integer (v_element))
+                    {
+                      g_snprintf (error_str, sizeof (error_str),
+                                  "Item %d in vector is not INT16 (argument %d for function %s)\n",
+                                  j+1, i+1, proc_name);
+                      return my_err (error_str, vector);
+                    }
+
+                  args[i].data.d_int16array[j] =
+                      (gint16) sc->vptr->ivalue (v_element);
+                }
+
+#if DEBUG_MARSHALL
+{
+glong count = sc->vptr->vector_length (vector);
+fprintf (stderr, "      int16 vector has %ld elements\n", count);
+if (count > 0)
+  {
+    fprintf (stderr, "     ");
+    for (j = 0; j < count; ++j)
+      fprintf (stderr, " %ld",
+               sc->vptr->ivalue ( sc->vptr->vector_elem (vector, j) ));
+    fprintf (stderr, "\n");
+  }
+}
+#endif
+            }
           break;
 
         case GIMP_PDB_INT8ARRAY:
-          array = sc->vptr->pair_car (a);
-          if (!sc->vptr->is_array (array))
+          vector = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_vector (vector))
             success = FALSE;
           if (success)
-          {
-            if (arraytype (array) != array_int8)
             {
-                g_snprintf (error_str, sizeof (error_str),
-                            "Expected INT32ARRAY for argument %d in call to procedure %s\n",
-                            i+1, proc_name);
-                return my_err (error_str, array);
-            }
+              n_elements = args[i-1].data.d_int32;
+              if (n_elements < 0 || n_elements > sc->vptr->vector_length (vector))
+                {
+                  g_snprintf (error_str, sizeof (error_str),
+                              "INT8 vector (argument %d) for function %s has "
+                              "size of %ld but expected size of %d",
+                              i+1, proc_name, sc->vptr->vector_length (vector), n_elements);
+                  return my_err (error_str, sc->NIL);
+                }
 
-            n_elements = args[i-1].data.d_int32;
-            if (n_elements < 0 || n_elements > arraylength (array))
-            {
-              g_snprintf (error_str, sizeof (error_str),
-                          "INT8 array (argument %d) for function %s has "
-                          "size of %d but expected size of %d",
-                          i+1, proc_name, arraylength (array), n_elements);
-              return my_err (error_str, sc->NIL);
-            }
+              args[i].data.d_int8array = g_new (guint8, n_elements);
 
-            args[i].data.d_int8array = (guint8*) arrayvalue (array);
+              for (j = 0; j < n_elements; j++)
+                {
+                  pointer v_element = sc->vptr->vector_elem (vector, j);
+
+                  if (!sc->vptr->is_integer (v_element))
+                    {
+                      g_snprintf (error_str, sizeof (error_str),
+                                  "Item %d in vector is not INT8 (argument %d for function %s)\n",
+                                  j+1, i+1, proc_name);
+                      return my_err (error_str, vector);
+                    }
+
+                  args[i].data.d_int8array[j] =
+                      (guint8) sc->vptr->ivalue (v_element);
+                }
+
 #if DEBUG_MARSHALL
 {
-guint8 *data;
-int j;
-data = (guint8*) arrayvalue (array);
-fprintf (stderr, "      int8 array has %d elements\n", n_elements);
-fprintf (stderr, "     ");
-for (j = 0; j < n_elements; ++j)
-  fprintf (stderr, " %u", data[j]);
-fprintf (stderr, "\n");
+glong count = sc->vptr->vector_length (vector);
+fprintf (stderr, "      int8 vector has %ld elements\n", count);
+if (count > 0)
+  {
+    fprintf (stderr, "     ");
+    for (j = 0; j < count; ++j)
+      fprintf (stderr, " %ld",
+               sc->vptr->ivalue ( sc->vptr->vector_elem (vector, j) ));
+    fprintf (stderr, "\n");
+  }
 }
 #endif
-          }
+            }
           break;
 
         case GIMP_PDB_FLOATARRAY:
-          array = sc->vptr->pair_car (a);
-          if (!sc->vptr->is_array (array))
+          vector = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_vector (vector))
             success = FALSE;
           if (success)
-          {
-            if (arraytype (array) != array_float)
             {
-                g_snprintf (error_str, sizeof (error_str),
-                            "Expected FLOATARRAY for argument %d in call to procedure %s\n",
-                            i+1, proc_name);
-                return my_err (error_str, array);
-            }
+              n_elements = args[i-1].data.d_int32;
+              if (n_elements < 0 || n_elements > sc->vptr->vector_length (vector))
+                {
+                  g_snprintf (error_str, sizeof (error_str),
+                              "FLOAT vector (argument %d) for function %s has "
+                              "size of %ld but expected size of %d",
+                              i+1, proc_name, sc->vptr->vector_length (vector), n_elements);
+                  return my_err (error_str, sc->NIL);
+                }
 
-            n_elements = args[i-1].data.d_int32;
-            if (n_elements < 0 || n_elements > arraylength (array))
-            {
-              g_snprintf (error_str, sizeof (error_str),
-                          "FLOAT array (argument %d) for function %s has "
-                          "size of %d but expected size of %d",
-                          i+1, proc_name, arraylength (array), n_elements);
-              return my_err (error_str, sc->NIL);
-            }
+              args[i].data.d_floatarray = g_new (gdouble, n_elements);
 
-            args[i].data.d_floatarray = (gdouble*) arrayvalue (array);
+              for (j = 0; j < n_elements; j++)
+                {
+                  pointer v_element = sc->vptr->vector_elem (vector, j);
+
+                  if (!sc->vptr->is_number (v_element))
+                    {
+                      g_snprintf (error_str, sizeof (error_str),
+                                  "Item %d in vector is not FLOAT (argument %d for function %s)\n",
+                                  j+1, i+1, proc_name);
+                      return my_err (error_str, vector);
+                    }
+
+                  args[i].data.d_floatarray[j] =
+                      (gfloat) sc->vptr->rvalue (v_element);
+                }
+
 #if DEBUG_MARSHALL
 {
-gdouble *data;
-int j;
-data = (gdouble*) arrayvalue (array);
-fprintf (stderr, "      float array has %d elements\n", n_elements);
-fprintf (stderr, "     ");
-for (j = 0; j < n_elements; ++j)
-  fprintf (stderr, " %f", data[j]);
-fprintf (stderr, "\n");
+glong count = sc->vptr->vector_length (vector);
+fprintf (stderr, "      float vector has %ld elements\n", count);
+if (count > 0)
+  {
+    fprintf (stderr, "     ");
+    for (j = 0; j < count; ++j)
+      fprintf (stderr, " %f",
+               sc->vptr->rvalue ( sc->vptr->vector_elem (vector, j) ));
+    fprintf (stderr, "\n");
+  }
 }
 #endif
-          }
+            }
           break;
 
         case GIMP_PDB_STRINGARRAY:
-          array = sc->vptr->pair_car (a);
-          if (!sc->vptr->is_array (array))
+          vector = sc->vptr->pair_car (a);
+          if (!sc->vptr->is_vector (vector))
             success = FALSE;
           if (success)
-          {
-            if (arraytype (array) != array_string)
             {
-                g_snprintf (error_str, sizeof (error_str),
-                            "Expected STRINGARRAY for argument %d in call to procedure %s\n",
-                            i+1, proc_name);
-                return my_err (error_str, sc->vptr->pair_car (a));
-            }
+              n_elements = args[i-1].data.d_int32;
+              if (n_elements < 0 || n_elements > sc->vptr->vector_length (vector))
+                {
+                  g_snprintf (error_str, sizeof (error_str),
+                              "STRING vector (argument %d) for function %s has "
+                              "length of %ld but expected length of %d",
+                              i+1, proc_name, sc->vptr->vector_length (vector), n_elements);
+                  return my_err (error_str, sc->NIL);
+                }
 
-            n_elements = args[i-1].data.d_int32;
-            if (n_elements < 0 || n_elements > arraylength (array))
-            {
-              g_snprintf (error_str, sizeof (error_str),
-                          "STRING array (argument %d) for function %s has "
-                          "length of %d but expected length of %d",
-                          i+1, proc_name, arraylength (array), n_elements);
-              return my_err (error_str, sc->NIL);
-            }
+              args[i].data.d_stringarray = g_new (gchar *, n_elements);
 
-            args[i].data.d_stringarray = (gchar**) arrayvalue (array);
+              for (j = 0; j < n_elements; j++)
+                {
+                  pointer v_element = sc->vptr->vector_elem (vector, j);
+
+                  if (!sc->vptr->is_string (v_element))
+                    {
+                      g_snprintf (error_str, sizeof (error_str),
+                                  "Item %d in vector is not STRING (argument %d for function %s)\n",
+                                  j+1, i+1, proc_name);
+                      return my_err (error_str, vector);
+                    }
+
+                  args[i].data.d_stringarray[j] =
+                      (gchar *) sc->vptr->string_value (v_element);
+                }
+
 #if DEBUG_MARSHALL
 {
-gchar **data;
-int j;
-data = (gchar**) arrayvalue (array);
-fprintf (stderr, "      string array has %d elements\n", n_elements);
-fprintf (stderr, "     ");
-for (j = 0; j < n_elements; ++j)
-  fprintf (stderr, " \"%s\"", data[j]);
-fprintf (stderr, "\n");
+glong count = sc->vptr->vector_length (vector);
+fprintf (stderr, "      string vector has %ld elements\n", count);
+if (count > 0)
+  {
+    fprintf (stderr, "     ");
+    for (j = 0; j < count; ++j)
+      fprintf (stderr, " \"%s\"",
+               sc->vptr->string_value ( sc->vptr->vector_elem (vector, j) ));
+    fprintf (stderr, "\n");
+  }
 }
 #endif
-          }
+            }
           break;
 
         case GIMP_PDB_COLOR:
@@ -1194,15 +1241,15 @@ fprintf (stderr, "  done.\n");
 }
 #endif
   else
-  {
+    {
 #if DEBUG_MARSHALL
 fprintf (stderr, "  Invalid type for argument %d\n", i+1);
 #endif
-    g_snprintf (error_str, sizeof (error_str),
-                "Invalid type for argument %d to %s",
-                i+1, proc_name);
-    return my_err (error_str, sc->NIL);
-  }
+      g_snprintf (error_str, sizeof (error_str),
+                  "Invalid type for argument %d to %s",
+                  i+1, proc_name);
+      return my_err (error_str, sc->NIL);
+    }
 
   /*  Check the return status  */
   if (! values)
@@ -1259,30 +1306,45 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
             case GIMP_PDB_SELECTION:
             case GIMP_PDB_BOUNDARY:
             case GIMP_PDB_VECTORS:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int32),
-                                 return_val);
+              return_val = sc->vptr->cons (sc,
+                             sc->vptr->mk_integer (sc,
+                                                   values[i + 1].data.d_int32),
+                                                   return_val);
+              set_safe_foreign (sc, return_val);
               break;
 
             case GIMP_PDB_INT16:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int16),
-                                 return_val);
+              return_val = sc->vptr->cons (sc,
+                             sc->vptr->mk_integer (sc,
+                                                   values[i + 1].data.d_int16),
+                                                   return_val);
+              set_safe_foreign (sc, return_val);
               break;
 
             case GIMP_PDB_INT8:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, values[i + 1].data.d_int8),
-                                 return_val);
+              return_val = sc->vptr->cons (sc,
+                             sc->vptr->mk_integer (sc,
+                                                   values[i + 1].data.d_int8),
+                                                   return_val);
+              set_safe_foreign (sc, return_val);
               break;
 
             case GIMP_PDB_FLOAT:
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_real (sc, values[i + 1].data.d_float),
-                                 return_val);
+              return_val = sc->vptr->cons (sc,
+                             sc->vptr->mk_real (sc,
+                                                values[i + 1].data.d_float),
+                                                return_val);
+              set_safe_foreign (sc, return_val);
               break;
 
             case GIMP_PDB_STRING:
               string = values[i + 1].data.d_string;
               if (! string)
                 string = "";
-              return_val = sc->vptr->cons (sc, sc->vptr->mk_string (sc, string), return_val);
+              return_val = sc->vptr->cons (sc,
+                                           sc->vptr->mk_string (sc, string),
+                                           return_val);
+              set_safe_foreign (sc, return_val);
               break;
 
             case GIMP_PDB_INT32ARRAY:
@@ -1291,12 +1353,18 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                */
               {
                 gint32  num_int32s = values[i].data.d_int32;
-                gint32 *array  = (gint32 *) values[i + 1].data.d_int32array;
-                pointer int_cell = sc->vptr->mk_array (sc, num_int32s, array_int32);
-                gint32 *avalue = (gint32 *) arrayvalue (int_cell);
+                gint32 *array      = (gint32 *) values[i + 1].data.d_int32array;
+                pointer vector     = sc->vptr->mk_vector (sc, num_int32s);
 
-                g_memmove(avalue, array, num_int32s*sizeof(gint32));
-                return_val = sc->vptr->cons (sc, int_cell, return_val);
+                return_val = sc->vptr->cons (sc, vector, return_val);
+                set_safe_foreign (sc, return_val);
+
+                for (j = 0; j < num_int32s; j++)
+                  {
+                    sc->vptr->set_vector_elem (vector, j,
+                                               sc->vptr->mk_integer (sc,
+                                                                     array[j]));
+                  }
               }
               break;
 
@@ -1306,12 +1374,18 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                */
               {
                 gint32  num_int16s = values[i].data.d_int32;
-                gint16 *array  = (gint16 *) values[i + 1].data.d_int16array;
-                pointer int_cell = sc->vptr->mk_array (sc, num_int16s, array_int16);
-                gint16 *avalue = (gint16 *) arrayvalue (int_cell);
+                gint16 *array      = (gint16 *) values[i + 1].data.d_int16array;
+                pointer vector     = sc->vptr->mk_vector (sc, num_int16s);
 
-                g_memmove(avalue, array, num_int16s*sizeof(gint16));
-                return_val = sc->vptr->cons (sc, int_cell, return_val);
+                return_val = sc->vptr->cons (sc, vector, return_val);
+                set_safe_foreign (sc, return_val);
+
+                for (j = 0; j < num_int16s; j++)
+                  {
+                    sc->vptr->set_vector_elem (vector, j,
+                                               sc->vptr->mk_integer (sc,
+                                                                     array[j]));
+                  }
               }
               break;
 
@@ -1321,12 +1395,18 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                */
               {
                 gint32  num_int8s  = values[i].data.d_int32;
-                guint8 *array  = (guint8 *) values[i + 1].data.d_int8array;
-                pointer int_cell = sc->vptr->mk_array (sc, num_int8s, array_int8);
-                guint8 *avalue = (guint8 *) arrayvalue (int_cell);
+                guint8 *array      = (guint8 *) values[i + 1].data.d_int8array;
+                pointer vector     = sc->vptr->mk_vector (sc, num_int8s);
 
-                g_memmove(avalue, array, num_int8s*sizeof(guint8));
-                return_val = sc->vptr->cons (sc, int_cell, return_val);
+                return_val = sc->vptr->cons (sc, vector, return_val);
+                set_safe_foreign (sc, return_val);
+
+                for (j = 0; j < num_int8s; j++)
+                  {
+                    sc->vptr->set_vector_elem (vector, j,
+                                               sc->vptr->mk_integer (sc,
+                                                                     array[j]));
+                  }
               }
               break;
 
@@ -1337,11 +1417,17 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
               {
                 gint32   num_floats = values[i].data.d_int32;
                 gdouble *array  = (gdouble *) values[i + 1].data.d_floatarray;
-                pointer  float_cell = sc->vptr->mk_array (sc, num_floats, array_float);
-                gdouble *avalue = (gdouble *) arrayvalue (float_cell);
+                pointer  vector = sc->vptr->mk_vector (sc, num_floats);
 
-                g_memmove(avalue, array, num_floats*sizeof(gdouble));
-                return_val = sc->vptr->cons (sc, float_cell, return_val);
+                return_val = sc->vptr->cons (sc, vector, return_val);
+                set_safe_foreign (sc, return_val);
+
+                for (j = 0; j < num_floats; j++)
+                  {
+                    sc->vptr->set_vector_elem (vector, j,
+                                               sc->vptr->mk_real (sc,
+                                                                  array[j]));
+                  }
               }
               break;
 
@@ -1350,20 +1436,19 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                *  return value contains the number of strings in the array
                */
               {
-                gint32  j;
                 gint    num_strings = values[i].data.d_int32;
                 gchar **array  = (gchar **) values[i + 1].data.d_stringarray;
-                pointer string_cell = sc->vptr->mk_array (sc, num_strings, array_string);
-                gchar **avalue = (gchar **) string_cell->_object._array._avalue;
+                pointer vector = sc->vptr->mk_vector (sc, num_strings);
 
-                for (j = 0; j < num_strings; ++j)
+                return_val = sc->vptr->cons (sc, vector, return_val);
+                set_safe_foreign (sc, return_val);
+
+                for (j = 0; j < num_strings; j++)
                   {
-                    if (array[j] == NULL)
-                       avalue[j] = array[j];
-                    else
-                       avalue[j] = g_strdup (array[j]);
+                    sc->vptr->set_vector_elem (vector, j,
+                                               sc->vptr->mk_string (sc,
+                                                                    array[j]));
                   }
-                return_val = sc->vptr->cons (sc, string_cell, return_val);
               }
               break;
 
@@ -1373,11 +1458,17 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
 
                 gimp_rgb_get_uchar (&values[i + 1].data.d_color, &r, &g, &b);
 
-                intermediate_val = sc->vptr->cons (sc, sc->vptr->mk_integer (sc, r),
-                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, g),
-                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, b),
-                                                   sc->NIL)));
-                return_val = sc->vptr->cons (sc, intermediate_val, return_val);
+                intermediate_val = sc->vptr->cons (sc,
+                    sc->vptr->mk_integer (sc, r),
+                    sc->vptr->cons (sc,
+                        sc->vptr->mk_integer (sc, g),
+                        sc->vptr->cons (sc,
+                            sc->vptr->mk_integer (sc, b),
+                            sc->NIL)));
+                return_val = sc->vptr->cons (sc,
+                                             intermediate_val,
+                                             return_val);
+                set_safe_foreign (sc, return_val);
                 break;
               }
 
@@ -1391,39 +1482,46 @@ fprintf (stderr, "      value %d is type %s (%d)\n",
                 h = values[i + 1].data.d_region.height;
 
                 intermediate_val = sc->vptr->cons (sc,
-                                                   sc->vptr->mk_integer (sc, x),
-                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, y),
-                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, w),
-                                                   sc->vptr->cons (sc, sc->vptr->mk_integer (sc, h),
-                                                   sc->NIL))));
-                return_val = sc->vptr->cons (sc, intermediate_val, return_val);
+                    sc->vptr->mk_integer (sc, x),
+                    sc->vptr->cons (sc,
+                        sc->vptr->mk_integer (sc, y),
+                        sc->vptr->cons (sc,
+                            sc->vptr->mk_integer (sc, w),
+                            sc->vptr->cons (sc,
+                                sc->vptr->mk_integer (sc, h),
+                                sc->NIL))));
+                return_val = sc->vptr->cons (sc,
+                                             intermediate_val,
+                                             return_val);
+                set_safe_foreign (sc, return_val);
                 break;
               }
               break;
 
             case GIMP_PDB_PARASITE:
               {
-                pointer name, flags, data;
-
                 if (values[i + 1].data.d_parasite.name == NULL)
                     return_val = my_err ("Error: null parasite", sc->NIL);
                 else
                   {
-                    name    = sc->vptr->mk_string (sc,
-                                       values[i + 1].data.d_parasite.name);
+                    /* don't move the mk_foo() calls outside this function call,
+                     * otherwise they might be garbage collected away!  */
+                    intermediate_val = sc->vptr->cons (sc,
+                        sc->vptr->mk_string (sc,
+                                             values[i + 1].data.d_parasite.name),
+                        sc->vptr->cons (sc,
+                            sc->vptr->mk_integer (sc,
+                                                  values[i + 1].data.d_parasite.flags),
+                            sc->vptr->cons (sc,
+                                sc->vptr->mk_counted_string (sc,
+                                                             values[i + 1].data.d_parasite.data,
+                                                             values[i + 1].data.d_parasite.size),
+                                 sc->NIL)));
+                    return_val = sc->vptr->cons (sc,
+                                                 intermediate_val,
+                                                 return_val);
+                    set_safe_foreign (sc, return_val);
 
-                    flags   = sc->vptr->mk_integer (sc,
-                                       values[i + 1].data.d_parasite.flags);
-
-                    data    = sc->vptr->mk_counted_string (sc,
-                                       values[i + 1].data.d_parasite.data,
-                                       values[i + 1].data.d_parasite.size);
-
-                    intermediate_val = sc->vptr->cons (sc, name,
-                                             sc->vptr->cons (sc, flags,
-                                             sc->vptr->cons (sc, data,
-                                                            sc->NIL)));
-                    return_val = sc->vptr->cons (sc, intermediate_val, return_val);
 #if DEBUG_MARSHALL
 fprintf (stderr, "      name '%s'\n", values[i+1].data.d_parasite.name);
 fprintf (stderr, "      flags %d", values[i+1].data.d_parasite.flags);
@@ -1450,15 +1548,15 @@ fprintf (stderr, "      data '%.*s'\n",
       break;
     }
 
-  /* If we have no return value (s) from PDB call, return */
+  /* If we have no return value(s) from PDB call, return */
   /* either TRUE or FALSE to indicate if call succeeded. */
   if (return_val == sc->NIL)
-  {
-    if (values[0].data.d_status == GIMP_PDB_SUCCESS)
-       return_val = sc->vptr->cons (sc, sc->T, sc->NIL);
-    else
-       return_val = sc->vptr->cons (sc, sc->F, sc->NIL);
-  }
+    {
+      if (values[0].data.d_status == GIMP_PDB_SUCCESS)
+         return_val = sc->vptr->cons (sc, sc->T, sc->NIL);
+      else
+         return_val = sc->vptr->cons (sc, sc->F, sc->NIL);
+    }
 
   /*  free the proc name  */
   g_free (proc_name);
@@ -1479,8 +1577,8 @@ fprintf (stderr, "      data '%.*s'\n",
   g_free (return_vals);
 
   /*  if we're in server mode, listen for additional commands for 10 ms  */
-  if (tiny_fu_server_get_mode ())
-    tiny_fu_server_listen (10);
+  if (script_fu_server_get_mode ())
+    script_fu_server_listen (10);
 
 #ifdef GDK_WINDOWING_WIN32
   /* This seems to help a lot on Windoze. */
@@ -1492,27 +1590,27 @@ fprintf (stderr, "      data '%.*s'\n",
 }
 
 static pointer
-tiny_fu_register_call (scheme *sc, pointer a)
+script_fu_register_call (scheme *sc, pointer a)
 {
   if (register_scripts)
-    return tiny_fu_add_script (sc, a);
+    return script_fu_add_script (sc, a);
   else
     return sc->NIL;
 }
 
 static pointer
-tiny_fu_menu_register_call (scheme *sc, pointer a)
+script_fu_menu_register_call (scheme *sc, pointer a)
 {
   if (register_scripts)
-    return tiny_fu_add_menu (sc, a);
+    return script_fu_add_menu (sc, a);
   else
     return sc->NIL;
 }
 
 static pointer
-tiny_fu_quit_call (scheme *sc, pointer a)
+script_fu_quit_call (scheme *sc, pointer a)
 {
-  tiny_fu_server_quit ();
+  script_fu_server_quit ();
 
   scheme_deinit (sc);
 

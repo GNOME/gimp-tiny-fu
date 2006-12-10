@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -16,8 +16,8 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#ifndef __TINY_FU_TYPES_H__
-#define __TINY_FU_TYPES_H__
+#ifndef __SCRIPT_FU_TYPES_H__
+#define __SCRIPT_FU_TYPES_H__
 
 
 #include "tiny-fu-enums.h"
@@ -66,6 +66,7 @@ typedef union
   gint32         sfa_drawable;
   gint32         sfa_layer;
   gint32         sfa_channel;
+  gint32         sfa_vectors;
   GimpRGB        sfa_color;
   gint32         sfa_toggle;
   gchar         *sfa_value;
@@ -98,4 +99,4 @@ typedef struct
 } SFScript;
 
 
-#endif /*  __TINY_FU_TYPES__  */
+#endif /*  __SCRIPT_FU_TYPES__  */

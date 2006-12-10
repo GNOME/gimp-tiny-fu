@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -53,26 +53,26 @@ typedef struct
  *  Local Functions
  */
 
-static void       tiny_fu_load_script   (const GimpDatafileData *file_data,
-                                               gpointer          user_data);
-static gboolean   tiny_fu_install_script      (gpointer          foo,
-                                               GList            *scripts,
-                                               gpointer          bar);
-static void       tiny_fu_install_menu        (SFMenu           *menu);
-static gboolean   tiny_fu_remove_script       (gpointer          foo,
-                                               GList            *scripts,
-                                               gpointer          bar);
-static void       tiny_fu_script_proc         (const gchar      *name,
-                                               gint              nparams,
-                                               const GimpParam  *params,
-                                               gint             *nreturn_vals,
-                                               GimpParam       **return_vals);
+static void      script_fu_load_script    (const GimpDatafileData *file_data,
+                                           gpointer                user_data);
+static gboolean  script_fu_install_script (gpointer                foo,
+                                           GList                  *scripts,
+                                           gpointer                bar);
+static void      script_fu_install_menu   (SFMenu                 *menu);
+static gboolean  script_fu_remove_script  (gpointer                foo,
+                                           GList                  *scripts,
+                                           gpointer                bar);
+static void      script_fu_script_proc    (const gchar            *name,
+                                           gint                    nparams,
+                                           const GimpParam        *params,
+                                           gint                   *nreturn_vals,
+                                           GimpParam             **return_vals);
 
-static SFScript * tiny_fu_find_script         (const gchar      *name);
-static void       tiny_fu_free_script         (SFScript         *script);
+static SFScript *script_fu_find_script    (const gchar            *name);
+static void      script_fu_free_script    (SFScript               *script);
 
-static gint       tiny_fu_menu_compare        (gconstpointer     a,
-                                               gconstpointer     b);
+static gint      script_fu_menu_compare   (gconstpointer           a,
+                                           gconstpointer           b);
 
 
 /*
@@ -88,36 +88,36 @@ static GList *script_menu_list = NULL;
  */
 
 void
-tiny_fu_load_all_scripts (const gchar *path)
+script_fu_find_scripts (const gchar *path)
 {
   /*  Make sure to clear any existing scripts  */
   if (script_tree != NULL)
     {
       g_tree_foreach (script_tree,
-                      (GTraverseFunc) tiny_fu_remove_script,
+                      (GTraverseFunc) script_fu_remove_script,
                       NULL);
       g_tree_destroy (script_tree);
     }
 
   if (! path)
-      return;
+    return;
 
   script_tree = g_tree_new ((GCompareFunc) g_utf8_collate);
 
   gimp_datafiles_read_directories (path, G_FILE_TEST_IS_REGULAR,
-                                   tiny_fu_load_script,
+                                   script_fu_load_script,
                                    NULL);
 
   /*  Now that all scripts are read in and sorted, tell gimp about them  */
   g_tree_foreach (script_tree,
-                  (GTraverseFunc) tiny_fu_install_script,
+                  (GTraverseFunc) script_fu_install_script,
                   NULL);
 
   script_menu_list = g_list_sort (script_menu_list,
-                                  (GCompareFunc) tiny_fu_menu_compare);
+                                  (GCompareFunc) script_fu_menu_compare);
 
   g_list_foreach (script_menu_list,
-                  (GFunc) tiny_fu_install_menu,
+                  (GFunc) script_fu_install_menu,
                   NULL);
 
   /*  Now we are done with the list of menu entries  */
@@ -135,7 +135,7 @@ my_err(scheme *sc, char *msg)
 #endif
 
 pointer
-tiny_fu_add_script (scheme *sc, pointer a)
+script_fu_add_script (scheme *sc, pointer a)
 {
   GimpParamDef *args;
   SFScript     *script;
@@ -248,12 +248,13 @@ tiny_fu_add_script (scheme *sc, pointer a)
                 case SF_DRAWABLE:
                 case SF_LAYER:
                 case SF_CHANNEL:
+                case SF_VECTORS:
                   if (!sc->vptr->is_integer (sc->vptr->pair_car (a)))
                     return my_err (sc, "script-fu-register: drawable defaults must be integer values");
                   script->arg_defaults[i].sfa_image =
                       sc->vptr->ivalue (sc->vptr->pair_car (a));
                   script->arg_values[i].sfa_image =
-                      script->arg_defaults[i].sfa_image;
+                    script->arg_defaults[i].sfa_image;
 
                   switch (script->arg_types[i])
                     {
@@ -275,6 +276,11 @@ tiny_fu_add_script (scheme *sc, pointer a)
                     case SF_CHANNEL:
                       args[i + 1].type = GIMP_PDB_CHANNEL;
                       args[i + 1].name = "channel";
+                      break;
+
+                    case SF_VECTORS:
+                      args[i + 1].type = GIMP_PDB_VECTORS;
+                      args[i + 1].name = "vectors";
                       break;
 
                     default:
@@ -432,7 +438,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 
                   args[i + 1].type        = GIMP_PDB_STRING;
                   args[i + 1].name        = (script->arg_types[i] == SF_FILENAME ?
-                                               "filename" : "dirname");
+                                             "filename" : "dirname");
                   args[i + 1].description = script->arg_labels[i];
                  break;
 
@@ -614,7 +620,7 @@ tiny_fu_add_script (scheme *sc, pointer a)
 }
 
 pointer
-tiny_fu_add_menu (scheme *sc, pointer a)
+script_fu_add_menu (scheme *sc, pointer a)
 {
   SFScript    *script;
   SFMenu      *menu;
@@ -628,7 +634,7 @@ tiny_fu_add_menu (scheme *sc, pointer a)
   name = sc->vptr->string_value (sc->vptr->pair_car (a));
   a = sc->vptr->pair_cdr (a);
 
-  script = tiny_fu_find_script (name);
+  script = script_fu_find_script (name);
 
   if (! script)
   {
@@ -650,7 +656,7 @@ tiny_fu_add_menu (scheme *sc, pointer a)
 }
 
 void
-tiny_fu_error_msg (const gchar *command)
+script_fu_error_msg (const gchar *command)
 {
   g_message (_("Error while executing\n%s\n\n%s"),
              command, ts_get_error_msg ());
@@ -660,8 +666,8 @@ tiny_fu_error_msg (const gchar *command)
 /*  private functions  */
 
 static void
-tiny_fu_load_script (const GimpDatafileData *file_data,
-                     gpointer                user_data)
+script_fu_load_script (const GimpDatafileData *file_data,
+                       gpointer                user_data)
 {
   if (gimp_datafiles_check_extension (file_data->filename, ".scm"))
     {
@@ -671,8 +677,8 @@ tiny_fu_load_script (const GimpDatafileData *file_data,
       command = g_strdup_printf ("(load \"%s\")", escaped);
       g_free (escaped);
 
-      if (ts_interpret_string(command))
-          tiny_fu_error_msg (command);
+      if (ts_interpret_string (command))
+        script_fu_error_msg (command);
 
 #ifdef G_OS_WIN32
       /* No, I don't know why, but this is
@@ -690,9 +696,9 @@ tiny_fu_load_script (const GimpDatafileData *file_data,
  *  Please note that it frees the script->args structure.
  */
 static gboolean
-tiny_fu_install_script (gpointer  foo G_GNUC_UNUSED,
-                        GList    *scripts,
-                        gpointer  bar G_GNUC_UNUSED)
+script_fu_install_script (gpointer  foo G_GNUC_UNUSED,
+                          GList    *scripts,
+                          gpointer  bar G_GNUC_UNUSED)
 {
   GList *list;
 
@@ -716,7 +722,7 @@ tiny_fu_install_script (gpointer  foo G_GNUC_UNUSED,
                               GIMP_TEMPORARY,
                               script->num_args + 1, 0,
                               script->args, NULL,
-                              tiny_fu_script_proc);
+                              script_fu_script_proc);
 
       g_free (script->args);
       script->args = NULL;
@@ -726,7 +732,7 @@ tiny_fu_install_script (gpointer  foo G_GNUC_UNUSED,
 }
 
 static void
-tiny_fu_install_menu (SFMenu *menu)
+script_fu_install_menu (SFMenu *menu)
 {
   gimp_plugin_menu_register (menu->script->name, menu->menu_path);
 
@@ -738,9 +744,9 @@ tiny_fu_install_menu (SFMenu *menu)
  *  The following function is a GTraverseFunction.
  */
 static gboolean
-tiny_fu_remove_script (gpointer  foo G_GNUC_UNUSED,
-                       GList    *scripts,
-                       gpointer  bar G_GNUC_UNUSED)
+script_fu_remove_script (gpointer  foo G_GNUC_UNUSED,
+                         GList    *scripts,
+                         gpointer  bar G_GNUC_UNUSED)
 {
   GList *list;
 
@@ -748,7 +754,7 @@ tiny_fu_remove_script (gpointer  foo G_GNUC_UNUSED,
     {
       SFScript *script = list->data;
 
-      tiny_fu_free_script (script);
+      script_fu_free_script (script);
     }
 
   g_list_free (scripts);
@@ -757,11 +763,11 @@ tiny_fu_remove_script (gpointer  foo G_GNUC_UNUSED,
 }
 
 static void
-tiny_fu_script_proc (const gchar     *name,
-                     gint             nparams,
-                     const GimpParam *params,
-                     gint            *nreturn_vals,
-                     GimpParam      **return_vals)
+script_fu_script_proc (const gchar      *name,
+                       gint              nparams,
+                       const GimpParam  *params,
+                       gint             *nreturn_vals,
+                       GimpParam       **return_vals)
 {
   static GimpParam   values[1];
   GimpPDBStatusType  status = GIMP_PDB_SUCCESS;
@@ -771,7 +777,7 @@ tiny_fu_script_proc (const gchar     *name,
 
   run_mode = params[0].data.d_int32;
 
-  if (! (script = tiny_fu_find_script (name)))
+  if (! (script = script_fu_find_script (name)))
     {
       status = GIMP_PDB_CALLING_ERROR;
     }
@@ -793,9 +799,29 @@ tiny_fu_script_proc (const gchar     *name,
 
           if (nparams > 2 && params[2].type == GIMP_PDB_DRAWABLE &&
               script->num_args > 1 && script->arg_types[1] == SF_DRAWABLE)
-
             {
               script->arg_values[1].sfa_drawable = params[2].data.d_drawable;
+              min_args++;
+            }
+
+          if (nparams > 2 && params[2].type == GIMP_PDB_LAYER &&
+              script->num_args > 1 && script->arg_types[1] == SF_LAYER)
+            {
+              script->arg_values[1].sfa_layer = params[2].data.d_layer;
+              min_args++;
+            }
+
+          if (nparams > 2 && params[2].type == GIMP_PDB_CHANNEL &&
+              script->num_args > 1 && script->arg_types[1] == SF_CHANNEL)
+            {
+              script->arg_values[1].sfa_channel = params[2].data.d_channel;
+              min_args++;
+            }
+
+          if (nparams > 2 && params[2].type == GIMP_PDB_VECTORS &&
+              script->num_args > 1 && script->arg_types[1] == SF_VECTORS)
+            {
+              script->arg_values[1].sfa_vectors = params[2].data.d_vectors;
               min_args++;
             }
 
@@ -803,7 +829,7 @@ tiny_fu_script_proc (const gchar     *name,
           /*  Skip this part if the script takes no parameters */
           if (script->num_args > min_args)
             {
-              tiny_fu_interface (script, min_args);
+              script_fu_interface (script, min_args);
               break;
             }
           /*  else fallthrough  */
@@ -811,7 +837,7 @@ tiny_fu_script_proc (const gchar     *name,
         case GIMP_RUN_NONINTERACTIVE:
           /*  Make sure all the arguments are there!  */
           if (nparams != (script->num_args + 1))
-              status = GIMP_PDB_CALLING_ERROR;
+            status = GIMP_PDB_CALLING_ERROR;
 
           if (status == GIMP_PDB_SUCCESS)
             {
@@ -835,6 +861,7 @@ tiny_fu_script_proc (const gchar     *name,
                     case SF_DRAWABLE:
                     case SF_LAYER:
                     case SF_CHANNEL:
+                    case SF_VECTORS:
                       g_string_append_printf (s, "%d", param->data.d_int32);
                       break;
 
@@ -849,8 +876,8 @@ tiny_fu_script_proc (const gchar     *name,
                       break;
 
                     case SF_TOGGLE:
-                      g_string_append (s, (param->data.d_int32 ?
-                                           "TRUE" : "FALSE"));
+                      g_string_append_printf (s, (param->data.d_int32 ?
+                                                  "TRUE" : "FALSE"));
                       break;
 
                     case SF_VALUE:
@@ -899,8 +926,8 @@ tiny_fu_script_proc (const gchar     *name,
               command = g_string_free (s, FALSE);
 
               /*  run the command through the interpreter  */
-              if (ts_interpret_string(command))
-                 tiny_fu_error_msg (command);
+              if (ts_interpret_string (command))
+                script_fu_error_msg (command);
 
               g_free (command);
             }
@@ -920,9 +947,9 @@ tiny_fu_script_proc (const gchar     *name,
 
 /* this is a GTraverseFunction */
 static gboolean
-tiny_fu_lookup_script (gpointer      *foo G_GNUC_UNUSED,
-                       GList         *scripts,
-                       gconstpointer *name)
+script_fu_lookup_script (gpointer      *foo G_GNUC_UNUSED,
+                         GList         *scripts,
+                         gconstpointer *name)
 {
   GList *list;
 
@@ -942,12 +969,12 @@ tiny_fu_lookup_script (gpointer      *foo G_GNUC_UNUSED,
 }
 
 static SFScript *
-tiny_fu_find_script (const gchar *name)
+script_fu_find_script (const gchar *name)
 {
   gconstpointer script = name;
 
   g_tree_foreach (script_tree,
-                  (GTraverseFunc) tiny_fu_lookup_script,
+                  (GTraverseFunc) script_fu_lookup_script,
                   &script);
 
   if (script == name)
@@ -957,7 +984,7 @@ tiny_fu_find_script (const gchar *name)
 }
 
 static void
-tiny_fu_free_script (SFScript *script)
+script_fu_free_script (SFScript *script)
 {
   gint i;
 
@@ -967,8 +994,8 @@ tiny_fu_free_script (SFScript *script)
   gimp_uninstall_temp_proc (script->name);
 
   g_free (script->name);
-  g_free (script->menu_path);
   g_free (script->blurb);
+  g_free (script->menu_path);
   g_free (script->author);
   g_free (script->copyright);
   g_free (script->date);
@@ -983,6 +1010,7 @@ tiny_fu_free_script (SFScript *script)
         case SF_DRAWABLE:
         case SF_LAYER:
         case SF_CHANNEL:
+        case SF_VECTORS:
         case SF_COLOR:
           break;
 
@@ -1051,8 +1079,8 @@ tiny_fu_free_script (SFScript *script)
 }
 
 static gint
-tiny_fu_menu_compare (gconstpointer a,
-                      gconstpointer b)
+script_fu_menu_compare (gconstpointer a,
+                        gconstpointer b)
 {
   const SFMenu *menu_a = a;
   const SFMenu *menu_b = b;

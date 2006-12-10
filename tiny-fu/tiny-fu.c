@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -40,27 +40,27 @@
 
 /* Declare local functions. */
 
-static void    tiny_fu_query          (void);
-static void    tiny_fu_run            (const gchar      *name,
-                                       gint              nparams,
-                                       const GimpParam  *params,
-                                       gint             *nreturn_vals,
-                                       GimpParam       **return_vals);
-static gchar * tiny_fu_search_path    (void);
-static void    tiny_fu_extension_init (void);
-static void    tiny_fu_refresh_proc   (const gchar      *name,
-                                       gint              nparams,
-                                       const GimpParam  *params,
-                                       gint             *nreturn_vals,
-                                       GimpParam       **return_vals);
+static void    script_fu_query          (void);
+static void    script_fu_run            (const gchar      *name,
+                                         gint              nparams,
+                                         const GimpParam  *params,
+                                         gint             *nreturn_vals,
+                                         GimpParam       **return_vals);
+static gchar * script_fu_search_path    (void);
+static void    script_fu_extension_init (void);
+static void    script_fu_refresh_proc   (const gchar      *name,
+                                         gint              nparams,
+                                         const GimpParam  *params,
+                                         gint             *nreturn_vals,
+                                         GimpParam       **return_vals);
 
 
 const GimpPlugInInfo PLUG_IN_INFO =
 {
-  NULL,                /* init_proc  */
-  NULL,                /* quit_proc  */
-  tiny_fu_query,       /* query_proc */
-  tiny_fu_run          /* run_proc   */
+  NULL,             /* init_proc  */
+  NULL,             /* quit_proc  */
+  script_fu_query,  /* query_proc */
+  script_fu_run     /* run_proc   */
 };
 
 
@@ -68,7 +68,7 @@ MAIN ()
 
 
 static void
-tiny_fu_query (void)
+script_fu_query (void)
 {
   static const GimpParamDef console_args[] =
   {
@@ -93,10 +93,10 @@ tiny_fu_query (void)
     { GIMP_PDB_STRING, "logfile",  "The file to log server activity to" }
   };
 
-  gimp_plugin_domain_register (GETTEXT_PACKAGE, LOCALEDIR);
+  gimp_plugin_domain_register (GETTEXT_PACKAGE "-script-fu", NULL);
 
-  gimp_install_procedure ("extension-tiny-fu",
-                          "A Scheme interpreter for scripting GIMP operations",
+  gimp_install_procedure ("extension-script-fu",
+                          "A scheme interpreter for scripting GIMP operations",
                           "More help here later",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
@@ -109,7 +109,7 @@ tiny_fu_query (void)
   gimp_install_procedure ("plug-in-script-fu-console",
                           N_("Interactive console for Script-Fu development"),
                           "Provides an interface which allows interactive "
-                                      "Scheme development.",
+                                      "scheme development.",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -123,10 +123,10 @@ tiny_fu_query (void)
                              N_("<Toolbox>/Xtns/Languages/Script-Fu"));
 
   gimp_install_procedure ("plug-in-script-fu-text-console",
-                          "Provides a text console mode for Scheme "
-                                      "development",
+                          "Provides a text console mode for script-fu "
+                          "development",
                           "Provides an interface which allows interactive "
-                                      "Scheme development.",
+                          "scheme development.",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
                           "1997",
@@ -137,7 +137,7 @@ tiny_fu_query (void)
                           textconsole_args, NULL);
 
   gimp_install_procedure ("plug-in-script-fu-server",
-                          "Provides a server for remote script-fu operation",
+                          N_("Server for remote Script-Fu operation"),
                           "Provides a server for remote script-fu operation",
                           "Spencer Kimball & Peter Mattis",
                           "Spencer Kimball & Peter Mattis",
@@ -152,8 +152,8 @@ tiny_fu_query (void)
                              N_("<Toolbox>/Xtns/Languages/Script-Fu"));
 
   gimp_install_procedure ("plug-in-script-fu-eval",
-                          "Evaluate Scheme code",
-                          "Evaluate the code under the Scheme interpreter "
+                          "Evaluate scheme code",
+                          "Evaluate the code under the scheme interpreter "
                                       "(primarily for batch mode)",
                           "Manish Singh",
                           "Manish Singh",
@@ -166,49 +166,49 @@ tiny_fu_query (void)
 }
 
 static void
-tiny_fu_run (const gchar     *name,
-             gint             nparams,
-             const GimpParam *param,
-             gint            *nreturn_vals,
-             GimpParam      **return_vals)
+script_fu_run (const gchar      *name,
+               gint              nparams,
+               const GimpParam  *param,
+               gint             *nreturn_vals,
+               GimpParam       **return_vals)
 {
   gchar *path;
 
   INIT_I18N();
 
-  path = tiny_fu_search_path ();
+  path = script_fu_search_path ();
 
   ts_set_console_mode (0);
 
   /*  Determine before we allow scripts to register themselves
-   *   whether this is the base, automatically installed tiny-fu extension
+   *   whether this is the base, automatically installed script-fu extension
    */
-  if (strcmp (name, "extension-tiny-fu") == 0)
+  if (strcmp (name, "extension-script-fu") == 0)
     {
       /*  Setup auxillary temporary procedures for the base extension  */
-      tiny_fu_extension_init ();
+      script_fu_extension_init ();
 
-      /*  Init the interpreter and register scripts  */
+      /*  Init the interpreter and register scripts */
       tinyscheme_init (path, TRUE);
     }
   else
     {
-      /*  Init the interpreter and do not register scripts  */
+      /*  Init the interpreter  */
       tinyscheme_init (path, FALSE);
     }
 
   /*  Load all of the available scripts  */
-  tiny_fu_load_all_scripts (path);
+  script_fu_find_scripts (path);
 
   g_free (path);
 
-  if (strcmp (name, "extension-tiny-fu") == 0)
+  if (strcmp (name, "extension-script-fu") == 0)
     {
       /*
-       *  The main tiny-fu extension.
+       *  The main script-fu extension.
        */
 
-      static GimpParam values[1];
+      static GimpParam  values[1];
 
       /*  Acknowledge that the extension is properly initialized  */
       gimp_extension_ack ();
@@ -230,8 +230,8 @@ tiny_fu_run (const gchar     *name,
        *  The script-fu text console for interactive Scheme development
        */
 
-      tiny_fu_text_console_run (name, nparams, param,
-                                nreturn_vals, return_vals);
+      script_fu_text_console_run (name, nparams, param,
+                                  nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug-in-script-fu-console") == 0)
     {
@@ -239,8 +239,8 @@ tiny_fu_run (const gchar     *name,
        *  The script-fu console for interactive Scheme development
        */
 
-      tiny_fu_console_run (name, nparams, param,
-                           nreturn_vals, return_vals);
+      script_fu_console_run (name, nparams, param,
+                             nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug-in-script-fu-server") == 0)
     {
@@ -248,8 +248,8 @@ tiny_fu_run (const gchar     *name,
        *  The script-fu server for remote operation
        */
 
-      tiny_fu_server_run (name, nparams, param,
-                          nreturn_vals, return_vals);
+      script_fu_server_run (name, nparams, param,
+                            nreturn_vals, return_vals);
     }
   else if (strcmp (name, "plug-in-script-fu-eval") == 0)
     {
@@ -257,16 +257,16 @@ tiny_fu_run (const gchar     *name,
        *  A non-interactive "console" (for batch mode)
        */
 
-      tiny_fu_eval_run (name, nparams, param,
-                        nreturn_vals, return_vals);
+      script_fu_eval_run (name, nparams, param,
+                          nreturn_vals, return_vals);
     }
 }
 
 static gchar *
-tiny_fu_search_path (void)
+script_fu_search_path (void)
 {
   gchar  *path_str;
-  gchar  *path = NULL;
+  gchar  *path  = NULL;
 
   path_str = gimp_gimprc_query ("script-fu-path");
 
@@ -290,7 +290,7 @@ tiny_fu_search_path (void)
 }
 
 static void
-tiny_fu_extension_init (void)
+script_fu_extension_init (void)
 {
   static const GimpParamDef args[] =
   {
@@ -359,37 +359,40 @@ tiny_fu_extension_init (void)
                           GIMP_TEMPORARY,
                           G_N_ELEMENTS (args), 0,
                           args, NULL,
-                          tiny_fu_refresh_proc);
+                          script_fu_refresh_proc);
 
   gimp_plugin_menu_register ("script-fu-refresh",
                              N_("<Toolbox>/Xtns/Languages/Script-Fu"));
-
 }
 
 static void
-tiny_fu_refresh_proc (const gchar      *name,
-                      gint              nparams,
-                      const GimpParam  *params,
-                      gint             *nreturn_vals,
-                      GimpParam       **return_vals)
+script_fu_refresh_proc (const gchar      *name,
+                        gint              nparams,
+                        const GimpParam  *params,
+                        gint             *nreturn_vals,
+                        GimpParam       **return_vals)
 {
   static GimpParam  values[1];
-  GimpPDBStatusType status = GIMP_PDB_SUCCESS;
+  GimpPDBStatusType status;
 
-  if (tiny_fu_interface_is_dialog_open ())
+  if (script_fu_interface_is_active ())
     {
-      g_message ( _("When a Script-Fu dialog box is open you "
-                    "can not use \"Refresh Scripts\".") );
+      g_message (_("You can not use \"Refresh Scripts\" while a "
+                   "Script-Fu dialog box is open.  Please close "
+                   "all Script-Fu windows and try again."));
+
+      status = GIMP_PDB_EXECUTION_ERROR;
     }
   else
     {
       /*  Reload all of the available scripts  */
-      gchar *path = tiny_fu_search_path ();
+      gchar *path = script_fu_search_path ();
 
-      tiny_fu_load_all_scripts (path);
+      script_fu_find_scripts (path);
 
       g_free (path);
 
+      status = GIMP_PDB_SUCCESS;
     }
 
   *nreturn_vals = 1;

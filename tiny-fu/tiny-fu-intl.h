@@ -1,13 +1,13 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
- * tiny-fu-intl.h
+ * script-fu-intl.h
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
  * version 2 of the License, or (at your option) any later version.
- * 
+ *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
@@ -19,11 +19,11 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#ifndef __TINY_FU_INTL_H__
-#define __TINY_FU_INTL_H__
+#ifndef __SCRIPT_FU_INTL_H__
+#define __SCRIPT_FU_INTL_H__
 
 #ifndef GETTEXT_PACKAGE
-#error "config.h must be included prior to tiny-fu-intl.h"
+#error "config.h must be included prior to script-fu-intl.h"
 #endif
 
 #include <libintl.h>
@@ -41,11 +41,12 @@
 #    define bind_textdomain_codeset(Domain, Codeset) (Domain)
 #endif
 
-#define INIT_I18N()     G_STMT_START{        \
-  bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);        \
-  bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8"); \
-  textdomain (GETTEXT_PACKAGE);                       \
-} G_STMT_END
+#define INIT_I18N()	G_STMT_START{			          \
+  bindtextdomain (GETTEXT_PACKAGE"-script-fu",                    \
+                  gimp_locale_directory ());                      \
+  bind_textdomain_codeset (GETTEXT_PACKAGE"-script-fu", "UTF-8"); \
+  textdomain (GETTEXT_PACKAGE"-script-fu");                       \
+}G_STMT_END
 
 
-#endif /* __TINY_FU_INTL_H__ */
+#endif /* __SCRIPT_FU_INTL_H__ */

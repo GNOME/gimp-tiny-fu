@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -28,30 +28,29 @@
 #include "libgimp/gimp.h"
 
 #include "ts-wrapper.h"
-#include "script-fu-text-console.h"
+#include "tiny-fu-text-console.h"
 
 #include "tiny-fu-intl.h"
 
 
-static void tiny_fu_text_console_interface (void);
+static void   script_fu_text_console_interface (void);
 
 
 void
-tiny_fu_text_console_run (const gchar      *name,
-                          gint              nparams,
-                          const GimpParam  *params,
-                          gint             *nreturn_vals,
-                          GimpParam       **return_vals)
+script_fu_text_console_run (const gchar      *name,
+                            gint              nparams,
+                            const GimpParam  *params,
+                            gint             *nreturn_vals,
+                            GimpParam       **return_vals)
 {
   static GimpParam  values[1];
 
-  /*  Enable Tiny-Fu output  */
+  /*  Enable Script-Fu output  */
   ts_set_output_file (stdout);
-  ts_set_verbose_level (2);
   ts_print_welcome ();
 
   /*  Run the interface  */
-  tiny_fu_text_console_interface ();
+  script_fu_text_console_interface ();
 
   values[0].type          = GIMP_PDB_STATUS;
   values[0].data.d_status = GIMP_PDB_SUCCESS;
@@ -63,8 +62,8 @@ tiny_fu_text_console_run (const gchar      *name,
 static gboolean
 read_command (GString *command)
 {
-  gint   next;
-  gint   level = 0;
+  gint next;
+  gint level = 0;
 
   g_string_truncate (command, 0);
 
@@ -102,7 +101,7 @@ read_command (GString *command)
 }
 
 static void
-tiny_fu_text_console_interface (void)
+script_fu_text_console_interface (void)
 {
   GString *command = g_string_new (NULL);
 

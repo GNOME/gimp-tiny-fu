@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -16,10 +16,10 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#ifndef __TINY_FU_ENUMS_H__
-#define __TINY_FU_ENUMS_H__
+#ifndef __SCRIPT_FU_ENUMS_H__
+#define __SCRIPT_FU_ENUMS_H__
 
-/*  Typedefs for tiny-fu argument types  */
+/*  Typedefs for script-fu argument types  */
 
 typedef enum
 {
@@ -27,6 +27,7 @@ typedef enum
   SF_DRAWABLE,
   SF_LAYER,
   SF_CHANNEL,
+  SF_VECTORS,
   SF_COLOR,
   SF_TOGGLE,
   SF_VALUE,
@@ -50,4 +51,4 @@ typedef enum
   SF_SPINNER
 } SFAdjustmentType;
 
-#endif /*  __TINY_FU_ENUMS__  */
+#endif /*  __SCRIPT_FU_ENUMS__  */

@@ -1,4 +1,4 @@
-/* The GIMP -- an image manipulation program
+/* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
  * This program is free software; you can redistribute it and/or modify
@@ -34,6 +34,7 @@
 
 #include "tiny-fu-intl.h"
 
+
 #define TEXT_WIDTH  480
 #define TEXT_HEIGHT 400
 
@@ -56,8 +57,8 @@ typedef struct
   gint           history_max;
 } ConsoleInterface;
 
-
-enum TF_RESPONSES {
+enum
+{
   RESPONSE_CLEAR,
   RESPONSE_SAVE
 };
@@ -65,28 +66,29 @@ enum TF_RESPONSES {
 /*
  *  Local Functions
  */
-static void      tiny_fu_console_interface     (void);
-static void      tiny_fu_console_response      (GtkWidget        *widget,
-                                                gint              response_id,
-                                                ConsoleInterface *console);
-static void      tiny_fu_console_save_dialog   (ConsoleInterface *console);
-static void      tiny_fu_console_save_response (GtkWidget        *dialog,
-                                                gint              response_id,
-                                                ConsoleInterface *console);
-static void      tiny_fu_browse_callback       (GtkWidget        *widget,
-                                                ConsoleInterface *console);
-static void      tiny_fu_browse_response       (GtkWidget        *widget,
-                                                gint              response_id,
-                                                ConsoleInterface *console);
-static void      tiny_fu_browse_row_activated  (GtkDialog        *dialog);
+static void      script_fu_console_interface     (void);
+static void      script_fu_console_response      (GtkWidget        *widget,
+                                                  gint              response_id,
+                                                  ConsoleInterface *console);
+static void      script_fu_console_save_dialog   (ConsoleInterface *console);
+static void      script_fu_console_save_response (GtkWidget        *dialog,
+                                                  gint              response_id,
+                                                  ConsoleInterface *console);
 
-static gboolean  tiny_fu_cc_is_empty           (ConsoleInterface *console);
-static gboolean  tiny_fu_cc_key_function       (GtkWidget        *widget,
-                                                GdkEventKey      *event,
-                                                ConsoleInterface *console);
+static void      script_fu_browse_callback       (GtkWidget        *widget,
+                                                  ConsoleInterface *console);
+static void      script_fu_browse_response       (GtkWidget        *widget,
+                                                  gint              response_id,
+                                                  ConsoleInterface *console);
+static void      script_fu_browse_row_activated  (GtkDialog        *dialog);
 
-static void      tiny_fu_open_ts_console       (void);
-static void      tiny_fu_close_ts_console      (void);
+static gboolean  script_fu_cc_is_empty           (ConsoleInterface *console);
+static gboolean  script_fu_cc_key_function       (GtkWidget        *widget,
+                                                  GdkEventKey      *event,
+                                                  ConsoleInterface *console);
+
+static void      script_fu_open_ts_console       (void);
+static void      script_fu_close_ts_console      (void);
 
 
 /*
@@ -101,19 +103,19 @@ static GtkWidget *output = NULL;
  */
 
 void
-tiny_fu_console_run (const gchar      *name,
-                     gint              nparams,
-                     const GimpParam  *params,
-                     gint             *nreturn_vals,
-                     GimpParam       **return_vals)
+script_fu_console_run (const gchar      *name,
+                       gint              nparams,
+                       const GimpParam  *params,
+                       gint             *nreturn_vals,
+                       GimpParam       **return_vals)
 {
   static GimpParam  values[1];
 
-  tiny_fu_open_ts_console ();
+  script_fu_open_ts_console ();
 
-  tiny_fu_console_interface ();
+  script_fu_console_interface ();
 
-  tiny_fu_close_ts_console ();
+  script_fu_close_ts_console ();
 
   *nreturn_vals = 1;
   *return_vals  = values;
@@ -123,7 +125,7 @@ tiny_fu_console_run (const gchar      *name,
 }
 
 static void
-tiny_fu_console_interface (void)
+script_fu_console_interface (void)
 {
   ConsoleInterface *console;
   GtkWidget        *vbox;
@@ -131,7 +133,7 @@ tiny_fu_console_interface (void)
   GtkWidget        *scrolled_window;
   GtkWidget        *hbox;
 
-  gimp_ui_init ("tiny-fu", FALSE);
+  gimp_ui_init ("script-fu", FALSE);
 
   console = g_new0 (ConsoleInterface, 1);
 
@@ -159,7 +161,7 @@ tiny_fu_console_interface (void)
                              (gpointer) &console->dialog);
 
   g_signal_connect (console->dialog, "response",
-                    G_CALLBACK (tiny_fu_console_response),
+                    G_CALLBACK (script_fu_console_response),
                     console);
 
   /*  The main vbox  */
@@ -192,19 +194,19 @@ tiny_fu_console_interface (void)
 
   gtk_text_buffer_create_tag (console->console, "strong",
                               "weight", PANGO_WEIGHT_BOLD,
-                              "size",   PANGO_SCALE_LARGE,
+                              "scale",  PANGO_SCALE_LARGE,
                               NULL);
   gtk_text_buffer_create_tag (console->console, "emphasis",
                               "style",  PANGO_STYLE_OBLIQUE,
                               NULL);
 
   {
-    const gchar *greeting_texts[] =
+    const gchar * const greetings[] =
     {
       "strong",   _("Welcome to TinyScheme"),
       NULL,       "\n",
       NULL,       "Copyright (c) Dimitrios Souflis",
-      NULL,       "\n\n",
+      NULL,       "\n",
       "strong",   _("Script-Fu Console"),
       NULL,       " - ",
       "emphasis", _("Interactive Scheme Development"),
@@ -216,16 +218,16 @@ tiny_fu_console_interface (void)
 
     gtk_text_buffer_get_end_iter (console->console, &cursor);
 
-    for (i = 0; i < G_N_ELEMENTS (greeting_texts); i += 2)
+    for (i = 0; i < G_N_ELEMENTS (greetings); i += 2)
       {
-        if (greeting_texts[i])
+        if (greetings[i])
           gtk_text_buffer_insert_with_tags_by_name (console->console, &cursor,
-                                                    greeting_texts[i + 1], -1,
-                                                    greeting_texts[i],
+                                                    greetings[i + 1], -1,
+                                                    greetings[i],
                                                     NULL);
         else
           gtk_text_buffer_insert (console->console, &cursor,
-                                  greeting_texts[i + 1], -1);
+                                  greetings[i + 1], -1);
       }
   }
 
@@ -240,7 +242,7 @@ tiny_fu_console_interface (void)
   gtk_widget_show (console->cc);
 
   g_signal_connect (console->cc, "key-press-event",
-                    G_CALLBACK (tiny_fu_cc_key_function),
+                    G_CALLBACK (script_fu_cc_key_function),
                     console);
 
   button = gtk_button_new_with_mnemonic (_("_Browse..."));
@@ -249,7 +251,7 @@ tiny_fu_console_interface (void)
   gtk_widget_show (button);
 
   g_signal_connect (button, "clicked",
-                    G_CALLBACK (tiny_fu_browse_callback),
+                    G_CALLBACK (script_fu_browse_callback),
                     console);
 
   /*  Initialize the history  */
@@ -267,16 +269,16 @@ tiny_fu_console_interface (void)
   if (console->save_dialog)
     gtk_widget_destroy (console->save_dialog);
 
-   if (console->dialog)
-     gtk_widget_destroy (console->dialog);
+  if (console->dialog)
+    gtk_widget_destroy (console->dialog);
 
   g_free (console);
 }
 
 static void
-tiny_fu_console_response (GtkWidget        *widget,
-                          gint              response_id,
-                          ConsoleInterface *console)
+script_fu_console_response (GtkWidget        *widget,
+                            gint              response_id,
+                            ConsoleInterface *console)
 {
   GtkTextIter start, end;
 
@@ -287,9 +289,11 @@ tiny_fu_console_response (GtkWidget        *widget,
       gtk_text_buffer_get_end_iter (console->console, &end);
       gtk_text_buffer_delete (console->console, &start, &end);
       break;
+
     case RESPONSE_SAVE:
-      tiny_fu_console_save_dialog (console);
+      script_fu_console_save_dialog (console);
       break;
+
     default:
       gtk_main_quit ();
       break;
@@ -298,7 +302,7 @@ tiny_fu_console_response (GtkWidget        *widget,
 
 
 static void
-tiny_fu_console_save_dialog (ConsoleInterface *console)
+script_fu_console_save_dialog (ConsoleInterface *console)
 {
   if (! console->save_dialog)
     {
@@ -321,7 +325,7 @@ tiny_fu_console_save_dialog (ConsoleInterface *console)
                                  (gpointer) &console->save_dialog);
 
       g_signal_connect (console->save_dialog, "response",
-                        G_CALLBACK (tiny_fu_console_save_response),
+                        G_CALLBACK (script_fu_console_save_response),
                         console);
     }
 
@@ -329,9 +333,9 @@ tiny_fu_console_save_dialog (ConsoleInterface *console)
 }
 
 static void
-tiny_fu_console_save_response (GtkWidget        *dialog,
-                               gint              response_id,
-                               ConsoleInterface *console)
+script_fu_console_save_response (GtkWidget        *dialog,
+                                 gint              response_id,
+                                 ConsoleInterface *console)
 {
   GtkTextIter start, end;
 
@@ -358,7 +362,7 @@ tiny_fu_console_save_response (GtkWidget        *dialog,
       gtk_text_buffer_get_start_iter (console->console, &start);
       gtk_text_buffer_get_end_iter (console->console, &end);
 
-      str = gtk_text_buffer_get_text (console->console, &start, &end, TRUE);
+      str = gtk_text_buffer_get_text (console->console, &start, &end, FALSE);
 
       fputs (str, fh);
       fclose (fh);
@@ -370,8 +374,8 @@ tiny_fu_console_save_response (GtkWidget        *dialog,
 }
 
 static void
-tiny_fu_browse_callback (GtkWidget        *widget,
-                         ConsoleInterface *console)
+script_fu_browse_callback (GtkWidget        *widget,
+                           ConsoleInterface *console)
 {
   if (! console->proc_browser)
     {
@@ -396,10 +400,10 @@ tiny_fu_browse_callback (GtkWidget        *widget,
                                  (gpointer) &console->proc_browser);
 
       g_signal_connect (console->proc_browser, "response",
-                        G_CALLBACK (tiny_fu_browse_response),
+                        G_CALLBACK (script_fu_browse_response),
                         console);
       g_signal_connect (console->proc_browser, "row-activated",
-                        G_CALLBACK (tiny_fu_browse_row_activated),
+                        G_CALLBACK (script_fu_browse_row_activated),
                         console);
     }
 
@@ -407,9 +411,9 @@ tiny_fu_browse_callback (GtkWidget        *widget,
 }
 
 static void
-tiny_fu_browse_response (GtkWidget        *widget,
-                         gint              response_id,
-                         ConsoleInterface *console)
+script_fu_browse_response (GtkWidget        *widget,
+                           gint              response_id,
+                           ConsoleInterface *console)
 {
   GimpProcBrowserDialog *dialog = GIMP_PROC_BROWSER_DIALOG (widget);
   gchar                 *proc_name;
@@ -448,6 +452,7 @@ tiny_fu_browse_response (GtkWidget        *widget,
                                 &n_return_vals,
                                 &params,
                                 &return_vals);
+
   text = g_string_new ("(");
   text = g_string_append (text, proc_name);
 
@@ -474,13 +479,13 @@ tiny_fu_browse_response (GtkWidget        *widget,
 }
 
 static void
-tiny_fu_browse_row_activated (GtkDialog *dialog)
+script_fu_browse_row_activated (GtkDialog *dialog)
 {
   gtk_dialog_response (dialog, GTK_RESPONSE_APPLY);
 }
 
 static gboolean
-tiny_fu_console_idle_scroll_end (GtkWidget *view)
+script_fu_console_idle_scroll_end (GtkWidget *view)
 {
   GtkAdjustment *adj = GTK_TEXT_VIEW (view)->vadjustment;
 
@@ -492,18 +497,18 @@ tiny_fu_console_idle_scroll_end (GtkWidget *view)
 }
 
 static void
-tiny_fu_console_scroll_end (GtkWidget *view)
+script_fu_console_scroll_end (GtkWidget *view)
 {
   /*  the text view idle updates, so we need to idle scroll too
    */
   g_object_ref (view);
 
-  g_idle_add ((GSourceFunc) tiny_fu_console_idle_scroll_end, view);
+  g_idle_add ((GSourceFunc) script_fu_console_idle_scroll_end, view);
 }
 
 void
-tiny_fu_output_to_console (gchar *text,
-                           gint   len)
+script_fu_output_to_console (const gchar *text,
+                             gint         len)
 {
   /* FIXME: This function needs to be passed a pointer to the console.
    */
@@ -515,12 +520,12 @@ tiny_fu_output_to_console (gchar *text,
       gtk_text_buffer_get_end_iter (buffer, &cursor);
       gtk_text_buffer_insert (buffer, &cursor, text, len);
 
-      tiny_fu_console_scroll_end (output);
+      script_fu_console_scroll_end (output);
     }
 }
 
 static gboolean
-tiny_fu_cc_is_empty (ConsoleInterface *console)
+script_fu_cc_is_empty (ConsoleInterface *console)
 {
   const gchar *str;
 
@@ -539,9 +544,9 @@ tiny_fu_cc_is_empty (ConsoleInterface *console)
 }
 
 static gboolean
-tiny_fu_cc_key_function (GtkWidget        *widget,
-                         GdkEventKey      *event,
-                         ConsoleInterface *console)
+script_fu_cc_key_function (GtkWidget        *widget,
+                           GdkEventKey      *event,
+                           ConsoleInterface *console)
 {
   GList       *list;
   gint         direction = 0;
@@ -550,7 +555,7 @@ tiny_fu_cc_key_function (GtkWidget        *widget,
   switch (event->keyval)
     {
     case GDK_Return:
-      if (tiny_fu_cc_is_empty (console))
+      if (script_fu_cc_is_empty (console))
         return TRUE;
 
       list = g_list_nth (console->history,
@@ -571,7 +576,7 @@ tiny_fu_cc_key_function (GtkWidget        *widget,
 
       gtk_text_buffer_insert (console->console, &cursor, "\n", -1);
 
-      tiny_fu_console_scroll_end (console->text_view);
+      script_fu_console_scroll_end (console->text_view);
 
       gtk_entry_set_text (GTK_ENTRY (console->cc), "");
 
@@ -655,16 +660,14 @@ tiny_fu_cc_key_function (GtkWidget        *widget,
 }
 
 static void
-tiny_fu_open_ts_console (void)
+script_fu_open_ts_console (void)
 {
   ts_set_print_flag (1);
   ts_set_console_mode (1);
-  ts_set_verbose_level (2);
-  ts_print_welcome ();
 }
 
 static void
-tiny_fu_close_ts_console (void)
+script_fu_close_ts_console (void)
 {
   FILE *output_file;
 
@@ -678,26 +681,25 @@ tiny_fu_close_ts_console (void)
 }
 
 void
-tiny_fu_eval_run (const gchar      *name,
-                  gint              nparams,
-                  const GimpParam  *params,
-                  gint             *nreturn_vals,
-                  GimpParam       **return_vals)
+script_fu_eval_run (const gchar      *name,
+                    gint              nparams,
+                    const GimpParam  *params,
+                    gint             *nreturn_vals,
+                    GimpParam       **return_vals)
 {
   static GimpParam  values[1];
   GimpPDBStatusType status = GIMP_PDB_SUCCESS;
-  GimpRunMode   run_mode;
+  GimpRunMode       run_mode;
 
   run_mode = params[0].data.d_int32;
 
   switch (run_mode)
     {
     case GIMP_RUN_NONINTERACTIVE:
-      /*  Disable Tiny-Fu output  */
+      /*  Disable Script-Fu output  */
       ts_set_output_file (stdout);
-      ts_set_verbose_level (0);
       if (ts_interpret_string (params[1].data.d_string) != 0)
-        status = GIMP_PDB_EXECUTION_ERROR;
+          status = GIMP_PDB_EXECUTION_ERROR;
       break;
 
     case GIMP_RUN_INTERACTIVE:
