@@ -23,7 +23,11 @@
 
 #include "config.h"
 
+#include <glib/gstdio.h>
+
 #include <string.h> /* memcpy, strcpy, strlen */
+
+#include <glib/gstdio.h>
 
 #include <gtk/gtk.h>
 
@@ -59,6 +63,12 @@ named_constant {
 
 struct named_constant
 script_constants[] = {
+  /* Useful values from libgimpbase/gimplimits.h */
+  { "MIN-IMAGE-SIZE", GIMP_MIN_IMAGE_SIZE },
+  { "MAX-IMAGE-SIZE", GIMP_MAX_IMAGE_SIZE },
+  { "MIN-RESOLUTION", GIMP_MIN_RESOLUTION },
+  { "MAX-RESOLUTION", GIMP_MAX_RESOLUTION },
+
   /* Useful misc stuff */
   { "TRUE",           TRUE  },
   { "FALSE",          FALSE },
@@ -84,7 +94,7 @@ script_constants[] = {
   { "SF-TEXT",        SF_TEXT       },
   { "SF-ENUM",        SF_ENUM       },
 
-  /* for SF_ADJUSTMENT */
+  /* For SF_ADJUSTMENT */
   { "SF-SLIDER",      SF_SLIDER     },
   { "SF-SPINNER",     SF_SPINNER    },
 
@@ -116,9 +126,11 @@ old_constants[] = {
   { "BLUR",         GIMP_BLUR_CONVOLVE     },
   { "SHARPEN",      GIMP_SHARPEN_CONVOLVE  },
 
-  { "WHITE-MASK",   GIMP_ADD_WHITE_MASK    },
-  { "BLACK-MASK",   GIMP_ADD_BLACK_MASK    },
-  { "ALPHA-MASK",   GIMP_ADD_ALPHA_MASK    },
+  { "WHITE-MASK",     GIMP_ADD_WHITE_MASK     },
+  { "BLACK-MASK",     GIMP_ADD_BLACK_MASK     },
+  { "ALPHA-MASK",     GIMP_ADD_ALPHA_MASK     },
+  { "SELECTION-MASK", GIMP_ADD_SELECTION_MASK },
+  { "COPY-MASK",      GIMP_ADD_COPY_MASK      },
 
   { "ADD",          GIMP_CHANNEL_OP_ADD       },
   { "SUB",          GIMP_CHANNEL_OP_SUBTRACT  },
@@ -165,11 +177,6 @@ old_constants[] = {
   { "GREEN-LUT",      GIMP_HISTOGRAM_GREEN },
   { "BLUE-LUT",       GIMP_HISTOGRAM_BLUE  },
   { "ALPHA-LUT",      GIMP_HISTOGRAM_ALPHA },
-
-  { "MIN-IMAGE-SIZE", GIMP_MIN_IMAGE_SIZE },
-  { "MAX-IMAGE-SIZE", GIMP_MAX_IMAGE_SIZE },
-  { "MIN-RESOLUTION", GIMP_MIN_RESOLUTION },
-  { "MAX-RESOLUTION", GIMP_MAX_RESOLUTION },
 
   { NULL, 0 }
 };
@@ -272,23 +279,14 @@ ts_get_success_msg (void)
 void
 ts_output_string (FILE *fp, char *string, int len)
 {
-  gchar *buff;
-
   g_return_if_fail (len >= 0);
 
-  if (len == 0)
-     return;
-
-  if (ts_console_mode && fp == stdout)
+  if (len > 0 && ts_console_mode && fp == stdout)
   {
+    /* len is the number of UTF-8 characters; we need the number of bytes */
     len = g_utf8_offset_to_pointer(string, (long)len) - string;
-    buff = g_strndup (string, len);
-    if (buff == NULL)
-       return;  /* Should "No memory" be output here? */
 
-    tiny_fu_output_to_console (buff);
-
-    g_free (buff);
+    tiny_fu_output_to_console (string, len);
   }
 }
 
@@ -299,18 +297,16 @@ static void  init_procedures  (void);
 static gboolean register_scripts = FALSE;
 
 void
-tinyscheme_init (gboolean local_register_scripts)
+tinyscheme_init (const gchar *path,
+                 gboolean     local_register_scripts)
 {
-  char buff[80];
-  FILE *fin;
-
   register_scripts = local_register_scripts;
   ts_output_routine = ts_output_string;
 
   /* init the interpreter */
   if (!scheme_init (&sc))
   {
-     g_message ("Could not initialize TinyScheme!\n");
+     g_message ("Could not initialize TinyScheme!");
      return;
   }
 
@@ -325,16 +321,47 @@ tinyscheme_init (gboolean local_register_scripts)
   init_constants ();
   init_procedures ();
 
-  g_snprintf (buff, sizeof (buff),
-              "%s%s", gimp_data_directory (), "/scripts/tiny-fu.init");
-  fin = fopen (buff, "r");
-  if (fin == NULL)
-     fprintf (stderr, "Unable to read initialization file\n");
-  else
-  {
-     scheme_load_file (&sc, fin);
-     fclose (fin);
-  }
+  if (path)
+    {
+     GList *dir_list = gimp_path_parse (path, 16, TRUE, NULL);
+      GList *list;
+
+      for (list = dir_list; list; list = g_list_next (list))
+        {
+          gchar *filename = g_build_filename (list->data,
+                                              "script-fu.init", NULL);
+         FILE  *fin      = g_fopen (filename, "rb");
+
+          g_free (filename);
+
+          if (fin)
+            {
+              scheme_load_file (&sc, fin);
+              fclose (fin);
+
+              /*  To improve compatibility with older Script-Fu scripts,
+               *  load script-fu-compat.init from the same directory.
+               */
+              filename = g_build_filename (list->data,
+                                           "script-fu-compat.init", NULL);
+              fin = g_fopen (filename, "rb");
+              g_free (filename);
+
+              if (fin)
+                {
+                   scheme_load_file (&sc, fin);
+                   fclose (fin);
+                }
+
+              break;
+            }
+        }
+
+      if (list == NULL)
+        g_printerr ("Unable to read initialization file script-fu.init\n");
+
+      gimp_path_free (dir_list);
+    }
 }
 
 void
@@ -401,11 +428,11 @@ init_constants (void)
 
       for (value = enum_class->values; value->value_name; value++)
         {
-          if (! strncmp ("GIMP_", value->value_name, 5))
+          if (g_str_has_prefix (value->value_name, "GIMP_"))
             {
               gchar *scheme_name;
 
-              scheme_name = g_strdup (value->value_name + 5);
+              scheme_name = g_strdup (value->value_name + strlen ("GIMP_"));
               convert_string (scheme_name);
 
               symbol = sc.vptr->mk_symbol (&sc, scheme_name);
@@ -427,6 +454,7 @@ init_constants (void)
       gchar *tmp;
       gchar *scheme_name;
 
+      /* FIXME: gimp_unit_get_singular() returns a translated string */
       tmp = g_ascii_strup (gimp_unit_get_singular (unit), -1);
       scheme_name = g_strconcat ("UNIT-", tmp, NULL);
       g_free (tmp);
@@ -441,12 +469,12 @@ init_constants (void)
 
   /* Constants used in the register block of scripts */
   for (i = 0; script_constants[i].name != NULL; ++i)
-  {
+    {
       symbol = sc.vptr->mk_symbol (&sc, script_constants[i].name);
       sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                     sc.vptr->mk_integer (&sc, script_constants[i].value));
       sc.vptr->setimmutable(symbol);
-  }
+    }
 
   /* Define string constant for use in building paths to files/directories */
   symbol = sc.vptr->mk_symbol (&sc, "DIR-SEPARATOR");
@@ -471,12 +499,12 @@ init_constants (void)
   sc.vptr->setimmutable(symbol);
 
   for (i = 0; old_constants[i].name != NULL; ++i)
-  {
+    {
       symbol = sc.vptr->mk_symbol (&sc, old_constants[i].name);
       sc.vptr->scheme_define (&sc, sc.global_env, symbol,
                     sc.vptr->mk_integer (&sc, old_constants[i].value));
       sc.vptr->setimmutable(symbol);
-  }
+    }
 }
 
 static void
@@ -719,7 +747,7 @@ fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
                  nparams, (sc->vptr->list_length (sc, a) - 1));
 #endif
       g_snprintf (error_str, sizeof (error_str),
-                  "Invalid number of arguments supplied to %s (expected %d but received %d)",
+                  "Invalid number of arguments for %s (expected %d but received %d)",
                   proc_name, nparams, (sc->vptr->list_length (sc, a) - 1));
       return my_err (error_str, sc->NIL);
     }
@@ -730,8 +758,6 @@ fprintf (stderr, "  Invalid number of arguments (expected %d but received %d)",
   else
     args = NULL;
 
-  /* The checks on 'if (success)' below stop some code execution */
-  /* when the first error in the argument list is encountered.   */
   for (i = 0; i < nparams && success; i++)
     {
       a = sc->vptr->pair_cdr (a);
@@ -1151,6 +1177,10 @@ fprintf (stderr, "      data '%s'\n", (char *)args[i].data.d_parasite.data);
                       i+1, proc_name);
           return my_err (error_str, sc->NIL);
         }
+
+      /* Break out of loop before i gets updated when error was detected */
+      if (! success)
+        break;
     }
 
   if (success)
@@ -1169,7 +1199,7 @@ fprintf (stderr, "  done.\n");
 fprintf (stderr, "  Invalid type for argument %d\n", i+1);
 #endif
     g_snprintf (error_str, sizeof (error_str),
-                "Invalid types specified for argument %d to %s",
+                "Invalid type for argument %d to %s",
                 i+1, proc_name);
     return my_err (error_str, sc->NIL);
   }

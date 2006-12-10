@@ -40,18 +40,19 @@
 
 /* Declare local functions. */
 
-static void      tiny_fu_query          (void);
-static void      tiny_fu_run            (const gchar      *name,
-                                         gint              nparams,
-                                         const GimpParam  *params,
-                                         gint             *nreturn_vals,
-                                         GimpParam       **return_vals);
-static void      tiny_fu_extension_init (void);
-static void      tiny_fu_refresh_proc   (const gchar      *name,
-                                         gint              nparams,
-                                         const GimpParam  *params,
-                                         gint             *nreturn_vals,
-                                         GimpParam       **return_vals);
+static void    tiny_fu_query          (void);
+static void    tiny_fu_run            (const gchar      *name,
+                                       gint              nparams,
+                                       const GimpParam  *params,
+                                       gint             *nreturn_vals,
+                                       GimpParam       **return_vals);
+static gchar * tiny_fu_search_path    (void);
+static void    tiny_fu_extension_init (void);
+static void    tiny_fu_refresh_proc   (const gchar      *name,
+                                       gint              nparams,
+                                       const GimpParam  *params,
+                                       gint             *nreturn_vals,
+                                       GimpParam       **return_vals);
 
 
 const GimpPlugInInfo PLUG_IN_INFO =
@@ -165,13 +166,17 @@ tiny_fu_query (void)
 }
 
 static void
-tiny_fu_run (const gchar *name,
-        gint              nparams,
-        const GimpParam  *param,
-        gint             *nreturn_vals,
-        GimpParam       **return_vals)
+tiny_fu_run (const gchar     *name,
+             gint             nparams,
+             const GimpParam *param,
+             gint            *nreturn_vals,
+             GimpParam      **return_vals)
 {
+  gchar *path;
+
   INIT_I18N();
+
+  path = tiny_fu_search_path ();
 
   ts_set_console_mode (0);
 
@@ -184,16 +189,18 @@ tiny_fu_run (const gchar *name,
       tiny_fu_extension_init ();
 
       /*  Init the interpreter and register scripts  */
-      tinyscheme_init (TRUE);
+      tinyscheme_init (path, TRUE);
     }
   else
     {
       /*  Init the interpreter and do not register scripts  */
-      tinyscheme_init (FALSE);
+      tinyscheme_init (path, FALSE);
     }
 
   /*  Load all of the available scripts  */
-  tiny_fu_load_all_scripts ();
+  tiny_fu_load_all_scripts (path);
+
+  g_free (path);
 
   if (strcmp (name, "extension-tiny-fu") == 0)
     {
@@ -201,7 +208,7 @@ tiny_fu_run (const gchar *name,
        *  The main tiny-fu extension.
        */
 
-      static GimpParam  values[1];
+      static GimpParam values[1];
 
       /*  Acknowledge that the extension is properly initialized  */
       gimp_extension_ack ();
@@ -255,6 +262,32 @@ tiny_fu_run (const gchar *name,
     }
 }
 
+static gchar *
+tiny_fu_search_path (void)
+{
+  gchar  *path_str;
+  gchar  *path = NULL;
+
+  path_str = gimp_gimprc_query ("script-fu-path");
+
+  if (path_str)
+    {
+      GError *error = NULL;
+
+      path = g_filename_from_utf8 (path_str, -1, NULL, NULL, &error);
+
+      g_free (path_str);
+
+      if (! path)
+        {
+          g_warning ("Can't convert script-fu-path to filesystem encoding: %s",
+                     error->message);
+          g_error_free (error);
+        }
+    }
+
+  return path;
+}
 
 static void
 tiny_fu_extension_init (void)
@@ -351,7 +384,12 @@ tiny_fu_refresh_proc (const gchar      *name,
   else
     {
       /*  Reload all of the available scripts  */
-      tiny_fu_load_all_scripts ();
+      gchar *path = tiny_fu_search_path ();
+
+      tiny_fu_load_all_scripts (path);
+
+      g_free (path);
+
     }
 
   *nreturn_vals = 1;

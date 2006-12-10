@@ -1,3 +1,49 @@
+2006-12-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	This big patch brings Tiny-Fu in sync with the Script-Fu plug-in
+	of GIMP. This will make it easier to it in sync with Script-Fu.
+
+	* tiny-fu/Makefile.am: Removed USE_STRCASECMP. Use the setting for
+	USE_STRLWR that is used in TinyScheme.
+
+	* tiny-fu/tiny-fu-console.c:
+	* tiny-fu/tiny-fu-console.h:
+	* tiny-fu/tiny-fu-interface.c:
+	* tiny-fu/tiny-fu-interface.h:
+	* tiny-fu/tiny-fu-scripts.c:
+	* tiny-fu/tiny-fu-scripts.h:
+	* tiny-fu/tiny-fu-text-console.c:
+	* tiny-fu/tiny-fu-types.h:
+	* tiny-fu/tiny-fu.c:
+	* tiny-fu/ts-wrapper.c:
+	* tiny-fu/ts-wrapper.h: Updated with the latest copy of these files
+	from the Script-Fu plug-in in the CVS version of GIMP. This includes
+	the change to the use of vectors instead of the hacked on array data
+	type to handle GIMP's PDB ARRAY argument types.
+
+	* tinyscheme/CHANGES: Updated to 1.38 version in TinyScheme.
+
+	* tinyscheme/scheme.c: Added some changes from the 1.38 version of
+	TinyScheme. Added fix for bug #1589701 (reported on SourceForge.net).
+
+	* tinyscheme/scheme.h: Added a prototype to quiet the compiler. Added
+	one change from the 1.38 version of TinyScheme.
+
+	* scripts/script-fu-compat.init: Added delq, make-list, prin1, and
+	print. Corrected name of unstrbreakup to unbreakupstr and fixed bug
+	in it. Fixed butlast to handle lists with one entry. Changes to use
+	native vector data type in aref, aset!, and cons-array.
+
+	* scripts/erase-rows.scm
+	* scripts/hsv-graph.scm: don't ever use the term "drawable" in
+	user-visible strings.
+
+	* scripts/3d-outline.scm:
+	* scripts/paste-as-pattern.scm: Formatting changes.
+
+	* scripts/test-sphere.scm: Show how to use named constants in register
+	block. Added SF-VECTORS entry to register block.
+
 2006-11-21  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* Makefile.am: Start lines with tabs instead of spaces.

@@ -28,6 +28,7 @@
 #include "libgimp/gimp.h"
 
 #include "ts-wrapper.h"
+#include "script-fu-text-console.h"
 
 #include "tiny-fu-intl.h"
 
@@ -62,7 +63,6 @@ tiny_fu_text_console_run (const gchar      *name,
 static gboolean
 read_command (GString *command)
 {
-  guchar c;
   gint   next;
   gint   level = 0;
 
@@ -70,7 +70,7 @@ read_command (GString *command)
 
   while ((next = fgetc (stdin)) != EOF)
     {
-      c = (guchar) next;
+      guchar c = (guchar) next;
 
       switch (c)
         {

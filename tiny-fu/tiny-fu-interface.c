@@ -153,7 +153,8 @@ tiny_fu_interface_report_cc (const gchar *command)
 }
 
 void
-tiny_fu_interface (SFScript *script)
+tiny_fu_interface (SFScript *script,
+                   gint      start_arg)
 {
   GtkWidget    *dialog;
   GtkWidget    *menu;
@@ -200,6 +201,7 @@ tiny_fu_interface (SFScript *script)
 
   /* strip the first part of the menupath if it contains _("/Script-Fu/") */
   tmp = strstr (gettext (script->menu_path), _("/Script-Fu/"));
+
   if (tmp)
     sf_interface->title = g_strdup (tmp + strlen (_("/Script-Fu/")));
   else
@@ -258,10 +260,7 @@ tiny_fu_interface (SFScript *script)
   gtk_widget_show (vbox);
 
   /*  The argument table  */
-  if (script->image_based)
-    sf_interface->table = gtk_table_new (script->num_args - 1, 3, FALSE);
-  else
-    sf_interface->table = gtk_table_new (script->num_args + 1, 3, FALSE);
+  sf_interface->table = gtk_table_new (script->num_args - start_arg, 3, FALSE);
 
   gtk_table_set_col_spacings (GTK_TABLE (sf_interface->table), 6);
   gtk_table_set_row_spacings (GTK_TABLE (sf_interface->table), 6);
@@ -270,7 +269,7 @@ tiny_fu_interface (SFScript *script)
 
   group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
-  for (i = script->image_based ? 2 : 0; i < script->num_args; i++)
+  for (i = start_arg; i < script->num_args; i++)
     {
       GtkWidget *widget       = NULL;
       GtkObject *adj;
@@ -280,13 +279,11 @@ tiny_fu_interface (SFScript *script)
       gint       row          = i;
       gboolean   left_align   = FALSE;
 
-      if (script->image_based)
-        row -= 2;
+      row -= start_arg;
 
       /*  we add a colon after the label;
           some languages want an extra space here  */
-      label_text =  g_strdup_printf (_("%s:"),
-                                     gettext (script->arg_labels[i]));
+      label_text = g_strdup_printf (_("%s:"), gettext (script->arg_labels[i]));
 
       switch (script->arg_types[i])
         {
@@ -409,6 +406,11 @@ tiny_fu_interface (SFScript *script)
                                       NULL, NULL);
               gtk_entry_set_activates_default (GIMP_SCALE_ENTRY_SPINBUTTON (script->arg_values[i].sfa_adjustment.adj), TRUE);
               break;
+
+            default:
+              g_warning ("Unexpected adjustment type: %d",
+                         script->arg_defaults[i].sfa_adjustment.type);
+              /* fallthrough */
 
             case SF_SPINNER:
               left_align = TRUE;

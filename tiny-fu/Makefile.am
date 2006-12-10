@@ -11,8 +11,7 @@ endif
 
 AM_CFLAGS = \
     -DUSE_INTERFACE=1  \
-    -DUSE_STRCASECMP=1 \
-    -DUSE_STRLWR=1     \
+    -DUSE_STRLWR=0     \
     -I$(top_srcdir)    \
     $(GIMP_CFLAGS)
 

@@ -20,18 +20,19 @@
 #define __TINY_FU_CONSOLE_H__
 
 
-void   tiny_fu_console_run (const gchar      *name,
-                            gint              nparams,
-                            const GimpParam  *params,
-                            gint             *nreturn_vals,
-                            GimpParam       **return_vals);
-void   tiny_fu_eval_run    (const gchar      *name,
-                            gint              nparams,
-                            const GimpParam  *params,
-                            gint             *nreturn_vals,
-                            GimpParam       **return_vals);
+void   tiny_fu_console_run       (const gchar      *name,
+                                  gint              nparams,
+                                  const GimpParam  *params,
+                                  gint             *nreturn_vals,
+                                  GimpParam       **return_vals);
+void   tiny_fu_eval_run          (const gchar      *name,
+                                  gint              nparams,
+                                  const GimpParam  *params,
+                                  gint             *nreturn_vals,
+                                  GimpParam       **return_vals);
 
-void   tiny_fu_output_to_console (gchar *text);
+void   tiny_fu_output_to_console (gchar            *text,
+                                  gint              len);
 
 
 #endif /*  __TINY_FU_CONSOLE__  */
