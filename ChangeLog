@@ -1,3 +1,21 @@
+2007-01-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	From various changes made to Script-Fu in GIMP
+
+	* tinyscheme/scheme.c: Don't include malloc.h file. Fixes bug #391195.
+
+	* scripts/Makefile.am
+	* scripts/difference-clouds.scm: Added new script "Difference Clouds"
+	written by Martin Nordholts (bug #363458).
+
+	* scripts/drop-shadow.scm: Removed hyphen from menu entry and
+	description.
+
+	* scripts/old-photo.scm: Fixed crash when Mottle option is selected
+	(mLayer was incorrectly declared).
+
+	* scripts/*.scm: Changed "The GIMP" to just "GIMP" in headers.
+
 2006-12-15  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* scripts/burn-in-anim.scm: Don't allow one of the two layers to be a
