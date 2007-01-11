@@ -100,8 +100,8 @@ scripts =  \
 	text-circle.scm			\
 	textured-logo.scm		\
 	tileblur.scm			\
-	tiny-fu-util.scm		\
-	tiny-fu-set-cmap.scm		\
+	script-fu-util.scm		\
+	script-fu-set-cmap.scm		\
 	title-header.scm		\
 	truchet.scm			\
 	unsharp-mask.scm		\
@@ -111,8 +111,8 @@ scripts =  \
 	xach-effect.scm			
 
 test_scripts = \
-	test-sphere.scm			   \
-	ts-helloworld.scm			
+	test-sphere.scm			\
+	ts-helloworld.scm
 
  
 if TINY_FU_UNSTABLE

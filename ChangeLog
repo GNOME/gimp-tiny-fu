@@ -1,5 +1,16 @@
 2007-01-11  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	* scripts/Makefile.am: Updated due to renamed files.
+
+	* tiny-fu-set-cmap.scm: Renamed to script-fu-set-cmap.scm
+
+	* tiny-fu-util.scm: Renamed to script-fu-util.scm
+
+	* tiny-fu-util-setpt.scm: Renamed to script-fu-util-setpt.scm and
+	removed wrong information from header block.
+
+2007-01-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	From various changes made to Script-Fu in GIMP
 
 	* tinyscheme/scheme.c: Don't include malloc.h file. Fixes bug #391195.
