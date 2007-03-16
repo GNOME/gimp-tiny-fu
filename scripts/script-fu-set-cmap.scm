@@ -22,6 +22,11 @@
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
 ; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+;
+;
+; March 7, 2007 Kevin Cozens <kcozens@interlog.com>
+; Changed menu register call so the script appears in a more logical place.
+
 
 (define (script-fu-make-cmap-array palette)
   (let* (
@@ -63,4 +68,4 @@
 )
 
 (script-fu-menu-register "script-fu-set-cmap"
-                         "<Image>/Colors/Map")
+                         "<Image>/Tools/Color Tools")

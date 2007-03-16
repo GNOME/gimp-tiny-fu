@@ -1,12 +1,34 @@
+2007-03-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* MAINTAINERS: Updated URL for Tiny-Fu.
+
+	* TODO: Updated.
+
+	* scripts/script-fu-set-cmap.scm: Change location of menu entry to
+	something that makes a bit more sense.
+
+	The following is from changes made to Script-Fu by Michael Natterer.
+
+	* scripts/difference-clouds.scm: use RUN-INTERACTVE instead of 0,
+	added (gimp-displays-flush)
+
+	* scripts/spyrogimp.scm: update the progress to avoid looking like
+	the script hangs. Fixes bug #356677.
+
+	* tiny-fu/script-fu-interface.c (script_fu_interface_report_cc): if
+	the command starts with "gimp-progress-", the script is obviously
+	showing a progress bar for itself, so clear the text instead of
+	showing an endless number of "gimp-progress-update" messages. Also
+	fixed manual main loop iteration.
+
 2007-01-30  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	Removed obsolete .cvsignore files due to switch to Subversion.
 
 2007-01-21  Kevin Cozens  <kcozens@cvs.gnome.org>
 
-	* plug-ins/script-fu/scripts/guides-new-percent.scm: replaced
-	license statement according to bug #119667. From a change mad
-	to Script-Fu by Michael Schumacher.
+	* scripts/guides-new-percent.scm: replaced license statement according
+	to bug #119667. From a change made to Script-Fu by Michael Schumacher.
 
 	* scripts/news-text.scm: Fixed typos (bug #396169). From a change
 	made to Script-Fu by Sven Neumann.
@@ -15,12 +37,12 @@
 
 	* scripts/Makefile.am: Updated due to renamed files.
 
-	* tiny-fu-set-cmap.scm: Renamed to script-fu-set-cmap.scm
+	* scripts/tiny-fu-set-cmap.scm: Renamed to script-fu-set-cmap.scm
 
-	* tiny-fu-util.scm: Renamed to script-fu-util.scm
+	* scripts/tiny-fu-util.scm: Renamed to script-fu-util.scm
 
-	* tiny-fu-util-setpt.scm: Renamed to script-fu-util-setpt.scm and
-	removed wrong information from header block.
+	* scripts/tiny-fu-util-setpt.scm: Renamed to script-fu-util-setpt.scm
+	and removed wrong information from header block.
 
 2007-01-11  Kevin Cozens  <kcozens@cvs.gnome.org>
 

@@ -1,5 +1,13 @@
-- Change TinyScheme to use a symbol instead of a string for the type argument
-  of make-array.
+- If there is no data in the clipboard, make the "paste-as-..." scripts show
+  "There is no image data in the clipboard to paste." (bug #374854)
+- A line beginning with a ; just before some close brackets will result in
+  'Error: unmatched parentheses: 1'.
+  Fixed in TinyScheme 1.37 with change in parsing of comments??
+
+  NOTE: This message is still appearing when GIMP starts when it loads the
+  layer-effects-_en20.scm script.
+- Fix parsing when encountering stuff that is not valid UTF-8 characters.
+  Is this the cause of the 'Error: unmatched parentheses: 1' message??
 - Update the Tiny-Fu web page.
 - Add SF-RADIO parameter type to register block
   Comments from joao on #gimp:
@@ -11,6 +19,8 @@
 - Review handling of brushes.
   The non-deprecated set and get calls only take one parameter and not a list.
 - Update the autogen.sh script based on the newer version in GIMP.
+- Change TinyScheme to use a symbol instead of a string for the type argument
+  of make-array.
 - Is tiny-fu-util-image-resize-from-layer still needed or can the built-in
   function 'Fit Canvas to Layers' be used instead?
 - Get some examples of how to work with parasites in Scheme.

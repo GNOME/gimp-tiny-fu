@@ -24,14 +24,14 @@
 #include <libgimp/gimpui.h>
 
 #include "tinyscheme/scheme-private.h"
-#include "ts-wrapper.h"
+#include "scheme-wrapper.h"
 
-#include "tiny-fu-types.h"
+#include "script-fu-types.h"
 
-#include "tiny-fu-interface.h"
-#include "tiny-fu-scripts.h"
+#include "script-fu-interface.h"
+#include "script-fu-scripts.h"
 
-#include "tiny-fu-intl.h"
+#include "script-fu-intl.h"
 
 
 #define RESPONSE_RESET         1
@@ -131,26 +131,38 @@ script_fu_interface_report_cc (const gchar *command)
   if (sf_interface->last_command &&
       strcmp (sf_interface->last_command, command) == 0)
     {
-      gchar *new_command;
-
       sf_interface->command_count++;
 
-      new_command = g_strdup_printf ("%s <%d>",
-                                     command, sf_interface->command_count);
-      gtk_label_set_text (GTK_LABEL (sf_interface->progress_label),
-                          new_command);
-      g_free (new_command);
+      if (! g_str_has_prefix (command, "gimp-progress-"))
+        {
+          gchar *new_command;
+
+          new_command = g_strdup_printf ("%s <%d>",
+                                         command, sf_interface->command_count);
+          gtk_label_set_text (GTK_LABEL (sf_interface->progress_label),
+                              new_command);
+          g_free (new_command);
+        }
     }
   else
     {
       sf_interface->command_count = 1;
-      gtk_label_set_text (GTK_LABEL (sf_interface->progress_label), command);
 
       g_free (sf_interface->last_command);
       sf_interface->last_command = g_strdup (command);
+
+      if (! g_str_has_prefix (command, "gimp-progress-"))
+        {
+          gtk_label_set_text (GTK_LABEL (sf_interface->progress_label), command);
+        }
+      else
+        {
+          gtk_label_set_text (GTK_LABEL (sf_interface->progress_label), "");
+        }
     }
 
-  while (gtk_main_iteration ());
+  while (g_main_context_pending (NULL))
+    g_main_context_iteration (NULL, TRUE);
 }
 
 void
@@ -222,7 +234,7 @@ script_fu_interface (SFScript *script,
   if (tmp && tmp == (sf_interface->title + strlen (sf_interface->title) - 3))
     *tmp = '\0';
 
-  title = g_strdup_printf (_("Tiny-Fu: %s"), sf_interface->title);
+  title = g_strdup_printf (_("Script-Fu: %s"), sf_interface->title);
 
   sf_interface->dialog = dialog =
     gimp_dialog_new (title, "script-fu",
