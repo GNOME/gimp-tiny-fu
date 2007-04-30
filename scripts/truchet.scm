@@ -87,7 +87,7 @@
         (gimp-floating-sel-anchor floating-sel)
       )
 
-      (let ((drawble (car (gimp-drawable-transform-flip-sample drawable1
+      (let ((drawble (car (gimp-drawable-transform-flip-simple drawable1
                              ORIENTATION-VERTICAL
                              TRUE 0 TRUE))))
       )
