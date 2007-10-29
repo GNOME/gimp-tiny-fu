@@ -37,7 +37,7 @@
 ; 1.01: now works on offset layers.
 ; 1.02: has crop-pixel-border option to trim one pixel off each edge of the
 ;       bevelled image.  Bumpmapping leaves edge pixels unchanged, which
-;       looks bad.  Oddly, this is not apparant in the GIMP - you have to
+;       looks bad.  Oddly, this is not apparant in GIMP - you have to
 ;       save the image and load it into another viewer.  First noticed in
 ;       Nutscrape.
 ;       Changed path (removed "filters/").
@@ -70,7 +70,7 @@
         (bump-layer (car (gimp-layer-new image
                                          (+ width 2)
                                          (+ height 2)
-                                         GRAY
+                                         RGB-IMAGE
                                          "Bumpmap"
                                          100
                                          NORMAL-MODE)))
@@ -99,7 +99,7 @@
     (if (eq? 0 (car (gimp-selection-bounds image)))
         (begin
           (set! bevelling-whole-image TRUE) ; ...so we can restore things properly, and crop.
-          (if (car (gimp-drawable-has-alpha pic-layer))
+          (if (= 1 (car (gimp-drawable-has-alpha pic-layer)))
               (gimp-selection-layer-alpha pic-layer)
               (gimp-selection-all image)
           )
@@ -139,13 +139,13 @@
     (gimp-selection-none image)
 
     ; To further lessen jaggies?
-    ;(plug-in-gauss-rle 1 image bump-layer thickness TRUE TRUE)
+    ;(plug-in-gauss-rle RUN-NONINTERACTIVE image bump-layer thickness TRUE TRUE)
 
 
     ;
     ; BUMPMAP INVOCATION:
     ;
-    (plug-in-bump-map 1 image pic-layer bump-layer 125 45 3 0 0 0 0 TRUE FALSE 1)
+    (plug-in-bump-map RUN-NONINTERACTIVE image pic-layer bump-layer 125 45 3 0 0 0 0 TRUE FALSE 1)
 
     ;------------------------------------------------------------
     ;
@@ -188,7 +188,7 @@
   "Andrew Donkin <ard@cs.waikato.ac.nz>"
   "Andrew Donkin"
   "1997/11/06"
-  "RGB* GRAY*"
+  "RGB*"
   SF-IMAGE       "Image"           0
   SF-DRAWABLE    "Drawable"        0
   SF-ADJUSTMENT _"Thickness"       '(5 0 30 1 2 0 0)
@@ -196,5 +196,4 @@
   SF-TOGGLE     _"Keep bump layer" FALSE
 )
 
-(script-fu-menu-register "script-fu-add-bevel"
-                         "<Image>/Filters/Decor")
+(script-fu-menu-register "script-fu-add-bevel" "<Image>/Filters/Decor")

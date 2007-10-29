@@ -22,7 +22,7 @@
 ; Define the function:
 
 (define (script-fu-distress-selection inImage
-                                      inLayer
+                                      inDrawable
                                       inThreshold
                                       inSpread
                                       inGranu
@@ -35,14 +35,18 @@
        (theWidth (car (gimp-image-width inImage)))
        (theHeight (car (gimp-image-height inImage)))
        (theLayer)
+       (theMode (car (gimp-image-base-type inImage)))
        )
 
   (gimp-image-undo-group-start theImage)
-
+  (if (= theMode GRAY)
+    (set! theMode GRAYA-IMAGE)
+    (set! theMode RGBA-IMAGE)
+    )
   (set! theLayer (car (gimp-layer-new theImage
                                       theWidth
                                       theHeight
-                                      RGBA-IMAGE
+                                      theMode
                                       "Distress Scratch Layer"
                                       100
                                       NORMAL-MODE)))
@@ -67,19 +71,23 @@
                     (/ theHeight inGranu)
                     TRUE)
 
-  (plug-in-spread TRUE
+  (plug-in-spread RUN-NONINTERACTIVE
                   theImage
                   theLayer
                   inSpread
                   inSpread)
 
-  (plug-in-gauss-iir TRUE theImage theLayer inSmooth inSmoothH inSmoothV)
+  (plug-in-gauss-iir RUN-NONINTERACTIVE
+		     theImage theLayer inSmooth inSmoothH inSmoothV)
   (gimp-layer-scale theLayer theWidth theHeight TRUE)
-  (plug-in-threshold-alpha TRUE theImage theLayer inThreshold)
-  (plug-in-gauss-iir TRUE theImage theLayer 1 TRUE TRUE)
+  (plug-in-threshold-alpha RUN-NONINTERACTIVE theImage theLayer inThreshold)
+  (plug-in-gauss-iir RUN-NONINTERACTIVE theImage theLayer 1 TRUE TRUE)
   (gimp-selection-layer-alpha theLayer)
   (gimp-image-remove-layer theImage theLayer)
-
+  (if (and (= (car (gimp-drawable-is-channel inDrawable)) TRUE)
+           (= (car (gimp-drawable-is-layer-mask inDrawable)) FALSE))
+    (gimp-image-set-active-channel theImage inDrawable)
+    )
   (gimp-image-undo-group-end theImage)
 
   (gimp-displays-flush)
@@ -93,7 +101,7 @@
   "Chris Gutteridge"
   "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
   "23rd April 1998"
-  "RGB*"
+  "RGB*,GRAY*"
   SF-IMAGE       "The image"              0
   SF-DRAWABLE    "The layer"              0
   SF-ADJUSTMENT _"Threshold (bigger 1<-->255 smaller)" '(127 1 255 1 10 0 0)

@@ -120,7 +120,7 @@ script_fu_query (void)
                           console_args, NULL);
 
   gimp_plugin_menu_register ("plug-in-script-fu-console",
-                             N_("<Toolbox>/Xtns/Languages/Script-Fu"));
+                             "<Toolbox>/Xtns/Languages/Script-Fu");
 
   gimp_install_procedure ("plug-in-script-fu-text-console",
                           "Provides a text console mode for script-fu "
@@ -149,7 +149,7 @@ script_fu_query (void)
                           server_args, NULL);
 
   gimp_plugin_menu_register ("plug-in-script-fu-server",
-                             N_("<Toolbox>/Xtns/Languages/Script-Fu"));
+                             "<Toolbox>/Xtns/Languages/Script-Fu");
 
   gimp_install_procedure ("plug-in-script-fu-eval",
                           "Evaluate scheme code",
@@ -178,8 +178,6 @@ script_fu_run (const gchar      *name,
 
   path = script_fu_search_path ();
 
-  ts_set_console_mode (0);
-
   /*  Determine before we allow scripts to register themselves
    *   whether this is the base, automatically installed script-fu extension
    */
@@ -196,6 +194,9 @@ script_fu_run (const gchar      *name,
       /*  Init the interpreter  */
       tinyscheme_init (path, FALSE);
     }
+
+  if (param != NULL)
+      set_run_mode_constant ((GimpRunMode)param[0].data.d_int32);
 
   /*  Load all of the available scripts  */
   script_fu_find_scripts (path);
@@ -313,7 +314,7 @@ script_fu_extension_init (void)
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Languages/Script-Fu",
                                     N_("_Test"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
-                                    N_("_Utils"));
+                                    N_("_Utilities"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns",
                                     N_("_Web Page Themes"));
   gimp_plugin_menu_branch_register ("<Toolbox>/Xtns/Web Page Themes",
@@ -362,7 +363,7 @@ script_fu_extension_init (void)
                           script_fu_refresh_proc);
 
   gimp_plugin_menu_register ("script-fu-refresh",
-                             N_("<Toolbox>/Xtns/Languages/Script-Fu"));
+                             "<Toolbox>/Xtns/Languages/Script-Fu");
 }
 
 static void

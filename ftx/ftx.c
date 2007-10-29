@@ -6,8 +6,12 @@
  * LICENSE file.
  */
 
+#include "config.h"
+
 #include <sys/stat.h>
+#if HAVE_UNISTD_H
 #include <unistd.h>
+#endif
 #include <time.h>
 
 #include <glib.h>
@@ -35,6 +39,19 @@ file_type_constants[] = {
     { "FILE-TYPE-LINK",    FILE_TYPE_LINK },
     { NULL, 0 }
 };
+
+pointer foreign_fileexists(scheme *sc, pointer args);
+pointer foreign_filetype(scheme *sc, pointer args);
+pointer foreign_filesize(scheme *sc, pointer args);
+pointer foreign_filedelete(scheme *sc, pointer args);
+pointer foreign_diropenstream(scheme *sc, pointer args);
+pointer foreign_dirreadentry(scheme *sc, pointer args);
+pointer foreign_dirrewind(scheme *sc, pointer args);
+pointer foreign_dirclosestream(scheme *sc, pointer args);
+pointer foreign_time(scheme *sc, pointer args);
+pointer foreign_gettimeofday(scheme *sc, pointer args);
+pointer foreign_usleep(scheme *sc, pointer args);
+void    init_ftx (scheme *sc);
 
 
 pointer foreign_fileexists(scheme *sc, pointer args)
@@ -234,7 +251,7 @@ pointer foreign_time(scheme *sc, pointer args)
   if (args != sc->NIL)
     return sc->F;
 
-#if	1
+#if 1
   time(&now);
   now_tm = localtime(&now);
 #else

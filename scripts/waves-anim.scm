@@ -63,7 +63,7 @@
     (gimp-image-add-layer image waves-layer -1)
     (gimp-drawable-set-name waves-layer layer-name)
 
-    (plug-in-waves 1
+    (plug-in-waves RUN-NONINTERACTIVE
                    image
                    waves-layer
                    amplitude
@@ -78,7 +78,7 @@
   )
 
   (gimp-drawable-set-name source-layer "Frame 1")
-  (plug-in-waves 1
+  (plug-in-waves RUN-NONINTERACTIVE
                  image
                  source-layer
                  amplitude
@@ -101,8 +101,8 @@
   "RGB* GRAY*"
   SF-IMAGE       "Image" 0
   SF-DRAWABLE    "Drawable" 0
-  SF-ADJUSTMENT _"Amplitude"        '(10  1  101 1 10 1 0)
-  SF-ADJUSTMENT _"Wavelength"       '(10 .10 100 1 10 1 0)
+  SF-ADJUSTMENT _"Amplitude"        '(10 1   101 1 10 1 0)
+  SF-ADJUSTMENT _"Wavelength"       '(10 0.1 100 1 10 1 0)
   SF-ADJUSTMENT _"Number of frames" '(6  1   512 1 10 0 1)
   SF-TOGGLE     _"Invert direction" FALSE
 )

@@ -24,14 +24,14 @@
 #include <libgimp/gimpui.h>
 
 #include "tinyscheme/scheme-private.h"
-#include "scheme-wrapper.h"
+#include "ts-wrapper.h"
 
-#include "script-fu-types.h"
+#include "tiny-fu-types.h"
 
-#include "script-fu-interface.h"
-#include "script-fu-scripts.h"
+#include "tiny-fu-interface.h"
+#include "tiny-fu-scripts.h"
 
-#include "script-fu-intl.h"
+#include "tiny-fu-intl.h"
 
 
 #define RESPONSE_RESET         1
@@ -44,18 +44,18 @@
 
 typedef struct
 {
-  GtkWidget     *dialog;
+  GtkWidget  *dialog;
 
-  GtkWidget     *table;
-  GtkWidget    **widgets;
+  GtkWidget  *table;
+  GtkWidget **widgets;
 
-  GtkWidget     *progress_label;
-  GtkWidget     *progress_bar;
+  GtkWidget  *progress_label;
+  GtkWidget  *progress_bar;
 
-  gchar         *title;
-  gchar         *last_command;
-  gint           command_count;
-  gint           consec_command_count;
+  gchar      *title;
+  gchar      *last_command;
+  gint        command_count;
+  gint        consec_command_count;
 } SFInterface;
 
 
@@ -161,8 +161,8 @@ script_fu_interface_report_cc (const gchar *command)
         }
     }
 
-  while (g_main_context_pending (NULL))
-    g_main_context_iteration (NULL, TRUE);
+  while (gtk_events_pending ())
+    gtk_main_iteration ();
 }
 
 void
@@ -209,21 +209,22 @@ script_fu_interface (SFScript *script,
       gtk_initted = TRUE;
     }
 
-  sf_interface = g_new0 (SFInterface, 1);
+  sf_interface = g_slice_new0 (SFInterface);
+
   sf_interface->widgets = g_new0 (GtkWidget *, script->num_args);
 
-  /* strip the first part of the menupath if it contains _("/Script-Fu/") */
-  tmp = strstr (gettext (script->menu_path), _("/Script-Fu/"));
-
-  if (tmp)
-    sf_interface->title = g_strdup (tmp + strlen (_("/Script-Fu/")));
-  else
-    sf_interface->title = g_strdup (gettext (script->menu_path));
-
   /* strip mnemonics from the menupath */
-  tmp = gimp_strip_uline (sf_interface->title);
-  g_free (sf_interface->title);
-  sf_interface->title = tmp;
+  sf_interface->title = gimp_strip_uline (gettext (script->menu_path));
+
+  /* if this looks like a full menu path, use only the last part */
+  if (sf_interface->title[0] == '<' &&
+      (tmp = strrchr (sf_interface->title, '/')) && tmp[1])
+    {
+      tmp = g_strdup (tmp + 1);
+
+      g_free (sf_interface->title);
+      sf_interface->title = tmp;
+    }
 
   /* cut off ellipsis */
   tmp = (strstr (sf_interface->title, "..."));
@@ -544,6 +545,9 @@ script_fu_interface (SFScript *script,
                           G_CALLBACK (gimp_int_combo_box_get_active),
                           &script->arg_values[i].sfa_enum.history);
         break;
+
+      case SF_DISPLAY:
+        break;
       }
 
       if (widget)
@@ -628,7 +632,7 @@ script_fu_interface_quit (SFScript *script)
   g_free (sf_interface->widgets);
   g_free (sf_interface->last_command);
 
-  g_free (sf_interface);
+  g_slice_free (SFInterface, sf_interface);
   sf_interface = NULL;
 
   /*
@@ -758,7 +762,7 @@ static void
 script_fu_ok (SFScript *script)
 {
   gchar   *escaped;
-  GString *s;
+  GString *s, *output;
   gchar   *command;
   gchar    buffer[G_ASCII_DTOSTR_BUF_SIZE];
   gint     i;
@@ -780,6 +784,7 @@ script_fu_ok (SFScript *script)
         case SF_LAYER:
         case SF_CHANNEL:
         case SF_VECTORS:
+        case SF_DISPLAY:
           g_string_append_printf (s, "%d", arg_value->sfa_image);
           break;
 
@@ -810,7 +815,7 @@ script_fu_ok (SFScript *script)
           arg_value->sfa_value =
             g_strdup (gtk_entry_get_text (GTK_ENTRY (widget)));
 
-          escaped = g_strescape (arg_value->sfa_value, NULL);
+          escaped = script_fu_strescape (arg_value->sfa_value);
           g_string_append_printf (s, "\"%s\"", escaped);
           g_free (escaped);
           break;
@@ -832,7 +837,7 @@ script_fu_ok (SFScript *script)
                                                              &start, &end,
                                                              FALSE);
 
-            escaped = g_strescape (arg_value->sfa_value, NULL);
+            escaped = script_fu_strescape (arg_value->sfa_value);
             g_string_append_printf (s, "\"%s\"", escaped);
             g_free (escaped);
           }
@@ -846,7 +851,7 @@ script_fu_ok (SFScript *script)
 
         case SF_FILENAME:
         case SF_DIRNAME:
-          escaped = g_strescape (arg_value->sfa_file.filename, NULL);
+          escaped = script_fu_strescape (arg_value->sfa_file.filename);
           g_string_append_printf (s, "\"%s\"", escaped);
           g_free (escaped);
           break;
@@ -893,8 +898,11 @@ script_fu_ok (SFScript *script)
   command = g_string_free (s, FALSE);
 
   /*  run the command through the interpreter  */
+  output = g_string_new ("");
+  ts_register_output_func (ts_gstring_output_func, output);
   if (ts_interpret_string (command))
-    script_fu_error_msg (command);
+    script_fu_error_msg (command, output->str);
+  g_string_free (output, TRUE);
 
   g_free (command);
 }
@@ -915,6 +923,7 @@ script_fu_reset (SFScript *script)
         case SF_LAYER:
         case SF_CHANNEL:
         case SF_VECTORS:
+        case SF_DISPLAY:
           break;
 
         case SF_COLOR:

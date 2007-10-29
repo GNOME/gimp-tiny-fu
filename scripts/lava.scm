@@ -37,7 +37,6 @@
         (image-width (car (gimp-image-width image)))
         (image-height (car (gimp-image-height image)))
         (active-selection)
-        (from-selection)
         (selection-bounds)
         (select-offset-x)
         (select-offset-y)
@@ -48,18 +47,18 @@
         )
 
     (gimp-context-push)
-
     (gimp-image-undo-group-start image)
-    (gimp-layer-add-alpha drawable)
+
+    (if (= (car (gimp-drawable-has-alpha drawable)) FALSE)
+        (gimp-layer-add-alpha drawable)
+    )
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
-        (begin
-          (gimp-selection-layer-alpha drawable)
-          (set! active-selection (car (gimp-selection-save image)))
-          (set! from-selection FALSE))
-        (begin
-          (set! from-selection TRUE)
-          (set! active-selection (car (gimp-selection-save image)))))
+        (gimp-selection-layer-alpha drawable)
+    )
+
+    (set! active-selection (car (gimp-selection-save image)))
+    (gimp-image-set-active-layer image drawable)
 
     (set! selection-bounds (gimp-selection-bounds image))
     (set! select-offset-x (cadr selection-bounds))
@@ -83,29 +82,34 @@
           (gimp-edit-clear lava-layer)
 
           (gimp-selection-load active-selection)
-          (gimp-image-set-active-layer image lava-layer)))
+          (gimp-image-set-active-layer image lava-layer)
+        )
+    )
 
     (set! active-layer (car (gimp-image-get-active-layer image)))
 
     (if (= current-grad FALSE)
-        (gimp-context-set-gradient gradient))
+        (gimp-context-set-gradient gradient)
+    )
 
-    (plug-in-solid-noise 1 image active-layer FALSE TRUE seed 2 2 2)
-    (plug-in-cubism 1 image active-layer tile_size 2.5 0)
-    (plug-in-oilify 1 image active-layer mask_size 0)
-    (plug-in-edge 1 image active-layer 2 0 0)
-    (plug-in-gauss-rle 1 image active-layer 2 TRUE TRUE)
-    (plug-in-gradmap 1 image active-layer)
+    (plug-in-solid-noise RUN-NONINTERACTIVE image active-layer FALSE TRUE seed 2 2 2)
+    (plug-in-cubism RUN-NONINTERACTIVE image active-layer tile_size 2.5 0)
+    (plug-in-oilify RUN-NONINTERACTIVE image active-layer mask_size 0)
+    (plug-in-edge RUN-NONINTERACTIVE image active-layer 2 0 0)
+    (plug-in-gauss-rle RUN-NONINTERACTIVE image active-layer 2 TRUE TRUE)
+    (plug-in-gradmap RUN-NONINTERACTIVE image active-layer)
 
     (if (= keep-selection FALSE)
-        (gimp-selection-none image))
+        (gimp-selection-none image)
+    )
 
     (gimp-image-set-active-layer image drawable)
     (gimp-image-remove-channel image active-selection)
-    (gimp-image-undo-group-end image)
-    (gimp-displays-flush)
 
+    (gimp-image-undo-group-end image)
     (gimp-context-pop)
+
+    (gimp-displays-flush)
   )
 )
 

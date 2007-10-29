@@ -51,7 +51,8 @@
 
   (gimp-context-push)
 
-  (if (= rel-distance 0) (set! rel-distance 999999))
+  (if (> rel-distance 24) (set! rel-distance 999999))
+  (if (= rel-distance rel-length) (set! rel-distance (+ rel-distance 0.01)))
 
   (gimp-image-undo-group-start image)
 
@@ -117,13 +118,25 @@
 
           (if (< shadow-offset-x 0)
               (begin
-                (set! image-offset-x (- 0 shadow-offset-x))
-                (set! new-image-width (- new-image-width image-offset-x))))
+                (set! image-offset-x (abs shadow-offset-x))
+                (set! new-image-width (+ new-image-width image-offset-x))
+                ; adjust to new coordinate system
+                (set! x0 (+ x0 image-offset-x))
+                (set! x1 (+ x1 image-offset-x))
+                (set! x2 (+ x2 image-offset-x))
+                (set! x3 (+ x3 image-offset-x))
+              ))
 
           (if (< shadow-offset-y 0)
               (begin
-                (set! image-offset-y (- 0 shadow-offset-y))
-                (set! new-image-height (- new-image-height image-offset-y))))
+                (set! image-offset-y (abs shadow-offset-y))
+                (set! new-image-height (+ new-image-height image-offset-y))
+                ; adjust to new coordinate system
+                (set! y0 (+ y0 image-offset-y))
+                (set! y1 (+ y1 image-offset-y))
+                (set! y2 (+ y2 image-offset-y))
+                (set! y3 (+ y3 image-offset-y))
+              ))
 
           (if (> (+ shadow-width shadow-offset-x) new-image-width)
               (set! new-image-width (+ shadow-width shadow-offset-x)))
@@ -143,7 +156,7 @@
                       x3 y3
                       TRANSFORM-FORWARD
                       interpolation
-                      TRUE 3 FALSE)
+                      TRUE 3 TRANSFORM-RESIZE-ADJUST)
 
     (if (>= shadow-blur 1.0)
         (begin
@@ -153,7 +166,7 @@
                              shadow-height
                              shadow-blur
                              shadow-blur)
-          (plug-in-gauss-rle 1
+          (plug-in-gauss-rle RUN-NONINTERACTIVE
                              image
                              shadow-layer
                              shadow-blur
@@ -189,8 +202,8 @@
   SF-IMAGE       "Image"                        0
   SF-DRAWABLE    "Drawable"                     0
   SF-ADJUSTMENT _"Angle"                        '(45 0 180 1 10 1 0)
-  SF-ADJUSTMENT _"Relative distance of horizon" '(5 0 24 .1 1 1 1)
-  SF-ADJUSTMENT _"Relative length of shadow"    '(1 0 24 .1 1 1 1)
+  SF-ADJUSTMENT _"Relative distance of horizon" '(5 0.1 24.1 0.1 1 1 1)
+  SF-ADJUSTMENT _"Relative length of shadow"    '(1 0.1 24   0.1 1 1 1)
   SF-ADJUSTMENT _"Blur radius"                  '(3 0 1024 1 10 0 0)
   SF-COLOR      _"Color"                        '(0 0 0)
   SF-ADJUSTMENT _"Opacity"                      '(80 0 100 1 10 0 0)

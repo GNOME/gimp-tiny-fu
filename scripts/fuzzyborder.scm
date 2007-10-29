@@ -42,6 +42,8 @@
        (theLayer)
        )
 
+    (gimp-context-push)
+
     (gimp-selection-all inImage)
     (set! theImage (if (= inCopy TRUE)
                      (car (gimp-image-duplicate inImage))
@@ -71,7 +73,7 @@
                       (/ theHeight inGranu)
                       TRUE)
 
-    (plug-in-spread TRUE
+    (plug-in-spread RUN-NONINTERACTIVE
                     theImage
                     theLayer
                     (/ inSize inGranu)
@@ -90,7 +92,8 @@
     (chris-color-edge theImage theLayer inColor 1)
 
     (if (= inBlur TRUE)
-        (plug-in-gauss-rle TRUE theImage theLayer inSize TRUE TRUE)
+        (plug-in-gauss-rle RUN-NONINTERACTIVE
+			   theImage theLayer inSize TRUE TRUE)
     )
     (if (= inShadow TRUE)
         (begin
@@ -107,7 +110,7 @@
                              theHeight
                              (/ inSize 2)
                              (/ inSize 2))
-          (plug-in-gauss-rle TRUE
+          (plug-in-gauss-rle RUN-NONINTERACTIVE
                              theImage
                              theLayer
                              (/ inSize 2)
@@ -126,6 +129,8 @@
       )
     )
     (gimp-displays-flush)
+
+    (gimp-context-pop)
   )
 )
 

@@ -148,7 +148,7 @@
     (copy-layer-chrome-it img layer1 banding-img banding-layer)
     (gimp-image-delete banding-img)
     (gimp-layer-scale layer1 width height FALSE)
-    (plug-in-gauss-iir 1 img layer1 10 TRUE TRUE)
+    (plug-in-gauss-iir RUN-NONINTERACTIVE img layer1 10 TRUE TRUE)
     (gimp-layer-set-opacity layer1 50)
     (set! layer1 (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))
     (gimp-curves-spline layer1 0 18 (spline-chrome-it))
@@ -212,7 +212,7 @@
   SF-DRAWABLE    "Chrome mask"       0
   SF-ADJUSTMENT _"Chrome saturation" '(-80 -100 100 1 10 0 0)
   SF-ADJUSTMENT _"Chrome lightness"  '(-47 -100 100 1 10 0 0)
-  SF-ADJUSTMENT _"Chrome factor"     '(.75 0 1 .1 .01 2 0)
+  SF-ADJUSTMENT _"Chrome factor"     '(0.75 0 1 0.1 0.01 2 0)
   SF-FILENAME   _"Environment map"
                 (string-append gimp-data-directory
                               "/scripts/images/beavis.jpg")

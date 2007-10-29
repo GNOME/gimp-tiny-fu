@@ -141,7 +141,7 @@
     (copy-layer-sota img layer1 banding-img banding-layer)
     (gimp-image-delete banding-img)
     (gimp-layer-scale layer1 width height FALSE)
-    (plug-in-gauss-iir 1 img layer1 10 TRUE TRUE)
+    (plug-in-gauss-iir RUN-NONINTERACTIVE img layer1 10 TRUE TRUE)
     (gimp-layer-set-opacity layer1 50)
     (gimp-drawable-set-visible layer1 TRUE)
     (gimp-drawable-set-visible layer2 TRUE)
@@ -208,7 +208,7 @@
   ""
   SF-ADJUSTMENT _"Chrome saturation"  '(-80 -100 100 1 10 0 0)
   SF-ADJUSTMENT _"Chrome lightness"   '(-47 -100 100 1 10 0 0)
-  SF-ADJUSTMENT _"Chrome factor"      '(.75 0 1 .1 .01 2 0)
+  SF-ADJUSTMENT _"Chrome factor"      '(.75 0 1 0.1 0.01 2 0)
   SF-STRING     _"Text"               "GIMP"
   SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
   SF-FONT       _"Font"               "RoostHeavy"

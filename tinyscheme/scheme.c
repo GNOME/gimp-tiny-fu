@@ -41,10 +41,37 @@
 #include <limits.h>
 #include <float.h>
 #include <ctype.h>
+#include <string.h>
 
 #include <libintl.h>
 
 #include "scheme-private.h"
+
+#if !STANDALONE
+static ts_output_func   ts_output_handler = NULL;
+static gpointer         ts_output_data = NULL;
+
+void
+ts_register_output_func (ts_output_func  func,
+                         gpointer        user_data)
+{
+  ts_output_handler = func;
+  ts_output_data    = user_data;
+}
+
+/* len is length of 'string' in bytes or -1 for null terminated strings */
+void
+ts_output_string (TsOutputType  type,
+                  const char   *string,
+                  int           len)
+{
+  if (len < 0)
+    len = strlen (string);
+
+  if (ts_output_handler && len > 0)
+    (* ts_output_handler) (type, string, len, ts_output_data);
+}
+#endif
 
 /* Used for documentation purposes, to signal functions in 'interface' */
 #define INTERFACE
@@ -92,7 +119,7 @@ static int utf8_stricmp(const char *s1, const char *s2)
   return result;
 }
 
-#define min(a, b)  ((a <= b) ? a : b)
+#define min(a, b)  ((a) <= (b) ? (a) : (b))
 
 #if USE_STRLWR
 /*
@@ -143,8 +170,6 @@ enum scheme_types {
 #define CLRATOM      49151    /* 1011111111111111 */   /* only for gc */
 #define MARK         32768    /* 1000000000000000 */
 #define UNMARK       32767    /* 0111111111111111 */
-
-void (*ts_output_routine) (FILE *, char *, int);
 
 static num num_add(num a, num b);
 static num num_mul(num a, num b);
@@ -323,12 +348,9 @@ static int is_ascii_name(const char *name, int *pc) {
 
 #endif
 
-static const char utf8_length[128] =
+/* Number of bytes expected AFTER lead byte of UTF-8 character. */
+static const char utf8_length[64] =
 {
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, /* 0x80-0x8f */
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, /* 0x90-0x9f */
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, /* 0xa0-0xaf */
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, /* 0xb0-0xbf */
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, /* 0xc0-0xcf */
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, /* 0xd0-0xdf */
     2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2, /* 0xe0-0xef */
@@ -599,7 +621,7 @@ static int alloc_cellseg(scheme *sc, int n) {
           i = ++sc->last_cell_seg ;
           sc->alloc_seg[i] = cp;
           /* adjust in TYPE_BITS-bit boundary */
-          if(((unsigned)cp)%adj!=0) {
+          if (((unsigned long) cp) % adj != 0) {
             cp=(char*)(adj*((unsigned long)cp/adj+1));
           }
         /* insert new segment in address order */
@@ -924,6 +946,15 @@ void set_safe_foreign (scheme *sc, pointer data) {
   }
 }
 
+pointer foreign_error (scheme *sc, const char *s, pointer a) {
+  if (sc->safe_foreign == sc->NIL) {
+    fprintf (stderr, "set_foreign_error_flag called outside a foreign function\n");
+  } else {
+    sc->foreign_error = cons (sc, mk_string (sc, s), a);
+  }
+  return sc->T;
+}
+
 
 /* char_cnt is length of string in chars. */
 /* str points to a NUL terminated string. */
@@ -1126,7 +1157,7 @@ static pointer mk_atom(scheme *sc, char *q) {
           }
      }
      if(has_dec_point) {
-          return mk_real(sc,atof(q));
+       return mk_real(sc,g_ascii_strtod(q,NULL));
      }
      return (mk_integer(sc, atol(q)));
 }
@@ -1445,20 +1476,52 @@ static gunichar basic_inchar(port *pt) {
   int  len;
 
   if(pt->kind&port_file) {
-    char utf8[7];
-    char *s;
+    unsigned char utf8[7];
+    int  c;
     int  i;
 
-    utf8[0] = fgetc(pt->rep.stdio.file);
-    if (utf8[0] & 0x80)
-    {
-       len = utf8_length[ utf8[0]&0x7F ];
-       s = &utf8[1];
-       for (i = 0; i < len; ++i)
-         *s++ = fgetc(pt->rep.stdio.file);
-       return g_utf8_get_char_validated(utf8, len+1);
-    }
-    return (gunichar)utf8[0];
+    c = fgetc(pt->rep.stdio.file);
+    if (c == EOF) return EOF;
+    utf8[0] = c;
+
+    while (TRUE)
+      {
+        if (utf8[0] <= 0x7f)
+          {
+            return (gunichar) utf8[0];
+          }
+
+        /* Check for valid lead byte per RFC-3629 */
+        if (utf8[0] >= 0xc2 && utf8[0] <= 0xf4)
+          {
+            len = utf8_length[utf8[0] & 0x3F];
+            for (i = 1; i <= len; i++)
+              {
+                c = fgetc(pt->rep.stdio.file);
+                if (c == EOF) return EOF;
+                utf8[i] = c;
+                if ((utf8[i] & 0xc0) != 0x80)
+                  {
+                    break;
+                  }
+              }
+
+            if (i > len)
+              {
+                return g_utf8_get_char ((char *) utf8);
+              }
+
+            /* we did not get enough continuation characters. */
+            utf8[0] = utf8[i];          /* ignore and restart */
+          }
+        else
+          {
+            /* Everything else is invalid and will be ignored */
+            c = fgetc(pt->rep.stdio.file);
+            if (c == EOF) return EOF;
+            utf8[0] = c;
+          }
+      }
   } else {
     if(*pt->rep.string.curr==0
        || pt->rep.string.curr==pt->rep.string.past_the_end) {
@@ -1468,8 +1531,21 @@ static gunichar basic_inchar(port *pt) {
 
       len = pt->rep.string.past_the_end - pt->rep.string.curr;
       c = g_utf8_get_char_validated(pt->rep.string.curr, len);
-      len = g_unichar_to_utf8(c, NULL);
-      pt->rep.string.curr += len;
+
+      if (c < 0)
+      {
+        pt->rep.string.curr = g_utf8_find_next_char(pt->rep.string.curr,
+                                                    pt->rep.string.past_the_end);
+        if (pt->rep.string.curr == NULL)
+            pt->rep.string.curr = pt->rep.string.past_the_end;
+        c = ' ';
+      }
+      else
+      {
+        len = g_unichar_to_utf8(c, NULL);
+        pt->rep.string.curr += len;
+      }
+
       return c;
     }
   }
@@ -1481,13 +1557,10 @@ static gunichar inchar(scheme *sc) {
   port *pt;
  again:
   pt=sc->inport->_object._port;
-  if(pt->kind&port_file && pt->rep.stdio.file == stdin)
+  if(pt->kind&port_file)
   {
     if (sc->bc_flag)
-    {
-      sc->bc_flag = 0;
-      c = sc->backchar;
-    }
+      c = sc->backchar[--sc->bc_flag];
     else
       c=basic_inchar(pt);
   }
@@ -1514,15 +1587,8 @@ static void backchar(scheme *sc, gunichar c) {
   charlen = g_unichar_to_utf8(c, NULL);
   pt=sc->inport->_object._port;
   if(pt->kind&port_file) {
-    if (pt->rep.stdio.file == stdin)
-    {
-      sc->backchar = c;
-      sc->bc_flag = 1;
-    }
-    else {
-      if (ftell(pt->rep.stdio.file) >= (long)charlen)
-         fseek(pt->rep.stdio.file, 0L-(long)charlen, SEEK_CUR);
-    }
+    if (sc->bc_flag < 2)
+      sc->backchar[sc->bc_flag++] = c;
   } else {
     if(pt->rep.string.curr!=pt->rep.string.start) {
       if(pt->rep.string.curr-pt->rep.string.start >= charlen)
@@ -1535,35 +1601,38 @@ static void backchar(scheme *sc, gunichar c) {
 
 /* len is number of UTF-8 characters in string pointed to by chars */
 static void putchars(scheme *sc, const char *chars, int char_cnt) {
+  int   free_bytes;     /* Space remaining in buffer (in bytes) */
   int   l;
-  char *s;
   port *pt=sc->outport->_object._port;
 
   if (char_cnt <= 0)
       return;
 
-#if !STANDALONE
-  /* Output characters to console mode (if enabled) */
-  if (ts_output_routine != NULL)    /* Should this be left in?? ~~~~~ */
-     (*ts_output_routine) (pt->rep.stdio.file, (char *)chars, char_cnt);
-#endif
-
+  /* Get length of 'chars' in bytes */
   char_cnt = g_utf8_offset_to_pointer(chars, (long)char_cnt) - chars;
 
-  if (sc->print_error) {
-      l = strlen(sc->linebuff);
-      s = &sc->linebuff[l];
-      memcpy(s, chars, min(char_cnt, LINESIZE-l-1));
-      return;
-  }
-
   if(pt->kind&port_file) {
-    fwrite(chars,1,char_cnt,pt->rep.stdio.file);
-    fflush(pt->rep.stdio.file);
+#if STANDALONE
+      fwrite(chars,1,char_cnt,pt->rep.stdio.file);
+      fflush(pt->rep.stdio.file);
+#else
+      /* If output is still directed to stdout (the default) it should be    */
+      /* safe to redirect it to the registered output routine. */
+      if (pt->rep.stdio.file == stdout)
+           ts_output_string (TS_OUTPUT_NORMAL, chars, char_cnt);
+      else {
+        fwrite(chars,1,char_cnt,pt->rep.stdio.file);
+        fflush(pt->rep.stdio.file);
+      }
+#endif
   } else {
-    l = pt->rep.string.past_the_end - pt->rep.string.curr;
-    if (l > 0)
-       memcpy(pt->rep.string.curr, chars, min(char_cnt, l));
+    free_bytes = pt->rep.string.past_the_end - pt->rep.string.curr;
+    if (free_bytes > 0)
+    {
+       l = min(char_cnt, free_bytes);
+       memcpy(pt->rep.string.curr, chars, l);
+       pt->rep.string.curr += l;
+    }
   }
 }
 
@@ -1619,7 +1688,7 @@ static pointer readstrexp(scheme *sc) {
   gunichar c;
   int c1=0;
   int len;
-  enum { st_ok, st_bsl, st_x1, st_x2, st_oct1, st_oct2, st_oct3 } state=st_ok;
+  enum { st_ok, st_bsl, st_x1, st_x2, st_oct1, st_oct2 } state=st_ok;
 
   for (;;) {
     c=inchar(sc);
@@ -1694,33 +1763,28 @@ static pointer readstrexp(scheme *sc) {
         state=st_ok;
       }
       break;
-    case st_oct1:
-    case st_oct2:
-    case st_oct3:
+    case st_oct1:   /* State when handling second octal digit */
+    case st_oct2:   /* State when handling third octal digit */
       if (!g_unichar_isdigit(c) || g_unichar_digit_value(c) > 7)
       {
-        if (state==st_oct1)
-           return sc->F;
-
         *p++=c1;
         backchar(sc, c);
         state=st_ok;
       }
       else
       {
+        /* Is value of three character octal too big for a byte? */
+        if (state==st_oct2 && c1 >= 32)
+          return sc->F;
+
         c1=(c1<<3)+g_unichar_digit_value(c);
-        switch (state)
-        {
-        case st_oct1:
+
+        if (state == st_oct1)
           state=st_oct2;
-          break;
-        case st_oct2:
-          state=st_oct3;
-          break;
-        default:
+        else
+        {
           *p++=c1;
           state=st_ok;
-          break;
         }
       }
       break;
@@ -1898,7 +1962,8 @@ static void atom2str(scheme *sc, pointer l, int f, char **pp, int *plen) {
           if(is_integer(l)) {
                sprintf(p, "%ld", ivalue_unchecked(l));
           } else {
-               sprintf(p, "%.10g", rvalue_unchecked(l));
+               g_ascii_formatd (p, sizeof (sc->strbuff), "%.10g",
+                                rvalue_unchecked(l));
           }
      } else if (is_string(l)) {
           if (!f) {
@@ -2081,8 +2146,10 @@ static int eqv(pointer a, pointer b) {
 /* ========== Environment implementation  ========== */
 
 #if !defined(USE_ALIST_ENV) || !defined(USE_OBJECT_LIST)
-//#warning FIXME: Update hash_fn() to handle UTF-8 coded keys
 
+#ifdef __GNUC__
+#warning FIXME: Update hash_fn() to handle UTF-8 coded keys
+#endif
 static int hash_fn(const char *key, int table_size)
 {
   unsigned int hashed = 0;
@@ -2541,9 +2608,16 @@ static pointer opexe_0(scheme *sc, enum scheme_opcodes op) {
                s_goto(sc,procnum(sc->code));   /* PROCEDURE */
           } else if (is_foreign(sc->code)) {
                sc->safe_foreign = cons (sc, sc->NIL, sc->safe_foreign);
+               sc->foreign_error = sc->NIL;
                x=sc->code->_object._ff(sc,sc->args);
                sc->safe_foreign = cdr (sc->safe_foreign);
-               s_return(sc,x);
+               if (sc->foreign_error == sc->NIL) {
+                   s_return(sc,x);
+               } else {
+                   x = sc->foreign_error;
+                   sc->foreign_error = sc->NIL;
+                   Error_1 (sc, string_value (car (x)), cdr (x));
+               }
           } else if (is_closure(sc->code) || is_macro(sc->code)
                      || is_promise(sc->code)) { /* CLOSURE */
             /* Should not accept promise */
@@ -3522,7 +3596,7 @@ static pointer opexe_3(scheme *sc, enum scheme_opcodes op) {
      case OP_STRINGP:     /* string? */
           s_retbool(is_string(car(sc->args)));
      case OP_INTEGERP:     /* integer? */
-          s_retbool(is_integer(car(sc->args)));
+          s_retbool(is_number(car(sc->args)) && is_integer(car(sc->args)));
      case OP_REALP:     /* real? */
           s_retbool(is_number(car(sc->args))); /* All numbers are real */
      case OP_CHARP:     /* char? */
@@ -3626,9 +3700,6 @@ static pointer opexe_4(scheme *sc, enum scheme_opcodes op) {
                sc->args=cons(sc,mk_string(sc," -- "),sc->args);
                setimmutable(car(sc->args));
           }
-          if (sc->print_error == 0)     /* Reset buffer if not already */
-              sc->linebuff[0] = '\0';   /* in error message output mode*/
-          sc->print_error = 1;
           putstr(sc, "Error: ");
           putstr(sc, strvalue(car(sc->args)));
           sc->args = cdr(sc->args);
@@ -3643,7 +3714,6 @@ static pointer opexe_4(scheme *sc, enum scheme_opcodes op) {
                s_goto(sc,OP_P0LIST);
           } else {
                putstr(sc, "\n");
-               sc->print_error = 0;
                if(sc->interactive_repl) {
                     s_goto(sc,OP_T0LVL);
                } else {
@@ -3943,8 +4013,7 @@ static pointer opexe_5(scheme *sc, enum scheme_opcodes op) {
                     s_return(sc,x);
                }
           default:
-               sprintf(sc->linebuff, "syntax error: illegal token %d", sc->tok);
-               Error_0(sc,sc->linebuff);
+               Error_1(sc, "syntax error: illegal token", mk_integer (sc, sc->tok));
           }
           break;
 
@@ -4494,7 +4563,6 @@ int scheme_init_custom_alloc(scheme *sc, func_alloc malloc, func_dealloc free) {
   sc->nesting=0;
   sc->interactive_repl=0;
   sc->print_output=0;
-  sc->print_error=0;
 
   if (alloc_cellseg(sc,FIRST_CELLSEGS) != FIRST_CELLSEGS) {
     sc->no_memory=1;

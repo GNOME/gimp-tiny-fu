@@ -16,27 +16,35 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#ifndef TS_WRAPPER_H
-#define TS_WRAPPER_H
+#ifndef SCHEME_WRAPPER_H
+#define SCHEME_WRAPPER_H
 
-FILE        * ts_get_output_file   (void);
-void          ts_set_output_file   (FILE *file);
+#include "tinyscheme/scheme.h"
 
-void          ts_set_console_mode  (int flag);
+void          ts_stdout_output_func   (TsOutputType    type,
+                                       const char     *string,
+                                       int             len,
+                                       gpointer        user_data);
+
+void          ts_gstring_output_func  (TsOutputType    type,
+                                       const char     *string,
+                                       int             len,
+                                       gpointer        user_data);
 
 void          ts_set_print_flag    (gint);
 void          ts_print_welcome     (void);
 
-const gchar * ts_get_error_msg     (void);
 const gchar * ts_get_success_msg   (void);
 
-void          tinyscheme_init      (const gchar *path,
-                                    gboolean     local_register_scripts);
+void          tinyscheme_init      (const gchar  *path,
+                                    gboolean      local_register_scripts);
 void          tinyscheme_deinit    (void);
 
-void          ts_output_string     (FILE *fp, char *string, int len);
+void          set_run_mode_constant (GimpRunMode run_mode);
+
+void          ts_interpret_stdin   (void);
 
 /* if the return value is 0, success. error otherwise. */
 gint          ts_interpret_string  (const gchar *);
 
-#endif /* TS_WRAPPER_H */
+#endif /* SCHEME_WRAPPER_H */

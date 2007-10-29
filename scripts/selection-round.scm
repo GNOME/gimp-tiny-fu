@@ -167,14 +167,14 @@
 
 (script-fu-register "script-fu-selection-round"
   ""
-  _"Round the corners of the current selection (deprecated, use Rounded Rectangle)"
+  "Round the corners of the current selection (deprecated, use Rounded Rectangle)"
   "Sven Neumann"              ; authors
   "Sven Neumann"              ; copyright
   "1998/02/06"
   "*"
   SF-IMAGE       "Image"      0
   SF-DRAWABLE    "Drawable"   0
-  SF-ADJUSTMENT  "Relative radius" '(1 0 128 .1 1 1 1)
+  SF-ADJUSTMENT  "Relative radius" '(1 0 128 0.1 1 1 1)
 )
 
 (script-fu-menu-register "script-fu-selection-rounded-rectangle"

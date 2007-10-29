@@ -57,8 +57,8 @@ func_dealloc free;
 int retcode;
 int tracing;
 
-#define CELL_SEGSIZE    5000  /* # of cells in one segment */
-#define CELL_NSEGMENT   20    /* # of segments for cells */
+#define CELL_SEGSIZE    25000 /* # of cells in one segment */
+#define CELL_NSEGMENT   50    /* # of segments for cells */
 char *alloc_seg[CELL_NSEGMENT];
 pointer cell_seg[CELL_NSEGMENT];
 int     last_cell_seg;
@@ -69,10 +69,10 @@ pointer envir;           /* stack register for current environment */
 pointer code;            /* register for current code */
 pointer dump;            /* stack register for next evaluation */
 pointer safe_foreign;    /* register to avoid gc problems */
+pointer foreign_error;   /* used for foreign functions to signal an error */
 
 int interactive_repl;    /* are we in an interactive REPL? */
 int print_output;        /* set to 1 to print results and error messages */
-int print_error;         /* set to 1 while printing error messages */
 
 struct cell _sink;
 pointer sink;            /* when mem. alloc. fails */
@@ -117,7 +117,6 @@ char    gc_verbose;      /* if gc_verbose is not zero, print gc status */
 char    no_memory;       /* Whether mem. alloc. has failed */
 
 #define LINESIZE 1024
-char    linebuff[LINESIZE];
 char    strbuff[LINESIZE];
 
 FILE *tmpfp;
@@ -133,7 +132,7 @@ struct scheme_interface *vptr;
 void *dump_base;     /* pointer to base of allocated dump stack */
 int dump_size;       /* number of frames allocated for dump stack */
 
-gunichar backchar;
+gunichar backchar[2];
 int bc_flag;
 };
 
@@ -171,6 +170,7 @@ pointer set_cdr(pointer p, pointer q);
 
 int is_symbol(pointer p);
 char *symname(pointer p);
+char *symkey(pointer p);
 int hasprop(pointer p);
 
 int is_syntax(pointer p);

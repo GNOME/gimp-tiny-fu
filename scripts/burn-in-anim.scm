@@ -1,5 +1,5 @@
 ;
-;  burn-in-anim.scm V2.1  -  script-fu for the GIMP 1.1 and higher
+;  burn-in-anim.scm V2.1  -  script-fu for GIMP 1.1 and higher
 ;
 ;  Copyright (C) 9/2000  Roland Berger
 ;  roland@fuchur.leute.server.de
@@ -190,7 +190,7 @@
           (if (= optimize TRUE)
               (begin
                 (gimp-image-convert-indexed img 1 WEB-PALETTE 250 FALSE TRUE "")
-                (set! img-out (car (plug-in-animationoptimize 0
+                (set! img-out (car (plug-in-animationoptimize RUN-NONINTERACTIVE
                                                               img
                                                               bl-layer)))
               )
@@ -208,7 +208,7 @@
         )
 
         ;--- false form of "if-1"
-        (gimp-message _"Burn-In: Needs two layers in total!\nA foreground text layer with transparency and a background layer.")
+        (gimp-message _"The Burn-In script needs two layers in total. A foreground layer with transparency and a background layer.")
     )
   )
 )

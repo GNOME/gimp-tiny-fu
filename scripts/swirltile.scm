@@ -24,21 +24,21 @@
     (gimp-image-add-layer img layer-one 0)
     (gimp-context-set-background bg-color)
     (gimp-edit-fill layer-one BACKGROUND-FILL)
-    (plug-in-noisify 1 img layer-one FALSE noise-level noise-level noise-level 1.0)
+    (plug-in-noisify RUN-NONINTERACTIVE img layer-one FALSE noise-level noise-level noise-level 1.0)
 
-    (plug-in-whirl-pinch 1 img layer-one whirl-amount 0.0 1.0)
-    (plug-in-whirl-pinch 1 img layer-one whirl-amount 0.0 1.0)
-    (plug-in-whirl-pinch 1 img layer-one whirl-amount 0.0 1.0)
+    (plug-in-whirl-pinch RUN-NONINTERACTIVE img layer-one whirl-amount 0.0 1.0)
+    (plug-in-whirl-pinch RUN-NONINTERACTIVE img layer-one whirl-amount 0.0 1.0)
+    (plug-in-whirl-pinch RUN-NONINTERACTIVE img layer-one whirl-amount 0.0 1.0)
 
     (gimp-drawable-offset layer-one TRUE 0 cx cy)
 
-    (plug-in-whirl-pinch 1 img layer-one whirl-amount 0.0 1.0)
-    (plug-in-whirl-pinch 1 img layer-one whirl-amount 0.0 1.0)
-    (plug-in-whirl-pinch 1 img layer-one whirl-amount 0.0 1.0)
+    (plug-in-whirl-pinch RUN-NONINTERACTIVE img layer-one whirl-amount 0.0 1.0)
+    (plug-in-whirl-pinch RUN-NONINTERACTIVE img layer-one whirl-amount 0.0 1.0)
+    (plug-in-whirl-pinch RUN-NONINTERACTIVE img layer-one whirl-amount 0.0 1.0)
 
-    (plug-in-gauss-rle 1 img layer-one blurRadius TRUE TRUE)
+    (plug-in-gauss-rle RUN-NONINTERACTIVE img layer-one blurRadius TRUE TRUE)
 
-    (plug-in-bump-map 1 img layer-one layer-one azimuth elevation depth 0 0 0 0 FALSE FALSE 0)
+    (plug-in-bump-map RUN-NONINTERACTIVE img layer-one layer-one azimuth elevation depth 0 0 0 0 FALSE FALSE 0)
 
     (gimp-display-new img)
     (gimp-image-undo-enable img)
@@ -61,7 +61,7 @@
   SF-ADJUSTMENT _"Height"           '(256 0 1024 1 10 0 1)
   SF-ADJUSTMENT _"Width"            '(256 0 1024 1 10 0 1)
   SF-ADJUSTMENT _"Whirl amount"     '(320 0 360 1 10 0 0)
-  SF-ADJUSTMENT _"Roughness"        '(.5 0 1 .1 .01 2 1)
+  SF-ADJUSTMENT _"Roughness"        '(0.5 0 1 0.1 0.01 2 1)
   SF-COLOR      _"Background color" "white"
 )
 

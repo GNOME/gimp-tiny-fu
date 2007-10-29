@@ -74,7 +74,7 @@
   )
 )
 
-; Register the function with the GIMP:
+; Register the function with GIMP:
 
 (script-fu-register "script-fu-coffee-stain"
   _"_Coffee Stain..."
@@ -83,11 +83,10 @@
   "1998, Chris Gutteridge / ECS dept, University of Southampton, England."
   "25th April 1998"
   "RGB*"
-  SF-IMAGE       "The image" 0
-  SF-DRAWABLE    "The layer" 0
-  SF-ADJUSTMENT _"Stains"    '(3 1 10 1 1 0 0)
-  SF-TOGGLE     _"Darken only\n(Better, but only for images with a lot of white)" TRUE
+  SF-IMAGE       "The image"   0
+  SF-DRAWABLE    "The layer"   0
+  SF-ADJUSTMENT _"Stains"      '(3 1 10 1 1 0 0)
+  SF-TOGGLE     _"Darken only" TRUE
 )
 
-(script-fu-menu-register "script-fu-coffee-stain"
-                         "<Image>/Filters/Decor")
+(script-fu-menu-register "script-fu-coffee-stain" "<Image>/Filters/Decor")

@@ -1,5 +1,31 @@
 2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
 
+	This update brings Tiny-Fu in sync with the Script-Fu plug-in
+	in the 2.4.0 version of GIMP.
+
+	* autogen.sh: Added support for automake 1.10.
+
+	* configure.in: Updated glib/gtk2 needed to match GIMP requirements.
+
+	* ftx/ftx.c:
+	* re/split.c
+	* re/re.c
+	* re/main.c
+	* scripts/*.scm
+	* tiny-fu/*.[ch]
+	* tinyscheme/CHANGES
+	* tinyscheme/Manual.txt
+	* tinyscheme/*.[ch]
+	* tinyscheme/init.scm: Copied files from Script-Fu plug-in of GIMP.
+
+	* tiny-fu/Makefile.am: Added -DSTANDALONE=0 needed by updated code.
+
+	* po/Makefile.in.in: Copied file from Script-Fu plug-in of GIMP.
+
+	* po/POTFILES.in: Updated list of files.
+
+2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+
 	* scripts/fade-outline.scm: removed this script. Fixes bug #466382.
 
 	* scripts/image-structure.sct: removed this script (see bug #307016).

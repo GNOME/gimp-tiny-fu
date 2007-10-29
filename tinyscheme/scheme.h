@@ -17,7 +17,7 @@
 # ifndef USE_STRLWR
 #   define USE_STRLWR 1
 # endif
-# define SCHEME_EXPORT
+# define SCHEME_EXPORT extern
 #else
 # define USE_STRLWR 0
 # ifdef _SCHEME_SOURCE
@@ -114,6 +114,22 @@ typedef struct num {
      } value;
 } num;
 
+#if !STANDALONE
+
+typedef enum { TS_OUTPUT_NORMAL, TS_OUTPUT_ERROR } TsOutputType;
+
+typedef void (* ts_output_func)       (TsOutputType    type,
+                                       const char     *string,
+                                       int             len,
+                                       gpointer        data);
+
+SCHEME_EXPORT void ts_register_output_func (ts_output_func  func,
+                                            gpointer        user_data);
+SCHEME_EXPORT void ts_output_string        (TsOutputType    type,
+                                            const char     *string,
+                                            int             len);
+#endif
+
 SCHEME_EXPORT scheme *scheme_init_new();
 SCHEME_EXPORT scheme *scheme_init_new_custom_alloc(func_alloc malloc, func_dealloc free);
 SCHEME_EXPORT int scheme_init(scheme *sc);
@@ -144,7 +160,8 @@ pointer mk_foreign_func(scheme *sc, foreign_func f);
 void    putcharacter(scheme *sc, gunichar c);
 void    putstr(scheme *sc, const char *s);
 
-void set_safe_foreign (scheme *sc, pointer data);
+SCHEME_EXPORT void set_safe_foreign (scheme *sc, pointer data);
+SCHEME_EXPORT pointer foreign_error (scheme *sc, const char *s, pointer a);
 
 #if USE_INTERFACE
 struct scheme_interface {

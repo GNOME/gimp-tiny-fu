@@ -93,14 +93,14 @@
                 (set! image-offset-x (- 0 (+ shadow-offset-x
                                              shadow-transl-x)))
                 (set! shadow-offset-x (- 0 shadow-transl-x))
-                (set! new-image-width (- new-image-width image-offset-x))))
+                (set! new-image-width (+ new-image-width image-offset-x))))
 
           (if (< (+ shadow-offset-y shadow-transl-y) 0)
               (begin
                 (set! image-offset-y (- 0 (+ shadow-offset-y
                                              shadow-transl-y)))
                 (set! shadow-offset-y (- 0 shadow-transl-y))
-                (set! new-image-height (- new-image-height image-offset-y))))
+                (set! new-image-height (+ new-image-height image-offset-y))))
 
           (if (> (+ (+ shadow-width shadow-offset-x) shadow-transl-x)
                  new-image-width)
@@ -127,7 +127,7 @@
                                             "Drop Shadow"
                                             shadow-opacity
                                             NORMAL-MODE)))
-   (gimp-image-add-layer image shadow-layer -1)
+    (gimp-image-add-layer image shadow-layer -1)
     (gimp-layer-set-offsets shadow-layer
                             shadow-offset-x
                             shadow-offset-y))
@@ -137,7 +137,7 @@
   (gimp-edit-fill shadow-layer BACKGROUND-FILL)
   (gimp-selection-none image)
   (gimp-layer-set-lock-alpha shadow-layer FALSE)
-  (if (>= shadow-blur 1.0) (plug-in-gauss-rle 1
+  (if (>= shadow-blur 1.0) (plug-in-gauss-rle RUN-NONINTERACTIVE
                                               image
                                               shadow-layer
                                               shadow-blur
