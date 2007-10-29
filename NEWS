@@ -1,9 +1,37 @@
-Version 1.1 of the Tiny-Fu Plug-in for GIMP 2.3
+Version 1.1 of the Tiny-Fu Plug-in for GIMP 2.4
 -----------------------------------------------
 
 This is the development branch of the Tiny-Fu plugin. It is where new
 features are being added. Other changes keep it in-line with changes
-in the 2.3 version of GIMP.
+in the 2.4 version of GIMP.
+
+
+Overview of Changes in Tiny-Fu 1.1.1
+====================================
+
+- Updated most of the files to bring them in line with the
+  versions used in the 2.4.0 version of GIMP.
+
+- Scripts are now expected to have a .scm extension.
+
+- Updated to use version 1.38 of the TinyScheme interpreter.
+
+- Changes to the build requirements.
+
+    * Build requires GIMP version 2.4.0 or higher.
+    * Build requires glib >= 2.12.3 and gtk2 >= 2.10.13.
+    * Updated autogen.sh to support automake 1.10.
+
+- Added SIOD compatability routines:
+    delq, butlast, last, make-list, nil, prin1, print, strbreakup, strcat,
+    strcmp, string-trim, string-trim-left, string-trim-right, the-environment,
+    unbreakupstr, and verbose.
+
+
+Contributors:
+
+   Kevin Cozens. Also incorporates changes made to Script-Fu by Saul Goode,
+   Michael Natterer, Michael Schumacher, and Sven Neumann.
 
 
 
