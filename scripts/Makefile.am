@@ -4,8 +4,8 @@ SUBDIRS = images
 
 scriptdatadir = $(GIMP_DATADIR)/scripts
 
-scripts =  \
-	tiny-fu.init		\
+scripts = \
+	script-fu.init			\
 	script-fu-compat.init		\
 	3d-outline.scm			\
 	3dTruchet.scm			\
@@ -40,7 +40,6 @@ scripts =  \
 	clothify.scm			\
 	coffee.scm			\
 	comic-logo.scm			\
-	contactsheet.scm		\
 	coolmetal-logo.scm		\
 	copy-visible.scm		\
 	crystal-logo.scm		\
@@ -48,7 +47,6 @@ scripts =  \
 	distress-selection.scm		\
 	drop-shadow.scm			\
 	erase-rows.scm			\
-	fade-outline.scm		\
 	flatland.scm			\
 	font-map.scm			\
 	frosty-logo.scm			\
@@ -82,6 +80,8 @@ scripts =  \
 	reverse-layers.scm		\
 	ripply-anim.scm			\
 	round-corners.scm		\
+	script-fu-set-cmap.scm		\
+	script-fu-util.scm		\
 	select-to-brush.scm		\
 	select-to-image.scm		\
 	select-to-pattern.scm		\
@@ -99,22 +99,21 @@ scripts =  \
 	t-o-p-logo.scm			\
 	text-circle.scm			\
 	textured-logo.scm		\
-	tileblur.scm			\
-	script-fu-util.scm		\
-	script-fu-set-cmap.scm		\
 	title-header.scm		\
+	tileblur.scm			\
 	truchet.scm			\
 	unsharp-mask.scm		\
 	waves-anim.scm			\
 	weave.scm			\
 	web-browser.scm			\
-	xach-effect.scm			
+	xach-effect.scm
 
 test_scripts = \
+	contactsheet.scm		\
 	test-sphere.scm			\
 	ts-helloworld.scm
 
- 
+
 if TINY_FU_UNSTABLE
 scriptdata_DATA = $(scripts) $(test_scripts)
 else
