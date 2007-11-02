@@ -1,928 +1,894 @@
-# gimp-tiny-fu translation to Catalan.
-# Copyright (C) 2000, 2001, 2003, 2004 Free Software Foundation, Inc.
-# Softcatala <linux@softcatala.org>, 2000-2001
-# Xavier Beà <xbea@pie.xtec.es>, 2003, 2004.
-# Xavier Conde Rueda <xaviconde@eresmas.com>, 2004
+# translation of ca.po to Catalan
+# gimp-script-fu translation to Catalan.
+# Copyright © 2000, 2001, 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+#
+# Softcatala <gnome@llistes.softcatala.org>, 2000-2007.
+# Quim Perez i Noguer <noguer a osona.com>, 2005-2007.
+# Xavier Conde Rueda <xavi.conde a gmail.com>, 2004-2007.
+# Jordi Jover, jordijn@softcatala.org, 2002.
+# Joaquim Perez <noguer@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-tiny-fu 2.0\n"
+"Project-Id-Version: ca\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-25 23:04-0400\n"
-"PO-Revision-Date: 2004-03-26 19:46+0100\n"
-"Last-Translator: Xavier Beà <xbea@pie.xtec.es>\n"
-"Language-Team: Catalan <xbea@pie.xtec.es>\n"
+"POT-Creation-Date: 2007-11-01 15:00-0400\n"
+"PO-Revision-Date: 2007-10-16 22:44+0200\n"
+"Last-Translator: Joaquim Perez <noguer@gmail.com>\n"
+"Language-Team: Catalan <gimp@llistes.softcatala.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: KBabel 1.11.4\n"
 
-#: ../tiny-fu/tiny-fu.c:108
-msgid "Interactive console for Script-Fu development"
-msgstr ""
+#: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
+msgid "Script-Fu Console"
+msgstr "Consola de les funcions"
 
-#: ../tiny-fu/tiny-fu.c:114
-#, fuzzy
-msgid "Tiny-Fu _Console"
-msgstr "Consola de l'Tiny-Fu"
+#: ../tiny-fu/tiny-fu-console.c:196
+msgid "Welcome to TinyScheme"
+msgstr "Benvinguts al TinyScheme"
 
-#
-#: ../tiny-fu/tiny-fu.c:121 ../tiny-fu/tiny-fu.c:150 ../tiny-fu/tiny-fu.c:331
-#, fuzzy
-msgid "<Toolbox>/Xtns/Languages/Tiny-Fu"
-msgstr "<Toolbox>/Extensions/Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu.c:143
-#, fuzzy
-msgid "_Start Server..."
-msgstr "Navega..."
-
-#: ../tiny-fu/tiny-fu.c:266
-msgid "_GIMP Online"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:267
-msgid "_User Manual"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:270
-#, fuzzy
-msgid "_Tiny-Fu"
-msgstr "/Tiny-Fu/"
-
-#: ../tiny-fu/tiny-fu.c:272
-msgid "_Buttons"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:274
-msgid "_Logos"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:276
-msgid "_Misc"
-msgstr ""
-
-#
-#: ../tiny-fu/tiny-fu.c:278
-#, fuzzy
-msgid "_Patterns"
-msgstr "Patró"
-
-#: ../tiny-fu/tiny-fu.c:280
-#, fuzzy
-msgid "_Test"
-msgstr "_Text"
-
-#: ../tiny-fu/tiny-fu.c:282
-msgid "_Utils"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:284
-msgid "_Web Page Themes"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:286
-msgid "_Alien Glow"
-msgstr ""
-
-#
-#: ../tiny-fu/tiny-fu.c:288
-#, fuzzy
-msgid "_Beveled Pattern"
-msgstr "Patró"
-
-#: ../tiny-fu/tiny-fu.c:290
-msgid "_Classic.Gimp.Org"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:293
-#, fuzzy
-msgid "Alpha to _Logo"
-msgstr "<Image>/Tiny-Fu/Alfa a logotipus/N_eó..."
-
-#: ../tiny-fu/tiny-fu.c:295
-msgid "An_imation"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:297
-msgid "_Animators"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:299
-msgid "_Artistic"
-msgstr ""
-
-#
-#: ../tiny-fu/tiny-fu.c:301
-#, fuzzy
-msgid "_Blur"
-msgstr "Difumina en X"
-
-#
-#: ../tiny-fu/tiny-fu.c:303
-#, fuzzy
-msgid "_Decor"
-msgstr "Descripció"
-
-#: ../tiny-fu/tiny-fu.c:305
-msgid "_Effects"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:307
-msgid "En_hance"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:309
-msgid "_Light and Shadow"
-msgstr ""
-
-#
-#: ../tiny-fu/tiny-fu.c:311
-#, fuzzy
-msgid "S_hadow"
-msgstr "Ombra"
-
-#: ../tiny-fu/tiny-fu.c:313
-msgid "_Render"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:315
-msgid "_Alchemy"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:323
-msgid "_Refresh Scripts"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:347
-msgid "When a Tiny-Fu dialog box is open you can not use \"Refresh Scripts\"."
-msgstr ""
-
-#: ../tiny-fu/tiny-fu-console.c:142
-msgid "Tiny-Fu console mode allows only interactive invocation"
-msgstr "L'Tiny-Fu en mode de consola només permet la invocació interactiva"
-
-#: ../tiny-fu/tiny-fu-console.c:175
-msgid "Tiny-Fu Console"
-msgstr "Consola de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-console.c:180
-#, fuzzy
-msgid "_Save Output"
-msgstr "Sortida SIOD"
-
-#: ../tiny-fu/tiny-fu-console.c:181
-msgid "Cl_ear Output"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu-console.c:234
-msgid "Welcome to TinyScheme\n"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu-console.c:235
-msgid ""
-"Copyright (c) Dimitrios Souflis\n"
-"\n"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu-console.c:236
-#, fuzzy
-msgid "Tiny-Fu Console - "
-msgstr "Consola de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-console.c:237
+#: ../tiny-fu/tiny-fu-console.c:202
 msgid "Interactive Scheme Development"
-msgstr ""
+msgstr "Consola interactiva de l'Scheme"
 
-#: ../tiny-fu/tiny-fu-console.c:269
-#, fuzzy
+#: ../tiny-fu/tiny-fu-console.c:238
 msgid "_Browse..."
-msgstr "Navega..."
+msgstr "_Cerca..."
 
-#: ../tiny-fu/tiny-fu-console.c:324
-msgid "Save TinyScheme Output"
+#: ../tiny-fu/tiny-fu-console.c:296
+msgid "Save Script-Fu Console Output"
+msgstr "Desa la sortida de la consola de funcions"
+
+#: ../tiny-fu/tiny-fu-console.c:343
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr "No s'ha pogut obrir «%s» per escriure: %s"
+
+#: ../tiny-fu/tiny-fu-console.c:372
+msgid "Script-Fu Procedure Browser"
+msgstr "Gestor de funcions"
+
+#: ../tiny-fu/tiny-fu-console.c:716
+msgid "Script-Fu evaluation mode only allows non-interactive invocation"
 msgstr ""
+"Si s'activa l'avaluador de funcions només es permetrà la invocació no "
+"interactiva de les funcions"
 
-#: ../tiny-fu/tiny-fu-console.c:390
-msgid "Tiny-Fu Procedure Browser"
-msgstr ""
+#: ../tiny-fu/tiny-fu-interface.c:191
+msgid "Script-Fu cannot process two scripts at the same time."
+msgstr "Una funció no pot processar dues seqüències al mateix temps."
 
-#: ../tiny-fu/tiny-fu-console.c:704
-msgid "Tiny-Fu evaluate mode allows only noninteractive invocation"
-msgstr ""
-"El mode d'avaluació de l'Tiny-Fu només permet la invocació no interactiva"
+#: ../tiny-fu/tiny-fu-interface.c:193
+#, c-format
+msgid "You are already running the \"%s\" script."
+msgstr "Ja esteu executant la funció «%s» ."
 
-#: ../tiny-fu/tiny-fu-scripts.c:675
-#, fuzzy, c-format
+#: ../tiny-fu/tiny-fu-interface.c:238
+#, c-format
+msgid "Script-Fu: %s"
+msgstr "Funció: %s"
+
+#  we add a colon after the label;
+#  some languages want an extra space here
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: ../tiny-fu/tiny-fu-interface.c:300
+#, c-format
+msgid "%s:"
+msgstr "%s:"
+
+#: ../tiny-fu/tiny-fu-interface.c:348
+msgid "Script-Fu Color Selection"
+msgstr "Funció de selecció del color"
+
+#: ../tiny-fu/tiny-fu-interface.c:460
+msgid "Script-Fu File Selection"
+msgstr "Funció de selecció del fitxer"
+
+#: ../tiny-fu/tiny-fu-interface.c:463
+msgid "Script-Fu Folder Selection"
+msgstr "Funció de selecció de la carpeta"
+
+#: ../tiny-fu/tiny-fu-interface.c:475
+msgid "Script-Fu Font Selection"
+msgstr "Funció de selecció del tipus de lletra"
+
+#: ../tiny-fu/tiny-fu-interface.c:483
+msgid "Script-Fu Palette Selection"
+msgstr "Funció de selecció de la paleta"
+
+#: ../tiny-fu/tiny-fu-interface.c:492
+msgid "Script-Fu Pattern Selection"
+msgstr "Funció de selecció del patró"
+
+#: ../tiny-fu/tiny-fu-interface.c:501
+msgid "Script-Fu Gradient Selection"
+msgstr "Funció de selecció del degradat"
+
+#: ../tiny-fu/tiny-fu-interface.c:510
+msgid "Script-Fu Brush Selection"
+msgstr "Funció de selecció del pinzell"
+
+#: ../tiny-fu/tiny-fu-scripts.c:658
+#, c-format
 msgid ""
 "Error while executing\n"
 "%s\n"
 "\n"
 "%s"
 msgstr ""
-"S'ha produït un error en executar\n"
-"%s\n"
-"%s"
+"S'ha produït un error mentre s'executava\n"
+"%s \n"
+" \n"
+" %s"
 
-#: ../tiny-fu/tiny-fu-server.c:711
-msgid "Tiny-Fu Server Options"
-msgstr "Opcions de servidor de l'Tiny-Fu"
+#: ../tiny-fu/tiny-fu-server.c:712
+msgid "Script-Fu Server Options"
+msgstr "Opcions de servidor de funcions"
 
-#
-#: ../tiny-fu/tiny-fu-server.c:716
-#, fuzzy
+#: ../tiny-fu/tiny-fu-server.c:717
 msgid "_Start Server"
-msgstr "Y inicial"
+msgstr "_Inicia el servidor"
 
-#: ../tiny-fu/tiny-fu-server.c:744
-msgid "Server Port:"
+#: ../tiny-fu/tiny-fu-server.c:745
+msgid "Server port:"
 msgstr "Port del servidor:"
 
-#: ../tiny-fu/tiny-fu-server.c:750
-msgid "Server Logfile:"
+#: ../tiny-fu/tiny-fu-server.c:751
+msgid "Server logfile:"
 msgstr "Fitxer de registre del servidor:"
 
-#: ../tiny-fu/tiny-fu-interface.c:176
-msgid "Tiny-Fu cannot process two scripts at the same time."
+#: ../tiny-fu/tiny-fu.c:110
+msgid "Interactive console for Script-Fu development"
+msgstr "Consola interactiva per al desenvolupament de funcions"
+
+#: ../tiny-fu/tiny-fu.c:116
+msgid "Script-Fu _Console"
+msgstr "_Consola de les funcions"
+
+#: ../tiny-fu/tiny-fu.c:140
+msgid "Server for remote Script-Fu operation"
+msgstr "Servidor per a l'execució remota de funcions"
+
+#: ../tiny-fu/tiny-fu.c:145
+msgid "_Start Server..."
+msgstr "_Inicia el servidor..."
+
+#: ../tiny-fu/tiny-fu.c:301
+msgid "_GIMP Online"
+msgstr "El _GIMP a la xarxa "
+
+#: ../tiny-fu/tiny-fu.c:302
+msgid "_User Manual"
+msgstr "_Manual d'usuari"
+
+#  strip the first part of the menupath if it contains _("/Script-Fu/")
+#  strip the first part of the menupath if it contains _("/Script-Fu/")
+#: ../tiny-fu/tiny-fu.c:305
+msgid "_Script-Fu"
+msgstr "_Script-Fu"
+
+#: ../tiny-fu/tiny-fu.c:307
+msgid "_Buttons"
+msgstr "_Botons"
+
+#: ../tiny-fu/tiny-fu.c:309
+msgid "_Logos"
+msgstr "_Logotips i rètols"
+
+#: ../tiny-fu/tiny-fu.c:311
+msgid "_Misc"
+msgstr "_Varis"
+
+#: ../tiny-fu/tiny-fu.c:313
+msgid "_Patterns"
+msgstr "_Patrons"
+
+#: ../tiny-fu/tiny-fu.c:315
+msgid "_Test"
+msgstr "_Test"
+
+#: ../tiny-fu/tiny-fu.c:317
+msgid "_Utilities"
+msgstr "_Utilitats"
+
+#: ../tiny-fu/tiny-fu.c:319
+msgid "_Web Page Themes"
+msgstr "_Temes de pàgina web"
+
+#: ../tiny-fu/tiny-fu.c:321
+msgid "_Alien Glow"
+msgstr "Lluentor estil _Àlien"
+
+#: ../tiny-fu/tiny-fu.c:323
+msgid "_Beveled Pattern"
+msgstr "Patró amb _relleu"
+
+#: ../tiny-fu/tiny-fu.c:325
+msgid "_Classic.Gimp.Org"
+msgstr "_Clàssic.Gimp.org"
+
+#: ../tiny-fu/tiny-fu.c:328
+msgid "Alpha to _Logo"
+msgstr "Capa transparent a _logotip"
+
+#: ../tiny-fu/tiny-fu.c:330
+msgid "An_imation"
+msgstr "An_imació"
+
+#: ../tiny-fu/tiny-fu.c:332
+msgid "_Animators"
+msgstr "_Animadors"
+
+#: ../tiny-fu/tiny-fu.c:334
+msgid "_Artistic"
+msgstr "_Artístic"
+
+#: ../tiny-fu/tiny-fu.c:336
+msgid "_Blur"
+msgstr "_Difumina"
+
+#: ../tiny-fu/tiny-fu.c:338
+msgid "_Decor"
+msgstr "_Decora"
+
+#: ../tiny-fu/tiny-fu.c:340
+msgid "_Effects"
+msgstr "_Efectes"
+
+#: ../tiny-fu/tiny-fu.c:342
+msgid "En_hance"
+msgstr "_Millora"
+
+#: ../tiny-fu/tiny-fu.c:344
+msgid "_Light and Shadow"
+msgstr "_Llums i ombres"
+
+#: ../tiny-fu/tiny-fu.c:346
+msgid "S_hadow"
+msgstr "_Ombra"
+
+#: ../tiny-fu/tiny-fu.c:348
+msgid "_Render"
+msgstr "_Compon"
+
+#: ../tiny-fu/tiny-fu.c:350
+msgid "_Alchemy"
+msgstr "_Alquímia"
+
+#: ../tiny-fu/tiny-fu.c:353
+msgid "Re-read all available Script-Fu scripts"
+msgstr "Torna a carregar totes les funcions disponibles"
+
+#: ../tiny-fu/tiny-fu.c:358
+msgid "_Refresh Scripts"
+msgstr "_Actualitza les funcions"
+
+#: ../tiny-fu/tiny-fu.c:381
+msgid ""
+"You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
+"Please close all Script-Fu windows and try again."
 msgstr ""
-
-#: ../tiny-fu/tiny-fu-interface.c:178
-#, c-format
-msgid "You are already running the \"%s\" script."
-msgstr ""
-
-#. strip the first part of the menupath if it contains _("/Tiny-Fu/")
-#: ../tiny-fu/tiny-fu-interface.c:201 ../tiny-fu/tiny-fu-interface.c:203
-msgid "/Tiny-Fu/"
-msgstr "/Tiny-Fu/"
-
-#: ../tiny-fu/tiny-fu-interface.c:221
-#, c-format
-msgid "Tiny-Fu: %s"
-msgstr "Tiny-Fu: %s"
-
-#. we add a colon after the label;
-#. some languages want an extra space here
-#: ../tiny-fu/tiny-fu-interface.c:287
-#, c-format
-msgid "%s:"
-msgstr "%s:"
-
-#: ../tiny-fu/tiny-fu-interface.c:330
-msgid "Tiny-Fu Color Selection"
-msgstr "Selecció de color de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:437
-msgid "Tiny-Fu File Selection"
-msgstr "Selecció de fitxer de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:441
-msgid "Tiny-Fu Folder Selection"
-msgstr "Selecció de carpeta de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:453
-msgid "Tiny-Fu Font Selection"
-msgstr "Selecció de tipus de lletra de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:462
-#, fuzzy
-msgid "Tiny-Fu Palette Selection"
-msgstr "Selecció de patró de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:471
-#, fuzzy
-msgid "Tiny-Fu Pattern Selection"
-msgstr "Selecció de patró de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:480
-msgid "Tiny-Fu Gradient Selection"
-msgstr "Selecció de degradat de l'Tiny-Fu"
-
-#: ../tiny-fu/tiny-fu-interface.c:489
-msgid "Tiny-Fu Brush Selection"
-msgstr "Selecció de pinzell de l'Tiny-Fu"
-
-#: ../scripts/ts-helloworld.scm.h:1 ../scripts/drop-shadow.scm.h:3
-#: ../scripts/fuzzyborder.scm.h:4 ../scripts/perspective-shadow.scm.h:4
-#: ../scripts/spyrogimp.scm.h:4
-msgid "Color"
-msgstr "Color"
-
-#
-#: ../scripts/ts-helloworld.scm.h:2 ../scripts/3d-outline.scm.h:4
-#: ../scripts/alien-glow-button.scm.h:4 ../scripts/alien-glow-logo.scm.h:2
-#: ../scripts/alien-neon-logo.scm.h:4 ../scripts/basic1-logo.scm.h:2
-#: ../scripts/basic2-logo.scm.h:3 ../scripts/beveled-button.scm.h:2
-#: ../scripts/beveled-pattern-button.scm.h:2
-#: ../scripts/beveled-pattern-heading.scm.h:1 ../scripts/blended-logo.scm.h:9
-#: ../scripts/bovinated-logo.scm.h:4 ../scripts/carved-logo.scm.h:4
-#: ../scripts/chalk.scm.h:3 ../scripts/chip-away.scm.h:6
-#: ../scripts/chrome-logo.scm.h:4 ../scripts/comic-logo.scm.h:3
-#: ../scripts/coolmetal-logo.scm.h:4 ../scripts/crystal-logo.scm.h:5
-#: ../scripts/frosty-logo.scm.h:3 ../scripts/gimp-headers.scm.h:3
-#: ../scripts/gimp-labels.scm.h:2 ../scripts/glossy.scm.h:5
-#: ../scripts/glowing-logo.scm.h:3 ../scripts/gradient-bevel-logo.scm.h:5
-#: ../scripts/i26-gunya2.scm.h:1 ../scripts/neon-logo.scm.h:4
-#: ../scripts/news-text.scm.h:6 ../scripts/pupi-button.scm.h:2
-#: ../scripts/slide.scm.h:1 ../scripts/sota-chrome-logo.scm.h:6
-#: ../scripts/speed-text.scm.h:4 ../scripts/starburst-logo.scm.h:4
-#: ../scripts/starscape-logo.scm.h:2 ../scripts/t-o-p-logo.scm.h:6
-#: ../scripts/text-circle.scm.h:3 ../scripts/textured-logo.scm.h:4
-#: ../scripts/title-header.scm.h:1
-msgid "Font"
-msgstr "Tipus de lletra"
-
-#: ../scripts/ts-helloworld.scm.h:3 ../scripts/3d-outline.scm.h:5
-#: ../scripts/alien-glow-button.scm.h:5 ../scripts/alien-glow-logo.scm.h:3
-#: ../scripts/alien-neon-logo.scm.h:5 ../scripts/basic1-logo.scm.h:3
-#: ../scripts/basic2-logo.scm.h:4 ../scripts/beveled-button.scm.h:3
-#: ../scripts/beveled-pattern-button.scm.h:3
-#: ../scripts/beveled-pattern-heading.scm.h:2 ../scripts/blended-logo.scm.h:10
-#: ../scripts/bovinated-logo.scm.h:5 ../scripts/carved-logo.scm.h:5
-#: ../scripts/chalk.scm.h:4 ../scripts/chip-away.scm.h:7
-#: ../scripts/chrome-logo.scm.h:5 ../scripts/comic-logo.scm.h:4
-#: ../scripts/coolmetal-logo.scm.h:5 ../scripts/crystal-logo.scm.h:6
-#: ../scripts/frosty-logo.scm.h:4 ../scripts/gimp-headers.scm.h:4
-#: ../scripts/gimp-labels.scm.h:3 ../scripts/glossy.scm.h:6
-#: ../scripts/glowing-logo.scm.h:4 ../scripts/gradient-bevel-logo.scm.h:6
-#: ../scripts/i26-gunya2.scm.h:2 ../scripts/neon-logo.scm.h:5
-#: ../scripts/news-text.scm.h:7 ../scripts/pupi-button.scm.h:3
-#: ../scripts/sota-chrome-logo.scm.h:7 ../scripts/speed-text.scm.h:5
-#: ../scripts/starburst-logo.scm.h:5 ../scripts/starscape-logo.scm.h:3
-#: ../scripts/t-o-p-logo.scm.h:7 ../scripts/text-circle.scm.h:4
-#: ../scripts/textured-logo.scm.h:5 ../scripts/title-header.scm.h:2
-#, fuzzy
-msgid "Font size (pixels)"
-msgstr "Mida del tipus de lletra (píxels)"
-
-#: ../scripts/ts-helloworld.scm.h:4
-msgid "Hello World"
-msgstr ""
-
-#
-#: ../scripts/ts-helloworld.scm.h:5
-#, fuzzy
-msgid "Text string"
-msgstr "Patró de text"
-
-#: ../scripts/contactsheet.scm.h:1
-msgid " contact sheets from a total of "
-msgstr ""
-
-#: ../scripts/contactsheet.scm.h:2
-msgid " for directory "
-msgstr ""
-
-#
-#: ../scripts/contactsheet.scm.h:3
-#, fuzzy
-msgid " images"
-msgstr "Indexa la imatge"
-
-#
-#: ../scripts/contactsheet.scm.h:4 ../scripts/3dTruchet.scm.h:2
-#: ../scripts/alien-glow-arrow.scm.h:1 ../scripts/alien-glow-bar.scm.h:1
-#: ../scripts/alien-glow-bullet.scm.h:1 ../scripts/alien-glow-button.scm.h:2
-#: ../scripts/alien-neon-logo.scm.h:2 ../scripts/basic1-logo.scm.h:1
-#: ../scripts/basic2-logo.scm.h:2 ../scripts/blended-logo.scm.h:1
-#: ../scripts/bovinated-logo.scm.h:2 ../scripts/chalk.scm.h:1
-#: ../scripts/chrome-logo.scm.h:2 ../scripts/comic-logo.scm.h:1
-#: ../scripts/coolmetal-logo.scm.h:1 ../scripts/frosty-logo.scm.h:1
-#: ../scripts/gimp-labels.scm.h:1 ../scripts/glossy.scm.h:1
-#: ../scripts/glowing-logo.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:1
-#: ../scripts/neon-logo.scm.h:1 ../scripts/news-text.scm.h:1
-#: ../scripts/speed-text.scm.h:1 ../scripts/sphere.scm.h:1
-#: ../scripts/starburst-logo.scm.h:1 ../scripts/swirltile.scm.h:2
-#: ../scripts/t-o-p-logo.scm.h:1 ../scripts/textured-logo.scm.h:1
-#: ../scripts/truchet.scm.h:1
-#, fuzzy
-msgid "Background color"
-msgstr "Color de fons"
-
-#: ../scripts/contactsheet.scm.h:5
-msgid "Contact Sheet"
-msgstr ""
-
-#
-#: ../scripts/contactsheet.scm.h:6
-#, fuzzy
-msgid "Created "
-msgstr "Crea una ombra"
-
-#
-#: ../scripts/contactsheet.scm.h:7
-#, fuzzy
-msgid "Directory"
-msgstr "Descripció"
-
-#: ../scripts/contactsheet.scm.h:8
-msgid "Legend font"
-msgstr ""
-
-#
-#: ../scripts/contactsheet.scm.h:9
-#, fuzzy
-msgid "Sheet "
-msgstr "Generador"
-
-#
-#: ../scripts/contactsheet.scm.h:10
-#, fuzzy
-msgid "Sheet size"
-msgstr "Mida del marc"
-
-#
-#: ../scripts/contactsheet.scm.h:11 ../scripts/alien-glow-button.scm.h:10
-#: ../scripts/basic1-logo.scm.h:5 ../scripts/basic2-logo.scm.h:6
-#: ../scripts/beveled-button.scm.h:9 ../scripts/beveled-pattern-button.scm.h:7
-#: ../scripts/blended-logo.scm.h:16 ../scripts/gimp-headers.scm.h:12
-#: ../scripts/gimp-labels.scm.h:14 ../scripts/i26-gunya2.scm.h:7
-#: ../scripts/news-text.scm.h:10 ../scripts/pupi-button.scm.h:13
-#: ../scripts/speed-text.scm.h:8
-#, fuzzy
-msgid "Text color"
-msgstr "Color del text"
-
-#: ../scripts/contactsheet.scm.h:12
-msgid "Title font"
-msgstr ""
-
-#: ../scripts/contactsheet.scm.h:13
-#, fuzzy
-msgid "Unable to open directory "
-msgstr "No es pot obrir el conducte de sortida SIOD"
+"No podeu utilitzar «Actualitza les funcions» si teniu obert un diàleg "
+"d'alguna funció. Tanqueu totes les finestres de funcions i filtres, i torneu-"
+"ho a provar."
 
 #: ../scripts/3d-outline.scm.h:1
 msgid "3D _Outline..."
-msgstr ""
+msgstr "_Vora 3D..."
 
 #: ../scripts/3d-outline.scm.h:2
-#, fuzzy
 msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Radi de difuminat Bumpmap (Capa alfa)"
+msgstr "Amplada del relleu (capa alfa)"
 
-#
-#: ../scripts/3d-outline.scm.h:3 ../scripts/glossy.scm.h:4
-#, fuzzy
+#: ../scripts/3d-outline.scm.h:3
+msgid "Create a logo with outlined text and a drop shadow"
+msgstr "Crea un logotip amb un text amb contorn i amb ombra"
+
+#: ../scripts/3d-outline.scm.h:4 ../scripts/glossy.scm.h:6
 msgid "Default bumpmap settings"
-msgstr "Paràmetres Bumpmap per defecte"
+msgstr "Paràmetres del relleu per defecte"
 
-#: ../scripts/3d-outline.scm.h:6
-#, fuzzy
+#: ../scripts/3d-outline.scm.h:5 ../scripts/alien-glow-button.scm.h:5
+#: ../scripts/alien-glow-logo.scm.h:4 ../scripts/alien-neon-logo.scm.h:6
+#: ../scripts/basic1-logo.scm.h:4 ../scripts/basic2-logo.scm.h:5
+#: ../scripts/beveled-button.scm.h:3 ../scripts/beveled-pattern-button.scm.h:3
+#: ../scripts/beveled-pattern-heading.scm.h:2 ../scripts/blended-logo.scm.h:11
+#: ../scripts/bovinated-logo.scm.h:6 ../scripts/carved-logo.scm.h:5
+#: ../scripts/chalk.scm.h:5 ../scripts/chip-away.scm.h:8
+#: ../scripts/chrome-logo.scm.h:6 ../scripts/comic-logo.scm.h:5
+#: ../scripts/coolmetal-logo.scm.h:6 ../scripts/crystal-logo.scm.h:6
+#: ../scripts/frosty-logo.scm.h:5 ../scripts/gimp-headers.scm.h:5
+#: ../scripts/gimp-labels.scm.h:6 ../scripts/glossy.scm.h:7
+#: ../scripts/glowing-logo.scm.h:5 ../scripts/gradient-bevel-logo.scm.h:7
+#: ../scripts/i26-gunya2.scm.h:2 ../scripts/neon-logo.scm.h:6
+#: ../scripts/news-text.scm.h:7 ../scripts/pupi-button.scm.h:3
+#: ../scripts/slide.scm.h:2 ../scripts/sota-chrome-logo.scm.h:7
+#: ../scripts/speed-text.scm.h:5 ../scripts/starburst-logo.scm.h:6
+#: ../scripts/starscape-logo.scm.h:4 ../scripts/t-o-p-logo.scm.h:8
+#: ../scripts/text-circle.scm.h:4 ../scripts/textured-logo.scm.h:6
+#: ../scripts/title-header.scm.h:2
+msgid "Font"
+msgstr "Tipus de lletra"
+
+#: ../scripts/3d-outline.scm.h:6 ../scripts/alien-glow-button.scm.h:6
+#: ../scripts/alien-glow-logo.scm.h:5 ../scripts/alien-neon-logo.scm.h:7
+#: ../scripts/basic1-logo.scm.h:5 ../scripts/basic2-logo.scm.h:6
+#: ../scripts/beveled-button.scm.h:4 ../scripts/beveled-pattern-button.scm.h:4
+#: ../scripts/beveled-pattern-heading.scm.h:3 ../scripts/blended-logo.scm.h:12
+#: ../scripts/bovinated-logo.scm.h:7 ../scripts/carved-logo.scm.h:6
+#: ../scripts/chalk.scm.h:6 ../scripts/chip-away.scm.h:9
+#: ../scripts/chrome-logo.scm.h:7 ../scripts/comic-logo.scm.h:6
+#: ../scripts/coolmetal-logo.scm.h:7 ../scripts/crystal-logo.scm.h:7
+#: ../scripts/frosty-logo.scm.h:6 ../scripts/gimp-headers.scm.h:6
+#: ../scripts/gimp-labels.scm.h:7 ../scripts/glossy.scm.h:8
+#: ../scripts/glowing-logo.scm.h:6 ../scripts/gradient-bevel-logo.scm.h:8
+#: ../scripts/i26-gunya2.scm.h:3 ../scripts/neon-logo.scm.h:7
+#: ../scripts/news-text.scm.h:8 ../scripts/pupi-button.scm.h:4
+#: ../scripts/sota-chrome-logo.scm.h:8 ../scripts/speed-text.scm.h:6
+#: ../scripts/starburst-logo.scm.h:7 ../scripts/starscape-logo.scm.h:5
+#: ../scripts/t-o-p-logo.scm.h:9 ../scripts/text-circle.scm.h:5
+#: ../scripts/textured-logo.scm.h:7 ../scripts/title-header.scm.h:3
+msgid "Font size (pixels)"
+msgstr "Mida de la lletra (píxels)"
+
+#: ../scripts/3d-outline.scm.h:7
 msgid "Outline blur radius"
-msgstr "Radi de difuminat del contorn"
+msgstr "Amplada del contorn"
 
-#
-#: ../scripts/3d-outline.scm.h:7 ../scripts/glossy.scm.h:14
-#: ../scripts/round-corners.scm.h:5
-#, fuzzy
+#: ../scripts/3d-outline.scm.h:8
+msgid ""
+"Outline the selected region (or alpha) with a pattern and add a drop shadow"
+msgstr ""
+"Posa un contorn en la regió seleccionada (o canal alfa) amb un patró i li "
+"afegeix una ombra"
+
+#: ../scripts/3d-outline.scm.h:9 ../scripts/beveled-pattern-arrow.scm.h:5
+#: ../scripts/beveled-pattern-bullet.scm.h:3
+#: ../scripts/beveled-pattern-button.scm.h:5
+#: ../scripts/beveled-pattern-heading.scm.h:5
+#: ../scripts/beveled-pattern-hrule.scm.h:3 ../scripts/chip-away.scm.h:13
+#: ../scripts/textured-logo.scm.h:11
+msgid "Pattern"
+msgstr "Patró"
+
+#: ../scripts/3d-outline.scm.h:10 ../scripts/glossy.scm.h:16
+#: ../scripts/round-corners.scm.h:6
 msgid "Shadow X offset"
 msgstr "Desplaçament X de l'ombra"
 
-#
-#: ../scripts/3d-outline.scm.h:8 ../scripts/glossy.scm.h:15
-#: ../scripts/round-corners.scm.h:6
-#, fuzzy
+#: ../scripts/3d-outline.scm.h:11 ../scripts/glossy.scm.h:17
+#: ../scripts/round-corners.scm.h:7
 msgid "Shadow Y offset"
 msgstr "Desplaçament Y de l'ombra"
 
-#: ../scripts/3d-outline.scm.h:9
-#, fuzzy
+#: ../scripts/3d-outline.scm.h:12
 msgid "Shadow blur radius"
-msgstr "Radi del difuminat de l'ombra"
+msgstr "Amplada de l'ombra"
 
-#: ../scripts/3d-outline.scm.h:10 ../scripts/alien-glow-button.scm.h:9
-#: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
-#: ../scripts/basic1-logo.scm.h:4 ../scripts/basic2-logo.scm.h:5
-#: ../scripts/beveled-button.scm.h:8 ../scripts/beveled-pattern-button.scm.h:6
-#: ../scripts/beveled-pattern-heading.scm.h:5 ../scripts/blended-logo.scm.h:15
-#: ../scripts/bovinated-logo.scm.h:8 ../scripts/carved-logo.scm.h:7
-#: ../scripts/chalk.scm.h:5 ../scripts/chip-away.scm.h:12
-#: ../scripts/chrome-logo.scm.h:7 ../scripts/comic-logo.scm.h:9
-#: ../scripts/coolmetal-logo.scm.h:8 ../scripts/crystal-logo.scm.h:7
-#: ../scripts/frosty-logo.scm.h:5 ../scripts/gimp-headers.scm.h:11
-#: ../scripts/gimp-labels.scm.h:13 ../scripts/glossy.scm.h:16
-#: ../scripts/glowing-logo.scm.h:6 ../scripts/gradient-bevel-logo.scm.h:8
-#: ../scripts/i26-gunya2.scm.h:6 ../scripts/neon-logo.scm.h:8
-#: ../scripts/news-text.scm.h:9 ../scripts/pupi-button.scm.h:12
-#: ../scripts/slide.scm.h:4 ../scripts/sota-chrome-logo.scm.h:10
-#: ../scripts/speed-text.scm.h:7 ../scripts/starburst-logo.scm.h:7
-#: ../scripts/starscape-logo.scm.h:6 ../scripts/t-o-p-logo.scm.h:9
-#: ../scripts/text-circle.scm.h:8 ../scripts/textured-logo.scm.h:12
-#: ../scripts/title-header.scm.h:4
+#: ../scripts/3d-outline.scm.h:13 ../scripts/alien-glow-button.scm.h:10
+#: ../scripts/alien-glow-logo.scm.h:8 ../scripts/alien-neon-logo.scm.h:10
+#: ../scripts/basic1-logo.scm.h:6 ../scripts/basic2-logo.scm.h:7
+#: ../scripts/beveled-button.scm.h:9 ../scripts/beveled-pattern-button.scm.h:7
+#: ../scripts/beveled-pattern-heading.scm.h:6 ../scripts/blended-logo.scm.h:17
+#: ../scripts/bovinated-logo.scm.h:10 ../scripts/carved-logo.scm.h:8
+#: ../scripts/chalk.scm.h:7 ../scripts/chip-away.scm.h:14
+#: ../scripts/chrome-logo.scm.h:9 ../scripts/comic-logo.scm.h:11
+#: ../scripts/coolmetal-logo.scm.h:10 ../scripts/crystal-logo.scm.h:8
+#: ../scripts/frosty-logo.scm.h:7 ../scripts/gimp-headers.scm.h:13
+#: ../scripts/gimp-labels.scm.h:17 ../scripts/glossy.scm.h:18
+#: ../scripts/glowing-logo.scm.h:8 ../scripts/gradient-bevel-logo.scm.h:10
+#: ../scripts/i26-gunya2.scm.h:7 ../scripts/neon-logo.scm.h:10
+#: ../scripts/news-text.scm.h:10 ../scripts/pupi-button.scm.h:13
+#: ../scripts/slide.scm.h:5 ../scripts/sota-chrome-logo.scm.h:11
+#: ../scripts/speed-text.scm.h:8 ../scripts/starburst-logo.scm.h:9
+#: ../scripts/starscape-logo.scm.h:8 ../scripts/t-o-p-logo.scm.h:11
+#: ../scripts/text-circle.scm.h:8 ../scripts/textured-logo.scm.h:14
+#: ../scripts/title-header.scm.h:5
 msgid "Text"
 msgstr "Text"
 
 #: ../scripts/3dTruchet.scm.h:1
 msgid "3_D Truchet..."
-msgstr ""
+msgstr "Canonades 3_D..."
 
-#
+#: ../scripts/3dTruchet.scm.h:2 ../scripts/alien-glow-arrow.scm.h:1
+#: ../scripts/alien-glow-bar.scm.h:1 ../scripts/alien-glow-bullet.scm.h:1
+#: ../scripts/alien-glow-button.scm.h:2 ../scripts/alien-neon-logo.scm.h:3
+#: ../scripts/basic1-logo.scm.h:2 ../scripts/basic2-logo.scm.h:3
+#: ../scripts/blended-logo.scm.h:2 ../scripts/bovinated-logo.scm.h:3
+#: ../scripts/chalk.scm.h:1 ../scripts/chrome-logo.scm.h:3
+#: ../scripts/comic-logo.scm.h:2 ../scripts/coolmetal-logo.scm.h:2
+#: ../scripts/frosty-logo.scm.h:2 ../scripts/gimp-labels.scm.h:1
+#: ../scripts/glossy.scm.h:2 ../scripts/glowing-logo.scm.h:2
+#: ../scripts/gradient-bevel-logo.scm.h:2 ../scripts/neon-logo.scm.h:1
+#: ../scripts/news-text.scm.h:1 ../scripts/speed-text.scm.h:1
+#: ../scripts/sphere.scm.h:1 ../scripts/starburst-logo.scm.h:1
+#: ../scripts/swirltile.scm.h:2 ../scripts/t-o-p-logo.scm.h:2
+#: ../scripts/textured-logo.scm.h:1 ../scripts/truchet.scm.h:1
+msgid "Background color"
+msgstr "Color del fons"
+
 #: ../scripts/3dTruchet.scm.h:3 ../scripts/truchet.scm.h:2
-#, fuzzy
 msgid "Block size"
 msgstr "Mida del bloc"
 
-#
-#: ../scripts/3dTruchet.scm.h:4 ../scripts/blended-logo.scm.h:5
-#, fuzzy
-msgid "End blend"
-msgstr "Fi de la barreja"
+#: ../scripts/3dTruchet.scm.h:4
+msgid "Create an image filled with a 3D Truchet pattern"
+msgstr "Crea una imatge plena de canonades 3D"
 
-#: ../scripts/3dTruchet.scm.h:5 ../scripts/truchet.scm.h:4
-#, fuzzy
+#: ../scripts/3dTruchet.scm.h:5 ../scripts/blended-logo.scm.h:7
+msgid "End blend"
+msgstr "Color final"
+
+#: ../scripts/3dTruchet.scm.h:6 ../scripts/truchet.scm.h:5
 msgid "Number of X tiles"
 msgstr "Nombre de mosaics en X"
 
-#: ../scripts/3dTruchet.scm.h:6 ../scripts/truchet.scm.h:5
-#, fuzzy
+#: ../scripts/3dTruchet.scm.h:7 ../scripts/truchet.scm.h:6
 msgid "Number of Y tiles"
 msgstr "Nombre de mosaics en Y"
 
-#
-#: ../scripts/3dTruchet.scm.h:7 ../scripts/blended-logo.scm.h:14
-#, fuzzy
+#: ../scripts/3dTruchet.scm.h:8 ../scripts/blended-logo.scm.h:16
 msgid "Start blend"
-msgstr "Inici de la barreja"
+msgstr "Color inicial"
 
-#
-#: ../scripts/3dTruchet.scm.h:8
+#: ../scripts/3dTruchet.scm.h:9
 msgid "Supersample"
 msgstr "Supermostratge"
 
-#: ../scripts/3dTruchet.scm.h:9 ../scripts/add-bevel.scm.h:3
-#: ../scripts/truchet.scm.h:7
+#: ../scripts/3dTruchet.scm.h:10 ../scripts/add-bevel.scm.h:4
+#: ../scripts/truchet.scm.h:8
 msgid "Thickness"
 msgstr "Gruix"
 
 #: ../scripts/add-bevel.scm.h:1
 msgid "Add B_evel..."
-msgstr ""
+msgstr "Emmarca amb _relleu..."
 
-#: ../scripts/add-bevel.scm.h:2 ../scripts/chip-away.scm.h:10
-#, fuzzy
+#: ../scripts/add-bevel.scm.h:2
+msgid "Add a beveled border to an image"
+msgstr "Posa un marc amb relleu a la imatge"
+
+#: ../scripts/add-bevel.scm.h:3 ../scripts/chip-away.scm.h:12
 msgid "Keep bump layer"
-msgstr "Manté capa Bump"
+msgstr "Conserva la capa del mapa de relleu"
 
-#: ../scripts/add-bevel.scm.h:4 ../scripts/fuzzyborder.scm.h:9
-#: ../scripts/old-photo.scm.h:5 ../scripts/round-corners.scm.h:7
-#: ../scripts/slide.scm.h:5 ../scripts/spinning-globe.scm.h:5
-#, fuzzy
+#: ../scripts/add-bevel.scm.h:5 ../scripts/fuzzyborder.scm.h:10
+#: ../scripts/old-photo.scm.h:6 ../scripts/round-corners.scm.h:8
+#: ../scripts/slide.scm.h:6 ../scripts/spinning-globe.scm.h:6
 msgid "Work on copy"
 msgstr "Treballa en una còpia"
 
 #: ../scripts/addborder.scm.h:1
 msgid "Add _Border..."
-msgstr ""
+msgstr "En_marca..."
 
-#
 #: ../scripts/addborder.scm.h:2
-#, fuzzy
+msgid "Add a border around an image"
+msgstr "Posa un marc al voltant de la imatge"
+
+#: ../scripts/addborder.scm.h:3
 msgid "Border X size"
 msgstr "Mida del marge X"
 
-#
-#: ../scripts/addborder.scm.h:3
-#, fuzzy
+#: ../scripts/addborder.scm.h:4
 msgid "Border Y size"
 msgstr "Mida del marge Y"
 
-#
-#: ../scripts/addborder.scm.h:4
-#, fuzzy
+#: ../scripts/addborder.scm.h:5
 msgid "Border color"
 msgstr "Color del marge"
 
-#: ../scripts/addborder.scm.h:5
-#, fuzzy
+#: ../scripts/addborder.scm.h:6
 msgid "Delta value on color"
 msgstr "Valor delta del color"
 
 #: ../scripts/alien-glow-arrow.scm.h:2
-#: ../scripts/beveled-pattern-arrow.scm.h:1
+msgid "Create an arrow graphic with an eerie glow for web pages"
+msgstr ""
+"Crea un gràfic en forma de fletxa per a pàgines web amb una aura lluiminosa "
+"al voltant"
+
+#: ../scripts/alien-glow-arrow.scm.h:3
+#: ../scripts/beveled-pattern-arrow.scm.h:2
 msgid "Down"
 msgstr "Avall"
 
-#: ../scripts/alien-glow-arrow.scm.h:3 ../scripts/alien-glow-bar.scm.h:4
-#: ../scripts/alien-glow-bullet.scm.h:2 ../scripts/alien-glow-button.scm.h:3
-#: ../scripts/camo.scm.h:4 ../scripts/fuzzyborder.scm.h:5
-#, fuzzy
+#: ../scripts/alien-glow-arrow.scm.h:4 ../scripts/alien-glow-bar.scm.h:5
+#: ../scripts/alien-glow-bullet.scm.h:3 ../scripts/alien-glow-button.scm.h:4
+#: ../scripts/camo.scm.h:5 ../scripts/fuzzyborder.scm.h:6
 msgid "Flatten image"
 msgstr "Aplana la imatge"
 
-#
-#: ../scripts/alien-glow-arrow.scm.h:4 ../scripts/alien-glow-bar.scm.h:5
-#: ../scripts/alien-glow-bullet.scm.h:3 ../scripts/alien-glow-button.scm.h:6
-#: ../scripts/alien-glow-logo.scm.h:4 ../scripts/alien-neon-logo.scm.h:6
-#: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:6
-#: ../scripts/starscape-logo.scm.h:4
-#, fuzzy
+#: ../scripts/alien-glow-arrow.scm.h:5 ../scripts/alien-glow-bar.scm.h:6
+#: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/alien-glow-button.scm.h:7
+#: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
+#: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:8
+#: ../scripts/starscape-logo.scm.h:6
 msgid "Glow color"
 msgstr "Color de la lluentor"
 
-#: ../scripts/alien-glow-arrow.scm.h:5
-#: ../scripts/beveled-pattern-arrow.scm.h:2
+#: ../scripts/alien-glow-arrow.scm.h:6
+#: ../scripts/beveled-pattern-arrow.scm.h:3
 msgid "Left"
 msgstr "Esquerra"
 
-#
-#: ../scripts/alien-glow-arrow.scm.h:6
-#: ../scripts/beveled-pattern-arrow.scm.h:3
+#: ../scripts/alien-glow-arrow.scm.h:7
+#: ../scripts/beveled-pattern-arrow.scm.h:4
 msgid "Orientation"
 msgstr "Orientació"
 
-#
-#: ../scripts/alien-glow-arrow.scm.h:7
-#: ../scripts/beveled-pattern-arrow.scm.h:5
+#: ../scripts/alien-glow-arrow.scm.h:8
+#: ../scripts/beveled-pattern-arrow.scm.h:6
 msgid "Right"
 msgstr "Dreta"
 
-#: ../scripts/alien-glow-arrow.scm.h:8
-#: ../scripts/beveled-pattern-arrow.scm.h:6 ../scripts/lava.scm.h:6
+#: ../scripts/alien-glow-arrow.scm.h:9
+#: ../scripts/beveled-pattern-arrow.scm.h:7 ../scripts/lava.scm.h:7
 msgid "Size"
 msgstr "Mida"
 
-#: ../scripts/alien-glow-arrow.scm.h:9
-#: ../scripts/beveled-pattern-arrow.scm.h:7
+#: ../scripts/alien-glow-arrow.scm.h:10
+#: ../scripts/beveled-pattern-arrow.scm.h:8
 msgid "Up"
 msgstr "Amunt"
 
-#: ../scripts/alien-glow-arrow.scm.h:10
-#: ../scripts/beveled-pattern-arrow.scm.h:8
-#, fuzzy
+#: ../scripts/alien-glow-arrow.scm.h:11
+#: ../scripts/beveled-pattern-arrow.scm.h:9
 msgid "_Arrow..."
-msgstr "Navega..."
+msgstr "_Triangle..."
 
-#
 #: ../scripts/alien-glow-bar.scm.h:2
-#, fuzzy
 msgid "Bar height"
 msgstr "Alçada de la barra"
 
 #: ../scripts/alien-glow-bar.scm.h:3
-#, fuzzy
 msgid "Bar length"
 msgstr "Amplada de la barra"
 
-#: ../scripts/alien-glow-bar.scm.h:6 ../scripts/beveled-pattern-hrule.scm.h:4
-#, fuzzy
-msgid "_Hrule..."
-msgstr "Navega..."
+#: ../scripts/alien-glow-bar.scm.h:4
+msgid "Create an Hrule graphic with an eerie glow for web pages"
+msgstr ""
+"Crea una barra horitzontal per a pàgines web amb una aura lluminosa al "
+"voltant"
 
-#
-#: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/text-circle.scm.h:5
-#: ../scripts/tileblur.scm.h:6
+#: ../scripts/alien-glow-bar.scm.h:7 ../scripts/beveled-pattern-hrule.scm.h:5
+msgid "_Hrule..."
+msgstr "_Barra..."
+
+#: ../scripts/alien-glow-bullet.scm.h:2
+msgid "Create a bullet graphic with an eerie glow for web pages"
+msgstr ""
+"Crea un gràfic en forma de rodona per a pàgines web amb una aura lluminosa "
+"al voltant"
+
+#: ../scripts/alien-glow-bullet.scm.h:5 ../scripts/text-circle.scm.h:6
+#: ../scripts/tileblur.scm.h:7
 msgid "Radius"
 msgstr "Radi"
 
-#: ../scripts/alien-glow-bullet.scm.h:5
-#: ../scripts/beveled-pattern-bullet.scm.h:4
-#, fuzzy
+#: ../scripts/alien-glow-bullet.scm.h:6
+#: ../scripts/beveled-pattern-bullet.scm.h:5
 msgid "_Bullet..."
-msgstr "Navega..."
+msgstr "_Rodona..."
 
 #: ../scripts/alien-glow-button.scm.h:1
 #: ../scripts/beveled-pattern-button.scm.h:1
 msgid "B_utton..."
-msgstr ""
+msgstr "B_otó..."
 
-#
-#: ../scripts/alien-glow-button.scm.h:7
-#, fuzzy
+#: ../scripts/alien-glow-button.scm.h:3
+msgid "Create a button graphic with an eerie glow for web pages"
+msgstr "Crea un botó per a pàgines web amb una aura lluminosa al voltant"
+
+#: ../scripts/alien-glow-button.scm.h:8
 msgid "Glow radius"
 msgstr "Radi de la lluentor"
 
-#: ../scripts/alien-glow-button.scm.h:8 ../scripts/beveled-button.scm.h:5
+#: ../scripts/alien-glow-button.scm.h:9 ../scripts/beveled-button.scm.h:6
 msgid "Padding"
-msgstr "Emplenat"
+msgstr "Farciment"
+
+#: ../scripts/alien-glow-button.scm.h:11 ../scripts/basic1-logo.scm.h:7
+#: ../scripts/basic2-logo.scm.h:8 ../scripts/beveled-button.scm.h:10
+#: ../scripts/beveled-pattern-button.scm.h:8 ../scripts/blended-logo.scm.h:18
+#: ../scripts/gimp-headers.scm.h:14 ../scripts/gimp-labels.scm.h:18
+#: ../scripts/i26-gunya2.scm.h:8 ../scripts/news-text.scm.h:11
+#: ../scripts/pupi-button.scm.h:14 ../scripts/speed-text.scm.h:9
+msgid "Text color"
+msgstr "Color del text"
 
 #: ../scripts/alien-glow-logo.scm.h:1
-msgid "Alien _Glow..."
+msgid "Add an eerie glow around the selected region (or alpha)"
 msgstr ""
+"Afegeix una lluentor estil Àlien al voltant de la regió seleccionada (o "
+"canal alfa)"
 
-#: ../scripts/alien-glow-logo.scm.h:5
-#, fuzzy
+#: ../scripts/alien-glow-logo.scm.h:2
+msgid "Alien _Glow..."
+msgstr "Lluentor estil _Àlien..."
+
+#: ../scripts/alien-glow-logo.scm.h:3
+msgid "Create a logo with an alien glow around the text"
+msgstr "Crea un logotip amb una lluentor estil Àlien al voltant del text"
+
+#: ../scripts/alien-glow-logo.scm.h:7
 msgid "Glow size (pixels * 4)"
 msgstr "Mida de la lluentor (píxels * 4)"
 
 #: ../scripts/alien-neon-logo.scm.h:1
-msgid "Alien _Neon..."
+msgid "Add psychedelic outlines to the selected region (or alpha)"
 msgstr ""
+"Afegeix uns contorns psicodèlics al voltant de la regió seleccionada (o "
+"canal alfa)"
 
-#: ../scripts/alien-neon-logo.scm.h:3
-#, fuzzy
+#: ../scripts/alien-neon-logo.scm.h:2
+msgid "Alien _Neon..."
+msgstr "Ll_ums de neó estil Àlien..."
+
+#: ../scripts/alien-neon-logo.scm.h:4
+msgid "Create a logo with psychedelic outlines around the text"
+msgstr "Afegeix un logotip amb uns contorns psicodèlics al voltant del text"
+
+#: ../scripts/alien-neon-logo.scm.h:5
 msgid "Fade away"
 msgstr "Esvaeix"
 
-#: ../scripts/alien-neon-logo.scm.h:7
-#, fuzzy
+#: ../scripts/alien-neon-logo.scm.h:9
 msgid "Number of bands"
 msgstr "Nombre de bandes"
 
-#: ../scripts/alien-neon-logo.scm.h:9
-#, fuzzy
+#: ../scripts/alien-neon-logo.scm.h:11
 msgid "Width of bands"
 msgstr "Amplada de les bandes"
 
-#: ../scripts/alien-neon-logo.scm.h:10
-#, fuzzy
+#: ../scripts/alien-neon-logo.scm.h:12
 msgid "Width of gaps"
 msgstr "Amplada de les obertures"
 
-#: ../scripts/basic1-logo.scm.h:6
-msgid "_Basic I..."
+#: ../scripts/basic1-logo.scm.h:1
+msgid ""
+"Add a gradient effect, a drop shadow, and a background to the selected "
+"region (or alpha)"
 msgstr ""
+"Afegeix un efecte de degradat, una ombra i un fons a la regió seleccionada "
+"(o canal alfa)"
+
+#: ../scripts/basic1-logo.scm.h:3
+msgid ""
+"Create a plain text logo with a gradient effect, a drop shadow, and a "
+"background"
+msgstr "Crea un logotip amb un text que té efectes degradats, ombra i un fons"
+
+#: ../scripts/basic1-logo.scm.h:8
+msgid "_Basic I..."
+msgstr "_Bàsic I..."
 
 #: ../scripts/basic2-logo.scm.h:1
-msgid "B_asic II..."
+msgid "Add a shadow and a highlight to the selected region (or alpha)"
 msgstr ""
+"Afegeix una ombra i un reflex de llum a la regió seleccionada (o canal alfa)"
 
-#
-#: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:3
+#: ../scripts/basic2-logo.scm.h:2
+msgid "B_asic II..."
+msgstr "Bà_sic II..."
+
+#: ../scripts/basic2-logo.scm.h:4
+msgid "Create a simple logo with a shadow and a highlight"
+msgstr "Crea un logotip simple amb una ombra i un reflex de llum"
+
+#: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:4
 #: ../scripts/pupi-button.scm.h:1
-#, fuzzy
 msgid "Bevel width"
-msgstr "Amplada del biselat"
+msgstr "Alçada del relleu"
 
-#: ../scripts/beveled-button.scm.h:4
-#, fuzzy
+#: ../scripts/beveled-button.scm.h:2
+msgid "Create a simple, beveled button graphic for webpages"
+msgstr "Crea un botó simple amb bisell, per a pàgines web"
+
+#: ../scripts/beveled-button.scm.h:5
 msgid "Lower-right color"
 msgstr "Color inferior dret"
 
-#
-#: ../scripts/beveled-button.scm.h:6 ../scripts/beveled-pattern-button.scm.h:5
-#: ../scripts/pupi-button.scm.h:10
+#: ../scripts/beveled-button.scm.h:7 ../scripts/beveled-pattern-button.scm.h:6
+#: ../scripts/pupi-button.scm.h:11
 msgid "Pressed"
-msgstr "Premut"
+msgstr "Enfonsat"
 
-#
-#: ../scripts/beveled-button.scm.h:7
-#, fuzzy
+#: ../scripts/beveled-button.scm.h:8
 msgid "Simple _Beveled Button..."
-msgstr "<Toolbox>/Extensions/Tiny-Fu/Botons/_Botó biselat senzill..."
+msgstr "Botó amb _bisell..."
 
-#: ../scripts/beveled-button.scm.h:10
-#, fuzzy
+#: ../scripts/beveled-button.scm.h:11
 msgid "Upper-left color"
-msgstr "Color superior esquerra"
+msgstr "Color superior esquerre"
 
-#
-#: ../scripts/beveled-pattern-arrow.scm.h:4
-#: ../scripts/beveled-pattern-bullet.scm.h:2
-#: ../scripts/beveled-pattern-button.scm.h:4
-#: ../scripts/beveled-pattern-heading.scm.h:4
-#: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/chip-away.scm.h:11
-#: ../scripts/textured-logo.scm.h:9
-msgid "Pattern"
-msgstr "Patró"
+#: ../scripts/beveled-pattern-arrow.scm.h:1
+msgid "Create a beveled pattern arrow for webpages"
+msgstr "Crea una flexta per a pàgines web, amb bisell i coberta d'un patró"
 
-#
 #: ../scripts/beveled-pattern-bullet.scm.h:1
+msgid "Create a beveled pattern bullet for webpages"
+msgstr "Crea una rodona per a pàgines web, amb bisell i coberta d'un patró"
+
+#: ../scripts/beveled-pattern-bullet.scm.h:2
 msgid "Diameter"
 msgstr "Diàmetre"
 
-#
-#: ../scripts/beveled-pattern-bullet.scm.h:3
-#: ../scripts/beveled-pattern-heading.scm.h:6
-#: ../scripts/spinning-globe.scm.h:3
-#, fuzzy
+#: ../scripts/beveled-pattern-bullet.scm.h:4
+#: ../scripts/beveled-pattern-heading.scm.h:7
+#: ../scripts/spinning-globe.scm.h:4
 msgid "Transparent background"
 msgstr "Fons transparent"
 
-#: ../scripts/beveled-pattern-heading.scm.h:3
-msgid "H_eading..."
-msgstr ""
+#: ../scripts/beveled-pattern-button.scm.h:2
+msgid "Create a beveled pattern button for webpages"
+msgstr "Crea un botó per a pàgines web, amb bisell i cobert d'un patró"
 
-#: ../scripts/beveled-pattern-hrule.scm.h:1 ../scripts/gimp-labels.scm.h:4
-#: ../scripts/gradient-example.scm.h:2 ../scripts/mkbrush.scm.h:4
-#: ../scripts/swirltile.scm.h:6
+#: ../scripts/beveled-pattern-heading.scm.h:1
+msgid "Create a beveled pattern heading for webpages"
+msgstr "Crea un capçalera per a pàgines web, amb bisell i coberta d'un patró"
+
+#: ../scripts/beveled-pattern-heading.scm.h:4
+msgid "H_eading..."
+msgstr "Capçal_era..."
+
+#: ../scripts/beveled-pattern-hrule.scm.h:1
+msgid "Create a beveled pattern hrule for webpages"
+msgstr ""
+"Crea una barra horitzontal per a pàgines web, amb bisell i coberta d'un patró"
+
+#: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/gimp-labels.scm.h:8
+#: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:7
+#: ../scripts/swirltile.scm.h:7
 msgid "Height"
 msgstr "Alçada"
 
-#: ../scripts/beveled-pattern-hrule.scm.h:3
-#: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:10
-#: ../scripts/swirltile.scm.h:10
+#: ../scripts/beveled-pattern-hrule.scm.h:4
+#: ../scripts/gradient-example.scm.h:5 ../scripts/mkbrush.scm.h:11
+#: ../scripts/swirltile.scm.h:11
 msgid "Width"
 msgstr "Amplada"
 
 #: ../scripts/blend-anim.scm.h:1
 msgid "Blend Animation needs at least three source layers"
-msgstr ""
+msgstr "L'animació difumina necessita com a mínim tres capes"
 
 #: ../scripts/blend-anim.scm.h:2
-#, fuzzy
-msgid "Intermediate frames"
-msgstr "Marcs intermitjos"
+msgid ""
+"Create intermediate layers to blend two or more layers over a background as "
+"an animation"
+msgstr ""
+"Crea els fotogrames intermedis per a crear una animació de transició entre "
+"dos o més capes damunt d'un fons"
 
-#
+# Quim: nombre de imatges que es posen entre mig de dos fotogrames per fer una transició en Blend animation
 #: ../scripts/blend-anim.scm.h:3
+msgid "Intermediate frames"
+msgstr "Fotogrames de transició"
+
+#: ../scripts/blend-anim.scm.h:4
 msgid "Looped"
 msgstr "En acabar torna a començar"
 
-#: ../scripts/blend-anim.scm.h:4
-#, fuzzy
-msgid "Max. blur radius"
-msgstr "Radi màxim de difuminat"
-
 #: ../scripts/blend-anim.scm.h:5
-#, fuzzy
+msgid "Max. blur radius"
+msgstr "Radi màxim del difuminat"
+
+# Quim: a partir de 3 imatges crea una animació de transició
+#: ../scripts/blend-anim.scm.h:6
 msgid "_Blend..."
-msgstr "Navega..."
+msgstr "_Transició..."
 
-#: ../scripts/blended-logo.scm.h:2
-msgid "Blen_ded..."
+#: ../scripts/blended-logo.scm.h:1
+msgid ""
+"Add blended backgrounds, highlights, and shadows to the selected region (or "
+"alpha)"
 msgstr ""
+"Afegeix unes imatges de fons, reflexos i ombres a la regió seleccionada (o "
+"canal alfa)"
 
-#
 #: ../scripts/blended-logo.scm.h:3
-#, fuzzy
-msgid "Blend mode"
-msgstr "Mode de barreja"
+msgid "Blen_ded..."
+msgstr "_Difuminat..."
 
 #: ../scripts/blended-logo.scm.h:4
-msgid "Custom Gradient"
-msgstr "Degradat personalitzat"
+msgid "Blend mode"
+msgstr "Tipus de difuminació"
 
-#
+#: ../scripts/blended-logo.scm.h:5
+msgid "Create a logo with blended backgrounds, highlights, and shadows"
+msgstr "Crea un logotip amb imatges de fons, reflexos i ombres"
+
 #: ../scripts/blended-logo.scm.h:6
+msgid "Custom Gradient"
+msgstr "Degradat actual"
+
+#: ../scripts/blended-logo.scm.h:8
 msgid "FG-BG-HSV"
 msgstr "De primer pla a fons (HSV)"
 
-#
-#: ../scripts/blended-logo.scm.h:7
+#: ../scripts/blended-logo.scm.h:9
 msgid "FG-BG-RGB"
 msgstr "De primer pla a fons (RGB)"
 
-#
-#: ../scripts/blended-logo.scm.h:8
+#: ../scripts/blended-logo.scm.h:10
 msgid "FG-Transparent"
 msgstr "Primer pla transparent"
 
-#: ../scripts/blended-logo.scm.h:11 ../scripts/comic-logo.scm.h:5
-#: ../scripts/coolmetal-logo.scm.h:6 ../scripts/land.scm.h:2
-#: ../scripts/lava.scm.h:1 ../scripts/rendermap.scm.h:3
-#: ../scripts/spyrogimp.scm.h:8
+#: ../scripts/blended-logo.scm.h:13 ../scripts/comic-logo.scm.h:7
+#: ../scripts/coolmetal-logo.scm.h:8 ../scripts/land.scm.h:3
+#: ../scripts/lava.scm.h:2 ../scripts/rendermap.scm.h:4
+#: ../scripts/spyrogimp.scm.h:9
 msgid "Gradient"
 msgstr "Degradat"
 
-#: ../scripts/blended-logo.scm.h:12 ../scripts/comic-logo.scm.h:6
-#: ../scripts/coolmetal-logo.scm.h:7 ../scripts/gradient-example.scm.h:1
-#: ../scripts/rendermap.scm.h:4 ../scripts/title-header.scm.h:3
-#, fuzzy
+#: ../scripts/blended-logo.scm.h:14 ../scripts/comic-logo.scm.h:8
+#: ../scripts/coolmetal-logo.scm.h:9 ../scripts/gradient-example.scm.h:3
+#: ../scripts/rendermap.scm.h:5 ../scripts/title-header.scm.h:4
 msgid "Gradient reverse"
 msgstr "Degradat invertit"
 
-#: ../scripts/blended-logo.scm.h:13
+#: ../scripts/blended-logo.scm.h:15
 msgid "Offset (pixels)"
 msgstr "Desplaçament (píxels)"
 
-#
-#: ../scripts/bovinated-logo.scm.h:1 ../scripts/chrome-logo.scm.h:1
+#: ../scripts/bovinated-logo.scm.h:1
+msgid "Add 'cow spots' to the selected region (or alpha)"
+msgstr "Afegeix una pell de vaca a la regió seleccionada (o canal alfa)"
+
+#: ../scripts/bovinated-logo.scm.h:2 ../scripts/chrome-logo.scm.h:2
 msgid "Background Color"
-msgstr "Color de fons"
+msgstr "Color del fons"
 
-#: ../scripts/bovinated-logo.scm.h:3
+#: ../scripts/bovinated-logo.scm.h:4
 msgid "Bo_vination..."
-msgstr ""
+msgstr "Pell de _vaca..."
 
-#: ../scripts/bovinated-logo.scm.h:6
+#: ../scripts/bovinated-logo.scm.h:5
+msgid "Create a logo with text in the style of 'cow spots'"
+msgstr "Crea un logotip amb un text amb pell de vaca"
+
+#: ../scripts/bovinated-logo.scm.h:8
 msgid "Spots density X"
 msgstr "Densitat X dels punts"
 
-#: ../scripts/bovinated-logo.scm.h:7
+#: ../scripts/bovinated-logo.scm.h:9
 msgid "Spots density Y"
 msgstr "Densitat Y dels punts"
 
 #: ../scripts/burn-in-anim.scm.h:1
-#, fuzzy
 msgid "Add glowing"
-msgstr "Afegeix brillantor"
+msgstr "Afegeix lluentor"
 
 #: ../scripts/burn-in-anim.scm.h:2
-#, fuzzy
 msgid "After glow"
-msgstr "Després de la brillantor"
+msgstr "Després de la lluentor"
 
 #: ../scripts/burn-in-anim.scm.h:3
 msgid "B_urn-In..."
-msgstr ""
+msgstr "Cre_ma..."
 
 #: ../scripts/burn-in-anim.scm.h:4
-msgid ""
-"Burn-In: Needs two layers in total!\n"
-"A foreground text layer with transparency and a background layer."
-msgstr ""
-
-#: ../scripts/burn-in-anim.scm.h:5
-#, fuzzy
 msgid "Corona width"
 msgstr "Amplada de la corona"
+
+#: ../scripts/burn-in-anim.scm.h:5
+msgid ""
+"Create intermediate layers to produce an animated 'burn-in' transition "
+"between two layers"
+msgstr ""
+"Crea els fotogrames intermedis per a produir una transició animada entre "
+"dues capes, com si hi passés un incendi"
 
 #: ../scripts/burn-in-anim.scm.h:6
 msgid "Fadeout"
 msgstr "Esvaeix"
 
-#
 #: ../scripts/burn-in-anim.scm.h:7
-#, fuzzy
 msgid "Fadeout width"
 msgstr "Amplada de l'esvaniment"
 
@@ -932,357 +898,404 @@ msgstr "Prepara per a un GIF"
 
 #: ../scripts/burn-in-anim.scm.h:10
 msgid "Speed (pixels/frame)"
-msgstr "Velocitat (píxels/marc)"
+msgstr "Velocitat (píxels/fotograma)"
 
-#
+#: ../scripts/burn-in-anim.scm.h:11
+msgid ""
+"The Burn-In script needs two layers in total. A foreground layer with "
+"transparency and a background layer."
+msgstr ""
+"La funció Crema: Necessita dues capes en total.\n"
+"Una capa transparent al davant i una capa de fons."
+
 #: ../scripts/camo.scm.h:1
 msgid "Color 1"
 msgstr "Color 1"
 
-#
 #: ../scripts/camo.scm.h:2
 msgid "Color 2"
 msgstr "Color 2"
 
-#
 #: ../scripts/camo.scm.h:3
 msgid "Color 3"
 msgstr "Color 3"
 
-#
-#: ../scripts/camo.scm.h:5 ../scripts/rendermap.scm.h:5
+#: ../scripts/camo.scm.h:4
+msgid "Create an image filled with a camouflage pattern"
+msgstr "Crea una imatge plena d'un patró de camuflatge"
+
+#: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
 msgid "Granularity"
 msgstr "Granularitat"
 
-#
-#: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
-#, fuzzy
+#: ../scripts/camo.scm.h:7 ../scripts/rendermap.scm.h:7
 msgid "Image size"
 msgstr "Mida de la imatge"
 
-#: ../scripts/camo.scm.h:7 ../scripts/distress-selection.scm.h:2
+#: ../scripts/camo.scm.h:8 ../scripts/distress-selection.scm.h:3
 msgid "Smooth"
 msgstr "Suavitza"
 
-#: ../scripts/camo.scm.h:8
+#: ../scripts/camo.scm.h:9
 msgid "_Camouflage..."
-msgstr ""
+msgstr "_Camuflatge..."
 
-#
+#: ../scripts/carve-it.scm.h:1
+msgid "Carve white areas"
+msgstr "Esculpeix les àrees blanques"
+
+#: ../scripts/carve-it.scm.h:2
+msgid "Image to carve"
+msgstr "Imatge a esculpir"
+
+#: ../scripts/carve-it.scm.h:3
+msgid "Stencil C_arve..."
+msgstr "_Tallat amb patró..."
+
 #: ../scripts/carved-logo.scm.h:1
 msgid "Background Image"
 msgstr "Imatge de fons"
 
 #: ../scripts/carved-logo.scm.h:2
-#, fuzzy
 msgid "Carve raised text"
-msgstr "Esculpeix el text aixecat"
+msgstr "Esculpeix el text cap enfora"
 
 #: ../scripts/carved-logo.scm.h:3
 msgid "Carved..."
-msgstr ""
+msgstr "_Esculpit sobre el patró..."
 
-#: ../scripts/carved-logo.scm.h:6
-#, fuzzy
+#: ../scripts/carved-logo.scm.h:4
+msgid ""
+"Create a logo with text raised above or carved in to the specified "
+"background image"
+msgstr ""
+"Crea un logotip amb un text que pot sobresortir o estar esculpit en una "
+"imatge de fons"
+
+#: ../scripts/carved-logo.scm.h:7
 msgid "Padding around text"
-msgstr "Farcit al voltant del text"
+msgstr "Farciment al voltant del text"
 
-#: ../scripts/carve-it.scm.h:1
-#, fuzzy
-msgid "Carve white areas"
-msgstr "Esculpeix les àrees blanques"
-
-#
-#: ../scripts/carve-it.scm.h:2
-#, fuzzy
-msgid "Image to carve"
-msgstr "Imatge a escolpir"
-
-#: ../scripts/carve-it.scm.h:3
-msgid "Stencil C_arve..."
-msgstr ""
-
-#
 #: ../scripts/chalk.scm.h:2
-#, fuzzy
 msgid "Chalk color"
-msgstr "Color del guix"
+msgstr "Color del _guix"
 
-#: ../scripts/chalk.scm.h:6
-msgid "_Chalk..."
+#: ../scripts/chalk.scm.h:3
+msgid "Create a chalk drawing effect for the selected region (or alpha)"
 msgstr ""
+"Crea un efecte com si s'hagués dibuixat amb guix sobre la regió seleccionada "
+"(o canal alfa)"
+
+#: ../scripts/chalk.scm.h:4
+msgid "Create a logo resembling chalk scribbled on a blackboard"
+msgstr "Crea un logotip que sembli dibuixat amb guix damunt d'una pissarra"
+
+#: ../scripts/chalk.scm.h:8
+msgid "_Chalk..."
+msgstr "Escrit amb _guix..."
 
 #: ../scripts/chip-away.scm.h:1
-#, fuzzy
-msgid "Blur amount"
-msgstr "Quantitat de difuminat"
+msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
+msgstr ""
+"Afegeix un efecte de fusta tallada sobre la regió seleccionada (o canal alfa)"
 
 #: ../scripts/chip-away.scm.h:2
-msgid "Chip Awa_y..."
-msgstr ""
+msgid "Blur amount"
+msgstr "Nivell de difuminat"
 
 #: ../scripts/chip-away.scm.h:3
-#, fuzzy
+msgid "Chip Awa_y..."
+msgstr "_Roca esbocinada..."
+
+#: ../scripts/chip-away.scm.h:4
 msgid "Chip amount"
 msgstr "Quantitat de bocins"
 
-#
-#: ../scripts/chip-away.scm.h:4
-#, fuzzy
-msgid "Drop shadow"
-msgstr "Ombra descendent"
-
-#
 #: ../scripts/chip-away.scm.h:5
-#, fuzzy
+msgid "Create a logo resembling a chipped wood carving"
+msgstr "Crea un logotip que sembli esculpit sobre fusta"
+
+#: ../scripts/chip-away.scm.h:6
+msgid "Drop shadow"
+msgstr "Ombra"
+
+#: ../scripts/chip-away.scm.h:7
 msgid "Fill BG with pattern"
 msgstr "Omple el fons amb un patró"
 
-#: ../scripts/chip-away.scm.h:8
+#: ../scripts/chip-away.scm.h:10
 msgid "Invert"
 msgstr "Inverteix"
 
-#
-#: ../scripts/chip-away.scm.h:9
-#, fuzzy
+#: ../scripts/chip-away.scm.h:11
 msgid "Keep background"
 msgstr "Manté el fons"
 
-#
-#: ../scripts/chrome-it.scm.h:1 ../scripts/sota-chrome-logo.scm.h:1
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:1
+msgid ""
+"Add a chrome effect to the selected region (or alpha) using a specified "
+"(grayscale) stencil"
+msgstr ""
+"Afegeix un efecte de crom a la regió seleccionada (o canal alfa) utilitzant "
+"la plantilla especificada (escala de grisos)"
+
+#: ../scripts/chrome-it.scm.h:2 ../scripts/sota-chrome-logo.scm.h:1
 msgid "Chrome balance"
-msgstr "Balanç del cromat"
+msgstr "Balanç del crom"
 
-#: ../scripts/chrome-it.scm.h:2 ../scripts/crystal-logo.scm.h:2
+#: ../scripts/chrome-it.scm.h:3 ../scripts/crystal-logo.scm.h:2
 #: ../scripts/sota-chrome-logo.scm.h:2
-#, fuzzy
 msgid "Chrome factor"
-msgstr "Factor del cromat"
+msgstr "Brillantor"
 
-#
-#: ../scripts/chrome-it.scm.h:3 ../scripts/sota-chrome-logo.scm.h:3
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:3
 msgid "Chrome lightness"
-msgstr "Lluminositat del cromat"
+msgstr "Lluminositat del crom"
 
-#
-#: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:4
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:5 ../scripts/sota-chrome-logo.scm.h:4
 msgid "Chrome saturation"
-msgstr "Saturació del cromat"
+msgstr "Saturació del crom"
 
-#: ../scripts/chrome-it.scm.h:5
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:6
 msgid "Chrome white areas"
-msgstr "Àrees blanques del cromat"
+msgstr "Àrees blanques del crom"
 
-#
-#: ../scripts/chrome-it.scm.h:6 ../scripts/crystal-logo.scm.h:4
-#: ../scripts/sota-chrome-logo.scm.h:5
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:7 ../scripts/crystal-logo.scm.h:5
+#: ../scripts/sota-chrome-logo.scm.h:6
 msgid "Environment map"
 msgstr "Mapa d'entorn"
 
-#
-#: ../scripts/chrome-it.scm.h:7 ../scripts/sota-chrome-logo.scm.h:8
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:8 ../scripts/sota-chrome-logo.scm.h:9
 msgid "Highlight balance"
-msgstr "Resalta el balanç"
+msgstr "Ressalta el balanç"
 
-#: ../scripts/chrome-it.scm.h:8
-#, fuzzy
+#: ../scripts/chrome-it.scm.h:9
 msgid "Stencil C_hrome..."
-msgstr "Navega..."
+msgstr "_Patró cromat..."
 
-#: ../scripts/chrome-logo.scm.h:3
-#, fuzzy
+#: ../scripts/chrome-logo.scm.h:1
+msgid "Add a simple chrome effect to the selected region (or alpha)"
+msgstr ""
+"Afegeix un efecte simple de crom a la regió seleccionada (o canal alfa)"
+
+#: ../scripts/chrome-logo.scm.h:4
 msgid "C_hrome..."
-msgstr "Navega..."
+msgstr "Cr_om..."
 
-#: ../scripts/chrome-logo.scm.h:6
+#: ../scripts/chrome-logo.scm.h:5
+msgid "Create a simplistic, but cool, chromed logo"
+msgstr "Crea un logotip de crom, simplista però vistós"
+
+#: ../scripts/chrome-logo.scm.h:8
 msgid "Offsets (pixels * 2)"
 msgstr "Desplaçaments (píxels * 2)"
 
 #: ../scripts/circuit.scm.h:1
-#, fuzzy
 msgid "Circuit seed"
-msgstr "Generació del circuit"
+msgstr "Llavor del circuit"
 
-#
-#: ../scripts/circuit.scm.h:2 ../scripts/lava.scm.h:2
-#: ../scripts/predator.scm.h:2 ../scripts/xach-effect.scm.h:10
-#, fuzzy
+#: ../scripts/circuit.scm.h:2
+msgid ""
+"Fill the selected region (or alpha) with traces like those on a circuit board"
+msgstr ""
+"Omple la regió seleccionada (o canal alfa) amb un seguit de connexions com "
+"les que té un circuit imprès"
+
+#: ../scripts/circuit.scm.h:3 ../scripts/lava.scm.h:3
+#: ../scripts/predator.scm.h:3 ../scripts/xach-effect.scm.h:11
 msgid "Keep selection"
 msgstr "Manté la selecció"
 
-#: ../scripts/circuit.scm.h:3
-#, fuzzy
-msgid "No background (only for separate layer)"
-msgstr "Sense fons (només per separar la capa)"
-
 #: ../scripts/circuit.scm.h:4
-#, fuzzy
+msgid "No background (only for separate layer)"
+msgstr "Sense fons (només per la capa separada)"
+
+#: ../scripts/circuit.scm.h:5
 msgid "Oilify mask size"
 msgstr "Mida de la màscara d'oli"
 
-#
-#: ../scripts/circuit.scm.h:5 ../scripts/lava.scm.h:5
-#: ../scripts/predator.scm.h:5
-#, fuzzy
+#: ../scripts/circuit.scm.h:6 ../scripts/lava.scm.h:6
+#: ../scripts/predator.scm.h:6
 msgid "Separate layer"
 msgstr "Separa la capa"
 
-#: ../scripts/circuit.scm.h:6
-#, fuzzy
+#: ../scripts/circuit.scm.h:7
 msgid "_Circuit..."
-msgstr "Generació del circuit"
+msgstr "_Circuit..."
 
-#: ../scripts/clothify.scm.h:1 ../scripts/swirltile.scm.h:1
+#: ../scripts/clothify.scm.h:1
+msgid "Add a cloth-like texture to the selected region (or alpha)"
+msgstr "Afegeix una textura de tela a la regió seleccionada (o canal alfa)"
+
+#: ../scripts/clothify.scm.h:2 ../scripts/swirltile.scm.h:1
 msgid "Azimuth"
 msgstr "Azimut"
 
-#
-#: ../scripts/clothify.scm.h:2
+#: ../scripts/clothify.scm.h:3
 msgid "Blur X"
 msgstr "Difumina en X"
 
-#
-#: ../scripts/clothify.scm.h:3
+#: ../scripts/clothify.scm.h:4
 msgid "Blur Y"
 msgstr "Difumina en Y"
 
-#
-#: ../scripts/clothify.scm.h:4 ../scripts/swirltile.scm.h:4
+#: ../scripts/clothify.scm.h:5 ../scripts/swirltile.scm.h:5
 msgid "Depth"
 msgstr "Profunditat"
 
-#
-#: ../scripts/clothify.scm.h:5 ../scripts/swirltile.scm.h:5
+#: ../scripts/clothify.scm.h:6 ../scripts/swirltile.scm.h:6
 msgid "Elevation"
 msgstr "Elevació"
 
-#: ../scripts/clothify.scm.h:6
+#: ../scripts/clothify.scm.h:7
 msgid "_Clothify..."
-msgstr ""
+msgstr "_Tela..."
 
 #: ../scripts/coffee.scm.h:1
-#, fuzzy
-msgid ""
-"Darken only\n"
-"(Better, but only for images with a lot of white)"
-msgstr ""
-"Només enfosqueja\n"
-"(Millor, però només per a imatges amb molt de blanc)"
+msgid "Add realistic looking coffee stains to the image"
+msgstr "Afegeix a la imatge un efecte realista de taques de cafè"
 
-#
 #: ../scripts/coffee.scm.h:2
+msgid "Darken only"
+msgstr "Només enfosqueix"
+
+#: ../scripts/coffee.scm.h:3
 msgid "Stains"
 msgstr "Taques"
 
-#: ../scripts/coffee.scm.h:3
+#: ../scripts/coffee.scm.h:4
 msgid "_Coffee Stain..."
-msgstr ""
+msgstr "Taca de _cafè..."
 
-#: ../scripts/comic-logo.scm.h:2
+#: ../scripts/comic-logo.scm.h:1
+msgid ""
+"Add a comic-book effect to the selected region (or alpha) by outlining and "
+"filling with a gradient"
+msgstr ""
+"Afegeix un efecte de llibre de còmics a la regió seleccionada (o canal alfa) "
+"resseguint les vores amb negre i omplint l'interior amb degradats"
+
+#: ../scripts/comic-logo.scm.h:3
 msgid "Comic Boo_k..."
-msgstr ""
+msgstr "Llibre de _còmics..."
 
-#
-#: ../scripts/comic-logo.scm.h:7
-#, fuzzy
+#: ../scripts/comic-logo.scm.h:4
+msgid "Create a comic-book style logo by outlining and filling with a gradient"
+msgstr ""
+"Afegeix un efecte de llibre de còmics resseguint les vores amb negre i "
+"omplint l'interior amb degradats"
+
+#: ../scripts/comic-logo.scm.h:9
 msgid "Outline color"
 msgstr "Color del contorn"
 
-#: ../scripts/comic-logo.scm.h:8 ../scripts/glossy.scm.h:9
-#, fuzzy
+#: ../scripts/comic-logo.scm.h:10 ../scripts/glossy.scm.h:11
 msgid "Outline size"
 msgstr "Mida del contorn"
 
-#: ../scripts/coolmetal-logo.scm.h:2
-msgid "Cool _Metal..."
+#: ../scripts/coolmetal-logo.scm.h:1
+msgid ""
+"Add a metallic effect to the selected region (or alpha) with reflections and "
+"perspective shadows"
 msgstr ""
+"Afegeix un efecte metàl·lic a la regió seleccionada (o canal alfa) amb "
+"reflexos i ombres "
 
-#: ../scripts/coolmetal-logo.scm.h:3 ../scripts/frosty-logo.scm.h:2
-#, fuzzy
+#: ../scripts/coolmetal-logo.scm.h:3
+msgid "Cool _Metal..."
+msgstr "_Metàl·lic..."
+
+#: ../scripts/coolmetal-logo.scm.h:4
+msgid "Create a metallic logo with reflections and perspective shadows"
+msgstr "Crea un logotip metàl·lic amb reflexos i ombres"
+
+#: ../scripts/coolmetal-logo.scm.h:5 ../scripts/frosty-logo.scm.h:4
 msgid "Effect size (pixels)"
 msgstr "Mida de l'efecte (píxels)"
 
-#
 #: ../scripts/crystal-logo.scm.h:1
-#, fuzzy
 msgid "Background image"
 msgstr "Imatge de fons"
 
 #: ../scripts/crystal-logo.scm.h:3
-msgid "Crystal..."
+msgid "Create a logo with a crystal/gel effect displacing the image underneath"
 msgstr ""
+"Crea un logotip fet de vidre que fa un efecte de lent sobre la imatge de fons"
+
+#: ../scripts/crystal-logo.scm.h:4
+msgid "Crystal..."
+msgstr "_Cristal·lí..."
+
+#: ../scripts/difference-clouds.scm.h:1
+msgid "Difference Clouds..."
+msgstr "Núvols per diferència..."
+
+#: ../scripts/difference-clouds.scm.h:2
+msgid "Solid noise applied with Difference layer mode"
+msgstr "Soroll sòlid aplicat amb el mode de capa «Diferència»"
 
 #: ../scripts/distress-selection.scm.h:1
-#, fuzzy
+msgid "Distress the selection"
+msgstr "Deforma la selecció"
+
+#: ../scripts/distress-selection.scm.h:2
 msgid "Granularity (1 is low)"
 msgstr "Granularitat (1 és baix)"
 
-#
-#: ../scripts/distress-selection.scm.h:3
-#, fuzzy
+#: ../scripts/distress-selection.scm.h:4
 msgid "Smooth horizontally"
 msgstr "Suavitza horitzontalment"
 
-#
-#: ../scripts/distress-selection.scm.h:4
-#, fuzzy
+#: ../scripts/distress-selection.scm.h:5
 msgid "Smooth vertically"
 msgstr "Suavitza verticalment"
 
-#
-#: ../scripts/distress-selection.scm.h:5
+#: ../scripts/distress-selection.scm.h:6
 msgid "Spread"
 msgstr "Escampa"
 
-#: ../scripts/distress-selection.scm.h:6
-#, fuzzy
-msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Llindar (Més gran 1<-->255 Més petit)"
-
 #: ../scripts/distress-selection.scm.h:7
-#, fuzzy
-msgid "_Disort..."
-msgstr "Generació del circuit"
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Llindar (més gran 1<-->255 més petit)"
 
-#
-#: ../scripts/drop-shadow.scm.h:1 ../scripts/perspective-shadow.scm.h:1
-#, fuzzy
+#: ../scripts/distress-selection.scm.h:8
+msgid "_Distort..."
+msgstr "_Distorsiona..."
+
+#: ../scripts/drop-shadow.scm.h:1
+msgid "Add a drop shadow to the selected region (or alpha)"
+msgstr "Afegeix una ombra a la regió seleccionada (o canal alfa)"
+
+#: ../scripts/drop-shadow.scm.h:2 ../scripts/perspective-shadow.scm.h:2
 msgid "Allow resizing"
 msgstr "Permet redimensionar"
 
-#
-#: ../scripts/drop-shadow.scm.h:2 ../scripts/news-text.scm.h:2
-#: ../scripts/perspective-shadow.scm.h:3 ../scripts/round-corners.scm.h:3
+#: ../scripts/drop-shadow.scm.h:3 ../scripts/news-text.scm.h:2
+#: ../scripts/perspective-shadow.scm.h:4 ../scripts/round-corners.scm.h:3
 #: ../scripts/swirltile.scm.h:3
-#, fuzzy
 msgid "Blur radius"
-msgstr "Radi de difuminat"
+msgstr "Radi del difuminat"
 
-#
-#: ../scripts/drop-shadow.scm.h:4 ../scripts/gimp-labels.scm.h:7
+#: ../scripts/drop-shadow.scm.h:4 ../scripts/fuzzyborder.scm.h:5
+#: ../scripts/perspective-shadow.scm.h:5 ../scripts/spyrogimp.scm.h:5
+msgid "Color"
+msgstr "Color"
+
+#: ../scripts/drop-shadow.scm.h:5 ../scripts/gimp-labels.scm.h:11
 msgid "Offset X"
 msgstr "Desplaçament en X"
 
-#
-#: ../scripts/drop-shadow.scm.h:5 ../scripts/gimp-labels.scm.h:8
+#: ../scripts/drop-shadow.scm.h:6 ../scripts/gimp-labels.scm.h:12
 msgid "Offset Y"
 msgstr "Desplaçament en Y"
 
-#: ../scripts/drop-shadow.scm.h:6 ../scripts/perspective-shadow.scm.h:6
+#: ../scripts/drop-shadow.scm.h:7 ../scripts/perspective-shadow.scm.h:7
 msgid "Opacity"
 msgstr "Opacitat"
 
-#
-#: ../scripts/drop-shadow.scm.h:7
-#, fuzzy
-msgid "_Drop-Shadow..."
-msgstr "Ombra descendent"
+#: ../scripts/drop-shadow.scm.h:8
+msgid "_Drop Shadow..."
+msgstr "_Ombra..."
 
 #: ../scripts/erase-rows.scm.h:1
 msgid "Columns"
@@ -1292,1223 +1305,1366 @@ msgstr "Columnes"
 msgid "Erase"
 msgstr "Esborra"
 
-#
 #: ../scripts/erase-rows.scm.h:3
-#, fuzzy
-msgid "Erase/fill"
-msgstr "Esborra/Omple"
+msgid "Erase every other row or column"
+msgstr "Esborra totes les altres files i columnes"
 
 #: ../scripts/erase-rows.scm.h:4
+msgid "Erase/fill"
+msgstr "Esborra/omple"
+
+#: ../scripts/erase-rows.scm.h:5
 msgid "Even"
 msgstr "Parell"
 
-#
-#: ../scripts/erase-rows.scm.h:5
-#, fuzzy
+#: ../scripts/erase-rows.scm.h:6
 msgid "Even/odd"
 msgstr "Parell/Senar"
 
-#
-#: ../scripts/erase-rows.scm.h:6
+#: ../scripts/erase-rows.scm.h:7
 msgid "Fill with BG"
 msgstr "Omple amb el fons"
 
-#
-#: ../scripts/erase-rows.scm.h:7
+#: ../scripts/erase-rows.scm.h:8
 msgid "Odd"
 msgstr "Senar"
 
-#: ../scripts/erase-rows.scm.h:8
+#: ../scripts/erase-rows.scm.h:9
 msgid "Rows"
 msgstr "Files"
 
-#: ../scripts/erase-rows.scm.h:9
-#, fuzzy
-msgid "Rows/cols"
-msgstr "Files/Columnes"
-
 #: ../scripts/erase-rows.scm.h:10
-#, fuzzy
-msgid "_Erase every other Row..."
-msgstr "<Image>/Tiny-Fu/Alquímia/_Esborra les altres files..."
+msgid "Rows/cols"
+msgstr "Files/columnes"
 
-#
-#: ../scripts/fade-outline.scm.h:1
-#, fuzzy
-msgid "Apply generated layermask"
-msgstr "Aplica una màscara de capa generada"
+#: ../scripts/erase-rows.scm.h:11
+msgid "_Erase Every Other Row..."
+msgstr "_Esborra les altres files..."
 
-#
-#: ../scripts/fade-outline.scm.h:2 ../scripts/fuzzyborder.scm.h:3
-#: ../scripts/old-photo.scm.h:1
-#, fuzzy
-msgid "Border size"
-msgstr "Mida del marge"
+#: ../scripts/flatland.scm.h:1
+msgid "Create an image filled with a Land Pattern"
+msgstr "Crea una imatge que simula una vista aèria"
 
-#: ../scripts/fade-outline.scm.h:3
-#, fuzzy
-msgid "Clear unselected maskarea"
-msgstr "Neteja l'àrea de màscara no seleccionada"
-
-#
-#: ../scripts/fade-outline.scm.h:5
-#, fuzzy, no-c-format
-msgid "Fade from %"
-msgstr "Esvaeix des de %"
-
-#: ../scripts/fade-outline.scm.h:7
-#, fuzzy, no-c-format
-msgid "Fade to %"
-msgstr "Esvaeix a   %"
-
-#
-#: ../scripts/fade-outline.scm.h:8
-#, fuzzy
-msgid "Use growing selection"
-msgstr "Utilitza la selecció de creixement"
-
-#: ../scripts/fade-outline.scm.h:9
-#, fuzzy
-msgid "_Fade to Layer Mask..."
-msgstr "<Image>/Tiny-Fu/Utilitats/D'_ASCII a capa..."
-
-#
-#: ../scripts/flatland.scm.h:1 ../scripts/land.scm.h:1
-#, fuzzy
+#: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:2
 msgid "Detail level"
 msgstr "Nivell de detall"
 
-#
-#: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:3
-#, fuzzy
+#: ../scripts/flatland.scm.h:3 ../scripts/land.scm.h:4
 msgid "Image height"
 msgstr "Alçada de la imatge"
 
-#
-#: ../scripts/flatland.scm.h:3 ../scripts/land.scm.h:4
-#, fuzzy
+#: ../scripts/flatland.scm.h:4 ../scripts/land.scm.h:5
 msgid "Image width"
 msgstr "Amplada de la imatge"
 
-#: ../scripts/flatland.scm.h:4 ../scripts/land.scm.h:6
-#, fuzzy
-msgid "Random seed"
-msgstr "Generació aleatòria"
-
-#
 #: ../scripts/flatland.scm.h:5 ../scripts/land.scm.h:7
+msgid "Random seed"
+msgstr "Llavor aleatòria"
+
+#: ../scripts/flatland.scm.h:6 ../scripts/land.scm.h:8
 msgid "Scale X"
 msgstr "Escala en X"
 
-#
-#: ../scripts/flatland.scm.h:6 ../scripts/land.scm.h:8
+#: ../scripts/flatland.scm.h:7 ../scripts/land.scm.h:9
 msgid "Scale Y"
 msgstr "Escala en Y"
 
-#: ../scripts/flatland.scm.h:7
+#: ../scripts/flatland.scm.h:8
 msgid "_Flatland..."
-msgstr ""
+msgstr "A_plana..."
 
 #: ../scripts/font-map.scm.h:1
-#, fuzzy
 msgid "Active colors"
 msgstr "Colors actius"
 
 #: ../scripts/font-map.scm.h:2
-#, fuzzy
 msgid "Black on white"
 msgstr "Negre sobre blanc"
 
 #: ../scripts/font-map.scm.h:3
-#, fuzzy
-msgid "Font _size (pixels)"
-msgstr "Mida del tipu_s de lletra (píxels)"
+msgid ""
+"Create an image filled with previews of fonts matching a fontname filter"
+msgstr ""
+"Crea una imatge amb mostres de tots els tipus de lletra que tinguin un nom "
+"determinat"
 
 #: ../scripts/font-map.scm.h:4
-msgid "Render _Font Map..."
-msgstr ""
+msgid "Font _size (pixels)"
+msgstr "_Mida de la lletra (píxels)"
 
 #: ../scripts/font-map.scm.h:5
-#, fuzzy
-msgid "Use font _name as text"
-msgstr "Utilitza el _nom del tipus de lletra com a text"
+msgid "Render _Font Map..."
+msgstr "_Compon el mapa de caràcters..."
 
 #: ../scripts/font-map.scm.h:6
+msgid "Use font _name as text"
+msgstr "Empra el _nom del tipus de lletra com a text"
+
+#: ../scripts/font-map.scm.h:7
 msgid "_Border (pixels)"
 msgstr "_Marge (píxels)"
 
-#: ../scripts/font-map.scm.h:7
-#, fuzzy
+#: ../scripts/font-map.scm.h:8
 msgid "_Color scheme"
 msgstr "Esquema de _color"
 
-#: ../scripts/font-map.scm.h:8
+#: ../scripts/font-map.scm.h:9
 msgid "_Filter (regexp)"
 msgstr "_Filtre (expressió regular)"
 
-#: ../scripts/font-map.scm.h:9
+#: ../scripts/font-map.scm.h:10
 msgid "_Labels"
 msgstr "Eti_quetes"
 
-#: ../scripts/font-map.scm.h:10
+#: ../scripts/font-map.scm.h:11
 msgid "_Text"
 msgstr "_Text"
 
-#: ../scripts/frosty-logo.scm.h:6
-#, fuzzy
+#: ../scripts/frosty-logo.scm.h:1
+msgid ""
+"Add a frost effect to the selected region (or alpha) with an added drop "
+"shadow"
+msgstr ""
+"Afegeix un efecte de gel i glaç a la regió seleccionada (o canal alfa) "
+"afegint-hi també una ombra"
+
+#: ../scripts/frosty-logo.scm.h:3
+msgid "Create frozen logo with an added drop shadow"
+msgstr "Crea un logotip congelat i li afegeix una ombra"
+
+#: ../scripts/frosty-logo.scm.h:8
 msgid "_Frosty..."
-msgstr "Navega..."
+msgstr "Con_gelat..."
 
-#
 #: ../scripts/fuzzyborder.scm.h:1
-#, fuzzy
-msgid "Add shadow"
-msgstr "Afegeix ombra"
+msgid "Add a jagged, fuzzy border to an image"
+msgstr "Afegeix un marc difuminat a la imatge"
 
-#
 #: ../scripts/fuzzyborder.scm.h:2
-#, fuzzy
-msgid "Blur border"
-msgstr "Difumina marge"
+msgid "Add shadow"
+msgstr "Afegeix una ombra"
 
-#: ../scripts/fuzzyborder.scm.h:6
+#: ../scripts/fuzzyborder.scm.h:3
+msgid "Blur border"
+msgstr "Difumina la vora"
+
+#: ../scripts/fuzzyborder.scm.h:4 ../scripts/old-photo.scm.h:1
+msgid "Border size"
+msgstr "Amplada de la vora"
+
+#: ../scripts/fuzzyborder.scm.h:7
 msgid "Granularity (1 is Low)"
 msgstr "Granularitat (1 és baix)"
 
-#: ../scripts/fuzzyborder.scm.h:8
-#, fuzzy, no-c-format
+#: ../scripts/fuzzyborder.scm.h:9
+#, no-c-format
 msgid "Shadow weight (%)"
 msgstr "Pes de l'ombra (%)"
 
-#: ../scripts/fuzzyborder.scm.h:10
+#: ../scripts/fuzzyborder.scm.h:11
 msgid "_Fuzzy Border..."
-msgstr ""
+msgstr "Marc _difuminat..."
 
-#
 #: ../scripts/gimp-headers.scm.h:1
-#, fuzzy
 msgid "Autocrop"
 msgstr "Escapça automàticament"
 
-#
 #: ../scripts/gimp-headers.scm.h:2
-#, fuzzy
+msgid "Create an image of a large header using the gimp.org webpage theme"
+msgstr ""
+"Crea una imatge d'una capçalera de primer nivell, emprant el tema de la "
+"pàgina web del Gimp.org"
+
+#: ../scripts/gimp-headers.scm.h:3
+msgid "Create an image of a small header using the gimp.org webpage theme"
+msgstr ""
+"Crea una imatge d'una capçalera de segon nivell, emprant el tema de la "
+"pàgina web del Gimp.org"
+
+#: ../scripts/gimp-headers.scm.h:4
 msgid "Dark color"
 msgstr "Color fosc"
 
-#
-#: ../scripts/gimp-headers.scm.h:5 ../scripts/xach-effect.scm.h:8
-#, fuzzy
+#: ../scripts/gimp-headers.scm.h:7 ../scripts/xach-effect.scm.h:9
 msgid "Highlight color"
 msgstr "Color ressaltat"
 
-#
-#: ../scripts/gimp-headers.scm.h:6 ../scripts/gimp-labels.scm.h:5
-#, fuzzy
+#: ../scripts/gimp-headers.scm.h:8 ../scripts/gimp-labels.scm.h:9
 msgid "Index image"
 msgstr "Indexa la imatge"
 
-#
-#: ../scripts/gimp-headers.scm.h:7 ../scripts/gimp-labels.scm.h:6
-#, fuzzy
+#: ../scripts/gimp-headers.scm.h:9 ../scripts/gimp-labels.scm.h:10
 msgid "Number of colors"
 msgstr "Nombre de colors"
 
-#
-#: ../scripts/gimp-headers.scm.h:8 ../scripts/gimp-labels.scm.h:9
-#, fuzzy
+#: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:13
 msgid "Remove background"
 msgstr "Suprimeix el fons"
 
-#
-#: ../scripts/gimp-headers.scm.h:9 ../scripts/gimp-labels.scm.h:10
-#, fuzzy
+#: ../scripts/gimp-headers.scm.h:11 ../scripts/gimp-labels.scm.h:14
 msgid "Select-by-color threshold"
 msgstr "Llindar de la selecció per color"
 
-#
-#: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:11
-#, fuzzy
+#: ../scripts/gimp-headers.scm.h:12 ../scripts/gimp-labels.scm.h:15
 msgid "Shadow color"
 msgstr "Color de l'ombra"
 
-#: ../scripts/gimp-headers.scm.h:13
+#: ../scripts/gimp-headers.scm.h:15
 msgid "_Big Header..."
-msgstr ""
+msgstr "_Capçalera gran..."
 
-#: ../scripts/gimp-headers.scm.h:14
+#: ../scripts/gimp-headers.scm.h:16
 msgid "_Small Header..."
-msgstr ""
+msgstr "C_apçalera petita..."
 
-#: ../scripts/gimp-labels.scm.h:12
-msgid "T_ube Sub-Button Label..."
+#: ../scripts/gimp-labels.scm.h:2
+msgid ""
+"Create an image of a Tube Button Label Header using the gimp.org webpage "
+"theme"
 msgstr ""
+"Crea una imatge d'un botó tubular d'una capçalera, emprant el tema de la "
+"pàgina web del Gimp.org"
 
-#: ../scripts/gimp-labels.scm.h:15
-msgid "Tub_e Sub-Sub-Button Label..."
+#: ../scripts/gimp-labels.scm.h:3
+msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
 msgstr ""
+"Crea una imatge d'un botó tubular d'una etiqueta, emprant el tema de la "
+"pàgina web del Gimp.org"
+
+#: ../scripts/gimp-labels.scm.h:4
+msgid ""
+"Create an image of a second level Tube Button Label using the gimp.org "
+"webpage theme"
+msgstr ""
+"Crea una imatge d'un botó tubular d'una etiqueta de segon nivell, emprant el "
+"tema de la pàgina web del Gimp.org"
+
+#: ../scripts/gimp-labels.scm.h:5
+msgid ""
+"Create an image of a third level Tube Button Label using the gimp.org "
+"webpage theme"
+msgstr ""
+"Crea una imatge d'un botó tubular d'una etiqueta de tercer nivell, emprant "
+"el tema de la pàgina web del Gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:16
+msgid "T_ube Sub-Button Label..."
+msgstr "Etiqueta de lletres tubulars (_mitjana)..."
+
+#: ../scripts/gimp-labels.scm.h:19
+msgid "Tub_e Sub-Sub-Button Label..."
+msgstr "Etiqueta de lletres tubulars (_petita)..."
+
+#: ../scripts/gimp-labels.scm.h:20
 msgid "_General Tube Labels..."
-msgstr ""
+msgstr "_Etiqueta de lletres tubulars..."
 
-#: ../scripts/gimp-labels.scm.h:17
+#: ../scripts/gimp-labels.scm.h:21
 msgid "_Tube Button Label..."
+msgstr "Etiqueta de lletres tubulars (_gran)..."
+
+#: ../scripts/glossy.scm.h:1
+msgid ""
+"Add gradients, patterns, shadows, and bump maps to the selected region (or "
+"alpha)"
 msgstr ""
+"Afegeix degradats, patrons, ombres i mapes d'elevació a la regió "
+"seleccionada (o canal alfa)"
 
-#: ../scripts/glossy.scm.h:2
-#, fuzzy
-msgid "Blend gradient (outline)"
-msgstr "Barreja el degradat(contorn)"
-
-#
 #: ../scripts/glossy.scm.h:3
-#, fuzzy
+msgid "Blend gradient (outline)"
+msgstr "Degradat (contorn)"
+
+#: ../scripts/glossy.scm.h:4
 msgid "Blend gradient (text)"
-msgstr "Barreja el degradat(text)"
+msgstr "Degradat (text)"
 
-#: ../scripts/glossy.scm.h:7
+#: ../scripts/glossy.scm.h:5
+msgid "Create a logo with gradients, patterns, shadows, and bump maps"
+msgstr "Crea un logotip amb degradats, patrons, ombres i mapes d'elevació"
+
+#: ../scripts/glossy.scm.h:9
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "Lluentor Gloss_y..."
 
-#: ../scripts/glossy.scm.h:8
-#, fuzzy
+#: ../scripts/glossy.scm.h:10
 msgid "Outline gradient reverse"
 msgstr "Inverteix el degradat del contorn"
 
-#
-#: ../scripts/glossy.scm.h:10
-#, fuzzy
+#: ../scripts/glossy.scm.h:12
 msgid "Pattern (outline)"
 msgstr "Patró (contorn)"
 
-#
-#: ../scripts/glossy.scm.h:11
-#, fuzzy
+#: ../scripts/glossy.scm.h:13
 msgid "Pattern (overlay)"
 msgstr "Patró (sobreposa)"
 
-#
-#: ../scripts/glossy.scm.h:12
-#, fuzzy
+#: ../scripts/glossy.scm.h:14
 msgid "Pattern (text)"
 msgstr "Patró (text)"
 
-#
-#: ../scripts/glossy.scm.h:13 ../scripts/sphere.scm.h:4
+#: ../scripts/glossy.scm.h:15 ../scripts/sphere.scm.h:5
 msgid "Shadow"
 msgstr "Ombra"
 
-#: ../scripts/glossy.scm.h:17
-#, fuzzy
+#: ../scripts/glossy.scm.h:19
 msgid "Text gradient reverse"
 msgstr "Inverteix el degradat del text"
 
-#: ../scripts/glossy.scm.h:18
-#, fuzzy
-msgid "Use pattern for outline instead of gradient"
-msgstr "Utilitza el patró pel contorn en comptes del degradat"
-
-#: ../scripts/glossy.scm.h:19
-#, fuzzy
-msgid "Use pattern for text instead of gradient"
-msgstr "Utilitza el patró pel text en comptes del degradat"
-
-#
 #: ../scripts/glossy.scm.h:20
-#, fuzzy
+msgid "Use pattern for outline instead of gradient"
+msgstr "Per al contorn, utilitza un patró en comptes d'un degradat"
+
+#: ../scripts/glossy.scm.h:21
+msgid "Use pattern for text instead of gradient"
+msgstr "Per al text, utilitza un patró en comptes d'un degradat"
+
+#: ../scripts/glossy.scm.h:22
 msgid "Use pattern overlay"
-msgstr "Utilitza sobreposat del patró "
+msgstr "Sobreposa el patró"
 
-#: ../scripts/glowing-logo.scm.h:2
-#, fuzzy
-msgid "Effect size (pixels * 3)"
-msgstr "Mida de l'efecte (píxels * 3)"
-
-#: ../scripts/glowing-logo.scm.h:5
-msgid "Glo_wing Hot..."
+#: ../scripts/glowing-logo.scm.h:1
+msgid "Add a glowing hot metal effect to the selected region (or alpha)"
 msgstr ""
+"Afegeix un efecte d'un metall roent molt calent a la regió seleccionada (o "
+"canal alfa)"
 
-#: ../scripts/gradient-bevel-logo.scm.h:2
-#, fuzzy
+#: ../scripts/glowing-logo.scm.h:3
+msgid "Create a logo that looks like glowing hot metal"
+msgstr "Crea un logotip que sembli fet amb un ferro roent ben calent"
+
+#: ../scripts/glowing-logo.scm.h:4
+msgid "Effect size (pixels * 3)"
+msgstr "Mida de l'efecte (píxels * 3) "
+
+#: ../scripts/glowing-logo.scm.h:7
+msgid "Glo_wing Hot..."
+msgstr "_Ferro roent..."
+
+#: ../scripts/gradient-bevel-logo.scm.h:1
+msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
+msgstr ""
+"Afegeix un efecte de brillantor i de bisell arrodonit a la regió "
+"seleccionada (o canal alfa)"
+
+#: ../scripts/gradient-bevel-logo.scm.h:3
 msgid "Bevel height (sharpness)"
-msgstr "Alçada del biselat (definició)"
+msgstr "Alçada del relleu (definició)"
 
-#: ../scripts/gradient-bevel-logo.scm.h:4 ../scripts/t-o-p-logo.scm.h:3
+#: ../scripts/gradient-bevel-logo.scm.h:5 ../scripts/t-o-p-logo.scm.h:4
 #: ../scripts/textured-logo.scm.h:2
-#, fuzzy
 msgid "Border size (pixels)"
 msgstr "Mida del marge (píxels)"
 
-#: ../scripts/gradient-bevel-logo.scm.h:7
-#, fuzzy
+#: ../scripts/gradient-bevel-logo.scm.h:6
+msgid "Create a logo with a shiny look and beveled edges"
+msgstr "Crea un logotip amb una brillantor i un bisell arrodonit"
+
+#: ../scripts/gradient-bevel-logo.scm.h:9
 msgid "Gradient Beve_l..."
-msgstr "Degradat invertit"
+msgstr "_Bisell arrodonit..."
 
-#
-#: ../scripts/gradient-example.scm.h:3
-#, fuzzy
-msgid "Render _Image..."
-msgstr "<Image>/Tiny-Fu/Selecció/A_rrodoneix..."
+#: ../scripts/gradient-example.scm.h:1
+msgid "Create an image filled with an example of the current gradient"
+msgstr "Crea una imatge plena d'una mostra del degradat actual"
 
-#: ../scripts/grid-system.scm.h:1
-msgid "X divisions"
-msgstr "Divisions d'X"
+#: ../scripts/gradient-example.scm.h:2
+msgid "Custom _Gradient..."
+msgstr "De_gradat actual..."
+
+#: ../scripts/grid-system.scm.h:1 ../scripts/guides-from-selection.scm.h:1
+msgid ""
+"Draw a grid as specified by the lists of X and Y locations using the current "
+"brush"
+msgstr ""
+"Dibuixa un graella emprant el pinzell actual, donada una llista de les "
+"posicions X i Y "
 
 #: ../scripts/grid-system.scm.h:2
-msgid "Y divisions"
-msgstr "Divisions d'Y"
+msgid "X divisions"
+msgstr "Divisions X"
 
 #: ../scripts/grid-system.scm.h:3
-msgid "_Grid..."
-msgstr ""
+msgid "Y divisions"
+msgstr "Divisions Y"
 
-#: ../scripts/guides-from-selection.scm.h:1
-msgid "Creates four Guides around the bounding box of the current selection."
-msgstr ""
+#: ../scripts/grid-system.scm.h:4
+msgid "_Grid..."
+msgstr "_Graella..."
 
 #: ../scripts/guides-from-selection.scm.h:2
 msgid "New Guides from _Selection"
+msgstr "Noves guies des de la _selecció"
+
+#: ../scripts/guides-new-percent.scm.h:1
+msgid "Add a guide at the position specified as a percentage of the image size"
 msgstr ""
+"Afegeix una guia a la posició especificada com a percentatge de la mida de "
+"la imatge"
 
-#
-#: ../scripts/guides-new-percent.scm.h:1 ../scripts/guides-new.scm.h:1
-#, fuzzy
-msgid "Direction"
-msgstr "Descripció"
-
-#
 #: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
-#, fuzzy
+msgid "Direction"
+msgstr "Direcció"
+
+#: ../scripts/guides-new-percent.scm.h:3 ../scripts/guides-new.scm.h:3
 msgid "Horizontal"
-msgstr "Difumina horitzontalment"
+msgstr "Horitzontal"
 
-#: ../scripts/guides-new-percent.scm.h:3
+#: ../scripts/guides-new-percent.scm.h:4
 msgid "New Guide (by _Percent)..."
-msgstr ""
+msgstr "Nova guia (per _percentatge)..."
 
-#: ../scripts/guides-new-percent.scm.h:5
+#: ../scripts/guides-new-percent.scm.h:6
 #, no-c-format
 msgid "Position (in %)"
-msgstr ""
+msgstr "Posició (en %)"
 
-#
-#: ../scripts/guides-new-percent.scm.h:6 ../scripts/guides-new.scm.h:5
-#, fuzzy
+#: ../scripts/guides-new-percent.scm.h:7 ../scripts/guides-new.scm.h:6
 msgid "Vertical"
-msgstr "Difumina verticalment"
+msgstr "Vertical"
 
-#: ../scripts/guides-new.scm.h:3
-msgid "New _Guide..."
-msgstr ""
+#: ../scripts/guides-new.scm.h:1
+msgid "Add a guide at the orientation and position specified (in pixels)"
+msgstr "Afegeix una guia amb l'orientació i posició especificades (en píxels)"
 
-#
 #: ../scripts/guides-new.scm.h:4
-#, fuzzy
+msgid "New _Guide..."
+msgstr "Crea una _guia..."
+
+#: ../scripts/guides-new.scm.h:5
 msgid "Position"
-msgstr "Descripció"
+msgstr "Posició"
 
 #: ../scripts/guides-remove-all.scm.h:1
-msgid "_Remove all Guides"
-msgstr ""
+msgid "Remove all horizontal and vertical guides"
+msgstr "Suprimeix totes les guies, horitzontals i verticals"
 
-#
+#: ../scripts/guides-remove-all.scm.h:2
+msgid "_Remove all Guides"
+msgstr "_Suprimeix totes les guies"
+
 #: ../scripts/hsv-graph.scm.h:1
-#, fuzzy
 msgid "BG opacity"
 msgstr "Opacitat del fons"
 
 #: ../scripts/hsv-graph.scm.h:2
-#, fuzzy
-msgid "Draw _HSV Graph..."
-msgstr "<Image>/Tiny-Fu/Utilitats/Dibuixa gràfic _HSV..."
+msgid "Create a graph of the Hue, Saturation, and Value distributions"
+msgstr ""
+"Crea una gràfica de la distribució del to, la saturació i el valor de la "
+"imatge actual"
 
 #: ../scripts/hsv-graph.scm.h:3
+msgid "Draw _HSV Graph..."
+msgstr "Dibuixa gràfic _HSV..."
+
+#: ../scripts/hsv-graph.scm.h:4
 msgid "End X"
 msgstr "X final"
 
-#: ../scripts/hsv-graph.scm.h:4
+#: ../scripts/hsv-graph.scm.h:5
 msgid "End Y"
 msgstr "Y final"
 
-#: ../scripts/hsv-graph.scm.h:5
-#, fuzzy
+#: ../scripts/hsv-graph.scm.h:6
 msgid "From top-left to bottom-right"
 msgstr "Del cantó superior esquerre a l'inferior dret"
 
-#
-#: ../scripts/hsv-graph.scm.h:6
-#, fuzzy
+#: ../scripts/hsv-graph.scm.h:7
 msgid "Graph scale"
 msgstr "Escala de la gràfica"
 
-#
-#: ../scripts/hsv-graph.scm.h:7
+#: ../scripts/hsv-graph.scm.h:8
 msgid "Start X"
 msgstr "X inicial"
 
-#
-#: ../scripts/hsv-graph.scm.h:8
+#: ../scripts/hsv-graph.scm.h:9
 msgid "Start Y"
 msgstr "Y inicial"
 
-#: ../scripts/hsv-graph.scm.h:9
-#, fuzzy
+#: ../scripts/hsv-graph.scm.h:10
 msgid "Use selection bounds instead of values below"
-msgstr "Utilitza el límit de la selecció en comptes dels inferiors"
+msgstr "Utilitza els límits de la selecció en comptes dels següents valors"
 
-#
-#: ../scripts/i26-gunya2.scm.h:3
-#, fuzzy
+#: ../scripts/i26-gunya2.scm.h:1
+msgid "Create a logo in a two-color, scribbled text style"
+msgstr "Crea un logotip amb dos colors, a l'estil d'un nen petit"
+
+#: ../scripts/i26-gunya2.scm.h:4
 msgid "Frame color"
 msgstr "Color del marc"
 
-#
-#: ../scripts/i26-gunya2.scm.h:4
-#, fuzzy
+#: ../scripts/i26-gunya2.scm.h:5
 msgid "Frame size"
 msgstr "Mida del marc"
 
-#: ../scripts/i26-gunya2.scm.h:5
+#: ../scripts/i26-gunya2.scm.h:6
 msgid "Imigre-_26..."
-msgstr ""
+msgstr "Retolador nen petit (Imigre-_26)..."
 
-#
-#: ../scripts/land.scm.h:5
-#, fuzzy
+#: ../scripts/land.scm.h:1
+msgid "Create an image filled with a topographic map pattern"
+msgstr "Crea una imatge plena d'un mapa topogràfic"
+
+#: ../scripts/land.scm.h:6
 msgid "Land height"
 msgstr "Alçada del terra"
 
-#
-#: ../scripts/land.scm.h:9
-#, fuzzy
-msgid "Sea depth"
-msgstr "Profunditat del mar"
-
 #: ../scripts/land.scm.h:10
-msgid "_Land..."
-msgstr ""
+msgid "Sea depth"
+msgstr "Nivell del mar"
 
-#
-#: ../scripts/lava.scm.h:3 ../scripts/swirltile.scm.h:7
+#: ../scripts/land.scm.h:11
+msgid "_Land..."
+msgstr "_Mapa de relleu I..."
+
+#: ../scripts/lava.scm.h:1
+msgid "Fill the current selection with lava"
+msgstr "Omple la selecció actual amb lava"
+
+#: ../scripts/lava.scm.h:4 ../scripts/swirltile.scm.h:8
 msgid "Roughness"
 msgstr "Duresa"
 
-#
-#: ../scripts/lava.scm.h:4
+#: ../scripts/lava.scm.h:5
 msgid "Seed"
-msgstr "Generador"
+msgstr "Llavor"
 
-#
-#: ../scripts/lava.scm.h:7
-#, fuzzy
+#: ../scripts/lava.scm.h:8
 msgid "Use current gradient"
 msgstr "Utilitza el degradat actual"
 
-#: ../scripts/lava.scm.h:8
+#: ../scripts/lava.scm.h:9
 msgid "_Lava..."
-msgstr ""
+msgstr "_Lava..."
 
 #: ../scripts/line-nova.scm.h:1
-msgid "Line _Nova..."
+msgid ""
+"Fill a layer with rays emanating outward from its center using the FG color"
 msgstr ""
+"Omple la capa amb rajos que emanen del seu centre emprant el color del "
+"primer pla"
 
 #: ../scripts/line-nova.scm.h:2
-#, fuzzy
+msgid "Line _Nova..."
+msgstr "_Ratllat radial..."
+
+#: ../scripts/line-nova.scm.h:3
 msgid "Number of lines"
 msgstr "Nombre de línies"
 
-#
-#: ../scripts/line-nova.scm.h:3
-#, fuzzy
-msgid "Offset radius"
-msgstr "Radi de desplaçament"
-
-#
 #: ../scripts/line-nova.scm.h:4
+msgid "Offset radius"
+msgstr "Radi del desplaçament"
+
+#: ../scripts/line-nova.scm.h:5
 msgid "Randomness"
 msgstr "Aleatorietat"
 
-#: ../scripts/line-nova.scm.h:5
+#: ../scripts/line-nova.scm.h:6
 msgid "Sharpness (degrees)"
 msgstr "Definició (graus)"
 
 #: ../scripts/mkbrush.scm.h:1
-msgid "Create size of brush"
-msgstr ""
+msgid "Create a rectangular brush"
+msgstr "Crea un pinzell rectangular"
 
-#
 #: ../scripts/mkbrush.scm.h:2
-#, fuzzy
-msgid "Description"
-msgstr "Descripció"
+msgid "Create a rectangular brush with feathered edges"
+msgstr "Crea un pinzell rectangular, amb la vora difuminada"
 
-#
 #: ../scripts/mkbrush.scm.h:3
-msgid "Feathering"
-msgstr "Ploma"
+msgid "Create an elliptical brush"
+msgstr "Crea un pinzell el·líptic"
+
+#: ../scripts/mkbrush.scm.h:4
+msgid "Create an elliptical brush with feathered edges"
+msgstr "Crea un pinzell el·líptic, amb la vora difuminada"
 
 #: ../scripts/mkbrush.scm.h:5
-msgid "New Ell_iptical..."
-msgstr ""
+msgid "Elli_ptical, Feathered..."
+msgstr "El·lí_ptic, amb la vora difuminada..."
 
-#
 #: ../scripts/mkbrush.scm.h:6
-#, fuzzy
-msgid "New Elli_ptical, Feathered..."
-msgstr "<Toolbox>/Extensions/Tiny-Fu/Fes un pinzell/El·lí_ptic, ploma..."
+msgid "Feathering"
+msgstr "Difuminació"
 
-#
-#: ../scripts/mkbrush.scm.h:7
-#, fuzzy
-msgid "New Re_ctangular..."
-msgstr "<Image>/Tiny-Fu/Selecció/A_rrodoneix..."
-
-#
 #: ../scripts/mkbrush.scm.h:8
-#, fuzzy
-msgid "New Rec_tangular, Feathered..."
-msgstr "<Toolbox>/Extensions/Tiny-Fu/Fes un pinzell/Re_ctangular, ploma..."
+msgid "Name"
+msgstr "Nom"
 
-#
-#: ../scripts/mkbrush.scm.h:9 ../scripts/select-to-brush.scm.h:3
+#: ../scripts/mkbrush.scm.h:9
+msgid "Re_ctangular, Feathered..."
+msgstr "Re_ctangular, amb la vora difuminada..."
+
+#: ../scripts/mkbrush.scm.h:10 ../scripts/paste-as-brush.scm.h:5
+#: ../scripts/select-to-brush.scm.h:4
 msgid "Spacing"
 msgstr "Espaiat"
 
-#
+#: ../scripts/mkbrush.scm.h:12
+msgid "_Elliptical..."
+msgstr "_El·líptic..."
+
+#: ../scripts/mkbrush.scm.h:13
+msgid "_Rectangular..."
+msgstr "_Rectangular..."
+
 #: ../scripts/neon-logo.scm.h:2
-#, fuzzy
+msgid "Convert the selected region (or alpha) into a neon-sign like object"
+msgstr "Converteix la regió seleccionada (o canal alfa) en un llum de neó"
+
+#: ../scripts/neon-logo.scm.h:3
+msgid "Create a logo in the style of a neon sign"
+msgstr "Crea un logotip a l'estil d'un llum de lleó"
+
+#: ../scripts/neon-logo.scm.h:4
 msgid "Create shadow"
 msgstr "Crea una ombra"
 
-#: ../scripts/neon-logo.scm.h:3
-#, fuzzy
+#: ../scripts/neon-logo.scm.h:5
 msgid "Effect size (pixels * 5)"
 msgstr "Mida de l'efecte (píxels * 5)"
 
-#: ../scripts/neon-logo.scm.h:7
+#: ../scripts/neon-logo.scm.h:9
 msgid "N_eon..."
-msgstr ""
+msgstr "Llums de n_eó..."
 
 #: ../scripts/news-text.scm.h:3
 msgid "Cell size (pixels)"
 msgstr "Mida de la cel·la (píxels)"
 
-#
-#: ../scripts/news-text.scm.h:5 ../scripts/speed-text.scm.h:3
+#: ../scripts/news-text.scm.h:4
+msgid "Create a logo in the style of newspaper printing"
+msgstr "Crea un logotip a l'estil de com s'imprimeix en un paper de diari"
+
+#: ../scripts/news-text.scm.h:6 ../scripts/speed-text.scm.h:4
 #, no-c-format
 msgid "Density (%)"
 msgstr "Densitat (%)"
 
-#: ../scripts/news-text.scm.h:8
+#: ../scripts/news-text.scm.h:9
 msgid "Newsprint Te_xt..."
-msgstr ""
+msgstr "Te_xt de diari..."
 
 #: ../scripts/old-photo.scm.h:2
 msgid "Defocus"
 msgstr "Desenfoca"
 
-#
 #: ../scripts/old-photo.scm.h:3
+msgid "Make an image look like an old photo"
+msgstr "Fa que una imatge sembli una fotografia antiga"
+
+#: ../scripts/old-photo.scm.h:4
 msgid "Mottle"
 msgstr "Multicolor"
 
-#
-#: ../scripts/old-photo.scm.h:4
+#: ../scripts/old-photo.scm.h:5
 msgid "Sepia"
 msgstr "Sèpia"
 
-#: ../scripts/old-photo.scm.h:6
+#: ../scripts/old-photo.scm.h:7
 msgid "_Old Photo..."
-msgstr ""
+msgstr "Fot_o antiga..."
 
-#: ../scripts/perspective-shadow.scm.h:2
+#: ../scripts/paste-as-brush.scm.h:1 ../scripts/select-to-brush.scm.h:1
+msgid "Brush name"
+msgstr "Nom del pinzell"
+
+#: ../scripts/paste-as-brush.scm.h:2 ../scripts/paste-as-pattern.scm.h:1
+#: ../scripts/select-to-brush.scm.h:3 ../scripts/select-to-pattern.scm.h:2
+msgid "File name"
+msgstr "Nom del fitxer"
+
+#: ../scripts/paste-as-brush.scm.h:3
+msgid "New _Brush..."
+msgstr "Nou pin_zell..."
+
+#: ../scripts/paste-as-brush.scm.h:4
+msgid "Paste the clipboard contents into a new brush"
+msgstr "Enganxa el contingut del porta-retalls en un nou pinzell"
+
+#: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
+msgid "There is no image data in the clipboard to paste."
+msgstr "No hi ha dades de cap imatge al porta-retalls per a enganxar."
+
+#: ../scripts/paste-as-pattern.scm.h:2
+msgid "New _Pattern..."
+msgstr "Nou _patró..."
+
+#: ../scripts/paste-as-pattern.scm.h:3
+msgid "Paste the clipboard contents into a new pattern"
+msgstr "Enganxa el contingut del porta-retalls en un nou patró"
+
+#: ../scripts/paste-as-pattern.scm.h:4 ../scripts/select-to-pattern.scm.h:3
+msgid "Pattern name"
+msgstr "Nom del patró"
+
+#: ../scripts/perspective-shadow.scm.h:1
+msgid "Add a perspective shadow to the selected region (or alpha)"
+msgstr "Afegeix una ombra a la regió seleccionada (o canal alfa)"
+
+#: ../scripts/perspective-shadow.scm.h:3
 msgid "Angle"
 msgstr "Angle"
 
-#
-#: ../scripts/perspective-shadow.scm.h:5
-#, fuzzy
+#: ../scripts/perspective-shadow.scm.h:6
 msgid "Interpolation"
-msgstr "Interpola"
+msgstr "Interpolació"
 
-#: ../scripts/perspective-shadow.scm.h:7
-#, fuzzy
+#: ../scripts/perspective-shadow.scm.h:8
 msgid "Relative distance of horizon"
 msgstr "Distància relativa de l'horitzó"
 
-#: ../scripts/perspective-shadow.scm.h:8
-#, fuzzy
+#: ../scripts/perspective-shadow.scm.h:9
 msgid "Relative length of shadow"
 msgstr "Longitud relativa de l'ombra"
 
-#: ../scripts/perspective-shadow.scm.h:9
+#: ../scripts/perspective-shadow.scm.h:10
 msgid "_Perspective..."
-msgstr ""
+msgstr "_Prespectiva..."
 
 #: ../scripts/predator.scm.h:1
-#, fuzzy
-msgid "Edge amount"
-msgstr "Quantitat de fils"
+msgid "Add a 'Predator' effect to the selected region (or alpha)"
+msgstr ""
+"Afegeix un efecte «Àlien Predator» a la regió seleccionada (o canal alfa)"
 
-#
-#: ../scripts/predator.scm.h:3
-#, fuzzy
+#: ../scripts/predator.scm.h:2
+msgid "Edge amount"
+msgstr "Quantitat de vores"
+
+#: ../scripts/predator.scm.h:4
 msgid "Pixel amount"
 msgstr "Quantitat de píxels"
 
-#
-#: ../scripts/predator.scm.h:4
+#: ../scripts/predator.scm.h:5
 msgid "Pixelize"
 msgstr "Pixelitza"
 
-#: ../scripts/predator.scm.h:6
+#: ../scripts/predator.scm.h:7
 msgid "_Predator..."
-msgstr ""
+msgstr "Estil «Àlien _Predator»..."
 
-#: ../scripts/pupi-button.scm.h:4
+#: ../scripts/pupi-button.scm.h:2
+msgid "Create images, each containing an oval button graphic"
+msgstr "Crea diverses imatges, cadascuna amb un dibuix d'un botó oval"
+
+#: ../scripts/pupi-button.scm.h:5
 msgid "Lower color"
 msgstr "Color inferior"
 
-#: ../scripts/pupi-button.scm.h:5
+#: ../scripts/pupi-button.scm.h:6
 msgid "Lower color (active)"
 msgstr "Color inferior (actiu)"
 
-#
-#: ../scripts/pupi-button.scm.h:6
-#, fuzzy
-msgid "Not pressed"
-msgstr "Sense prémer"
-
 #: ../scripts/pupi-button.scm.h:7
-#, fuzzy
-msgid "Not pressed (active)"
-msgstr "Sense prémer (actiu)"
+msgid "Not pressed"
+msgstr "No enfonsat"
 
 #: ../scripts/pupi-button.scm.h:8
-msgid "Padding X"
-msgstr "Emplenat X"
+msgid "Not pressed (active)"
+msgstr "No enfonsat (actiu)"
 
 #: ../scripts/pupi-button.scm.h:9
-msgid "Padding Y"
-msgstr "Emplenat en Y"
+msgid "Padding X"
+msgstr "Farciment X"
 
-#
-#: ../scripts/pupi-button.scm.h:11
-#, fuzzy
+#: ../scripts/pupi-button.scm.h:10
+msgid "Padding Y"
+msgstr "Farciment Y"
+
+#: ../scripts/pupi-button.scm.h:12
 msgid "Round ratio"
 msgstr "Relació d'arrodoniment"
 
-#: ../scripts/pupi-button.scm.h:14
+#: ../scripts/pupi-button.scm.h:15
 msgid "Text color (active)"
 msgstr "Color del text (actiu)"
 
-#: ../scripts/pupi-button.scm.h:15
+#: ../scripts/pupi-button.scm.h:16
 msgid "Upper color"
 msgstr "Color superior"
 
-#: ../scripts/pupi-button.scm.h:16
+#: ../scripts/pupi-button.scm.h:17
 msgid "Upper color (active)"
 msgstr "Color superior (actiu)"
 
-#: ../scripts/pupi-button.scm.h:17
+#: ../scripts/pupi-button.scm.h:18
 msgid "_Round Button..."
-msgstr ""
+msgstr "Botó _rodó..."
 
 #: ../scripts/rendermap.scm.h:1
-#, fuzzy
 msgid "Behavior"
 msgstr "Comportament"
 
 #: ../scripts/rendermap.scm.h:2
+msgid "Create an image filled with an Earth-like map pattern"
+msgstr "Crea una imatge plena d'un patró en forma de mapa de la terra"
+
+#: ../scripts/rendermap.scm.h:3
 msgid "Detail in Middle"
-msgstr "Detall en el mig"
+msgstr "Detall al mig"
 
-#: ../scripts/rendermap.scm.h:7
-msgid "Render _Map..."
-msgstr ""
-
-#
 #: ../scripts/rendermap.scm.h:8
+msgid "Render _Map..."
+msgstr "Mapa de _relleu II..."
+
+#: ../scripts/rendermap.scm.h:9
 msgid "Tile"
 msgstr "Mosaic"
+
+#: ../scripts/reverse-layers.scm.h:1
+msgid "Reverse Layer Order"
+msgstr "Inverteix l'ordre de les capes"
+
+#: ../scripts/reverse-layers.scm.h:2
+msgid "Reverse the order of layers in the image"
+msgstr "Inverteix l'ordre de les capes de la imatge"
 
 #: ../scripts/ripply-anim.scm.h:1
 msgid "Black"
 msgstr "Negre"
 
-#
 #: ../scripts/ripply-anim.scm.h:2
-#, fuzzy
+msgid ""
+"Create a multi-layer image by adding a ripple effect to the current image"
+msgstr ""
+"Crea una imatge de vàries capes afegint un efecte de rínxol de paper a la "
+"imatge actual, com si es passés pàgina"
+
+#: ../scripts/ripply-anim.scm.h:3
 msgid "Edge behavior"
-msgstr "Comportament dels fils"
+msgstr "Comportament de les vores"
 
-#: ../scripts/ripply-anim.scm.h:3 ../scripts/waves-anim.scm.h:3
-#, fuzzy
+#: ../scripts/ripply-anim.scm.h:4 ../scripts/waves-anim.scm.h:4
 msgid "Number of frames"
-msgstr "Nombre de marcs"
-
-#: ../scripts/ripply-anim.scm.h:4
-#, fuzzy
-msgid "Rippling strength"
-msgstr "Força de l'ondulació"
+msgstr "Nombre de fotogrames"
 
 #: ../scripts/ripply-anim.scm.h:5
+msgid "Rippling strength"
+msgstr "Intensitat de l'ondulació"
+
+#: ../scripts/ripply-anim.scm.h:6
 msgid "Smear"
 msgstr "Escampa"
 
-#: ../scripts/ripply-anim.scm.h:6
+#: ../scripts/ripply-anim.scm.h:7
 msgid "Wrap"
 msgstr "Envolta"
 
-#: ../scripts/ripply-anim.scm.h:7
+#: ../scripts/ripply-anim.scm.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "A_rruga..."
 
-#
 #: ../scripts/round-corners.scm.h:1
-#, fuzzy
 msgid "Add background"
-msgstr "Afegeix fons"
+msgstr "Afegeix un fons"
 
 #: ../scripts/round-corners.scm.h:2
-#, fuzzy
 msgid "Add drop-shadow"
-msgstr "Afegeix ombra descendent"
+msgstr "Afegeix una ombra"
 
-#
 #: ../scripts/round-corners.scm.h:4
-#, fuzzy
 msgid "Edge radius"
-msgstr "Radi del fil"
+msgstr "Radi de la vora"
 
-#: ../scripts/round-corners.scm.h:8
-msgid "_Round Corners..."
+#: ../scripts/round-corners.scm.h:5
+msgid ""
+"Round the corners of an image and optionally add a drop-shadow and background"
 msgstr ""
+"Arrodoneix les vores d'una imatge i opcionalment, afegeix una ombra i un fons"
+
+#: ../scripts/round-corners.scm.h:9
+msgid "_Round Corners..."
+msgstr "A_rrodoneix les vores..."
+
+#: ../scripts/script-fu-set-cmap.scm.h:1
+msgid "Change the colormap of an image to the colors in a specified palette."
+msgstr ""
+"Canvia el mapa de colors d'una imatge amb els colors de la paleta "
+"especificada."
+
+#: ../scripts/script-fu-set-cmap.scm.h:2
+msgid "Palette"
+msgstr "Paleta"
+
+#: ../scripts/script-fu-set-cmap.scm.h:3
+msgid "Se_t Colormap..."
+msgstr "_Defineix el mapa de colors..."
+
+#: ../scripts/select-to-brush.scm.h:2
+msgid "Convert a selection to a brush"
+msgstr "Converteix la selecció en un pinzell"
+
+#: ../scripts/select-to-brush.scm.h:5
+msgid "To _Brush..."
+msgstr "Fes-ne _un pinzell..."
+
+#: ../scripts/select-to-image.scm.h:1
+msgid "Convert a selection to an image"
+msgstr "Converteix la selecció en una imatge"
+
+#: ../scripts/select-to-image.scm.h:2
+msgid "To _Image"
+msgstr "Fes-ne _imatge"
+
+#: ../scripts/select-to-pattern.scm.h:1
+msgid "Convert a selection to a pattern"
+msgstr "Converteix la selecció en un patró"
+
+#: ../scripts/select-to-pattern.scm.h:4
+msgid "To _Pattern..."
+msgstr "Fes-ne un _patró..."
 
 #: ../scripts/selection-round.scm.h:1
 msgid "Concave"
-msgstr ""
+msgstr "Còncau"
 
-#
 #: ../scripts/selection-round.scm.h:3
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Radi"
+msgstr "Radi (%)"
 
-#
 #: ../scripts/selection-round.scm.h:4
-#, fuzzy
+msgid "Round the corners of the current selection"
+msgstr "Arrodoneix les vores de la selecció actual"
+
+#: ../scripts/selection-round.scm.h:5
 msgid "Rounded R_ectangle..."
-msgstr "<Image>/Tiny-Fu/Selecció/A_rrodoneix..."
+msgstr "R_ectangle arrodonit..."
 
-#: ../scripts/select-to-brush.scm.h:1
-#, fuzzy
-msgid "Brush name"
-msgstr "Nom del pinzell"
-
-#
-#: ../scripts/select-to-brush.scm.h:2 ../scripts/select-to-pattern.scm.h:1
-#, fuzzy
-msgid "File name"
-msgstr "Nom del fitxer"
-
-#: ../scripts/select-to-brush.scm.h:4
-#, fuzzy
-msgid "To _Brush..."
-msgstr "Navega..."
-
-#: ../scripts/select-to-image.scm.h:1
-msgid "To _Image"
+#: ../scripts/slide.scm.h:1
+msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
 msgstr ""
+"Afegeix un marc a la imatge com si fos un fotograma d'una cinta de cinema, "
+"amb els forats i les marques en la cinta"
 
-#
-#: ../scripts/select-to-pattern.scm.h:2
-#, fuzzy
-msgid "Pattern name"
-msgstr "Nom del patró"
-
-#
-#: ../scripts/select-to-pattern.scm.h:3
-#, fuzzy
-msgid "To _Pattern..."
-msgstr "Patró"
-
-#: ../scripts/slide.scm.h:2
+#: ../scripts/slide.scm.h:3
 msgid "Font color"
 msgstr "Color del tipus de lletra"
 
-#: ../scripts/slide.scm.h:3
+#: ../scripts/slide.scm.h:4
 msgid "Number"
 msgstr "Número"
 
-#: ../scripts/slide.scm.h:6
+#: ../scripts/slide.scm.h:7
 msgid "_Slide..."
-msgstr ""
+msgstr "Emmarca com un _fotograma..."
 
-#: ../scripts/sota-chrome-logo.scm.h:9
+#: ../scripts/sota-chrome-logo.scm.h:5
+msgid "Create a State Of The Art chromed logo"
+msgstr "Crea un modern logotip amb crom estil 'State Of The Art'"
+
+#: ../scripts/sota-chrome-logo.scm.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "Crom modern (SOTA)..."
 
-#: ../scripts/speed-text.scm.h:6
+#: ../scripts/speed-text.scm.h:2
+msgid "Create a logo with a speedy text effect"
+msgstr "Crea un logotip emprant un efecte de text en moviment"
+
+#: ../scripts/speed-text.scm.h:7
 msgid "Speed Text..."
-msgstr ""
+msgstr "Text en moviment..."
 
 #: ../scripts/sphere.scm.h:2
+msgid "Create a simple sphere with a drop shadow"
+msgstr "Crea una esfera simple amb una ombra"
+
+#: ../scripts/sphere.scm.h:3
 msgid "Lighting (degrees)"
 msgstr "Il·luminació (graus)"
 
-#: ../scripts/sphere.scm.h:3
+#: ../scripts/sphere.scm.h:4
 msgid "Radius (pixels)"
 msgstr "Radi (píxels)"
 
-#
-#: ../scripts/sphere.scm.h:5
-#, fuzzy
+#: ../scripts/sphere.scm.h:6
 msgid "Sphere color"
 msgstr "Color de l'esfera"
 
-#: ../scripts/sphere.scm.h:6
-#, fuzzy
+#: ../scripts/sphere.scm.h:7
 msgid "_Sphere..."
-msgstr "Navega..."
+msgstr "_Esfera..."
 
-#
 #: ../scripts/spinning-globe.scm.h:1
-msgid "Frames"
-msgstr "Marcs"
+msgid "Create an animation by mapping the current image onto a spinning sphere"
+msgstr ""
+"Crea una animació, posant la imatge actual damunt d'una esfera que roda "
+"horitzontalment"
 
 #: ../scripts/spinning-globe.scm.h:2
-#, fuzzy
+msgid "Frames"
+msgstr "Fotogrames"
+
+#: ../scripts/spinning-globe.scm.h:3
 msgid "Index to n colors (0 = remain RGB)"
 msgstr "Indexa en n colors (0 = manté en RGB)"
 
-#: ../scripts/spinning-globe.scm.h:4
-#, fuzzy
+#: ../scripts/spinning-globe.scm.h:5
 msgid "Turn from left to right"
 msgstr "Gira d'esquerra a dreta"
 
-#: ../scripts/spinning-globe.scm.h:6
+#: ../scripts/spinning-globe.scm.h:7
 msgid "_Spinning Globe..."
-msgstr ""
+msgstr "_Món que roda..."
 
 #: ../scripts/spyrogimp.scm.h:1
+msgid ""
+"Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
+msgstr ""
+"Dibuixa espirògrafs, epitrocoides i corbes de Lissajous a la capa actual"
+
+#: ../scripts/spyrogimp.scm.h:2
 msgid "Airbrush"
 msgstr "Esprai"
 
-#
-#: ../scripts/spyrogimp.scm.h:2
+#: ../scripts/spyrogimp.scm.h:3
 msgid "Brush"
 msgstr "Pinzell"
 
-#
-#: ../scripts/spyrogimp.scm.h:3
+#: ../scripts/spyrogimp.scm.h:4
 msgid "Circle"
 msgstr "Cercle"
 
-#: ../scripts/spyrogimp.scm.h:5
-#, fuzzy
-msgid "Color method"
-msgstr "Mètode per al color"
-
 #: ../scripts/spyrogimp.scm.h:6
-msgid "Epitrochoid"
-msgstr "Epitrocòides"
+msgid "Color method"
+msgstr "Mètode de color"
 
-#
+# era: msgstr "Dibuixa espirògrafs, epitrocòides i curves de Lissajous. Podeu obtenir més informació a http://netword.com/*spyrogimp"
 #: ../scripts/spyrogimp.scm.h:7
+msgid "Epitrochoid"
+msgstr "Epitrocoide"
+
+#: ../scripts/spyrogimp.scm.h:8
 msgid "Frame"
 msgstr "Marc"
 
-#: ../scripts/spyrogimp.scm.h:9
-msgid "Gradient: Loop Sawtooth"
-msgstr "Degradat: repeteix les dents de serra"
-
 #: ../scripts/spyrogimp.scm.h:10
-msgid "Gradient: Loop Triangle"
-msgstr "Degradat: repeteix el triangle"
+msgid "Gradient: Loop Sawtooth"
+msgstr "Degradat: serralada"
 
 #: ../scripts/spyrogimp.scm.h:11
+msgid "Gradient: Loop Triangle"
+msgstr "Degradat: rampes"
+
+#: ../scripts/spyrogimp.scm.h:12
 msgid "Hexagon"
 msgstr "Hexàgon"
 
-#: ../scripts/spyrogimp.scm.h:12
-#, fuzzy
+#: ../scripts/spyrogimp.scm.h:13
 msgid "Hole ratio"
 msgstr "Relació del forat"
 
-#: ../scripts/spyrogimp.scm.h:13
-#, fuzzy
+#: ../scripts/spyrogimp.scm.h:14
 msgid "Inner teeth"
 msgstr "Dents interiors"
 
-#: ../scripts/spyrogimp.scm.h:14
+#: ../scripts/spyrogimp.scm.h:15
 msgid "Lissajous"
 msgstr "Lissajous"
 
-#: ../scripts/spyrogimp.scm.h:15
+#: ../scripts/spyrogimp.scm.h:16
 msgid "Margin (pixels)"
 msgstr "Marge (píxels)"
 
-#
-#: ../scripts/spyrogimp.scm.h:16
-#, fuzzy
+#: ../scripts/spyrogimp.scm.h:17
 msgid "Outer teeth"
 msgstr "Dents exteriors"
 
-#: ../scripts/spyrogimp.scm.h:17
+#: ../scripts/spyrogimp.scm.h:18
 msgid "Pencil"
 msgstr "Llapis"
 
-#
-#: ../scripts/spyrogimp.scm.h:18
+#: ../scripts/spyrogimp.scm.h:19
 msgid "Pentagon"
 msgstr "Pentàgon"
 
-#: ../scripts/spyrogimp.scm.h:19
+#: ../scripts/spyrogimp.scm.h:20
 msgid "Polygon: 10 sides"
 msgstr "Polígon: 10 cares"
 
-#: ../scripts/spyrogimp.scm.h:20
+#: ../scripts/spyrogimp.scm.h:21
 msgid "Polygon: 7 sides"
 msgstr "Polígon: 7 cares"
 
-#: ../scripts/spyrogimp.scm.h:21
+#: ../scripts/spyrogimp.scm.h:22
 msgid "Polygon: 8 sides"
 msgstr "Polígon: 8 cares"
 
-#: ../scripts/spyrogimp.scm.h:22
+#: ../scripts/spyrogimp.scm.h:23
 msgid "Polygon: 9 sides"
 msgstr "Polígon: 9 cares"
 
-#: ../scripts/spyrogimp.scm.h:23
+#: ../scripts/spyrogimp.scm.h:24
+msgid "Rendering Spyro"
+msgstr "S'està dibuixant l'espiroide"
+
+#: ../scripts/spyrogimp.scm.h:25
 msgid "Shape"
 msgstr "Forma"
 
-#
-#: ../scripts/spyrogimp.scm.h:24
+#: ../scripts/spyrogimp.scm.h:26
 msgid "Solid Color"
 msgstr "Color sòlid"
 
-#: ../scripts/spyrogimp.scm.h:25
+#: ../scripts/spyrogimp.scm.h:27
 msgid "Spyrograph"
 msgstr "Espirògraf"
 
-#
-#: ../scripts/spyrogimp.scm.h:26
+#: ../scripts/spyrogimp.scm.h:28
 msgid "Square"
 msgstr "Quadrat"
 
-#
-#: ../scripts/spyrogimp.scm.h:27 ../scripts/text-circle.scm.h:7
-#, fuzzy
+#: ../scripts/spyrogimp.scm.h:29 ../scripts/text-circle.scm.h:7
 msgid "Start angle"
 msgstr "Angle inicial"
 
-#: ../scripts/spyrogimp.scm.h:28
+#: ../scripts/spyrogimp.scm.h:30
 msgid "Tool"
 msgstr "Eina"
 
-#: ../scripts/spyrogimp.scm.h:29
+#: ../scripts/spyrogimp.scm.h:31
 msgid "Triangle"
 msgstr "Triangle"
 
-#: ../scripts/spyrogimp.scm.h:30
+#: ../scripts/spyrogimp.scm.h:32
 msgid "Type"
 msgstr "Tipus"
 
-#: ../scripts/spyrogimp.scm.h:31
-#, fuzzy
+#: ../scripts/spyrogimp.scm.h:33
 msgid "_Spyrogimp..."
-msgstr "Espirògraf"
+msgstr "_Espirògraf..."
 
 #: ../scripts/starburst-logo.scm.h:2
-#, fuzzy
 msgid "Burst color"
 msgstr "Color de l'explosió"
 
+# Quim: starbust és la llum d'una estrella.
 #: ../scripts/starburst-logo.scm.h:3
+msgid "Create a logo using a starburst gradient"
+msgstr ""
+"Crea un logotip on les lletres estan pintades amb un patró que recorda la "
+"llum d'una estrella"
+
+#: ../scripts/starburst-logo.scm.h:4
 msgid "Effect size (pixels * 30)"
 msgstr "Mida de l'efecte (píxels * 30)"
 
-#: ../scripts/starburst-logo.scm.h:6
-msgid "Starb_urst..."
+#: ../scripts/starburst-logo.scm.h:5
+msgid ""
+"Fill the selected region (or alpha) with a starburst gradient and add a "
+"shadow"
 msgstr ""
+"Omple la regió seleccionada (o canal alfa) amb un patró que recorda la llum "
+"d'una estrella, i afegeix una ombra"
+
+#: ../scripts/starburst-logo.scm.h:8
+msgid "Starb_urst..."
+msgstr "_Llum d'estrella..."
 
 #: ../scripts/starscape-logo.scm.h:1
+msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
+msgstr ""
+"Crea un logotip emprant una textura en forma de roca dura, il·luminat per un "
+"focus de llum i amb una ombra"
+
+#: ../scripts/starscape-logo.scm.h:2
 msgid "Effect size (pixels * 4)"
 msgstr "Mida de l'efecte (píxels * 4)"
 
-#: ../scripts/starscape-logo.scm.h:5
-#, fuzzy
-msgid "Sta_rscape..."
-msgstr "Navega..."
-
-#: ../scripts/swirltile.scm.h:8
-msgid "Swirl-_Tile..."
+#: ../scripts/starscape-logo.scm.h:3
+msgid ""
+"Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
+"and shadow"
 msgstr ""
+"Omple la regió seleccionada (o canal alfa) emprant una textura de roca dura, "
+"il·luminada per un focus de llum i amb una ombra"
+
+#: ../scripts/starscape-logo.scm.h:7
+msgid "Sta_rscape..."
+msgstr "_Roca il·luminada..."
+
+#: ../scripts/swirltile.scm.h:4
+msgid "Create an image filled with a swirled tile effect"
+msgstr "Crea una imatge emprant un efecte de remolí de sorra"
 
 #: ../scripts/swirltile.scm.h:9
+msgid "Swirl-_Tile..."
+msgstr "Remolí de _sorra..."
+
+#: ../scripts/swirltile.scm.h:10
 msgid "Whirl amount"
-msgstr "Quantitat de remolins"
+msgstr "Voltes del remolí"
 
 #: ../scripts/swirly-pattern.scm.h:1
-msgid "Number of times to whirl"
-msgstr "Nombre de vegades que fa remolins"
+msgid "Create an image filled with a swirly pattern"
+msgstr "Crea una imatge amb un remolí i un patró quadriculat blanc i negre"
 
 #: ../scripts/swirly-pattern.scm.h:2
-#, fuzzy
-msgid "Quarter size"
-msgstr "Quart de mida"
+msgid "Number of times to whirl"
+msgstr "Nombre de voltes del remolí"
 
 #: ../scripts/swirly-pattern.scm.h:3
-msgid "Whirl angle"
-msgstr "Angle del remolí"
+msgid "Quarter size"
+msgstr "Quart de la mida"
 
 #: ../scripts/swirly-pattern.scm.h:4
-msgid "_Swirly..."
-msgstr ""
+msgid "Whirl angle"
+msgstr "Angle de gir a cada volta"
 
-#: ../scripts/t-o-p-logo.scm.h:2
+#: ../scripts/swirly-pattern.scm.h:5
+msgid "_Swirly..."
+msgstr "R_emolí..."
+
+# Quim: particle trace = vaporitzar
+#: ../scripts/t-o-p-logo.scm.h:1
+msgid "Add a Trace of Particles effect to the selected region (or alpha)"
+msgstr "Ressegueix amb un vaporitzador la regió seleccionada (o canal alfa)"
+
+#: ../scripts/t-o-p-logo.scm.h:3
 msgid "Base color"
 msgstr "Color base"
 
-#: ../scripts/t-o-p-logo.scm.h:4
-#, fuzzy
-msgid "Edge only"
-msgstr "Només fil"
-
+# Quim: particle trace = vaporitzar
 #: ../scripts/t-o-p-logo.scm.h:5
-#, fuzzy
-msgid "Edge width"
-msgstr "Amplada de fil"
+msgid "Create a logo using a Trace Of Particles effect"
+msgstr "Crea un logotip resseguint el text amb un vaporitzador"
 
-#: ../scripts/t-o-p-logo.scm.h:8
-#, fuzzy
+#: ../scripts/t-o-p-logo.scm.h:6
+msgid "Edge only"
+msgstr "Només la vora"
+
+#: ../scripts/t-o-p-logo.scm.h:7
+msgid "Edge width"
+msgstr "Amplada de la vora"
+
+#: ../scripts/t-o-p-logo.scm.h:10
 msgid "Hit rate"
 msgstr "Relació d'encerts"
 
-#: ../scripts/t-o-p-logo.scm.h:10
+#: ../scripts/t-o-p-logo.scm.h:12
 msgid "_Particle Trace..."
-msgstr ""
-
-#: ../scripts/test-sphere.scm.h:1
-#, fuzzy
-msgid "_Sphere"
-msgstr "Navega..."
+msgstr "Ressegueix amb un _vaporitzador..."
 
 #: ../scripts/text-circle.scm.h:1
 msgid "Antialias"
 msgstr "Suavitzat"
 
 #: ../scripts/text-circle.scm.h:2
-#, fuzzy
+msgid ""
+"Create a logo by rendering the specified text along the perimeter of a circle"
+msgstr ""
+"Crea un logotip dibuixant el text especificat al voltant del perímetre d'un "
+"cercle"
+
+#: ../scripts/text-circle.scm.h:3
 msgid "Fill angle"
 msgstr "Angle d'emplenat"
 
-#: ../scripts/text-circle.scm.h:6
-msgid "Render the specified text along the perimeter of a circle"
-msgstr ""
-
-#
 #: ../scripts/text-circle.scm.h:9
-#, fuzzy
 msgid "Text C_ircle..."
-msgstr "Cercle"
+msgstr "Text c_ircular..."
 
 #: ../scripts/textured-logo.scm.h:3
-#, fuzzy
-msgid "Ending blend"
-msgstr "Fi de la barreja"
+msgid ""
+"Create a textured logo with highlights, shadows, and a mosaic background"
+msgstr ""
+"Crea un logotip amb una textura, reflexos, ombres i un fons en forma de "
+"mosaic"
 
-#: ../scripts/textured-logo.scm.h:6
+# Quim: paràmetre del filtre Logotips i rètols / Sobre patró
+#: ../scripts/textured-logo.scm.h:4
+msgid "Ending blend"
+msgstr "Color final del degradat"
+
+#: ../scripts/textured-logo.scm.h:5
+msgid ""
+"Fill the selected region (or alpha) with a texture and add highlights, "
+"shadows, and a mosaic background"
+msgstr ""
+"Omple la regió seleccionada (o canal alfa) amb una textura i li afegeix "
+"reflexos, ombres i un fons en forma de mosaic"
+
+#: ../scripts/textured-logo.scm.h:8
 msgid "Hexagons"
 msgstr "Hexàgons"
 
-#: ../scripts/textured-logo.scm.h:7
-#, fuzzy
+#: ../scripts/textured-logo.scm.h:9
 msgid "Mosaic tile type"
 msgstr "Tipus de mosaic"
 
-#: ../scripts/textured-logo.scm.h:8
+# era: msgstr "Tipus de mosaic"
+#: ../scripts/textured-logo.scm.h:10
 msgid "Octagons"
 msgstr "Octàgons"
 
-#
-#: ../scripts/textured-logo.scm.h:10
+#: ../scripts/textured-logo.scm.h:12
 msgid "Squares"
 msgstr "Quadrats"
 
-#
-#: ../scripts/textured-logo.scm.h:11
-#, fuzzy
-msgid "Starting blend"
-msgstr "Inici de la barreja"
-
-#
+# Quim: paràmetre del filtre Logotips i rètols / Sobre patró
 #: ../scripts/textured-logo.scm.h:13
-#, fuzzy
+msgid "Starting blend"
+msgstr "Color inicial del degradat"
+
+#: ../scripts/textured-logo.scm.h:15
 msgid "Text pattern"
 msgstr "Patró de text"
 
-#: ../scripts/textured-logo.scm.h:14
+#: ../scripts/textured-logo.scm.h:16
 msgid "_Textured..."
-msgstr ""
+msgstr "Sobre el _patró..."
 
-#
+# era: msgstr "<Image>/Filtres/Difumina/Di_fumina en mosaic..."
 #: ../scripts/tileblur.scm.h:1
-#, fuzzy
 msgid "Blur horizontally"
 msgstr "Difumina horitzontalment"
 
-#
 #: ../scripts/tileblur.scm.h:2
-#, fuzzy
+msgid "Blur the edges of an image so the result tiles seamlessly"
+msgstr ""
+"Difumina les vores de la imatge de tal manera que la imatge pugui continuar "
+"disposant-se en mosaic"
+
+#: ../scripts/tileblur.scm.h:3
 msgid "Blur type"
 msgstr "Tipus de difuminat"
 
-#
-#: ../scripts/tileblur.scm.h:3
-#, fuzzy
+#: ../scripts/tileblur.scm.h:4
 msgid "Blur vertically"
 msgstr "Difumina verticalment"
 
-#: ../scripts/tileblur.scm.h:4
+#: ../scripts/tileblur.scm.h:5
 msgid "IIR"
 msgstr "IIR"
 
-#: ../scripts/tileblur.scm.h:5
+#: ../scripts/tileblur.scm.h:6
 msgid "RLE"
 msgstr "RLE"
 
-#: ../scripts/tileblur.scm.h:7
-#, fuzzy
+#: ../scripts/tileblur.scm.h:8
 msgid "_Tileable Blur..."
-msgstr "<Image>/Filtres/Difumina/Di_fumina en mosaic..."
+msgstr "Di_fumina per a mosaics..."
 
-#
-#: ../scripts/tiny-fu-set-cmap.scm.h:1
-#, fuzzy
-msgid "Palette"
-msgstr "Patró"
+#: ../scripts/title-header.scm.h:1
+msgid "Create a decorative web title header"
+msgstr "Crea una capçalera per a una pàgina web"
 
-#
-#: ../scripts/tiny-fu-set-cmap.scm.h:2
-#, fuzzy
-msgid "Set Colormap"
-msgstr "Color del text"
-
-#: ../scripts/title-header.scm.h:5
+#: ../scripts/title-header.scm.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Títol de pàgina web..."
 
 #: ../scripts/truchet.scm.h:3
+msgid "Create an image filled with a Truchet pattern"
+msgstr "Crea una imatge plena de canonades 2D"
+
+#: ../scripts/truchet.scm.h:4
 msgid "Foreground color"
 msgstr "Color de primer pla"
 
-#: ../scripts/truchet.scm.h:6
+#: ../scripts/truchet.scm.h:7
 msgid "T_ruchet..."
-msgstr ""
+msgstr "Can_onades 2D..."
 
 #: ../scripts/unsharp-mask.scm.h:1
 msgid "Mask opacity"
@@ -2518,896 +2674,162 @@ msgstr "Opacitat de la màscara"
 msgid "Mask size"
 msgstr "Mida de la màscara"
 
-#: ../scripts/unsharp-mask.scm.h:3
-msgid "Unsharp Mask 2..."
-msgstr ""
-
 #: ../scripts/waves-anim.scm.h:1
 msgid "Amplitude"
-msgstr "Amplada"
+msgstr "Amplitud"
 
 #: ../scripts/waves-anim.scm.h:2
+msgid ""
+"Create a multi-layer image with an effect like a stone was thrown into the "
+"current image"
+msgstr ""
+"Crea una imatge amb varis fotogrames que imita l'efecte de llençar una pedra "
+"a l'aigua, on es reflexa la imatge actual"
+
+#: ../scripts/waves-anim.scm.h:3
 msgid "Invert direction"
 msgstr "Inverteix la direcció"
 
-#: ../scripts/waves-anim.scm.h:4
+#: ../scripts/waves-anim.scm.h:5
 msgid "Wavelength"
 msgstr "Longitud d'ona"
 
-#: ../scripts/waves-anim.scm.h:5
+#: ../scripts/waves-anim.scm.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "_Ones..."
 
-#
 #: ../scripts/weave.scm.h:1
-#, fuzzy
-msgid "Ribbon spacing"
-msgstr "Espaiat de la cinta"
+msgid ""
+"Create a new layer filled with a weave effect to be used as an overlay or "
+"bump map"
+msgstr ""
+"Crea una nova capa plena d'un efecte d'ona, que es pot emprar per a "
+"sobreposar o com a mapa d'elevació"
 
 #: ../scripts/weave.scm.h:2
-#, fuzzy
-msgid "Ribbon width"
-msgstr "Amplada de la cinta"
+msgid "Ribbon spacing"
+msgstr "Separació entre cintes"
 
-#
 #: ../scripts/weave.scm.h:3
-#, fuzzy
+msgid "Ribbon width"
+msgstr "Amplada de les cintes"
+
+#: ../scripts/weave.scm.h:4
 msgid "Shadow darkness"
 msgstr "Foscor de l'ombra"
 
-#
-#: ../scripts/weave.scm.h:4
-#, fuzzy
+#: ../scripts/weave.scm.h:5
 msgid "Shadow depth"
 msgstr "Profunditat de l'ombra"
 
-#
-#: ../scripts/weave.scm.h:5
-#, fuzzy
-msgid "Thread density"
-msgstr "Densitat de fil"
-
-#
 #: ../scripts/weave.scm.h:6
-#, fuzzy
-msgid "Thread intensity"
-msgstr "Intensitat de fil"
+msgid "Thread density"
+msgstr "Densitat dels fils de la cinta"
 
 #: ../scripts/weave.scm.h:7
-#, fuzzy
-msgid "Thread length"
-msgstr "Longitud de fil"
+msgid "Thread intensity"
+msgstr "Intensitat dels fils de la cinta"
 
 #: ../scripts/weave.scm.h:8
-msgid "_Weave..."
-msgstr ""
+msgid "Thread length"
+msgstr "Longitud dels fils de la cinta"
 
-#
+#: ../scripts/weave.scm.h:9
+msgid "_Weave..."
+msgstr "Tei_xit de cistella..."
+
 #: ../scripts/web-browser.scm.h:1
-#, fuzzy
-msgid "Create and Use _Selections"
-msgstr "Manté la selecció"
+msgid "Bookmark to the GIMP web site"
+msgstr "Web del GIMP"
 
 #: ../scripts/web-browser.scm.h:2
-msgid "Create, Open and Save _Files"
-msgstr ""
+msgid "Bookmark to the user manual"
+msgstr "Manual de l'usuari"
 
 #: ../scripts/web-browser.scm.h:3
-msgid "Drawing _Simple Objects"
-msgstr ""
+msgid "Create and Use _Selections"
+msgstr "Crea i utilitza les _seleccions"
 
 #: ../scripts/web-browser.scm.h:4
-msgid "How to Use _Dialogs"
-msgstr ""
+msgid "Create, Open and Save _Files"
+msgstr "Crea, obre i desa _fitxers"
 
 #: ../scripts/web-browser.scm.h:5
-msgid "Plug-in _Registry"
-msgstr ""
+msgid "Drawing _Simple Objects"
+msgstr "Dibuixa objectes _simples"
 
 #: ../scripts/web-browser.scm.h:6
-msgid "Using _Paths"
-msgstr ""
+msgid "How to Use _Dialogs"
+msgstr "Com fer servir els _diàlegs"
 
 #: ../scripts/web-browser.scm.h:7
-msgid "_Basic Concepts"
-msgstr ""
+msgid "Plug-in _Registry"
+msgstr "_Instal·la més connectors"
 
 #: ../scripts/web-browser.scm.h:8
-msgid "_Developer Web Site"
-msgstr ""
+msgid "Using _Paths"
+msgstr "Utilitza _camins"
 
 #: ../scripts/web-browser.scm.h:9
-msgid "_Main Web Site"
-msgstr ""
+msgid "_Basic Concepts"
+msgstr "Conceptes _bàsics"
 
 #: ../scripts/web-browser.scm.h:10
-msgid "_Preparing your Images for the Web"
-msgstr ""
+msgid "_Developer Web Site"
+msgstr "Web dels _desenvolupadors"
 
 #: ../scripts/web-browser.scm.h:11
-msgid "_User Manual Web Site"
-msgstr ""
+msgid "_Main Web Site"
+msgstr "Web _principal"
 
 #: ../scripts/web-browser.scm.h:12
+msgid "_Preparing your Images for the Web"
+msgstr "_Prepara les vostres imatges per al web"
+
+#: ../scripts/web-browser.scm.h:13
+msgid "_User Manual Web Site"
+msgstr "Web del manual de l'_usuari"
+
+#: ../scripts/web-browser.scm.h:14
 msgid "_Working with Digital Camera Photos"
-msgstr ""
+msgstr "_Manipula fotos fetes amb càmeres digitals"
 
 #: ../scripts/xach-effect.scm.h:1
-#, fuzzy
-msgid "Drop shadow X offset"
-msgstr "Desplaçament en X de l'ombra descendent"
+msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
+msgstr "Afegeix un efecte 3D translúcid a la regió seleccionada (o canal alfa)"
 
 #: ../scripts/xach-effect.scm.h:2
-#, fuzzy
-msgid "Drop shadow Y offset"
-msgstr "Desplaçament en Y de l'ombra descendent"
+msgid "Drop shadow X offset"
+msgstr "Desplaçament X de l'ombra"
 
 #: ../scripts/xach-effect.scm.h:3
-#, fuzzy
-msgid "Drop shadow blur radius"
-msgstr "Radi de difuminat de l'ombra descendent"
+msgid "Drop shadow Y offset"
+msgstr "Desplaçament Y de l'ombra"
 
-#
 #: ../scripts/xach-effect.scm.h:4
-#, fuzzy
-msgid "Drop shadow color"
-msgstr "Color de l'ombra descendent"
+msgid "Drop shadow blur radius"
+msgstr "Amplada de l'ombra"
 
 #: ../scripts/xach-effect.scm.h:5
-#, fuzzy
-msgid "Drop shadow opacity"
-msgstr "Opacitat de l'ombra descendent"
+msgid "Drop shadow color"
+msgstr "Color de l'ombra"
 
-#
 #: ../scripts/xach-effect.scm.h:6
-#, fuzzy
-msgid "Highlight X offset"
-msgstr "Desplaçament del ressaltat X"
+msgid "Drop shadow opacity"
+msgstr "Opacitat de l'ombra"
 
-#
 #: ../scripts/xach-effect.scm.h:7
-#, fuzzy
+msgid "Highlight X offset"
+msgstr "Desplaçament X de la lluentor"
+
+#: ../scripts/xach-effect.scm.h:8
 msgid "Highlight Y offset"
-msgstr "Desplaçament del ressaltat Y"
+msgstr "Desplaçament Y de la lluentor"
 
-#
-#: ../scripts/xach-effect.scm.h:9
-#, fuzzy
+#: ../scripts/xach-effect.scm.h:10
 msgid "Highlight opacity"
-msgstr "Opacitat del ressaltat"
+msgstr "Opacitat de la lluentor"
 
-#: ../scripts/xach-effect.scm.h:11
+#: ../scripts/xach-effect.scm.h:12
 msgid "_Xach-Effect..."
-msgstr ""
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Tiny-Fu _Console"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/_Consola de l'Tiny-Fu"
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/_Start Server..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Inicia el _servidor..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/_Refresh Scripts"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/_Actualitza les seqüències"
-
-#~ msgid "Current Command"
-#~ msgstr "Ordre actual"
-
-#~ msgid "Script Arguments"
-#~ msgstr "Arguments de la seqüència d'ordres"
-
-#, fuzzy
-#~ msgid "Script Progress"
-#~ msgstr "Arguments de la seqüència d'ordres"
-
-#~ msgid "Author:"
-#~ msgstr "Autor:"
-
-#~ msgid "Copyright:"
-#~ msgstr "Copyright:"
-
-#~ msgid "Date:"
-#~ msgstr "Data:"
-
-#~ msgid "Image Types:"
-#~ msgstr "Tipus d'imatge:"
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu"
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu"
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/_Terra..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Decor"
-#~ msgstr "<Image>/Tiny-Fu/Decoració/_Diapositiva..."
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow"
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Lluentor estranya/Regle "
-#~ "_horitzontal..."
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu"
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern"
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Patró biselat/_Fletxa..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Animators"
-#~ msgstr "<Image>/Tiny-Fu/Animadors/_Barreja..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops"
-#~ msgstr "<Image>/Tiny-Fu/Operacions de plantilla/_Esculpeix..."
-
-#, fuzzy
-#~ msgid "C_hrome-It..."
-#~ msgstr "Navega..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Render"
-#~ msgstr "<Image>/Tiny-Fu/Render/_Lava..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Alchemy"
-#~ msgstr "<Image>/Tiny-Fu/Alquímia/O_na..."
-
-#
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Selection"
-#~ msgstr "<Image>/Tiny-Fu/Selecció/A _imatge"
-
-#
-#, fuzzy
-#~ msgid "_Distress Selection..."
-#~ msgstr "<Image>/Tiny-Fu/Selecció/_Apura selecció..."
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Shadow"
-#~ msgstr "<Image>/Tiny-Fu/Ombra/Ombra _descendent..."
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org"
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Gimp.org/Capçalera "
-#~ "_gran..."
-
-#
-#, fuzzy
-#~ msgid "Blend gradient (Text)"
-#~ msgstr "Barreja el degradat(text)"
-
-#, fuzzy
-#~ msgid "Bevel height (Sharpness)"
-#~ msgstr "Alçada del biselat (definició)"
-
-#, fuzzy
-#~ msgid "Custom _Gradient..."
-#~ msgstr "Degradat personalitzat"
-
-#, fuzzy
-#~ msgid "<Image>/Tiny-Fu/Utils"
-#~ msgstr "<Image>/Tiny-Fu/Utilitats/D'_ASCII a capa..."
-
-#
-#, fuzzy
-#~ msgid "Apply layer mask (or discard)"
-#~ msgstr "Aplica la màscara de capa (o descarta)"
-
-#
-#, fuzzy
-#~ msgid "Create new image"
-#~ msgstr "Crea una nova imatge"
-
-#
-#, fuzzy
-#~ msgid "Insert layer names"
-#~ msgstr "Insereix els noms de les capes"
-
-#
-#, fuzzy
-#~ msgid "Make new background"
-#~ msgstr "Fes un fons nou"
-
-#
-#, fuzzy
-#~ msgid "Outer border"
-#~ msgstr "Marge exterior"
-
-#
-#, fuzzy
-#~ msgid "Pad color"
-#~ msgstr "Color de l'emplenat"
-
-#
-#, fuzzy
-#~ msgid "Pad opacity"
-#~ msgstr "Opacitat de l'emplenat"
-
-#, fuzzy
-#~ msgid "Padding for transparent regions"
-#~ msgstr "Emplenat de les regions transparents"
-
-#
-#, fuzzy
-#~ msgid "Shear length"
-#~ msgstr "Longitud del retall"
-
-#, fuzzy
-#~ msgid "Show Image _Structure..."
-#~ msgstr "<Image>/Tiny-Fu/Utilitats/Mo_stra l'estructura de la imatge..."
-
-#
-#, fuzzy
-#~ msgid "Space between layers"
-#~ msgstr "Espai entre capes"
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Fes un pinzell/_El·líptic..."
-
-#
-#, fuzzy
-#~ msgid "<Image>/Select/Modify"
-#~ msgstr "<Image>/Tiny-Fu/Selecció/A _imatge"
-
-#
-#~ msgid "Filename"
-#~ msgstr "Nom del fitxer"
-
-#
-#, fuzzy
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc"
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu"
-
-#, fuzzy
-#~ msgid "<Toolbox>/Help/The GIMP Online"
-#~ msgstr "<Toolbox>/Ajuda/El GIMP al web/Lloc web _principal"
-
-#, fuzzy
-#~ msgid "Buffer amount (% height of text)"
-#~ msgstr "Quantitat de memòria intermitja (% d'alçada del text)"
-
-#, fuzzy
-#~ msgid "Use tattern for outline instead of gradient"
-#~ msgstr "Utilitza el patró pel contorn en comptes del degradat"
-
-#~ msgid "Script-fu Pattern Selection"
-#~ msgstr "Selecció de patró de l'Tiny-Fu"
-
-#~ msgid "Search by _Name"
-#~ msgstr "Cerca pel _nom"
-
-#~ msgid "Search by _Blurb"
-#~ msgstr "Cerca pel _comentari"
-
-#~ msgid "_Search:"
-#~ msgstr "_Cerca:"
-
-#~ msgid "Searching by name - please wait"
-#~ msgstr "S'està cercant pel nom. Espereu un moment"
-
-#~ msgid "Searching by blurb - please wait"
-#~ msgstr "S'està cercant pel comentari. Espereu un moment"
-
-#~ msgid "Searching - please wait"
-#~ msgstr "S'està cercant. Espereu un moment"
-
-#~ msgid "No matches"
-#~ msgstr "Cap coincidència"
-
-#
-#, fuzzy
-#~ msgid "Parameters"
-#~ msgstr "Diàmetre"
-
-#~ msgid "Burn-In: Need two layers in total!"
-#~ msgstr "Crema: es necessiten dues capes"
-
-#, fuzzy
-#~ msgid "Name"
-#~ msgstr "Nom:"
-
-#~ msgid ""
-#~ "Draws Spirographs, Epitrochoids and Lissajous Curves. More info at http://"
-#~ "netword.com/*spyrogimp"
-#~ msgstr ""
-#~ "Dibuixa espirògrafs, epitrocòides i curves de Lissajous. Podeu obtenir "
-#~ "més informació a http://netword.com/*spyrogimp"
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/3D _Outline..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/C_ontorn 3D..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/3D _Outline..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/C_ontorn 3D..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/3_D Truchet..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/Truchet 3_D..."
-
-#~ msgid "<Image>/Tiny-Fu/Decor/Add B_evel..."
-#~ msgstr "<Image>/Tiny-Fu/Decoració/Afegeix _biselat..."
-
-#~ msgid "<Image>/Tiny-Fu/Decor/Add _Border..."
-#~ msgstr "<Image>/Tiny-Fu/Decoració/Afegeix _marge..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Arrow..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Lluentor estranya/"
-#~ "_Fletxa..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Lluentor estranya/"
-#~ "_Bala..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Alien Glow/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Lluentor estranya/"
-#~ "B_otó..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Glow..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Lluentor estranya..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Glow..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Lluentor estranya..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Alien _Neon..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Neó estrany..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Alien _Neon..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Neó estrany..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_ASCII to Image..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Utilitats/D'_ASCII a imatge..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Basic I..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Bàsic I..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Basic I..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Bàsic I..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/B_asic II..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Bàsic II..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/B_asic II..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Bàsic II..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Bullet..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Patró biselat/_Bala..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/B_utton..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Patró biselat/B_otó..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/H_eading..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Patró biselat/"
-#~ "_Encapçalament..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Beveled Pattern/_Hrule..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Patró biselat/Regle "
-#~ "_horitzontal..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Blen_ded..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Barreja_t..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Blen_ded..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Barreja_t..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Bo_vination..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Bo_vinat..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Bo_vination..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Bo_vinat..."
-
-#~ msgid "<Image>/Tiny-Fu/Animators/B_urn-In..."
-#~ msgstr "<Image>/Tiny-Fu/Animadors/_Crema..."
-
-#~ msgid "Burn-in like effect on a fg (text) layer and a bg layer; V2.1"
-#~ msgstr ""
-#~ "Efecte de cremat en una capa principal (text) i una capa de fons (Versió "
-#~ "2.1)"
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Camouflage..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/_Camuflatge..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Carved..."
-#~ msgstr "<Image>/Extensions/Tiny-Fu/Logotipus/_Escolpit..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Chalk..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Guix..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Chalk..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Guix..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Chip Awa_y..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Fes boc_ins..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Chip Awa_y..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Fes boc_ins..."
-
-#~ msgid "<Image>/Tiny-Fu/Stencil Ops/C_hrome-It..."
-#~ msgstr "<Image>/Tiny-Fu/Operacions de plantilla/Fes c_romat..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/C_hrome..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Fes c_romat..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/C_hrome..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Fes c_romat..."
-
-#~ msgid "<Image>/Tiny-Fu/Render/_Circuit..."
-#~ msgstr "<Image>/Tiny-Fu/Composició d'imatges/_Circuit..."
-
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Clothify..."
-#~ msgstr "<Image>/Tiny-Fu/Alquímia/Afegeix _núvols..."
-
-#~ msgid "<Image>/Tiny-Fu/Decor/_Coffee Stain..."
-#~ msgstr "<Image>/Tiny-Fu/Decoració/Taca de _cafè..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Comic Boo_k..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Cò_mic..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Comic Boo_k..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Cò_mic..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Cool _Metal..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Metall fred..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Cool _Metal..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Metall fred..."
-
-#, fuzzy
-#~ msgid "<Image>/Edit/Copy/Copy _Visible"
-#~ msgstr "<Image>/Edita/Copia el _visible"
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Crystal..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Cristall..."
-
-#~ msgid "<Image>/Tiny-Fu/Selection/_Fade Outline..."
-#~ msgstr "<Image>/Tiny-Fu/Selecció/_Esvaeix el contorn..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Flatland..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/Terra _plana..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/_Font Map..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Utilitats/_Mapa de tipus de lletra..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Frosty..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Glaçat..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Frosty..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Glaçat..."
-
-#~ msgid "<Image>/Tiny-Fu/Decor/_Fuzzy Border..."
-#~ msgstr "<Image>/Tiny-Fu/Decoració/Marge di_fòs..."
-
-#
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Small Header..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Gimp.org/Capçalera "
-#~ "_petita..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/T_ube Sub-Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Gimp.org/Etiq_ueta del "
-#~ "sub-botó del conducte..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/Tub_e Sub-Sub-"
-#~ "Button Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Gimp.org/_Etiqueta del "
-#~ "sub-sub-botó del conducte..."
-
-#
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_General Tube "
-#~ "Labels..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Gimp.org/_Etiquetes "
-#~ "generals del conducte..."
-
-#, fuzzy
-#~ msgid ""
-#~ "<Toolbox>/Xtns/Tiny-Fu/Web Page Themes/Classic.Gimp.Org/_Tube Button "
-#~ "Label..."
-#~ msgstr ""
-#~ "<Toolbox>/Extensions/Tiny-Fu/Temes de pàgines web/Gimp.org/E_tiqueta del "
-#~ "botó del conducte..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_ssy..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Lluminó_s..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_ssy..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Lluminó_s..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Glo_wing Hot..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Ll_uentor intensa..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Glo_wing Hot..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Ll_uentor intensa..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Gradient Beve_l..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Bise_lat del gradient..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Gradient Beve_l..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Bise_lat del gradient..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Utils/Custom _Gradient..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Utilitats/_Gradient personalitzat..."
-
-#~ msgid "<Image>/Tiny-Fu/Render/_Grid..."
-#~ msgstr "<Image>/Tiny-Fu/Composició d'imatges/_Graella..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Imigre-26..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Imigre-26..."
-
-#~ msgid "<Image>/Tiny-Fu/Render/Line _Nova..."
-#~ msgstr "<Image>/Tiny-Fu/Render/_Nova de línies..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Make Brush/_Rectangular..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Fes un pinzell/_Rectangular..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/N_eon..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/N_eó..."
-
-#
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Newsprint Text..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Text de paper de diari..."
-
-#~ msgid "<Image>/Tiny-Fu/Decor/_Old Photo..."
-#~ msgstr "<Image>/Tiny-Fu/Decoració/F_oto antiga..."
-
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Perspective..."
-#~ msgstr "<Image>/Tiny-Fu/Ombra/_Perspectiva..."
-
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Predator..."
-#~ msgstr "<Image>/Tiny-Fu/Alquímia/De_predador..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Buttons/_Round Button..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Botons/Botons a_rrodonits..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Render _Map..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/Dibuixa un _mapa..."
-
-#~ msgid "<Image>/Tiny-Fu/Animators/_Rippling..."
-#~ msgstr "<Image>/Tiny-Fu/Animadors/On_dulació..."
-
-#~ msgid "<Image>/Tiny-Fu/Decor/_Round Corners..."
-#~ msgstr "<Image>/Tiny-Fu/Decoració/Cantonades a_rrodonides..."
-
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Brush..."
-#~ msgstr "<Image>/Tiny-Fu/Selecció/A _pinzell..."
-
-#~ msgid "<Image>/Tiny-Fu/Selection/To _Pattern..."
-#~ msgstr "<Image>/Tiny-Fu/Selecció/A _patró..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/SOTA Chrome..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Cromat SOTA..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Speed Text..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Text ràpid..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Misc/_Sphere..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Miscel·lània/E_sfera..."
-
-#~ msgid "<Image>/Tiny-Fu/Animators/_Spinning Globe..."
-#~ msgstr "<Image>/Tiny-Fu/Animadors/Globu_s giratori..."
-
-#~ msgid "<Image>/Tiny-Fu/Render/_Spyrogimp..."
-#~ msgstr "<Image>/Tiny-Fu/Render/E_spirogimp..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Starb_urst..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Ll_um d'estel..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Starb_urst..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Ll_um d'estel..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/Sta_rscape..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Cua d'e_stel..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Sta_rscape..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Cua d'e_stel..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/Swirl-_Tile..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/_Mosaic de remolins..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/_Swirly..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/Arremolina_t..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Particle Trace..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/Traça de _partícula..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Particle Trace..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Traça de _partícula..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Text Circle..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Cercle de text..."
-
-#~ msgid "<Image>/Tiny-Fu/Alpha to Logo/_Textured..."
-#~ msgstr "<Image>/Tiny-Fu/Alfa a logotipus/_Texturitzat..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/_Textured..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/_Texturitzat..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Logos/Web Title Header..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Logotipus/Capçalera de títol de web..."
-
-#~ msgid "<Toolbox>/Xtns/Tiny-Fu/Patterns/T_ruchet..."
-#~ msgstr "<Toolbox>/Extensions/Tiny-Fu/Patrons/T_ruchet..."
-
-#~ msgid "<Image>/Tiny-Fu/Alchemy/_Unsharp Mask..."
-#~ msgstr "<Image>/Tiny-Fu/Alquímia/Màscara sense _definició..."
-
-#~ msgid "<Image>/Tiny-Fu/Animators/_Waves..."
-#~ msgstr "<Image>/Tiny-Fu/Animadors/O_nes..."
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/Plug-in _Registry"
-#~ msgstr "<Toolbox>/Ajuda/El GIMP al web/_Registre dels connectors"
-
-#~ msgid "<Toolbox>/Help/The GIMP Online/_Developer Web Site"
-#~ msgstr "<Toolbox>/Ajuda/El GIMP al web/Lloc web _dels desenvolupadors"
-
-#~ msgid "<Image>/Tiny-Fu/Shadow/_Xach-Effect..."
-#~ msgstr "<Image>/Tiny-Fu/Ombra/Efecte _Xach..."
-
-#~ msgid "Re-read all available scripts"
-#~ msgstr "Torna a llegir totes les seqüències disponibles"
-
-# SF == Tiny-Fu??
-#~ msgid ""
-#~ "\n"
-#~ "\t\t    SF-ADJUSTMENT _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    Ajust SF      _"
-
-#~ msgid ""
-#~ "\n"
-#~ "\t\t    SF-COLOR      _"
-#~ msgstr ""
-#~ "\n"
-#~ "\t\t    Color SF      _"
-
-#, fuzzy
-#~ msgid "Relative radius"
-#~ msgstr "Radi relatiu"
-
-#, fuzzy
-#~ msgid "_About"
-#~ msgstr "Quant a..."
-
-#~ msgid "DB Browser"
-#~ msgstr "Navegador de la base de dades"
-
-#~ msgid "Blurb:"
-#~ msgstr "Comentari:"
-
-#~ msgid "In:"
-#~ msgstr "Entrada:"
-
-#~ msgid "Out:"
-#~ msgstr "Sortida:"
-
-#~ msgid "Help:"
-#~ msgstr "Ajuda:"
-
-#~ msgid "Font Size (pixels)"
-#~ msgstr "Mida del tipus de lletra (píxels)"
-
-#
-#~ msgid "Transparent Background"
-#~ msgstr "Fons transparent"
-
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "\t\t\t      "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (nom de fitxer (cadena-per-afegir dir-dades\n"
-#~ "\t\t\t      "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "     (filename (string-append data-dir\n"
-#~ "               "
-#~ msgstr ""
-#~ ")))\n"
-#~ "     (nom de fitxer (cadena-per-afegir dir-dades\n"
-#~ "               "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "    (filename (string-append data-dir\n"
-#~ "               "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (nom de fitxer (cadena-per-afegir dir-dades\n"
-#~ "               "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "    (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t   "
-#~ msgstr ""
-#~ ")))\n"
-#~ "    (set! nomFitxer2 (cadena-afegida dir-dades\n"
-#~ "\t\t\t\t   "
-
-#~ msgid ""
-#~ ")))\n"
-#~ "  (set! filename2 (string-append data-dir\n"
-#~ "\t\t\t\t "
-#~ msgstr ""
-#~ ")))\n"
-#~ "  (set! nomFitxer2 (cadena-afegida dir-dades\n"
-#~ "\t\t\t\t "
-
-#~ msgid "Unable to open a stream on the SIOD output pipe"
-#~ msgstr "No es pot obrir un corrent en el conducte de sortida SIOD"
-
-#, fuzzy
-#~ msgid "Blend gradient (sext)"
-#~ msgstr "Barreja el degradat(text)"
+msgstr "Ombra amb reflex _Xach..."

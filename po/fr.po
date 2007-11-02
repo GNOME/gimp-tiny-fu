@@ -4,195 +4,113 @@
 #
 # David Monniaux <monniaux@arbouse.ens.fr>, 2000.
 # Christophe Merlet <redfox@redfoxcenter.org>, 2000-2004.
-# Raymond Ostertag <r.ostertag@caramail.com>, 2002-2004.
+# Raymond Ostertag <r.ostertag@caramail.com>, 2002-2007.
 # Jean-Louis Berliet <jl.berliet@free.fr>, 2004.
-# Claude Paroz <claude@2xlibre.net>, 2007.
-# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+# Julien Hardelin, 2007.
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007
+# Laurent Monin <gimp@norz.org>, 2007
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-tiny-fu HEAD\n"
+"Project-Id-Version: gimp-script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-27 22:45+0200\n"
-"PO-Revision-Date: 2007-03-27 22:48+0200\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"POT-Creation-Date: 2007-11-01 15:00-0400\n"
+"PO-Revision-Date: 2007-09-25 22:44+0200\n"
+"Last-Translator: Laurent Monin <gimp@norz.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../tiny-fu/tiny-fu.c:110
-msgid "Interactive console for Script-Fu development"
-msgstr "Console interactive pour le développement de Script-Fu"
-
-#: ../tiny-fu/tiny-fu.c:116
-msgid "Script-Fu _Console"
-msgstr "_Console Script-Fu"
-
-#: ../tiny-fu/tiny-fu.c:123 ../tiny-fu/tiny-fu.c:152 ../tiny-fu/tiny-fu.c:365
-msgid "<Toolbox>/Xtns/Languages/Script-Fu"
-msgstr "<Toolbox>/Xtns/Languages/Script-Fu"
-
-#: ../tiny-fu/tiny-fu.c:140
-msgid "Server for remote Script-Fu operation"
-msgstr "Serveur pour les opérations Script-Fu distantes"
-
-#: ../tiny-fu/tiny-fu.c:145
-msgid "_Start Server..."
-msgstr "_Démarrer le serveur..."
-
-#: ../tiny-fu/tiny-fu.c:300
-msgid "_GIMP Online"
-msgstr "_GIMP en-ligne"
-
-#: ../tiny-fu/tiny-fu.c:301
-msgid "_User Manual"
-msgstr "_Manuel utilisateur"
-
-#: ../tiny-fu/tiny-fu.c:304
-msgid "_Script-Fu"
-msgstr "_Script-Fu"
-
-#: ../tiny-fu/tiny-fu.c:306
-msgid "_Buttons"
-msgstr "_Boutons"
-
-#: ../tiny-fu/tiny-fu.c:308
-msgid "_Logos"
-msgstr "_Logos"
-
-#: ../tiny-fu/tiny-fu.c:310
-msgid "_Misc"
-msgstr "_Divers"
-
-#: ../tiny-fu/tiny-fu.c:312
-msgid "_Patterns"
-msgstr "_Motifs"
-
-#: ../tiny-fu/tiny-fu.c:314
-msgid "_Test"
-msgstr "_Test"
-
-#: ../tiny-fu/tiny-fu.c:316
-msgid "_Utils"
-msgstr "_Utilitaires"
-
-#: ../tiny-fu/tiny-fu.c:318
-msgid "_Web Page Themes"
-msgstr "_Thèmes de page Web"
-
-#: ../tiny-fu/tiny-fu.c:320
-msgid "_Alien Glow"
-msgstr "Lueur _extérieure"
-
-#: ../tiny-fu/tiny-fu.c:322
-msgid "_Beveled Pattern"
-msgstr "Motif _biseauté"
-
-#: ../tiny-fu/tiny-fu.c:324
-msgid "_Classic.Gimp.Org"
-msgstr "_Classic.Gimp.Org"
-
-#: ../tiny-fu/tiny-fu.c:327
-msgid "Alpha to _Logo"
-msgstr "Alpha vers _logo"
-
-#: ../tiny-fu/tiny-fu.c:329
-msgid "An_imation"
-msgstr "An_imation"
-
-#: ../tiny-fu/tiny-fu.c:331
-msgid "_Animators"
-msgstr "_Animateurs"
-
-#: ../tiny-fu/tiny-fu.c:333
-msgid "_Artistic"
-msgstr "A_rtistique"
-
-#: ../tiny-fu/tiny-fu.c:335
-msgid "_Blur"
-msgstr "_Flou"
-
-#: ../tiny-fu/tiny-fu.c:337
-msgid "_Decor"
-msgstr "Dé_coration"
-
-#: ../tiny-fu/tiny-fu.c:339
-msgid "_Effects"
-msgstr "_Effets"
-
-#: ../tiny-fu/tiny-fu.c:341
-msgid "En_hance"
-msgstr "A_mélioration"
-
-#: ../tiny-fu/tiny-fu.c:343
-msgid "_Light and Shadow"
-msgstr "_Ombres et lumières"
-
-#: ../tiny-fu/tiny-fu.c:345
-msgid "S_hadow"
-msgstr "_Ombre"
-
-#: ../tiny-fu/tiny-fu.c:347
-msgid "_Render"
-msgstr "_Rendu"
-
-#: ../tiny-fu/tiny-fu.c:349
-msgid "_Alchemy"
-msgstr "A_lchimie"
-
-#: ../tiny-fu/tiny-fu.c:352
-msgid "Re-read all available Script-Fu scripts"
-msgstr "Relire tous les scripts Script-Fu disponibles"
-
-#: ../tiny-fu/tiny-fu.c:357
-msgid "_Refresh Scripts"
-msgstr "_Rafraîchir les scripts"
-
-#: ../tiny-fu/tiny-fu.c:380
-msgid ""
-"You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
-"Please close all Script-Fu windows and try again."
-msgstr ""
-"Vous ne pouvez pas utiliser « Rafraîchir les scripts » tant que la boîte de "
-"dialogue d'un Script-Fu est ouverte. S'il vous plaît fermer toutes les "
-"fenêtres de script-fu et essayez à nouveau."
-
-#: ../tiny-fu/tiny-fu-console.c:143 ../tiny-fu/tiny-fu-console.c:210
+#: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
 msgstr "Console Script-Fu"
 
-#: ../tiny-fu/tiny-fu-console.c:206
+#: ../tiny-fu/tiny-fu-console.c:196
 msgid "Welcome to TinyScheme"
 msgstr "Bienvenue sur TinyScheme"
 
-#: ../tiny-fu/tiny-fu-console.c:212
+#: ../tiny-fu/tiny-fu-console.c:202
 msgid "Interactive Scheme Development"
 msgstr "Développement Scheme interactif"
 
-#: ../tiny-fu/tiny-fu-console.c:248
+#: ../tiny-fu/tiny-fu-console.c:238
 msgid "_Browse..."
 msgstr "_Parcourir..."
 
-#: ../tiny-fu/tiny-fu-console.c:310
+#: ../tiny-fu/tiny-fu-console.c:296
 msgid "Save Script-Fu Console Output"
 msgstr "Enregistrer les sorties de la console Script-Fu"
 
-#: ../tiny-fu/tiny-fu-console.c:354
+#: ../tiny-fu/tiny-fu-console.c:343
 #, c-format
 msgid "Could not open '%s' for writing: %s"
 msgstr "Impossible d'ouvrir « %s » pour écrire : %s"
 
-#: ../tiny-fu/tiny-fu-console.c:383
+#: ../tiny-fu/tiny-fu-console.c:372
 msgid "Script-Fu Procedure Browser"
 msgstr "Navigateur de procédures Script-Fu"
 
-#: ../tiny-fu/tiny-fu-console.c:708
+#: ../tiny-fu/tiny-fu-console.c:716
 msgid "Script-Fu evaluation mode only allows non-interactive invocation"
 msgstr ""
 "Le mode d'évaluation de Script-Fu autorise uniquement un appel non-interactif"
 
-#: ../tiny-fu/tiny-fu-scripts.c:661
+#: ../tiny-fu/tiny-fu-interface.c:191
+msgid "Script-Fu cannot process two scripts at the same time."
+msgstr "Script-Fu ne peut pas exécuter deux scripts à la fois."
+
+#: ../tiny-fu/tiny-fu-interface.c:193
+#, c-format
+msgid "You are already running the \"%s\" script."
+msgstr "Vous utilisez déjà le script « %s »"
+
+#: ../tiny-fu/tiny-fu-interface.c:238
+#, c-format
+msgid "Script-Fu: %s"
+msgstr "Script-Fu : %s"
+
+#. we add a colon after the label;
+#. some languages want an extra space here
+#: ../tiny-fu/tiny-fu-interface.c:300
+#, c-format
+msgid "%s:"
+msgstr "%s :"
+
+#: ../tiny-fu/tiny-fu-interface.c:348
+msgid "Script-Fu Color Selection"
+msgstr "Sélection de la couleur Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:460
+msgid "Script-Fu File Selection"
+msgstr "Sélection du fichier Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:463
+msgid "Script-Fu Folder Selection"
+msgstr "Sélection du répertoire du Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:475
+msgid "Script-Fu Font Selection"
+msgstr "Sélection de la police Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:483
+msgid "Script-Fu Palette Selection"
+msgstr "Sélection de la palette Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:492
+msgid "Script-Fu Pattern Selection"
+msgstr "Sélection du motif Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:501
+msgid "Script-Fu Gradient Selection"
+msgstr "Sélection du dégradé Script-Fu"
+
+#: ../tiny-fu/tiny-fu-interface.c:510
+msgid "Script-Fu Brush Selection"
+msgstr "Sélection de la brosse Script-Fu"
+
+#: ../tiny-fu/tiny-fu-scripts.c:658
 #, c-format
 msgid ""
 "Error while executing\n"
@@ -205,159 +123,154 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../tiny-fu/tiny-fu-server.c:711
+#: ../tiny-fu/tiny-fu-server.c:712
 msgid "Script-Fu Server Options"
 msgstr "Options du serveur Script-Fu"
 
-#: ../tiny-fu/tiny-fu-server.c:716
+#: ../tiny-fu/tiny-fu-server.c:717
 msgid "_Start Server"
 msgstr "_Démarrer le serveur"
 
-#: ../tiny-fu/tiny-fu-server.c:744
+#: ../tiny-fu/tiny-fu-server.c:745
 msgid "Server port:"
 msgstr "Port du serveur :"
 
-#: ../tiny-fu/tiny-fu-server.c:750
+#: ../tiny-fu/tiny-fu-server.c:751
 msgid "Server logfile:"
 msgstr "Fichier journal du serveur :"
 
-#: ../tiny-fu/tiny-fu-interface.c:191
-msgid "Script-Fu cannot process two scripts at the same time."
-msgstr "Script-Fu ne peut pas exécuter deux scripts à la fois."
+#: ../tiny-fu/tiny-fu.c:110
+msgid "Interactive console for Script-Fu development"
+msgstr "Console interactive pour le développement de Script-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:193
-#, c-format
-msgid "You are already running the \"%s\" script."
-msgstr "Vous utilisez déjà le script « %s »"
+#: ../tiny-fu/tiny-fu.c:116
+msgid "Script-Fu _Console"
+msgstr "_Console Script-Fu"
 
-#. strip the first part of the menupath if it contains _("/Script-Fu/")
-#: ../tiny-fu/tiny-fu-interface.c:216 ../tiny-fu/tiny-fu-interface.c:219
-msgid "/Script-Fu/"
-msgstr "/Script-Fu/"
+#: ../tiny-fu/tiny-fu.c:140
+msgid "Server for remote Script-Fu operation"
+msgstr "Serveur pour les opérations Script-Fu distantes"
 
-#: ../tiny-fu/tiny-fu-interface.c:237
-#, c-format
-msgid "Script-Fu: %s"
-msgstr "Script-Fu : %s"
+#: ../tiny-fu/tiny-fu.c:145
+msgid "_Start Server..."
+msgstr "_Démarrer le serveur..."
 
-#. we add a colon after the label;
-#. some languages want an extra space here
-#: ../tiny-fu/tiny-fu-interface.c:299
-#, c-format
-msgid "%s:"
-msgstr "%s :"
+#: ../tiny-fu/tiny-fu.c:301
+msgid "_GIMP Online"
+msgstr "_GIMP en-ligne"
 
-#: ../tiny-fu/tiny-fu-interface.c:347
-msgid "Script-Fu Color Selection"
-msgstr "Sélection de la couleur Script-Fu"
+#: ../tiny-fu/tiny-fu.c:302
+msgid "_User Manual"
+msgstr "_Manuel utilisateur"
 
-#: ../tiny-fu/tiny-fu-interface.c:459
-msgid "Script-Fu File Selection"
-msgstr "Sélection du fichier Script-Fu"
+#: ../tiny-fu/tiny-fu.c:305
+msgid "_Script-Fu"
+msgstr "_Script-Fu"
 
-#: ../tiny-fu/tiny-fu-interface.c:462
-msgid "Script-Fu Folder Selection"
-msgstr "Sélection du répertoire du Script-Fu"
+#: ../tiny-fu/tiny-fu.c:307
+msgid "_Buttons"
+msgstr "_Boutons"
 
-#: ../tiny-fu/tiny-fu-interface.c:474
-msgid "Script-Fu Font Selection"
-msgstr "Sélection de la police Script-Fu"
+#: ../tiny-fu/tiny-fu.c:309
+msgid "_Logos"
+msgstr "_Logos"
 
-#: ../tiny-fu/tiny-fu-interface.c:482
-msgid "Script-Fu Palette Selection"
-msgstr "Sélection de la palette Script-Fu"
+#: ../tiny-fu/tiny-fu.c:311
+msgid "_Misc"
+msgstr "_Divers"
 
-#: ../tiny-fu/tiny-fu-interface.c:491
-msgid "Script-Fu Pattern Selection"
-msgstr "Sélection du motif Script-Fu"
+#: ../tiny-fu/tiny-fu.c:313
+msgid "_Patterns"
+msgstr "_Motifs"
 
-#: ../tiny-fu/tiny-fu-interface.c:500
-msgid "Script-Fu Gradient Selection"
-msgstr "Sélection du dégradé Script-Fu"
+#: ../tiny-fu/tiny-fu.c:315
+msgid "_Test"
+msgstr "_Test"
 
-#: ../tiny-fu/tiny-fu-interface.c:509
-msgid "Script-Fu Brush Selection"
-msgstr "Sélection de la brosse Script-Fu"
+#: ../tiny-fu/tiny-fu.c:317
+msgid "_Utilities"
+msgstr "_Utilitaires"
 
-#: ../scripts/contactsheet.scm.h:1
-msgid " contact sheets from a total of "
-msgstr " planches-contacts sur un total de "
+#: ../tiny-fu/tiny-fu.c:319
+msgid "_Web Page Themes"
+msgstr "_Thèmes de page Web"
 
-#: ../scripts/contactsheet.scm.h:2
-msgid " for directory "
-msgstr " pour le répertoire "
+#: ../tiny-fu/tiny-fu.c:321
+msgid "_Alien Glow"
+msgstr "Lueur _extérieure"
 
-#: ../scripts/contactsheet.scm.h:3
-msgid " images"
-msgstr " images"
+#: ../tiny-fu/tiny-fu.c:323
+msgid "_Beveled Pattern"
+msgstr "Motif _biseauté"
 
-#: ../scripts/contactsheet.scm.h:4 ../scripts/3dTruchet.scm.h:2
-#: ../scripts/alien-glow-arrow.scm.h:1 ../scripts/alien-glow-bar.scm.h:1
-#: ../scripts/alien-glow-bullet.scm.h:1 ../scripts/alien-glow-button.scm.h:2
-#: ../scripts/alien-neon-logo.scm.h:3 ../scripts/basic1-logo.scm.h:2
-#: ../scripts/basic2-logo.scm.h:3 ../scripts/blended-logo.scm.h:2
-#: ../scripts/bovinated-logo.scm.h:3 ../scripts/chalk.scm.h:1
-#: ../scripts/chrome-logo.scm.h:3 ../scripts/comic-logo.scm.h:2
-#: ../scripts/coolmetal-logo.scm.h:2 ../scripts/frosty-logo.scm.h:2
-#: ../scripts/gimp-labels.scm.h:1 ../scripts/glossy.scm.h:2
-#: ../scripts/glowing-logo.scm.h:2 ../scripts/gradient-bevel-logo.scm.h:2
-#: ../scripts/neon-logo.scm.h:1 ../scripts/news-text.scm.h:1
-#: ../scripts/speed-text.scm.h:1 ../scripts/sphere.scm.h:1
-#: ../scripts/starburst-logo.scm.h:1 ../scripts/swirltile.scm.h:2
-#: ../scripts/t-o-p-logo.scm.h:2 ../scripts/textured-logo.scm.h:1
-#: ../scripts/truchet.scm.h:1
-msgid "Background color"
-msgstr "Couleur d'arrière-plan"
+#: ../tiny-fu/tiny-fu.c:325
+msgid "_Classic.Gimp.Org"
+msgstr "_Classic.Gimp.Org"
 
-#: ../scripts/contactsheet.scm.h:5
-msgid "Contact Sheet"
-msgstr "Planche-contact"
+#: ../tiny-fu/tiny-fu.c:328
+msgid "Alpha to _Logo"
+msgstr "Alpha vers _logo"
 
-#: ../scripts/contactsheet.scm.h:6
+#: ../tiny-fu/tiny-fu.c:330
+msgid "An_imation"
+msgstr "An_imation"
+
+#: ../tiny-fu/tiny-fu.c:332
+msgid "_Animators"
+msgstr "_Animateurs"
+
+#: ../tiny-fu/tiny-fu.c:334
+msgid "_Artistic"
+msgstr "A_rtistique"
+
+#: ../tiny-fu/tiny-fu.c:336
+msgid "_Blur"
+msgstr "_Flou"
+
+#: ../tiny-fu/tiny-fu.c:338
+msgid "_Decor"
+msgstr "Dé_coration"
+
+#: ../tiny-fu/tiny-fu.c:340
+msgid "_Effects"
+msgstr "_Effets"
+
+#: ../tiny-fu/tiny-fu.c:342
+msgid "En_hance"
+msgstr "A_mélioration"
+
+#: ../tiny-fu/tiny-fu.c:344
+msgid "_Light and Shadow"
+msgstr "_Ombres et lumières"
+
+#: ../tiny-fu/tiny-fu.c:346
+msgid "S_hadow"
+msgstr "_Ombre"
+
+#: ../tiny-fu/tiny-fu.c:348
+msgid "_Render"
+msgstr "_Rendu"
+
+#: ../tiny-fu/tiny-fu.c:350
+msgid "_Alchemy"
+msgstr "A_lchimie"
+
+#: ../tiny-fu/tiny-fu.c:353
+msgid "Re-read all available Script-Fu scripts"
+msgstr "Relire tous les scripts Script-Fu disponibles"
+
+#: ../tiny-fu/tiny-fu.c:358
+msgid "_Refresh Scripts"
+msgstr "_Actualiser les scripts"
+
+#: ../tiny-fu/tiny-fu.c:381
 msgid ""
-"Create a series of images containing thumbnail sized versions of all of the "
-"images in a specified directory."
+"You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
+"Please close all Script-Fu windows and try again."
 msgstr ""
-"Crée une série d'images contenant toutes les images d'un répertoire donné à "
-"la taille de vignettes."
-
-#: ../scripts/contactsheet.scm.h:7
-msgid "Created "
-msgstr "Création de "
-
-#: ../scripts/contactsheet.scm.h:8
-msgid "Directory"
-msgstr "Répertoire"
-
-#: ../scripts/contactsheet.scm.h:9
-msgid "Legend font"
-msgstr "Police de légende"
-
-#: ../scripts/contactsheet.scm.h:10
-msgid "Sheet "
-msgstr "Planche "
-
-#: ../scripts/contactsheet.scm.h:11
-msgid "Sheet size"
-msgstr "Taille de la planche"
-
-#: ../scripts/contactsheet.scm.h:12 ../scripts/alien-glow-button.scm.h:11
-#: ../scripts/basic1-logo.scm.h:7 ../scripts/basic2-logo.scm.h:8
-#: ../scripts/beveled-button.scm.h:10
-#: ../scripts/beveled-pattern-button.scm.h:8 ../scripts/blended-logo.scm.h:18
-#: ../scripts/gimp-headers.scm.h:14 ../scripts/gimp-labels.scm.h:18
-#: ../scripts/i26-gunya2.scm.h:8 ../scripts/news-text.scm.h:11
-#: ../scripts/pupi-button.scm.h:14 ../scripts/speed-text.scm.h:9
-msgid "Text color"
-msgstr "Couleur du texte"
-
-#: ../scripts/contactsheet.scm.h:13
-msgid "Title font"
-msgstr "Police de titre"
-
-#: ../scripts/contactsheet.scm.h:14
-msgid "Unable to open directory "
-msgstr "Impossible d'ouvrir le répertoire "
+"Vous ne pouvez pas utiliser « Actualiser les scripts » tant que la boîte de "
+"dialogue d'un Script-Fu est ouverte. Fermez toutes les fenêtres de script-fu "
+"et essayez à nouveau."
 
 #: ../scripts/3d-outline.scm.h:1
 msgid "3D _Outline..."
@@ -478,6 +391,23 @@ msgstr "Texte"
 msgid "3_D Truchet..."
 msgstr "3_D Truchet..."
 
+#: ../scripts/3dTruchet.scm.h:2 ../scripts/alien-glow-arrow.scm.h:1
+#: ../scripts/alien-glow-bar.scm.h:1 ../scripts/alien-glow-bullet.scm.h:1
+#: ../scripts/alien-glow-button.scm.h:2 ../scripts/alien-neon-logo.scm.h:3
+#: ../scripts/basic1-logo.scm.h:2 ../scripts/basic2-logo.scm.h:3
+#: ../scripts/blended-logo.scm.h:2 ../scripts/bovinated-logo.scm.h:3
+#: ../scripts/chalk.scm.h:1 ../scripts/chrome-logo.scm.h:3
+#: ../scripts/comic-logo.scm.h:2 ../scripts/coolmetal-logo.scm.h:2
+#: ../scripts/frosty-logo.scm.h:2 ../scripts/gimp-labels.scm.h:1
+#: ../scripts/glossy.scm.h:2 ../scripts/glowing-logo.scm.h:2
+#: ../scripts/gradient-bevel-logo.scm.h:2 ../scripts/neon-logo.scm.h:1
+#: ../scripts/news-text.scm.h:1 ../scripts/speed-text.scm.h:1
+#: ../scripts/sphere.scm.h:1 ../scripts/starburst-logo.scm.h:1
+#: ../scripts/swirltile.scm.h:2 ../scripts/t-o-p-logo.scm.h:2
+#: ../scripts/textured-logo.scm.h:1 ../scripts/truchet.scm.h:1
+msgid "Background color"
+msgstr "Couleur d'arrière-plan"
+
 #: ../scripts/3dTruchet.scm.h:3 ../scripts/truchet.scm.h:2
 msgid "Block size"
 msgstr "Taille de bloc"
@@ -571,7 +501,7 @@ msgstr "Aplatir l'image"
 #: ../scripts/alien-glow-arrow.scm.h:5 ../scripts/alien-glow-bar.scm.h:6
 #: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/alien-glow-button.scm.h:7
 #: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
-#: ../scripts/burn-in-anim.scm.h:9 ../scripts/neon-logo.scm.h:8
+#: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:8
 #: ../scripts/starscape-logo.scm.h:6
 msgid "Glow color"
 msgstr "Couleur de la lueur"
@@ -654,6 +584,15 @@ msgstr "Rayon de la lueur"
 #: ../scripts/alien-glow-button.scm.h:9 ../scripts/beveled-button.scm.h:6
 msgid "Padding"
 msgstr "Marge"
+
+#: ../scripts/alien-glow-button.scm.h:11 ../scripts/basic1-logo.scm.h:7
+#: ../scripts/basic2-logo.scm.h:8 ../scripts/beveled-button.scm.h:10
+#: ../scripts/beveled-pattern-button.scm.h:8 ../scripts/blended-logo.scm.h:18
+#: ../scripts/gimp-headers.scm.h:14 ../scripts/gimp-labels.scm.h:18
+#: ../scripts/i26-gunya2.scm.h:8 ../scripts/news-text.scm.h:11
+#: ../scripts/pupi-button.scm.h:14 ../scripts/speed-text.scm.h:9
+msgid "Text color"
+msgstr "Couleur du texte"
 
 #: ../scripts/alien-glow-logo.scm.h:1
 msgid "Add an eerie glow around the selected region (or alpha)"
@@ -821,7 +760,7 @@ msgstr "Séquences intermédaires"
 
 #: ../scripts/blend-anim.scm.h:4
 msgid "Looped"
-msgstr "En boucle"
+msgstr "en Boucle"
 
 #: ../scripts/blend-anim.scm.h:5
 msgid "Max. blur radius"
@@ -921,18 +860,10 @@ msgid "B_urn-In..."
 msgstr "En _flammes..."
 
 #: ../scripts/burn-in-anim.scm.h:4
-msgid ""
-"Burn-In: Needs two layers in total!\n"
-"A foreground text layer with transparency and a background layer."
-msgstr ""
-"En flammes : a besoin de deux calques au total.\n"
-"Un calque de texte avec transparence en premier plan et un calque de fond."
-
-#: ../scripts/burn-in-anim.scm.h:5
 msgid "Corona width"
 msgstr "Largeur de la couronne"
 
-#: ../scripts/burn-in-anim.scm.h:6
+#: ../scripts/burn-in-anim.scm.h:5
 msgid ""
 "Create intermediate layers to produce an animated 'burn-in' transition "
 "between two layers"
@@ -940,21 +871,29 @@ msgstr ""
 "Crée des calques intermédiaires pour produire une animation de transition "
 "« en flammes » entre deux calques"
 
-#: ../scripts/burn-in-anim.scm.h:7
+#: ../scripts/burn-in-anim.scm.h:6
 msgid "Fadeout"
 msgstr "Fondu"
 
-#: ../scripts/burn-in-anim.scm.h:8
+#: ../scripts/burn-in-anim.scm.h:7
 msgid "Fadeout width"
 msgstr "Largeur de l'estompement"
 
-#: ../scripts/burn-in-anim.scm.h:10
+#: ../scripts/burn-in-anim.scm.h:9
 msgid "Prepare for GIF"
 msgstr "Préparer pour GIF"
 
-#: ../scripts/burn-in-anim.scm.h:11
+#: ../scripts/burn-in-anim.scm.h:10
 msgid "Speed (pixels/frame)"
 msgstr "Vitesse (pixels/image)"
+
+#: ../scripts/burn-in-anim.scm.h:11
+msgid ""
+"The Burn-In script needs two layers in total. A foreground layer with "
+"transparency and a background layer."
+msgstr ""
+"L'effet « en flammes » nécessite deux calques au total. Un calque de premier "
+"plan avec transparence et un calque de fond."
 
 #: ../scripts/camo.scm.h:1
 msgid "Color 1"
@@ -988,6 +927,18 @@ msgstr "Adoucir"
 msgid "_Camouflage..."
 msgstr "_Camouflage..."
 
+#: ../scripts/carve-it.scm.h:1
+msgid "Carve white areas"
+msgstr "Entailler les zones blanches"
+
+#: ../scripts/carve-it.scm.h:2
+msgid "Image to carve"
+msgstr "Image à entailler"
+
+#: ../scripts/carve-it.scm.h:3
+msgid "Stencil C_arve..."
+msgstr "Patron de t_aillage..."
+
 #: ../scripts/carved-logo.scm.h:1
 msgid "Background Image"
 msgstr "Image d'arrière-plan"
@@ -1011,18 +962,6 @@ msgstr ""
 #: ../scripts/carved-logo.scm.h:7
 msgid "Padding around text"
 msgstr "Remplissage autour du texte"
-
-#: ../scripts/carve-it.scm.h:1
-msgid "Carve white areas"
-msgstr "Entailler les zones blanches"
-
-#: ../scripts/carve-it.scm.h:2
-msgid "Image to carve"
-msgstr "Image à entailler"
-
-#: ../scripts/carve-it.scm.h:3
-msgid "Stencil C_arve..."
-msgstr "Patron de t_aillage..."
 
 #: ../scripts/chalk.scm.h:2
 msgid "Chalk color"
@@ -1203,12 +1142,8 @@ msgid "Add realistic looking coffee stains to the image"
 msgstr "Ajoute une tache de café réaliste à l'image"
 
 #: ../scripts/coffee.scm.h:2
-msgid ""
-"Darken only\n"
-"(Better, but only for images with a lot of white)"
-msgstr ""
-"Assombrir seulement\n"
-"(meilleur, mais uniquement sur les images avec beaucoup de blanc)"
+msgid "Darken only"
+msgstr "Assombrir seulement"
 
 #: ../scripts/coffee.scm.h:3
 msgid "Stains"
@@ -1264,12 +1199,6 @@ msgstr ""
 msgid "Effect size (pixels)"
 msgstr "Taille de l'effet (pixels)"
 
-#: ../scripts/copy-visible.scm.h:1
-msgid "This procedure is deprecated! use 'gimp-edit-copy-visible' instead."
-msgstr ""
-"Cette procédure est obsolète ! Utilisez « gimp-edit-copy-visible » à la "
-"place."
-
 #: ../scripts/crystal-logo.scm.h:1
 msgid "Background image"
 msgstr "Image d'arrière-plan"
@@ -1281,6 +1210,14 @@ msgstr "Crée un logo avec un effet cristal/gel et déplace l'image en dessous"
 #: ../scripts/crystal-logo.scm.h:4
 msgid "Crystal..."
 msgstr "Cristal..."
+
+#: ../scripts/difference-clouds.scm.h:1
+msgid "Difference Clouds..."
+msgstr "Nuages par différence..."
+
+#: ../scripts/difference-clouds.scm.h:2
+msgid "Solid noise applied with Difference layer mode"
+msgstr "Bruit plein appliqué avec le mode de calque différence"
 
 #: ../scripts/distress-selection.scm.h:1
 msgid "Distress the selection"
@@ -1389,44 +1326,6 @@ msgstr "Rangées/colonnes"
 msgid "_Erase Every Other Row..."
 msgstr "Change une colonne ou rangée _sur deux..."
 
-#: ../scripts/fade-outline.scm.h:1
-msgid "Apply generated layermask"
-msgstr "Appliquer le masque de calque généré"
-
-#: ../scripts/fade-outline.scm.h:2 ../scripts/fuzzyborder.scm.h:4
-#: ../scripts/old-photo.scm.h:1
-msgid "Border size"
-msgstr "Taille de bordure"
-
-#: ../scripts/fade-outline.scm.h:3
-msgid "Clear unselected maskarea"
-msgstr "Effacer les zones non sélectionnées du masque "
-
-#: ../scripts/fade-outline.scm.h:4
-msgid ""
-"Create a layermask that fades the edges of the selected region (or alpha)"
-msgstr ""
-"Crée un masque de calque qui estompe progressivement les bords de la région "
-"sélectionnée (ou alpha)"
-
-#: ../scripts/fade-outline.scm.h:6
-#, no-c-format
-msgid "Fade from %"
-msgstr "Estompement depuis %"
-
-#: ../scripts/fade-outline.scm.h:8
-#, no-c-format
-msgid "Fade to %"
-msgstr "Estompement vers %"
-
-#: ../scripts/fade-outline.scm.h:9
-msgid "Use growing selection"
-msgstr "Utiliser une sélection croissante"
-
-#: ../scripts/fade-outline.scm.h:10
-msgid "_Fade to Layer Mask..."
-msgstr "_Estompement vers masque de calque..."
-
 #: ../scripts/flatland.scm.h:1
 msgid "Create an image filled with a Land Pattern"
 msgstr "Crée une image remplie avec un motif de terrain"
@@ -1533,6 +1432,10 @@ msgstr "Ajouter une ombre"
 #: ../scripts/fuzzyborder.scm.h:3
 msgid "Blur border"
 msgstr "Bordure floue"
+
+#: ../scripts/fuzzyborder.scm.h:4 ../scripts/old-photo.scm.h:1
+msgid "Border size"
+msgstr "Taille de bordure"
 
 #: ../scripts/fuzzyborder.scm.h:7
 msgid "Granularity (1 is Low)"
@@ -1975,7 +1878,8 @@ msgstr "Nom"
 msgid "Re_ctangular, Feathered..."
 msgstr "Re_ctangulaire, adoucie..."
 
-#: ../scripts/mkbrush.scm.h:10 ../scripts/select-to-brush.scm.h:4
+#: ../scripts/mkbrush.scm.h:10 ../scripts/paste-as-brush.scm.h:5
+#: ../scripts/select-to-brush.scm.h:4
 msgid "Spacing"
 msgstr "Espacement"
 
@@ -2045,6 +1949,39 @@ msgstr "Sépia"
 #: ../scripts/old-photo.scm.h:7
 msgid "_Old Photo..."
 msgstr "_Vieille photo..."
+
+#: ../scripts/paste-as-brush.scm.h:1 ../scripts/select-to-brush.scm.h:1
+msgid "Brush name"
+msgstr "Nom de la brosse"
+
+#: ../scripts/paste-as-brush.scm.h:2 ../scripts/paste-as-pattern.scm.h:1
+#: ../scripts/select-to-brush.scm.h:3 ../scripts/select-to-pattern.scm.h:2
+msgid "File name"
+msgstr "Nom de fichier"
+
+#: ../scripts/paste-as-brush.scm.h:3
+msgid "New _Brush..."
+msgstr "Nouvelle _brosse..."
+
+#: ../scripts/paste-as-brush.scm.h:4
+msgid "Paste the clipboard contents into a new brush"
+msgstr "Copie le contenu du presse-papiers vers une nouvelle brosse"
+
+#: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
+msgid "There is no image data in the clipboard to paste."
+msgstr "Aucune image n'est présente dans le presse-papier pour collage."
+
+#: ../scripts/paste-as-pattern.scm.h:2
+msgid "New _Pattern..."
+msgstr "Nouveau _motif..."
+
+#: ../scripts/paste-as-pattern.scm.h:3
+msgid "Paste the clipboard contents into a new pattern"
+msgstr "Copie le contenu du presse-papiers vers un nouveau motif"
+
+#: ../scripts/paste-as-pattern.scm.h:4 ../scripts/select-to-pattern.scm.h:3
+msgid "Pattern name"
+msgstr "Nom du motif"
 
 #: ../scripts/perspective-shadow.scm.h:1
 msgid "Add a perspective shadow to the selected region (or alpha)"
@@ -2158,6 +2095,14 @@ msgstr "Rendre un _terrain..."
 msgid "Tile"
 msgstr "Carreau"
 
+#: ../scripts/reverse-layers.scm.h:1
+msgid "Reverse Layer Order"
+msgstr "Inverser l'ordre des calques"
+
+#: ../scripts/reverse-layers.scm.h:2
+msgid "Reverse the order of layers in the image"
+msgstr "Inverse l'ordre des calques dans l'image"
+
 #: ../scripts/ripply-anim.scm.h:1
 msgid "Black"
 msgstr "Noir"
@@ -2216,42 +2161,22 @@ msgstr ""
 msgid "_Round Corners..."
 msgstr "Coins a_rrondis..."
 
-#: ../scripts/selection-round.scm.h:1
-msgid "Concave"
-msgstr "Concave"
-
-#: ../scripts/selection-round.scm.h:3
-#, no-c-format
-msgid "Radius (%)"
-msgstr "Rayon (%)"
-
-#: ../scripts/selection-round.scm.h:4
-msgid "Round the corners of the current selection"
-msgstr "Arrondit les coins de la sélection courante"
-
-#: ../scripts/selection-round.scm.h:5
-msgid ""
-"Round the corners of the current selection (deprecated, use Rounded "
-"Rectangle)"
+#: ../scripts/script-fu-set-cmap.scm.h:1
+msgid "Change the colormap of an image to the colors in a specified palette."
 msgstr ""
-"Arrondit les coins de la sélection courante (obsolète, utilisez rectangle "
-"arrondi)"
+"Change la palette de couleurs d'un image aux couleurs de la palette indiquée."
 
-#: ../scripts/selection-round.scm.h:6
-msgid "Rounded R_ectangle..."
-msgstr "Rectangle arr_ondi..."
+#: ../scripts/script-fu-set-cmap.scm.h:2
+msgid "Palette"
+msgstr "Palette"
 
-#: ../scripts/select-to-brush.scm.h:1
-msgid "Brush name"
-msgstr "Nom de la brosse"
+#: ../scripts/script-fu-set-cmap.scm.h:3
+msgid "Se_t Colormap..."
+msgstr "Définir la pale_tte..."
 
 #: ../scripts/select-to-brush.scm.h:2
 msgid "Convert a selection to a brush"
 msgstr "Convertit une sélection en brosse"
-
-#: ../scripts/select-to-brush.scm.h:3 ../scripts/select-to-pattern.scm.h:2
-msgid "File name"
-msgstr "Nom de fichier"
 
 #: ../scripts/select-to-brush.scm.h:5
 msgid "To _Brush..."
@@ -2269,13 +2194,26 @@ msgstr "Vers une _image"
 msgid "Convert a selection to a pattern"
 msgstr "Convertit une sélection en motif"
 
-#: ../scripts/select-to-pattern.scm.h:3
-msgid "Pattern name"
-msgstr "Nom du motif"
-
 #: ../scripts/select-to-pattern.scm.h:4
 msgid "To _Pattern..."
 msgstr "Vers un _motif..."
+
+#: ../scripts/selection-round.scm.h:1
+msgid "Concave"
+msgstr "Concave"
+
+#: ../scripts/selection-round.scm.h:3
+#, no-c-format
+msgid "Radius (%)"
+msgstr "Rayon (%)"
+
+#: ../scripts/selection-round.scm.h:4
+msgid "Round the corners of the current selection"
+msgstr "Arrondit les coins de la sélection courante"
+
+#: ../scripts/selection-round.scm.h:5
+msgid "Rounded R_ectangle..."
+msgstr "Rectangle arr_ondi..."
 
 #: ../scripts/slide.scm.h:1
 msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
@@ -2327,7 +2265,7 @@ msgstr "Rayon (pixels)"
 msgid "Sphere color"
 msgstr "Couleur de la sphère"
 
-#: ../scripts/sphere.scm.h:7 ../scripts/test-sphere.scm.h:1
+#: ../scripts/sphere.scm.h:7
 msgid "_Sphere..."
 msgstr "_Sphère..."
 
@@ -2439,38 +2377,42 @@ msgid "Polygon: 9 sides"
 msgstr "Polygone : 9 cotés"
 
 #: ../scripts/spyrogimp.scm.h:24
+msgid "Rendering Spyro"
+msgstr "Rendu spyrographe en cours"
+
+#: ../scripts/spyrogimp.scm.h:25
 msgid "Shape"
 msgstr "Forme"
 
-#: ../scripts/spyrogimp.scm.h:25
+#: ../scripts/spyrogimp.scm.h:26
 msgid "Solid Color"
 msgstr "Couleur unie"
 
-#: ../scripts/spyrogimp.scm.h:26
+#: ../scripts/spyrogimp.scm.h:27
 msgid "Spyrograph"
 msgstr "Spyrographe"
 
-#: ../scripts/spyrogimp.scm.h:27
+#: ../scripts/spyrogimp.scm.h:28
 msgid "Square"
 msgstr "Carré"
 
-#: ../scripts/spyrogimp.scm.h:28 ../scripts/text-circle.scm.h:7
+#: ../scripts/spyrogimp.scm.h:29 ../scripts/text-circle.scm.h:7
 msgid "Start angle"
 msgstr "Angle de départ"
 
-#: ../scripts/spyrogimp.scm.h:29
+#: ../scripts/spyrogimp.scm.h:30
 msgid "Tool"
 msgstr "Outil"
 
-#: ../scripts/spyrogimp.scm.h:30
+#: ../scripts/spyrogimp.scm.h:31
 msgid "Triangle"
 msgstr "Triangle"
 
-#: ../scripts/spyrogimp.scm.h:31
+#: ../scripts/spyrogimp.scm.h:32
 msgid "Type"
 msgstr "Type"
 
-#: ../scripts/spyrogimp.scm.h:32
+#: ../scripts/spyrogimp.scm.h:33
 msgid "_Spyrogimp..."
 msgstr "_Spyrographe..."
 
@@ -2671,20 +2613,6 @@ msgstr "RLE"
 msgid "_Tileable Blur..."
 msgstr "Flou _mosaïque..."
 
-#: ../scripts/script-fu-set-cmap.scm.h:1
-msgid "Change the colourmap of an image to the colours in a specified palette."
-msgstr ""
-"Change la table des couleurs d'une image avec les couleurs d'une palette "
-"spécifiée."
-
-#: ../scripts/script-fu-set-cmap.scm.h:2
-msgid "Palette"
-msgstr "Palette"
-
-#: ../scripts/script-fu-set-cmap.scm.h:3
-msgid "Se_t Colormap"
-msgstr "Dé_finir la table des couleurs"
-
 #: ../scripts/title-header.scm.h:1
 msgid "Create a decorative web title header"
 msgstr "Crée un en-tête de titre Web décoratif"
@@ -2873,3 +2801,47 @@ msgstr "Opacité d'éclairage"
 #: ../scripts/xach-effect.scm.h:12
 msgid "_Xach-Effect..."
 msgstr "Effet _Xach..."
+
+#~ msgid "Darken only\\n(Better, but only for images with a lot of white)"
+#~ msgstr ""
+#~ "Assombrir seulement\\n(meilleur, mais uniquement sur les images avec "
+#~ "beaucoup de blanc)"
+
+#~ msgid "Apply generated layermask"
+#~ msgstr "Appliquer le masque de calque généré"
+
+#~ msgid "Clear unselected maskarea"
+#~ msgstr "Effacer les zones non sélectionnées du masque "
+
+#~ msgid ""
+#~ "Create a layermask that fades the edges of the selected region (or alpha)"
+#~ msgstr ""
+#~ "Crée un masque de calque qui estompe progressivement les bords de la "
+#~ "région sélectionnée (ou alpha)"
+
+#~ msgid "Fade from %"
+#~ msgstr "Estompement depuis %"
+
+#~ msgid "Fade to %"
+#~ msgstr "Estompement vers %"
+
+#~ msgid "Use growing selection"
+#~ msgstr "Utiliser une sélection croissante"
+
+#~ msgid "_Fade to Layer Mask..."
+#~ msgstr "_Estompement vers masque de calque..."
+
+#~ msgid "/Script-Fu/"
+#~ msgstr "/Script-Fu/"
+
+#~ msgid "This procedure is deprecated! use 'gimp-edit-copy-visible' instead."
+#~ msgstr ""
+#~ "Cette procédure est obsolète ! Utilisez « gimp-edit-copy-visible » à la "
+#~ "place."
+
+#~ msgid ""
+#~ "Round the corners of the current selection (deprecated, use Rounded "
+#~ "Rectangle)"
+#~ msgstr ""
+#~ "Arrondit les coins de la sélection courante (obsolète, utilisez rectangle "
+#~ "arrondi)"
