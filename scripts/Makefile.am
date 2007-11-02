@@ -41,7 +41,6 @@ scripts = \
 	coffee.scm			\
 	comic-logo.scm			\
 	coolmetal-logo.scm		\
-	copy-visible.scm		\
 	crystal-logo.scm		\
 	difference-clouds.scm		\
 	distress-selection.scm		\
