@@ -1,20 +1,18 @@
-Tiny-Fu Version 1.2
+Tiny-Fu Version 2.0
 -------------------
 
-Tiny-Fu has been brought up-to-date with all of the changes that have been
-made in the Script-Fu plug-in of GIMP (up to the 2.4.1 release) since the
-Tiny-Fu code was merged in to Script-Fu. This version of Tiny-Fu is again
-functionally identical to the Script-Fu plug-in of GIMP.
+I have been thinking about the creation of version 2 of Tiny-Fu for a long
+time. The main goal for this cycle of Tiny-Fu development is to radically
+change the way Scheme based scripts are run. 
 
-Now that Tiny-Fu and Script-Fu are again in sync with each other, there will
-be no more releases or development in the 1.x series of Tiny-Fu. Any further
-development related to version 1 of Tiny-Fu (all versions up to and including
-1.2) will continue in the Script-Fu plug-in of the GIMP source tree.
+Version 2 of Tiny-Fu will no longer operate as a GIMP extension. Scheme
+based scripts will be run using a standalone interpreter in a similar
+fashion to how Python or Perl scripts are currently run.
 
-Work will soon begin on version 2 of Tiny-Fu. This new version will no
-longer operate as an GIMP extension. Scheme based scripts will be run
-using a standalone interpreter in a similar fashion to how Python or
-Perl scripts are currently run.
+The main changes to the build and installation system have already been
+worked out. The restructuring of the code which forms the glue between
+the Scheme interpreter and GIMP is still to be done. You should expect
+this GIMP plug-in to be broken while the needed changes are implemented.
 
 
 Kevin Cozens
