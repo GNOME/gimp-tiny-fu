@@ -2,11 +2,15 @@
 
 SUBDIRS = images
 
-scriptdatadir = $(GIMP_DATADIR)/scripts
+initscriptsdir = $(GIMP_LIBDIR)/tiny-fu
+
+scriptsdir = $(GIMP_PLUGINDIR)
+
+initscripts = \
+	script-fu.init                  \
+	script-fu-compat.init
 
 scripts = \
-	script-fu.init			\
-	script-fu-compat.init		\
 	3d-outline.scm			\
 	3dTruchet.scm			\
 	add-bevel.scm			\
@@ -113,10 +117,12 @@ test_scripts = \
 
 
 if TINY_FU_UNSTABLE
-scriptdata_DATA = $(scripts) $(test_scripts)
+initscripts_DATA = $(initscripts)
+#scripts_SCRIPTS = $(scripts) $(test_scripts)
+scripts_SCRIPTS = $(test_scripts)
 else
-scriptdata_DATA = $(scripts)
+scripts_SCRIPTS = $(scripts)
 endif
 
 
-EXTRA_DIST = $(scripts) $(test_scripts)
+EXTRA_DIST = $(initscripts) $(scripts) $(test_scripts)

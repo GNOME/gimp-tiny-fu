@@ -8,6 +8,40 @@ SUBDIRS = \
 	tiny-fu    \
 	scripts
 
+if PLATFORM_WIN32
+no_undefined = -no-undefined
+path_separator = ;
+else
+path_separator = :
+endif
+
+tinyfubase = tiny-fu
+
+tinyfudir = $(GIMP_LIBDIR)/$(tinyfubase)
+
+tinyfuenvdir = $(GIMP_LIBDIR)/environ
+tinyfuinterpdir = $(GIMP_LIBDIR)/interpreters
+TINYSCHEME_BIN = $(tinyfudir)/tinyscheme
+
+tinyfuenvfile = $(tinyfuenvdir)/tiny-fu.env
+tinyfuinterpfile = $(tinyfuinterpdir)/tiny-fu.interp
+
+install-env-file:
+	$(mkinstalldirs) '$(DESTDIR)$(tinyfuenvdir)'
+	echo '$(path_separator) TINYFUPATH=$${gimp_plug_in_dir}/$(tinyfubase)' > '$(DESTDIR)$(tinyfuenvfile)'
+	echo '$(path_separator) TINYSCHEMEINIT=$${gimp_plug_in_dir}/$(tinyfubase)/script-fu.init' >> '$(DESTDIR)$(tinyfuenvfile)'
+
+install-interp-file:
+	$(mkinstalldirs) '$(DESTDIR)$(tinyfuinterpdir)'
+	echo 'tinyscheme=$(TINYSCHEME_BIN)' > '$(DESTDIR)$(tinyfuinterpfile)'
+	echo ':TinyScheme:E::scm::tinyscheme:' >> '$(DESTDIR)$(tinyfuinterpfile)'
+
+install-data-local: install-env-file install-interp-file
+
+uninstall-local:
+	rm -f '$(DESTDIR)$(tinyfuenvfile)' '$(DESTDIR)$(tinyfuinterpfile)'
+
+
 EXTRA_DIST = \
 	AUTHORS             \
 	ChangeLog           \

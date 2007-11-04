@@ -4776,11 +4776,21 @@ int main(int argc, char **argv) {
   int retcode;
   int isfile=1;
 
+  /* Only do this when building TinyScheme for use in GIMP */
+  printf ("TINYFUPATH is %s\n", getenv("TINYFUPATH"));
+  chdir (getenv("TINYFUPATH"));
+
   if(argc==1) {
     printf(banner);
   }
   if(argc==2 && strcmp(argv[1],"-?")==0) {
-    printf("Usage: %s [-? | <file1> <file2> ... | -1 <file> <arg1> <arg2> ...]\n\tUse - as filename for stdin.\n",argv[0]);
+    printf("Usage: tinyscheme -?\n");
+    printf("or:    tinyscheme [<file1> <file2> ...]\n");
+    printf("followed by\n");
+    printf("          -1 <file> [<arg1> <arg2> ...]\n");
+    printf("          -c <Scheme commands> [<arg1> <arg2> ...]\n");
+    printf("assuming that the executable is named tinyscheme.\n");
+    printf("Use - as filename for stdin.\n");
     return 1;
   }
   if(!scheme_init(&sc)) {
@@ -4802,7 +4812,8 @@ int main(int argc, char **argv) {
   do {
     if(strcmp(file_name,"-")==0) {
       fin=stdin;
-    } else if(strcmp(file_name,"-1")==0 || strcmp(file_name,"-c")==0) {
+    } else if(strcmp(file_name,"-1")==0 || strcmp(file_name,"-c")==0 ||
+              strcmp(file_name,"-gimp")==0) {
       pointer args=sc.NIL;
       isfile=file_name[1]=='1';
       file_name=*argv++;

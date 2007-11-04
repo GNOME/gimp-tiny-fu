@@ -24,6 +24,13 @@
 #include <libgimp/gimpui.h>
 
 #include "tinyscheme/scheme.h"
+#include "tinyscheme/scheme-private.h"
+
+#if defined(_WIN32)
+#define EXPORT __declspec( dllexport )
+#else
+#define EXPORT
+#endif
 
 #include "tiny-fu-types.h"
 
@@ -39,6 +46,8 @@
 
 
 /* Declare local functions. */
+
+static pointer tiny_fu_main_init        (scheme *sc, pointer args);
 
 static void    script_fu_query          (void);
 static void    script_fu_run            (const gchar      *name,
@@ -65,6 +74,41 @@ const GimpPlugInInfo PLUG_IN_INFO =
 
 
 MAIN ()
+
+
+/* This routine is called to initialize the Tiny-Fu extension. */
+/* The parameters passed to TinyScheme can be found in *args*. */
+EXPORT void
+init_tiny_fu (scheme *sc)
+{
+    printf ("Loaded Tiny-Fu extension\n");
+
+    sc->vptr->scheme_define (sc, sc->global_env,
+                             sc->vptr->mk_symbol(sc,"tiny-fu-init"),
+                             sc->vptr->mk_foreign_func(sc, tiny_fu_main_init));
+}
+
+
+pointer
+tiny_fu_main_init (scheme *sc, pointer args)
+{
+    int   len;
+    int   i;
+    char *s;
+
+    len = sc->vptr->list_length (sc, args);
+
+    for (i = 0; i < len; ++i)
+      {
+        s = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (args)));
+        printf ("  arg %d: %s\n", i, s);
+        g_free (s);
+
+        args = sc->vptr->pair_cdr (args);
+      }
+
+    return sc->T;
+}
 
 
 static void

@@ -18,11 +18,14 @@ ACLOCAL=${ACLOCAL-aclocal-1.9}
 AUTOCONF=${AUTOCONF-autoconf}
 AUTOHEADER=${AUTOHEADER-autoheader}
 AUTOMAKE=${AUTOMAKE-automake-1.9}
+LIBTOOLIZE=${LIBTOOLIZE-libtoolize}
 
 AUTOCONF_REQUIRED_VERSION=2.54
 AUTOMAKE_REQUIRED_VERSION=1.8.3
 GLIB_REQUIRED_VERSION=2.2.0
 INTLTOOL_REQUIRED_VERSION=0.31
+LIBTOOL_REQUIRED_VERSION=1.4
+LIBTOOL_WIN32=1.5
 
 
 srcdir=`dirname $0`
@@ -78,6 +81,36 @@ echo
 
 DIE=0
 
+
+OS=`uname -s`
+case $OS in
+    *YGWIN* | *INGW*)
+        echo "Looks like Win32, you will need libtool $LIBTOOL_WIN32 or newer."
+        echo
+        LIBTOOL_REQUIRED_VERSION=$LIBTOOL_WIN32
+        ;;
+esac
+
+
+echo -n "checking for libtool >= $LIBTOOL_REQUIRED_VERSION ... "
+if ($LIBTOOLIZE --version) < /dev/null > /dev/null 2>&1; then
+   LIBTOOLIZE=$LIBTOOLIZE
+elif (glibtoolize --version) < /dev/null > /dev/null 2>&1; then
+   LIBTOOLIZE=glibtoolize
+else
+    echo
+    echo "  You must have libtool installed to compile $PROJECT."
+    echo "  Install the appropriate package for your distribution,"
+    echo "  or get the source tarball at ftp://ftp.gnu.org/pub/gnu/"
+    echo
+    DIE=1
+fi
+
+if test x$LIBTOOLIZE != x; then
+    VER=`$LIBTOOLIZE --version \
+         | grep libtool | sed "s/.* \([0-9.]*\)[-a-z0-9]*$/\1/"`
+    check_version $VER $LIBTOOL_REQUIRED_VERSION
+fi
 
 echo -n "checking for autoconf >= $AUTOCONF_REQUIRED_VERSION ... "
 if ($AUTOCONF --version) < /dev/null > /dev/null 2>&1; then
@@ -211,6 +244,8 @@ if test $RC -ne 0; then
    echo "$ACLOCAL gave errors. Please fix the error conditions and try again."
    exit $RC
 fi
+
+$LIBTOOLIZE --force || exit $?
 
 # optionally feature autoheader
 ($AUTOHEADER --version)  < /dev/null > /dev/null 2>&1 && $AUTOHEADER || exit 1

@@ -1,28 +1,22 @@
 ## Process this file with automake to produce Makefile.in
 
-libtinyscheme=$(top_builddir)/tinyscheme/libtinyscheme.a
-libftx=$(top_builddir)/ftx/libftx.a
-libre=$(top_builddir)/re/libre.a
-
 if OS_WIN32
 mwindows = -mwindows
 WINSOCK_LIBS = -lws2_32
+no_undefined = -no-undefined
 endif
 
 AM_CFLAGS = \
     -DSTANDALONE=0     \
     -DUSE_INTERFACE=1  \
-    -DUSE_STRLWR=0     \
     -I$(top_srcdir)    \
     $(GIMP_CFLAGS)
 
-AM_LDFLAGS = $(mwindows)
+tiny_fu_ladir = $(GIMP_LIBDIR)/tiny-fu
 
-libexecdir = $(GIMP_LIBDIR)/plug-ins
+tiny_fu_la_LTLIBRARIES = tiny_fu.la
 
-libexec_PROGRAMS = tiny-fu
-
-tiny_fu_SOURCES = \
+tiny_fu_la_SOURCES = \
     tiny-fu-types.h        \
     tiny-fu-enums.h        \
     tiny-fu-console.c      \
@@ -40,13 +34,13 @@ tiny_fu_SOURCES = \
     ts-wrapper.c           \
     ts-wrapper.h
 
-AM_CPPFLAGS = \
-    -DLOCALEDIR=\""$(GIMP_LOCALEDIR)"\"
+tiny_fu_la_LDFLAGS = \
+    -module          \
+    -avoid-version   \
+    $(no_undefined)  \
+    $(mwindows)
 
-LDADD = \
-    $(libtinyscheme) \
-    $(libftx)        \
-    $(libre)         \
+tiny_fu_la_LIBADD = \
     $(GIMP_LIBS)     \
     $(WINSOCK_LIBS)  \
     $(INTLLIBS)

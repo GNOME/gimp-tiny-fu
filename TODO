@@ -1,3 +1,27 @@
+NOTES for Tiny-Fu version 2:
+
+- TinyScheme needs some fixing to command line argument parsing. It appears
+  to be running a script before the command line arguments were put in *args*.
+- TinyScheme should stop trying to load files named on the command line as
+  soon as it encounters a command line argument which starts with a hyphen.
+- It should set the current directory using the TINYFUPATH env var.
+- Can't use a C based program as an interpreter plug-in?
+  The first argument becomes the name of the C program and the second is the
+  name of the script to be run. The first argument should be the name of the
+  script.
+- Should Makefile's be using PLATFORM_WIN32 or OS_WIN32?
+
+Command line parameters:
+	script_name -gimp read_fd write_fd -query 1
+
+The last parameter is the stack trace mode. The values are:
+0 - Never
+1 - Query
+2 - Always
+
+-------------------------------------------------------------------------------
+
+
 - If there is no data in the clipboard, make the "paste-as-..." scripts show
   "There is no image data in the clipboard to paste." (bug #374854)
 - A line beginning with a ; just before some close brackets will result in

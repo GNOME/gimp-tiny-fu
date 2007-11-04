@@ -1,4 +1,58 @@
-2007-11-02  Kevin Cozens  <kcozens@pc.localdomain>
+2007-11-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	This commit breaks Tiny-Fu. It sets up the basic structure needed
+	to run Scheme scripts as plug-ins. The TinyScheme interpreter gets
+	called but the tiny-fu extension which ties Scheme and GIMP together
+	needs work.
+
+	* TODO: Added notes about version 2.0 of Tiny-Fu.
+
+	* autogen.sh: Added LIBTOOL support needed to build extensions for
+	TinyScheme.
+
+	* configure.in: Added setting of GIMP_PLUGINDIR. Display a summary
+	of enable/disabled features, and GIMP directories when the script
+	finishes.
+
+	* Makefile.am: Added targets to create and install the tiny-fu.env
+	and tiny-fu.interp files.
+
+	* ftx/Makefile.am:
+	* re/Makefile.am:
+	* tiny-fu/Makefile.am: Build ftx, re, and tiny-fu as run-time
+	loadable extensions for TinyScheme.
+
+	* tiny-fu/tiny-fu.c: Added init_tiny_fu() and tiny_fu_main_init()
+	as first steps of making this a TinyScheme extension.
+
+	* tinyscheme/Makefile.am: Updated to build as standalone Scheme
+	interpreter. Now installs under GIMP_LIBDIR/tiny-fu.
+
+	* scripts/Makefile.am: During testing, only installs test scripts.
+	Install init scripts under GIMP_LIBDIR/tiny-fu. Install regular
+	scripts to the plug-ins directory.
+
+	* scripts/images/Makefile.am: Install under plug-ins directory.
+
+	* tinyscheme/scheme.c: Change to directory specified by TINYFUPATH
+	to find init scripts and loadable extensions. Updated program usage
+	information. Check for "-gimp" when parsing command line arguments.
+
+	* scripts/script-fu.init: Added calls to load script-fu-compat.init
+	and the tiny_fu extension.
+
+2007-11-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* configure.in:
+
+	* Makefile.am:
+
+	* scripts/Makefile.am:
+	* scripts/images/Makefile.am:
+	* tiny-fu/Makefile.am:
+	* tinyscheme/Makefile.am:
+
+2007-11-02  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* NEWS: Updated.
 
@@ -7,7 +61,7 @@
 	* configure.in: Bumped version number to 1.9.0 to mark starting
 	point of development for Tiny-Fu version 2.
 
-2007-11-02  Kevin Cozens  <kcozens@pc.localdomain>
+2007-11-02  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	This release marks the end of development on version 1 of Tiny-Fu.
 

@@ -1,13 +1,21 @@
 ## Process this file with automake to produce Makefile.in
 
+if OS_WIN32
+mwindows = -mwindows
+no_undefined = -no-undefined
+endif
+    
 AM_CFLAGS = \
+    -DSTANDALONE=1    \
     -DUSE_INTERFACE=1 \
     -I$(top_srcdir)   \
     $(GIMP_CFLAGS)
 
-noinst_LIBRARIES = libre.a
+re_ladir = $(GIMP_LIBDIR)/tiny-fu
 
-libre_a_SOURCES = \
+re_la_LTLIBRARIES = re.la
+
+re_la_SOURCES = \
     cclass.h    \
     cname.h     \
     debug.c     \
@@ -25,6 +33,12 @@ libre_a_SOURCES = \
     split.c     \
     split.h     \
     utils.h
+
+re_la_LDFLAGS = \
+    -module          \
+    -avoid-version   \
+    $(no_undefined)  \
+    $(mwindows)
 
 #engine.c and engine.ih are listed below rather than above since the
 #file is #include'ed in the source files and not compiled separately.
