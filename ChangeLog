@@ -1,3 +1,16 @@
+2007-11-06  Kevin Cozens  <kcozens@pc.localdomain>
+
+	* TODO: Updated.
+
+	* scripts/script-fu.init: Trivial wording change in a comment block.
+
+	* tiny-fu/tiny-fu.c (tiny_fu_main_init): Get list of command line
+	args which are passed inside a list.
+
+	* tinyscheme/scheme.c: Added command line parsing routine for when
+	TinyScheme is invoked by GIMP. Open script files in binary mode now
+	that UTF-8 coding can be used.
+
 2007-11-04  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	This commit breaks Tiny-Fu. It sets up the basic structure needed

@@ -96,6 +96,8 @@ tiny_fu_main_init (scheme *sc, pointer args)
     int   i;
     char *s;
 
+printf ("In tiny_fu_main_init()\n");
+    args = sc->vptr->pair_car (args);
     len = sc->vptr->list_length (sc, args);
 
     for (i = 0; i < len; ++i)

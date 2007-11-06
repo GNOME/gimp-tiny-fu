@@ -4776,10 +4776,6 @@ int main(int argc, char **argv) {
   int retcode;
   int isfile=1;
 
-  /* Only do this when building TinyScheme for use in GIMP */
-  printf ("TINYFUPATH is %s\n", getenv("TINYFUPATH"));
-  chdir (getenv("TINYFUPATH"));
-
   if(argc==1) {
     printf(banner);
   }
@@ -4809,18 +4805,56 @@ int main(int argc, char **argv) {
       file_name=p;
     }
   }
+
+#if 1
+  if (argc > 2 && strcmp (argv[1], "-gimp") == 0)
+  {
+    pointer args = sc.NIL;
+    int i;
+
+    chdir (getenv("TINYFUPATH"));
+
+    --argc; /* argv was incremented above */
+    for (i = 0; i < argc; ++i)
+      {
+        pointer value = mk_string (&sc, argv[i]);
+        args = cons (&sc, value, args);
+      }
+    args = reverse_in_place (&sc, sc.NIL, args);
+    scheme_define (&sc, sc.global_env, mk_symbol (&sc, "*args*"), args);
+
+    fin = fopen (file_name, "rb");
+    if (fin == 0)
+        fprintf (stderr, "Could not open file %s\n", file_name);
+    else
+      {
+        scheme_load_file (&sc, fin);
+        fclose (fin);
+      }
+
+    fin = fopen (argv[0], "rb");
+    if (fin == 0)
+        fprintf (stderr, "Could not open file %s\n", argv[0]);
+    else
+      {
+        scheme_load_file (&sc, fin);
+        fclose (fin);
+      }
+  }
+  else
+#endif
   do {
     if(strcmp(file_name,"-")==0) {
       fin=stdin;
     } else if(strcmp(file_name,"-1")==0 || strcmp(file_name,"-c")==0 ||
-              strcmp(file_name,"-gimp")==0) {
+              strcmp(*argv,"-gimp")==0) {
       pointer args=sc.NIL;
       isfile=file_name[1]=='1';
       file_name=*argv++;
       if(strcmp(file_name,"-")==0) {
         fin=stdin;
       } else if(isfile) {
-        fin=fopen(file_name,"r");
+        fin=fopen(file_name,"rb");
       }
       for(;*argv;argv++) {
         pointer value=mk_string(&sc,*argv);
@@ -4830,7 +4864,7 @@ int main(int argc, char **argv) {
       scheme_define(&sc,sc.global_env,mk_symbol(&sc,"*args*"),args);
 
     } else {
-      fin=fopen(file_name,"r");
+      fin=fopen(file_name,"rb");
     }
     if(isfile && fin==0) {
       fprintf(stderr,"Could not open file %s\n",file_name);
