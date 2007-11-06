@@ -1,4 +1,13 @@
-2007-11-06  Kevin Cozens  <kcozens@pc.localdomain>
+2007-11-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Completes basic structure for initializing Tiny-Fu to run scripts.
+
+	* tiny-fu/tiny-fu.c: Removed some printf()'s used during initial
+	tests. Passed command line is converted back to argc/argv style.
+	Call gimp_main() to complete initialization. Commented out all
+	code in script_fu_query() for now.
+
+2007-11-06  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* TODO: Updated.
 

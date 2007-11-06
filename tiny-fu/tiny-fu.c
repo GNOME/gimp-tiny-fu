@@ -18,6 +18,7 @@
 
 #include "config.h"
 
+#include <stdlib.h>
 #include <string.h>
 
 #include <libgimp/gimp.h>
@@ -73,49 +74,53 @@ const GimpPlugInInfo PLUG_IN_INFO =
 };
 
 
-MAIN ()
-
-
 /* This routine is called to initialize the Tiny-Fu extension. */
-/* The parameters passed to TinyScheme can be found in *args*. */
 EXPORT void
 init_tiny_fu (scheme *sc)
 {
-    printf ("Loaded Tiny-Fu extension\n");
-
     sc->vptr->scheme_define (sc, sc->global_env,
                              sc->vptr->mk_symbol(sc,"tiny-fu-init"),
                              sc->vptr->mk_foreign_func(sc, tiny_fu_main_init));
 }
 
 
+/* The parameters passed to TinyScheme can be found in *args*. */
 pointer
 tiny_fu_main_init (scheme *sc, pointer args)
 {
-    int   len;
-    int   i;
-    char *s;
+    int    argc;
+    char **argv;
+    int    i;
 
-printf ("In tiny_fu_main_init()\n");
-    args = sc->vptr->pair_car (args);
-    len = sc->vptr->list_length (sc, args);
+    args = sc->vptr->pair_car (args);   /* List is passed in a list */
+    argc = sc->vptr->list_length (sc, args);
 
-    for (i = 0; i < len; ++i)
+    argv = g_new (char *, argc);
+
+    for (i = 0; i < argc; ++i)
       {
-        s = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (args)));
-        printf ("  arg %d: %s\n", i, s);
-        g_free (s);
+        argv[i] = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (args)));
 
         args = sc->vptr->pair_cdr (args);
       }
 
-    return sc->T;
+    i = gimp_main (&PLUG_IN_INFO, argc, argv);
+
+    for (i = 0; i < argc; ++i)
+        g_free (argv[i]);
+    g_free (argv);
+
+    if (i == EXIT_SUCCESS)
+        return sc->T;
+
+    return sc->F;
 }
 
 
 static void
 script_fu_query (void)
 {
+#if 0
   static const GimpParamDef console_args[] =
   {
     { GIMP_PDB_INT32,  "run-mode", "Interactive, [non-interactive]" }
@@ -209,6 +214,7 @@ script_fu_query (void)
                           GIMP_PLUGIN,
                           G_N_ELEMENTS (eval_args), 0,
                           eval_args, NULL);
+#endif
 }
 
 static void
