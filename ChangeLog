@@ -1,3 +1,27 @@
+2008-01-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	Backported many recent bug fixes from the Script-Fu plug-in of GIMP.
+
+	* tinyscheme/scheme.c:
+	* tinyscheme/scheme.h: Fixes SourceForge bugs #1589711, #1593861,
+	#1794369, and #1817986. Also includes some R5RS fixes.
+
+	* plug-ins/script-fu/scripts/chip-away.scm: applied patch from
+	Ulf-D. Ehlert that fixes the range of the "Chip amount" parameter
+	(bug #506110).
+
+	* scripts/script-fu-compat.init: Return a list from cons-array when
+	type is 'string.
+
+	* scripts/t-o-p-logo.scm: applied patch from Ulf-D. Ehlert that fixes
+	the background color used in the Particle Trace filter (bug #498282).
+
+	* configure.in: Bumped version number to 1.2.1.
+
+2008-01-02  Kevin Cozens  <kcozens@pc.localdomain>
+
+	* configure.in: Bumped version number to 1.2.0.
+
 2007-11-02  Kevin Cozens  <kcozens@pc.localdomain>
 
 	This release marks the end of development on version 1 of Tiny-Fu.

@@ -188,6 +188,9 @@ static int num_le(num a, num b);
 static double round_per_R5RS(double x);
 #endif
 static int is_zero_double(double x);
+static INLINE int num_is_integer(pointer p) {
+  return ((p)->_object._number.is_fixnum);
+}
 
 static num num_zero;
 static num num_one;
@@ -207,22 +210,23 @@ INTERFACE static pointer vector_elem(pointer vec, int ielem);
 INTERFACE static pointer set_vector_elem(pointer vec, int ielem, pointer a);
 INTERFACE INLINE int is_number(pointer p)    { return (type(p)==T_NUMBER); }
 INTERFACE INLINE int is_integer(pointer p) {
-  return ((p)->_object._number.is_fixnum);
+  return is_number(p) && ((p)->_object._number.is_fixnum);
 }
+
 INTERFACE INLINE int is_real(pointer p) {
-  return (!(p)->_object._number.is_fixnum);
+  return is_number(p) && (!(p)->_object._number.is_fixnum);
 }
 
 INTERFACE INLINE int is_character(pointer p) { return (type(p)==T_CHARACTER); }
 INTERFACE INLINE int string_length(pointer p) { return strlength(p); }
 INTERFACE INLINE char *string_value(pointer p) { return strvalue(p); }
 INLINE num nvalue(pointer p)       { return ((p)->_object._number); }
-INTERFACE long ivalue(pointer p)      { return (is_integer(p)?(p)->_object._number.value.ivalue:(long)(p)->_object._number.value.rvalue); }
-INTERFACE double rvalue(pointer p)    { return (!is_integer(p)?(p)->_object._number.value.rvalue:(double)(p)->_object._number.value.ivalue); }
+INTERFACE long ivalue(pointer p)      { return (num_is_integer(p)?(p)->_object._number.value.ivalue:(long)(p)->_object._number.value.rvalue); }
+INTERFACE double rvalue(pointer p)    { return (!num_is_integer(p)?(p)->_object._number.value.rvalue:(double)(p)->_object._number.value.ivalue); }
 #define ivalue_unchecked(p)       ((p)->_object._number.value.ivalue)
 #define rvalue_unchecked(p)       ((p)->_object._number.value.rvalue)
-#define set_integer(p)   (p)->_object._number.is_fixnum=1;
-#define set_real(p)      (p)->_object._number.is_fixnum=0;
+#define set_num_integer(p)   (p)->_object._number.is_fixnum=1;
+#define set_num_real(p)      (p)->_object._number.is_fixnum=0;
 INTERFACE  gunichar charvalue(pointer p)  { return (gunichar)ivalue_unchecked(p); }
 
 INTERFACE INLINE int is_port(pointer p)     { return (type(p)==T_PORT); }
@@ -283,6 +287,7 @@ INTERFACE INLINE void setimmutable(pointer p) { typeflag(p) |= T_IMMUTABLE; }
 #define cddr(p)          cdr(cdr(p))
 #define cadar(p)         car(cdr(car(p)))
 #define caddr(p)         car(cdr(cdr(p)))
+#define cdaar(p)         cdr(car(car(p)))
 #define cadaar(p)        car(cdr(car(car(p))))
 #define cadddr(p)        car(cdr(cdr(cdr(p))))
 #define cddddr(p)        cdr(cdr(cdr(cdr(p))))
@@ -372,7 +377,6 @@ static void finalize_cell(scheme *sc, pointer a);
 static int count_consecutive_cells(pointer x, int needed);
 static pointer find_slot_in_env(scheme *sc, pointer env, pointer sym, int all);
 static pointer mk_number(scheme *sc, num n);
-static pointer mk_empty_string(scheme *sc, int len, gunichar fill);
 static char *store_string(scheme *sc, int len, const char *str, gunichar fill);
 static pointer mk_vector(scheme *sc, int len);
 static pointer mk_atom(scheme *sc, char *q);
@@ -402,8 +406,6 @@ static pointer mk_continuation(scheme *sc, pointer d);
 static pointer reverse(scheme *sc, pointer a);
 static pointer reverse_in_place(scheme *sc, pointer term, pointer list);
 static pointer append(scheme *sc, pointer a, pointer b);
-static int list_length(scheme *sc, pointer a);
-static int eqv(pointer a, pointer b);
 static INLINE void dump_stack_mark(scheme *);
 static pointer opexe_0(scheme *sc, enum scheme_opcodes op);
 static pointer opexe_1(scheme *sc, enum scheme_opcodes op);
@@ -417,9 +419,6 @@ static void assign_syntax(scheme *sc, char *name);
 static int syntaxnum(pointer p);
 static void assign_proc(scheme *sc, enum scheme_opcodes, char *name);
 scheme *scheme_init_new(void);
-#if !STANDALONE
-void scheme_call(scheme *sc, pointer func, pointer args);
-#endif
 
 #define num_ivalue(n)       (n.is_fixnum?(n).value.ivalue:(long)(n).value.rvalue)
 #define num_rvalue(n)       (!n.is_fixnum?(n).value.rvalue:(double)(n).value.ivalue)
@@ -719,31 +718,30 @@ static pointer reserve_cells(scheme *sc, int n) {
 static pointer get_consecutive_cells(scheme *sc, int n) {
   pointer x;
 
-  if(sc->no_memory) {
-    return sc->sink;
-  }
+  if (sc->no_memory) { return sc->sink; }
 
   /* Are there any cells available? */
   x=find_consecutive_cells(sc,n);
-  if (x == sc->NIL) {
-    /* If not, try gc'ing some */
-    gc(sc, sc->NIL, sc->NIL);
-    x=find_consecutive_cells(sc,n);
-    if (x == sc->NIL) {
-      /* If there still aren't, try getting more heap */
-      if (!alloc_cellseg(sc,1)) {
-        sc->no_memory=1;
-        return sc->sink;
-      }
-    }
-    x=find_consecutive_cells(sc,n);
-    if (x == sc->NIL) {
-      /* If all fail, report failure */
+  if (x != sc->NIL) { return x; }
+
+  /* If not, try gc'ing some */
+  gc(sc, sc->NIL, sc->NIL);
+  x=find_consecutive_cells(sc,n);
+  if (x != sc->NIL) { return x; }
+
+  /* If there still aren't, try getting more heap */
+  if (!alloc_cellseg(sc,1))
+    {
       sc->no_memory=1;
       return sc->sink;
     }
-  }
-  return (x);
+
+  x=find_consecutive_cells(sc,n);
+  if (x != sc->NIL) { return x; }
+
+  /* If all fail, report failure */
+  sc->no_memory=1;
+  return sc->sink;
 }
 
 static int count_consecutive_cells(pointer x, int needed) {
@@ -907,7 +905,7 @@ INTERFACE pointer mk_character(scheme *sc, gunichar c) {
 
   typeflag(x) = (T_CHARACTER | T_ATOM);
   ivalue_unchecked(x)= c;
-  set_integer(x);
+  set_num_integer(x);
   return (x);
 }
 
@@ -917,7 +915,7 @@ INTERFACE pointer mk_integer(scheme *sc, long num) {
 
   typeflag(x) = (T_NUMBER | T_ATOM);
   ivalue_unchecked(x)= num;
-  set_integer(x);
+  set_num_integer(x);
   return (x);
 }
 
@@ -926,7 +924,7 @@ INTERFACE pointer mk_real(scheme *sc, double n) {
 
   typeflag(x) = (T_NUMBER | T_ATOM);
   rvalue_unchecked(x)= n;
-  set_real(x);
+  set_num_real(x);
   return (x);
 }
 
@@ -1014,7 +1012,7 @@ INTERFACE pointer mk_counted_string(scheme *sc, const char *str, int len) {
      return (x);
 }
 
-static pointer mk_empty_string(scheme *sc, int len, gunichar fill) {
+INTERFACE pointer mk_empty_string(scheme *sc, int len, gunichar fill) {
      pointer x = get_cell(sc, sc->NIL, sc->NIL);
 
      strvalue(x) = store_string(sc,len,0,fill);
@@ -1027,7 +1025,7 @@ INTERFACE static pointer mk_vector(scheme *sc, int len) {
      pointer x=get_consecutive_cells(sc,len/2+len%2+1);
      typeflag(x) = (T_VECTOR | T_ATOM);
      ivalue_unchecked(x)=len;
-     set_integer(x);
+     set_num_integer(x);
      fill_vector(x,sc->NIL);
      return x;
 }
@@ -1959,7 +1957,7 @@ static void atom2str(scheme *sc, pointer l, int f, char **pp, int *plen) {
           strcpy(p, "#<PORT>");
      } else if (is_number(l)) {
           p = sc->strbuff;
-          if(is_integer(l)) {
+          if(num_is_integer(l)) {
                sprintf(p, "%ld", ivalue_unchecked(l));
           } else {
                g_ascii_formatd (p, sizeof (sc->strbuff), "%.10g",
@@ -2107,17 +2105,18 @@ static pointer append(scheme *sc, pointer a, pointer b) {
 }
 
 /* equivalence of atoms */
-static int eqv(pointer a, pointer b) {
+int eqv(pointer a, pointer b) {
      if (is_string(a)) {
           if (is_string(b))
                return (strvalue(a) == strvalue(b));
           else
                return (0);
      } else if (is_number(a)) {
-          if (is_number(b))
-               return num_eq(nvalue(a),nvalue(b));
-          else
-               return (0);
+          if (is_number(b)) {
+               if (num_is_integer(a) == num_is_integer(b))
+                    return num_eq(nvalue(a),nvalue(b));
+          }
+          return (0);
      } else if (is_character(a)) {
           if (is_character(b))
                return charvalue(a)==charvalue(b);
@@ -2472,7 +2471,8 @@ static pointer opexe_0(scheme *sc, enum scheme_opcodes op) {
           if (!file_push(sc,strvalue(car(sc->args)))) {
                Error_1(sc,"unable to open", car(sc->args));
           }
-          s_goto(sc,OP_T0LVL);
+          else
+            { s_retbool(1); }
 
      case OP_T0LVL: /* top level */
           if(file_interactive(sc)) {
@@ -2756,6 +2756,9 @@ static pointer opexe_0(scheme *sc, enum scheme_opcodes op) {
      case OP_LET1:       /* let (calculate parameters) */
           sc->args = cons(sc, sc->value, sc->args);
           if (is_pair(sc->code)) { /* continue */
+               if (!is_pair(car(sc->code)) || !is_pair(cdar(sc->code))) {
+                    Error_1(sc,"Bad syntax of binding spec in let :",car(sc->code));
+               }
                s_save(sc,OP_LET1, sc->args, cdr(sc->code));
                sc->code = cadar(sc->code);
                sc->args = sc->NIL;
@@ -2793,6 +2796,9 @@ static pointer opexe_0(scheme *sc, enum scheme_opcodes op) {
                new_frame_in_env(sc, sc->envir);
                sc->code = cdr(sc->code);
                s_goto(sc,OP_BEGIN);
+          }
+          if(!is_pair(car(sc->code)) || !is_pair(caar(sc->code)) || !is_pair(cdaar(sc->code))) {
+               Error_1(sc,"Bad syntax of binding spec in let* :",car(sc->code));
           }
           s_save(sc,OP_LET1AST, cdr(sc->code), car(sc->code));
           sc->code = cadaar(sc->code);
@@ -2836,6 +2842,9 @@ static pointer opexe_1(scheme *sc, enum scheme_opcodes op) {
      case OP_LET1REC:    /* letrec (calculate parameters) */
           sc->args = cons(sc, sc->value, sc->args);
           if (is_pair(sc->code)) { /* continue */
+               if (!is_pair(car(sc->code)) || !is_pair(cdar(sc->code))) {
+                    Error_1(sc,"Bad syntax of binding spec in letrec :",car(sc->code));
+               }
                s_save(sc,OP_LET1REC, sc->args, cdr(sc->code));
                sc->code = cadar(sc->code);
                sc->args = sc->NIL;
@@ -3040,7 +3049,7 @@ static pointer opexe_2(scheme *sc, enum scheme_opcodes op) {
 #if USE_MATH
      case OP_INEX2EX:    /* inexact->exact */
           x=car(sc->args);
-          if(is_integer(x)) {
+          if(num_is_integer(x)) {
                s_return(sc,x);
           } else if(modf(rvalue_unchecked(x),&dd)==0.0) {
                s_return(sc,mk_integer(sc,ivalue(x)));
@@ -3520,7 +3529,7 @@ static int is_list(scheme *sc, pointer a) {
         }
 }
 
-static int list_length(scheme *sc, pointer a) {
+int list_length(scheme *sc, pointer a) {
     int i=0;
         pointer slow, fast;
 
@@ -4217,11 +4226,9 @@ typedef pointer (*dispatch_func)(scheme *, enum scheme_opcodes);
 
 typedef int (*test_predicate)(pointer);
 static int is_any(pointer p) { return 1;}
-static int is_num_integer(pointer p) {
-  return is_number(p) && ((p)->_object._number.is_fixnum);
-}
+
 static int is_nonneg(pointer p) {
-  return is_num_integer(p) && ivalue(p)>=0;
+  return is_integer(p) && ivalue(p)>=0;
 }
 
 /* Correspond carefully with following defines! */
@@ -4242,8 +4249,8 @@ static struct {
   {is_character, "character"},
   {is_vector, "vector"},
   {is_number, "number"},
-  {is_num_integer, "integer"},
-  {is_nonneg, "non-negative integer"},
+  {is_integer, "integer"},
+  {is_nonneg, "non-negative integer"}
 };
 
 #define TST_NONE 0
@@ -4391,7 +4398,7 @@ static pointer mk_proc(scheme *sc, enum scheme_opcodes op) {
      y = get_cell(sc, sc->NIL, sc->NIL);
      typeflag(y) = (T_PROC | T_ATOM);
      ivalue_unchecked(y) = (long) op;
-     set_integer(y);
+     set_num_integer(y);
      return y;
 }
 
@@ -4730,27 +4737,38 @@ void scheme_define(scheme *sc, pointer envir, pointer symbol, pointer value) {
 }
 
 #if !STANDALONE
-void scheme_apply0(scheme *sc, const char *procname) {
-     pointer carx=mk_symbol(sc,procname);
-     pointer cdrx=sc->NIL;
+pointer scheme_apply0(scheme *sc, const char *procname)
+{ return scheme_eval(sc, cons(sc,mk_symbol(sc,procname),sc->NIL)); }
 
-     dump_stack_reset(sc);
-     sc->envir = sc->global_env;
-     sc->code = cons(sc,carx,cdrx);
-     sc->interactive_repl=0;
-     sc->retcode=0;
-     Eval_Cycle(sc,OP_EVAL);
-     }
-
-void scheme_call(scheme *sc, pointer func, pointer args) {
-   dump_stack_reset(sc);
-   sc->envir = sc->global_env;
-   sc->args = args;
-   sc->code = func;
-   sc->interactive_repl =0;
-   sc->retcode = 0;
-   Eval_Cycle(sc, OP_APPLY);
+/* "func" and "args" are assumed to be already eval'ed. */
+pointer scheme_call(scheme *sc, pointer func, pointer args)
+{
+  int old_repl = sc->interactive_repl;
+  sc->interactive_repl = 0;
+  s_save(sc,OP_QUIT,sc->NIL,sc->NIL);
+  sc->envir = sc->global_env;
+  sc->args = args;
+  sc->code = func;
+  sc->retcode = 0;
+  Eval_Cycle(sc, OP_APPLY);
+  sc->interactive_repl = old_repl;
+  return sc->value;
 }
+
+pointer scheme_eval(scheme *sc, pointer obj)
+{
+  int old_repl = sc->interactive_repl;
+  sc->interactive_repl = 0;
+  s_save(sc,OP_QUIT,sc->NIL,sc->NIL);
+  sc->args = sc->NIL;
+  sc->code = obj;
+  sc->retcode = 0;
+  Eval_Cycle(sc, OP_EVAL);
+  sc->interactive_repl = old_repl;
+  return sc->value;
+}
+
+
 #endif
 
 /* ========== Main ========== */
