@@ -1,48 +1,46 @@
-# Vietnamese translation for GIMP Script-FU.
-# Copyright © 2006 Gnome i18n Project for Vietnamese.
-# T.M.Thanh <tmthanh@yahoo.com>, 2002.
-# Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
-# 
+# Vietnamese translation for GiMP Tiny Fu
+# Copyright © 2008 GNOME i18n Project for Vietnamese.
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2008.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu Gnome HEAD\n"
+"Project-Id-Version: gimp-tiny-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-01 15:00-0400\n"
-"PO-Revision-Date: 2006-08-23 20:30+0930\n"
+"POT-Creation-Date: 2007-11-02 02:16+0000\n"
+"PO-Revision-Date: 2008-06-15 17:54+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
-"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: LocFactoryEditor 1.6fc1\n"
+"X-Generator: LocFactoryEditor 1.7b3\n"
 
-#: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
+#: ../tiny-fu/tiny-fu-console.c:133
+#: ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
 msgstr "Bàn giao tiếp Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:196
 msgid "Welcome to TinyScheme"
-msgstr ""
+msgstr "Chúc mừng dùng TinyScheme"
 
 #: ../tiny-fu/tiny-fu-console.c:202
-#, fuzzy
 msgid "Interactive Scheme Development"
-msgstr "Bàn giao tiếp tương tác để phát triển Script-Fu"
+msgstr "Phát triển lược đồ tương tác"
 
 #: ../tiny-fu/tiny-fu-console.c:238
 msgid "_Browse..."
 msgstr "_Duyệt..."
 
 #: ../tiny-fu/tiny-fu-console.c:296
-#, fuzzy
 msgid "Save Script-Fu Console Output"
-msgstr "Bàn giao tiếp Script-Fu"
+msgstr "Lưu kết xuất bàn giao tiếp Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:343
 #, c-format
 msgid "Could not open '%s' for writing: %s"
-msgstr ""
+msgstr "Không thể mở « %s » để ghi: %s"
 
 #: ../tiny-fu/tiny-fu-console.c:372
 msgid "Script-Fu Procedure Browser"
@@ -50,26 +48,26 @@ msgstr "Bộ duyệt thủ tục Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:716
 msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-msgstr "Chế độ định giá Script-Fu cho phép chỉ việc gọi không tương tác"
+msgstr "Chế độ định giá Script-Fu chỉ cho phép cuộc gọi không tương tác"
 
 #: ../tiny-fu/tiny-fu-interface.c:191
 msgid "Script-Fu cannot process two scripts at the same time."
-msgstr "Script-Fu không thể xử lý hai tập lệnh cùng lúc."
+msgstr "Script-Fu không thể xử lý đồng thời hai văn lệnh."
 
 #: ../tiny-fu/tiny-fu-interface.c:193
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr "Bạn đang chạy tập lệnh « %s »."
+msgstr "Bạn đang chạy văn lệnh « %s »."
 
 #: ../tiny-fu/tiny-fu-interface.c:238
 #, c-format
 msgid "Script-Fu: %s"
 msgstr "Script-Fu: %s"
 
-#. we add a colon after the label;
-#. some languages want an extra space here
 #: ../tiny-fu/tiny-fu-interface.c:300
 #, c-format
+#. we add a colon after the label;
+#. some languages want an extra space here
 msgid "%s:"
 msgstr "%s:"
 
@@ -94,20 +92,19 @@ msgid "Script-Fu Palette Selection"
 msgstr "Chọn bảng chọn của Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:492
-#, fuzzy
 msgid "Script-Fu Pattern Selection"
-msgstr "Chọn mẫu của Script-Fu"
+msgstr "Chọn câu mẫu của Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:501
 msgid "Script-Fu Gradient Selection"
-msgstr "Chọn độ dốc của Script-Fu"
+msgstr "Chọn dải màu của Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:510
 msgid "Script-Fu Brush Selection"
 msgstr "Chọn bút vẽ của Script-Fu"
 
 #: ../tiny-fu/tiny-fu-scripts.c:658
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error while executing\n"
 "%s\n"
@@ -116,6 +113,7 @@ msgid ""
 msgstr ""
 "Gặp lỗi khi thực thi\n"
 "%s\n"
+"\n"
 "%s"
 
 #: ../tiny-fu/tiny-fu-server.c:712
@@ -132,7 +130,7 @@ msgstr "Cổng trình phục vụ :"
 
 #: ../tiny-fu/tiny-fu-server.c:751
 msgid "Server logfile:"
-msgstr "Tập tin bản ghi của máy phục vụ :"
+msgstr "Tập tin ghi lưu trình phục vụ :"
 
 #: ../tiny-fu/tiny-fu.c:110
 msgid "Interactive console for Script-Fu development"
@@ -144,7 +142,7 @@ msgstr "_Bàn giao tiếp Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:140
 msgid "Server for remote Script-Fu operation"
-msgstr "Máy phục vụ để thao tác Script-Fu từ xa"
+msgstr "Trình phục vụ để thao tác Script-Fu từ xa"
 
 #: ../tiny-fu/tiny-fu.c:145
 msgid "_Start Server..."
@@ -152,7 +150,7 @@ msgstr "_Khởi chạy trình phục vụ"
 
 #: ../tiny-fu/tiny-fu.c:301
 msgid "_GIMP Online"
-msgstr "_GIMP trực tuyến"
+msgstr "_GiMP trực tuyến"
 
 #: ../tiny-fu/tiny-fu.c:302
 msgid "_User Manual"
@@ -176,20 +174,19 @@ msgstr "_Linh tinh"
 
 #: ../tiny-fu/tiny-fu.c:313
 msgid "_Patterns"
-msgstr "_Mẫu"
+msgstr "_Câu mẫu"
 
 #: ../tiny-fu/tiny-fu.c:315
 msgid "_Test"
-msgstr "_Thử ra"
+msgstr "_Thử"
 
 #: ../tiny-fu/tiny-fu.c:317
-#, fuzzy
 msgid "_Utilities"
-msgstr "_Tiện ích"
+msgstr "T_iện ích"
 
 #: ../tiny-fu/tiny-fu.c:319
 msgid "_Web Page Themes"
-msgstr "Sắc thái trang _Mạng"
+msgstr "Sắc thái trang _Web"
 
 #: ../tiny-fu/tiny-fu.c:321
 msgid "_Alien Glow"
@@ -205,46 +202,43 @@ msgstr "Gimp.Org _cổ điển"
 
 #: ../tiny-fu/tiny-fu.c:328
 msgid "Alpha to _Logo"
-msgstr "Anfa đến _Biểu hình"
+msgstr "Alpha tới _Biểu hình"
 
 #: ../tiny-fu/tiny-fu.c:330
 msgid "An_imation"
-msgstr ""
+msgstr "_Hoạt ảnh"
 
 #: ../tiny-fu/tiny-fu.c:332
 msgid "_Animators"
-msgstr ""
+msgstr "Bộ h_oạt ảnh"
 
 #: ../tiny-fu/tiny-fu.c:334
 msgid "_Artistic"
-msgstr ""
+msgstr "Kiểu nghệ _sĩ"
 
 #: ../tiny-fu/tiny-fu.c:336
-#, fuzzy
 msgid "_Blur"
-msgstr "Mờ X"
+msgstr "_Mờ"
 
 #: ../tiny-fu/tiny-fu.c:338
 msgid "_Decor"
-msgstr "T_rang trí"
+msgstr "_Trang trí"
 
 #: ../tiny-fu/tiny-fu.c:340
-#, fuzzy
 msgid "_Effects"
-msgstr "Hiệu ứng _Xach..."
+msgstr "_Hiệu ứng"
 
 #: ../tiny-fu/tiny-fu.c:342
 msgid "En_hance"
-msgstr ""
+msgstr "Tăn_g cường"
 
 #: ../tiny-fu/tiny-fu.c:344
 msgid "_Light and Shadow"
-msgstr ""
+msgstr "_Sáng và Bóng"
 
 #: ../tiny-fu/tiny-fu.c:346
-#, fuzzy
 msgid "S_hadow"
-msgstr "Bóng"
+msgstr "_Bóng"
 
 #: ../tiny-fu/tiny-fu.c:348
 msgid "_Render"
@@ -252,190 +246,270 @@ msgstr "_Vẽ"
 
 #: ../tiny-fu/tiny-fu.c:350
 msgid "_Alchemy"
-msgstr ""
+msgstr "_Giả kim"
 
 #: ../tiny-fu/tiny-fu.c:353
 msgid "Re-read all available Script-Fu scripts"
-msgstr "Đọc lại mọi tập lệnh Script-Fu sẵn sàng"
+msgstr "Đọc lại tất cả các văn lệnh Script-Fu sẵn sàng"
 
 #: ../tiny-fu/tiny-fu.c:358
 msgid "_Refresh Scripts"
-msgstr "_Cập nhật tập lệnh"
+msgstr "_Cập nhật văn lệnh"
 
 #: ../tiny-fu/tiny-fu.c:381
 msgid ""
 "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
 "Please close all Script-Fu windows and try again."
 msgstr ""
-"Không cho phép bạn sử dụng lệnh « Cập nhật tập lệnh » khi có một hộp thoại "
-"Script-Fu được mở. Háy đóng mọi cửa sổ Script-Fu, rồi thử lại."
+"Không cho phép bạn sử dụng lệnh « Cập nhật văn lệnh » khi có một hộp thoại "
+"Script-Fu còn mở. Háy đóng mọi cửa sổ Script-Fu, sau đó thử lại."
 
 #: ../scripts/3d-outline.scm.h:1
 msgid "3D _Outline..."
-msgstr "_Phác họa ba chiều..."
+msgstr "_Phác họa 3D..."
 
 #: ../scripts/3d-outline.scm.h:2
 msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Tia cảnh mờ (lớp anfa) sơ đồ mụn"
+msgstr "Bán kính mờ (lớp alpha) sơ đồ mụn"
 
 #: ../scripts/3d-outline.scm.h:3
 msgid "Create a logo with outlined text and a drop shadow"
-msgstr ""
+msgstr "Tạo một biểu hình với chữ nét ngoài và một bóng thả"
 
-#: ../scripts/3d-outline.scm.h:4 ../scripts/glossy.scm.h:6
+#: ../scripts/3d-outline.scm.h:4
+#: ../scripts/glossy.scm.h:6
 msgid "Default bumpmap settings"
 msgstr "Thiết lập sơ đồ mụn mặc định"
 
-#: ../scripts/3d-outline.scm.h:5 ../scripts/alien-glow-button.scm.h:5
-#: ../scripts/alien-glow-logo.scm.h:4 ../scripts/alien-neon-logo.scm.h:6
-#: ../scripts/basic1-logo.scm.h:4 ../scripts/basic2-logo.scm.h:5
-#: ../scripts/beveled-button.scm.h:3 ../scripts/beveled-pattern-button.scm.h:3
-#: ../scripts/beveled-pattern-heading.scm.h:2 ../scripts/blended-logo.scm.h:11
-#: ../scripts/bovinated-logo.scm.h:6 ../scripts/carved-logo.scm.h:5
-#: ../scripts/chalk.scm.h:5 ../scripts/chip-away.scm.h:8
-#: ../scripts/chrome-logo.scm.h:6 ../scripts/comic-logo.scm.h:5
-#: ../scripts/coolmetal-logo.scm.h:6 ../scripts/crystal-logo.scm.h:6
-#: ../scripts/frosty-logo.scm.h:5 ../scripts/gimp-headers.scm.h:5
-#: ../scripts/gimp-labels.scm.h:6 ../scripts/glossy.scm.h:7
-#: ../scripts/glowing-logo.scm.h:5 ../scripts/gradient-bevel-logo.scm.h:7
-#: ../scripts/i26-gunya2.scm.h:2 ../scripts/neon-logo.scm.h:6
-#: ../scripts/news-text.scm.h:7 ../scripts/pupi-button.scm.h:3
-#: ../scripts/slide.scm.h:2 ../scripts/sota-chrome-logo.scm.h:7
-#: ../scripts/speed-text.scm.h:5 ../scripts/starburst-logo.scm.h:6
-#: ../scripts/starscape-logo.scm.h:4 ../scripts/t-o-p-logo.scm.h:8
-#: ../scripts/text-circle.scm.h:4 ../scripts/textured-logo.scm.h:6
+#: ../scripts/3d-outline.scm.h:5
+#: ../scripts/alien-glow-button.scm.h:5
+#: ../scripts/alien-glow-logo.scm.h:4
+#: ../scripts/alien-neon-logo.scm.h:6
+#: ../scripts/basic1-logo.scm.h:4
+#: ../scripts/basic2-logo.scm.h:5
+#: ../scripts/beveled-button.scm.h:3
+#: ../scripts/beveled-pattern-button.scm.h:3
+#: ../scripts/beveled-pattern-heading.scm.h:2
+#: ../scripts/blended-logo.scm.h:11
+#: ../scripts/bovinated-logo.scm.h:6
+#: ../scripts/carved-logo.scm.h:5
+#: ../scripts/chalk.scm.h:5
+#: ../scripts/chip-away.scm.h:8
+#: ../scripts/chrome-logo.scm.h:6
+#: ../scripts/comic-logo.scm.h:5
+#: ../scripts/coolmetal-logo.scm.h:6
+#: ../scripts/crystal-logo.scm.h:6
+#: ../scripts/frosty-logo.scm.h:5
+#: ../scripts/gimp-headers.scm.h:5
+#: ../scripts/gimp-labels.scm.h:6
+#: ../scripts/glossy.scm.h:7
+#: ../scripts/glowing-logo.scm.h:5
+#: ../scripts/gradient-bevel-logo.scm.h:7
+#: ../scripts/i26-gunya2.scm.h:2
+#: ../scripts/neon-logo.scm.h:6
+#: ../scripts/news-text.scm.h:7
+#: ../scripts/pupi-button.scm.h:3
+#: ../scripts/slide.scm.h:2
+#: ../scripts/sota-chrome-logo.scm.h:7
+#: ../scripts/speed-text.scm.h:5
+#: ../scripts/starburst-logo.scm.h:6
+#: ../scripts/starscape-logo.scm.h:4
+#: ../scripts/t-o-p-logo.scm.h:8
+#: ../scripts/text-circle.scm.h:4
+#: ../scripts/textured-logo.scm.h:6
 #: ../scripts/title-header.scm.h:2
 msgid "Font"
-msgstr "Phông chữ"
+msgstr "Phông"
 
-#: ../scripts/3d-outline.scm.h:6 ../scripts/alien-glow-button.scm.h:6
-#: ../scripts/alien-glow-logo.scm.h:5 ../scripts/alien-neon-logo.scm.h:7
-#: ../scripts/basic1-logo.scm.h:5 ../scripts/basic2-logo.scm.h:6
-#: ../scripts/beveled-button.scm.h:4 ../scripts/beveled-pattern-button.scm.h:4
-#: ../scripts/beveled-pattern-heading.scm.h:3 ../scripts/blended-logo.scm.h:12
-#: ../scripts/bovinated-logo.scm.h:7 ../scripts/carved-logo.scm.h:6
-#: ../scripts/chalk.scm.h:6 ../scripts/chip-away.scm.h:9
-#: ../scripts/chrome-logo.scm.h:7 ../scripts/comic-logo.scm.h:6
-#: ../scripts/coolmetal-logo.scm.h:7 ../scripts/crystal-logo.scm.h:7
-#: ../scripts/frosty-logo.scm.h:6 ../scripts/gimp-headers.scm.h:6
-#: ../scripts/gimp-labels.scm.h:7 ../scripts/glossy.scm.h:8
-#: ../scripts/glowing-logo.scm.h:6 ../scripts/gradient-bevel-logo.scm.h:8
-#: ../scripts/i26-gunya2.scm.h:3 ../scripts/neon-logo.scm.h:7
-#: ../scripts/news-text.scm.h:8 ../scripts/pupi-button.scm.h:4
-#: ../scripts/sota-chrome-logo.scm.h:8 ../scripts/speed-text.scm.h:6
-#: ../scripts/starburst-logo.scm.h:7 ../scripts/starscape-logo.scm.h:5
-#: ../scripts/t-o-p-logo.scm.h:9 ../scripts/text-circle.scm.h:5
-#: ../scripts/textured-logo.scm.h:7 ../scripts/title-header.scm.h:3
+#: ../scripts/3d-outline.scm.h:6
+#: ../scripts/alien-glow-button.scm.h:6
+#: ../scripts/alien-glow-logo.scm.h:5
+#: ../scripts/alien-neon-logo.scm.h:7
+#: ../scripts/basic1-logo.scm.h:5
+#: ../scripts/basic2-logo.scm.h:6
+#: ../scripts/beveled-button.scm.h:4
+#: ../scripts/beveled-pattern-button.scm.h:4
+#: ../scripts/beveled-pattern-heading.scm.h:3
+#: ../scripts/blended-logo.scm.h:12
+#: ../scripts/bovinated-logo.scm.h:7
+#: ../scripts/carved-logo.scm.h:6
+#: ../scripts/chalk.scm.h:6
+#: ../scripts/chip-away.scm.h:9
+#: ../scripts/chrome-logo.scm.h:7
+#: ../scripts/comic-logo.scm.h:6
+#: ../scripts/coolmetal-logo.scm.h:7
+#: ../scripts/crystal-logo.scm.h:7
+#: ../scripts/frosty-logo.scm.h:6
+#: ../scripts/gimp-headers.scm.h:6
+#: ../scripts/gimp-labels.scm.h:7
+#: ../scripts/glossy.scm.h:8
+#: ../scripts/glowing-logo.scm.h:6
+#: ../scripts/gradient-bevel-logo.scm.h:8
+#: ../scripts/i26-gunya2.scm.h:3
+#: ../scripts/neon-logo.scm.h:7
+#: ../scripts/news-text.scm.h:8
+#: ../scripts/pupi-button.scm.h:4
+#: ../scripts/sota-chrome-logo.scm.h:8
+#: ../scripts/speed-text.scm.h:6
+#: ../scripts/starburst-logo.scm.h:7
+#: ../scripts/starscape-logo.scm.h:5
+#: ../scripts/t-o-p-logo.scm.h:9
+#: ../scripts/text-circle.scm.h:5
+#: ../scripts/textured-logo.scm.h:7
+#: ../scripts/title-header.scm.h:3
 msgid "Font size (pixels)"
-msgstr "Cỡ phông chữ (theo điểm ảnh)"
+msgstr "Kích cỡ phông (điểm ảnh)"
 
 #: ../scripts/3d-outline.scm.h:7
 msgid "Outline blur radius"
-msgstr "Tia cảnh mờ phác họa"
+msgstr "Bán kính mờ nét ngoài"
 
 #: ../scripts/3d-outline.scm.h:8
 msgid ""
 "Outline the selected region (or alpha) with a pattern and add a drop shadow"
 msgstr ""
+"Nét ngoài vùng được chọn (hay alpha) với một câu mẫu và thêm một bóng thả"
 
-#: ../scripts/3d-outline.scm.h:9 ../scripts/beveled-pattern-arrow.scm.h:5
+#: ../scripts/3d-outline.scm.h:9
+#: ../scripts/beveled-pattern-arrow.scm.h:5
 #: ../scripts/beveled-pattern-bullet.scm.h:3
 #: ../scripts/beveled-pattern-button.scm.h:5
 #: ../scripts/beveled-pattern-heading.scm.h:5
-#: ../scripts/beveled-pattern-hrule.scm.h:3 ../scripts/chip-away.scm.h:13
+#: ../scripts/beveled-pattern-hrule.scm.h:3
+#: ../scripts/chip-away.scm.h:13
 #: ../scripts/textured-logo.scm.h:11
 msgid "Pattern"
-msgstr "Mẫu"
+msgstr "Câu mẫu"
 
-#: ../scripts/3d-outline.scm.h:10 ../scripts/glossy.scm.h:16
+#: ../scripts/3d-outline.scm.h:10
+#: ../scripts/glossy.scm.h:16
 #: ../scripts/round-corners.scm.h:6
 msgid "Shadow X offset"
-msgstr "Hiệu số X bóng"
+msgstr "Khoảng bù X bóng"
 
-#: ../scripts/3d-outline.scm.h:11 ../scripts/glossy.scm.h:17
+#: ../scripts/3d-outline.scm.h:11
+#: ../scripts/glossy.scm.h:17
 #: ../scripts/round-corners.scm.h:7
 msgid "Shadow Y offset"
-msgstr "Hiệu số Y bóng"
+msgstr "Khoảng bù Y bóng"
 
 #: ../scripts/3d-outline.scm.h:12
 msgid "Shadow blur radius"
-msgstr "Tia cảnh mờ bóng"
+msgstr "Bán kính mờ bóng"
 
-#: ../scripts/3d-outline.scm.h:13 ../scripts/alien-glow-button.scm.h:10
-#: ../scripts/alien-glow-logo.scm.h:8 ../scripts/alien-neon-logo.scm.h:10
-#: ../scripts/basic1-logo.scm.h:6 ../scripts/basic2-logo.scm.h:7
-#: ../scripts/beveled-button.scm.h:9 ../scripts/beveled-pattern-button.scm.h:7
-#: ../scripts/beveled-pattern-heading.scm.h:6 ../scripts/blended-logo.scm.h:17
-#: ../scripts/bovinated-logo.scm.h:10 ../scripts/carved-logo.scm.h:8
-#: ../scripts/chalk.scm.h:7 ../scripts/chip-away.scm.h:14
-#: ../scripts/chrome-logo.scm.h:9 ../scripts/comic-logo.scm.h:11
-#: ../scripts/coolmetal-logo.scm.h:10 ../scripts/crystal-logo.scm.h:8
-#: ../scripts/frosty-logo.scm.h:7 ../scripts/gimp-headers.scm.h:13
-#: ../scripts/gimp-labels.scm.h:17 ../scripts/glossy.scm.h:18
-#: ../scripts/glowing-logo.scm.h:8 ../scripts/gradient-bevel-logo.scm.h:10
-#: ../scripts/i26-gunya2.scm.h:7 ../scripts/neon-logo.scm.h:10
-#: ../scripts/news-text.scm.h:10 ../scripts/pupi-button.scm.h:13
-#: ../scripts/slide.scm.h:5 ../scripts/sota-chrome-logo.scm.h:11
-#: ../scripts/speed-text.scm.h:8 ../scripts/starburst-logo.scm.h:9
-#: ../scripts/starscape-logo.scm.h:8 ../scripts/t-o-p-logo.scm.h:11
-#: ../scripts/text-circle.scm.h:8 ../scripts/textured-logo.scm.h:14
+#: ../scripts/3d-outline.scm.h:13
+#: ../scripts/alien-glow-button.scm.h:10
+#: ../scripts/alien-glow-logo.scm.h:8
+#: ../scripts/alien-neon-logo.scm.h:10
+#: ../scripts/basic1-logo.scm.h:6
+#: ../scripts/basic2-logo.scm.h:7
+#: ../scripts/beveled-button.scm.h:9
+#: ../scripts/beveled-pattern-button.scm.h:7
+#: ../scripts/beveled-pattern-heading.scm.h:6
+#: ../scripts/blended-logo.scm.h:17
+#: ../scripts/bovinated-logo.scm.h:10
+#: ../scripts/carved-logo.scm.h:8
+#: ../scripts/chalk.scm.h:7
+#: ../scripts/chip-away.scm.h:14
+#: ../scripts/chrome-logo.scm.h:9
+#: ../scripts/comic-logo.scm.h:11
+#: ../scripts/coolmetal-logo.scm.h:10
+#: ../scripts/crystal-logo.scm.h:8
+#: ../scripts/frosty-logo.scm.h:7
+#: ../scripts/gimp-headers.scm.h:13
+#: ../scripts/gimp-labels.scm.h:17
+#: ../scripts/glossy.scm.h:18
+#: ../scripts/glowing-logo.scm.h:8
+#: ../scripts/gradient-bevel-logo.scm.h:10
+#: ../scripts/i26-gunya2.scm.h:7
+#: ../scripts/neon-logo.scm.h:10
+#: ../scripts/news-text.scm.h:10
+#: ../scripts/pupi-button.scm.h:13
+#: ../scripts/slide.scm.h:5
+#: ../scripts/sota-chrome-logo.scm.h:11
+#: ../scripts/speed-text.scm.h:8
+#: ../scripts/starburst-logo.scm.h:9
+#: ../scripts/starscape-logo.scm.h:8
+#: ../scripts/t-o-p-logo.scm.h:11
+#: ../scripts/text-circle.scm.h:8
+#: ../scripts/textured-logo.scm.h:14
 #: ../scripts/title-header.scm.h:5
 msgid "Text"
-msgstr "Chữ"
+msgstr "Văn bản"
 
 #: ../scripts/3dTruchet.scm.h:1
 msgid "3_D Truchet..."
-msgstr "Tợ-ru-sê (lát) _ba chiều..."
+msgstr "Tợ-ru-sê 3_D..."
 
-#: ../scripts/3dTruchet.scm.h:2 ../scripts/alien-glow-arrow.scm.h:1
-#: ../scripts/alien-glow-bar.scm.h:1 ../scripts/alien-glow-bullet.scm.h:1
-#: ../scripts/alien-glow-button.scm.h:2 ../scripts/alien-neon-logo.scm.h:3
-#: ../scripts/basic1-logo.scm.h:2 ../scripts/basic2-logo.scm.h:3
-#: ../scripts/blended-logo.scm.h:2 ../scripts/bovinated-logo.scm.h:3
-#: ../scripts/chalk.scm.h:1 ../scripts/chrome-logo.scm.h:3
-#: ../scripts/comic-logo.scm.h:2 ../scripts/coolmetal-logo.scm.h:2
-#: ../scripts/frosty-logo.scm.h:2 ../scripts/gimp-labels.scm.h:1
-#: ../scripts/glossy.scm.h:2 ../scripts/glowing-logo.scm.h:2
-#: ../scripts/gradient-bevel-logo.scm.h:2 ../scripts/neon-logo.scm.h:1
-#: ../scripts/news-text.scm.h:1 ../scripts/speed-text.scm.h:1
-#: ../scripts/sphere.scm.h:1 ../scripts/starburst-logo.scm.h:1
-#: ../scripts/swirltile.scm.h:2 ../scripts/t-o-p-logo.scm.h:2
-#: ../scripts/textured-logo.scm.h:1 ../scripts/truchet.scm.h:1
+#: ../scripts/3dTruchet.scm.h:2
+#: ../scripts/alien-glow-arrow.scm.h:1
+#: ../scripts/alien-glow-bar.scm.h:1
+#: ../scripts/alien-glow-bullet.scm.h:1
+#: ../scripts/alien-glow-button.scm.h:2
+#: ../scripts/alien-neon-logo.scm.h:3
+#: ../scripts/basic1-logo.scm.h:2
+#: ../scripts/basic2-logo.scm.h:3
+#: ../scripts/blended-logo.scm.h:2
+#: ../scripts/bovinated-logo.scm.h:3
+#: ../scripts/chalk.scm.h:1
+#: ../scripts/chrome-logo.scm.h:3
+#: ../scripts/comic-logo.scm.h:2
+#: ../scripts/coolmetal-logo.scm.h:2
+#: ../scripts/frosty-logo.scm.h:2
+#: ../scripts/gimp-labels.scm.h:1
+#: ../scripts/glossy.scm.h:2
+#: ../scripts/glowing-logo.scm.h:2
+#: ../scripts/gradient-bevel-logo.scm.h:2
+#: ../scripts/neon-logo.scm.h:1
+#: ../scripts/news-text.scm.h:1
+#: ../scripts/speed-text.scm.h:1
+#: ../scripts/sphere.scm.h:1
+#: ../scripts/starburst-logo.scm.h:1
+#: ../scripts/swirltile.scm.h:2
+#: ../scripts/t-o-p-logo.scm.h:2
+#: ../scripts/textured-logo.scm.h:1
+#: ../scripts/truchet.scm.h:1
 msgid "Background color"
 msgstr "Màu nền"
 
-#: ../scripts/3dTruchet.scm.h:3 ../scripts/truchet.scm.h:2
+#: ../scripts/3dTruchet.scm.h:3
+#: ../scripts/truchet.scm.h:2
 msgid "Block size"
-msgstr "Cỡ khối"
+msgstr "Kích cỡ khối"
 
 #: ../scripts/3dTruchet.scm.h:4
 msgid "Create an image filled with a 3D Truchet pattern"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một câu mẫu Tợ-ru-sê ba chiều"
 
-#: ../scripts/3dTruchet.scm.h:5 ../scripts/blended-logo.scm.h:7
+#: ../scripts/3dTruchet.scm.h:5
+#: ../scripts/blended-logo.scm.h:7
 msgid "End blend"
 msgstr "Kết thúc pha trộn"
 
-#: ../scripts/3dTruchet.scm.h:6 ../scripts/truchet.scm.h:5
+#: ../scripts/3dTruchet.scm.h:6
+#: ../scripts/truchet.scm.h:5
 msgid "Number of X tiles"
-msgstr "Số đá lạt X"
+msgstr "Số ngói X"
 
-#: ../scripts/3dTruchet.scm.h:7 ../scripts/truchet.scm.h:6
+#: ../scripts/3dTruchet.scm.h:7
+#: ../scripts/truchet.scm.h:6
 msgid "Number of Y tiles"
-msgstr "Số đá lát Y"
+msgstr "Số ngói Y"
 
-#: ../scripts/3dTruchet.scm.h:8 ../scripts/blended-logo.scm.h:16
+#: ../scripts/3dTruchet.scm.h:8
+#: ../scripts/blended-logo.scm.h:16
 msgid "Start blend"
-msgstr "Chạy pha trộn"
+msgstr "Bắt đầu pha trộn"
 
 #: ../scripts/3dTruchet.scm.h:9
 msgid "Supersample"
 msgstr "Siêu mẫu"
 
-#: ../scripts/3dTruchet.scm.h:10 ../scripts/add-bevel.scm.h:4
+#: ../scripts/3dTruchet.scm.h:10
+#: ../scripts/add-bevel.scm.h:4
 #: ../scripts/truchet.scm.h:8
 msgid "Thickness"
-msgstr "Độ dày"
+msgstr "Dày"
 
 #: ../scripts/add-bevel.scm.h:1
 msgid "Add B_evel..."
@@ -443,15 +517,19 @@ msgstr "Thêm _góc xiên..."
 
 #: ../scripts/add-bevel.scm.h:2
 msgid "Add a beveled border to an image"
-msgstr ""
+msgstr "Thêm một viền góc xiên vào một ảnh"
 
-#: ../scripts/add-bevel.scm.h:3 ../scripts/chip-away.scm.h:12
+#: ../scripts/add-bevel.scm.h:3
+#: ../scripts/chip-away.scm.h:12
 msgid "Keep bump layer"
 msgstr "Giữ lớp mụn"
 
-#: ../scripts/add-bevel.scm.h:5 ../scripts/fuzzyborder.scm.h:10
-#: ../scripts/old-photo.scm.h:6 ../scripts/round-corners.scm.h:8
-#: ../scripts/slide.scm.h:6 ../scripts/spinning-globe.scm.h:6
+#: ../scripts/add-bevel.scm.h:5
+#: ../scripts/fuzzyborder.scm.h:10
+#: ../scripts/old-photo.scm.h:6
+#: ../scripts/round-corners.scm.h:8
+#: ../scripts/slide.scm.h:6
+#: ../scripts/spinning-globe.scm.h:6
 msgid "Work on copy"
 msgstr "Thao tác bản sao"
 
@@ -461,7 +539,7 @@ msgstr "Thêm _viền..."
 
 #: ../scripts/addborder.scm.h:2
 msgid "Add a border around an image"
-msgstr ""
+msgstr "Thêm một viền chung quanh ảnh"
 
 #: ../scripts/addborder.scm.h:3
 msgid "Border X size"
@@ -481,23 +559,30 @@ msgstr "Giá trị Delta (δ) trên màu"
 
 #: ../scripts/alien-glow-arrow.scm.h:2
 msgid "Create an arrow graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "Tạo một ảnh mui tên với ánh sáng rực rỡ lạ, cho trang Web"
 
 #: ../scripts/alien-glow-arrow.scm.h:3
 #: ../scripts/beveled-pattern-arrow.scm.h:2
 msgid "Down"
 msgstr "Xuống"
 
-#: ../scripts/alien-glow-arrow.scm.h:4 ../scripts/alien-glow-bar.scm.h:5
-#: ../scripts/alien-glow-bullet.scm.h:3 ../scripts/alien-glow-button.scm.h:4
-#: ../scripts/camo.scm.h:5 ../scripts/fuzzyborder.scm.h:6
+#: ../scripts/alien-glow-arrow.scm.h:4
+#: ../scripts/alien-glow-bar.scm.h:5
+#: ../scripts/alien-glow-bullet.scm.h:3
+#: ../scripts/alien-glow-button.scm.h:4
+#: ../scripts/camo.scm.h:5
+#: ../scripts/fuzzyborder.scm.h:6
 msgid "Flatten image"
 msgstr "Làm phẳng ảnh"
 
-#: ../scripts/alien-glow-arrow.scm.h:5 ../scripts/alien-glow-bar.scm.h:6
-#: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/alien-glow-button.scm.h:7
-#: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
-#: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:8
+#: ../scripts/alien-glow-arrow.scm.h:5
+#: ../scripts/alien-glow-bar.scm.h:6
+#: ../scripts/alien-glow-bullet.scm.h:4
+#: ../scripts/alien-glow-button.scm.h:7
+#: ../scripts/alien-glow-logo.scm.h:6
+#: ../scripts/alien-neon-logo.scm.h:8
+#: ../scripts/burn-in-anim.scm.h:8
+#: ../scripts/neon-logo.scm.h:8
 #: ../scripts/starscape-logo.scm.h:6
 msgid "Glow color"
 msgstr "Màu rực rỡ"
@@ -518,9 +603,10 @@ msgid "Right"
 msgstr "Phải"
 
 #: ../scripts/alien-glow-arrow.scm.h:9
-#: ../scripts/beveled-pattern-arrow.scm.h:7 ../scripts/lava.scm.h:7
+#: ../scripts/beveled-pattern-arrow.scm.h:7
+#: ../scripts/lava.scm.h:7
 msgid "Size"
-msgstr "Cỡ"
+msgstr "Kích cỡ"
 
 #: ../scripts/alien-glow-arrow.scm.h:10
 #: ../scripts/beveled-pattern-arrow.scm.h:8
@@ -534,33 +620,36 @@ msgstr "_Mũi tên..."
 
 #: ../scripts/alien-glow-bar.scm.h:2
 msgid "Bar height"
-msgstr "Độ cao thanh"
+msgstr "Cao thanh"
 
 #: ../scripts/alien-glow-bar.scm.h:3
 msgid "Bar length"
-msgstr "Độ dài thanh"
+msgstr "Dài thanh"
 
 #: ../scripts/alien-glow-bar.scm.h:4
 msgid "Create an Hrule graphic with an eerie glow for web pages"
 msgstr ""
+"Tạo một ảnh đường nằm ngang (Hrule) với ánh sáng rực rỡ lạ, cho trang Web"
 
-#: ../scripts/alien-glow-bar.scm.h:7 ../scripts/beveled-pattern-hrule.scm.h:5
+#: ../scripts/alien-glow-bar.scm.h:7
+#: ../scripts/beveled-pattern-hrule.scm.h:5
 msgid "_Hrule..."
 msgstr "Đường _ngang..."
 
 #: ../scripts/alien-glow-bullet.scm.h:2
 msgid "Create a bullet graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "Tạo một ảnh chấm điểm với ánh sáng rực rỡ lạ, cho trang Web"
 
-#: ../scripts/alien-glow-bullet.scm.h:5 ../scripts/text-circle.scm.h:6
+#: ../scripts/alien-glow-bullet.scm.h:5
+#: ../scripts/text-circle.scm.h:6
 #: ../scripts/tileblur.scm.h:7
 msgid "Radius"
-msgstr "Tia"
+msgstr "Bán kính"
 
 #: ../scripts/alien-glow-bullet.scm.h:6
 #: ../scripts/beveled-pattern-bullet.scm.h:5
 msgid "_Bullet..."
-msgstr "_Dấu đầu dòng..."
+msgstr "_Chấm điểm..."
 
 #: ../scripts/alien-glow-button.scm.h:1
 #: ../scripts/beveled-pattern-button.scm.h:1
@@ -569,28 +658,35 @@ msgstr "_Nút..."
 
 #: ../scripts/alien-glow-button.scm.h:3
 msgid "Create a button graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "Tạo một ảnh nút với ánh sáng rực rỡ lạ, cho trang Web"
 
 #: ../scripts/alien-glow-button.scm.h:8
 msgid "Glow radius"
-msgstr "Tia rực rỡ"
+msgstr "Bán kính rực rỡ"
 
-#: ../scripts/alien-glow-button.scm.h:9 ../scripts/beveled-button.scm.h:6
+#: ../scripts/alien-glow-button.scm.h:9
+#: ../scripts/beveled-button.scm.h:6
 msgid "Padding"
 msgstr "Đệm"
 
-#: ../scripts/alien-glow-button.scm.h:11 ../scripts/basic1-logo.scm.h:7
-#: ../scripts/basic2-logo.scm.h:8 ../scripts/beveled-button.scm.h:10
-#: ../scripts/beveled-pattern-button.scm.h:8 ../scripts/blended-logo.scm.h:18
-#: ../scripts/gimp-headers.scm.h:14 ../scripts/gimp-labels.scm.h:18
-#: ../scripts/i26-gunya2.scm.h:8 ../scripts/news-text.scm.h:11
-#: ../scripts/pupi-button.scm.h:14 ../scripts/speed-text.scm.h:9
+#: ../scripts/alien-glow-button.scm.h:11
+#: ../scripts/basic1-logo.scm.h:7
+#: ../scripts/basic2-logo.scm.h:8
+#: ../scripts/beveled-button.scm.h:10
+#: ../scripts/beveled-pattern-button.scm.h:8
+#: ../scripts/blended-logo.scm.h:18
+#: ../scripts/gimp-headers.scm.h:14
+#: ../scripts/gimp-labels.scm.h:18
+#: ../scripts/i26-gunya2.scm.h:8
+#: ../scripts/news-text.scm.h:11
+#: ../scripts/pupi-button.scm.h:14
+#: ../scripts/speed-text.scm.h:9
 msgid "Text color"
 msgstr "Màu chữ"
 
 #: ../scripts/alien-glow-logo.scm.h:1
 msgid "Add an eerie glow around the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm ánh sáng rực rỡ lạ vào chung quanh vùng được chọn (hay alpha)"
 
 #: ../scripts/alien-glow-logo.scm.h:2
 msgid "Alien _Glow..."
@@ -598,15 +694,15 @@ msgstr "_Sáng rực rỡ lạ..."
 
 #: ../scripts/alien-glow-logo.scm.h:3
 msgid "Create a logo with an alien glow around the text"
-msgstr ""
+msgstr "Tạo một biểu hình với ánh sáng rực rỡ lạ chung quanh chữ"
 
 #: ../scripts/alien-glow-logo.scm.h:7
 msgid "Glow size (pixels * 4)"
-msgstr "Cỡ rực rỡ (điểm ảnh * 4)"
+msgstr "Kích cỡ rực rỡ (điểm ảnh * 4)"
 
 #: ../scripts/alien-neon-logo.scm.h:1
 msgid "Add psychedelic outlines to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm nét ngoài tạo ảo giác vào vùng được chọn (hay alpha)"
 
 #: ../scripts/alien-neon-logo.scm.h:2
 msgid "Alien _Neon..."
@@ -614,7 +710,7 @@ msgstr "_Nê-ông lạ..."
 
 #: ../scripts/alien-neon-logo.scm.h:4
 msgid "Create a logo with psychedelic outlines around the text"
-msgstr ""
+msgstr "Tạo một biểu hình với nét ngoài tạo ảo giác, chung quanh chữ"
 
 #: ../scripts/alien-neon-logo.scm.h:5
 msgid "Fade away"
@@ -626,23 +722,26 @@ msgstr "Số băng"
 
 #: ../scripts/alien-neon-logo.scm.h:11
 msgid "Width of bands"
-msgstr "Độ rộng băng"
+msgstr "Rộng băng"
 
 #: ../scripts/alien-neon-logo.scm.h:12
 msgid "Width of gaps"
-msgstr "Độ rộng khe"
+msgstr "Rộng khoảng"
 
 #: ../scripts/basic1-logo.scm.h:1
 msgid ""
 "Add a gradient effect, a drop shadow, and a background to the selected "
 "region (or alpha)"
 msgstr ""
+"Thêm một hiệu ứng dải màu, một bóng thả và một nền vào vùng được chọn (hay "
+"alpha)"
 
 #: ../scripts/basic1-logo.scm.h:3
 msgid ""
 "Create a plain text logo with a gradient effect, a drop shadow, and a "
 "background"
 msgstr ""
+"Tạo một biểu hình chữ thô với một hiệu ứng dải màu, một bóng thả và một nền"
 
 #: ../scripts/basic1-logo.scm.h:8
 msgid "_Basic I..."
@@ -650,7 +749,7 @@ msgstr "Cơ _bản 1..."
 
 #: ../scripts/basic2-logo.scm.h:1
 msgid "Add a shadow and a highlight to the selected region (or alpha)"
-msgstr ""
+msgstr "Đổ bóng và tô sáng vùng được chọn (hay alpha)"
 
 #: ../scripts/basic2-logo.scm.h:2
 msgid "B_asic II..."
@@ -658,25 +757,27 @@ msgstr "_Cơ bản 2..."
 
 #: ../scripts/basic2-logo.scm.h:4
 msgid "Create a simple logo with a shadow and a highlight"
-msgstr ""
+msgstr "Tạo một biểu hình đơn giản đổ bóng và tô sáng"
 
-#: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:4
+#: ../scripts/beveled-button.scm.h:1
+#: ../scripts/gradient-bevel-logo.scm.h:4
 #: ../scripts/pupi-button.scm.h:1
 msgid "Bevel width"
-msgstr "Độ rộng góc xiên"
+msgstr "Rộng góc xiên"
 
 #: ../scripts/beveled-button.scm.h:2
 msgid "Create a simple, beveled button graphic for webpages"
-msgstr ""
+msgstr "Tạo một ảnh nút góc xiên đơn giản cho trang Web"
 
 #: ../scripts/beveled-button.scm.h:5
 msgid "Lower-right color"
 msgstr "Màu dưới phải"
 
-#: ../scripts/beveled-button.scm.h:7 ../scripts/beveled-pattern-button.scm.h:6
+#: ../scripts/beveled-button.scm.h:7
+#: ../scripts/beveled-pattern-button.scm.h:6
 #: ../scripts/pupi-button.scm.h:11
 msgid "Pressed"
-msgstr "Đã ấn"
+msgstr "Đã bấm"
 
 #: ../scripts/beveled-button.scm.h:8
 msgid "Simple _Beveled Button..."
@@ -688,11 +789,11 @@ msgstr "Màu trên trái"
 
 #: ../scripts/beveled-pattern-arrow.scm.h:1
 msgid "Create a beveled pattern arrow for webpages"
-msgstr ""
+msgstr "Tạo một mũi tên mẫu góc xiên cho trang Web"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:1
 msgid "Create a beveled pattern bullet for webpages"
-msgstr ""
+msgstr "Tạo một chấm điểm mẫu góc xiên cho trang Web"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:2
 msgid "Diameter"
@@ -706,41 +807,46 @@ msgstr "Nền trong suốt"
 
 #: ../scripts/beveled-pattern-button.scm.h:2
 msgid "Create a beveled pattern button for webpages"
-msgstr ""
+msgstr "Tạo một nút mẫu góc xiên cho trang Web"
 
 #: ../scripts/beveled-pattern-heading.scm.h:1
 msgid "Create a beveled pattern heading for webpages"
-msgstr ""
+msgstr "Tạo một tiêu đề mẫu góc xiên cho trang Web"
 
 #: ../scripts/beveled-pattern-heading.scm.h:4
 msgid "H_eading..."
-msgstr "Tự_a..."
+msgstr "Tiê_u đề..."
 
 #: ../scripts/beveled-pattern-hrule.scm.h:1
 msgid "Create a beveled pattern hrule for webpages"
-msgstr ""
+msgstr "Tạo một đường ngang mẫu góc xiên cho trang Web"
 
-#: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/gimp-labels.scm.h:8
-#: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:7
+#: ../scripts/beveled-pattern-hrule.scm.h:2
+#: ../scripts/gimp-labels.scm.h:8
+#: ../scripts/gradient-example.scm.h:4
+#: ../scripts/mkbrush.scm.h:7
 #: ../scripts/swirltile.scm.h:7
 msgid "Height"
 msgstr "Cao"
 
 #: ../scripts/beveled-pattern-hrule.scm.h:4
-#: ../scripts/gradient-example.scm.h:5 ../scripts/mkbrush.scm.h:11
+#: ../scripts/gradient-example.scm.h:5
+#: ../scripts/mkbrush.scm.h:11
 #: ../scripts/swirltile.scm.h:11
 msgid "Width"
 msgstr "Rộng"
 
 #: ../scripts/blend-anim.scm.h:1
 msgid "Blend Animation needs at least three source layers"
-msgstr ""
+msgstr "Hoạt ảnh pha trộn cần ít nhất ba lớp nguồn"
 
 #: ../scripts/blend-anim.scm.h:2
 msgid ""
 "Create intermediate layers to blend two or more layers over a background as "
 "an animation"
 msgstr ""
+"Tạo các lớp trung gian để pha trộn hai hay nhiều lớp trên một nền dưới dạng "
+"hoạt ảnh"
 
 #: ../scripts/blend-anim.scm.h:3
 msgid "Intermediate frames"
@@ -748,11 +854,11 @@ msgstr "Khung trung gian"
 
 #: ../scripts/blend-anim.scm.h:4
 msgid "Looped"
-msgstr "Đã lặp lại"
+msgstr "Bị lặp"
 
 #: ../scripts/blend-anim.scm.h:5
 msgid "Max. blur radius"
-msgstr "Tia _mờ tối đa"
+msgstr "Bán kính mờ tối đa"
 
 #: ../scripts/blend-anim.scm.h:6
 msgid "_Blend..."
@@ -763,10 +869,11 @@ msgid ""
 "Add blended backgrounds, highlights, and shadows to the selected region (or "
 "alpha)"
 msgstr ""
+"Thêm các nền, tô sáng và bóng đã pha trộn vào vùng được chọn (hay alpha)"
 
 #: ../scripts/blended-logo.scm.h:3
 msgid "Blen_ded..."
-msgstr "Đá ph_a trộn..."
+msgstr "Đã _pha trộn..."
 
 #: ../scripts/blended-logo.scm.h:4
 msgid "Blend mode"
@@ -774,11 +881,11 @@ msgstr "Chế độ pha trộn"
 
 #: ../scripts/blended-logo.scm.h:5
 msgid "Create a logo with blended backgrounds, highlights, and shadows"
-msgstr ""
+msgstr "Tạo một biểu hình với nền, tô sáng và bóng cả pha trộn với nhau"
 
 #: ../scripts/blended-logo.scm.h:6
 msgid "Custom Gradient"
-msgstr "Độ dốc tự chọn"
+msgstr "Dải màu tự chọn"
 
 #: ../scripts/blended-logo.scm.h:8
 msgid "FG-BG-HSV"
@@ -790,41 +897,47 @@ msgstr "Gần-Nền-RGB"
 
 #: ../scripts/blended-logo.scm.h:10
 msgid "FG-Transparent"
-msgstr "Cảnh-gần trong suốt"
+msgstr "Cảnh gần trong suốt"
 
-#: ../scripts/blended-logo.scm.h:13 ../scripts/comic-logo.scm.h:7
-#: ../scripts/coolmetal-logo.scm.h:8 ../scripts/land.scm.h:3
-#: ../scripts/lava.scm.h:2 ../scripts/rendermap.scm.h:4
+#: ../scripts/blended-logo.scm.h:13
+#: ../scripts/comic-logo.scm.h:7
+#: ../scripts/coolmetal-logo.scm.h:8
+#: ../scripts/land.scm.h:3
+#: ../scripts/lava.scm.h:2
+#: ../scripts/rendermap.scm.h:4
 #: ../scripts/spyrogimp.scm.h:9
 msgid "Gradient"
-msgstr "Độ dốc"
+msgstr "Dải màu"
 
-#: ../scripts/blended-logo.scm.h:14 ../scripts/comic-logo.scm.h:8
-#: ../scripts/coolmetal-logo.scm.h:9 ../scripts/gradient-example.scm.h:3
-#: ../scripts/rendermap.scm.h:5 ../scripts/title-header.scm.h:4
+#: ../scripts/blended-logo.scm.h:14
+#: ../scripts/comic-logo.scm.h:8
+#: ../scripts/coolmetal-logo.scm.h:9
+#: ../scripts/gradient-example.scm.h:3
+#: ../scripts/rendermap.scm.h:5
+#: ../scripts/title-header.scm.h:4
 msgid "Gradient reverse"
-msgstr "Độ dốc ngược"
+msgstr "Dải màu ngược"
 
 #: ../scripts/blended-logo.scm.h:15
 msgid "Offset (pixels)"
-msgstr "Hiệu số (điểm ảnh)"
+msgstr "Bù (điểm ảnh)"
 
 #: ../scripts/bovinated-logo.scm.h:1
 msgid "Add 'cow spots' to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm « điểm bò » vào vùng được chọn (hay alpha)"
 
-#: ../scripts/bovinated-logo.scm.h:2 ../scripts/chrome-logo.scm.h:2
-#, fuzzy
+#: ../scripts/bovinated-logo.scm.h:2
+#: ../scripts/chrome-logo.scm.h:2
 msgid "Background Color"
 msgstr "Màu nền"
 
 #: ../scripts/bovinated-logo.scm.h:4
 msgid "Bo_vination..."
-msgstr "Phân tách t_oàn bộ đếm..."
+msgstr "Bò h_oá..."
 
 #: ../scripts/bovinated-logo.scm.h:5
 msgid "Create a logo with text in the style of 'cow spots'"
-msgstr ""
+msgstr "Tạo một biểu hình với chữ hình « điểm bò »"
 
 #: ../scripts/bovinated-logo.scm.h:8
 msgid "Spots density X"
@@ -848,21 +961,23 @@ msgstr "Chá_y vào..."
 
 #: ../scripts/burn-in-anim.scm.h:4
 msgid "Corona width"
-msgstr "Độ rộng quầng sáng"
+msgstr "Rộng quầng sáng"
 
 #: ../scripts/burn-in-anim.scm.h:5
 msgid ""
 "Create intermediate layers to produce an animated 'burn-in' transition "
 "between two layers"
 msgstr ""
+"Tạo các lớp trung gian để tạo một sự chuyển tiếp hoạt cảnh « cháy vào » giữa "
+"hai lớp"
 
 #: ../scripts/burn-in-anim.scm.h:6
 msgid "Fadeout"
-msgstr "Giảm dần"
+msgstr "Mờ dần"
 
 #: ../scripts/burn-in-anim.scm.h:7
 msgid "Fadeout width"
-msgstr "Độ rộng giảm dần"
+msgstr "Rộng mờ dần"
 
 #: ../scripts/burn-in-anim.scm.h:9
 msgid "Prepare for GIF"
@@ -877,6 +992,8 @@ msgid ""
 "The Burn-In script needs two layers in total. A foreground layer with "
 "transparency and a background layer."
 msgstr ""
+"Văn lệnh Chạy-Vào cần hai lớp: một lớp cảnh gần với tính trong suốt, và một "
+"lớp nền."
 
 #: ../scripts/camo.scm.h:1
 msgid "Color 1"
@@ -892,27 +1009,30 @@ msgstr "Màu 3"
 
 #: ../scripts/camo.scm.h:4
 msgid "Create an image filled with a camouflage pattern"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một câu mẫu nguỵ trang"
 
-#: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
+#: ../scripts/camo.scm.h:6
+#: ../scripts/rendermap.scm.h:6
 msgid "Granularity"
 msgstr "Tính hạt"
 
-#: ../scripts/camo.scm.h:7 ../scripts/rendermap.scm.h:7
+#: ../scripts/camo.scm.h:7
+#: ../scripts/rendermap.scm.h:7
 msgid "Image size"
-msgstr "Cỡ ảnh"
+msgstr "Kích cỡ ảnh"
 
-#: ../scripts/camo.scm.h:8 ../scripts/distress-selection.scm.h:3
+#: ../scripts/camo.scm.h:8
+#: ../scripts/distress-selection.scm.h:3
 msgid "Smooth"
 msgstr "Mịn"
 
 #: ../scripts/camo.scm.h:9
 msgid "_Camouflage..."
-msgstr "Ngụ_y trang..."
+msgstr "_Nguỵ trang..."
 
 #: ../scripts/carve-it.scm.h:1
 msgid "Carve white areas"
-msgstr "Khắc các vùng trắng"
+msgstr "Khắc vùng trắng"
 
 #: ../scripts/carve-it.scm.h:2
 msgid "Image to carve"
@@ -920,16 +1040,15 @@ msgstr "Ảnh cần khắc"
 
 #: ../scripts/carve-it.scm.h:3
 msgid "Stencil C_arve..."
-msgstr "Tạc kh_uôn tô..."
+msgstr "_Khắc khuôn tô"
 
 #: ../scripts/carved-logo.scm.h:1
-#, fuzzy
 msgid "Background Image"
 msgstr "Ảnh nền"
 
 #: ../scripts/carved-logo.scm.h:2
 msgid "Carve raised text"
-msgstr "Khắc chữ lên"
+msgstr "Khắc chữ nổi"
 
 #: ../scripts/carved-logo.scm.h:3
 msgid "Carved..."
@@ -939,7 +1058,7 @@ msgstr "Đã khắc..."
 msgid ""
 "Create a logo with text raised above or carved in to the specified "
 "background image"
-msgstr ""
+msgstr "Tạo một biểu hình với chữ nổi hay chữ khắc vào ảnh nền đã ghi rõ"
 
 #: ../scripts/carved-logo.scm.h:7
 msgid "Padding around text"
@@ -951,11 +1070,11 @@ msgstr "Màu phấn"
 
 #: ../scripts/chalk.scm.h:3
 msgid "Create a chalk drawing effect for the selected region (or alpha)"
-msgstr ""
+msgstr "Tạo một hiệu ứng vẽ phấn cho vùng được chọn (hay alpha)"
 
 #: ../scripts/chalk.scm.h:4
 msgid "Create a logo resembling chalk scribbled on a blackboard"
-msgstr ""
+msgstr "Tạo một biểu hình mà hình như phấn vẽ trên bảng đen"
 
 #: ../scripts/chalk.scm.h:8
 msgid "_Chalk..."
@@ -963,7 +1082,7 @@ msgstr "_Phấn..."
 
 #: ../scripts/chip-away.scm.h:1
 msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm một hiệu ứng khắc gỗ vào vùng được chọn (hay alpha)"
 
 #: ../scripts/chip-away.scm.h:2
 msgid "Blur amount"
@@ -979,7 +1098,7 @@ msgstr "Lượng làm mẻ"
 
 #: ../scripts/chip-away.scm.h:5
 msgid "Create a logo resembling a chipped wood carving"
-msgstr ""
+msgstr "Tạo một biểu hình mà hình như khắc gỗ làm mẻ"
 
 #: ../scripts/chip-away.scm.h:6
 msgid "Drop shadow"
@@ -987,7 +1106,7 @@ msgstr "Bóng thả"
 
 #: ../scripts/chip-away.scm.h:7
 msgid "Fill BG with pattern"
-msgstr "Tô nền bằng mẫu"
+msgstr "Điền nền bằng câu mẫu"
 
 #: ../scripts/chip-away.scm.h:10
 msgid "Invert"
@@ -1002,44 +1121,52 @@ msgid ""
 "Add a chrome effect to the selected region (or alpha) using a specified "
 "(grayscale) stencil"
 msgstr ""
+"Thêm một hiệu ứng crom cho vùng được chọn (hay alpha), dùng một khuôn tô "
+"(mức xám) đã ghi rõ"
 
-#: ../scripts/chrome-it.scm.h:2 ../scripts/sota-chrome-logo.scm.h:1
+#: ../scripts/chrome-it.scm.h:2
+#: ../scripts/sota-chrome-logo.scm.h:1
 msgid "Chrome balance"
 msgstr "Cân bằng crom"
 
-#: ../scripts/chrome-it.scm.h:3 ../scripts/crystal-logo.scm.h:2
+#: ../scripts/chrome-it.scm.h:3
+#: ../scripts/crystal-logo.scm.h:2
 #: ../scripts/sota-chrome-logo.scm.h:2
 msgid "Chrome factor"
 msgstr "Hệ số crom"
 
-#: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:3
+#: ../scripts/chrome-it.scm.h:4
+#: ../scripts/sota-chrome-logo.scm.h:3
 msgid "Chrome lightness"
-msgstr "Độ nhẹ crom"
+msgstr "Nhạt crom"
 
-#: ../scripts/chrome-it.scm.h:5 ../scripts/sota-chrome-logo.scm.h:4
+#: ../scripts/chrome-it.scm.h:5
+#: ../scripts/sota-chrome-logo.scm.h:4
 msgid "Chrome saturation"
-msgstr "Độ bão hoà crom"
+msgstr "Bão hoà crom"
 
 #: ../scripts/chrome-it.scm.h:6
 msgid "Chrome white areas"
-msgstr "Vùng trắng crom"
+msgstr "Crom vùng trắng"
 
-#: ../scripts/chrome-it.scm.h:7 ../scripts/crystal-logo.scm.h:5
+#: ../scripts/chrome-it.scm.h:7
+#: ../scripts/crystal-logo.scm.h:5
 #: ../scripts/sota-chrome-logo.scm.h:6
 msgid "Environment map"
-msgstr "Bản đồ môi trường"
+msgstr "Sơ đồ môi trường"
 
-#: ../scripts/chrome-it.scm.h:8 ../scripts/sota-chrome-logo.scm.h:9
+#: ../scripts/chrome-it.scm.h:8
+#: ../scripts/sota-chrome-logo.scm.h:9
 msgid "Highlight balance"
-msgstr "Cân bằng nổi bật"
+msgstr "Cân bằng tô sáng"
 
 #: ../scripts/chrome-it.scm.h:9
 msgid "Stencil C_hrome..."
-msgstr "C_rom khuôn tô..."
+msgstr "Crom k_huôn tô..."
 
 #: ../scripts/chrome-logo.scm.h:1
 msgid "Add a simple chrome effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm một hiệu ứng crom đơn giản vào vùng được chọn (hay alpha)"
 
 #: ../scripts/chrome-logo.scm.h:4
 msgid "C_hrome..."
@@ -1047,11 +1174,11 @@ msgstr "C_rom..."
 
 #: ../scripts/chrome-logo.scm.h:5
 msgid "Create a simplistic, but cool, chromed logo"
-msgstr ""
+msgstr "Thêm một biểu hình crom đơn giản nhưng trơ tráo"
 
 #: ../scripts/chrome-logo.scm.h:8
 msgid "Offsets (pixels * 2)"
-msgstr "Hiệu (điểm ảnh * 2)"
+msgstr "Khoảng bù (điểm ảnh * 2)"
 
 #: ../scripts/circuit.scm.h:1
 msgid "Circuit seed"
@@ -1060,10 +1187,12 @@ msgstr "Hạt chu vi"
 #: ../scripts/circuit.scm.h:2
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
-msgstr ""
+msgstr "Điền vùng được chọn (hay alpha) bằng vết giống như vết trên bản mạch"
 
-#: ../scripts/circuit.scm.h:3 ../scripts/lava.scm.h:3
-#: ../scripts/predator.scm.h:3 ../scripts/xach-effect.scm.h:11
+#: ../scripts/circuit.scm.h:3
+#: ../scripts/lava.scm.h:3
+#: ../scripts/predator.scm.h:3
+#: ../scripts/xach-effect.scm.h:11
 msgid "Keep selection"
 msgstr "Giữ vùng chọn"
 
@@ -1073,9 +1202,10 @@ msgstr "Không có nền (chỉ cho lớp tách biệt)"
 
 #: ../scripts/circuit.scm.h:5
 msgid "Oilify mask size"
-msgstr "tạo hiệu ứng tranh sơn dầu cỡ mặt nạ"
+msgstr "Sơn dầu hoá kích cỡ mặt nạ"
 
-#: ../scripts/circuit.scm.h:6 ../scripts/lava.scm.h:6
+#: ../scripts/circuit.scm.h:6
+#: ../scripts/lava.scm.h:6
 #: ../scripts/predator.scm.h:6
 msgid "Separate layer"
 msgstr "Lớp tách biệt"
@@ -1086,9 +1216,10 @@ msgstr "_Chu vi..."
 
 #: ../scripts/clothify.scm.h:1
 msgid "Add a cloth-like texture to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm một lối dệt kiểu vải vào vùng được chọn (hay alpha)"
 
-#: ../scripts/clothify.scm.h:2 ../scripts/swirltile.scm.h:1
+#: ../scripts/clothify.scm.h:2
+#: ../scripts/swirltile.scm.h:1
 msgid "Azimuth"
 msgstr "Góc phương vị"
 
@@ -1100,26 +1231,27 @@ msgstr "Mờ X"
 msgid "Blur Y"
 msgstr "Mờ Y"
 
-#: ../scripts/clothify.scm.h:5 ../scripts/swirltile.scm.h:5
+#: ../scripts/clothify.scm.h:5
+#: ../scripts/swirltile.scm.h:5
 msgid "Depth"
-msgstr "Độ sâu"
+msgstr "Sâu"
 
-#: ../scripts/clothify.scm.h:6 ../scripts/swirltile.scm.h:6
+#: ../scripts/clothify.scm.h:6
+#: ../scripts/swirltile.scm.h:6
 msgid "Elevation"
-msgstr "Độ cao lên"
+msgstr "Nâng lên"
 
 #: ../scripts/clothify.scm.h:7
 msgid "_Clothify..."
-msgstr "Tạo hiệu ứng _vải..."
+msgstr "_Vải hoá..."
 
 #: ../scripts/coffee.scm.h:1
 msgid "Add realistic looking coffee stains to the image"
-msgstr ""
+msgstr "Thêm vào ảnh các vết bẩn cà-phê hình như thật"
 
 #: ../scripts/coffee.scm.h:2
-#, fuzzy
 msgid "Darken only"
-msgstr "Màu tối"
+msgstr "Chỉ làm thẫm"
 
 #: ../scripts/coffee.scm.h:3
 msgid "Stains"
@@ -1134,6 +1266,8 @@ msgid ""
 "Add a comic-book effect to the selected region (or alpha) by outlining and "
 "filling with a gradient"
 msgstr ""
+"Thêm vào vùng được chọn (hay alpha) một hiệu ứng trang tranh chuyện vui, "
+"bằng cách nét ngoài và điền bằng dải màu"
 
 #: ../scripts/comic-logo.scm.h:3
 msgid "Comic Boo_k..."
@@ -1142,20 +1276,25 @@ msgstr "Sách tranh _vui..."
 #: ../scripts/comic-logo.scm.h:4
 msgid "Create a comic-book style logo by outlining and filling with a gradient"
 msgstr ""
+"Tạo một biểu hình kiểu trang tranh chuyện vui bằng cách nét ngoài và điền "
+"bằng dải màu"
 
 #: ../scripts/comic-logo.scm.h:9
 msgid "Outline color"
-msgstr "Màu phác họa"
+msgstr "Màu nét ngoài"
 
-#: ../scripts/comic-logo.scm.h:10 ../scripts/glossy.scm.h:11
+#: ../scripts/comic-logo.scm.h:10
+#: ../scripts/glossy.scm.h:11
 msgid "Outline size"
-msgstr "Cỡ phác họa"
+msgstr "Kích cỡ nét ngoài"
 
 #: ../scripts/coolmetal-logo.scm.h:1
 msgid ""
 "Add a metallic effect to the selected region (or alpha) with reflections and "
 "perspective shadows"
 msgstr ""
+"Thêm vào vùng được chọn (hay alpha) một hiệu ứng kim, với ánh phản chiếu và "
+"bóng phối cảnh"
 
 #: ../scripts/coolmetal-logo.scm.h:3
 msgid "Cool _Metal..."
@@ -1163,11 +1302,12 @@ msgstr "Kim _mát..."
 
 #: ../scripts/coolmetal-logo.scm.h:4
 msgid "Create a metallic logo with reflections and perspective shadows"
-msgstr ""
+msgstr "Tạo một biểu hình kim với ánh phản chiếu và bóng phối cảnh"
 
-#: ../scripts/coolmetal-logo.scm.h:5 ../scripts/frosty-logo.scm.h:4
+#: ../scripts/coolmetal-logo.scm.h:5
+#: ../scripts/frosty-logo.scm.h:4
 msgid "Effect size (pixels)"
-msgstr "Cỡ hiếu ứng (điểm ảnh)"
+msgstr "Kích cỡ hiệu ứng (điểm ảnh)"
 
 #: ../scripts/crystal-logo.scm.h:1
 msgid "Background image"
@@ -1175,7 +1315,7 @@ msgstr "Ảnh nền"
 
 #: ../scripts/crystal-logo.scm.h:3
 msgid "Create a logo with a crystal/gel effect displacing the image underneath"
-msgstr ""
+msgstr "Tạo một biểu hình với một hiệu ứng tinh thể/gien thay thế ảnh bên dưới"
 
 #: ../scripts/crystal-logo.scm.h:4
 msgid "Crystal..."
@@ -1183,36 +1323,35 @@ msgstr "Tinh thể..."
 
 #: ../scripts/difference-clouds.scm.h:1
 msgid "Difference Clouds..."
-msgstr ""
+msgstr "Mây khác biệt..."
 
 #: ../scripts/difference-clouds.scm.h:2
 msgid "Solid noise applied with Difference layer mode"
-msgstr ""
+msgstr "Nhiễu đặc được áp dụng dùng chế độ lớp Khác biệt"
 
 #: ../scripts/distress-selection.scm.h:1
-#, fuzzy
 msgid "Distress the selection"
-msgstr "Giữ vùng chọn"
+msgstr "Phá rối phần chọn"
 
 #: ../scripts/distress-selection.scm.h:2
 msgid "Granularity (1 is low)"
-msgstr "Tính hạt (1 thấp)"
+msgstr "Tính hạt (1 là thấp)"
 
 #: ../scripts/distress-selection.scm.h:4
 msgid "Smooth horizontally"
-msgstr "Mịn theo chiều ngang"
+msgstr "Làm mịn theo chiều ngang"
 
 #: ../scripts/distress-selection.scm.h:5
 msgid "Smooth vertically"
-msgstr "Mịn theo chiều dọc"
+msgstr "Làm mịn theo chiều dọc"
 
 #: ../scripts/distress-selection.scm.h:6
 msgid "Spread"
-msgstr "Phết"
+msgstr "Trải ra"
 
 #: ../scripts/distress-selection.scm.h:7
 msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Ngưỡng (lớn hơn 1 ↔ 255 nhỏ hơn)"
+msgstr "Ngưỡng (lớn 1 <-> 255 nhỏ)"
 
 #: ../scripts/distress-selection.scm.h:8
 msgid "_Distort..."
@@ -1220,39 +1359,46 @@ msgstr "_Méo mó..."
 
 #: ../scripts/drop-shadow.scm.h:1
 msgid "Add a drop shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm một bóng thả vào vùng được chọn (hay alpha)"
 
-#: ../scripts/drop-shadow.scm.h:2 ../scripts/perspective-shadow.scm.h:2
+#: ../scripts/drop-shadow.scm.h:2
+#: ../scripts/perspective-shadow.scm.h:2
 msgid "Allow resizing"
-msgstr "Cho phép đổi cỡ"
+msgstr "Cho phép co giãn"
 
-#: ../scripts/drop-shadow.scm.h:3 ../scripts/news-text.scm.h:2
-#: ../scripts/perspective-shadow.scm.h:4 ../scripts/round-corners.scm.h:3
+#: ../scripts/drop-shadow.scm.h:3
+#: ../scripts/news-text.scm.h:2
+#: ../scripts/perspective-shadow.scm.h:4
+#: ../scripts/round-corners.scm.h:3
 #: ../scripts/swirltile.scm.h:3
 msgid "Blur radius"
-msgstr "Tia mờ"
+msgstr "Bán kính mờ"
 
-#: ../scripts/drop-shadow.scm.h:4 ../scripts/fuzzyborder.scm.h:5
-#: ../scripts/perspective-shadow.scm.h:5 ../scripts/spyrogimp.scm.h:5
+#: ../scripts/drop-shadow.scm.h:4
+#: ../scripts/fuzzyborder.scm.h:5
+#: ../scripts/perspective-shadow.scm.h:5
+#: ../scripts/spyrogimp.scm.h:5
 msgid "Color"
 msgstr "Màu"
 
-#: ../scripts/drop-shadow.scm.h:5 ../scripts/gimp-labels.scm.h:11
+#: ../scripts/drop-shadow.scm.h:5
+#: ../scripts/gimp-labels.scm.h:11
 msgid "Offset X"
-msgstr "Hiệu số X"
+msgstr "Bù X"
 
-#: ../scripts/drop-shadow.scm.h:6 ../scripts/gimp-labels.scm.h:12
+#: ../scripts/drop-shadow.scm.h:6
+#: ../scripts/gimp-labels.scm.h:12
 msgid "Offset Y"
-msgstr "Hiệu số Y"
+msgstr "Bù Y"
 
-#: ../scripts/drop-shadow.scm.h:7 ../scripts/perspective-shadow.scm.h:7
+#: ../scripts/drop-shadow.scm.h:7
+#: ../scripts/perspective-shadow.scm.h:7
 msgid "Opacity"
-msgstr "Độ mờ đục"
+msgstr "Đục"
 
 #: ../scripts/drop-shadow.scm.h:8
-#, fuzzy
 msgid "_Drop Shadow..."
-msgstr "Bóng _thả..."
+msgstr "_Bóng thả..."
 
 #: ../scripts/erase-rows.scm.h:1
 msgid "Columns"
@@ -1263,13 +1409,12 @@ msgid "Erase"
 msgstr "Xoá"
 
 #: ../scripts/erase-rows.scm.h:3
-#, fuzzy
 msgid "Erase every other row or column"
-msgstr "_Xoá mọi hàng khác..."
+msgstr "_Xoá mọi hàng hay cột khác..."
 
 #: ../scripts/erase-rows.scm.h:4
 msgid "Erase/fill"
-msgstr "Xoá/Tô"
+msgstr "Xoá/Điền"
 
 #: ../scripts/erase-rows.scm.h:5
 msgid "Even"
@@ -1281,7 +1426,7 @@ msgstr "Chẵn/Lẻ"
 
 #: ../scripts/erase-rows.scm.h:7
 msgid "Fill with BG"
-msgstr "Tô bằng nền"
+msgstr "Điền bằng nền"
 
 #: ../scripts/erase-rows.scm.h:8
 msgid "Odd"
@@ -1301,31 +1446,37 @@ msgstr "_Xoá mọi hàng khác..."
 
 #: ../scripts/flatland.scm.h:1
 msgid "Create an image filled with a Land Pattern"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một câu mẫu đất"
 
-#: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:2
+#: ../scripts/flatland.scm.h:2
+#: ../scripts/land.scm.h:2
 msgid "Detail level"
-msgstr "Mức độ chi tiết"
+msgstr "Cấp chi tiết"
 
-#: ../scripts/flatland.scm.h:3 ../scripts/land.scm.h:4
+#: ../scripts/flatland.scm.h:3
+#: ../scripts/land.scm.h:4
 msgid "Image height"
-msgstr "Độ cao ảnh"
+msgstr "Cao ảnh"
 
-#: ../scripts/flatland.scm.h:4 ../scripts/land.scm.h:5
+#: ../scripts/flatland.scm.h:4
+#: ../scripts/land.scm.h:5
 msgid "Image width"
-msgstr "Độ rộng ảnh"
+msgstr "Rộng ảnh"
 
-#: ../scripts/flatland.scm.h:5 ../scripts/land.scm.h:7
+#: ../scripts/flatland.scm.h:5
+#: ../scripts/land.scm.h:7
 msgid "Random seed"
 msgstr "Hạt ngẫu nhiên"
 
-#: ../scripts/flatland.scm.h:6 ../scripts/land.scm.h:8
+#: ../scripts/flatland.scm.h:6
+#: ../scripts/land.scm.h:8
 msgid "Scale X"
-msgstr "Co dãn X"
+msgstr "Tỷ lệ X"
 
-#: ../scripts/flatland.scm.h:7 ../scripts/land.scm.h:9
+#: ../scripts/flatland.scm.h:7
+#: ../scripts/land.scm.h:9
 msgid "Scale Y"
-msgstr "Co dãn Y"
+msgstr "Tỷ lệ Y"
 
 #: ../scripts/flatland.scm.h:8
 msgid "_Flatland..."
@@ -1337,24 +1488,26 @@ msgstr "Màu hoạt động"
 
 #: ../scripts/font-map.scm.h:2
 msgid "Black on white"
-msgstr "Đen lên trắng"
+msgstr "Đen nền trắng"
 
 #: ../scripts/font-map.scm.h:3
 msgid ""
 "Create an image filled with previews of fonts matching a fontname filter"
 msgstr ""
+"Tạo một ảnh được điền bằng ô xem thử các phông tương ứng với một bộ lọc tên "
+"phông"
 
 #: ../scripts/font-map.scm.h:4
 msgid "Font _size (pixels)"
-msgstr "_Cỡ phông chữ (theo điểm ảnh)"
+msgstr "_Kích cỡ phông (điểm ảnh)"
 
 #: ../scripts/font-map.scm.h:5
 msgid "Render _Font Map..."
-msgstr "Vẽ bản đồ _phông chữ..."
+msgstr "Vẽ sơ đồ _phông..."
 
 #: ../scripts/font-map.scm.h:6
 msgid "Use font _name as text"
-msgstr "Dùng tê_n phông chữ là đoạn"
+msgstr "Dùng tê_n phông như chuỗi"
 
 #: ../scripts/font-map.scm.h:7
 msgid "_Border (pixels)"
@@ -1366,7 +1519,7 @@ msgstr "_Lược đồ màu"
 
 #: ../scripts/font-map.scm.h:9
 msgid "_Filter (regexp)"
-msgstr "_Lọc (biểu thức c.q.)"
+msgstr "_Lọc (BTCQ)"
 
 #: ../scripts/font-map.scm.h:10
 msgid "_Labels"
@@ -1374,17 +1527,19 @@ msgstr "_Nhãn"
 
 #: ../scripts/font-map.scm.h:11
 msgid "_Text"
-msgstr "_Chữ"
+msgstr "_Văn bản"
 
 #: ../scripts/frosty-logo.scm.h:1
 msgid ""
 "Add a frost effect to the selected region (or alpha) with an added drop "
 "shadow"
 msgstr ""
+"Thêm một hiệu ứng sương giá vào vùng được chọn (hay alpha) với một bóng thả "
+"bổ sung"
 
 #: ../scripts/frosty-logo.scm.h:3
 msgid "Create frozen logo with an added drop shadow"
-msgstr ""
+msgstr "Tạo một biểu hình đông cứng với một bóng thả bổ sung"
 
 #: ../scripts/frosty-logo.scm.h:8
 msgid "_Frosty..."
@@ -1392,7 +1547,7 @@ msgstr "Băng _giá..."
 
 #: ../scripts/fuzzyborder.scm.h:1
 msgid "Add a jagged, fuzzy border to an image"
-msgstr ""
+msgstr "Thêm vào ảnh một viền mờ lởm chởm"
 
 #: ../scripts/fuzzyborder.scm.h:2
 msgid "Add shadow"
@@ -1400,24 +1555,25 @@ msgstr "Thêm bóng"
 
 #: ../scripts/fuzzyborder.scm.h:3
 msgid "Blur border"
-msgstr "Làm mờ viền"
+msgstr "Che mờ viền"
 
-#: ../scripts/fuzzyborder.scm.h:4 ../scripts/old-photo.scm.h:1
+#: ../scripts/fuzzyborder.scm.h:4
+#: ../scripts/old-photo.scm.h:1
 msgid "Border size"
-msgstr "Cỡ viền"
+msgstr "Kích cỡ viền"
 
 #: ../scripts/fuzzyborder.scm.h:7
 msgid "Granularity (1 is Low)"
-msgstr "Tính hạt (1 thấp)"
+msgstr "Tính hạt (1 là thấp)"
 
 #: ../scripts/fuzzyborder.scm.h:9
 #, no-c-format
 msgid "Shadow weight (%)"
-msgstr "Độ dài bóng (%)"
+msgstr "Đậm bóng (%)"
 
 #: ../scripts/fuzzyborder.scm.h:11
 msgid "_Fuzzy Border..."
-msgstr "Viền lờ _mờ..."
+msgstr "Viền _lờ mờ..."
 
 #: ../scripts/gimp-headers.scm.h:1
 msgid "Autocrop"
@@ -1425,37 +1581,43 @@ msgstr "Tự động xén"
 
 #: ../scripts/gimp-headers.scm.h:2
 msgid "Create an image of a large header using the gimp.org webpage theme"
-msgstr ""
+msgstr "Tạo một ảnh của một tiêu đề lớn, dùng sắc thái của trang Web gimp.org"
 
 #: ../scripts/gimp-headers.scm.h:3
 msgid "Create an image of a small header using the gimp.org webpage theme"
-msgstr ""
+msgstr "Tạo một ảnh của một tiêu đề nhỏ, dùng sắc thái của trang Web gimp.org"
 
 #: ../scripts/gimp-headers.scm.h:4
 msgid "Dark color"
-msgstr "Màu tối"
+msgstr "Màu thẫm"
 
-#: ../scripts/gimp-headers.scm.h:7 ../scripts/xach-effect.scm.h:9
+#: ../scripts/gimp-headers.scm.h:7
+#: ../scripts/xach-effect.scm.h:9
 msgid "Highlight color"
-msgstr "Màu nổi bật"
+msgstr "Màu tô sáng"
 
-#: ../scripts/gimp-headers.scm.h:8 ../scripts/gimp-labels.scm.h:9
+#: ../scripts/gimp-headers.scm.h:8
+#: ../scripts/gimp-labels.scm.h:9
 msgid "Index image"
-msgstr "Chỉ mục ảnh"
+msgstr "Phụ lục ảnh"
 
-#: ../scripts/gimp-headers.scm.h:9 ../scripts/gimp-labels.scm.h:10
+#: ../scripts/gimp-headers.scm.h:9
+#: ../scripts/gimp-labels.scm.h:10
 msgid "Number of colors"
-msgstr "Số màu"
+msgstr "Số màu sắc"
 
-#: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:13
+#: ../scripts/gimp-headers.scm.h:10
+#: ../scripts/gimp-labels.scm.h:13
 msgid "Remove background"
-msgstr "Gỡ bỏ nền"
+msgstr "Bỏ nền"
 
-#: ../scripts/gimp-headers.scm.h:11 ../scripts/gimp-labels.scm.h:14
+#: ../scripts/gimp-headers.scm.h:11
+#: ../scripts/gimp-labels.scm.h:14
 msgid "Select-by-color threshold"
 msgstr "Ngưỡng chọn-theo-màu"
 
-#: ../scripts/gimp-headers.scm.h:12 ../scripts/gimp-labels.scm.h:15
+#: ../scripts/gimp-headers.scm.h:12
+#: ../scripts/gimp-labels.scm.h:15
 msgid "Shadow color"
 msgstr "Màu bóng"
 
@@ -1472,22 +1634,28 @@ msgid ""
 "Create an image of a Tube Button Label Header using the gimp.org webpage "
 "theme"
 msgstr ""
+"Tạo một ảnh của một tiêu đề nhãn nút ống, dùng sắc thái của trang Web gimp."
+"org"
 
 #: ../scripts/gimp-labels.scm.h:3
 msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
-msgstr ""
+msgstr "Tạo một ảnh của một nhãn nút ống, dùng sắc thái của trang Web gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:4
 msgid ""
 "Create an image of a second level Tube Button Label using the gimp.org "
 "webpage theme"
 msgstr ""
+"Tạo một ảnh của một nhãn nút ống cấp thứ hai, dùng sắc thái của trang Web "
+"gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:5
 msgid ""
 "Create an image of a third level Tube Button Label using the gimp.org "
 "webpage theme"
 msgstr ""
+"Tạo một ảnh của một nhãn nút ống cấp thứ ba, dùng sắc thái của trang Web "
+"gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:16
 msgid "T_ube Sub-Button Label..."
@@ -1499,7 +1667,7 @@ msgstr "Nhãn nút phụ c_on ống..."
 
 #: ../scripts/gimp-labels.scm.h:20
 msgid "_General Tube Labels..."
-msgstr "Nhãn ốn_g chung..."
+msgstr "Nhãn ống chun_g..."
 
 #: ../scripts/gimp-labels.scm.h:21
 msgid "_Tube Button Label..."
@@ -1510,70 +1678,72 @@ msgid ""
 "Add gradients, patterns, shadows, and bump maps to the selected region (or "
 "alpha)"
 msgstr ""
+"Thêm các dải màu, câu mẫu, bóng và sơ đồ mụn vào vùng được chọn (hay alpha)"
 
 #: ../scripts/glossy.scm.h:3
 msgid "Blend gradient (outline)"
-msgstr "Độ dốc pha trộn (phác họa)"
+msgstr "Dải màu pha trộn (nét ngoài)"
 
 #: ../scripts/glossy.scm.h:4
 msgid "Blend gradient (text)"
-msgstr "Độ dốc pha trộn (chữ)"
+msgstr "Dải màu pha trộn (chữ)"
 
 #: ../scripts/glossy.scm.h:5
 msgid "Create a logo with gradients, patterns, shadows, and bump maps"
-msgstr ""
+msgstr "Tạo một biểu hình với các dải màu, câu mẫu, bóng và sơ đồ mụn"
 
 #: ../scripts/glossy.scm.h:9
 msgid "Glo_ssy..."
-msgstr "Bóng l_oáng..."
+msgstr "_Láng..."
 
 #: ../scripts/glossy.scm.h:10
 msgid "Outline gradient reverse"
-msgstr "Ngược dốc phác họa"
+msgstr "Dải màu nét ngoài ngược"
 
 #: ../scripts/glossy.scm.h:12
 msgid "Pattern (outline)"
-msgstr "Mẫu (phác họa)"
+msgstr "Câu mẫu (nét ngoài)"
 
 #: ../scripts/glossy.scm.h:13
 msgid "Pattern (overlay)"
-msgstr "Mẫu (phủ)"
+msgstr "Câu mẫu (phủ)"
 
 #: ../scripts/glossy.scm.h:14
 msgid "Pattern (text)"
-msgstr "Mẫu (chữ)"
+msgstr "Câu mẫu (chữ)"
 
-#: ../scripts/glossy.scm.h:15 ../scripts/sphere.scm.h:5
+#: ../scripts/glossy.scm.h:15
+#: ../scripts/sphere.scm.h:5
 msgid "Shadow"
 msgstr "Bóng"
 
 #: ../scripts/glossy.scm.h:19
 msgid "Text gradient reverse"
-msgstr "Ngược dốc chữ"
+msgstr "Dải màu chữ ngược"
 
 #: ../scripts/glossy.scm.h:20
 msgid "Use pattern for outline instead of gradient"
-msgstr "Dùng mẫu cho phác họa thay vào độ dốc"
+msgstr "Dùng câu mẫu cho nét ngoài thay cho dải màu"
 
 #: ../scripts/glossy.scm.h:21
 msgid "Use pattern for text instead of gradient"
-msgstr "Dùng mẫu cho chữ thay vào độ dốc"
+msgstr "Dùng câu mẫu cho chữ thay cho dải màu"
 
 #: ../scripts/glossy.scm.h:22
 msgid "Use pattern overlay"
-msgstr "Dùng mẫu phủ"
+msgstr "Dùng câu mẫu phủ"
 
 #: ../scripts/glowing-logo.scm.h:1
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm vào vùng được chọn (hay alpha) một hiệu ứng kim nóng rực rỡ"
 
 #: ../scripts/glowing-logo.scm.h:3
 msgid "Create a logo that looks like glowing hot metal"
-msgstr ""
+msgstr "Tạo một biểu hình mà hình như kim nóng rực rỡ"
 
 #: ../scripts/glowing-logo.scm.h:4
 msgid "Effect size (pixels * 3)"
-msgstr "Cỡ hiệu ứng (điểm ảnh * 3)"
+msgstr "Kích cỡ hiệu ứng (điểm ảnh * 3)"
 
 #: ../scripts/glowing-logo.scm.h:7
 msgid "Glo_wing Hot..."
@@ -1582,67 +1752,73 @@ msgstr "Nóng _rực sáng..."
 #: ../scripts/gradient-bevel-logo.scm.h:1
 msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
 msgstr ""
+"Thêm vào vùng được chọn (hay alpha) một hình thức sáng và hiệu ứng góc xiên"
 
 #: ../scripts/gradient-bevel-logo.scm.h:3
 msgid "Bevel height (sharpness)"
-msgstr "Độ cao góc xiên (độ sắc nết)"
+msgstr "Cao góc xiên (sắc nét)"
 
-#: ../scripts/gradient-bevel-logo.scm.h:5 ../scripts/t-o-p-logo.scm.h:4
+#: ../scripts/gradient-bevel-logo.scm.h:5
+#: ../scripts/t-o-p-logo.scm.h:4
 #: ../scripts/textured-logo.scm.h:2
 msgid "Border size (pixels)"
-msgstr "Cỡ viền (điểm ảnh)"
+msgstr "Kích cỡ viền (điểm ảnh)"
 
 #: ../scripts/gradient-bevel-logo.scm.h:6
 msgid "Create a logo with a shiny look and beveled edges"
-msgstr ""
+msgstr "Tạo một biểu hình mà hình sáng và có các cạnh góc xiên"
 
 #: ../scripts/gradient-bevel-logo.scm.h:9
 msgid "Gradient Beve_l..."
-msgstr "Góc _xiên dốc..."
+msgstr "Cạnh _xiên dải màu..."
 
 #: ../scripts/gradient-example.scm.h:1
 msgid "Create an image filled with an example of the current gradient"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một thí dụ của dải màu hiện thời"
 
 #: ../scripts/gradient-example.scm.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "Độ dốc tự chọn"
+msgstr "Dả_i màu tự chọn..."
 
-#: ../scripts/grid-system.scm.h:1 ../scripts/guides-from-selection.scm.h:1
+#: ../scripts/grid-system.scm.h:1
+#: ../scripts/guides-from-selection.scm.h:1
 msgid ""
 "Draw a grid as specified by the lists of X and Y locations using the current "
 "brush"
 msgstr ""
+"Vẽ một lưới như xác định theo danh sách các vị trí X và Y, dùng bút vẽ hiện "
+"thời"
 
 #: ../scripts/grid-system.scm.h:2
 msgid "X divisions"
-msgstr "Phân chia X"
+msgstr "Lệch X"
 
 #: ../scripts/grid-system.scm.h:3
 msgid "Y divisions"
-msgstr "Phân chia Y"
+msgstr "Lệch Y"
 
 #: ../scripts/grid-system.scm.h:4
-#, fuzzy
 msgid "_Grid..."
-msgstr "_Trượt..."
+msgstr "_Lưới..."
 
 #: ../scripts/guides-from-selection.scm.h:2
 msgid "New Guides from _Selection"
-msgstr "Nét dẫn từ _vùng chọn"
+msgstr "Nét dẫn mới từ _phần chọn"
 
 #: ../scripts/guides-new-percent.scm.h:1
 msgid "Add a guide at the position specified as a percentage of the image size"
 msgstr ""
+"Thêm một nét dẫn vào vị trí xác định theo một phần trăm của kích cỡ ảnh"
 
-#: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
+#: ../scripts/guides-new-percent.scm.h:2
+#: ../scripts/guides-new.scm.h:2
 msgid "Direction"
-msgstr "Phía hướng"
+msgstr "Hướng"
 
-#: ../scripts/guides-new-percent.scm.h:3 ../scripts/guides-new.scm.h:3
+#: ../scripts/guides-new-percent.scm.h:3
+#: ../scripts/guides-new.scm.h:3
 msgid "Horizontal"
-msgstr "Ngang"
+msgstr "Nằm ngang"
 
 #: ../scripts/guides-new-percent.scm.h:4
 msgid "New Guide (by _Percent)..."
@@ -1653,13 +1829,14 @@ msgstr "Nét dẫn mới (theo _phần trăm)..."
 msgid "Position (in %)"
 msgstr "Vị trí (theo %)"
 
-#: ../scripts/guides-new-percent.scm.h:7 ../scripts/guides-new.scm.h:6
+#: ../scripts/guides-new-percent.scm.h:7
+#: ../scripts/guides-new.scm.h:6
 msgid "Vertical"
-msgstr "Dọc"
+msgstr "Nằm dọc"
 
 #: ../scripts/guides-new.scm.h:1
 msgid "Add a guide at the orientation and position specified (in pixels)"
-msgstr ""
+msgstr "Thêm một nét dẫn vào vị trí và về hướng xác định (theo điểm ảnh)"
 
 #: ../scripts/guides-new.scm.h:4
 msgid "New _Guide..."
@@ -1671,56 +1848,15 @@ msgstr "Vị trí"
 
 #: ../scripts/guides-remove-all.scm.h:1
 msgid "Remove all horizontal and vertical guides"
-msgstr ""
+msgstr "Gỡ bỏ tất cả các nét dẫn theo chiều ngang và dọc"
 
 #: ../scripts/guides-remove-all.scm.h:2
 msgid "_Remove all Guides"
-msgstr "Gỡ _bỏ mọi nét dẫn"
-
-#: ../scripts/hsv-graph.scm.h:1
-msgid "BG opacity"
-msgstr "Độ đục nền"
-
-#: ../scripts/hsv-graph.scm.h:2
-msgid "Create a graph of the Hue, Saturation, and Value distributions"
-msgstr ""
-
-#: ../scripts/hsv-graph.scm.h:3
-msgid "Draw _HSV Graph..."
-msgstr "Vẽ đồ thị _HSV..."
-
-#: ../scripts/hsv-graph.scm.h:4
-msgid "End X"
-msgstr "X cuối"
-
-#: ../scripts/hsv-graph.scm.h:5
-msgid "End Y"
-msgstr "Y cuối"
-
-#: ../scripts/hsv-graph.scm.h:6
-msgid "From top-left to bottom-right"
-msgstr "Từ trái-trên đến phải-dưới"
-
-#: ../scripts/hsv-graph.scm.h:7
-msgid "Graph scale"
-msgstr "Tỷ lệ đồ thị"
-
-#: ../scripts/hsv-graph.scm.h:8
-msgid "Start X"
-msgstr "X đầu"
-
-#: ../scripts/hsv-graph.scm.h:9
-msgid "Start Y"
-msgstr "Y đầu"
-
-#: ../scripts/hsv-graph.scm.h:10
-#, fuzzy
-msgid "Use selection bounds instead of values below"
-msgstr "Dùng giới hạn vùng chọn thay vào điều dưới"
+msgstr "_Bỏ mọi nét dẫn"
 
 #: ../scripts/i26-gunya2.scm.h:1
 msgid "Create a logo in a two-color, scribbled text style"
-msgstr ""
+msgstr "Tạo một biểu hình theo một kiểu dáng chữ cấu thả màu đôi"
 
 #: ../scripts/i26-gunya2.scm.h:4
 msgid "Frame color"
@@ -1728,7 +1864,7 @@ msgstr "Màu khung"
 
 #: ../scripts/i26-gunya2.scm.h:5
 msgid "Frame size"
-msgstr "Cỡ khung"
+msgstr "Kích cỡ khung"
 
 #: ../scripts/i26-gunya2.scm.h:6
 msgid "Imigre-_26..."
@@ -1736,15 +1872,15 @@ msgstr "Imigre-_26..."
 
 #: ../scripts/land.scm.h:1
 msgid "Create an image filled with a topographic map pattern"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một câu mẫu bản đồ đo vẽ địa hình"
 
 #: ../scripts/land.scm.h:6
 msgid "Land height"
-msgstr "Độ cao của đất"
+msgstr "Cao đất"
 
 #: ../scripts/land.scm.h:10
 msgid "Sea depth"
-msgstr "Độ dài biển"
+msgstr "Sâu biển"
 
 #: ../scripts/land.scm.h:11
 msgid "_Land..."
@@ -1752,11 +1888,12 @@ msgstr "Đấ_t..."
 
 #: ../scripts/lava.scm.h:1
 msgid "Fill the current selection with lava"
-msgstr ""
+msgstr "Điền phần chọn hiện thời bằng dung nham"
 
-#: ../scripts/lava.scm.h:4 ../scripts/swirltile.scm.h:8
+#: ../scripts/lava.scm.h:4
+#: ../scripts/swirltile.scm.h:8
 msgid "Roughness"
-msgstr "Độ gồ ghề"
+msgstr "Gồ ghề"
 
 #: ../scripts/lava.scm.h:5
 msgid "Seed"
@@ -1764,16 +1901,16 @@ msgstr "Hạt"
 
 #: ../scripts/lava.scm.h:8
 msgid "Use current gradient"
-msgstr "Dùng độ dốc hiện có"
+msgstr "Dùng dải màu hiện có"
 
 #: ../scripts/lava.scm.h:9
 msgid "_Lava..."
-msgstr "D_ung nham..."
+msgstr "_Dung nham..."
 
 #: ../scripts/line-nova.scm.h:1
 msgid ""
 "Fill a layer with rays emanating outward from its center using the FG color"
-msgstr ""
+msgstr "Điền một lớp bằng các tia phát ra từ tâm, dùng màu ở cảnh gần"
 
 #: ../scripts/line-nova.scm.h:2
 msgid "Line _Nova..."
@@ -1785,72 +1922,71 @@ msgstr "Số đường"
 
 #: ../scripts/line-nova.scm.h:4
 msgid "Offset radius"
-msgstr "Bán kính hiệu"
+msgstr "Bánh kính bù"
 
 #: ../scripts/line-nova.scm.h:5
 msgid "Randomness"
-msgstr "Độ ngẫu nhiên"
+msgstr "Ngẫu nhiên"
 
 #: ../scripts/line-nova.scm.h:6
 msgid "Sharpness (degrees)"
-msgstr "Độ sắc nét (độ)"
+msgstr "Sắc nét (độ)"
 
 #: ../scripts/mkbrush.scm.h:1
 msgid "Create a rectangular brush"
-msgstr ""
+msgstr "Tạo một bút vẽ hình chữ nhật"
 
 #: ../scripts/mkbrush.scm.h:2
 msgid "Create a rectangular brush with feathered edges"
-msgstr ""
+msgstr "Tạo một bút vẽ hình chữ nhật có các cạnh hình lông"
 
 #: ../scripts/mkbrush.scm.h:3
 msgid "Create an elliptical brush"
-msgstr ""
+msgstr "Tạo một bút vẽ hình bầu dục"
 
 #: ../scripts/mkbrush.scm.h:4
 msgid "Create an elliptical brush with feathered edges"
-msgstr ""
+msgstr "Tạo một bút vẽ hình bầu dục có các cạnh hình lông"
 
 #: ../scripts/mkbrush.scm.h:5
-#, fuzzy
 msgid "Elli_ptical, Feathered..."
-msgstr "Hình bầu dục mới, hình lông..."
+msgstr "Hình _bầu dục, Hình lông..."
 
 #: ../scripts/mkbrush.scm.h:6
 msgid "Feathering"
-msgstr "Tạo hình lông"
+msgstr "Đang tạo hình lông"
 
 #: ../scripts/mkbrush.scm.h:8
 msgid "Name"
 msgstr "Tên"
 
 #: ../scripts/mkbrush.scm.h:9
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "Hình chữ nhật mới, hình lông..."
+msgstr "Hình _chữ nhật, Hình lông..."
 
-#: ../scripts/mkbrush.scm.h:10 ../scripts/paste-as-brush.scm.h:5
+#: ../scripts/mkbrush.scm.h:10
+#: ../scripts/paste-as-brush.scm.h:5
 #: ../scripts/select-to-brush.scm.h:4
 msgid "Spacing"
-msgstr "Khoảng cách"
+msgstr "Giãn cách"
 
 #: ../scripts/mkbrush.scm.h:12
-#, fuzzy
 msgid "_Elliptical..."
-msgstr "Hình _bầu dục mới..."
+msgstr "Hình _bầu dục..."
 
 #: ../scripts/mkbrush.scm.h:13
-#, fuzzy
 msgid "_Rectangular..."
-msgstr "Hình _chữ nhật mới..."
+msgstr "Hình _chữ nhật..."
 
 #: ../scripts/neon-logo.scm.h:2
 msgid "Convert the selected region (or alpha) into a neon-sign like object"
 msgstr ""
+"Chuyển đổi vùng được chọn (hay alpha) sang một đối tượng giống như biểu hiện "
+"nê-ông"
 
 #: ../scripts/neon-logo.scm.h:3
 msgid "Create a logo in the style of a neon sign"
-msgstr ""
+msgstr "Tạo một biểu hình kiểu biểu hiện nê-ông"
 
 #: ../scripts/neon-logo.scm.h:4
 msgid "Create shadow"
@@ -1858,21 +1994,22 @@ msgstr "Tạo bóng"
 
 #: ../scripts/neon-logo.scm.h:5
 msgid "Effect size (pixels * 5)"
-msgstr "Cỡ hiệu ứng (điểm ảnh * 5)"
+msgstr "Kích cỡ hiệu ứng (điểm ảnh * 5)"
 
 #: ../scripts/neon-logo.scm.h:9
 msgid "N_eon..."
-msgstr "Nê-ôn_g..."
+msgstr "_Nê-ông..."
 
 #: ../scripts/news-text.scm.h:3
 msgid "Cell size (pixels)"
-msgstr "Cỡ ô (điểm ảnh)"
+msgstr "Kích cỡ ô (điểm ảnh)"
 
 #: ../scripts/news-text.scm.h:4
 msgid "Create a logo in the style of newspaper printing"
-msgstr ""
+msgstr "Tạo một biểu hình kiểu giấy in báo"
 
-#: ../scripts/news-text.scm.h:6 ../scripts/speed-text.scm.h:4
+#: ../scripts/news-text.scm.h:6
+#: ../scripts/speed-text.scm.h:4
 #, no-c-format
 msgid "Density (%)"
 msgstr "Mật độ (%)"
@@ -1887,7 +2024,7 @@ msgstr "Nêu bật hẳn xuống"
 
 #: ../scripts/old-photo.scm.h:3
 msgid "Make an image look like an old photo"
-msgstr ""
+msgstr "Làm cho một ảnh hình như một ảnh chụp cũ"
 
 #: ../scripts/old-photo.scm.h:4
 msgid "Mottle"
@@ -1899,14 +2036,17 @@ msgstr "Kiểu nâu đen"
 
 #: ../scripts/old-photo.scm.h:7
 msgid "_Old Photo..."
-msgstr "Chụp ảnh _cũ..."
+msgstr "Ảnh _chụp cũ..."
 
-#: ../scripts/paste-as-brush.scm.h:1 ../scripts/select-to-brush.scm.h:1
+#: ../scripts/paste-as-brush.scm.h:1
+#: ../scripts/select-to-brush.scm.h:1
 msgid "Brush name"
 msgstr "Tên bút vẽ"
 
-#: ../scripts/paste-as-brush.scm.h:2 ../scripts/paste-as-pattern.scm.h:1
-#: ../scripts/select-to-brush.scm.h:3 ../scripts/select-to-pattern.scm.h:2
+#: ../scripts/paste-as-brush.scm.h:2
+#: ../scripts/paste-as-pattern.scm.h:1
+#: ../scripts/select-to-brush.scm.h:3
+#: ../scripts/select-to-pattern.scm.h:2
 msgid "File name"
 msgstr "Tên tập tin"
 
@@ -1916,27 +2056,29 @@ msgstr "_Bút vẽ mới..."
 
 #: ../scripts/paste-as-brush.scm.h:4
 msgid "Paste the clipboard contents into a new brush"
-msgstr ""
+msgstr "Dán nội dung bảng nháp vào một bút vẽ mới"
 
-#: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
+#: ../scripts/paste-as-brush.scm.h:6
+#: ../scripts/paste-as-pattern.scm.h:5
 msgid "There is no image data in the clipboard to paste."
-msgstr ""
+msgstr "Không có dữ liệu ảnh cần dán trong bảng nháp."
 
 #: ../scripts/paste-as-pattern.scm.h:2
 msgid "New _Pattern..."
-msgstr "_Mẫu mới..."
+msgstr "Câ_u mẫu mới..."
 
 #: ../scripts/paste-as-pattern.scm.h:3
 msgid "Paste the clipboard contents into a new pattern"
-msgstr ""
+msgstr "Dán nội dung bảng nháp vào một câu mẫu mới"
 
-#: ../scripts/paste-as-pattern.scm.h:4 ../scripts/select-to-pattern.scm.h:3
+#: ../scripts/paste-as-pattern.scm.h:4
+#: ../scripts/select-to-pattern.scm.h:3
 msgid "Pattern name"
-msgstr "Tên mẫu"
+msgstr "Tên câu mẫu"
 
 #: ../scripts/perspective-shadow.scm.h:1
 msgid "Add a perspective shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm một bóng phối cảnh vào vùng được chọn (hay alpha)"
 
 #: ../scripts/perspective-shadow.scm.h:3
 msgid "Angle"
@@ -1948,11 +2090,11 @@ msgstr "Nội suy"
 
 #: ../scripts/perspective-shadow.scm.h:8
 msgid "Relative distance of horizon"
-msgstr "Khoảng cách liên quan của đường ngang"
+msgstr "Khoảng cách tương đối của đường ngang"
 
 #: ../scripts/perspective-shadow.scm.h:9
 msgid "Relative length of shadow"
-msgstr "Độ dài liên quan của bóng"
+msgstr "Dài tương đối của bóng"
 
 #: ../scripts/perspective-shadow.scm.h:10
 msgid "_Perspective..."
@@ -1960,7 +2102,7 @@ msgstr "_Phối cảnh..."
 
 #: ../scripts/predator.scm.h:1
 msgid "Add a 'Predator' effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm một hiệu ứng phim 'Predator' vào vùng được chọn (hay alpha)"
 
 #: ../scripts/predator.scm.h:2
 msgid "Edge amount"
@@ -1976,11 +2118,11 @@ msgstr "Điểm ảnh hoá"
 
 #: ../scripts/predator.scm.h:7
 msgid "_Predator..."
-msgstr "_Thú ăn mồi sống..."
+msgstr "_Predator..."
 
 #: ../scripts/pupi-button.scm.h:2
 msgid "Create images, each containing an oval button graphic"
-msgstr ""
+msgstr "Tạo các ảnh, mỗi ảnh chứa một đồ họa nút hình trái xoan"
 
 #: ../scripts/pupi-button.scm.h:5
 msgid "Lower color"
@@ -1992,11 +2134,11 @@ msgstr "Màu dưới (hoạt động)"
 
 #: ../scripts/pupi-button.scm.h:7
 msgid "Not pressed"
-msgstr "Chưa nhấn"
+msgstr "Chưa bấm"
 
 #: ../scripts/pupi-button.scm.h:8
 msgid "Not pressed (active)"
-msgstr "Chưa nhấn (hoạt động)"
+msgstr "Chưa bấm (hoạt động)"
 
 #: ../scripts/pupi-button.scm.h:9
 msgid "Padding X"
@@ -2020,40 +2162,39 @@ msgstr "Màu trên"
 
 #: ../scripts/pupi-button.scm.h:17
 msgid "Upper color (active)"
-msgstr "Màu trên (Hoạt động)"
+msgstr "Màu trên (hoạt động)"
 
 #: ../scripts/pupi-button.scm.h:18
 msgid "_Round Button..."
-msgstr "Nút t_ròn"
+msgstr "Nút t_ròn..."
 
 #: ../scripts/rendermap.scm.h:1
 msgid "Behavior"
-msgstr "Ứng sử"
+msgstr "Ứng xử"
 
 #: ../scripts/rendermap.scm.h:2
 msgid "Create an image filled with an Earth-like map pattern"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một câu mẫu bản đồ kiểu quả đất"
 
 #: ../scripts/rendermap.scm.h:3
-#, fuzzy
 msgid "Detail in Middle"
-msgstr "Chi tiết ở giữa"
+msgstr "Chi tiết ở tâm"
 
 #: ../scripts/rendermap.scm.h:8
 msgid "Render _Map..."
-msgstr "Vẽ _sơ đồ..."
+msgstr "Vẽ _bản đồ..."
 
 #: ../scripts/rendermap.scm.h:9
 msgid "Tile"
-msgstr "Lát"
+msgstr "Xếp lát"
 
 #: ../scripts/reverse-layers.scm.h:1
 msgid "Reverse Layer Order"
-msgstr ""
+msgstr "Đảo lại thứ tự lớp"
 
 #: ../scripts/reverse-layers.scm.h:2
 msgid "Reverse the order of layers in the image"
-msgstr ""
+msgstr "Đảo ngược thứ tự các lớp trong ảnh"
 
 #: ../scripts/ripply-anim.scm.h:1
 msgid "Black"
@@ -2062,13 +2203,14 @@ msgstr "Đen"
 #: ../scripts/ripply-anim.scm.h:2
 msgid ""
 "Create a multi-layer image by adding a ripple effect to the current image"
-msgstr ""
+msgstr "Tạo một ảnh đa lớp bằng cách thêm một hiệu ứng gợn vào ảnh hiện thời"
 
 #: ../scripts/ripply-anim.scm.h:3
 msgid "Edge behavior"
 msgstr "Ứng xử cạnh"
 
-#: ../scripts/ripply-anim.scm.h:4 ../scripts/waves-anim.scm.h:4
+#: ../scripts/ripply-anim.scm.h:4
+#: ../scripts/waves-anim.scm.h:4
 msgid "Number of frames"
 msgstr "Số khung"
 
@@ -2103,7 +2245,7 @@ msgstr "Bán kính cạnh"
 #: ../scripts/round-corners.scm.h:5
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
-msgstr ""
+msgstr "Làm tròn các góc của một ảnh và tùy chọn thêm một bóng thả và nền"
 
 #: ../scripts/round-corners.scm.h:9
 msgid "_Round Corners..."
@@ -2112,39 +2254,39 @@ msgstr "Góc t_ròn..."
 #: ../scripts/script-fu-set-cmap.scm.h:1
 msgid "Change the colormap of an image to the colors in a specified palette."
 msgstr ""
+"Thay đổi sơ đồ màu của một ảnh thành màu sắc trên một bảng chọn cụ thể."
 
 #: ../scripts/script-fu-set-cmap.scm.h:2
-#, fuzzy
 msgid "Palette"
-msgstr "Mẫu"
+msgstr "Bảng chọn"
 
 #: ../scripts/script-fu-set-cmap.scm.h:3
 msgid "Se_t Colormap..."
-msgstr ""
+msgstr "Đặ_t sơ đồ màu..."
 
 #: ../scripts/select-to-brush.scm.h:2
 msgid "Convert a selection to a brush"
-msgstr ""
+msgstr "Chuyển đổi một phần chọn sang một bút vẽ"
 
 #: ../scripts/select-to-brush.scm.h:5
 msgid "To _Brush..."
-msgstr "Đến _bút vẽ..."
+msgstr "Tới _bút vẽ..."
 
 #: ../scripts/select-to-image.scm.h:1
 msgid "Convert a selection to an image"
-msgstr ""
+msgstr "Chuyển đổi một phần chọn sang một ảnh"
 
 #: ../scripts/select-to-image.scm.h:2
 msgid "To _Image"
-msgstr "Đến ản_h"
+msgstr "Tớ_i ảnh"
 
 #: ../scripts/select-to-pattern.scm.h:1
 msgid "Convert a selection to a pattern"
-msgstr ""
+msgstr "Chuyển đổi một phần chọn sang một câu mẫu"
 
 #: ../scripts/select-to-pattern.scm.h:4
 msgid "To _Pattern..."
-msgstr "Đến _mẫu..."
+msgstr "Tới câ_u mẫu..."
 
 #: ../scripts/selection-round.scm.h:1
 msgid "Concave"
@@ -2156,21 +2298,22 @@ msgid "Radius (%)"
 msgstr "Bán kính (%)"
 
 #: ../scripts/selection-round.scm.h:4
-#, fuzzy
 msgid "Round the corners of the current selection"
-msgstr "Tạo bốn nét dẫn ở quanh hộp giới hạn của vùng chọn hiện có."
+msgstr "Làm tròn các góc của phần chọn hiện thời"
 
 #: ../scripts/selection-round.scm.h:5
 msgid "Rounded R_ectangle..."
-msgstr "Chữ nhật có _góc tròn..."
+msgstr "Hình chữ nhật _góc tròn..."
 
 #: ../scripts/slide.scm.h:1
 msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
 msgstr ""
+"Thêm vào một ảnh một khung kiểu phim ảnh chiếu, các lỗ răng bánh xích và các "
+"nhãn"
 
 #: ../scripts/slide.scm.h:3
 msgid "Font color"
-msgstr "Màu phông chữ"
+msgstr "Màu phông"
 
 #: ../scripts/slide.scm.h:4
 msgid "Number"
@@ -2182,7 +2325,7 @@ msgstr "_Trượt..."
 
 #: ../scripts/sota-chrome-logo.scm.h:5
 msgid "Create a State Of The Art chromed logo"
-msgstr ""
+msgstr "Tạo một biểu hình crom công nghệ tiên tiến nhất (SOTA)"
 
 #: ../scripts/sota-chrome-logo.scm.h:10
 msgid "SOTA Chrome..."
@@ -2190,19 +2333,19 @@ msgstr "Crom SOTA..."
 
 #: ../scripts/speed-text.scm.h:2
 msgid "Create a logo with a speedy text effect"
-msgstr ""
+msgstr "Tạo một biểu hình có một hiệu ứng chữ nhanh"
 
 #: ../scripts/speed-text.scm.h:7
 msgid "Speed Text..."
-msgstr "Chữ tốc độ..."
+msgstr "Chữ nhanh..."
 
 #: ../scripts/sphere.scm.h:2
 msgid "Create a simple sphere with a drop shadow"
-msgstr ""
+msgstr "Tạo một hình cầu đơn giản với một bóng thả"
 
 #: ../scripts/sphere.scm.h:3
 msgid "Lighting (degrees)"
-msgstr "Dùng ánh sáng (độ)"
+msgstr "Ánh sáng (độ)"
 
 #: ../scripts/sphere.scm.h:4
 msgid "Radius (pixels)"
@@ -2219,6 +2362,8 @@ msgstr "_Cầu..."
 #: ../scripts/spinning-globe.scm.h:1
 msgid "Create an animation by mapping the current image onto a spinning sphere"
 msgstr ""
+"Tạo một hoạt ảnh bằng cách ánh xạ ảnh hiện thời tới một hình cầu đang quay "
+"tròn"
 
 #: ../scripts/spinning-globe.scm.h:2
 msgid "Frames"
@@ -2226,7 +2371,7 @@ msgstr "Khung"
 
 #: ../scripts/spinning-globe.scm.h:3
 msgid "Index to n colors (0 = remain RGB)"
-msgstr "chỉ mục đến n màu (0 = còn lại RGB)"
+msgstr "Phụ lục thành n màu (0 = còn lại RGB)"
 
 #: ../scripts/spinning-globe.scm.h:5
 msgid "Turn from left to right"
@@ -2234,16 +2379,12 @@ msgstr "Quay từ trái sang phải"
 
 #: ../scripts/spinning-globe.scm.h:7
 msgid "_Spinning Globe..."
-msgstr "Cầu đang _xoay..."
+msgstr "Cầu đang _quay..."
 
 #: ../scripts/spyrogimp.scm.h:1
-#, fuzzy
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
-msgstr ""
-"Có vẽ mẫu xoắn ốc, hình cuốn tròn ở quanh tròn khác và đường cong Li-xa-chu. "
-"Có thể tìm thông tin thêm tại « http://www.wisdom.weizmann.ac.il/~elad/"
-"spyrogimp/ »"
+msgstr "Thêm vào lớp hiện tại mẫu xoắn ốc, êpitrocoit và đường cong Li-xa-chu"
 
 #: ../scripts/spyrogimp.scm.h:2
 msgid "Airbrush"
@@ -2263,21 +2404,19 @@ msgstr "Phương pháp màu"
 
 #: ../scripts/spyrogimp.scm.h:7
 msgid "Epitrochoid"
-msgstr "Hình cuốn tròn ở quanh tròn khác"
+msgstr "Êpitrocoit"
 
 #: ../scripts/spyrogimp.scm.h:8
 msgid "Frame"
 msgstr "Khung"
 
 #: ../scripts/spyrogimp.scm.h:10
-#, fuzzy
 msgid "Gradient: Loop Sawtooth"
-msgstr "Độ dốc: răng cưa vòng lặp lại"
+msgstr "Dải màu : lặp lại răng cưa"
 
 #: ../scripts/spyrogimp.scm.h:11
-#, fuzzy
 msgid "Gradient: Loop Triangle"
-msgstr "Độ dốc: tam giác vòng lặp lại"
+msgstr "Dải màu : lặp lại tam giác"
 
 #: ../scripts/spyrogimp.scm.h:12
 msgid "Hexagon"
@@ -2285,11 +2424,11 @@ msgstr "Lục giác"
 
 #: ../scripts/spyrogimp.scm.h:13
 msgid "Hole ratio"
-msgstr "Tỳ lệ lỗ"
+msgstr "Tỷ lệ lỗ"
 
 #: ../scripts/spyrogimp.scm.h:14
 msgid "Inner teeth"
-msgstr "Răng bên trong"
+msgstr "Răng trong"
 
 #: ../scripts/spyrogimp.scm.h:15
 msgid "Lissajous"
@@ -2301,7 +2440,7 @@ msgstr "Lề (điểm ảnh)"
 
 #: ../scripts/spyrogimp.scm.h:17
 msgid "Outer teeth"
-msgstr "Răng bên ngoài"
+msgstr "Răng ngoài"
 
 #: ../scripts/spyrogimp.scm.h:18
 msgid "Pencil"
@@ -2313,23 +2452,23 @@ msgstr "Ngữ giác"
 
 #: ../scripts/spyrogimp.scm.h:20
 msgid "Polygon: 10 sides"
-msgstr "Đa giác: 10 giác"
+msgstr "Đa giác: 10 mặt"
 
 #: ../scripts/spyrogimp.scm.h:21
 msgid "Polygon: 7 sides"
-msgstr "Đa giác: 7 giác"
+msgstr "Đa giác: 7 mặt"
 
 #: ../scripts/spyrogimp.scm.h:22
 msgid "Polygon: 8 sides"
-msgstr "Đa giác: 8 giác"
+msgstr "Đa giác: 8 mặt"
 
 #: ../scripts/spyrogimp.scm.h:23
 msgid "Polygon: 9 sides"
-msgstr "Đa giác: 9 giác"
+msgstr "Đa giác: 9 mặt"
 
 #: ../scripts/spyrogimp.scm.h:24
 msgid "Rendering Spyro"
-msgstr ""
+msgstr "Đang vẽ mẫu xoắn ốc"
 
 #: ../scripts/spyrogimp.scm.h:25
 msgid "Shape"
@@ -2347,7 +2486,8 @@ msgstr "Mẫu xoắn ốc"
 msgid "Square"
 msgstr "Vuông"
 
-#: ../scripts/spyrogimp.scm.h:29 ../scripts/text-circle.scm.h:7
+#: ../scripts/spyrogimp.scm.h:29
+#: ../scripts/text-circle.scm.h:7
 msgid "Start angle"
 msgstr "Góc đầu"
 
@@ -2365,71 +2505,77 @@ msgstr "Kiểu"
 
 #: ../scripts/spyrogimp.scm.h:33
 msgid "_Spyrogimp..."
-msgstr "GIMP _xoắn ốc..."
+msgstr "Gimp _xoắn ốc..."
 
 #: ../scripts/starburst-logo.scm.h:2
 msgid "Burst color"
-msgstr "Màu bung"
+msgstr "Màu nổ ra"
 
 #: ../scripts/starburst-logo.scm.h:3
 msgid "Create a logo using a starburst gradient"
-msgstr ""
+msgstr "Tạo một biểu hình dùng một dải màu nổ ra hình sao"
 
 #: ../scripts/starburst-logo.scm.h:4
 msgid "Effect size (pixels * 30)"
-msgstr "Cỡ hiệu ứng (điểm ảnh * 30)"
+msgstr "Kích cỡ hiệu ứng (điểm ảnh * 30)"
 
 #: ../scripts/starburst-logo.scm.h:5
 msgid ""
 "Fill the selected region (or alpha) with a starburst gradient and add a "
 "shadow"
 msgstr ""
+"Điền vùng được chọn (hay alpha) bằng một dải màu nổ ra hình sao, và thêm một "
+"bóng"
 
 #: ../scripts/starburst-logo.scm.h:8
 msgid "Starb_urst..."
-msgstr "Sao b_ung..."
+msgstr "Nổ s_ao..."
 
 #: ../scripts/starscape-logo.scm.h:1
 msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
 msgstr ""
+"Tạo một biểu hình dùng một lối dệt kiểu đá, một ánh sáng rực rỡ sao mới "
+"hiện, và một bóng"
 
 #: ../scripts/starscape-logo.scm.h:2
 msgid "Effect size (pixels * 4)"
-msgstr "Cỡ hiệu ứng (điểm ảnh * 4)"
+msgstr "Kích cỡ hiệu ứng (điểm ảnh * 4)"
 
 #: ../scripts/starscape-logo.scm.h:3
 msgid ""
 "Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
 "and shadow"
 msgstr ""
+"Điền vùng được chọn (hay alpha) bằng một lối dệt kiểu đá, một ánh sáng rực "
+"rỡ sao mới hiện, và một bóng"
 
 #: ../scripts/starscape-logo.scm.h:7
 msgid "Sta_rscape..."
-msgstr "Cảnh s_ao..."
+msgstr "Cảnh sa_o..."
 
 #: ../scripts/swirltile.scm.h:4
 msgid "Create an image filled with a swirled tile effect"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một hiệu ứng ngói xoáy"
 
 #: ../scripts/swirltile.scm.h:9
 msgid "Swirl-_Tile..."
-msgstr "Lá_t xoáy..."
+msgstr "_Xoáy ngói..."
 
 #: ../scripts/swirltile.scm.h:10
 msgid "Whirl amount"
-msgstr "Độ xoáy"
+msgstr "Xoáy"
 
 #: ../scripts/swirly-pattern.scm.h:1
 msgid "Create an image filled with a swirly pattern"
-msgstr ""
+msgstr "Hãy chọn một ảnh được điền bằng một câu mẫu xoáy"
 
 #: ../scripts/swirly-pattern.scm.h:2
 msgid "Number of times to whirl"
-msgstr "Số lần xoáy"
+msgstr "Số lần xoáy "
 
 #: ../scripts/swirly-pattern.scm.h:3
 msgid "Quarter size"
-msgstr "Cỡ phần tư"
+msgstr "Kích cỡ phần tư"
 
 #: ../scripts/swirly-pattern.scm.h:4
 msgid "Whirl angle"
@@ -2437,19 +2583,19 @@ msgstr "Góc xoáy"
 
 #: ../scripts/swirly-pattern.scm.h:5
 msgid "_Swirly..."
-msgstr "Có nhiều gió _lốc..."
+msgstr "_Xoáy..."
 
 #: ../scripts/t-o-p-logo.scm.h:1
 msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Thêm vào vùng được chọn (hay alpha) một hiệu ứng vết các hạt"
 
 #: ../scripts/t-o-p-logo.scm.h:3
 msgid "Base color"
-msgstr "Màu cơ bản"
+msgstr "Màu cơ sở"
 
 #: ../scripts/t-o-p-logo.scm.h:5
 msgid "Create a logo using a Trace Of Particles effect"
-msgstr ""
+msgstr "Tạo một biểu hình dùng một hiệu ứng vết các hạt"
 
 #: ../scripts/t-o-p-logo.scm.h:6
 msgid "Edge only"
@@ -2457,7 +2603,7 @@ msgstr "Chỉ cạnh"
 
 #: ../scripts/t-o-p-logo.scm.h:7
 msgid "Edge width"
-msgstr "Độ rộng cạnh"
+msgstr "Rộng cạnh"
 
 #: ../scripts/t-o-p-logo.scm.h:10
 msgid "Hit rate"
@@ -2474,11 +2620,11 @@ msgstr "Làm trơn"
 #: ../scripts/text-circle.scm.h:2
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
-msgstr ""
+msgstr "Tạo một biểu hình bằng cách vẽ chuỗi đã ghi rõ theo chu vi hình tròn"
 
 #: ../scripts/text-circle.scm.h:3
 msgid "Fill angle"
-msgstr "Góc tô"
+msgstr "Góc điền"
 
 #: ../scripts/text-circle.scm.h:9
 msgid "Text C_ircle..."
@@ -2487,17 +2633,19 @@ msgstr "T_ròn chữ..."
 #: ../scripts/textured-logo.scm.h:3
 msgid ""
 "Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr ""
+msgstr "Tạo một biểu hình lối dệt với tô sáng, bóng và một nền khảm"
 
 #: ../scripts/textured-logo.scm.h:4
 msgid "Ending blend"
-msgstr "Đang xong việc pha trộn"
+msgstr "Đang kết thúc pha trộn"
 
 #: ../scripts/textured-logo.scm.h:5
 msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
 msgstr ""
+"Điền vùng được chọn (hay alpha) bằng một lối dệt, và thêm tô sáng, bóng và "
+"một nền khảm"
 
 #: ../scripts/textured-logo.scm.h:8
 msgid "Hexagons"
@@ -2505,7 +2653,7 @@ msgstr "Lục giác"
 
 #: ../scripts/textured-logo.scm.h:9
 msgid "Mosaic tile type"
-msgstr "Kiểu đá lát khảm"
+msgstr "Kiểu ngói khảm"
 
 #: ../scripts/textured-logo.scm.h:10
 msgid "Octagons"
@@ -2517,7 +2665,7 @@ msgstr "Vuông"
 
 #: ../scripts/textured-logo.scm.h:13
 msgid "Starting blend"
-msgstr "Đang khởi chạy việc pha trộn"
+msgstr "Đang bắt đầu pha trộn"
 
 #: ../scripts/textured-logo.scm.h:15
 msgid "Text pattern"
@@ -2525,15 +2673,15 @@ msgstr "Mẫu chữ"
 
 #: ../scripts/textured-logo.scm.h:16
 msgid "_Textured..."
-msgstr "Có hoạ _tiết..."
+msgstr "_Lối dệt..."
 
 #: ../scripts/tileblur.scm.h:1
 msgid "Blur horizontally"
-msgstr "Làm mờ theo chiều ngang"
+msgstr "Che mờ theo chiều ngang"
 
 #: ../scripts/tileblur.scm.h:2
 msgid "Blur the edges of an image so the result tiles seamlessly"
-msgstr ""
+msgstr "Che mờ các cạnh của ảnh để làm cho ảnh lát đều không có đường nối"
 
 #: ../scripts/tileblur.scm.h:3
 msgid "Blur type"
@@ -2541,7 +2689,7 @@ msgstr "Kiểu mờ"
 
 #: ../scripts/tileblur.scm.h:4
 msgid "Blur vertically"
-msgstr "Làm mờ dọc"
+msgstr "Che mờ theo chiều dọc"
 
 #: ../scripts/tileblur.scm.h:5
 msgid "IIR"
@@ -2553,19 +2701,19 @@ msgstr "RLE"
 
 #: ../scripts/tileblur.scm.h:8
 msgid "_Tileable Blur..."
-msgstr "Cảnh mờ có thể lá_t..."
+msgstr "Che mờ lá_t được..."
 
 #: ../scripts/title-header.scm.h:1
 msgid "Create a decorative web title header"
-msgstr ""
+msgstr "Tạo một tiêu đề Web trang trí"
 
 #: ../scripts/title-header.scm.h:6
 msgid "Web Title Header..."
-msgstr "Dòng đầu tiêu đề Mạng..."
+msgstr "Tiêu đề Web..."
 
 #: ../scripts/truchet.scm.h:3
 msgid "Create an image filled with a Truchet pattern"
-msgstr ""
+msgstr "Tạo một ảnh được điền bằng một câu mẫu Tợ-ru-sê"
 
 #: ../scripts/truchet.scm.h:4
 msgid "Foreground color"
@@ -2573,15 +2721,15 @@ msgstr "Màu cảnh gần"
 
 #: ../scripts/truchet.scm.h:7
 msgid "T_ruchet..."
-msgstr "Tợ-_ru-sê (lát)..."
+msgstr "Tợ-_ru-sê..."
 
 #: ../scripts/unsharp-mask.scm.h:1
 msgid "Mask opacity"
-msgstr "Độ đục mặt nạ"
+msgstr "Đục mặt nạ"
 
 #: ../scripts/unsharp-mask.scm.h:2
 msgid "Mask size"
-msgstr "Cỡ mặt nạ"
+msgstr "Kích cỡ mặt nạ"
 
 #: ../scripts/waves-anim.scm.h:1
 msgid "Amplitude"
@@ -2592,6 +2740,7 @@ msgid ""
 "Create a multi-layer image with an effect like a stone was thrown into the "
 "current image"
 msgstr ""
+"Tạo một ảnh đa lớp với một hiệu ứng như một đá được ném vào ảnh hiện thời"
 
 #: ../scripts/waves-anim.scm.h:3
 msgid "Invert direction"
@@ -2610,22 +2759,24 @@ msgid ""
 "Create a new layer filled with a weave effect to be used as an overlay or "
 "bump map"
 msgstr ""
+"Tạo một lớp mới được điền bằng một hiệu ứng dệt để sử dụng làm phủ hay sơ đồ "
+"mụn"
 
 #: ../scripts/weave.scm.h:2
 msgid "Ribbon spacing"
-msgstr "Khảng cách dải băng"
+msgstr "Giãn cách dải băng"
 
 #: ../scripts/weave.scm.h:3
 msgid "Ribbon width"
-msgstr "Độ rộng dải băng"
+msgstr "Dải băng rộng"
 
 #: ../scripts/weave.scm.h:4
 msgid "Shadow darkness"
-msgstr "Độ tối bóng"
+msgstr "Bóng tối"
 
 #: ../scripts/weave.scm.h:5
 msgid "Shadow depth"
-msgstr "Độ sâu bóng"
+msgstr "Bóng sâu"
 
 #: ../scripts/weave.scm.h:6
 msgid "Thread density"
@@ -2633,47 +2784,47 @@ msgstr "Mật độ chỉ"
 
 #: ../scripts/weave.scm.h:7
 msgid "Thread intensity"
-msgstr "Độ mạnh chỉ"
+msgstr "Mạnh chỉ"
 
 #: ../scripts/weave.scm.h:8
 msgid "Thread length"
-msgstr "Độ dài chỉ"
+msgstr "Dài chỉ"
 
 #: ../scripts/weave.scm.h:9
 msgid "_Weave..."
-msgstr "Đệ_t..."
+msgstr "_Dệt..."
 
 #: ../scripts/web-browser.scm.h:1
 msgid "Bookmark to the GIMP web site"
-msgstr ""
+msgstr "Liên kết lưu tới trang Web GIMP"
 
 #: ../scripts/web-browser.scm.h:2
 msgid "Bookmark to the user manual"
-msgstr ""
+msgstr "Liên kết lưu tới sổ tay người dùng"
 
 #: ../scripts/web-browser.scm.h:3
 msgid "Create and Use _Selections"
-msgstr "Tạo và dùng _vùng chọn"
+msgstr "Tạo và dùng _phần chọn"
 
 #: ../scripts/web-browser.scm.h:4
 msgid "Create, Open and Save _Files"
-msgstr "Tạo, Mở và Lưu _Tập tin"
+msgstr "Tạo, mở và lưu _tập tin"
 
 #: ../scripts/web-browser.scm.h:5
 msgid "Drawing _Simple Objects"
-msgstr "_Vẽ Đối tượng Đơn giản"
+msgstr "_Vẽ đối tượng đơn giản"
 
 #: ../scripts/web-browser.scm.h:6
 msgid "How to Use _Dialogs"
-msgstr "Cách sử _dụng Hộp thoại"
+msgstr "Sử dụng _hộp thoại như thế nào"
 
 #: ../scripts/web-browser.scm.h:7
 msgid "Plug-in _Registry"
-msgstr "_Sổ đăng ký bổ sung"
+msgstr "_Sổ đăng ký phần bổ sung"
 
 #: ../scripts/web-browser.scm.h:8
 msgid "Using _Paths"
-msgstr "_Dùng Đường dẫn"
+msgstr "Dùng đường _dẫn:"
 
 #: ../scripts/web-browser.scm.h:9
 msgid "_Basic Concepts"
@@ -2681,101 +2832,101 @@ msgstr "Khái niệm cơ _bản"
 
 #: ../scripts/web-browser.scm.h:10
 msgid "_Developer Web Site"
-msgstr "Nơi Mạng của nhà _phát triển"
+msgstr "Trang Web nhà _phát triển"
 
 #: ../scripts/web-browser.scm.h:11
 msgid "_Main Web Site"
-msgstr "Nơi _Mạng chính"
+msgstr "Trang _Web chính"
 
 #: ../scripts/web-browser.scm.h:12
 msgid "_Preparing your Images for the Web"
-msgstr "Ch_uẩn bị ảnh cho Mạng"
+msgstr "Ch_uẩn bị ảnh cho Web"
 
 #: ../scripts/web-browser.scm.h:13
-#, fuzzy
 msgid "_User Manual Web Site"
-msgstr "Nơi _Mạng chính"
+msgstr "Trang Web _sổ tay người dùng"
 
 #: ../scripts/web-browser.scm.h:14
 msgid "_Working with Digital Camera Photos"
-msgstr "Th_ao tác ảnh từ máy ảnh số"
+msgstr "Th_ao tác các ảnh chụp từ máy ảnh số"
 
 #: ../scripts/xach-effect.scm.h:1
 msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
 msgstr ""
+"Thêm vào vùng được chọn (hay alpha) một hiệu ứng ba chiều trong mờ huyền ảo"
 
 #: ../scripts/xach-effect.scm.h:2
 msgid "Drop shadow X offset"
-msgstr "Hiệu số X của bóng thả"
+msgstr "Bù X của bóng thả"
 
 #: ../scripts/xach-effect.scm.h:3
 msgid "Drop shadow Y offset"
-msgstr "Hiệu số Y của bóng thả"
+msgstr "Bù Y của bóng thả"
 
 #: ../scripts/xach-effect.scm.h:4
 msgid "Drop shadow blur radius"
-msgstr "Tia mờ của bóng thả"
+msgstr "Bán kính mờ của bóng thả"
 
 #: ../scripts/xach-effect.scm.h:5
 msgid "Drop shadow color"
-msgstr "Màu bóng thả"
+msgstr "Màu của bóng thả"
 
 #: ../scripts/xach-effect.scm.h:6
 msgid "Drop shadow opacity"
-msgstr "Độ đục của bóng thả"
+msgstr "Đục của bóng thả"
 
 #: ../scripts/xach-effect.scm.h:7
 msgid "Highlight X offset"
-msgstr "Hiệu số X của nổi bật"
+msgstr "Bù X của nổi bật"
 
 #: ../scripts/xach-effect.scm.h:8
 msgid "Highlight Y offset"
-msgstr "Hiệu số Y của nổi bật"
+msgstr "Bù Y của nổi bật"
 
 #: ../scripts/xach-effect.scm.h:10
 msgid "Highlight opacity"
-msgstr "Độ đục của nổi bật"
+msgstr "Đục của nổi bật"
 
 #: ../scripts/xach-effect.scm.h:12
 msgid "_Xach-Effect..."
 msgstr "Hiệu ứng _Xach..."
 
-#~ msgid "/Script-Fu/"
-#~ msgstr "/Script-Fu/"
+msgid "Draw _HSV Graph..."
+msgstr "Vẽ đồ thị _HSV..."
 
-#~ msgid "<Toolbox>/Xtns/Languages/Script-Fu"
-#~ msgstr "<Toolbox>/Xtns/Ngôn_ngữ/Script-Fu"
+msgid "End X"
+msgstr "X cuối"
 
-#~ msgid "Burn-In: Need two layers in total!"
-#~ msgstr "Cháy vào: cần tổng số hai lớp."
+msgid "End Y"
+msgstr "Y cuối"
 
-#~ msgid ""
-#~ "Darken only\n"
-#~ "(Better, but only for images with a lot of white)"
-#~ msgstr ""
-#~ "Chỉ tối\n"
-#~ "(Tốt hơn, mà chỉ cho ảnh có trắng nhiều)"
+msgid "Graph scale"
+msgstr "Tỷ lệ đồ thị"
 
-#~ msgid "Apply generated layermask"
-#~ msgstr "Áp dụng mặt nạ lớp đã tạo ra"
+msgid "Use selection bounds instead of values below"
+msgstr "Dùng giới hạn lựa chọn thay vào giá trị bên dưới đây."
 
-#~ msgid "Clear unselected maskarea"
-#~ msgstr "Xóa vùng mặt nạ không chọn"
+msgid "<Toolbox>/Xtns/Languages/Script-Fu"
+msgstr "<Toolbox>/Phần mở rộng/Ngôn ngữ/Script-Fu"
 
-#~ msgid "Fade from %"
-#~ msgstr "Mờ dần từ %"
+msgid "Burn-In: Need two layers in total!"
+msgstr "Cháy vào: cần tổng số hai lớp."
 
-#~ msgid "Fade to %"
-#~ msgstr "Mờ dần vào %"
+msgid ""
+"Darken only\n"
+"(Better, but only for images with a lot of white)"
+msgstr ""
+"Chỉ làm thẫm\n"
+"(Tốt hơn, nhưng chỉ cho ảnh có nhiều màu trắng)"
 
-#~ msgid "Use growing selection"
-#~ msgstr "Dùng vùng chọn đang mở rộng"
+msgid "Apply generated layermask"
+msgstr "Áp dụng mặt nạ lớp đã tạo ra"
 
-#~ msgid "_Fade to Layer Mask..."
-#~ msgstr "_Mờ dần thành mặt nạ lớp..."
+msgid "Clear unselected maskarea"
+msgstr "Dọn vùng mặt nạ không chọn"
 
-#~ msgid "Render _Image..."
-#~ msgstr "_Vẽ ảnh..."
+msgid "Fade from %"
+msgstr "Mờ dần từ %"
 
-#~ msgid "_Divisions..."
-#~ msgstr "Phân _chia..."
+msgid "_Fade to Layer Mask..."
+msgstr "_Mờ dần thành mặt nạ lớp..."
