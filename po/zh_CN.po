@@ -1,19 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
+# zh_CN translation of gimp-tiny-fu.
+# Copyright (C) 2008 Free Software Foundation, Inc.
 # Yuheng Xie <elephant@linux.net.cn>, 2001-2004.
+# 神州散人 <kappa8086@gmail.com>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-12 03:52+0000\n"
-"PO-Revision-Date: 2006-05-03 15:57+0800\n"
-"Last-Translator: Yuheng Xie <elephant@linux.net.cn>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-"
+"tiny-fu&component=general\n"
+"POT-Creation-Date: 2009-04-17 09:24+0000\n"
+"PO-Revision-Date: 2009-05-04 17:22+0800\n"
+"Last-Translator: 神州散人 <kappa8086@gmail.com>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Translator: Yuheng Xie <elephant@linux.net.cn>\n"
 
 #: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
@@ -21,25 +22,24 @@ msgstr "Script-Fu 控制台"
 
 #: ../tiny-fu/tiny-fu-console.c:196
 msgid "Welcome to TinyScheme"
-msgstr ""
+msgstr "欢迎使用 TinyScheme"
 
 #: ../tiny-fu/tiny-fu-console.c:202
 msgid "Interactive Scheme Development"
-msgstr ""
+msgstr "交互式 Scheme 开发"
 
 #: ../tiny-fu/tiny-fu-console.c:238
 msgid "_Browse..."
 msgstr "浏览(_B)..."
 
 #: ../tiny-fu/tiny-fu-console.c:296
-#, fuzzy
 msgid "Save Script-Fu Console Output"
-msgstr "Script-Fu 控制台"
+msgstr "保存 Script-Fu 控制台输出"
 
 #: ../tiny-fu/tiny-fu-console.c:343
 #, c-format
 msgid "Could not open '%s' for writing: %s"
-msgstr ""
+msgstr "无法为写入打开“%s”：%s"
 
 #: ../tiny-fu/tiny-fu-console.c:372
 msgid "Script-Fu Procedure Browser"
@@ -47,7 +47,7 @@ msgstr "Script-Fu 过程浏览器"
 
 #: ../tiny-fu/tiny-fu-console.c:716
 msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-msgstr ""
+msgstr "Script-Fu 评估模式只允许非交互式调用"
 
 #: ../tiny-fu/tiny-fu-interface.c:191
 msgid "Script-Fu cannot process two scripts at the same time."
@@ -56,7 +56,7 @@ msgstr "Script-Fu 无法同时处理两个脚本。"
 #: ../tiny-fu/tiny-fu-interface.c:193
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr "你已经正在运行“%s”脚本。"
+msgstr "你已经正在运行 “%s” 脚本。"
 
 #: ../tiny-fu/tiny-fu-interface.c:238
 #, c-format
@@ -91,7 +91,6 @@ msgid "Script-Fu Palette Selection"
 msgstr "Script-Fu 色板选择"
 
 #: ../tiny-fu/tiny-fu-interface.c:492
-#, fuzzy
 msgid "Script-Fu Pattern Selection"
 msgstr "Script-Fu 图案选择"
 
@@ -104,15 +103,16 @@ msgid "Script-Fu Brush Selection"
 msgstr "Script-Fu 画笔选择"
 
 #: ../tiny-fu/tiny-fu-scripts.c:658
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error while executing\n"
 "%s\n"
 "\n"
 "%s"
 msgstr ""
-"执行以下命令时出错：\n"
+"执行出错\n"
 "%s\n"
+"\n"
 "%s"
 
 #: ../tiny-fu/tiny-fu-server.c:712
@@ -133,7 +133,7 @@ msgstr "服务器日志文件："
 
 #: ../tiny-fu/tiny-fu.c:161
 msgid "Interactive console for Script-Fu development"
-msgstr ""
+msgstr "用于 Script-Fu 开发的交互式控制台"
 
 #: ../tiny-fu/tiny-fu.c:167
 msgid "Script-Fu _Console"
@@ -141,7 +141,7 @@ msgstr "Script-Fu 控制台(_C)"
 
 #: ../tiny-fu/tiny-fu.c:191
 msgid "Server for remote Script-Fu operation"
-msgstr ""
+msgstr "远程操作 Script-Fu 的服务器"
 
 #: ../tiny-fu/tiny-fu.c:196
 msgid "_Start Server..."
@@ -165,7 +165,7 @@ msgstr "按钮(_B)"
 
 #: ../tiny-fu/tiny-fu.c:361
 msgid "_Logos"
-msgstr "标志(_L)"
+msgstr "徽标(_L)"
 
 #: ../tiny-fu/tiny-fu.c:363
 msgid "_Misc"
@@ -180,7 +180,6 @@ msgid "_Test"
 msgstr "测试(_T)"
 
 #: ../tiny-fu/tiny-fu.c:369
-#, fuzzy
 msgid "_Utilities"
 msgstr "工具(_U)"
 
@@ -193,9 +192,8 @@ msgid "_Alien Glow"
 msgstr "奇异炽光(_A)"
 
 #: ../tiny-fu/tiny-fu.c:375
-#, fuzzy
 msgid "_Beveled Pattern"
-msgstr "图案"
+msgstr "卷边的图案(_B)"
 
 #: ../tiny-fu/tiny-fu.c:377
 msgid "_Classic.Gimp.Org"
@@ -203,46 +201,43 @@ msgstr "_Classic.Gimp.Org"
 
 #: ../tiny-fu/tiny-fu.c:380
 msgid "Alpha to _Logo"
-msgstr "Alpha 变标志(_L)"
+msgstr "Alpha 变徽标(_L)"
 
 #: ../tiny-fu/tiny-fu.c:382
 msgid "An_imation"
-msgstr ""
+msgstr "动画(_I)"
 
 #: ../tiny-fu/tiny-fu.c:384
 msgid "_Animators"
-msgstr ""
+msgstr "动画(_A)"
 
 #: ../tiny-fu/tiny-fu.c:386
 msgid "_Artistic"
-msgstr ""
+msgstr "艺术(_A)"
 
 #: ../tiny-fu/tiny-fu.c:388
-#, fuzzy
 msgid "_Blur"
-msgstr "模糊 X"
+msgstr "模糊(_B)"
 
 #: ../tiny-fu/tiny-fu.c:390
 msgid "_Decor"
-msgstr ""
+msgstr "装饰(_D)"
 
 #: ../tiny-fu/tiny-fu.c:392
-#, fuzzy
 msgid "_Effects"
-msgstr "_Xach-Effect..."
+msgstr "效果(_E)"
 
 #: ../tiny-fu/tiny-fu.c:394
 msgid "En_hance"
-msgstr ""
+msgstr "增强(_H)"
 
 #: ../tiny-fu/tiny-fu.c:396
 msgid "_Light and Shadow"
-msgstr ""
+msgstr "光和影(_L)"
 
 #: ../tiny-fu/tiny-fu.c:398
-#, fuzzy
 msgid "S_hadow"
-msgstr "阴影"
+msgstr "阴影(_H)"
 
 #: ../tiny-fu/tiny-fu.c:400
 msgid "_Render"
@@ -250,11 +245,11 @@ msgstr "渲染(_R)"
 
 #: ../tiny-fu/tiny-fu.c:402
 msgid "_Alchemy"
-msgstr ""
+msgstr "炼金术(_A)"
 
 #: ../tiny-fu/tiny-fu.c:405
 msgid "Re-read all available Script-Fu scripts"
-msgstr ""
+msgstr "重新读取所有可用的 Script-Fu 脚本"
 
 #: ../tiny-fu/tiny-fu.c:410
 msgid "_Refresh Scripts"
@@ -265,6 +260,8 @@ msgid ""
 "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
 "Please close all Script-Fu windows and try again."
 msgstr ""
+"当一个 Script-Fu 对话框处于打开状态时不能使用“刷新脚本”。请关闭所有 Script-"
+"Fu 窗口并重试。"
 
 #: ../scripts/3d-outline.scm.h:1
 msgid "3D _Outline..."
@@ -272,11 +269,11 @@ msgstr "3D 轮廓(_O)..."
 
 #: ../scripts/3d-outline.scm.h:2
 msgid "Bumpmap (alpha layer) blur radius"
-msgstr "凹凸贴图(Alpha 图层)模糊半径"
+msgstr "凹凸贴图 (Alpha 图层)模糊半径"
 
 #: ../scripts/3d-outline.scm.h:3
 msgid "Create a logo with outlined text and a drop shadow"
-msgstr ""
+msgstr "创建一个带有有轮廓的文字和投影的徽标"
 
 #: ../scripts/3d-outline.scm.h:4 ../scripts/glossy.scm.h:6
 msgid "Default bumpmap settings"
@@ -332,7 +329,7 @@ msgstr "轮廓模糊半径"
 #: ../scripts/3d-outline.scm.h:8
 msgid ""
 "Outline the selected region (or alpha) with a pattern and add a drop shadow"
-msgstr ""
+msgstr "使用图案描绘选中的区域(或 alpha) 的轮廓并添加投影"
 
 #: ../scripts/3d-outline.scm.h:9 ../scripts/beveled-pattern-arrow.scm.h:5
 #: ../scripts/beveled-pattern-bullet.scm.h:3
@@ -406,7 +403,7 @@ msgstr "方块大小"
 
 #: ../scripts/3dTruchet.scm.h:4
 msgid "Create an image filled with a 3D Truchet pattern"
-msgstr ""
+msgstr "创建由 3D 拼接图案填充的图像"
 
 #: ../scripts/3dTruchet.scm.h:5 ../scripts/blended-logo.scm.h:7
 msgid "End blend"
@@ -439,7 +436,7 @@ msgstr "添加斜面(_E)..."
 
 #: ../scripts/add-bevel.scm.h:2
 msgid "Add a beveled border to an image"
-msgstr ""
+msgstr "给图像添加卷边"
 
 #: ../scripts/add-bevel.scm.h:3 ../scripts/chip-away.scm.h:12
 msgid "Keep bump layer"
@@ -457,7 +454,7 @@ msgstr "添加边框(_B)..."
 
 #: ../scripts/addborder.scm.h:2
 msgid "Add a border around an image"
-msgstr ""
+msgstr "在图像周围添加边框"
 
 #: ../scripts/addborder.scm.h:3
 msgid "Border X size"
@@ -477,7 +474,7 @@ msgstr "颜色变化量"
 
 #: ../scripts/alien-glow-arrow.scm.h:2
 msgid "Create an arrow graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "为 web 页面创建带奇异炽光的箭头图形"
 
 #: ../scripts/alien-glow-arrow.scm.h:3
 #: ../scripts/beveled-pattern-arrow.scm.h:2
@@ -538,7 +535,7 @@ msgstr "条长度"
 
 #: ../scripts/alien-glow-bar.scm.h:4
 msgid "Create an Hrule graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "为 web 页面创建带奇异炽光的水平分隔条图形"
 
 #: ../scripts/alien-glow-bar.scm.h:7 ../scripts/beveled-pattern-hrule.scm.h:5
 msgid "_Hrule..."
@@ -546,7 +543,7 @@ msgstr "水平分隔条(_H)..."
 
 #: ../scripts/alien-glow-bullet.scm.h:2
 msgid "Create a bullet graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "为 web 页面创建带奇异炽光的列表符号图形"
 
 #: ../scripts/alien-glow-bullet.scm.h:5 ../scripts/text-circle.scm.h:6
 #: ../scripts/tileblur.scm.h:7
@@ -565,7 +562,7 @@ msgstr "按钮(_U)..."
 
 #: ../scripts/alien-glow-button.scm.h:3
 msgid "Create a button graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "为 web 页面创建带奇异炽光的按钮图形"
 
 #: ../scripts/alien-glow-button.scm.h:8
 msgid "Glow radius"
@@ -586,7 +583,7 @@ msgstr "文字颜色"
 
 #: ../scripts/alien-glow-logo.scm.h:1
 msgid "Add an eerie glow around the selected region (or alpha)"
-msgstr ""
+msgstr "在选择区域(或 alpha)周围添加奇异炽光"
 
 #: ../scripts/alien-glow-logo.scm.h:2
 msgid "Alien _Glow..."
@@ -594,7 +591,7 @@ msgstr "奇异炽光(_G)..."
 
 #: ../scripts/alien-glow-logo.scm.h:3
 msgid "Create a logo with an alien glow around the text"
-msgstr ""
+msgstr "创建一个周围带有奇异炽光的文字的徽标"
 
 #: ../scripts/alien-glow-logo.scm.h:7
 msgid "Glow size (pixels * 4)"
@@ -602,7 +599,7 @@ msgstr "炽光大小(像素 * 4)"
 
 #: ../scripts/alien-neon-logo.scm.h:1
 msgid "Add psychedelic outlines to the selected region (or alpha)"
-msgstr ""
+msgstr "在选择区域(或 alpha) 周围添加迷幻轮廓"
 
 #: ../scripts/alien-neon-logo.scm.h:2
 msgid "Alien _Neon..."
@@ -610,7 +607,7 @@ msgstr "奇异霓虹灯(_N)..."
 
 #: ../scripts/alien-neon-logo.scm.h:4
 msgid "Create a logo with psychedelic outlines around the text"
-msgstr ""
+msgstr "创建一个文字周围带有迷幻轮廓的徽标"
 
 #: ../scripts/alien-neon-logo.scm.h:5
 msgid "Fade away"
@@ -632,29 +629,29 @@ msgstr "间隙宽度"
 msgid ""
 "Add a gradient effect, a drop shadow, and a background to the selected "
 "region (or alpha)"
-msgstr ""
+msgstr "给选中的区域(或 alpha) 添加渐变效果，投影和背景"
 
 #: ../scripts/basic1-logo.scm.h:3
 msgid ""
 "Create a plain text logo with a gradient effect, a drop shadow, and a "
 "background"
-msgstr ""
+msgstr "创建一个带有渐变效果，投影和背景的纯文本徽标"
 
 #: ../scripts/basic1-logo.scm.h:8
 msgid "_Basic I..."
-msgstr "基本 I(_B)..."
+msgstr "基本 I (_B)..."
 
 #: ../scripts/basic2-logo.scm.h:1
 msgid "Add a shadow and a highlight to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中的区域(或 alpha) 添加阴影和高亮"
 
 #: ../scripts/basic2-logo.scm.h:2
 msgid "B_asic II..."
-msgstr "基本 II(_A)..."
+msgstr "基本 II (_A)..."
 
 #: ../scripts/basic2-logo.scm.h:4
 msgid "Create a simple logo with a shadow and a highlight"
-msgstr ""
+msgstr "创建一个带有阴影和高亮的简单徽标"
 
 #: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:4
 #: ../scripts/pupi-button.scm.h:1
@@ -663,7 +660,7 @@ msgstr "斜面宽度"
 
 #: ../scripts/beveled-button.scm.h:2
 msgid "Create a simple, beveled button graphic for webpages"
-msgstr ""
+msgstr "为 web 页面创建一个简单的斜角按钮图形"
 
 #: ../scripts/beveled-button.scm.h:5
 msgid "Lower-right color"
@@ -684,11 +681,11 @@ msgstr "左上方颜色"
 
 #: ../scripts/beveled-pattern-arrow.scm.h:1
 msgid "Create a beveled pattern arrow for webpages"
-msgstr ""
+msgstr "为 web 页面创建一个斜角图案的箭头"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:1
 msgid "Create a beveled pattern bullet for webpages"
-msgstr ""
+msgstr "为 web 页面创建一个斜角图案的列表符号"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:2
 msgid "Diameter"
@@ -702,11 +699,11 @@ msgstr "透明背景"
 
 #: ../scripts/beveled-pattern-button.scm.h:2
 msgid "Create a beveled pattern button for webpages"
-msgstr ""
+msgstr "为 web 页面创建一个斜角图案的按钮"
 
 #: ../scripts/beveled-pattern-heading.scm.h:1
 msgid "Create a beveled pattern heading for webpages"
-msgstr ""
+msgstr "为 web 页面创建一个斜角图案的标题"
 
 #: ../scripts/beveled-pattern-heading.scm.h:4
 msgid "H_eading..."
@@ -714,7 +711,7 @@ msgstr "标题(_E)..."
 
 #: ../scripts/beveled-pattern-hrule.scm.h:1
 msgid "Create a beveled pattern hrule for webpages"
-msgstr ""
+msgstr "为 web 页面创建斜角图案的水平分隔条"
 
 #: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/gimp-labels.scm.h:8
 #: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:7
@@ -730,18 +727,17 @@ msgstr "宽度"
 
 #: ../scripts/blend-anim.scm.h:1
 msgid "Blend Animation needs at least three source layers"
-msgstr ""
+msgstr "混合动画至少需要三个源图层"
 
 #: ../scripts/blend-anim.scm.h:2
 msgid ""
 "Create intermediate layers to blend two or more layers over a background as "
 "an animation"
-msgstr ""
+msgstr "创建中间图层以在背景上混合两个以上图层为动画"
 
 #: ../scripts/blend-anim.scm.h:3
-#, fuzzy
 msgid "Intermediate frames"
-msgstr "间隔帧数"
+msgstr "中间帧数"
 
 #: ../scripts/blend-anim.scm.h:4
 msgid "Looped"
@@ -752,27 +748,26 @@ msgid "Max. blur radius"
 msgstr "最大模糊半径"
 
 #: ../scripts/blend-anim.scm.h:6
-#, fuzzy
 msgid "_Blend..."
-msgstr "浏览(_B)..."
+msgstr "混合(_B)..."
 
 #: ../scripts/blended-logo.scm.h:1
 msgid ""
 "Add blended backgrounds, highlights, and shadows to the selected region (or "
 "alpha)"
-msgstr ""
+msgstr "为选中区域(或 alpha) 填加混合背景，高光，以及阴影"
 
 #: ../scripts/blended-logo.scm.h:3
 msgid "Blen_ded..."
-msgstr "混和(_D)..."
+msgstr "混合(_D)..."
 
 #: ../scripts/blended-logo.scm.h:4
 msgid "Blend mode"
-msgstr "混和模式"
+msgstr "混合模式"
 
 #: ../scripts/blended-logo.scm.h:5
 msgid "Create a logo with blended backgrounds, highlights, and shadows"
-msgstr ""
+msgstr "创建一个带有混合背景，高光和阴影的徽标"
 
 #: ../scripts/blended-logo.scm.h:6
 msgid "Custom Gradient"
@@ -809,20 +804,19 @@ msgstr "位移(像素)"
 
 #: ../scripts/bovinated-logo.scm.h:1
 msgid "Add 'cow spots' to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加“牛斑纹”"
 
 #: ../scripts/bovinated-logo.scm.h:2 ../scripts/chrome-logo.scm.h:2
-#, fuzzy
 msgid "Background Color"
 msgstr "背景色"
 
 #: ../scripts/bovinated-logo.scm.h:4
 msgid "Bo_vination..."
-msgstr "奶牛(_V)..."
+msgstr "奶牛斑(_V)..."
 
 #: ../scripts/bovinated-logo.scm.h:5
 msgid "Create a logo with text in the style of 'cow spots'"
-msgstr ""
+msgstr "创建一个带有“奶牛斑点”风格的文字的徽标"
 
 #: ../scripts/bovinated-logo.scm.h:8
 msgid "Spots density X"
@@ -834,25 +828,25 @@ msgstr "斑块密度 Y"
 
 #: ../scripts/burn-in-anim.scm.h:1
 msgid "Add glowing"
-msgstr ""
+msgstr "添加炽光"
 
 #: ../scripts/burn-in-anim.scm.h:2
 msgid "After glow"
-msgstr ""
+msgstr "炽光后"
 
 #: ../scripts/burn-in-anim.scm.h:3
 msgid "B_urn-In..."
-msgstr ""
+msgstr "烧入(_U)..."
 
 #: ../scripts/burn-in-anim.scm.h:4
 msgid "Corona width"
-msgstr ""
+msgstr "日冕宽度"
 
 #: ../scripts/burn-in-anim.scm.h:5
 msgid ""
 "Create intermediate layers to produce an animated 'burn-in' transition "
 "between two layers"
-msgstr ""
+msgstr "创建两层之间的中间层以产生动画的“烧入”过渡"
 
 #: ../scripts/burn-in-anim.scm.h:6
 msgid "Fadeout"
@@ -874,7 +868,7 @@ msgstr "速度(像素/帧)"
 msgid ""
 "The Burn-In script needs two layers in total. A foreground layer with "
 "transparency and a background layer."
-msgstr ""
+msgstr "烧入脚本共需要两个图层。一个带透明的前景图层和一个背景图层。"
 
 #: ../scripts/camo.scm.h:1
 msgid "Color 1"
@@ -890,7 +884,7 @@ msgstr "颜色 3"
 
 #: ../scripts/camo.scm.h:4
 msgid "Create an image filled with a camouflage pattern"
-msgstr ""
+msgstr "创建一幅由掩饰图案填充的图像"
 
 #: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
 msgid "Granularity"
@@ -910,18 +904,17 @@ msgstr "迷彩(_C)..."
 
 #: ../scripts/carve-it.scm.h:1
 msgid "Carve white areas"
-msgstr ""
+msgstr "雕刻白色区域"
 
 #: ../scripts/carve-it.scm.h:2
 msgid "Image to carve"
-msgstr ""
+msgstr "雕刻的图像"
 
 #: ../scripts/carve-it.scm.h:3
 msgid "Stencil C_arve..."
-msgstr ""
+msgstr "蜡版雕刻(_A)..."
 
 #: ../scripts/carved-logo.scm.h:1
-#, fuzzy
 msgid "Background Image"
 msgstr "背景图像"
 
@@ -931,13 +924,13 @@ msgstr "雕刻凸起文字"
 
 #: ../scripts/carved-logo.scm.h:3
 msgid "Carved..."
-msgstr ""
+msgstr "雕刻..."
 
 #: ../scripts/carved-logo.scm.h:4
 msgid ""
 "Create a logo with text raised above or carved in to the specified "
 "background image"
-msgstr ""
+msgstr "创建一个文字在指定背景图像上凸起或凹入的徽标"
 
 #: ../scripts/carved-logo.scm.h:7
 msgid "Padding around text"
@@ -949,11 +942,11 @@ msgstr "粉笔颜色"
 
 #: ../scripts/chalk.scm.h:3
 msgid "Create a chalk drawing effect for the selected region (or alpha)"
-msgstr ""
+msgstr "为选中区域(或 alpha)创建粉笔画效果"
 
 #: ../scripts/chalk.scm.h:4
 msgid "Create a logo resembling chalk scribbled on a blackboard"
-msgstr ""
+msgstr "创建一个模仿粉笔在黑板上潦草书写的徽标"
 
 #: ../scripts/chalk.scm.h:8
 msgid "_Chalk..."
@@ -961,7 +954,7 @@ msgstr "粉笔(_C)..."
 
 #: ../scripts/chip-away.scm.h:1
 msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha)添加碎裂的木刻效果"
 
 #: ../scripts/chip-away.scm.h:2
 msgid "Blur amount"
@@ -969,16 +962,15 @@ msgstr "模糊量"
 
 #: ../scripts/chip-away.scm.h:3
 msgid "Chip Awa_y..."
-msgstr ""
+msgstr "裁切掉(_Y)..."
 
 #: ../scripts/chip-away.scm.h:4
-#, fuzzy
 msgid "Chip amount"
-msgstr "像素量"
+msgstr "裁切量"
 
 #: ../scripts/chip-away.scm.h:5
 msgid "Create a logo resembling a chipped wood carving"
-msgstr ""
+msgstr "创建一个类似于碎裂木刻的徽标"
 
 #: ../scripts/chip-away.scm.h:6
 msgid "Drop shadow"
@@ -1000,56 +992,53 @@ msgstr "保持背景"
 msgid ""
 "Add a chrome effect to the selected region (or alpha) using a specified "
 "(grayscale) stencil"
-msgstr ""
+msgstr "用指定的(灰度)蜡版给选中区域(或 alpha) 添加镀铬效果"
 
 #: ../scripts/chrome-it.scm.h:2 ../scripts/sota-chrome-logo.scm.h:1
 msgid "Chrome balance"
-msgstr ""
+msgstr "镀铬色彩平衡"
 
 #: ../scripts/chrome-it.scm.h:3 ../scripts/crystal-logo.scm.h:2
 #: ../scripts/sota-chrome-logo.scm.h:2
 msgid "Chrome factor"
-msgstr ""
+msgstr "镀铬因子"
 
 #: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:3
 msgid "Chrome lightness"
-msgstr ""
+msgstr "镀铬亮度"
 
 #: ../scripts/chrome-it.scm.h:5 ../scripts/sota-chrome-logo.scm.h:4
 msgid "Chrome saturation"
-msgstr ""
+msgstr "镀铬饱合度"
 
 #: ../scripts/chrome-it.scm.h:6
 msgid "Chrome white areas"
-msgstr ""
+msgstr "白色区域镀铬"
 
 #: ../scripts/chrome-it.scm.h:7 ../scripts/crystal-logo.scm.h:5
 #: ../scripts/sota-chrome-logo.scm.h:6
 msgid "Environment map"
-msgstr ""
+msgstr "环境贴图"
 
 #: ../scripts/chrome-it.scm.h:8 ../scripts/sota-chrome-logo.scm.h:9
-#, fuzzy
 msgid "Highlight balance"
-msgstr "突出显示不透明度"
+msgstr "突出显示色彩平衡"
 
 #: ../scripts/chrome-it.scm.h:9
-#, fuzzy
 msgid "Stencil C_hrome..."
-msgstr "浏览(_B)..."
+msgstr "蜡版镀铬(_H)..."
 
 #: ../scripts/chrome-logo.scm.h:1
 msgid "Add a simple chrome effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中的区域(或 alpha)添加简单的镀铬效果"
 
 #: ../scripts/chrome-logo.scm.h:4
-#, fuzzy
 msgid "C_hrome..."
-msgstr "浏览(_B)..."
+msgstr "镀铬(_H)..."
 
 #: ../scripts/chrome-logo.scm.h:5
 msgid "Create a simplistic, but cool, chromed logo"
-msgstr ""
+msgstr "创建一个极简单但很酷的镀铬徽标"
 
 #: ../scripts/chrome-logo.scm.h:8
 msgid "Offsets (pixels * 2)"
@@ -1062,7 +1051,7 @@ msgstr "电路种子"
 #: ../scripts/circuit.scm.h:2
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
-msgstr ""
+msgstr "以电路板痕迹线填充选中区域(或 alpha)"
 
 #: ../scripts/circuit.scm.h:3 ../scripts/lava.scm.h:3
 #: ../scripts/predator.scm.h:3 ../scripts/xach-effect.scm.h:11
@@ -1088,7 +1077,7 @@ msgstr "电路(_C)..."
 
 #: ../scripts/clothify.scm.h:1
 msgid "Add a cloth-like texture to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加类似布料的纹理"
 
 #: ../scripts/clothify.scm.h:2 ../scripts/swirltile.scm.h:1
 msgid "Azimuth"
@@ -1116,16 +1105,15 @@ msgstr "布状效果(_C)..."
 
 #: ../scripts/coffee.scm.h:1
 msgid "Add realistic looking coffee stains to the image"
-msgstr ""
+msgstr "给图像添加视觉效果逼真的咖啡迹"
 
 #: ../scripts/coffee.scm.h:2
-#, fuzzy
 msgid "Darken only"
-msgstr "深颜色"
+msgstr "仅加深"
 
 #: ../scripts/coffee.scm.h:3
 msgid "Stains"
-msgstr "迹数"
+msgstr "污迹数"
 
 #: ../scripts/coffee.scm.h:4
 msgid "_Coffee Stain..."
@@ -1135,7 +1123,7 @@ msgstr "咖啡迹(_C)..."
 msgid ""
 "Add a comic-book effect to the selected region (or alpha) by outlining and "
 "filling with a gradient"
-msgstr ""
+msgstr "以描绘轮廓及渐变填充给选中区域(或 alpha)添加漫画书效果"
 
 #: ../scripts/comic-logo.scm.h:3
 msgid "Comic Boo_k..."
@@ -1143,7 +1131,7 @@ msgstr "漫画书(_K)..."
 
 #: ../scripts/comic-logo.scm.h:4
 msgid "Create a comic-book style logo by outlining and filling with a gradient"
-msgstr ""
+msgstr "以描绘轮廓及渐变填充创建一个漫画书风格的徽标"
 
 #: ../scripts/comic-logo.scm.h:9
 msgid "Outline color"
@@ -1157,7 +1145,7 @@ msgstr "轮廓大小"
 msgid ""
 "Add a metallic effect to the selected region (or alpha) with reflections and "
 "perspective shadows"
-msgstr ""
+msgstr "以反射及透视阴影给选中区域(或 alpha)添加金属效果"
 
 #: ../scripts/coolmetal-logo.scm.h:3
 msgid "Cool _Metal..."
@@ -1165,7 +1153,7 @@ msgstr "冰凉金属(_M)..."
 
 #: ../scripts/coolmetal-logo.scm.h:4
 msgid "Create a metallic logo with reflections and perspective shadows"
-msgstr ""
+msgstr "创建一个带有反射及透视阴影的金属徽标"
 
 #: ../scripts/coolmetal-logo.scm.h:5 ../scripts/frosty-logo.scm.h:4
 msgid "Effect size (pixels)"
@@ -1177,7 +1165,7 @@ msgstr "背景图像"
 
 #: ../scripts/crystal-logo.scm.h:3
 msgid "Create a logo with a crystal/gel effect displacing the image underneath"
-msgstr ""
+msgstr "创建一个以晶体或凝胶体效果置换其下的图像的徽标"
 
 #: ../scripts/crystal-logo.scm.h:4
 msgid "Crystal..."
@@ -1185,16 +1173,15 @@ msgstr "晶体..."
 
 #: ../scripts/difference-clouds.scm.h:1
 msgid "Difference Clouds..."
-msgstr ""
+msgstr "差分云..."
 
 #: ../scripts/difference-clouds.scm.h:2
 msgid "Solid noise applied with Difference layer mode"
-msgstr ""
+msgstr "应用到差值图层模式的纯色噪音"
 
 #: ../scripts/distress-selection.scm.h:1
-#, fuzzy
 msgid "Distress the selection"
-msgstr "保持选区"
+msgstr "使选区扭区变形"
 
 #: ../scripts/distress-selection.scm.h:2
 msgid "Granularity (1 is low)"
@@ -1217,13 +1204,12 @@ msgid "Threshold (bigger 1<-->255 smaller)"
 msgstr "阈值(更大 1<-->255 更小)"
 
 #: ../scripts/distress-selection.scm.h:8
-#, fuzzy
 msgid "_Distort..."
-msgstr "电路(_C)..."
+msgstr "形变(_D)..."
 
 #: ../scripts/drop-shadow.scm.h:1
 msgid "Add a drop shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加投影"
 
 #: ../scripts/drop-shadow.scm.h:2 ../scripts/perspective-shadow.scm.h:2
 msgid "Allow resizing"
@@ -1253,7 +1239,6 @@ msgid "Opacity"
 msgstr "不透明度"
 
 #: ../scripts/drop-shadow.scm.h:8
-#, fuzzy
 msgid "_Drop Shadow..."
 msgstr "投影(_D)..."
 
@@ -1266,9 +1251,8 @@ msgid "Erase"
 msgstr "擦除"
 
 #: ../scripts/erase-rows.scm.h:3
-#, fuzzy
 msgid "Erase every other row or column"
-msgstr "隔行擦除(_E)..."
+msgstr "隔行或隔列擦除"
 
 #: ../scripts/erase-rows.scm.h:4
 msgid "Erase/fill"
@@ -1304,7 +1288,7 @@ msgstr "隔行擦除(_E)..."
 
 #: ../scripts/flatland.scm.h:1
 msgid "Create an image filled with a Land Pattern"
-msgstr ""
+msgstr "创建一幅以凸凹地图填充的图像"
 
 #: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:2
 msgid "Detail level"
@@ -1345,7 +1329,7 @@ msgstr "白底黑字"
 #: ../scripts/font-map.scm.h:3
 msgid ""
 "Create an image filled with previews of fonts matching a fontname filter"
-msgstr ""
+msgstr "创建一幅以匹配字体名过滤器的字体预览所填充的图像"
 
 #: ../scripts/font-map.scm.h:4
 msgid "Font _size (pixels)"
@@ -1369,7 +1353,7 @@ msgstr "颜色方案(_C)"
 
 #: ../scripts/font-map.scm.h:9
 msgid "_Filter (regexp)"
-msgstr "过滤器(regexp)(_F)"
+msgstr "过滤器 (regexp) (_F)"
 
 #: ../scripts/font-map.scm.h:10
 msgid "_Labels"
@@ -1383,11 +1367,11 @@ msgstr "文字(_T)"
 msgid ""
 "Add a frost effect to the selected region (or alpha) with an added drop "
 "shadow"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加附带投影的霜冻效果"
 
 #: ../scripts/frosty-logo.scm.h:3
 msgid "Create frozen logo with an added drop shadow"
-msgstr ""
+msgstr "创建一个附带投影的冻结徽标"
 
 #: ../scripts/frosty-logo.scm.h:8
 msgid "_Frosty..."
@@ -1395,7 +1379,7 @@ msgstr "霜冻(_F)..."
 
 #: ../scripts/fuzzyborder.scm.h:1
 msgid "Add a jagged, fuzzy border to an image"
-msgstr ""
+msgstr "给图像添加有缺口的模糊的边缘"
 
 #: ../scripts/fuzzyborder.scm.h:2
 msgid "Add shadow"
@@ -1414,9 +1398,9 @@ msgid "Granularity (1 is Low)"
 msgstr "粒度(1 为低)"
 
 #: ../scripts/fuzzyborder.scm.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
-msgstr "阴影深度(%)"
+msgstr "阴影深度 (%)"
 
 #: ../scripts/fuzzyborder.scm.h:11
 msgid "_Fuzzy Border..."
@@ -1428,11 +1412,11 @@ msgstr "自动剪裁"
 
 #: ../scripts/gimp-headers.scm.h:2
 msgid "Create an image of a large header using the gimp.org webpage theme"
-msgstr ""
+msgstr "用 gimp.org 的页面主题创建一幅大标题的图像"
 
 #: ../scripts/gimp-headers.scm.h:3
 msgid "Create an image of a small header using the gimp.org webpage theme"
-msgstr ""
+msgstr "用 gimp.org 的页面主题创建一幅小标题的图像"
 
 #: ../scripts/gimp-headers.scm.h:4
 msgid "Dark color"
@@ -1474,23 +1458,23 @@ msgstr "小标题(_S)..."
 msgid ""
 "Create an image of a Tube Button Label Header using the gimp.org webpage "
 "theme"
-msgstr ""
+msgstr "用 gimp.org 的页面主题创建一幅管状按钮标签标题的图像"
 
 #: ../scripts/gimp-labels.scm.h:3
 msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
-msgstr ""
+msgstr "用 gimp.org 的页面主题创建一幅管状按钮标签的图像"
 
 #: ../scripts/gimp-labels.scm.h:4
 msgid ""
 "Create an image of a second level Tube Button Label using the gimp.org "
 "webpage theme"
-msgstr ""
+msgstr "用 gimp.org 的页面主题创建一幅二级的管状按钮标签的图像"
 
 #: ../scripts/gimp-labels.scm.h:5
 msgid ""
 "Create an image of a third level Tube Button Label using the gimp.org "
 "webpage theme"
-msgstr ""
+msgstr "用 gimp.org 的页面主题创建一幅三级的管状按钮标签的图像"
 
 #: ../scripts/gimp-labels.scm.h:16
 msgid "T_ube Sub-Button Label..."
@@ -1512,7 +1496,7 @@ msgstr "管状按钮标签(_T)..."
 msgid ""
 "Add gradients, patterns, shadows, and bump maps to the selected region (or "
 "alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加渐变、图案、阴影和凸凹贴图"
 
 #: ../scripts/glossy.scm.h:3
 msgid "Blend gradient (outline)"
@@ -1524,7 +1508,7 @@ msgstr "混和渐变(文字)"
 
 #: ../scripts/glossy.scm.h:5
 msgid "Create a logo with gradients, patterns, shadows, and bump maps"
-msgstr ""
+msgstr "创建一个带渐变、图案、阴影和凸凹贴图的徽标"
 
 #: ../scripts/glossy.scm.h:9
 msgid "Glo_ssy..."
@@ -1568,15 +1552,15 @@ msgstr "使用覆盖图案"
 
 #: ../scripts/glowing-logo.scm.h:1
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加炽热金属的效果"
 
 #: ../scripts/glowing-logo.scm.h:3
 msgid "Create a logo that looks like glowing hot metal"
-msgstr ""
+msgstr "创建一个看起来像炽热金属的徽标"
 
 #: ../scripts/glowing-logo.scm.h:4
 msgid "Effect size (pixels * 3)"
-msgstr "效果大小(像素 * 3)"
+msgstr "效果大小(像素 x 3)"
 
 #: ../scripts/glowing-logo.scm.h:7
 msgid "Glo_wing Hot..."
@@ -1584,7 +1568,7 @@ msgstr "炽热(_W)..."
 
 #: ../scripts/gradient-bevel-logo.scm.h:1
 msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha)添加看上去有光泽的斜角效果"
 
 #: ../scripts/gradient-bevel-logo.scm.h:3
 msgid "Bevel height (sharpness)"
@@ -1597,7 +1581,7 @@ msgstr "边缘大小(像素)"
 
 #: ../scripts/gradient-bevel-logo.scm.h:6
 msgid "Create a logo with a shiny look and beveled edges"
-msgstr ""
+msgstr "创建一个闪亮的斜角边缘的徽标"
 
 #: ../scripts/gradient-bevel-logo.scm.h:9
 msgid "Gradient Beve_l..."
@@ -1605,31 +1589,29 @@ msgstr "渐变斜面(_L)..."
 
 #: ../scripts/gradient-example.scm.h:1
 msgid "Create an image filled with an example of the current gradient"
-msgstr ""
+msgstr "创建一幅以当前渐变的样本填充的图像"
 
 #: ../scripts/gradient-example.scm.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "自定义渐变"
+msgstr "自定义渐变(_G)..."
 
 #: ../scripts/grid-system.scm.h:1 ../scripts/guides-from-selection.scm.h:1
 msgid ""
 "Draw a grid as specified by the lists of X and Y locations using the current "
 "brush"
-msgstr ""
+msgstr "使用当前笔刷按照 X 和 Y 位置列表的指定绘制网格"
 
 #: ../scripts/grid-system.scm.h:2
 msgid "X divisions"
-msgstr ""
+msgstr "X 切分数"
 
 #: ../scripts/grid-system.scm.h:3
 msgid "Y divisions"
-msgstr ""
+msgstr "Y 切分数"
 
 #: ../scripts/grid-system.scm.h:4
-#, fuzzy
 msgid "_Grid..."
-msgstr "幻灯片(_S)..."
+msgstr "网格(_G)..."
 
 #: ../scripts/guides-from-selection.scm.h:2
 msgid "New Guides from _Selection"
@@ -1637,7 +1619,7 @@ msgstr "从选区新建参考线(_S)"
 
 #: ../scripts/guides-new-percent.scm.h:1
 msgid "Add a guide at the position specified as a percentage of the image size"
-msgstr ""
+msgstr "在以图像尺寸的百分比指定的位置处添加一条参考线"
 
 #: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
 msgid "Direction"
@@ -1662,20 +1644,19 @@ msgstr "垂直"
 
 #: ../scripts/guides-new.scm.h:1
 msgid "Add a guide at the orientation and position specified (in pixels)"
-msgstr ""
+msgstr "在指定的方向和位置(按像素)添加参考线"
 
 #: ../scripts/guides-new.scm.h:4
 msgid "New _Guide..."
 msgstr "新建参考线(_G)..."
 
 #: ../scripts/guides-new.scm.h:5
-#, fuzzy
 msgid "Position"
-msgstr "位置(按百分比)"
+msgstr "位置"
 
 #: ../scripts/guides-remove-all.scm.h:1
 msgid "Remove all horizontal and vertical guides"
-msgstr ""
+msgstr "移除所有水平及垂直参考线"
 
 #: ../scripts/guides-remove-all.scm.h:2
 msgid "_Remove all Guides"
@@ -1683,7 +1664,7 @@ msgstr "删除所有参考线(_R)"
 
 #: ../scripts/i26-gunya2.scm.h:1
 msgid "Create a logo in a two-color, scribbled text style"
-msgstr ""
+msgstr "创建一个双色的潦草文字风格的徽标"
 
 #: ../scripts/i26-gunya2.scm.h:4
 msgid "Frame color"
@@ -1695,11 +1676,11 @@ msgstr "框架大小"
 
 #: ../scripts/i26-gunya2.scm.h:6
 msgid "Imigre-_26..."
-msgstr ""
+msgstr "Imigre-_26..."
 
 #: ../scripts/land.scm.h:1
 msgid "Create an image filled with a topographic map pattern"
-msgstr ""
+msgstr "创建一幅以地形图图案填充的图像"
 
 #: ../scripts/land.scm.h:6
 msgid "Land height"
@@ -1715,7 +1696,7 @@ msgstr "凹凸地图(_L)..."
 
 #: ../scripts/lava.scm.h:1
 msgid "Fill the current selection with lava"
-msgstr ""
+msgstr "用熔岩填充当前选区"
 
 #: ../scripts/lava.scm.h:4 ../scripts/swirltile.scm.h:8
 msgid "Roughness"
@@ -1736,7 +1717,7 @@ msgstr "熔岩(_L)..."
 #: ../scripts/line-nova.scm.h:1
 msgid ""
 "Fill a layer with rays emanating outward from its center using the FG color"
-msgstr ""
+msgstr "使用前景色以从中心向外发射的射线填充图层"
 
 #: ../scripts/line-nova.scm.h:2
 msgid "Line _Nova..."
@@ -1756,28 +1737,27 @@ msgstr "随机度"
 
 #: ../scripts/line-nova.scm.h:6
 msgid "Sharpness (degrees)"
-msgstr ""
+msgstr "锐度(度数)"
 
 #: ../scripts/mkbrush.scm.h:1
 msgid "Create a rectangular brush"
-msgstr ""
+msgstr "创建一个矩形画笔"
 
 #: ../scripts/mkbrush.scm.h:2
 msgid "Create a rectangular brush with feathered edges"
-msgstr ""
+msgstr "创建一个带羽化边缘的矩形画笔"
 
 #: ../scripts/mkbrush.scm.h:3
 msgid "Create an elliptical brush"
-msgstr ""
+msgstr "创建一个椭圆形画笔"
 
 #: ../scripts/mkbrush.scm.h:4
 msgid "Create an elliptical brush with feathered edges"
-msgstr ""
+msgstr "创建一个带羽化边缘的椭圆形画笔"
 
 #: ../scripts/mkbrush.scm.h:5
-#, fuzzy
 msgid "Elli_ptical, Feathered..."
-msgstr "新椭圆、羽化..."
+msgstr "羽化的椭圆(_P)..."
 
 #: ../scripts/mkbrush.scm.h:6
 msgid "Feathering"
@@ -1788,9 +1768,8 @@ msgid "Name"
 msgstr "名字"
 
 #: ../scripts/mkbrush.scm.h:9
-#, fuzzy
 msgid "Re_ctangular, Feathered..."
-msgstr "新矩形、羽化..."
+msgstr "羽化的矩形(_C)..."
 
 #: ../scripts/mkbrush.scm.h:10 ../scripts/paste-as-brush.scm.h:5
 #: ../scripts/select-to-brush.scm.h:4
@@ -1798,22 +1777,20 @@ msgid "Spacing"
 msgstr "间距"
 
 #: ../scripts/mkbrush.scm.h:12
-#, fuzzy
 msgid "_Elliptical..."
-msgstr "新椭圆(_P)..."
+msgstr "椭圆(_E)..."
 
 #: ../scripts/mkbrush.scm.h:13
-#, fuzzy
 msgid "_Rectangular..."
-msgstr "新矩形(_C)..."
+msgstr "矩形(_R)..."
 
 #: ../scripts/neon-logo.scm.h:2
 msgid "Convert the selected region (or alpha) into a neon-sign like object"
-msgstr ""
+msgstr "将选中区域(或 alpha)转换到类似于霓虹灯广告牌的物件"
 
 #: ../scripts/neon-logo.scm.h:3
 msgid "Create a logo in the style of a neon sign"
-msgstr ""
+msgstr "创建一个霓虹灯广告牌风格的徽标"
 
 #: ../scripts/neon-logo.scm.h:4
 msgid "Create shadow"
@@ -1821,7 +1798,7 @@ msgstr "创建阴影"
 
 #: ../scripts/neon-logo.scm.h:5
 msgid "Effect size (pixels * 5)"
-msgstr "效果大小(像素 * 5)"
+msgstr "效果大小(像素 x 5)"
 
 #: ../scripts/neon-logo.scm.h:9
 msgid "N_eon..."
@@ -1833,7 +1810,7 @@ msgstr "格点大小(像素)"
 
 #: ../scripts/news-text.scm.h:4
 msgid "Create a logo in the style of newspaper printing"
-msgstr ""
+msgstr "创建一个报纸印刷风格的徽标"
 
 #: ../scripts/news-text.scm.h:6 ../scripts/speed-text.scm.h:4
 #, no-c-format
@@ -1842,15 +1819,15 @@ msgstr "密度(%)"
 
 #: ../scripts/news-text.scm.h:9
 msgid "Newsprint Te_xt..."
-msgstr "新闻印刷文本(_X)..."
+msgstr "报纸印刷文本(_X)..."
 
 #: ../scripts/old-photo.scm.h:2
 msgid "Defocus"
-msgstr "模糊"
+msgstr "失焦模糊"
 
 #: ../scripts/old-photo.scm.h:3
 msgid "Make an image look like an old photo"
-msgstr ""
+msgstr "制作一幅像旧照片的图像"
 
 #: ../scripts/old-photo.scm.h:4
 msgid "Mottle"
@@ -1879,11 +1856,11 @@ msgstr "新画笔(_B)..."
 
 #: ../scripts/paste-as-brush.scm.h:4
 msgid "Paste the clipboard contents into a new brush"
-msgstr ""
+msgstr "将剪贴板中的内容粘贴到新画笔"
 
 #: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
 msgid "There is no image data in the clipboard to paste."
-msgstr ""
+msgstr "剪贴板中没有可以粘贴的图像数据"
 
 #: ../scripts/paste-as-pattern.scm.h:2
 msgid "New _Pattern..."
@@ -1891,7 +1868,7 @@ msgstr "新图案(_P)..."
 
 #: ../scripts/paste-as-pattern.scm.h:3
 msgid "Paste the clipboard contents into a new pattern"
-msgstr ""
+msgstr "将剪贴板中的内容粘贴到新图案"
 
 #: ../scripts/paste-as-pattern.scm.h:4 ../scripts/select-to-pattern.scm.h:3
 msgid "Pattern name"
@@ -1899,7 +1876,7 @@ msgstr "图案名字"
 
 #: ../scripts/perspective-shadow.scm.h:1
 msgid "Add a perspective shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中的区域(或 alpha)添加透视阴影"
 
 #: ../scripts/perspective-shadow.scm.h:3
 msgid "Angle"
@@ -1923,7 +1900,7 @@ msgstr "透视(_P)..."
 
 #: ../scripts/predator.scm.h:1
 msgid "Add a 'Predator' effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha)添加“捕食者”效果"
 
 #: ../scripts/predator.scm.h:2
 msgid "Edge amount"
@@ -1939,11 +1916,11 @@ msgstr "像素化"
 
 #: ../scripts/predator.scm.h:7
 msgid "_Predator..."
-msgstr "掠夺者(_P)..."
+msgstr "捕食者(_P)..."
 
 #: ../scripts/pupi-button.scm.h:2
 msgid "Create images, each containing an oval button graphic"
-msgstr ""
+msgstr "创建图像，每一幅均包含一个椭圆按钮图形"
 
 #: ../scripts/pupi-button.scm.h:5
 msgid "Lower color"
@@ -1995,12 +1972,11 @@ msgstr "行为"
 
 #: ../scripts/rendermap.scm.h:2
 msgid "Create an image filled with an Earth-like map pattern"
-msgstr ""
+msgstr "创建一幅以地球状贴图图案填充的图像"
 
 #: ../scripts/rendermap.scm.h:3
-#, fuzzy
 msgid "Detail in Middle"
-msgstr "细节等级"
+msgstr "中间细节"
 
 #: ../scripts/rendermap.scm.h:8
 msgid "Render _Map..."
@@ -2012,11 +1988,11 @@ msgstr "平铺"
 
 #: ../scripts/reverse-layers.scm.h:1
 msgid "Reverse Layer Order"
-msgstr ""
+msgstr "反转图层顺序"
 
 #: ../scripts/reverse-layers.scm.h:2
 msgid "Reverse the order of layers in the image"
-msgstr ""
+msgstr "反转图像中图层的顺序"
 
 #: ../scripts/ripply-anim.scm.h:1
 msgid "Black"
@@ -2025,7 +2001,7 @@ msgstr "黑色"
 #: ../scripts/ripply-anim.scm.h:2
 msgid ""
 "Create a multi-layer image by adding a ripple effect to the current image"
-msgstr ""
+msgstr "以为当前图像添加水波纹效果来创建一幅多层图像"
 
 #: ../scripts/ripply-anim.scm.h:3
 msgid "Edge behavior"
@@ -2037,7 +2013,7 @@ msgstr "帧数"
 
 #: ../scripts/ripply-anim.scm.h:5
 msgid "Rippling strength"
-msgstr "荡漾强度"
+msgstr "波纹强度"
 
 #: ../scripts/ripply-anim.scm.h:6
 msgid "Smear"
@@ -2066,7 +2042,7 @@ msgstr "边缘半径"
 #: ../scripts/round-corners.scm.h:5
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
-msgstr ""
+msgstr "使图像的边角圆滑并可选择地添加投影和背景"
 
 #: ../scripts/round-corners.scm.h:9
 msgid "_Round Corners..."
@@ -2074,20 +2050,19 @@ msgstr "圆角(_R)..."
 
 #: ../scripts/script-fu-set-cmap.scm.h:1
 msgid "Change the colormap of an image to the colors in a specified palette."
-msgstr ""
+msgstr "将一幅图像的颜色表更改为指定色板中的颜色。"
 
 #: ../scripts/script-fu-set-cmap.scm.h:2
-#, fuzzy
 msgid "Palette"
-msgstr "图案"
+msgstr "调色版"
 
 #: ../scripts/script-fu-set-cmap.scm.h:3
 msgid "Se_t Colormap..."
-msgstr ""
+msgstr "设置颜色表(_T)..."
 
 #: ../scripts/select-to-brush.scm.h:2
 msgid "Convert a selection to a brush"
-msgstr ""
+msgstr "转换选区到画笔"
 
 #: ../scripts/select-to-brush.scm.h:5
 msgid "To _Brush..."
@@ -2095,7 +2070,7 @@ msgstr "到画笔(_B)..."
 
 #: ../scripts/select-to-image.scm.h:1
 msgid "Convert a selection to an image"
-msgstr ""
+msgstr "转换选区到图像"
 
 #: ../scripts/select-to-image.scm.h:2
 msgid "To _Image"
@@ -2103,7 +2078,7 @@ msgstr "到图像(_I)..."
 
 #: ../scripts/select-to-pattern.scm.h:1
 msgid "Convert a selection to a pattern"
-msgstr ""
+msgstr "转换选区到图案"
 
 #: ../scripts/select-to-pattern.scm.h:4
 msgid "To _Pattern..."
@@ -2119,9 +2094,8 @@ msgid "Radius (%)"
 msgstr "半径(%)"
 
 #: ../scripts/selection-round.scm.h:4
-#, fuzzy
 msgid "Round the corners of the current selection"
-msgstr "沿当前选区的四边创建参考线。"
+msgstr "当前选区圆角化"
 
 #: ../scripts/selection-round.scm.h:5
 msgid "Rounded R_ectangle..."
@@ -2129,7 +2103,7 @@ msgstr "圆角矩形(_E)..."
 
 #: ../scripts/slide.scm.h:1
 msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
-msgstr ""
+msgstr "给图像添加类似幻灯片的图像帧、齿孔和标签"
 
 #: ../scripts/slide.scm.h:3
 msgid "Font color"
@@ -2145,15 +2119,15 @@ msgstr "幻灯片(_S)..."
 
 #: ../scripts/sota-chrome-logo.scm.h:5
 msgid "Create a State Of The Art chromed logo"
-msgstr ""
+msgstr "创建一个最新式的镀铬徽标"
 
 #: ../scripts/sota-chrome-logo.scm.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "新式镀铬..."
 
 #: ../scripts/speed-text.scm.h:2
 msgid "Create a logo with a speedy text effect"
-msgstr ""
+msgstr "创建一个有迅速文字效果的徽标"
 
 #: ../scripts/speed-text.scm.h:7
 msgid "Speed Text..."
@@ -2161,11 +2135,11 @@ msgstr "文本加速..."
 
 #: ../scripts/sphere.scm.h:2
 msgid "Create a simple sphere with a drop shadow"
-msgstr ""
+msgstr "创建一个带有阴影的简单球体"
 
 #: ../scripts/sphere.scm.h:3
 msgid "Lighting (degrees)"
-msgstr "光照(角度)"
+msgstr "亮度(度数)"
 
 #: ../scripts/sphere.scm.h:4
 msgid "Radius (pixels)"
@@ -2181,7 +2155,7 @@ msgstr "球体(_S)..."
 
 #: ../scripts/spinning-globe.scm.h:1
 msgid "Create an animation by mapping the current image onto a spinning sphere"
-msgstr ""
+msgstr "创建一个将当前图像映射到旋转球体上的动画"
 
 #: ../scripts/spinning-globe.scm.h:2
 msgid "Frames"
@@ -2202,7 +2176,7 @@ msgstr "旋转球(_S)..."
 #: ../scripts/spyrogimp.scm.h:1
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
-msgstr ""
+msgstr "给当前图层添加螺旋型星云线、外旋轮线和利萨如曲线"
 
 #: ../scripts/spyrogimp.scm.h:2
 msgid "Airbrush"
@@ -2222,19 +2196,17 @@ msgstr "着色方法"
 
 #: ../scripts/spyrogimp.scm.h:7
 msgid "Epitrochoid"
-msgstr ""
+msgstr "外旋轮线"
 
 #: ../scripts/spyrogimp.scm.h:8
 msgid "Frame"
 msgstr "边框"
 
 #: ../scripts/spyrogimp.scm.h:10
-#, fuzzy
 msgid "Gradient: Loop Sawtooth"
 msgstr "渐变：锯齿式循环"
 
 #: ../scripts/spyrogimp.scm.h:11
-#, fuzzy
 msgid "Gradient: Loop Triangle"
 msgstr "渐变：三角式循环"
 
@@ -2244,7 +2216,7 @@ msgstr "六边形"
 
 #: ../scripts/spyrogimp.scm.h:13
 msgid "Hole ratio"
-msgstr "孔的比率"
+msgstr "孔比率"
 
 #: ../scripts/spyrogimp.scm.h:14
 msgid "Inner teeth"
@@ -2252,7 +2224,7 @@ msgstr "内齿"
 
 #: ../scripts/spyrogimp.scm.h:15
 msgid "Lissajous"
-msgstr ""
+msgstr "利萨如曲线"
 
 #: ../scripts/spyrogimp.scm.h:16
 msgid "Margin (pixels)"
@@ -2288,7 +2260,7 @@ msgstr "多边形：9 边"
 
 #: ../scripts/spyrogimp.scm.h:24
 msgid "Rendering Spyro"
-msgstr ""
+msgstr "正在渲染 Spyro"
 
 #: ../scripts/spyrogimp.scm.h:25
 msgid "Shape"
@@ -2300,7 +2272,7 @@ msgstr "纯色"
 
 #: ../scripts/spyrogimp.scm.h:27
 msgid "Spyrograph"
-msgstr ""
+msgstr "螺旋型星云线"
 
 #: ../scripts/spyrogimp.scm.h:28
 msgid "Square"
@@ -2324,7 +2296,7 @@ msgstr "类型"
 
 #: ../scripts/spyrogimp.scm.h:33
 msgid "_Spyrogimp..."
-msgstr ""
+msgstr "_Spyrogimp..."
 
 #: ../scripts/starburst-logo.scm.h:2
 msgid "Burst color"
@@ -2332,35 +2304,35 @@ msgstr "爆发颜色"
 
 #: ../scripts/starburst-logo.scm.h:3
 msgid "Create a logo using a starburst gradient"
-msgstr ""
+msgstr "使用星瀑渐变创建徽标"
 
 #: ../scripts/starburst-logo.scm.h:4
 msgid "Effect size (pixels * 30)"
-msgstr "效果大小(像素 * 30)"
+msgstr "效果大小(像素 x 30)"
 
 #: ../scripts/starburst-logo.scm.h:5
 msgid ""
 "Fill the selected region (or alpha) with a starburst gradient and add a "
 "shadow"
-msgstr ""
+msgstr "用星爆图案填充选中的区域(或 alpha)并添加阴影"
 
 #: ../scripts/starburst-logo.scm.h:8
 msgid "Starb_urst..."
-msgstr "恒星爆发(_U)..."
+msgstr "星爆(_U)..."
 
 #: ../scripts/starscape-logo.scm.h:1
 msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
-msgstr ""
+msgstr "以类似岩石的材质、新星炽光和阴影创建徽标"
 
 #: ../scripts/starscape-logo.scm.h:2
 msgid "Effect size (pixels * 4)"
-msgstr "效果大小(像素 * 4)"
+msgstr "效果大小(像素 x 4)"
 
 #: ../scripts/starscape-logo.scm.h:3
 msgid ""
 "Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
 "and shadow"
-msgstr ""
+msgstr "用类似岩石的材质、新星炽光和阴影填充选中的区域(或 alpha)"
 
 #: ../scripts/starscape-logo.scm.h:7
 msgid "Sta_rscape..."
@@ -2368,11 +2340,11 @@ msgstr "恒星景色(_R)..."
 
 #: ../scripts/swirltile.scm.h:4
 msgid "Create an image filled with a swirled tile effect"
-msgstr ""
+msgstr "创建一幅以旋转平铺效果填充的图像"
 
 #: ../scripts/swirltile.scm.h:9
 msgid "Swirl-_Tile..."
-msgstr ""
+msgstr "旋转平铺(_T)..."
 
 #: ../scripts/swirltile.scm.h:10
 msgid "Whirl amount"
@@ -2380,16 +2352,15 @@ msgstr "旋转量"
 
 #: ../scripts/swirly-pattern.scm.h:1
 msgid "Create an image filled with a swirly pattern"
-msgstr ""
+msgstr "创建一幅以漩涡状图案填充的图像"
 
 #: ../scripts/swirly-pattern.scm.h:2
 msgid "Number of times to whirl"
 msgstr "旋转次数"
 
 #: ../scripts/swirly-pattern.scm.h:3
-#, fuzzy
 msgid "Quarter size"
-msgstr "边缘大小"
+msgstr "四分之一大小"
 
 #: ../scripts/swirly-pattern.scm.h:4
 msgid "Whirl angle"
@@ -2397,11 +2368,11 @@ msgstr "旋转角度"
 
 #: ../scripts/swirly-pattern.scm.h:5
 msgid "_Swirly..."
-msgstr ""
+msgstr "漩涡状(_S)..."
 
 #: ../scripts/t-o-p-logo.scm.h:1
 msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha) 添加粒子追踪效果"
 
 #: ../scripts/t-o-p-logo.scm.h:3
 msgid "Base color"
@@ -2409,7 +2380,7 @@ msgstr "基本颜色"
 
 #: ../scripts/t-o-p-logo.scm.h:5
 msgid "Create a logo using a Trace Of Particles effect"
-msgstr ""
+msgstr "以粒子追踪效果创建徽标"
 
 #: ../scripts/t-o-p-logo.scm.h:6
 msgid "Edge only"
@@ -2434,21 +2405,20 @@ msgstr "边缘平滑"
 #: ../scripts/text-circle.scm.h:2
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
-msgstr ""
+msgstr "创建一个沿着圆周渲染指定文字的徽标"
 
 #: ../scripts/text-circle.scm.h:3
 msgid "Fill angle"
 msgstr "填充角度"
 
 #: ../scripts/text-circle.scm.h:9
-#, fuzzy
 msgid "Text C_ircle..."
-msgstr "文字环..."
+msgstr "文字环(_I)..."
 
 #: ../scripts/textured-logo.scm.h:3
 msgid ""
 "Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr ""
+msgstr "创建一个带有高光、阴影和马赛克背景的纹理化的徽标"
 
 #: ../scripts/textured-logo.scm.h:4
 msgid "Ending blend"
@@ -2458,7 +2428,7 @@ msgstr "混和终止颜色"
 msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
-msgstr ""
+msgstr "用纹理填充选中的区域(或 alpha) 并添加高光、阴影和马赛克背景"
 
 #: ../scripts/textured-logo.scm.h:8
 msgid "Hexagons"
@@ -2494,7 +2464,7 @@ msgstr "水平模糊"
 
 #: ../scripts/tileblur.scm.h:2
 msgid "Blur the edges of an image so the result tiles seamlessly"
-msgstr ""
+msgstr "模糊图像边缘以使结果无缝拼合"
 
 #: ../scripts/tileblur.scm.h:3
 msgid "Blur type"
@@ -2518,7 +2488,7 @@ msgstr "可平铺模糊(_T)..."
 
 #: ../scripts/title-header.scm.h:1
 msgid "Create a decorative web title header"
-msgstr ""
+msgstr "创建一个装饰网页题头"
 
 #: ../scripts/title-header.scm.h:6
 msgid "Web Title Header..."
@@ -2526,7 +2496,7 @@ msgstr "网页题头..."
 
 #: ../scripts/truchet.scm.h:3
 msgid "Create an image filled with a Truchet pattern"
-msgstr ""
+msgstr "创建一幅以 Truchet 图案填充的图像"
 
 #: ../scripts/truchet.scm.h:4
 msgid "Foreground color"
@@ -2534,7 +2504,7 @@ msgstr "前景色"
 
 #: ../scripts/truchet.scm.h:7
 msgid "T_ruchet..."
-msgstr "Truchet(_R)..."
+msgstr "T_ruchet..."
 
 #: ../scripts/unsharp-mask.scm.h:1
 msgid "Mask opacity"
@@ -2552,7 +2522,7 @@ msgstr "振幅"
 msgid ""
 "Create a multi-layer image with an effect like a stone was thrown into the "
 "current image"
-msgstr ""
+msgstr "创建一个多层的图像，带有像石头被扔进当前图像中的效果"
 
 #: ../scripts/waves-anim.scm.h:3
 msgid "Invert direction"
@@ -2570,7 +2540,7 @@ msgstr "波(_W)..."
 msgid ""
 "Create a new layer filled with a weave effect to be used as an overlay or "
 "bump map"
-msgstr ""
+msgstr "创建一个以编织效果填充的新图层以被用于覆盖或凸凹贴图"
 
 #: ../scripts/weave.scm.h:2
 msgid "Ribbon spacing"
@@ -2606,11 +2576,11 @@ msgstr "编织(_W)..."
 
 #: ../scripts/web-browser.scm.h:1
 msgid "Bookmark to the GIMP web site"
-msgstr ""
+msgstr "到 GIMP 网站的书签"
 
 #: ../scripts/web-browser.scm.h:2
 msgid "Bookmark to the user manual"
-msgstr ""
+msgstr "到用户手册的书签"
 
 #: ../scripts/web-browser.scm.h:3
 msgid "Create and Use _Selections"
@@ -2646,16 +2616,15 @@ msgstr "开发者网站(_D)"
 
 #: ../scripts/web-browser.scm.h:11
 msgid "_Main Web Site"
-msgstr "主网站(_M)"
+msgstr "主站(_M)"
 
 #: ../scripts/web-browser.scm.h:12
 msgid "_Preparing your Images for the Web"
 msgstr "为 Web 准备图像(_P)"
 
 #: ../scripts/web-browser.scm.h:13
-#, fuzzy
 msgid "_User Manual Web Site"
-msgstr "主网站(_M)"
+msgstr "用户手册网站(_U)"
 
 #: ../scripts/web-browser.scm.h:14
 msgid "_Working with Digital Camera Photos"
@@ -2663,7 +2632,7 @@ msgstr "使用数码相机照片(_W)"
 
 #: ../scripts/xach-effect.scm.h:1
 msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
-msgstr ""
+msgstr "给选中区域(或 alpha)添加细致的半透明三维效果"
 
 #: ../scripts/xach-effect.scm.h:2
 msgid "Drop shadow X offset"
@@ -2701,9 +2670,6 @@ msgstr "突出显示不透明度"
 msgid "_Xach-Effect..."
 msgstr "_Xach-Effect..."
 
-#~ msgid "BG opacity"
-#~ msgstr "背景不透明度"
-
 #~ msgid "Draw _HSV Graph..."
 #~ msgstr "绘制 HSV 图线(_H)..."
 
@@ -2713,46 +2679,24 @@ msgstr "_Xach-Effect..."
 #~ msgid "End Y"
 #~ msgstr "终止 Y"
 
-#~ msgid "From top-left to bottom-right"
-#~ msgstr "从左上方到右下方"
-
 #~ msgid "Graph scale"
 #~ msgstr "图像缩放"
-
-#~ msgid "Start X"
-#~ msgstr "起始 X"
-
-#~ msgid "Start Y"
-#~ msgstr "起始 Y"
-
-#~ msgid "/Script-Fu/"
-#~ msgstr "/Script-Fu/"
 
 #~ msgid "About %s"
 #~ msgstr "关于 %s"
 
-#~ msgid "Author:"
-#~ msgstr "作者："
-
 #~ msgid "Copyright:"
 #~ msgstr "版权所有："
-
-#~ msgid "Date:"
-#~ msgstr "日期："
-
-#~ msgid "Image Types:"
-#~ msgstr "图像类型："
 
 #~ msgid "<Toolbox>/Xtns/Languages/Script-Fu"
 #~ msgstr "<Toolbox>/扩展(X)/语言/Script-Fu"
 
-#, fuzzy
 #~ msgid ""
 #~ "Darken only\n"
 #~ "(Better, but only for images with a lot of white)"
 #~ msgstr ""
 #~ "仅进行加深\n"
-#~ "(好一些，但只对有许多白色的图像)"
+#~ "(好一些，但只对有大量白色的图像)"
 
 #~ msgid "Apply generated layermask"
 #~ msgstr "应用生成的图层蒙板"
@@ -2763,18 +2707,5 @@ msgstr "_Xach-Effect..."
 #~ msgid "Fade from %"
 #~ msgstr "淡出自 %"
 
-#~ msgid "Fade to %"
-#~ msgstr "淡出到 %"
-
-#~ msgid "Use growing selection"
-#~ msgstr "使用增长的选区"
-
 #~ msgid "_Fade to Layer Mask..."
 #~ msgstr "淡出到图层蒙板(_F)..."
-
-#~ msgid "Render _Image..."
-#~ msgstr "渲染图像(_I)..."
-
-#, fuzzy
-#~ msgid "_Divisions..."
-#~ msgstr "奶牛(_V)..."
