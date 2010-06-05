@@ -1,0 +1,24 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">GIMP Tiny-Fu</name>
+  <shortdesc xml:lang="en">Created as a replacement for the SIOD-based Script-Fu plug-in of GIMP</shortdesc>
+  <!--
+  <homepage rdf:resource="http://www.gnome.org/" />
+  <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/desktop-devel-list" />
+  <download-page rdf:resource="http://download.gnome.org/sources/gimp-tiny-fu/" />
+  -->
+  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=gimp-tiny-fu" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#bindings" />
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Kevin Cozens</foaf:name>
+      <foaf:mbox rdf:resource="mailto:kcozens@cvs.gnome.org" />
+      <gnome:userid>kcozens</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+</Project>
