@@ -1,5 +1,5 @@
 # Danish translation of GIMP script-fu.
-# Copyright (C) 2000, 01, 02, 04 Free Software Foundation, Inc.
+# Copyright (C) 2010 Free Software Foundation, Inc. & nedenstående oversættere.
 # Birger Langkjer <birger.langkjer@image.dk>, 2000.
 # Keld Simonsen <keld@dkuug.dk>, 2000.
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 04.
@@ -9,10 +9,11 @@
 #
 # Konventioner:
 #
-#   script -> program
-#   utils -> værktøjer
-#   web page themes -> hjemmesidetemaer
-#   DB Browser -> proceduredatabase (browser er overflødigt)
+#  drop shadow -> baggrundsskygge (eller slagskygge?)
+#  script -> program
+#  utils -> værktøjer
+#  web page themes -> hjemmesidetemaer
+#  DB Browser -> proceduredatabase (browser er overflødigt)
 #
 # Bemærk at en hel del af oversættelserne af programnavnene optræder i to
 # sammenhænge og derfor skal synkroniseres.
@@ -21,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GIMP script-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-23 23:41+0200\n"
-"PO-Revision-Date: 2010-07-21 20:42+0100\n"
+"POT-Creation-Date: 2010-10-24 17:06+0200\n"
+"PO-Revision-Date: 2010-09-29 20:42+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -209,10 +210,10 @@ msgstr "_Internetsidetemaer"
 msgid "_Alien Glow"
 msgstr "_Rumvæsenglød"
 
+# beveled? kantet, affaset, skråkant
 #: ../tiny-fu/tiny-fu.c:375
-#, fuzzy
 msgid "_Beveled Pattern"
-msgstr "Mønster"
+msgstr "_Kantet mønster"
 
 #: ../tiny-fu/tiny-fu.c:377
 msgid "_Classic.Gimp.Org"
@@ -294,7 +295,7 @@ msgstr "Sløringsradius for højdekort (alfalag)"
 
 #: ../scripts/3d-outline.scm.h:3
 msgid "Create a logo with outlined text and a drop shadow"
-msgstr ""
+msgstr "Opret et logo med omridset tekst og en baggrundsskygge"
 
 #: ../scripts/3d-outline.scm.h:4 ../scripts/glossy.scm.h:6
 #, fuzzy
@@ -341,19 +342,19 @@ msgstr "Skrifttype"
 #: ../scripts/starburst-logo.scm.h:7 ../scripts/starscape-logo.scm.h:5
 #: ../scripts/t-o-p-logo.scm.h:9 ../scripts/text-circle.scm.h:5
 #: ../scripts/textured-logo.scm.h:7 ../scripts/title-header.scm.h:3
-#, fuzzy
 msgid "Font size (pixels)"
-msgstr "Skriftstørrelse (skærmpunkter)"
+msgstr "Skriftstørrelse (i skærmpunkter)"
 
 #: ../scripts/3d-outline.scm.h:7
-#, fuzzy
 msgid "Outline blur radius"
-msgstr "Omridssløringsradius"
+msgstr "Radius for omridssløring"
 
 #: ../scripts/3d-outline.scm.h:8
 msgid ""
 "Outline the selected region (or alpha) with a pattern and add a drop shadow"
 msgstr ""
+"Omrids det valgte område (eller alfa) med et mønster og tilføj en "
+"bagggrundsskygge"
 
 #: ../scripts/3d-outline.scm.h:9 ../scripts/beveled-pattern-arrow.scm.h:5
 #: ../scripts/beveled-pattern-bullet.scm.h:3
@@ -674,12 +675,16 @@ msgid ""
 "Add a gradient effect, a drop shadow, and a background to the selected "
 "region (or alpha)"
 msgstr ""
+"Tilføj en farveovergangseffekt, en baggrundsskygge og en baggrund til det "
+"valgte område (eller alfa)"
 
 #: ../scripts/basic1-logo.scm.h:3
 msgid ""
 "Create a plain text logo with a gradient effect, a drop shadow, and a "
 "background"
 msgstr ""
+"Opret et enkelt tekstlogo med en farveovergangseffekt, en baggrundsskygge og "
+"en baggrund"
 
 #: ../scripts/basic1-logo.scm.h:8
 msgid "_Basic I..."
@@ -1037,7 +1042,6 @@ msgid "Create a logo resembling a chipped wood carving"
 msgstr ""
 
 #: ../scripts/chip-away.scm.h:6
-#, fuzzy
 msgid "Drop shadow"
 msgstr "Baggrundsskygge"
 
@@ -1293,7 +1297,7 @@ msgstr "Kredsløbsstartværdi"
 
 #: ../scripts/drop-shadow.scm.h:1
 msgid "Add a drop shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "Tilføj en baggrundsskygge til det valgte område (eller alfa)"
 
 #: ../scripts/drop-shadow.scm.h:2 ../scripts/perspective-shadow.scm.h:2
 msgid "Allow resizing"
@@ -1320,12 +1324,11 @@ msgstr "Afstand y"
 
 #: ../scripts/drop-shadow.scm.h:7 ../scripts/perspective-shadow.scm.h:7
 msgid "Opacity"
-msgstr "Ugennemsigtighed"
+msgstr "Uigennemsigtighed"
 
 #: ../scripts/drop-shadow.scm.h:8
-#, fuzzy
 msgid "_Drop Shadow..."
-msgstr "Baggrundsskygge"
+msgstr "_Baggrundsskygge..."
 
 #: ../scripts/erase-rows.scm.h:1
 msgid "Columns"
@@ -1459,7 +1462,7 @@ msgstr ""
 
 #: ../scripts/frosty-logo.scm.h:3
 msgid "Create frozen logo with an added drop shadow"
-msgstr ""
+msgstr "Opret frossent logo med en tilføjet baggrundsskygge"
 
 #: ../scripts/frosty-logo.scm.h:8
 #, fuzzy
@@ -1475,7 +1478,6 @@ msgid "Add shadow"
 msgstr "Tilføj skygge"
 
 #: ../scripts/fuzzyborder.scm.h:3
-#, fuzzy
 msgid "Blur border"
 msgstr "Sløret kant"
 
@@ -1488,7 +1490,7 @@ msgid "Granularity (1 is Low)"
 msgstr "Kornethed (1 er lav)"
 
 #: ../scripts/fuzzyborder.scm.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
 msgstr "Skyggevægt (%)"
 
@@ -1497,7 +1499,6 @@ msgid "_Fuzzy Border..."
 msgstr ""
 
 #: ../scripts/gimp-headers.scm.h:1
-#, fuzzy
 msgid "Autocrop"
 msgstr "Automatisk beskæring"
 
@@ -1530,12 +1531,10 @@ msgid "Remove background"
 msgstr "Fjern baggrund"
 
 #: ../scripts/gimp-headers.scm.h:11 ../scripts/gimp-labels.scm.h:14
-#, fuzzy
 msgid "Select-by-color threshold"
-msgstr "Vælg efter farve-tærskel"
+msgstr "Tærskelværdi for Vælg efter farve"
 
 #: ../scripts/gimp-headers.scm.h:12 ../scripts/gimp-labels.scm.h:15
-#, fuzzy
 msgid "Shadow color"
 msgstr "Skyggefarve"
 
@@ -1590,28 +1589,27 @@ msgid ""
 "Add gradients, patterns, shadows, and bump maps to the selected region (or "
 "alpha)"
 msgstr ""
+"Tilføj farveovergange, mønstre, skygger og bumpkort til det valgte område "
+"(eller alfa)"
 
 # 'blend' er vist overflødigt
 #: ../scripts/glossy.scm.h:3
-#, fuzzy
 msgid "Blend gradient (outline)"
 msgstr "Farveovergang (omrids)"
 
 #: ../scripts/glossy.scm.h:4
-#, fuzzy
 msgid "Blend gradient (text)"
 msgstr "Farveovergang (tekst)"
 
 #: ../scripts/glossy.scm.h:5
 msgid "Create a logo with gradients, patterns, shadows, and bump maps"
-msgstr ""
+msgstr "Opret et logo med farveovergange, mønstre, skygger og bumpkort"
 
 #: ../scripts/glossy.scm.h:9
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "_Blank..."
 
 #: ../scripts/glossy.scm.h:10
-#, fuzzy
 msgid "Outline gradient reverse"
 msgstr "Omridsfarveovergang omvendt"
 
@@ -2133,17 +2131,14 @@ msgid ""
 msgstr ""
 
 #: ../scripts/ripply-anim.scm.h:3
-#, fuzzy
 msgid "Edge behavior"
 msgstr "Kantopførsel"
 
 #: ../scripts/ripply-anim.scm.h:4 ../scripts/waves-anim.scm.h:4
-#, fuzzy
 msgid "Number of frames"
 msgstr "Antal rammer"
 
 #: ../scripts/ripply-anim.scm.h:5
-#, fuzzy
 msgid "Rippling strength"
 msgstr "Krusningsstyrke"
 
@@ -2157,10 +2152,9 @@ msgstr "Ombryd"
 
 #: ../scripts/ripply-anim.scm.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "_Krusning..."
 
 #: ../scripts/round-corners.scm.h:1
-#, fuzzy
 msgid "Add background"
 msgstr "Tilføj baggrund"
 
@@ -2170,7 +2164,6 @@ msgid "Add drop-shadow"
 msgstr "Tilføj baggrundsskygge"
 
 #: ../scripts/round-corners.scm.h:4
-#, fuzzy
 msgid "Edge radius"
 msgstr "Kantradius"
 
@@ -2179,18 +2172,18 @@ msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
 msgstr ""
 
+# "_Afrundede hjørner"?
 #: ../scripts/round-corners.scm.h:9
 msgid "_Round Corners..."
-msgstr ""
+msgstr "_Afrund hjørner..."
 
 #: ../scripts/script-fu-set-cmap.scm.h:1
 msgid "Change the colormap of an image to the colors in a specified palette."
-msgstr ""
+msgstr "Ændr et billedes farvepalet til farverne i en angivet palet."
 
 #: ../scripts/script-fu-set-cmap.scm.h:2
-#, fuzzy
 msgid "Palette"
-msgstr "Mønster"
+msgstr "Palet"
 
 #: ../scripts/script-fu-set-cmap.scm.h:3
 #, fuzzy
@@ -2219,18 +2212,17 @@ msgid "Convert a selection to a pattern"
 msgstr "Konverter en markering til et mønster"
 
 #: ../scripts/select-to-pattern.scm.h:4
-#, fuzzy
 msgid "To _Pattern..."
-msgstr "Mønster"
+msgstr "Til _mønster..."
 
 #: ../scripts/selection-round.scm.h:1
 msgid "Concave"
 msgstr ""
 
 #: ../scripts/selection-round.scm.h:3
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Radius"
+msgstr "Radius (%)"
 
 #: ../scripts/selection-round.scm.h:4
 msgid "Round the corners of the current selection"
@@ -2254,7 +2246,7 @@ msgstr "Antal"
 
 #: ../scripts/slide.scm.h:7
 msgid "_Slide..."
-msgstr ""
+msgstr "_Dias..."
 
 #: ../scripts/sota-chrome-logo.scm.h:5
 msgid "Create a State Of The Art chromed logo"
@@ -2274,7 +2266,7 @@ msgstr ""
 
 #: ../scripts/sphere.scm.h:2
 msgid "Create a simple sphere with a drop shadow"
-msgstr ""
+msgstr "Opret en enkel sfære med en baggrundsskygge"
 
 #: ../scripts/sphere.scm.h:3
 msgid "Lighting (degrees)"
@@ -2301,12 +2293,10 @@ msgid "Frames"
 msgstr "Rammer"
 
 #: ../scripts/spinning-globe.scm.h:3
-#, fuzzy
 msgid "Index to n colors (0 = remain RGB)"
 msgstr "Indeks til n farver (0 = forbliv RGB)"
 
 #: ../scripts/spinning-globe.scm.h:5
-#, fuzzy
 msgid "Turn from left to right"
 msgstr "Drej fra venstre mod højre"
 
@@ -2315,12 +2305,10 @@ msgid "_Spinning Globe..."
 msgstr ""
 
 #: ../scripts/spyrogimp.scm.h:1
-#, fuzzy
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
 msgstr ""
-"Tegner spirografer, epitrochoider og Lissajous-kurver. Flere oplysninger på "
-"http://netword.com/*spyrogimp"
+"Tilføj spirografer, epitrochoider og Lissajouskurver til det aktuelle lag"
 
 #: ../scripts/spyrogimp.scm.h:2
 msgid "Airbrush"
@@ -2335,7 +2323,6 @@ msgid "Circle"
 msgstr "Cirkel"
 
 #: ../scripts/spyrogimp.scm.h:6
-#, fuzzy
 msgid "Color method"
 msgstr "Farvemetode"
 
@@ -2360,12 +2347,10 @@ msgid "Hexagon"
 msgstr "Sekskant"
 
 #: ../scripts/spyrogimp.scm.h:13
-#, fuzzy
 msgid "Hole ratio"
 msgstr "Hulforhold"
 
 #: ../scripts/spyrogimp.scm.h:14
-#, fuzzy
 msgid "Inner teeth"
 msgstr "Indre tand"
 
@@ -2378,7 +2363,6 @@ msgid "Margin (pixels)"
 msgstr "Margen (skærmpunkter)"
 
 #: ../scripts/spyrogimp.scm.h:17
-#, fuzzy
 msgid "Outer teeth"
 msgstr "Ydre tand"
 
@@ -2427,7 +2411,6 @@ msgid "Square"
 msgstr "Kvadrat"
 
 #: ../scripts/spyrogimp.scm.h:29 ../scripts/text-circle.scm.h:7
-#, fuzzy
 msgid "Start angle"
 msgstr "Startvinkel"
 
@@ -2501,26 +2484,22 @@ msgid "Swirl-_Tile..."
 msgstr ""
 
 #: ../scripts/swirltile.scm.h:10
-#, fuzzy
 msgid "Whirl amount"
 msgstr "Omdrejningsgrad"
 
 #: ../scripts/swirly-pattern.scm.h:1
 msgid "Create an image filled with a swirly pattern"
-msgstr ""
+msgstr "Opret et billede fyldt med et omdrejningsmønster"
 
 #: ../scripts/swirly-pattern.scm.h:2
-#, fuzzy
 msgid "Number of times to whirl"
-msgstr "Omdrejninger"
+msgstr "Antal omdrejninger"
 
 #: ../scripts/swirly-pattern.scm.h:3
-#, fuzzy
 msgid "Quarter size"
 msgstr "Størrelse på fjerdedel"
 
 #: ../scripts/swirly-pattern.scm.h:4
-#, fuzzy
 msgid "Whirl angle"
 msgstr "Omdrejningsvinkel"
 
@@ -2533,13 +2512,12 @@ msgid "Add a Trace of Particles effect to the selected region (or alpha)"
 msgstr ""
 
 #: ../scripts/t-o-p-logo.scm.h:3
-#, fuzzy
 msgid "Base color"
 msgstr "Grundfarve"
 
 #: ../scripts/t-o-p-logo.scm.h:5
 msgid "Create a logo using a Trace Of Particles effect"
-msgstr ""
+msgstr "Opret et logo med brug af effekten spor af partikler"
 
 #: ../scripts/t-o-p-logo.scm.h:6
 msgid "Edge only"
@@ -2550,13 +2528,12 @@ msgid "Edge width"
 msgstr "Kantbredde"
 
 #: ../scripts/t-o-p-logo.scm.h:10
-#, fuzzy
 msgid "Hit rate"
 msgstr "Sammenstødsgrad"
 
 #: ../scripts/t-o-p-logo.scm.h:12
 msgid "_Particle Trace..."
-msgstr ""
+msgstr "_Partikelspor..."
 
 #: ../scripts/text-circle.scm.h:1
 msgid "Antialias"
@@ -2566,39 +2543,39 @@ msgstr "Udjævning"
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
 msgstr ""
+"Opret et logo ved at optegne den angivne tekst langs med omkredsen af en "
+"cirkel"
 
 #: ../scripts/text-circle.scm.h:3
-#, fuzzy
 msgid "Fill angle"
 msgstr "Udfyldningsvinkel"
 
 #: ../scripts/text-circle.scm.h:9
-#, fuzzy
 msgid "Text C_ircle..."
-msgstr "Cirkel"
+msgstr "Tekstc_irkel..."
 
 #: ../scripts/textured-logo.scm.h:3
 msgid ""
 "Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr ""
+msgstr "Opret et tekstlogo med højlysområder, skygger og en mosaikbaggrund"
 
 #: ../scripts/textured-logo.scm.h:4
-#, fuzzy
 msgid "Ending blend"
-msgstr "Afslutter blanding"
+msgstr "Afslutningsblanding"
 
 #: ../scripts/textured-logo.scm.h:5
 msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
 msgstr ""
+"Udfyld det valgte område (eller alfa) med en farve og tilføj højlysområder, "
+"skygger og en mosaikbaggrund"
 
 #: ../scripts/textured-logo.scm.h:8
 msgid "Hexagons"
 msgstr "Hexagoner"
 
 #: ../scripts/textured-logo.scm.h:9
-#, fuzzy
 msgid "Mosaic tile type"
 msgstr "Mosaikflisetype"
 
@@ -2611,12 +2588,10 @@ msgid "Squares"
 msgstr "Firkanter"
 
 #: ../scripts/textured-logo.scm.h:13
-#, fuzzy
 msgid "Starting blend"
 msgstr "Starter farveblanding"
 
 #: ../scripts/textured-logo.scm.h:15
-#, fuzzy
 msgid "Text pattern"
 msgstr "Tekstmønster"
 
@@ -2625,13 +2600,12 @@ msgid "_Textured..."
 msgstr ""
 
 #: ../scripts/tileblur.scm.h:1
-#, fuzzy
 msgid "Blur horizontally"
 msgstr "Vandret sløring"
 
 #: ../scripts/tileblur.scm.h:2
 msgid "Blur the edges of an image so the result tiles seamlessly"
-msgstr ""
+msgstr "Slør kanterne på et billede så resultatet bliver regelmæssigt"
 
 #: ../scripts/tileblur.scm.h:3
 msgid "Blur type"
@@ -2651,24 +2625,22 @@ msgstr "RLE"
 
 # 'tileable' er ikke let at oversætte
 #: ../scripts/tileblur.scm.h:8
-#, fuzzy
 msgid "_Tileable Blur..."
-msgstr "<Image>/Filtre/Slør/_Fliselægbart slør..."
+msgstr "_Fliselægbart slør..."
 
 #: ../scripts/title-header.scm.h:1
 msgid "Create a decorative web title header"
-msgstr ""
+msgstr "Opret et dekorativt teksthoved for nettitel"
 
 #: ../scripts/title-header.scm.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Teksthoved for nettitel..."
 
 #: ../scripts/truchet.scm.h:3
 msgid "Create an image filled with a Truchet pattern"
 msgstr ""
 
 #: ../scripts/truchet.scm.h:4
-#, fuzzy
 msgid "Foreground color"
 msgstr "Forgrundsfarve"
 
@@ -2677,12 +2649,10 @@ msgid "T_ruchet..."
 msgstr ""
 
 #: ../scripts/unsharp-mask.scm.h:1
-#, fuzzy
 msgid "Mask opacity"
-msgstr "Maskeugennemsigtighed"
+msgstr "Maskeuigennemsigtighed"
 
 #: ../scripts/unsharp-mask.scm.h:2
-#, fuzzy
 msgid "Mask size"
 msgstr "Maskestørrelse"
 
@@ -2706,7 +2676,7 @@ msgstr "Bølgelængde"
 
 #: ../scripts/waves-anim.scm.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "_Bølger..."
 
 #: ../scripts/weave.scm.h:1
 msgid ""
@@ -2715,37 +2685,32 @@ msgid ""
 msgstr ""
 
 #: ../scripts/weave.scm.h:2
-#, fuzzy
 msgid "Ribbon spacing"
 msgstr "Båndmellemrum"
 
+# evt. Båndets bredde
 #: ../scripts/weave.scm.h:3
-#, fuzzy
 msgid "Ribbon width"
 msgstr "Båndbredde"
 
+# Grad af skyggemørke
 #: ../scripts/weave.scm.h:4
-#, fuzzy
 msgid "Shadow darkness"
 msgstr "Skyggemørkhed"
 
 #: ../scripts/weave.scm.h:5
-#, fuzzy
 msgid "Shadow depth"
 msgstr "Skyggedybde"
 
 #: ../scripts/weave.scm.h:6
-#, fuzzy
 msgid "Thread density"
 msgstr "Trådtæthed"
 
 #: ../scripts/weave.scm.h:7
-#, fuzzy
 msgid "Thread intensity"
 msgstr "Trådintensitet"
 
 #: ../scripts/weave.scm.h:8
-#, fuzzy
 msgid "Thread length"
 msgstr "Trådlængde"
 
@@ -2755,32 +2720,31 @@ msgstr ""
 
 #: ../scripts/web-browser.scm.h:1
 msgid "Bookmark to the GIMP web site"
-msgstr ""
+msgstr "Bogmærke til GIMP-hjemmesiden"
 
 #: ../scripts/web-browser.scm.h:2
 msgid "Bookmark to the user manual"
-msgstr ""
+msgstr "Bogmærke til brugermanualen"
 
 #: ../scripts/web-browser.scm.h:3
-#, fuzzy
 msgid "Create and Use _Selections"
-msgstr "Behold markering"
+msgstr "Opret og brug _markeringer"
 
 #: ../scripts/web-browser.scm.h:4
 msgid "Create, Open and Save _Files"
-msgstr ""
+msgstr "Opret, åbn og gem _filer"
 
 #: ../scripts/web-browser.scm.h:5
 msgid "Drawing _Simple Objects"
-msgstr ""
+msgstr "Tegn _enkle objekter"
 
 #: ../scripts/web-browser.scm.h:6
 msgid "How to Use _Dialogs"
-msgstr ""
+msgstr "Sådan bruger du _dialoger"
 
 #: ../scripts/web-browser.scm.h:7
 msgid "Plug-in _Registry"
-msgstr ""
+msgstr "_Registrering af udvidelsesmodul"
 
 #: ../scripts/web-browser.scm.h:8
 msgid "Using _Paths"
@@ -2796,11 +2760,11 @@ msgstr "Hjemmeside for _udviklere"
 
 #: ../scripts/web-browser.scm.h:11
 msgid "_Main Web Site"
-msgstr ""
+msgstr "_Vigtigste internetside"
 
 #: ../scripts/web-browser.scm.h:12
 msgid "_Preparing your Images for the Web"
-msgstr ""
+msgstr "_Forbereder dine billeder til internettet"
 
 #: ../scripts/web-browser.scm.h:13
 msgid "_User Manual Web Site"
@@ -2808,37 +2772,32 @@ msgstr "Hjemmeside for_brugermanual"
 
 #: ../scripts/web-browser.scm.h:14
 msgid "_Working with Digital Camera Photos"
-msgstr ""
+msgstr "_Arbejde med billeder fra digitale kameraer"
 
 #: ../scripts/xach-effect.scm.h:1
 msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
 msgstr ""
+"Tilføj en fin gennemsigtig 3D-effekt til det valgte område (eller alfa)"
 
 #: ../scripts/xach-effect.scm.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
-msgstr "Skyggeafstand x"
+msgstr "Baggrundsskyggens x-forskydning"
 
 #: ../scripts/xach-effect.scm.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
-msgstr "Skyggeafstand y"
+msgstr "Baggrundsskyggens Y-forskydning"
 
-# 'Drop' er overflødigt
 #: ../scripts/xach-effect.scm.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
-msgstr "Skyggesløringsradius"
+msgstr "Baggrundsskyggens sløringsradius"
 
 #: ../scripts/xach-effect.scm.h:5
-#, fuzzy
 msgid "Drop shadow color"
-msgstr "Skyggefarve"
+msgstr "Baggrundsskyggens farve"
 
 #: ../scripts/xach-effect.scm.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
-msgstr "Skyggeugennemsigtighed"
+msgstr "Baggrundsskyggens uigennemsigtighed"
 
 #: ../scripts/xach-effect.scm.h:7
 #, fuzzy
@@ -2851,9 +2810,8 @@ msgid "Highlight Y offset"
 msgstr "Højlysafstand y"
 
 #: ../scripts/xach-effect.scm.h:10
-#, fuzzy
 msgid "Highlight opacity"
-msgstr "Højlysugennemsigtighed"
+msgstr "Højlysuigennemsigtighed"
 
 #: ../scripts/xach-effect.scm.h:12
 msgid "_Xach-Effect..."
