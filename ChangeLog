@@ -1,4 +1,4 @@
-2007-11-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Completes basic structure for initializing Tiny-Fu to run scripts.
 
@@ -7,7 +7,7 @@
 	Call gimp_main() to complete initialization. Commented out all
 	code in script_fu_query() for now.
 
-2007-11-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Updated.
 
@@ -20,7 +20,7 @@
 	TinyScheme is invoked by GIMP. Open script files in binary mode now
 	that UTF-8 coding can be used.
 
-2007-11-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-04  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	This commit breaks Tiny-Fu. It sets up the basic structure needed
 	to run Scheme scripts as plug-ins. The TinyScheme interpreter gets
@@ -63,7 +63,7 @@
 	* scripts/script-fu.init: Added calls to load script-fu-compat.init
 	and the tiny_fu extension.
 
-2007-11-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in:
 
@@ -74,7 +74,7 @@
 	* tiny-fu/Makefile.am:
 	* tinyscheme/Makefile.am:
 
-2007-11-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated.
 
@@ -83,7 +83,7 @@
 	* configure.in: Bumped version number to 1.9.0 to mark starting
 	point of development for Tiny-Fu version 2.
 
-2007-11-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	This release marks the end of development on version 1 of Tiny-Fu.
 
@@ -93,16 +93,16 @@
 
 	* configure.in: Bumped version number to 1.2.0.
 
-2007-11-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Bumped version number to 1.1.2
 
-2007-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am
 	* scripts/copy-visible.scm: Deprecated.
 
-2007-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-11-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Added eo, et, fa, km, mk, nb, ne, pt, rw, sr, tt, xh
 	to ALL_LINGUAS.
@@ -110,30 +110,30 @@
 	* scripts/Makefile.am
 	* scripts/hsv-graph.scm: Removed this script. Fixes bug #491311.
 
-2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Added Mukund Sivaraman to list of contributors.
 
-2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* re/Makefile.am: Added split.h to list of files.
 
 	* re/split.h: Added. Needed by changes to re in Script_Fu.
 
-2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated based on the merge of Script-Fu code from GIMP 2.4.0.
 
 	* scripts/script-fu-compat.init: Fixed syntax error in string-trim-left
 	function. Added compatability routine for 'verbose'.
 
-2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am: Updated list of files.
 
 	* scripts/tiny-fu.init: Removed. File already added under new name.
 
-2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	This update brings Tiny-Fu in sync with the Script-Fu plug-in
 	in the 2.4.0 version of GIMP.
@@ -159,17 +159,17 @@
 
 	* po/POTFILES.in: Updated list of files.
 
-2007-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/fade-outline.scm: removed this script. Fixes bug #466382.
 
 	* scripts/image-structure.sct: removed this script (see bug #307016).
 
-2007-10-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-28  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme.patch: Removed.
 
-2007-10-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-10-28  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* ftx/.cvsignore
 	* tiny-fu/.cvsignore
@@ -184,16 +184,16 @@
 
 	* configure.in: Added sl to ALL_LINGUAS.
 
-2007-09-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-09-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* MAINTAINERS: Updated due to enforced gnome-svn standards.
 
-2007-04-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-04-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/truchet.scm: fixed typo in procedure name (bug #433772).
 	From a change made to Script-Fu by Sven Neumann.
 
-2007-03-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-03-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* MAINTAINERS: Updated URL for Tiny-Fu.
 
@@ -216,11 +216,11 @@
 	showing an endless number of "gimp-progress-update" messages. Also
 	fixed manual main loop iteration.
 
-2007-01-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-01-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Removed obsolete .cvsignore files due to switch to Subversion.
 
-2007-01-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-01-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new-percent.scm: replaced license statement according
 	to bug #119667. From a change made to Script-Fu by Michael Schumacher.
@@ -228,7 +228,7 @@
 	* scripts/news-text.scm: Fixed typos (bug #396169). From a change
 	made to Script-Fu by Sven Neumann.
 
-2007-01-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-01-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am: Updated due to renamed files.
 
@@ -239,7 +239,7 @@
 	* scripts/tiny-fu-util-setpt.scm: Renamed to script-fu-util-setpt.scm
 	and removed wrong information from header block.
 
-2007-01-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2007-01-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	From various changes made to Script-Fu in GIMP
 
@@ -257,12 +257,12 @@
 
 	* scripts/*.scm: Changed "The GIMP" to just "GIMP" in headers.
 
-2006-12-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-12-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/burn-in-anim.scm: Don't allow one of the two layers to be a
 	floating selection. Fixes bug #384096.
 
-2006-12-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-12-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	This completes syncing of Tiny-Fu with the Script-Fu plug-in of GIMP.
 	Also switches handling of GIMP PDB ARRAY types to using vectors in
@@ -291,7 +291,7 @@
 	* tinyscheme/scheme-private.h: Completed the removal of the hacked
 	on array type.
 
-2006-12-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-12-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	This big update is the first part of bringing Tiny-Fu in sync with the
 	Script-Fu plug-in of GIMP. This will make it easier to keep it in sync
@@ -338,7 +338,7 @@
 	* scripts/test-sphere.scm: Show how to use named constants in register
 	block. Added SF-VECTORS entry to register block.
 
-2006-11-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-11-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Makefile.am: Start lines with tabs instead of spaces.
 
@@ -366,22 +366,22 @@
 	* scripts/tiny-fu.init: Don't load script-fu-compat.init here.
 	* scripts/ts-helloworld.scm: Don't translate strings in test scripts.
 
-2006-11-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-11-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Set return_val before
 	destroying values[] as it may still be needed.
 
-2006-11-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-11-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Added strbreakup, strcat, strcmp,
 	string-trim, string-trim-left, string-trim-right, and unstrbreakup.
 
-2006-10-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/*.scm: Updated the scripts to bring them in-line with the
 	current versions being used in Script-Fu.
 
-2006-10-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Updated.
 
@@ -393,23 +393,23 @@
 
 	* scripts/script-fu-compat.init: Added 'nil'.
 
-2006-10-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Added 'the-environment'.
 
-2006-10-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Updated
 
 	* scripts/*.scm: Updated based on changes found/made while reviewing
 	the Script-Fu scripts in CVS GIMP.
 
-2006-10-13  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-13  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/scheme.c: Use more descriptive message when display a
 	result which returns an array instead of using the form #<ARRAYn>.
 
-2006-10-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-12  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/gimp-labels.scm: Missed closing quotes in previous update.
 
@@ -418,7 +418,7 @@
 	* scripts/tiny-fu-set-cmap.scm: Added keyboard short cut. Moved to
 	better location in menus.
 
-2006-10-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-12  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	The changes below (except for init.scm) were found during the work
 	of updating the GIMP Script-Fu plug-in to become Tiny-Fu.
@@ -437,11 +437,11 @@
 
 	* tinyscheme/init.scm: Updated based on version 1.38 of TinyScheme.
 
-2006-10-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Added 'butlast' and 'last'.
 
-2006-10-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c
 	* tiny-fu/tiny-fu-interface.c
@@ -450,7 +450,7 @@
 	* tiny-fu/tiny-fu.c: Final(?) set of changes of "tiny-fu" references
 	to "script-fu".
 
-2006-10-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-10-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/tiny-fu.init
 	* tiny-fu/ts-wrapper.c
@@ -458,11 +458,11 @@
 	* tinyscheme/scheme.c: Updates to reflect that TinyScheme interpreter
 	is based on the 1.38 version.
 
-2006-09-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/*.scm: Minor formatting changes.
 
-2006-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Changes for increased compatability with Script-Fu scripts.
 
@@ -474,7 +474,7 @@
 	* scripts/*.scm: All scripts changed to use script-fu-... instead
 	of tiny-fu-... in function names and in the register call.
 
-2006-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Changes to use the same filename ending for scripts as Script-Fu.
 
@@ -485,14 +485,14 @@
 	* scripts/Makefile.am
 	* scripts/*.scm: All script files now have .scm extension.
 
-2006-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/line-nova.sct: Changed min. value for randomness from 0 to
 	1. From a change to Script-Fu by Bill Skaggs. Should fix bug #357433.
 
 	* configure.in: Bumped version number to 1.1.1
 
-2006-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a version 1.1.0 tarball. This is the first development
 	release for use with the 2.3/CVS version of GIMP.
@@ -503,11 +503,11 @@
 	* INSTALL: Updated this file with something a bit more useful than
 	the standard default generic information.
 
-2006-09-19  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-19  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated the information about the 1.1.0 release.
 
-2006-09-19  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-19  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c
 	* tinyscheme/scheme.c: Minor update since INT8 and INT8_ARRAY types
@@ -517,24 +517,24 @@
 
 	* configure.in: Added dz to ALL_LINGUAS
 
-2006-09-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-09-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/gradient-example.sct: pop the context before rendering the
 	gradient so we draw the gradient with the user's colors, not with the
 	ones the script uses temporarily. From a change made by Michael
 	Natterer to Script-Fu.
 
-2006-08-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-08-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Set packing of the main vbox to
 	expanding and fill so that the progress bar sticks to the bottom
 	of the dialog. From a change made by Sven Neumann to Script-Fu.
 
-2006-08-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-08-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* po/Makefile.in.in: Should have only checked in the symbolic link?
 
-2006-08-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-08-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* MAINTAINERS: Updated information in this file.
 
@@ -542,13 +542,13 @@
 
 	* TODO: Updated list of items.
 
-2006-08-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-08-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Added missing call to
 	gimp_window_set_transient(). Fixes bug #348249.
 	From a change made by Sven Neumann to Script-Fu.
 
-2006-07-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-07-28  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Added macros that use the minor version number to
 	set TINY_FU_UNSTABLE appropriately.
@@ -557,17 +557,17 @@
 
 	* scripts/spyrogimp.sct: updated web URL
 
-2006-07-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-07-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c
 	* scripts/guides-new.sct: Some minor formatting changes.
 
-2006-07-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-07-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/test-sphere.sct: Removed SF-RADIO added by mistake. Moved
 	script back to language specific menu under Xtns->Tiny-Fu->Test.
 
-2006-07-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-07-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am: Added reverse-layers.sct. Moved
 	ts-helloworld.sct to the list of test scripts.
@@ -635,18 +635,18 @@
 	Refresh, Console) remain in language-specific menus. Bug #145507.
 	Based on changes made by Akkana Peck to Script-Fu.
 
-2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Dropped the _name suffix from the
 	getter and setter API for consistency with GimpBrushSelectButton.
 	Based on changes made by Sven Neumann to Script-Fu.
 
-2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new.scm: Marked string for translation. Based on
 	a patch from Zbigniew Chyla to Script-Fu.
 
-2006-06-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Updated due to change in API CVS
 	version of GIMP. Use replacements for gimp_foo_select widgets,
@@ -660,31 +660,31 @@
 
 	* autogen.sh: Updated to require newer versions of build tools.
 
-2006-06-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Ellipsize the
 	progress label to avoid dialog resizing. Based on a change made
 	to Script-Fu by Sven Neumann.
 
-2006-06-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.h: Oops...this file didn't get committed
 	as part of the changes that fixed bug #330981.
 
-2006-06-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (script_fu_interface): When cutting
 	away ellipsis, also look for U+2026 HORIZONTAL ELLIPSIS. From a
 	change made to Script-Fu by Sven Neumann.
 
-2006-06-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Removed the About dialog. That
 	information is available from the Procedure Browser and scripts
 	should look and feel as much like plug-ins as possible. From a
 	change made to Script-Fu by Sven Neumann.
 
-2006-06-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Based on changes made to Script-Fu by Sven Neumann.
 
@@ -698,7 +698,7 @@
 	* tiny-fu/tiny-fu-scripts.c (tiny_fu_add_script): Use a canonical
 	name for the automatically added run-mode parameter.
 
-2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c (marshall_proc_db_call): Reduced redundant
 	code by using the same code for all INT32 PDB types. Based in part
@@ -707,7 +707,7 @@
 
 	* tiny-fu/tiny-fu-scripts.c: Missed 'sc' in one call to my_err().
 
-2006-06-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Based on changes made to Script-Fu by Sven Neumann.
 
@@ -717,23 +717,23 @@
 
 	* scripts/test-sphere.sct: Documented this new feature.
 
-2006-06-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-scripts.c: Minor cleanup based on changes
 	originally made by Sven Neumann in Script-Fu.
 
-2006-06-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am: Oops...can't put .init files in EXTRA_DIST.
 
-2006-06-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c: Oops...the tiny_fu_find_scripts() routine was
 	renamed to tiny_fu_load_all_scripts().
 
 	* scripts/Makefile.am: Moved the .init files in to EXTRA_DIST.
 
-2006-06-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c
 	* tiny-fu/tiny-fu-interface.c
@@ -747,33 +747,33 @@
 	* tiny-fu/ts-wrapper.c (init_procedures): The gimp-proc-db-call
 	symbol was not being marked as immutable.
 
-2006-06-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Forgot to update TinyScheme version number.
 
-2006-06-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Fixed the definition of fmod for
 	real this time. Previous commit fixed the definition of trunc.
 
-2006-06-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Fixed the definition of fmod.
 
-2006-06-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-06-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/spyrogimp.sct: Removed calc-min-mult procedure. Use the
 	tinyscheme lcm library procedure instead. Fixes bug #331584. Changed
 	defaults for number of teeth to match the values used in Script-Fu.
 	Made tiny-fu-spyrogimp-internal a private procedure.
 
-2006-05-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-server.c: suppress progress popups by installing
 	progress handlers that do nothing (bug #317498). From a change made
 	to Script-Fu by Sven Neumann.
 
-2006-05-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Based on changes made to Script-Fu by Sven Neumann.
 
@@ -782,24 +782,24 @@
 	* tiny-fu/tiny-fu-types.h: Use GtkFileChooserButton for SF_FILENAME
 	and SF_DIRNAME parameters.
 
-2006-05-26  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-26  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/copy-visible.sct: Use canonical procedure names in the
 	help string. From a change made by Michael Natterer to Script-Fu.
 
-2006-05-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/circuit.sct: Fixed multi-line description. From a change
 	made by Simon Budig to the Script-Fu script.
 
-2006-05-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/glossy.sct
 	* scripts/gradient-bevel-logo.sct
 	* scripts/select-to-pattern.sct: Minor capitalization changes to
 	some strings. Addresses bug #312028.
 
-2006-05-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/CHANGES
 	* tinyscheme/scheme.c
@@ -807,7 +807,7 @@
 	'reserve_cells' to TinyScheme interface, moves the comment handling
 	which fixes an obscure bug, and a patch for the allocator.
 
-2006-05-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Based on changes made to Script-Fu by Sven Neumann.
 
@@ -815,13 +815,13 @@
 
 	* plug-ins/script-fu/script-fu-scripts.c: minor cleanup.
 
-2006-05-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-05-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* autogen.sh: Updated check_version() with version from GIMP. The
 	routine now properly checks major, minor, and micro version numbers.
 	Fixes bug #337586.
 
-2006-02-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-02-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Based on changes made to Script-Fu by Sven Neumann.
 
@@ -829,7 +829,7 @@
 
 	* scripts/web-browser.sct: String review.
 
-2006-02-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-02-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: s/GIMP_PDB_PATH/GIMP_PDB_VECTORS/
 	From a change made to Script-Fu by Michael Natterer.
@@ -838,7 +838,7 @@
 
 	* configure.in: Added "bg" (Bulgarian) to ALL_LINGUAS
 
-2006-02-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2006-02-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new.sct
 	* scripts/guides-new-percent.sct: Look at the image's width/height,
@@ -851,16 +851,16 @@
 	new link to http://docs.gimp.org. From changes made to Script-Fu
 	by Roman Joost.
 
-2005-12-31  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-12-31  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/script-fu/siod-wrapper.c: s/GIMP_PDB_PATH/GIMP_PDB_VECTORS/
 	From a change made to Script-Fu by Michael Natterer.
 
-2005-12-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-12-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/chip-away.sct: Replaced a constant with named constant.
 
-2005-11-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-11-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new.sct
 	* scripts/guides-new-percent.sct: Look at the image's width/height,
@@ -877,12 +877,12 @@
 	* scripts/coolmetal-logo.sct: Removed an unneeded and unwanted
 	parameter in perspective call.
 
-2005-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-11-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/3d-outline.sct: Change in formatting in register block.
 	* scripts/text-circle.sct: Fixed filename in comment line.
 
-2005-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-11-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made to Script-Fu by Michael Natterer.
 
@@ -895,54 +895,54 @@
 	* scripts/select-to-image.sct
 	* scripts/select-to-pattern.sct: Don't register menu entries.
 
-2005-11-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-11-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-text-console.c: Removed the run-mode check.
 	From a change made to Script-Fu by Sven Neumann. (See bug #167964).
 
-2005-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Removed frame around progress bar.
 	From a change made to Script-Fu by Sven Neumann.
 
-2005-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c (tiny_fu_browse_callback): Don't set
 	the procedure browser transient to the script-fu console. From a
 	change made to Script-Fu by Sven Neumann.
 
-2005-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: Made progress bars HIG compliant
 	(with italic label below). From changes made to Script-Fu by
 	Michael Natterer.
 
-2005-09-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-28  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Updated now that
 	gimp_proc_browser_dialog_new() takes standard dialog parameters,
 	similar to gimp_dialog_new(). Based on changes made to Script-Fu
 	by Sven Neumann.
 
-2005-09-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-28  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Make dialogs
 	obey the "gtk-alternative-button-order" setting (bug #166678).
 	Based on a change to Script-Fu by Sven Neumann from a patch by
 	Patrice Tremblay.
 
-2005-09-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Use
 	GTK_STOCK_ABOUT for the About button (bug #317339). From a
 	change made to Script-Fu by Sven Neumann.
 
-2005-09-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/fade-outline.sct: Oops...it was supposed to be moved
 	to the Select menu.
 
-2005-09-26  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-26  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made to Script-Fu by Michael Natterer.
 
@@ -965,7 +965,7 @@
 	* tiny-fu/tiny-fu.c: Don't register the menu branches
 	"Filters/Selection" and "Filters/Decor/Stencil Ops".
 
-2005-09-26  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-26  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c (tiny_fu_console_interface)
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Fixed _ to -
@@ -982,11 +982,11 @@
 	* tiny-fu/tiny-fu-interface.c: Removed some frames from the
 	Tiny-Fu dialogs. From changes made to Script-Fu by Sven Neumann.
 
-2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Updated based on fact that I have caught up with CVS GIMP.
 
-2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (script_fu_response): Bail out if the
 	action_area is insensitive. Ignores attempts to close the window
@@ -1000,13 +1000,13 @@
 	* scripts/web-browser.sct: Changed "The GIMP Online" to just
 	"GIMP Online". Based on a change made to Script-Fu by Sven Neumann.
 
-2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-server.c: Use verb instead of "OK" in the
 	confirmative dialog button. From a change made to Script-Fu by
 	Sven Neumann.
 
-2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made to Script-Fu by Akkana Peck.
 
@@ -1018,7 +1018,7 @@
 	Image and Filters menus to a new toplevel Colors menu (as discussed
 	in bug 116145).
 
-2005-09-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made to Script-Fu by Michael Natterer.
 
@@ -1030,20 +1030,20 @@
 
 	* tiny-fu/tiny-fu.c: Use canonical names for tiny-fu's procedures.
 
-2005-09-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Re-enabled "Browse" button now that
 	the procedure browser is now a widget called GimpProcBrowserDialog.
 	Fixes bug #165009. From changes made to Script-Fu by Michael
 	Natterer.
 
-2005-09-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am
 	* scripts/image-structure.sct: Removed script (see bug #307016).
 	Based on a change made to Script-Fu by Sven Neumann.
 
-2005-09-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/3d-outline.sct
 	* scripts/alien-glow-bar.sct
@@ -1078,26 +1078,26 @@
 	in preparation for more layer locking flags.
 	Based on a change made to Script-Fu by Michael Natterer.
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-server.c: Set alternative button order that
 	was missed earlier. Spotted by Stephan Binner.
 	Based on a change made to Script-Fu by Sven Neumann.
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Removed redundant labels.
 	Based on a change made to Script-Fu by Sven Neumann.
 
 	* tiny-fu/tiny-fu.c: Added missing menu branch registrations.
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c
 	* scripts/*.sct: Applied menu reorganization changes applied to
 	Script-Fu as suggested by Akkana Peck (bug #116145).
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made to Script-Fu by Michael Natterer.
 
@@ -1108,19 +1108,19 @@
 	tiny_fu_auxillary_init(), this function is only called once
 	when the extension starts up. Register menu branches here.
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/*.sct: Don't mark menu branches for translation; the
 	translatable branch name is registered by the Tiny-Fu extension.
 	Based on a change made to Script-Fu by Sven Neumann.
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-scripts.c (tiny_fu_find_scripts): Register menu
 	branches for all included scripts. Fixes bug #170623.
 	Based on a change made to Script-Fu by Michael Natterer.
 
-2005-09-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-09-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-scripts.c (tiny_fu_find_scripts): Need to convert
 	tiny-fu-path to filesystem encoding. Should fix bug #165002.
@@ -1130,17 +1130,17 @@
 
 	* configure.in: Added "gu" to ALL_LINGUAS.
 
-2005-08-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.h: Use the new font API. Based on a
 	change made to Script-Fu by Manish Singh.
 
-2005-08-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-intl.h: Don't append -tiny-fu to GETTEXT_PACKAGE.
 	Spotted by Sven Neumann. Fix for bug #312941.
 
-2005-08-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-server.c: Minor cleanup to #include statements.
 	Based on changes made to Script-Fu by Tor Lillqvist.
@@ -1148,7 +1148,7 @@
 	* tiny-fu/tiny-fu-interface.c: Use gimp_spin_button_new().
 	Based on changes made to Script-Fu by Sven Neumann.
 
-2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/alien-glow-logo.sct
 	* scripts/alien-neon-logo.sct
@@ -1177,7 +1177,7 @@
 	* tiny-fu/scripts/text-circle.sct: Added missing mnemonics based
 	on a patch to Script-Fu from Michael Terry (bug #106991).
 
-2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c
 	* tiny-fu/tiny-fu-interface.c
@@ -1187,16 +1187,16 @@
 	* tiny-fu/tiny-fu.c: Removed unnecessary includes and ported to
 	gstdio based on changes made by Sven Neumann to Script-Fu.
 
-2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* po/Makefile.in.in: Synchronized with version used by Script-Fu.
 
-2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-server.c : Make file compile with MSVC. Based on
 	a change originally made by Hans Breuer to Script-Fu.
 
-2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new.sct: Changed guide position limit to use
 	new MAX-IMAGE-SIZE constant.
@@ -1206,7 +1206,7 @@
 	scripts. See comment #4 in bug #167529.
 	(Also includes SF-ENUM changes as the file wasn't committed earlier.)
 
-2005-08-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Based on changes originally made by Sven Neumann to Script-Fu.
 
@@ -1215,7 +1215,7 @@
 	* scripts/Makefile.am: Install test-sphere.sct in unstable
 	releases only.
 
-2005-08-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Added support for SF-ENUM type (based on changes originally made
 	by Sven Neumann to Script-Fu).
@@ -1231,11 +1231,11 @@
 	* scripts/perspective-shadow.sct
 	* scripts/test-sphere.sct: use the new SF-ENUM parameter.
 
-2005-08-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-04  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Bumped version number to 1.1.0
 
-2005-08-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-08-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 1.0.0
 
@@ -1244,7 +1244,7 @@
 	* configure.in: Bumped version number to 1.0.0 to mark the
 	first non-development release.
 
-2005-07-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-07-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* ChangeLog: Corrected my e-mail address.
 
@@ -1254,45 +1254,45 @@
 	* scripts/coffee.sct: Corrected error in a string to read "a lot"
 	instead of "alot". Spotted by Clytie Siddall.
 
-2005-06-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/text-circle.sct: Incorporated changes made by Daniel P.
 	Stasinski in his text-circle2.scm script. Letters are now placed
 	properly for both positive and negative fill angles. Last(?) fix
 	for bug #144588.
 
-2005-06-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/font-map.sct: Updated to fix problems related to change in
 	handling of string arrays (see bug #168290). Fixes bug #308681.
 
-2005-06-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 1.0.0rc1
 
 	* NEWS: Updated with information about the 1.0.0rc1 release candidate.
 
-2005-06-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Bumped version number to 1.0.0rc1 to mark the
 	first release candidate.
 
-2005-06-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with notes about changes since the 0.9.9 release.
 
 	* TODO: Added note to add script(s) to test server mode.
 
-2005-06-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Oops...finally bumped version number to 0.9.9
 
-2005-06-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-06-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/tiny-fu-set-cmap.sct: Use 'gimp-image-set-colormap' instead
 	of deprecated call 'gimp-image-set-cmap'. Spotted by Joao S. O. Bueno.
 
-2005-05-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-05-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new-percent.sct
 	* scripts/guides-new.sct: Don't use undo groups. It's useless for a
@@ -1300,7 +1300,7 @@
 	but add the guides conditionally. Based on a change made by Michael
 	Natterer to Script-Fu.
 
-2005-05-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-05-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made by Tor Lillqvist to Script-Fu.
 
@@ -1321,7 +1321,7 @@
 	* tiny-fu/Makefile.am (WINSOCK_LIBS): Link with the winsock2 library,
 	as we compile with the winsock2 header.
 
-2005-05-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-05-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Moved completed entries. Added notes about two problems. Also
 	added some steps needed in order for Tiny-Fu to replace Script-Fu.
@@ -1329,11 +1329,11 @@
 	* configure.in: Select localedir according to the format of the
 	gettext message catalogs. Fixes bug #169274.
 
-2005-05-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-05-04  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/tiny-fu-set-cmap.sct: Moved two set!'s in to the let block.
 
-2005-04-19  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-04-19  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c: Use only GETTEXT_PACKAGE without plug-in name
 	when calling gimp_plugin_domain_register() and pass proper locale
@@ -1342,45 +1342,45 @@
 
 	* tiny-fu/Makefile.am: Define LOCALEDIR needed as part of above fix.
 
-2005-04-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-04-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/scheme.c: Made readstr_upto() stop reading input when it
 	hits a NUL byte. Fixes problem reported by Sam Phillips. Added check
 	for an EOF character in is_one_of() as was in the original version of
 	TinyScheme. Also removed some #if'ed code.
 
-2005-04-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-04-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	configure.in: Select localedir according to the format of the gettext
 	message catalogs. Fix for bug #169274 from a change made in GIMP by
 	Sven Neumann.
 
-2005-03-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.8
 
 	* NEWS: Forgot to include reference to number of a bug report.
 
-2005-03-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Removed an entry that has been done.
 
-2005-03-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with notes about changes since the 0.9.7 release.
 
-2005-03-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c
 	* tiny-fu/tiny-fu-text-console.c: Changes to allow use of Tiny-Fu with
 	batch mode. Fixes bug #167964.
 
-2005-03-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/scheme.c: Strings are normalized (characters with an
 	accent are combined as one) before being stored in a data cell.
 
-2005-03-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/README
 	* tinyscheme/scheme.h
@@ -1392,26 +1392,26 @@
 
 	* configure.in: Bumped version number to 0.9.8
 
-2005-03-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.7
 
-2005-03-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am: Removed reference to gimp-text-wrapper.sct.
 
-2005-03-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Updated
 
-2005-03-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with notes about changes since the 0.9.6 release.
 
 	* scripts/gimp-text-wrapper.sct: Decided not to include this as
 	part of Tiny-Fu for the 2.2.x version of GIMP.
 
-2005-03-14  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-14  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Added substring-equal? function.
 	Re-ordered contents of file. Updated some comments.
@@ -1421,12 +1421,12 @@
 
 	* debug-tiny-fu.txt: Added an option passed to valgrind.
 
-2005-03-13  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-13  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Minor changes to ts_output_string() which
 	will allow passing length value of zero.
 
-2005-03-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/perspective-shadow.sct: Changed an SF-TOGGLE in the
 	register block to SF-OPTION which it should have been all along.
@@ -1437,13 +1437,13 @@
 	to gimp-text-* in order to test for the passing of an empty string.
 	Fix for bug #163479.
 
-2005-03-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-04  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Added support for SF-REGION. SF-BOUNDARY,
 	and SF-PATH. Use proper structure member when passing/receiving
 	data instead of using d_int32 member when passing gint32 values.
 
-2005-03-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-03-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Use enum instead of hard-coded constants
 	when calling mk_array(). Added display of contents of string array
@@ -1451,46 +1451,46 @@
 
 	* TODO: Updated
 
-2005-02-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-02-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/scheme.c: Fixed a problem with aset! for string arrays.
 	Old string wasn't freed and wasn't allocating a copy of new string.
 
-2005-02-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-02-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Reverted previous change. Can't add an API
 	change until after branching the code for the 2.3 version of GIMP.
 
-2005-02-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-02-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Added constants MIN-IMAGE-SIZE, MAX-IMAGE-SIZE,
 	MIN-RESOLUTION, and MAX-RESOLUTION for use in Script-Fu scripts. See
 	comment #4 in bug #167529.
 
-2005-02-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-02-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c (init_procedures): Plugged memory leaks
 	originally spotted by Sven Neumann in Script-Fu.
 
-2005-01-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-01-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* re/Makefile.am: Added GIMP_CFLAGS to AM_CFLAGS. This is needed by
 	upcoming UTF-8 support.
 
-2005-01-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-01-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-scripts.c: Plugged a memory leak originally spotted
 	by Sven Neumann in Script-Fu.
 
-2005-01-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-01-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Trivial formatting changes to source file.
 
-2005-01-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-01-12  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/glossy.sct: Fixed a typo spotted by Joao S. O. Bueno.
 
-2005-01-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2005-01-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am:
 	* scripts/asc2img.sct: Removed this script as it is supposedly broken
@@ -1503,33 +1503,33 @@
 	vertical edge. From a fix in Script-Fu by Shlomi Fish. Fixes bug
 	#132145.
 
-2004-12-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-12-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/weave.sct: Limit the "Thread intensity" parameter to [0..100]
 	because it's used as layer opacity. From a fix in Script-Fu by Michael
 	Natterer. Fixes bug #162182.
 
-2004-12-19  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-12-19  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/copy-visible.sct: Deprecated since feature added to core.
 
-2004-12-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-12-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/circuit.sct: Don't try to desaturate a grayscale layer.
 	From a fix in Script-Fu by Bill Skaggs.  Fixes bug #161470.
 
-2004-12-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-12-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/copy-visible.sct: Apply the layer mask when copying a
 	single layer with a layer mask. Fixes bug #138662.
 
 	* configure.in: Bumped version number to 0.9.7
 
-2004-11-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.6
 
-2004-11-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated
 
@@ -1539,7 +1539,7 @@
 	Changed default value for Outer teeth to give a more interesting
 	image. Detabified file. Fixes bug #158448. 
 
-2004-11-27  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-27  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* TODO: Added idea of counting brackets in TinyScheme.
 
@@ -1548,16 +1548,16 @@
 	the number of parameters we are being called with. From a fix in
 	Script-Fu by Sven Neumann.
 
-2004-11-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with notes about recent changes.
 
-2004-11-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/copy-visible.sct: Fixed incorrect comparison in if
 	statement. Partial(?) fix for bug #138662. 
 
-2004-11-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/*.sct: Updated all scripts to call script-fu-menu-register
 	after the call to script-fu-register.
@@ -1572,13 +1572,13 @@
 	structs by their menu_paths *and* the procedure's menu_labels. Fixes
 	menu item sorting after "Refresh".
 
-2004-11-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/erase-rows.sct: Applied patch from BM which makes the
 	script work layers that have their top-left corner at a position
 	other than the top-left corner of the image. Fixes bug #158863.
 
-2004-11-19  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-19  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-scripts.c (tiny_fu_menu_compare): Compare the
 	passed menu paths and not the pointers themselves. From a fix in
@@ -1591,7 +1591,7 @@
 	* scripts/*.sct: Ported all scripts to use script-fu-menu-register
 	and pass just the menu label in script-fu-register.
 
-2004-11-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c
 	* tiny-fu/tiny-fu-scripts.c
@@ -1612,17 +1612,17 @@
 
 	* scripts/test-sphere.sct: Example use of new API for scripts.
 
-2004-11-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/add-bevel.sct: Removed a bracket left in by mistake
 	during the previous modification.
 
-2004-11-17  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-17  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c: added a utility function to
 	reduce code duplication. (From Sven Neumann)
 
-2004-11-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made by Michael Natterer to Script-Fu.
 
@@ -1632,19 +1632,19 @@
 	functions instead of drawable_foo_defaults() to be consistent
 	with paintbrush_default() and friends.
 
-2004-11-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Makefile.am: Added NEWS to the list of files in EXTRA_DIST.
 
 	* debug-tiny-fu.txt: Removed an option passed to valgrind.
 
-2004-11-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with notes about some recent changes.
 
 	* TODO: Added two items.
 
-2004-11-14  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-14  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/selection-round.sct: Register the compatibility procedure
 	with the correct name. (From a Script-Fu change by Sven Neumann)
@@ -1658,17 +1658,17 @@
 	* scripts/text-circle.sct
 	* scripts/truchet.sct: Use the new transform API.
 
-2004-11-14  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-14  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/guides-new.sct
 	* scripts/guides-remove-all.sct: Missed script-fu-* references
 	that should be tiny-fu-*.
 
-2004-11-13  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-13  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with a summary of the 0.9.6 release.
 
-2004-11-13  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-13  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/gimp-headers.sct
 	* scripts/gimp-labels.sct
@@ -1677,7 +1677,7 @@
 	gimp-selection-none in preparation for the deprecation of -clear.
 	(See bug #156765)
 
-2004-11-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made by Michael Natterer to Script-Fu.
 
@@ -1696,19 +1696,19 @@
 	* scripts/lava.sct: replaced undo-disable/enable by
 	undo-group-start/end.
 
-2004-11-10  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-10  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on changes made by Sven Neumann to Script-Fu.
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_ok): actually retrieve
 	the value from the GtkEntry for SF-VALUE.
 
-2004-11-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Oops...removed
 	a line left over when applying patch which fixes bug 123882.
 
-2004-11-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-11-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Don't call
 	gettext() on strings provided by scripts as they are already
@@ -1720,34 +1720,34 @@
 	return when there is already a script running but show a message
 	instead. Fixes bug #123882.
 
-2004-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c (init_constants): Re-added the deprecated
 	constants for backwards compatability with Script-Fu and the 2.0
 	version of GIMP. Use convert_string() to change name of constants
 	to Scheme format.
 
-2004-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Bumped version number to 0.9.6
 
-2004-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.5
 
 	* TODO: Updated file.
 
-2004-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with a summary of the 0.9.5 release.
 
-2004-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/scheme.c: Removed some items from here...
 	* tinyscheme/scheme-private.h: ... and added them here so they
 	could be used in the ts-wrapper.c file.
 
-2004-10-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/carve-it.sct: Removed three lines no longer needed.
 
@@ -1760,7 +1760,7 @@
 
 	* scripts/test-sphere.sct: Added note about use of SF_PALETTE
 
-2004-10-28  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-28  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-interface.c (tiny_fu_interface): Applied patch
 	from Sven Neumann which uses gimp_int_combo_box_connect() so
@@ -1774,12 +1774,12 @@
 
 	* tiny-fu/gimp-constants.h: really remove.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Oops...the array size limit checks
 	were around the wrong way.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Allow user to specify array size of zero.
 
@@ -1794,34 +1794,34 @@
 	built-in unit types. Change originally made by Michael Natterer
 	to Script-Fu.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Allow specified array size to be any value
 	from 1 up to the actual size of the array. Fixes bug #155359.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/tiny-fu.init: Changed gimp-data-dir to gimp-data-directory.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/test-sphere.sct: Added a palette selector to the dialog.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with a summary of the 0.9.4 release.
 
-2004-10-25  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-25  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tinyscheme/scheme.c: Applied patch from Dimitrios Souflis which
 	fixes error when parsing two or more consecutive comment lines.
 
-2004-10-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* NEWS: Updated with a summary of information about all public
 	releases up to (and including) the 0.9.3 release.
 
-2004-10-24  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-24  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Applied changes made to the autogen.sh file of GIMP.
 
@@ -1835,30 +1835,30 @@
 	since it might interfere with differing autoconf versions.
 	(Manish Singh)
 
-2004-10-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c: Removed _() tag from two strings that should
 	not have been marked for translation.
 
-2004-10-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c: Just some minor formatting changes.
 
-2004-10-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c: Removed #ifdef's that should have been removed
 	when server mode was re-enabled for Windows. Fixed spelling error,
 	and two comments.
 
-2004-10-20  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-20  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/circuit.sct: Removed line left in by mistake.
 
-2004-10-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Reworded two error messages.
 
-2004-10-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* po/POTFILES.in
 	* scripts/Makefile.am: Updated list of files.
@@ -1867,11 +1867,11 @@
 	* scripts/hsv-graph.sct
 	* scripts/image-structure.sct: Added remaining Script-Fu scripts.
 
-2004-10-16  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-16  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/script-fu-compat.init: Added 'pow' used in hsv-graph.sct
 
-2004-10-14  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-14  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* po/POTFILES.in: Updated list of files.
 
@@ -1882,12 +1882,12 @@
 	* scripts/guides-remove-all.sct: Added new scripts from Alan Horkan
 	added to Script-Fu. (see bug #119667)
 
-2004-10-14  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-14  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/circuit.sct: Fixed to allow use of script on original layer.
 	(bug #155358)  Fixed spelling error.
 
-2004-10-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-12  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -1902,7 +1902,7 @@
 	intltool (bug #137029) and the freefont package isn't that widely
 	used any longer anyway.
 
-2004-10-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-12  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* autogen.sh: removed reference to libtool in the "I am testing ..."
 	message since libtool isn't used.
@@ -1912,15 +1912,15 @@
 	* autogen.sh: sync'ed with gimp's autogen.sh. Also adds support
 	for the AUTOGEN_CONFIGURE_ARGS environment variable.
 
-2004-10-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Bumped version number to 0.9.5
 
-2004-10-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released version 0.9.4 (first standalone tarball)
 
-2004-10-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/Makefile.am
 	* scripts/images/Makefile.am: DATADIR is now GIMP_DATADIR
@@ -1928,7 +1928,7 @@
 	* configure.in: Added check for GIMP >= 2.1. Added checks for some
 	needed libraries, and for some needed library routines.
 
-2004-10-09  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-09  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* re/Makefile.am: Added more files missing from the distribution.
 
@@ -1939,7 +1939,7 @@
 	* re/regexec.c: Changed <regex.h> to "regex.h" to emphasize local
 	header is being used rather than standard libc header file.
 
-2004-10-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Makefile.am: Forgot to commit this file at the same time
 	as the others.
@@ -1953,31 +1953,31 @@
 	list of files to include in a distribution. Fixed typo in filename
 	in the re/Makefile.am file.
 
-2004-10-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* AUTHORS: Added initial list of authors and contributors.
 
-2004-10-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Added #ifdef GIMP_PROC_BROWSER around
 	currently unused variable declaration.
 
-2004-10-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in: Removed two LIBTOOL lines that are not needed and
 	added missing AC_CANONICAL_HOST.
 
-2004-10-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* configure.in
 	* tiny-fu/Makefile.am: Re-instated ability to build under Windows.
 
-2004-10-08  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-08  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c: Removed "Browse" button using #ifdef
 	GIMP_PROC_BROWSER until the needed code is available via libgimpui.
 
-2004-10-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu.c: Untabified file.
 
@@ -1986,7 +1986,7 @@
 
 	* tiny-fu/ts-wrapper.c: Debugging features are now off by default.
 
-2004-10-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Michael Natterer.
 
@@ -2002,17 +2002,17 @@
 	cleanup and added the old procedure for backward compatibility.
 	Fixes bug #145147.
 
-2004-10-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* scripts/spyrogimp.sct: Update based on change made by Michael
 	Natterer to Script-Fu version due to change in GIMP API.
 
-2004-10-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* POTFILES.in: Removed dynload.c from list.
 	* po/*.po: Regenerated all .po files.
 
-2004-10-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-07  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/tiny-fu-console.c
 	* tiny-fu/tiny-fu-scripts.c
@@ -2020,14 +2020,14 @@
 	* tiny-fu/tiny-fu-text-console.c: Untabified and unmarked error
 	messages for translation.
 
-2004-10-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu change made by Sven Neumann.
 
 	* tiny-fu/scripts/addborder.sct: simple change to make the script work
 	on all image types, not only RGB.
 
-2004-10-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-05  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -2049,7 +2049,7 @@
 	* tiny-fu/script-fu-interface.c (script_fu_reset): fixed reset for
 	SF_TEXT values.
 
-2004-10-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-04  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* tiny-fu/ts-wrapper.c: Cleaned init_procedures() by using
 	g_strdup_printf(), g_strdup()/g_free() proc_name, plugged memory leak.
@@ -2059,14 +2059,14 @@
 	array is different from the previous argument specifying the size
 	as suggested by Michael Natterer. (Fixes bug #154266)
 
-2004-10-04  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-04  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
 	* tiny-fu/script-fu-interface.c: Added a horizontal size group for the
 	left-aligned controls.
 
-2004-10-06  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-06  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Sven Neumann autoconf'ed version 0.9.3 of Tiny-Fu yesterday. All files
 	were imported in to GNOME CVS today after a couple of minor changes.
@@ -2075,19 +2075,19 @@
 	to preserve when the changes were originally made since the 0.9.3
 	tarball was released.
 
-2004-10-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.3
 
 	* plug-ins/tiny-fu/scripts/*.sct: Updated all scripts to conform to
 	the current PDB API.
 
-2004-10-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: increased size of
 	strbuff[] in scheme struct to handle scripts with lots of help info.
 
-2004-10-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Michael Natterer.
 
@@ -2103,12 +2103,12 @@
 	* plug-ins/tiny-fu/scripts/test-sphere.sct: shortened overly
 	long and useless help text.
 
-2004-10-01  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-10-01  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* gimp/plug-ins/tiny-fu/ts-wrapper.c: ts_interpret_string() now zeros
 	sc.linebuff to ensure it contains no previous error message.
 
-2004-09-29  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-29  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates as the result of changes made by Michael Natterer to DB Browser.
 
@@ -2121,7 +2121,7 @@
 	* plug-ins/tiny-fu/tiny-fu-console.c: Changed #includes accordingly.
 	Minor cleanup.
 
-2004-09-23  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-23  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -2130,7 +2130,7 @@
 	GtkTextView. Instead retrieve the final string when the dialog is
 	confirmed.
 
-2004-09-22  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-22  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* gimp/plug-ins/tiny-fu/tiny-fu-enum.h
 	* gimp/plug-ins/tiny-fu/tiny-fu-interface.c
@@ -2138,7 +2138,7 @@
 	* gimp/plug-ins/tiny-fu/ts-wrapper.c: Added support for multi-line
 	text in scripts using SF-TEXT argument type.
 
-2004-09-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* gimp/plug-ins/tiny-fu/ts-wrapper.c: Added gimp-*directory constants
 	and marked the gimp*-dir constants as deprecated.
@@ -2146,7 +2146,7 @@
 	* gimp/plug-ins/tiny-fu/server-test/*: Added directory and files
 	with information about using server mode plus some sample scripts.
 
-2004-09-21  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-21  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on Script-Fu changes made by Sven Neumann.
 
@@ -2163,7 +2163,7 @@
 	* plug-ins/tiny-fu/ts-wrapper.c: Removed Win32 specific code
 	that isn't needed any longer.
 
-2004-09-19  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-19  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.2
 
@@ -2174,7 +2174,7 @@
 
 	* plug-ins/tiny-fu/scripts/Makefile.am: Updated list of scripts.
 
-2004-09-18  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-18  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/mkbrush.sct
 	* plug-ins/tiny-fu/scripts/select-to-brush.sct
@@ -2186,11 +2186,11 @@
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Fixed 'rand' function.
 
-2004-09-15  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-15  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/burn-in-anim.sct: Fixed glow effect.
 
-2004-09-13  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-13  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* po-tiny-fu/ChangeLog
 	* po-tiny-fu/POTFILES.in: Updated list of files to check for strings
@@ -2214,7 +2214,7 @@
 	* plug-ins/tiny-fu/tinyscheme/scheme-private.h: Moved definitions for
 	arrayvalue, arraylength, and arraytype to the header file.
 
-2004-09-11  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-11  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Fixed problem in the
 	cons-array function and added missing statement for float arrays.
@@ -2228,7 +2228,7 @@
 	that can be allocated. Prevents "No memory!" message when all sample
 	scripts are installed.
 
-2004-09-03  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-03  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.1
 
@@ -2241,7 +2241,7 @@
 	over all args to determine the buffer's length and makes the
 	remaining code smaller and more readable.
 
-2004-09-02  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-09-02  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on some more Script-Fu changes made by Michael Natterer.
 
@@ -2265,7 +2265,7 @@
 	* plug-ins/tiny-fu/tiny-fu-interface.c: removed all progress
 	callbacks and simply use a GimpProgressBar.
 
-2004-08-31  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-31  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Updates based on more Script-Fu changes made by Michael Natterer.
 
@@ -2278,7 +2278,7 @@
 	* plug-ins/tiny-fu/Makefile.am
 	* plug-ins/tiny-fu/ts-wrapper.c: Updated due to the other changes.
 
-2004-08-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/ftx/ftx.c: Changed _ to - in names of
 	constants in file_type_constants structure.
@@ -2289,13 +2289,13 @@
 
 	* plug-ins/tiny-fu/gimp-constants.h: regenerated
 
-2004-08-30  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-30  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tiny-fu-scripts.c: Applied changes made by Michael
 	Natterer to Script-Fu which uses a new API to show the progress bar in
 	the script-fu dialog.  
 
-2004-08-12  Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-12  Kevin Cozens  <kcozens@svn.gnome.org>
 
 	Released a new tarball as version 0.9.0
 
@@ -2305,12 +2305,12 @@
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Garbage collector now frees
 	the strings pointed to in string array data cells.
 
-2004-08-11   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-11   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Updated the marshalling code to use
 	the new array type in TinyScheme for handling of PDB *ARRAY data.
 
-2004-08-10   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-10   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Updated define blocks
 	for cons-array, aset, and aref to use new array functions.
@@ -2329,7 +2329,7 @@
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Made define and set! honour
 	immutable setting of data cells. Eliminated compiler warnings.
 
-2004-08-07   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-07   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/ftx/ftx.c: UTF8'ed the file routines.
 
@@ -2342,12 +2342,12 @@
 	* plug-ins/tiny-fu/ts-wrapper.c: Added extra debugging output in
 	marshalling routine for data passed to GIMP.
 
-2004-08-06   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-06   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tiny-fu-console.c: Added buttons "Clear Output"
 	and "Save Output" to console dialog. (Save not added for GIMP 2.0)
 
-2004-08-04   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-04   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/script-fu-compat.init: Change to force
 	argument for random to integer.
@@ -2359,7 +2359,7 @@
 	* plug-ins/tiny-fu/ts-wrapper.h
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Removed pipe in console mode.
 
-2004-08-02   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-02   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Updated the public tarball.
 
@@ -2384,7 +2384,7 @@
 	* plug-ins/tiny-fu/script-fu-compat.init: The extensions are linked in
 	and no longer need to be loaded.
 
-2004-08-01   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-08-01   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Changed definition for 'fmod'
 	to force arguments to integer.
@@ -2392,7 +2392,7 @@
 	* plug-ins/tiny-fu/Makefile.am: Changed the dependency order so that
 	$(REGEXREPL) is linked earlier. Per the change made to Script-Fu.
 
-2004-07-31   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-31   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Updated the public tarball.
 
@@ -2404,14 +2404,14 @@
 	* plug-ins/tiny-fu/script-fu-compat.init: Removed define for 'fread'
 	since 'read' is not a direct equivalent.
 
-2004-07-30   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-30   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Fourth public tarball released.
 
 	* plug-ins/tiny-fu/tinyscheme/ts-wrapper.c: Fixed init problem by
 	moving defines for DIR-SEPARATOR and 'load-extension'.
 
-2004-07-29   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-29   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/ts-wrapper.c: Constant DIR-SEPARATOR 
 	added to aid in portability when building file paths in scripts.
@@ -2424,7 +2424,7 @@
 	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Added flags to stop
 	versioning of the .so files. Mostly helps when building for Windows.
 
-2004-07-28   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-28   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Changed marshall_proc_db_call() to
 	return a list containing either TRUE or FALSE for PDB calls which
@@ -2439,7 +2439,7 @@
 	to the test script based on change to Script-Fu version made by Michael
 	Natterer.
 
-2004-07-27   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-27   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tiny-fu-scripts.c: In tiny_fu_free_scripts(),
 	script->arg_types was being freed too soon. (Inherited from Script-Fu)
@@ -2449,12 +2449,12 @@
 
 	* plug-ins/tiny-fu/scripts/contactsheet.sct: Added first version.
 
-2004-07-25   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-25   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/script-fu-compat.init: Fixed definition for
 	cons-array.
 
-2004-07-22   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-22   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Third public tarball released.
 
@@ -2466,7 +2466,7 @@
 	routines. Added 'dir-rewind' and 'file-type'. Modified to use routines
 	from glib to aid in portability.
 
-2004-07-20   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-20   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/tsx/tsx.c: Added #if to prevent include
 	of socket related header files when socket routines will not be used.
@@ -2476,11 +2476,11 @@
 	* plug-ins/tiny-fu/tinyscheme/re/*: Hooked re extension in to a build
 	and install of the Tiny-Fu plugin.
 
-2004-07-16   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-16   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Added support for PARASITES.
 
-2004-07-14   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-14   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* Second public tarball released.
 
@@ -2496,19 +2496,19 @@
 	* plug-ins/tiny-fu/tinyscheme/tsx/Makefile.am: Hooked tsx extension
 	in to a build and install of the Tiny-Fu plugin.
 
-2004-07-13   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-13   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Added FFI hook for "load-extension".
 
 	* plug-ins/tiny-fu/script-fu-compat.init: Load tsx extension and
 	added compatibility define for SIOD 'realtime' function.
 
-2004-07-12   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-12   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/script-fu-compat.init: Added random number
 	generator routines.
 
-2004-07-10   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-10   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c
 	* plug-ins/tiny-fu/scripts/Makefile.am
@@ -2516,17 +2516,17 @@
 	* plug-ins/tiny-fu/script-fu-compat.init: Added some backwards
 	compatibility routines for scripts written for the SIOD interpreter.
 
-2004-07-09   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-09   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/tiny-fu.init
 	* plug-ins/tiny-fu/scripts/tinyscheme/init.sct: Fixed define of lcm.
 
-2004-07-08   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-08   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Modified to use vectors for all
 	PDB *ARRAY types.
 
-2004-07-05   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-05   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* First public release of a tarball for Tiny-Fu
 
@@ -2535,18 +2535,18 @@
 	* plug-ins/tiny-fu/scripts/test-sphere.sct: Fixed typos originally
 	discovered by Roman Joost in Script-Fu.
 
-2004-07-01   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-07-01   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* gimp/tools/pdbgen/enumcode.pl: Modified to generate the
 	gimp-constants.h file needed by Tiny-Fu.
 
-2004-06-28   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-06-28   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c
 	* plug-ins/tiny-fu/tinyscheme/scheme.c: Partial improvement in
 	display of error messages when parsing/running scripts.
 
-2004-06-27   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-06-27   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/tinyscheme/BUILDING
 	* plug-ins/tiny-fu/tinyscheme/CHANGES
@@ -2559,12 +2559,12 @@
 	* plug-ins/tiny-fu/scripts/tiny-fu.init: Updated to version 1.35
 	of TinyScheme.
 
-2004-06-26   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-06-26   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/scripts/*: Updated with a fresh copy of the
 	Script-Fu scripts recently HIG-ified by Bill Skaggs.
 
-2004-06-24   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-06-24   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/gimp-constants.c: Updated to match recent
 	changes in Script-Fu constants.
@@ -2574,12 +2574,12 @@
 	* plug-ins/tiny-fu/tiny-fu-server.c: HIG-ified based on changes
 	made by Sven Neumann to the similar files in Script-Fu.
 
-2004-04-08   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-04-08   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/tiny-fu/ts-wrapper.c: Fixed PDB marshaller to handle
 	NULL strings.
 
-2004-04-06   Kevin Cozens  <kcozens@cvs.gnome.org>
+2004-04-06   Kevin Cozens  <kcozens@svn.gnome.org>
 
 	* plug-ins/script-fu/scripts/ts-helloworld.sct: First successful run
 	of a script using TinyScheme as the Scheme interpreter.
