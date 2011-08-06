@@ -1,19 +1,23 @@
 # Greek translation for gimp-script-fu.
 # Copyright (C) 2001, 2002 Free Software Foundation.
 # Simos Xenitellis <simos@hellug.gr>, 2001, 2002.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gimp-script-fu 1.0\n"
+"Project-Id-Version: gimp-tiny-fu.el.po\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-01 15:00-0400\n"
-"PO-Revision-Date: 2001-12-27 17:09+0000\n"
-"Last-Translator: Simos Xenitellis <simos@hellug.gr>\n"
-"Language-Team: Greek <nls@tux.hellug.gr>\n"
+"POT-Creation-Date: 2011-08-06 13:43+0300\n"
+"PO-Revision-Date: 2011-08-05 18:54+0200\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs 32@gmail.com>\n"
+"Language-Team: Greek <team@gnome .gr>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
 
 #: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
@@ -21,50 +25,47 @@ msgstr "Κονσόλα Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:196
 msgid "Welcome to TinyScheme"
-msgstr ""
+msgstr "Καλώς ήρθατε στο TinyScheme"
 
 #: ../tiny-fu/tiny-fu-console.c:202
 msgid "Interactive Scheme Development"
-msgstr ""
+msgstr "Διαδραστική ανάπτυξη Scheme"
 
 #
 #: ../tiny-fu/tiny-fu-console.c:238
-#, fuzzy
 msgid "_Browse..."
-msgstr "Εξερεύνηση..."
+msgstr "Π_εριήγηση..."
 
 #: ../tiny-fu/tiny-fu-console.c:296
-#, fuzzy
 msgid "Save Script-Fu Console Output"
-msgstr "Κονσόλα Script-Fu"
+msgstr "Αποθήκευση εξόδου κονσόλας Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:343
 #, c-format
 msgid "Could not open '%s' for writing: %s"
-msgstr ""
+msgstr "Αδυναμία ανοίγματος '%s' για εγγραφή: %s"
 
 #: ../tiny-fu/tiny-fu-console.c:372
-#, fuzzy
 msgid "Script-Fu Procedure Browser"
-msgstr "Λιγότερες Επιλογές"
+msgstr "Περιηγητής διαδικασίας Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:716
 msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-msgstr ""
+msgstr "Η κατάσταση αξιολόγησης Script-Fu επιτρέπει μόνο μη διαδραστική κλήση"
 
 #: ../tiny-fu/tiny-fu-interface.c:191
 msgid "Script-Fu cannot process two scripts at the same time."
-msgstr ""
+msgstr "Το Script-Fu δεν μπορεί να επεξεργαστεί δύο σενάρια ταυτόχρονα."
 
 #: ../tiny-fu/tiny-fu-interface.c:193
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr ""
+msgstr "Ήδη εκτελείται το σενάριο \"%s\"."
 
 #: ../tiny-fu/tiny-fu-interface.c:238
-#, fuzzy, c-format
+#, c-format
 msgid "Script-Fu: %s"
-msgstr "Πρόγραμμα εντολών:"
+msgstr "Script-Fu: %s"
 
 #. we add a colon after the label;
 #. some languages want an extra space here
@@ -75,233 +76,217 @@ msgstr "%s:"
 
 #
 #: ../tiny-fu/tiny-fu-interface.c:348
-#, fuzzy
 msgid "Script-Fu Color Selection"
-msgstr "Επιλογή χρώματος"
+msgstr "Επιλογή χρώματος Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:460
-#, fuzzy
 msgid "Script-Fu File Selection"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Επιλογή αρχείου Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:463
-#, fuzzy
 msgid "Script-Fu Folder Selection"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Επιλογή φακέλου Script-Fu"
 
 #
 #: ../tiny-fu/tiny-fu-interface.c:475
-#, fuzzy
 msgid "Script-Fu Font Selection"
-msgstr "Επιλογή Γραμματοσειράς"
+msgstr "Επιλογή Γραμματοσειράς Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:483
-#, fuzzy
 msgid "Script-Fu Palette Selection"
-msgstr "Επιλογή Προφύλαξης Οθόνης"
+msgstr "Επιλογή παλέτας Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:492
-#, fuzzy
 msgid "Script-Fu Pattern Selection"
-msgstr "Επιλογή Προφύλαξης Οθόνης"
+msgstr "Επιλογή μοτίβου Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:501
-#, fuzzy
 msgid "Script-Fu Gradient Selection"
-msgstr "Κλάδεμα της τρέχουσας επιλογής"
+msgstr "Επιλογή διαβάθμισης Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:510
-#, fuzzy
 msgid "Script-Fu Brush Selection"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Επιλογή πινέλου Script-Fu"
 
 #: ../tiny-fu/tiny-fu-scripts.c:658
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error while executing\n"
 "%s\n"
 "\n"
 "%s"
 msgstr ""
-"Σφάλμα κατά την ανάγνωση του αρχείου %s:\n"
+"Σφάλμα κατά την εκτέλεση\n"
+"%s\n"
+"\n"
 "%s"
 
 #: ../tiny-fu/tiny-fu-server.c:712
-#, fuzzy
 msgid "Script-Fu Server Options"
-msgstr "Λιγότερες Επιλογές"
+msgstr "Επιλογές εξυπηρετητή Script-Fu"
 
 #: ../tiny-fu/tiny-fu-server.c:717
-#, fuzzy
 msgid "_Start Server"
-msgstr "Εκκίνηση"
+msgstr "Εκκίνη_ση Εξυπηρετητή"
 
 #: ../tiny-fu/tiny-fu-server.c:745
-#, fuzzy
 msgid "Server port:"
-msgstr "Εξυπηρετητής:"
+msgstr "Θύρα εξυπηρετητή:"
 
 #
 #: ../tiny-fu/tiny-fu-server.c:751
-#, fuzzy
 msgid "Server logfile:"
-msgstr "Αποθήκευση Αρχείου Καταγραφών"
+msgstr "Αρχείο ημερολογίου εξυπηρετητή:"
 
-#: ../tiny-fu/tiny-fu.c:110
+#: ../tiny-fu/tiny-fu.c:161
 msgid "Interactive console for Script-Fu development"
-msgstr ""
+msgstr "Διαδραστική κονσόλα για ανάπτυξη του Script-Fu"
 
-#: ../tiny-fu/tiny-fu.c:116
-#, fuzzy
+#: ../tiny-fu/tiny-fu.c:167
 msgid "Script-Fu _Console"
-msgstr "Κονσόλα Script-Fu"
+msgstr "_Κονσόλα Script-Fu"
 
-#: ../tiny-fu/tiny-fu.c:140
+#: ../tiny-fu/tiny-fu.c:191
 msgid "Server for remote Script-Fu operation"
-msgstr ""
+msgstr "Εξυπηρετητής για απομακρυσμένη λειτουργία Script-Fu"
 
-#: ../tiny-fu/tiny-fu.c:145
+#: ../tiny-fu/tiny-fu.c:196
 msgid "_Start Server..."
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:301
-msgid "_GIMP Online"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:302
-msgid "_User Manual"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:305
-#, fuzzy
-msgid "_Script-Fu"
-msgstr "Πρόγραμμα εντολών:"
-
-#: ../tiny-fu/tiny-fu.c:307
-msgid "_Buttons"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:309
-msgid "_Logos"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:311
-msgid "_Misc"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:313
-#, fuzzy
-msgid "_Patterns"
-msgstr "Σχέδιο"
-
-#
-#: ../tiny-fu/tiny-fu.c:315
-#, fuzzy
-msgid "_Test"
-msgstr "Κείμενο"
-
-#: ../tiny-fu/tiny-fu.c:317
-msgid "_Utilities"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:319
-msgid "_Web Page Themes"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:321
-msgid "_Alien Glow"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:323
-#, fuzzy
-msgid "_Beveled Pattern"
-msgstr "Σχέδιο"
-
-#: ../tiny-fu/tiny-fu.c:325
-msgid "_Classic.Gimp.Org"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:328
-msgid "Alpha to _Logo"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:330
-msgid "An_imation"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:332
-msgid "_Animators"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:334
-msgid "_Artistic"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:336
-#, fuzzy
-msgid "_Blur"
-msgstr "Μπλε : "
-
-#: ../tiny-fu/tiny-fu.c:338
-msgid "_Decor"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:340
-msgid "_Effects"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:342
-msgid "En_hance"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:344
-msgid "_Light and Shadow"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:346
-#, fuzzy
-msgid "S_hadow"
-msgstr "Σκιά:"
-
-#: ../tiny-fu/tiny-fu.c:348
-msgid "_Render"
-msgstr ""
-
-#: ../tiny-fu/tiny-fu.c:350
-msgid "_Alchemy"
-msgstr ""
+msgstr "Εκκίνη_ση εξυπηρετητή..."
 
 #: ../tiny-fu/tiny-fu.c:353
-#, fuzzy
+msgid "_GIMP Online"
+msgstr "Ζωντανό _GIMP"
+
+#: ../tiny-fu/tiny-fu.c:354
+msgid "_User Manual"
+msgstr "Εγχειρίδιο _Χρήστη"
+
+#: ../tiny-fu/tiny-fu.c:357
+msgid "_Script-Fu"
+msgstr "_Script-Fu"
+
+#: ../tiny-fu/tiny-fu.c:359
+msgid "_Buttons"
+msgstr "Κ_ουμπιά"
+
+#: ../tiny-fu/tiny-fu.c:361
+msgid "_Logos"
+msgstr "_Λογότυπα"
+
+#: ../tiny-fu/tiny-fu.c:363
+msgid "_Misc"
+msgstr "_Ποικίλα"
+
+#: ../tiny-fu/tiny-fu.c:365
+msgid "_Patterns"
+msgstr "Μοτί_βα"
+
+#
+#: ../tiny-fu/tiny-fu.c:367
+msgid "_Test"
+msgstr "Έ_λεγχος"
+
+#: ../tiny-fu/tiny-fu.c:369
+msgid "_Utilities"
+msgstr "_Βοηθήματα"
+
+#: ../tiny-fu/tiny-fu.c:371
+msgid "_Web Page Themes"
+msgstr "_Θέματα ιστοσελίδων"
+
+#: ../tiny-fu/tiny-fu.c:373
+msgid "_Alien Glow"
+msgstr "Λάμ_ψη ξένου"
+
+#: ../tiny-fu/tiny-fu.c:375
+msgid "_Beveled Pattern"
+msgstr "Λο_ξοτμημένο μοτίβο"
+
+#: ../tiny-fu/tiny-fu.c:377
+msgid "_Classic.Gimp.Org"
+msgstr "_Classic.Gimp.Org"
+
+#: ../tiny-fu/tiny-fu.c:380
+msgid "Alpha to _Logo"
+msgstr "Άλφα σε _λογότυπο"
+
+#: ../tiny-fu/tiny-fu.c:382
+msgid "An_imation"
+msgstr "Κίν_ηση"
+
+#: ../tiny-fu/tiny-fu.c:384
+msgid "_Animators"
+msgstr "Π_αρουσιαστές"
+
+#: ../tiny-fu/tiny-fu.c:386
+msgid "_Artistic"
+msgstr "Κ_αλλιτεχνικό"
+
+#: ../tiny-fu/tiny-fu.c:388
+msgid "_Blur"
+msgstr "_Θόλωση"
+
+#: ../tiny-fu/tiny-fu.c:390
+msgid "_Decor"
+msgstr "_Διάκοσμος"
+
+#: ../tiny-fu/tiny-fu.c:392
+msgid "_Effects"
+msgstr "_Εφέ"
+
+#: ../tiny-fu/tiny-fu.c:394
+msgid "En_hance"
+msgstr "Βελτιστοποί_ηση"
+
+#: ../tiny-fu/tiny-fu.c:396
+msgid "_Light and Shadow"
+msgstr "_Φως και σκιά"
+
+#: ../tiny-fu/tiny-fu.c:398
+msgid "S_hadow"
+msgstr "Σ_κιά:"
+
+#: ../tiny-fu/tiny-fu.c:400
+msgid "_Render"
+msgstr "Από_δοση"
+
+#: ../tiny-fu/tiny-fu.c:402
+msgid "_Alchemy"
+msgstr "_Αλχημεία"
+
+#: ../tiny-fu/tiny-fu.c:405
 msgid "Re-read all available Script-Fu scripts"
-msgstr "εμφάνιση λίστας με διαθέσιμους αγωγούς"
+msgstr "Ξαναδιάβασμα όλων των διαθέσιμων σεναρίων Script-Fu"
 
-#: ../tiny-fu/tiny-fu.c:358
+#: ../tiny-fu/tiny-fu.c:410
 msgid "_Refresh Scripts"
-msgstr ""
+msgstr "_Ανανέωση σεναρίων"
 
-#: ../tiny-fu/tiny-fu.c:381
+#: ../tiny-fu/tiny-fu.c:433
 msgid ""
 "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
 "Please close all Script-Fu windows and try again."
 msgstr ""
+"Δεν μπορείτε να χρησιμοποιήσετε \"Ανανέωση σεναρίων\" ενώ το πλαίσιο "
+"διαλόγου Script-Fu είναι ανοιχτό. Παρακαλώ κλείστε όλα τα παράθυρα Script-Fu "
+"και ξαναπροσπαθήστε."
 
 #: ../scripts/3d-outline.scm.h:1
 msgid "3D _Outline..."
-msgstr ""
+msgstr "3διάστατο π_ερίγραμμα..."
 
 #: ../scripts/3d-outline.scm.h:2
 msgid "Bumpmap (alpha layer) blur radius"
-msgstr ""
+msgstr "Ακτίνα θόλωσης απεικόνισης ανάγλυφου (άλφα στρώση) "
 
 #: ../scripts/3d-outline.scm.h:3
 msgid "Create a logo with outlined text and a drop shadow"
-msgstr ""
+msgstr "Δημιουργία λογότυπου με περιγραμμένο κείμενο και πίπτουσα σκιά"
 
 #: ../scripts/3d-outline.scm.h:4 ../scripts/glossy.scm.h:6
-#, fuzzy
 msgid "Default bumpmap settings"
-msgstr "Εξ' ορισμού Ρυθμίσεις"
+msgstr "Προεπιλεγμένες ρυθμίσεις απεικόνισης ανάγλυφου"
 
 #
 #: ../scripts/3d-outline.scm.h:5 ../scripts/alien-glow-button.scm.h:5
@@ -344,20 +329,20 @@ msgstr "Γραμματοσειρά"
 #: ../scripts/starburst-logo.scm.h:7 ../scripts/starscape-logo.scm.h:5
 #: ../scripts/t-o-p-logo.scm.h:9 ../scripts/text-circle.scm.h:5
 #: ../scripts/textured-logo.scm.h:7 ../scripts/title-header.scm.h:3
-#, fuzzy
 msgid "Font size (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος γραμματοσειράς (εικονοστοιχεία)"
 
 #
 #: ../scripts/3d-outline.scm.h:7
-#, fuzzy
 msgid "Outline blur radius"
-msgstr "Μπλούγκρας"
+msgstr "Ακτίνα θόλωσης περιγράμματος"
 
 #: ../scripts/3d-outline.scm.h:8
 msgid ""
 "Outline the selected region (or alpha) with a pattern and add a drop shadow"
 msgstr ""
+"Περίγραμμα της επιλεγμένης περιοχής (ή άλφα) με μοτίβο και προσθήκη "
+"πίπτουσας σκιάς"
 
 #: ../scripts/3d-outline.scm.h:9 ../scripts/beveled-pattern-arrow.scm.h:5
 #: ../scripts/beveled-pattern-bullet.scm.h:3
@@ -370,20 +355,17 @@ msgstr "Σχέδιο"
 
 #: ../scripts/3d-outline.scm.h:10 ../scripts/glossy.scm.h:16
 #: ../scripts/round-corners.scm.h:6
-#, fuzzy
 msgid "Shadow X offset"
-msgstr "Εμφάνιση Λεπτομερειών"
+msgstr "Μετατόπιση σκιάς Χ"
 
 #: ../scripts/3d-outline.scm.h:11 ../scripts/glossy.scm.h:17
 #: ../scripts/round-corners.scm.h:7
-#, fuzzy
 msgid "Shadow Y offset"
-msgstr "Εμφάνιση Λεπτομερειών"
+msgstr "Μετατόπιση σκιάς Υ"
 
 #: ../scripts/3d-outline.scm.h:12
-#, fuzzy
 msgid "Shadow blur radius"
-msgstr "Αραιά βροχή"
+msgstr "Ακτίνα θόλωσης σκιάς"
 
 #
 #: ../scripts/3d-outline.scm.h:13 ../scripts/alien-glow-button.scm.h:10
@@ -410,7 +392,7 @@ msgstr "Κείμενο"
 
 #: ../scripts/3dTruchet.scm.h:1
 msgid "3_D Truchet..."
-msgstr ""
+msgstr "3_διάστατο Truchet..."
 
 #: ../scripts/3dTruchet.scm.h:2 ../scripts/alien-glow-arrow.scm.h:1
 #: ../scripts/alien-glow-bar.scm.h:1 ../scripts/alien-glow-bullet.scm.h:1
@@ -426,101 +408,87 @@ msgstr ""
 #: ../scripts/sphere.scm.h:1 ../scripts/starburst-logo.scm.h:1
 #: ../scripts/swirltile.scm.h:2 ../scripts/t-o-p-logo.scm.h:2
 #: ../scripts/textured-logo.scm.h:1 ../scripts/truchet.scm.h:1
-#, fuzzy
 msgid "Background color"
-msgstr "Χρώμα Φόντου"
+msgstr "Χρώμα παρασκηνίου"
 
 #: ../scripts/3dTruchet.scm.h:3 ../scripts/truchet.scm.h:2
-#, fuzzy
 msgid "Block size"
-msgstr "Αποστολή Μεγέθους Block:"
+msgstr "Μεγέθους ομάδας"
 
 #: ../scripts/3dTruchet.scm.h:4
 msgid "Create an image filled with a 3D Truchet pattern"
-msgstr ""
+msgstr "Δημιουργία μιας εικόνας γεμάτης με μοτίβο 3διάστατου Truchet"
 
 #: ../scripts/3dTruchet.scm.h:5 ../scripts/blended-logo.scm.h:7
-#, fuzzy
 msgid "End blend"
-msgstr "Λήξη στις"
+msgstr "Τέλος ανάμειξης"
 
 #: ../scripts/3dTruchet.scm.h:6 ../scripts/truchet.scm.h:5
-#, fuzzy
 msgid "Number of X tiles"
-msgstr "Αριθμός αρχείων"
+msgstr "Αριθμός Χ πλακιδίων"
 
 #: ../scripts/3dTruchet.scm.h:7 ../scripts/truchet.scm.h:6
-#, fuzzy
 msgid "Number of Y tiles"
-msgstr "Αριθμός αρχείων"
+msgstr "Αριθμός Υ πλακιδίων"
 
 #: ../scripts/3dTruchet.scm.h:8 ../scripts/blended-logo.scm.h:16
-#, fuzzy
 msgid "Start blend"
-msgstr "Έναρξη Esound"
+msgstr "Έναρξη ανάμειξης"
 
 #: ../scripts/3dTruchet.scm.h:9
-#, fuzzy
 msgid "Supersample"
-msgstr "Δείγμα"
+msgstr "Υπερδειγματοληψία"
 
 #: ../scripts/3dTruchet.scm.h:10 ../scripts/add-bevel.scm.h:4
 #: ../scripts/truchet.scm.h:8
-#, fuzzy
 msgid "Thickness"
-msgstr "Μολυβιές"
+msgstr "Πάχος"
 
 #: ../scripts/add-bevel.scm.h:1
 msgid "Add B_evel..."
-msgstr ""
+msgstr "Προσθήκη λο_ξότμησης..."
 
 #: ../scripts/add-bevel.scm.h:2
 msgid "Add a beveled border to an image"
-msgstr ""
+msgstr "Προσθήκη λοξοτμημένου περιγράμματος σε εικόνα"
 
 #: ../scripts/add-bevel.scm.h:3 ../scripts/chip-away.scm.h:12
 msgid "Keep bump layer"
-msgstr ""
+msgstr "Διατήρηση στρώσης ανάγλυφου"
 
 #: ../scripts/add-bevel.scm.h:5 ../scripts/fuzzyborder.scm.h:10
 #: ../scripts/old-photo.scm.h:6 ../scripts/round-corners.scm.h:8
 #: ../scripts/slide.scm.h:6 ../scripts/spinning-globe.scm.h:6
-#, fuzzy
 msgid "Work on copy"
-msgstr "Αφύπνηση σε %s"
+msgstr "Εργασία σε αντίγραφο"
 
 #: ../scripts/addborder.scm.h:1
-#, fuzzy
 msgid "Add _Border..."
-msgstr "Πλαίσιο"
+msgstr "Προσ_θήκη περιγράμματος..."
 
 #: ../scripts/addborder.scm.h:2
 msgid "Add a border around an image"
-msgstr ""
+msgstr "Προσθήκη περιγράμματος γύρω από την εικόνα"
 
 #: ../scripts/addborder.scm.h:3
-#, fuzzy
 msgid "Border X size"
-msgstr "Μέγεθος άβακα"
+msgstr "Μέγεθος περιγράμματος Χ"
 
 #: ../scripts/addborder.scm.h:4
-#, fuzzy
 msgid "Border Y size"
-msgstr "Μέγεθος άβακα"
+msgstr "Μέγεθος περιγράμματος Υ"
 
 #: ../scripts/addborder.scm.h:5
-#, fuzzy
 msgid "Border color"
-msgstr "Χρώμα Παλαιοτέρων:"
+msgstr "Χρώμα περιγράμματος"
 
 #: ../scripts/addborder.scm.h:6
-#, fuzzy
 msgid "Delta value on color"
-msgstr "Διαγραφή Χρώματος"
+msgstr "Δέλτα τιμή σε χρώμα"
 
 #: ../scripts/alien-glow-arrow.scm.h:2
 msgid "Create an arrow graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "Δημιουργία ενός γραφικού βέλους με μια παράξενη λάμψη για ιστοσελίδες"
 
 #
 #: ../scripts/alien-glow-arrow.scm.h:3
@@ -531,18 +499,16 @@ msgstr "Κάτω"
 #: ../scripts/alien-glow-arrow.scm.h:4 ../scripts/alien-glow-bar.scm.h:5
 #: ../scripts/alien-glow-bullet.scm.h:3 ../scripts/alien-glow-button.scm.h:4
 #: ../scripts/camo.scm.h:5 ../scripts/fuzzyborder.scm.h:6
-#, fuzzy
 msgid "Flatten image"
-msgstr "Νέα Εικόνα"
+msgstr "Ισοπέδωση εικόνας"
 
 #: ../scripts/alien-glow-arrow.scm.h:5 ../scripts/alien-glow-bar.scm.h:6
 #: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/alien-glow-button.scm.h:7
 #: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
 #: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:8
 #: ../scripts/starscape-logo.scm.h:6
-#, fuzzy
 msgid "Glow color"
-msgstr "Νέο Χρώμα"
+msgstr "Χρώμα λάμψης"
 
 #
 #: ../scripts/alien-glow-arrow.scm.h:6
@@ -576,65 +542,58 @@ msgstr "Επάνω"
 #
 #: ../scripts/alien-glow-arrow.scm.h:11
 #: ../scripts/beveled-pattern-arrow.scm.h:9
-#, fuzzy
 msgid "_Arrow..."
-msgstr "Εξερεύνηση..."
+msgstr "_Βέλος..."
 
 #: ../scripts/alien-glow-bar.scm.h:2
-#, fuzzy
 msgid "Bar height"
-msgstr "Ύψος"
+msgstr "Ύψος γραμμής"
 
 #: ../scripts/alien-glow-bar.scm.h:3
-#, fuzzy
 msgid "Bar length"
-msgstr "Διάρκεια"
+msgstr "Μήκος γραμμής"
 
 #: ../scripts/alien-glow-bar.scm.h:4
 msgid "Create an Hrule graphic with an eerie glow for web pages"
 msgstr ""
+"Δημιουργία ενός γραφικού κάθετου χάρακα με μια παράξενη λάμψη για ιστοσελίδες"
 
 #
 #: ../scripts/alien-glow-bar.scm.h:7 ../scripts/beveled-pattern-hrule.scm.h:5
-#, fuzzy
 msgid "_Hrule..."
-msgstr "Εξερεύνηση..."
+msgstr "Κάθ_ετος χάρακας..."
 
 #: ../scripts/alien-glow-bullet.scm.h:2
 msgid "Create a bullet graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "Δημιουργία ενός γραφικού κουκκίδας με λάμψη eerie για ιστοσελίδες"
 
 #: ../scripts/alien-glow-bullet.scm.h:5 ../scripts/text-circle.scm.h:6
 #: ../scripts/tileblur.scm.h:7
-#, fuzzy
 msgid "Radius"
-msgstr "Ράδιο"
+msgstr "Ακτίνα"
 
 #
 #: ../scripts/alien-glow-bullet.scm.h:6
 #: ../scripts/beveled-pattern-bullet.scm.h:5
-#, fuzzy
 msgid "_Bullet..."
-msgstr "Εξερεύνηση..."
+msgstr "Κο_υκκίδα..."
 
 #: ../scripts/alien-glow-button.scm.h:1
 #: ../scripts/beveled-pattern-button.scm.h:1
 msgid "B_utton..."
-msgstr ""
+msgstr "Κ_ουμπί..."
 
 #: ../scripts/alien-glow-button.scm.h:3
 msgid "Create a button graphic with an eerie glow for web pages"
-msgstr ""
+msgstr "Δημιουργία ενός γραφικού κουμπιού με παράξενη λάμψη για ιστοσελίδες"
 
 #: ../scripts/alien-glow-button.scm.h:8
-#, fuzzy
 msgid "Glow radius"
-msgstr "Σκόνη με άνεμο"
+msgstr "Ακτίνα λάμψης"
 
 #: ../scripts/alien-glow-button.scm.h:9 ../scripts/beveled-button.scm.h:6
-#, fuzzy
 msgid "Padding"
-msgstr "Σκίαση"
+msgstr "Εσωαπόσταση"
 
 #: ../scripts/alien-glow-button.scm.h:11 ../scripts/basic1-logo.scm.h:7
 #: ../scripts/basic2-logo.scm.h:8 ../scripts/beveled-button.scm.h:10
@@ -642,153 +601,147 @@ msgstr "Σκίαση"
 #: ../scripts/gimp-headers.scm.h:14 ../scripts/gimp-labels.scm.h:18
 #: ../scripts/i26-gunya2.scm.h:8 ../scripts/news-text.scm.h:11
 #: ../scripts/pupi-button.scm.h:14 ../scripts/speed-text.scm.h:9
-#, fuzzy
 msgid "Text color"
-msgstr "Χρώμα Κειμένου"
+msgstr "Χρώμα κειμένου"
 
 #: ../scripts/alien-glow-logo.scm.h:1
 msgid "Add an eerie glow around the selected region (or alpha)"
 msgstr ""
+"Δημιουργία μιας παράξενης λάμψης γύρω από την επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/alien-glow-logo.scm.h:2
 msgid "Alien _Glow..."
-msgstr ""
+msgstr "Λάμ_ψη ξένου..."
 
 #: ../scripts/alien-glow-logo.scm.h:3
 msgid "Create a logo with an alien glow around the text"
-msgstr ""
+msgstr "Δημιουργία ενός λογότυπου με μια ξένη λάμψη γύρω από το κείμενο"
 
 #: ../scripts/alien-glow-logo.scm.h:7
-#, fuzzy
 msgid "Glow size (pixels * 4)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος λάμψης (εικονοστοιχεία*4)"
 
 #: ../scripts/alien-neon-logo.scm.h:1
 msgid "Add psychedelic outlines to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη ψυχεδελικών περιγραμμάτων στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/alien-neon-logo.scm.h:2
 msgid "Alien _Neon..."
-msgstr ""
+msgstr "Ξένο _Νέον..."
 
 #: ../scripts/alien-neon-logo.scm.h:4
 msgid "Create a logo with psychedelic outlines around the text"
 msgstr ""
+"Δημιουργία ενός λογότυπου με ψυχεδελικά περιγράμματα γύρω από το κείμενο"
 
 #: ../scripts/alien-neon-logo.scm.h:5
-#, fuzzy
 msgid "Fade away"
-msgstr "Σημειωση Απουσίας"
+msgstr "Ξεθώριασμα"
 
 #: ../scripts/alien-neon-logo.scm.h:9
-#, fuzzy
 msgid "Number of bands"
-msgstr "Αριθμός Σελίδων"
+msgstr "Αριθμός λουρίδων"
 
 #: ../scripts/alien-neon-logo.scm.h:11
-#, fuzzy
 msgid "Width of bands"
-msgstr "Πλάτος παραθύρου"
+msgstr "Πλάτος λουρίδων"
 
 #: ../scripts/alien-neon-logo.scm.h:12
-#, fuzzy
 msgid "Width of gaps"
-msgstr "Πλάτος ναρκοπεδίου"
+msgstr "Πλάτος κενών"
 
 #: ../scripts/basic1-logo.scm.h:1
 msgid ""
 "Add a gradient effect, a drop shadow, and a background to the selected "
 "region (or alpha)"
 msgstr ""
+"Προσθήκη εφέ διαβάθμισης, πίπτουσας σκιάς και παρασκηνίου στην επιλεγμένη "
+"περιοχή (ή άλφα)"
 
 #: ../scripts/basic1-logo.scm.h:3
 msgid ""
 "Create a plain text logo with a gradient effect, a drop shadow, and a "
 "background"
 msgstr ""
+"Δημιουργία απλού κειμένου λογότυπου με εφέ διαβάθμισης, πίπτουσα σκιά και "
+"παρασκήνιο."
 
 #: ../scripts/basic1-logo.scm.h:8
 msgid "_Basic I..."
-msgstr ""
+msgstr "_Βασικό Α..."
 
 #: ../scripts/basic2-logo.scm.h:1
 msgid "Add a shadow and a highlight to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη σκιάς και τονισμού στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/basic2-logo.scm.h:2
 msgid "B_asic II..."
-msgstr ""
+msgstr "Β_ασικό Β..."
 
 #: ../scripts/basic2-logo.scm.h:4
 msgid "Create a simple logo with a shadow and a highlight"
-msgstr ""
+msgstr "Δημιουργία ενός απλού λογότυπου με σκιά και τονισμό."
 
 #: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:4
 #: ../scripts/pupi-button.scm.h:1
-#, fuzzy
 msgid "Bevel width"
-msgstr "Πλάτος Πλαισίου:"
+msgstr "Πλάτος λοξότμησης"
 
 #: ../scripts/beveled-button.scm.h:2
 msgid "Create a simple, beveled button graphic for webpages"
-msgstr ""
+msgstr "Δημιουργία ενός απλού, λοξοτμημένου γραφικού κουπιού για ιστοσελίδες"
 
 #: ../scripts/beveled-button.scm.h:5
-#, fuzzy
 msgid "Lower-right color"
-msgstr "Χρώμα Μαρκαρίσματος"
+msgstr "Χρώμα κάτω δεξιά"
 
 #
 #: ../scripts/beveled-button.scm.h:7 ../scripts/beveled-pattern-button.scm.h:6
 #: ../scripts/pupi-button.scm.h:11
-#, fuzzy
 msgid "Pressed"
-msgstr "Πίεση"
+msgstr "Πιεσμένο"
 
 #: ../scripts/beveled-button.scm.h:8
 msgid "Simple _Beveled Button..."
-msgstr ""
+msgstr "Απλό λο_ξοτμημένο κουμπί..."
 
 #: ../scripts/beveled-button.scm.h:11
-#, fuzzy
 msgid "Upper-left color"
-msgstr "Επιλογή χρώματος"
+msgstr "Χρώμα πάνω αριστερά"
 
 #: ../scripts/beveled-pattern-arrow.scm.h:1
 msgid "Create a beveled pattern arrow for webpages"
-msgstr ""
+msgstr "Δημιουργία ενός λοξοτμημένου βέλους μοτίβου για ιστοσελίδες"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:1
 msgid "Create a beveled pattern bullet for webpages"
-msgstr ""
+msgstr "Δημιουργία μιας λοξοτμημένης κουκκίδας μοτίβου για ιστοσελίδες"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:2
-#, fuzzy
 msgid "Diameter"
-msgstr "Ελάττωση Χρωμάτων"
+msgstr "Διάμετρος"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:4
 #: ../scripts/beveled-pattern-heading.scm.h:7
 #: ../scripts/spinning-globe.scm.h:4
-#, fuzzy
 msgid "Transparent background"
 msgstr "Διαφανές Παρασκήνιο"
 
 #: ../scripts/beveled-pattern-button.scm.h:2
 msgid "Create a beveled pattern button for webpages"
-msgstr ""
+msgstr "Δημιουργία ενός λοξοτμημένου κουμπιού μοτίβου για ιστοσελίδες"
 
 #: ../scripts/beveled-pattern-heading.scm.h:1
 msgid "Create a beveled pattern heading for webpages"
-msgstr ""
+msgstr "Δημιουργία μιας λοξοτμημένης κεφαλίδας μοτίβου για ιστοσελίδες"
 
 #: ../scripts/beveled-pattern-heading.scm.h:4
 msgid "H_eading..."
-msgstr ""
+msgstr "Κ_εφαλίδα..."
 
 #: ../scripts/beveled-pattern-hrule.scm.h:1
 msgid "Create a beveled pattern hrule for webpages"
-msgstr ""
+msgstr "Δημιουργία ενός λοξοτμημένου κάθετου χάρακα μοτίβου για ιστοσελίδες"
 
 #: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/gimp-labels.scm.h:8
 #: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:7
@@ -804,72 +757,70 @@ msgstr "Πλάτος"
 
 #: ../scripts/blend-anim.scm.h:1
 msgid "Blend Animation needs at least three source layers"
-msgstr ""
+msgstr "Ανάμειξη κίνησης χρειάζεται τουλάχιστον τρεις στρώσεις πηγής"
 
 #: ../scripts/blend-anim.scm.h:2
 msgid ""
 "Create intermediate layers to blend two or more layers over a background as "
 "an animation"
 msgstr ""
+"Δημιουργία ενδιάμεσων στρώσεων για ανάμειξη δύο ή περισσότερων στρώσεων πάνω "
+"από παρασκήνιο ως μια κίνηση"
 
 #: ../scripts/blend-anim.scm.h:3
-#, fuzzy
 msgid "Intermediate frames"
-msgstr "Μέσου επιπέδου"
+msgstr "Ενδιάμεσα πλαίσια"
 
 #: ../scripts/blend-anim.scm.h:4
-#, fuzzy
 msgid "Looped"
-msgstr "Βρόχος"
+msgstr "Με βρόχο"
 
 #
 #: ../scripts/blend-anim.scm.h:5
-#, fuzzy
 msgid "Max. blur radius"
-msgstr "Μπλούγκρας"
+msgstr "Μέγιστη ακτίνα θόλωσης"
 
 #
 #: ../scripts/blend-anim.scm.h:6
-#, fuzzy
 msgid "_Blend..."
-msgstr "Εξερεύνηση..."
+msgstr "Ανάμει_ξη..."
 
 #: ../scripts/blended-logo.scm.h:1
 msgid ""
 "Add blended backgrounds, highlights, and shadows to the selected region (or "
 "alpha)"
 msgstr ""
+"Προσθήκη αναμειγμένων παρασκηνίων, τονισμών και σκιών στην επιλεγμένη "
+"περιοχή (ή άλφα)"
 
 #: ../scripts/blended-logo.scm.h:3
 msgid "Blen_ded..."
-msgstr ""
+msgstr "Ανάμει_ξη..."
 
 #: ../scripts/blended-logo.scm.h:4
-#, fuzzy
 msgid "Blend mode"
-msgstr "Κατάσταση Αρχείου"
+msgstr "Κατάσταση ανάμειξης"
 
 #: ../scripts/blended-logo.scm.h:5
 msgid "Create a logo with blended backgrounds, highlights, and shadows"
 msgstr ""
+"Δημιουργία ενός λογότυπου με αναμειγμένα παρασκήνια, τονισμούς και σκιές"
 
 #: ../scripts/blended-logo.scm.h:6
-#, fuzzy
 msgid "Custom Gradient"
-msgstr "Βαθμίδα"
+msgstr "Προσαρμοσμένη διαβάθμιση"
 
 #: ../scripts/blended-logo.scm.h:8
 msgid "FG-BG-HSV"
-msgstr ""
+msgstr "FG-BG-HSV"
 
 #: ../scripts/blended-logo.scm.h:9
 msgid "FG-BG-RGB"
-msgstr ""
+msgstr "FG-BG-RGB"
 
 #: ../scripts/blended-logo.scm.h:10
-#, fuzzy
 msgid "FG-Transparent"
-msgstr "Διαφανές"
+msgstr "Διαφανές προσκήνιο"
 
 #: ../scripts/blended-logo.scm.h:13 ../scripts/comic-logo.scm.h:7
 #: ../scripts/coolmetal-logo.scm.h:8 ../scripts/land.scm.h:3
@@ -881,18 +832,16 @@ msgstr "Βαθμίδα"
 #: ../scripts/blended-logo.scm.h:14 ../scripts/comic-logo.scm.h:8
 #: ../scripts/coolmetal-logo.scm.h:9 ../scripts/gradient-example.scm.h:3
 #: ../scripts/rendermap.scm.h:5 ../scripts/title-header.scm.h:4
-#, fuzzy
 msgid "Gradient reverse"
-msgstr "Βαθμίδα"
+msgstr "Αντιστροφή διαβάθμισης"
 
 #: ../scripts/blended-logo.scm.h:15
-#, fuzzy
 msgid "Offset (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Αντιστάθμιση (εικονοστοιχεία)"
 
 #: ../scripts/bovinated-logo.scm.h:1
 msgid "Add 'cow spots' to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη 'κηλίδων αγελάδας' στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/bovinated-logo.scm.h:2 ../scripts/chrome-logo.scm.h:2
 msgid "Background Color"
@@ -900,68 +849,70 @@ msgstr "Χρώμα Φόντου"
 
 #: ../scripts/bovinated-logo.scm.h:4
 msgid "Bo_vination..."
-msgstr ""
+msgstr "Κη_λίδες αγελάδας..."
 
 #: ../scripts/bovinated-logo.scm.h:5
 msgid "Create a logo with text in the style of 'cow spots'"
 msgstr ""
+"Δημιουργία ενός λογότυπου με κείμενο στη μορφοποίηση 'κηλίδες αγελάδας'"
 
 #: ../scripts/bovinated-logo.scm.h:8
 msgid "Spots density X"
-msgstr ""
+msgstr "Πυκνότητα κηλίδων Χ"
 
 #: ../scripts/bovinated-logo.scm.h:9
 msgid "Spots density Y"
-msgstr ""
+msgstr "Πυκνότητα κηλίδων Υ"
 
 #: ../scripts/burn-in-anim.scm.h:1
 msgid "Add glowing"
-msgstr ""
+msgstr "Προσθήκη λάμψης"
 
 #: ../scripts/burn-in-anim.scm.h:2
 msgid "After glow"
-msgstr ""
+msgstr "Μετά τη λάμψη"
 
 #: ../scripts/burn-in-anim.scm.h:3
 msgid "B_urn-In..."
-msgstr ""
+msgstr "Α_ποτύπωση..."
 
 #: ../scripts/burn-in-anim.scm.h:4
-#, fuzzy
 msgid "Corona width"
-msgstr "Πλάτος Εικονιδίου:"
+msgstr "Πλάτος κορώνας"
 
 #: ../scripts/burn-in-anim.scm.h:5
 msgid ""
 "Create intermediate layers to produce an animated 'burn-in' transition "
 "between two layers"
 msgstr ""
+"Δημιουργία ενδιάμεσων στρώσεων για παραγωγή κινούμενης 'αποτύπωσης' "
+"μετάβασης μεταξύ δύο στρώσεων"
 
 #
 #: ../scripts/burn-in-anim.scm.h:6
-#, fuzzy
 msgid "Fadeout"
-msgstr "Καθορισμός Πλάτους:"
+msgstr "Ξεθώριασμα"
 
 #
 #: ../scripts/burn-in-anim.scm.h:7
-#, fuzzy
 msgid "Fadeout width"
-msgstr "Καθορισμός Πλάτους:"
+msgstr "Πλάτος ξεθωριάσματος"
 
 #: ../scripts/burn-in-anim.scm.h:9
 msgid "Prepare for GIF"
-msgstr ""
+msgstr "Προετοιμασία για GIF"
 
 #: ../scripts/burn-in-anim.scm.h:10
 msgid "Speed (pixels/frame)"
-msgstr ""
+msgstr "Ταχύτητα (εικονοστοιχεία/πλαίσιο)"
 
 #: ../scripts/burn-in-anim.scm.h:11
 msgid ""
 "The Burn-In script needs two layers in total. A foreground layer with "
 "transparency and a background layer."
 msgstr ""
+"Το σενάριο αποτύπωσης χρειάζεται δύο στρώσεις συνολικά. Μια στρώση "
+"προσκηνίου με διαφάνεια και μια στρώση παρασκηνίου."
 
 #: ../scripts/camo.scm.h:1
 msgid "Color 1"
@@ -972,23 +923,20 @@ msgid "Color 2"
 msgstr "Χρώμα 2"
 
 #: ../scripts/camo.scm.h:3
-#, fuzzy
 msgid "Color 3"
-msgstr "Χρώμα 1"
+msgstr "Χρώμα 3"
 
 #: ../scripts/camo.scm.h:4
 msgid "Create an image filled with a camouflage pattern"
-msgstr ""
+msgstr "Δημιουργία μιας εικόνας γεμάτης με μοτίβο παραλλαγής"
 
 #: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
-#, fuzzy
 msgid "Granularity"
-msgstr "Ιανουάριος"
+msgstr "Koκκώδες"
 
 #: ../scripts/camo.scm.h:7 ../scripts/rendermap.scm.h:7
-#, fuzzy
 msgid "Image size"
-msgstr "Μέγεθος Εικόνας:"
+msgstr "Μέγεθος εικόνας"
 
 #: ../scripts/camo.scm.h:8 ../scripts/distress-selection.scm.h:3
 msgid "Smooth"
@@ -996,21 +944,19 @@ msgstr "Ομαλό"
 
 #: ../scripts/camo.scm.h:9
 msgid "_Camouflage..."
-msgstr ""
+msgstr "Πα_ραλλαγή..."
 
 #: ../scripts/carve-it.scm.h:1
-#, fuzzy
 msgid "Carve white areas"
-msgstr "Αποθήκευση Αρχείου Ως"
+msgstr "Ανάγλυφο λευκών περιοχών"
 
 #: ../scripts/carve-it.scm.h:2
-#, fuzzy
 msgid "Image to carve"
-msgstr "Όνομα Εικόνας"
+msgstr "Εικόνα σε ανάγλυφο"
 
 #: ../scripts/carve-it.scm.h:3
 msgid "Stencil C_arve..."
-msgstr ""
+msgstr "Χάρ_αξη μήτρας..."
 
 #: ../scripts/carved-logo.scm.h:1
 msgid "Background Image"
@@ -1019,353 +965,329 @@ msgstr "Εικόνα Παρασκηνίου"
 # # NOTE: Translation of "Create" as "New" to
 # #       keep msg length relatively short...
 #: ../scripts/carved-logo.scm.h:2
-#, fuzzy
 msgid "Carve raised text"
-msgstr "Νέο Κείμενο"
+msgstr "Ανάγλυφο ανυψωμένου κειμένου"
 
 #: ../scripts/carved-logo.scm.h:3
 msgid "Carved..."
-msgstr ""
+msgstr "Ανάγλυφο..."
 
 #: ../scripts/carved-logo.scm.h:4
 msgid ""
 "Create a logo with text raised above or carved in to the specified "
 "background image"
 msgstr ""
+"Δημιουργία ενός λογότυπου με ανυψωμένο κείμενο από πάνω ή ανάγλυφο στην "
+"καθορισμένη εικόνα παρασκηνίου"
 
 #: ../scripts/carved-logo.scm.h:7
-#, fuzzy
 msgid "Padding around text"
-msgstr "Απλό Κείμενο"
+msgstr "Εσωαπόσταση γύρω από το κείμενο"
 
 #: ../scripts/chalk.scm.h:2
-#, fuzzy
 msgid "Chalk color"
-msgstr "Χρώμα ρολογιού"
+msgstr "Χρώμα κιμωλίας"
 
 #: ../scripts/chalk.scm.h:3
 msgid "Create a chalk drawing effect for the selected region (or alpha)"
 msgstr ""
+"Δημιουργία ενός εφέ σχεδίου κιμωλίας για την επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/chalk.scm.h:4
 msgid "Create a logo resembling chalk scribbled on a blackboard"
 msgstr ""
+"Δημιουργία ενός λογότυπου παρόμοιου με ορνιθοσκάλισμα κιμωλίας σε μαυροπίνακα"
 
 #: ../scripts/chalk.scm.h:8
 msgid "_Chalk..."
-msgstr ""
+msgstr "_Κιμωλία"
 
 #: ../scripts/chip-away.scm.h:1
 msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη εφέ ξυλογλυπτικής σε επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/chip-away.scm.h:2
-#, fuzzy
 msgid "Blur amount"
-msgstr "Πηγαίος Λογαριασμός"
+msgstr "Ποσότητα θόλωσης"
 
 #: ../scripts/chip-away.scm.h:3
 msgid "Chip Awa_y..."
-msgstr ""
+msgstr "Ψ_ιλόκομμα"
 
 #: ../scripts/chip-away.scm.h:4
-#, fuzzy
 msgid "Chip amount"
-msgstr "Clip Art"
+msgstr "Ποσότητα φαγώματος"
 
 #: ../scripts/chip-away.scm.h:5
 msgid "Create a logo resembling a chipped wood carving"
-msgstr ""
+msgstr "Δημιουργία λογότυπου παρόμοιου με ξυλογλυπτική"
 
 #: ../scripts/chip-away.scm.h:6
-#, fuzzy
 msgid "Drop shadow"
-msgstr "Σκιά:"
+msgstr "Πίπτουσα σκιά"
 
 #: ../scripts/chip-away.scm.h:7
-#, fuzzy
 msgid "Fill BG with pattern"
-msgstr "Σταθερό πλάτος"
+msgstr "Γέμισμα παρασκηνίου με μοτίβα"
 
 #: ../scripts/chip-away.scm.h:10
 msgid "Invert"
 msgstr "Αντιστροφή"
 
 #: ../scripts/chip-away.scm.h:11
-#, fuzzy
 msgid "Keep background"
-msgstr "Αρχικοποίηση Παρασκηνίου"
+msgstr "Διατήρηση παρασκηνίου"
 
 #: ../scripts/chrome-it.scm.h:1
 msgid ""
 "Add a chrome effect to the selected region (or alpha) using a specified "
 "(grayscale) stencil"
 msgstr ""
+"Προσθήκη εφέ χρωμίου στην επιλεγμένη περιοχή (ή άλφα) χρησιμοποιώντας μια "
+"καθορισμένη μήτρα (γκρι κλίμακας)"
 
 #: ../scripts/chrome-it.scm.h:2 ../scripts/sota-chrome-logo.scm.h:1
-#, fuzzy
 msgid "Chrome balance"
-msgstr "Ισορροπία"
+msgstr "Ισορροπία χρώματος"
 
 #
 #: ../scripts/chrome-it.scm.h:3 ../scripts/crystal-logo.scm.h:2
 #: ../scripts/sota-chrome-logo.scm.h:2
-#, fuzzy
 msgid "Chrome factor"
-msgstr "Εργοστάσιο φτερουγιστή"
+msgstr "Συντελεστής χρώματος"
 
 #: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:3
-#, fuzzy
 msgid "Chrome lightness"
-msgstr "Ενδείξεις μόντεμ"
+msgstr "Φωτεινότητα χρώματος"
 
 #: ../scripts/chrome-it.scm.h:5 ../scripts/sota-chrome-logo.scm.h:4
-#, fuzzy
 msgid "Chrome saturation"
-msgstr "Κορεσμός"
+msgstr "Κορεσμός χρώματος"
 
 #: ../scripts/chrome-it.scm.h:6
-#, fuzzy
 msgid "Chrome white areas"
-msgstr "Αποθήκευση Αρχείου Ως"
+msgstr "Χρώμα λευκών περιοχών"
 
 #
 #: ../scripts/chrome-it.scm.h:7 ../scripts/crystal-logo.scm.h:5
 #: ../scripts/sota-chrome-logo.scm.h:6
-#, fuzzy
 msgid "Environment map"
-msgstr "Περιβάλλον"
+msgstr "Χάρτης περιβάλλοντος"
 
 #: ../scripts/chrome-it.scm.h:8 ../scripts/sota-chrome-logo.scm.h:9
-#, fuzzy
 msgid "Highlight balance"
-msgstr "Επιλεγμένο"
+msgstr "Ισορροπία τονισμού"
 
 #
 #: ../scripts/chrome-it.scm.h:9
-#, fuzzy
 msgid "Stencil C_hrome..."
-msgstr "Εξερεύνηση..."
+msgstr "Μήτρα χρω_μίου..."
 
 #: ../scripts/chrome-logo.scm.h:1
 msgid "Add a simple chrome effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη ενός απλού εφέ χρωμίου στην επιλεγμένη περιοχή (ή άλφα)"
 
 #
 #: ../scripts/chrome-logo.scm.h:4
-#, fuzzy
 msgid "C_hrome..."
-msgstr "Εξερεύνηση..."
+msgstr "Χρώ_μιο..."
 
 #: ../scripts/chrome-logo.scm.h:5
 msgid "Create a simplistic, but cool, chromed logo"
-msgstr ""
+msgstr "Δημιουργία απλοϊκού, αλλά όμορφου, λογότυπου χρωμίου"
 
 #: ../scripts/chrome-logo.scm.h:8
-#, fuzzy
 msgid "Offsets (pixels * 2)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Αντισταθμίσεις (εικονοστοιχεία*2)"
 
 #: ../scripts/circuit.scm.h:1
 msgid "Circuit seed"
-msgstr ""
+msgstr "Σπόρος κυκλώματος"
 
 #: ../scripts/circuit.scm.h:2
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
 msgstr ""
+"Γέμισμα της επιλεγμένης περιοχής (ή άλφα) με ίχνη όπως αυτά σε κάρτα "
+"κυκλώματος"
 
 #: ../scripts/circuit.scm.h:3 ../scripts/lava.scm.h:3
 #: ../scripts/predator.scm.h:3 ../scripts/xach-effect.scm.h:11
-#, fuzzy
 msgid "Keep selection"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Διατήρηση επιλογής"
 
 #: ../scripts/circuit.scm.h:4
 msgid "No background (only for separate layer)"
-msgstr ""
+msgstr "Χωρίς παρασκήνιο (μόνο για ξεχωριστή στρώση)"
 
 #: ../scripts/circuit.scm.h:5
-#, fuzzy
 msgid "Oilify mask size"
-msgstr "Αρχικό _Μέγεθος"
+msgstr "Ελαιοποίηση μεγέθους μάσκας"
 
 #
 #: ../scripts/circuit.scm.h:6 ../scripts/lava.scm.h:6
 #: ../scripts/predator.scm.h:6
-#, fuzzy
 msgid "Separate layer"
-msgstr "Καθορισμός Στρώματος"
+msgstr "Διαχωρισμός στρώσης"
 
 #: ../scripts/circuit.scm.h:7
 msgid "_Circuit..."
-msgstr ""
+msgstr "Κύκλ_ωμα..."
 
 #: ../scripts/clothify.scm.h:1
 msgid "Add a cloth-like texture to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη μιας υφασματοειδούς υφής στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/clothify.scm.h:2 ../scripts/swirltile.scm.h:1
-#, fuzzy
 msgid "Azimuth"
-msgstr "Έγκριση:"
+msgstr "Αζιμούθιο"
 
 #: ../scripts/clothify.scm.h:3
-#, fuzzy
 msgid "Blur X"
-msgstr "Μπλε : "
+msgstr "Θόλωση Χ"
 
 #: ../scripts/clothify.scm.h:4
-#, fuzzy
 msgid "Blur Y"
-msgstr "Μπλε : "
+msgstr "Θόλωση Υ"
 
 #: ../scripts/clothify.scm.h:5 ../scripts/swirltile.scm.h:5
-#, fuzzy
 msgid "Depth"
-msgstr "Τμήμ."
+msgstr "Βάθος"
 
 #: ../scripts/clothify.scm.h:6 ../scripts/swirltile.scm.h:6
-#, fuzzy
 msgid "Elevation"
-msgstr "τοποθεσία"
+msgstr "Ανύψωση"
 
 #: ../scripts/clothify.scm.h:7
 msgid "_Clothify..."
-msgstr ""
+msgstr "_Υφασματοποίηση"
 
 #: ../scripts/coffee.scm.h:1
 msgid "Add realistic looking coffee stains to the image"
-msgstr ""
+msgstr "Προσθήκη ρεαλιστικών όψεων κηλίδων καφέ στην εικόνα"
 
 #: ../scripts/coffee.scm.h:2
-#, fuzzy
 msgid "Darken only"
-msgstr "Σκοτεινός φελλός"
+msgstr "Σκοτείνιασμα μόνο"
 
 #: ../scripts/coffee.scm.h:3
-#, fuzzy
 msgid "Stains"
-msgstr "Ισπανία"
+msgstr "Κηλίδες"
 
 #: ../scripts/coffee.scm.h:4
 msgid "_Coffee Stain..."
-msgstr ""
+msgstr "_Κηλίδα καφέ..."
 
 #: ../scripts/comic-logo.scm.h:1
 msgid ""
 "Add a comic-book effect to the selected region (or alpha) by outlining and "
 "filling with a gradient"
 msgstr ""
+"Προσθήκη εφέ βιβλίου κόμικς στην επιλεγμένη περιοχή (ή άλφα) με περίγραμμα "
+"και γέμισμα από διαβάθμιση"
 
 #: ../scripts/comic-logo.scm.h:3
 msgid "Comic Boo_k..."
-msgstr ""
+msgstr "Βιβλίο _κόμικς..."
 
 #: ../scripts/comic-logo.scm.h:4
 msgid "Create a comic-book style logo by outlining and filling with a gradient"
 msgstr ""
+"Δημιουργία λογότυπου μορφής βιβλίου κόμικς με περίγραμμα και γέμισμα από "
+"διαβάθμιση"
 
 #: ../scripts/comic-logo.scm.h:9
-#, fuzzy
 msgid "Outline color"
-msgstr "Περίγραμμα"
+msgstr "Χρώμα περιγράμματος"
 
 #: ../scripts/comic-logo.scm.h:10 ../scripts/glossy.scm.h:11
-#, fuzzy
 msgid "Outline size"
-msgstr "Περίγραμμα"
+msgstr "Μέγεθος περιγράμματος"
 
 #: ../scripts/coolmetal-logo.scm.h:1
 msgid ""
 "Add a metallic effect to the selected region (or alpha) with reflections and "
 "perspective shadows"
 msgstr ""
+"Προσθήκη μεταλλικού εφέ στην επιλεγμένη περιοχή (ή άλφα) με ανακλάσεις και "
+"προοπτικές σκιές"
 
 #: ../scripts/coolmetal-logo.scm.h:3
 msgid "Cool _Metal..."
-msgstr ""
+msgstr "Ψυχρό _μέταλλο..."
 
 #: ../scripts/coolmetal-logo.scm.h:4
 msgid "Create a metallic logo with reflections and perspective shadows"
-msgstr ""
+msgstr "Δημιουργία μεταλλικού λογότυπου με ανακλάσεις και προοπτικές σκιές"
 
 #: ../scripts/coolmetal-logo.scm.h:5 ../scripts/frosty-logo.scm.h:4
-#, fuzzy
 msgid "Effect size (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος εφέ (εικονοστοιχεία)"
 
 #: ../scripts/crystal-logo.scm.h:1
-#, fuzzy
 msgid "Background image"
-msgstr "Εικόνα Παρασκηνίου"
+msgstr "Εικόνα παρασκηνίου"
 
 #: ../scripts/crystal-logo.scm.h:3
 msgid "Create a logo with a crystal/gel effect displacing the image underneath"
 msgstr ""
+"Δημιουργία λογότυπου με εφέ κρύσταλλου/γέλης που μετατοπίζει την εικόνα από "
+"κάτω"
 
 #: ../scripts/crystal-logo.scm.h:4
 msgid "Crystal..."
-msgstr ""
+msgstr "Κρύσταλλο..."
 
 #: ../scripts/difference-clouds.scm.h:1
 msgid "Difference Clouds..."
-msgstr ""
+msgstr "Διαφορά σύννεφων..."
 
 #: ../scripts/difference-clouds.scm.h:2
 msgid "Solid noise applied with Difference layer mode"
-msgstr ""
+msgstr "Εφαρμογή συμπαγούς θορύβου με κατάσταση  διαφοράς στρώσης"
 
 #: ../scripts/distress-selection.scm.h:1
-#, fuzzy
 msgid "Distress the selection"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Παραμόρφωση της επιλογής"
 
 #: ../scripts/distress-selection.scm.h:2
-#, fuzzy
 msgid "Granularity (1 is low)"
-msgstr "Ιανουάριος"
+msgstr "Κοκκώδες (1 είναι χαμηλό)"
 
 #: ../scripts/distress-selection.scm.h:4
-#, fuzzy
 msgid "Smooth horizontally"
-msgstr "_Οριζόντια"
+msgstr "Εξομάλυνση οριζόντια"
 
 #: ../scripts/distress-selection.scm.h:5
-#, fuzzy
 msgid "Smooth vertically"
-msgstr "Κατακόρυ_φα"
+msgstr "Εξομάλυνση κάθετα"
 
 #: ../scripts/distress-selection.scm.h:6
-#, fuzzy
 msgid "Spread"
-msgstr "SC/XSpread"
+msgstr "Διασπορά"
 
 #: ../scripts/distress-selection.scm.h:7
 msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr ""
+msgstr "Κατώφλι (μεγαλύτερο από 1 <--> μικρότερο από 255)"
 
 #: ../scripts/distress-selection.scm.h:8
-#, fuzzy
 msgid "_Distort..."
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "_Παραμόρφωση..."
 
 #: ../scripts/drop-shadow.scm.h:1
 msgid "Add a drop shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη πίπτουσας σκιάς στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/drop-shadow.scm.h:2 ../scripts/perspective-shadow.scm.h:2
-#, fuzzy
 msgid "Allow resizing"
-msgstr "Όλες οι ρυθμίσεις"
+msgstr "Επιτρέπεται η αλλαγή μεγέθους"
 
 #
 #: ../scripts/drop-shadow.scm.h:3 ../scripts/news-text.scm.h:2
 #: ../scripts/perspective-shadow.scm.h:4 ../scripts/round-corners.scm.h:3
 #: ../scripts/swirltile.scm.h:3
-#, fuzzy
 msgid "Blur radius"
-msgstr "Μπλούγκρας"
+msgstr "Ακτίνα θόλωσης"
 
 #
 #: ../scripts/drop-shadow.scm.h:4 ../scripts/fuzzyborder.scm.h:5
@@ -1374,25 +1296,21 @@ msgid "Color"
 msgstr "Χρώμα"
 
 #: ../scripts/drop-shadow.scm.h:5 ../scripts/gimp-labels.scm.h:11
-#, fuzzy
 msgid "Offset X"
-msgstr "Μετατόπιση"
+msgstr "Αντιστάθμιση X"
 
 #: ../scripts/drop-shadow.scm.h:6 ../scripts/gimp-labels.scm.h:12
-#, fuzzy
 msgid "Offset Y"
-msgstr "Μετατόπιση"
+msgstr "Αντιστάθμιση Y"
 
 #
 #: ../scripts/drop-shadow.scm.h:7 ../scripts/perspective-shadow.scm.h:7
-#, fuzzy
 msgid "Opacity"
-msgstr "Διαφάνεια:"
+msgstr "Αδιαφάνεια"
 
 #: ../scripts/drop-shadow.scm.h:8
-#, fuzzy
 msgid "_Drop Shadow..."
-msgstr "Σκιά:"
+msgstr "Πίπτο_υσα σκιά"
 
 #: ../scripts/erase-rows.scm.h:1
 msgid "Columns"
@@ -1403,646 +1321,560 @@ msgid "Erase"
 msgstr "Διαγραφή"
 
 #: ../scripts/erase-rows.scm.h:3
-#, fuzzy
 msgid "Erase every other row or column"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Σβήσιμο κάθε δεύτερης γραμμής ή στήλης"
 
 #: ../scripts/erase-rows.scm.h:4
-#, fuzzy
 msgid "Erase/fill"
-msgstr "Διαγραφή"
+msgstr "Σβήσιμο/γέμισμα"
 
 #: ../scripts/erase-rows.scm.h:5
-#, fuzzy
 msgid "Even"
-msgstr "Συμβάν"
+msgstr "Ζυγός"
 
 #: ../scripts/erase-rows.scm.h:6
-#, fuzzy
 msgid "Even/odd"
-msgstr "Συμβάν"
+msgstr "Ζυγός/μονός"
 
 #: ../scripts/erase-rows.scm.h:7
-#, fuzzy
 msgid "Fill with BG"
-msgstr "Σταθερό πλάτος"
+msgstr "Γέμισμα με χρώμα παρασκηνίου"
 
 #
 #: ../scripts/erase-rows.scm.h:8
-#, fuzzy
 msgid "Odd"
-msgstr "Προσθήκη"
+msgstr "Μονός"
 
 #: ../scripts/erase-rows.scm.h:9
 msgid "Rows"
 msgstr "Σειρές"
 
 #: ../scripts/erase-rows.scm.h:10
-#, fuzzy
 msgid "Rows/cols"
-msgstr "Γραμματοσειρές/Χρώματα"
+msgstr "Γραμμές/στήλες"
 
 #: ../scripts/erase-rows.scm.h:11
-#, fuzzy
 msgid "_Erase Every Other Row..."
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Σβήσιμο κάθ_ε δεύτερης γραμμής..."
 
 #: ../scripts/flatland.scm.h:1
 msgid "Create an image filled with a Land Pattern"
-msgstr ""
+msgstr "Δημιουργία μιας εικόνας γεμάτης με μοτίβο γης"
 
 #: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:2
-#, fuzzy
 msgid "Detail level"
-msgstr "Αναλυτικά"
+msgstr "Λεπτομέρεια στάθμης"
 
 #: ../scripts/flatland.scm.h:3 ../scripts/land.scm.h:4
-#, fuzzy
 msgid "Image height"
-msgstr "Ύψος"
+msgstr "Ύψος εικόνας"
 
 #: ../scripts/flatland.scm.h:4 ../scripts/land.scm.h:5
-#, fuzzy
 msgid "Image width"
-msgstr "Παράθυρα Εικόνων"
+msgstr "Πλάτος εικόνας"
 
 #: ../scripts/flatland.scm.h:5 ../scripts/land.scm.h:7
-#, fuzzy
 msgid "Random seed"
-msgstr "Τυχαίο"
+msgstr "Τυχαία σπορά"
 
 #: ../scripts/flatland.scm.h:6 ../scripts/land.scm.h:8
-#, fuzzy
 msgid "Scale X"
-msgstr "Κλίμακα Χ:"
+msgstr "Κλίμακα Χ"
 
 #
 #: ../scripts/flatland.scm.h:7 ../scripts/land.scm.h:9
-#, fuzzy
 msgid "Scale Y"
-msgstr "Κλιμάκωση"
+msgstr "Κλίμακα Υ"
 
 #: ../scripts/flatland.scm.h:8
 msgid "_Flatland..."
-msgstr ""
+msgstr "_Επίπεδη έκταση..."
 
 #: ../scripts/font-map.scm.h:1
-#, fuzzy
 msgid "Active colors"
-msgstr "Περίγραμμα"
+msgstr "Ενεργά χρώματα"
 
 #: ../scripts/font-map.scm.h:2
 msgid "Black on white"
-msgstr ""
+msgstr "Μαύρο σε λευκό"
 
 #: ../scripts/font-map.scm.h:3
 msgid ""
 "Create an image filled with previews of fonts matching a fontname filter"
 msgstr ""
+"Δημιουργία εικόνας γεμάτης με προεπισκοπήσεις γραμματοσειρών που ταιριάζουν "
+"στο φίλτρο ονόματος γραμματοσειράς"
 
 #: ../scripts/font-map.scm.h:4
-#, fuzzy
 msgid "Font _size (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος γραμματο_σειράς (εικονοστοιχεία)"
 
 #: ../scripts/font-map.scm.h:5
 msgid "Render _Font Map..."
-msgstr ""
+msgstr "Απόδοση χάρτη γρα_μματοσειράς..."
 
 #: ../scripts/font-map.scm.h:6
 msgid "Use font _name as text"
-msgstr ""
+msgstr "Χρήση ο_νόματος γραμματοσειράς ως κειμένου"
 
 #: ../scripts/font-map.scm.h:7
-#, fuzzy
 msgid "_Border (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Περί_γραμμα (εικονοστοιχεία)"
 
 #: ../scripts/font-map.scm.h:8
-#, fuzzy
 msgid "_Color scheme"
-msgstr "Χρώμα 1"
+msgstr "_Χρώμα scheme"
 
 #: ../scripts/font-map.scm.h:9
 msgid "_Filter (regexp)"
-msgstr ""
+msgstr "_Φίλτρο (regexp)"
 
 #: ../scripts/font-map.scm.h:10
 msgid "_Labels"
-msgstr ""
+msgstr "Ε_τικέτες"
 
 #
 #: ../scripts/font-map.scm.h:11
-#, fuzzy
 msgid "_Text"
-msgstr "Κείμενο"
+msgstr "_Κείμενο"
 
 #: ../scripts/frosty-logo.scm.h:1
 msgid ""
 "Add a frost effect to the selected region (or alpha) with an added drop "
 "shadow"
 msgstr ""
+"Προσθήκη εφέ πάγου στην επιλεγμένη περιοχή (ή άλφα) με μια προστιθέμενη "
+"πίπτουσα σκιά"
 
 #: ../scripts/frosty-logo.scm.h:3
 msgid "Create frozen logo with an added drop shadow"
-msgstr ""
+msgstr "Δημιουργία λογότυπου με προστιθέμενη πίπτουσα σκιά"
 
 #
 #: ../scripts/frosty-logo.scm.h:8
-#, fuzzy
 msgid "_Frosty..."
-msgstr "Εξερεύνηση..."
+msgstr "Παγω_μένο..."
 
 #: ../scripts/fuzzyborder.scm.h:1
 msgid "Add a jagged, fuzzy border to an image"
-msgstr ""
+msgstr "Προσθήκη οδοντωτού ασαφούς περιγράμματος σε εικόνα"
 
 #: ../scripts/fuzzyborder.scm.h:2
-#, fuzzy
 msgid "Add shadow"
-msgstr "Σκιά:"
+msgstr "Προσθήκη σκιάς"
 
 #: ../scripts/fuzzyborder.scm.h:3
-#, fuzzy
 msgid "Blur border"
-msgstr "Πλαίσιο"
+msgstr "Περίγραμμα θόλωσης"
 
 #: ../scripts/fuzzyborder.scm.h:4 ../scripts/old-photo.scm.h:1
-#, fuzzy
 msgid "Border size"
-msgstr "Μέγεθος άβακα"
+msgstr "Μέγεθος περιγράμματος"
 
 #: ../scripts/fuzzyborder.scm.h:7
-#, fuzzy
 msgid "Granularity (1 is Low)"
-msgstr "Ιανουάριος"
+msgstr "Κοκκώδες (1 είναι χαμηλό)"
 
 #: ../scripts/fuzzyborder.scm.h:9
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Shadow weight (%)"
-msgstr "Εμφάνιση Λεπτομερειών"
+msgstr "Βαρύτητα σκιάς (%)"
 
 #: ../scripts/fuzzyborder.scm.h:11
 msgid "_Fuzzy Border..."
-msgstr ""
+msgstr "Α_σαφές περίγραμμα..."
 
 #: ../scripts/gimp-headers.scm.h:1
-#, fuzzy
 msgid "Autocrop"
-msgstr "Συγγραφέας"
+msgstr "Αυτόματη περικοπή"
 
 #: ../scripts/gimp-headers.scm.h:2
 msgid "Create an image of a large header using the gimp.org webpage theme"
 msgstr ""
+"Δημιουργία εικόνας μεγάλης κεφαλίδας χρησιμοποιώντας το θέμα ιστοσελίδας "
+"gimp.org"
 
 #: ../scripts/gimp-headers.scm.h:3
 msgid "Create an image of a small header using the gimp.org webpage theme"
 msgstr ""
+"Δημιουργία εικόνας μικρής κεφαλίδας χρησιμοποιώντας το θέμα ιστοσελίδας gimp."
+"org"
 
 #: ../scripts/gimp-headers.scm.h:4
-#, fuzzy
 msgid "Dark color"
-msgstr "Σκοτεινός φελλός"
+msgstr "Σκοτεινό χρώμα"
 
 #: ../scripts/gimp-headers.scm.h:7 ../scripts/xach-effect.scm.h:9
-#, fuzzy
 msgid "Highlight color"
-msgstr "Χρώμα Μαρκαρίσματος"
+msgstr "Χρώμα τονισμού"
 
 #: ../scripts/gimp-headers.scm.h:8 ../scripts/gimp-labels.scm.h:9
-#, fuzzy
 msgid "Index image"
-msgstr "Επόμενη Εικόνα"
+msgstr "Ευρετήριο εικόνας"
 
 #: ../scripts/gimp-headers.scm.h:9 ../scripts/gimp-labels.scm.h:10
-#, fuzzy
 msgid "Number of colors"
-msgstr "Αριθμός Χρωμάτων"
+msgstr "Αριθμός χρωμάτων"
 
 #: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:13
-#, fuzzy
 msgid "Remove background"
-msgstr "Αρχικοποίηση Παρασκηνίου"
+msgstr "Αφαίρεση παρασκηνίου"
 
 #: ../scripts/gimp-headers.scm.h:11 ../scripts/gimp-labels.scm.h:14
-#, fuzzy
 msgid "Select-by-color threshold"
-msgstr "Χαρακτήρες επιλογής ανά λέξη:"
+msgstr "Κατώφλι επιλογής κατά χρώμα"
 
 #: ../scripts/gimp-headers.scm.h:12 ../scripts/gimp-labels.scm.h:15
-#, fuzzy
 msgid "Shadow color"
-msgstr "Εμφάνιση Προχείρου"
+msgstr "Χρώμα σκιάς"
 
 #: ../scripts/gimp-headers.scm.h:15
 msgid "_Big Header..."
-msgstr ""
+msgstr "_Μεγάλη κεφαλίδα..."
 
 #: ../scripts/gimp-headers.scm.h:16
 msgid "_Small Header..."
-msgstr ""
+msgstr "Μι_κρή κεφαλίδα..."
 
 #: ../scripts/gimp-labels.scm.h:2
 msgid ""
 "Create an image of a Tube Button Label Header using the gimp.org webpage "
 "theme"
 msgstr ""
+"Δημιουργία εικόνας κεφαλίδας ετικέτας κουμπιού σωλήνα χρησιμοποιώντας το "
+"θέμα ιστοσελίδας gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:3
 msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
 msgstr ""
+"Δημιουργία εικόνας ετικέτας κουμπιού σωλήνα χρησιμοποιώντας το θέμα "
+"ιστοσελίδας gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:4
 msgid ""
 "Create an image of a second level Tube Button Label using the gimp.org "
 "webpage theme"
 msgstr ""
+"Δημιουργία εικόνας ετικέτας κουμπιού σωλήνα δευτέρου επιπέδου "
+"χρησιμοποιώντας το θέμα ιστοσελίδας gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:5
 msgid ""
 "Create an image of a third level Tube Button Label using the gimp.org "
 "webpage theme"
 msgstr ""
+"Δημιουργία εικόνας ετικέτας κουμπιού σωλήνα τρίτου επιπέδου χρησιμοποιώντας "
+"το θέμα ιστοσελίδας gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:16
 msgid "T_ube Sub-Button Label..."
-msgstr ""
+msgstr "Ετικέτα υποκουμπιού σ_ωλήνα..."
 
 #: ../scripts/gimp-labels.scm.h:19
 msgid "Tub_e Sub-Sub-Button Label..."
-msgstr ""
+msgstr "Ετικέτα υπο-υποκουμπιού σ_ωλήνα..."
 
 #: ../scripts/gimp-labels.scm.h:20
 msgid "_General Tube Labels..."
-msgstr ""
+msgstr "_Γενικές ετικέτες σωλήνα..."
 
 #: ../scripts/gimp-labels.scm.h:21
 msgid "_Tube Button Label..."
-msgstr ""
+msgstr "Ετικέτα κουμπιού _σωλήνα..."
 
 #: ../scripts/glossy.scm.h:1
 msgid ""
 "Add gradients, patterns, shadows, and bump maps to the selected region (or "
 "alpha)"
 msgstr ""
+"Προσθήκη διαβαθμίσεων, μοτίβων, σκιών και χαρτών αναγλύφου στην επιλεγμένη "
+"περιοχή (ή άλφα)"
 
 #: ../scripts/glossy.scm.h:3
-#, fuzzy
 msgid "Blend gradient (outline)"
-msgstr "Θέμα Διαβάθμισης"
+msgstr "Διαβάθμιση ανάμειξης (περίγραμμα)"
 
 #: ../scripts/glossy.scm.h:4
-#, fuzzy
 msgid "Blend gradient (text)"
-msgstr "Θέμα Διαβάθμισης"
+msgstr "Διαβάθμιση ανάμειξης (κείμενο)"
 
 #: ../scripts/glossy.scm.h:5
 msgid "Create a logo with gradients, patterns, shadows, and bump maps"
 msgstr ""
+"Δημιουργία ενός λογότυπου με διαβαθμίσεις, μοτίβα, σκιές και χάρτες ανάγλυφου"
 
 #: ../scripts/glossy.scm.h:9
 msgid "Glo_ssy..."
-msgstr ""
+msgstr "Γυαλι_στερό..."
 
 #
 #: ../scripts/glossy.scm.h:10
-#, fuzzy
 msgid "Outline gradient reverse"
-msgstr "Μπλούγκρας"
+msgstr "Αντιστροφή διαβάθμισης περιγράμματος"
 
 #: ../scripts/glossy.scm.h:12
-#, fuzzy
 msgid "Pattern (outline)"
-msgstr "Δημιουργία Περιγράμματος Μπεζιέρ"
+msgstr "Μοτίβο (περίγραμμα)"
 
 #: ../scripts/glossy.scm.h:13
-#, fuzzy
 msgid "Pattern (overlay)"
-msgstr "Γερμανικά (Γερμανία)"
+msgstr "Μοτίβο (επικάλυψη)"
 
 # # NOTE: Translation of "Create" as "New" to
 # #       keep msg length relatively short...
 #: ../scripts/glossy.scm.h:14
-#, fuzzy
 msgid "Pattern (text)"
-msgstr "Επικόλληση Κειμένου"
+msgstr "Μοτίβο (κείμενο)"
 
 #: ../scripts/glossy.scm.h:15 ../scripts/sphere.scm.h:5
-#, fuzzy
 msgid "Shadow"
-msgstr "Σκιά:"
+msgstr "Σκιά"
 
 #: ../scripts/glossy.scm.h:19
-#, fuzzy
 msgid "Text gradient reverse"
-msgstr "Βαθμίδα"
+msgstr "Αντιστροφή διαβάθμισης κειμένου"
 
 #: ../scripts/glossy.scm.h:20
-#, fuzzy
 msgid "Use pattern for outline instead of gradient"
-msgstr "Εμφάνιση γνωμικών αντί υποδείξεων"
+msgstr "Χρήση μοτίβου για περίγραμμα αντί για διαβάθμιση"
 
 #: ../scripts/glossy.scm.h:21
-#, fuzzy
 msgid "Use pattern for text instead of gradient"
-msgstr "Σελίδες για τα /query αντί ξεχωριστών παραθύρων"
+msgstr "Χρήση μοτίβου για κείμενο αντί για διαβάθμιση"
 
 #: ../scripts/glossy.scm.h:22
-#, fuzzy
 msgid "Use pattern overlay"
-msgstr "Υπόδειγμα URL"
+msgstr "Χρήση επικάλυψης μοτίβου"
 
 #: ../scripts/glowing-logo.scm.h:1
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη εφέ λαμπερού καυτού μετάλλου στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/glowing-logo.scm.h:3
 msgid "Create a logo that looks like glowing hot metal"
-msgstr ""
+msgstr "Δημιουργία λογότυπου που μοιάζει με λαμπερό καυτό μέταλλο"
 
 #: ../scripts/glowing-logo.scm.h:4
-#, fuzzy
 msgid "Effect size (pixels * 3)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος εφέ (εικονοστοιχεία*3)"
 
 #: ../scripts/glowing-logo.scm.h:7
 msgid "Glo_wing Hot..."
-msgstr ""
+msgstr "Κα_υτή λάμψη..."
 
 #: ../scripts/gradient-bevel-logo.scm.h:1
 msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
 msgstr ""
+"Προσθήκη αστραφτερής εμφάνισης και εφέ λοξότμησης στην επιλεγμένη περιοχή (ή "
+"άλφα)"
 
 #: ../scripts/gradient-bevel-logo.scm.h:3
 msgid "Bevel height (sharpness)"
-msgstr ""
+msgstr "Ύψος λοξότμησης (οξύτητα)"
 
 #: ../scripts/gradient-bevel-logo.scm.h:5 ../scripts/t-o-p-logo.scm.h:4
 #: ../scripts/textured-logo.scm.h:2
-#, fuzzy
 msgid "Border size (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος περιγράμματος (εικονοστοιχεία)"
 
 #: ../scripts/gradient-bevel-logo.scm.h:6
 msgid "Create a logo with a shiny look and beveled edges"
-msgstr ""
+msgstr "Δημιουργία λογότυπου με αστραφτερή όψη και λοξοτμημένες άκρες"
 
 #: ../scripts/gradient-bevel-logo.scm.h:9
-#, fuzzy
 msgid "Gradient Beve_l..."
-msgstr "Βαθμίδα"
+msgstr "Λοξό_τμηση διαβάθμισης..."
 
 #: ../scripts/gradient-example.scm.h:1
 msgid "Create an image filled with an example of the current gradient"
-msgstr ""
+msgstr "Δημιουργία εικόνας γεμάτης με ένα παράδειγμα τρέχουσας διαβάθμισης"
 
 #: ../scripts/gradient-example.scm.h:2
-#, fuzzy
 msgid "Custom _Gradient..."
-msgstr "Βαθμίδα"
+msgstr "Προσαρμοσμένη δια_βάθμιση..."
 
 #: ../scripts/grid-system.scm.h:1 ../scripts/guides-from-selection.scm.h:1
 msgid ""
 "Draw a grid as specified by the lists of X and Y locations using the current "
 "brush"
 msgstr ""
+"Σχεδίαση ενός πλέγματος όπως καθορίζεται από τις λίστες των τοποθεσιών Χ και "
+"Υ χρησιμοποιώντας το τρέχον πινέλο"
 
 #: ../scripts/grid-system.scm.h:2
 msgid "X divisions"
-msgstr ""
+msgstr "Διαιρέσεις Χ"
 
 #: ../scripts/grid-system.scm.h:3
 msgid "Y divisions"
-msgstr ""
+msgstr "Διαιρέσεις Υ"
 
 #: ../scripts/grid-system.scm.h:4
 msgid "_Grid..."
-msgstr ""
+msgstr "Π_λέγμα..."
 
 #: ../scripts/guides-from-selection.scm.h:2
 msgid "New Guides from _Selection"
-msgstr ""
+msgstr "Νέοι οδηγοί από _Επιλογή"
 
 #: ../scripts/guides-new-percent.scm.h:1
 msgid "Add a guide at the position specified as a percentage of the image size"
-msgstr ""
+msgstr "Προσθήκη οδηγού στην καθορισμένη θέση ως ποσοστό του μεγέθους εικόνας"
 
 #
 #: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
-#, fuzzy
 msgid "Direction"
-msgstr "Περιγραφή"
+msgstr "Κατεύθυνση"
 
 #: ../scripts/guides-new-percent.scm.h:3 ../scripts/guides-new.scm.h:3
-#, fuzzy
 msgid "Horizontal"
-msgstr "_Οριζόντια"
+msgstr "Οριζόντιο"
 
 #: ../scripts/guides-new-percent.scm.h:4
 msgid "New Guide (by _Percent)..."
-msgstr ""
+msgstr "Νέος οδηγός (_Αναλογία)"
 
 #: ../scripts/guides-new-percent.scm.h:6
 #, no-c-format
 msgid "Position (in %)"
-msgstr ""
+msgstr "Θέση (σε %)"
 
 #: ../scripts/guides-new-percent.scm.h:7 ../scripts/guides-new.scm.h:6
-#, fuzzy
 msgid "Vertical"
-msgstr "Κατακόρυ_φα"
+msgstr "Κάθετο"
 
 #: ../scripts/guides-new.scm.h:1
 msgid "Add a guide at the orientation and position specified (in pixels)"
 msgstr ""
+"Προσθήκη οδηγού στον καθορισμένο προσανατολισμό και θέση (σε εικονοστοιχεία)"
 
 #: ../scripts/guides-new.scm.h:4
 msgid "New _Guide..."
-msgstr ""
+msgstr "Νέος οδη_γός..."
 
 #: ../scripts/guides-new.scm.h:5
 msgid "Position"
-msgstr ""
+msgstr "Θέση"
 
 #: ../scripts/guides-remove-all.scm.h:1
 msgid "Remove all horizontal and vertical guides"
-msgstr ""
+msgstr "Αφαίρεση όλων των οριζόντιων και κάθετων οδηγών"
 
 #: ../scripts/guides-remove-all.scm.h:2
 msgid "_Remove all Guides"
-msgstr ""
-
-#
-#: ../scripts/hsv-graph.scm.h:1
-#, fuzzy
-msgid "BG opacity"
-msgstr "Διαφάνεια:"
-
-#: ../scripts/hsv-graph.scm.h:2
-msgid "Create a graph of the Hue, Saturation, and Value distributions"
-msgstr ""
-
-#
-#: ../scripts/hsv-graph.scm.h:3
-#, fuzzy
-msgid "Draw _HSV Graph..."
-msgstr "Επιλογή Γραμματοσειράς"
-
-#: ../scripts/hsv-graph.scm.h:4
-#, fuzzy
-msgid "End X"
-msgstr "Τέλος"
-
-#: ../scripts/hsv-graph.scm.h:5
-#, fuzzy
-msgid "End Y"
-msgstr "Τέλος"
-
-#: ../scripts/hsv-graph.scm.h:6
-#, fuzzy
-msgid "From top-left to bottom-right"
-msgstr "Αριστερά προς δεξιά"
-
-#: ../scripts/hsv-graph.scm.h:7
-#, fuzzy
-msgid "Graph scale"
-msgstr "Κλίμακα του γκρι"
-
-#: ../scripts/hsv-graph.scm.h:8
-#, fuzzy
-msgid "Start X"
-msgstr "Εκκίνηση"
-
-#: ../scripts/hsv-graph.scm.h:9
-#, fuzzy
-msgid "Start Y"
-msgstr "Εκκίνηση"
-
-#: ../scripts/hsv-graph.scm.h:10
-msgid "Use selection bounds instead of values below"
-msgstr ""
+msgstr "Αφαί_ρεση όλων των οδηγών"
 
 #: ../scripts/i26-gunya2.scm.h:1
 msgid "Create a logo in a two-color, scribbled text style"
-msgstr ""
+msgstr "Δημιουργία λογότυπου δύο χρωμάτων σε κείμενο μορφής ορνιθοσκαλίσματος"
 
 #: ../scripts/i26-gunya2.scm.h:4
-#, fuzzy
 msgid "Frame color"
-msgstr "Νέο Χρώμα"
+msgstr "Χρώμα πλαισίου"
 
 #: ../scripts/i26-gunya2.scm.h:5
-#, fuzzy
 msgid "Frame size"
-msgstr "Μέγεθος Αρχείου:"
+msgstr "Μέγεθος πλαισίου"
 
 #: ../scripts/i26-gunya2.scm.h:6
 msgid "Imigre-_26..."
-msgstr ""
+msgstr "Imigre-_26..."
 
 #: ../scripts/land.scm.h:1
 msgid "Create an image filled with a topographic map pattern"
-msgstr ""
+msgstr "Δημιουργία μιας εικόνας γεμάτης με μοτίβο τοπογραφικού χάρτη"
 
 #: ../scripts/land.scm.h:6
-#, fuzzy
 msgid "Land height"
-msgstr "Κα_νονικό Ύψος"
+msgstr "Ύψος εδάφους "
 
 #: ../scripts/land.scm.h:10
-#, fuzzy
 msgid "Sea depth"
-msgstr "πραγματική διαδρομή"
+msgstr "Βάθος θάλασσας"
 
 #: ../scripts/land.scm.h:11
 msgid "_Land..."
-msgstr ""
+msgstr "Έδα_φος..."
 
 #: ../scripts/lava.scm.h:1
 msgid "Fill the current selection with lava"
-msgstr ""
+msgstr "Γέμισμα της τρέχουσας επιλογής με λάβα"
 
 #: ../scripts/lava.scm.h:4 ../scripts/swirltile.scm.h:8
-#, fuzzy
 msgid "Roughness"
-msgstr "Σκληρό Χαρτί"
+msgstr "Σκληρότητα"
 
 #: ../scripts/lava.scm.h:5
 msgid "Seed"
 msgstr "Σπόρος"
 
 #: ../scripts/lava.scm.h:8
-#, fuzzy
 msgid "Use current gradient"
-msgstr "Χρήση τρέχοντος"
+msgstr "Χρήση τρέχουσας διαβάθμισης"
 
 #: ../scripts/lava.scm.h:9
 msgid "_Lava..."
-msgstr ""
+msgstr "_Λάβα..."
 
 #: ../scripts/line-nova.scm.h:1
 msgid ""
 "Fill a layer with rays emanating outward from its center using the FG color"
 msgstr ""
+"Γέμισμα στρώσης με ακτίνες εκπεμπόμενες προς τα έξω από το κέντρο του "
+"χρησιμοποιώντας το χρώμα προσκηνίου"
 
 #: ../scripts/line-nova.scm.h:2
 msgid "Line _Nova..."
-msgstr ""
+msgstr "Γραμμή υπερκαινιφα_νούς..."
 
 #: ../scripts/line-nova.scm.h:3
-#, fuzzy
 msgid "Number of lines"
-msgstr "Αριθμός ναρκών"
+msgstr "Αριθμός γραμμών"
 
 #: ../scripts/line-nova.scm.h:4
-#, fuzzy
 msgid "Offset radius"
-msgstr "Μετατόπιση: %s"
+msgstr "Ακτίνα αντιστάθμισης"
 
 #: ../scripts/line-nova.scm.h:5
-#, fuzzy
 msgid "Randomness"
-msgstr "Τυχαίο"
+msgstr "Τυχαιότητα"
 
 #: ../scripts/line-nova.scm.h:6
-#, fuzzy
 msgid "Sharpness (degrees)"
-msgstr "ανοιχτό πράσινο"
+msgstr "Οξύτητα (μοίρες)"
 
 #: ../scripts/mkbrush.scm.h:1
 msgid "Create a rectangular brush"
-msgstr ""
+msgstr "Δημιουργία ορθογώνιου πινέλου"
 
 #: ../scripts/mkbrush.scm.h:2
 msgid "Create a rectangular brush with feathered edges"
-msgstr ""
+msgstr "Δημιουργία ορθογώνιου πινέλου με απαλυμένες άκρες"
 
 #: ../scripts/mkbrush.scm.h:3
 msgid "Create an elliptical brush"
-msgstr ""
+msgstr "Δημιουργία ελλειπτικού πινέλου"
 
 #: ../scripts/mkbrush.scm.h:4
 msgid "Create an elliptical brush with feathered edges"
-msgstr ""
+msgstr "Δημιουργία ελλειπτικού πινέλου με απαλυμένες άκρες"
 
 #: ../scripts/mkbrush.scm.h:5
 msgid "Elli_ptical, Feathered..."
-msgstr ""
+msgstr "Ελλει_πτικό, απαλυμένο..."
 
 #: ../scripts/mkbrush.scm.h:6
-#, fuzzy
 msgid "Feathering"
-msgstr "Μακρύτερα"
+msgstr "Άμβλυνση"
 
 #
 #: ../scripts/mkbrush.scm.h:8
-#, fuzzy
 msgid "Name"
-msgstr "Όνομα:"
+msgstr "Όνομα"
 
 #: ../scripts/mkbrush.scm.h:9
 msgid "Re_ctangular, Feathered..."
-msgstr ""
+msgstr "Ορ_θογώνιο, απαλυμένο..."
 
 #: ../scripts/mkbrush.scm.h:10 ../scripts/paste-as-brush.scm.h:5
 #: ../scripts/select-to-brush.scm.h:4
@@ -2051,242 +1883,217 @@ msgstr "Διαστήματα"
 
 #: ../scripts/mkbrush.scm.h:12
 msgid "_Elliptical..."
-msgstr ""
+msgstr "_Ελλειπτικό..."
 
 #: ../scripts/mkbrush.scm.h:13
 msgid "_Rectangular..."
-msgstr ""
+msgstr "Ο_ρθογώνιο..."
 
 #: ../scripts/neon-logo.scm.h:2
 msgid "Convert the selected region (or alpha) into a neon-sign like object"
 msgstr ""
+"Μετατροπή της επιλεγμένης περιοχής (ή άλφα) σε αντικείμενο που μοιάζει με "
+"επιγραφή νέου"
 
 #: ../scripts/neon-logo.scm.h:3
 msgid "Create a logo in the style of a neon sign"
-msgstr ""
+msgstr "Δημιουργία λογότυπου σε μορφή επιγραφής νέου"
 
 #
 #: ../scripts/neon-logo.scm.h:4
-#, fuzzy
 msgid "Create shadow"
-msgstr "Δημιουργία βέλους"
+msgstr "Δημιουργία σκιάς"
 
 #: ../scripts/neon-logo.scm.h:5
-#, fuzzy
 msgid "Effect size (pixels * 5)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος εφέ (εικονοστοιχεία*5)"
 
 #: ../scripts/neon-logo.scm.h:9
 msgid "N_eon..."
-msgstr ""
+msgstr "Ν_έον..."
 
 #: ../scripts/news-text.scm.h:3
-#, fuzzy
 msgid "Cell size (pixels)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος κελιού (εικονοστοιχεία)"
 
 #: ../scripts/news-text.scm.h:4
 msgid "Create a logo in the style of newspaper printing"
-msgstr ""
+msgstr "Δημιουργία λογότυπου στη μορφή εκτύπωσης εφημερίδας"
 
 #: ../scripts/news-text.scm.h:6 ../scripts/speed-text.scm.h:4
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Density (%)"
-msgstr "Πυκνότητα"
+msgstr "Πυκνότητα (%)"
 
 #: ../scripts/news-text.scm.h:9
 msgid "Newsprint Te_xt..."
-msgstr ""
+msgstr "Κεί_μενο εκτύπωσης εφημερίδας"
 
 #: ../scripts/old-photo.scm.h:2
-#, fuzzy
 msgid "Defocus"
-msgstr "Εξ' ορισμού ρυθμίσεις"
+msgstr "Απεστίαση"
 
 #: ../scripts/old-photo.scm.h:3
 msgid "Make an image look like an old photo"
-msgstr ""
+msgstr "Δημιουργία εικόνας που μοιάζει με παλιά φωτογραφία"
 
 #: ../scripts/old-photo.scm.h:4
-#, fuzzy
 msgid "Mottle"
-msgstr "Μαγιότ"
+msgstr "Μαρμαροειδές"
 
 #: ../scripts/old-photo.scm.h:5
-#, fuzzy
 msgid "Sepia"
-msgstr "Σειριακό"
+msgstr "Σουπιά"
 
 #: ../scripts/old-photo.scm.h:7
 msgid "_Old Photo..."
-msgstr ""
+msgstr "_Παλιά φωτογραφία..."
 
 #: ../scripts/paste-as-brush.scm.h:1 ../scripts/select-to-brush.scm.h:1
-#, fuzzy
 msgid "Brush name"
-msgstr "Χρήστες"
+msgstr "Όνομα πινέλου"
 
 #
 #: ../scripts/paste-as-brush.scm.h:2 ../scripts/paste-as-pattern.scm.h:1
 #: ../scripts/select-to-brush.scm.h:3 ../scripts/select-to-pattern.scm.h:2
-#, fuzzy
 msgid "File name"
 msgstr "Όνομα αρχείου"
 
 #
 #: ../scripts/paste-as-brush.scm.h:3
-#, fuzzy
 msgid "New _Brush..."
-msgstr "Εξερεύνηση..."
+msgstr "Νέο πινέ_λο..."
 
 #: ../scripts/paste-as-brush.scm.h:4
 msgid "Paste the clipboard contents into a new brush"
-msgstr ""
+msgstr "Επικόλληση των περιεχομένων του πρόχειρου σε ένα νέο πινέλο"
 
 #: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
 msgid "There is no image data in the clipboard to paste."
-msgstr ""
+msgstr "Δεν υπάρχουν δεδομένα εικόνας στο πρόχειρο για επικόλληση."
 
 #: ../scripts/paste-as-pattern.scm.h:2
-#, fuzzy
 msgid "New _Pattern..."
-msgstr "Σχέδιο"
+msgstr "Νέο _μοτίβο..."
 
 #: ../scripts/paste-as-pattern.scm.h:3
 msgid "Paste the clipboard contents into a new pattern"
-msgstr ""
+msgstr "Επικόλληση των περιεχομένων προχείρου σε νέο μοτίβο"
 
 #: ../scripts/paste-as-pattern.scm.h:4 ../scripts/select-to-pattern.scm.h:3
-#, fuzzy
 msgid "Pattern name"
-msgstr "Σχέδιο"
+msgstr "Όνομα μοτίβου"
 
 #: ../scripts/perspective-shadow.scm.h:1
 msgid "Add a perspective shadow to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη μιας σκιάς προοπτικής στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/perspective-shadow.scm.h:3
-#, fuzzy
 msgid "Angle"
-msgstr "_Γωνία"
+msgstr "Γωνία"
 
 #: ../scripts/perspective-shadow.scm.h:6
-#, fuzzy
 msgid "Interpolation"
 msgstr "Παρεμβολή"
 
 #: ../scripts/perspective-shadow.scm.h:8
 msgid "Relative distance of horizon"
-msgstr ""
+msgstr "Σχετική απόσταση του ορίζοντα"
 
 #: ../scripts/perspective-shadow.scm.h:9
 msgid "Relative length of shadow"
-msgstr ""
+msgstr "Σχετικό μήκος σκιάς"
 
 #: ../scripts/perspective-shadow.scm.h:10
 msgid "_Perspective..."
-msgstr ""
+msgstr "_Προοπτική..."
 
 #: ../scripts/predator.scm.h:1
 msgid "Add a 'Predator' effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη εφέ 'αρπαχτικού' στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/predator.scm.h:2
-#, fuzzy
 msgid "Edge amount"
-msgstr "Νέος Λογαριασμός"
+msgstr "Ποσότητα άκρης"
 
 #: ../scripts/predator.scm.h:4
-#, fuzzy
 msgid "Pixel amount"
-msgstr "Αριθμός Γραμμών"
+msgstr "Ποσότητα εικονοστοιχείου"
 
 #
 #: ../scripts/predator.scm.h:5
-#, fuzzy
 msgid "Pixelize"
-msgstr "Μέγεθος σε Εικ/χεία:"
+msgstr "Εικονοστοιχείωση"
 
 #: ../scripts/predator.scm.h:7
 msgid "_Predator..."
-msgstr ""
+msgstr "_Αρ_παχτικό..."
 
 #: ../scripts/pupi-button.scm.h:2
 msgid "Create images, each containing an oval button graphic"
 msgstr ""
+"Δημιουργία εικόνων, καθεμιά τους περιέχει ένα γραφικό ωοειδούς  κουμπιού"
 
 #: ../scripts/pupi-button.scm.h:5
-#, fuzzy
 msgid "Lower color"
-msgstr "Χρώμα αδύναμης μπαταρίας:"
+msgstr "Κατώτερο χρώμα "
 
 #: ../scripts/pupi-button.scm.h:6
-#, fuzzy
 msgid "Lower color (active)"
-msgstr "Χαμήλωμα σημειώματος"
+msgstr "Χαμηλότερο χρώμα (ενεργό)"
 
 #: ../scripts/pupi-button.scm.h:7
-#, fuzzy
 msgid "Not pressed"
-msgstr "Δεν έχει ξεκινήσει"
+msgstr "Μη πιεσμένο"
 
 #: ../scripts/pupi-button.scm.h:8
-#, fuzzy
 msgid "Not pressed (active)"
-msgstr "Δεν έχει ξεκινήσει"
+msgstr "Μη πιεσμένο (ενεργό)"
 
 #: ../scripts/pupi-button.scm.h:9
-#, fuzzy
 msgid "Padding X"
-msgstr "Σκίαση"
+msgstr "Εσωαπόσταση Χ"
 
 #: ../scripts/pupi-button.scm.h:10
-#, fuzzy
 msgid "Padding Y"
-msgstr "Σκίαση"
+msgstr "Εσωαπόσταση Υ"
 
 #: ../scripts/pupi-button.scm.h:12
-#, fuzzy
 msgid "Round ratio"
-msgstr "Επιλογές ήχου"
+msgstr "Λόγος στρογγυλέματος"
 
 #: ../scripts/pupi-button.scm.h:15
-#, fuzzy
 msgid "Text color (active)"
-msgstr "Χρώμα Κειμένου"
+msgstr "Χρώμα κειμένου (ενεργό)"
 
 #: ../scripts/pupi-button.scm.h:16
-#, fuzzy
 msgid "Upper color"
-msgstr "Χρώματα Χρήστη"
+msgstr "Ανώτερο χρώμα"
 
 #: ../scripts/pupi-button.scm.h:17
-#, fuzzy
 msgid "Upper color (active)"
-msgstr "Χαμήλωμα σημειώματος"
+msgstr "Ανώτερο χρώμα (ενεργό)"
 
 #: ../scripts/pupi-button.scm.h:18
 msgid "_Round Button..."
-msgstr ""
+msgstr "Στ_ρογγυλό κουμπί..."
 
 #: ../scripts/rendermap.scm.h:1
-#, fuzzy
 msgid "Behavior"
 msgstr "Συμπεριφορά"
 
 #: ../scripts/rendermap.scm.h:2
 msgid "Create an image filled with an Earth-like map pattern"
-msgstr ""
+msgstr "Δημιουργία εικόνας γεμάτης με μοτίβο γεωειδούς χάρτη "
 
 #
 #: ../scripts/rendermap.scm.h:3
-#, fuzzy
 msgid "Detail in Middle"
-msgstr "Διάλογος λεπτομερειών"
+msgstr "Λεπτομέρεια στη μέση"
 
 #: ../scripts/rendermap.scm.h:8
 msgid "Render _Map..."
-msgstr ""
+msgstr "Απόδοση _χάρτη..."
 
 #: ../scripts/rendermap.scm.h:9
 msgid "Tile"
@@ -2294,143 +2101,137 @@ msgstr "Παράθεση"
 
 #: ../scripts/reverse-layers.scm.h:1
 msgid "Reverse Layer Order"
-msgstr ""
+msgstr "Αντιστροφή σειράς στρώσης"
 
 #: ../scripts/reverse-layers.scm.h:2
 msgid "Reverse the order of layers in the image"
-msgstr ""
+msgstr "Αντιστροφή της σειράς των στρώσεων στην εικόνα"
 
 #: ../scripts/ripply-anim.scm.h:1
 msgid "Black"
-msgstr ""
+msgstr "Μαύρο"
 
 #: ../scripts/ripply-anim.scm.h:2
 msgid ""
 "Create a multi-layer image by adding a ripple effect to the current image"
 msgstr ""
+"Δημιουργία εικόνας πολλαπλών στρώσεων προσθέτοντας εφέ κυματισμού στην "
+"τρέχουσα εικόνα"
 
 #: ../scripts/ripply-anim.scm.h:3
-#, fuzzy
 msgid "Edge behavior"
-msgstr "Συμπεριφορά"
+msgstr "Συμπεριφορά άκρης"
 
 #: ../scripts/ripply-anim.scm.h:4 ../scripts/waves-anim.scm.h:4
-#, fuzzy
 msgid "Number of frames"
-msgstr "Αριθμός Σελίδων"
+msgstr "Αριθμός πλαισίων"
 
 #: ../scripts/ripply-anim.scm.h:5
 msgid "Rippling strength"
-msgstr ""
+msgstr "Δύναμη κυματισμού"
 
 #: ../scripts/ripply-anim.scm.h:6
-#, fuzzy
 msgid "Smear"
-msgstr "Αναζήτηση: "
+msgstr "Μουντζούρα"
 
 #: ../scripts/ripply-anim.scm.h:7
 msgid "Wrap"
-msgstr ""
+msgstr "Αναδίπλωση"
 
 #: ../scripts/ripply-anim.scm.h:8
 msgid "_Rippling..."
-msgstr ""
+msgstr "Κ_υματισμός..."
 
 #
 #: ../scripts/round-corners.scm.h:1
-#, fuzzy
 msgid "Add background"
-msgstr "Φόντο"
+msgstr "Προσθήκη υπόβαθρου"
 
 #: ../scripts/round-corners.scm.h:2
-#, fuzzy
 msgid "Add drop-shadow"
-msgstr "Σκιά:"
+msgstr "Προσθήκη πίπτουσας σκιάς"
 
 #: ../scripts/round-corners.scm.h:4
-#, fuzzy
 msgid "Edge radius"
-msgstr "Ράδιο"
+msgstr "Ακτίνα άκρης"
 
 #: ../scripts/round-corners.scm.h:5
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
 msgstr ""
+"Στρογγύλεμα γωνιών εικόνας και προαιρετικά προσθήκη πίπτουσας σκιάς και "
+"παρασκηνίου"
 
 #: ../scripts/round-corners.scm.h:9
 msgid "_Round Corners..."
-msgstr ""
+msgstr "Στ_ρογγύλεμα γωνιών..."
 
 #: ../scripts/script-fu-set-cmap.scm.h:1
 msgid "Change the colormap of an image to the colors in a specified palette."
 msgstr ""
+"Αλλαγή του πίνακα χρωμάτων εικόνας σε χρώματα μιας συγκεκριμένης παλέτας."
 
 #: ../scripts/script-fu-set-cmap.scm.h:2
-#, fuzzy
 msgid "Palette"
-msgstr "Σχέδιο"
+msgstr "Παλέτα"
 
 #: ../scripts/script-fu-set-cmap.scm.h:3
-#, fuzzy
 msgid "Se_t Colormap..."
-msgstr "Χρώμα Κειμένου"
+msgstr "Ορισμός πίνακα χρώμα_τος..."
 
 #: ../scripts/select-to-brush.scm.h:2
 msgid "Convert a selection to a brush"
-msgstr ""
+msgstr "Μετατροπή επιλογής σε πινέλο"
 
 #
 #: ../scripts/select-to-brush.scm.h:5
-#, fuzzy
 msgid "To _Brush..."
-msgstr "Εξερεύνηση..."
+msgstr "Στο πι_νέλο..."
 
 #: ../scripts/select-to-image.scm.h:1
 msgid "Convert a selection to an image"
-msgstr ""
+msgstr "Μετατροπή επιλογής σε εικόνα"
 
 #: ../scripts/select-to-image.scm.h:2
 msgid "To _Image"
-msgstr ""
+msgstr "Στην ε_ικόνα"
 
 #: ../scripts/select-to-pattern.scm.h:1
 msgid "Convert a selection to a pattern"
-msgstr ""
+msgstr "Μετατροπή επιλογής σε μοτίβο"
 
 #: ../scripts/select-to-pattern.scm.h:4
-#, fuzzy
 msgid "To _Pattern..."
-msgstr "Σχέδιο"
+msgstr "Στο _μοτίβο..."
 
 #
 #: ../scripts/selection-round.scm.h:1
-#, fuzzy
 msgid "Concave"
-msgstr "Ακύρωση"
+msgstr "Κοίλος"
 
 #: ../scripts/selection-round.scm.h:3
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Radius (%)"
-msgstr "Ράδιο"
+msgstr "Ακτίνα (%)"
 
 #: ../scripts/selection-round.scm.h:4
 msgid "Round the corners of the current selection"
-msgstr ""
+msgstr "Στρογγύλεμα γωνιών της τρέχουσας επιλογής"
 
 #
 #: ../scripts/selection-round.scm.h:5
-#, fuzzy
 msgid "Rounded R_ectangle..."
-msgstr "Επιλογή Γραμματοσειράς"
+msgstr "Στρογγυλ_εμένο ορθογώνιο"
 
 #: ../scripts/slide.scm.h:1
 msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
 msgstr ""
+"Προσθήκη ταινίας διαφανειών όπως πλαίσια, οπές οδοντωτού τροχού και ετικέτες "
+"σε εικόνα"
 
 #: ../scripts/slide.scm.h:3
-#, fuzzy
 msgid "Font color"
-msgstr "Χρώμα γραμματοσειράς:"
+msgstr "Χρώμα γραμματοσειράς"
 
 #: ../scripts/slide.scm.h:4
 msgid "Number"
@@ -2438,53 +2239,51 @@ msgstr "Αριθμός"
 
 #: ../scripts/slide.scm.h:7
 msgid "_Slide..."
-msgstr ""
+msgstr "_Διαφάνεια..."
 
 #: ../scripts/sota-chrome-logo.scm.h:5
 msgid "Create a State Of The Art chromed logo"
-msgstr ""
+msgstr "Δημιουργία κατάστασης του χρωμιομένου λογότυπου τέχνης"
 
 #: ../scripts/sota-chrome-logo.scm.h:10
 msgid "SOTA Chrome..."
-msgstr ""
+msgstr "Χρώμιο SOTA..."
 
 #: ../scripts/speed-text.scm.h:2
 msgid "Create a logo with a speedy text effect"
-msgstr ""
+msgstr "Δημιουργία λογότυπου με ένα γρήγορο εφέ κειμένου"
 
 #: ../scripts/speed-text.scm.h:7
 msgid "Speed Text..."
-msgstr ""
+msgstr "Ταχύτητα κειμένου..."
 
 #: ../scripts/sphere.scm.h:2
 msgid "Create a simple sphere with a drop shadow"
-msgstr ""
+msgstr "Δημιουργία απλής σφαίρας με πίπτουσα σκιά"
 
 #: ../scripts/sphere.scm.h:3
-#, fuzzy
 msgid "Lighting (degrees)"
-msgstr "ανοιχτό πράσινο"
+msgstr "Φωτισμός (βαθμοί)"
 
 #: ../scripts/sphere.scm.h:4
-#, fuzzy
 msgid "Radius (pixels)"
-msgstr "Γελοίο (128 εικονοστοιχεία)"
+msgstr "Ακτίνα (εικονοστοιχεία)"
 
 #
 #: ../scripts/sphere.scm.h:6
-#, fuzzy
 msgid "Sphere color"
-msgstr "Επιλέξτε Χρώμα"
+msgstr "Χρώμα σφαίρας"
 
 #
 #: ../scripts/sphere.scm.h:7
-#, fuzzy
 msgid "_Sphere..."
-msgstr "Εξερεύνηση..."
+msgstr "_Σφαίρα..."
 
 #: ../scripts/spinning-globe.scm.h:1
 msgid "Create an animation by mapping the current image onto a spinning sphere"
 msgstr ""
+"Δημιουργία κίνησης χαρτογραφώντας την τρέχουσα εικόνα σε στροβιλιζόμενη "
+"σφαίρα"
 
 #: ../scripts/spinning-globe.scm.h:2
 msgid "Frames"
@@ -2492,270 +2291,250 @@ msgstr "Πλαίσια"
 
 #: ../scripts/spinning-globe.scm.h:3
 msgid "Index to n colors (0 = remain RGB)"
-msgstr ""
+msgstr "Δείχτης για n χρώματα (0 = παραμένει RGB)"
 
 #: ../scripts/spinning-globe.scm.h:5
-#, fuzzy
 msgid "Turn from left to right"
-msgstr "Αριστερά προς δεξιά"
+msgstr "Περιστροφή από αριστερά προς τα δεξιά"
 
 #: ../scripts/spinning-globe.scm.h:7
 msgid "_Spinning Globe..."
-msgstr ""
+msgstr "_Στροβιλιζόμενη υδρόγειος..."
 
 #: ../scripts/spyrogimp.scm.h:1
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
 msgstr ""
+"Προσθήκη σπειρογράφων, επιτροχοειδών και καμπυλών Lissajous στην τρέχουσα "
+"στρώση"
 
 #: ../scripts/spyrogimp.scm.h:2
 msgid "Airbrush"
-msgstr ""
+msgstr "Αερογράφος"
 
 #: ../scripts/spyrogimp.scm.h:3
-#, fuzzy
 msgid "Brush"
-msgstr "Χρήστες"
+msgstr "Πινέλο"
 
 #: ../scripts/spyrogimp.scm.h:4
-#, fuzzy
 msgid "Circle"
-msgstr "Παράθεση"
+msgstr "Κύκλος"
 
 #: ../scripts/spyrogimp.scm.h:6
-#, fuzzy
 msgid "Color method"
-msgstr "Χρώμα 1"
+msgstr "Μέθοδος χρώματος"
 
 #: ../scripts/spyrogimp.scm.h:7
 msgid "Epitrochoid"
-msgstr ""
+msgstr "Επιτροχοειδές"
 
 #: ../scripts/spyrogimp.scm.h:8
-#, fuzzy
 msgid "Frame"
-msgstr "Πλαίσια"
+msgstr "Πλαίσιο"
 
 #: ../scripts/spyrogimp.scm.h:10
 msgid "Gradient: Loop Sawtooth"
-msgstr ""
+msgstr "Διαβάθμιση: πριονωτό δόντι βρόχου"
 
 #: ../scripts/spyrogimp.scm.h:11
 msgid "Gradient: Loop Triangle"
-msgstr ""
+msgstr "Διαβάθμιση: Τρίγωνο βρόχου"
 
 #: ../scripts/spyrogimp.scm.h:12
-#, fuzzy
 msgid "Hexagon"
-msgstr "Περιοχές"
+msgstr "Εξάγωνο"
 
 #: ../scripts/spyrogimp.scm.h:13
-#, fuzzy
 msgid "Hole ratio"
-msgstr "Ημερομηνία Λήξης"
+msgstr "Λόγος οπής"
 
 #: ../scripts/spyrogimp.scm.h:14
-#, fuzzy
 msgid "Inner teeth"
-msgstr "Πλαίσιο"
+msgstr "Εσωτερικό δόντια"
 
 #: ../scripts/spyrogimp.scm.h:15
 msgid "Lissajous"
-msgstr ""
+msgstr "Lissajous"
 
 #: ../scripts/spyrogimp.scm.h:16
-#, fuzzy
 msgid "Margin (pixels)"
-msgstr "Γελοίο (128 εικονοστοιχεία)"
+msgstr "Περιθώριο (εικονοστοιχεία)"
 
 #: ../scripts/spyrogimp.scm.h:17
-#, fuzzy
 msgid "Outer teeth"
-msgstr "Πλαίσιο"
+msgstr "Εξωτερικά δόντια"
 
 #: ../scripts/spyrogimp.scm.h:18
 msgid "Pencil"
-msgstr ""
+msgstr "Μολύβι"
 
 #: ../scripts/spyrogimp.scm.h:19
-#, fuzzy
 msgid "Pentagon"
-msgstr "Προσανατολισμός"
+msgstr "Πεντάγωνο"
 
 #: ../scripts/spyrogimp.scm.h:20
 msgid "Polygon: 10 sides"
-msgstr ""
+msgstr "Πολύγωνο: 10 πλευρές"
 
 #: ../scripts/spyrogimp.scm.h:21
 msgid "Polygon: 7 sides"
-msgstr ""
+msgstr "Πολύγωνο: 7 πλευρές"
 
 #: ../scripts/spyrogimp.scm.h:22
 msgid "Polygon: 8 sides"
-msgstr ""
+msgstr "Πολύγωνο: 8 πλευρές"
 
 #: ../scripts/spyrogimp.scm.h:23
 msgid "Polygon: 9 sides"
-msgstr ""
+msgstr "Πολύγωνο: 9 πλευρές"
 
 #: ../scripts/spyrogimp.scm.h:24
 msgid "Rendering Spyro"
-msgstr ""
+msgstr "Απόδοση σπειρογραφήματος"
 
 #: ../scripts/spyrogimp.scm.h:25
 msgid "Shape"
-msgstr ""
+msgstr "Σχήμα"
 
 #: ../scripts/spyrogimp.scm.h:26
-#, fuzzy
 msgid "Solid Color"
-msgstr "Προσθήκη Χρώματος"
+msgstr "Συμπαγές χρώμα"
 
 #: ../scripts/spyrogimp.scm.h:27
 msgid "Spyrograph"
-msgstr ""
+msgstr "Σπειρογράφημα"
 
 #: ../scripts/spyrogimp.scm.h:28
-#, fuzzy
 msgid "Square"
 msgstr "Τετράγωνο"
 
 #: ../scripts/spyrogimp.scm.h:29 ../scripts/text-circle.scm.h:7
-#, fuzzy
 msgid "Start angle"
-msgstr "Εκκινείται"
+msgstr "Έναρξη γωνίας"
 
 #: ../scripts/spyrogimp.scm.h:30
 msgid "Tool"
-msgstr ""
+msgstr "Εργαλείο"
 
 #: ../scripts/spyrogimp.scm.h:31
-#, fuzzy
 msgid "Triangle"
-msgstr "Παράθεση"
+msgstr "Τρίγωνο"
 
 #: ../scripts/spyrogimp.scm.h:32
-#, fuzzy
 msgid "Type"
-msgstr "Μπλε Τύπος"
+msgstr "Τύπος"
 
 #: ../scripts/spyrogimp.scm.h:33
 msgid "_Spyrogimp..."
-msgstr ""
+msgstr "_Σπειρογράφημα gimp..."
 
 #: ../scripts/starburst-logo.scm.h:2
-#, fuzzy
 msgid "Burst color"
-msgstr "Ειδικό Χρώμα:"
+msgstr "Χρώμα έκρηξης"
 
 #: ../scripts/starburst-logo.scm.h:3
 msgid "Create a logo using a starburst gradient"
-msgstr ""
+msgstr "Δημιουργία λογότυπου χρησιμοποιώντας διαβάθμιση αστερόσκονης"
 
 #: ../scripts/starburst-logo.scm.h:4
-#, fuzzy
 msgid "Effect size (pixels * 30)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος εφέ(εικονοστοιχεία*30)"
 
 #: ../scripts/starburst-logo.scm.h:5
 msgid ""
 "Fill the selected region (or alpha) with a starburst gradient and add a "
 "shadow"
 msgstr ""
+"Γέμισμα της επιλεγμένης περιοχής (ή άλφα) με διαβάθμιση αστερόσκονης και "
+"προσθήκη σκιάς"
 
 #: ../scripts/starburst-logo.scm.h:8
 msgid "Starb_urst..."
-msgstr ""
+msgstr "Έκ_ρηξη αστεριού"
 
 #: ../scripts/starscape-logo.scm.h:1
 msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
 msgstr ""
+"Δημιουργία λογότυπου χρησιμοποιώντας μια βραχοειδή υφή, λάμψη "
+"υπερκαινοφανούς και σκιά"
 
 #: ../scripts/starscape-logo.scm.h:2
-#, fuzzy
 msgid "Effect size (pixels * 4)"
-msgstr "Μέγεθος (εικονοστοιχεία)"
+msgstr "Μέγεθος εφέ (εικονοστοιχεία*4)"
 
 #: ../scripts/starscape-logo.scm.h:3
 msgid ""
 "Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
 "and shadow"
 msgstr ""
+"Γέμισμα της επιλεγμένης περιοχής (ή άλφα) με μια βραχοειδή υφή, λάμψη "
+"υπερκαινοφανούς και σκιάς"
 
 #
 #: ../scripts/starscape-logo.scm.h:7
-#, fuzzy
 msgid "Sta_rscape..."
-msgstr "Εξερεύνηση..."
+msgstr "Τοπίο αστε_ριών..."
 
 #: ../scripts/swirltile.scm.h:4
 msgid "Create an image filled with a swirled tile effect"
-msgstr ""
+msgstr "Δημιουργία εικόνας γεμάτης με εφέ στροβιλισμένης παράθεσης"
 
 #: ../scripts/swirltile.scm.h:9
 msgid "Swirl-_Tile..."
-msgstr ""
+msgstr "Σ_τροβιλισμένη παράθεση..."
 
 #: ../scripts/swirltile.scm.h:10
-#, fuzzy
 msgid "Whirl amount"
-msgstr "Αριθμός Λέξεων"
+msgstr "Ποσότητα στροβιλισμού"
 
 #: ../scripts/swirly-pattern.scm.h:1
 msgid "Create an image filled with a swirly pattern"
-msgstr ""
+msgstr "Δημιουργία εικόνας γεμάτης με στροβιλώδες μοτίβο"
 
 #: ../scripts/swirly-pattern.scm.h:2
-#, fuzzy
 msgid "Number of times to whirl"
-msgstr "Αριθμός εικονοστοιχείων προς χρήση."
+msgstr "Αριθμός φορών στροβιλισμού"
 
 #: ../scripts/swirly-pattern.scm.h:3
-#, fuzzy
 msgid "Quarter size"
-msgstr "Μέγεθος Σ&ελίδας:"
+msgstr "Μέγεθος τετάρτου"
 
 #: ../scripts/swirly-pattern.scm.h:4
-#, fuzzy
 msgid "Whirl angle"
-msgstr "Γωνία στρέβλωσης:"
+msgstr "Γωνία στροβιλισμού"
 
 #: ../scripts/swirly-pattern.scm.h:5
 msgid "_Swirly..."
-msgstr ""
+msgstr "_Στροβιλώδης..."
 
 #: ../scripts/t-o-p-logo.scm.h:1
 msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-msgstr ""
+msgstr "Προσθήκη εφέ ίχνους σωματιδίων στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/t-o-p-logo.scm.h:3
-#, fuzzy
 msgid "Base color"
 msgstr "Χρώμα βάσης"
 
 #: ../scripts/t-o-p-logo.scm.h:5
 msgid "Create a logo using a Trace Of Particles effect"
-msgstr ""
+msgstr "Δημιουργία λογότυπου χρησιμοποιώντας το εφέ ίχνους σωματιδίων"
 
 #: ../scripts/t-o-p-logo.scm.h:6
-#, fuzzy
 msgid "Edge only"
-msgstr "Ακραίο ταμπλώ"
+msgstr "Μόνο άκρη"
 
 #
 #: ../scripts/t-o-p-logo.scm.h:7
-#, fuzzy
 msgid "Edge width"
-msgstr "Καθορισμός Πλάτους:"
+msgstr "Πλάτος άκρης"
 
 #: ../scripts/t-o-p-logo.scm.h:10
-#, fuzzy
 msgid "Hit rate"
-msgstr "Ρυθμός bit"
+msgstr "Ρυθμός επιτυχίας"
 
 #: ../scripts/t-o-p-logo.scm.h:12
 msgid "_Particle Trace..."
-msgstr ""
+msgstr "Ίχνος σ_ωματιδίου..."
 
 #: ../scripts/text-circle.scm.h:1
 msgid "Antialias"
@@ -2765,308 +2544,315 @@ msgstr "Εξομάλυνση"
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
 msgstr ""
+"Δημιουργία λογότυπου αποδίδοντας το συγκεκριμένο κείμενο κατά μήκος της "
+"περιμέτρου κύκλου"
 
 #: ../scripts/text-circle.scm.h:3
-#, fuzzy
 msgid "Fill angle"
-msgstr "Γεμισμένο Τρίγωνο"
+msgstr "Γέμισμα γωνίας"
 
 #: ../scripts/text-circle.scm.h:9
-#, fuzzy
 msgid "Text C_ircle..."
-msgstr "Παράθεση"
+msgstr "Κύκλ_ος κειμένου..."
 
 #: ../scripts/textured-logo.scm.h:3
 msgid ""
 "Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr ""
+msgstr "Δημιουργία λογότυπου υφής με τονισμούς, σκιές και μωσαϊκό παρασκήνιο"
 
 #: ../scripts/textured-logo.scm.h:4
-#, fuzzy
 msgid "Ending blend"
-msgstr "Ημ/νία λήξης"
+msgstr "Τέλος ανάμειξης"
 
 #: ../scripts/textured-logo.scm.h:5
 msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
 msgstr ""
+"Γέμισμα της επιλεγμένης περιοχής (ή άλφα) με υφή και προσθήκη τονισμών, "
+"σκιών και μωσαϊκού παρασκηνίου"
 
 #: ../scripts/textured-logo.scm.h:8
-#, fuzzy
 msgid "Hexagons"
-msgstr "Περιοχές"
+msgstr "Εξάγωνα"
 
 #: ../scripts/textured-logo.scm.h:9
-#, fuzzy
 msgid "Mosaic tile type"
-msgstr "Είδος MIME"
+msgstr "Τύπος μωσαϊκού πλακιδίου"
 
 #
 #: ../scripts/textured-logo.scm.h:10
-#, fuzzy
 msgid "Octagons"
-msgstr "Επιλογές"
+msgstr "Οκτάγωνα"
 
 #: ../scripts/textured-logo.scm.h:12
-#, fuzzy
 msgid "Squares"
-msgstr "Τετράγωνο"
+msgstr "Τετράγωνα"
 
 #: ../scripts/textured-logo.scm.h:13
-#, fuzzy
 msgid "Starting blend"
-msgstr "Αρχικό επίπεδο: "
+msgstr "Έναρξη ανάμειξης"
 
 #: ../scripts/textured-logo.scm.h:15
-#, fuzzy
 msgid "Text pattern"
-msgstr "Σχέδιο"
+msgstr "Μοτίβο κειμένου"
 
 #: ../scripts/textured-logo.scm.h:16
 msgid "_Textured..."
-msgstr ""
+msgstr "_Με υφή..."
 
 #: ../scripts/tileblur.scm.h:1
-#, fuzzy
 msgid "Blur horizontally"
-msgstr "_Οριζόντια"
+msgstr "Θόλωση Οριζόντια"
 
 #: ../scripts/tileblur.scm.h:2
 msgid "Blur the edges of an image so the result tiles seamlessly"
-msgstr ""
+msgstr "Θόλωση των άκρων εικόνας ώστε το αποτέλεσμα παρατίθεται χωρίς ραφές"
 
 #: ../scripts/tileblur.scm.h:3
-#, fuzzy
 msgid "Blur type"
-msgstr "Μπλε Τύπος"
+msgstr "Τύπος θόλωσης"
 
 #: ../scripts/tileblur.scm.h:4
-#, fuzzy
 msgid "Blur vertically"
-msgstr "Κατακόρυ_φα"
+msgstr "Θόλωση κάθετα"
 
 #: ../scripts/tileblur.scm.h:5
-#, fuzzy
 msgid "IIR"
-msgstr "ΙΙ"
+msgstr "IIR"
 
 #: ../scripts/tileblur.scm.h:6
-#, fuzzy
 msgid "RLE"
-msgstr "RE:"
+msgstr "RLE"
 
 #: ../scripts/tileblur.scm.h:8
-#, fuzzy
 msgid "_Tileable Blur..."
-msgstr "<Image>/Φίλτρα/Κείμενο/FreeType..."
+msgstr "Παρα_θέσιμη θόλωση..."
 
 #: ../scripts/title-header.scm.h:1
 msgid "Create a decorative web title header"
-msgstr ""
+msgstr "Δημιουργία διακοσμητικής κεφαλίδας τίτλου ιστού"
 
 #: ../scripts/title-header.scm.h:6
 msgid "Web Title Header..."
-msgstr ""
+msgstr "Κεφαλίδα τίτλου ιστού..."
 
 #: ../scripts/truchet.scm.h:3
 msgid "Create an image filled with a Truchet pattern"
-msgstr ""
+msgstr "Δημιουργία εικόνας γεμάτης με μοτίβο Truchet"
 
 #: ../scripts/truchet.scm.h:4
-#, fuzzy
 msgid "Foreground color"
 msgstr "Χρώμα Προσκηνίου"
 
 #: ../scripts/truchet.scm.h:7
 msgid "T_ruchet..."
-msgstr ""
+msgstr "T_ruchet..."
 
 #
 #: ../scripts/unsharp-mask.scm.h:1
-#, fuzzy
 msgid "Mask opacity"
-msgstr "Διαφάνεια:"
+msgstr "Αδιαφάνεια μάσκας"
 
 #: ../scripts/unsharp-mask.scm.h:2
-#, fuzzy
 msgid "Mask size"
-msgstr "Μεγέθος Τετραγωνιδίων"
+msgstr "Μέγεθος μάσκας"
 
 #: ../scripts/waves-anim.scm.h:1
 msgid "Amplitude"
-msgstr ""
+msgstr "Μέγεθος"
 
 #: ../scripts/waves-anim.scm.h:2
 msgid ""
 "Create a multi-layer image with an effect like a stone was thrown into the "
 "current image"
 msgstr ""
+"Δημιουργία εικόνας πολλαπλών στρώσεων με εφέ όπως πέτρας που πετιέται στην "
+"τρέχουσα εικόνα  "
 
 #: ../scripts/waves-anim.scm.h:3
-#, fuzzy
 msgid "Invert direction"
-msgstr "Αντιστροφή Επιλογής"
+msgstr "Αντιστροφή κατεύθυνσης"
 
 #: ../scripts/waves-anim.scm.h:5
-#, fuzzy
 msgid "Wavelength"
-msgstr "ενδέκατο"
+msgstr "Μήκος κύματος"
 
 #: ../scripts/waves-anim.scm.h:6
 msgid "_Waves..."
-msgstr ""
+msgstr "_Κύματα..."
 
 #: ../scripts/weave.scm.h:1
 msgid ""
 "Create a new layer filled with a weave effect to be used as an overlay or "
 "bump map"
 msgstr ""
+"Δημιουργία νέας στρώσης γεμάτης με εφέ κύματος για χρήση ως επικάλυψη ή "
+"χάρτης αναγλύφου"
 
 #: ../scripts/weave.scm.h:2
-#, fuzzy
 msgid "Ribbon spacing"
-msgstr "Διαστήματα"
+msgstr "Διάκενο κορδέλας"
 
 #: ../scripts/weave.scm.h:3
-#, fuzzy
 msgid "Ribbon width"
-msgstr "Πλάτος Εικονιδίου:"
+msgstr "Μήκος κορδέλας"
 
 #: ../scripts/weave.scm.h:4
-#, fuzzy
 msgid "Shadow darkness"
-msgstr "Εμφάνιση λαβής"
+msgstr "Σκοτείνιασμα σκιάς"
 
 #: ../scripts/weave.scm.h:5
-#, fuzzy
 msgid "Shadow depth"
-msgstr "Εμφάνιση Λεπτομερειών"
+msgstr "Βάθος σκιάς"
 
 #: ../scripts/weave.scm.h:6
-#, fuzzy
 msgid "Thread density"
-msgstr "Πυκνότητα"
+msgstr "Πυκνότητα νήματος"
 
 #: ../scripts/weave.scm.h:7
-#, fuzzy
 msgid "Thread intensity"
-msgstr "Τοπική θύελλα"
+msgstr "Ένταση νήματος"
 
 #: ../scripts/weave.scm.h:8
-#, fuzzy
 msgid "Thread length"
-msgstr "Διάρκεια"
+msgstr "Μήκος νήματος"
 
 #: ../scripts/weave.scm.h:9
 msgid "_Weave..."
-msgstr ""
+msgstr "Ύ_φανση..."
 
 #: ../scripts/web-browser.scm.h:1
 msgid "Bookmark to the GIMP web site"
-msgstr ""
+msgstr "Σελιδοδείκτης στον ιστότοπο GIMP"
 
 #: ../scripts/web-browser.scm.h:2
 msgid "Bookmark to the user manual"
-msgstr ""
+msgstr "Σελιδοδείκτης στο εγχειρίδιο χρήστη"
 
 #: ../scripts/web-browser.scm.h:3
-#, fuzzy
 msgid "Create and Use _Selections"
-msgstr "Κλάδεμα Επιλεγμένου"
+msgstr "Δημιουργία και χρήση _επιλογών"
 
 #: ../scripts/web-browser.scm.h:4
 msgid "Create, Open and Save _Files"
-msgstr ""
+msgstr "Δημιουργία, άνοιγμα και αποθήκευση _Αρχείων"
 
 #: ../scripts/web-browser.scm.h:5
 msgid "Drawing _Simple Objects"
-msgstr ""
+msgstr "_Σχεδίαση απλών αντικειμένων"
 
 #: ../scripts/web-browser.scm.h:6
 msgid "How to Use _Dialogs"
-msgstr ""
+msgstr "Χρήση _διαλόγων"
 
 #: ../scripts/web-browser.scm.h:7
 msgid "Plug-in _Registry"
-msgstr ""
+msgstr "Μητ_ρώο προσθέτων"
 
 #: ../scripts/web-browser.scm.h:8
 msgid "Using _Paths"
-msgstr ""
+msgstr "Χρήση μονο_πατιών"
 
 #: ../scripts/web-browser.scm.h:9
 msgid "_Basic Concepts"
-msgstr ""
+msgstr "_Βασικές έννοιες"
 
 #: ../scripts/web-browser.scm.h:10
 msgid "_Developer Web Site"
-msgstr ""
+msgstr "Ισ_τότοπος προγραμματιστών"
 
 #: ../scripts/web-browser.scm.h:11
 msgid "_Main Web Site"
-msgstr ""
+msgstr "_Κύρια ιστοσελίδα"
 
 #: ../scripts/web-browser.scm.h:12
 msgid "_Preparing your Images for the Web"
-msgstr ""
+msgstr "_Προετοιμασία των εικόνων σας για τον ιστό"
 
 #: ../scripts/web-browser.scm.h:13
 msgid "_User Manual Web Site"
-msgstr ""
+msgstr "Ιστότοπος εγχειριδίου _χρήστη"
 
 #: ../scripts/web-browser.scm.h:14
 msgid "_Working with Digital Camera Photos"
-msgstr ""
+msgstr "Ερ_γασία με φωτογραφίες ψηφιακής κάμερας"
 
 #: ../scripts/xach-effect.scm.h:1
 msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
 msgstr ""
+"Προσθήκη λεπτού ημιδιαφανούς 3διάστατου εφέ στην επιλεγμένη περιοχή (ή άλφα)"
 
 #: ../scripts/xach-effect.scm.h:2
-#, fuzzy
 msgid "Drop shadow X offset"
-msgstr "Σκιά:"
+msgstr "Αντιστάθμιση πίπτουσας σκιάς Χ"
 
 #: ../scripts/xach-effect.scm.h:3
-#, fuzzy
 msgid "Drop shadow Y offset"
-msgstr "Σκιά:"
+msgstr "Αντιστάθμιση πίπτουσας σκιάς Υ"
 
 #: ../scripts/xach-effect.scm.h:4
-#, fuzzy
 msgid "Drop shadow blur radius"
-msgstr "Αραιά βροχή"
+msgstr "Ακτίνα θόλωσης πίπτουσας σκιάς"
 
 #
 #: ../scripts/xach-effect.scm.h:5
-#, fuzzy
 msgid "Drop shadow color"
-msgstr "Χρώματα Γραφήματος"
+msgstr "Χρώμα πίπτουσας σκιάς"
 
 #: ../scripts/xach-effect.scm.h:6
-#, fuzzy
 msgid "Drop shadow opacity"
-msgstr "Σκιά:"
+msgstr "Αδιαφάνεια πίπτουσας σκιάς"
 
 #: ../scripts/xach-effect.scm.h:7
-#, fuzzy
 msgid "Highlight X offset"
-msgstr "Επιλεγμένο"
+msgstr "Μετατόπιση τονισμού Χ"
 
 #: ../scripts/xach-effect.scm.h:8
-#, fuzzy
 msgid "Highlight Y offset"
-msgstr "Επιλεγμένο"
+msgstr "Μετατόπιση τονισμού Υ"
 
 #: ../scripts/xach-effect.scm.h:10
-#, fuzzy
 msgid "Highlight opacity"
-msgstr "Τονισμένη ημέρα:"
+msgstr "Αδιαφάνεια τονισμού"
 
 #: ../scripts/xach-effect.scm.h:12
 msgid "_Xach-Effect..."
-msgstr ""
+msgstr "Εφέ _Xach..."
+
+#
+#, fuzzy
+#~ msgid "BG opacity"
+#~ msgstr "Διαφάνεια:"
+
+#
+#, fuzzy
+#~ msgid "Draw _HSV Graph..."
+#~ msgstr "Επιλογή Γραμματοσειράς"
+
+#, fuzzy
+#~ msgid "End X"
+#~ msgstr "Τέλος"
+
+#, fuzzy
+#~ msgid "End Y"
+#~ msgstr "Τέλος"
+
+#, fuzzy
+#~ msgid "From top-left to bottom-right"
+#~ msgstr "Αριστερά προς δεξιά"
+
+#, fuzzy
+#~ msgid "Graph scale"
+#~ msgstr "Κλίμακα του γκρι"
+
+#, fuzzy
+#~ msgid "Start X"
+#~ msgstr "Εκκίνηση"
+
+#, fuzzy
+#~ msgid "Start Y"
+#~ msgstr "Εκκίνηση"
 
 #, fuzzy
 #~ msgid "SIOD Output"
@@ -3602,7 +3388,3 @@ msgstr ""
 #, fuzzy
 #~ msgid "NOT SET"
 #~ msgstr " ΟΧΙ "
-
-#
-#~ msgid "Apply"
-#~ msgstr "Εφαρμογή"
