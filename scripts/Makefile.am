@@ -56,6 +56,7 @@ scripts = \
 	fuzzyborder.scm			\
 	gimp-headers.scm		\
 	gimp-labels.scm			\
+	gimp-online.scm			\
 	glossy.scm			\
 	glowing-logo.scm		\
 	gradient-bevel-logo.scm		\
@@ -107,7 +108,6 @@ scripts = \
 	unsharp-mask.scm		\
 	waves-anim.scm			\
 	weave.scm			\
-	web-browser.scm			\
 	xach-effect.scm
 
 test_scripts = \
