@@ -54,8 +54,6 @@ scripts = \
 	font-map.scm			\
 	frosty-logo.scm			\
 	fuzzyborder.scm			\
-	gimp-headers.scm		\
-	gimp-labels.scm			\
 	gimp-online.scm			\
 	glossy.scm			\
 	glowing-logo.scm		\
