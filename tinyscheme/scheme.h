@@ -5,6 +5,11 @@
 
 #include <stdio.h>
 #include <glib.h>
+#include <glib/gstdio.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*
  * Default values for #define'd symbols
@@ -99,6 +104,10 @@
 # define USE_INTERFACE 0
 #endif
 
+#ifndef SHOW_ERROR_LINE   /* Show error line in file */
+# define SHOW_ERROR_LINE 1
+#endif
+
 typedef struct scheme scheme;
 typedef struct cell *pointer;
 
@@ -130,7 +139,7 @@ SCHEME_EXPORT void ts_output_string        (TsOutputType    type,
                                             int             len);
 #endif
 
-SCHEME_EXPORT scheme *scheme_init_new();
+SCHEME_EXPORT scheme *scheme_init_new(void);
 SCHEME_EXPORT scheme *scheme_init_new_custom_alloc(func_alloc malloc, func_dealloc free);
 SCHEME_EXPORT int scheme_init(scheme *sc);
 SCHEME_EXPORT int scheme_init_custom_alloc(scheme *sc, func_alloc, func_dealloc);
@@ -140,9 +149,11 @@ void scheme_set_input_port_string(scheme *sc, char *start, char *past_the_end);
 SCHEME_EXPORT void scheme_set_output_port_file(scheme *sc, FILE *fin);
 void scheme_set_output_port_string(scheme *sc, char *start, char *past_the_end);
 SCHEME_EXPORT void scheme_load_file(scheme *sc, FILE *fin);
+SCHEME_EXPORT void scheme_load_named_file(scheme *sc, FILE *fin, const char *filename);
 SCHEME_EXPORT void scheme_load_string(scheme *sc, const char *cmd);
-void scheme_apply0(scheme *sc, const char *procname);
-SCHEME_EXPORT pointer scheme_apply1(scheme *sc, const char *procname, pointer);
+SCHEME_EXPORT pointer scheme_apply0(scheme *sc, const char *procname);
+SCHEME_EXPORT pointer scheme_call(scheme *sc, pointer func, pointer args);
+SCHEME_EXPORT pointer scheme_eval(scheme *sc, pointer obj);
 void scheme_set_external_data(scheme *sc, void *p);
 SCHEME_EXPORT void scheme_define(scheme *sc, pointer env, pointer symbol, pointer value);
 
@@ -155,12 +166,14 @@ pointer mk_symbol(scheme *sc, const char *name);
 pointer gensym(scheme *sc);
 pointer mk_string(scheme *sc, const char *str);
 pointer mk_counted_string(scheme *sc, const char *str, int len);
+pointer mk_empty_string(scheme *sc, int len, gunichar fill);
 pointer mk_character(scheme *sc, gunichar c);
 pointer mk_foreign_func(scheme *sc, foreign_func f);
 void    putcharacter(scheme *sc, gunichar c);
 void    putstr(scheme *sc, const char *s);
+int list_length(scheme *sc, pointer a);
+int eqv(pointer a, pointer b);
 
-SCHEME_EXPORT void set_safe_foreign (scheme *sc, pointer data);
 SCHEME_EXPORT pointer foreign_error (scheme *sc, const char *s, pointer a);
 
 #if USE_INTERFACE
@@ -195,7 +208,7 @@ struct scheme_interface {
   gunichar (*charvalue)(pointer p);
   int (*is_list)(scheme *sc, pointer p);
   int (*is_vector)(pointer p);
-  int (*list_length)(scheme *sc, pointer a);
+  int (*list_length)(scheme *sc, pointer p);
   long (*vector_length)(pointer vec);
   void (*fill_vector)(pointer vec, pointer elem);
   pointer (*vector_elem)(pointer vec, int ielem);
@@ -232,5 +245,29 @@ struct scheme_interface {
 };
 #endif
 
+#if !STANDALONE
+typedef struct scheme_registerable
+{
+  foreign_func  f;
+  char *       name;
+}
+scheme_registerable;
+
+void scheme_register_foreign_func(scheme * sc, scheme_registerable * sr);
+void scheme_register_foreign_func_list(scheme * sc,
+                                      scheme_registerable * list,
+                                      int n);
+
+#endif /* !STANDALONE */
+
+#ifdef __cplusplus
+}
 #endif
 
+#endif
+
+/*
+Local variables:
+c-file-style: "k&r"
+End:
+*/
