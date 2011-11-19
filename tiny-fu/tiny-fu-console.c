@@ -30,7 +30,7 @@
 
 #include "tinyscheme/scheme.h"
 
-#include "ts-wrapper.h"
+#include "scheme-wrapper.h"
 #include "tiny-fu-console.h"
 
 #include "tiny-fu-intl.h"

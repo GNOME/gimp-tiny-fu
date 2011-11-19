@@ -24,7 +24,7 @@
 #include <libgimp/gimpui.h>
 
 #include "tinyscheme/scheme-private.h"
-#include "ts-wrapper.h"
+#include "scheme-wrapper.h"
 
 #include "tiny-fu-types.h"
 

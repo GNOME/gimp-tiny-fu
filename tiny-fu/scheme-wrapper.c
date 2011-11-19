@@ -45,7 +45,7 @@
 #include "tiny-fu-scripts.h"
 #include "tiny-fu-server.h"
 
-#include "ts-wrapper.h"
+#include "scheme-wrapper.h"
 
 #undef cons
 

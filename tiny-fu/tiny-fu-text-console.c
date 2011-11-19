@@ -27,7 +27,7 @@
 
 #include "libgimp/gimp.h"
 
-#include "ts-wrapper.h"
+#include "scheme-wrapper.h"
 #include "tiny-fu-text-console.h"
 
 #include "tiny-fu-intl.h"

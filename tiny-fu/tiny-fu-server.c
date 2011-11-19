@@ -55,7 +55,7 @@
 
 #include "tiny-fu-intl.h"
 
-#include "ts-wrapper.h"
+#include "scheme-wrapper.h"
 #include "tiny-fu-server.h"
 
 #ifdef G_OS_WIN32
