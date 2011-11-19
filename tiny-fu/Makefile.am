@@ -31,8 +31,8 @@ tiny_fu_la_SOURCES = \
     tiny-fu-server.c       \
     tiny-fu-server.h       \
     tiny-fu.c              \
-    ts-wrapper.c           \
-    ts-wrapper.h
+    scheme-wrapper.c       \
+    scheme-wrapper.h
 
 tiny_fu_la_LDFLAGS = \
     -module          \
