@@ -5,9 +5,9 @@
 ; Copyright (c) 1997 Adrian Likins
 ; aklikins@eos.ncsu.edu
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -16,8 +16,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (define (script-fu-alien-glow-bullet radius
                                      glow-color
@@ -25,8 +24,12 @@
                                      flatten)
 
   (define (center-ellipse img cx cy rx ry op aa feather frad)
-    (gimp-ellipse-select img (- cx rx) (- cy ry) (+ rx rx) (+ ry ry)
-                         op aa feather frad)
+    (gimp-context-push)
+    (gimp-context-set-antialias aa)
+    (gimp-context-set-feather feather)
+    (gimp-context-set-feather-radius frad frad)
+    (gimp-image-select-ellipse img op (- cx rx) (- cy ry) (+ rx rx) (+ ry ry))
+    (gimp-context-pop)
   )
 
 
@@ -38,20 +41,20 @@
         (blend-start (+ half-radius (/ half-radius 2)))
         (bullet-layer (car (gimp-layer-new img
                                            diameter diameter RGBA-IMAGE
-                                           "Ruler" 100 NORMAL-MODE)))
+                                           _"Bullet" 100 NORMAL-MODE)))
         (glow-layer (car (gimp-layer-new img diameter diameter RGBA-IMAGE
-                                         "ALien Glow" 100 NORMAL-MODE)))
+                                         _"Alien Glow" 100 NORMAL-MODE)))
         (bg-layer (car (gimp-layer-new img diameter diameter RGB-IMAGE
-                                       "Background" 100 NORMAL-MODE)))
+                                       _"Background" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
 
     (gimp-image-undo-disable img)
     (gimp-image-resize img diameter diameter 0 0)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img glow-layer -1)
-    (gimp-image-add-layer img bullet-layer -1)
+    (gimp-image-insert-layer img bg-layer 0 1)
+    (gimp-image-insert-layer img glow-layer 0 -1)
+    (gimp-image-insert-layer img bullet-layer 0 -1)
 
     ; (gimp-layer-set-lock-alpha ruler-layer TRUE)
     (gimp-context-set-background bg-color)
@@ -106,4 +109,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-bullet"
-                         "<Toolbox>/Xtns/Web Page Themes/Alien Glow")
+                         "<Image>/File/Create/Web Page Themes/Alien Glow")

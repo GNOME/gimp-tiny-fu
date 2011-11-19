@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ; Copyright (C) 1997 Andy Thomas alt@picnic.demon.co.uk
 ;
@@ -98,7 +97,7 @@
       n_array)
   )
 
-  (let* ((img (car (gimp-drawable-get-image adraw)))
+  (let* ((img (car (gimp-item-get-image adraw)))
          (owidth (car (gimp-image-width img)))
          (oheight (car (gimp-image-height img)))
          (width (+ owidth (* 2 xsize)))
@@ -106,9 +105,11 @@
          (layer (car (gimp-layer-new img
                                      width height
                                      (car (gimp-drawable-type-with-alpha adraw))
-                                     "Border-Layer" 100 NORMAL-MODE))))
+                                     _"Border Layer" 100 NORMAL-MODE))))
 
     (gimp-context-push)
+    (gimp-context-set-antialias FALSE)
+    (gimp-context-set-feather FALSE)
 
     (gimp-image-undo-group-start img)
 
@@ -118,45 +119,33 @@
                        xsize
                        ysize)
 
-    (gimp-image-add-layer img layer 0)
+    (gimp-image-insert-layer img layer 0 0)
     (gimp-drawable-fill layer TRANSPARENT-FILL)
 
     (gimp-context-set-background (adjcolour colour dvalue))
-    (gimp-free-select img
-                      10
-                      (gen_top_array xsize ysize owidth oheight width height)
-                      CHANNEL-OP-REPLACE
-                      0
-                      0
-                      0.0)
+    (gimp-image-select-polygon img
+                               CHANNEL-OP-REPLACE
+                               10
+                               (gen_top_array xsize ysize owidth oheight width height))
     (gimp-edit-fill layer BACKGROUND-FILL)
     (gimp-context-set-background (adjcolour colour (/ dvalue 2)))
-    (gimp-free-select img
-                      10
-                      (gen_left_array xsize ysize owidth oheight width height)
-                      CHANNEL-OP-REPLACE
-                      0
-                      0
-                      0.0)
+    (gimp-image-select-polygon img
+                               CHANNEL-OP-REPLACE
+                               10
+                               (gen_left_array xsize ysize owidth oheight width height))
     (gimp-edit-fill layer BACKGROUND-FILL)
     (gimp-context-set-background (adjcolour colour (- 0 (/ dvalue 2))))
-    (gimp-free-select img
-                      10
-                      (gen_right_array xsize ysize owidth oheight width height)
-                      CHANNEL-OP-REPLACE
-                      0
-                      0
-                      0.0)
+    (gimp-image-select-polygon img
+                               CHANNEL-OP-REPLACE
+                               10
+                               (gen_right_array xsize ysize owidth oheight width height))
 
     (gimp-edit-fill layer BACKGROUND-FILL)
     (gimp-context-set-background (adjcolour colour (- 0 dvalue)))
-    (gimp-free-select img
-                      10
-                      (gen_bottom_array xsize ysize owidth oheight width height)
-                      CHANNEL-OP-REPLACE
-                      0
-                      0
-                      0.0)
+    (gimp-image-select-polygon img
+                               CHANNEL-OP-REPLACE
+                               10
+                               (gen_bottom_array xsize ysize owidth oheight width height))
 
     (gimp-edit-fill layer BACKGROUND-FILL)
     (gimp-selection-none img)

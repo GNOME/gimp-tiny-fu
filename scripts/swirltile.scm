@@ -21,7 +21,7 @@
 
     (gimp-image-undo-disable img)
 
-    (gimp-image-add-layer img layer-one 0)
+    (gimp-image-insert-layer img layer-one 0 0)
     (gimp-context-set-background bg-color)
     (gimp-edit-fill layer-one BACKGROUND-FILL)
     (plug-in-noisify RUN-NONINTERACTIVE img layer-one FALSE noise-level noise-level noise-level 1.0)
@@ -54,7 +54,7 @@
   "Adrian Likins"
   "1997"
   ""
-  SF-ADJUSTMENT _"Depth"           '(10 0 64 1 1 0 0)
+  SF-ADJUSTMENT _"Depth"           '(10 1 64 1 1 0 0)
   SF-ADJUSTMENT _"Azimuth"          '(135 0 360 1 10 0 0)
   SF-ADJUSTMENT _"Elevation"        '(45 0 90 1 10 0 0)
   SF-ADJUSTMENT _"Blur radius"      '(3 0 128 1 10 0 0)
@@ -66,4 +66,4 @@
 )
 
 (script-fu-menu-register "script-fu-swirl-tile"
-                         "<Toolbox>/Xtns/Patterns")
+                         "<Image>/File/Create/Patterns")

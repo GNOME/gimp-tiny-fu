@@ -6,9 +6,9 @@
 ; aklikins@eos.ncsu.edu
 ;
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -17,8 +17,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (define (script-fu-alien-glow-horizontal-ruler length
                                                height
@@ -30,22 +29,23 @@
         (border (/ height 4))
         (ruler-layer (car (gimp-layer-new img
                                           (+ length height) (+ height height)
-                                          RGBA-IMAGE "Ruler" 100 NORMAL-MODE)))
+                                          RGBA-IMAGE _"Bar" 100 NORMAL-MODE)))
         (glow-layer (car (gimp-layer-new img
                                          (+ length height) (+ height height)
-                                         RGBA-IMAGE "Alien Glow" 100 NORMAL-MODE)))
+                                         RGBA-IMAGE _"Alien Glow" 100 NORMAL-MODE)))
         (bg-layer (car (gimp-layer-new img
                                        (+ length height) (+ height height)
-                                       RGB-IMAGE "Background" 100 NORMAL-MODE)))
+                                       RGB-IMAGE _"Background" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
+    (gimp-context-set-feather FALSE)
 
     (gimp-image-undo-disable img)
     (gimp-image-resize img (+ length height) (+ height height) 0 0)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img glow-layer -1)
-    (gimp-image-add-layer img ruler-layer -1)
+    (gimp-image-insert-layer img bg-layer 0 1)
+    (gimp-image-insert-layer img glow-layer 0 -1)
+    (gimp-image-insert-layer img ruler-layer 0 -1)
 
    ; (gimp-layer-set-lock-alpha ruler-layer TRUE)
     (gimp-context-set-background bg-color)
@@ -53,9 +53,9 @@
     (gimp-edit-clear glow-layer)
     (gimp-edit-clear ruler-layer)
 
-    (gimp-rect-select img
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE
                       (/ height 2) (/ height 2)
-                      length height CHANNEL-OP-REPLACE FALSE 0)
+                      length height)
     (gimp-context-set-foreground '(79 79 79))
     (gimp-context-set-background '(0 0 0))
 
@@ -97,4 +97,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-horizontal-ruler"
-                         "<Toolbox>/Xtns/Web Page Themes/Alien Glow")
+                         "<Image>/File/Create/Web Page Themes/Alien Glow")

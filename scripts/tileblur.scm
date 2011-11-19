@@ -1,9 +1,9 @@
 ; Chris Gutteridge (cjg@ecs.soton.ac.uk)
 ; At ECS Dept, University of Southampton, England.
 
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-tile-blur inImage inLayer inRadius inVert inHoriz inType)
@@ -32,10 +31,13 @@
        )
     )
 
+    (gimp-context-push)
+    (gimp-context-set-feather FALSE)
     (gimp-image-undo-group-start theImage)
+
     (gimp-layer-resize theLayer (* 3 theWidth) (* 3 theHeight) 0 0)
 
-    (gimp-rect-select theImage 0 0 theWidth theHeight CHANNEL-OP-REPLACE 0 0)
+    (gimp-image-select-rectangle theImage CHANNEL-OP-REPLACE 0 0 theWidth theHeight)
     (gimp-edit-cut theLayer)
 
     (gimp-selection-none theImage)
@@ -48,9 +50,9 @@
     (gimp-selection-none theImage)
     (if (= inType 0)
         (plug-in-gauss-iir RUN-NONINTERACTIVE
-			   theImage theLayer inRadius inHoriz inVert)
+                           theImage theLayer inRadius inHoriz inVert)
         (plug-in-gauss-rle RUN-NONINTERACTIVE
-			   theImage theLayer inRadius inHoriz inVert)
+                           theImage theLayer inRadius inHoriz inVert)
     )
 
     (gimp-layer-resize theLayer
@@ -58,6 +60,7 @@
     (gimp-layer-set-offsets theLayer 0 0)
     (gimp-image-undo-group-end theImage)
     (gimp-displays-flush)
+    (gimp-context-pop)
   )
 )
 

@@ -11,9 +11,9 @@
 ;       Parts of this script from Sven Neuman's Drop-Shadow and
 ;       Seth Burgess's mkbrush scripts.
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -22,8 +22,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-selection-to-brush image
@@ -38,22 +37,23 @@
         (select-offset-y  (caddr selection-bounds))
         (selection-width  (- (cadr (cddr selection-bounds))  select-offset-x))
         (selection-height (- (caddr (cddr selection-bounds)) select-offset-y))
-        (from-selection)
-        (active-selection)
-        (brush-draw-type)
-        (brush-image-type)
-        (brush-image)
-        (brush-draw)
-        (filename2)
+        (from-selection 0)
+        (active-selection 0)
+        (brush-draw-type 0)
+        (brush-image-type 0)
+        (brush-image 0)
+        (brush-draw 0)
+        (filename2 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable image)
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
-          (gimp-selection-layer-alpha drawable)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
           (set! from-selection FALSE)
         )
         (begin
@@ -87,7 +87,7 @@
                                100
                                NORMAL-MODE)))
 
-    (gimp-image-add-layer brush-image brush-draw 0)
+    (gimp-image-insert-layer brush-image brush-draw 0 0)
 
     (gimp-selection-none brush-image)
 
@@ -112,7 +112,7 @@
 
     (if (= from-selection TRUE)
         (begin
-          (gimp-selection-load active-selection)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
           (gimp-image-remove-channel image active-selection)
         )
     )

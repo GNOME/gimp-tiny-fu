@@ -32,18 +32,19 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable img)
     (gimp-image-undo-disable distortion-img)
     (gimp-image-resize img width height 0 0)
-    (gimp-image-add-layer img dist-text-layer -1)
-    (gimp-image-add-layer img dist-frame-layer -1)
-    (gimp-image-add-layer distortion-img distortion-layer -1)
+    (gimp-image-insert-layer img dist-text-layer 0 -1)
+    (gimp-image-insert-layer img dist-frame-layer 0 -1)
+    (gimp-image-insert-layer distortion-img distortion-layer 0 -1)
     (gimp-selection-none img)
     (gimp-edit-clear dist-text-layer)
     (gimp-edit-clear dist-frame-layer)
     ;; get the text shape
-    (gimp-selection-layer-alpha text-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE text-layer)
     ;; fill it with the specified color
     (gimp-context-set-foreground text-color)
     (gimp-edit-fill dist-text-layer FOREGROUND-FILL)
@@ -103,4 +104,4 @@
 )
 
 (script-fu-menu-register "script-fu-i26-gunya2"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

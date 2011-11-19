@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ; chalk.scm  version 0.11  10/10/97
 ;
@@ -33,10 +32,11 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-feather FALSE)
 
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img bg-layer 1)
+    (script-fu-util-image-add-layers img bg-layer)
     (gimp-context-set-background bg-color)
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
 
@@ -46,13 +46,19 @@
     (plug-in-spread RUN-NONINTERACTIVE img logo-layer 5.0 5.0)
     (plug-in-ripple RUN-NONINTERACTIVE img logo-layer 27 2 0 0 0 TRUE TRUE)
     (plug-in-ripple RUN-NONINTERACTIVE img logo-layer 27 2 1 0 0 TRUE TRUE)
-    (plug-in-sobel RUN-NONINTERACTIVE img logo-layer TRUE TRUE TRUE)
-    (gimp-levels logo-layer 0 0 120 3.5 0 255)
 
-    ; work-around for sobel edge detect screw-up (why does this happen?)
-    ; the top line of the image has some garbage instead of the bgcolor
-    (gimp-rect-select img 0 0 width 1 CHANNEL-OP-ADD FALSE 0)
-    (gimp-edit-clear logo-layer)
+    ; sobel doesn't work on a layer with transparency, so merge layers:
+    (let ((logo-layer
+           (car (gimp-image-merge-down img logo-layer EXPAND-AS-NECESSARY))))
+      (plug-in-sobel RUN-NONINTERACTIVE img logo-layer TRUE TRUE TRUE)
+      (gimp-levels logo-layer 0 0 120 3.5 0 255)
+
+      ; work-around for sobel edge detect screw-up (why does this happen?)
+      ; the top line of the image has some garbage instead of the bgcolor
+      (gimp-image-select-rectangle img CHANNEL-OP-ADD 0 0 width 1)
+      (gimp-edit-clear logo-layer)
+      )
+
     (gimp-selection-none img)
 
     (gimp-context-pop)
@@ -121,10 +127,10 @@
   ""
   SF-STRING     _"Text"               "CHALK"
   SF-ADJUSTMENT _"Font size (pixels)" '(150 2 1000 1 10 0 1)
-  SF-FONT       _"Font"               "Cooper"
+  SF-FONT       _"Font"               "Sans"
   SF-COLOR      _"Background color"   "black"
   SF-COLOR      _"Chalk color"        "white"
 )
 
 (script-fu-menu-register "script-fu-chalk-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

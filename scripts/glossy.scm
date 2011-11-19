@@ -8,9 +8,9 @@
 ; glossy gives a glossy outlook to your fonts (unlogical name, isn't it?)
 ; Copyright (C) 1998 Hrvoje Horvat
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -19,8 +19,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (define (apply-glossy-logo-effect img
                                   logo-layer
@@ -47,23 +46,23 @@
         (posy (- (cadr (gimp-drawable-offsets logo-layer))))
         (bg-layer (car (gimp-layer-new img width height RGB-IMAGE "Background" 100 NORMAL-MODE)))
         (grow-me (car (gimp-layer-copy logo-layer TRUE)))
-        (dont-drop-me)
+        (dont-drop-me 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-drawable-set-name grow-me "Grow-me")
-    (gimp-image-add-layer img grow-me 1)
+    (script-fu-util-image-add-layers img grow-me bg-layer)
+    (gimp-item-set-name grow-me "Grow-me")
     (gimp-layer-translate grow-me posx posy)
-    (gimp-image-add-layer img bg-layer 2)
 
     (gimp-context-set-background bg-color)
     (gimp-selection-all img)
     (gimp-edit-bucket-fill bg-layer BG-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
     (gimp-selection-none img)
 
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
 
 ; if we are going to use transparent gradients for text, we will (maybe) need to uncomment this
 ; this clears black letters first so you don't end up with black where the transparent should be
@@ -74,7 +73,6 @@
         (gimp-context-set-pattern pattern-text)
         (gimp-edit-bucket-fill logo-layer
                                PATTERN-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
-        (gimp-context-set-pattern old-patterns)
       )
     )
 
@@ -92,7 +90,7 @@
 
     (gimp-selection-none img)
 
-    (gimp-selection-layer-alpha grow-me)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE grow-me)
     (gimp-selection-grow img grow-size)
 
 ; if we are going to use transparent gradients for outline, we will (maybe) need to uncomment this
@@ -106,7 +104,6 @@
         (gimp-edit-bucket-fill grow-me
                                PATTERN-BUCKET-FILL NORMAL-MODE 100
                                0 FALSE 0 0)
-        (gimp-context-set-pattern old-patterns)
       )
     )
 
@@ -124,24 +121,26 @@
 
     (gimp-selection-none img)
 
-    (plug-in-bump-map RUN-NONINTERACTIVE img grow-me logo-layer
+    (plug-in-bump-map (if (= noninteractive TRUE)
+        RUN-NONINTERACTIVE
+        RUN-INTERACTIVE)
+          img grow-me logo-layer
                       110.0 45.0 3 0 0 0 0 TRUE FALSE 0)
     (gimp-layer-set-mode logo-layer SCREEN-MODE)
 
     (if (= use-pattern-overlay TRUE)
       (begin
-        (gimp-selection-layer-alpha grow-me)
+        (gimp-image-select-item img CHANNEL-OP-REPLACE grow-me)
         (gimp-context-set-pattern pattern-overlay)
         (gimp-edit-bucket-fill grow-me PATTERN-BUCKET-FILL
                                OVERLAY-MODE 100 0 FALSE 0 0)
-        (gimp-context-set-pattern old-patterns)
         (gimp-selection-none img)
       )
     )
 
     (if (= shadow-toggle TRUE)
       (begin
-        (gimp-selection-layer-alpha logo-layer)
+        (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
         (set! dont-drop-me (car (script-fu-drop-shadow img logo-layer
                                                        s-offset-x s-offset-y
                                                        15 '(0 0 0) 80 TRUE)))
@@ -293,4 +292,4 @@
 )
 
 (script-fu-menu-register "script-fu-glossy-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ;
 ; slide.scm   version 0.41   2004/03/28
@@ -97,6 +96,7 @@
         )
 
   (gimp-context-push)
+  (gimp-context-set-feather FALSE)
 
   (gimp-image-undo-disable image)
 
@@ -120,12 +120,12 @@
 
 ; add the background layer
   (gimp-drawable-fill bg-layer BACKGROUND-FILL)
-  (gimp-image-add-layer image bg-layer -1)
+  (gimp-image-insert-layer image bg-layer 0 -1)
 
 ; add the film layer
   (gimp-context-set-background '(0 0 0))
   (gimp-drawable-fill film-layer BACKGROUND-FILL)
-  (gimp-image-add-layer image film-layer -1)
+  (gimp-image-insert-layer image film-layer 0 -1)
 
 ; add the text
   (gimp-context-set-foreground font-color)
@@ -186,22 +186,18 @@
 
     (gimp-selection-none image)
     (while (< hole 8)
-           (gimp-rect-select image
-                             (* hole-space hole)
-                             top-y
-                             hole-width
-                             hole-height
-                             CHANNEL-OP-ADD
-                             FALSE
-                             0)
-           (gimp-rect-select image
-                             (* hole-space hole)
-                             bottom-y
-                             hole-width
-                             hole-height
-                             CHANNEL-OP-ADD
-                             FALSE
-                             0)
+           (gimp-image-select-rectangle image
+                                        CHANNEL-OP-ADD
+                                        (* hole-space hole)
+                                        top-y
+                                        hole-width
+                                        hole-height)
+           (gimp-image-select-rectangle image
+                                        CHANNEL-OP-ADD
+                                        (* hole-space hole)
+                                        bottom-y
+                                        hole-width
+                                        hole-height)
            (set! hole (+ hole 1))
     )
 
@@ -215,8 +211,8 @@
   )
 
 ; reorder the layers
-  (gimp-image-raise-layer image pic-layer)
-  (gimp-image-raise-layer image pic-layer)
+  (gimp-image-raise-item image pic-layer)
+  (gimp-image-raise-item image pic-layer)
 
 ; eventually rotate the whole thing back
   (if (< ratio 1)

@@ -25,19 +25,19 @@
         (height (car (gimp-drawable-height drawable)))
         (ripple-image (car (gimp-image-new width height GRAY)))
         (ripple-layer (car (gimp-layer-new ripple-image width height GRAY-IMAGE "Ripple Texture" 100 NORMAL-MODE)))
-        (rippletiled-ret)
-        (rippletiled-image)
-        (rippletiled-layer)
-        (remaining-frames)
-        (xpos)
-        (ypos)
-        (xoffset)
-        (yoffset)
-        (dup-image)
-        (layer-name)
-        (this-image)
-        (this-layer)
-        (dup-layer)
+        (rippletiled-ret 0)
+        (rippletiled-image 0)
+        (rippletiled-layer 0)
+        (remaining-frames 0)
+        (xpos 0)
+        (ypos 0)
+        (xoffset 0)
+        (yoffset 0)
+        (dup-image 0)
+        (layer-name 0)
+        (this-image 0)
+        (this-layer 0)
+        (dup-layer 0)
         )
 
     (gimp-context-push)
@@ -46,7 +46,7 @@
 
     (gimp-image-undo-disable ripple-image)
     (gimp-context-set-background '(127 127 127))
-    (gimp-image-add-layer ripple-image ripple-layer 0)
+    (gimp-image-insert-layer ripple-image ripple-layer 0 0)
     (gimp-edit-fill ripple-layer BACKGROUND-FILL)
     (plug-in-noisify RUN-NONINTERACTIVE ripple-image ripple-layer FALSE 1.0 1.0 1.0 0.0)
     ; tile noise
@@ -89,7 +89,7 @@
       (set! this-layer (car (gimp-layer-new out-imagestack
                                             width height RGB
                                             layer-name 100 NORMAL-MODE)))
-      (gimp-image-add-layer out-imagestack this-layer 0)
+      (gimp-image-insert-layer out-imagestack this-layer 0 0)
 
       (copy-layer-ripple out-imagestack this-layer img drawable)
 

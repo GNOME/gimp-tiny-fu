@@ -10,9 +10,9 @@
 ; Federico Mena Quintero
 ; federico@nuclecu.unam.mx
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -21,8 +21,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (define (script-fu-alien-glow-right-arrow size
                                           orientation
@@ -116,30 +115,31 @@
         (offset (/ size 6))
         (ruler-layer (car (gimp-layer-new img
                                           size size RGBA-IMAGE
-                                          "Ruler" 100 NORMAL-MODE)))
+                                          _"Arrow" 100 NORMAL-MODE)))
         (glow-layer (car (gimp-layer-new img
                                          size size RGBA-IMAGE
-                                         "Alien Glow" 100 NORMAL-MODE)))
+                                         _"Alien Glow" 100 NORMAL-MODE)))
         (bg-layer (car (gimp-layer-new img
                                        size size RGB-IMAGE
-                                       "Background" 100 NORMAL-MODE)))
+                                       _"Background" 100 NORMAL-MODE)))
         (big-arrow (point-list->double-array
                     (rotate-points (make-arrow size offset)
                                     size orientation)))
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable img)
     ;(gimp-image-resize img (+ length height) (+ height height) 0 0)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img glow-layer -1)
-    (gimp-image-add-layer img ruler-layer -1)
+    (gimp-image-insert-layer img bg-layer 0 1)
+    (gimp-image-insert-layer img glow-layer 0 -1)
+    (gimp-image-insert-layer img ruler-layer 0 -1)
 
     (gimp-edit-clear glow-layer)
     (gimp-edit-clear ruler-layer)
 
-    (gimp-free-select img 6 big-arrow CHANNEL-OP-REPLACE TRUE FALSE 0)
+    (gimp-image-select-polygon img CHANNEL-OP-REPLACE 6 big-arrow)
 
     (gimp-context-set-foreground '(103 103 103))
     (gimp-context-set-background '(0 0 0))
@@ -186,4 +186,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-right-arrow"
-                         "<Toolbox>/Xtns/Web Page Themes/Alien Glow")
+                         "<Image>/File/Create/Web Page Themes/Alien Glow")

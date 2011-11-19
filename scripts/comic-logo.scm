@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ;  Comic Book Logo v0.1  04/08/98
 ;  by Brian McFee
@@ -40,13 +39,11 @@
     (gimp-context-push)
 
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img white-layer 1)
+    (script-fu-util-image-add-layers img black-layer white-layer bg-layer)
     (gimp-layer-translate white-layer posx posy)
-    (gimp-drawable-set-name white-layer "White")
-    (gimp-image-add-layer img black-layer 1)
+    (gimp-item-set-name white-layer "White")
     (gimp-layer-translate black-layer posx posy)
-    (gimp-drawable-set-name black-layer "Black")
+    (gimp-item-set-name black-layer "Black")
 
     (gimp-selection-all img)
     (gimp-context-set-background bg-color)
@@ -169,4 +166,4 @@
 )
 
 (script-fu-menu-register "script-fu-comic-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

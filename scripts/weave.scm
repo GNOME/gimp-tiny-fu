@@ -5,9 +5,9 @@
 ; Copyright (C) 1997 Federico Mena Quintero
 ; federico@nuclecu.unam.mx
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -16,8 +16,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 ; Copies the specified rectangle from/to the specified drawable
@@ -30,7 +29,7 @@
                         height
                         dest-x
                         dest-y)
-  (gimp-rect-select img x1 y1 width height CHANNEL-OP-REPLACE FALSE 0)
+  (gimp-image-select-rectangle img CHANNEL-OP-REPLACE x1 y1 width height)
   (gimp-edit-copy drawable)
   (let ((floating-sel (car (gimp-edit-paste drawable FALSE))))
     (gimp-layer-set-offsets floating-sel dest-x dest-y)
@@ -48,8 +47,9 @@
          (img (car (gimp-image-new tile-size tile-size RGB)))
          (drawable (car (gimp-layer-new img tile-size tile-size RGB-IMAGE
                                         "Weave tile" 100 NORMAL-MODE))))
+
     (gimp-image-undo-disable img)
-    (gimp-image-add-layer img drawable 0)
+    (gimp-image-insert-layer img drawable 0 0)
 
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill drawable BACKGROUND-FILL)
@@ -59,14 +59,12 @@
     (gimp-context-set-foreground '(255 255 255))
     (gimp-context-set-background (list darkness darkness darkness))
 
-    (gimp-rect-select img
-                      0
-                      ribbon-spacing
-                      (+ (* 2 ribbon-spacing) ribbon-width)
-                      ribbon-width
-                      CHANNEL-OP-REPLACE
-                      FALSE
-                      0)
+    (gimp-image-select-rectangle img
+                                 CHANNEL-OP-REPLACE
+                                 0
+                                 ribbon-spacing
+                                 (+ (* 2 ribbon-spacing) ribbon-width)
+                                 ribbon-width)
 
     (gimp-edit-blend drawable FG-BG-RGB-MODE NORMAL-MODE
                      GRADIENT-BILINEAR 100 (- 100 shadow-depth) REPEAT-NONE FALSE
@@ -75,14 +73,12 @@
 
     ; Create main vertical ribbon
 
-    (gimp-rect-select img
-                      (+ (* 2 ribbon-spacing) ribbon-width)
-                      0
-                      ribbon-width
-                      (+ (* 2 ribbon-spacing) ribbon-width)
-                      CHANNEL-OP-REPLACE
-                      FALSE
-                      0)
+    (gimp-image-select-rectangle img
+                                 CHANNEL-OP-REPLACE
+                                 (+ (* 2 ribbon-spacing) ribbon-width)
+                                 0
+                                 ribbon-width
+                                 (+ (* 2 ribbon-spacing) ribbon-width))
 
     (gimp-edit-blend drawable FG-BG-RGB-MODE NORMAL-MODE
                      GRADIENT-BILINEAR 100 (- 100 shadow-depth) REPEAT-NONE FALSE
@@ -132,7 +128,6 @@
     ; Done
 
     (gimp-image-undo-enable img)
-
     (list img drawable)))
 
 ; Creates a complete weaving mask
@@ -172,14 +167,14 @@
          (drawable (car (gimp-layer-new img tile-size tile-size RGB-IMAGE
                                         "Mask" 100 NORMAL-MODE))))
     (gimp-image-undo-disable img)
-    (gimp-image-add-layer img drawable 0)
+    (gimp-image-insert-layer img drawable 0 0)
 
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill drawable BACKGROUND-FILL)
 
-    (gimp-rect-select img r1-x1 r1-y1 r1-width r1-height CHANNEL-OP-REPLACE FALSE 0)
-    (gimp-rect-select img r2-x1 r2-y1 r2-width r2-height CHANNEL-OP-ADD FALSE 0)
-    (gimp-rect-select img r3-x1 r3-y1 r3-width r3-height CHANNEL-OP-ADD FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE r1-x1 r1-y1 r1-width r1-height)
+    (gimp-image-select-rectangle img CHANNEL-OP-ADD r2-x1 r2-y1 r2-width r2-height)
+    (gimp-image-select-rectangle img CHANNEL-OP-ADD r3-x1 r3-y1 r3-width r3-height)
 
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill drawable BACKGROUND-FILL)
@@ -275,7 +270,7 @@
   (let* ((drawable (car (gimp-layer-new img width height RGBA-IMAGE
                                         "Threads" 100 NORMAL-MODE)))
          (dense (/ density 100.0)))
-    (gimp-image-add-layer img drawable -1)
+    (gimp-image-insert-layer img drawable 0 -1)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill drawable BACKGROUND-FILL)
     (plug-in-noisify RUN-NONINTERACTIVE img drawable FALSE dense dense dense dense)
@@ -352,7 +347,7 @@
                          thread-density
                          thread-intensity)
   (let* (
-        (d-img (car (gimp-drawable-get-image drawable)))
+        (d-img (car (gimp-item-get-image drawable)))
         (d-width (car (gimp-drawable-width drawable)))
         (d-height (car (gimp-drawable-height drawable)))
         (d-offsets (gimp-drawable-offsets drawable))
@@ -371,6 +366,7 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-feather FALSE)
 
     (gimp-selection-all w-img)
     (gimp-edit-copy w-layer)

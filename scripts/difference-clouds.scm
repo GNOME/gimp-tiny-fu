@@ -1,9 +1,9 @@
 ; Plugin for the GNU Image Manipulation Program
 ; Copyright (C) 2006 Martin Nordholts
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ; Renders Difference Clouds onto a layer, i.e. solid noise merged down with the
 ; Difference Mode
@@ -39,7 +38,7 @@
     (gimp-image-undo-group-start image)
 
     ; Add the cloud layer above the current layer
-    (gimp-image-add-layer image diff-clouds -1)
+    (gimp-image-insert-layer image diff-clouds 0 -1)
 
     ; Clear the layer (so there are no noise in it)
     (gimp-drawable-fill diff-clouds TRANSPARENT-FILL)
@@ -49,7 +48,7 @@
     (set! offset-y (+ draw-offset-y sel-offset-y))
 
     ; Offset the clouds layer
-    (if (gimp-drawable-is-layer drawable)
+    (if (gimp-item-is-layer drawable)
       (gimp-layer-translate diff-clouds offset-x offset-y))
 
     ; Show the solid noise dialog

@@ -7,9 +7,9 @@
 ; 3d-outline creates outlined border of a text with patterns
 ; Copyright (C) 1998 Hrvoje Horvat
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -18,8 +18,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (define (apply-3d-outline-logo-effect img
                                       logo-layer
@@ -35,59 +34,62 @@
         (height (car (gimp-drawable-height logo-layer)))
         (bg-layer (car (gimp-layer-new img width height
                                        RGB-IMAGE "Background" 100 NORMAL-MODE)))
-        (pattern (car (gimp-layer-new img width height
-                                      RGBA-IMAGE "Pattern" 100 NORMAL-MODE)))
-        (layer2)
-        (layer3)
-        (pattern-mask)
-        (floating-sel)
+        (pattern-layer (car (gimp-layer-new img width height
+                                       RGBA-IMAGE "Pattern" 100 NORMAL-MODE)))
+        (alpha-layer 0)
+        (shadow-layer 0)
+        (pattern-mask 0)
+        (floating-sel 0)
         )
 
     (gimp-context-push)
 
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img pattern 1)
-    (gimp-image-add-layer img bg-layer 2)
+    (script-fu-util-image-add-layers img pattern-layer bg-layer)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
-    (gimp-edit-clear pattern)
+    (gimp-edit-clear pattern-layer)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
     (gimp-context-set-foreground '(0 0 0))
     (gimp-edit-fill logo-layer FOREGROUND-FILL)
     (gimp-layer-set-lock-alpha logo-layer FALSE)
     (plug-in-gauss-iir RUN-NONINTERACTIVE img logo-layer outline-blur-radius TRUE TRUE)
 
-    (gimp-drawable-set-visible pattern FALSE)
-    (set! layer2 (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))
-    (plug-in-edge RUN-NONINTERACTIVE img layer2 2 1 0)
-    (set! layer3 (car (gimp-layer-copy layer2 TRUE)))
-    (gimp-image-add-layer img layer3 2)
-    (plug-in-gauss-iir RUN-NONINTERACTIVE img layer2 bump-map-blur-radius TRUE TRUE)
+    (gimp-item-set-visible pattern-layer FALSE)
+    (set! alpha-layer (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))
+    (plug-in-edge RUN-NONINTERACTIVE img alpha-layer 2 1 0)
+    (gimp-item-set-name alpha-layer "Bump map")
+    (set! shadow-layer (car (gimp-layer-copy alpha-layer TRUE)))
+    (gimp-item-set-name shadow-layer "Edges")
+    (script-fu-util-image-add-layers img shadow-layer)
+    (plug-in-gauss-iir RUN-NONINTERACTIVE img alpha-layer bump-map-blur-radius TRUE TRUE)
 
     (gimp-selection-all img)
     (gimp-context-set-pattern text-pattern)
-    (gimp-edit-bucket-fill pattern
+    (gimp-edit-bucket-fill pattern-layer
                            PATTERN-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
-    (plug-in-bump-map noninteractive img pattern layer2
+    (plug-in-bump-map noninteractive img pattern-layer alpha-layer
                       110.0 45.0 4 0 0 0 0 TRUE FALSE 0)
 
-    (set! pattern-mask (car (gimp-layer-create-mask pattern ADD-ALPHA-MASK)))
-    (gimp-layer-add-mask pattern pattern-mask)
+    (set! pattern-mask (car (gimp-layer-create-mask pattern-layer ADD-ALPHA-MASK)))
+    (gimp-layer-add-mask pattern-layer pattern-mask)
 
     (gimp-selection-all img)
-    (gimp-edit-copy layer3)
+    (gimp-edit-copy shadow-layer)
     (set! floating-sel (car (gimp-edit-paste pattern-mask FALSE)))
     (gimp-floating-sel-anchor floating-sel)
 
-    (gimp-layer-remove-mask pattern MASK-APPLY)
-    (gimp-invert layer3)
-    (plug-in-gauss-iir RUN-NONINTERACTIVE img layer3 shadow-blur-radius TRUE TRUE)
+    (gimp-layer-remove-mask pattern-layer MASK-APPLY)
+    (gimp-invert shadow-layer)
+    (gimp-item-set-name shadow-layer "Drop shadow")
+    (plug-in-gauss-iir RUN-NONINTERACTIVE img shadow-layer shadow-blur-radius TRUE TRUE)
 
-    (gimp-drawable-offset layer3 0 1 s-offset-x s-offset-y)
+    (gimp-drawable-offset shadow-layer
+                          FALSE OFFSET-BACKGROUND s-offset-x s-offset-y)
 
-    (gimp-drawable-set-visible layer2 FALSE)
-    (gimp-drawable-set-visible pattern TRUE)
+    (gimp-item-set-visible alpha-layer FALSE)
+    (gimp-item-set-visible pattern-layer TRUE)
     ;;(set! final (car (gimp-image-flatten img)))
 
     (gimp-context-pop)
@@ -180,4 +182,4 @@
 )
 
 (script-fu-menu-register "script-fu-3d-outline-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

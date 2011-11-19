@@ -26,23 +26,23 @@
         ;--- main variable: "bl-x" runs from 0 to layer-width
         (bl-x 0)
         (frame-nr 0)
-        (img)
-        (source-layer)
-        (bg-source-layer)
-        (source-layer-width)
-        (bg-layer)
-        (bg-layer-name)
-        (bl-layer)
-        (bl-layer-name)
-        (bl-mask)
-        (bl-layer-width)
-        (bl-height)
-        (bl-x-off)
-        (bl-y-off)
-        (nofadeout-bl-x-off)
-        (nofadeout-bl-width)
-        (blended-layer)
-        (img-display)
+        (img 0)
+        (source-layer 0)
+        (bg-source-layer 0)
+        (source-layer-width 0)
+        (bg-layer 0)
+        (bg-layer-name 0)
+        (bl-layer 0)
+        (bl-layer-name 0)
+        (bl-mask 0)
+        (bl-layer-width 0)
+        (bl-height 0)
+        (bl-x-off 0)
+        (bl-y-off 0)
+        (nofadeout-bl-x-off 0)
+        (nofadeout-bl-width 0)
+        (blended-layer 0)
+        (img-display 0)
         )
 
     (if (< speed 1)
@@ -55,6 +55,7 @@
         ;--- main program structure starts here, begin of "if-1"
         (begin
           (gimp-context-push)
+          (gimp-context-set-defaults)
 
           (set! img (car (gimp-image-duplicate org-img)))
           (gimp-image-undo-disable img)
@@ -65,8 +66,8 @@
           (set! source-layer-width (car (gimp-drawable-width  source-layer)))
 
           ;--- hide layers, cause we want to "merge visible layers" later
-          (gimp-drawable-set-visible source-layer FALSE)
-          (gimp-drawable-set-visible bg-source-layer     FALSE)
+          (gimp-item-set-visible source-layer FALSE)
+          (gimp-item-set-visible bg-source-layer     FALSE)
 
           ;--- process image horizontal with pixel-speed
           (while (< bl-x (+ source-layer-width bl-width))
@@ -74,14 +75,14 @@
               (set! bl-layer-name (string-append "fr-nr"
                                                  (number->string frame-nr 10) ) )
 
-              (gimp-image-add-layer img bl-layer -2)
-              (gimp-drawable-set-name bl-layer bl-layer-name)
-              (gimp-drawable-set-visible bl-layer TRUE)
+              (gimp-image-insert-layer img bl-layer 0 -2)
+              (gimp-item-set-name bl-layer bl-layer-name)
+              (gimp-item-set-visible bl-layer TRUE)
               (gimp-layer-set-lock-alpha bl-layer TRUE)
               (gimp-layer-add-alpha bl-layer)
 
               ;--- add an alpha mask for blending and select it
-              (gimp-selection-layer-alpha bl-layer)
+              (gimp-image-select-item img CHANNEL-OP-REPLACE bl-layer)
               (set! bl-mask (car (gimp-layer-create-mask bl-layer ADD-BLACK-MASK)))
               (gimp-layer-add-mask bl-layer bl-mask)
 
@@ -93,18 +94,18 @@
               (set! bl-y-off             (cadr (gimp-drawable-offsets bl-layer)))
 
               ;--- select a rectangular area to blend
-              (gimp-rect-select img bl-x-off bl-y-off bl-width bl-height CHANNEL-OP-REPLACE 0 0)
+              (gimp-image-select-rectangle img CHANNEL-OP-REPLACE bl-x-off bl-y-off bl-width bl-height)
               ;--- select at least 1 pixel!
-              (gimp-rect-select img bl-x-off bl-y-off (+ bl-width 1) bl-height CHANNEL-OP-ADD 0 0)
+              (gimp-image-select-rectangle img CHANNEL-OP-ADD bl-x-off bl-y-off (+ bl-width 1) bl-height)
 
               (if (= fadeout FALSE)
                   (begin
                     (set! nofadeout-bl-x-off (car (gimp-drawable-offsets bl-layer)))
                     (set! nofadeout-bl-width (+ nofadeout-bl-x-off bl-x))
                     (set! nofadeout-bl-width (max nofadeout-bl-width 1))
-                    (gimp-rect-select img nofadeout-bl-x-off bl-y-off
-                                      nofadeout-bl-width bl-height
-                                      CHANNEL-OP-REPLACE 0 0)
+                    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE
+                                                 nofadeout-bl-x-off bl-y-off
+                                                 nofadeout-bl-width bl-height)
                   )
               )
 
@@ -148,7 +149,7 @@
                    (- (+ bl-x-off bl-width) after-glow) 0)
 
           ;--- add corona effect
-          (gimp-selection-layer-alpha bl-layer)
+          (gimp-image-select-item img CHANNEL-OP-REPLACE bl-layer)
           (gimp-selection-sharpen img)
           (gimp-selection-grow img corona-width)
           (gimp-layer-set-lock-alpha bl-layer FALSE)
@@ -164,16 +165,16 @@
 
               ;--- merge with bg layer
               (set! bg-layer (car (gimp-layer-copy bg-source-layer FALSE)))
-              (gimp-image-add-layer img bg-layer -1)
-              (gimp-image-lower-layer img bg-layer)
+              (gimp-image-insert-layer img bg-layer 0 -1)
+              (gimp-image-lower-item img bg-layer)
               (set! bg-layer-name (string-append "bg-"
                                                  (number->string frame-nr 10)))
-              (gimp-drawable-set-name bg-layer bg-layer-name)
-              (gimp-drawable-set-visible bg-layer TRUE)
+              (gimp-item-set-name bg-layer bg-layer-name)
+              (gimp-item-set-visible bg-layer TRUE)
               (set! blended-layer (car (gimp-image-merge-visible-layers img
                                         CLIP-TO-IMAGE)))
               ;(set! blended-layer bl-layer)
-              (gimp-drawable-set-visible blended-layer FALSE)
+              (gimp-item-set-visible blended-layer FALSE)
 
               ;--- end of "while" loop
               (set! frame-nr (+ frame-nr 1))
@@ -196,7 +197,7 @@
               )
           )
 
-          (gimp-drawable-set-visible (aref (cadr (gimp-image-get-layers img)) 0)
+          (gimp-item-set-visible (aref (cadr (gimp-image-get-layers img)) 0)
                                   TRUE)
           (gimp-image-undo-enable img)
           (gimp-image-clean-all img)

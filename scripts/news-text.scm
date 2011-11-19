@@ -4,9 +4,9 @@
 ;
 ; Based on alien glow code from Adrian Likins
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -15,8 +15,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-newsprint-text string font font-size cell-size
@@ -33,10 +32,11 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable img)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img text-layer -1)
+    (gimp-image-insert-layer img bg-layer 0 1)
+    (gimp-image-insert-layer img text-layer 0 -1)
 
     (gimp-context-set-background bg-color)
     (gimp-edit-clear bg-layer)
@@ -51,7 +51,7 @@
     (set! text-mask (car (gimp-layer-create-mask text-layer ADD-ALPHA-MASK)))
     (gimp-layer-add-mask text-layer text-mask)
 
-    (gimp-selection-layer-alpha text-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE text-layer)
     (gimp-context-set-background (list grey grey grey))
     (gimp-edit-fill text-mask BACKGROUND-FILL)
     (gimp-selection-none img)
@@ -91,4 +91,4 @@
 )
 
 (script-fu-menu-register "script-fu-newsprint-text"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

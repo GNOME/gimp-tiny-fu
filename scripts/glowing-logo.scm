@@ -19,10 +19,10 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img glow-layer 1)
+    (script-fu-util-image-add-layers img glow-layer bg-layer)
     (gimp-layer-translate glow-layer posx posy)
 
     (gimp-selection-none img)
@@ -33,27 +33,27 @@
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill logo-layer BACKGROUND-FILL)
 
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-selection-feather img feather1)
     (gimp-context-set-background '(221 0 0))
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
 
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-selection-feather img feather2)
     (gimp-context-set-background '(232 217 18))
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
 
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-selection-feather img feather3)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
     (gimp-selection-none img)
 
     (gimp-layer-set-mode logo-layer OVERLAY-MODE)
-    (gimp-drawable-set-name glow-layer "Glow Layer")
+    (gimp-item-set-name glow-layer "Glow Layer")
 
     (gimp-context-pop)
   )
@@ -66,7 +66,7 @@
                                       bg-color)
   (begin
     (gimp-image-undo-group-start img)
-    (apply-glowing-logo-effect img logo-layer size bg-color)
+    (apply-glowing-logo-effect img logo-layer (* size 3) bg-color)
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
   )
@@ -79,10 +79,10 @@
   "Spencer Kimball"
   "1997"
   "RGBA"
-  SF-IMAGE      "Image"                     0
-  SF-DRAWABLE   "Drawable"                  0
-  SF-ADJUSTMENT _"Effect size (pixels * 3)" '(150 2 1000 1 10 0 1)
-  SF-COLOR      _"Background color"         '(7 0 20)
+  SF-IMAGE      "Image"                 0
+  SF-DRAWABLE   "Drawable"              0
+  SF-ADJUSTMENT _"Effect size (pixels)" '(50 1 500 1 10 0 1)
+  SF-COLOR      _"Background color"     '(7 0 20)
 )
 
 (script-fu-menu-register "script-fu-glowing-logo-alpha"
@@ -119,4 +119,4 @@
 )
 
 (script-fu-menu-register "script-fu-glowing-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

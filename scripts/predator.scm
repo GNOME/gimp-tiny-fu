@@ -9,9 +9,9 @@
 ;  the view the predator had in the movies. ie, kind of a thermogram
 ;  type of thing. Works best on colorful rgb images.
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -20,8 +20,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-predator image
@@ -35,23 +34,25 @@
         (type (car (gimp-drawable-type-with-alpha drawable)))
         (image-width (car (gimp-image-width image)))
         (image-height (car (gimp-image-height image)))
-        (active-selection)
-        (from-selection)
-        (selection-bounds)
-        (select-offset-x)
-        (select-offset-y)
-        (select-width)
-        (select-height)
-        (effect-layer)
-        (active-layer)
+        (active-selection 0)
+        (from-selection 0)
+        (selection-bounds 0)
+        (select-offset-x 0)
+        (select-offset-y 0)
+        (select-width 0)
+        (select-height 0)
+        (effect-layer 0)
+        (active-layer 0)
         )
 
+    (gimp-context-push)
+    (gimp-context-set-defaults)
     (gimp-image-undo-group-start image)
     (gimp-layer-add-alpha drawable)
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
-          (gimp-selection-layer-alpha drawable)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
           (set! active-selection (car (gimp-selection-save image)))
           (set! from-selection FALSE)
         )
@@ -79,11 +80,11 @@
           )
 
           (gimp-layer-set-offsets effect-layer select-offset-x select-offset-y)
-          (gimp-image-add-layer image effect-layer -1)
+          (gimp-image-insert-layer image effect-layer 0 -1)
           (gimp-selection-none image)
           (gimp-edit-clear effect-layer)
 
-          (gimp-selection-load active-selection)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
           (gimp-edit-copy drawable)
           (let ((floating-sel (car (gimp-edit-paste effect-layer FALSE))))
             (gimp-floating-sel-anchor floating-sel)
@@ -102,7 +103,7 @@
     (plug-in-edge RUN-NONINTERACTIVE image active-layer edge-amount 1 0)
 
     ; clean up the selection copy
-    (gimp-selection-load active-selection)
+    (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
 
     (if (= keep-selection FALSE)
         (gimp-selection-none image)
@@ -112,6 +113,7 @@
     (gimp-image-remove-channel image active-selection)
     (gimp-image-undo-group-end image)
     (gimp-displays-flush)
+    (gimp-context-pop)
   )
 )
 

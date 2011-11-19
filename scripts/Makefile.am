@@ -34,8 +34,8 @@ scripts = \
 	bovinated-logo.scm		\
 	burn-in-anim.scm		\
 	camo.scm			\
-	carve-it.scm			\
 	carved-logo.scm			\
+	carve-it.scm			\
 	chalk.scm			\
 	chip-away.scm			\
 	chrome-it.scm			\
@@ -61,8 +61,8 @@ scripts = \
 	gradient-example.scm		\
 	grid-system.scm			\
 	guides-from-selection.scm	\
-	guides-new.scm			\
 	guides-new-percent.scm		\
+	guides-new.scm			\
 	guides-remove-all.scm		\
 	i26-gunya2.scm			\
 	land.scm			\
@@ -83,10 +83,10 @@ scripts = \
 	round-corners.scm		\
 	script-fu-set-cmap.scm		\
 	script-fu-util.scm		\
+	selection-round.scm		\
 	select-to-brush.scm		\
 	select-to-image.scm		\
 	select-to-pattern.scm		\
-	selection-round.scm		\
 	slide.scm			\
 	sota-chrome-logo.scm		\
 	speed-text.scm			\
@@ -97,11 +97,11 @@ scripts = \
 	starscape-logo.scm		\
 	swirltile.scm			\
 	swirly-pattern.scm		\
-	t-o-p-logo.scm			\
 	text-circle.scm			\
 	textured-logo.scm		\
-	title-header.scm		\
 	tileblur.scm			\
+	title-header.scm		\
+	t-o-p-logo.scm			\
 	truchet.scm			\
 	unsharp-mask.scm		\
 	waves-anim.scm			\

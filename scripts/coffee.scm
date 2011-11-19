@@ -1,9 +1,9 @@
 ; Chris Gutteridge (cjg@ecs.soton.ac.uk)
 ; At ECS Dept, University of Southampton, England.
 
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-coffee-stain inImage inLayer inNumber inDark)
@@ -23,29 +22,31 @@
         (theWidth (car (gimp-image-width theImage)))
         (theNumber inNumber)
         (theSize (min theWidth theHeight))
-        (theStain)
+        (theStain 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-group-start theImage)
 
     (while (> theNumber 0)
       (set! theNumber (- theNumber 1))
       (set! theStain (car (gimp-layer-new theImage theSize theSize
-                                          RGBA-IMAGE "Stain" 100
+                                          RGBA-IMAGE _"Stain" 100
                                           (if (= inDark TRUE)
                                               DARKEN-ONLY-MODE NORMAL-MODE))))
 
-      (gimp-image-add-layer theImage theStain 0)
+      (gimp-image-insert-layer theImage theStain 0 0)
       (gimp-selection-all theImage)
       (gimp-edit-clear theStain)
 
       (let ((blobSize (/ (rand (- theSize 40)) (+ (rand 3) 1))))
-        (gimp-ellipse-select theImage
+        (gimp-image-select-ellipse theImage
+                             CHANNEL-OP-REPLACE
                              (/ (- theSize blobSize) 2)
                              (/ (- theSize blobSize) 2)
-                             blobSize blobSize CHANNEL-OP-REPLACE TRUE 0 FALSE)
+                             blobSize blobSize)
       )
 
       (script-fu-distress-selection theImage theStain

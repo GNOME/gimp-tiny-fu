@@ -7,9 +7,9 @@
 ; Chris Gutteridge (cjg@ecs.soton.ac.uk)
 ; At ECS Dept, University of Southampton, England.
 
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -18,8 +18,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ; Define the function:
 
@@ -35,14 +34,24 @@
                                 inFlatten
         )
 
+  (define (chris-color-edge inImage inLayer inColor inSize)
+    (gimp-selection-all inImage)
+    (gimp-selection-shrink inImage inSize)
+    (gimp-selection-invert inImage)
+    (gimp-context-set-background inColor)
+    (gimp-edit-fill inLayer BACKGROUND-FILL)
+    (gimp-selection-none inImage)
+  )
+
   (let (
        (theWidth (car (gimp-image-width inImage)))
        (theHeight (car (gimp-image-height inImage)))
-       (theImage)
-       (theLayer)
+       (theImage 0)
+       (theLayer 0)
        )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-selection-all inImage)
     (set! theImage (if (= inCopy TRUE)
@@ -62,7 +71,7 @@
                                         100
                                         NORMAL-MODE)))
 
-    (gimp-image-add-layer theImage theLayer 0)
+    (gimp-image-insert-layer theImage theLayer 0 0)
 
 
     (gimp-edit-clear theLayer)
@@ -81,7 +90,7 @@
     (chris-color-edge theImage theLayer inColor 1)
     (gimp-layer-scale theLayer theWidth theHeight TRUE)
 
-    (gimp-selection-layer-alpha theLayer)
+    (gimp-image-select-item theImage CHANNEL-OP-REPLACE theLayer)
     (gimp-selection-invert theImage)
     (gimp-edit-clear theLayer)
     (gimp-selection-invert theImage)
@@ -93,13 +102,12 @@
 
     (if (= inBlur TRUE)
         (plug-in-gauss-rle RUN-NONINTERACTIVE
-			   theImage theLayer inSize TRUE TRUE)
+                           theImage theLayer inSize TRUE TRUE)
     )
     (if (= inShadow TRUE)
         (begin
-          (gimp-selection-none inImage)
-          (gimp-image-add-layer theImage
-                                (car (gimp-layer-copy theLayer FALSE)) 0)
+          (gimp-image-insert-layer theImage
+                                   (car (gimp-layer-copy theLayer FALSE)) 0 -1)
           (gimp-layer-scale theLayer
                             (- theWidth inSize) (- theHeight inSize) TRUE)
           (gimp-desaturate theLayer)
@@ -132,15 +140,6 @@
 
     (gimp-context-pop)
   )
-)
-
-(define (chris-color-edge inImage inLayer inColor inSize)
-  (gimp-selection-all inImage)
-  (gimp-selection-shrink inImage inSize)
-  (gimp-selection-invert inImage)
-  (gimp-context-set-background inColor)
-  (gimp-edit-fill inLayer BACKGROUND-FILL)
-  (gimp-selection-none inImage)
 )
 
 (script-fu-register "script-fu-fuzzy-border"

@@ -4,9 +4,9 @@
 ; add-bevel.scm version 1.04
 ; Time-stamp: <2004-02-09 17:07:06 simon>
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -15,8 +15,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ; Copyright (C) 1997 Andrew Donkin  (ard@cs.waikato.ac.nz)
 ; Contains code from add-shadow.scm by Sven Neumann
@@ -27,7 +26,7 @@
 ; If there is a selection, it is bevelled.
 ; Otherwise if there is an alpha channel, the selection is taken from it
 ; and bevelled.
-; Otherwise the whole image is bevelled.
+; Otherwise the part of the layer inside the image boundries is bevelled.
 ;
 ; The selection is set on exit, so Select->Invert then Edit->Clear will
 ; leave a cut-out.  Then use Sven's add-shadow for that
@@ -46,6 +45,10 @@
 ; 1.04: Fixed undo handling, ensure that bumpmap is big enough,
 ;       (instead of resizing the image). Removed references to outdated
 ;       bumpmap plugin.     (Simon)
+; 1.05  When there is no selection, bevel the whole layer instead of the
+;       whole image (which was broken in the first place).
+;       Also fixed some bugs with setting the selection when there is no
+;       initial selection.     (Barak Itkin)
 ;
 
 (define (script-fu-add-bevel img
@@ -56,7 +59,6 @@
 
   (let* (
         (index 1)
-        (bevelling-whole-image FALSE)
         (greyness 0)
         (thickness (abs thickness))
         (type (car (gimp-drawable-type-with-alpha drawable)))
@@ -71,13 +73,16 @@
                                          (+ width 2)
                                          (+ height 2)
                                          RGB-IMAGE
-                                         "Bumpmap"
+                                         _"Bumpmap"
                                          100
                                          NORMAL-MODE)))
-        (select)
+
+        (selection-exists (car (gimp-selection-bounds image)))
+        (selection 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     ; disable undo on copy, start group otherwise
     (if (= work-on-copy TRUE)
@@ -85,7 +90,7 @@
       (gimp-image-undo-group-start image)
     )
 
-    (gimp-image-add-layer image bump-layer 1)
+    (gimp-image-insert-layer image bump-layer 0 1)
 
     ; If the layer we're bevelling is offset from the image's origin, we
     ; have to do the same to the bumpmap
@@ -96,18 +101,12 @@
     ;
     ; Set the selection to the area we want to bevel.
     ;
-    (if (eq? 0 (car (gimp-selection-bounds image)))
-        (begin
-          (set! bevelling-whole-image TRUE) ; ...so we can restore things properly, and crop.
-          (if (= 1 (car (gimp-drawable-has-alpha pic-layer)))
-              (gimp-selection-layer-alpha pic-layer)
-              (gimp-selection-all image)
-          )
-        )
+    (if (= selection-exists 0)
+        (gimp-image-select-item image CHANNEL-OP-REPLACE pic-layer)
     )
 
     ; Store it for later.
-    (set! select (car (gimp-selection-save image)))
+    (set! selection (car (gimp-selection-save image)))
     ; Try to lose the jaggies
     (gimp-selection-feather image 2)
 
@@ -151,17 +150,17 @@
     ;
     ; Restore things
     ;
-    (if (= bevelling-whole-image TRUE)
+    (if (= selection-exists 0)
         (gimp-selection-none image)        ; No selection to start with
-        (gimp-selection-load select)
+        (gimp-image-select-item image CHANNEL-OP-REPLACE selection)
     )
     ; If they started with a selection, they can Select->Invert then
     ; Edit->Clear for a cutout.
 
     ; clean up
-    (gimp-image-remove-channel image select)
+    (gimp-image-remove-channel image selection)
     (if (= keep-bump-layer TRUE)
-        (gimp-drawable-set-visible bump-layer 0)
+        (gimp-item-set-visible bump-layer 0)
         (gimp-image-remove-layer image bump-layer)
     )
 

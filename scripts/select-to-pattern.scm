@@ -8,9 +8,9 @@
 ; Takes the current selection, saves it as a pattern and makes it the active
 ; pattern
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -19,23 +19,22 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-selection-to-pattern image drawable desc filename)
 
   (let* (
-        (selection-width)
-        (selection-height)
-        (selection-bounds)
-        (select-offset-x)
-        (select-offset-y)
-        (pattern-draw-type)
-        (pattern-image-type)
-        (pattern-image)
-        (pattern-draw)
-        (filename2)
+        (selection-width 0)
+        (selection-height 0)
+        (selection-bounds 0)
+        (select-offset-x 0)
+        (select-offset-y 0)
+        (pattern-draw-type 0)
+        (pattern-image-type 0)
+        (pattern-image 0)
+        (pattern-draw 0)
+        (filename2 0)
         )
 
   (if (= (car (gimp-selection-is-empty image)) TRUE)
@@ -68,7 +67,7 @@
 
   (gimp-drawable-fill pattern-draw TRANSPARENT-FILL)
 
-  (gimp-image-add-layer pattern-image pattern-draw 0)
+  (gimp-image-insert-layer pattern-image pattern-draw 0 0)
 
   (gimp-edit-copy drawable)
 

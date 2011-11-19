@@ -13,9 +13,9 @@
 ; (although it is not used) otherwise gimp 1.1 crashed.
 ; ************************************************************************
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -24,8 +24,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-title-header text
@@ -80,19 +79,20 @@
        )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     ; Create image
 
     (gimp-image-undo-disable img)
     (gimp-image-resize img img-width img-height 0 0)
 
-    (gimp-image-add-layer img bg-layer -1)
-    (gimp-image-add-layer img bumpmap-layer -1)
-    (gimp-image-add-layer img fore-layer -1)
-;    (gimp-image-add-layer img text-layer -1)
-    (gimp-image-raise-layer img text-layer)
-    (gimp-image-raise-layer img text-layer)
-    (gimp-image-raise-layer img text-layer)
+    (gimp-image-insert-layer img bg-layer 0 -1)
+    (gimp-image-insert-layer img bumpmap-layer 0 -1)
+    (gimp-image-insert-layer img fore-layer 0 -1)
+;    (gimp-image-insert-layer img text-layer 0 -1)
+    (gimp-image-raise-item img text-layer)
+    (gimp-image-raise-item img text-layer)
+    (gimp-image-raise-item img text-layer)
     (gimp-layer-set-offsets bg-layer 0 0)
     (gimp-layer-set-offsets text-layer text-layers-offset 0)
     (gimp-layer-set-offsets bumpmap-layer text-layers-offset 0)
@@ -102,7 +102,7 @@
 
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill bumpmap-layer BACKGROUND-FILL)
-    (gimp-selection-layer-alpha text-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE text-layer)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill bumpmap-layer BACKGROUND-FILL)
     (gimp-selection-none img)
@@ -116,7 +116,7 @@
 
     ; Text layer
 
-    (gimp-drawable-set-visible text-layer TRUE)
+    (gimp-item-set-visible text-layer TRUE)
     (gimp-layer-set-lock-alpha text-layer TRUE)
 
     (gimp-edit-blend text-layer CUSTOM-MODE NORMAL-MODE
@@ -130,7 +130,7 @@
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
 
-    (gimp-ellipse-select img 0 0 text-height text-height CHANNEL-OP-REPLACE TRUE FALSE 0)
+    (gimp-image-select-ellipse img CHANNEL-OP-REPLACE 0 0 text-height text-height)
     (gimp-context-set-background (car (gimp-image-pick-color img text-layer
                                                              text-layers-offset 0
                                                              TRUE FALSE 0)))
@@ -138,8 +138,9 @@
 
     ; Fade-out gradient at the right
 
-    (gimp-rect-select img (- img-width fade-width) 0 fade-width text-height
-                      CHANNEL-OP-REPLACE FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE
+                                 (- img-width fade-width) 0
+                                 fade-width text-height)
     (gimp-context-set-foreground (car (gimp-context-get-background)))
     (gimp-context-set-background '(0 0 0))
 
@@ -174,4 +175,4 @@
 )
 
 (script-fu-menu-register "script-fu-title-header"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

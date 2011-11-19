@@ -8,9 +8,9 @@
 ; based on a idea by Xach Beane <xach@mint.net>
 ;
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -19,8 +19,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-xach-effect image
@@ -43,41 +42,42 @@
         (image-width (car (gimp-image-width image)))
         (hl-opacity (list hl-opacity-comp hl-opacity-comp hl-opacity-comp))
         (image-height (car (gimp-image-height image)))
-        (active-selection)
-        (from-selection)
-        (theLayer)
-        (hl-layer)
-        (shadow-layer)
-        (mask)
+        (active-selection 0)
+        (from-selection 0)
+        (theLayer 0)
+        (hl-layer 0)
+        (shadow-layer 0)
+        (mask 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-group-start image)
     (gimp-layer-add-alpha drawable)
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
-          (gimp-selection-layer-alpha drawable)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
           (set! active-selection (car (gimp-selection-save image)))
           (set! from-selection FALSE))
         (begin
           (set! from-selection TRUE)
           (set! active-selection (car (gimp-selection-save image)))))
 
-    (set! hl-layer (car (gimp-layer-new image image-width image-height type "Highlight" 100 NORMAL-MODE)))
-    (gimp-image-add-layer image hl-layer -1)
+    (set! hl-layer (car (gimp-layer-new image image-width image-height type _"Highlight" 100 NORMAL-MODE)))
+    (gimp-image-insert-layer image hl-layer 0 -1)
 
     (gimp-selection-none image)
     (gimp-edit-clear hl-layer)
-    (gimp-selection-load active-selection)
+    (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
 
     (gimp-context-set-background hl-color)
     (gimp-edit-fill hl-layer BACKGROUND-FILL)
     (gimp-selection-translate image hl-offset-x hl-offset-y)
     (gimp-edit-fill hl-layer BACKGROUND-FILL)
     (gimp-selection-none image)
-    (gimp-selection-load active-selection)
+    (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
 
     (set! mask (car (gimp-layer-create-mask hl-layer ADD-WHITE-MASK)))
     (gimp-layer-add-mask hl-layer mask)
@@ -89,21 +89,21 @@
                                             image-width
                                             image-height
                                             type
-                                            "Shadow"
+                                            _"Shadow"
                                             ds-opacity
                                             NORMAL-MODE)))
-    (gimp-image-add-layer image shadow-layer -1)
+    (gimp-image-insert-layer image shadow-layer 0 -1)
     (gimp-selection-none image)
     (gimp-edit-clear shadow-layer)
-    (gimp-selection-load active-selection)
+    (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
     (gimp-selection-translate image ds-offset-x ds-offset-y)
     (gimp-context-set-background ds-color)
     (gimp-edit-fill shadow-layer BACKGROUND-FILL)
     (gimp-selection-none image)
     (plug-in-gauss-rle RUN-NONINTERACTIVE image shadow-layer ds-blur TRUE TRUE)
-    (gimp-selection-load active-selection)
+    (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
     (gimp-edit-clear shadow-layer)
-    (gimp-image-lower-layer image shadow-layer)
+    (gimp-image-lower-item image shadow-layer)
 
     (if (= keep-selection FALSE)
         (gimp-selection-none image))

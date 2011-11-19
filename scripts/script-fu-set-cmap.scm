@@ -4,14 +4,14 @@
 ; Change the colourmap of an image to the colours in a specified palette.
 ; Included is script-fu-make-cmap-array (available for use in scripts) which
 ; returns an INT8ARRAY containing the colours from a specified palette.
-; This array can be used as the cmap argument for gimp-image-set-cmap.
+; This array can be used as the cmap argument for gimp-image-set-colormap.
 
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -20,14 +20,13 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 (define (script-fu-make-cmap-array palette)
   (let* (
         (num-colours (car (gimp-palette-get-info palette)))
         (cmap (cons-array (* num-colours 3) 'byte))
-        (colour)
+        (colour 0)
         (i 0)
         )
 

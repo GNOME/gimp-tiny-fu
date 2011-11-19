@@ -4,9 +4,9 @@
 ;
 ; Chris Gutteridge (cjg@ecs.soton.ac.uk)
 ; At ECS Dept, University of Southampton, England.
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -15,8 +15,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 ; Define the function:
@@ -36,7 +35,7 @@
         (n 0)
         (ang (* (/ 360 inFrames)
                 (if (= inFromLeft TRUE) 1 -1) ))
-        (theFrame)
+        (theFrame 0)
         )
 
   (gimp-layer-add-alpha theLayer)
@@ -44,8 +43,8 @@
   (while (> inFrames n)
     (set! n (+ n 1))
     (set! theFrame (car (gimp-layer-copy theLayer FALSE)))
-    (gimp-image-add-layer theImage theFrame 0)
-    (gimp-drawable-set-name theFrame
+    (gimp-image-insert-layer theImage theFrame 0 0)
+    (gimp-item-set-name theFrame
                          (string-append "Anim Frame: "
                                         (number->string (- inFrames n) 10)
                                         " (replace)"))

@@ -44,20 +44,21 @@
         )
 
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img shadow-layer 1)
-    (gimp-image-add-layer img blend-layer 1)
-    (gimp-image-add-layer img drop-shadow-layer 1)
-    (gimp-image-add-layer img text-shadow-layer 0)
+    (script-fu-util-image-add-layers img text-shadow-layer drop-shadow-layer blend-layer shadow-layer)
+    (gimp-image-raise-item img text-shadow-layer)
     (gimp-selection-none img)
     (gimp-edit-clear text-shadow-layer)
     (gimp-edit-clear drop-shadow-layer)
     (gimp-edit-clear blend-layer)
     (gimp-context-set-background bg-color)
     (gimp-drawable-fill shadow-layer BACKGROUND-FILL)
-    (gimp-rect-select img b-size-2 b-size-2 (- width b-size) (- height b-size) CHANNEL-OP-REPLACE TRUE b-size-2)
+    (gimp-context-set-feather TRUE)
+    (gimp-context-set-feather-radius b-size-2 b-size-2)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE b-size-2 b-size-2 (- width b-size) (- height b-size))
+    (gimp-context-set-feather FALSE)
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill shadow-layer BACKGROUND-FILL)
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-layer-add-mask text-shadow-layer tsl-layer-mask)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill tsl-layer-mask BACKGROUND-FILL)
@@ -87,7 +88,7 @@
     (gimp-layer-translate blend-layer (- b-size) (- b-size))
     (gimp-layer-translate text-shadow-layer (- ts-size) (- ts-size))
     (gimp-layer-translate drop-shadow-layer ds-size ds-size)
-    (gimp-selection-layer-alpha blend-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE blend-layer)
     (gimp-layer-add-mask drop-shadow-layer dsl-layer-mask)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill dsl-layer-mask BACKGROUND-FILL)
@@ -107,6 +108,7 @@
                                       blend-gradient-reverse)
   (begin
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-group-start img)
     (apply-blended-logo-effect img logo-layer b-size bg-color
@@ -161,6 +163,8 @@
         (text-layer (car (gimp-text-fontname img -1 0 0 text b-size TRUE size PIXELS font)))
         )
     (gimp-context-push)
+    (gimp-context-set-antialias TRUE)
+    (gimp-context-set-feather FALSE)
 
     (gimp-image-undo-disable img)
     (gimp-context-set-foreground text-color)
@@ -199,4 +203,4 @@
 )
 
 (script-fu-menu-register "script-fu-blended-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

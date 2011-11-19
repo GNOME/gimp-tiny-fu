@@ -5,9 +5,9 @@
 ; Copyright (C) 1997 Federico Mena Quintero
 ; federico@nuclecu.unam.mx
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -16,8 +16,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ; ************************************************************************
 ; Changed on Feb 4, 1999 by Piet van Oostrum <piet@cs.uu.nl>
 ; For use with GIMP 1.1.
@@ -75,40 +74,40 @@
 
         (bumpmap (car (gimp-layer-new img
                                       img-width img-height RGBA-IMAGE
-                                      "Bumpmap" 100 NORMAL-MODE)))
+                                      _"Bumpmap" 100 NORMAL-MODE)))
         (gradient (car (gimp-layer-new img
                                        img-width img-height RGBA-IMAGE
-                                       "Gradient" 100 NORMAL-MODE)))
+                                       _"Gradient" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
-
+    (gimp-context-set-feather FALSE)
     (gimp-image-undo-disable img)
 
     ; Create bumpmap layer
 
-    (gimp-image-add-layer img bumpmap -1)
+    (gimp-image-insert-layer img bumpmap 0 -1)
     (gimp-context-set-foreground '(0 0 0))
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill bumpmap BACKGROUND-FILL)
 
-    (gimp-rect-select img 0 0 bevel-width img-height CHANNEL-OP-REPLACE FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE 0 0 bevel-width img-height)
     (blend-bumpmap img bumpmap 0 0 (- bevel-width 1) 0)
 
-    (gimp-rect-select img 0 0 img-width bevel-width CHANNEL-OP-REPLACE FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE 0 0 img-width bevel-width)
     (blend-bumpmap img bumpmap 0 0 0 (- bevel-width 1))
 
-    (gimp-rect-select img (- img-width bevel-width) 0 bevel-width img-height CHANNEL-OP-REPLACE FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE (- img-width bevel-width) 0 bevel-width img-height)
     (blend-bumpmap img bumpmap (- img-width 1) 0 (- img-width bevel-width) 0)
 
-    (gimp-rect-select img 0 (- img-height bevel-width) img-width bevel-width CHANNEL-OP-REPLACE FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE 0 (- img-height bevel-width) img-width bevel-width)
     (blend-bumpmap img bumpmap 0 (- img-height 1) 0 (- img-height bevel-width))
 
     (gimp-selection-none img)
 
     ; Create gradient layer
 
-    (gimp-image-add-layer img gradient -1)
+    (gimp-image-insert-layer img gradient 0 -1)
     (gimp-context-set-foreground ul-color)
     (gimp-context-set-background lr-color)
 
@@ -158,4 +157,4 @@
 )
 
 (script-fu-menu-register "script-fu-button00"
-                         "<Toolbox>/Xtns/Buttons")
+                         "<Image>/File/Create/Buttons")

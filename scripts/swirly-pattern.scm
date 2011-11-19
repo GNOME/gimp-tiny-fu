@@ -5,9 +5,9 @@
 ; Copyright (C) 1997 Federico Mena Quintero
 ; federico@nuclecu.unam.mx
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -16,8 +16,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-swirly-pattern qsize angle times)
@@ -35,9 +34,10 @@
                                         100 NORMAL-MODE))))
 
     (gimp-context-push)
+    (gimp-context-set-feather FALSE)
 
     (gimp-image-undo-disable img)
-    (gimp-image-add-layer img drawable 0)
+    (gimp-image-insert-layer img drawable 0 0)
 
     ; Render checkerboard
 
@@ -48,23 +48,23 @@
 
     ; Whirl upper left
 
-    (gimp-rect-select img 0 0 hsize hsize CHANNEL-OP-REPLACE 0 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE 0 0 hsize hsize)
     (whirl-it img drawable angle times)
     (gimp-invert drawable)
 
     ; Whirl upper right
 
-    (gimp-rect-select img hsize 0 hsize hsize CHANNEL-OP-REPLACE 0 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE hsize 0 hsize hsize)
     (whirl-it img drawable (- angle) times)
 
     ; Whirl lower left
 
-    (gimp-rect-select img 0 hsize hsize hsize CHANNEL-OP-REPLACE 0 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE 0 hsize hsize hsize)
     (whirl-it img drawable (- angle) times)
 
     ; Whirl lower right
 
-    (gimp-rect-select img hsize hsize hsize hsize CHANNEL-OP-REPLACE 0 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE hsize hsize hsize hsize)
     (whirl-it img drawable angle times)
     (gimp-invert drawable)
 
@@ -75,7 +75,7 @@
     (gimp-display-new img)
 
     (gimp-context-pop)
-  )
+ )
 )
 
 (script-fu-register "script-fu-swirly-pattern"
@@ -91,4 +91,4 @@
 )
 
 (script-fu-menu-register "script-fu-swirly-pattern"
-                         "<Toolbox>/Xtns/Patterns")
+                         "<Image>/File/Create/Patterns")

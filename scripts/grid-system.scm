@@ -52,9 +52,9 @@
     (gimp-image-undo-group-start img)
 
     (set! grid-layer (car (gimp-layer-copy drw TRUE)))
-    (gimp-image-add-layer img grid-layer 0)
+    (gimp-image-insert-layer img grid-layer 0 0)
     (gimp-edit-clear grid-layer)
-    (gimp-drawable-set-name grid-layer "Grid Layer")
+    (gimp-item-set-name grid-layer "Grid Layer")
 
     (while (not (null? (cdr x-divides)))
       (set! stepped-x (+ stepped-x (car x-divides)))

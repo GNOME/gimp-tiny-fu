@@ -8,9 +8,9 @@
 ; Takes the Current selection and saves it as a seperate image.
 ;
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -19,8 +19,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-selection-to-image image drawable)
@@ -32,19 +31,20 @@
         (select-offset-y (caddr selection-bounds))
         (selection-width (- (cadr (cddr selection-bounds)) select-offset-x))
         (selection-height (- (caddr (cddr selection-bounds)) select-offset-y))
-        (active-selection)
-        (from-selection)
-        (new-image)
-        (new-draw)
+        (active-selection 0)
+        (from-selection 0)
+        (new-image 0)
+        (new-draw 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable image)
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
         (begin
-          (gimp-selection-layer-alpha drawable)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
           (set! active-selection (car (gimp-selection-save image)))
           (set! from-selection FALSE)
         )
@@ -61,7 +61,7 @@
     (set! new-draw (car (gimp-layer-new new-image
                                         selection-width selection-height
                                         draw-type "Selection" 100 NORMAL-MODE)))
-    (gimp-image-add-layer new-image new-draw 0)
+    (gimp-image-insert-layer new-image new-draw 0 0)
     (gimp-drawable-fill new-draw BACKGROUND-FILL)
 
     (let ((floating-sel (car (gimp-edit-paste new-draw FALSE))))

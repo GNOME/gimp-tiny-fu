@@ -5,9 +5,9 @@
 ; Copyright (C) 1997 Federico Mena Quintero
 ; federico@nuclecu.unam.mx
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -16,8 +16,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ; ************************************************************************
 ; Changed on Feb 4, 1999 by Piet van Oostrum <piet@cs.uu.nl>
 ; For use with GIMP 1.1.
@@ -39,18 +38,19 @@
 
         (background (car (gimp-layer-new img
                                          width height RGBA-IMAGE
-                                         "Background" 100 NORMAL-MODE)))
+                                         _"Background" 100 NORMAL-MODE)))
         (bumpmap (car (gimp-layer-new img
                                       width height RGBA-IMAGE
-                                      "Bumpmap" 100 NORMAL-MODE)))
+                                      _"Bumpmap" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable img)
     (gimp-image-resize img width height 0 0)
-    (gimp-image-add-layer img background 1)
-    (gimp-image-add-layer img bumpmap 1)
+    (gimp-image-insert-layer img background 0 1)
+    (gimp-image-insert-layer img bumpmap 0 1)
 
     ; Create pattern layer
 
@@ -65,12 +65,12 @@
     (gimp-edit-fill bumpmap BACKGROUND-FILL)
 
     (gimp-context-set-background '(127 127 127))
-    (gimp-selection-layer-alpha textl)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE textl)
     (gimp-selection-shrink img 1)
     (gimp-edit-fill bumpmap BACKGROUND-FILL)
 
     (gimp-context-set-background '(255 255 255))
-    (gimp-selection-layer-alpha textl)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE textl)
     (gimp-selection-shrink img 2)
     (gimp-edit-fill bumpmap BACKGROUND-FILL)
 
@@ -83,7 +83,7 @@
     ; Clean up
 
     (gimp-context-set-background '(0 0 0))
-    (gimp-selection-layer-alpha textl)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE textl)
     (gimp-selection-invert img)
     (gimp-edit-clear background)
     (gimp-selection-none img)
@@ -118,4 +118,4 @@
 )
 
 (script-fu-menu-register "script-fu-beveled-pattern-heading"
-                         "<Toolbox>/Xtns/Web Page Themes/Beveled Pattern")
+                         "<Image>/File/Create/Web Page Themes/Beveled Pattern")

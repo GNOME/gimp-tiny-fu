@@ -4,9 +4,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -15,8 +15,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ; Version 1.0 (July 27, 2004)
 ; Created
@@ -34,15 +33,15 @@
 
   (define (init-sheet-data size)
     (let (
-         (sheet-w)
-         (sheet-h)
-         (thumb-w)
-         (thumb-h)
-         (border-x) ;Space between rows and at top and bottom of thumbnails
-         (border-y) ;Space between columns and at left and right of thumbnails
-         (off-x)  ; Additional X shift to properly center a row of thumbnails
-         (off-y)  ; Additional Y shift to properly center rows of thumbnails
-         (count)
+         (sheet-w 0)
+         (sheet-h 0)
+         (thumb-w 0)
+         (thumb-h 0)
+         (border-x 0) ;Space between rows and at top and bottom of thumbnails
+         (border-y 0) ;Space between columns and at left and right of thumbnails
+         (off-x 0)  ; Additional X shift to properly center a row of thumbnails
+         (off-y 0)  ; Additional Y shift to properly center rows of thumbnails
+         (count 0)
          )
 
       (case size
@@ -108,9 +107,9 @@
 
   (define (init-sheet-img img num img-width border-y off-y)
     (let* (
-          (text-layer)
-          (text-width)
-          (text-height)
+          (text-layer 0)
+          (text-width 0)
+          (text-height 0)
           )
       (gimp-selection-all img)
       (gimp-drawable-fill (car (gimp-image-get-active-layer img))
@@ -155,28 +154,29 @@
         (pos-x 0)
         (pos-y 0)
 
-        (sheet-data)
-        (sheet-width)
-        (sheet-height)
-        (thumb-w)
-        (thumb-h)
-        (border-x)
-        (border-y)
-        (off-x)
-        (off-y)
-        (max-x)
-        (max-y)
+        (sheet-data 0)
+        (sheet-width 0)
+        (sheet-height 0)
+        (thumb-w 0)
+        (thumb-h 0)
+        (border-x 0)
+        (border-y 0)
+        (off-x 0)
+        (off-y 0)
+        (max-x 0)
+        (max-y 0)
 
-        (sheet-img)
-        (sheet-layer)
+        (sheet-img 0)
+        (sheet-layer 0)
 
-        (new-img)
-        (file)
-        (file-path)
-        (tmp-layer)
+        (new-img 0)
+        (file 0)
+        (file-path 0)
+        (tmp-layer 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
     (gimp-context-set-foreground text-color)
     (gimp-context-set-background bg-color)
 
@@ -202,7 +202,7 @@
     (set! sheet-layer (car (gimp-layer-new sheet-img sheet-width sheet-height
                             RGB-IMAGE "Background"
                             100 NORMAL-MODE)))
-    (gimp-image-add-layer sheet-img sheet-layer 0)
+    (gimp-image-insert-layer sheet-img sheet-layer 0 0)
 
     (init-sheet-img sheet-img sheet-num sheet-width border-y off-y)
 
@@ -230,7 +230,7 @@
                             (car (gimp-image-get-active-drawable new-img))
                                   sheet-img)))
 
-              (gimp-image-add-layer sheet-img tmp-layer 0)
+              (gimp-image-insert-layer sheet-img tmp-layer 0 0)
 
               ;Move thumbnail in to position and center it in area available.
               (gimp-layer-set-offsets tmp-layer
@@ -334,4 +334,4 @@
     SF-COLOR   _"Background color" "black"
 )
 
-(script-fu-menu-register "script-fu-contactsheet" "<Toolbox>/Xtns/_Utilities")
+(script-fu-menu-register "script-fu-contactsheet" "<Image>/Filters/Combine")

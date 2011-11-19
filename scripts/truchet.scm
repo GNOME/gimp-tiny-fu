@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ;    Truchet  - a script to create Truchet patterns
 ;                 by Adrian Likins <aklikins@eos.ncsu.edu>
@@ -28,8 +27,12 @@
 ;  NOTE: This script works best with even values for 'thickness'.
 
 (define (center-ellipse img cx cy rx ry op aa feather frad)
-  (gimp-ellipse-select img (- cx rx) (- cy ry) (+ rx rx ) (+ ry ry )
-                       op aa feather frad)
+  (gimp-context-push)
+  (gimp-context-set-antialias aa)
+  (gimp-context-set-feather feather)
+  (gimp-context-set-feather-radius frad frad)
+  (gimp-image-select-ellipse img op (- cx rx) (- cy ry) (+ rx rx ) (+ ry ry ))
+  (gimp-context-pop)
 )
 
 (define (use-tiles img drawable height width img2 drawable2 xoffset yoffset)
@@ -48,6 +51,8 @@
         (inner-radius (- (/ size 2) half-thickness))
         )
 
+    (gimp-context-push)
+
     (gimp-selection-all img)
     (gimp-context-set-background backcolor)
     (gimp-edit-fill drawable1 BACKGROUND-FILL)
@@ -56,9 +61,9 @@
           (tempSize (* size 3))
           (temp-img (car (gimp-image-new tempSize tempSize RGB)))
           (temp-draw (car (gimp-layer-new temp-img tempSize tempSize RGB-IMAGE "Jabar" 100 NORMAL-MODE)))
-         )
+          )
       (gimp-image-undo-disable temp-img)
-      (gimp-image-add-layer temp-img temp-draw 0)
+      (gimp-image-insert-layer temp-img temp-draw 0 0)
       (gimp-context-set-background backcolor)
       (gimp-edit-fill temp-draw BACKGROUND-FILL)
 
@@ -66,8 +71,8 @@
       (center-ellipse temp-img size size outer-radius outer-radius CHANNEL-OP-REPLACE TRUE FALSE 0)
       (center-ellipse temp-img size size inner-radius inner-radius CHANNEL-OP-SUBTRACT TRUE FALSE 0)
 
-      (center-ellipse temp-img (* size 2) (*  size 2)  outer-radius outer-radius CHANNEL-OP-ADD TRUE FALSE 0)
-      (center-ellipse temp-img (* size 2) (*  size 2)  inner-radius inner-radius CHANNEL-OP-SUBTRACT TRUE FALSE 0)
+      (center-ellipse temp-img (* size 2) (* size 2) outer-radius outer-radius CHANNEL-OP-ADD TRUE FALSE 0)
+      (center-ellipse temp-img (* size 2) (* size 2) inner-radius inner-radius CHANNEL-OP-SUBTRACT TRUE FALSE 0)
       (gimp-context-set-background forecolor)
       (gimp-edit-fill temp-draw BACKGROUND-FILL)
 
@@ -86,12 +91,14 @@
       (let ((floating-sel (car (gimp-edit-paste drawable1 FALSE))))
         (gimp-floating-sel-anchor floating-sel))
 
-      (let ((drawble (car (gimp-drawable-transform-flip-simple drawable1
-                             ORIENTATION-VERTICAL TRUE 0 TRUE)))))
+      (gimp-context-set-transform-resize TRANSFORM-RESIZE-CLIP)
+      (let ((drawble (car (gimp-item-transform-flip-simple drawable1
+                               ORIENTATION-VERTICAL TRUE 0)))))
 
 
       ;(gimp-display-new temp-img)
       (gimp-image-delete temp-img)
+      (gimp-context-pop)
     )
   )
 )
@@ -114,13 +121,14 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable img)
     (gimp-image-undo-disable tile)
 
-    (gimp-image-add-layer img layer-one 0)
-    (gimp-image-add-layer tile tiledraw1 0)
-    (gimp-image-add-layer tile tiledraw2 0)
+    (gimp-image-insert-layer img layer-one 0 0)
+    (gimp-image-insert-layer tile tiledraw1 0 0)
+    (gimp-image-insert-layer tile tiledraw2 0 0)
 
 
     ;just to look a little better
@@ -169,4 +177,4 @@
 )
 
 (script-fu-menu-register "script-fu-truchet"
-                         "<Toolbox>/Xtns/Patterns")
+                         "<Image>/File/Create/Patterns")

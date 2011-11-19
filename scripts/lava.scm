@@ -8,9 +8,9 @@
 ; based on a idea by Sven Riedel <lynx@heim8.tu-clausthal.de>
 ; tweaked a bit by Sven Neumann <neumanns@uni-duesseldorf.de>
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -19,8 +19,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-lava image
@@ -36,17 +35,18 @@
         (type (car (gimp-drawable-type-with-alpha drawable)))
         (image-width (car (gimp-image-width image)))
         (image-height (car (gimp-image-height image)))
-        (active-selection)
-        (selection-bounds)
-        (select-offset-x)
-        (select-offset-y)
-        (select-width)
-        (select-height)
-        (lava-layer)
-        (active-layer)
+        (active-selection 0)
+        (selection-bounds 0)
+        (select-offset-x 0)
+        (select-offset-y 0)
+        (select-width 0)
+        (select-height 0)
+        (lava-layer 0)
+        (active-layer 0)
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
     (gimp-image-undo-group-start image)
 
     (if (= (car (gimp-drawable-has-alpha drawable)) FALSE)
@@ -54,7 +54,7 @@
     )
 
     (if (= (car (gimp-selection-is-empty image)) TRUE)
-        (gimp-selection-layer-alpha drawable)
+        (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
     )
 
     (set! active-selection (car (gimp-selection-save image)))
@@ -76,12 +76,12 @@
                                                 100
                                                 NORMAL-MODE)))
 
-          (gimp-image-add-layer image lava-layer -1)
+          (gimp-image-insert-layer image lava-layer 0 -1)
           (gimp-layer-set-offsets lava-layer select-offset-x select-offset-y)
           (gimp-selection-none image)
           (gimp-edit-clear lava-layer)
 
-          (gimp-selection-load active-selection)
+          (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
           (gimp-image-set-active-layer image lava-layer)
         )
     )

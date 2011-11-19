@@ -30,7 +30,7 @@
         (script-fu-text-circle-debug? #f)
         (img (car (gimp-image-new drawable-size drawable-size RGB)))
         (BG-layer (car (gimp-layer-new img drawable-size drawable-size
-                       RGBA-IMAGE "background" 100 NORMAL-MODE)))
+                            RGBA-IMAGE "background" 100 NORMAL-MODE)))
         (merged-layer #f)
         (char-num (string-length text))
         (radian-step 0)
@@ -38,7 +38,7 @@
         (center-x (/ drawable-size 2))
         (center-y center-x)
         (font-infos (gimp-text-get-extents-fontname "lAgy" font-size
-                                PIXELS font-name))
+                                                     PIXELS font-name))
         (desc (nth 3 font-infos))
         (start-angle-rad (* (/ (modulo start-angle 360) 360) 2 *pi*))
         (angle-list #f)
@@ -49,13 +49,16 @@
         (ndx-start 0)
         (ndx-step 1)
         (ccw 0)
-        (fill-angle-rad)
-        (rot-op)
-        (radian-step)
+        (fill-angle-rad 0)
+        (rot-op 0)
+        (radian-step 0)
         )
 
+    (gimp-context-push)
+    (gimp-context-set-defaults)
+    (gimp-context-set-antialias antialias)
     (gimp-image-undo-disable img)
-    (gimp-image-add-layer img BG-layer 0)
+    (gimp-image-insert-layer img BG-layer 0 0)
     (gimp-edit-fill BG-layer BACKGROUND-FILL)
 
     ;; change units
@@ -92,10 +95,10 @@
             (set! temp-str "x")
         )
         (set! temp-layer (car (gimp-text-fontname img -1 0 0
-                              temp-str
-                              1 antialias
-                              font-size PIXELS
-                              font-name)))
+                                                  temp-str
+                                                  1 antialias
+                                                  font-size PIXELS
+                                                  font-name)))
         (set! temp-list (cons (car (gimp-drawable-width temp-layer)) temp-list))
         (gimp-image-remove-layer img temp-layer)
         (set! ndx (+ ndx ndx-step))
@@ -125,10 +128,10 @@
         ;; Running gimp-text with " " causes an error!
         (let* (
               (new-layer (car (gimp-text-fontname img -1 0 0
-                                       letter
-                                       1 antialias
-                                       font-size PIXELS
-                                       font-name)))
+                                                  letter
+                                                  1 antialias
+                                                  font-size PIXELS
+                                                  font-name)))
               (width (car (gimp-drawable-width new-layer)))
               (height (car (gimp-drawable-height new-layer)))
               (rotate-radius (- (/ height 2) desc))
@@ -143,10 +146,9 @@
                   (set! rot-op (if (< 0 fill-angle-rad) + -))
                   (set! rot-op (if (> 0 fill-angle-rad) + -))
               )
-              (gimp-drawable-transform-rotate-default new-layer
-                       (rot-op angle rad-90)
-                       TRUE 0 0
-                       TRUE FALSE)
+              (gimp-item-transform-rotate new-layer
+                                          (rot-op angle rad-90)
+                                          TRUE 0 0)
               (gimp-layer-translate new-layer
                    (+ center-x
                       (* radius (cos angle))
@@ -179,12 +181,12 @@
       (set! index (+ index 1))
     )
 
-    (gimp-drawable-set-visible BG-layer 0)
+    (gimp-item-set-visible BG-layer 0)
     (if (not script-fu-text-circle-debug?)
       (begin
         (set! merged-layer
                 (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))
-        (gimp-drawable-set-name merged-layer
+        (gimp-item-set-name merged-layer
                      (if (< (string-length text) 16)
                          (wrap-string text)
                          "Text Circle"
@@ -192,10 +194,11 @@
         )
       )
     )
-    (gimp-drawable-set-visible BG-layer 1)
+    (gimp-item-set-visible BG-layer 1)
     (gimp-image-undo-enable img)
     (gimp-image-clean-all img)
     (gimp-display-new img)
+    (gimp-context-pop)
     (gimp-displays-flush)
   )
 )
@@ -217,4 +220,4 @@
 )
 
 (script-fu-menu-register "script-fu-text-circle"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

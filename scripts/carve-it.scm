@@ -58,7 +58,7 @@
         (brush-size (carve-scale size 0.3))
         (mask-fs 0)
         (mask (car (gimp-channel-new img width height "Engraving Mask" 50 '(0 0 0))))
-        (inset-gamma (calculate-inset-gamma (car (gimp-drawable-get-image bg-layer)) bg-layer))
+        (inset-gamma (calculate-inset-gamma (car (gimp-item-get-image bg-layer)) bg-layer))
         (mask-fat 0)
         (mask-emboss 0)
         (mask-highlight 0)
@@ -72,15 +72,16 @@
         (bg-width (car (gimp-drawable-width bg-layer)))
         (bg-height (car (gimp-drawable-height bg-layer)))
         (bg-type (car (gimp-drawable-type bg-layer)))
-        (bg-image (car (gimp-drawable-get-image bg-layer)))
+        (bg-image (car (gimp-item-get-image bg-layer)))
         (layer1 (car (gimp-layer-new img bg-width bg-height bg-type "Layer1" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-image-undo-disable img)
 
-    (gimp-image-add-layer img layer1 0)
+    (gimp-image-insert-layer img layer1 0 0)
 
     (gimp-selection-all img)
     (gimp-edit-clear layer1)
@@ -88,7 +89,7 @@
     (copy-layer-carve-it img layer1 bg-image bg-layer)
 
     (gimp-edit-copy mask-drawable)
-    (gimp-image-add-channel img mask 0)
+    (gimp-image-insert-channel img mask -1 0)
 
     (plug-in-tile RUN-NONINTERACTIVE img layer1 width height FALSE)
     (set! mask-fs (car (gimp-edit-paste mask FALSE)))
@@ -97,28 +98,28 @@
         (gimp-invert mask))
 
     (set! mask-fat (car (gimp-channel-copy mask)))
-    (gimp-image-add-channel img mask-fat 0)
-    (gimp-selection-load mask-fat)
+    (gimp-image-insert-channel img mask-fat -1 0)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE mask-fat)
     (gimp-context-set-brush (carve-brush brush-size))
     (gimp-context-set-foreground '(255 255 255))
     (gimp-edit-stroke mask-fat)
     (gimp-selection-none img)
 
     (set! mask-emboss (car (gimp-channel-copy mask-fat)))
-    (gimp-image-add-channel img mask-emboss 0)
+    (gimp-image-insert-channel img mask-emboss -1 0)
     (plug-in-gauss-rle RUN-NONINTERACTIVE img mask-emboss feather TRUE TRUE)
     (plug-in-emboss RUN-NONINTERACTIVE img mask-emboss 315.0 45.0 7 TRUE)
 
     (gimp-context-set-background '(180 180 180))
-    (gimp-selection-load mask-fat)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE mask-fat)
     (gimp-selection-invert img)
     (gimp-edit-fill mask-emboss BACKGROUND-FILL)
-    (gimp-selection-load mask)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE mask)
     (gimp-edit-fill mask-emboss BACKGROUND-FILL)
     (gimp-selection-none img)
 
     (set! mask-highlight (car (gimp-channel-copy mask-emboss)))
-    (gimp-image-add-channel img mask-highlight 0)
+    (gimp-image-insert-channel img mask-highlight -1 0)
     (gimp-levels mask-highlight 0 180 255 1.0 0 255)
 
     (set! mask-shadow mask-emboss)
@@ -144,16 +145,16 @@
 
     (set! csl-mask (car (gimp-layer-create-mask cast-shadow-layer ADD-BLACK-MASK)))
     (gimp-layer-add-mask cast-shadow-layer csl-mask)
-    (gimp-selection-load mask)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE mask)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill csl-mask BACKGROUND-FILL)
 
     (set! inset-layer (car (gimp-layer-copy layer1 TRUE)))
-    (gimp-image-add-layer img inset-layer 1)
+    (gimp-image-insert-layer img inset-layer 0 1)
 
     (set! il-mask (car (gimp-layer-create-mask inset-layer ADD-BLACK-MASK)))
     (gimp-layer-add-mask inset-layer il-mask)
-    (gimp-selection-load mask)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE mask)
     (gimp-context-set-background '(255 255 255))
     (gimp-edit-fill il-mask BACKGROUND-FILL)
     (gimp-selection-none img)
@@ -164,11 +165,11 @@
     (gimp-image-remove-channel img mask-highlight)
     (gimp-image-remove-channel img mask-shadow)
 
-    (gimp-drawable-set-name layer1 "Carved Surface")
-    (gimp-drawable-set-name shadow-layer "Bevel Shadow")
-    (gimp-drawable-set-name highlight-layer "Bevel Highlight")
-    (gimp-drawable-set-name cast-shadow-layer "Cast Shadow")
-    (gimp-drawable-set-name inset-layer "Inset")
+    (gimp-item-set-name layer1 _"Carved Surface")
+    (gimp-item-set-name shadow-layer _"Bevel Shadow")
+    (gimp-item-set-name highlight-layer _"Bevel Highlight")
+    (gimp-item-set-name cast-shadow-layer _"Cast Shadow")
+    (gimp-item-set-name inset-layer _"Inset")
 
     (gimp-display-new img)
     (gimp-image-undo-enable img)

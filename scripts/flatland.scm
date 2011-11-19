@@ -5,9 +5,9 @@
 ; FlatLand - creates a tileable pattern that looks like a map
 ; Copyright (C) 1997 Adrian Likins
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -16,8 +16,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;
 ; FlatLand
@@ -38,17 +37,17 @@
         (img (car (gimp-image-new width height RGB)))
         (layer-one (car (gimp-layer-new img width height
                                         RGB-IMAGE "bottom" 100 NORMAL-MODE)))
-        (layer-two)
+        (layer-two 0)
         )
 
     (gimp-image-undo-disable img)
-    (gimp-image-add-layer img layer-one 0)
+    (gimp-image-insert-layer img layer-one 0 0)
    ; (gimp-img-add-layer img layer-two 1)
 
     (plug-in-solid-noise RUN-NONINTERACTIVE img layer-one 1 0 seed detail xscale yscale )
     (plug-in-c-astretch RUN-NONINTERACTIVE img layer-one)
     (set! layer-two (car (gimp-layer-copy layer-one TRUE)))
-    (gimp-image-add-layer img layer-two -1)
+    (gimp-image-insert-layer img layer-two 0 -1)
     (gimp-image-set-active-layer img layer-two)
 
     (plug-in-gradmap RUN-NONINTERACTIVE img layer-two)
@@ -73,4 +72,4 @@
 )
 
 (script-fu-menu-register "script-fu-flatland"
-                         "<Toolbox>/Xtns/Patterns")
+                         "<Image>/File/Create/Patterns")

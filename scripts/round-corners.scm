@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ;
 ; round-corners.scm   version 1.02   1999/12/21
@@ -59,6 +58,9 @@
                        img)))
          (pic-layer (car (gimp-image-get-active-drawable image))))
 
+  (gimp-context-push)
+  (gimp-context-set-defaults)
+
   (if (= work-on-copy TRUE)
       (gimp-image-undo-disable image)
       (gimp-image-undo-group-start image)
@@ -69,16 +71,16 @@
 
   ; round the edges
   (gimp-selection-none image)
-  (gimp-rect-select image 0 0 radius radius CHANNEL-OP-ADD 0 0)
-  (gimp-ellipse-select image 0 0 diam diam CHANNEL-OP-SUBTRACT TRUE 0 0)
-  (gimp-rect-select image (- width radius) 0 radius radius CHANNEL-OP-ADD 0 0)
-  (gimp-ellipse-select image (- width diam) 0 diam diam CHANNEL-OP-SUBTRACT TRUE 0 0)
-  (gimp-rect-select image 0 (- height radius) radius radius CHANNEL-OP-ADD 0 0)
-  (gimp-ellipse-select image 0 (- height diam) diam diam CHANNEL-OP-SUBTRACT TRUE 0 0)
-  (gimp-rect-select image (- width radius) (- height radius)
-                    radius radius CHANNEL-OP-ADD 0 0)
-  (gimp-ellipse-select image (- width diam) (- height diam)
-                       diam diam CHANNEL-OP-SUBTRACT TRUE 0 0)
+  (gimp-image-select-rectangle image CHANNEL-OP-ADD 0 0 radius radius)
+  (gimp-image-select-ellipse image CHANNEL-OP-SUBTRACT  0 0 diam diam)
+  (gimp-image-select-rectangle image CHANNEL-OP-ADD (- width radius) 0 radius radius)
+  (gimp-image-select-ellipse image CHANNEL-OP-SUBTRACT (- width diam) 0 diam diam)
+  (gimp-image-select-rectangle image CHANNEL-OP-ADD 0 (- height radius) radius radius)
+  (gimp-image-select-ellipse image CHANNEL-OP-SUBTRACT 0 (- height diam) diam diam)
+  (gimp-image-select-rectangle image CHANNEL-OP-ADD (- width radius) (- height radius)
+                    radius radius)
+  (gimp-image-select-ellipse image CHANNEL-OP-SUBTRACT (- width diam) (- height diam)
+                       diam diam)
   (gimp-edit-clear pic-layer)
   (gimp-selection-none image)
 
@@ -106,10 +108,10 @@
                                             100
                                             NORMAL-MODE))))
         (gimp-drawable-fill bg-layer BACKGROUND-FILL)
-        (gimp-image-add-layer image bg-layer -1)
-        (gimp-image-raise-layer image pic-layer)
+        (gimp-image-insert-layer image bg-layer 0 -1)
+        (gimp-image-raise-item image pic-layer)
         (if (= shadow-toggle TRUE)
-            (gimp-image-lower-layer image bg-layer))))
+            (gimp-image-lower-item image bg-layer))))
 
 ; clean up after the script
   (if (= work-on-copy TRUE)
@@ -119,6 +121,7 @@
 
   (if (= work-on-copy TRUE)
       (gimp-display-new image))
+  (gimp-context-pop)
   (gimp-displays-flush))
 )
 

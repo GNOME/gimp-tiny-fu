@@ -20,16 +20,16 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img glow-layer 1)
+    (script-fu-util-image-add-layers img glow-layer bg-layer)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
     (gimp-context-set-background '(0 0 0))
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
     (gimp-edit-clear glow-layer)
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-selection-grow img grow)
     (gimp-selection-feather img feather)
     (gimp-context-set-foreground glow-color)
@@ -115,4 +115,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

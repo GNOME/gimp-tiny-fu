@@ -14,9 +14,9 @@
 ;
 ; Thanks to Quartic for helping me debug this thing.
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -25,8 +25,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
@@ -35,36 +34,38 @@
         (img (car (gimp-image-new width height RGB)))
         (layer-one (car (gimp-layer-new img width height
                                         RGB-IMAGE "Bottom" 100 NORMAL-MODE)))
-        (layer-two)
+        (layer-two 0)
         )
-  (gimp-context-set-gradient gradient)
-  (gimp-image-undo-disable img)
-  (gimp-image-add-layer img layer-one 0)
 
-  (plug-in-solid-noise RUN-NONINTERACTIVE img layer-one TRUE FALSE seed detail xscale yscale)
-  (plug-in-c-astretch RUN-NONINTERACTIVE img layer-one)
-  (set! layer-two (car (gimp-layer-copy layer-one TRUE)))
-  (gimp-image-add-layer img layer-two -1)
-  (gimp-image-set-active-layer img layer-two)
+    (gimp-context-push)
+    (gimp-context-set-defaults)
+    (gimp-context-set-gradient gradient)
+    (gimp-image-undo-disable img)
+    (gimp-image-insert-layer img layer-one 0 0)
 
-  (plug-in-gradmap RUN-NONINTERACTIVE img layer-two)
+    (plug-in-solid-noise RUN-NONINTERACTIVE img layer-one TRUE FALSE seed detail xscale yscale)
+    (plug-in-c-astretch RUN-NONINTERACTIVE img layer-one)
+    (set! layer-two (car (gimp-layer-copy layer-one TRUE)))
+    (gimp-image-insert-layer img layer-two 0 -1)
+    (gimp-image-set-active-layer img layer-two)
 
+    (plug-in-gradmap RUN-NONINTERACTIVE img layer-two)
 
+    (gimp-image-select-color img CHANNEL-OP-REPLACE layer-one '(190 190 190))
+    (plug-in-bump-map RUN-NONINTERACTIVE img layer-two layer-one 135.0 35 landheight 0 0 0 0 TRUE FALSE 0)
 
-  (gimp-by-color-select layer-one '(190 190 190) 55 CHANNEL-OP-REPLACE FALSE FALSE 0 FALSE)
-  (plug-in-bump-map RUN-NONINTERACTIVE img layer-two layer-one 135.0 35 landheight 0 0 0 0 TRUE FALSE 0)
+    ;(plug-in-c-astretch RUN-NONINTERACTIVE img layer-two)
+    (gimp-selection-invert img)
+    (plug-in-bump-map RUN-NONINTERACTIVE img layer-two layer-one 135.0 35 seadepth 0 0 0 0 TRUE FALSE 0)
 
-  ;(plug-in-c-astretch RUN-NONINTERACTIVE img layer-two)
-  (gimp-selection-invert img)
-  (plug-in-bump-map RUN-NONINTERACTIVE img layer-two layer-one 135.0 35 seadepth 0 0 0 0 TRUE FALSE 0)
+    ;(plug-in-c-astretch RUN-NONINTERACTIVE img layer-two)
 
-  ;(plug-in-c-astretch RUN-NONINTERACTIVE img layer-two)
+    ; uncomment the next line if you want to keep a selection of the "land"
+    (gimp-selection-none img)
 
-  ; uncomment the next line if you want to keep a selection of the "land"
-  (gimp-selection-none img)
-
-  (gimp-display-new img)
-  (gimp-image-undo-enable img)
+    (gimp-display-new img)
+    (gimp-image-undo-enable img)
+    (gimp-context-pop)
   )
 )
 
@@ -87,4 +88,4 @@
 )
 
 (script-fu-menu-register "script-fu-land"
-                         "<Toolbox>/Xtns/Patterns")
+                         "<Image>/File/Create/Patterns")

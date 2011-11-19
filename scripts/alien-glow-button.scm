@@ -8,9 +8,9 @@
 ; based on code from Frederico Mena Quintero (Quartic)
 ; federico@nuclecu.unam.mx
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -19,8 +19,7 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 (define (script-fu-alien-glow-button text
@@ -76,33 +75,34 @@
         (img (car (gimp-image-new img-width img-height RGB)))
         (bg-layer (car (gimp-layer-new img
                                        img-width img-height RGBA-IMAGE
-                                       "Background" 100 NORMAL-MODE)))
+                                       _"Background" 100 NORMAL-MODE)))
         (glow-layer (car (gimp-layer-new img
                                          img-width img-height RGBA-IMAGE
-                                         "Glow" 100 NORMAL-MODE)))
+                                         _"Glow" 100 NORMAL-MODE)))
         (button-layer (car (gimp-layer-new img
                                            layer-width layer-height RGBA-IMAGE
-                                           "Button" 100 NORMAL-MODE)))
+                                           _"Button" 100 NORMAL-MODE)))
         )
 
     (gimp-context-push)
+    (gimp-context-set-feather FALSE)
 
     (gimp-image-undo-disable img)
 
     ; Create bumpmap layer
 
-    (gimp-image-add-layer img bg-layer -1)
+    (gimp-image-insert-layer img bg-layer 0 -1)
     (gimp-context-set-foreground '(0 0 0))
     (gimp-context-set-background bg-color)
     (gimp-edit-fill bg-layer BACKGROUND-FILL)
-    (gimp-image-add-layer img glow-layer -1)
+    (gimp-image-insert-layer img glow-layer 0 -1)
 
     ; Create text layer
 
-    (gimp-image-add-layer img button-layer -1)
+    (gimp-image-insert-layer img button-layer 0 -1)
     (gimp-layer-set-offsets button-layer (/ glow-radius 2) (/ glow-radius 2))
     (gimp-selection-none img)
-    (gimp-rect-select img 0 0 img-width img-height CHANNEL-OP-REPLACE FALSE 0)
+    (gimp-image-select-rectangle img CHANNEL-OP-REPLACE 0 0 img-width img-height)
     (gimp-context-set-foreground '(100 100 100))
     (gimp-context-set-background '(0 0 0))
 
@@ -113,12 +113,12 @@
 
     (gimp-edit-clear glow-layer)
 
-    (gimp-rect-select img
+    (gimp-image-select-rectangle img
+                      CHANNEL-OP-REPLACE
                       (/ glow-radius 4)
                       (/ glow-radius 4)
                       (- img-width (/ glow-radius 2))
-                      (- img-height (/ glow-radius 2))
-                      CHANNEL-OP-REPLACE FALSE 0 )
+                      (- img-height (/ glow-radius 2)))
 
     (gimp-context-set-foreground glow-color)
     (gimp-edit-fill glow-layer FOREGROUND-FILL)
@@ -165,4 +165,4 @@
 )
 
 (script-fu-menu-register "script-fu-alien-glow-button"
-                         "<Toolbox>/Xtns/Web Page Themes/Alien Glow")
+                         "<Image>/File/Create/Web Page Themes/Alien Glow")

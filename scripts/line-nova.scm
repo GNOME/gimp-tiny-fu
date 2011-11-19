@@ -19,16 +19,13 @@
         (drw-width (car (gimp-drawable-width drw)))
         (drw-height (car (gimp-drawable-height drw)))
         (drw-offsets (gimp-drawable-offsets drw))
-        (old-selection
-          (if (eq? (car (gimp-selection-is-empty img)) TRUE)
-              #f
-              (car (gimp-selection-save img))
-          )
-        )
+        (old-selection FALSE)
         (radius (max drw-height drw-width))
         (index 0)
         (dir-deg/line (/ 360 num-of-lines))
         )
+    (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (define (draw-vector beg-x beg-y direction)
 
@@ -66,15 +63,19 @@
                     (+ beg-y (* off (sin dir0)))
         )
         (set-marginal-point beg-x beg-y direction)
-        (gimp-free-select img 6 *points* CHANNEL-OP-ADD
-                          TRUE                ; antialias
-                          FALSE                ; feather
-                          0                    ; feather radius
-        )
+        (gimp-image-select-polygon img CHANNEL-OP-ADD 6 *points*)
       )
     )
 
     (gimp-image-undo-group-start img)
+
+    (set! old-selection
+      (if (eq? (car (gimp-selection-is-empty img)) TRUE)
+         #f
+         (car (gimp-selection-save img))
+      )
+    )
+
     (gimp-selection-none img)
     (srand (realtime))
     (while (< index num-of-lines)
@@ -85,26 +86,29 @@
       (set! index (+ index 1))
     )
     (gimp-edit-bucket-fill drw FG-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
+
     (if old-selection
       (begin
-        (gimp-selection-load old-selection)
+        (gimp-image-select-item img CHANNEL-OP-REPLACE old-selection)
         ;; (gimp-image-set-active-layer img drw)
         ;; delete extra channel by Sven Neumann <neumanns@uni-duesseldorf.de>
         (gimp-image-remove-channel img old-selection)
       )
     )
+
     (gimp-image-undo-group-end img)
     (gimp-displays-flush)
+    (gimp-context-pop)
   )
 )
 
 (script-fu-register "script-fu-line-nova"
   _"Line _Nova..."
-  _"Fill a layer with rays emanating outward from its center using the FG color"
+  _"Fill a layer with rays emanating outward from its center using the foreground color"
   "Shuji Narazaki <narazaki@gimp.org>"
   "Shuji Narazaki"
   "1997,1998"
-  ""
+  "*"
   SF-IMAGE       "Image"               0
   SF-DRAWABLE    "Drawable"            0
   SF-ADJUSTMENT _"Number of lines"     '(200 40 1000 1 1 0 1)

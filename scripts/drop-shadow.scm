@@ -1,9 +1,9 @@
 ; GIMP - The GNU Image Manipulation Program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; This program is free software; you can redistribute it and/or modify
+; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
-; the Free Software Foundation; either version 2 of the License, or
+; the Free Software Foundation; either version 3 of the License, or
 ; (at your option) any later version.
 ;
 ; This program is distributed in the hope that it will be useful,
@@ -12,18 +12,18 @@
 ; GNU General Public License for more details.
 ;
 ; You should have received a copy of the GNU General Public License
-; along with this program; if not, write to the Free Software
-; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;
 ;
-; drop-shadow.scm   version 1.04   1999/12/21
+; drop-shadow.scm   version 1.05   2011/4/21
 ;
 ; CHANGE-LOG:
 ; 1.00 - initial release
 ; 1.01 - fixed the problem with a remaining copy of the selection
 ; 1.02 - some code cleanup, no real changes
 ; 1.03 - can't call gimp-edit-fill until layer is added to image!
-;
+; 1.04
+; 1.05 - replaced deprecated function calls with new ones for 2.8
 ;
 ; Copyright (C) 1997-1999 Sven Neumann <sven@gimp.org>
 ;
@@ -56,6 +56,7 @@
         )
 
   (gimp-context-push)
+  (gimp-context-set-defaults)
 
   (gimp-image-set-active-layer image drawable)
 
@@ -64,7 +65,7 @@
   (gimp-layer-add-alpha drawable)
   (if (= (car (gimp-selection-is-empty image)) TRUE)
       (begin
-        (gimp-selection-layer-alpha drawable)
+        (gimp-image-select-item image CHANNEL-OP-REPLACE drawable)
         (set! from-selection FALSE))
       (begin
         (set! from-selection TRUE)
@@ -127,7 +128,7 @@
                                             "Drop Shadow"
                                             shadow-opacity
                                             NORMAL-MODE)))
-    (gimp-image-add-layer image shadow-layer -1)
+    (gimp-image-insert-layer image shadow-layer 0 -1)
     (gimp-layer-set-offsets shadow-layer
                             shadow-offset-x
                             shadow-offset-y))
@@ -147,14 +148,14 @@
 
   (if (= from-selection TRUE)
       (begin
-        (gimp-selection-load active-selection)
+        (gimp-image-select-item image CHANNEL-OP-REPLACE active-selection)
         (gimp-edit-clear shadow-layer)
         (gimp-image-remove-channel image active-selection)))
 
   (if (and
        (= (car (gimp-layer-is-floating-sel drawable)) 0)
        (= from-selection FALSE))
-      (gimp-image-raise-layer image drawable))
+      (gimp-image-raise-item image drawable))
 
   (gimp-image-set-active-layer image drawable)
   (gimp-image-undo-group-end image)

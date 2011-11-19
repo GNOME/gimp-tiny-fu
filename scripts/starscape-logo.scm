@@ -72,13 +72,12 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img glow-layer 1)
-    (gimp-image-add-layer img shadow-layer 1)
-    (gimp-image-add-channel img bump-channel 0)
+    (script-fu-util-image-add-layers img shadow-layer glow-layer bg-layer)
+    (gimp-image-insert-channel img bump-channel 0 0)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
 
     (gimp-context-set-background '(0 0 0))
@@ -86,14 +85,14 @@
     (gimp-edit-clear shadow-layer)
     (gimp-edit-clear glow-layer)
 
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-selection-grow img grow)
     (gimp-selection-feather img feather)
     (gimp-context-set-background glow-color)
     (gimp-selection-feather img feather)
     (gimp-edit-fill glow-layer BACKGROUND-FILL)
 
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-selection-feather img shadow-feather)
     (gimp-context-set-background '(0 0 0))
     (gimp-selection-translate img offx offy)
@@ -121,32 +120,6 @@
     (gimp-context-pop)
   )
 )
-
-(define (script-fu-starscape-logo-alpha img logo-layer size glow-color)
-  (begin
-    (gimp-image-undo-group-start img)
-    (apply-starscape-logo-effect img logo-layer size glow-color)
-    (gimp-image-undo-group-end img)
-    (gimp-displays-flush)
-  )
-)
-
-(script-fu-register "script-fu-starscape-logo-alpha"
-  _"Sta_rscape..."
-  _"Fill the selected region (or alpha) with a rock-like texture, a nova glow, and shadow"
-  "Spencer Kimball"
-  "Spencer Kimball"
-  "1997"
-  "RGBA"
-  SF-IMAGE       "Image"                    0
-  SF-DRAWABLE    "Drawable"                 0
-  SF-ADJUSTMENT _"Effect size (pixels * 4)" '(150 1 1000 1 10 0 1)
-  SF-COLOR      _"Glow color"               '(28 65 188)
-)
-
-(script-fu-menu-register "script-fu-starscape-logo-alpha"
-                         "<Image>/Filters/Alpha to Logo")
-
 
 (define (script-fu-starscape-logo text size fontname glow-color)
   (let* (
@@ -176,4 +149,4 @@
 )
 
 (script-fu-menu-register "script-fu-starscape-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")

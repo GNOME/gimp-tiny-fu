@@ -31,12 +31,11 @@
         )
 
     (gimp-context-push)
+    (gimp-context-set-defaults)
 
     (gimp-selection-none img)
     (script-fu-util-image-resize-from-layer img logo-layer)
-    (gimp-image-add-layer img bg-layer 1)
-    (gimp-image-add-layer img shadow-layer 1)
-    (gimp-image-add-layer img highlight-layer 1)
+    (script-fu-util-image-add-layers img highlight-layer shadow-layer bg-layer)
     (gimp-context-set-foreground text-color)
     (gimp-layer-set-lock-alpha logo-layer TRUE)
     (gimp-edit-fill logo-layer FOREGROUND-FILL)
@@ -46,7 +45,7 @@
     (gimp-edit-fill highlight-layer FOREGROUND-FILL)
     (gimp-context-set-background bg-color)
     (gimp-drawable-fill bg-layer BACKGROUND-FILL)
-    (gimp-selection-layer-alpha logo-layer)
+    (gimp-image-select-item img CHANNEL-OP-REPLACE logo-layer)
     (gimp-context-set-background '(0 0 0))
     (gimp-selection-feather img 7.5)
     (gimp-edit-fill shadow-layer BACKGROUND-FILL)
@@ -60,7 +59,7 @@
 
     (gimp-layer-translate shadow-layer 3 3)
     (gimp-layer-translate highlight-layer (- posx 2) (- posy 2))
-    (gimp-drawable-set-name highlight-layer "Highlight")
+    (gimp-item-set-name highlight-layer "Highlight")
 
     (gimp-context-pop)
   )
@@ -126,4 +125,4 @@
 )
 
 (script-fu-menu-register "script-fu-basic2-logo"
-                         "<Toolbox>/Xtns/Logos")
+                         "<Image>/File/Create/Logos")
