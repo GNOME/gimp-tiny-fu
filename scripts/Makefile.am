@@ -8,7 +8,8 @@ scriptsdir = $(GIMP_PLUGINDIR)
 
 initscripts = \
 	script-fu.init                  \
-	script-fu-compat.init
+	script-fu-compat.init		\
+	plug-in-compat.init
 
 scripts = \
 	3d-outline.scm			\

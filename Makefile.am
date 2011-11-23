@@ -3,7 +3,6 @@
 SUBDIRS = \
 	po         \
 	ftx        \
-	re         \
 	tinyscheme \
 	tiny-fu    \
 	scripts

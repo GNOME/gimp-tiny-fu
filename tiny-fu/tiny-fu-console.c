@@ -1,9 +1,9 @@
 /* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
- * This program is free software; you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "config.h"
@@ -28,8 +27,6 @@
 
 #include <gdk/gdkkeysyms.h>
 
-#include "tinyscheme/scheme.h"
-
 #include "scheme-wrapper.h"
 #include "tiny-fu-console.h"
 
@@ -39,7 +36,7 @@
 #define TEXT_WIDTH  480
 #define TEXT_HEIGHT 400
 
-#define PROC_NAME   "plug-in-script-fu-console"
+#define PROC_NAME   "plug-in-tiny-fu-console"
 
 typedef struct
 {
@@ -125,13 +122,13 @@ script_fu_console_interface (void)
   GtkWidget        *scrolled_window;
   GtkWidget        *hbox;
 
-  gimp_ui_init ("script-fu", FALSE);
+  gimp_ui_init ("tiny-fu", FALSE);
 
   console.input_id    = -1;
   console.history_max = 50;
 
-  console.dialog = gimp_dialog_new (_("Script-Fu Console"),
-                                    "script-fu-console",
+  console.dialog = gimp_dialog_new (_("Tiny-Fu Console"),
+                                    "gimp-tiny-fu-console",
                                     NULL, 0,
                                     gimp_standard_help_func, PROC_NAME,
 
@@ -155,10 +152,10 @@ script_fu_console_interface (void)
                     &console);
 
   /*  The main vbox  */
-  vbox = gtk_vbox_new (FALSE, 12);
+  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
   gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
-  gtk_box_pack_start (GTK_BOX (GTK_DIALOG (console.dialog)->vbox), vbox,
-                      TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (console.dialog))),
+                      vbox, TRUE, TRUE, 0);
   gtk_widget_show (vbox);
 
   /*  The output text widget  */
@@ -197,7 +194,7 @@ script_fu_console_interface (void)
       NULL,       "\n",
       NULL,       "Copyright (c) Dimitrios Souflis",
       NULL,       "\n",
-      "strong",   N_("Script-Fu Console"),
+      "strong",   N_("Tiny-Fu Console"),
       NULL,       " - ",
       "emphasis", N_("Interactive Scheme Development"),
       NULL,       "\n"
@@ -222,7 +219,7 @@ script_fu_console_interface (void)
   }
 
   /*  The current command  */
-  hbox = gtk_hbox_new (FALSE, 6);
+  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
   gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
 
@@ -236,7 +233,7 @@ script_fu_console_interface (void)
                     &console);
 
   button = gtk_button_new_with_mnemonic (_("_Browse..."));
-  gtk_misc_set_padding (GTK_MISC (GTK_BIN (button)->child), 2, 0);
+  gtk_misc_set_padding (GTK_MISC (gtk_bin_get_child (GTK_BIN (button))), 2, 0);
   gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, TRUE, 0);
   gtk_widget_show (button);
 
@@ -293,7 +290,7 @@ script_fu_console_save_dialog (ConsoleInterface *console)
   if (! console->save_dialog)
     {
       console->save_dialog =
-        gtk_file_chooser_dialog_new (_("Save Script-Fu Console Output"),
+        gtk_file_chooser_dialog_new (_("Save Tiny-Fu Console Output"),
                                      GTK_WINDOW (console->dialog),
                                      GTK_FILE_CHOOSER_ACTION_SAVE,
                                      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
@@ -369,8 +366,8 @@ script_fu_browse_callback (GtkWidget        *widget,
   if (! console->proc_browser)
     {
       console->proc_browser =
-        gimp_proc_browser_dialog_new (_("Script-Fu Procedure Browser"),
-                                      "script-fu-procedure-browser",
+        gimp_proc_browser_dialog_new (_("Tiny-Fu Procedure Browser"),
+                                      "tiny-fu-procedure-browser",
                                       gimp_standard_help_func, PROC_NAME,
 
                                       GTK_STOCK_APPLY, GTK_RESPONSE_APPLY,
@@ -485,9 +482,18 @@ script_fu_browse_row_activated (GtkDialog *dialog)
 static gboolean
 script_fu_console_idle_scroll_end (GtkWidget *view)
 {
-  GtkAdjustment *adj = GTK_TEXT_VIEW (view)->vadjustment;
+  GtkWidget *parent = gtk_widget_get_parent (view);
 
-  gtk_adjustment_set_value (adj, adj->upper - adj->page_size);
+  if (parent)
+    {
+      GtkAdjustment *adj;
+
+      adj = gtk_scrolled_window_get_vadjustment (GTK_SCROLLED_WINDOW (parent));
+
+      gtk_adjustment_set_value (adj,
+                                gtk_adjustment_get_upper (adj) -
+                                gtk_adjustment_get_page_size (adj));
+    }
 
   g_object_unref (view);
 
@@ -514,10 +520,13 @@ script_fu_output_to_console (TsOutputType  type,
 
   if (console && console->text_view)
     {
-      GtkTextBuffer *buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (console->text_view));
+      GtkTextBuffer *buffer;
       GtkTextIter    cursor;
 
+      buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (console->text_view));
+
       gtk_text_buffer_get_end_iter (buffer, &cursor);
+
       if (type == TS_OUTPUT_NORMAL)
         {
           gtk_text_buffer_insert (buffer, &cursor, text, len);
@@ -528,6 +537,7 @@ script_fu_output_to_console (TsOutputType  type,
                                                     text, len, "emphasis",
                                                     NULL);
         }
+
       script_fu_console_scroll_end (console->text_view);
     }
 }
@@ -563,7 +573,9 @@ script_fu_cc_key_function (GtkWidget        *widget,
 
   switch (event->keyval)
     {
-    case GDK_Return:
+    case GDK_KEY_Return:
+    case GDK_KEY_KP_Enter:
+    case GDK_KEY_ISO_Enter:
       if (script_fu_cc_is_empty (console))
         return TRUE;
 
@@ -591,8 +603,11 @@ script_fu_cc_key_function (GtkWidget        *widget,
 
       gtk_entry_set_text (GTK_ENTRY (console->cc), "");
 
-      output = g_string_new ("");
+      output = g_string_new (NULL);
       ts_register_output_func (ts_gstring_output_func, output);
+
+      gimp_plugin_set_pdb_error_handler (GIMP_PDB_ERROR_HANDLER_PLUGIN);
+
       if (ts_interpret_string (list->data) != 0)
         {
           script_fu_output_to_console (TS_OUTPUT_ERROR,
@@ -607,6 +622,9 @@ script_fu_cc_key_function (GtkWidget        *widget,
                                        output->len,
                                        console);
         }
+
+      gimp_plugin_set_pdb_error_handler (GIMP_PDB_ERROR_HANDLER_INTERNAL);
+
       g_string_free (output, TRUE);
 
       gimp_displays_flush ();
@@ -630,24 +648,24 @@ script_fu_cc_key_function (GtkWidget        *widget,
       return TRUE;
       break;
 
-    case GDK_KP_Up:
-    case GDK_Up:
+    case GDK_KEY_KP_Up:
+    case GDK_KEY_Up:
       direction = -1;
       break;
 
-    case GDK_KP_Down:
-    case GDK_Down:
+    case GDK_KEY_KP_Down:
+    case GDK_KEY_Down:
       direction = 1;
       break;
 
-    case GDK_P:
-    case GDK_p:
+    case GDK_KEY_P:
+    case GDK_KEY_p:
       if (event->state & GDK_CONTROL_MASK)
         direction = -1;
       break;
 
-    case GDK_N:
-    case GDK_n:
+    case GDK_KEY_N:
+    case GDK_KEY_n:
       if (event->state & GDK_CONTROL_MASK)
         direction = 1;
       break;
@@ -685,45 +703,4 @@ script_fu_cc_key_function (GtkWidget        *widget,
     }
 
   return FALSE;
-}
-
-void
-script_fu_eval_run (const gchar      *name,
-                    gint              nparams,
-                    const GimpParam  *params,
-                    gint             *nreturn_vals,
-                    GimpParam       **return_vals)
-{
-  static GimpParam  values[1];
-  GimpPDBStatusType status = GIMP_PDB_SUCCESS;
-  GimpRunMode       run_mode;
-
-  run_mode = params[0].data.d_int32;
-  set_run_mode_constant (run_mode);
-
-  switch (run_mode)
-    {
-    case GIMP_RUN_NONINTERACTIVE:
-      /*  Disable Script-Fu output  */
-      ts_register_output_func (NULL, NULL);
-      if (ts_interpret_string (params[1].data.d_string) != 0)
-          status = GIMP_PDB_EXECUTION_ERROR;
-      break;
-
-    case GIMP_RUN_INTERACTIVE:
-    case GIMP_RUN_WITH_LAST_VALS:
-      status = GIMP_PDB_CALLING_ERROR;
-      g_message (_("Script-Fu evaluation mode only allows "
-                   "non-interactive invocation"));
-      break;
-
-    default:
-      break;
-    }
-
-  *nreturn_vals = 1;
-  *return_vals = values;
-
-  values[0].type          = GIMP_PDB_STATUS;
-  values[0].data.d_status = status;
 }

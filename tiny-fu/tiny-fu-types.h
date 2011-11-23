@@ -1,9 +1,9 @@
 /* GIMP - The GNU Image Manipulation Program
  * Copyright (C) 1995 Spencer Kimball and Peter Mattis
  *
- * This program is free software; you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -12,8 +12,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #ifndef __SCRIPT_FU_TYPES_H__
@@ -50,14 +49,14 @@ typedef struct
 
 typedef struct
 {
-  GSList  *list;
-  gint     history;
+  GSList *list;
+  gint    history;
 } SFOption;
 
 typedef struct
 {
-  gchar   *type_name;
-  gint     history;
+  gchar *type_name;
+  gint   history;
 } SFEnum;
 
 typedef union
@@ -84,19 +83,24 @@ typedef union
 
 typedef struct
 {
-  gchar         *name;
-  gchar         *menu_path;
-  gchar         *blurb;
-  gchar         *author;
-  gchar         *copyright;
-  gchar         *date;
-  gchar         *img_types;
-  gint           num_args;
-  SFArgType     *arg_types;
-  gchar        **arg_labels;
-  SFArgValue    *arg_defaults;
-  SFArgValue    *arg_values;
-  GimpParamDef  *args;     /*  used only temporary until installed  */
+  SFArgType   type;
+  gchar      *label;
+  SFArgValue  default_value;
+  SFArgValue  value;
+} SFArg;
+
+typedef struct
+{
+  gchar        *name;
+  gchar        *menu_label;
+  gchar        *blurb;
+  gchar        *author;
+  gchar        *copyright;
+  gchar        *date;
+  gchar        *image_types;
+
+  gint          n_args;
+  SFArg        *args;
 } SFScript;
 
 

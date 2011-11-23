@@ -14,14 +14,14 @@ PROJECT="GIMP Tiny-Fu"
 TEST_TYPE=-f
 FILE=tiny-fu/tiny-fu.c
 
-ACLOCAL=${ACLOCAL-aclocal-1.9}
+ACLOCAL=${ACLOCAL-aclocal-1.11}
 AUTOCONF=${AUTOCONF-autoconf}
 AUTOHEADER=${AUTOHEADER-autoheader}
-AUTOMAKE=${AUTOMAKE-automake-1.9}
+AUTOMAKE=${AUTOMAKE-automake-1.11}
 LIBTOOLIZE=${LIBTOOLIZE-libtoolize}
 
 AUTOCONF_REQUIRED_VERSION=2.54
-AUTOMAKE_REQUIRED_VERSION=1.8.3
+AUTOMAKE_REQUIRED_VERSION=1.10.0
 GLIB_REQUIRED_VERSION=2.2.0
 INTLTOOL_REQUIRED_VERSION=0.31
 LIBTOOL_REQUIRED_VERSION=1.4
@@ -131,15 +131,12 @@ echo -n "checking for automake >= $AUTOMAKE_REQUIRED_VERSION ... "
 if ($AUTOMAKE --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=$AUTOMAKE
    ACLOCAL=$ACLOCAL
+elif (automake-1.11 --version) < /dev/null > /dev/null 2>&1; then
+   AUTOMAKE=automake-1.11
+   ACLOCAL=aclocal-1.11
 elif (automake-1.10 --version) < /dev/null > /dev/null 2>&1; then
    AUTOMAKE=automake-1.10
    ACLOCAL=aclocal-1.10
-elif (automake-1.9 --version) < /dev/null > /dev/null 2>&1; then
-   AUTOMAKE=automake-1.9
-   ACLOCAL=aclocal-1.9
-elif (automake-1.8 --version) < /dev/null > /dev/null 2>&1; then
-   AUTOMAKE=automake-1.8
-   ACLOCAL=aclocal-1.8
 else
     echo
     echo "  You must have automake $AUTOMAKE_REQUIRED_VERSION or newer installed to compile $PROJECT."

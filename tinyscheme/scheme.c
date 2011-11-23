@@ -101,7 +101,7 @@ ts_output_string (TsOutputType  type,
  *  Basic memory allocation units
  */
 
-#define banner "TinyScheme 1.40 (with UTF-8 support)"
+#define banner "TinyScheme 1.40 (with UTF-8 support)\n"
 
 #include <string.h>
 #include <stdlib.h>
@@ -5195,8 +5195,8 @@ int main(int argc, char **argv) {
   if(argc==1) {
     printf(banner);
   }
-  if(argc==2 && strcmp(argv[1],"-?")==0) {
-    printf("Usage: tinyscheme -?\n");
+  if(argc==2 && strcmp(argv[1],"-h")==0) {
+    printf("Usage: tinyscheme [-h]\n");
     printf("or:    tinyscheme [<file1> <file2> ...]\n");
     printf("followed by\n");
     printf("          -1 <file> [<arg1> <arg2> ...]\n");
@@ -5214,24 +5214,18 @@ int main(int argc, char **argv) {
 #if USE_DL
   scheme_define(&sc,sc.global_env,mk_symbol(&sc,"load-extension"),mk_foreign_func(&sc, scm_load_ext));
 #endif
-  argv++;
-  if(g_access(file_name,0)!=0) {
-    char *p=getenv("TINYSCHEMEINIT");
-    if(p!=0) {
-      file_name=p;
-    }
-  }
 
-#if 1
-  if (argc > 2 && strcmp (argv[1], "-gimp") == 0)
+  if (argc == 7 && strcmp (argv[2], "-gimp") == 0)
   {
     pointer args = sc.NIL;
+    char *s;
     int i;
 
-    chdir (getenv("TINYFUPATH"));
+    s = g_strdup_printf ("%s/%s", getenv("TINYFUPATH"), "tiny_fu");
+    scm_load_ext(&sc, mk_symbol (&sc, s));  //Load tiny-fu extension
+    g_free (s);
 
-    --argc; /* argv was incremented above */
-    for (i = 0; i < argc; ++i)
+    for (i = 1; i < argc; ++i)
       {
         pointer value = mk_string (&sc, argv[i]);
         args = cons (&sc, value, args);
@@ -5239,38 +5233,38 @@ int main(int argc, char **argv) {
     args = reverse_in_place (&sc, sc.NIL, args);
     scheme_define (&sc, sc.global_env, mk_symbol (&sc, "*args*"), args);
 
-    fin = fopen (file_name, "rb");
-    if (fin == 0)
-        fprintf (stderr, "Could not open file %s\n", file_name);
-    else
-      {
-        scheme_load_file (&sc, fin);
-        fclose (fin);
-      }
+    scheme_load_string(&sc, "(tiny-fu-init *args*)");
 
-    fin = fopen (argv[0], "rb");
+    fin = fopen (argv[1], "rb");
     if (fin == 0)
-        fprintf (stderr, "Could not open file %s\n", argv[0]);
+        fprintf (stderr, "Could not open file %s\n", argv[1]);
     else
       {
         scheme_load_file (&sc, fin);
         fclose (fin);
       }
   }
-  else
-#endif
+  else {
+
+  //Start of original standalone initialization
+  argv++;
+  if(g_access(file_name,0)!=0) {
+    char *p=getenv("TINYSCHEMEINIT");
+    if(p!=0) {
+      file_name=p;
+    }
+  }
   do {
     if(strcmp(file_name,"-")==0) {
       fin=stdin;
-    } else if(strcmp(file_name,"-1")==0 || strcmp(file_name,"-c")==0 ||
-              strcmp(*argv,"-gimp")==0) {
+    } else if(strcmp(file_name,"-1")==0 || strcmp(file_name,"-c")==0) {
       pointer args=sc.NIL;
       isfile=file_name[1]=='1';
       file_name=*argv++;
       if(strcmp(file_name,"-")==0) {
         fin=stdin;
       } else if(isfile) {
-        fin=g_fopen(file_name,"r");
+        fin=g_fopen(file_name,"rb");
       }
       for(;*argv;argv++) {
         pointer value=mk_string(&sc,*argv);
@@ -5280,7 +5274,7 @@ int main(int argc, char **argv) {
       scheme_define(&sc,sc.global_env,mk_symbol(&sc,"*args*"),args);
 
     } else {
-      fin=g_fopen(file_name,"r");
+      fin=g_fopen(file_name,"rb");
     }
     if(isfile && fin==0) {
       fprintf(stderr,"Could not open file %s\n",file_name);
@@ -5304,6 +5298,10 @@ int main(int argc, char **argv) {
   if(argc==1) {
     scheme_load_named_file(&sc,stdin,0);
   }
+  //End of original standalone initialization
+
+  } //End of else block
+
   retcode=sc.retcode;
   scheme_deinit(&sc);
 

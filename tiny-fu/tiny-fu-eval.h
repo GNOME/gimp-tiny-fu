@@ -15,15 +15,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef __SCRIPT_FU_SCRIPTS_H__
-#define __SCRIPT_FU_SCRIPTS_H__
+#ifndef __SCRIPT_FU_EVAL_H__
+#define __SCRIPT_FU_EVAL_H__
 
 
-void      script_fu_find_scripts  (const gchar *path);
-pointer   script_fu_add_script    (scheme      *sc,
-                                   pointer      a);
-pointer   script_fu_add_menu      (scheme      *sc,
-                                   pointer      a);
+void  script_fu_eval_run (const gchar      *name,
+                          gint              nparams,
+                          const GimpParam  *params,
+                          gint             *nreturn_vals,
+                          GimpParam       **return_vals);
 
 
-#endif /*  __SCRIPT_FU_SCRIPTS__  */
+#endif /*  __SCRIPT_FU_EVAL_H__  */

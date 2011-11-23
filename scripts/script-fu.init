@@ -711,11 +711,3 @@
             (else (error "cond-expand : unknown operator" (car condition)))))))
 
 (gc-verbose #f)
-
-(load "script-fu-compat.init")
-(load-extension "tiny_fu")
-
-;There is no function available in the TinyScheme API to access *args*
-;to allow full initialization to be done when the extension is loaded
-;so call the main init routine and pass the command line arguments.
-(tiny-fu-init *args*)
