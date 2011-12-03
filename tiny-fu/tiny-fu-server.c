@@ -60,8 +60,8 @@ typedef short sa_family_t;  /* Not defined by winsock */
 
 #include <glib/gstdio.h>
 
-#include "libgimp/gimp.h"
-#include "libgimp/gimpui.h"
+#include <libgimp/gimp.h>
+#include <libgimp/gimpui.h>
 
 #include "tiny-fu-intl.h"
 

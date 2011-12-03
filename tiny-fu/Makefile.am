@@ -4,19 +4,34 @@ if OS_WIN32
 mwindows = -mwindows
 WINSOCK_LIBS = -lws2_32
 no_undefined = -no-undefined
+else
+libm = -lm
 endif
+
+libtinyscheme=-L../tinyscheme -ltinyscheme $(libm)
+libftx=-L../ftx -lftx
+
 
 AM_CFLAGS = \
     -DSTANDALONE=0     \
     -DUSE_INTERFACE=1  \
-    -I$(top_srcdir)    \
-    $(GIMP_CFLAGS)
+    $(GTK_CFLAGS)      \
+    $(GIMP_CFLAGS)     \
+    $(mwindows)
 
-tiny_fu_ladir = $(GIMP_LIBDIR)/tiny-fu
+LDADD = \
+    $(libtinyscheme)       \
+    $(libftx)              \
+    $(GTK_LIBS)            \
+    $(GIMP_LIBS)           \
+    $(GIMPUI_LIBS)         \
+    $(WINSOCK_LIBS)
 
-tiny_fu_la_LTLIBRARIES = tiny_fu.la
+libexecdir = $(GIMP_LIBDIR)/tiny-fu
 
-tiny_fu_la_SOURCES = \
+libexec_PROGRAMS = tiny-fu
+
+tiny_fu_SOURCES = \
     tiny-fu.c              \
     tiny-fu-console.c      \
     tiny-fu-console.h      \
@@ -41,14 +56,3 @@ tiny_fu_la_SOURCES = \
     tiny-fu-utils.h        \
     scheme-wrapper.c       \
     scheme-wrapper.h
-
-tiny_fu_la_LDFLAGS = \
-    -module          \
-    -avoid-version   \
-    $(no_undefined)  \
-    $(mwindows)
-
-tiny_fu_la_LIBADD = \
-    $(GIMP_LIBS)     \
-    $(WINSOCK_LIBS)  \
-    $(INTLLIBS)

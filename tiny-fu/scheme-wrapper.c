@@ -28,7 +28,7 @@
 
 #include <gtk/gtk.h>
 
-#include "libgimp/gimp.h"
+#include <libgimp/gimp.h>
 
 #include "tinyscheme/scheme-private.h"
 #if USE_DL

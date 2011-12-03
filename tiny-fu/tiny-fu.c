@@ -48,8 +48,6 @@
 
 /* Declare local functions. */
 
-static pointer tiny_fu_main_init        (scheme *sc, pointer args);
-
 static void    script_fu_query          (void);
 static void    script_fu_run            (const gchar      *name,
                                          gint              nparams,
@@ -74,48 +72,8 @@ const GimpPlugInInfo PLUG_IN_INFO =
 };
 
 
-/* This routine is called to initialize the Tiny-Fu extension. */
-EXPORT void
-init_tiny_fu (scheme *sc)
-{
-    printf ("Loaded Tiny-Fu extension\n");
+MAIN()
 
-    sc->vptr->scheme_define (sc, sc->global_env,
-                             sc->vptr->mk_symbol(sc,"tiny-fu-init"),
-                             sc->vptr->mk_foreign_func(sc, tiny_fu_main_init));
-}
-
-/* The parameters passed to TinyScheme can be found in *args*. */
-pointer
-tiny_fu_main_init (scheme *sc, pointer args)
-{
-    int    argc;
-    char **argv;
-    int    i;
-
-    args = sc->vptr->pair_car (args);   /* List is passed in a list */
-    argc = sc->vptr->list_length (sc, args);
-
-    argv = g_new (char *, argc);
-
-    for (i = 0; i < argc; ++i)
-       {
-         argv[i] = g_strdup (sc->vptr->string_value (sc->vptr->pair_car (args)));
-
-         args = sc->vptr->pair_cdr (args);
-       }
-
-    i = gimp_main (&PLUG_IN_INFO, argc, argv);
-
-    for (i = 0; i < argc; ++i)
-        g_free (argv[i]);
-    g_free (argv);
-
-    if (i == EXIT_SUCCESS)
-        return sc->T;
-
-    return sc->F;
-}
 
 static void
 script_fu_query (void)

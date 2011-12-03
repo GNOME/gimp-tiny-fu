@@ -5214,39 +5214,6 @@ int main(int argc, char **argv) {
 #if USE_DL
   scheme_define(&sc,sc.global_env,mk_symbol(&sc,"load-extension"),mk_foreign_func(&sc, scm_load_ext));
 #endif
-
-  if (argc == 7 && strcmp (argv[2], "-gimp") == 0)
-  {
-    pointer args = sc.NIL;
-    char *s;
-    int i;
-
-    s = g_strdup_printf ("%s/%s", getenv("TINYFUPATH"), "tiny_fu");
-    scm_load_ext(&sc, mk_symbol (&sc, s));  //Load tiny-fu extension
-    g_free (s);
-
-    for (i = 1; i < argc; ++i)
-      {
-        pointer value = mk_string (&sc, argv[i]);
-        args = cons (&sc, value, args);
-      }
-    args = reverse_in_place (&sc, sc.NIL, args);
-    scheme_define (&sc, sc.global_env, mk_symbol (&sc, "*args*"), args);
-
-    scheme_load_string(&sc, "(tiny-fu-init *args*)");
-
-    fin = fopen (argv[1], "rb");
-    if (fin == 0)
-        fprintf (stderr, "Could not open file %s\n", argv[1]);
-    else
-      {
-        scheme_load_file (&sc, fin);
-        fclose (fin);
-      }
-  }
-  else {
-
-  //Start of original standalone initialization
   argv++;
   if(g_access(file_name,0)!=0) {
     char *p=getenv("TINYSCHEMEINIT");
@@ -5298,10 +5265,6 @@ int main(int argc, char **argv) {
   if(argc==1) {
     scheme_load_named_file(&sc,stdin,0);
   }
-  //End of original standalone initialization
-
-  } //End of else block
-
   retcode=sc.retcode;
   scheme_deinit(&sc);
 

@@ -5,22 +5,14 @@ mwindows = -mwindows
 no_undefined = -no-undefined
 endif
 
+noinst_LIBRARIES = libftx.a
+
 AM_CFLAGS = \
-    -DUSE_INTERFACE=1 \
-    -I$(top_srcdir)   \
-    $(GIMP_CFLAGS)
+    -DSTANDALONE=0     \
+    -DUSE_INTERFACE=1  \
+    $(GLIB_CFLAGS)
 
-ftx_ladir = $(GIMP_LIBDIR)/tiny-fu
-
-ftx_la_LTLIBRARIES = ftx.la
-
-ftx_la_SOURCES = ftx.c ftx.h
-
-ftx_la_LDFLAGS = \
-    -module          \
-    -avoid-version   \
-    $(no_undefined)  \
-    $(mwindows)
+libftx_a_SOURCES = ftx.c
 
 EXTRA_DIST = \
     LICENSE           \

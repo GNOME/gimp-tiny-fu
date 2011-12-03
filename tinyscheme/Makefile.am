@@ -1,7 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
 AM_CFLAGS = \
-    -DSTANDALONE=1      \
+    -DSTANDALONE=0      \
     -DUSE_INTERFACE=1   \
     -DUSE_MATH=1        \
     -DUSE_ASCII_NAMES=0 \
@@ -10,18 +10,14 @@ AM_CFLAGS = \
     -DSUN_DL=1          \
     $(GLIB_CFLAGS)        
 
-libexecdir = $(GIMP_LIBDIR)/tiny-fu
+noinst_LIBRARIES = libtinyscheme.a
 
-libexec_PROGRAMS = tinyscheme
-
-tinyscheme_SOURCES = \
+libtinyscheme_a_SOURCES = \
     dynload.c        \
     scheme.c         \
     opdefines.h      \
     scheme-private.h \
     scheme.h
-
-LDADD = -ldl -lm
 
 EXTRA_DIST = \
     BUILDING   \

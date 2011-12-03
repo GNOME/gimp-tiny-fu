@@ -20,7 +20,7 @@ tinyfudir = $(GIMP_LIBDIR)/$(tinyfubase)
 
 tinyfuenvdir = $(GIMP_LIBDIR)/environ
 tinyfuinterpdir = $(GIMP_LIBDIR)/interpreters
-TINYSCHEME_BIN = $(tinyfudir)/tinyscheme
+TINYFU_BIN = $(tinyfudir)/tiny-fu
 
 tinyfuenvfile = $(tinyfuenvdir)/tiny-fu.env
 tinyfuinterpfile = $(tinyfuinterpdir)/tiny-fu.interp
@@ -32,8 +32,8 @@ install-env-file:
 
 install-interp-file:
 	$(mkinstalldirs) '$(DESTDIR)$(tinyfuinterpdir)'
-	echo 'tinyscheme=$(TINYSCHEME_BIN)' > '$(DESTDIR)$(tinyfuinterpfile)'
-	echo ':TinyScheme:E::scm::tinyscheme:' >> '$(DESTDIR)$(tinyfuinterpfile)'
+	echo 'tiny-fu=$(TINYFU_BIN)' > '$(DESTDIR)$(tinyfuinterpfile)'
+	echo ':Tiny-Fu:E::scm::tiny-fu:' >> '$(DESTDIR)$(tinyfuinterpfile)'
 
 install-data-local: install-env-file install-interp-file
 
