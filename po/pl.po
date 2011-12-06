@@ -1,5 +1,3 @@
-# translation of gimp-tiny-fu.master.pl.po to Polish
-# Copyright (C) 2001-2011 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
@@ -9,20 +7,22 @@
 # GNOME PL Team <translators@gnomepl.org>, 1999-2005.
 # Artur Polaczyński <artie@kmfms.com>, 1999, 2000.
 # Bartosz Kosiorek <gang65@poczta.onet.pl>, 2005, 2007.
+# Łukasz Jernaś <deejay1@srem.org>, 2010.
+# Aviary.pl <gnomepl@aviary.pl>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp-tiny-fu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-04 22:04+0100\n"
-"PO-Revision-Date: 2011-12-04 22:17+0100\n"
+"POT-Creation-Date: 2011-12-06 19:36+0100\n"
+"PO-Revision-Date: 2011-12-06 19:37+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%"
-"100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -44,12 +44,12 @@ msgstr "_Przeglądaj..."
 
 #: ../tiny-fu/tiny-fu-console.c:296
 msgid "Save Script-Fu Console Output"
-msgstr "Zapisywanie wyjśćia konsoli Script-Fu"
+msgstr "Zapisywanie wyjścia konsoli Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:343
 #, c-format
 msgid "Could not open '%s' for writing: %s"
-msgstr "Nie można otworzyć \"%s\" aby zapisać: %s"
+msgstr "Nie można otworzyć \"%s\" do zapisywania: %s"
 
 #: ../tiny-fu/tiny-fu-console.c:372
 msgid "Script-Fu Procedure Browser"
@@ -57,8 +57,7 @@ msgstr "Przeglądarka procedur Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:716
 msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-msgstr ""
-"Tryb obliczeniowy Script-Fu pozwala tylko na uruchamianie nieinteraktywne"
+msgstr "Tryb obliczeniowy Script-Fu umożliwia tylko na uruchamianie wsadowe"
 
 #: ../tiny-fu/tiny-fu-interface.c:191
 msgid "Script-Fu cannot process two scripts at the same time."
@@ -67,7 +66,7 @@ msgstr "Script-Fu nie może przetwarzać dwóch skryptów jednocześnie."
 #: ../tiny-fu/tiny-fu-interface.c:193
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr "Masz już uruchomiony skrypt \"%s\"."
+msgstr "Skrypt \"%s\" jest już uruchomiony."
 
 #: ../tiny-fu/tiny-fu-interface.c:238
 #, c-format
@@ -83,35 +82,35 @@ msgstr "%s:"
 
 #: ../tiny-fu/tiny-fu-interface.c:348
 msgid "Script-Fu Color Selection"
-msgstr "Script-Fu: Wybór koloru"
+msgstr "Script-Fu: wybór koloru"
 
 #: ../tiny-fu/tiny-fu-interface.c:460
 msgid "Script-Fu File Selection"
-msgstr "Script-Fu: Wybór pliku"
+msgstr "Script-Fu: wybór pliku"
 
 #: ../tiny-fu/tiny-fu-interface.c:463
 msgid "Script-Fu Folder Selection"
-msgstr "Script-Fu: Wybór folderu"
+msgstr "Script-Fu: wybór katalogu"
 
 #: ../tiny-fu/tiny-fu-interface.c:475
 msgid "Script-Fu Font Selection"
-msgstr "Script-Fu: Wybór czcionki"
+msgstr "Script-Fu: wybór czcionki"
 
 #: ../tiny-fu/tiny-fu-interface.c:483
 msgid "Script-Fu Palette Selection"
-msgstr "Script-Fu: Wybór desenia"
+msgstr "Script-Fu: wybór palety"
 
 #: ../tiny-fu/tiny-fu-interface.c:492
 msgid "Script-Fu Pattern Selection"
-msgstr "Script-Fu: Wybór desenia"
+msgstr "Script-Fu: wybór desenia"
 
 #: ../tiny-fu/tiny-fu-interface.c:501
 msgid "Script-Fu Gradient Selection"
-msgstr "Script-Fu: Wybór gradientu"
+msgstr "Script-Fu: wybór gradientu"
 
 #: ../tiny-fu/tiny-fu-interface.c:510
 msgid "Script-Fu Brush Selection"
-msgstr "Script-Fu: Wybór pędzla"
+msgstr "Script-Fu: wybór pędzla"
 
 #: ../tiny-fu/tiny-fu-scripts.c:658
 #, c-format
@@ -121,14 +120,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Wystąpił błąd podczas wykonywania\n"
+"Błąd podczas wykonywania\n"
 "%s\n"
 "\n"
 "%s"
 
 #: ../tiny-fu/tiny-fu-server.c:712
 msgid "Script-Fu Server Options"
-msgstr "Ustawienia serwera Script-Fu"
+msgstr "Opcje serwera Script-Fu"
 
 #: ../tiny-fu/tiny-fu-server.c:717
 msgid "_Start Server"
@@ -144,7 +143,7 @@ msgstr "Dziennik serwera:"
 
 #: ../tiny-fu/tiny-fu.c:161
 msgid "Interactive console for Script-Fu development"
-msgstr "Interaktywna konsola dla Script-Fu development"
+msgstr "Interaktywna konsola dla programowania w Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:167
 msgid "Script-Fu _Console"
@@ -152,7 +151,7 @@ msgstr "_Konsola Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:191
 msgid "Server for remote Script-Fu operation"
-msgstr "Serwer dla zdalnych operacji Script-Fu"
+msgstr "Serwer dla zdalnego działania Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:196
 msgid "_Start Server..."
@@ -160,11 +159,11 @@ msgstr "Uruchom _serwer..."
 
 #: ../tiny-fu/tiny-fu.c:353
 msgid "_GIMP Online"
-msgstr "_GIMP Online"
+msgstr "_GIMP w sieci"
 
 #: ../tiny-fu/tiny-fu.c:354
 msgid "_User Manual"
-msgstr "_Podręcznik użytkowanika"
+msgstr "Podręcznik _użytkownika"
 
 #: ../tiny-fu/tiny-fu.c:357
 msgid "_Script-Fu"
@@ -180,7 +179,7 @@ msgstr "_Logo"
 
 #: ../tiny-fu/tiny-fu.c:363
 msgid "_Misc"
-msgstr "Różne"
+msgstr "_Różne"
 
 #: ../tiny-fu/tiny-fu.c:365
 msgid "_Patterns"
@@ -240,7 +239,7 @@ msgstr "_Efekty"
 
 #: ../tiny-fu/tiny-fu.c:394
 msgid "En_hance"
-msgstr "_Uwydatnienie"
+msgstr "_Uwydatnij"
 
 #: ../tiny-fu/tiny-fu.c:396
 msgid "_Light and Shadow"
@@ -271,8 +270,8 @@ msgid ""
 "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
 "Please close all Script-Fu windows and try again."
 msgstr ""
-"Nie możesz używać funkcji \"Odśwież skrypty\" gdy okno Script-Fu jest "
-"otwarte.  Zamknij wszystkie okna Script-Fu i spróbuj ponownie."
+"Nie można używać funkcji \"Odśwież skrypty\", kiedy okno Script-Fu jest "
+"otwarte. Proszę zamknąć wszystkie okna Script-Fu i spróbować ponownie."
 
 #: ../scripts/3d-outline.scm.h:1
 msgid "3D _Outline..."
@@ -452,17 +451,17 @@ msgstr "Dodaje przestrzenną ramkę do obrazu"
 
 #: ../scripts/add-bevel.scm.h:3 ../scripts/chip-away.scm.h:12
 msgid "Keep bump layer"
-msgstr "Zachowaj warstwy wypukłości"
+msgstr "Zachowanie warstw wypukłości"
 
 #: ../scripts/add-bevel.scm.h:5 ../scripts/fuzzyborder.scm.h:10
 #: ../scripts/old-photo.scm.h:6 ../scripts/round-corners.scm.h:8
 #: ../scripts/slide.scm.h:6 ../scripts/spinning-globe.scm.h:6
 msgid "Work on copy"
-msgstr "Pracuj na kopii"
+msgstr "Praca na kopii"
 
 #: ../scripts/addborder.scm.h:1
 msgid "Add _Border..."
-msgstr "Dodaj _Krawędź..."
+msgstr "Dodaj _krawędź..."
 
 #: ../scripts/addborder.scm.h:2
 msgid "Add a border around an image"
@@ -486,7 +485,7 @@ msgstr "Przyrost wartości koloru"
 
 #: ../scripts/alien-glow-arrow.scm.h:2
 msgid "Create an arrow graphic with an eerie glow for web pages"
-msgstr "Tworzy grafikę strzałki z eerie glow dla stron internetowych"
+msgstr "Tworzy grafikę strzałki z poświatą eerie dla stron WWW"
 
 #: ../scripts/alien-glow-arrow.scm.h:3
 #: ../scripts/beveled-pattern-arrow.scm.h:2
@@ -547,7 +546,7 @@ msgstr "Długość słupka"
 
 #: ../scripts/alien-glow-bar.scm.h:4
 msgid "Create an Hrule graphic with an eerie glow for web pages"
-msgstr "Tworzy grafikę poziomej linii z eerie glow dla stron internetowych"
+msgstr "Tworzy grafikę poziomej linii z poświatą eerie dla stron WWW"
 
 #: ../scripts/alien-glow-bar.scm.h:7 ../scripts/beveled-pattern-hrule.scm.h:5
 msgid "_Hrule..."
@@ -555,7 +554,7 @@ msgstr "Pozioma _linia..."
 
 #: ../scripts/alien-glow-bullet.scm.h:2
 msgid "Create a bullet graphic with an eerie glow for web pages"
-msgstr "Tworzy grafikę kropki z eerie glow dla stron internetowych"
+msgstr "Tworzy grafikę kropki z poświatą eerie dla stron WWW"
 
 #: ../scripts/alien-glow-bullet.scm.h:5 ../scripts/text-circle.scm.h:6
 #: ../scripts/tileblur.scm.h:7
@@ -574,7 +573,7 @@ msgstr "_Przycisk"
 
 #: ../scripts/alien-glow-button.scm.h:3
 msgid "Create a button graphic with an eerie glow for web pages"
-msgstr "Tworzy grafikę przycisku z eerie glow dla stron internetowych"
+msgstr "Tworzy grafikę przycisku z poświatą eerie dla stron WWW"
 
 #: ../scripts/alien-glow-button.scm.h:8
 msgid "Glow radius"
@@ -595,7 +594,8 @@ msgstr "Kolor tekstu"
 
 #: ../scripts/alien-glow-logo.scm.h:1
 msgid "Add an eerie glow around the selected region (or alpha)"
-msgstr "Dodaje eerie glow naokoło zaznaczonego obszaru (lub przezroczystości)"
+msgstr ""
+"Dodaje poświatę eerie dookoła zaznaczonego obszaru (lub przezroczystości)"
 
 #: ../scripts/alien-glow-logo.scm.h:2
 msgid "Alien _Glow..."
@@ -603,7 +603,7 @@ msgstr "_Nieziemska poświata..."
 
 #: ../scripts/alien-glow-logo.scm.h:3
 msgid "Create a logo with an alien glow around the text"
-msgstr "Tworzy logo dookoło tekstu z Nieziemskiej poświaty"
+msgstr "Tworzy logo dookoła tekstu z nieziemskiej poświaty"
 
 #: ../scripts/alien-glow-logo.scm.h:7
 msgid "Glow size (pixels * 4)"
@@ -676,7 +676,7 @@ msgstr "Szerokość fazy"
 
 #: ../scripts/beveled-button.scm.h:2
 msgid "Create a simple, beveled button graphic for webpages"
-msgstr "Tworzy prostą, przestrzenną grafikę przycisku dla stron internetowych"
+msgstr "Tworzy prostą, przestrzenną grafikę przycisku dla stron WWW"
 
 #: ../scripts/beveled-button.scm.h:5
 msgid "Lower-right color"
@@ -689,19 +689,19 @@ msgstr "Wciśnięty"
 
 #: ../scripts/beveled-button.scm.h:8
 msgid "Simple _Beveled Button..."
-msgstr "Prosty _przycisk z fazą..."
+msgstr "_Prosty przycisk z fazą..."
 
 #: ../scripts/beveled-button.scm.h:11
 msgid "Upper-left color"
-msgstr "Górny-lewy kolor"
+msgstr "Górny lewy kolor"
 
 #: ../scripts/beveled-pattern-arrow.scm.h:1
 msgid "Create a beveled pattern arrow for webpages"
-msgstr "Tworzy przestrzenny deseń strzałki dla stron internetowych"
+msgstr "Tworzy przestrzenny deseń strzałki dla stron WWW"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:1
 msgid "Create a beveled pattern bullet for webpages"
-msgstr "Tworzy przestrzenny deseń kropki dla stron internetowych"
+msgstr "Tworzy przestrzenny deseń kropki dla stron WWW"
 
 #: ../scripts/beveled-pattern-bullet.scm.h:2
 msgid "Diameter"
@@ -715,11 +715,11 @@ msgstr "Przezroczyste tło"
 
 #: ../scripts/beveled-pattern-button.scm.h:2
 msgid "Create a beveled pattern button for webpages"
-msgstr "Tworzy przestrzenny deseń przycisku dla stron internetowych"
+msgstr "Tworzy przestrzenny deseń przycisku dla stron WWW"
 
 #: ../scripts/beveled-pattern-heading.scm.h:1
 msgid "Create a beveled pattern heading for webpages"
-msgstr "Tworzy przestrzenny deseń nagłówka dla stron internetowych"
+msgstr "Tworzy przestrzenny deseń nagłówka dla stron WWW"
 
 #: ../scripts/beveled-pattern-heading.scm.h:4
 msgid "H_eading..."
@@ -727,7 +727,7 @@ msgstr "_Nagłówek..."
 
 #: ../scripts/beveled-pattern-hrule.scm.h:1
 msgid "Create a beveled pattern hrule for webpages"
-msgstr "Tworzy przestrzenny deseń poziomej linii dla stron internetowych"
+msgstr "Tworzy przestrzenny deseń poziomej linii dla stron WWW"
 
 #: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/gimp-labels.scm.h:8
 #: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:7
@@ -743,7 +743,7 @@ msgstr "Szerokość"
 
 #: ../scripts/blend-anim.scm.h:1
 msgid "Blend Animation needs at least three source layers"
-msgstr "Blend Animation potrzebuje przynajmniej trzech warstw źródłowych"
+msgstr "Animacja przenikania potrzebuje przynajmniej trzech warstw źródłowych"
 
 #: ../scripts/blend-anim.scm.h:2
 msgid ""
@@ -795,15 +795,15 @@ msgstr "Gradient użytkownika"
 
 #: ../scripts/blended-logo.scm.h:8
 msgid "FG-BG-HSV"
-msgstr "FG-BG-HSV"
+msgstr "Kolor pierwszoplanowy - kolor tła - HSV"
 
 #: ../scripts/blended-logo.scm.h:9
 msgid "FG-BG-RGB"
-msgstr "FG-BG-RGB"
+msgstr "Kolor pierwszoplanowy - kolor tła - RGB"
 
 #: ../scripts/blended-logo.scm.h:10
 msgid "FG-Transparent"
-msgstr "FG-przezroczysty"
+msgstr "Kolor pierwszoplanowy - przezroczysty"
 
 #: ../scripts/blended-logo.scm.h:13 ../scripts/comic-logo.scm.h:7
 #: ../scripts/coolmetal-logo.scm.h:8 ../scripts/land.scm.h:3
@@ -824,7 +824,7 @@ msgstr "Przesunięcie (piksele)"
 
 #: ../scripts/bovinated-logo.scm.h:1
 msgid "Add 'cow spots' to the selected region (or alpha)"
-msgstr "Dodaje \"Krowie łaty\" to zaznaczonego obszaru (lub przezroczystości)"
+msgstr "Dodaje \"krowie łaty\" to zaznaczonego obszaru (lub przezroczystości)"
 
 #: ../scripts/bovinated-logo.scm.h:2 ../scripts/chrome-logo.scm.h:2
 msgid "Background Color"
@@ -836,7 +836,7 @@ msgstr "Ła_ciate..."
 
 #: ../scripts/bovinated-logo.scm.h:5
 msgid "Create a logo with text in the style of 'cow spots'"
-msgstr "Tworzy logo z tekstem w stylu krowich łat"
+msgstr "Tworzy logo z tekstem w stylu \"krowich łat\""
 
 #: ../scripts/bovinated-logo.scm.h:8
 msgid "Spots density X"
@@ -848,7 +848,7 @@ msgstr "Gęstość Y punktów"
 
 #: ../scripts/burn-in-anim.scm.h:1
 msgid "Add glowing"
-msgstr "Dodaj jaskrawość"
+msgstr "Dodanie jaskrawości"
 
 #: ../scripts/burn-in-anim.scm.h:2
 msgid "After glow"
@@ -867,8 +867,8 @@ msgid ""
 "Create intermediate layers to produce an animated 'burn-in' transition "
 "between two layers"
 msgstr ""
-"Tworzy pośrednie warstwy potrzebne do stworzenia animowanego \"burn-in "
-"transition\" pomiędzy dwoma warstwami"
+"Tworzy pośrednie warstwy potrzebne do utworzenia animowanego przejścia "
+"\"wypalania\" pomiędzy dwoma warstwami"
 
 #: ../scripts/burn-in-anim.scm.h:6
 msgid "Fadeout"
@@ -880,18 +880,18 @@ msgstr "Szerokość zanikania"
 
 #: ../scripts/burn-in-anim.scm.h:9
 msgid "Prepare for GIF"
-msgstr "Przygotuj do GIF-a"
+msgstr "Przygotowanie dla pliku GIF"
 
 #: ../scripts/burn-in-anim.scm.h:10
 msgid "Speed (pixels/frame)"
-msgstr "Szybkość (pikseli/ramkę)"
+msgstr "Prędkość (pikseli/ramkę)"
 
 #: ../scripts/burn-in-anim.scm.h:11
 msgid ""
 "The Burn-In script needs two layers in total. A foreground layer with "
 "transparency and a background layer."
 msgstr ""
-"Skrypt Burn-In potrzebuje dwóch warstw: warstwy pierwszoplanowej z "
+"Skrypt wypalenia potrzebuje dwóch warstw: warstwy pierwszoplanowej z "
 "przezroczystością oraz warstwy tła."
 
 #: ../scripts/camo.scm.h:1
@@ -920,7 +920,7 @@ msgstr "Wymiary obrazu"
 
 #: ../scripts/camo.scm.h:8 ../scripts/distress-selection.scm.h:3
 msgid "Smooth"
-msgstr "Wygładź"
+msgstr "Wygładzanie"
 
 #: ../scripts/camo.scm.h:9
 msgid "_Camouflage..."
@@ -928,7 +928,7 @@ msgstr "_Kamuflaż..."
 
 #: ../scripts/carve-it.scm.h:1
 msgid "Carve white areas"
-msgstr "Wyżłób białe obszary"
+msgstr "Wyżłobienie białych obszarów"
 
 #: ../scripts/carve-it.scm.h:2
 msgid "Image to carve"
@@ -954,7 +954,7 @@ msgstr "Wyżłobione..."
 msgid ""
 "Create a logo with text raised above or carved in to the specified "
 "background image"
-msgstr "Tworzy logo które jest wyżłobione nad lub pod obrazem"
+msgstr "Tworzy logo wyżłobione nad lub pod podanym obrazem tła"
 
 #: ../scripts/carved-logo.scm.h:7
 msgid "Padding around text"
@@ -971,7 +971,7 @@ msgstr ""
 
 #: ../scripts/chalk.scm.h:4
 msgid "Create a logo resembling chalk scribbled on a blackboard"
-msgstr "Tworzy logo przypominające rysunek zrobiony kredą na tablicy "
+msgstr "Tworzy logo przypominające rysunek zrobiony kredą na tablicy"
 
 #: ../scripts/chalk.scm.h:8
 msgid "_Chalk..."
@@ -980,7 +980,7 @@ msgstr "_Kreda..."
 #: ../scripts/chip-away.scm.h:1
 msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
 msgstr ""
-"Dodaje efekt faktury drewan do zaznaczonego obszaru (lub przezroczystości)"
+"Dodaje efekt faktury drewna do zaznaczonego obszaru (lub przezroczystości)"
 
 #: ../scripts/chip-away.scm.h:2
 msgid "Blur amount"
@@ -996,7 +996,7 @@ msgstr "Wielkość wykruszenia"
 
 #: ../scripts/chip-away.scm.h:5
 msgid "Create a logo resembling a chipped wood carving"
-msgstr "Tworzy logo przypominające rzeżbę z drzewa"
+msgstr "Tworzy logo przypominające rzeźbę z drzewa"
 
 #: ../scripts/chip-away.scm.h:6
 msgid "Drop shadow"
@@ -1004,15 +1004,15 @@ msgstr "Cień"
 
 #: ../scripts/chip-away.scm.h:7
 msgid "Fill BG with pattern"
-msgstr "Wypełnij tło deseniem"
+msgstr "Wypełnienie tła deseniem"
 
 #: ../scripts/chip-away.scm.h:10
 msgid "Invert"
-msgstr "Odwróć"
+msgstr "Odwrócenie"
 
 #: ../scripts/chip-away.scm.h:11
 msgid "Keep background"
-msgstr "Zachowaj tło"
+msgstr "Zachowanie tła"
 
 #: ../scripts/chrome-it.scm.h:1
 msgid ""
@@ -1064,7 +1064,7 @@ msgstr ""
 
 #: ../scripts/chrome-logo.scm.h:4
 msgid "C_hrome..."
-msgstr "C_hromowe..."
+msgstr "C_hrom..."
 
 #: ../scripts/chrome-logo.scm.h:5
 msgid "Create a simplistic, but cool, chromed logo"
@@ -1081,12 +1081,14 @@ msgstr "Rozrzut obwodu"
 #: ../scripts/circuit.scm.h:2
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
-msgstr "Wypełnia zaznaczony obszar (lub przezroczystość) śladami"
+msgstr ""
+"Wypełnia zaznaczony obszar (lub przezroczystość) śladami podobnymi do obwodu "
+"scalonego"
 
 #: ../scripts/circuit.scm.h:3 ../scripts/lava.scm.h:3
 #: ../scripts/predator.scm.h:3 ../scripts/xach-effect.scm.h:11
 msgid "Keep selection"
-msgstr "Zachowaj zaznaczenia"
+msgstr "Zachowanie zaznaczenia"
 
 #: ../scripts/circuit.scm.h:4
 msgid "No background (only for separate layer)"
@@ -1103,7 +1105,7 @@ msgstr "Oddzielna warstwa"
 
 #: ../scripts/circuit.scm.h:7
 msgid "_Circuit..."
-msgstr "_Rozrzut obwodu"
+msgstr "_Obwód scalony..."
 
 #: ../scripts/clothify.scm.h:1
 msgid "Add a cloth-like texture to the selected region (or alpha)"
@@ -1185,7 +1187,7 @@ msgstr ""
 
 #: ../scripts/coolmetal-logo.scm.h:3
 msgid "Cool _Metal..."
-msgstr "Zimny _metal"
+msgstr "Zimny _metal..."
 
 #: ../scripts/coolmetal-logo.scm.h:4
 msgid "Create a metallic logo with reflections and perspective shadows"
@@ -1219,7 +1221,7 @@ msgstr "Jednolity szum nałożony za pomocą trybu warstw różnicy"
 
 #: ../scripts/distress-selection.scm.h:1
 msgid "Distress the selection"
-msgstr "Zaburz zaznaczenia"
+msgstr "Zaburzenie zaznaczenia"
 
 #: ../scripts/distress-selection.scm.h:2
 msgid "Granularity (1 is low)"
@@ -1243,7 +1245,7 @@ msgstr "Próg (większy 1<-->255 mniejszy)"
 
 #: ../scripts/distress-selection.scm.h:8
 msgid "_Distort..."
-msgstr "_Zniekształcenie obwodu"
+msgstr "_Zniekształcenie..."
 
 #: ../scripts/drop-shadow.scm.h:1
 msgid "Add a drop shadow to the selected region (or alpha)"
@@ -1286,7 +1288,7 @@ msgstr "Kolumny"
 
 #: ../scripts/erase-rows.scm.h:2
 msgid "Erase"
-msgstr "Czyść"
+msgstr "Wyczyszczenie"
 
 #: ../scripts/erase-rows.scm.h:3
 msgid "Erase every other row or column"
@@ -1294,7 +1296,7 @@ msgstr "Czyści wszystkie inne wiersze i kolumny"
 
 #: ../scripts/erase-rows.scm.h:4
 msgid "Erase/fill"
-msgstr "Czyść/Wypełnij"
+msgstr "Wyczyszczenie/wypełnienie"
 
 #: ../scripts/erase-rows.scm.h:5
 msgid "Even"
@@ -1302,11 +1304,11 @@ msgstr "Parzyste"
 
 #: ../scripts/erase-rows.scm.h:6
 msgid "Even/odd"
-msgstr "Parzyste/Nieparzyste"
+msgstr "Parzyste/nieparzyste"
 
 #: ../scripts/erase-rows.scm.h:7
 msgid "Fill with BG"
-msgstr "Wypełnij tłem"
+msgstr "Wypełnienie tłem"
 
 #: ../scripts/erase-rows.scm.h:8
 msgid "Odd"
@@ -1318,7 +1320,7 @@ msgstr "Wiersze"
 
 #: ../scripts/erase-rows.scm.h:10
 msgid "Rows/cols"
-msgstr "Wiersze/Kolumny"
+msgstr "Wiersze/kolumny"
 
 #: ../scripts/erase-rows.scm.h:11
 msgid "_Erase Every Other Row..."
@@ -1381,7 +1383,7 @@ msgstr "Renderowanie _mapy czcionki..."
 
 #: ../scripts/font-map.scm.h:6
 msgid "Use font _name as text"
-msgstr "Użyj _nazwy czcionki jako tekst"
+msgstr "Użycie _nazwy czcionki jako tekstu"
 
 #: ../scripts/font-map.scm.h:7
 msgid "_Border (pixels)"
@@ -1425,7 +1427,7 @@ msgstr "Dodaje wyszczerbioną, nieostrą ramkę do obrazu"
 
 #: ../scripts/fuzzyborder.scm.h:2
 msgid "Add shadow"
-msgstr "Dodaj cień"
+msgstr "Dodanie cienia"
 
 #: ../scripts/fuzzyborder.scm.h:3
 msgid "Blur border"
@@ -1450,15 +1452,15 @@ msgstr "P_oszarpana krawędź..."
 
 #: ../scripts/gimp-headers.scm.h:1
 msgid "Autocrop"
-msgstr "Autoprzycinanie"
+msgstr "Automatyczne przycinanie"
 
 #: ../scripts/gimp-headers.scm.h:2
 msgid "Create an image of a large header using the gimp.org webpage theme"
-msgstr "Tworzy duży obraz nagłówka, używając tematu strony \"gimp.org\""
+msgstr "Tworzy duży obraz nagłówka, używając motywu witryny gimp.org"
 
 #: ../scripts/gimp-headers.scm.h:3
 msgid "Create an image of a small header using the gimp.org webpage theme"
-msgstr "Tworzy mały obraz nagłówka, używając tematu strony \"gimp.org\""
+msgstr "Tworzy mały obraz nagłówka, używając motywu witryny gimp.org"
 
 #: ../scripts/gimp-headers.scm.h:4
 msgid "Dark color"
@@ -1478,11 +1480,11 @@ msgstr "Liczba kolorów"
 
 #: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:13
 msgid "Remove background"
-msgstr "Usuń tło"
+msgstr "Usunięcie tła"
 
 #: ../scripts/gimp-headers.scm.h:11 ../scripts/gimp-labels.scm.h:14
 msgid "Select-by-color threshold"
-msgstr "Zaznacz próg według koloru"
+msgstr "Zaznaczenie progu według koloru"
 
 #: ../scripts/gimp-headers.scm.h:12 ../scripts/gimp-labels.scm.h:15
 msgid "Shadow color"
@@ -1500,18 +1502,18 @@ msgstr "_Mały nagłówek..."
 msgid ""
 "Create an image of a Tube Button Label Header using the gimp.org webpage "
 "theme"
-msgstr "Tworzy obraz Tube Button Label Header używając tematu strony gimp.org"
+msgstr "Tworzy obraz Tube Button Label Header używając motywu witryny gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:3
 msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
-msgstr "Tworzy obraz Tube Button Label używając tematu strony gimp.org"
+msgstr "Tworzy obraz Tube Button Label używając motywu witryny gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:4
 msgid ""
 "Create an image of a second level Tube Button Label using the gimp.org "
 "webpage theme"
 msgstr ""
-"Tworzy obraz drugiego poziomu Tube Button Label używając tematu strony gimp."
+"Tworzy obraz drugiego poziomu Tube Button Label używając motywu witryny gimp."
 "org"
 
 #: ../scripts/gimp-labels.scm.h:5
@@ -1519,8 +1521,8 @@ msgid ""
 "Create an image of a third level Tube Button Label using the gimp.org "
 "webpage theme"
 msgstr ""
-"Tworzy obraz trzeciego poziomu Tube Button Label używając tematu strony gimp."
-"org"
+"Tworzy obraz trzeciego poziomu Tube Button Label używając motywu witryny "
+"gimp.org"
 
 #: ../scripts/gimp-labels.scm.h:16
 msgid "T_ube Sub-Button Label..."
@@ -1588,15 +1590,15 @@ msgstr "Odwrócony gradient tekstu"
 
 #: ../scripts/glossy.scm.h:20
 msgid "Use pattern for outline instead of gradient"
-msgstr "Wykorzystaj dla obwódki deseń zamiast gradientu"
+msgstr "Wykorzystanie deseniu dla obwódki zamiast gradientu"
 
 #: ../scripts/glossy.scm.h:21
 msgid "Use pattern for text instead of gradient"
-msgstr "Wykorzystaj dla tekstu deseń zamiast gradientu"
+msgstr "Wykorzystanie deseniu dla tekstu zamiast gradientu"
 
 #: ../scripts/glossy.scm.h:22
 msgid "Use pattern overlay"
-msgstr "Wykorzystaj deseń jako nałożenie"
+msgstr "Wykorzystanie deseniu jako nałożenia"
 
 #: ../scripts/glowing-logo.scm.h:1
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
@@ -1606,7 +1608,7 @@ msgstr ""
 
 #: ../scripts/glowing-logo.scm.h:3
 msgid "Create a logo that looks like glowing hot metal"
-msgstr "Tworzy logo które wygląda jak błyszczący, gorący metal"
+msgstr "Tworzy logo wyglądające jak błyszczący, gorący metal"
 
 #: ../scripts/glowing-logo.scm.h:4
 msgid "Effect size (pixels * 3)"
@@ -1645,14 +1647,14 @@ msgstr "Tworzy obraz wypełniony przykładem bieżącego gradientu"
 
 #: ../scripts/gradient-example.scm.h:2
 msgid "Custom _Gradient..."
-msgstr "_Gradient użytkownika"
+msgstr "_Gradient użytkownika..."
 
 #: ../scripts/grid-system.scm.h:1 ../scripts/guides-from-selection.scm.h:1
 msgid ""
 "Draw a grid as specified by the lists of X and Y locations using the current "
 "brush"
 msgstr ""
-"Rysuje siatkę ustawioną w liście lokacji X i Y używając bieżącego pędzla"
+"Rysuje siatkę ustawioną w liście położeń X i Y używając bieżącego pędzla"
 
 #: ../scripts/grid-system.scm.h:2
 msgid "X divisions"
@@ -1672,7 +1674,7 @@ msgstr "Nowa prowadnica z _Zaznaczenia"
 
 #: ../scripts/guides-new-percent.scm.h:1
 msgid "Add a guide at the position specified as a percentage of the image size"
-msgstr "Dodaje prowadnice ustaloną przez procentowe położenie rozmiaru obrazu"
+msgstr "Dodaje prowadnicę ustaloną przez procentowe położenie rozmiaru obrazu"
 
 #: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
 msgid "Direction"
@@ -1684,7 +1686,7 @@ msgstr "Poziome"
 
 #: ../scripts/guides-new-percent.scm.h:4
 msgid "New Guide (by _Percent)..."
-msgstr "Nowa prowadnica (w _procentach)"
+msgstr "Nowa prowadnica (w p_rocentach)..."
 
 #: ../scripts/guides-new-percent.scm.h:6
 #, no-c-format
@@ -1701,7 +1703,7 @@ msgstr "Dodaje prowadnice w ustalonym położeniu (w pikselach)"
 
 #: ../scripts/guides-new.scm.h:4
 msgid "New _Guide..."
-msgstr "Nowa p_rowadnica"
+msgstr "Nowa p_rowadnica..."
 
 #: ../scripts/guides-new.scm.h:5
 msgid "Position"
@@ -1761,7 +1763,7 @@ msgstr "Ziarno"
 
 #: ../scripts/lava.scm.h:8
 msgid "Use current gradient"
-msgstr "Wykorzystaj aktywny gradient"
+msgstr "Wykorzystanie bieżącego gradientu"
 
 #: ../scripts/lava.scm.h:9
 msgid "_Lava..."
@@ -1780,7 +1782,7 @@ msgstr "L_inia Nowej..."
 
 #: ../scripts/line-nova.scm.h:3
 msgid "Number of lines"
-msgstr "Ilość linii"
+msgstr "Liczba linii"
 
 #: ../scripts/line-nova.scm.h:4
 msgid "Offset radius"
@@ -1850,7 +1852,7 @@ msgstr "Tworzy logo w stylu szyldu neonowego"
 
 #: ../scripts/neon-logo.scm.h:4
 msgid "Create shadow"
-msgstr "Utwórz cień"
+msgstr "Utworzenie cienia"
 
 #: ../scripts/neon-logo.scm.h:5
 msgid "Effect size (pixels * 5)"
@@ -1883,7 +1885,7 @@ msgstr "Zła ogniskowa"
 
 #: ../scripts/old-photo.scm.h:3
 msgid "Make an image look like an old photo"
-msgstr "Sprawia że obraz wygląda jak stara fotografia"
+msgstr "Sprawia, że obraz wygląda jak stara fotografia"
 
 #: ../scripts/old-photo.scm.h:4
 msgid "Mottle"
@@ -1908,7 +1910,7 @@ msgstr "Nazwa pliku"
 
 #: ../scripts/paste-as-brush.scm.h:3
 msgid "New _Brush..."
-msgstr "Nowy pędzel..."
+msgstr "Nowy pę_dzel..."
 
 #: ../scripts/paste-as-brush.scm.h:4
 msgid "Paste the clipboard contents into a new brush"
@@ -1916,11 +1918,11 @@ msgstr "Wkleja zawartość schowka do nowego pędzla"
 
 #: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
 msgid "There is no image data in the clipboard to paste."
-msgstr "Nie znaleziono danych obrazu w schowku do wklejenia"
+msgstr "Nie odnaleziono danych obrazu w schowku do wklejenia."
 
 #: ../scripts/paste-as-pattern.scm.h:2
 msgid "New _Pattern..."
-msgstr "Nowy deseń..."
+msgstr "Nowy _deseń..."
 
 #: ../scripts/paste-as-pattern.scm.h:3
 msgid "Paste the clipboard contents into a new pattern"
@@ -1962,7 +1964,7 @@ msgstr ""
 
 #: ../scripts/predator.scm.h:2
 msgid "Edge amount"
-msgstr "Ilość krawędzi"
+msgstr "Liczba krawędzi"
 
 #: ../scripts/predator.scm.h:4
 msgid "Pixel amount"
@@ -1990,11 +1992,11 @@ msgstr "Dolny kolor (aktywny)"
 
 #: ../scripts/pupi-button.scm.h:7
 msgid "Not pressed"
-msgstr "Nie wciśnięty"
+msgstr "Niewciśnięty"
 
 #: ../scripts/pupi-button.scm.h:8
 msgid "Not pressed (active)"
-msgstr "Nie wciśnięty (aktywny)"
+msgstr "Niewciśnięty (aktywny)"
 
 #: ../scripts/pupi-button.scm.h:9
 msgid "Padding X"
@@ -2010,7 +2012,7 @@ msgstr "Stopień zaokrąglenia"
 
 #: ../scripts/pupi-button.scm.h:15
 msgid "Text color (active)"
-msgstr "Kolor Tekstu (aktywny)"
+msgstr "Kolor tekstu (aktywny)"
 
 #: ../scripts/pupi-button.scm.h:16
 msgid "Upper color"
@@ -2042,15 +2044,15 @@ msgstr "Renderowanie _mapy..."
 
 #: ../scripts/rendermap.scm.h:9
 msgid "Tile"
-msgstr "Kafelka"
+msgstr "Kafelek"
 
 #: ../scripts/reverse-layers.scm.h:1
 msgid "Reverse Layer Order"
-msgstr "Odwróć kolejność warstw"
+msgstr "Odwrócenie kolejności warstw"
 
 #: ../scripts/reverse-layers.scm.h:2
 msgid "Reverse the order of layers in the image"
-msgstr "Odwróć kolejność warstw obrazu"
+msgstr "Odwrócenie kolejności warstw obrazu"
 
 #: ../scripts/ripply-anim.scm.h:1
 msgid "Black"
@@ -2068,7 +2070,7 @@ msgstr "Zachowanie krawędzi"
 
 #: ../scripts/ripply-anim.scm.h:4 ../scripts/waves-anim.scm.h:4
 msgid "Number of frames"
-msgstr "Ilość ramek"
+msgstr "Liczba ramek"
 
 #: ../scripts/ripply-anim.scm.h:5
 msgid "Rippling strength"
@@ -2088,11 +2090,11 @@ msgstr "_Falowanie..."
 
 #: ../scripts/round-corners.scm.h:1
 msgid "Add background"
-msgstr "Dodaj tło"
+msgstr "Dodanie tła"
 
 #: ../scripts/round-corners.scm.h:2
 msgid "Add drop-shadow"
-msgstr "Dodaj cień"
+msgstr "Dodanie cienia"
 
 #: ../scripts/round-corners.scm.h:4
 msgid "Edge radius"
@@ -2101,7 +2103,7 @@ msgstr "Promień krawędzi"
 #: ../scripts/round-corners.scm.h:5
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
-msgstr "Zaokrągla rogi obrazu i opcjonalnie dodaje cień i tło"
+msgstr "Zaokrągla rogi obrazu oraz opcjonalnie dodaje cień i tło"
 
 #: ../scripts/round-corners.scm.h:9
 msgid "_Round Corners..."
@@ -2109,7 +2111,7 @@ msgstr "_Zaokrąglone rogi..."
 
 #: ../scripts/script-fu-set-cmap.scm.h:1
 msgid "Change the colormap of an image to the colors in a specified palette."
-msgstr "Zmienia kolory w palecie"
+msgstr "Zmienia mapę kolorów obrazu na kolory z podanej palety."
 
 #: ../scripts/script-fu-set-cmap.scm.h:2
 msgid "Palette"
@@ -2178,7 +2180,7 @@ msgstr "S_lajd..."
 
 #: ../scripts/sota-chrome-logo.scm.h:5
 msgid "Create a State Of The Art chromed logo"
-msgstr "Tworzy chromowane logo State Of The Art (SOTA)"
+msgstr "Tworzy chromowane logo State of the Art (SOTA)"
 
 #: ../scripts/sota-chrome-logo.scm.h:10
 msgid "SOTA Chrome..."
@@ -2186,7 +2188,7 @@ msgstr "Chrom SOTA..."
 
 #: ../scripts/speed-text.scm.h:2
 msgid "Create a logo with a speedy text effect"
-msgstr "Tworzy logo za pomocą efektu szybki tekst"
+msgstr "Tworzy logo za pomocą efektu szybkiego tekstu"
 
 #: ../scripts/speed-text.scm.h:7
 msgid "Speed Text..."
@@ -2227,7 +2229,7 @@ msgstr "Indeksowanie do n kolorów (0 = pozostawienie RGB)"
 
 #: ../scripts/spinning-globe.scm.h:5
 msgid "Turn from left to right"
-msgstr "Obracaj od lewej do prawej"
+msgstr "Obracanie od lewej do prawej"
 
 #: ../scripts/spinning-globe.scm.h:7
 msgid "_Spinning Globe..."
@@ -2252,7 +2254,7 @@ msgstr "Okrąg"
 
 #: ../scripts/spyrogimp.scm.h:6
 msgid "Color method"
-msgstr "Sposób kolorowania"
+msgstr "Metoda kolorowania"
 
 #: ../scripts/spyrogimp.scm.h:7
 msgid "Epitrochoid"
@@ -2416,11 +2418,11 @@ msgstr "Stopień skrętu"
 
 #: ../scripts/swirly-pattern.scm.h:1
 msgid "Create an image filled with a swirly pattern"
-msgstr "Tworzy obraz wypełniony wirującym deseniem "
+msgstr "Tworzy obraz wypełniony wirującym deseniem"
 
 #: ../scripts/swirly-pattern.scm.h:2
 msgid "Number of times to whirl"
-msgstr "Ilość skrętów"
+msgstr "Liczba skrętów"
 
 #: ../scripts/swirly-pattern.scm.h:3
 msgid "Quarter size"
@@ -2428,7 +2430,7 @@ msgstr "Jedna czwarta rozmiaru"
 
 #: ../scripts/swirly-pattern.scm.h:4
 msgid "Whirl angle"
-msgstr "Kąŧ skrętu"
+msgstr "Kąt skrętu"
 
 #: ../scripts/swirly-pattern.scm.h:5
 msgid "_Swirly..."
@@ -2437,7 +2439,7 @@ msgstr "Za_wirowany..."
 #: ../scripts/t-o-p-logo.scm.h:1
 msgid "Add a Trace of Particles effect to the selected region (or alpha)"
 msgstr ""
-"Dodaje efekt Trace of Particles do zaznaczonego obszaru (lub "
+"Dodaje efekt śledzenia cząsteczek do zaznaczonego obszaru (lub "
 "przezroczystości)"
 
 #: ../scripts/t-o-p-logo.scm.h:3
@@ -2446,7 +2448,7 @@ msgstr "Kolor podstawy"
 
 #: ../scripts/t-o-p-logo.scm.h:5
 msgid "Create a logo using a Trace Of Particles effect"
-msgstr "Tworzy logo używając efektu Trace Of Particles"
+msgstr "Tworzy logo używając efektu śledzenia cząsteczek"
 
 #: ../scripts/t-o-p-logo.scm.h:6
 msgid "Edge only"
@@ -2471,7 +2473,7 @@ msgstr "Wygładzanie"
 #: ../scripts/text-circle.scm.h:2
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
-msgstr "Tworzy logo przez umieszczenie tekstu wokół koła"
+msgstr "Tworzy logo przez umieszczenie tekstu wokół okręgu"
 
 #: ../scripts/text-circle.scm.h:3
 msgid "Fill angle"
@@ -2484,7 +2486,8 @@ msgstr "_Napis na okręgu..."
 #: ../scripts/textured-logo.scm.h:3
 msgid ""
 "Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr "Tworzy logo z teksturą i dodaje podświetle, cienie i tło mozajkowe"
+msgstr ""
+"Tworzy logo z teksturą oraz dodaje podświetlenie, cienie i tło mozaikowe"
 
 #: ../scripts/textured-logo.scm.h:4
 msgid "Ending blend"
@@ -2495,8 +2498,8 @@ msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
 msgstr ""
-"Wypełnia zaznaczony obszar (lub przezroczystość)  teksturą i dodaje "
-"podświetlenie, cienie i tło mozajkowe"
+"Wypełnia zaznaczony obszar (lub przezroczystość) teksturą oraz dodaje "
+"podświetlenie, cienie i tło mozaikowe"
 
 #: ../scripts/textured-logo.scm.h:8
 msgid "Hexagons"
@@ -2504,7 +2507,7 @@ msgstr "Sześciokąty"
 
 #: ../scripts/textured-logo.scm.h:9
 msgid "Mosaic tile type"
-msgstr "Rodzaj kafelków"
+msgstr "Typ kafelków"
 
 #: ../scripts/textured-logo.scm.h:10
 msgid "Octagons"
@@ -2564,15 +2567,15 @@ msgstr "Nagłówek strony WWW..."
 
 #: ../scripts/truchet.scm.h:3
 msgid "Create an image filled with a Truchet pattern"
-msgstr "Tworzy obraz wypełniony deseniem wzorka"
+msgstr "Tworzy obraz wypełniony deseniem wzoru"
 
 #: ../scripts/truchet.scm.h:4
 msgid "Foreground color"
-msgstr "Kolor linii"
+msgstr "Kolor pierwszoplanowy"
 
 #: ../scripts/truchet.scm.h:7
 msgid "T_ruchet..."
-msgstr "W_zorek..."
+msgstr "W_zór..."
 
 #: ../scripts/unsharp-mask.scm.h:1
 msgid "Mask opacity"
@@ -2594,7 +2597,7 @@ msgstr "Tworzy wielowarstwowy obraz z efektem rzuconego kamienia"
 
 #: ../scripts/waves-anim.scm.h:3
 msgid "Invert direction"
-msgstr "Odwrócony kierunek"
+msgstr "Odwrócenie kierunku"
 
 #: ../scripts/waves-anim.scm.h:5
 msgid "Wavelength"
@@ -2646,7 +2649,7 @@ msgstr "_Splecenie..."
 
 #: ../scripts/web-browser.scm.h:1
 msgid "Bookmark to the GIMP web site"
-msgstr "Dodaj do strony internetowej GIMP-a"
+msgstr "Dodaj do witryny programu GIMP"
 
 #: ../scripts/web-browser.scm.h:2
 msgid "Bookmark to the user manual"
@@ -2662,7 +2665,7 @@ msgstr "_Tworzenie, otwieranie i zapisywanie plików"
 
 #: ../scripts/web-browser.scm.h:5
 msgid "Drawing _Simple Objects"
-msgstr "Ry_sowanie prostych objektów"
+msgstr "Ry_sowanie prostych obiektów"
 
 #: ../scripts/web-browser.scm.h:6
 msgid "How to Use _Dialogs"
@@ -2674,7 +2677,7 @@ msgstr "_Rejestr wtyczek"
 
 #: ../scripts/web-browser.scm.h:8
 msgid "Using _Paths"
-msgstr "Uż_ywane ścieżki"
+msgstr "_Używanie ścieżek"
 
 #: ../scripts/web-browser.scm.h:9
 msgid "_Basic Concepts"
@@ -2682,23 +2685,23 @@ msgstr "_Podstawowe pojęcia"
 
 #: ../scripts/web-browser.scm.h:10
 msgid "_Developer Web Site"
-msgstr "Witryna _twórców GIMP-a"
+msgstr "Witryna p_rogramistów"
 
 #: ../scripts/web-browser.scm.h:11
 msgid "_Main Web Site"
-msgstr "Strona _główna projektu"
+msgstr "_Główna witryna projektu"
 
 #: ../scripts/web-browser.scm.h:12
 msgid "_Preparing your Images for the Web"
-msgstr "_Przetwarzanie obrazów dla stron internetowych"
+msgstr "_Przetwarzanie obrazów dla stron WWW"
 
 #: ../scripts/web-browser.scm.h:13
 msgid "_User Manual Web Site"
-msgstr "Strona podręcznika _użytkownika"
+msgstr "Witryna podręcznika _użytkownika"
 
 #: ../scripts/web-browser.scm.h:14
 msgid "_Working with Digital Camera Photos"
-msgstr "_Pracuje ze zdjęciami aparatu cyfrowego"
+msgstr "_Praca ze zdjęciami z aparatu cyfrowego"
 
 #: ../scripts/xach-effect.scm.h:1
 msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
