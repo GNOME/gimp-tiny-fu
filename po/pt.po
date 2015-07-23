@@ -5,22 +5,23 @@
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2003, 2004
 #
 # Baseado na versão brasileria por  Marcia Norie Nakaza <norie@conectiva.com.br>, 2000.
-#
+# Pedro Albuquerque <palbuquerque73@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.6\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-"
 "tiny-fu&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-01 06:41+0000\n"
-"PO-Revision-Date: 2014-03-01 16:01+0100\n"
-"Last-Translator: Tiago S. <almosthumane@portugalmail.pt>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"POT-Creation-Date: 2014-03-02 23:59+0000\n"
+"PO-Revision-Date: 2015-07-22 11:30+0100\n"
+"Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
+"Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
@@ -28,42 +29,41 @@ msgstr "Consola Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:196
 msgid "Welcome to TinyScheme"
-msgstr "Bem vindo ao TinyScheme"
+msgstr "Boas vindas ao TinyScheme"
 
 #: ../tiny-fu/tiny-fu-console.c:202
 msgid "Interactive Scheme Development"
-msgstr "Esquema de Desaenvolvimento Interativo"
+msgstr "Desenvolvimento de esquema interativo"
 
 #: ../tiny-fu/tiny-fu-console.c:238
 msgid "_Browse..."
-msgstr "_Procurar..."
+msgstr "_Navegar..."
 
 #: ../tiny-fu/tiny-fu-console.c:296
 msgid "Save Script-Fu Console Output"
-msgstr "Guardar Saídas da Consola Script-Fu"
+msgstr "Gravar saída da consola Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:343
 #, c-format
 msgid "Could not open '%s' for writing: %s"
-msgstr "Não foi possível abrir '%s' para escrita: %s"
+msgstr "Impossível abrir \"%s\" para escrita: %s"
 
 #: ../tiny-fu/tiny-fu-console.c:372
 msgid "Script-Fu Procedure Browser"
-msgstr "Navegador de Procedimentos Script-Fu"
+msgstr "Navegador de procedimentos do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:716
 msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-msgstr ""
-"O modo de avaliação Script-Fu permite Script-Fu invocações não interativas"
+msgstr "O modo de avaliação Script-Fu só permite invocação não interativa"
 
 #: ../tiny-fu/tiny-fu-interface.c:191
 msgid "Script-Fu cannot process two scripts at the same time."
-msgstr "Script-Fu não pode processar dois scripts ao mesmo tempo"
+msgstr "O Script-Fu não pode processar dois scripts ao mesmo tempo."
 
 #: ../tiny-fu/tiny-fu-interface.c:193
 #, c-format
 msgid "You are already running the \"%s\" script."
-msgstr "Já está a correr o script \"%s\"."
+msgstr "Já está a executar o script \"%s\"."
 
 #: ../tiny-fu/tiny-fu-interface.c:238
 #, c-format
@@ -79,35 +79,35 @@ msgstr "%s:"
 
 #: ../tiny-fu/tiny-fu-interface.c:348
 msgid "Script-Fu Color Selection"
-msgstr "Seleção de Cores do Script-Fu"
+msgstr "Seleção de cores do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:460
 msgid "Script-Fu File Selection"
-msgstr "Seleção de Ficheiro Script-Fu"
+msgstr "Seleção de ficheiros Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:463
 msgid "Script-Fu Folder Selection"
-msgstr "Seleção de Pasta Script-Fu"
+msgstr "Seleção de pastas Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:475
 msgid "Script-Fu Font Selection"
-msgstr "Seleção de Fonte do Script-Fu"
+msgstr "Seleção de letra do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:483
 msgid "Script-Fu Palette Selection"
-msgstr "Seleção de Palete Script-Fu"
+msgstr "Seleção de paleta do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:492
 msgid "Script-Fu Pattern Selection"
-msgstr "Seleção de Padrão Script-Fu"
+msgstr "Seleção de textura do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:501
 msgid "Script-Fu Gradient Selection"
-msgstr "Seleção de Gradiente Script-Fu"
+msgstr "Seleção de gradiente do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-interface.c:510
 msgid "Script-Fu Brush Selection"
-msgstr "Seleção de Pincel Script-Fu"
+msgstr "Seleção de pincel do Script-Fu"
 
 #: ../tiny-fu/tiny-fu-scripts.c:658
 #, c-format
@@ -117,26 +117,26 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Erro durante a execução\n"
+"Erro ao executar\n"
 "%s\n"
 "\n"
 "%s"
 
 #: ../tiny-fu/tiny-fu-server.c:712
 msgid "Script-Fu Server Options"
-msgstr "Opções do Servidor Script-Fu"
+msgstr "Opções do servidor Script-Fu"
 
 #: ../tiny-fu/tiny-fu-server.c:717
 msgid "_Start Server"
-msgstr "Iniciar _Servidor"
+msgstr "_Iniciar servidor"
 
 #: ../tiny-fu/tiny-fu-server.c:745
 msgid "Server port:"
-msgstr "Porto do Servidor:"
+msgstr "Porta do servidor:"
 
 #: ../tiny-fu/tiny-fu-server.c:751
 msgid "Server logfile:"
-msgstr "Ficheiro de Registo do Servidor:"
+msgstr "Ficheiro de diário do servidor:"
 
 #: ../tiny-fu/tiny-fu.c:161
 msgid "Interactive console for Script-Fu development"
@@ -152,15 +152,15 @@ msgstr "Servidor para operações remotas Script-Fu"
 
 #: ../tiny-fu/tiny-fu.c:196
 msgid "_Start Server..."
-msgstr "Iniciar _Servidor..."
+msgstr "_Iniciar servidor..."
 
 #: ../tiny-fu/tiny-fu.c:353
 msgid "_GIMP Online"
-msgstr "_GIMP Online"
+msgstr "_GIMP online"
 
 #: ../tiny-fu/tiny-fu.c:354
 msgid "_User Manual"
-msgstr "Man_ual do Utilizador"
+msgstr "_Manual do utilizador"
 
 #: ../tiny-fu/tiny-fu.c:357
 msgid "_Script-Fu"
@@ -180,11 +180,11 @@ msgstr "_Miscelânea"
 
 #: ../tiny-fu/tiny-fu.c:365
 msgid "_Patterns"
-msgstr "_Padrões"
+msgstr "_Texturas"
 
 #: ../tiny-fu/tiny-fu.c:367
 msgid "_Test"
-msgstr "_Teste"
+msgstr "_Testar"
 
 #: ../tiny-fu/tiny-fu.c:369
 msgid "_Utilities"
@@ -192,15 +192,15 @@ msgstr "_Utilitários"
 
 #: ../tiny-fu/tiny-fu.c:371
 msgid "_Web Page Themes"
-msgstr "Temas para Páginas _Web"
+msgstr "Temas de página _Web"
 
 #: ../tiny-fu/tiny-fu.c:373
 msgid "_Alien Glow"
-msgstr "Brilho Extr_a-Terrestre"
+msgstr "_Brilho estranho"
 
 #: ../tiny-fu/tiny-fu.c:375
 msgid "_Beveled Pattern"
-msgstr "Padrão com _Relevo"
+msgstr "_Textura chanfrada"
 
 #: ../tiny-fu/tiny-fu.c:377
 msgid "_Classic.Gimp.Org"
@@ -212,7 +212,7 @@ msgstr "Alfa para _Logótipo"
 
 #: ../tiny-fu/tiny-fu.c:382
 msgid "An_imation"
-msgstr "An_imação"
+msgstr "An_Imação"
 
 #: ../tiny-fu/tiny-fu.c:384
 msgid "_Animators"
@@ -224,7 +224,7 @@ msgstr "_Artístico"
 
 #: ../tiny-fu/tiny-fu.c:388
 msgid "_Blur"
-msgstr "_Desfocamento"
+msgstr "_Desfocar"
 
 #: ../tiny-fu/tiny-fu.c:390
 msgid "_Decor"
@@ -236,19 +236,19 @@ msgstr "_Efeitos"
 
 #: ../tiny-fu/tiny-fu.c:394
 msgid "En_hance"
-msgstr "Mel_horar"
+msgstr "Mel_Horar"
 
 #: ../tiny-fu/tiny-fu.c:396
 msgid "_Light and Shadow"
-msgstr "_Luz e Sombra"
+msgstr "_Luz e sombra"
 
 #: ../tiny-fu/tiny-fu.c:398
 msgid "S_hadow"
-msgstr "S_ombra"
+msgstr "S_Ombra"
 
 #: ../tiny-fu/tiny-fu.c:400
 msgid "_Render"
-msgstr "_Renderizar"
+msgstr "_Desenhar"
 
 #: ../tiny-fu/tiny-fu.c:402
 msgid "_Alchemy"
@@ -260,16 +260,16 @@ msgstr "Reler todos os scripts Script-Fu disponíveis"
 
 #: ../tiny-fu/tiny-fu.c:410
 msgid "_Refresh Scripts"
-msgstr "Atualiza_r Scripts"
+msgstr "_Atualizar scripts"
 
 #: ../tiny-fu/tiny-fu.c:433
 msgid ""
 "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
 "Please close all Script-Fu windows and try again."
 msgstr ""
-"Não pode utilizar \"Atualiza_r Scripts\" enquanto uma caixa de diálogo do "
-"Script-Fu estiver aberta. Por favor, feche todas as janelas do Script-Fu e "
-"tente novamente."
+"Não pode utilizar \"Atualizar scripts\" enquanto um diálogo do Script-Fu "
+"estiver aberto. Por favor, feche todas as janelas do Script-Fu e tente "
+"novamente."
 
 #: ../scripts/alien-glow-arrow.scm:182
 #: ../scripts/beveled-pattern-arrow.scm:156
@@ -278,7 +278,7 @@ msgstr "Direita"
 
 #: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
 msgid "FG-BG-RGB"
-msgstr "FG-BG-RGB"
+msgstr "1ºP-F-RGB"
 
 #: ../scripts/erase-rows.scm:43
 msgid "Rows"
@@ -294,7 +294,7 @@ msgstr "Apagar"
 
 #: ../scripts/font-map.scm:164
 msgid "Black on white"
-msgstr "Preto em Branco"
+msgstr "Preto no branco"
 
 #: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
 msgid "Horizontal"
@@ -302,15 +302,15 @@ msgstr "Horizontal"
 
 #: ../scripts/rendermap.scm:91
 msgid "Tile"
-msgstr "Tijolo"
+msgstr "Mosaico"
 
 #: ../scripts/ripply-anim.scm:129
 msgid "Wrap"
-msgstr "Enrolar"
+msgstr "Quebrar"
 
 #: ../scripts/spyrogimp.scm:326
 msgid "Spyrograph"
-msgstr "Esferográfica"
+msgstr "Espirógrafo"
 
 #: ../scripts/spyrogimp.scm:329
 msgid "Circle"
@@ -322,7 +322,7 @@ msgstr "Lápis"
 
 #: ../scripts/spyrogimp.scm:350
 msgid "Solid Color"
-msgstr "Cor Sólida"
+msgstr "Cor sólida"
 
 #: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
 msgid "Squares"
