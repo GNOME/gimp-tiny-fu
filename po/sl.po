@@ -7,21 +7,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GIMP 2.8 scriptfu\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-tiny-fu&component=general\n"
-"POT-Creation-Date: 2010-03-29 17:13+0000\n"
-"PO-Revision-Date: 2010-04-03 16:13+0100\n"
-"Last-Translator: Martin Srebotnjak  <miles@filmsi.net>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-"
+"tiny-fu&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-09-19 15:27+0000\n"
+"PO-Revision-Date: 2016-01-24 12:12+0100\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Martin Srebotnjak <miles@filmsi.net>\n"
+"Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
-"X-Poedit-Language: Slovenian\n"
-"X-Poedit-Country: SLOVENIA\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Generator: Poedit 1.8.6\n"
 
-#: ../tiny-fu/tiny-fu-console.c:133
-#: ../tiny-fu/tiny-fu-console.c:200
+#: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
 msgstr "Konzola Script-Fu"
 
@@ -261,2528 +262,2552 @@ msgid "_Refresh Scripts"
 msgstr "_Osveži skripte"
 
 #: ../tiny-fu/tiny-fu.c:433
-msgid "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  Please close all Script-Fu windows and try again."
-msgstr "Ko je odprto pogovorno okno Script-Fu, ne smete uporabiti \"Osveži skripte\".  Prosimo, zaprite vsa okna Script-Fu in poskusite znova."
+msgid ""
+"You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
+"Please close all Script-Fu windows and try again."
+msgstr ""
+"Ko je odprto pogovorno okno Script-Fu, ne smete uporabiti \"Osveži skripte"
+"\".  Prosimo, zaprite vsa okna Script-Fu in poskusite znova."
 
-#: ../scripts/3d-outline.scm.h:1
+#: ../scripts/3d-outline.scm:118 ../scripts/3d-outline.scm:164
 msgid "3D _Outline..."
 msgstr "3D-_oris ..."
 
-#: ../scripts/3d-outline.scm.h:2
-msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Polmer zabrisanosti preslikave odtisa (plast alfa)"
-
-#: ../scripts/3d-outline.scm.h:3
-msgid "Create a logo with outlined text and a drop shadow"
-msgstr "Ustvari logotip z orisanim besedilom in senčenjem"
-
-#: ../scripts/3d-outline.scm.h:4
-#: ../scripts/glossy.scm.h:6
-msgid "Default bumpmap settings"
-msgstr "Privzete vrednosti preslikave odtisa "
-
-#: ../scripts/3d-outline.scm.h:5
-#: ../scripts/alien-glow-button.scm.h:5
-#: ../scripts/alien-glow-logo.scm.h:4
-#: ../scripts/alien-neon-logo.scm.h:6
-#: ../scripts/basic1-logo.scm.h:4
-#: ../scripts/basic2-logo.scm.h:5
-#: ../scripts/beveled-button.scm.h:3
-#: ../scripts/beveled-pattern-button.scm.h:3
-#: ../scripts/beveled-pattern-heading.scm.h:2
-#: ../scripts/blended-logo.scm.h:11
-#: ../scripts/bovinated-logo.scm.h:6
-#: ../scripts/carved-logo.scm.h:5
-#: ../scripts/chalk.scm.h:5
-#: ../scripts/chip-away.scm.h:8
-#: ../scripts/chrome-logo.scm.h:6
-#: ../scripts/comic-logo.scm.h:5
-#: ../scripts/coolmetal-logo.scm.h:6
-#: ../scripts/crystal-logo.scm.h:6
-#: ../scripts/frosty-logo.scm.h:5
-#: ../scripts/gimp-headers.scm.h:5
-#: ../scripts/gimp-labels.scm.h:6
-#: ../scripts/glossy.scm.h:7
-#: ../scripts/glowing-logo.scm.h:5
-#: ../scripts/gradient-bevel-logo.scm.h:7
-#: ../scripts/i26-gunya2.scm.h:2
-#: ../scripts/neon-logo.scm.h:6
-#: ../scripts/news-text.scm.h:7
-#: ../scripts/pupi-button.scm.h:3
-#: ../scripts/slide.scm.h:2
-#: ../scripts/sota-chrome-logo.scm.h:7
-#: ../scripts/speed-text.scm.h:5
-#: ../scripts/starburst-logo.scm.h:6
-#: ../scripts/starscape-logo.scm.h:4
-#: ../scripts/t-o-p-logo.scm.h:8
-#: ../scripts/text-circle.scm.h:4
-#: ../scripts/textured-logo.scm.h:6
-#: ../scripts/title-header.scm.h:2
-msgid "Font"
-msgstr "Pisava"
-
-#: ../scripts/3d-outline.scm.h:6
-#: ../scripts/alien-glow-button.scm.h:6
-#: ../scripts/alien-glow-logo.scm.h:5
-#: ../scripts/alien-neon-logo.scm.h:7
-#: ../scripts/basic1-logo.scm.h:5
-#: ../scripts/basic2-logo.scm.h:6
-#: ../scripts/beveled-button.scm.h:4
-#: ../scripts/beveled-pattern-button.scm.h:4
-#: ../scripts/beveled-pattern-heading.scm.h:3
-#: ../scripts/blended-logo.scm.h:12
-#: ../scripts/bovinated-logo.scm.h:7
-#: ../scripts/carved-logo.scm.h:6
-#: ../scripts/chalk.scm.h:6
-#: ../scripts/chip-away.scm.h:9
-#: ../scripts/chrome-logo.scm.h:7
-#: ../scripts/comic-logo.scm.h:6
-#: ../scripts/coolmetal-logo.scm.h:7
-#: ../scripts/crystal-logo.scm.h:7
-#: ../scripts/frosty-logo.scm.h:6
-#: ../scripts/gimp-headers.scm.h:6
-#: ../scripts/gimp-labels.scm.h:7
-#: ../scripts/glossy.scm.h:8
-#: ../scripts/glowing-logo.scm.h:6
-#: ../scripts/gradient-bevel-logo.scm.h:8
-#: ../scripts/i26-gunya2.scm.h:3
-#: ../scripts/neon-logo.scm.h:7
-#: ../scripts/news-text.scm.h:8
-#: ../scripts/pupi-button.scm.h:4
-#: ../scripts/sota-chrome-logo.scm.h:8
-#: ../scripts/speed-text.scm.h:6
-#: ../scripts/starburst-logo.scm.h:7
-#: ../scripts/starscape-logo.scm.h:5
-#: ../scripts/t-o-p-logo.scm.h:9
-#: ../scripts/text-circle.scm.h:5
-#: ../scripts/textured-logo.scm.h:7
-#: ../scripts/title-header.scm.h:3
-msgid "Font size (pixels)"
-msgstr "Velikost pisave (slikovne točke)"
-
-#: ../scripts/3d-outline.scm.h:7
-msgid "Outline blur radius"
-msgstr "Polmer zabrisanosti orisa"
-
-#: ../scripts/3d-outline.scm.h:8
-msgid "Outline the selected region (or alpha) with a pattern and add a drop shadow"
+#: ../scripts/3d-outline.scm:119
+msgid ""
+"Outline the selected region (or alpha) with a pattern and add a drop shadow"
 msgstr "Oriše izbrano področje (ali alfo) z vzorcem in doda senčenje"
 
-#: ../scripts/3d-outline.scm.h:9
-#: ../scripts/beveled-pattern-arrow.scm.h:5
-#: ../scripts/beveled-pattern-bullet.scm.h:3
-#: ../scripts/beveled-pattern-button.scm.h:5
-#: ../scripts/beveled-pattern-heading.scm.h:5
-#: ../scripts/beveled-pattern-hrule.scm.h:3
-#: ../scripts/chip-away.scm.h:13
-#: ../scripts/textured-logo.scm.h:11
+#: ../scripts/3d-outline.scm:126 ../scripts/3d-outline.scm:170
+#: ../scripts/beveled-pattern-arrow.scm:157
+#: ../scripts/beveled-pattern-bullet.scm:91
+#: ../scripts/beveled-pattern-button.scm:130
+#: ../scripts/beveled-pattern-heading.scm:116
+#: ../scripts/beveled-pattern-hrule.scm:85 ../scripts/chip-away.scm:156
+#: ../scripts/chip-away.scm:203 ../scripts/textured-logo.scm:128
 msgid "Pattern"
 msgstr "Vzorec"
 
-#: ../scripts/3d-outline.scm.h:10
-#: ../scripts/glossy.scm.h:16
-#: ../scripts/round-corners.scm.h:6
-msgid "Shadow X offset"
-msgstr "Zamik sence po osi X"
+#: ../scripts/3d-outline.scm:127 ../scripts/3d-outline.scm:174
+msgid "Outline blur radius"
+msgstr "Polmer zabrisanosti orisa"
 
-#: ../scripts/3d-outline.scm.h:11
-#: ../scripts/glossy.scm.h:17
-#: ../scripts/round-corners.scm.h:7
-msgid "Shadow Y offset"
-msgstr "Zamik sence po osi Y"
-
-#: ../scripts/3d-outline.scm.h:12
+#: ../scripts/3d-outline.scm:128 ../scripts/3d-outline.scm:175
 msgid "Shadow blur radius"
 msgstr "Polmer zabrisanosti sence"
 
-#: ../scripts/3d-outline.scm.h:13
-#: ../scripts/alien-glow-button.scm.h:10
-#: ../scripts/alien-glow-logo.scm.h:8
-#: ../scripts/alien-neon-logo.scm.h:10
-#: ../scripts/basic1-logo.scm.h:6
-#: ../scripts/basic2-logo.scm.h:7
-#: ../scripts/beveled-button.scm.h:9
-#: ../scripts/beveled-pattern-button.scm.h:7
-#: ../scripts/beveled-pattern-heading.scm.h:6
-#: ../scripts/blended-logo.scm.h:17
-#: ../scripts/bovinated-logo.scm.h:10
-#: ../scripts/carved-logo.scm.h:8
-#: ../scripts/chalk.scm.h:7
-#: ../scripts/chip-away.scm.h:14
-#: ../scripts/chrome-logo.scm.h:9
-#: ../scripts/comic-logo.scm.h:11
-#: ../scripts/coolmetal-logo.scm.h:10
-#: ../scripts/crystal-logo.scm.h:8
-#: ../scripts/frosty-logo.scm.h:7
-#: ../scripts/gimp-headers.scm.h:13
-#: ../scripts/gimp-labels.scm.h:17
-#: ../scripts/glossy.scm.h:18
-#: ../scripts/glowing-logo.scm.h:8
-#: ../scripts/gradient-bevel-logo.scm.h:10
-#: ../scripts/i26-gunya2.scm.h:7
-#: ../scripts/neon-logo.scm.h:10
-#: ../scripts/news-text.scm.h:10
-#: ../scripts/pupi-button.scm.h:13
-#: ../scripts/slide.scm.h:5
-#: ../scripts/sota-chrome-logo.scm.h:11
-#: ../scripts/speed-text.scm.h:8
-#: ../scripts/starburst-logo.scm.h:9
-#: ../scripts/starscape-logo.scm.h:8
-#: ../scripts/t-o-p-logo.scm.h:11
-#: ../scripts/text-circle.scm.h:8
-#: ../scripts/textured-logo.scm.h:14
-#: ../scripts/title-header.scm.h:5
+#: ../scripts/3d-outline.scm:129 ../scripts/3d-outline.scm:176
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr "Polmer zabrisanosti preslikave odtisa (plast alfa)"
+
+#: ../scripts/3d-outline.scm:130 ../scripts/3d-outline.scm:177
+#: ../scripts/glossy.scm:217 ../scripts/glossy.scm:289
+msgid "Default bumpmap settings"
+msgstr "Privzete vrednosti preslikave odtisa "
+
+#: ../scripts/3d-outline.scm:131 ../scripts/3d-outline.scm:178
+#: ../scripts/glossy.scm:219 ../scripts/glossy.scm:291
+#: ../scripts/round-corners.scm:136
+msgid "Shadow X offset"
+msgstr "Zamik sence po osi X"
+
+#: ../scripts/3d-outline.scm:132 ../scripts/3d-outline.scm:179
+#: ../scripts/glossy.scm:220 ../scripts/glossy.scm:292
+#: ../scripts/round-corners.scm:137
+msgid "Shadow Y offset"
+msgstr "Zamik sence po osi Y"
+
+#: ../scripts/3d-outline.scm:165
+msgid "Create a logo with outlined text and a drop shadow"
+msgstr "Ustvari logotip z orisanim besedilom in senčenjem"
+
+#: ../scripts/3d-outline.scm:171 ../scripts/alien-glow-button.scm:156
+#: ../scripts/alien-glow-logo.scm:111 ../scripts/alien-neon-logo.scm:176
+#: ../scripts/basic1-logo.scm:98 ../scripts/basic2-logo.scm:121
+#: ../scripts/beveled-button.scm:149 ../scripts/beveled-pattern-button.scm:126
+#: ../scripts/beveled-pattern-heading.scm:113 ../scripts/blended-logo.scm:186
+#: ../scripts/bovinated-logo.scm:132 ../scripts/carved-logo.scm:167
+#: ../scripts/chalk.scm:122 ../scripts/chip-away.scm:193
+#: ../scripts/chrome-logo.scm:124 ../scripts/comic-logo.scm:161
+#: ../scripts/coolmetal-logo.scm:175 ../scripts/crystal-logo.scm:215
+#: ../scripts/frosty-logo.scm:147 ../scripts/gimp-headers.scm:155
+#: ../scripts/gimp-headers.scm:178 ../scripts/gimp-labels.scm:127
+#: ../scripts/gimp-labels.scm:143 ../scripts/gimp-labels.scm:159
+#: ../scripts/gimp-labels.scm:175 ../scripts/glossy.scm:274
+#: ../scripts/glowing-logo.scm:115 ../scripts/gradient-bevel-logo.scm:140
+#: ../scripts/i26-gunya2.scm:97 ../scripts/neon-logo.scm:287
+#: ../scripts/news-text.scm:83 ../scripts/pupi-button.scm:193
+#: ../scripts/slide.scm:248 ../scripts/sota-chrome-logo.scm:212
+#: ../scripts/speed-text.scm:92 ../scripts/starburst-logo.scm:112
+#: ../scripts/starscape-logo.scm:172 ../scripts/text-circle.scm:210
+#: ../scripts/textured-logo.scm:167 ../scripts/title-header.scm:170
+#: ../scripts/t-o-p-logo.scm:147
 msgid "Text"
 msgstr "Besedilo"
 
-#: ../scripts/3dTruchet.scm.h:1
+#: ../scripts/3d-outline.scm:172 ../scripts/alien-glow-button.scm:158
+#: ../scripts/alien-glow-logo.scm:112 ../scripts/alien-neon-logo.scm:177
+#: ../scripts/basic1-logo.scm:99 ../scripts/basic2-logo.scm:122
+#: ../scripts/beveled-button.scm:150 ../scripts/beveled-pattern-button.scm:127
+#: ../scripts/beveled-pattern-heading.scm:114 ../scripts/blended-logo.scm:187
+#: ../scripts/bovinated-logo.scm:133 ../scripts/carved-logo.scm:168
+#: ../scripts/chalk.scm:123 ../scripts/chip-away.scm:195
+#: ../scripts/chrome-logo.scm:125 ../scripts/comic-logo.scm:162
+#: ../scripts/coolmetal-logo.scm:176 ../scripts/crystal-logo.scm:216
+#: ../scripts/frosty-logo.scm:148 ../scripts/gimp-headers.scm:157
+#: ../scripts/gimp-headers.scm:180 ../scripts/gimp-labels.scm:177
+#: ../scripts/glossy.scm:275 ../scripts/glowing-logo.scm:116
+#: ../scripts/gradient-bevel-logo.scm:141 ../scripts/i26-gunya2.scm:101
+#: ../scripts/neon-logo.scm:288 ../scripts/news-text.scm:85
+#: ../scripts/pupi-button.scm:194 ../scripts/sota-chrome-logo.scm:213
+#: ../scripts/speed-text.scm:94 ../scripts/starburst-logo.scm:113
+#: ../scripts/starscape-logo.scm:173 ../scripts/text-circle.scm:214
+#: ../scripts/textured-logo.scm:168 ../scripts/title-header.scm:171
+#: ../scripts/t-o-p-logo.scm:148
+msgid "Font size (pixels)"
+msgstr "Velikost pisave (slikovne točke)"
+
+#: ../scripts/3d-outline.scm:173 ../scripts/alien-glow-button.scm:157
+#: ../scripts/alien-glow-logo.scm:113 ../scripts/alien-neon-logo.scm:178
+#: ../scripts/basic1-logo.scm:100 ../scripts/basic2-logo.scm:123
+#: ../scripts/beveled-button.scm:151 ../scripts/beveled-pattern-button.scm:128
+#: ../scripts/beveled-pattern-heading.scm:115 ../scripts/blended-logo.scm:188
+#: ../scripts/bovinated-logo.scm:134 ../scripts/carved-logo.scm:169
+#: ../scripts/chalk.scm:124 ../scripts/chip-away.scm:194
+#: ../scripts/chrome-logo.scm:126 ../scripts/comic-logo.scm:163
+#: ../scripts/coolmetal-logo.scm:177 ../scripts/crystal-logo.scm:217
+#: ../scripts/frosty-logo.scm:149 ../scripts/gimp-headers.scm:156
+#: ../scripts/gimp-headers.scm:179 ../scripts/gimp-labels.scm:176
+#: ../scripts/glossy.scm:276 ../scripts/glowing-logo.scm:117
+#: ../scripts/gradient-bevel-logo.scm:142 ../scripts/i26-gunya2.scm:100
+#: ../scripts/neon-logo.scm:289 ../scripts/news-text.scm:84
+#: ../scripts/pupi-button.scm:195 ../scripts/slide.scm:250
+#: ../scripts/sota-chrome-logo.scm:214 ../scripts/speed-text.scm:93
+#: ../scripts/starburst-logo.scm:114 ../scripts/starscape-logo.scm:174
+#: ../scripts/text-circle.scm:216 ../scripts/textured-logo.scm:169
+#: ../scripts/title-header.scm:172 ../scripts/t-o-p-logo.scm:149
+msgid "Font"
+msgstr "Pisava"
+
+#: ../scripts/3dTruchet.scm:222
 msgid "3_D Truchet..."
 msgstr "Vzorec Truchet 3_D  ..."
 
-#: ../scripts/3dTruchet.scm.h:2
-#: ../scripts/alien-glow-arrow.scm.h:1
-#: ../scripts/alien-glow-bar.scm.h:1
-#: ../scripts/alien-glow-bullet.scm.h:1
-#: ../scripts/alien-glow-button.scm.h:2
-#: ../scripts/alien-neon-logo.scm.h:3
-#: ../scripts/basic1-logo.scm.h:2
-#: ../scripts/basic2-logo.scm.h:3
-#: ../scripts/blended-logo.scm.h:2
-#: ../scripts/bovinated-logo.scm.h:3
-#: ../scripts/chalk.scm.h:1
-#: ../scripts/chrome-logo.scm.h:3
-#: ../scripts/comic-logo.scm.h:2
-#: ../scripts/coolmetal-logo.scm.h:2
-#: ../scripts/frosty-logo.scm.h:2
-#: ../scripts/gimp-labels.scm.h:1
-#: ../scripts/glossy.scm.h:2
-#: ../scripts/glowing-logo.scm.h:2
-#: ../scripts/gradient-bevel-logo.scm.h:2
-#: ../scripts/neon-logo.scm.h:1
-#: ../scripts/news-text.scm.h:1
-#: ../scripts/speed-text.scm.h:1
-#: ../scripts/sphere.scm.h:1
-#: ../scripts/starburst-logo.scm.h:1
-#: ../scripts/swirltile.scm.h:2
-#: ../scripts/t-o-p-logo.scm.h:2
-#: ../scripts/textured-logo.scm.h:1
-#: ../scripts/truchet.scm.h:1
-msgid "Background color"
-msgstr "Barva ozadja"
-
-#: ../scripts/3dTruchet.scm.h:3
-#: ../scripts/truchet.scm.h:2
-msgid "Block size"
-msgstr "Velikost bloka"
-
-#: ../scripts/3dTruchet.scm.h:4
+#: ../scripts/3dTruchet.scm:223
 msgid "Create an image filled with a 3D Truchet pattern"
 msgstr "Ustvari sliko, zapolnjeno z vzorcem 3D-Truchet"
 
-#: ../scripts/3dTruchet.scm.h:5
-#: ../scripts/blended-logo.scm.h:7
-msgid "End blend"
-msgstr "Zaključi zlivanje"
+#: ../scripts/3dTruchet.scm:228 ../scripts/truchet.scm:163
+msgid "Block size"
+msgstr "Velikost bloka"
 
-#: ../scripts/3dTruchet.scm.h:6
-#: ../scripts/truchet.scm.h:5
-msgid "Number of X tiles"
-msgstr "Število tlakov X"
-
-#: ../scripts/3dTruchet.scm.h:7
-#: ../scripts/truchet.scm.h:6
-msgid "Number of Y tiles"
-msgstr "Število tlakov Y"
-
-#: ../scripts/3dTruchet.scm.h:8
-#: ../scripts/blended-logo.scm.h:16
-msgid "Start blend"
-msgstr "Začni zlivanje"
-
-#: ../scripts/3dTruchet.scm.h:9
-msgid "Supersample"
-msgstr "Nadvzorčenje"
-
-#: ../scripts/3dTruchet.scm.h:10
-#: ../scripts/add-bevel.scm.h:4
-#: ../scripts/truchet.scm.h:8
+#: ../scripts/3dTruchet.scm:229 ../scripts/add-bevel.scm:194
+#: ../scripts/truchet.scm:164
 msgid "Thickness"
 msgstr "Debelina"
 
-#: ../scripts/add-bevel.scm.h:1
+#: ../scripts/3dTruchet.scm:230 ../scripts/alien-glow-arrow.scm:184
+#: ../scripts/alien-glow-bar.scm:95 ../scripts/alien-glow-bullet.scm:104
+#: ../scripts/alien-glow-button.scm:161 ../scripts/alien-neon-logo.scm:136
+#: ../scripts/alien-neon-logo.scm:180 ../scripts/basic1-logo.scm:67
+#: ../scripts/basic1-logo.scm:101 ../scripts/basic2-logo.scm:90
+#: ../scripts/basic2-logo.scm:124 ../scripts/blended-logo.scm:133
+#: ../scripts/blended-logo.scm:190 ../scripts/bovinated-logo.scm:137
+#: ../scripts/chalk.scm:83 ../scripts/chalk.scm:125
+#: ../scripts/chrome-logo.scm:127 ../scripts/comic-logo.scm:127
+#: ../scripts/comic-logo.scm:168 ../scripts/contactsheet.scm:334
+#: ../scripts/coolmetal-logo.scm:140 ../scripts/coolmetal-logo.scm:178
+#: ../scripts/frosty-logo.scm:117 ../scripts/frosty-logo.scm:150
+#: ../scripts/gimp-labels.scm:180 ../scripts/glossy.scm:210
+#: ../scripts/glossy.scm:282 ../scripts/glowing-logo.scm:85
+#: ../scripts/glowing-logo.scm:118 ../scripts/gradient-bevel-logo.scm:106
+#: ../scripts/gradient-bevel-logo.scm:145 ../scripts/neon-logo.scm:254
+#: ../scripts/neon-logo.scm:290 ../scripts/news-text.scm:90
+#: ../scripts/speed-text.scm:97 ../scripts/sphere.scm:81
+#: ../scripts/starburst-logo.scm:83 ../scripts/starburst-logo.scm:116
+#: ../scripts/swirltile.scm:65 ../scripts/textured-logo.scm:132
+#: ../scripts/textured-logo.scm:174 ../scripts/t-o-p-logo.scm:114
+#: ../scripts/t-o-p-logo.scm:154 ../scripts/truchet.scm:165
+msgid "Background color"
+msgstr "Barva ozadja"
+
+#: ../scripts/3dTruchet.scm:231 ../scripts/blended-logo.scm:138
+#: ../scripts/blended-logo.scm:195
+msgid "Start blend"
+msgstr "Začni zlivanje"
+
+#: ../scripts/3dTruchet.scm:232 ../scripts/blended-logo.scm:139
+#: ../scripts/blended-logo.scm:196
+msgid "End blend"
+msgstr "Zaključi zlivanje"
+
+#: ../scripts/3dTruchet.scm:233
+msgid "Supersample"
+msgstr "Nadvzorčenje"
+
+#: ../scripts/3dTruchet.scm:234 ../scripts/truchet.scm:167
+msgid "Number of X tiles"
+msgstr "Število tlakov X"
+
+#: ../scripts/3dTruchet.scm:235 ../scripts/truchet.scm:168
+msgid "Number of Y tiles"
+msgstr "Število tlakov Y"
+
+#: ../scripts/add-bevel.scm:186
 msgid "Add B_evel..."
 msgstr "D_odaj izbočenost ..."
 
-#: ../scripts/add-bevel.scm.h:2
+#: ../scripts/add-bevel.scm:187
 msgid "Add a beveled border to an image"
 msgstr "Sliki doda izbočeno obrobo"
 
-#: ../scripts/add-bevel.scm.h:3
-#: ../scripts/chip-away.scm.h:12
-msgid "Keep bump layer"
-msgstr "Obdrži plast odtisa"
-
-#: ../scripts/add-bevel.scm.h:5
-#: ../scripts/fuzzyborder.scm.h:10
-#: ../scripts/old-photo.scm.h:6
-#: ../scripts/round-corners.scm.h:8
-#: ../scripts/slide.scm.h:6
-#: ../scripts/spinning-globe.scm.h:6
+#: ../scripts/add-bevel.scm:195 ../scripts/fuzzyborder.scm:161
+#: ../scripts/old-photo.scm:105 ../scripts/round-corners.scm:140
+#: ../scripts/slide.scm:252 ../scripts/spinning-globe.scm:107
 msgid "Work on copy"
 msgstr "Obdeluj kopijo"
 
-#: ../scripts/addborder.scm.h:1
+#: ../scripts/add-bevel.scm:196 ../scripts/chip-away.scm:153
+#: ../scripts/chip-away.scm:200
+msgid "Keep bump layer"
+msgstr "Obdrži plast odtisa"
+
+#: ../scripts/addborder.scm:171
 msgid "Add _Border..."
 msgstr "Dodaj _obrobe ..."
 
-#: ../scripts/addborder.scm.h:2
+#: ../scripts/addborder.scm:172
 msgid "Add a border around an image"
 msgstr "Dodaj obrobo okoli slike"
 
-#: ../scripts/addborder.scm.h:3
+#: ../scripts/addborder.scm:179
 msgid "Border X size"
 msgstr "Velikost obrobe X"
 
-#: ../scripts/addborder.scm.h:4
+#: ../scripts/addborder.scm:180
 msgid "Border Y size"
 msgstr "Velikost obrobe Y"
 
-#: ../scripts/addborder.scm.h:5
+#: ../scripts/addborder.scm:181
 msgid "Border color"
 msgstr "Barva obrobe"
 
-#: ../scripts/addborder.scm.h:6
+#: ../scripts/addborder.scm:182
 msgid "Delta value on color"
 msgstr "Vrednosti razlike v barvi"
 
-#: ../scripts/alien-glow-arrow.scm.h:2
-msgid "Create an arrow graphic with an eerie glow for web pages"
-msgstr "Ustvari sevajočo puščico za spletne strani"
-
-#: ../scripts/alien-glow-arrow.scm.h:3
-#: ../scripts/beveled-pattern-arrow.scm.h:2
-msgid "Down"
-msgstr "Dol"
-
-#: ../scripts/alien-glow-arrow.scm.h:4
-#: ../scripts/alien-glow-bar.scm.h:5
-#: ../scripts/alien-glow-bullet.scm.h:3
-#: ../scripts/alien-glow-button.scm.h:4
-#: ../scripts/camo.scm.h:5
-#: ../scripts/fuzzyborder.scm.h:6
-msgid "Flatten image"
-msgstr "Splošči sliko"
-
-#: ../scripts/alien-glow-arrow.scm.h:5
-#: ../scripts/alien-glow-bar.scm.h:6
-#: ../scripts/alien-glow-bullet.scm.h:4
-#: ../scripts/alien-glow-button.scm.h:7
-#: ../scripts/alien-glow-logo.scm.h:6
-#: ../scripts/alien-neon-logo.scm.h:8
-#: ../scripts/burn-in-anim.scm.h:8
-#: ../scripts/neon-logo.scm.h:8
-#: ../scripts/starscape-logo.scm.h:6
-msgid "Glow color"
-msgstr "Barva žarenja"
-
-#: ../scripts/alien-glow-arrow.scm.h:6
-#: ../scripts/beveled-pattern-arrow.scm.h:3
-msgid "Left"
-msgstr "Levo"
-
-#: ../scripts/alien-glow-arrow.scm.h:7
-#: ../scripts/beveled-pattern-arrow.scm.h:4
-msgid "Orientation"
-msgstr "Postavitev"
-
-#: ../scripts/alien-glow-arrow.scm.h:8
-#: ../scripts/beveled-pattern-arrow.scm.h:6
-msgid "Right"
-msgstr "Desno"
-
-#: ../scripts/alien-glow-arrow.scm.h:9
-#: ../scripts/beveled-pattern-arrow.scm.h:7
-#: ../scripts/lava.scm.h:7
-msgid "Size"
-msgstr "Velikost"
-
-#: ../scripts/alien-glow-arrow.scm.h:10
-#: ../scripts/beveled-pattern-arrow.scm.h:8
-msgid "Up"
-msgstr "Gor"
-
-#: ../scripts/alien-glow-arrow.scm.h:11
-#: ../scripts/beveled-pattern-arrow.scm.h:9
+#: ../scripts/alien-glow-arrow.scm:175 ../scripts/beveled-pattern-arrow.scm:149
 msgid "_Arrow..."
 msgstr "_Puščica ..."
 
-#: ../scripts/alien-glow-bar.scm.h:2
-msgid "Bar height"
-msgstr "Višina stolpca"
+#: ../scripts/alien-glow-arrow.scm:176
+msgid "Create an arrow graphic with an eerie glow for web pages"
+msgstr "Ustvari sevajočo puščico za spletne strani"
 
-#: ../scripts/alien-glow-bar.scm.h:3
-msgid "Bar length"
-msgstr "Dolžina stolpca"
+#: ../scripts/alien-glow-arrow.scm:181 ../scripts/beveled-pattern-arrow.scm:155
+#: ../scripts/lava.scm:126
+msgid "Size"
+msgstr "Velikost"
 
-#: ../scripts/alien-glow-bar.scm.h:4
-msgid "Create an Hrule graphic with an eerie glow for web pages"
-msgstr "Ustvari sevajočo pasico-črto (hrule) za spletne strani"
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Orientation"
+msgstr "Postavitev"
 
-#: ../scripts/alien-glow-bar.scm.h:7
-#: ../scripts/beveled-pattern-hrule.scm.h:5
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Right"
+msgstr "Desno"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Left"
+msgstr "Levo"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Up"
+msgstr "Gor"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Down"
+msgstr "Dol"
+
+#: ../scripts/alien-glow-arrow.scm:183 ../scripts/alien-glow-bar.scm:94
+#: ../scripts/alien-glow-bullet.scm:103 ../scripts/alien-glow-button.scm:160
+#: ../scripts/alien-glow-logo.scm:74 ../scripts/alien-glow-logo.scm:114
+#: ../scripts/alien-neon-logo.scm:135 ../scripts/alien-neon-logo.scm:179
+#: ../scripts/burn-in-anim.scm:226 ../scripts/neon-logo.scm:255
+#: ../scripts/neon-logo.scm:291 ../scripts/starscape-logo.scm:144
+#: ../scripts/starscape-logo.scm:175
+msgid "Glow color"
+msgstr "Barva žarenja"
+
+#: ../scripts/alien-glow-arrow.scm:185 ../scripts/alien-glow-bar.scm:96
+#: ../scripts/alien-glow-bullet.scm:105 ../scripts/alien-glow-button.scm:164
+#: ../scripts/camo.scm:107 ../scripts/fuzzyborder.scm:162
+msgid "Flatten image"
+msgstr "Splošči sliko"
+
+#: ../scripts/alien-glow-bar.scm:86 ../scripts/beveled-pattern-hrule.scm:77
 msgid "_Hrule..."
 msgstr "_Vodoravno ravnilo ..."
 
-#: ../scripts/alien-glow-bullet.scm.h:2
-msgid "Create a bullet graphic with an eerie glow for web pages"
-msgstr "Ustvari sevajočo oznako za spletne strani"
+#: ../scripts/alien-glow-bar.scm:87
+msgid "Create an Hrule graphic with an eerie glow for web pages"
+msgstr "Ustvari sevajočo pasico-črto (hrule) za spletne strani"
 
-#: ../scripts/alien-glow-bullet.scm.h:5
-#: ../scripts/text-circle.scm.h:6
-#: ../scripts/tileblur.scm.h:7
-msgid "Radius"
-msgstr "Radij"
+#: ../scripts/alien-glow-bar.scm:92
+msgid "Bar length"
+msgstr "Dolžina stolpca"
 
-#: ../scripts/alien-glow-bullet.scm.h:6
-#: ../scripts/beveled-pattern-bullet.scm.h:5
+#: ../scripts/alien-glow-bar.scm:93
+msgid "Bar height"
+msgstr "Višina stolpca"
+
+#: ../scripts/alien-glow-bullet.scm:96 ../scripts/beveled-pattern-bullet.scm:84
 msgid "_Bullet..."
 msgstr "_Oznaka ..."
 
-#: ../scripts/alien-glow-button.scm.h:1
-#: ../scripts/beveled-pattern-button.scm.h:1
+#: ../scripts/alien-glow-bullet.scm:97
+msgid "Create a bullet graphic with an eerie glow for web pages"
+msgstr "Ustvari sevajočo oznako za spletne strani"
+
+#: ../scripts/alien-glow-bullet.scm:102 ../scripts/text-circle.scm:211
+#: ../scripts/tileblur.scm:73
+msgid "Radius"
+msgstr "Radij"
+
+#: ../scripts/alien-glow-button.scm:150
+#: ../scripts/beveled-pattern-button.scm:120
 msgid "B_utton..."
 msgstr "G_umb ..."
 
-#: ../scripts/alien-glow-button.scm.h:3
+#: ../scripts/alien-glow-button.scm:151
 msgid "Create a button graphic with an eerie glow for web pages"
 msgstr "Ustvari sevajoč gumb za spletne strani"
 
-#: ../scripts/alien-glow-button.scm.h:8
-msgid "Glow radius"
-msgstr "Radij žarenja"
-
-#: ../scripts/alien-glow-button.scm.h:9
-#: ../scripts/beveled-button.scm.h:6
-msgid "Padding"
-msgstr "Blazinjenje"
-
-#: ../scripts/alien-glow-button.scm.h:11
-#: ../scripts/basic1-logo.scm.h:7
-#: ../scripts/basic2-logo.scm.h:8
-#: ../scripts/beveled-button.scm.h:10
-#: ../scripts/beveled-pattern-button.scm.h:8
-#: ../scripts/blended-logo.scm.h:18
-#: ../scripts/gimp-headers.scm.h:14
-#: ../scripts/gimp-labels.scm.h:18
-#: ../scripts/i26-gunya2.scm.h:8
-#: ../scripts/news-text.scm.h:11
-#: ../scripts/pupi-button.scm.h:14
-#: ../scripts/speed-text.scm.h:9
+#: ../scripts/alien-glow-button.scm:159 ../scripts/basic1-logo.scm:68
+#: ../scripts/basic1-logo.scm:102 ../scripts/basic2-logo.scm:91
+#: ../scripts/basic2-logo.scm:125 ../scripts/beveled-button.scm:154
+#: ../scripts/beveled-pattern-button.scm:129 ../scripts/blended-logo.scm:189
+#: ../scripts/contactsheet.scm:333 ../scripts/gimp-headers.scm:158
+#: ../scripts/gimp-headers.scm:181 ../scripts/gimp-labels.scm:178
+#: ../scripts/i26-gunya2.scm:98 ../scripts/news-text.scm:89
+#: ../scripts/pupi-button.scm:198 ../scripts/speed-text.scm:96
 msgid "Text color"
 msgstr "Barva besedila"
 
-#: ../scripts/alien-glow-logo.scm.h:1
-msgid "Add an eerie glow around the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda sevajoči halo"
+#: ../scripts/alien-glow-button.scm:162 ../scripts/beveled-button.scm:155
+msgid "Padding"
+msgstr "Blazinjenje"
 
-#: ../scripts/alien-glow-logo.scm.h:2
+#: ../scripts/alien-glow-button.scm:163
+msgid "Glow radius"
+msgstr "Radij žarenja"
+
+#: ../scripts/alien-glow-logo.scm:65 ../scripts/alien-glow-logo.scm:105
 msgid "Alien _Glow..."
 msgstr "_Svetleči napis  ..."
 
-#: ../scripts/alien-glow-logo.scm.h:3
-msgid "Create a logo with an alien glow around the text"
-msgstr "Ustvari logotip z ožarjenim besedilom"
+#: ../scripts/alien-glow-logo.scm:66
+msgid "Add an eerie glow around the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) doda sevajoči halo"
 
-#: ../scripts/alien-glow-logo.scm.h:7
+#: ../scripts/alien-glow-logo.scm:73
 msgid "Glow size (pixels * 4)"
 msgstr "Velikost žarenja (slikovne točke * 4)"
 
-#: ../scripts/alien-neon-logo.scm.h:1
-msgid "Add psychedelic outlines to the selected region (or alpha)"
-msgstr "Dodaj psihedelične orise izbranemu področju (ali alfi)"
+#: ../scripts/alien-glow-logo.scm:106
+msgid "Create a logo with an alien glow around the text"
+msgstr "Ustvari logotip z ožarjenim besedilom"
 
-#: ../scripts/alien-neon-logo.scm.h:2
+#: ../scripts/alien-neon-logo.scm:127 ../scripts/alien-neon-logo.scm:170
 msgid "Alien _Neon..."
 msgstr "_Neonski napis ..."
 
-#: ../scripts/alien-neon-logo.scm.h:4
-msgid "Create a logo with psychedelic outlines around the text"
-msgstr "Ustvari logotip s psihedeličnimi orisi okoli besedila"
+#: ../scripts/alien-neon-logo.scm:128
+msgid "Add psychedelic outlines to the selected region (or alpha)"
+msgstr "Dodaj psihedelične orise izbranemu področju (ali alfi)"
 
-#: ../scripts/alien-neon-logo.scm.h:5
-msgid "Fade away"
-msgstr "Pojemaj"
-
-#: ../scripts/alien-neon-logo.scm.h:9
-msgid "Number of bands"
-msgstr "Število pasov"
-
-#: ../scripts/alien-neon-logo.scm.h:11
+#: ../scripts/alien-neon-logo.scm:137 ../scripts/alien-neon-logo.scm:181
 msgid "Width of bands"
 msgstr "Širina pasov"
 
-#: ../scripts/alien-neon-logo.scm.h:12
+#: ../scripts/alien-neon-logo.scm:138 ../scripts/alien-neon-logo.scm:182
 msgid "Width of gaps"
 msgstr "Širina razmikov"
 
-#: ../scripts/basic1-logo.scm.h:1
-msgid "Add a gradient effect, a drop shadow, and a background to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) dodaj učinek preliva, padlo senco in ozadje"
+#: ../scripts/alien-neon-logo.scm:139 ../scripts/alien-neon-logo.scm:183
+msgid "Number of bands"
+msgstr "Število pasov"
 
-#: ../scripts/basic1-logo.scm.h:3
-msgid "Create a plain text logo with a gradient effect, a drop shadow, and a background"
-msgstr "Ustvari navaden logotip iz besedila z učinkom preliva, senčenja in ozadja"
+#: ../scripts/alien-neon-logo.scm:140 ../scripts/alien-neon-logo.scm:184
+msgid "Fade away"
+msgstr "Pojemaj"
 
-#: ../scripts/basic1-logo.scm.h:8
+#: ../scripts/alien-neon-logo.scm:171
+msgid "Create a logo with psychedelic outlines around the text"
+msgstr "Ustvari logotip s psihedeličnimi orisi okoli besedila"
+
+#: ../scripts/basic1-logo.scm:59 ../scripts/basic1-logo.scm:92
 msgid "_Basic I..."
 msgstr "_Osnovni I ..."
 
-#: ../scripts/basic2-logo.scm.h:1
-msgid "Add a shadow and a highlight to the selected region (or alpha)"
-msgstr "Doda senco in osvetlitev izbranemu področju (ali kanalu alfa)"
+#: ../scripts/basic1-logo.scm:60
+msgid ""
+"Add a gradient effect, a drop shadow, and a background to the selected "
+"region (or alpha)"
+msgstr ""
+"Izbranemu področju (ali alfi) dodaj učinek preliva, padlo senco in ozadje"
 
-#: ../scripts/basic2-logo.scm.h:2
+#: ../scripts/basic1-logo.scm:93
+msgid ""
+"Create a plain text logo with a gradient effect, a drop shadow, and a "
+"background"
+msgstr ""
+"Ustvari navaden logotip iz besedila z učinkom preliva, senčenja in ozadja"
+
+#: ../scripts/basic2-logo.scm:82 ../scripts/basic2-logo.scm:115
 msgid "B_asic II..."
 msgstr "Osnov_ni II ..."
 
-#: ../scripts/basic2-logo.scm.h:4
+#: ../scripts/basic2-logo.scm:83
+msgid "Add a shadow and a highlight to the selected region (or alpha)"
+msgstr "Doda senco in osvetlitev izbranemu področju (ali kanalu alfa)"
+
+#: ../scripts/basic2-logo.scm:116
 msgid "Create a simple logo with a shadow and a highlight"
 msgstr "Ustvarite enostaven logotip s senco in osvetljenostjo"
 
-#: ../scripts/beveled-button.scm.h:1
-#: ../scripts/gradient-bevel-logo.scm.h:4
-#: ../scripts/pupi-button.scm.h:1
-msgid "Bevel width"
-msgstr "Širina izbočenosti"
-
-#: ../scripts/beveled-button.scm.h:2
-msgid "Create a simple, beveled button graphic for webpages"
-msgstr "Ustvari enostaven, izbočen gumb za spletne strani"
-
-#: ../scripts/beveled-button.scm.h:5
-msgid "Lower-right color"
-msgstr "Spodnja desna barva"
-
-#: ../scripts/beveled-button.scm.h:7
-#: ../scripts/beveled-pattern-button.scm.h:6
-#: ../scripts/pupi-button.scm.h:11
-msgid "Pressed"
-msgstr "Pritisnjeno"
-
-#: ../scripts/beveled-button.scm.h:8
+#: ../scripts/beveled-button.scm:143
 msgid "Simple _Beveled Button..."
 msgstr "Enostaven _izbočen gumb ..."
 
-#: ../scripts/beveled-button.scm.h:11
+#: ../scripts/beveled-button.scm:144
+msgid "Create a simple, beveled button graphic for webpages"
+msgstr "Ustvari enostaven, izbočen gumb za spletne strani"
+
+#: ../scripts/beveled-button.scm:152
 msgid "Upper-left color"
 msgstr "Zgornja leva barva"
 
-#: ../scripts/beveled-pattern-arrow.scm.h:1
+#: ../scripts/beveled-button.scm:153
+msgid "Lower-right color"
+msgstr "Spodnja desna barva"
+
+#: ../scripts/beveled-button.scm:156 ../scripts/gradient-bevel-logo.scm:105
+#: ../scripts/gradient-bevel-logo.scm:144 ../scripts/pupi-button.scm:204
+msgid "Bevel width"
+msgstr "Širina izbočenosti"
+
+#: ../scripts/beveled-button.scm:157 ../scripts/beveled-pattern-button.scm:131
+#: ../scripts/pupi-button.scm:208
+msgid "Pressed"
+msgstr "Pritisnjeno"
+
+#: ../scripts/beveled-pattern-arrow.scm:150
 msgid "Create a beveled pattern arrow for webpages"
 msgstr "Ustvari izbočeno vzorčasto puščico za spletne strani"
 
-#: ../scripts/beveled-pattern-bullet.scm.h:1
+#: ../scripts/beveled-pattern-bullet.scm:85
 msgid "Create a beveled pattern bullet for webpages"
 msgstr "Ustvari izbočeno vzorčasto oznako za spletne strani"
 
-#: ../scripts/beveled-pattern-bullet.scm.h:2
+#: ../scripts/beveled-pattern-bullet.scm:90
 msgid "Diameter"
 msgstr "Premer"
 
-#: ../scripts/beveled-pattern-bullet.scm.h:4
-#: ../scripts/beveled-pattern-heading.scm.h:7
-#: ../scripts/spinning-globe.scm.h:4
+#: ../scripts/beveled-pattern-bullet.scm:92
+#: ../scripts/beveled-pattern-heading.scm:117 ../scripts/spinning-globe.scm:105
 msgid "Transparent background"
 msgstr "Prosojno ozadje"
 
-#: ../scripts/beveled-pattern-button.scm.h:2
+#: ../scripts/beveled-pattern-button.scm:121
 msgid "Create a beveled pattern button for webpages"
 msgstr "Ustvari izbočen vzorčasti gumb za spletne strani"
 
-#: ../scripts/beveled-pattern-heading.scm.h:1
-msgid "Create a beveled pattern heading for webpages"
-msgstr "Ustvari izbočeni vzorčasti naslov za spletne strani"
-
-#: ../scripts/beveled-pattern-heading.scm.h:4
+#: ../scripts/beveled-pattern-heading.scm:107
 msgid "H_eading..."
 msgstr "_Naslov ..."
 
-#: ../scripts/beveled-pattern-hrule.scm.h:1
+#: ../scripts/beveled-pattern-heading.scm:108
+msgid "Create a beveled pattern heading for webpages"
+msgstr "Ustvari izbočeni vzorčasti naslov za spletne strani"
+
+#: ../scripts/beveled-pattern-hrule.scm:78
 msgid "Create a beveled pattern hrule for webpages"
 msgstr "Ustvari izbočeno vzorčasto pasico-črto za spletne strani"
 
-#: ../scripts/beveled-pattern-hrule.scm.h:2
-#: ../scripts/gimp-labels.scm.h:8
-#: ../scripts/gradient-example.scm.h:4
-#: ../scripts/mkbrush.scm.h:7
-#: ../scripts/swirltile.scm.h:7
-msgid "Height"
-msgstr "Višina"
-
-#: ../scripts/beveled-pattern-hrule.scm.h:4
-#: ../scripts/gradient-example.scm.h:5
-#: ../scripts/mkbrush.scm.h:11
-#: ../scripts/swirltile.scm.h:11
+#: ../scripts/beveled-pattern-hrule.scm:83 ../scripts/gradient-example.scm:70
+#: ../scripts/mkbrush.scm:70 ../scripts/mkbrush.scm:134
+#: ../scripts/mkbrush.scm:188 ../scripts/mkbrush.scm:255
+#: ../scripts/swirltile.scm:62
 msgid "Width"
 msgstr "Širina"
 
-#: ../scripts/blend-anim.scm.h:1
+#: ../scripts/beveled-pattern-hrule.scm:84 ../scripts/gimp-labels.scm:187
+#: ../scripts/gradient-example.scm:71 ../scripts/mkbrush.scm:71
+#: ../scripts/mkbrush.scm:135 ../scripts/mkbrush.scm:189
+#: ../scripts/mkbrush.scm:256 ../scripts/swirltile.scm:61
+msgid "Height"
+msgstr "Višina"
+
+#: ../scripts/blend-anim.scm:222
 msgid "Blend Animation needs at least three source layers"
 msgstr "Zlivanje animacije zahteva najmanj tri izvorne plasti"
 
-#: ../scripts/blend-anim.scm.h:2
-msgid "Create intermediate layers to blend two or more layers over a background as an animation"
-msgstr "Ustvari vmesne plasti za spajanje dveh ali več plasti prek ozadja kot animacijo"
-
-#: ../scripts/blend-anim.scm.h:3
-msgid "Intermediate frames"
-msgstr "Vmesne sličice"
-
-#: ../scripts/blend-anim.scm.h:4
-msgid "Looped"
-msgstr "Zankano"
-
-#: ../scripts/blend-anim.scm.h:5
-msgid "Max. blur radius"
-msgstr "Največji polmer zabrisa"
-
-#: ../scripts/blend-anim.scm.h:6
+#: ../scripts/blend-anim.scm:228
 msgid "_Blend..."
 msgstr "_Zlij ..."
 
-#: ../scripts/blended-logo.scm.h:1
-msgid "Add blended backgrounds, highlights, and shadows to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda zlita ozadja, svetla območja in sence"
+#: ../scripts/blend-anim.scm:229
+msgid ""
+"Create intermediate layers to blend two or more layers over a background as "
+"an animation"
+msgstr ""
+"Ustvari vmesne plasti za spajanje dveh ali več plasti prek ozadja kot "
+"animacijo"
 
-#: ../scripts/blended-logo.scm.h:3
+#: ../scripts/blend-anim.scm:236
+msgid "Intermediate frames"
+msgstr "Vmesne sličice"
+
+#: ../scripts/blend-anim.scm:237
+msgid "Max. blur radius"
+msgstr "Največji polmer zabrisa"
+
+#: ../scripts/blend-anim.scm:238
+msgid "Looped"
+msgstr "Zankano"
+
+#: ../scripts/blended-logo.scm:124 ../scripts/blended-logo.scm:180
 msgid "Blen_ded..."
 msgstr "Zmešan_o ..."
 
-#: ../scripts/blended-logo.scm.h:4
-msgid "Blend mode"
-msgstr "Način zlivanja"
+#: ../scripts/blended-logo.scm:125
+msgid ""
+"Add blended backgrounds, highlights, and shadows to the selected region (or "
+"alpha)"
+msgstr ""
+"Izbranemu področju (ali alfi) doda zlita ozadja, svetla območja in sence"
 
-#: ../scripts/blended-logo.scm.h:5
-msgid "Create a logo with blended backgrounds, highlights, and shadows"
-msgstr "Ustvarite logotip s zlitim ozadjem, posvetlitvami in sencami"
-
-#: ../scripts/blended-logo.scm.h:6
-msgid "Custom Gradient"
-msgstr "Preliv po meri"
-
-#: ../scripts/blended-logo.scm.h:8
-msgid "FG-BG-HSV"
-msgstr "Ospredje-ozadje-HSV"
-
-#: ../scripts/blended-logo.scm.h:9
-msgid "FG-BG-RGB"
-msgstr "Ospredje-ozadje-RGB"
-
-#: ../scripts/blended-logo.scm.h:10
-msgid "FG-Transparent"
-msgstr "Ospredje-prosojnost"
-
-#: ../scripts/blended-logo.scm.h:13
-#: ../scripts/comic-logo.scm.h:7
-#: ../scripts/coolmetal-logo.scm.h:8
-#: ../scripts/land.scm.h:3
-#: ../scripts/lava.scm.h:2
-#: ../scripts/rendermap.scm.h:4
-#: ../scripts/spyrogimp.scm.h:9
-msgid "Gradient"
-msgstr "Preliv"
-
-#: ../scripts/blended-logo.scm.h:14
-#: ../scripts/comic-logo.scm.h:8
-#: ../scripts/coolmetal-logo.scm.h:9
-#: ../scripts/gradient-example.scm.h:3
-#: ../scripts/rendermap.scm.h:5
-#: ../scripts/title-header.scm.h:4
-msgid "Gradient reverse"
-msgstr "Obratni preliv"
-
-#: ../scripts/blended-logo.scm.h:15
+#: ../scripts/blended-logo.scm:132
 msgid "Offset (pixels)"
 msgstr "Zamik (slikovne točke)"
 
-#: ../scripts/bovinated-logo.scm.h:1
-msgid "Add 'cow spots' to the selected region (or alpha)"
-msgstr "Dodajte 'kravje lise' na izbrano področje (ali kanal alfa)"
+#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+msgid "Blend mode"
+msgstr "Način zlivanja"
 
-#: ../scripts/bovinated-logo.scm.h:2
-#: ../scripts/chrome-logo.scm.h:2
-msgid "Background Color"
-msgstr "Barva ozadja"
+#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+msgid "FG-BG-RGB"
+msgstr "Ospredje-ozadje-RGB"
 
-#: ../scripts/bovinated-logo.scm.h:4
+#: ../scripts/blended-logo.scm:135 ../scripts/blended-logo.scm:192
+msgid "FG-BG-HSV"
+msgstr "Ospredje-ozadje-HSV"
+
+#: ../scripts/blended-logo.scm:136 ../scripts/blended-logo.scm:193
+msgid "FG-Transparent"
+msgstr "Ospredje-prosojnost"
+
+#: ../scripts/blended-logo.scm:137 ../scripts/blended-logo.scm:194
+msgid "Custom Gradient"
+msgstr "Preliv po meri"
+
+#: ../scripts/blended-logo.scm:140 ../scripts/blended-logo.scm:197
+#: ../scripts/comic-logo.scm:123 ../scripts/comic-logo.scm:164
+#: ../scripts/coolmetal-logo.scm:141 ../scripts/coolmetal-logo.scm:179
+#: ../scripts/land.scm:86 ../scripts/lava.scm:128 ../scripts/rendermap.scm:89
+#: ../scripts/spyrogimp.scm:354
+msgid "Gradient"
+msgstr "Preliv"
+
+#: ../scripts/blended-logo.scm:141 ../scripts/blended-logo.scm:198
+#: ../scripts/comic-logo.scm:124 ../scripts/comic-logo.scm:165
+#: ../scripts/coolmetal-logo.scm:142 ../scripts/coolmetal-logo.scm:180
+#: ../scripts/gradient-example.scm:72 ../scripts/rendermap.scm:90
+#: ../scripts/title-header.scm:173
+msgid "Gradient reverse"
+msgstr "Obratni preliv"
+
+#: ../scripts/blended-logo.scm:181
+msgid "Create a logo with blended backgrounds, highlights, and shadows"
+msgstr "Ustvarite logotip s zlitim ozadjem, posvetlitvami in sencami"
+
+#: ../scripts/bovinated-logo.scm:92 ../scripts/bovinated-logo.scm:126
 msgid "Bo_vination..."
 msgstr "_Lisasto ..."
 
-#: ../scripts/bovinated-logo.scm.h:5
-msgid "Create a logo with text in the style of 'cow spots'"
-msgstr "Ustvarite logotip z besedilom v slogu 'kravjih lis'"
+#: ../scripts/bovinated-logo.scm:93
+msgid "Add 'cow spots' to the selected region (or alpha)"
+msgstr "Dodajte 'kravje lise' na izbrano področje (ali kanal alfa)"
 
-#: ../scripts/bovinated-logo.scm.h:8
+#: ../scripts/bovinated-logo.scm:100 ../scripts/bovinated-logo.scm:135
 msgid "Spots density X"
 msgstr "Gostota lis X"
 
-#: ../scripts/bovinated-logo.scm.h:9
+#: ../scripts/bovinated-logo.scm:101 ../scripts/bovinated-logo.scm:136
 msgid "Spots density Y"
 msgstr "Gostota lis Y"
 
-#: ../scripts/burn-in-anim.scm.h:1
-msgid "Add glowing"
-msgstr "Dodaj sijaj"
+#: ../scripts/bovinated-logo.scm:102 ../scripts/chrome-logo.scm:94
+msgid "Background Color"
+msgstr "Barva ozadja"
 
-#: ../scripts/burn-in-anim.scm.h:2
-msgid "After glow"
-msgstr "Ožarjenost"
+#: ../scripts/bovinated-logo.scm:127
+msgid "Create a logo with text in the style of 'cow spots'"
+msgstr "Ustvarite logotip z besedilom v slogu 'kravjih lis'"
 
-#: ../scripts/burn-in-anim.scm.h:3
+#. --- false form of "if-1"
+#: ../scripts/burn-in-anim.scm:211
+msgid ""
+"The Burn-In script needs two layers in total. A foreground layer with "
+"transparency and a background layer."
+msgstr ""
+"Skript Vžarjeno potrebuje skupno dve plasti: sprednjo plast s prosojnostjo "
+"in plast ozadja."
+
+#: ../scripts/burn-in-anim.scm:218
 msgid "B_urn-In..."
 msgstr "_Vžarjeno ..."
 
-#: ../scripts/burn-in-anim.scm.h:4
-msgid "Corona width"
-msgstr "Širina korone"
+#: ../scripts/burn-in-anim.scm:219
+msgid ""
+"Create intermediate layers to produce an animated 'burn-in' transition "
+"between two layers"
+msgstr ""
+"Ustvari vmesne plasti, ki ustvarijo animirani 'vžgani' prehod med dvema "
+"plastema"
 
-#: ../scripts/burn-in-anim.scm.h:5
-msgid "Create intermediate layers to produce an animated 'burn-in' transition between two layers"
-msgstr "Ustvari vmesne plasti, ki ustvarijo animirani 'vžgani' prehod med dvema plastema"
-
-#: ../scripts/burn-in-anim.scm.h:6
+#: ../scripts/burn-in-anim.scm:227
 msgid "Fadeout"
 msgstr "Zatemnitev"
 
-#: ../scripts/burn-in-anim.scm.h:7
+#: ../scripts/burn-in-anim.scm:228
 msgid "Fadeout width"
 msgstr "Širina pojemanja"
 
-#: ../scripts/burn-in-anim.scm.h:9
+#: ../scripts/burn-in-anim.scm:229
+msgid "Corona width"
+msgstr "Širina korone"
+
+#: ../scripts/burn-in-anim.scm:230
+msgid "After glow"
+msgstr "Ožarjenost"
+
+#: ../scripts/burn-in-anim.scm:231
+msgid "Add glowing"
+msgstr "Dodaj sijaj"
+
+#: ../scripts/burn-in-anim.scm:232
 msgid "Prepare for GIF"
 msgstr "Pripravi za GIF"
 
-#: ../scripts/burn-in-anim.scm.h:10
+#: ../scripts/burn-in-anim.scm:233
 msgid "Speed (pixels/frame)"
 msgstr "Hitrost (slikovnih točk/sličico)"
 
-#: ../scripts/burn-in-anim.scm.h:11
-msgid "The Burn-In script needs two layers in total. A foreground layer with transparency and a background layer."
-msgstr "Skript Vžarjeno potrebuje skupno dve plasti: sprednjo plast s prosojnostjo in plast ozadja."
-
-#: ../scripts/camo.scm.h:1
-msgid "Color 1"
-msgstr "Barva 1"
-
-#: ../scripts/camo.scm.h:2
-msgid "Color 2"
-msgstr "Barva 2"
-
-#: ../scripts/camo.scm.h:3
-msgid "Color 3"
-msgstr "Barva 3"
-
-#: ../scripts/camo.scm.h:4
-msgid "Create an image filled with a camouflage pattern"
-msgstr "Ustvari sliko, zapolnjeno s prikrivnim vzorcem"
-
-#: ../scripts/camo.scm.h:6
-#: ../scripts/rendermap.scm.h:6
-msgid "Granularity"
-msgstr "Zrnatost"
-
-#: ../scripts/camo.scm.h:7
-#: ../scripts/rendermap.scm.h:7
-msgid "Image size"
-msgstr "Velikost slike"
-
-#: ../scripts/camo.scm.h:8
-#: ../scripts/distress-selection.scm.h:3
-msgid "Smooth"
-msgstr "Zgladi"
-
-#: ../scripts/camo.scm.h:9
+#: ../scripts/camo.scm:95
 msgid "_Camouflage..."
 msgstr "_Prikrij ..."
 
-#: ../scripts/carve-it.scm.h:1
-msgid "Carve white areas"
-msgstr "Ureži bela območja"
+#: ../scripts/camo.scm:96
+msgid "Create an image filled with a camouflage pattern"
+msgstr "Ustvari sliko, zapolnjeno s prikrivnim vzorcem"
 
-#: ../scripts/carve-it.scm.h:2
-msgid "Image to carve"
-msgstr "Slika za urezovanje"
+#: ../scripts/camo.scm:101 ../scripts/rendermap.scm:87
+msgid "Image size"
+msgstr "Velikost slike"
 
-#: ../scripts/carve-it.scm.h:3
-msgid "Stencil C_arve..."
-msgstr "_Izrezljaj po šabloni ..."
+#: ../scripts/camo.scm:102 ../scripts/rendermap.scm:88
+msgid "Granularity"
+msgstr "Zrnatost"
 
-#: ../scripts/carved-logo.scm.h:1
-msgid "Background Image"
-msgstr "Slika za ozadje"
+#: ../scripts/camo.scm:103
+msgid "Color 1"
+msgstr "Barva 1"
 
-#: ../scripts/carved-logo.scm.h:2
-msgid "Carve raised text"
-msgstr "Ureži dvignjeno besedilo"
+#: ../scripts/camo.scm:104
+msgid "Color 2"
+msgstr "Barva 2"
 
-#: ../scripts/carved-logo.scm.h:3
+#: ../scripts/camo.scm:105
+msgid "Color 3"
+msgstr "Barva 3"
+
+#: ../scripts/camo.scm:106 ../scripts/distress-selection.scm:110
+msgid "Smooth"
+msgstr "Zgladi"
+
+#: ../scripts/carved-logo.scm:161
 msgid "Carved..."
 msgstr "Urezano ..."
 
-#: ../scripts/carved-logo.scm.h:4
-msgid "Create a logo with text raised above or carved in to the specified background image"
-msgstr "Ustvari logotip z izbočenim ali vrezanim besedilom v določeno sliko ozadja"
+#: ../scripts/carved-logo.scm:162
+msgid ""
+"Create a logo with text raised above or carved in to the specified "
+"background image"
+msgstr ""
+"Ustvari logotip z izbočenim ali vrezanim besedilom v določeno sliko ozadja"
 
-#: ../scripts/carved-logo.scm.h:7
+#: ../scripts/carved-logo.scm:170
+msgid "Background Image"
+msgstr "Slika za ozadje"
+
+#: ../scripts/carved-logo.scm:173
+msgid "Carve raised text"
+msgstr "Ureži dvignjeno besedilo"
+
+#: ../scripts/carved-logo.scm:174
 msgid "Padding around text"
 msgstr "Blazinjenje besedila"
 
-#: ../scripts/chalk.scm.h:2
-msgid "Chalk color"
-msgstr "Barva krede"
+#: ../scripts/carve-it.scm:181
+msgid "Stencil C_arve..."
+msgstr "_Izrezljaj po šabloni ..."
 
-#: ../scripts/chalk.scm.h:3
-msgid "Create a chalk drawing effect for the selected region (or alpha)"
-msgstr "Na izbranem področju (ali kanalu alfa) ustvari učinek risanja s kredo"
+#: ../scripts/carve-it.scm:189
+msgid "Image to carve"
+msgstr "Slika za urezovanje"
 
-#: ../scripts/chalk.scm.h:4
-msgid "Create a logo resembling chalk scribbled on a blackboard"
-msgstr "Ustvari logotip, ki spominja na pisavo krede po tabli"
+#: ../scripts/carve-it.scm:190
+msgid "Carve white areas"
+msgstr "Ureži bela območja"
 
-#: ../scripts/chalk.scm.h:8
+#: ../scripts/chalk.scm:75 ../scripts/chalk.scm:116
 msgid "_Chalk..."
 msgstr "_Kreda ..."
 
-#: ../scripts/chip-away.scm.h:1
-msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda učinek izrezljanega lesa"
+#: ../scripts/chalk.scm:76
+msgid "Create a chalk drawing effect for the selected region (or alpha)"
+msgstr "Na izbranem področju (ali kanalu alfa) ustvari učinek risanja s kredo"
 
-#: ../scripts/chip-away.scm.h:2
-msgid "Blur amount"
-msgstr "Količina zabrisanosti"
+#: ../scripts/chalk.scm:117
+msgid "Create a logo resembling chalk scribbled on a blackboard"
+msgstr "Ustvari logotip, ki spominja na pisavo krede po tabli"
 
-#: ../scripts/chip-away.scm.h:3
+#: ../scripts/chalk.scm:126
+msgid "Chalk color"
+msgstr "Barva krede"
+
+#: ../scripts/chip-away.scm:141 ../scripts/chip-away.scm:187
 msgid "Chip Awa_y..."
 msgstr "Izrezl_jaj ..."
 
-#: ../scripts/chip-away.scm.h:4
+#: ../scripts/chip-away.scm:142
+msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) doda učinek izrezljanega lesa"
+
+#: ../scripts/chip-away.scm:149 ../scripts/chip-away.scm:196
 msgid "Chip amount"
 msgstr "Količina izrezljanega"
 
-#: ../scripts/chip-away.scm.h:5
-msgid "Create a logo resembling a chipped wood carving"
-msgstr "Ustvari logotip, ki spominja na izrezljani les"
+#: ../scripts/chip-away.scm:150 ../scripts/chip-away.scm:197
+msgid "Blur amount"
+msgstr "Količina zabrisanosti"
 
-#: ../scripts/chip-away.scm.h:6
-msgid "Drop shadow"
-msgstr "Zasenči"
-
-#: ../scripts/chip-away.scm.h:7
-msgid "Fill BG with pattern"
-msgstr "Napolni ozadje z vzorcem"
-
-#: ../scripts/chip-away.scm.h:10
+#: ../scripts/chip-away.scm:151 ../scripts/chip-away.scm:198
 msgid "Invert"
 msgstr "Preobrni"
 
-#: ../scripts/chip-away.scm.h:11
+#: ../scripts/chip-away.scm:152 ../scripts/chip-away.scm:199
+msgid "Drop shadow"
+msgstr "Zasenči"
+
+#: ../scripts/chip-away.scm:154 ../scripts/chip-away.scm:201
+msgid "Fill BG with pattern"
+msgstr "Napolni ozadje z vzorcem"
+
+#: ../scripts/chip-away.scm:155 ../scripts/chip-away.scm:202
 msgid "Keep background"
 msgstr "Obdrži ozadje"
 
-#: ../scripts/chrome-it.scm.h:1
-msgid "Add a chrome effect to the selected region (or alpha) using a specified (grayscale) stencil"
-msgstr "Izbranemu področju (ali alfi) dodaj učinek kromiranja z uporabo navedene (sivinske) šablone"
+#: ../scripts/chip-away.scm:188
+msgid "Create a logo resembling a chipped wood carving"
+msgstr "Ustvari logotip, ki spominja na izrezljani les"
 
-#: ../scripts/chrome-it.scm.h:2
-#: ../scripts/sota-chrome-logo.scm.h:1
-msgid "Chrome balance"
-msgstr "Ravnovesje kromiranja"
-
-#: ../scripts/chrome-it.scm.h:3
-#: ../scripts/crystal-logo.scm.h:2
-#: ../scripts/sota-chrome-logo.scm.h:2
-msgid "Chrome factor"
-msgstr "Faktor kromiranja"
-
-#: ../scripts/chrome-it.scm.h:4
-#: ../scripts/sota-chrome-logo.scm.h:3
-msgid "Chrome lightness"
-msgstr "Svetlost kroma"
-
-#: ../scripts/chrome-it.scm.h:5
-#: ../scripts/sota-chrome-logo.scm.h:4
-msgid "Chrome saturation"
-msgstr "Nasičenost kroma"
-
-#: ../scripts/chrome-it.scm.h:6
-msgid "Chrome white areas"
-msgstr "Kromiraj bela področja"
-
-#: ../scripts/chrome-it.scm.h:7
-#: ../scripts/crystal-logo.scm.h:5
-#: ../scripts/sota-chrome-logo.scm.h:6
-msgid "Environment map"
-msgstr "Zemljevid okolja"
-
-#: ../scripts/chrome-it.scm.h:8
-#: ../scripts/sota-chrome-logo.scm.h:9
-msgid "Highlight balance"
-msgstr "Ravnovesje svetlih področij"
-
-#: ../scripts/chrome-it.scm.h:9
+#: ../scripts/chrome-it.scm:205
 msgid "Stencil C_hrome..."
 msgstr "Kromiraj po _šabloni ..."
 
-#: ../scripts/chrome-logo.scm.h:1
-msgid "Add a simple chrome effect to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) dodaj enostaven učinek kromiranja"
+#: ../scripts/chrome-it.scm:206
+msgid ""
+"Add a chrome effect to the selected region (or alpha) using a specified "
+"(grayscale) stencil"
+msgstr ""
+"Izbranemu področju (ali alfi) dodaj učinek kromiranja z uporabo navedene "
+"(sivinske) šablone"
 
-#: ../scripts/chrome-logo.scm.h:4
+#: ../scripts/chrome-it.scm:213 ../scripts/sota-chrome-logo.scm:209
+msgid "Chrome saturation"
+msgstr "Nasičenost kroma"
+
+#: ../scripts/chrome-it.scm:214 ../scripts/sota-chrome-logo.scm:210
+msgid "Chrome lightness"
+msgstr "Svetlost kroma"
+
+#: ../scripts/chrome-it.scm:215 ../scripts/crystal-logo.scm:214
+#: ../scripts/sota-chrome-logo.scm:211
+msgid "Chrome factor"
+msgstr "Faktor kromiranja"
+
+#: ../scripts/chrome-it.scm:216 ../scripts/crystal-logo.scm:221
+#: ../scripts/sota-chrome-logo.scm:215
+msgid "Environment map"
+msgstr "Zemljevid okolja"
+
+#: ../scripts/chrome-it.scm:219 ../scripts/sota-chrome-logo.scm:218
+msgid "Highlight balance"
+msgstr "Ravnovesje svetlih področij"
+
+#: ../scripts/chrome-it.scm:220 ../scripts/sota-chrome-logo.scm:219
+msgid "Chrome balance"
+msgstr "Ravnovesje kromiranja"
+
+#: ../scripts/chrome-it.scm:221
+msgid "Chrome white areas"
+msgstr "Kromiraj bela področja"
+
+#: ../scripts/chrome-logo.scm:85 ../scripts/chrome-logo.scm:118
 msgid "C_hrome..."
 msgstr "_Kromiranje ..."
 
-#: ../scripts/chrome-logo.scm.h:5
-msgid "Create a simplistic, but cool, chromed logo"
-msgstr "Ustvari enostaven, a frajerski, kromirani logotip"
+#: ../scripts/chrome-logo.scm:86
+msgid "Add a simple chrome effect to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) dodaj enostaven učinek kromiranja"
 
-#: ../scripts/chrome-logo.scm.h:8
+#: ../scripts/chrome-logo.scm:93
 msgid "Offsets (pixels * 2)"
 msgstr "Zamiki (slikovne točke * 2)"
 
-#: ../scripts/circuit.scm.h:1
-msgid "Circuit seed"
-msgstr "Seme krogotoka"
+#: ../scripts/chrome-logo.scm:119
+msgid "Create a simplistic, but cool, chromed logo"
+msgstr "Ustvari enostaven, a frajerski, kromirani logotip"
 
-#: ../scripts/circuit.scm.h:2
-msgid "Fill the selected region (or alpha) with traces like those on a circuit board"
-msgstr "Zapolni izbrano področje (ali alfo) s sledmi, kot so tiste na tiskanih vezjih"
-
-#: ../scripts/circuit.scm.h:3
-#: ../scripts/lava.scm.h:3
-#: ../scripts/predator.scm.h:3
-#: ../scripts/xach-effect.scm.h:11
-msgid "Keep selection"
-msgstr "Ohrani izbor"
-
-#: ../scripts/circuit.scm.h:4
-msgid "No background (only for separate layer)"
-msgstr "Brez ozadja (samo pri ločenih plasteh)"
-
-#: ../scripts/circuit.scm.h:5
-msgid "Oilify mask size"
-msgstr "Velikost oljne maske"
-
-#: ../scripts/circuit.scm.h:6
-#: ../scripts/lava.scm.h:6
-#: ../scripts/predator.scm.h:6
-msgid "Separate layer"
-msgstr "Ločena plast"
-
-#: ../scripts/circuit.scm.h:7
+#: ../scripts/circuit.scm:142
 msgid "_Circuit..."
 msgstr "_Krogotok ..."
 
-#: ../scripts/clothify.scm.h:1
-msgid "Add a cloth-like texture to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda učinek teksture, podobne oblačilu"
+#: ../scripts/circuit.scm:143
+msgid ""
+"Fill the selected region (or alpha) with traces like those on a circuit board"
+msgstr ""
+"Zapolni izbrano področje (ali alfo) s sledmi, kot so tiste na tiskanih vezjih"
 
-#: ../scripts/clothify.scm.h:2
-#: ../scripts/swirltile.scm.h:1
-msgid "Azimuth"
-msgstr "Azimut"
+#: ../scripts/circuit.scm:150
+msgid "Oilify mask size"
+msgstr "Velikost oljne maske"
 
-#: ../scripts/clothify.scm.h:3
-msgid "Blur X"
-msgstr "Zabrisanost X"
+#: ../scripts/circuit.scm:151
+msgid "Circuit seed"
+msgstr "Seme krogotoka"
 
-#: ../scripts/clothify.scm.h:4
-msgid "Blur Y"
-msgstr "Zabrisanost Y"
+#: ../scripts/circuit.scm:152
+msgid "No background (only for separate layer)"
+msgstr "Brez ozadja (samo pri ločenih plasteh)"
 
-#: ../scripts/clothify.scm.h:5
-#: ../scripts/swirltile.scm.h:5
-msgid "Depth"
-msgstr "Globina"
+#: ../scripts/circuit.scm:153 ../scripts/lava.scm:129
+#: ../scripts/predator.scm:130 ../scripts/xach-effect.scm:138
+msgid "Keep selection"
+msgstr "Ohrani izbor"
 
-#: ../scripts/clothify.scm.h:6
-#: ../scripts/swirltile.scm.h:6
-msgid "Elevation"
-msgstr "Dvignjenost"
+#: ../scripts/circuit.scm:154 ../scripts/lava.scm:130
+#: ../scripts/predator.scm:131
+msgid "Separate layer"
+msgstr "Ločena plast"
 
-#: ../scripts/clothify.scm.h:7
+#: ../scripts/clothify.scm:51
 msgid "_Clothify..."
 msgstr "_Obleci ..."
 
-#: ../scripts/coffee.scm.h:1
-msgid "Add realistic looking coffee stains to the image"
-msgstr "Sliki dodaj realistične madeže kave"
+#: ../scripts/clothify.scm:52
+msgid "Add a cloth-like texture to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) doda učinek teksture, podobne oblačilu"
 
-#: ../scripts/coffee.scm.h:2
-msgid "Darken only"
-msgstr "Samo potemni"
+#: ../scripts/clothify.scm:59
+msgid "Blur X"
+msgstr "Zabrisanost X"
 
-#: ../scripts/coffee.scm.h:3
-msgid "Stains"
-msgstr "Madeži"
+#: ../scripts/clothify.scm:60
+msgid "Blur Y"
+msgstr "Zabrisanost Y"
 
-#: ../scripts/coffee.scm.h:4
+#: ../scripts/clothify.scm:61 ../scripts/swirltile.scm:58
+msgid "Azimuth"
+msgstr "Azimut"
+
+#: ../scripts/clothify.scm:62 ../scripts/swirltile.scm:59
+msgid "Elevation"
+msgstr "Dvignjenost"
+
+#: ../scripts/clothify.scm:63 ../scripts/swirltile.scm:57
+msgid "Depth"
+msgstr "Globina"
+
+#: ../scripts/coffee.scm:80
 msgid "_Coffee Stain..."
 msgstr "_Kavni madež ..."
 
-#: ../scripts/comic-logo.scm.h:1
-msgid "Add a comic-book effect to the selected region (or alpha) by outlining and filling with a gradient"
-msgstr "Z orisovanjem in zapolnjevanjem s prelivom dodaj stripovski učinek izbranemu področju (ali alfi)"
+#: ../scripts/coffee.scm:81
+msgid "Add realistic looking coffee stains to the image"
+msgstr "Sliki dodaj realistične madeže kave"
 
-#: ../scripts/comic-logo.scm.h:3
+#: ../scripts/coffee.scm:88
+msgid "Stains"
+msgstr "Madeži"
+
+#: ../scripts/coffee.scm:89
+msgid "Darken only"
+msgstr "Samo potemni"
+
+#: ../scripts/comic-logo.scm:115 ../scripts/comic-logo.scm:155
 msgid "Comic Boo_k..."
 msgstr "Stri_p ..."
 
-#: ../scripts/comic-logo.scm.h:4
-msgid "Create a comic-book style logo by outlining and filling with a gradient"
-msgstr "Z orisovanjem in zapolnjevanjem s prelivom ustvari logotip v stripovskem slogu"
+#: ../scripts/comic-logo.scm:116
+msgid ""
+"Add a comic-book effect to the selected region (or alpha) by outlining and "
+"filling with a gradient"
+msgstr ""
+"Z orisovanjem in zapolnjevanjem s prelivom dodaj stripovski učinek izbranemu "
+"področju (ali alfi)"
 
-#: ../scripts/comic-logo.scm.h:9
-msgid "Outline color"
-msgstr "Barva orisa"
-
-#: ../scripts/comic-logo.scm.h:10
-#: ../scripts/glossy.scm.h:11
+#: ../scripts/comic-logo.scm:125 ../scripts/comic-logo.scm:166
+#: ../scripts/glossy.scm:209 ../scripts/glossy.scm:281
 msgid "Outline size"
 msgstr "Velikost orisa"
 
-#: ../scripts/coolmetal-logo.scm.h:1
-msgid "Add a metallic effect to the selected region (or alpha) with reflections and perspective shadows"
-msgstr "Izbranemu področju (ali alfi) dodaj kovinski učinek z odsevi in sencami v perspektivi"
+#: ../scripts/comic-logo.scm:126 ../scripts/comic-logo.scm:167
+msgid "Outline color"
+msgstr "Barva orisa"
 
-#: ../scripts/coolmetal-logo.scm.h:3
+#: ../scripts/comic-logo.scm:156
+msgid "Create a comic-book style logo by outlining and filling with a gradient"
+msgstr ""
+"Z orisovanjem in zapolnjevanjem s prelivom ustvari logotip v stripovskem "
+"slogu"
+
+#: ../scripts/contactsheet.scm:120
+msgid "Contact Sheet "
+msgstr "Kontaktna kopija"
+
+#: ../scripts/contactsheet.scm:122
+msgid " for directory "
+msgstr " za mapo "
+
+#: ../scripts/contactsheet.scm:210
+msgid "Unable to open directory "
+msgstr "Mape ni mogoče odpreti"
+
+#: ../scripts/contactsheet.scm:308
+msgid "Created "
+msgstr "Ustvarjeno "
+
+#: ../scripts/contactsheet.scm:309
+msgid " contact sheets from a total of "
+msgstr " kontaktnih kopij od skupaj "
+
+#: ../scripts/contactsheet.scm:310
+msgid " images"
+msgstr " slik"
+
+#: ../scripts/contactsheet.scm:319
+msgid "_Contact Sheet..."
+msgstr "_Kontaktna kopija …"
+
+#: ../scripts/contactsheet.scm:320
+msgid ""
+"Create a series of images containing thumbnail sized versions of all of the "
+"images in a specified directory."
+msgstr ""
+"Ustvari niz slik, ki vsebujejo ogledne sličice vseh slik v navedeni mapi."
+
+#: ../scripts/contactsheet.scm:325
+msgid "Images Directory"
+msgstr "Mapa slik"
+
+#: ../scripts/contactsheet.scm:326
+msgid "Sheet size"
+msgstr "Velikost kontaktne kopije"
+
+#: ../scripts/contactsheet.scm:331
+msgid "Title font"
+msgstr "Pisava naslova"
+
+#: ../scripts/contactsheet.scm:332
+msgid "Legend font"
+msgstr "Pisava legende"
+
+#: ../scripts/coolmetal-logo.scm:131 ../scripts/coolmetal-logo.scm:169
 msgid "Cool _Metal..."
 msgstr "Hladno _kovinsko ..."
 
-#: ../scripts/coolmetal-logo.scm.h:4
-msgid "Create a metallic logo with reflections and perspective shadows"
-msgstr "Ustvari metalni logotip z odsevi in sencami v perspektivi"
+#: ../scripts/coolmetal-logo.scm:132
+msgid ""
+"Add a metallic effect to the selected region (or alpha) with reflections and "
+"perspective shadows"
+msgstr ""
+"Izbranemu področju (ali alfi) dodaj kovinski učinek z odsevi in sencami v "
+"perspektivi"
 
-#: ../scripts/coolmetal-logo.scm.h:5
-#: ../scripts/frosty-logo.scm.h:4
+#: ../scripts/coolmetal-logo.scm:139 ../scripts/frosty-logo.scm:116
 msgid "Effect size (pixels)"
 msgstr "Velikost učinka (slikovne točke)"
 
-#: ../scripts/crystal-logo.scm.h:1
-msgid "Background image"
-msgstr "Slika ozadja"
+#: ../scripts/coolmetal-logo.scm:170
+msgid "Create a metallic logo with reflections and perspective shadows"
+msgstr "Ustvari metalni logotip z odsevi in sencami v perspektivi"
 
-#: ../scripts/crystal-logo.scm.h:3
-msgid "Create a logo with a crystal/gel effect displacing the image underneath"
-msgstr "Ustvari logotip s kristalnim/želirnim učinkom, ki razmesti spodaj ležečo sliko"
-
-#: ../scripts/crystal-logo.scm.h:4
+#: ../scripts/crystal-logo.scm:208
 msgid "Crystal..."
 msgstr "Kristal ..."
 
-#: ../scripts/difference-clouds.scm.h:1
+#: ../scripts/crystal-logo.scm:209
+msgid "Create a logo with a crystal/gel effect displacing the image underneath"
+msgstr ""
+"Ustvari logotip s kristalnim/želirnim učinkom, ki razmesti spodaj ležečo "
+"sliko"
+
+#: ../scripts/crystal-logo.scm:218
+msgid "Background image"
+msgstr "Slika ozadja"
+
+#: ../scripts/difference-clouds.scm:68
 msgid "Difference Clouds..."
 msgstr "Oblački razlik ..."
 
-#: ../scripts/difference-clouds.scm.h:2
+#: ../scripts/difference-clouds.scm:69
 msgid "Solid noise applied with Difference layer mode"
 msgstr "Nespremenljivi šum, apliciran v načinu razlike plasti"
 
-#: ../scripts/distress-selection.scm.h:1
-msgid "Distress the selection"
-msgstr "Raztresi izbor"
-
-#: ../scripts/distress-selection.scm.h:2
-msgid "Granularity (1 is low)"
-msgstr "Granularnost (1 je nizka)"
-
-#: ../scripts/distress-selection.scm.h:4
-msgid "Smooth horizontally"
-msgstr "Zgladi vodoravno"
-
-#: ../scripts/distress-selection.scm.h:5
-msgid "Smooth vertically"
-msgstr "Zgladi navpično"
-
-#: ../scripts/distress-selection.scm.h:6
-msgid "Spread"
-msgstr "Razširi"
-
-#: ../scripts/distress-selection.scm.h:7
-msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Prag (več 1<-->255 manj)"
-
-#: ../scripts/distress-selection.scm.h:8
+#: ../scripts/distress-selection.scm:99
 msgid "_Distort..."
 msgstr "_Popači ..."
 
-#: ../scripts/drop-shadow.scm.h:1
-msgid "Add a drop shadow to the selected region (or alpha)"
-msgstr "Dodaj padajočo senco izbranemu področju (ali alfi)"
+#: ../scripts/distress-selection.scm:100
+msgid "Distress the selection"
+msgstr "Raztresi izbor"
 
-#: ../scripts/drop-shadow.scm.h:2
-#: ../scripts/perspective-shadow.scm.h:2
-msgid "Allow resizing"
-msgstr "Dovoli spreminjanje velikosti"
+#: ../scripts/distress-selection.scm:107
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Prag (več 1<-->255 manj)"
 
-#: ../scripts/drop-shadow.scm.h:3
-#: ../scripts/news-text.scm.h:2
-#: ../scripts/perspective-shadow.scm.h:4
-#: ../scripts/round-corners.scm.h:3
-#: ../scripts/swirltile.scm.h:3
-msgid "Blur radius"
-msgstr "Polmer zabrisa"
+#: ../scripts/distress-selection.scm:108
+msgid "Spread"
+msgstr "Razširi"
 
-#: ../scripts/drop-shadow.scm.h:4
-#: ../scripts/fuzzyborder.scm.h:5
-#: ../scripts/perspective-shadow.scm.h:5
-#: ../scripts/spyrogimp.scm.h:5
-msgid "Color"
-msgstr "Barva"
+#: ../scripts/distress-selection.scm:109
+msgid "Granularity (1 is low)"
+msgstr "Granularnost (1 je nizka)"
 
-#: ../scripts/drop-shadow.scm.h:5
-#: ../scripts/gimp-labels.scm.h:11
-msgid "Offset X"
-msgstr "Zamik X"
+#: ../scripts/distress-selection.scm:111
+msgid "Smooth horizontally"
+msgstr "Zgladi vodoravno"
 
-#: ../scripts/drop-shadow.scm.h:6
-#: ../scripts/gimp-labels.scm.h:12
-msgid "Offset Y"
-msgstr "Zamik Y"
+#: ../scripts/distress-selection.scm:112
+msgid "Smooth vertically"
+msgstr "Zgladi navpično"
 
-#: ../scripts/drop-shadow.scm.h:7
-#: ../scripts/perspective-shadow.scm.h:7
-msgid "Opacity"
-msgstr "Prekrivnost"
-
-#: ../scripts/drop-shadow.scm.h:8
+#: ../scripts/drop-shadow.scm:168
 msgid "_Drop Shadow..."
 msgstr "_Vrži senco ..."
 
-#: ../scripts/erase-rows.scm.h:1
-msgid "Columns"
-msgstr "Stolpcev"
+#: ../scripts/drop-shadow.scm:169
+msgid "Add a drop shadow to the selected region (or alpha)"
+msgstr "Dodaj padajočo senco izbranemu področju (ali alfi)"
 
-#: ../scripts/erase-rows.scm.h:2
-msgid "Erase"
-msgstr "Izbriši"
+#: ../scripts/drop-shadow.scm:176 ../scripts/gimp-labels.scm:185
+msgid "Offset X"
+msgstr "Zamik X"
 
-#: ../scripts/erase-rows.scm.h:3
-msgid "Erase every other row or column"
-msgstr "Izbriši vsako drugo vrstico ali stolpec"
+#: ../scripts/drop-shadow.scm:177 ../scripts/gimp-labels.scm:186
+msgid "Offset Y"
+msgstr "Zamik Y"
 
-#: ../scripts/erase-rows.scm.h:4
-msgid "Erase/fill"
-msgstr "Izbriši/napolni"
+#: ../scripts/drop-shadow.scm:178 ../scripts/news-text.scm:88
+#: ../scripts/perspective-shadow.scm:207 ../scripts/round-corners.scm:138
+#: ../scripts/swirltile.scm:60
+msgid "Blur radius"
+msgstr "Polmer zabrisa"
 
-#: ../scripts/erase-rows.scm.h:5
-msgid "Even"
-msgstr "Sodo"
+#: ../scripts/drop-shadow.scm:179 ../scripts/fuzzyborder.scm:155
+#: ../scripts/perspective-shadow.scm:208 ../scripts/spyrogimp.scm:353
+msgid "Color"
+msgstr "Barva"
 
-#: ../scripts/erase-rows.scm.h:6
-msgid "Even/odd"
-msgstr "Sodo/liho"
+#: ../scripts/drop-shadow.scm:180 ../scripts/perspective-shadow.scm:209
+msgid "Opacity"
+msgstr "Prekrivnost"
 
-#: ../scripts/erase-rows.scm.h:7
-msgid "Fill with BG"
-msgstr "Zapolni z ozadjem"
+#: ../scripts/drop-shadow.scm:181 ../scripts/perspective-shadow.scm:211
+msgid "Allow resizing"
+msgstr "Dovoli spreminjanje velikosti"
 
-#: ../scripts/erase-rows.scm.h:8
-msgid "Odd"
-msgstr "Liho"
-
-#: ../scripts/erase-rows.scm.h:9
-msgid "Rows"
-msgstr "Vrstice"
-
-#: ../scripts/erase-rows.scm.h:10
-msgid "Rows/cols"
-msgstr "Vrstice/stolpci"
-
-#: ../scripts/erase-rows.scm.h:11
+#: ../scripts/erase-rows.scm:35
 msgid "_Erase Every Other Row..."
 msgstr "_Izbriši vsako drugo vrstico ..."
 
-#: ../scripts/flatland.scm.h:1
-msgid "Create an image filled with a Land Pattern"
-msgstr "Ustvari sliko, zapolnjeno z vzorcem pokrajine"
+#: ../scripts/erase-rows.scm:36
+msgid "Erase every other row or column"
+msgstr "Izbriši vsako drugo vrstico ali stolpec"
 
-#: ../scripts/flatland.scm.h:2
-#: ../scripts/land.scm.h:2
-msgid "Detail level"
-msgstr "Raven podrobnosti"
+#: ../scripts/erase-rows.scm:43
+msgid "Rows/cols"
+msgstr "Vrstice/stolpci"
 
-#: ../scripts/flatland.scm.h:3
-#: ../scripts/land.scm.h:4
-msgid "Image height"
-msgstr "Višina slike"
+#: ../scripts/erase-rows.scm:43
+msgid "Rows"
+msgstr "Vrstice"
 
-#: ../scripts/flatland.scm.h:4
-#: ../scripts/land.scm.h:5
-msgid "Image width"
-msgstr "Širina slike"
+#: ../scripts/erase-rows.scm:43
+msgid "Columns"
+msgstr "Stolpcev"
 
-#: ../scripts/flatland.scm.h:5
-#: ../scripts/land.scm.h:7
-msgid "Random seed"
-msgstr "Naključno seme"
+#: ../scripts/erase-rows.scm:44
+msgid "Even/odd"
+msgstr "Sodo/liho"
 
-#: ../scripts/flatland.scm.h:6
-#: ../scripts/land.scm.h:8
-msgid "Scale X"
-msgstr "Spremeni razmerje po X"
+#: ../scripts/erase-rows.scm:44
+msgid "Even"
+msgstr "Sodo"
 
-#: ../scripts/flatland.scm.h:7
-#: ../scripts/land.scm.h:9
-msgid "Scale Y"
-msgstr "Spremeni razmerje po Y"
+#: ../scripts/erase-rows.scm:44
+msgid "Odd"
+msgstr "Liho"
 
-#: ../scripts/flatland.scm.h:8
+#: ../scripts/erase-rows.scm:45
+msgid "Erase/fill"
+msgstr "Izbriši/napolni"
+
+#: ../scripts/erase-rows.scm:45
+msgid "Erase"
+msgstr "Izbriši"
+
+#: ../scripts/erase-rows.scm:45
+msgid "Fill with BG"
+msgstr "Zapolni z ozadjem"
+
+#: ../scripts/flatland.scm:61
 msgid "_Flatland..."
 msgstr "_Ravnica ..."
 
-#: ../scripts/font-map.scm.h:1
-msgid "Active colors"
-msgstr "Aktivne barve"
+#: ../scripts/flatland.scm:62
+msgid "Create an image filled with a Land Pattern"
+msgstr "Ustvari sliko, zapolnjeno z vzorcem pokrajine"
 
-#: ../scripts/font-map.scm.h:2
-msgid "Black on white"
-msgstr "Črno na belem"
+#: ../scripts/flatland.scm:67 ../scripts/land.scm:78
+msgid "Image width"
+msgstr "Širina slike"
 
-#: ../scripts/font-map.scm.h:3
-msgid "Create an image filled with previews of fonts matching a fontname filter"
-msgstr "Ustvari sliko, zapolnjeno s predogledi pisav, ki se ujemajo s filtrom imen pisav"
+#: ../scripts/flatland.scm:68 ../scripts/land.scm:79
+msgid "Image height"
+msgstr "Višina slike"
 
-#: ../scripts/font-map.scm.h:4
-msgid "Font _size (pixels)"
-msgstr "_Velikost pisave (slikovne pike)"
+#: ../scripts/flatland.scm:69 ../scripts/land.scm:80
+msgid "Random seed"
+msgstr "Naključno seme"
 
-#: ../scripts/font-map.scm.h:5
+#: ../scripts/flatland.scm:70 ../scripts/land.scm:81
+msgid "Detail level"
+msgstr "Raven podrobnosti"
+
+#: ../scripts/flatland.scm:71 ../scripts/land.scm:84
+msgid "Scale X"
+msgstr "Spremeni razmerje po X"
+
+#: ../scripts/flatland.scm:72 ../scripts/land.scm:85
+msgid "Scale Y"
+msgstr "Spremeni razmerje po Y"
+
+#: ../scripts/font-map.scm:152
 msgid "Render _Font Map..."
 msgstr "_Upodobi tabelo pisave ..."
 
-#: ../scripts/font-map.scm.h:6
-msgid "Use font _name as text"
-msgstr "Uporabi _ime pisave kot besedilo"
+#: ../scripts/font-map.scm:153
+msgid ""
+"Create an image filled with previews of fonts matching a fontname filter"
+msgstr ""
+"Ustvari sliko, zapolnjeno s predogledi pisav, ki se ujemajo s filtrom imen "
+"pisav"
 
-#: ../scripts/font-map.scm.h:7
-msgid "_Border (pixels)"
-msgstr "_Rob (slikovne točke)"
-
-#: ../scripts/font-map.scm.h:8
-msgid "_Color scheme"
-msgstr "_Barvna shema"
-
-#: ../scripts/font-map.scm.h:9
-msgid "_Filter (regexp)"
-msgstr "_Filter (regexp)"
-
-#: ../scripts/font-map.scm.h:10
-msgid "_Labels"
-msgstr "_Nalepke"
-
-#: ../scripts/font-map.scm.h:11
+#: ../scripts/font-map.scm:158
 msgid "_Text"
 msgstr "_Besedilo"
 
-#: ../scripts/frosty-logo.scm.h:1
-msgid "Add a frost effect to the selected region (or alpha) with an added drop shadow"
-msgstr "Dodaj učinek zaledenelosti izbranemu področju (ali alfi) z dodano padlo senco"
+#: ../scripts/font-map.scm:159
+msgid "Use font _name as text"
+msgstr "Uporabi _ime pisave kot besedilo"
 
-#: ../scripts/frosty-logo.scm.h:3
-msgid "Create frozen logo with an added drop shadow"
-msgstr "Ustvari zamrznjen logotip z dodano padajočo senco"
+#: ../scripts/font-map.scm:160
+msgid "_Labels"
+msgstr "_Nalepke"
 
-#: ../scripts/frosty-logo.scm.h:8
+#: ../scripts/font-map.scm:161
+msgid "_Filter (regexp)"
+msgstr "_Filter (regexp)"
+
+#: ../scripts/font-map.scm:162
+msgid "Font _size (pixels)"
+msgstr "_Velikost pisave (slikovne pike)"
+
+#: ../scripts/font-map.scm:163
+msgid "_Border (pixels)"
+msgstr "_Rob (slikovne točke)"
+
+#: ../scripts/font-map.scm:164
+msgid "_Color scheme"
+msgstr "_Barvna shema"
+
+#: ../scripts/font-map.scm:164
+msgid "Black on white"
+msgstr "Črno na belem"
+
+#: ../scripts/font-map.scm:164
+msgid "Active colors"
+msgstr "Aktivne barve"
+
+#: ../scripts/frosty-logo.scm:108 ../scripts/frosty-logo.scm:141
 msgid "_Frosty..."
 msgstr "_Zaledenelo ..."
 
-#: ../scripts/fuzzyborder.scm.h:1
-msgid "Add a jagged, fuzzy border to an image"
-msgstr "Doda nazobčan, neoster rob sliki"
+#: ../scripts/frosty-logo.scm:109
+msgid ""
+"Add a frost effect to the selected region (or alpha) with an added drop "
+"shadow"
+msgstr ""
+"Dodaj učinek zaledenelosti izbranemu področju (ali alfi) z dodano padlo senco"
 
-#: ../scripts/fuzzyborder.scm.h:2
-msgid "Add shadow"
-msgstr "Dodaj senco"
+#: ../scripts/frosty-logo.scm:142
+msgid "Create frozen logo with an added drop shadow"
+msgstr "Ustvari zamrznjen logotip z dodano padajočo senco"
 
-#: ../scripts/fuzzyborder.scm.h:3
-msgid "Blur border"
-msgstr "Zabriši rob"
-
-#: ../scripts/fuzzyborder.scm.h:4
-#: ../scripts/old-photo.scm.h:1
-msgid "Border size"
-msgstr "Velikost obrobe"
-
-#: ../scripts/fuzzyborder.scm.h:7
-msgid "Granularity (1 is Low)"
-msgstr "Granularnost (1 je nizka)"
-
-#: ../scripts/fuzzyborder.scm.h:9
-#, no-c-format
-msgid "Shadow weight (%)"
-msgstr "Polnost senc (%)"
-
-#: ../scripts/fuzzyborder.scm.h:11
+#: ../scripts/fuzzyborder.scm:147
 msgid "_Fuzzy Border..."
 msgstr "_Nejasen rob ..."
 
-#: ../scripts/gimp-headers.scm.h:1
-msgid "Autocrop"
-msgstr "Samodejno obreži"
+#: ../scripts/fuzzyborder.scm:148
+msgid "Add a jagged, fuzzy border to an image"
+msgstr "Doda nazobčan, neoster rob sliki"
 
-#: ../scripts/gimp-headers.scm.h:2
-msgid "Create an image of a large header using the gimp.org webpage theme"
-msgstr "Ustvari sliko velikega naslova z uporabo teme spletne strani gimp.org"
+#: ../scripts/fuzzyborder.scm:156 ../scripts/old-photo.scm:99
+msgid "Border size"
+msgstr "Velikost obrobe"
 
-#: ../scripts/gimp-headers.scm.h:3
-msgid "Create an image of a small header using the gimp.org webpage theme"
-msgstr "Ustvari sliko majhnega naslova z uporabo teme spletne strani gimp.org"
+#: ../scripts/fuzzyborder.scm:157
+msgid "Blur border"
+msgstr "Zabriši rob"
 
-#: ../scripts/gimp-headers.scm.h:4
-msgid "Dark color"
-msgstr "Zatemnjena barva"
+#: ../scripts/fuzzyborder.scm:158
+msgid "Granularity (1 is Low)"
+msgstr "Granularnost (1 je nizka)"
 
-#: ../scripts/gimp-headers.scm.h:7
-#: ../scripts/xach-effect.scm.h:9
-msgid "Highlight color"
-msgstr "Osvetljena barva"
+#: ../scripts/fuzzyborder.scm:159
+msgid "Add shadow"
+msgstr "Dodaj senco"
 
-#: ../scripts/gimp-headers.scm.h:8
-#: ../scripts/gimp-labels.scm.h:9
-msgid "Index image"
-msgstr "Indeksirana slika"
+#: ../scripts/fuzzyborder.scm:160
+msgid "Shadow weight (%)"
+msgstr "Polnost senc (%)"
 
-#: ../scripts/gimp-headers.scm.h:9
-#: ../scripts/gimp-labels.scm.h:10
-msgid "Number of colors"
-msgstr "Število barv"
-
-#: ../scripts/gimp-headers.scm.h:10
-#: ../scripts/gimp-labels.scm.h:13
-msgid "Remove background"
-msgstr "Odstrani ozadje"
-
-#: ../scripts/gimp-headers.scm.h:11
-#: ../scripts/gimp-labels.scm.h:14
-msgid "Select-by-color threshold"
-msgstr "Prag po izboru barve"
-
-#: ../scripts/gimp-headers.scm.h:12
-#: ../scripts/gimp-labels.scm.h:15
-msgid "Shadow color"
-msgstr "Barva senc"
-
-#: ../scripts/gimp-headers.scm.h:15
+#: ../scripts/gimp-headers.scm:149
 msgid "_Big Header..."
 msgstr "_Velik naslov ..."
 
-#: ../scripts/gimp-headers.scm.h:16
+#: ../scripts/gimp-headers.scm:150
+msgid "Create an image of a large header using the gimp.org webpage theme"
+msgstr "Ustvari sliko velikega naslova z uporabo teme spletne strani gimp.org"
+
+#: ../scripts/gimp-headers.scm:159 ../scripts/gimp-headers.scm:182
+#: ../scripts/xach-effect.scm:131
+msgid "Highlight color"
+msgstr "Osvetljena barva"
+
+#: ../scripts/gimp-headers.scm:160 ../scripts/gimp-headers.scm:183
+msgid "Dark color"
+msgstr "Zatemnjena barva"
+
+#: ../scripts/gimp-headers.scm:161 ../scripts/gimp-headers.scm:184
+#: ../scripts/gimp-labels.scm:179
+msgid "Shadow color"
+msgstr "Barva senc"
+
+#: ../scripts/gimp-headers.scm:162 ../scripts/gimp-headers.scm:185
+msgid "Autocrop"
+msgstr "Samodejno obreži"
+
+#: ../scripts/gimp-headers.scm:163 ../scripts/gimp-headers.scm:186
+#: ../scripts/gimp-labels.scm:128 ../scripts/gimp-labels.scm:144
+#: ../scripts/gimp-labels.scm:160 ../scripts/gimp-labels.scm:181
+msgid "Remove background"
+msgstr "Odstrani ozadje"
+
+#: ../scripts/gimp-headers.scm:164 ../scripts/gimp-headers.scm:187
+#: ../scripts/gimp-labels.scm:129 ../scripts/gimp-labels.scm:145
+#: ../scripts/gimp-labels.scm:161 ../scripts/gimp-labels.scm:182
+msgid "Index image"
+msgstr "Indeksirana slika"
+
+#: ../scripts/gimp-headers.scm:165 ../scripts/gimp-headers.scm:188
+#: ../scripts/gimp-labels.scm:183
+msgid "Number of colors"
+msgstr "Število barv"
+
+#: ../scripts/gimp-headers.scm:172
 msgid "_Small Header..."
 msgstr "_Majehn naslov ..."
 
-#: ../scripts/gimp-labels.scm.h:2
-msgid "Create an image of a Tube Button Label Header using the gimp.org webpage theme"
-msgstr "Ustvari sliko naslova oznake cevnega gumba z uporabo teme spletne strani gimp.org"
+#: ../scripts/gimp-headers.scm:173
+msgid "Create an image of a small header using the gimp.org webpage theme"
+msgstr "Ustvari sliko majhnega naslova z uporabo teme spletne strani gimp.org"
 
-#: ../scripts/gimp-labels.scm.h:3
-msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
-msgstr "Ustvari sliko oznake cevnega gumba z uporabo teme spletne strani gimp.org"
+#: ../scripts/gimp-headers.scm:189 ../scripts/gimp-labels.scm:184
+msgid "Select-by-color threshold"
+msgstr "Prag po izboru barve"
 
-#: ../scripts/gimp-labels.scm.h:4
-msgid "Create an image of a second level Tube Button Label using the gimp.org webpage theme"
-msgstr "Ustvari sliko drugoravenske oznake cevnega gumba z uporabo teme spletne strani gimp.org"
-
-#: ../scripts/gimp-labels.scm.h:5
-msgid "Create an image of a third level Tube Button Label using the gimp.org webpage theme"
-msgstr "Ustvari sliko tretjeravenske oznake cevnega gumba z uporabo teme spletne strani gimp.org"
-
-#: ../scripts/gimp-labels.scm.h:16
-msgid "T_ube Sub-Button Label..."
-msgstr "Cevni _pod-gumb z napisom ..."
-
-#: ../scripts/gimp-labels.scm.h:19
-msgid "Tub_e Sub-Sub-Button Label..."
-msgstr "Cevni pod-pod _gumb z napisom ..."
-
-#: ../scripts/gimp-labels.scm.h:20
-msgid "_General Tube Labels..."
-msgstr "_Splošni cevni gumbi z napisi ..."
-
-#: ../scripts/gimp-labels.scm.h:21
+#: ../scripts/gimp-labels.scm:121
 msgid "_Tube Button Label..."
 msgstr "_Cevni gumb z napisom ..."
 
-#: ../scripts/glossy.scm.h:1
-msgid "Add gradients, patterns, shadows, and bump maps to the selected region (or alpha)"
-msgstr "Izbranemu območju (ali alfi) dodaj prelive, vzorce, sence in preslikane odtise"
+#: ../scripts/gimp-labels.scm:122
+msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
+msgstr ""
+"Ustvari sliko oznake cevnega gumba z uporabo teme spletne strani gimp.org"
 
-#: ../scripts/glossy.scm.h:3
-msgid "Blend gradient (outline)"
-msgstr "Zlij preliv (oris)"
+#: ../scripts/gimp-labels.scm:137
+msgid "T_ube Sub-Button Label..."
+msgstr "Cevni _pod-gumb z napisom ..."
 
-#: ../scripts/glossy.scm.h:4
-msgid "Blend gradient (text)"
-msgstr "Zlij preliv (besedilo)"
+#: ../scripts/gimp-labels.scm:138
+msgid ""
+"Create an image of a second level Tube Button Label using the gimp.org "
+"webpage theme"
+msgstr ""
+"Ustvari sliko drugoravenske oznake cevnega gumba z uporabo teme spletne "
+"strani gimp.org"
 
-#: ../scripts/glossy.scm.h:5
-msgid "Create a logo with gradients, patterns, shadows, and bump maps"
-msgstr "Ustvari logotip s prelivi, vzorci, sencami in preslikanimi odtisi"
+#: ../scripts/gimp-labels.scm:153
+msgid "Tub_e Sub-Sub-Button Label..."
+msgstr "Cevni pod-pod _gumb z napisom ..."
 
-#: ../scripts/glossy.scm.h:9
+#: ../scripts/gimp-labels.scm:154
+msgid ""
+"Create an image of a third level Tube Button Label using the gimp.org "
+"webpage theme"
+msgstr ""
+"Ustvari sliko tretjeravenske oznake cevnega gumba z uporabo teme spletne "
+"strani gimp.org"
+
+#: ../scripts/gimp-labels.scm:169
+msgid "_General Tube Labels..."
+msgstr "_Splošni cevni gumbi z napisi ..."
+
+#: ../scripts/gimp-labels.scm:170
+msgid ""
+"Create an image of a Tube Button Label Header using the gimp.org webpage "
+"theme"
+msgstr ""
+"Ustvari sliko naslova oznake cevnega gumba z uporabo teme spletne strani "
+"gimp.org"
+
+#: ../scripts/glossy.scm:197 ../scripts/glossy.scm:268
 msgid "Glo_ssy..."
 msgstr "_Svetleče ..."
 
-#: ../scripts/glossy.scm.h:10
-msgid "Outline gradient reverse"
-msgstr "Obratni preliv orisa"
+#: ../scripts/glossy.scm:198
+msgid ""
+"Add gradients, patterns, shadows, and bump maps to the selected region (or "
+"alpha)"
+msgstr ""
+"Izbranemu območju (ali alfi) dodaj prelive, vzorce, sence in preslikane "
+"odtise"
 
-#: ../scripts/glossy.scm.h:12
-msgid "Pattern (outline)"
-msgstr "Vzorec (obris)"
+#: ../scripts/glossy.scm:205 ../scripts/glossy.scm:277
+msgid "Blend gradient (text)"
+msgstr "Zlij preliv (besedilo)"
 
-#: ../scripts/glossy.scm.h:13
-msgid "Pattern (overlay)"
-msgstr "Vzorec (prekrivni)"
-
-#: ../scripts/glossy.scm.h:14
-msgid "Pattern (text)"
-msgstr "Vzorec (besedilo)"
-
-#: ../scripts/glossy.scm.h:15
-#: ../scripts/sphere.scm.h:5
-msgid "Shadow"
-msgstr "Senca"
-
-#: ../scripts/glossy.scm.h:19
+#: ../scripts/glossy.scm:206 ../scripts/glossy.scm:278
 msgid "Text gradient reverse"
 msgstr "Obratni preliv besedila"
 
-#: ../scripts/glossy.scm.h:20
-msgid "Use pattern for outline instead of gradient"
-msgstr "Uporabi vzorec za oris namesto preliva"
+#: ../scripts/glossy.scm:207 ../scripts/glossy.scm:279
+msgid "Blend gradient (outline)"
+msgstr "Zlij preliv (oris)"
 
-#: ../scripts/glossy.scm.h:21
+#: ../scripts/glossy.scm:208 ../scripts/glossy.scm:280
+msgid "Outline gradient reverse"
+msgstr "Obratni preliv orisa"
+
+#: ../scripts/glossy.scm:211 ../scripts/glossy.scm:283
 msgid "Use pattern for text instead of gradient"
 msgstr "Uporabi vzorec za besedilo namesto preliva"
 
-#: ../scripts/glossy.scm.h:22
+#: ../scripts/glossy.scm:212 ../scripts/glossy.scm:284
+msgid "Pattern (text)"
+msgstr "Vzorec (besedilo)"
+
+#: ../scripts/glossy.scm:213 ../scripts/glossy.scm:285
+msgid "Use pattern for outline instead of gradient"
+msgstr "Uporabi vzorec za oris namesto preliva"
+
+#: ../scripts/glossy.scm:214 ../scripts/glossy.scm:286
+msgid "Pattern (outline)"
+msgstr "Vzorec (obris)"
+
+#: ../scripts/glossy.scm:215 ../scripts/glossy.scm:287
 msgid "Use pattern overlay"
 msgstr "Uporabi prekrivanje z vzorcem"
 
-#: ../scripts/glowing-logo.scm.h:1
-msgid "Add a glowing hot metal effect to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda učinek žareče vroče kovine"
+#: ../scripts/glossy.scm:216 ../scripts/glossy.scm:288
+msgid "Pattern (overlay)"
+msgstr "Vzorec (prekrivni)"
 
-#: ../scripts/glowing-logo.scm.h:3
-msgid "Create a logo that looks like glowing hot metal"
-msgstr "Ustvarite logotip z videzom žareče vročega jekla"
+#: ../scripts/glossy.scm:218 ../scripts/glossy.scm:290 ../scripts/sphere.scm:80
+msgid "Shadow"
+msgstr "Senca"
 
-#: ../scripts/glowing-logo.scm.h:4
-msgid "Effect size (pixels * 3)"
-msgstr "Velikost učinka (slikovne točke * 3)"
+#: ../scripts/glossy.scm:269
+msgid "Create a logo with gradients, patterns, shadows, and bump maps"
+msgstr "Ustvari logotip s prelivi, vzorci, sencami in preslikanimi odtisi"
 
-#: ../scripts/glowing-logo.scm.h:7
+#: ../scripts/glowing-logo.scm:76 ../scripts/glowing-logo.scm:109
 msgid "Glo_wing Hot..."
 msgstr "_Žareče vroče ..."
 
-#: ../scripts/gradient-bevel-logo.scm.h:1
-msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda svetleč videz in učinek izbočenosti"
+#: ../scripts/glowing-logo.scm:77
+msgid "Add a glowing hot metal effect to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) doda učinek žareče vroče kovine"
 
-#: ../scripts/gradient-bevel-logo.scm.h:3
-msgid "Bevel height (sharpness)"
-msgstr "Višina izbočenosti (ostrost)"
+#: ../scripts/glowing-logo.scm:84
+msgid "Effect size (pixels * 3)"
+msgstr "Velikost učinka (slikovne točke * 3)"
 
-#: ../scripts/gradient-bevel-logo.scm.h:5
-#: ../scripts/t-o-p-logo.scm.h:4
-#: ../scripts/textured-logo.scm.h:2
-msgid "Border size (pixels)"
-msgstr "Velikost obrobe (v slikovnih točkah)"
+#: ../scripts/glowing-logo.scm:110
+msgid "Create a logo that looks like glowing hot metal"
+msgstr "Ustvarite logotip z videzom žareče vročega jekla"
 
-#: ../scripts/gradient-bevel-logo.scm.h:6
-msgid "Create a logo with a shiny look and beveled edges"
-msgstr "Ustvari logotip s svetlikajočim videzom in poševno izbočenimi robovi"
-
-#: ../scripts/gradient-bevel-logo.scm.h:9
+#: ../scripts/gradient-bevel-logo.scm:95 ../scripts/gradient-bevel-logo.scm:134
 msgid "Gradient Beve_l..."
 msgstr "Izbočenost pre_liva ..."
 
-#: ../scripts/gradient-example.scm.h:1
-msgid "Create an image filled with an example of the current gradient"
-msgstr "Ustvari sliko, zapolnjeno s primerom trenutnega preliva"
+#: ../scripts/gradient-bevel-logo.scm:96
+msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) doda svetleč videz in učinek izbočenosti"
 
-#: ../scripts/gradient-example.scm.h:2
+#: ../scripts/gradient-bevel-logo.scm:103 ../scripts/textured-logo.scm:127
+#: ../scripts/t-o-p-logo.scm:109
+msgid "Border size (pixels)"
+msgstr "Velikost obrobe (v slikovnih točkah)"
+
+#: ../scripts/gradient-bevel-logo.scm:104
+#: ../scripts/gradient-bevel-logo.scm:143
+msgid "Bevel height (sharpness)"
+msgstr "Višina izbočenosti (ostrost)"
+
+#: ../scripts/gradient-bevel-logo.scm:135
+msgid "Create a logo with a shiny look and beveled edges"
+msgstr "Ustvari logotip s svetlikajočim videzom in poševno izbočenimi robovi"
+
+#: ../scripts/gradient-example.scm:64
 msgid "Custom _Gradient..."
 msgstr "_Preliv po meri ..."
 
-#: ../scripts/grid-system.scm.h:1
-#: ../scripts/guides-from-selection.scm.h:1
-msgid "Draw a grid as specified by the lists of X and Y locations using the current brush"
-msgstr "Nariše mrežo, kot jo določajo seznami postavitev X in Y, z uporabo trenutnega čopiča"
+#: ../scripts/gradient-example.scm:65
+msgid "Create an image filled with an example of the current gradient"
+msgstr "Ustvari sliko, zapolnjeno s primerom trenutnega preliva"
 
-#: ../scripts/grid-system.scm.h:2
-msgid "X divisions"
-msgstr "Razdelki X"
-
-#: ../scripts/grid-system.scm.h:3
-msgid "Y divisions"
-msgstr "Razdelki Y"
-
-#: ../scripts/grid-system.scm.h:4
+#: ../scripts/grid-system.scm:84
 msgid "_Grid..."
 msgstr "_Mreža ..."
 
-#: ../scripts/guides-from-selection.scm.h:2
+#: ../scripts/grid-system.scm:85 ../scripts/guides-from-selection.scm:33
+msgid ""
+"Draw a grid as specified by the lists of X and Y locations using the current "
+"brush"
+msgstr ""
+"Nariše mrežo, kot jo določajo seznami postavitev X in Y, z uporabo "
+"trenutnega čopiča"
+
+#: ../scripts/grid-system.scm:92
+msgid "X divisions"
+msgstr "Razdelki X"
+
+#: ../scripts/grid-system.scm:93
+msgid "Y divisions"
+msgstr "Razdelki Y"
+
+#: ../scripts/guides-from-selection.scm:32
 msgid "New Guides from _Selection"
 msgstr "Nova vodila iz _izbora"
 
-#: ../scripts/guides-new-percent.scm.h:1
-msgid "Add a guide at the position specified as a percentage of the image size"
-msgstr "Doda vodilo na naveden položaj kot odstotek velikosti slike"
-
-#: ../scripts/guides-new-percent.scm.h:2
-#: ../scripts/guides-new.scm.h:2
-msgid "Direction"
-msgstr "Smer"
-
-#: ../scripts/guides-new-percent.scm.h:3
-#: ../scripts/guides-new.scm.h:3
-msgid "Horizontal"
-msgstr "Vodoravno"
-
-#: ../scripts/guides-new-percent.scm.h:4
+#: ../scripts/guides-new-percent.scm:27
 msgid "New Guide (by _Percent)..."
 msgstr "Novo vodilo (v _odstotkih) ..."
 
-#: ../scripts/guides-new-percent.scm.h:6
-#, no-c-format
-msgid "Position (in %)"
-msgstr "Položaj (v %)"
+#: ../scripts/guides-new-percent.scm:28
+msgid "Add a guide at the position specified as a percentage of the image size"
+msgstr "Doda vodilo na naveden položaj kot odstotek velikosti slike"
 
-#: ../scripts/guides-new-percent.scm.h:7
-#: ../scripts/guides-new.scm.h:6
+#: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
+msgid "Direction"
+msgstr "Smer"
+
+#: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
+msgid "Horizontal"
+msgstr "Vodoravno"
+
+#: ../scripts/guides-new-percent.scm:36 ../scripts/guides-new.scm:35
 msgid "Vertical"
 msgstr "Navpično"
 
-#: ../scripts/guides-new.scm.h:1
-msgid "Add a guide at the orientation and position specified (in pixels)"
-msgstr "Na naveden položaj in orientacijo dodaj vodilo (v slikovnih točkah)"
+#: ../scripts/guides-new-percent.scm:37
+msgid "Position (in %)"
+msgstr "Položaj (v %)"
 
-#: ../scripts/guides-new.scm.h:4
+#: ../scripts/guides-new.scm:27
 msgid "New _Guide..."
 msgstr "Novo _vodilo ..."
 
-#: ../scripts/guides-new.scm.h:5
+#: ../scripts/guides-new.scm:28
+msgid "Add a guide at the orientation and position specified (in pixels)"
+msgstr "Na naveden položaj in orientacijo dodaj vodilo (v slikovnih točkah)"
+
+#: ../scripts/guides-new.scm:36
 msgid "Position"
 msgstr "Položaj"
 
-#: ../scripts/guides-remove-all.scm.h:1
-msgid "Remove all horizontal and vertical guides"
-msgstr "Odstrani vsa vodoravna in navpična vodila"
-
-#: ../scripts/guides-remove-all.scm.h:2
+#: ../scripts/guides-remove-all.scm:19
 msgid "_Remove all Guides"
 msgstr "_Odstrani vsa vodila"
 
-#: ../scripts/i26-gunya2.scm.h:1
-msgid "Create a logo in a two-color, scribbled text style"
-msgstr "Ustvari logotip v dvobarvnem slogu načičkanega besedila"
+#: ../scripts/guides-remove-all.scm:20
+msgid "Remove all horizontal and vertical guides"
+msgstr "Odstrani vsa vodoravna in navpična vodila"
 
-#: ../scripts/i26-gunya2.scm.h:4
-msgid "Frame color"
-msgstr "Barva sličice"
-
-#: ../scripts/i26-gunya2.scm.h:5
-msgid "Frame size"
-msgstr "Velikost sličice"
-
-#: ../scripts/i26-gunya2.scm.h:6
+#: ../scripts/i26-gunya2.scm:91
 msgid "Imigre-_26..."
 msgstr "Imigre-_26 ..."
 
-#: ../scripts/land.scm.h:1
-msgid "Create an image filled with a topographic map pattern"
-msgstr "Ustvarite sliko, zapolnjeno z vzorcem topografskega zemljevida"
+#: ../scripts/i26-gunya2.scm:92
+msgid "Create a logo in a two-color, scribbled text style"
+msgstr "Ustvari logotip v dvobarvnem slogu načičkanega besedila"
 
-#: ../scripts/land.scm.h:6
-msgid "Land height"
-msgstr "Višina ozemlja"
+#: ../scripts/i26-gunya2.scm:99
+msgid "Frame color"
+msgstr "Barva sličice"
 
-#: ../scripts/land.scm.h:10
-msgid "Sea depth"
-msgstr "Globina morja"
+#: ../scripts/i26-gunya2.scm:102
+msgid "Frame size"
+msgstr "Velikost sličice"
 
-#: ../scripts/land.scm.h:11
+#: ../scripts/land.scm:72
 msgid "_Land..."
 msgstr "_Ozemlje ..."
 
-#: ../scripts/lava.scm.h:1
-msgid "Fill the current selection with lava"
-msgstr "Zapolni trenutni izbor z lavo"
+#: ../scripts/land.scm:73
+msgid "Create an image filled with a topographic map pattern"
+msgstr "Ustvarite sliko, zapolnjeno z vzorcem topografskega zemljevida"
 
-#: ../scripts/lava.scm.h:4
-#: ../scripts/swirltile.scm.h:8
-msgid "Roughness"
-msgstr "Grobost"
+#: ../scripts/land.scm:82
+msgid "Land height"
+msgstr "Višina ozemlja"
 
-#: ../scripts/lava.scm.h:5
-msgid "Seed"
-msgstr "Zasadi"
+#: ../scripts/land.scm:83
+msgid "Sea depth"
+msgstr "Globina morja"
 
-#: ../scripts/lava.scm.h:8
-msgid "Use current gradient"
-msgstr "Uporabi trenutni preliv"
-
-#: ../scripts/lava.scm.h:9
+#: ../scripts/lava.scm:117
 msgid "_Lava..."
 msgstr "_Lava ..."
 
-#: ../scripts/line-nova.scm.h:1
-msgid "Fill a layer with rays emanating outward from its center using the FG color"
-msgstr "Zapolni plast z žarki, ki sevajo iz središča, z uporabo barve ospredja"
+#: ../scripts/lava.scm:118
+msgid "Fill the current selection with lava"
+msgstr "Zapolni trenutni izbor z lavo"
 
-#: ../scripts/line-nova.scm.h:2
+#: ../scripts/lava.scm:125
+msgid "Seed"
+msgstr "Zasadi"
+
+#: ../scripts/lava.scm:127 ../scripts/swirltile.scm:64
+msgid "Roughness"
+msgstr "Grobost"
+
+#: ../scripts/lava.scm:131
+msgid "Use current gradient"
+msgstr "Uporabi trenutni preliv"
+
+#: ../scripts/line-nova.scm:102
 msgid "Line _Nova..."
 msgstr "Črtasta _Nova ..."
 
-#: ../scripts/line-nova.scm.h:3
+#: ../scripts/line-nova.scm:103
+msgid ""
+"Fill a layer with rays emanating outward from its center using the FG color"
+msgstr "Zapolni plast z žarki, ki sevajo iz središča, z uporabo barve ospredja"
+
+#: ../scripts/line-nova.scm:110
 msgid "Number of lines"
 msgstr "Število črt"
 
-#: ../scripts/line-nova.scm.h:4
-msgid "Offset radius"
-msgstr "Radij zamika"
-
-#: ../scripts/line-nova.scm.h:5
-msgid "Randomness"
-msgstr "Naključnost"
-
-#: ../scripts/line-nova.scm.h:6
+#: ../scripts/line-nova.scm:111
 msgid "Sharpness (degrees)"
 msgstr "Ostrina (v stopinjah)"
 
-#: ../scripts/mkbrush.scm.h:1
-msgid "Create a rectangular brush"
-msgstr "Ustvari pravokotni čopič"
+#: ../scripts/line-nova.scm:112
+msgid "Offset radius"
+msgstr "Radij zamika"
 
-#: ../scripts/mkbrush.scm.h:2
-msgid "Create a rectangular brush with feathered edges"
-msgstr "Ustvari pravokoten čopič z operjenimi robovi"
+#: ../scripts/line-nova.scm:113
+msgid "Randomness"
+msgstr "Naključnost"
 
-#: ../scripts/mkbrush.scm.h:3
-msgid "Create an elliptical brush"
-msgstr "Ustvari eliptični čopič"
-
-#: ../scripts/mkbrush.scm.h:4
-msgid "Create an elliptical brush with feathered edges"
-msgstr "Ustvari eliptičen čopič z operjenimi robovi"
-
-#: ../scripts/mkbrush.scm.h:5
-msgid "Elli_ptical, Feathered..."
-msgstr "Eli_ptično, operjeno ..."
-
-#: ../scripts/mkbrush.scm.h:6
-msgid "Feathering"
-msgstr "Operjeno"
-
-#: ../scripts/mkbrush.scm.h:8
-msgid "Name"
-msgstr "Ime"
-
-#: ../scripts/mkbrush.scm.h:9
-msgid "Re_ctangular, Feathered..."
-msgstr "Pravo_kotno, operjeno ..."
-
-#: ../scripts/mkbrush.scm.h:10
-#: ../scripts/paste-as-brush.scm.h:5
-#: ../scripts/select-to-brush.scm.h:4
-msgid "Spacing"
-msgstr "Razmik"
-
-#: ../scripts/mkbrush.scm.h:12
-msgid "_Elliptical..."
-msgstr "_Eliptično ..."
-
-#: ../scripts/mkbrush.scm.h:13
+#: ../scripts/mkbrush.scm:63
 msgid "_Rectangular..."
 msgstr "_Pravokotno ..."
 
-#: ../scripts/neon-logo.scm.h:2
-msgid "Convert the selected region (or alpha) into a neon-sign like object"
-msgstr "Pretvori izbrano območje (ali alfo) v predmet, podoben neonskemu znaku"
+#: ../scripts/mkbrush.scm:64
+msgid "Create a rectangular brush"
+msgstr "Ustvari pravokotni čopič"
 
-#: ../scripts/neon-logo.scm.h:3
-msgid "Create a logo in the style of a neon sign"
-msgstr "Ustvari logotip v slogu neonskih znakov"
+#: ../scripts/mkbrush.scm:69 ../scripts/mkbrush.scm:133
+#: ../scripts/mkbrush.scm:187 ../scripts/mkbrush.scm:254
+msgid "Name"
+msgstr "Ime"
 
-#: ../scripts/neon-logo.scm.h:4
-msgid "Create shadow"
-msgstr "Ustvari senco"
+#: ../scripts/mkbrush.scm:72 ../scripts/mkbrush.scm:137
+#: ../scripts/mkbrush.scm:190 ../scripts/mkbrush.scm:258
+#: ../scripts/paste-as-brush.scm:71 ../scripts/select-to-brush.scm:143
+msgid "Spacing"
+msgstr "Razmik"
 
-#: ../scripts/neon-logo.scm.h:5
-msgid "Effect size (pixels * 5)"
-msgstr "Velikost učinka (slikovne točke * 5)"
+#: ../scripts/mkbrush.scm:127
+msgid "Re_ctangular, Feathered..."
+msgstr "Pravo_kotno, operjeno ..."
 
-#: ../scripts/neon-logo.scm.h:9
+#: ../scripts/mkbrush.scm:128
+msgid "Create a rectangular brush with feathered edges"
+msgstr "Ustvari pravokoten čopič z operjenimi robovi"
+
+#: ../scripts/mkbrush.scm:136 ../scripts/mkbrush.scm:257
+msgid "Feathering"
+msgstr "Operjeno"
+
+#: ../scripts/mkbrush.scm:181
+msgid "_Elliptical..."
+msgstr "_Eliptično ..."
+
+#: ../scripts/mkbrush.scm:182
+msgid "Create an elliptical brush"
+msgstr "Ustvari eliptični čopič"
+
+#: ../scripts/mkbrush.scm:248
+msgid "Elli_ptical, Feathered..."
+msgstr "Eli_ptično, operjeno ..."
+
+#: ../scripts/mkbrush.scm:249
+msgid "Create an elliptical brush with feathered edges"
+msgstr "Ustvari eliptičen čopič z operjenimi robovi"
+
+#: ../scripts/neon-logo.scm:245 ../scripts/neon-logo.scm:281
 msgid "N_eon..."
 msgstr "N_eon ..."
 
-#: ../scripts/news-text.scm.h:3
-msgid "Cell size (pixels)"
-msgstr "Velikost celice (slikovne točke)"
+#: ../scripts/neon-logo.scm:246
+msgid "Convert the selected region (or alpha) into a neon-sign like object"
+msgstr "Pretvori izbrano območje (ali alfo) v predmet, podoben neonskemu znaku"
 
-#: ../scripts/news-text.scm.h:4
-msgid "Create a logo in the style of newspaper printing"
-msgstr "Ustvari logotip v slogu časopisnega tiska"
+#: ../scripts/neon-logo.scm:253
+msgid "Effect size (pixels * 5)"
+msgstr "Velikost učinka (slikovne točke * 5)"
 
-#: ../scripts/news-text.scm.h:6
-#: ../scripts/speed-text.scm.h:4
-#, no-c-format
-msgid "Density (%)"
-msgstr "Specifična teža (%)"
+#: ../scripts/neon-logo.scm:256 ../scripts/neon-logo.scm:292
+msgid "Create shadow"
+msgstr "Ustvari senco"
 
-#: ../scripts/news-text.scm.h:9
+#: ../scripts/neon-logo.scm:282
+msgid "Create a logo in the style of a neon sign"
+msgstr "Ustvari logotip v slogu neonskih znakov"
+
+#: ../scripts/news-text.scm:77
 msgid "Newsprint Te_xt..."
 msgstr "_Časopisno besedilo ..."
 
-#: ../scripts/old-photo.scm.h:2
-msgid "Defocus"
-msgstr "Razostri"
+#: ../scripts/news-text.scm:78
+msgid "Create a logo in the style of newspaper printing"
+msgstr "Ustvari logotip v slogu časopisnega tiska"
 
-#: ../scripts/old-photo.scm.h:3
-msgid "Make an image look like an old photo"
-msgstr "Sliki daj videz stare fotografije"
+#: ../scripts/news-text.scm:86
+msgid "Cell size (pixels)"
+msgstr "Velikost celice (slikovne točke)"
 
-#: ../scripts/old-photo.scm.h:4
-msgid "Mottle"
-msgstr "Marogasto"
+#: ../scripts/news-text.scm:87 ../scripts/speed-text.scm:95
+msgid "Density (%)"
+msgstr "Specifična teža (%)"
 
-#: ../scripts/old-photo.scm.h:5
-msgid "Sepia"
-msgstr "Sepija"
-
-#: ../scripts/old-photo.scm.h:7
+#: ../scripts/old-photo.scm:90
 msgid "_Old Photo..."
 msgstr "_Stara fotografija ..."
 
-#: ../scripts/paste-as-brush.scm.h:1
-#: ../scripts/select-to-brush.scm.h:1
-msgid "Brush name"
-msgstr "Ime čopiča"
+#: ../scripts/old-photo.scm:91
+msgid "Make an image look like an old photo"
+msgstr "Sliki daj videz stare fotografije"
 
-#: ../scripts/paste-as-brush.scm.h:2
-#: ../scripts/paste-as-pattern.scm.h:1
-#: ../scripts/select-to-brush.scm.h:3
-#: ../scripts/select-to-pattern.scm.h:2
-msgid "File name"
-msgstr "Ime datoteke"
+#: ../scripts/old-photo.scm:98
+msgid "Defocus"
+msgstr "Razostri"
 
-#: ../scripts/paste-as-brush.scm.h:3
-msgid "New _Brush..."
-msgstr "Nov _čopič ..."
+#. since this plug-in uses the fuzzy-border plug-in, I used the
+#. values of the latter, with the exception of the initial value
+#. and the 'minimum' value.
+#: ../scripts/old-photo.scm:103
+msgid "Sepia"
+msgstr "Sepija"
 
-#: ../scripts/paste-as-brush.scm.h:4
-msgid "Paste the clipboard contents into a new brush"
-msgstr "Prilepi vsebino odložišča v nov čopič"
+#: ../scripts/old-photo.scm:104
+msgid "Mottle"
+msgstr "Marogasto"
 
-#: ../scripts/paste-as-brush.scm.h:6
-#: ../scripts/paste-as-pattern.scm.h:5
+#: ../scripts/paste-as-brush.scm:57 ../scripts/paste-as-pattern.scm:45
 msgid "There is no image data in the clipboard to paste."
 msgstr "Na odložišču ni nikakršnih slikovnih podatkov za lepljenje."
 
-#: ../scripts/paste-as-pattern.scm.h:2
+#: ../scripts/paste-as-brush.scm:63
+msgid "New _Brush..."
+msgstr "Nov _čopič ..."
+
+#: ../scripts/paste-as-brush.scm:64
+msgid "Paste the clipboard contents into a new brush"
+msgstr "Prilepi vsebino odložišča v nov čopič"
+
+#: ../scripts/paste-as-brush.scm:69 ../scripts/select-to-brush.scm:141
+msgid "Brush name"
+msgstr "Ime čopiča"
+
+#: ../scripts/paste-as-brush.scm:70 ../scripts/paste-as-pattern.scm:58
+#: ../scripts/select-to-brush.scm:142 ../scripts/select-to-pattern.scm:103
+msgid "File name"
+msgstr "Ime datoteke"
+
+#: ../scripts/paste-as-pattern.scm:51
 msgid "New _Pattern..."
 msgstr "Nov _vzorec ..."
 
-#: ../scripts/paste-as-pattern.scm.h:3
+#: ../scripts/paste-as-pattern.scm:52
 msgid "Paste the clipboard contents into a new pattern"
 msgstr "Prilepi vsebino odložišča v nov vzorec"
 
-#: ../scripts/paste-as-pattern.scm.h:4
-#: ../scripts/select-to-pattern.scm.h:3
+#: ../scripts/paste-as-pattern.scm:57 ../scripts/select-to-pattern.scm:102
 msgid "Pattern name"
 msgstr "Ime vzorca"
 
-#: ../scripts/perspective-shadow.scm.h:1
-msgid "Add a perspective shadow to the selected region (or alpha)"
-msgstr "Dodaj senco s perspektivo izbranemu področju (ali alfi)"
-
-#: ../scripts/perspective-shadow.scm.h:3
-msgid "Angle"
-msgstr "Kot"
-
-#: ../scripts/perspective-shadow.scm.h:6
-msgid "Interpolation"
-msgstr "z interpolacijo"
-
-#: ../scripts/perspective-shadow.scm.h:8
-msgid "Relative distance of horizon"
-msgstr "Relativna razdalja do obzorja "
-
-#: ../scripts/perspective-shadow.scm.h:9
-msgid "Relative length of shadow"
-msgstr "Relativna dolžina sence"
-
-#: ../scripts/perspective-shadow.scm.h:10
+#: ../scripts/perspective-shadow.scm:196
 msgid "_Perspective..."
 msgstr "_Perspektiva ..."
 
-#: ../scripts/predator.scm.h:1
-msgid "Add a 'Predator' effect to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) doda učinek 'roparice'"
+#: ../scripts/perspective-shadow.scm:197
+msgid "Add a perspective shadow to the selected region (or alpha)"
+msgstr "Dodaj senco s perspektivo izbranemu področju (ali alfi)"
 
-#: ../scripts/predator.scm.h:2
-msgid "Edge amount"
-msgstr "Količina roba"
+#: ../scripts/perspective-shadow.scm:204
+msgid "Angle"
+msgstr "Kot"
 
-#: ../scripts/predator.scm.h:4
-msgid "Pixel amount"
-msgstr "Število slikovnih točk"
+#: ../scripts/perspective-shadow.scm:205
+msgid "Relative distance of horizon"
+msgstr "Relativna razdalja do obzorja "
 
-#: ../scripts/predator.scm.h:5
-msgid "Pixelize"
-msgstr "Pikseliraj"
+#: ../scripts/perspective-shadow.scm:206
+msgid "Relative length of shadow"
+msgstr "Relativna dolžina sence"
 
-#: ../scripts/predator.scm.h:7
+#: ../scripts/perspective-shadow.scm:210
+msgid "Interpolation"
+msgstr "z interpolacijo"
+
+#: ../scripts/predator.scm:119
 msgid "_Predator..."
 msgstr "_Roparica ..."
 
-#: ../scripts/pupi-button.scm.h:2
-msgid "Create images, each containing an oval button graphic"
-msgstr "Ustvari slike, vsaka naj vsebuje ovalno sliko za gumb"
+#: ../scripts/predator.scm:120
+msgid "Add a 'Predator' effect to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) doda učinek 'roparice'"
 
-#: ../scripts/pupi-button.scm.h:5
-msgid "Lower color"
-msgstr "Spodnja barva"
+#: ../scripts/predator.scm:127
+msgid "Edge amount"
+msgstr "Količina roba"
 
-#: ../scripts/pupi-button.scm.h:6
-msgid "Lower color (active)"
-msgstr "Spodnja barva (aktivna)"
+#: ../scripts/predator.scm:128
+msgid "Pixelize"
+msgstr "Pikseliraj"
 
-#: ../scripts/pupi-button.scm.h:7
-msgid "Not pressed"
-msgstr "Ni pritisnjeno"
+#: ../scripts/predator.scm:129
+msgid "Pixel amount"
+msgstr "Število slikovnih točk"
 
-#: ../scripts/pupi-button.scm.h:8
-msgid "Not pressed (active)"
-msgstr "Ni pritisnjeno (aktivno)"
-
-#: ../scripts/pupi-button.scm.h:9
-msgid "Padding X"
-msgstr "Blazinjenje  X"
-
-#: ../scripts/pupi-button.scm.h:10
-msgid "Padding Y"
-msgstr "Blazinjenje  Y"
-
-#: ../scripts/pupi-button.scm.h:12
-msgid "Round ratio"
-msgstr "Razmerje zaokroženosti"
-
-#: ../scripts/pupi-button.scm.h:15
-msgid "Text color (active)"
-msgstr "Barva besedila (aktivna)"
-
-#: ../scripts/pupi-button.scm.h:16
-msgid "Upper color"
-msgstr "Zgornja barva"
-
-#: ../scripts/pupi-button.scm.h:17
-msgid "Upper color (active)"
-msgstr "Zgornja barva (aktivna)"
-
-#: ../scripts/pupi-button.scm.h:18
+#: ../scripts/pupi-button.scm:187
 msgid "_Round Button..."
 msgstr "_Okrogel gumb ..."
 
-#: ../scripts/rendermap.scm.h:1
-msgid "Behavior"
-msgstr "Vedenje"
+#: ../scripts/pupi-button.scm:188
+msgid "Create images, each containing an oval button graphic"
+msgstr "Ustvari slike, vsaka naj vsebuje ovalno sliko za gumb"
 
-#: ../scripts/rendermap.scm.h:2
-msgid "Create an image filled with an Earth-like map pattern"
-msgstr "Ustvari sliko, zapolnjeno z vzorcem zemljevida Zemlje"
+#: ../scripts/pupi-button.scm:196
+msgid "Upper color"
+msgstr "Zgornja barva"
 
-#: ../scripts/rendermap.scm.h:3
-msgid "Detail in Middle"
-msgstr "Podrobnosti v sredini"
+#: ../scripts/pupi-button.scm:197
+msgid "Lower color"
+msgstr "Spodnja barva"
 
-#: ../scripts/rendermap.scm.h:8
+#: ../scripts/pupi-button.scm:199
+msgid "Upper color (active)"
+msgstr "Zgornja barva (aktivna)"
+
+#: ../scripts/pupi-button.scm:200
+msgid "Lower color (active)"
+msgstr "Spodnja barva (aktivna)"
+
+#: ../scripts/pupi-button.scm:201
+msgid "Text color (active)"
+msgstr "Barva besedila (aktivna)"
+
+#: ../scripts/pupi-button.scm:202
+msgid "Padding X"
+msgstr "Blazinjenje  X"
+
+#: ../scripts/pupi-button.scm:203
+msgid "Padding Y"
+msgstr "Blazinjenje  Y"
+
+#: ../scripts/pupi-button.scm:205
+msgid "Round ratio"
+msgstr "Razmerje zaokroženosti"
+
+#: ../scripts/pupi-button.scm:206
+msgid "Not pressed"
+msgstr "Ni pritisnjeno"
+
+#: ../scripts/pupi-button.scm:207
+msgid "Not pressed (active)"
+msgstr "Ni pritisnjeno (aktivno)"
+
+#: ../scripts/rendermap.scm:81
 msgid "Render _Map..."
 msgstr "_Upodobi zemljevid ..."
 
-#: ../scripts/rendermap.scm.h:9
+#: ../scripts/rendermap.scm:82
+msgid "Create an image filled with an Earth-like map pattern"
+msgstr "Ustvari sliko, zapolnjeno z vzorcem zemljevida Zemlje"
+
+#: ../scripts/rendermap.scm:91
+msgid "Behavior"
+msgstr "Vedenje"
+
+#: ../scripts/rendermap.scm:91
 msgid "Tile"
 msgstr "Tlakuj"
 
-#: ../scripts/reverse-layers.scm.h:1
+#: ../scripts/rendermap.scm:91
+msgid "Detail in Middle"
+msgstr "Podrobnosti v sredini"
+
+#: ../scripts/reverse-layers.scm:32
 msgid "Reverse Layer Order"
 msgstr "Preobrni zaporedje plasti"
 
-#: ../scripts/reverse-layers.scm.h:2
+#: ../scripts/reverse-layers.scm:33
 msgid "Reverse the order of layers in the image"
 msgstr "Preobrne zaporedje plasti v sliki"
 
-#: ../scripts/ripply-anim.scm.h:1
-msgid "Black"
-msgstr "Črna"
-
-#: ../scripts/ripply-anim.scm.h:2
-msgid "Create a multi-layer image by adding a ripple effect to the current image"
-msgstr "Ustvari večplastno sliko z dodajanjem učinka nagrbančenosti trenutni sliki"
-
-#: ../scripts/ripply-anim.scm.h:3
-msgid "Edge behavior"
-msgstr "Vedenje robov"
-
-#: ../scripts/ripply-anim.scm.h:4
-#: ../scripts/waves-anim.scm.h:4
-msgid "Number of frames"
-msgstr "Število sličic"
-
-#: ../scripts/ripply-anim.scm.h:5
-msgid "Rippling strength"
-msgstr "Moč grbančenja"
-
-#: ../scripts/ripply-anim.scm.h:6
-msgid "Smear"
-msgstr "Razmaži"
-
-#: ../scripts/ripply-anim.scm.h:7
-msgid "Wrap"
-msgstr "Ovij"
-
-#: ../scripts/ripply-anim.scm.h:8
+#: ../scripts/ripply-anim.scm:119
 msgid "_Rippling..."
 msgstr "_Zgrbančenost ..."
 
-#: ../scripts/round-corners.scm.h:1
-msgid "Add background"
-msgstr "Dodaj ozadje"
+#: ../scripts/ripply-anim.scm:120
+msgid ""
+"Create a multi-layer image by adding a ripple effect to the current image"
+msgstr ""
+"Ustvari večplastno sliko z dodajanjem učinka nagrbančenosti trenutni sliki"
 
-#: ../scripts/round-corners.scm.h:2
-msgid "Add drop-shadow"
-msgstr "Dodaj padlo senco"
+#: ../scripts/ripply-anim.scm:127
+msgid "Rippling strength"
+msgstr "Moč grbančenja"
 
-#: ../scripts/round-corners.scm.h:4
-msgid "Edge radius"
-msgstr "Polmer robov"
+#: ../scripts/ripply-anim.scm:128 ../scripts/waves-anim.scm:106
+msgid "Number of frames"
+msgstr "Število sličic"
 
-#: ../scripts/round-corners.scm.h:5
-msgid "Round the corners of an image and optionally add a drop-shadow and background"
-msgstr "Zaobli robove slike in po želji dodaj padlo senco in ozadje"
+#: ../scripts/ripply-anim.scm:129
+msgid "Edge behavior"
+msgstr "Vedenje robov"
 
-#: ../scripts/round-corners.scm.h:9
+#: ../scripts/ripply-anim.scm:129
+msgid "Wrap"
+msgstr "Ovij"
+
+#: ../scripts/ripply-anim.scm:129
+msgid "Smear"
+msgstr "Razmaži"
+
+#: ../scripts/ripply-anim.scm:129
+msgid "Black"
+msgstr "Črna"
+
+#: ../scripts/round-corners.scm:126
 msgid "_Round Corners..."
 msgstr "_Zaobljeni robovi ..."
 
-#: ../scripts/script-fu-set-cmap.scm.h:1
-msgid "Change the colormap of an image to the colors in a specified palette."
-msgstr "Spremeni uporabljenega kataloga barv slike z barvami določene palete."
+#: ../scripts/round-corners.scm:127
+msgid ""
+"Round the corners of an image and optionally add a drop-shadow and background"
+msgstr "Zaobli robove slike in po želji dodaj padlo senco in ozadje"
 
-#: ../scripts/script-fu-set-cmap.scm.h:2
-msgid "Palette"
-msgstr "Paleta"
+#: ../scripts/round-corners.scm:134
+msgid "Edge radius"
+msgstr "Polmer robov"
 
-#: ../scripts/script-fu-set-cmap.scm.h:3
+#: ../scripts/round-corners.scm:135
+msgid "Add drop-shadow"
+msgstr "Dodaj padlo senco"
+
+#: ../scripts/round-corners.scm:139
+msgid "Add background"
+msgstr "Dodaj ozadje"
+
+#: ../scripts/script-fu-set-cmap.scm:54
 msgid "Se_t Colormap..."
 msgstr "Nas_tavi barvni katalog ..."
 
-#: ../scripts/select-to-brush.scm.h:2
-msgid "Convert a selection to a brush"
-msgstr "Pretvori izbor v čopič"
+#: ../scripts/script-fu-set-cmap.scm:55
+msgid "Change the colormap of an image to the colors in a specified palette."
+msgstr "Spremeni uporabljenega kataloga barv slike z barvami določene palete."
 
-#: ../scripts/select-to-brush.scm.h:5
-msgid "To _Brush..."
-msgstr "V _čopič ..."
+#: ../scripts/script-fu-set-cmap.scm:62
+msgid "Palette"
+msgstr "Paleta"
 
-#: ../scripts/select-to-image.scm.h:1
-msgid "Convert a selection to an image"
-msgstr "Pretvori izbor v sliko"
-
-#: ../scripts/select-to-image.scm.h:2
-msgid "To _Image"
-msgstr "V _sliko"
-
-#: ../scripts/select-to-pattern.scm.h:1
-msgid "Convert a selection to a pattern"
-msgstr "Pretvori izbor v vzorec"
-
-#: ../scripts/select-to-pattern.scm.h:4
-msgid "To _Pattern..."
-msgstr "V _vzorec ..."
-
-#: ../scripts/selection-round.scm.h:1
-msgid "Concave"
-msgstr "Vboči"
-
-#: ../scripts/selection-round.scm.h:3
-#, no-c-format
-msgid "Radius (%)"
-msgstr "Polmer (%)"
-
-#: ../scripts/selection-round.scm.h:4
-msgid "Round the corners of the current selection"
-msgstr "Zaobli robove trenutnega izbora"
-
-#: ../scripts/selection-round.scm.h:5
+#: ../scripts/selection-round.scm:156
 msgid "Rounded R_ectangle..."
 msgstr "Zaobljen _pravokotnik ..."
 
-#: ../scripts/slide.scm.h:1
-msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
-msgstr "Sliki dodaj okvir diapozitiva, perforacije in oznake, ki spominjajo na fotografski trak"
+#: ../scripts/selection-round.scm:157
+msgid "Round the corners of the current selection"
+msgstr "Zaobli robove trenutnega izbora"
 
-#: ../scripts/slide.scm.h:3
-msgid "Font color"
-msgstr "Barva pisave"
+#: ../scripts/selection-round.scm:164
+msgid "Radius (%)"
+msgstr "Polmer (%)"
 
-#: ../scripts/slide.scm.h:4
-msgid "Number"
-msgstr "Številka"
+#: ../scripts/selection-round.scm:165
+msgid "Concave"
+msgstr "Vboči"
 
-#: ../scripts/slide.scm.h:7
+#: ../scripts/select-to-brush.scm:133
+msgid "To _Brush..."
+msgstr "V _čopič ..."
+
+#: ../scripts/select-to-brush.scm:134
+msgid "Convert a selection to a brush"
+msgstr "Pretvori izbor v čopič"
+
+#: ../scripts/select-to-image.scm:81
+msgid "To _Image"
+msgstr "V _sliko"
+
+#: ../scripts/select-to-image.scm:82
+msgid "Convert a selection to an image"
+msgstr "Pretvori izbor v sliko"
+
+#: ../scripts/select-to-pattern.scm:94
+msgid "To _Pattern..."
+msgstr "V _vzorec ..."
+
+#: ../scripts/select-to-pattern.scm:95
+msgid "Convert a selection to a pattern"
+msgstr "Pretvori izbor v vzorec"
+
+#: ../scripts/slide.scm:240
 msgid "_Slide..."
 msgstr "_Diapozitiv ..."
 
-#: ../scripts/sota-chrome-logo.scm.h:5
-msgid "Create a State Of The Art chromed logo"
-msgstr "Ustvari vrhunski kromirani logotip"
+#: ../scripts/slide.scm:241
+msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
+msgstr ""
+"Sliki dodaj okvir diapozitiva, perforacije in oznake, ki spominjajo na "
+"fotografski trak"
 
-#: ../scripts/sota-chrome-logo.scm.h:10
+#: ../scripts/slide.scm:249
+msgid "Number"
+msgstr "Številka"
+
+#: ../scripts/slide.scm:251
+msgid "Font color"
+msgstr "Barva pisave"
+
+#: ../scripts/sota-chrome-logo.scm:203
 msgid "SOTA Chrome..."
 msgstr "Kromiranje SOTA ..."
 
-#: ../scripts/speed-text.scm.h:2
-msgid "Create a logo with a speedy text effect"
-msgstr "Ustvari logotip z hitrostnim učinkom besedila"
+#: ../scripts/sota-chrome-logo.scm:204
+msgid "Create a State Of The Art chromed logo"
+msgstr "Ustvari vrhunski kromirani logotip"
 
-#: ../scripts/speed-text.scm.h:7
+#: ../scripts/speed-text.scm:86
 msgid "Speed Text..."
 msgstr "Hitrost besedila ..."
 
-#: ../scripts/sphere.scm.h:2
-msgid "Create a simple sphere with a drop shadow"
-msgstr "Ustvari enostavno kroglo, ki meče senco"
+#: ../scripts/speed-text.scm:87
+msgid "Create a logo with a speedy text effect"
+msgstr "Ustvari logotip z hitrostnim učinkom besedila"
 
-#: ../scripts/sphere.scm.h:3
-msgid "Lighting (degrees)"
-msgstr "Osvetlitev (v stopinjah)"
-
-#: ../scripts/sphere.scm.h:4
-msgid "Radius (pixels)"
-msgstr "Polmer (v slikovnih točkah)"
-
-#: ../scripts/sphere.scm.h:6
-msgid "Sphere color"
-msgstr "Barva krogle"
-
-#: ../scripts/sphere.scm.h:7
+#: ../scripts/sphere.scm:72 ../scripts/test-sphere.scm:264
 msgid "_Sphere..."
 msgstr "_Krogla ..."
 
-#: ../scripts/spinning-globe.scm.h:1
-msgid "Create an animation by mapping the current image onto a spinning sphere"
-msgstr "Ustvari animacijo z zrcaljenjem trenutne slike na sukajočo kroglo"
+#: ../scripts/sphere.scm:73
+msgid "Create a simple sphere with a drop shadow"
+msgstr "Ustvari enostavno kroglo, ki meče senco"
 
-#: ../scripts/spinning-globe.scm.h:2
-msgid "Frames"
-msgstr "Sličic"
+#: ../scripts/sphere.scm:78
+msgid "Radius (pixels)"
+msgstr "Polmer (v slikovnih točkah)"
 
-#: ../scripts/spinning-globe.scm.h:3
-msgid "Index to n colors (0 = remain RGB)"
-msgstr "Indeksiranje do n barv (0 = ohrani RGB)"
+#: ../scripts/sphere.scm:79
+msgid "Lighting (degrees)"
+msgstr "Osvetlitev (v stopinjah)"
 
-#: ../scripts/spinning-globe.scm.h:5
-msgid "Turn from left to right"
-msgstr "Obrni z leve na desno"
+#: ../scripts/sphere.scm:82
+msgid "Sphere color"
+msgstr "Barva krogle"
 
-#: ../scripts/spinning-globe.scm.h:7
+#: ../scripts/spinning-globe.scm:95
 msgid "_Spinning Globe..."
 msgstr "_Vrteči globus ..."
 
-#: ../scripts/spyrogimp.scm.h:1
-msgid "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
-msgstr "Trenutni plasti doda spirografe, epitrohoide in Lissajoujeve krivulje."
+#: ../scripts/spinning-globe.scm:96
+msgid "Create an animation by mapping the current image onto a spinning sphere"
+msgstr "Ustvari animacijo z zrcaljenjem trenutne slike na sukajočo kroglo"
 
-#: ../scripts/spyrogimp.scm.h:2
-msgid "Airbrush"
-msgstr "Barvna pršilka"
+#: ../scripts/spinning-globe.scm:103
+msgid "Frames"
+msgstr "Sličic"
 
-#: ../scripts/spyrogimp.scm.h:3
-msgid "Brush"
-msgstr "Čopič"
+#: ../scripts/spinning-globe.scm:104
+msgid "Turn from left to right"
+msgstr "Obrni z leve na desno"
 
-#: ../scripts/spyrogimp.scm.h:4
-msgid "Circle"
-msgstr "Krog"
+#: ../scripts/spinning-globe.scm:106
+msgid "Index to n colors (0 = remain RGB)"
+msgstr "Indeksiranje do n barv (0 = ohrani RGB)"
 
-#: ../scripts/spyrogimp.scm.h:6
-msgid "Color method"
-msgstr "Barvna metoda"
-
-#: ../scripts/spyrogimp.scm.h:7
-msgid "Epitrochoid"
-msgstr "Epitrohoida"
-
-#: ../scripts/spyrogimp.scm.h:8
-msgid "Frame"
-msgstr "Sličica"
-
-#: ../scripts/spyrogimp.scm.h:10
-msgid "Gradient: Loop Sawtooth"
-msgstr "Preliv: zankana žaga"
-
-#: ../scripts/spyrogimp.scm.h:11
-msgid "Gradient: Loop Triangle"
-msgstr "Preliv: zankan trikotnik"
-
-#: ../scripts/spyrogimp.scm.h:12
-msgid "Hexagon"
-msgstr "Šestkotnik"
-
-#: ../scripts/spyrogimp.scm.h:13
-msgid "Hole ratio"
-msgstr "Razmerje luknje"
-
-#: ../scripts/spyrogimp.scm.h:14
-msgid "Inner teeth"
-msgstr "Notranju ugriz"
-
-#: ../scripts/spyrogimp.scm.h:15
-msgid "Lissajous"
-msgstr "Lissajous"
-
-#: ../scripts/spyrogimp.scm.h:16
-msgid "Margin (pixels)"
-msgstr "Rob (slikovne točke)"
-
-#: ../scripts/spyrogimp.scm.h:17
-msgid "Outer teeth"
-msgstr "Zunanji ugriz"
-
-#: ../scripts/spyrogimp.scm.h:18
-msgid "Pencil"
-msgstr "Svinčnik"
-
-#: ../scripts/spyrogimp.scm.h:19
-msgid "Pentagon"
-msgstr "Petkotnik"
-
-#: ../scripts/spyrogimp.scm.h:20
-msgid "Polygon: 10 sides"
-msgstr "Večkotnik: 10 stranic"
-
-#: ../scripts/spyrogimp.scm.h:21
-msgid "Polygon: 7 sides"
-msgstr "Večkotnik: 7 stranic"
-
-#: ../scripts/spyrogimp.scm.h:22
-msgid "Polygon: 8 sides"
-msgstr "Večkotnik: 8 stranic"
-
-#: ../scripts/spyrogimp.scm.h:23
-msgid "Polygon: 9 sides"
-msgstr "Večkotnik: 9 stranic"
-
-#: ../scripts/spyrogimp.scm.h:24
+#: ../scripts/spyrogimp.scm:243
 msgid "Rendering Spyro"
 msgstr "Upodabljanje diha (sunka vetra) ..."
 
-#: ../scripts/spyrogimp.scm.h:25
-msgid "Shape"
-msgstr "Oblika"
-
-#: ../scripts/spyrogimp.scm.h:26
-msgid "Solid Color"
-msgstr "Enakomerna barva"
-
-#: ../scripts/spyrogimp.scm.h:27
-msgid "Spyrograph"
-msgstr "Spirograf"
-
-#: ../scripts/spyrogimp.scm.h:28
-msgid "Square"
-msgstr "Kvadrat"
-
-#: ../scripts/spyrogimp.scm.h:29
-#: ../scripts/text-circle.scm.h:7
-msgid "Start angle"
-msgstr "Začetni kot"
-
-#: ../scripts/spyrogimp.scm.h:30
-msgid "Tool"
-msgstr "Orodje"
-
-#: ../scripts/spyrogimp.scm.h:31
-msgid "Triangle"
-msgstr "Trikotnik"
-
-#: ../scripts/spyrogimp.scm.h:32
-msgid "Type"
-msgstr "Vrsta"
-
-#: ../scripts/spyrogimp.scm.h:33
+#: ../scripts/spyrogimp.scm:317
 msgid "_Spyrogimp..."
 msgstr "_Spiro-gimp ..."
 
-#: ../scripts/starburst-logo.scm.h:2
-msgid "Burst color"
-msgstr "Barva poka"
+#: ../scripts/spyrogimp.scm:318
+msgid ""
+"Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
+msgstr "Trenutni plasti doda spirografe, epitrohoide in Lissajoujeve krivulje."
 
-#: ../scripts/starburst-logo.scm.h:3
-msgid "Create a logo using a starburst gradient"
-msgstr "Ustvari logotip z uporabo preliva eksplozije zvezde"
+#: ../scripts/spyrogimp.scm:326
+msgid "Type"
+msgstr "Vrsta"
 
-#: ../scripts/starburst-logo.scm.h:4
-msgid "Effect size (pixels * 30)"
-msgstr "Velikost učinka (slikovne točke * 30)"
+#: ../scripts/spyrogimp.scm:326
+msgid "Spyrograph"
+msgstr "Spirograf"
 
-#: ../scripts/starburst-logo.scm.h:5
-msgid "Fill the selected region (or alpha) with a starburst gradient and add a shadow"
-msgstr "Zapolni izbrano področje (ali alfo) s prelivom eksplozije zvezde in dodano senco"
+#: ../scripts/spyrogimp.scm:327
+msgid "Epitrochoid"
+msgstr "Epitrohoida"
 
-#: ../scripts/starburst-logo.scm.h:8
+#: ../scripts/spyrogimp.scm:328
+msgid "Lissajous"
+msgstr "Lissajous"
+
+#: ../scripts/spyrogimp.scm:329
+msgid "Shape"
+msgstr "Oblika"
+
+#: ../scripts/spyrogimp.scm:329
+msgid "Circle"
+msgstr "Krog"
+
+#: ../scripts/spyrogimp.scm:330
+msgid "Frame"
+msgstr "Sličica"
+
+#: ../scripts/spyrogimp.scm:331
+msgid "Triangle"
+msgstr "Trikotnik"
+
+#: ../scripts/spyrogimp.scm:332
+msgid "Square"
+msgstr "Kvadrat"
+
+#: ../scripts/spyrogimp.scm:333
+msgid "Pentagon"
+msgstr "Petkotnik"
+
+#: ../scripts/spyrogimp.scm:334
+msgid "Hexagon"
+msgstr "Šestkotnik"
+
+#: ../scripts/spyrogimp.scm:335
+msgid "Polygon: 7 sides"
+msgstr "Večkotnik: 7 stranic"
+
+#: ../scripts/spyrogimp.scm:336
+msgid "Polygon: 8 sides"
+msgstr "Večkotnik: 8 stranic"
+
+#: ../scripts/spyrogimp.scm:337
+msgid "Polygon: 9 sides"
+msgstr "Večkotnik: 9 stranic"
+
+#: ../scripts/spyrogimp.scm:338
+msgid "Polygon: 10 sides"
+msgstr "Večkotnik: 10 stranic"
+
+#: ../scripts/spyrogimp.scm:339
+msgid "Outer teeth"
+msgstr "Zunanji ugriz"
+
+#: ../scripts/spyrogimp.scm:340
+msgid "Inner teeth"
+msgstr "Notranju ugriz"
+
+#: ../scripts/spyrogimp.scm:341
+msgid "Margin (pixels)"
+msgstr "Rob (slikovne točke)"
+
+#: ../scripts/spyrogimp.scm:342
+msgid "Hole ratio"
+msgstr "Razmerje luknje"
+
+#: ../scripts/spyrogimp.scm:343 ../scripts/text-circle.scm:212
+msgid "Start angle"
+msgstr "Začetni kot"
+
+#: ../scripts/spyrogimp.scm:345
+msgid "Tool"
+msgstr "Orodje"
+
+#: ../scripts/spyrogimp.scm:345
+msgid "Pencil"
+msgstr "Svinčnik"
+
+#: ../scripts/spyrogimp.scm:346 ../scripts/spyrogimp.scm:348
+msgid "Brush"
+msgstr "Čopič"
+
+#: ../scripts/spyrogimp.scm:347
+msgid "Airbrush"
+msgstr "Barvna pršilka"
+
+#: ../scripts/spyrogimp.scm:350
+msgid "Color method"
+msgstr "Barvna metoda"
+
+#: ../scripts/spyrogimp.scm:350
+msgid "Solid Color"
+msgstr "Enakomerna barva"
+
+#: ../scripts/spyrogimp.scm:351
+msgid "Gradient: Loop Sawtooth"
+msgstr "Preliv: zankana žaga"
+
+#: ../scripts/spyrogimp.scm:352
+msgid "Gradient: Loop Triangle"
+msgstr "Preliv: zankan trikotnik"
+
+#: ../scripts/starburst-logo.scm:73 ../scripts/starburst-logo.scm:106
 msgid "Starb_urst..."
 msgstr "_Eksplozija zvezde ..."
 
-#: ../scripts/starscape-logo.scm.h:1
-msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
-msgstr "Ustvari logotip s kamnito teksturo, žarjenjem nove in senco"
+#: ../scripts/starburst-logo.scm:74
+msgid ""
+"Fill the selected region (or alpha) with a starburst gradient and add a "
+"shadow"
+msgstr ""
+"Zapolni izbrano področje (ali alfo) s prelivom eksplozije zvezde in dodano "
+"senco"
 
-#: ../scripts/starscape-logo.scm.h:2
-msgid "Effect size (pixels * 4)"
-msgstr "Velikost učinka (slikovne točke * 4)"
+#: ../scripts/starburst-logo.scm:81
+msgid "Effect size (pixels * 30)"
+msgstr "Velikost učinka (slikovne točke * 30)"
 
-#: ../scripts/starscape-logo.scm.h:3
-msgid "Fill the selected region (or alpha) with a rock-like texture, a nova glow, and shadow"
-msgstr "Zapolni izbrano področje (ali alfo) s kamnito teksturo, žarjenjem nove in senco"
+#: ../scripts/starburst-logo.scm:82 ../scripts/starburst-logo.scm:115
+msgid "Burst color"
+msgstr "Barva poka"
 
-#: ../scripts/starscape-logo.scm.h:7
+#: ../scripts/starburst-logo.scm:107
+msgid "Create a logo using a starburst gradient"
+msgstr "Ustvari logotip z uporabo preliva eksplozije zvezde"
+
+#: ../scripts/starscape-logo.scm:135 ../scripts/starscape-logo.scm:166
 msgid "Sta_rscape..."
 msgstr "Zvezdno _nebo ..."
 
-#: ../scripts/swirltile.scm.h:4
-msgid "Create an image filled with a swirled tile effect"
-msgstr "Ustvari sliko, zapolnjeno z učinkom vrtinčenega tlakovanja"
+#: ../scripts/starscape-logo.scm:136
+msgid ""
+"Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
+"and shadow"
+msgstr ""
+"Zapolni izbrano področje (ali alfo) s kamnito teksturo, žarjenjem nove in "
+"senco"
 
-#: ../scripts/swirltile.scm.h:9
+#: ../scripts/starscape-logo.scm:143
+msgid "Effect size (pixels * 4)"
+msgstr "Velikost učinka (slikovne točke * 4)"
+
+#: ../scripts/starscape-logo.scm:167
+msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
+msgstr "Ustvari logotip s kamnito teksturo, žarjenjem nove in senco"
+
+#: ../scripts/swirltile.scm:51
 msgid "Swirl-_Tile..."
 msgstr "_Tlakuj z vrtinčenjem ..."
 
-#: ../scripts/swirltile.scm.h:10
+#: ../scripts/swirltile.scm:52
+msgid "Create an image filled with a swirled tile effect"
+msgstr "Ustvari sliko, zapolnjeno z učinkom vrtinčenega tlakovanja"
+
+#: ../scripts/swirltile.scm:63
 msgid "Whirl amount"
 msgstr "Število vrtincev"
 
-#: ../scripts/swirly-pattern.scm.h:1
-msgid "Create an image filled with a swirly pattern"
-msgstr "Ustvari sliko, zapolnjeno z vrtinčastim vzorcem"
-
-#: ../scripts/swirly-pattern.scm.h:2
-msgid "Number of times to whirl"
-msgstr "Število vrtenj"
-
-#: ../scripts/swirly-pattern.scm.h:3
-msgid "Quarter size"
-msgstr "Četrtinska velikost"
-
-#: ../scripts/swirly-pattern.scm.h:4
-msgid "Whirl angle"
-msgstr "Kot vrtinca"
-
-#: ../scripts/swirly-pattern.scm.h:5
+#: ../scripts/swirly-pattern.scm:82
 msgid "_Swirly..."
 msgstr "_Vrtinček ..."
 
-#: ../scripts/t-o-p-logo.scm.h:1
-msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-msgstr "Izbranemu področju (ali alfi) dodaj učinek sledenja delcev"
+#: ../scripts/swirly-pattern.scm:83
+msgid "Create an image filled with a swirly pattern"
+msgstr "Ustvari sliko, zapolnjeno z vrtinčastim vzorcem"
 
-#: ../scripts/t-o-p-logo.scm.h:3
-msgid "Base color"
-msgstr "Temeljna barva"
+#: ../scripts/swirly-pattern.scm:88
+msgid "Quarter size"
+msgstr "Četrtinska velikost"
 
-#: ../scripts/t-o-p-logo.scm.h:5
-msgid "Create a logo using a Trace Of Particles effect"
-msgstr "Ustvari logotip z uporabo učinka sledenja delcev"
+#: ../scripts/swirly-pattern.scm:89
+msgid "Whirl angle"
+msgstr "Kot vrtinca"
 
-#: ../scripts/t-o-p-logo.scm.h:6
-msgid "Edge only"
-msgstr "Samo rob"
+#: ../scripts/swirly-pattern.scm:90
+msgid "Number of times to whirl"
+msgstr "Število vrtenj"
 
-#: ../scripts/t-o-p-logo.scm.h:7
-msgid "Edge width"
-msgstr "Širina roba"
-
-#: ../scripts/t-o-p-logo.scm.h:10
-msgid "Hit rate"
-msgstr "Število zadetkov"
-
-#: ../scripts/t-o-p-logo.scm.h:12
-msgid "_Particle Trace..."
-msgstr "_Sled delcev ..."
-
-#: ../scripts/text-circle.scm.h:1
-msgid "Antialias"
-msgstr "Zgladi robove"
-
-#: ../scripts/text-circle.scm.h:2
-msgid "Create a logo by rendering the specified text along the perimeter of a circle"
-msgstr "Ustvari logotip z upodabljanjem navedenega besedila vzdolž obsega kroga"
-
-#: ../scripts/text-circle.scm.h:3
-msgid "Fill angle"
-msgstr "Kot polnila"
-
-#: ../scripts/text-circle.scm.h:9
+#: ../scripts/text-circle.scm:204
 msgid "Text C_ircle..."
 msgstr "Besedilo v _krogu ..."
 
-#: ../scripts/textured-logo.scm.h:3
-msgid "Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr "Ustvari teksturirani logotip s svetlimi področji, sencami in mozaičnim ozadjem"
+#: ../scripts/text-circle.scm:205
+msgid ""
+"Create a logo by rendering the specified text along the perimeter of a circle"
+msgstr ""
+"Ustvari logotip z upodabljanjem navedenega besedila vzdolž obsega kroga"
 
-#: ../scripts/textured-logo.scm.h:4
-msgid "Ending blend"
-msgstr "Zaključevanje zlivanja"
+#: ../scripts/text-circle.scm:213
+msgid "Fill angle"
+msgstr "Kot polnila"
 
-#: ../scripts/textured-logo.scm.h:5
-msgid "Fill the selected region (or alpha) with a texture and add highlights, shadows, and a mosaic background"
-msgstr "Zapolni izbrano področje (ali alfo) s teksturo in doda svetla področja, sence in mozaično ozadje"
+#: ../scripts/text-circle.scm:215
+msgid "Antialias"
+msgstr "Zgladi robove"
 
-#: ../scripts/textured-logo.scm.h:8
-msgid "Hexagons"
-msgstr "Šestkotniki"
-
-#: ../scripts/textured-logo.scm.h:9
-msgid "Mosaic tile type"
-msgstr "Vrsta mozaičnih ploščic"
-
-#: ../scripts/textured-logo.scm.h:10
-msgid "Octagons"
-msgstr "Osemkotniki"
-
-#: ../scripts/textured-logo.scm.h:12
-msgid "Squares"
-msgstr "Kvadrati"
-
-#: ../scripts/textured-logo.scm.h:13
-msgid "Starting blend"
-msgstr "Začetek zlivanja ..."
-
-#: ../scripts/textured-logo.scm.h:15
-msgid "Text pattern"
-msgstr "Vzorec besedila"
-
-#: ../scripts/textured-logo.scm.h:16
+#: ../scripts/textured-logo.scm:119 ../scripts/textured-logo.scm:161
 msgid "_Textured..."
 msgstr "_Teksturirano ..."
 
-#: ../scripts/tileblur.scm.h:1
-msgid "Blur horizontally"
-msgstr "Zabriši vodoravno"
+#: ../scripts/textured-logo.scm:120
+msgid ""
+"Fill the selected region (or alpha) with a texture and add highlights, "
+"shadows, and a mosaic background"
+msgstr ""
+"Zapolni izbrano področje (ali alfo) s teksturo in doda svetla področja, "
+"sence in mozaično ozadje"
 
-#: ../scripts/tileblur.scm.h:2
-msgid "Blur the edges of an image so the result tiles seamlessly"
-msgstr "Zabriši robove slike, da se bo rezultat tlakoval neopazno"
+#: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
+msgid "Mosaic tile type"
+msgstr "Vrsta mozaičnih ploščic"
 
-#: ../scripts/tileblur.scm.h:3
-msgid "Blur type"
-msgstr "Vrsta zabrisanosti"
+#: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
+msgid "Squares"
+msgstr "Kvadrati"
 
-#: ../scripts/tileblur.scm.h:4
-msgid "Blur vertically"
-msgstr "Zabriši navpično"
+#: ../scripts/textured-logo.scm:130 ../scripts/textured-logo.scm:172
+msgid "Hexagons"
+msgstr "Šestkotniki"
 
-#: ../scripts/tileblur.scm.h:5
-msgid "IIR"
-msgstr "IIR"
+#: ../scripts/textured-logo.scm:131 ../scripts/textured-logo.scm:173
+msgid "Octagons"
+msgstr "Osemkotniki"
 
-#: ../scripts/tileblur.scm.h:6
-msgid "RLE"
-msgstr "RLE"
+#: ../scripts/textured-logo.scm:133 ../scripts/textured-logo.scm:175
+msgid "Starting blend"
+msgstr "Začetek zlivanja ..."
 
-#: ../scripts/tileblur.scm.h:8
+#: ../scripts/textured-logo.scm:134 ../scripts/textured-logo.scm:176
+msgid "Ending blend"
+msgstr "Zaključevanje zlivanja"
+
+#: ../scripts/textured-logo.scm:162
+msgid ""
+"Create a textured logo with highlights, shadows, and a mosaic background"
+msgstr ""
+"Ustvari teksturirani logotip s svetlimi področji, sencami in mozaičnim "
+"ozadjem"
+
+#: ../scripts/textured-logo.scm:170
+msgid "Text pattern"
+msgstr "Vzorec besedila"
+
+#: ../scripts/tileblur.scm:65
 msgid "_Tileable Blur..."
 msgstr "_Zabriši s tlakovanjem ..."
 
-#: ../scripts/title-header.scm.h:1
-msgid "Create a decorative web title header"
-msgstr "Ustvari okrasno glavo-naslov spletne strani"
+#: ../scripts/tileblur.scm:66
+msgid "Blur the edges of an image so the result tiles seamlessly"
+msgstr "Zabriši robove slike, da se bo rezultat tlakoval neopazno"
 
-#: ../scripts/title-header.scm.h:6
+#: ../scripts/tileblur.scm:74
+msgid "Blur vertically"
+msgstr "Zabriši navpično"
+
+#: ../scripts/tileblur.scm:75
+msgid "Blur horizontally"
+msgstr "Zabriši vodoravno"
+
+#: ../scripts/tileblur.scm:76
+msgid "Blur type"
+msgstr "Vrsta zabrisanosti"
+
+#: ../scripts/tileblur.scm:76
+msgid "IIR"
+msgstr "IIR"
+
+#: ../scripts/tileblur.scm:76
+msgid "RLE"
+msgstr "RLE"
+
+#: ../scripts/title-header.scm:164
 msgid "Web Title Header..."
 msgstr "Glavni napis spletne strani ..."
 
-#: ../scripts/truchet.scm.h:3
-msgid "Create an image filled with a Truchet pattern"
-msgstr "Ustvari sliko, zapolnjeno z vzorcem Trucheta"
+#: ../scripts/title-header.scm:165
+msgid "Create a decorative web title header"
+msgstr "Ustvari okrasno glavo-naslov spletne strani"
 
-#: ../scripts/truchet.scm.h:4
-msgid "Foreground color"
-msgstr "Barva ospredja"
+#: ../scripts/t-o-p-logo.scm:101 ../scripts/t-o-p-logo.scm:141
+msgid "_Particle Trace..."
+msgstr "_Sled delcev ..."
 
-#: ../scripts/truchet.scm.h:7
+#: ../scripts/t-o-p-logo.scm:102
+msgid "Add a Trace of Particles effect to the selected region (or alpha)"
+msgstr "Izbranemu področju (ali alfi) dodaj učinek sledenja delcev"
+
+#: ../scripts/t-o-p-logo.scm:110 ../scripts/t-o-p-logo.scm:150
+msgid "Hit rate"
+msgstr "Število zadetkov"
+
+#: ../scripts/t-o-p-logo.scm:111 ../scripts/t-o-p-logo.scm:151
+msgid "Edge width"
+msgstr "Širina roba"
+
+#: ../scripts/t-o-p-logo.scm:112 ../scripts/t-o-p-logo.scm:152
+msgid "Edge only"
+msgstr "Samo rob"
+
+#: ../scripts/t-o-p-logo.scm:113 ../scripts/t-o-p-logo.scm:153
+msgid "Base color"
+msgstr "Temeljna barva"
+
+#: ../scripts/t-o-p-logo.scm:142
+msgid "Create a logo using a Trace Of Particles effect"
+msgstr "Ustvari logotip z uporabo učinka sledenja delcev"
+
+#: ../scripts/truchet.scm:157
 msgid "T_ruchet..."
 msgstr "Vzorec _Truchet ..."
 
-#: ../scripts/unsharp-mask.scm.h:1
-msgid "Mask opacity"
-msgstr "Prekrivnost maske"
+#: ../scripts/truchet.scm:158
+msgid "Create an image filled with a Truchet pattern"
+msgstr "Ustvari sliko, zapolnjeno z vzorcem Trucheta"
 
-#: ../scripts/unsharp-mask.scm.h:2
+#: ../scripts/truchet.scm:166
+msgid "Foreground color"
+msgstr "Barva ospredja"
+
+#: ../scripts/unsharp-mask.scm:82
 msgid "Mask size"
 msgstr "Velikost maske"
 
-#: ../scripts/waves-anim.scm.h:1
-msgid "Amplitude"
-msgstr "Amplituda"
+#: ../scripts/unsharp-mask.scm:83
+msgid "Mask opacity"
+msgstr "Prekrivnost maske"
 
-#: ../scripts/waves-anim.scm.h:2
-msgid "Create a multi-layer image with an effect like a stone was thrown into the current image"
-msgstr "Ustvari večplastno sliko z učinkom, kot da je na trenutno aktivno sliko nekdo vrgel kamen"
-
-#: ../scripts/waves-anim.scm.h:3
-msgid "Invert direction"
-msgstr "Preobrni smer"
-
-#: ../scripts/waves-anim.scm.h:5
-msgid "Wavelength"
-msgstr "Valovna dolžina"
-
-#: ../scripts/waves-anim.scm.h:6
+#: ../scripts/waves-anim.scm:96
 msgid "_Waves..."
 msgstr "_Valovi ..."
 
-#: ../scripts/weave.scm.h:1
-msgid "Create a new layer filled with a weave effect to be used as an overlay or bump map"
-msgstr "Ustvari novo plast, zapolnjeno z učinkom tkanja, ki je uporabljen za prekrivanje ali kot odtis za preslikavo"
+#: ../scripts/waves-anim.scm:97
+msgid ""
+"Create a multi-layer image with an effect like a stone was thrown into the "
+"current image"
+msgstr ""
+"Ustvari večplastno sliko z učinkom, kot da je na trenutno aktivno sliko "
+"nekdo vrgel kamen"
 
-#: ../scripts/weave.scm.h:2
-msgid "Ribbon spacing"
-msgstr "Razmik trakov"
+#: ../scripts/waves-anim.scm:104
+msgid "Amplitude"
+msgstr "Amplituda"
 
-#: ../scripts/weave.scm.h:3
-msgid "Ribbon width"
-msgstr "Širina traku"
+#: ../scripts/waves-anim.scm:105
+msgid "Wavelength"
+msgstr "Valovna dolžina"
 
-#: ../scripts/weave.scm.h:4
-msgid "Shadow darkness"
-msgstr "Temačnost sence"
+#: ../scripts/waves-anim.scm:107
+msgid "Invert direction"
+msgstr "Preobrni smer"
 
-#: ../scripts/weave.scm.h:5
-msgid "Shadow depth"
-msgstr "Globina sence"
-
-#: ../scripts/weave.scm.h:6
-msgid "Thread density"
-msgstr "Gostota niti"
-
-#: ../scripts/weave.scm.h:7
-msgid "Thread intensity"
-msgstr "Intenzivnost niti"
-
-#: ../scripts/weave.scm.h:8
-msgid "Thread length"
-msgstr "Dolžina niti"
-
-#: ../scripts/weave.scm.h:9
+#: ../scripts/weave.scm:393
 msgid "_Weave..."
 msgstr "_Tkanje ..."
 
-#: ../scripts/web-browser.scm.h:1
-msgid "Bookmark to the GIMP web site"
-msgstr "Zaznamek spletne strani GIMP"
+#: ../scripts/weave.scm:394
+msgid ""
+"Create a new layer filled with a weave effect to be used as an overlay or "
+"bump map"
+msgstr ""
+"Ustvari novo plast, zapolnjeno z učinkom tkanja, ki je uporabljen za "
+"prekrivanje ali kot odtis za preslikavo"
 
-#: ../scripts/web-browser.scm.h:2
-msgid "Bookmark to the user manual"
-msgstr "Zaznamki uporabniškega priročnika"
+#: ../scripts/weave.scm:401
+msgid "Ribbon width"
+msgstr "Širina traku"
 
-#: ../scripts/web-browser.scm.h:3
-msgid "Create and Use _Selections"
-msgstr "Ustvarjanje in uporaba _izborov"
+#: ../scripts/weave.scm:402
+msgid "Ribbon spacing"
+msgstr "Razmik trakov"
 
-#: ../scripts/web-browser.scm.h:4
-msgid "Create, Open and Save _Files"
-msgstr "Ustvarjanje, odpiranje in shranjevanje _datotek"
+#: ../scripts/weave.scm:403
+msgid "Shadow darkness"
+msgstr "Temačnost sence"
 
-#: ../scripts/web-browser.scm.h:5
-msgid "Drawing _Simple Objects"
-msgstr "Risanje _enostavnih predmetov"
+#: ../scripts/weave.scm:404
+msgid "Shadow depth"
+msgstr "Globina sence"
 
-#: ../scripts/web-browser.scm.h:6
-msgid "How to Use _Dialogs"
-msgstr "Kako uporabljamo _pogovorna okna"
+#: ../scripts/weave.scm:405
+msgid "Thread length"
+msgstr "Dolžina niti"
 
-#: ../scripts/web-browser.scm.h:7
-msgid "Plug-in _Registry"
-msgstr "_Imenik vtičnikov"
+#: ../scripts/weave.scm:406
+msgid "Thread density"
+msgstr "Gostota niti"
 
-#: ../scripts/web-browser.scm.h:8
+#: ../scripts/weave.scm:407
+msgid "Thread intensity"
+msgstr "Intenzivnost niti"
+
+#: ../scripts/web-browser.scm:60
 msgid "Using _Paths"
 msgstr "Uporaba _poti"
 
-#: ../scripts/web-browser.scm.h:9
-msgid "_Basic Concepts"
-msgstr "_Osnovni koncepti"
+#: ../scripts/web-browser.scm:61 ../scripts/web-browser.scm:74
+#: ../scripts/web-browser.scm:87 ../scripts/web-browser.scm:100
+#: ../scripts/web-browser.scm:113 ../scripts/web-browser.scm:126
+#: ../scripts/web-browser.scm:139 ../scripts/web-browser.scm:152
+msgid "Bookmark to the user manual"
+msgstr "Zaznamki uporabniškega priročnika"
 
-#: ../scripts/web-browser.scm.h:10
-msgid "_Developer Web Site"
-msgstr "_Spletna stran za razvijalce"
-
-#: ../scripts/web-browser.scm.h:11
-msgid "_Main Web Site"
-msgstr "_Glavna spletna stran"
-
-#: ../scripts/web-browser.scm.h:12
+#: ../scripts/web-browser.scm:73
 msgid "_Preparing your Images for the Web"
 msgstr "_Priprava slik za splet"
 
-#: ../scripts/web-browser.scm.h:13
-msgid "_User Manual Web Site"
-msgstr "Spletna stran _uporabniškega priročnika"
-
-#: ../scripts/web-browser.scm.h:14
+#: ../scripts/web-browser.scm:86
 msgid "_Working with Digital Camera Photos"
 msgstr "_Delo s fotografijami digitalnega fotoaparata"
 
-#: ../scripts/xach-effect.scm.h:1
-msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
-msgstr "Dodaj subtilen prosojen 3D-učinek izbranemu področju (ali alfo)"
+#: ../scripts/web-browser.scm:99
+msgid "Create, Open and Save _Files"
+msgstr "Ustvarjanje, odpiranje in shranjevanje _datotek"
 
-#: ../scripts/xach-effect.scm.h:2
-msgid "Drop shadow X offset"
-msgstr "Odmik X padle sence "
+#: ../scripts/web-browser.scm:112
+msgid "_Basic Concepts"
+msgstr "_Osnovni koncepti"
 
-#: ../scripts/xach-effect.scm.h:3
-msgid "Drop shadow Y offset"
-msgstr "Odmik Y padle sence"
+#: ../scripts/web-browser.scm:125
+msgid "How to Use _Dialogs"
+msgstr "Kako uporabljamo _pogovorna okna"
 
-#: ../scripts/xach-effect.scm.h:4
-msgid "Drop shadow blur radius"
-msgstr "Radij zabrisanosti padle sence"
+#: ../scripts/web-browser.scm:138
+msgid "Drawing _Simple Objects"
+msgstr "Risanje _enostavnih predmetov"
 
-#: ../scripts/xach-effect.scm.h:5
-msgid "Drop shadow color"
-msgstr "Barva padle sence"
+#: ../scripts/web-browser.scm:151
+msgid "Create and Use _Selections"
+msgstr "Ustvarjanje in uporaba _izborov"
 
-#: ../scripts/xach-effect.scm.h:6
-msgid "Drop shadow opacity"
-msgstr "Prekrivnost padle sence"
+#: ../scripts/web-browser.scm:179
+msgid "_Main Web Site"
+msgstr "_Glavna spletna stran"
 
-#: ../scripts/xach-effect.scm.h:7
-msgid "Highlight X offset"
-msgstr "Poudari odmik X"
+#: ../scripts/web-browser.scm:180 ../scripts/web-browser.scm:193
+#: ../scripts/web-browser.scm:206 ../scripts/web-browser.scm:219
+msgid "Bookmark to the GIMP web site"
+msgstr "Zaznamek spletne strani GIMP"
 
-#: ../scripts/xach-effect.scm.h:8
-msgid "Highlight Y offset"
-msgstr "Poudari odmik Y"
+#: ../scripts/web-browser.scm:192
+msgid "_Developer Web Site"
+msgstr "_Spletna stran za razvijalce"
 
-#: ../scripts/xach-effect.scm.h:10
-msgid "Highlight opacity"
-msgstr "Poudari prekrivnost"
+#: ../scripts/web-browser.scm:205
+msgid "_User Manual Web Site"
+msgstr "Spletna stran _uporabniškega priročnika"
 
-#: ../scripts/xach-effect.scm.h:12
+#: ../scripts/web-browser.scm:218
+msgid "Plug-in _Registry"
+msgstr "_Imenik vtičnikov"
+
+#: ../scripts/xach-effect.scm:121
 msgid "_Xach-Effect..."
 msgstr " _Xach-učinek ..."
 
+#: ../scripts/xach-effect.scm:122
+msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
+msgstr "Dodaj subtilen prosojen 3D-učinek izbranemu področju (ali alfo)"
+
+#: ../scripts/xach-effect.scm:129
+msgid "Highlight X offset"
+msgstr "Poudari odmik X"
+
+#: ../scripts/xach-effect.scm:130
+msgid "Highlight Y offset"
+msgstr "Poudari odmik Y"
+
+#: ../scripts/xach-effect.scm:132
+msgid "Highlight opacity"
+msgstr "Poudari prekrivnost"
+
+#: ../scripts/xach-effect.scm:133
+msgid "Drop shadow color"
+msgstr "Barva padle sence"
+
+#: ../scripts/xach-effect.scm:134
+msgid "Drop shadow opacity"
+msgstr "Prekrivnost padle sence"
+
+#: ../scripts/xach-effect.scm:135
+msgid "Drop shadow blur radius"
+msgstr "Radij zabrisanosti padle sence"
+
+#: ../scripts/xach-effect.scm:136
+msgid "Drop shadow X offset"
+msgstr "Odmik X padle sence "
+
+#: ../scripts/xach-effect.scm:137
+msgid "Drop shadow Y offset"
+msgstr "Odmik Y padle sence"
