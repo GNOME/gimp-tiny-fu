@@ -2,27 +2,31 @@
 # Copyright (C) 2000-2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gimp package.
 #
+#
 # David Monniaux <monniaux@arbouse.ens.fr>, 2000.
 # Christophe Merlet <redfox@redfoxcenter.org>, 2000-2004.
 # Raymond Ostertag <r.ostertag@caramail.com>, 2002-2007.
 # Jean-Louis Berliet <jl.berliet@free.fr>, 2004.
-# Julien Hardelin, 2007.
 # Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
-# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007
-# Laurent Monin <gimp@norz.org>, 2007
-#
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+# Laurent Monin <gimp@norz.org>, 2007.
+# julien <jhardlin@orange.fr>, 2007, 2016.
+
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-05 23:06+0100\n"
-"PO-Revision-Date: 2008-03-05 23:05+0100\n"
-"Last-Translator: Laurent Monin <gimp@norz.org>\n"
-"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-"
+"tiny-fu&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-07-17 00:03+0000\n"
+"PO-Revision-Date: 2016-08-24 21:43+0100\n"
+"Last-Translator: julien <jhardlin@orange.fr>\n"
+"Language-Team: French <GNOME French Team <gnomefr@traduc.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
@@ -273,374 +277,393 @@ msgstr ""
 "dialogue d'un Script-Fu est ouverte. Fermez toutes les fenêtres de script-fu "
 "et essayez à nouveau."
 
-#: ../scripts/3d-outline.scm.h:1
+#: ../scripts/3d-outline.scm:118 ../scripts/3d-outline.scm:164
 msgid "3D _Outline..."
 msgstr "_Contour 3D..."
 
-#: ../scripts/3d-outline.scm.h:2
-msgid "Bumpmap (alpha layer) blur radius"
-msgstr "Bosselage (calque alpha) rayon de flou"
-
-#: ../scripts/3d-outline.scm.h:3
-msgid "Create a logo with outlined text and a drop shadow"
-msgstr "Crée un logo avec du texte au contour marqué et une ombre portée"
-
-#: ../scripts/3d-outline.scm.h:4 ../scripts/glossy.scm.h:6
-msgid "Default bumpmap settings"
-msgstr "Réglages par défaut du bosselage"
-
-#: ../scripts/3d-outline.scm.h:5 ../scripts/alien-glow-button.scm.h:5
-#: ../scripts/alien-glow-logo.scm.h:4 ../scripts/alien-neon-logo.scm.h:6
-#: ../scripts/basic1-logo.scm.h:4 ../scripts/basic2-logo.scm.h:5
-#: ../scripts/beveled-button.scm.h:3 ../scripts/beveled-pattern-button.scm.h:3
-#: ../scripts/beveled-pattern-heading.scm.h:2 ../scripts/blended-logo.scm.h:11
-#: ../scripts/bovinated-logo.scm.h:6 ../scripts/carved-logo.scm.h:5
-#: ../scripts/chalk.scm.h:5 ../scripts/chip-away.scm.h:8
-#: ../scripts/chrome-logo.scm.h:6 ../scripts/comic-logo.scm.h:5
-#: ../scripts/coolmetal-logo.scm.h:6 ../scripts/crystal-logo.scm.h:6
-#: ../scripts/frosty-logo.scm.h:5 ../scripts/gimp-headers.scm.h:5
-#: ../scripts/gimp-labels.scm.h:6 ../scripts/glossy.scm.h:7
-#: ../scripts/glowing-logo.scm.h:5 ../scripts/gradient-bevel-logo.scm.h:7
-#: ../scripts/i26-gunya2.scm.h:2 ../scripts/neon-logo.scm.h:6
-#: ../scripts/news-text.scm.h:7 ../scripts/pupi-button.scm.h:3
-#: ../scripts/slide.scm.h:2 ../scripts/sota-chrome-logo.scm.h:7
-#: ../scripts/speed-text.scm.h:5 ../scripts/starburst-logo.scm.h:6
-#: ../scripts/starscape-logo.scm.h:4 ../scripts/t-o-p-logo.scm.h:8
-#: ../scripts/text-circle.scm.h:4 ../scripts/textured-logo.scm.h:6
-#: ../scripts/title-header.scm.h:2
-msgid "Font"
-msgstr "Police"
-
-#: ../scripts/3d-outline.scm.h:6 ../scripts/alien-glow-button.scm.h:6
-#: ../scripts/alien-glow-logo.scm.h:5 ../scripts/alien-neon-logo.scm.h:7
-#: ../scripts/basic1-logo.scm.h:5 ../scripts/basic2-logo.scm.h:6
-#: ../scripts/beveled-button.scm.h:4 ../scripts/beveled-pattern-button.scm.h:4
-#: ../scripts/beveled-pattern-heading.scm.h:3 ../scripts/blended-logo.scm.h:12
-#: ../scripts/bovinated-logo.scm.h:7 ../scripts/carved-logo.scm.h:6
-#: ../scripts/chalk.scm.h:6 ../scripts/chip-away.scm.h:9
-#: ../scripts/chrome-logo.scm.h:7 ../scripts/comic-logo.scm.h:6
-#: ../scripts/coolmetal-logo.scm.h:7 ../scripts/crystal-logo.scm.h:7
-#: ../scripts/frosty-logo.scm.h:6 ../scripts/gimp-headers.scm.h:6
-#: ../scripts/gimp-labels.scm.h:7 ../scripts/glossy.scm.h:8
-#: ../scripts/glowing-logo.scm.h:6 ../scripts/gradient-bevel-logo.scm.h:8
-#: ../scripts/i26-gunya2.scm.h:3 ../scripts/neon-logo.scm.h:7
-#: ../scripts/news-text.scm.h:8 ../scripts/pupi-button.scm.h:4
-#: ../scripts/sota-chrome-logo.scm.h:8 ../scripts/speed-text.scm.h:6
-#: ../scripts/starburst-logo.scm.h:7 ../scripts/starscape-logo.scm.h:5
-#: ../scripts/t-o-p-logo.scm.h:9 ../scripts/text-circle.scm.h:5
-#: ../scripts/textured-logo.scm.h:7 ../scripts/title-header.scm.h:3
-msgid "Font size (pixels)"
-msgstr "Taille de la police (pixels)"
-
-#: ../scripts/3d-outline.scm.h:7
-msgid "Outline blur radius"
-msgstr "Rayon de flou du contour"
-
-#: ../scripts/3d-outline.scm.h:8
+#: ../scripts/3d-outline.scm:119
 msgid ""
 "Outline the selected region (or alpha) with a pattern and add a drop shadow"
 msgstr ""
 "Marque le contour d'une région sélectionnée (ou alpha) avec un motif et "
 "ajoute une ombre portée"
 
-#: ../scripts/3d-outline.scm.h:9 ../scripts/beveled-pattern-arrow.scm.h:5
-#: ../scripts/beveled-pattern-bullet.scm.h:3
-#: ../scripts/beveled-pattern-button.scm.h:5
-#: ../scripts/beveled-pattern-heading.scm.h:5
-#: ../scripts/beveled-pattern-hrule.scm.h:3 ../scripts/chip-away.scm.h:13
-#: ../scripts/textured-logo.scm.h:11
+#: ../scripts/3d-outline.scm:126 ../scripts/3d-outline.scm:170
+#: ../scripts/beveled-pattern-arrow.scm:157
+#: ../scripts/beveled-pattern-bullet.scm:91
+#: ../scripts/beveled-pattern-button.scm:130
+#: ../scripts/beveled-pattern-heading.scm:116
+#: ../scripts/beveled-pattern-hrule.scm:85 ../scripts/chip-away.scm:156
+#: ../scripts/chip-away.scm:203 ../scripts/textured-logo.scm:128
 msgid "Pattern"
 msgstr "Motif"
 
-#: ../scripts/3d-outline.scm.h:10 ../scripts/glossy.scm.h:16
-#: ../scripts/round-corners.scm.h:6
-msgid "Shadow X offset"
-msgstr "Décalage de l'ombre en X"
+#: ../scripts/3d-outline.scm:127 ../scripts/3d-outline.scm:174
+msgid "Outline blur radius"
+msgstr "Rayon de flou du contour"
 
-#: ../scripts/3d-outline.scm.h:11 ../scripts/glossy.scm.h:17
-#: ../scripts/round-corners.scm.h:7
-msgid "Shadow Y offset"
-msgstr "Décalage de l'ombre en Y"
-
-#: ../scripts/3d-outline.scm.h:12
+#: ../scripts/3d-outline.scm:128 ../scripts/3d-outline.scm:175
 msgid "Shadow blur radius"
 msgstr "Rayon de flou de l'ombre"
 
-#: ../scripts/3d-outline.scm.h:13 ../scripts/alien-glow-button.scm.h:10
-#: ../scripts/alien-glow-logo.scm.h:8 ../scripts/alien-neon-logo.scm.h:10
-#: ../scripts/basic1-logo.scm.h:6 ../scripts/basic2-logo.scm.h:7
-#: ../scripts/beveled-button.scm.h:9 ../scripts/beveled-pattern-button.scm.h:7
-#: ../scripts/beveled-pattern-heading.scm.h:6 ../scripts/blended-logo.scm.h:17
-#: ../scripts/bovinated-logo.scm.h:10 ../scripts/carved-logo.scm.h:8
-#: ../scripts/chalk.scm.h:7 ../scripts/chip-away.scm.h:14
-#: ../scripts/chrome-logo.scm.h:9 ../scripts/comic-logo.scm.h:11
-#: ../scripts/coolmetal-logo.scm.h:10 ../scripts/crystal-logo.scm.h:8
-#: ../scripts/frosty-logo.scm.h:7 ../scripts/gimp-headers.scm.h:13
-#: ../scripts/gimp-labels.scm.h:17 ../scripts/glossy.scm.h:18
-#: ../scripts/glowing-logo.scm.h:8 ../scripts/gradient-bevel-logo.scm.h:10
-#: ../scripts/i26-gunya2.scm.h:7 ../scripts/neon-logo.scm.h:10
-#: ../scripts/news-text.scm.h:10 ../scripts/pupi-button.scm.h:13
-#: ../scripts/slide.scm.h:5 ../scripts/sota-chrome-logo.scm.h:11
-#: ../scripts/speed-text.scm.h:8 ../scripts/starburst-logo.scm.h:9
-#: ../scripts/starscape-logo.scm.h:8 ../scripts/t-o-p-logo.scm.h:11
-#: ../scripts/text-circle.scm.h:8 ../scripts/textured-logo.scm.h:14
-#: ../scripts/title-header.scm.h:5
+#: ../scripts/3d-outline.scm:129 ../scripts/3d-outline.scm:176
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr "Bosselage (calque alpha) rayon de flou"
+
+#: ../scripts/3d-outline.scm:130 ../scripts/3d-outline.scm:177
+#: ../scripts/glossy.scm:217 ../scripts/glossy.scm:289
+msgid "Default bumpmap settings"
+msgstr "Réglages par défaut du bosselage"
+
+#: ../scripts/3d-outline.scm:131 ../scripts/3d-outline.scm:178
+#: ../scripts/glossy.scm:219 ../scripts/glossy.scm:291
+#: ../scripts/round-corners.scm:136
+msgid "Shadow X offset"
+msgstr "Décalage de l'ombre en X"
+
+#: ../scripts/3d-outline.scm:132 ../scripts/3d-outline.scm:179
+#: ../scripts/glossy.scm:220 ../scripts/glossy.scm:292
+#: ../scripts/round-corners.scm:137
+msgid "Shadow Y offset"
+msgstr "Décalage de l'ombre en Y"
+
+#: ../scripts/3d-outline.scm:165
+msgid "Create a logo with outlined text and a drop shadow"
+msgstr "Crée un logo avec du texte au contour marqué et une ombre portée"
+
+#: ../scripts/3d-outline.scm:171 ../scripts/alien-glow-button.scm:156
+#: ../scripts/alien-glow-logo.scm:111 ../scripts/alien-neon-logo.scm:176
+#: ../scripts/basic1-logo.scm:98 ../scripts/basic2-logo.scm:121
+#: ../scripts/beveled-button.scm:149 ../scripts/beveled-pattern-button.scm:126
+#: ../scripts/beveled-pattern-heading.scm:113 ../scripts/blended-logo.scm:186
+#: ../scripts/bovinated-logo.scm:132 ../scripts/carved-logo.scm:167
+#: ../scripts/chalk.scm:122 ../scripts/chip-away.scm:193
+#: ../scripts/chrome-logo.scm:124 ../scripts/comic-logo.scm:161
+#: ../scripts/coolmetal-logo.scm:175 ../scripts/crystal-logo.scm:215
+#: ../scripts/frosty-logo.scm:147 ../scripts/gimp-headers.scm:155
+#: ../scripts/gimp-headers.scm:178 ../scripts/gimp-labels.scm:127
+#: ../scripts/gimp-labels.scm:143 ../scripts/gimp-labels.scm:159
+#: ../scripts/gimp-labels.scm:175 ../scripts/glossy.scm:274
+#: ../scripts/glowing-logo.scm:115 ../scripts/gradient-bevel-logo.scm:140
+#: ../scripts/i26-gunya2.scm:97 ../scripts/neon-logo.scm:287
+#: ../scripts/news-text.scm:83 ../scripts/pupi-button.scm:193
+#: ../scripts/slide.scm:248 ../scripts/sota-chrome-logo.scm:212
+#: ../scripts/speed-text.scm:92 ../scripts/starburst-logo.scm:112
+#: ../scripts/starscape-logo.scm:172 ../scripts/text-circle.scm:210
+#: ../scripts/textured-logo.scm:167 ../scripts/title-header.scm:170
+#: ../scripts/t-o-p-logo.scm:147
 msgid "Text"
 msgstr "Texte"
 
-#: ../scripts/3dTruchet.scm.h:1
+#: ../scripts/3d-outline.scm:172 ../scripts/alien-glow-button.scm:158
+#: ../scripts/alien-glow-logo.scm:112 ../scripts/alien-neon-logo.scm:177
+#: ../scripts/basic1-logo.scm:99 ../scripts/basic2-logo.scm:122
+#: ../scripts/beveled-button.scm:150 ../scripts/beveled-pattern-button.scm:127
+#: ../scripts/beveled-pattern-heading.scm:114 ../scripts/blended-logo.scm:187
+#: ../scripts/bovinated-logo.scm:133 ../scripts/carved-logo.scm:168
+#: ../scripts/chalk.scm:123 ../scripts/chip-away.scm:195
+#: ../scripts/chrome-logo.scm:125 ../scripts/comic-logo.scm:162
+#: ../scripts/coolmetal-logo.scm:176 ../scripts/crystal-logo.scm:216
+#: ../scripts/frosty-logo.scm:148 ../scripts/gimp-headers.scm:157
+#: ../scripts/gimp-headers.scm:180 ../scripts/gimp-labels.scm:177
+#: ../scripts/glossy.scm:275 ../scripts/glowing-logo.scm:116
+#: ../scripts/gradient-bevel-logo.scm:141 ../scripts/i26-gunya2.scm:101
+#: ../scripts/neon-logo.scm:288 ../scripts/news-text.scm:85
+#: ../scripts/pupi-button.scm:194 ../scripts/sota-chrome-logo.scm:213
+#: ../scripts/speed-text.scm:94 ../scripts/starburst-logo.scm:113
+#: ../scripts/starscape-logo.scm:173 ../scripts/text-circle.scm:214
+#: ../scripts/textured-logo.scm:168 ../scripts/title-header.scm:171
+#: ../scripts/t-o-p-logo.scm:148
+msgid "Font size (pixels)"
+msgstr "Taille de la police (pixels)"
+
+#: ../scripts/3d-outline.scm:173 ../scripts/alien-glow-button.scm:157
+#: ../scripts/alien-glow-logo.scm:113 ../scripts/alien-neon-logo.scm:178
+#: ../scripts/basic1-logo.scm:100 ../scripts/basic2-logo.scm:123
+#: ../scripts/beveled-button.scm:151 ../scripts/beveled-pattern-button.scm:128
+#: ../scripts/beveled-pattern-heading.scm:115 ../scripts/blended-logo.scm:188
+#: ../scripts/bovinated-logo.scm:134 ../scripts/carved-logo.scm:169
+#: ../scripts/chalk.scm:124 ../scripts/chip-away.scm:194
+#: ../scripts/chrome-logo.scm:126 ../scripts/comic-logo.scm:163
+#: ../scripts/coolmetal-logo.scm:177 ../scripts/crystal-logo.scm:217
+#: ../scripts/frosty-logo.scm:149 ../scripts/gimp-headers.scm:156
+#: ../scripts/gimp-headers.scm:179 ../scripts/gimp-labels.scm:176
+#: ../scripts/glossy.scm:276 ../scripts/glowing-logo.scm:117
+#: ../scripts/gradient-bevel-logo.scm:142 ../scripts/i26-gunya2.scm:100
+#: ../scripts/neon-logo.scm:289 ../scripts/news-text.scm:84
+#: ../scripts/pupi-button.scm:195 ../scripts/slide.scm:250
+#: ../scripts/sota-chrome-logo.scm:214 ../scripts/speed-text.scm:93
+#: ../scripts/starburst-logo.scm:114 ../scripts/starscape-logo.scm:174
+#: ../scripts/text-circle.scm:216 ../scripts/textured-logo.scm:169
+#: ../scripts/title-header.scm:172 ../scripts/t-o-p-logo.scm:149
+msgid "Font"
+msgstr "Police"
+
+#: ../scripts/3dTruchet.scm:222
 msgid "3_D Truchet..."
 msgstr "3_D Truchet..."
 
-#: ../scripts/3dTruchet.scm.h:2 ../scripts/alien-glow-arrow.scm.h:1
-#: ../scripts/alien-glow-bar.scm.h:1 ../scripts/alien-glow-bullet.scm.h:1
-#: ../scripts/alien-glow-button.scm.h:2 ../scripts/alien-neon-logo.scm.h:3
-#: ../scripts/basic1-logo.scm.h:2 ../scripts/basic2-logo.scm.h:3
-#: ../scripts/blended-logo.scm.h:2 ../scripts/bovinated-logo.scm.h:3
-#: ../scripts/chalk.scm.h:1 ../scripts/chrome-logo.scm.h:3
-#: ../scripts/comic-logo.scm.h:2 ../scripts/coolmetal-logo.scm.h:2
-#: ../scripts/frosty-logo.scm.h:2 ../scripts/gimp-labels.scm.h:1
-#: ../scripts/glossy.scm.h:2 ../scripts/glowing-logo.scm.h:2
-#: ../scripts/gradient-bevel-logo.scm.h:2 ../scripts/neon-logo.scm.h:1
-#: ../scripts/news-text.scm.h:1 ../scripts/speed-text.scm.h:1
-#: ../scripts/sphere.scm.h:1 ../scripts/starburst-logo.scm.h:1
-#: ../scripts/swirltile.scm.h:2 ../scripts/t-o-p-logo.scm.h:2
-#: ../scripts/textured-logo.scm.h:1 ../scripts/truchet.scm.h:1
-msgid "Background color"
-msgstr "Couleur d'arrière-plan"
-
-#: ../scripts/3dTruchet.scm.h:3 ../scripts/truchet.scm.h:2
-msgid "Block size"
-msgstr "Taille de bloc"
-
-#: ../scripts/3dTruchet.scm.h:4
+#: ../scripts/3dTruchet.scm:223
 msgid "Create an image filled with a 3D Truchet pattern"
 msgstr "Crée une image remplie avec un motif 3D truchet"
 
-#: ../scripts/3dTruchet.scm.h:5 ../scripts/blended-logo.scm.h:7
-msgid "End blend"
-msgstr "Mélange final"
+#: ../scripts/3dTruchet.scm:228 ../scripts/truchet.scm:163
+msgid "Block size"
+msgstr "Taille de bloc"
 
-#: ../scripts/3dTruchet.scm.h:6 ../scripts/truchet.scm.h:5
-msgid "Number of X tiles"
-msgstr "Nombre de carreaux en X"
-
-#: ../scripts/3dTruchet.scm.h:7 ../scripts/truchet.scm.h:6
-msgid "Number of Y tiles"
-msgstr "Nombre de carreaux en Y"
-
-#: ../scripts/3dTruchet.scm.h:8 ../scripts/blended-logo.scm.h:16
-msgid "Start blend"
-msgstr "Départ du mélange"
-
-#: ../scripts/3dTruchet.scm.h:9
-msgid "Supersample"
-msgstr "Super-échantillonage"
-
-#: ../scripts/3dTruchet.scm.h:10 ../scripts/add-bevel.scm.h:4
-#: ../scripts/truchet.scm.h:8
+#: ../scripts/3dTruchet.scm:229 ../scripts/add-bevel.scm:194
+#: ../scripts/truchet.scm:164
 msgid "Thickness"
 msgstr "Épaisseur"
 
-#: ../scripts/add-bevel.scm.h:1
+#: ../scripts/3dTruchet.scm:230 ../scripts/alien-glow-arrow.scm:184
+#: ../scripts/alien-glow-bar.scm:95 ../scripts/alien-glow-bullet.scm:104
+#: ../scripts/alien-glow-button.scm:161 ../scripts/alien-neon-logo.scm:136
+#: ../scripts/alien-neon-logo.scm:180 ../scripts/basic1-logo.scm:67
+#: ../scripts/basic1-logo.scm:101 ../scripts/basic2-logo.scm:90
+#: ../scripts/basic2-logo.scm:124 ../scripts/blended-logo.scm:133
+#: ../scripts/blended-logo.scm:190 ../scripts/bovinated-logo.scm:137
+#: ../scripts/chalk.scm:83 ../scripts/chalk.scm:125
+#: ../scripts/chrome-logo.scm:127 ../scripts/comic-logo.scm:127
+#: ../scripts/comic-logo.scm:168 ../scripts/contactsheet.scm:334
+#: ../scripts/coolmetal-logo.scm:140 ../scripts/coolmetal-logo.scm:178
+#: ../scripts/frosty-logo.scm:117 ../scripts/frosty-logo.scm:150
+#: ../scripts/gimp-labels.scm:180 ../scripts/glossy.scm:210
+#: ../scripts/glossy.scm:282 ../scripts/glowing-logo.scm:85
+#: ../scripts/glowing-logo.scm:118 ../scripts/gradient-bevel-logo.scm:106
+#: ../scripts/gradient-bevel-logo.scm:145 ../scripts/neon-logo.scm:254
+#: ../scripts/neon-logo.scm:290 ../scripts/news-text.scm:90
+#: ../scripts/speed-text.scm:97 ../scripts/sphere.scm:81
+#: ../scripts/starburst-logo.scm:83 ../scripts/starburst-logo.scm:116
+#: ../scripts/swirltile.scm:65 ../scripts/textured-logo.scm:132
+#: ../scripts/textured-logo.scm:174 ../scripts/t-o-p-logo.scm:114
+#: ../scripts/t-o-p-logo.scm:154 ../scripts/truchet.scm:165
+msgid "Background color"
+msgstr "Couleur d'arrière-plan"
+
+#: ../scripts/3dTruchet.scm:231 ../scripts/blended-logo.scm:138
+#: ../scripts/blended-logo.scm:195
+msgid "Start blend"
+msgstr "Départ du mélange"
+
+#: ../scripts/3dTruchet.scm:232 ../scripts/blended-logo.scm:139
+#: ../scripts/blended-logo.scm:196
+msgid "End blend"
+msgstr "Mélange final"
+
+#: ../scripts/3dTruchet.scm:233
+msgid "Supersample"
+msgstr "Super-échantillonage"
+
+#: ../scripts/3dTruchet.scm:234 ../scripts/truchet.scm:167
+msgid "Number of X tiles"
+msgstr "Nombre de carreaux en X"
+
+#: ../scripts/3dTruchet.scm:235 ../scripts/truchet.scm:168
+msgid "Number of Y tiles"
+msgstr "Nombre de carreaux en Y"
+
+#: ../scripts/add-bevel.scm:186
 msgid "Add B_evel..."
 msgstr "Ajouter un bis_eau..."
 
-#: ../scripts/add-bevel.scm.h:2
+#: ../scripts/add-bevel.scm:187
 msgid "Add a beveled border to an image"
 msgstr "Ajoute une bordure biseautée à une image"
 
-#: ../scripts/add-bevel.scm.h:3 ../scripts/chip-away.scm.h:12
-msgid "Keep bump layer"
-msgstr "Conserver le calque de relief"
-
-#: ../scripts/add-bevel.scm.h:5 ../scripts/fuzzyborder.scm.h:10
-#: ../scripts/old-photo.scm.h:6 ../scripts/round-corners.scm.h:8
-#: ../scripts/slide.scm.h:6 ../scripts/spinning-globe.scm.h:6
+#: ../scripts/add-bevel.scm:195 ../scripts/fuzzyborder.scm:161
+#: ../scripts/old-photo.scm:105 ../scripts/round-corners.scm:140
+#: ../scripts/slide.scm:252 ../scripts/spinning-globe.scm:107
 msgid "Work on copy"
 msgstr "Travailler sur une copie"
 
-#: ../scripts/addborder.scm.h:1
+#: ../scripts/add-bevel.scm:196 ../scripts/chip-away.scm:153
+#: ../scripts/chip-away.scm:200
+msgid "Keep bump layer"
+msgstr "Conserver le calque de relief"
+
+#: ../scripts/addborder.scm:171
 msgid "Add _Border..."
 msgstr "Ajouter une _bordure..."
 
-#: ../scripts/addborder.scm.h:2
+#: ../scripts/addborder.scm:172
 msgid "Add a border around an image"
 msgstr "Ajoute une bordure autour de l'image"
 
-#: ../scripts/addborder.scm.h:3
+#: ../scripts/addborder.scm:179
 msgid "Border X size"
 msgstr "Taille de la bordure en X"
 
-#: ../scripts/addborder.scm.h:4
+#: ../scripts/addborder.scm:180
 msgid "Border Y size"
 msgstr "Taille de la bordure en Y"
 
-#: ../scripts/addborder.scm.h:5
+#: ../scripts/addborder.scm:181
 msgid "Border color"
 msgstr "Couleur de la bordure"
 
-#: ../scripts/addborder.scm.h:6
+#: ../scripts/addborder.scm:182
 msgid "Delta value on color"
 msgstr "Valeur de différence de couleur"
 
-#: ../scripts/alien-glow-arrow.scm.h:2
-msgid "Create an arrow graphic with an eerie glow for web pages"
-msgstr "Crée une flèche graphique avec une lueur spectrale pour les pages Web"
-
-#: ../scripts/alien-glow-arrow.scm.h:3
-#: ../scripts/beveled-pattern-arrow.scm.h:2
-msgid "Down"
-msgstr "Bas"
-
-#: ../scripts/alien-glow-arrow.scm.h:4 ../scripts/alien-glow-bar.scm.h:5
-#: ../scripts/alien-glow-bullet.scm.h:3 ../scripts/alien-glow-button.scm.h:4
-#: ../scripts/camo.scm.h:5 ../scripts/fuzzyborder.scm.h:6
-msgid "Flatten image"
-msgstr "Aplatir l'image"
-
-#: ../scripts/alien-glow-arrow.scm.h:5 ../scripts/alien-glow-bar.scm.h:6
-#: ../scripts/alien-glow-bullet.scm.h:4 ../scripts/alien-glow-button.scm.h:7
-#: ../scripts/alien-glow-logo.scm.h:6 ../scripts/alien-neon-logo.scm.h:8
-#: ../scripts/burn-in-anim.scm.h:8 ../scripts/neon-logo.scm.h:8
-#: ../scripts/starscape-logo.scm.h:6
-msgid "Glow color"
-msgstr "Couleur de la lueur"
-
-#: ../scripts/alien-glow-arrow.scm.h:6
-#: ../scripts/beveled-pattern-arrow.scm.h:3
-msgid "Left"
-msgstr "Gauche"
-
-#: ../scripts/alien-glow-arrow.scm.h:7
-#: ../scripts/beveled-pattern-arrow.scm.h:4
-msgid "Orientation"
-msgstr "Orientation"
-
-#: ../scripts/alien-glow-arrow.scm.h:8
-#: ../scripts/beveled-pattern-arrow.scm.h:6
-msgid "Right"
-msgstr "Droite"
-
-#: ../scripts/alien-glow-arrow.scm.h:9
-#: ../scripts/beveled-pattern-arrow.scm.h:7 ../scripts/lava.scm.h:7
-msgid "Size"
-msgstr "Taille"
-
-#: ../scripts/alien-glow-arrow.scm.h:10
-#: ../scripts/beveled-pattern-arrow.scm.h:8
-msgid "Up"
-msgstr "Haut"
-
-#: ../scripts/alien-glow-arrow.scm.h:11
-#: ../scripts/beveled-pattern-arrow.scm.h:9
+#: ../scripts/alien-glow-arrow.scm:175 ../scripts/beveled-pattern-arrow.scm:149
 msgid "_Arrow..."
 msgstr "_Flêche..."
 
-#: ../scripts/alien-glow-bar.scm.h:2
-msgid "Bar height"
-msgstr "Hauteur de la barre"
+#: ../scripts/alien-glow-arrow.scm:176
+msgid "Create an arrow graphic with an eerie glow for web pages"
+msgstr "Crée une flèche graphique avec une lueur spectrale pour les pages Web"
 
-#: ../scripts/alien-glow-bar.scm.h:3
-msgid "Bar length"
-msgstr "Longueur de la barre"
+#: ../scripts/alien-glow-arrow.scm:181 ../scripts/beveled-pattern-arrow.scm:155
+#: ../scripts/lava.scm:126
+msgid "Size"
+msgstr "Taille"
 
-#: ../scripts/alien-glow-bar.scm.h:4
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Orientation"
+msgstr "Orientation"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Right"
+msgstr "Droite"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Left"
+msgstr "Gauche"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Up"
+msgstr "Haut"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Down"
+msgstr "Bas"
+
+#: ../scripts/alien-glow-arrow.scm:183 ../scripts/alien-glow-bar.scm:94
+#: ../scripts/alien-glow-bullet.scm:103 ../scripts/alien-glow-button.scm:160
+#: ../scripts/alien-glow-logo.scm:74 ../scripts/alien-glow-logo.scm:114
+#: ../scripts/alien-neon-logo.scm:135 ../scripts/alien-neon-logo.scm:179
+#: ../scripts/burn-in-anim.scm:226 ../scripts/neon-logo.scm:255
+#: ../scripts/neon-logo.scm:291 ../scripts/starscape-logo.scm:144
+#: ../scripts/starscape-logo.scm:175
+msgid "Glow color"
+msgstr "Couleur de la lueur"
+
+#: ../scripts/alien-glow-arrow.scm:185 ../scripts/alien-glow-bar.scm:96
+#: ../scripts/alien-glow-bullet.scm:105 ../scripts/alien-glow-button.scm:164
+#: ../scripts/camo.scm:107 ../scripts/fuzzyborder.scm:162
+msgid "Flatten image"
+msgstr "Aplatir l'image"
+
+#: ../scripts/alien-glow-bar.scm:86 ../scripts/beveled-pattern-hrule.scm:77
+msgid "_Hrule..."
+msgstr "_Règle horizontale..."
+
+#: ../scripts/alien-glow-bar.scm:87
 msgid "Create an Hrule graphic with an eerie glow for web pages"
 msgstr ""
 "Crée une ligne horizontale (hrule) graphique avec une lueur spectrale pour "
 "les pages Web"
 
-#: ../scripts/alien-glow-bar.scm.h:7 ../scripts/beveled-pattern-hrule.scm.h:5
-msgid "_Hrule..."
-msgstr "_Règle horizontale..."
+#: ../scripts/alien-glow-bar.scm:92
+msgid "Bar length"
+msgstr "Longueur de la barre"
 
-#: ../scripts/alien-glow-bullet.scm.h:2
-msgid "Create a bullet graphic with an eerie glow for web pages"
-msgstr "Crée une puce graphique avec une lueur spectrale pour les pages Web"
+#: ../scripts/alien-glow-bar.scm:93
+msgid "Bar height"
+msgstr "Hauteur de la barre"
 
-#: ../scripts/alien-glow-bullet.scm.h:5 ../scripts/text-circle.scm.h:6
-#: ../scripts/tileblur.scm.h:7
-msgid "Radius"
-msgstr "Rayon"
-
-#: ../scripts/alien-glow-bullet.scm.h:6
-#: ../scripts/beveled-pattern-bullet.scm.h:5
+#: ../scripts/alien-glow-bullet.scm:96 ../scripts/beveled-pattern-bullet.scm:84
 msgid "_Bullet..."
 msgstr "_Puce..."
 
-#: ../scripts/alien-glow-button.scm.h:1
-#: ../scripts/beveled-pattern-button.scm.h:1
+#: ../scripts/alien-glow-bullet.scm:97
+msgid "Create a bullet graphic with an eerie glow for web pages"
+msgstr "Crée une puce graphique avec une lueur spectrale pour les pages Web"
+
+#: ../scripts/alien-glow-bullet.scm:102 ../scripts/text-circle.scm:211
+#: ../scripts/tileblur.scm:73
+msgid "Radius"
+msgstr "Rayon"
+
+#: ../scripts/alien-glow-button.scm:150
+#: ../scripts/beveled-pattern-button.scm:120
 msgid "B_utton..."
 msgstr "Bo_uton..."
 
-#: ../scripts/alien-glow-button.scm.h:3
+#: ../scripts/alien-glow-button.scm:151
 msgid "Create a button graphic with an eerie glow for web pages"
 msgstr "Crée un bouton graphique avec une lueur spectrale pour les pages Web"
 
-#: ../scripts/alien-glow-button.scm.h:8
-msgid "Glow radius"
-msgstr "Rayon de la lueur"
-
-#: ../scripts/alien-glow-button.scm.h:9 ../scripts/beveled-button.scm.h:6
-msgid "Padding"
-msgstr "Marge"
-
-#: ../scripts/alien-glow-button.scm.h:11 ../scripts/basic1-logo.scm.h:7
-#: ../scripts/basic2-logo.scm.h:8 ../scripts/beveled-button.scm.h:10
-#: ../scripts/beveled-pattern-button.scm.h:8 ../scripts/blended-logo.scm.h:18
-#: ../scripts/gimp-headers.scm.h:14 ../scripts/gimp-labels.scm.h:18
-#: ../scripts/i26-gunya2.scm.h:8 ../scripts/news-text.scm.h:11
-#: ../scripts/pupi-button.scm.h:14 ../scripts/speed-text.scm.h:9
+#: ../scripts/alien-glow-button.scm:159 ../scripts/basic1-logo.scm:68
+#: ../scripts/basic1-logo.scm:102 ../scripts/basic2-logo.scm:91
+#: ../scripts/basic2-logo.scm:125 ../scripts/beveled-button.scm:154
+#: ../scripts/beveled-pattern-button.scm:129 ../scripts/blended-logo.scm:189
+#: ../scripts/contactsheet.scm:333 ../scripts/gimp-headers.scm:158
+#: ../scripts/gimp-headers.scm:181 ../scripts/gimp-labels.scm:178
+#: ../scripts/i26-gunya2.scm:98 ../scripts/news-text.scm:89
+#: ../scripts/pupi-button.scm:198 ../scripts/speed-text.scm:96
 msgid "Text color"
 msgstr "Couleur du texte"
 
-#: ../scripts/alien-glow-logo.scm.h:1
-msgid "Add an eerie glow around the selected region (or alpha)"
-msgstr "Ajoute une lueur spectrale autour de la région sélectionnée (ou alpha)"
+#: ../scripts/alien-glow-button.scm:162 ../scripts/beveled-button.scm:155
+msgid "Padding"
+msgstr "Marge"
 
-#: ../scripts/alien-glow-logo.scm.h:2
+#: ../scripts/alien-glow-button.scm:163
+msgid "Glow radius"
+msgstr "Rayon de la lueur"
+
+#: ../scripts/alien-glow-logo.scm:65 ../scripts/alien-glow-logo.scm:105
 msgid "Alien _Glow..."
 msgstr "Lueur _extérieure..."
 
-#: ../scripts/alien-glow-logo.scm.h:3
-msgid "Create a logo with an alien glow around the text"
-msgstr "Crée un logo avec une lueur extérieure autour du texte"
+#: ../scripts/alien-glow-logo.scm:66
+msgid "Add an eerie glow around the selected region (or alpha)"
+msgstr "Ajoute une lueur spectrale autour de la région sélectionnée (ou alpha)"
 
-#: ../scripts/alien-glow-logo.scm.h:7
+#: ../scripts/alien-glow-logo.scm:73
 msgid "Glow size (pixels * 4)"
 msgstr "Taille de la lueur (pixels * 4)"
 
-#: ../scripts/alien-neon-logo.scm.h:1
+#: ../scripts/alien-glow-logo.scm:106
+msgid "Create a logo with an alien glow around the text"
+msgstr "Crée un logo avec une lueur extérieure autour du texte"
+
+#: ../scripts/alien-neon-logo.scm:127 ../scripts/alien-neon-logo.scm:170
+msgid "Alien _Neon..."
+msgstr "_Néon extérieur..."
+
+#: ../scripts/alien-neon-logo.scm:128
 msgid "Add psychedelic outlines to the selected region (or alpha)"
 msgstr ""
 "Ajoute un contour psychédélique autour de la région sélectionnée (ou alpha)"
 
-#: ../scripts/alien-neon-logo.scm.h:2
-msgid "Alien _Neon..."
-msgstr "_Néon extérieur..."
-
-#: ../scripts/alien-neon-logo.scm.h:4
-msgid "Create a logo with psychedelic outlines around the text"
-msgstr "Crée un logo avec des contours psychédéliques autour du texte"
-
-#: ../scripts/alien-neon-logo.scm.h:5
-msgid "Fade away"
-msgstr "Affaiblissement"
-
-#: ../scripts/alien-neon-logo.scm.h:9
-msgid "Number of bands"
-msgstr "Nombre de bandes"
-
-#: ../scripts/alien-neon-logo.scm.h:11
+#: ../scripts/alien-neon-logo.scm:137 ../scripts/alien-neon-logo.scm:181
 msgid "Width of bands"
 msgstr "Largeur des bandes"
 
-#: ../scripts/alien-neon-logo.scm.h:12
+#: ../scripts/alien-neon-logo.scm:138 ../scripts/alien-neon-logo.scm:182
 msgid "Width of gaps"
 msgstr "Largeur des brèches"
 
-#: ../scripts/basic1-logo.scm.h:1
+#: ../scripts/alien-neon-logo.scm:139 ../scripts/alien-neon-logo.scm:183
+msgid "Number of bands"
+msgstr "Nombre de bandes"
+
+#: ../scripts/alien-neon-logo.scm:140 ../scripts/alien-neon-logo.scm:184
+msgid "Fade away"
+msgstr "Affaiblissement"
+
+#: ../scripts/alien-neon-logo.scm:171
+msgid "Create a logo with psychedelic outlines around the text"
+msgstr "Crée un logo avec des contours psychédéliques autour du texte"
+
+#: ../scripts/basic1-logo.scm:59 ../scripts/basic1-logo.scm:92
+msgid "_Basic I..."
+msgstr "_Basique I..."
+
+#: ../scripts/basic1-logo.scm:60
 msgid ""
 "Add a gradient effect, a drop shadow, and a background to the selected "
 "region (or alpha)"
@@ -648,106 +671,107 @@ msgstr ""
 "Ajoute un effet graduel, une ombre portée et un fond à la région "
 "sélectionnée (ou alpha)"
 
-#: ../scripts/basic1-logo.scm.h:3
+#: ../scripts/basic1-logo.scm:93
 msgid ""
 "Create a plain text logo with a gradient effect, a drop shadow, and a "
 "background"
 msgstr ""
 "Crée un logo textuel avec un effet graduel, une ombre portée et un fond"
 
-#: ../scripts/basic1-logo.scm.h:8
-msgid "_Basic I..."
-msgstr "_Basique I..."
-
-#: ../scripts/basic2-logo.scm.h:1
-msgid "Add a shadow and a highlight to the selected region (or alpha)"
-msgstr "Ajoute un éclairage et une ombre à la région sélectionnée (ou alpha)"
-
-#: ../scripts/basic2-logo.scm.h:2
+#: ../scripts/basic2-logo.scm:82 ../scripts/basic2-logo.scm:115
 msgid "B_asic II..."
 msgstr "B_asique II..."
 
-#: ../scripts/basic2-logo.scm.h:4
+#: ../scripts/basic2-logo.scm:83
+msgid "Add a shadow and a highlight to the selected region (or alpha)"
+msgstr "Ajoute un éclairage et une ombre à la région sélectionnée (ou alpha)"
+
+#: ../scripts/basic2-logo.scm:116
 msgid "Create a simple logo with a shadow and a highlight"
 msgstr "Crée un logo simple avec un éclairage et une ombre"
 
-#: ../scripts/beveled-button.scm.h:1 ../scripts/gradient-bevel-logo.scm.h:4
-#: ../scripts/pupi-button.scm.h:1
-msgid "Bevel width"
-msgstr "Largeur du biseau"
-
-#: ../scripts/beveled-button.scm.h:2
-msgid "Create a simple, beveled button graphic for webpages"
-msgstr "Crée un simple bouton graphique biseauté pour les pages Web"
-
-#: ../scripts/beveled-button.scm.h:5
-msgid "Lower-right color"
-msgstr "Couleur bas-droite"
-
-#: ../scripts/beveled-button.scm.h:7 ../scripts/beveled-pattern-button.scm.h:6
-#: ../scripts/pupi-button.scm.h:11
-msgid "Pressed"
-msgstr "Activé"
-
-#: ../scripts/beveled-button.scm.h:8
+#: ../scripts/beveled-button.scm:143
 msgid "Simple _Beveled Button..."
 msgstr "Simple bouton _biseauté..."
 
-#: ../scripts/beveled-button.scm.h:11
+#: ../scripts/beveled-button.scm:144
+msgid "Create a simple, beveled button graphic for webpages"
+msgstr "Crée un simple bouton graphique biseauté pour les pages Web"
+
+#: ../scripts/beveled-button.scm:152
 msgid "Upper-left color"
 msgstr "Couleur haut-gauche"
 
-#: ../scripts/beveled-pattern-arrow.scm.h:1
+#: ../scripts/beveled-button.scm:153
+msgid "Lower-right color"
+msgstr "Couleur bas-droite"
+
+#: ../scripts/beveled-button.scm:156 ../scripts/gradient-bevel-logo.scm:105
+#: ../scripts/gradient-bevel-logo.scm:144 ../scripts/pupi-button.scm:204
+msgid "Bevel width"
+msgstr "Largeur du biseau"
+
+#: ../scripts/beveled-button.scm:157 ../scripts/beveled-pattern-button.scm:131
+#: ../scripts/pupi-button.scm:208
+msgid "Pressed"
+msgstr "Activé"
+
+#: ../scripts/beveled-pattern-arrow.scm:150
 msgid "Create a beveled pattern arrow for webpages"
 msgstr "Crée une flèche biseautée pour les pages Web"
 
-#: ../scripts/beveled-pattern-bullet.scm.h:1
+#: ../scripts/beveled-pattern-bullet.scm:85
 msgid "Create a beveled pattern bullet for webpages"
 msgstr "Crée d'une puce biseautée pour les pages Web"
 
-#: ../scripts/beveled-pattern-bullet.scm.h:2
+#: ../scripts/beveled-pattern-bullet.scm:90
 msgid "Diameter"
 msgstr "Diamètre"
 
-#: ../scripts/beveled-pattern-bullet.scm.h:4
-#: ../scripts/beveled-pattern-heading.scm.h:7
-#: ../scripts/spinning-globe.scm.h:4
+#: ../scripts/beveled-pattern-bullet.scm:92
+#: ../scripts/beveled-pattern-heading.scm:117 ../scripts/spinning-globe.scm:105
 msgid "Transparent background"
 msgstr "Arrière-plan transparent"
 
-#: ../scripts/beveled-pattern-button.scm.h:2
+#: ../scripts/beveled-pattern-button.scm:121
 msgid "Create a beveled pattern button for webpages"
 msgstr "Crée un bouton biseauté pour les pages Web"
 
-#: ../scripts/beveled-pattern-heading.scm.h:1
-msgid "Create a beveled pattern heading for webpages"
-msgstr "Crée un titre biseauté pour les pages Web"
-
-#: ../scripts/beveled-pattern-heading.scm.h:4
+#: ../scripts/beveled-pattern-heading.scm:107
 msgid "H_eading..."
 msgstr "_Titre..."
 
-#: ../scripts/beveled-pattern-hrule.scm.h:1
+#: ../scripts/beveled-pattern-heading.scm:108
+msgid "Create a beveled pattern heading for webpages"
+msgstr "Crée un titre biseauté pour les pages Web"
+
+#: ../scripts/beveled-pattern-hrule.scm:78
 msgid "Create a beveled pattern hrule for webpages"
 msgstr "Crée une ligne horizontale (hrule) biseautée pour les pages Web"
 
-#: ../scripts/beveled-pattern-hrule.scm.h:2 ../scripts/gimp-labels.scm.h:8
-#: ../scripts/gradient-example.scm.h:4 ../scripts/mkbrush.scm.h:7
-#: ../scripts/swirltile.scm.h:7
-msgid "Height"
-msgstr "Hauteur"
-
-#: ../scripts/beveled-pattern-hrule.scm.h:4
-#: ../scripts/gradient-example.scm.h:5 ../scripts/mkbrush.scm.h:11
-#: ../scripts/swirltile.scm.h:11
+#: ../scripts/beveled-pattern-hrule.scm:83 ../scripts/gradient-example.scm:70
+#: ../scripts/mkbrush.scm:70 ../scripts/mkbrush.scm:134
+#: ../scripts/mkbrush.scm:188 ../scripts/mkbrush.scm:255
+#: ../scripts/swirltile.scm:62
 msgid "Width"
 msgstr "Largeur"
 
-#: ../scripts/blend-anim.scm.h:1
+#: ../scripts/beveled-pattern-hrule.scm:84 ../scripts/gimp-labels.scm:187
+#: ../scripts/gradient-example.scm:71 ../scripts/mkbrush.scm:71
+#: ../scripts/mkbrush.scm:135 ../scripts/mkbrush.scm:189
+#: ../scripts/mkbrush.scm:256 ../scripts/swirltile.scm:61
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../scripts/blend-anim.scm:222
 msgid "Blend Animation needs at least three source layers"
 msgstr "L'animation mélanger a besoin d'au moins trois calques sources"
 
-#: ../scripts/blend-anim.scm.h:2
+#: ../scripts/blend-anim.scm:228
+msgid "_Blend..."
+msgstr "_Mélanger..."
+
+#: ../scripts/blend-anim.scm:229
 msgid ""
 "Create intermediate layers to blend two or more layers over a background as "
 "an animation"
@@ -755,23 +779,23 @@ msgstr ""
 "Crée des calques intermédiaires pour mélanger deux ou plusieurs calques par-"
 "dessus un fond comme animation"
 
-#: ../scripts/blend-anim.scm.h:3
+#: ../scripts/blend-anim.scm:236
 msgid "Intermediate frames"
 msgstr "Séquences intermédaires"
 
-#: ../scripts/blend-anim.scm.h:4
-msgid "Looped"
-msgstr "En boucle"
-
-#: ../scripts/blend-anim.scm.h:5
+#: ../scripts/blend-anim.scm:237
 msgid "Max. blur radius"
 msgstr "Rayon max. du flou"
 
-#: ../scripts/blend-anim.scm.h:6
-msgid "_Blend..."
-msgstr "_Mélanger..."
+#: ../scripts/blend-anim.scm:238
+msgid "Looped"
+msgstr "En boucle"
 
-#: ../scripts/blended-logo.scm.h:1
+#: ../scripts/blended-logo.scm:124 ../scripts/blended-logo.scm:180
+msgid "Blen_ded..."
+msgstr "Mélan_gé..."
+
+#: ../scripts/blended-logo.scm:125
 msgid ""
 "Add blended backgrounds, highlights, and shadows to the selected region (or "
 "alpha)"
@@ -779,116 +803,76 @@ msgstr ""
 "Ajoute des fonds mélangés, éclairages et ombres à la région sélectionnée (ou "
 "alpha)"
 
-#: ../scripts/blended-logo.scm.h:3
-msgid "Blen_ded..."
-msgstr "Mélan_gé..."
-
-#: ../scripts/blended-logo.scm.h:4
-msgid "Blend mode"
-msgstr "Mode de mélange"
-
-#: ../scripts/blended-logo.scm.h:5
-msgid "Create a logo with blended backgrounds, highlights, and shadows"
-msgstr "Crée un logo avec des fonds mélangés, éclairages et ombres"
-
-#: ../scripts/blended-logo.scm.h:6
-msgid "Custom Gradient"
-msgstr "Dégradé personnalisé"
-
-#: ../scripts/blended-logo.scm.h:8
-msgid "FG-BG-HSV"
-msgstr "PP-AP-HSV"
-
-#: ../scripts/blended-logo.scm.h:9
-msgid "FG-BG-RGB"
-msgstr "PP-AP-RGB"
-
-#: ../scripts/blended-logo.scm.h:10
-msgid "FG-Transparent"
-msgstr "PP Transparent"
-
-#: ../scripts/blended-logo.scm.h:13 ../scripts/comic-logo.scm.h:7
-#: ../scripts/coolmetal-logo.scm.h:8 ../scripts/land.scm.h:3
-#: ../scripts/lava.scm.h:2 ../scripts/rendermap.scm.h:4
-#: ../scripts/spyrogimp.scm.h:9
-msgid "Gradient"
-msgstr "Dégradé"
-
-#: ../scripts/blended-logo.scm.h:14 ../scripts/comic-logo.scm.h:8
-#: ../scripts/coolmetal-logo.scm.h:9 ../scripts/gradient-example.scm.h:3
-#: ../scripts/rendermap.scm.h:5 ../scripts/title-header.scm.h:4
-msgid "Gradient reverse"
-msgstr "Dégradé inverse"
-
-#: ../scripts/blended-logo.scm.h:15
+#: ../scripts/blended-logo.scm:132
 msgid "Offset (pixels)"
 msgstr "Décalage (pixels)"
 
-#: ../scripts/bovinated-logo.scm.h:1
-msgid "Add 'cow spots' to the selected region (or alpha)"
-msgstr "Ajoute des « taches bovines » à la région sélectionnée (ou alpha)"
+#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+msgid "Blend mode"
+msgstr "Mode de mélange"
 
-#: ../scripts/bovinated-logo.scm.h:2 ../scripts/chrome-logo.scm.h:2
-msgid "Background Color"
-msgstr "Couleur d'arrière-plan"
+#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+msgid "FG-BG-RGB"
+msgstr "PP-AP-RGB"
 
-#: ../scripts/bovinated-logo.scm.h:4
+#: ../scripts/blended-logo.scm:135 ../scripts/blended-logo.scm:192
+msgid "FG-BG-HSV"
+msgstr "PP-AP-HSV"
+
+#: ../scripts/blended-logo.scm:136 ../scripts/blended-logo.scm:193
+msgid "FG-Transparent"
+msgstr "PP Transparent"
+
+#: ../scripts/blended-logo.scm:137 ../scripts/blended-logo.scm:194
+msgid "Custom Gradient"
+msgstr "Dégradé personnalisé"
+
+#: ../scripts/blended-logo.scm:140 ../scripts/blended-logo.scm:197
+#: ../scripts/comic-logo.scm:123 ../scripts/comic-logo.scm:164
+#: ../scripts/coolmetal-logo.scm:141 ../scripts/coolmetal-logo.scm:179
+#: ../scripts/land.scm:86 ../scripts/lava.scm:128 ../scripts/rendermap.scm:89
+#: ../scripts/spyrogimp.scm:354
+msgid "Gradient"
+msgstr "Dégradé"
+
+#: ../scripts/blended-logo.scm:141 ../scripts/blended-logo.scm:198
+#: ../scripts/comic-logo.scm:124 ../scripts/comic-logo.scm:165
+#: ../scripts/coolmetal-logo.scm:142 ../scripts/coolmetal-logo.scm:180
+#: ../scripts/gradient-example.scm:72 ../scripts/rendermap.scm:90
+#: ../scripts/title-header.scm:173
+msgid "Gradient reverse"
+msgstr "Dégradé inverse"
+
+#: ../scripts/blended-logo.scm:181
+msgid "Create a logo with blended backgrounds, highlights, and shadows"
+msgstr "Crée un logo avec des fonds mélangés, éclairages et ombres"
+
+#: ../scripts/bovinated-logo.scm:92 ../scripts/bovinated-logo.scm:126
 msgid "Bo_vination..."
 msgstr "Bo_vination..."
 
-#: ../scripts/bovinated-logo.scm.h:5
-msgid "Create a logo with text in the style of 'cow spots'"
-msgstr "Crée un logo avec un texte dans le style « tache bovine »"
+#: ../scripts/bovinated-logo.scm:93
+msgid "Add 'cow spots' to the selected region (or alpha)"
+msgstr "Ajoute des « taches bovines » à la région sélectionnée (ou alpha)"
 
-#: ../scripts/bovinated-logo.scm.h:8
+#: ../scripts/bovinated-logo.scm:100 ../scripts/bovinated-logo.scm:135
 msgid "Spots density X"
 msgstr "Densité de points en X"
 
-#: ../scripts/bovinated-logo.scm.h:9
+#: ../scripts/bovinated-logo.scm:101 ../scripts/bovinated-logo.scm:136
 msgid "Spots density Y"
 msgstr "Densité de points en Y"
 
-#: ../scripts/burn-in-anim.scm.h:1
-msgid "Add glowing"
-msgstr "Ajouter lueur"
+#: ../scripts/bovinated-logo.scm:102 ../scripts/chrome-logo.scm:94
+msgid "Background Color"
+msgstr "Couleur d'arrière-plan"
 
-#: ../scripts/burn-in-anim.scm.h:2
-msgid "After glow"
-msgstr "Rougeoiement"
+#: ../scripts/bovinated-logo.scm:127
+msgid "Create a logo with text in the style of 'cow spots'"
+msgstr "Crée un logo avec un texte dans le style « tache bovine »"
 
-#: ../scripts/burn-in-anim.scm.h:3
-msgid "B_urn-In..."
-msgstr "En _flammes..."
-
-#: ../scripts/burn-in-anim.scm.h:4
-msgid "Corona width"
-msgstr "Largeur de la couronne"
-
-#: ../scripts/burn-in-anim.scm.h:5
-msgid ""
-"Create intermediate layers to produce an animated 'burn-in' transition "
-"between two layers"
-msgstr ""
-"Crée des calques intermédiaires pour produire une animation de transition "
-"« en flammes » entre deux calques"
-
-#: ../scripts/burn-in-anim.scm.h:6
-msgid "Fadeout"
-msgstr "Fondu"
-
-#: ../scripts/burn-in-anim.scm.h:7
-msgid "Fadeout width"
-msgstr "Largeur de l'estompement"
-
-#: ../scripts/burn-in-anim.scm.h:9
-msgid "Prepare for GIF"
-msgstr "Préparer pour GIF"
-
-#: ../scripts/burn-in-anim.scm.h:10
-msgid "Speed (pixels/frame)"
-msgstr "Vitesse (pixels/image)"
-
-#: ../scripts/burn-in-anim.scm.h:11
+#. --- false form of "if-1"
+#: ../scripts/burn-in-anim.scm:211
 msgid ""
 "The Burn-In script needs two layers in total. A foreground layer with "
 "transparency and a background layer."
@@ -896,63 +880,83 @@ msgstr ""
 "L'effet « en flammes » nécessite deux calques au total. Un calque de premier "
 "plan avec transparence et un calque de fond."
 
-#: ../scripts/camo.scm.h:1
-msgid "Color 1"
-msgstr "Couleur 1"
+#: ../scripts/burn-in-anim.scm:218
+msgid "B_urn-In..."
+msgstr "En _flammes..."
 
-#: ../scripts/camo.scm.h:2
-msgid "Color 2"
-msgstr "Couleur 2"
+#: ../scripts/burn-in-anim.scm:219
+msgid ""
+"Create intermediate layers to produce an animated 'burn-in' transition "
+"between two layers"
+msgstr ""
+"Crée des calques intermédiaires pour produire une animation de transition "
+"« en flammes » entre deux calques"
 
-#: ../scripts/camo.scm.h:3
-msgid "Color 3"
-msgstr "Couleur 3"
+#: ../scripts/burn-in-anim.scm:227
+msgid "Fadeout"
+msgstr "Fondu"
 
-#: ../scripts/camo.scm.h:4
-msgid "Create an image filled with a camouflage pattern"
-msgstr "Crée une image remplie avec un motif camouflage"
+#: ../scripts/burn-in-anim.scm:228
+msgid "Fadeout width"
+msgstr "Largeur de l'estompement"
 
-#: ../scripts/camo.scm.h:6 ../scripts/rendermap.scm.h:6
-msgid "Granularity"
-msgstr "Granularité"
+#: ../scripts/burn-in-anim.scm:229
+msgid "Corona width"
+msgstr "Largeur de la couronne"
 
-#: ../scripts/camo.scm.h:7 ../scripts/rendermap.scm.h:7
-msgid "Image size"
-msgstr "Taille de l'image"
+#: ../scripts/burn-in-anim.scm:230
+msgid "After glow"
+msgstr "Rougeoiement"
 
-#: ../scripts/camo.scm.h:8 ../scripts/distress-selection.scm.h:3
-msgid "Smooth"
-msgstr "Adoucir"
+#: ../scripts/burn-in-anim.scm:231
+msgid "Add glowing"
+msgstr "Ajouter lueur"
 
-#: ../scripts/camo.scm.h:9
+#: ../scripts/burn-in-anim.scm:232
+msgid "Prepare for GIF"
+msgstr "Préparer pour GIF"
+
+#: ../scripts/burn-in-anim.scm:233
+msgid "Speed (pixels/frame)"
+msgstr "Vitesse (pixels/image)"
+
+#: ../scripts/camo.scm:95
 msgid "_Camouflage..."
 msgstr "_Camouflage..."
 
-#: ../scripts/carve-it.scm.h:1
-msgid "Carve white areas"
-msgstr "Entailler les zones blanches"
+#: ../scripts/camo.scm:96
+msgid "Create an image filled with a camouflage pattern"
+msgstr "Crée une image remplie avec un motif camouflage"
 
-#: ../scripts/carve-it.scm.h:2
-msgid "Image to carve"
-msgstr "Image à entailler"
+#: ../scripts/camo.scm:101 ../scripts/rendermap.scm:87
+msgid "Image size"
+msgstr "Taille de l'image"
 
-#: ../scripts/carve-it.scm.h:3
-msgid "Stencil C_arve..."
-msgstr "Patron de t_aillage..."
+#: ../scripts/camo.scm:102 ../scripts/rendermap.scm:88
+msgid "Granularity"
+msgstr "Granularité"
 
-#: ../scripts/carved-logo.scm.h:1
-msgid "Background Image"
-msgstr "Image d'arrière-plan"
+#: ../scripts/camo.scm:103
+msgid "Color 1"
+msgstr "Couleur 1"
 
-#: ../scripts/carved-logo.scm.h:2
-msgid "Carve raised text"
-msgstr "Entaille le texte agrandi"
+#: ../scripts/camo.scm:104
+msgid "Color 2"
+msgstr "Couleur 2"
 
-#: ../scripts/carved-logo.scm.h:3
+#: ../scripts/camo.scm:105
+msgid "Color 3"
+msgstr "Couleur 3"
+
+#: ../scripts/camo.scm:106 ../scripts/distress-selection.scm:110
+msgid "Smooth"
+msgstr "Adoucir"
+
+#: ../scripts/carved-logo.scm:161
 msgid "Carved..."
 msgstr "Taillé..."
 
-#: ../scripts/carved-logo.scm.h:4
+#: ../scripts/carved-logo.scm:162
 msgid ""
 "Create a logo with text raised above or carved in to the specified "
 "background image"
@@ -960,65 +964,89 @@ msgstr ""
 "Crée un logo avec un texte qui ressort ou taillé dans le fond spécifié de "
 "l'image"
 
-#: ../scripts/carved-logo.scm.h:7
+#: ../scripts/carved-logo.scm:170
+msgid "Background Image"
+msgstr "Image d'arrière-plan"
+
+#: ../scripts/carved-logo.scm:173
+msgid "Carve raised text"
+msgstr "Entaille le texte agrandi"
+
+#: ../scripts/carved-logo.scm:174
 msgid "Padding around text"
 msgstr "Remplissage autour du texte"
 
-#: ../scripts/chalk.scm.h:2
-msgid "Chalk color"
-msgstr "Couleur de craie"
+#: ../scripts/carve-it.scm:181
+msgid "Stencil C_arve..."
+msgstr "Patron de t_aillage..."
 
-#: ../scripts/chalk.scm.h:3
+#: ../scripts/carve-it.scm:189
+msgid "Image to carve"
+msgstr "Image à entailler"
+
+#: ../scripts/carve-it.scm:190
+msgid "Carve white areas"
+msgstr "Entailler les zones blanches"
+
+#: ../scripts/chalk.scm:75 ../scripts/chalk.scm:116
+msgid "_Chalk..."
+msgstr "C_raie..."
+
+#: ../scripts/chalk.scm:76
 msgid "Create a chalk drawing effect for the selected region (or alpha)"
 msgstr ""
 "Crée un effet de dessin à la craie sur la région sélectionnée (ou alpha)"
 
-#: ../scripts/chalk.scm.h:4
+#: ../scripts/chalk.scm:117
 msgid "Create a logo resembling chalk scribbled on a blackboard"
 msgstr "Crée un logo ressemblant à de la craie griffonnée sur un tableau noir"
 
-#: ../scripts/chalk.scm.h:8
-msgid "_Chalk..."
-msgstr "C_raie..."
+#: ../scripts/chalk.scm:126
+msgid "Chalk color"
+msgstr "Couleur de craie"
 
-#: ../scripts/chip-away.scm.h:1
+#: ../scripts/chip-away.scm:141 ../scripts/chip-away.scm:187
+msgid "Chip Awa_y..."
+msgstr "Éclaté..."
+
+#: ../scripts/chip-away.scm:142
 msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
 msgstr ""
 "Ajoute un effet de sculpture sur bois à la région sélectionnée (ou alpha)"
 
-#: ../scripts/chip-away.scm.h:2
-msgid "Blur amount"
-msgstr "Quantité de flou"
-
-#: ../scripts/chip-away.scm.h:3
-msgid "Chip Awa_y..."
-msgstr "Éclaté..."
-
-#: ../scripts/chip-away.scm.h:4
+#: ../scripts/chip-away.scm:149 ../scripts/chip-away.scm:196
 msgid "Chip amount"
 msgstr "Quantité d'éclats"
 
-#: ../scripts/chip-away.scm.h:5
-msgid "Create a logo resembling a chipped wood carving"
-msgstr "Crée un logo ressemblant à du bois sculpté"
+#: ../scripts/chip-away.scm:150 ../scripts/chip-away.scm:197
+msgid "Blur amount"
+msgstr "Quantité de flou"
 
-#: ../scripts/chip-away.scm.h:6
-msgid "Drop shadow"
-msgstr "Ombre portée"
-
-#: ../scripts/chip-away.scm.h:7
-msgid "Fill BG with pattern"
-msgstr "Remplir l'AP avec un motif"
-
-#: ../scripts/chip-away.scm.h:10
+#: ../scripts/chip-away.scm:151 ../scripts/chip-away.scm:198
 msgid "Invert"
 msgstr "Inverser"
 
-#: ../scripts/chip-away.scm.h:11
+#: ../scripts/chip-away.scm:152 ../scripts/chip-away.scm:199
+msgid "Drop shadow"
+msgstr "Ombre portée"
+
+#: ../scripts/chip-away.scm:154 ../scripts/chip-away.scm:201
+msgid "Fill BG with pattern"
+msgstr "Remplir l'AP avec un motif"
+
+#: ../scripts/chip-away.scm:155 ../scripts/chip-away.scm:202
 msgid "Keep background"
 msgstr "Garder l'arrière-plan"
 
-#: ../scripts/chrome-it.scm.h:1
+#: ../scripts/chip-away.scm:188
+msgid "Create a logo resembling a chipped wood carving"
+msgstr "Crée un logo ressemblant à du bois sculpté"
+
+#: ../scripts/chrome-it.scm:205
+msgid "Stencil C_hrome..."
+msgstr "Patron de c_hromage..."
+
+#: ../scripts/chrome-it.scm:206
 msgid ""
 "Add a chrome effect to the selected region (or alpha) using a specified "
 "(grayscale) stencil"
@@ -1026,135 +1054,135 @@ msgstr ""
 "Ajoute un effet chrome à la région sélectionnée (ou alpha) en utilisant un "
 "patron (tons de gris) spécifié"
 
-#: ../scripts/chrome-it.scm.h:2 ../scripts/sota-chrome-logo.scm.h:1
-msgid "Chrome balance"
-msgstr "Balance du chrome"
-
-#: ../scripts/chrome-it.scm.h:3 ../scripts/crystal-logo.scm.h:2
-#: ../scripts/sota-chrome-logo.scm.h:2
-msgid "Chrome factor"
-msgstr "Facteur de chrome"
-
-#: ../scripts/chrome-it.scm.h:4 ../scripts/sota-chrome-logo.scm.h:3
-msgid "Chrome lightness"
-msgstr "Luminosité du chrome"
-
-#: ../scripts/chrome-it.scm.h:5 ../scripts/sota-chrome-logo.scm.h:4
+#: ../scripts/chrome-it.scm:213 ../scripts/sota-chrome-logo.scm:209
 msgid "Chrome saturation"
 msgstr "Saturation du chrome"
 
-#: ../scripts/chrome-it.scm.h:6
-msgid "Chrome white areas"
-msgstr "Zones blanches du chrome"
+#: ../scripts/chrome-it.scm:214 ../scripts/sota-chrome-logo.scm:210
+msgid "Chrome lightness"
+msgstr "Luminosité du chrome"
 
-#: ../scripts/chrome-it.scm.h:7 ../scripts/crystal-logo.scm.h:5
-#: ../scripts/sota-chrome-logo.scm.h:6
+#: ../scripts/chrome-it.scm:215 ../scripts/crystal-logo.scm:214
+#: ../scripts/sota-chrome-logo.scm:211
+msgid "Chrome factor"
+msgstr "Facteur de chrome"
+
+#: ../scripts/chrome-it.scm:216 ../scripts/crystal-logo.scm:221
+#: ../scripts/sota-chrome-logo.scm:215
 msgid "Environment map"
 msgstr "Carte d'environnement"
 
-#: ../scripts/chrome-it.scm.h:8 ../scripts/sota-chrome-logo.scm.h:9
+#: ../scripts/chrome-it.scm:219 ../scripts/sota-chrome-logo.scm:218
 msgid "Highlight balance"
 msgstr "Balance d'éclairage"
 
-#: ../scripts/chrome-it.scm.h:9
-msgid "Stencil C_hrome..."
-msgstr "Patron de c_hromage..."
+#: ../scripts/chrome-it.scm:220 ../scripts/sota-chrome-logo.scm:219
+msgid "Chrome balance"
+msgstr "Balance du chrome"
 
-#: ../scripts/chrome-logo.scm.h:1
-msgid "Add a simple chrome effect to the selected region (or alpha)"
-msgstr "Ajoute un simple effet de chrome à la région sélectionnée (ou alpha)"
+#: ../scripts/chrome-it.scm:221
+msgid "Chrome white areas"
+msgstr "Zones blanches du chrome"
 
-#: ../scripts/chrome-logo.scm.h:4
+#: ../scripts/chrome-logo.scm:85 ../scripts/chrome-logo.scm:118
 msgid "C_hrome..."
 msgstr "C_hrome..."
 
-#: ../scripts/chrome-logo.scm.h:5
-msgid "Create a simplistic, but cool, chromed logo"
-msgstr "Crée un logo chromé, simpliste mais sympathique"
+#: ../scripts/chrome-logo.scm:86
+msgid "Add a simple chrome effect to the selected region (or alpha)"
+msgstr "Ajoute un simple effet de chrome à la région sélectionnée (ou alpha)"
 
-#: ../scripts/chrome-logo.scm.h:8
+#: ../scripts/chrome-logo.scm:93
 msgid "Offsets (pixels * 2)"
 msgstr "Décalages (pixels x 2)"
 
-#: ../scripts/circuit.scm.h:1
-msgid "Circuit seed"
-msgstr "Germe du circuit"
+#: ../scripts/chrome-logo.scm:119
+msgid "Create a simplistic, but cool, chromed logo"
+msgstr "Crée un logo chromé, simpliste mais sympathique"
 
-#: ../scripts/circuit.scm.h:2
+#: ../scripts/circuit.scm:142
+msgid "_Circuit..."
+msgstr "_Circuit..."
+
+#: ../scripts/circuit.scm:143
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
 msgstr ""
 "Remplit la région sélectionnée (ou alpha) avec des traces telles que sur un "
 "circuit imprimé"
 
-#: ../scripts/circuit.scm.h:3 ../scripts/lava.scm.h:3
-#: ../scripts/predator.scm.h:3 ../scripts/xach-effect.scm.h:11
-msgid "Keep selection"
-msgstr "Conserver la sélection"
+#: ../scripts/circuit.scm:150
+msgid "Oilify mask size"
+msgstr "Taille de masque"
 
-#: ../scripts/circuit.scm.h:4
+#: ../scripts/circuit.scm:151
+msgid "Circuit seed"
+msgstr "Germe du circuit"
+
+#: ../scripts/circuit.scm:152
 msgid "No background (only for separate layer)"
 msgstr "Aucun arrière-plan (seulement pour le nouveau calque)"
 
-#: ../scripts/circuit.scm.h:5
-msgid "Oilify mask size"
-msgstr "Taille de masque "
+#: ../scripts/circuit.scm:153 ../scripts/lava.scm:129
+#: ../scripts/predator.scm:130 ../scripts/xach-effect.scm:138
+msgid "Keep selection"
+msgstr "Conserver la sélection"
 
-#: ../scripts/circuit.scm.h:6 ../scripts/lava.scm.h:6
-#: ../scripts/predator.scm.h:6
+#: ../scripts/circuit.scm:154 ../scripts/lava.scm:130
+#: ../scripts/predator.scm:131
 msgid "Separate layer"
 msgstr "Nouveau calque"
 
-#: ../scripts/circuit.scm.h:7
-msgid "_Circuit..."
-msgstr "_Circuit..."
+#: ../scripts/clothify.scm:51
+msgid "_Clothify..."
+msgstr "_Tisser..."
 
-#: ../scripts/clothify.scm.h:1
+#: ../scripts/clothify.scm:52
 msgid "Add a cloth-like texture to the selected region (or alpha)"
 msgstr ""
 "Ajoute une texture de style tissu sur la région sélectionnée (ou alpha)"
 
-#: ../scripts/clothify.scm.h:2 ../scripts/swirltile.scm.h:1
-msgid "Azimuth"
-msgstr "Azimuth"
-
-#: ../scripts/clothify.scm.h:3
+#: ../scripts/clothify.scm:59
 msgid "Blur X"
 msgstr "Flou X"
 
-#: ../scripts/clothify.scm.h:4
+#: ../scripts/clothify.scm:60
 msgid "Blur Y"
 msgstr "Flou Y"
 
-#: ../scripts/clothify.scm.h:5 ../scripts/swirltile.scm.h:5
-msgid "Depth"
-msgstr "Profondeur"
+#: ../scripts/clothify.scm:61 ../scripts/swirltile.scm:58
+msgid "Azimuth"
+msgstr "Azimuth"
 
-#: ../scripts/clothify.scm.h:6 ../scripts/swirltile.scm.h:6
+#: ../scripts/clothify.scm:62 ../scripts/swirltile.scm:59
 msgid "Elevation"
 msgstr "Élévation"
 
-#: ../scripts/clothify.scm.h:7
-msgid "_Clothify..."
-msgstr "_Tisser..."
+#: ../scripts/clothify.scm:63 ../scripts/swirltile.scm:57
+msgid "Depth"
+msgstr "Profondeur"
 
-#: ../scripts/coffee.scm.h:1
-msgid "Add realistic looking coffee stains to the image"
-msgstr "Ajoute une tache de café réaliste à l'image"
-
-#: ../scripts/coffee.scm.h:2
-msgid "Darken only"
-msgstr "Assombrir seulement"
-
-#: ../scripts/coffee.scm.h:3
-msgid "Stains"
-msgstr "Taches"
-
-#: ../scripts/coffee.scm.h:4
+#: ../scripts/coffee.scm:80
 msgid "_Coffee Stain..."
 msgstr "_Tache de café..."
 
-#: ../scripts/comic-logo.scm.h:1
+#: ../scripts/coffee.scm:81
+msgid "Add realistic looking coffee stains to the image"
+msgstr "Ajoute une tache de café réaliste à l'image"
+
+#: ../scripts/coffee.scm:88
+msgid "Stains"
+msgstr "Taches"
+
+#: ../scripts/coffee.scm:89
+msgid "Darken only"
+msgstr "Assombrir seulement"
+
+#: ../scripts/comic-logo.scm:115 ../scripts/comic-logo.scm:155
+msgid "Comic Boo_k..."
+msgstr "B_D..."
+
+#: ../scripts/comic-logo.scm:116
 msgid ""
 "Add a comic-book effect to the selected region (or alpha) by outlining and "
 "filling with a gradient"
@@ -1162,24 +1190,77 @@ msgstr ""
 "Ajoute un effet BD à la région sélectionnée (ou alpha) en l'entourant et la "
 "remplissant avec un dégradé"
 
-#: ../scripts/comic-logo.scm.h:3
-msgid "Comic Boo_k..."
-msgstr "B_D..."
+#: ../scripts/comic-logo.scm:125 ../scripts/comic-logo.scm:166
+#: ../scripts/glossy.scm:209 ../scripts/glossy.scm:281
+msgid "Outline size"
+msgstr "Taille du contour"
 
-#: ../scripts/comic-logo.scm.h:4
+#: ../scripts/comic-logo.scm:126 ../scripts/comic-logo.scm:167
+msgid "Outline color"
+msgstr "Couleur du contour"
+
+#: ../scripts/comic-logo.scm:156
 msgid "Create a comic-book style logo by outlining and filling with a gradient"
 msgstr ""
 "Crée un logo dans le style BD en entourant et remplissant avec un dégradé"
 
-#: ../scripts/comic-logo.scm.h:9
-msgid "Outline color"
-msgstr "Couleur du contour"
+#: ../scripts/contactsheet.scm:120
+msgid "Contact Sheet "
+msgstr "Planche contact "
 
-#: ../scripts/comic-logo.scm.h:10 ../scripts/glossy.scm.h:11
-msgid "Outline size"
-msgstr "Taille du contour"
+#: ../scripts/contactsheet.scm:122
+msgid " for directory "
+msgstr " pour répertoire "
 
-#: ../scripts/coolmetal-logo.scm.h:1
+#: ../scripts/contactsheet.scm:210
+msgid "Unable to open directory "
+msgstr "Impossible d'ouvrir le répertoire "
+
+#: ../scripts/contactsheet.scm:308
+msgid "Created "
+msgstr "Créé "
+
+#: ../scripts/contactsheet.scm:309
+msgid " contact sheets from a total of "
+msgstr " planches contact depuis un total de "
+
+#: ../scripts/contactsheet.scm:310
+msgid " images"
+msgstr " images"
+
+#: ../scripts/contactsheet.scm:319
+msgid "_Contact Sheet..."
+msgstr "_Planche contact..."
+
+#: ../scripts/contactsheet.scm:320
+msgid ""
+"Create a series of images containing thumbnail sized versions of all of the "
+"images in a specified directory."
+msgstr ""
+"Créer une série d'images contenant la version miniature de toutes les images "
+"d'un répertoire spécifié."
+
+#: ../scripts/contactsheet.scm:325
+msgid "Images Directory"
+msgstr "Répertoire des images"
+
+#: ../scripts/contactsheet.scm:326
+msgid "Sheet size"
+msgstr "Taille de la planche"
+
+#: ../scripts/contactsheet.scm:331
+msgid "Title font"
+msgstr "Police de titre"
+
+#: ../scripts/contactsheet.scm:332
+msgid "Legend font"
+msgstr "Police de légende"
+
+#: ../scripts/coolmetal-logo.scm:131 ../scripts/coolmetal-logo.scm:169
+msgid "Cool _Metal..."
+msgstr "_Métallique froid..."
+
+#: ../scripts/coolmetal-logo.scm:132
 msgid ""
 "Add a metallic effect to the selected region (or alpha) with reflections and "
 "perspective shadows"
@@ -1187,226 +1268,226 @@ msgstr ""
 "Ajoute un effet métallique à la région sélectionnée (ou alpha) avec des "
 "réflexions et des ombres de perspective"
 
-#: ../scripts/coolmetal-logo.scm.h:3
-msgid "Cool _Metal..."
-msgstr "_Métallique froid..."
+#: ../scripts/coolmetal-logo.scm:139 ../scripts/frosty-logo.scm:116
+msgid "Effect size (pixels)"
+msgstr "Taille de l'effet (pixels)"
 
-#: ../scripts/coolmetal-logo.scm.h:4
+#: ../scripts/coolmetal-logo.scm:170
 msgid "Create a metallic logo with reflections and perspective shadows"
 msgstr ""
 "Crée un logo métallique avec des réflexions et des ombres de perspective"
 
-#: ../scripts/coolmetal-logo.scm.h:5 ../scripts/frosty-logo.scm.h:4
-msgid "Effect size (pixels)"
-msgstr "Taille de l'effet (pixels)"
-
-#: ../scripts/crystal-logo.scm.h:1
-msgid "Background image"
-msgstr "Image d'arrière-plan"
-
-#: ../scripts/crystal-logo.scm.h:3
-msgid "Create a logo with a crystal/gel effect displacing the image underneath"
-msgstr "Crée un logo avec un effet cristal/gel et déplace l'image en dessous"
-
-#: ../scripts/crystal-logo.scm.h:4
+#: ../scripts/crystal-logo.scm:208
 msgid "Crystal..."
 msgstr "Cristal..."
 
-#: ../scripts/difference-clouds.scm.h:1
+#: ../scripts/crystal-logo.scm:209
+msgid "Create a logo with a crystal/gel effect displacing the image underneath"
+msgstr "Crée un logo avec un effet cristal/gel et déplace l'image en dessous"
+
+#: ../scripts/crystal-logo.scm:218
+msgid "Background image"
+msgstr "Image d'arrière-plan"
+
+#: ../scripts/difference-clouds.scm:68
 msgid "Difference Clouds..."
 msgstr "Nuages par différence..."
 
-#: ../scripts/difference-clouds.scm.h:2
+#: ../scripts/difference-clouds.scm:69
 msgid "Solid noise applied with Difference layer mode"
 msgstr "Bruit plein appliqué avec le mode de calque différence"
 
-#: ../scripts/distress-selection.scm.h:1
-msgid "Distress the selection"
-msgstr "Perturber la sélection"
-
-#: ../scripts/distress-selection.scm.h:2
-msgid "Granularity (1 is low)"
-msgstr "Granularité (1 est faible)"
-
-#: ../scripts/distress-selection.scm.h:4
-msgid "Smooth horizontally"
-msgstr "Adoucir horizontalement"
-
-#: ../scripts/distress-selection.scm.h:5
-msgid "Smooth vertically"
-msgstr "Adoucir verticalement"
-
-#: ../scripts/distress-selection.scm.h:6
-msgid "Spread"
-msgstr "Dispersion"
-
-#: ../scripts/distress-selection.scm.h:7
-msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Seuil (plus grand 1<-->255 plus petit)"
-
-#: ../scripts/distress-selection.scm.h:8
+#: ../scripts/distress-selection.scm:99
 msgid "_Distort..."
 msgstr "_Perturbation..."
 
-#: ../scripts/drop-shadow.scm.h:1
-msgid "Add a drop shadow to the selected region (or alpha)"
-msgstr "Ajoute une ombre portée à la région sélectionnée (ou alpha)"
+#: ../scripts/distress-selection.scm:100
+msgid "Distress the selection"
+msgstr "Perturber la sélection"
 
-#: ../scripts/drop-shadow.scm.h:2 ../scripts/perspective-shadow.scm.h:2
-msgid "Allow resizing"
-msgstr "Permettre le redimensionnement"
+#: ../scripts/distress-selection.scm:107
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Seuil (plus grand 1<-->255 plus petit)"
 
-#: ../scripts/drop-shadow.scm.h:3 ../scripts/news-text.scm.h:2
-#: ../scripts/perspective-shadow.scm.h:4 ../scripts/round-corners.scm.h:3
-#: ../scripts/swirltile.scm.h:3
-msgid "Blur radius"
-msgstr "Rayon du flou"
+#: ../scripts/distress-selection.scm:108
+msgid "Spread"
+msgstr "Dispersion"
 
-#: ../scripts/drop-shadow.scm.h:4 ../scripts/fuzzyborder.scm.h:5
-#: ../scripts/perspective-shadow.scm.h:5 ../scripts/spyrogimp.scm.h:5
-msgid "Color"
-msgstr "Couleur"
+#: ../scripts/distress-selection.scm:109
+msgid "Granularity (1 is low)"
+msgstr "Granularité (1 est faible)"
 
-#: ../scripts/drop-shadow.scm.h:5 ../scripts/gimp-labels.scm.h:11
-msgid "Offset X"
-msgstr "Décalage X"
+#: ../scripts/distress-selection.scm:111
+msgid "Smooth horizontally"
+msgstr "Adoucir horizontalement"
 
-#: ../scripts/drop-shadow.scm.h:6 ../scripts/gimp-labels.scm.h:12
-msgid "Offset Y"
-msgstr "Décalage Y"
+#: ../scripts/distress-selection.scm:112
+msgid "Smooth vertically"
+msgstr "Adoucir verticalement"
 
-#: ../scripts/drop-shadow.scm.h:7 ../scripts/perspective-shadow.scm.h:7
-msgid "Opacity"
-msgstr "Opacité"
-
-#: ../scripts/drop-shadow.scm.h:8
+#: ../scripts/drop-shadow.scm:168
 msgid "_Drop Shadow..."
 msgstr "Ombre _portée..."
 
-#: ../scripts/erase-rows.scm.h:1
-msgid "Columns"
-msgstr "Colonnes"
+#: ../scripts/drop-shadow.scm:169
+msgid "Add a drop shadow to the selected region (or alpha)"
+msgstr "Ajoute une ombre portée à la région sélectionnée (ou alpha)"
 
-#: ../scripts/erase-rows.scm.h:2
-msgid "Erase"
-msgstr "Effacer"
+#: ../scripts/drop-shadow.scm:176 ../scripts/gimp-labels.scm:185
+msgid "Offset X"
+msgstr "Décalage X"
 
-#: ../scripts/erase-rows.scm.h:3
-msgid "Erase every other row or column"
-msgstr "Efface une colonne ou rangée sur deux"
+#: ../scripts/drop-shadow.scm:177 ../scripts/gimp-labels.scm:186
+msgid "Offset Y"
+msgstr "Décalage Y"
 
-#: ../scripts/erase-rows.scm.h:4
-msgid "Erase/fill"
-msgstr "Effacer/remplir"
+#: ../scripts/drop-shadow.scm:178 ../scripts/news-text.scm:88
+#: ../scripts/perspective-shadow.scm:207 ../scripts/round-corners.scm:138
+#: ../scripts/swirltile.scm:60
+msgid "Blur radius"
+msgstr "Rayon du flou"
 
-#: ../scripts/erase-rows.scm.h:5
-msgid "Even"
-msgstr "Pair"
+#: ../scripts/drop-shadow.scm:179 ../scripts/fuzzyborder.scm:155
+#: ../scripts/perspective-shadow.scm:208 ../scripts/spyrogimp.scm:353
+msgid "Color"
+msgstr "Couleur"
 
-#: ../scripts/erase-rows.scm.h:6
-msgid "Even/odd"
-msgstr "Pair/impair"
+#: ../scripts/drop-shadow.scm:180 ../scripts/perspective-shadow.scm:209
+msgid "Opacity"
+msgstr "Opacité"
 
-#: ../scripts/erase-rows.scm.h:7
-msgid "Fill with BG"
-msgstr "Remplir avec l'AP"
+#: ../scripts/drop-shadow.scm:181 ../scripts/perspective-shadow.scm:211
+msgid "Allow resizing"
+msgstr "Permettre le redimensionnement"
 
-#: ../scripts/erase-rows.scm.h:8
-msgid "Odd"
-msgstr "Impair"
-
-#: ../scripts/erase-rows.scm.h:9
-msgid "Rows"
-msgstr "Rangées"
-
-#: ../scripts/erase-rows.scm.h:10
-msgid "Rows/cols"
-msgstr "Rangées/colonnes"
-
-#: ../scripts/erase-rows.scm.h:11
+#: ../scripts/erase-rows.scm:35
 msgid "_Erase Every Other Row..."
 msgstr "Change une colonne ou rangée _sur deux..."
 
-#: ../scripts/flatland.scm.h:1
-msgid "Create an image filled with a Land Pattern"
-msgstr "Crée une image remplie avec un motif de terrain"
+#: ../scripts/erase-rows.scm:36
+msgid "Erase every other row or column"
+msgstr "Efface une colonne ou rangée sur deux"
 
-#: ../scripts/flatland.scm.h:2 ../scripts/land.scm.h:2
-msgid "Detail level"
-msgstr "Niveau de détail"
+#: ../scripts/erase-rows.scm:43
+msgid "Rows/cols"
+msgstr "Rangées/colonnes"
 
-#: ../scripts/flatland.scm.h:3 ../scripts/land.scm.h:4
-msgid "Image height"
-msgstr "Hauteur de l'image"
+#: ../scripts/erase-rows.scm:43
+msgid "Rows"
+msgstr "Rangées"
 
-#: ../scripts/flatland.scm.h:4 ../scripts/land.scm.h:5
-msgid "Image width"
-msgstr "Largeur de l'image"
+#: ../scripts/erase-rows.scm:43
+msgid "Columns"
+msgstr "Colonnes"
 
-#: ../scripts/flatland.scm.h:5 ../scripts/land.scm.h:7
-msgid "Random seed"
-msgstr "Germe aléatoire"
+#: ../scripts/erase-rows.scm:44
+msgid "Even/odd"
+msgstr "Pair/impair"
 
-#: ../scripts/flatland.scm.h:6 ../scripts/land.scm.h:8
-msgid "Scale X"
-msgstr "Échelle en X"
+#: ../scripts/erase-rows.scm:44
+msgid "Even"
+msgstr "Pair"
 
-#: ../scripts/flatland.scm.h:7 ../scripts/land.scm.h:9
-msgid "Scale Y"
-msgstr "Échelle en Y"
+#: ../scripts/erase-rows.scm:44
+msgid "Odd"
+msgstr "Impair"
 
-#: ../scripts/flatland.scm.h:8
+#: ../scripts/erase-rows.scm:45
+msgid "Erase/fill"
+msgstr "Effacer/remplir"
+
+#: ../scripts/erase-rows.scm:45
+msgid "Erase"
+msgstr "Effacer"
+
+#: ../scripts/erase-rows.scm:45
+msgid "Fill with BG"
+msgstr "Remplir avec l'AP"
+
+#: ../scripts/flatland.scm:61
 msgid "_Flatland..."
 msgstr "_Terrain plat..."
 
-#: ../scripts/font-map.scm.h:1
-msgid "Active colors"
-msgstr "Activer les couleurs"
+#: ../scripts/flatland.scm:62
+msgid "Create an image filled with a Land Pattern"
+msgstr "Crée une image remplie avec un motif de terrain"
 
-#: ../scripts/font-map.scm.h:2
-msgid "Black on white"
-msgstr "Noir et blanc"
+#: ../scripts/flatland.scm:67 ../scripts/land.scm:78
+msgid "Image width"
+msgstr "Largeur de l'image"
 
-#: ../scripts/font-map.scm.h:3
+#: ../scripts/flatland.scm:68 ../scripts/land.scm:79
+msgid "Image height"
+msgstr "Hauteur de l'image"
+
+#: ../scripts/flatland.scm:69 ../scripts/land.scm:80
+msgid "Random seed"
+msgstr "Germe aléatoire"
+
+#: ../scripts/flatland.scm:70 ../scripts/land.scm:81
+msgid "Detail level"
+msgstr "Niveau de détail"
+
+#: ../scripts/flatland.scm:71 ../scripts/land.scm:84
+msgid "Scale X"
+msgstr "Échelle en X"
+
+#: ../scripts/flatland.scm:72 ../scripts/land.scm:85
+msgid "Scale Y"
+msgstr "Échelle en Y"
+
+#: ../scripts/font-map.scm:152
+msgid "Render _Font Map..."
+msgstr "Rendre un aperçu de _polices..."
+
+#: ../scripts/font-map.scm:153
 msgid ""
 "Create an image filled with previews of fonts matching a fontname filter"
 msgstr ""
 "Crée une image remplie avec des aperçus des polices correspondant à un "
 "filtre de nom de police"
 
-#: ../scripts/font-map.scm.h:4
-msgid "Font _size (pixels)"
-msgstr "_Taille de la police (pixels)"
-
-#: ../scripts/font-map.scm.h:5
-msgid "Render _Font Map..."
-msgstr "Rendre un aperçu de _polices..."
-
-#: ../scripts/font-map.scm.h:6
-msgid "Use font _name as text"
-msgstr "Utiliser le n_om de la police comme texte"
-
-#: ../scripts/font-map.scm.h:7
-msgid "_Border (pixels)"
-msgstr "_Bordure (pixels)"
-
-#: ../scripts/font-map.scm.h:8
-msgid "_Color scheme"
-msgstr "_Schéma de couleur"
-
-#: ../scripts/font-map.scm.h:9
-msgid "_Filter (regexp)"
-msgstr "_Filtre (regexp)"
-
-#: ../scripts/font-map.scm.h:10
-msgid "_Labels"
-msgstr "É_tiquettes"
-
-#: ../scripts/font-map.scm.h:11
+#: ../scripts/font-map.scm:158
 msgid "_Text"
 msgstr "Te_xte"
 
-#: ../scripts/frosty-logo.scm.h:1
+#: ../scripts/font-map.scm:159
+msgid "Use font _name as text"
+msgstr "Utiliser le n_om de la police comme texte"
+
+#: ../scripts/font-map.scm:160
+msgid "_Labels"
+msgstr "É_tiquettes"
+
+#: ../scripts/font-map.scm:161
+msgid "_Filter (regexp)"
+msgstr "_Filtre (regexp)"
+
+#: ../scripts/font-map.scm:162
+msgid "Font _size (pixels)"
+msgstr "_Taille de la police (pixels)"
+
+#: ../scripts/font-map.scm:163
+msgid "_Border (pixels)"
+msgstr "_Bordure (pixels)"
+
+#: ../scripts/font-map.scm:164
+msgid "_Color scheme"
+msgstr "_Schéma de couleur"
+
+#: ../scripts/font-map.scm:164
+msgid "Black on white"
+msgstr "Noir et blanc"
+
+#: ../scripts/font-map.scm:164
+msgid "Active colors"
+msgstr "Activer les couleurs"
+
+#: ../scripts/frosty-logo.scm:108 ../scripts/frosty-logo.scm:141
+msgid "_Frosty..."
+msgstr "_Givré..."
+
+#: ../scripts/frosty-logo.scm:109
 msgid ""
 "Add a frost effect to the selected region (or alpha) with an added drop "
 "shadow"
@@ -1414,110 +1495,112 @@ msgstr ""
 "Ajoute un effet givré à la région sélectionnée (ou alpha) avec une ombre "
 "portée"
 
-#: ../scripts/frosty-logo.scm.h:3
+#: ../scripts/frosty-logo.scm:142
 msgid "Create frozen logo with an added drop shadow"
 msgstr "Crée un logo givré avec une ombre portée"
 
-#: ../scripts/frosty-logo.scm.h:8
-msgid "_Frosty..."
-msgstr "_Givré..."
-
-#: ../scripts/fuzzyborder.scm.h:1
-msgid "Add a jagged, fuzzy border to an image"
-msgstr "Ajoute une bordure diffuse et inégale à l'image"
-
-#: ../scripts/fuzzyborder.scm.h:2
-msgid "Add shadow"
-msgstr "Ajouter une ombre"
-
-#: ../scripts/fuzzyborder.scm.h:3
-msgid "Blur border"
-msgstr "Bordure floue"
-
-#: ../scripts/fuzzyborder.scm.h:4 ../scripts/old-photo.scm.h:1
-msgid "Border size"
-msgstr "Taille de bordure"
-
-#: ../scripts/fuzzyborder.scm.h:7
-msgid "Granularity (1 is Low)"
-msgstr "Granularité (1 est faible)"
-
-#: ../scripts/fuzzyborder.scm.h:9
-#, no-c-format
-msgid "Shadow weight (%)"
-msgstr "Épaisseur de l'ombre (%)"
-
-#: ../scripts/fuzzyborder.scm.h:11
+#: ../scripts/fuzzyborder.scm:147
 msgid "_Fuzzy Border..."
 msgstr "Bordure _inégale..."
 
-#: ../scripts/gimp-headers.scm.h:1
-msgid "Autocrop"
-msgstr "Découpage automatique"
+#: ../scripts/fuzzyborder.scm:148
+msgid "Add a jagged, fuzzy border to an image"
+msgstr "Ajoute une bordure diffuse et inégale à l'image"
 
-#: ../scripts/gimp-headers.scm.h:2
+#: ../scripts/fuzzyborder.scm:156 ../scripts/old-photo.scm:99
+msgid "Border size"
+msgstr "Taille de bordure"
+
+#: ../scripts/fuzzyborder.scm:157
+msgid "Blur border"
+msgstr "Bordure floue"
+
+#: ../scripts/fuzzyborder.scm:158
+msgid "Granularity (1 is Low)"
+msgstr "Granularité (1 est faible)"
+
+#: ../scripts/fuzzyborder.scm:159
+msgid "Add shadow"
+msgstr "Ajouter une ombre"
+
+#: ../scripts/fuzzyborder.scm:160
+msgid "Shadow weight (%)"
+msgstr "Épaisseur de l'ombre (%)"
+
+#: ../scripts/gimp-headers.scm:149
+msgid "_Big Header..."
+msgstr "_Grand titre..."
+
+#: ../scripts/gimp-headers.scm:150
 msgid "Create an image of a large header using the gimp.org webpage theme"
 msgstr ""
 "Crée une image avec un grand titre en utilisant le thème de page Web de gimp."
 "org"
 
-#: ../scripts/gimp-headers.scm.h:3
+#: ../scripts/gimp-headers.scm:159 ../scripts/gimp-headers.scm:182
+#: ../scripts/xach-effect.scm:131
+msgid "Highlight color"
+msgstr "Couleur d'éclairage"
+
+#: ../scripts/gimp-headers.scm:160 ../scripts/gimp-headers.scm:183
+msgid "Dark color"
+msgstr "Couleur sombre"
+
+#: ../scripts/gimp-headers.scm:161 ../scripts/gimp-headers.scm:184
+#: ../scripts/gimp-labels.scm:179
+msgid "Shadow color"
+msgstr "Couleur de l'ombre"
+
+#: ../scripts/gimp-headers.scm:162 ../scripts/gimp-headers.scm:185
+msgid "Autocrop"
+msgstr "Découpage automatique"
+
+#: ../scripts/gimp-headers.scm:163 ../scripts/gimp-headers.scm:186
+#: ../scripts/gimp-labels.scm:128 ../scripts/gimp-labels.scm:144
+#: ../scripts/gimp-labels.scm:160 ../scripts/gimp-labels.scm:181
+msgid "Remove background"
+msgstr "Enlever l'arrière-plan"
+
+#: ../scripts/gimp-headers.scm:164 ../scripts/gimp-headers.scm:187
+#: ../scripts/gimp-labels.scm:129 ../scripts/gimp-labels.scm:145
+#: ../scripts/gimp-labels.scm:161 ../scripts/gimp-labels.scm:182
+msgid "Index image"
+msgstr "Image index"
+
+#: ../scripts/gimp-headers.scm:165 ../scripts/gimp-headers.scm:188
+#: ../scripts/gimp-labels.scm:183
+msgid "Number of colors"
+msgstr "Nombres de couleurs"
+
+#: ../scripts/gimp-headers.scm:172
+msgid "_Small Header..."
+msgstr "_Petit titre..."
+
+#: ../scripts/gimp-headers.scm:173
 msgid "Create an image of a small header using the gimp.org webpage theme"
 msgstr ""
 "Crée une image avec un petit titre en utilisant le thème de page Web de gimp."
 "org"
 
-#: ../scripts/gimp-headers.scm.h:4
-msgid "Dark color"
-msgstr "Couleur sombre"
-
-#: ../scripts/gimp-headers.scm.h:7 ../scripts/xach-effect.scm.h:9
-msgid "Highlight color"
-msgstr "Couleur d'éclairage"
-
-#: ../scripts/gimp-headers.scm.h:8 ../scripts/gimp-labels.scm.h:9
-msgid "Index image"
-msgstr "Image index"
-
-#: ../scripts/gimp-headers.scm.h:9 ../scripts/gimp-labels.scm.h:10
-msgid "Number of colors"
-msgstr "Nombres de couleurs"
-
-#: ../scripts/gimp-headers.scm.h:10 ../scripts/gimp-labels.scm.h:13
-msgid "Remove background"
-msgstr "Enlever l'arrière-plan"
-
-#: ../scripts/gimp-headers.scm.h:11 ../scripts/gimp-labels.scm.h:14
+#: ../scripts/gimp-headers.scm:189 ../scripts/gimp-labels.scm:184
 msgid "Select-by-color threshold"
 msgstr "Seuil de sélection par couleur"
 
-#: ../scripts/gimp-headers.scm.h:12 ../scripts/gimp-labels.scm.h:15
-msgid "Shadow color"
-msgstr "Couleur de l'ombre"
+#: ../scripts/gimp-labels.scm:121
+msgid "_Tube Button Label..."
+msgstr "Étiquette de bouton _tube..."
 
-#: ../scripts/gimp-headers.scm.h:15
-msgid "_Big Header..."
-msgstr "_Grand titre..."
-
-#: ../scripts/gimp-headers.scm.h:16
-msgid "_Small Header..."
-msgstr "_Petit titre..."
-
-#: ../scripts/gimp-labels.scm.h:2
-msgid ""
-"Create an image of a Tube Button Label Header using the gimp.org webpage "
-"theme"
-msgstr ""
-"Crée une image d'un bouton tubulaire général en utilisant le thème de page "
-"Web de gimp.org"
-
-#: ../scripts/gimp-labels.scm.h:3
+#: ../scripts/gimp-labels.scm:122
 msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
 msgstr ""
 "Crée une image d'un bouton tubulaire de premier niveau en utilisant le thème "
 "de page Web de gimp.org"
 
-#: ../scripts/gimp-labels.scm.h:4
+#: ../scripts/gimp-labels.scm:137
+msgid "T_ube Sub-Button Label..."
+msgstr "Étiq_uette de sous-bouton tube..."
+
+#: ../scripts/gimp-labels.scm:138
 msgid ""
 "Create an image of a second level Tube Button Label using the gimp.org "
 "webpage theme"
@@ -1525,7 +1608,11 @@ msgstr ""
 "Crée une image d'un bouton tubulaire de second niveau en utilisant le thème "
 "de page Web de gimp.org"
 
-#: ../scripts/gimp-labels.scm.h:5
+#: ../scripts/gimp-labels.scm:153
+msgid "Tub_e Sub-Sub-Button Label..."
+msgstr "Étiqu_ette de sous-sous-bouton tube..."
+
+#: ../scripts/gimp-labels.scm:154
 msgid ""
 "Create an image of a third level Tube Button Label using the gimp.org "
 "webpage theme"
@@ -1533,23 +1620,23 @@ msgstr ""
 "Crée une image d'un bouton tubulaire de troisième niveau en utilisant le "
 "thème de page Web de gimp.org"
 
-#: ../scripts/gimp-labels.scm.h:16
-msgid "T_ube Sub-Button Label..."
-msgstr "Étiq_uette de sous-bouton tube..."
-
-#: ../scripts/gimp-labels.scm.h:19
-msgid "Tub_e Sub-Sub-Button Label..."
-msgstr "Étiqu_ette de sous-sous-bouton tube..."
-
-#: ../scripts/gimp-labels.scm.h:20
+#: ../scripts/gimp-labels.scm:169
 msgid "_General Tube Labels..."
 msgstr "Étiquette _générale de tube..."
 
-#: ../scripts/gimp-labels.scm.h:21
-msgid "_Tube Button Label..."
-msgstr "Étiquette de bouton _tube..."
+#: ../scripts/gimp-labels.scm:170
+msgid ""
+"Create an image of a Tube Button Label Header using the gimp.org webpage "
+"theme"
+msgstr ""
+"Crée une image d'un bouton tubulaire général en utilisant le thème de page "
+"Web de gimp.org"
 
-#: ../scripts/glossy.scm.h:1
+#: ../scripts/glossy.scm:197 ../scripts/glossy.scm:268
+msgid "Glo_ssy..."
+msgstr "G_lacé..."
+
+#: ../scripts/glossy.scm:198
 msgid ""
 "Add gradients, patterns, shadows, and bump maps to the selected region (or "
 "alpha)"
@@ -1557,107 +1644,108 @@ msgstr ""
 "Ajoute des dégradés, motifs, ombres et reliefs à la région sélectionnée (ou "
 "alpha)"
 
-#: ../scripts/glossy.scm.h:3
-msgid "Blend gradient (outline)"
-msgstr "Dégradé (contours)"
-
-#: ../scripts/glossy.scm.h:4
+#: ../scripts/glossy.scm:205 ../scripts/glossy.scm:277
 msgid "Blend gradient (text)"
 msgstr "Dégradé (texte)"
 
-#: ../scripts/glossy.scm.h:5
-msgid "Create a logo with gradients, patterns, shadows, and bump maps"
-msgstr "Crée un logo avec dégradés, motifs, ombres et reliefs"
-
-#: ../scripts/glossy.scm.h:9
-msgid "Glo_ssy..."
-msgstr "G_lacé..."
-
-#: ../scripts/glossy.scm.h:10
-msgid "Outline gradient reverse"
-msgstr "Dégradé du contour inversé"
-
-#: ../scripts/glossy.scm.h:12
-msgid "Pattern (outline)"
-msgstr "Motif (contour)"
-
-#: ../scripts/glossy.scm.h:13
-msgid "Pattern (overlay)"
-msgstr "Motif (recouvrement)"
-
-#: ../scripts/glossy.scm.h:14
-msgid "Pattern (text)"
-msgstr "Motif (texte)"
-
-#: ../scripts/glossy.scm.h:15 ../scripts/sphere.scm.h:5
-msgid "Shadow"
-msgstr "Ombre"
-
-#: ../scripts/glossy.scm.h:19
+#: ../scripts/glossy.scm:206 ../scripts/glossy.scm:278
 msgid "Text gradient reverse"
 msgstr "Dégradé de texte inversé"
 
-#: ../scripts/glossy.scm.h:20
-msgid "Use pattern for outline instead of gradient"
-msgstr "Utiliser un motif pour le contour au lieu du dégradé"
+#: ../scripts/glossy.scm:207 ../scripts/glossy.scm:279
+msgid "Blend gradient (outline)"
+msgstr "Dégradé (contours)"
 
-#: ../scripts/glossy.scm.h:21
+#: ../scripts/glossy.scm:208 ../scripts/glossy.scm:280
+msgid "Outline gradient reverse"
+msgstr "Dégradé du contour inversé"
+
+#: ../scripts/glossy.scm:211 ../scripts/glossy.scm:283
 msgid "Use pattern for text instead of gradient"
 msgstr "Utiliser un motif pour le texte au lieu du dégradé"
 
-#: ../scripts/glossy.scm.h:22
+#: ../scripts/glossy.scm:212 ../scripts/glossy.scm:284
+msgid "Pattern (text)"
+msgstr "Motif (texte)"
+
+#: ../scripts/glossy.scm:213 ../scripts/glossy.scm:285
+msgid "Use pattern for outline instead of gradient"
+msgstr "Utiliser un motif pour le contour au lieu du dégradé"
+
+#: ../scripts/glossy.scm:214 ../scripts/glossy.scm:286
+msgid "Pattern (outline)"
+msgstr "Motif (contour)"
+
+#: ../scripts/glossy.scm:215 ../scripts/glossy.scm:287
 msgid "Use pattern overlay"
 msgstr "Utiliser un motif de recouvrement"
 
-#: ../scripts/glowing-logo.scm.h:1
+#: ../scripts/glossy.scm:216 ../scripts/glossy.scm:288
+msgid "Pattern (overlay)"
+msgstr "Motif (recouvrement)"
+
+#: ../scripts/glossy.scm:218 ../scripts/glossy.scm:290 ../scripts/sphere.scm:80
+msgid "Shadow"
+msgstr "Ombre"
+
+#: ../scripts/glossy.scm:269
+msgid "Create a logo with gradients, patterns, shadows, and bump maps"
+msgstr "Crée un logo avec dégradés, motifs, ombres et reliefs"
+
+#: ../scripts/glowing-logo.scm:76 ../scripts/glowing-logo.scm:109
+msgid "Glo_wing Hot..."
+msgstr "Chaud rougeoyant..."
+
+#: ../scripts/glowing-logo.scm:77
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
 msgstr ""
 "Ajoute un effet de métal chaud rougeoyant à la région sélectionnée (ou "
 "alpha) "
 
-#: ../scripts/glowing-logo.scm.h:3
-msgid "Create a logo that looks like glowing hot metal"
-msgstr "Crée d'un logo ressemblant à du métal chaud rougeoyant"
-
-#: ../scripts/glowing-logo.scm.h:4
+#: ../scripts/glowing-logo.scm:84
 msgid "Effect size (pixels * 3)"
 msgstr "Taille de l'effet (pixels * 3)"
 
-#: ../scripts/glowing-logo.scm.h:7
-msgid "Glo_wing Hot..."
-msgstr "Chaud rougeoyant..."
+#: ../scripts/glowing-logo.scm:110
+msgid "Create a logo that looks like glowing hot metal"
+msgstr "Crée d'un logo ressemblant à du métal chaud rougeoyant"
 
-#: ../scripts/gradient-bevel-logo.scm.h:1
+#: ../scripts/gradient-bevel-logo.scm:95 ../scripts/gradient-bevel-logo.scm:134
+msgid "Gradient Beve_l..."
+msgstr "B_iseau graduel..."
+
+#: ../scripts/gradient-bevel-logo.scm:96
 msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
 msgstr ""
 "Ajoute un aspect brillant et un biseau à la région sélectionnée (ou alpha) "
 
-#: ../scripts/gradient-bevel-logo.scm.h:3
-msgid "Bevel height (sharpness)"
-msgstr "Hauteur du biseau (finesse)"
-
-#: ../scripts/gradient-bevel-logo.scm.h:5 ../scripts/t-o-p-logo.scm.h:4
-#: ../scripts/textured-logo.scm.h:2
+#: ../scripts/gradient-bevel-logo.scm:103 ../scripts/textured-logo.scm:127
+#: ../scripts/t-o-p-logo.scm:109
 msgid "Border size (pixels)"
 msgstr "Taille de la bordure (pixels)"
 
-#: ../scripts/gradient-bevel-logo.scm.h:6
+#: ../scripts/gradient-bevel-logo.scm:104
+#: ../scripts/gradient-bevel-logo.scm:143
+msgid "Bevel height (sharpness)"
+msgstr "Hauteur du biseau (finesse)"
+
+#: ../scripts/gradient-bevel-logo.scm:135
 msgid "Create a logo with a shiny look and beveled edges"
 msgstr "Crée un logo avec un aspect brillant et des bords biseautés"
 
-#: ../scripts/gradient-bevel-logo.scm.h:9
-msgid "Gradient Beve_l..."
-msgstr "B_iseau graduel..."
-
-#: ../scripts/gradient-example.scm.h:1
-msgid "Create an image filled with an example of the current gradient"
-msgstr "Crée un image remplie avec un exemplaire du dégradé courant"
-
-#: ../scripts/gradient-example.scm.h:2
+#: ../scripts/gradient-example.scm:64
 msgid "Custom _Gradient..."
 msgstr "Dégradé _personnalisé..."
 
-#: ../scripts/grid-system.scm.h:1 ../scripts/guides-from-selection.scm.h:1
+#: ../scripts/gradient-example.scm:65
+msgid "Create an image filled with an example of the current gradient"
+msgstr "Crée un image remplie avec un exemplaire du dégradé courant"
+
+#: ../scripts/grid-system.scm:84
+msgid "_Grid..."
+msgstr "_Grille..."
+
+#: ../scripts/grid-system.scm:85 ../scripts/guides-from-selection.scm:33
 msgid ""
 "Draw a grid as specified by the lists of X and Y locations using the current "
 "brush"
@@ -1665,731 +1753,721 @@ msgstr ""
 "Trace une grille suivant les indications des listes de coordonnées X et Y en "
 "utilisant la brosse courante"
 
-#: ../scripts/grid-system.scm.h:2
+#: ../scripts/grid-system.scm:92
 msgid "X divisions"
 msgstr "Divisions en X"
 
-#: ../scripts/grid-system.scm.h:3
+#: ../scripts/grid-system.scm:93
 msgid "Y divisions"
 msgstr "Divisions en Y"
 
-#: ../scripts/grid-system.scm.h:4
-msgid "_Grid..."
-msgstr "_Grille..."
-
-#: ../scripts/guides-from-selection.scm.h:2
+#: ../scripts/guides-from-selection.scm:32
 msgid "New Guides from _Selection"
 msgstr "Nouveaux guides depuis la _sélection"
 
-#: ../scripts/guides-new-percent.scm.h:1
+#: ../scripts/guides-new-percent.scm:27
+msgid "New Guide (by _Percent)..."
+msgstr "Nouveau guide (en _pourcentage)..."
+
+#: ../scripts/guides-new-percent.scm:28
 msgid "Add a guide at the position specified as a percentage of the image size"
 msgstr ""
 "Ajoute un guide à la position indiquée en pourcentage de la taille de l'image"
 
-#: ../scripts/guides-new-percent.scm.h:2 ../scripts/guides-new.scm.h:2
+#: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
 msgid "Direction"
 msgstr "Direction"
 
-#: ../scripts/guides-new-percent.scm.h:3 ../scripts/guides-new.scm.h:3
+#: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: ../scripts/guides-new-percent.scm.h:4
-msgid "New Guide (by _Percent)..."
-msgstr "Nouveau guide (en _pourcentage)..."
-
-#: ../scripts/guides-new-percent.scm.h:6
-#, no-c-format
-msgid "Position (in %)"
-msgstr "Position (en %)"
-
-#: ../scripts/guides-new-percent.scm.h:7 ../scripts/guides-new.scm.h:6
+#: ../scripts/guides-new-percent.scm:36 ../scripts/guides-new.scm:35
 msgid "Vertical"
 msgstr "Vertical"
 
-#: ../scripts/guides-new.scm.h:1
+#: ../scripts/guides-new-percent.scm:37
+msgid "Position (in %)"
+msgstr "Position (en %)"
+
+#: ../scripts/guides-new.scm:27
+msgid "New _Guide..."
+msgstr "Nouveau _guide..."
+
+#: ../scripts/guides-new.scm:28
 msgid "Add a guide at the orientation and position specified (in pixels)"
 msgstr ""
 "Ajoute un guide dans l'orientation et à la position indiquées (en pixels)"
 
-#: ../scripts/guides-new.scm.h:4
-msgid "New _Guide..."
-msgstr "Nouveau _guide..."
-
-#: ../scripts/guides-new.scm.h:5
+#: ../scripts/guides-new.scm:36
 msgid "Position"
 msgstr "Position"
 
-#: ../scripts/guides-remove-all.scm.h:1
-msgid "Remove all horizontal and vertical guides"
-msgstr "Supprimer tous les guides horizontaux et verticaux"
-
-#: ../scripts/guides-remove-all.scm.h:2
+#: ../scripts/guides-remove-all.scm:19
 msgid "_Remove all Guides"
 msgstr "_Enlever tous les guides"
 
-#: ../scripts/i26-gunya2.scm.h:1
-msgid "Create a logo in a two-color, scribbled text style"
-msgstr "Crée un logo bicolore dans le style d'un texte griffonné"
+#: ../scripts/guides-remove-all.scm:20
+msgid "Remove all horizontal and vertical guides"
+msgstr "Supprimer tous les guides horizontaux et verticaux"
 
-#: ../scripts/i26-gunya2.scm.h:4
-msgid "Frame color"
-msgstr "Couleur de l'encadrement"
-
-#: ../scripts/i26-gunya2.scm.h:5
-msgid "Frame size"
-msgstr "Taille de l'encadrement"
-
-#: ../scripts/i26-gunya2.scm.h:6
+#: ../scripts/i26-gunya2.scm:91
 msgid "Imigre-_26..."
 msgstr "Imigre-_26..."
 
-#: ../scripts/land.scm.h:1
-msgid "Create an image filled with a topographic map pattern"
-msgstr "Crée une image remplie avec un motif de carte topographique"
+#: ../scripts/i26-gunya2.scm:92
+msgid "Create a logo in a two-color, scribbled text style"
+msgstr "Crée un logo bicolore dans le style d'un texte griffonné"
 
-#: ../scripts/land.scm.h:6
-msgid "Land height"
-msgstr "Hauteur du terrain"
+#: ../scripts/i26-gunya2.scm:99
+msgid "Frame color"
+msgstr "Couleur de l'encadrement"
 
-#: ../scripts/land.scm.h:10
-msgid "Sea depth"
-msgstr "Profondeur de la mer"
+#: ../scripts/i26-gunya2.scm:102
+msgid "Frame size"
+msgstr "Taille de l'encadrement"
 
-#: ../scripts/land.scm.h:11
+#: ../scripts/land.scm:72
 msgid "_Land..."
 msgstr "T_erre..."
 
-#: ../scripts/lava.scm.h:1
-msgid "Fill the current selection with lava"
-msgstr "Remplit la sélection courante avec de la lave"
+#: ../scripts/land.scm:73
+msgid "Create an image filled with a topographic map pattern"
+msgstr "Crée une image remplie avec un motif de carte topographique"
 
-#: ../scripts/lava.scm.h:4 ../scripts/swirltile.scm.h:8
-msgid "Roughness"
-msgstr "Rugosité"
+#: ../scripts/land.scm:82
+msgid "Land height"
+msgstr "Hauteur du terrain"
 
-#: ../scripts/lava.scm.h:5
-msgid "Seed"
-msgstr "Graine"
+#: ../scripts/land.scm:83
+msgid "Sea depth"
+msgstr "Profondeur de la mer"
 
-#: ../scripts/lava.scm.h:8
-msgid "Use current gradient"
-msgstr "Utilise le dégradé courant"
-
-#: ../scripts/lava.scm.h:9
+#: ../scripts/lava.scm:117
 msgid "_Lava..."
 msgstr "_Lave..."
 
-#: ../scripts/line-nova.scm.h:1
+#: ../scripts/lava.scm:118
+msgid "Fill the current selection with lava"
+msgstr "Remplit la sélection courante avec de la lave"
+
+#: ../scripts/lava.scm:125
+msgid "Seed"
+msgstr "Graine"
+
+#: ../scripts/lava.scm:127 ../scripts/swirltile.scm:64
+msgid "Roughness"
+msgstr "Rugosité"
+
+#: ../scripts/lava.scm:131
+msgid "Use current gradient"
+msgstr "Utilise le dégradé courant"
+
+#: ../scripts/line-nova.scm:102
+msgid "Line _Nova..."
+msgstr "Ligne No_va..."
+
+#: ../scripts/line-nova.scm:103
 msgid ""
 "Fill a layer with rays emanating outward from its center using the FG color"
 msgstr ""
 "Remplit un calque avec des rayons émanant de son centre en utilisant la "
 "couleur PP"
 
-#: ../scripts/line-nova.scm.h:2
-msgid "Line _Nova..."
-msgstr "Ligne No_va..."
-
-#: ../scripts/line-nova.scm.h:3
+#: ../scripts/line-nova.scm:110
 msgid "Number of lines"
 msgstr "Nombres de lignes"
 
-#: ../scripts/line-nova.scm.h:4
-msgid "Offset radius"
-msgstr "Rayon du décalage"
-
-#: ../scripts/line-nova.scm.h:5
-msgid "Randomness"
-msgstr "Aléa"
-
-#: ../scripts/line-nova.scm.h:6
+#: ../scripts/line-nova.scm:111
 msgid "Sharpness (degrees)"
 msgstr "Étroitesse (degrés)"
 
-#: ../scripts/mkbrush.scm.h:1
-msgid "Create a rectangular brush"
-msgstr "Crée une brosse rectangulaire"
+#: ../scripts/line-nova.scm:112
+msgid "Offset radius"
+msgstr "Rayon du décalage"
 
-#: ../scripts/mkbrush.scm.h:2
-msgid "Create a rectangular brush with feathered edges"
-msgstr "Crée une brosse rectangulaire avec des bords adoucis"
+#: ../scripts/line-nova.scm:113
+msgid "Randomness"
+msgstr "Aléa"
 
-#: ../scripts/mkbrush.scm.h:3
-msgid "Create an elliptical brush"
-msgstr "Crée une brosse elliptique"
-
-#: ../scripts/mkbrush.scm.h:4
-msgid "Create an elliptical brush with feathered edges"
-msgstr "Crée une brosse elliptique avec des bords adoucis"
-
-#: ../scripts/mkbrush.scm.h:5
-msgid "Elli_ptical, Feathered..."
-msgstr "_Elliptique, adoucie..."
-
-#: ../scripts/mkbrush.scm.h:6
-msgid "Feathering"
-msgstr "Adoucissement"
-
-#: ../scripts/mkbrush.scm.h:8
-msgid "Name"
-msgstr "Nom"
-
-#: ../scripts/mkbrush.scm.h:9
-msgid "Re_ctangular, Feathered..."
-msgstr "Re_ctangulaire, adoucie..."
-
-#: ../scripts/mkbrush.scm.h:10 ../scripts/paste-as-brush.scm.h:5
-#: ../scripts/select-to-brush.scm.h:4
-msgid "Spacing"
-msgstr "Espacement"
-
-#: ../scripts/mkbrush.scm.h:12
-msgid "_Elliptical..."
-msgstr "_Elliptique..."
-
-#: ../scripts/mkbrush.scm.h:13
+#: ../scripts/mkbrush.scm:63
 msgid "_Rectangular..."
 msgstr "_Rectangulaire..."
 
-#: ../scripts/neon-logo.scm.h:2
+#: ../scripts/mkbrush.scm:64
+msgid "Create a rectangular brush"
+msgstr "Crée une brosse rectangulaire"
+
+#: ../scripts/mkbrush.scm:69 ../scripts/mkbrush.scm:133
+#: ../scripts/mkbrush.scm:187 ../scripts/mkbrush.scm:254
+msgid "Name"
+msgstr "Nom"
+
+#: ../scripts/mkbrush.scm:72 ../scripts/mkbrush.scm:137
+#: ../scripts/mkbrush.scm:190 ../scripts/mkbrush.scm:258
+#: ../scripts/paste-as-brush.scm:71 ../scripts/select-to-brush.scm:143
+msgid "Spacing"
+msgstr "Espacement"
+
+#: ../scripts/mkbrush.scm:127
+msgid "Re_ctangular, Feathered..."
+msgstr "Re_ctangulaire, adoucie..."
+
+#: ../scripts/mkbrush.scm:128
+msgid "Create a rectangular brush with feathered edges"
+msgstr "Crée une brosse rectangulaire avec des bords adoucis"
+
+#: ../scripts/mkbrush.scm:136 ../scripts/mkbrush.scm:257
+msgid "Feathering"
+msgstr "Adoucissement"
+
+#: ../scripts/mkbrush.scm:181
+msgid "_Elliptical..."
+msgstr "_Elliptique..."
+
+#: ../scripts/mkbrush.scm:182
+msgid "Create an elliptical brush"
+msgstr "Crée une brosse elliptique"
+
+#: ../scripts/mkbrush.scm:248
+msgid "Elli_ptical, Feathered..."
+msgstr "_Elliptique, adoucie..."
+
+#: ../scripts/mkbrush.scm:249
+msgid "Create an elliptical brush with feathered edges"
+msgstr "Crée une brosse elliptique avec des bords adoucis"
+
+#: ../scripts/neon-logo.scm:245 ../scripts/neon-logo.scm:281
+msgid "N_eon..."
+msgstr "N_éon..."
+
+#: ../scripts/neon-logo.scm:246
 msgid "Convert the selected region (or alpha) into a neon-sign like object"
 msgstr ""
 "Convertit la région sélectionnée (ou alpha) en un objet constitué de tubes "
 "néon"
 
-#: ../scripts/neon-logo.scm.h:3
-msgid "Create a logo in the style of a neon sign"
-msgstr "Crée un logo dans le style de tubes néon"
-
-#: ../scripts/neon-logo.scm.h:4
-msgid "Create shadow"
-msgstr "Créer une ombre"
-
-#: ../scripts/neon-logo.scm.h:5
+#: ../scripts/neon-logo.scm:253
 msgid "Effect size (pixels * 5)"
 msgstr "Taille de l'effet (pixels * 5)"
 
-#: ../scripts/neon-logo.scm.h:9
-msgid "N_eon..."
-msgstr "N_éon..."
+#: ../scripts/neon-logo.scm:256 ../scripts/neon-logo.scm:292
+msgid "Create shadow"
+msgstr "Créer une ombre"
 
-#: ../scripts/news-text.scm.h:3
-msgid "Cell size (pixels)"
-msgstr "Taille des cellules (pixels)"
+#: ../scripts/neon-logo.scm:282
+msgid "Create a logo in the style of a neon sign"
+msgstr "Crée un logo dans le style de tubes néon"
 
-#: ../scripts/news-text.scm.h:4
-msgid "Create a logo in the style of newspaper printing"
-msgstr "Crée un logo dans le style papier journal"
-
-#: ../scripts/news-text.scm.h:6 ../scripts/speed-text.scm.h:4
-#, no-c-format
-msgid "Density (%)"
-msgstr "Densité (%)"
-
-#: ../scripts/news-text.scm.h:9
+#: ../scripts/news-text.scm:77
 msgid "Newsprint Te_xt..."
 msgstr "Te_xte de papier journal..."
 
-#: ../scripts/old-photo.scm.h:2
-msgid "Defocus"
-msgstr "Enlever le focus"
+#: ../scripts/news-text.scm:78
+msgid "Create a logo in the style of newspaper printing"
+msgstr "Crée un logo dans le style papier journal"
 
-#: ../scripts/old-photo.scm.h:3
-msgid "Make an image look like an old photo"
-msgstr "Faire qu'une image ressemble à une vieille photo"
+#: ../scripts/news-text.scm:86
+msgid "Cell size (pixels)"
+msgstr "Taille des cellules (pixels)"
 
-#: ../scripts/old-photo.scm.h:4
-msgid "Mottle"
-msgstr "Marbrer"
+#: ../scripts/news-text.scm:87 ../scripts/speed-text.scm:95
+msgid "Density (%)"
+msgstr "Densité (%)"
 
-#: ../scripts/old-photo.scm.h:5
-msgid "Sepia"
-msgstr "Sépia"
-
-#: ../scripts/old-photo.scm.h:7
+#: ../scripts/old-photo.scm:90
 msgid "_Old Photo..."
 msgstr "_Vieille photo..."
 
-#: ../scripts/paste-as-brush.scm.h:1 ../scripts/select-to-brush.scm.h:1
-msgid "Brush name"
-msgstr "Nom de la brosse"
+#: ../scripts/old-photo.scm:91
+msgid "Make an image look like an old photo"
+msgstr "Faire qu'une image ressemble à une vieille photo"
 
-#: ../scripts/paste-as-brush.scm.h:2 ../scripts/paste-as-pattern.scm.h:1
-#: ../scripts/select-to-brush.scm.h:3 ../scripts/select-to-pattern.scm.h:2
-msgid "File name"
-msgstr "Nom de fichier"
+#: ../scripts/old-photo.scm:98
+msgid "Defocus"
+msgstr "Enlever le focus"
 
-#: ../scripts/paste-as-brush.scm.h:3
-msgid "New _Brush..."
-msgstr "Nouvelle _brosse..."
+#. since this plug-in uses the fuzzy-border plug-in, I used the
+#. values of the latter, with the exception of the initial value
+#. and the 'minimum' value.
+#: ../scripts/old-photo.scm:103
+msgid "Sepia"
+msgstr "Sépia"
 
-#: ../scripts/paste-as-brush.scm.h:4
-msgid "Paste the clipboard contents into a new brush"
-msgstr "Copie le contenu du presse-papiers vers une nouvelle brosse"
+#: ../scripts/old-photo.scm:104
+msgid "Mottle"
+msgstr "Marbrer"
 
-#: ../scripts/paste-as-brush.scm.h:6 ../scripts/paste-as-pattern.scm.h:5
+#: ../scripts/paste-as-brush.scm:57 ../scripts/paste-as-pattern.scm:45
 msgid "There is no image data in the clipboard to paste."
 msgstr "Aucune image n'est présente dans le presse-papier pour collage."
 
-#: ../scripts/paste-as-pattern.scm.h:2
+#: ../scripts/paste-as-brush.scm:63
+msgid "New _Brush..."
+msgstr "Nouvelle _brosse..."
+
+#: ../scripts/paste-as-brush.scm:64
+msgid "Paste the clipboard contents into a new brush"
+msgstr "Copie le contenu du presse-papiers vers une nouvelle brosse"
+
+#: ../scripts/paste-as-brush.scm:69 ../scripts/select-to-brush.scm:141
+msgid "Brush name"
+msgstr "Nom de la brosse"
+
+#: ../scripts/paste-as-brush.scm:70 ../scripts/paste-as-pattern.scm:58
+#: ../scripts/select-to-brush.scm:142 ../scripts/select-to-pattern.scm:103
+msgid "File name"
+msgstr "Nom de fichier"
+
+#: ../scripts/paste-as-pattern.scm:51
 msgid "New _Pattern..."
 msgstr "Nouveau _motif..."
 
-#: ../scripts/paste-as-pattern.scm.h:3
+#: ../scripts/paste-as-pattern.scm:52
 msgid "Paste the clipboard contents into a new pattern"
 msgstr "Copie le contenu du presse-papiers vers un nouveau motif"
 
-#: ../scripts/paste-as-pattern.scm.h:4 ../scripts/select-to-pattern.scm.h:3
+#: ../scripts/paste-as-pattern.scm:57 ../scripts/select-to-pattern.scm:102
 msgid "Pattern name"
 msgstr "Nom du motif"
 
-#: ../scripts/perspective-shadow.scm.h:1
-msgid "Add a perspective shadow to the selected region (or alpha)"
-msgstr "Ajoute une ombre en perspective à la région sélectionnée (ou alpha)"
-
-#: ../scripts/perspective-shadow.scm.h:3
-msgid "Angle"
-msgstr "Angle"
-
-#: ../scripts/perspective-shadow.scm.h:6
-msgid "Interpolation"
-msgstr "Interpolation"
-
-#: ../scripts/perspective-shadow.scm.h:8
-msgid "Relative distance of horizon"
-msgstr "Distance relative de l'horizon"
-
-#: ../scripts/perspective-shadow.scm.h:9
-msgid "Relative length of shadow"
-msgstr "Longueur relative de l'ombre"
-
-#: ../scripts/perspective-shadow.scm.h:10
+#: ../scripts/perspective-shadow.scm:196
 msgid "_Perspective..."
 msgstr "_Perspective..."
 
-#: ../scripts/predator.scm.h:1
-msgid "Add a 'Predator' effect to the selected region (or alpha)"
-msgstr "Ajoute un effet « prédateur » à la région sélectionnée (ou alpha)"
+#: ../scripts/perspective-shadow.scm:197
+msgid "Add a perspective shadow to the selected region (or alpha)"
+msgstr "Ajoute une ombre en perspective à la région sélectionnée (ou alpha)"
 
-#: ../scripts/predator.scm.h:2
-msgid "Edge amount"
-msgstr "Quantité d'arêtes"
+#: ../scripts/perspective-shadow.scm:204
+msgid "Angle"
+msgstr "Angle"
 
-#: ../scripts/predator.scm.h:4
-msgid "Pixel amount"
-msgstr "Nombre de pixels"
+#: ../scripts/perspective-shadow.scm:205
+msgid "Relative distance of horizon"
+msgstr "Distance relative de l'horizon"
 
-#: ../scripts/predator.scm.h:5
-msgid "Pixelize"
-msgstr "Pixeliser"
+#: ../scripts/perspective-shadow.scm:206
+msgid "Relative length of shadow"
+msgstr "Longueur relative de l'ombre"
 
-#: ../scripts/predator.scm.h:7
+#: ../scripts/perspective-shadow.scm:210
+msgid "Interpolation"
+msgstr "Interpolation"
+
+#: ../scripts/predator.scm:119
 msgid "_Predator..."
 msgstr "_Prédateur..."
 
-#: ../scripts/pupi-button.scm.h:2
-msgid "Create images, each containing an oval button graphic"
-msgstr "Crée des images contenant chacune un bouton graphique ovale"
+#: ../scripts/predator.scm:120
+msgid "Add a 'Predator' effect to the selected region (or alpha)"
+msgstr "Ajoute un effet « prédateur » à la région sélectionnée (ou alpha)"
 
-#: ../scripts/pupi-button.scm.h:5
-msgid "Lower color"
-msgstr "Couleur du bas"
+#: ../scripts/predator.scm:127
+msgid "Edge amount"
+msgstr "Quantité d'arêtes"
 
-#: ../scripts/pupi-button.scm.h:6
-msgid "Lower color (active)"
-msgstr "Couleur du bas (active)"
+#: ../scripts/predator.scm:128
+msgid "Pixelize"
+msgstr "Pixeliser"
 
-#: ../scripts/pupi-button.scm.h:7
-msgid "Not pressed"
-msgstr "Inactif"
+#: ../scripts/predator.scm:129
+msgid "Pixel amount"
+msgstr "Nombre de pixels"
 
-#: ../scripts/pupi-button.scm.h:8
-msgid "Not pressed (active)"
-msgstr "Normal"
-
-#: ../scripts/pupi-button.scm.h:9
-msgid "Padding X"
-msgstr "Marge X"
-
-#: ../scripts/pupi-button.scm.h:10
-msgid "Padding Y"
-msgstr "Marge Y"
-
-#: ../scripts/pupi-button.scm.h:12
-msgid "Round ratio"
-msgstr "Proportion de l'arrondi"
-
-#: ../scripts/pupi-button.scm.h:15
-msgid "Text color (active)"
-msgstr "Couleur du texte (actif)"
-
-#: ../scripts/pupi-button.scm.h:16
-msgid "Upper color"
-msgstr "Couleur du haut"
-
-#: ../scripts/pupi-button.scm.h:17
-msgid "Upper color (active)"
-msgstr "Couleur du haut (actif)"
-
-#: ../scripts/pupi-button.scm.h:18
+#: ../scripts/pupi-button.scm:187
 msgid "_Round Button..."
 msgstr "Bouton a_rrondi..."
 
-#: ../scripts/rendermap.scm.h:1
-msgid "Behavior"
-msgstr "Comportement"
+#: ../scripts/pupi-button.scm:188
+msgid "Create images, each containing an oval button graphic"
+msgstr "Crée des images contenant chacune un bouton graphique ovale"
 
-#: ../scripts/rendermap.scm.h:2
-msgid "Create an image filled with an Earth-like map pattern"
-msgstr "Crée une image remplie avec un motif de style terrain"
+#: ../scripts/pupi-button.scm:196
+msgid "Upper color"
+msgstr "Couleur du haut"
 
-#: ../scripts/rendermap.scm.h:3
-msgid "Detail in Middle"
-msgstr "Détail au milieu"
+#: ../scripts/pupi-button.scm:197
+msgid "Lower color"
+msgstr "Couleur du bas"
 
-#: ../scripts/rendermap.scm.h:8
+#: ../scripts/pupi-button.scm:199
+msgid "Upper color (active)"
+msgstr "Couleur du haut (actif)"
+
+#: ../scripts/pupi-button.scm:200
+msgid "Lower color (active)"
+msgstr "Couleur du bas (active)"
+
+#: ../scripts/pupi-button.scm:201
+msgid "Text color (active)"
+msgstr "Couleur du texte (actif)"
+
+#: ../scripts/pupi-button.scm:202
+msgid "Padding X"
+msgstr "Marge X"
+
+#: ../scripts/pupi-button.scm:203
+msgid "Padding Y"
+msgstr "Marge Y"
+
+#: ../scripts/pupi-button.scm:205
+msgid "Round ratio"
+msgstr "Proportion de l'arrondi"
+
+#: ../scripts/pupi-button.scm:206
+msgid "Not pressed"
+msgstr "Inactif"
+
+#: ../scripts/pupi-button.scm:207
+msgid "Not pressed (active)"
+msgstr "Normal"
+
+#: ../scripts/rendermap.scm:81
 msgid "Render _Map..."
 msgstr "Rendre un _terrain..."
 
-#: ../scripts/rendermap.scm.h:9
+#: ../scripts/rendermap.scm:82
+msgid "Create an image filled with an Earth-like map pattern"
+msgstr "Crée une image remplie avec un motif de style terrain"
+
+#: ../scripts/rendermap.scm:91
+msgid "Behavior"
+msgstr "Comportement"
+
+#: ../scripts/rendermap.scm:91
 msgid "Tile"
 msgstr "Carreau"
 
-#: ../scripts/reverse-layers.scm.h:1
+#: ../scripts/rendermap.scm:91
+msgid "Detail in Middle"
+msgstr "Détail au milieu"
+
+#: ../scripts/reverse-layers.scm:32
 msgid "Reverse Layer Order"
 msgstr "Inverser l'ordre des calques"
 
-#: ../scripts/reverse-layers.scm.h:2
+#: ../scripts/reverse-layers.scm:33
 msgid "Reverse the order of layers in the image"
 msgstr "Inverse l'ordre des calques dans l'image"
 
-#: ../scripts/ripply-anim.scm.h:1
-msgid "Black"
-msgstr "Noir"
+#: ../scripts/ripply-anim.scm:119
+msgid "_Rippling..."
+msgstr "_Ondulation..."
 
-#: ../scripts/ripply-anim.scm.h:2
+#: ../scripts/ripply-anim.scm:120
 msgid ""
 "Create a multi-layer image by adding a ripple effect to the current image"
 msgstr ""
 "Crée une image multicalques en ajoutant un effet d'ondulation à l'image "
 "courante"
 
-#: ../scripts/ripply-anim.scm.h:3
-msgid "Edge behavior"
-msgstr "Comportement du bord"
-
-#: ../scripts/ripply-anim.scm.h:4 ../scripts/waves-anim.scm.h:4
-msgid "Number of frames"
-msgstr "Nombre d'images"
-
-#: ../scripts/ripply-anim.scm.h:5
+#: ../scripts/ripply-anim.scm:127
 msgid "Rippling strength"
 msgstr "Vigueur de l'ondulation"
 
-#: ../scripts/ripply-anim.scm.h:6
-msgid "Smear"
-msgstr "Étaler"
+#: ../scripts/ripply-anim.scm:128 ../scripts/waves-anim.scm:106
+msgid "Number of frames"
+msgstr "Nombre d'images"
 
-#: ../scripts/ripply-anim.scm.h:7
+#: ../scripts/ripply-anim.scm:129
+msgid "Edge behavior"
+msgstr "Comportement du bord"
+
+#: ../scripts/ripply-anim.scm:129
 msgid "Wrap"
 msgstr "Enrouler"
 
-#: ../scripts/ripply-anim.scm.h:8
-msgid "_Rippling..."
-msgstr "_Ondulation..."
+#: ../scripts/ripply-anim.scm:129
+msgid "Smear"
+msgstr "Étaler"
 
-#: ../scripts/round-corners.scm.h:1
-msgid "Add background"
-msgstr "Ajouter un arrière-plan"
+#: ../scripts/ripply-anim.scm:129
+msgid "Black"
+msgstr "Noir"
 
-#: ../scripts/round-corners.scm.h:2
-msgid "Add drop-shadow"
-msgstr "Ajouter une ombre portée"
+#: ../scripts/round-corners.scm:126
+msgid "_Round Corners..."
+msgstr "Coins a_rrondis..."
 
-#: ../scripts/round-corners.scm.h:4
-msgid "Edge radius"
-msgstr "Rayon des bords"
-
-#: ../scripts/round-corners.scm.h:5
+#: ../scripts/round-corners.scm:127
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
 msgstr ""
 "Arrondit les coins d'une image et optionnellement ajouter une ombre portée "
 "et un fond"
 
-#: ../scripts/round-corners.scm.h:9
-msgid "_Round Corners..."
-msgstr "Coins a_rrondis..."
+#: ../scripts/round-corners.scm:134
+msgid "Edge radius"
+msgstr "Rayon des bords"
 
-#: ../scripts/script-fu-set-cmap.scm.h:1
+#: ../scripts/round-corners.scm:135
+msgid "Add drop-shadow"
+msgstr "Ajouter une ombre portée"
+
+#: ../scripts/round-corners.scm:139
+msgid "Add background"
+msgstr "Ajouter un arrière-plan"
+
+#: ../scripts/script-fu-set-cmap.scm:54
+msgid "Se_t Colormap..."
+msgstr "Définir la pale_tte..."
+
+#: ../scripts/script-fu-set-cmap.scm:55
 msgid "Change the colormap of an image to the colors in a specified palette."
 msgstr ""
 "Change la palette de couleurs d'un image aux couleurs de la palette indiquée."
 
-#: ../scripts/script-fu-set-cmap.scm.h:2
+#: ../scripts/script-fu-set-cmap.scm:62
 msgid "Palette"
 msgstr "Palette"
 
-#: ../scripts/script-fu-set-cmap.scm.h:3
-msgid "Se_t Colormap..."
-msgstr "Définir la pale_tte..."
-
-#: ../scripts/select-to-brush.scm.h:2
-msgid "Convert a selection to a brush"
-msgstr "Convertit une sélection en brosse"
-
-#: ../scripts/select-to-brush.scm.h:5
-msgid "To _Brush..."
-msgstr "Vers une _brosse..."
-
-#: ../scripts/select-to-image.scm.h:1
-msgid "Convert a selection to an image"
-msgstr "Convertit une sélection en image"
-
-#: ../scripts/select-to-image.scm.h:2
-msgid "To _Image"
-msgstr "Vers une _image"
-
-#: ../scripts/select-to-pattern.scm.h:1
-msgid "Convert a selection to a pattern"
-msgstr "Convertit une sélection en motif"
-
-#: ../scripts/select-to-pattern.scm.h:4
-msgid "To _Pattern..."
-msgstr "Vers un _motif..."
-
-#: ../scripts/selection-round.scm.h:1
-msgid "Concave"
-msgstr "Concave"
-
-#: ../scripts/selection-round.scm.h:3
-#, no-c-format
-msgid "Radius (%)"
-msgstr "Rayon (%)"
-
-#: ../scripts/selection-round.scm.h:4
-msgid "Round the corners of the current selection"
-msgstr "Arrondit les coins de la sélection courante"
-
-#: ../scripts/selection-round.scm.h:5
+#: ../scripts/selection-round.scm:156
 msgid "Rounded R_ectangle..."
 msgstr "Rectangle arr_ondi..."
 
-#: ../scripts/slide.scm.h:1
+#: ../scripts/selection-round.scm:157
+msgid "Round the corners of the current selection"
+msgstr "Arrondit les coins de la sélection courante"
+
+#: ../scripts/selection-round.scm:164
+msgid "Radius (%)"
+msgstr "Rayon (%)"
+
+#: ../scripts/selection-round.scm:165
+msgid "Concave"
+msgstr "Concave"
+
+#: ../scripts/select-to-brush.scm:133
+msgid "To _Brush..."
+msgstr "Vers une _brosse..."
+
+#: ../scripts/select-to-brush.scm:134
+msgid "Convert a selection to a brush"
+msgstr "Convertit une sélection en brosse"
+
+#: ../scripts/select-to-image.scm:81
+msgid "To _Image"
+msgstr "Vers une _image"
+
+#: ../scripts/select-to-image.scm:82
+msgid "Convert a selection to an image"
+msgstr "Convertit une sélection en image"
+
+#: ../scripts/select-to-pattern.scm:94
+msgid "To _Pattern..."
+msgstr "Vers un _motif..."
+
+#: ../scripts/select-to-pattern.scm:95
+msgid "Convert a selection to a pattern"
+msgstr "Convertit une sélection en motif"
+
+#: ../scripts/slide.scm:240
+msgid "_Slide..."
+msgstr "_Pellicule photo..."
+
+#: ../scripts/slide.scm:241
 msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
 msgstr ""
 "Ajoute un cadre de pellicule photo, des trous d'entraînement et un "
 "étiquetage à une image"
 
-#: ../scripts/slide.scm.h:3
-msgid "Font color"
-msgstr "Couleur de la police"
-
-#: ../scripts/slide.scm.h:4
+#: ../scripts/slide.scm:249
 msgid "Number"
 msgstr "Nombre"
 
-#: ../scripts/slide.scm.h:7
-msgid "_Slide..."
-msgstr "_Pellicule photo..."
+#: ../scripts/slide.scm:251
+msgid "Font color"
+msgstr "Couleur de la police"
 
-#: ../scripts/sota-chrome-logo.scm.h:5
-msgid "Create a State Of The Art chromed logo"
-msgstr "Crée un logo chromé dans l'état de l'art"
-
-#: ../scripts/sota-chrome-logo.scm.h:10
+#: ../scripts/sota-chrome-logo.scm:203
 msgid "SOTA Chrome..."
 msgstr "SOTA chrome..."
 
-#: ../scripts/speed-text.scm.h:2
-msgid "Create a logo with a speedy text effect"
-msgstr "Crée un logo avec un effet de texte accéléré"
+#: ../scripts/sota-chrome-logo.scm:204
+msgid "Create a State Of The Art chromed logo"
+msgstr "Crée un logo chromé dans l'état de l'art"
 
-#: ../scripts/speed-text.scm.h:7
+#: ../scripts/speed-text.scm:86
 msgid "Speed Text..."
 msgstr "Texte accéléré..."
 
-#: ../scripts/sphere.scm.h:2
-msgid "Create a simple sphere with a drop shadow"
-msgstr "Crée une simple sphère avec une ombre portée"
+#: ../scripts/speed-text.scm:87
+msgid "Create a logo with a speedy text effect"
+msgstr "Crée un logo avec un effet de texte accéléré"
 
-#: ../scripts/sphere.scm.h:3
-msgid "Lighting (degrees)"
-msgstr "Éclairage (degrés)"
-
-#: ../scripts/sphere.scm.h:4
-msgid "Radius (pixels)"
-msgstr "Rayon (pixels)"
-
-#: ../scripts/sphere.scm.h:6
-msgid "Sphere color"
-msgstr "Couleur de la sphère"
-
-#: ../scripts/sphere.scm.h:7
+#: ../scripts/sphere.scm:72 ../scripts/test-sphere.scm:264
 msgid "_Sphere..."
 msgstr "_Sphère..."
 
-#: ../scripts/spinning-globe.scm.h:1
+#: ../scripts/sphere.scm:73
+msgid "Create a simple sphere with a drop shadow"
+msgstr "Crée une simple sphère avec une ombre portée"
+
+#: ../scripts/sphere.scm:78
+msgid "Radius (pixels)"
+msgstr "Rayon (pixels)"
+
+#: ../scripts/sphere.scm:79
+msgid "Lighting (degrees)"
+msgstr "Éclairage (degrés)"
+
+#: ../scripts/sphere.scm:82
+msgid "Sphere color"
+msgstr "Couleur de la sphère"
+
+#: ../scripts/spinning-globe.scm:95
+msgid "_Spinning Globe..."
+msgstr "Globe _tournant..."
+
+#: ../scripts/spinning-globe.scm:96
 msgid "Create an animation by mapping the current image onto a spinning sphere"
 msgstr ""
 "Crée une animation en plaquant l'image courante sur une sphère tournante"
 
-#: ../scripts/spinning-globe.scm.h:2
+#: ../scripts/spinning-globe.scm:103
 msgid "Frames"
 msgstr "Trames"
 
-#: ../scripts/spinning-globe.scm.h:3
-msgid "Index to n colors (0 = remain RGB)"
-msgstr "Index à n couleurs (0 = reste en RVB)"
-
-#: ../scripts/spinning-globe.scm.h:5
+#: ../scripts/spinning-globe.scm:104
 msgid "Turn from left to right"
 msgstr "Tourne de gauche à droite"
 
-#: ../scripts/spinning-globe.scm.h:7
-msgid "_Spinning Globe..."
-msgstr "Globe _tournant..."
+#: ../scripts/spinning-globe.scm:106
+msgid "Index to n colors (0 = remain RGB)"
+msgstr "Index à n couleurs (0 = reste en RVB)"
 
-#: ../scripts/spyrogimp.scm.h:1
+#: ../scripts/spyrogimp.scm:243
+msgid "Rendering Spyro"
+msgstr "Rendu spyrographe en cours"
+
+#: ../scripts/spyrogimp.scm:317
+msgid "_Spyrogimp..."
+msgstr "_Spyrographe..."
+
+#: ../scripts/spyrogimp.scm:318
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
 msgstr ""
 "Ajoute des courbes spirographes, épitrochoïdes et lissajous au calque actuel"
 
-#: ../scripts/spyrogimp.scm.h:2
-msgid "Airbrush"
-msgstr "Aérographe"
-
-#: ../scripts/spyrogimp.scm.h:3
-msgid "Brush"
-msgstr "Brosse"
-
-#: ../scripts/spyrogimp.scm.h:4
-msgid "Circle"
-msgstr "Cercle"
-
-#: ../scripts/spyrogimp.scm.h:6
-msgid "Color method"
-msgstr "Méthode de coloration"
-
-#: ../scripts/spyrogimp.scm.h:7
-msgid "Epitrochoid"
-msgstr "Épitrochoide"
-
-#: ../scripts/spyrogimp.scm.h:8
-msgid "Frame"
-msgstr "Cadre"
-
-#: ../scripts/spyrogimp.scm.h:10
-msgid "Gradient: Loop Sawtooth"
-msgstr "Dégradé : rebouclage en dents de scie"
-
-#: ../scripts/spyrogimp.scm.h:11
-msgid "Gradient: Loop Triangle"
-msgstr "Dégradé : rebouclage en triangle"
-
-#: ../scripts/spyrogimp.scm.h:12
-msgid "Hexagon"
-msgstr "Hexagone"
-
-#: ../scripts/spyrogimp.scm.h:13
-msgid "Hole ratio"
-msgstr "Ratio du trou"
-
-#: ../scripts/spyrogimp.scm.h:14
-msgid "Inner teeth"
-msgstr "Denture intérieure"
-
-#: ../scripts/spyrogimp.scm.h:15
-msgid "Lissajous"
-msgstr "Lissajous"
-
-#: ../scripts/spyrogimp.scm.h:16
-msgid "Margin (pixels)"
-msgstr "Marge (pixels)"
-
-#: ../scripts/spyrogimp.scm.h:17
-msgid "Outer teeth"
-msgstr "Denture extérieure"
-
-#: ../scripts/spyrogimp.scm.h:18
-msgid "Pencil"
-msgstr "Crayon"
-
-#: ../scripts/spyrogimp.scm.h:19
-msgid "Pentagon"
-msgstr "Pentagone"
-
-#: ../scripts/spyrogimp.scm.h:20
-msgid "Polygon: 10 sides"
-msgstr "Polygone : 10 cotés"
-
-#: ../scripts/spyrogimp.scm.h:21
-msgid "Polygon: 7 sides"
-msgstr "Polygone : 7 cotés"
-
-#: ../scripts/spyrogimp.scm.h:22
-msgid "Polygon: 8 sides"
-msgstr "Polygone : 8 cotés"
-
-#: ../scripts/spyrogimp.scm.h:23
-msgid "Polygon: 9 sides"
-msgstr "Polygone : 9 cotés"
-
-#: ../scripts/spyrogimp.scm.h:24
-msgid "Rendering Spyro"
-msgstr "Rendu spyrographe en cours"
-
-#: ../scripts/spyrogimp.scm.h:25
-msgid "Shape"
-msgstr "Forme"
-
-#: ../scripts/spyrogimp.scm.h:26
-msgid "Solid Color"
-msgstr "Couleur unie"
-
-#: ../scripts/spyrogimp.scm.h:27
-msgid "Spyrograph"
-msgstr "Spyrographe"
-
-#: ../scripts/spyrogimp.scm.h:28
-msgid "Square"
-msgstr "Carré"
-
-#: ../scripts/spyrogimp.scm.h:29 ../scripts/text-circle.scm.h:7
-msgid "Start angle"
-msgstr "Angle de départ"
-
-#: ../scripts/spyrogimp.scm.h:30
-msgid "Tool"
-msgstr "Outil"
-
-#: ../scripts/spyrogimp.scm.h:31
-msgid "Triangle"
-msgstr "Triangle"
-
-#: ../scripts/spyrogimp.scm.h:32
+#: ../scripts/spyrogimp.scm:326
 msgid "Type"
 msgstr "Type"
 
-#: ../scripts/spyrogimp.scm.h:33
-msgid "_Spyrogimp..."
-msgstr "_Spyrographe..."
+#: ../scripts/spyrogimp.scm:326
+msgid "Spyrograph"
+msgstr "Spyrographe"
 
-#: ../scripts/starburst-logo.scm.h:2
-msgid "Burst color"
-msgstr "Couleur d'explosion"
+#: ../scripts/spyrogimp.scm:327
+msgid "Epitrochoid"
+msgstr "Épitrochoide"
 
-#: ../scripts/starburst-logo.scm.h:3
-msgid "Create a logo using a starburst gradient"
-msgstr "Crée un logo en utilisant graduellement une explosion d'étoile"
+#: ../scripts/spyrogimp.scm:328
+msgid "Lissajous"
+msgstr "Lissajous"
 
-#: ../scripts/starburst-logo.scm.h:4
-msgid "Effect size (pixels * 30)"
-msgstr "Taille de l'effet (pixels * 30)"
+#: ../scripts/spyrogimp.scm:329
+msgid "Shape"
+msgstr "Forme"
 
-#: ../scripts/starburst-logo.scm.h:5
+#: ../scripts/spyrogimp.scm:329
+msgid "Circle"
+msgstr "Cercle"
+
+#: ../scripts/spyrogimp.scm:330
+msgid "Frame"
+msgstr "Cadre"
+
+#: ../scripts/spyrogimp.scm:331
+msgid "Triangle"
+msgstr "Triangle"
+
+#: ../scripts/spyrogimp.scm:332
+msgid "Square"
+msgstr "Carré"
+
+#: ../scripts/spyrogimp.scm:333
+msgid "Pentagon"
+msgstr "Pentagone"
+
+#: ../scripts/spyrogimp.scm:334
+msgid "Hexagon"
+msgstr "Hexagone"
+
+#: ../scripts/spyrogimp.scm:335
+msgid "Polygon: 7 sides"
+msgstr "Polygone : 7 cotés"
+
+#: ../scripts/spyrogimp.scm:336
+msgid "Polygon: 8 sides"
+msgstr "Polygone : 8 cotés"
+
+#: ../scripts/spyrogimp.scm:337
+msgid "Polygon: 9 sides"
+msgstr "Polygone : 9 cotés"
+
+#: ../scripts/spyrogimp.scm:338
+msgid "Polygon: 10 sides"
+msgstr "Polygone : 10 cotés"
+
+#: ../scripts/spyrogimp.scm:339
+msgid "Outer teeth"
+msgstr "Denture extérieure"
+
+#: ../scripts/spyrogimp.scm:340
+msgid "Inner teeth"
+msgstr "Denture intérieure"
+
+#: ../scripts/spyrogimp.scm:341
+msgid "Margin (pixels)"
+msgstr "Marge (pixels)"
+
+#: ../scripts/spyrogimp.scm:342
+msgid "Hole ratio"
+msgstr "Ratio du trou"
+
+#: ../scripts/spyrogimp.scm:343 ../scripts/text-circle.scm:212
+msgid "Start angle"
+msgstr "Angle de départ"
+
+#: ../scripts/spyrogimp.scm:345
+msgid "Tool"
+msgstr "Outil"
+
+#: ../scripts/spyrogimp.scm:345
+msgid "Pencil"
+msgstr "Crayon"
+
+#: ../scripts/spyrogimp.scm:346 ../scripts/spyrogimp.scm:348
+msgid "Brush"
+msgstr "Brosse"
+
+#: ../scripts/spyrogimp.scm:347
+msgid "Airbrush"
+msgstr "Aérographe"
+
+#: ../scripts/spyrogimp.scm:350
+msgid "Color method"
+msgstr "Méthode de coloration"
+
+#: ../scripts/spyrogimp.scm:350
+msgid "Solid Color"
+msgstr "Couleur unie"
+
+#: ../scripts/spyrogimp.scm:351
+msgid "Gradient: Loop Sawtooth"
+msgstr "Dégradé : rebouclage en dents de scie"
+
+#: ../scripts/spyrogimp.scm:352
+msgid "Gradient: Loop Triangle"
+msgstr "Dégradé : rebouclage en triangle"
+
+#: ../scripts/starburst-logo.scm:73 ../scripts/starburst-logo.scm:106
+msgid "Starb_urst..."
+msgstr "Explosion d'étoile..."
+
+#: ../scripts/starburst-logo.scm:74
 msgid ""
 "Fill the selected region (or alpha) with a starburst gradient and add a "
 "shadow"
@@ -2397,20 +2475,23 @@ msgstr ""
 "Remplit la région sélectionnée (ou alpha) avec une explosion d'étoile "
 "graduelle et ajoute une ombre"
 
-#: ../scripts/starburst-logo.scm.h:8
-msgid "Starb_urst..."
-msgstr "Explosion d'étoile..."
+#: ../scripts/starburst-logo.scm:81
+msgid "Effect size (pixels * 30)"
+msgstr "Taille de l'effet (pixels * 30)"
 
-#: ../scripts/starscape-logo.scm.h:1
-msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
-msgstr ""
-"Crée un logo en utilisant une texture de roche, une lueur nova et une ombre"
+#: ../scripts/starburst-logo.scm:82 ../scripts/starburst-logo.scm:115
+msgid "Burst color"
+msgstr "Couleur d'explosion"
 
-#: ../scripts/starscape-logo.scm.h:2
-msgid "Effect size (pixels * 4)"
-msgstr "Taille de l'effet (pixels * 4)"
+#: ../scripts/starburst-logo.scm:107
+msgid "Create a logo using a starburst gradient"
+msgstr "Crée un logo en utilisant graduellement une explosion d'étoile"
 
-#: ../scripts/starscape-logo.scm.h:3
+#: ../scripts/starscape-logo.scm:135 ../scripts/starscape-logo.scm:166
+msgid "Sta_rscape..."
+msgstr "Paysage étoilé..."
+
+#: ../scripts/starscape-logo.scm:136
 msgid ""
 "Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
 "and shadow"
@@ -2418,99 +2499,70 @@ msgstr ""
 "Remplit la région sélectionnée (ou alpha) avec une texture de roche, une "
 "lueur nova et une ombre"
 
-#: ../scripts/starscape-logo.scm.h:7
-msgid "Sta_rscape..."
-msgstr "Paysage étoilé..."
+#: ../scripts/starscape-logo.scm:143
+msgid "Effect size (pixels * 4)"
+msgstr "Taille de l'effet (pixels * 4)"
 
-#: ../scripts/swirltile.scm.h:4
-msgid "Create an image filled with a swirled tile effect"
-msgstr "Crée une image remplie avec un effet tourbillonnant "
+#: ../scripts/starscape-logo.scm:167
+msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
+msgstr ""
+"Crée un logo en utilisant une texture de roche, une lueur nova et une ombre"
 
-#: ../scripts/swirltile.scm.h:9
+#: ../scripts/swirltile.scm:51
 msgid "Swirl-_Tile..."
 msgstr "Carreau tourbillonnant..."
 
-#: ../scripts/swirltile.scm.h:10
+#: ../scripts/swirltile.scm:52
+msgid "Create an image filled with a swirled tile effect"
+msgstr "Crée une image remplie avec un effet tourbillonnant "
+
+#: ../scripts/swirltile.scm:63
 msgid "Whirl amount"
 msgstr "Quantité de tourbillons"
 
-#: ../scripts/swirly-pattern.scm.h:1
-msgid "Create an image filled with a swirly pattern"
-msgstr "Crée une image remplie avec un motif tourbillonnant "
-
-#: ../scripts/swirly-pattern.scm.h:2
-msgid "Number of times to whirl"
-msgstr "Combien de fois tourbillonner"
-
-#: ../scripts/swirly-pattern.scm.h:3
-msgid "Quarter size"
-msgstr "Taille du quartier"
-
-#: ../scripts/swirly-pattern.scm.h:4
-msgid "Whirl angle"
-msgstr "Angle de tourbillon"
-
-#: ../scripts/swirly-pattern.scm.h:5
+#: ../scripts/swirly-pattern.scm:82
 msgid "_Swirly..."
 msgstr "T_ourbillonné..."
 
-#: ../scripts/t-o-p-logo.scm.h:1
-msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-msgstr ""
-"Ajoute un effet de trace de particules à la région sélectionnée (ou alpha)"
+#: ../scripts/swirly-pattern.scm:83
+msgid "Create an image filled with a swirly pattern"
+msgstr "Crée une image remplie avec un motif tourbillonnant "
 
-#: ../scripts/t-o-p-logo.scm.h:3
-msgid "Base color"
-msgstr "Couleur de base"
+#: ../scripts/swirly-pattern.scm:88
+msgid "Quarter size"
+msgstr "Taille du quartier"
 
-#: ../scripts/t-o-p-logo.scm.h:5
-msgid "Create a logo using a Trace Of Particles effect"
-msgstr "Crée un logo en utilisant l'effet de tracé de particules"
+#: ../scripts/swirly-pattern.scm:89
+msgid "Whirl angle"
+msgstr "Angle de tourbillon"
 
-#: ../scripts/t-o-p-logo.scm.h:6
-msgid "Edge only"
-msgstr "Bords seulement"
+#: ../scripts/swirly-pattern.scm:90
+msgid "Number of times to whirl"
+msgstr "Combien de fois tourbillonner"
 
-#: ../scripts/t-o-p-logo.scm.h:7
-msgid "Edge width"
-msgstr "Largeur des bords"
+#: ../scripts/text-circle.scm:204
+msgid "Text C_ircle..."
+msgstr "Texte circ_ulaire..."
 
-#: ../scripts/t-o-p-logo.scm.h:10
-msgid "Hit rate"
-msgstr "Taux de traces"
-
-#: ../scripts/t-o-p-logo.scm.h:12
-msgid "_Particle Trace..."
-msgstr "Tracé de _particule..."
-
-#: ../scripts/text-circle.scm.h:1
-msgid "Antialias"
-msgstr "Anti-crénelage"
-
-#: ../scripts/text-circle.scm.h:2
+#: ../scripts/text-circle.scm:205
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
 msgstr ""
 "Crée un logo en rendant le texte spécifié le long du périmètre d'un cercle"
 
-#: ../scripts/text-circle.scm.h:3
+#: ../scripts/text-circle.scm:213
 msgid "Fill angle"
 msgstr "Angle de remplissage"
 
-#: ../scripts/text-circle.scm.h:9
-msgid "Text C_ircle..."
-msgstr "Texte circ_ulaire..."
+#: ../scripts/text-circle.scm:215
+msgid "Antialias"
+msgstr "Anti-crénelage"
 
-#: ../scripts/textured-logo.scm.h:3
-msgid ""
-"Create a textured logo with highlights, shadows, and a mosaic background"
-msgstr "Crée un logo texturé avec éclairages, ombres et un fond mosaïque"
+#: ../scripts/textured-logo.scm:119 ../scripts/textured-logo.scm:161
+msgid "_Textured..."
+msgstr "_Texturé..."
 
-#: ../scripts/textured-logo.scm.h:4
-msgid "Ending blend"
-msgstr "Mélange final"
-
-#: ../scripts/textured-logo.scm.h:5
+#: ../scripts/textured-logo.scm:120
 msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
@@ -2518,95 +2570,129 @@ msgstr ""
 "Remplit la région sélectionnée (ou alpha) avec une texture et ajouter des "
 "éclairages, ombres et un fond mosaïque"
 
-#: ../scripts/textured-logo.scm.h:8
-msgid "Hexagons"
-msgstr "Hexagones"
-
-#: ../scripts/textured-logo.scm.h:9
+#: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
 msgid "Mosaic tile type"
 msgstr "Type de mosaïque"
 
-#: ../scripts/textured-logo.scm.h:10
-msgid "Octagons"
-msgstr "Octogones"
-
-#: ../scripts/textured-logo.scm.h:12
+#: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
 msgid "Squares"
 msgstr "Carrés"
 
-#: ../scripts/textured-logo.scm.h:13
+#: ../scripts/textured-logo.scm:130 ../scripts/textured-logo.scm:172
+msgid "Hexagons"
+msgstr "Hexagones"
+
+#: ../scripts/textured-logo.scm:131 ../scripts/textured-logo.scm:173
+msgid "Octagons"
+msgstr "Octogones"
+
+#: ../scripts/textured-logo.scm:133 ../scripts/textured-logo.scm:175
 msgid "Starting blend"
 msgstr "Début mélange"
 
-#: ../scripts/textured-logo.scm.h:15
+#: ../scripts/textured-logo.scm:134 ../scripts/textured-logo.scm:176
+msgid "Ending blend"
+msgstr "Mélange final"
+
+#: ../scripts/textured-logo.scm:162
+msgid ""
+"Create a textured logo with highlights, shadows, and a mosaic background"
+msgstr "Crée un logo texturé avec éclairages, ombres et un fond mosaïque"
+
+#: ../scripts/textured-logo.scm:170
 msgid "Text pattern"
 msgstr "Motif du texte"
 
-#: ../scripts/textured-logo.scm.h:16
-msgid "_Textured..."
-msgstr "_Texturé..."
-
-#: ../scripts/tileblur.scm.h:1
-msgid "Blur horizontally"
-msgstr "Rendre flou horizontalement"
-
-#: ../scripts/tileblur.scm.h:2
-msgid "Blur the edges of an image so the result tiles seamlessly"
-msgstr "Brouille les bords d'une image pour obtenir un carreau raccordable"
-
-#: ../scripts/tileblur.scm.h:3
-msgid "Blur type"
-msgstr "Type de flou"
-
-#: ../scripts/tileblur.scm.h:4
-msgid "Blur vertically"
-msgstr "Rendre flou verticalement"
-
-#: ../scripts/tileblur.scm.h:5
-msgid "IIR"
-msgstr "IIR"
-
-#: ../scripts/tileblur.scm.h:6
-msgid "RLE"
-msgstr "RLE"
-
-#: ../scripts/tileblur.scm.h:8
+#: ../scripts/tileblur.scm:65
 msgid "_Tileable Blur..."
 msgstr "Flou _mosaïque..."
 
-#: ../scripts/title-header.scm.h:1
-msgid "Create a decorative web title header"
-msgstr "Crée un en-tête de titre Web décoratif"
+#: ../scripts/tileblur.scm:66
+msgid "Blur the edges of an image so the result tiles seamlessly"
+msgstr "Brouille les bords d'une image pour obtenir un carreau raccordable"
 
-#: ../scripts/title-header.scm.h:6
+#: ../scripts/tileblur.scm:74
+msgid "Blur vertically"
+msgstr "Rendre flou verticalement"
+
+#: ../scripts/tileblur.scm:75
+msgid "Blur horizontally"
+msgstr "Rendre flou horizontalement"
+
+#: ../scripts/tileblur.scm:76
+msgid "Blur type"
+msgstr "Type de flou"
+
+#: ../scripts/tileblur.scm:76
+msgid "IIR"
+msgstr "IIR"
+
+#: ../scripts/tileblur.scm:76
+msgid "RLE"
+msgstr "RLE"
+
+#: ../scripts/title-header.scm:164
 msgid "Web Title Header..."
 msgstr "Titre Web..."
 
-#: ../scripts/truchet.scm.h:3
-msgid "Create an image filled with a Truchet pattern"
-msgstr "Crée une image remplie avec un motif truchet"
+#: ../scripts/title-header.scm:165
+msgid "Create a decorative web title header"
+msgstr "Crée un en-tête de titre Web décoratif"
 
-#: ../scripts/truchet.scm.h:4
-msgid "Foreground color"
-msgstr "Couleur de premier plan"
+#: ../scripts/t-o-p-logo.scm:101 ../scripts/t-o-p-logo.scm:141
+msgid "_Particle Trace..."
+msgstr "Tracé de _particule..."
 
-#: ../scripts/truchet.scm.h:7
+#: ../scripts/t-o-p-logo.scm:102
+msgid "Add a Trace of Particles effect to the selected region (or alpha)"
+msgstr ""
+"Ajoute un effet de trace de particules à la région sélectionnée (ou alpha)"
+
+#: ../scripts/t-o-p-logo.scm:110 ../scripts/t-o-p-logo.scm:150
+msgid "Hit rate"
+msgstr "Taux de traces"
+
+#: ../scripts/t-o-p-logo.scm:111 ../scripts/t-o-p-logo.scm:151
+msgid "Edge width"
+msgstr "Largeur des bords"
+
+#: ../scripts/t-o-p-logo.scm:112 ../scripts/t-o-p-logo.scm:152
+msgid "Edge only"
+msgstr "Bords seulement"
+
+#: ../scripts/t-o-p-logo.scm:113 ../scripts/t-o-p-logo.scm:153
+msgid "Base color"
+msgstr "Couleur de base"
+
+#: ../scripts/t-o-p-logo.scm:142
+msgid "Create a logo using a Trace Of Particles effect"
+msgstr "Crée un logo en utilisant l'effet de tracé de particules"
+
+#: ../scripts/truchet.scm:157
 msgid "T_ruchet..."
 msgstr "T_ruchet..."
 
-#: ../scripts/unsharp-mask.scm.h:1
-msgid "Mask opacity"
-msgstr "Opacité du masque"
+#: ../scripts/truchet.scm:158
+msgid "Create an image filled with a Truchet pattern"
+msgstr "Crée une image remplie avec un motif truchet"
 
-#: ../scripts/unsharp-mask.scm.h:2
+#: ../scripts/truchet.scm:166
+msgid "Foreground color"
+msgstr "Couleur de premier plan"
+
+#: ../scripts/unsharp-mask.scm:82
 msgid "Mask size"
 msgstr "Taille du masque"
 
-#: ../scripts/waves-anim.scm.h:1
-msgid "Amplitude"
-msgstr "Amplitude"
+#: ../scripts/unsharp-mask.scm:83
+msgid "Mask opacity"
+msgstr "Opacité du masque"
 
-#: ../scripts/waves-anim.scm.h:2
+#: ../scripts/waves-anim.scm:96
+msgid "_Waves..."
+msgstr "_Vagues..."
+
+#: ../scripts/waves-anim.scm:97
 msgid ""
 "Create a multi-layer image with an effect like a stone was thrown into the "
 "current image"
@@ -2614,19 +2700,23 @@ msgstr ""
 "Crée une image multi-calques avec un effet comme si une pierre avait été "
 "jetée au travers de l'image courante"
 
-#: ../scripts/waves-anim.scm.h:3
-msgid "Invert direction"
-msgstr "Inverse la direction"
+#: ../scripts/waves-anim.scm:104
+msgid "Amplitude"
+msgstr "Amplitude"
 
-#: ../scripts/waves-anim.scm.h:5
+#: ../scripts/waves-anim.scm:105
 msgid "Wavelength"
 msgstr "Longueur d'onde"
 
-#: ../scripts/waves-anim.scm.h:6
-msgid "_Waves..."
-msgstr "_Vagues..."
+#: ../scripts/waves-anim.scm:107
+msgid "Invert direction"
+msgstr "Inverse la direction"
 
-#: ../scripts/weave.scm.h:1
+#: ../scripts/weave.scm:393
+msgid "_Weave..."
+msgstr "T_resser..."
+
+#: ../scripts/weave.scm:394
 msgid ""
 "Create a new layer filled with a weave effect to be used as an overlay or "
 "bump map"
@@ -2634,131 +2724,131 @@ msgstr ""
 "Crée un nouveau calque rempli avec un effet de tresse à utiliser comme "
 "surcouche ou relief"
 
-#: ../scripts/weave.scm.h:2
-msgid "Ribbon spacing"
-msgstr "Espacement bandes"
-
-#: ../scripts/weave.scm.h:3
+#: ../scripts/weave.scm:401
 msgid "Ribbon width"
 msgstr "Largeur des bandes"
 
-#: ../scripts/weave.scm.h:4
+#: ../scripts/weave.scm:402
+msgid "Ribbon spacing"
+msgstr "Espacement bandes"
+
+#: ../scripts/weave.scm:403
 msgid "Shadow darkness"
 msgstr "Obscurité de l'ombre"
 
-#: ../scripts/weave.scm.h:5
+#: ../scripts/weave.scm:404
 msgid "Shadow depth"
 msgstr "Profondeur de l'ombre"
 
-#: ../scripts/weave.scm.h:6
-msgid "Thread density"
-msgstr "Densité fil"
-
-#: ../scripts/weave.scm.h:7
-msgid "Thread intensity"
-msgstr "Intensité fil"
-
-#: ../scripts/weave.scm.h:8
+#: ../scripts/weave.scm:405
 msgid "Thread length"
 msgstr "Longueur fil"
 
-#: ../scripts/weave.scm.h:9
-msgid "_Weave..."
-msgstr "T_resser..."
+#: ../scripts/weave.scm:406
+msgid "Thread density"
+msgstr "Densité fil"
 
-#: ../scripts/web-browser.scm.h:1
-msgid "Bookmark to the GIMP web site"
-msgstr "Signet vers le site Web de GIMP"
+#: ../scripts/weave.scm:407
+msgid "Thread intensity"
+msgstr "Intensité fil"
 
-#: ../scripts/web-browser.scm.h:2
-msgid "Bookmark to the user manual"
-msgstr "Signet vers le manuel utilisateur"
-
-#: ../scripts/web-browser.scm.h:3
-msgid "Create and Use _Selections"
-msgstr "Créer et utiliser les _sélections"
-
-#: ../scripts/web-browser.scm.h:4
-msgid "Create, Open and Save _Files"
-msgstr "Créer, ouvrir et enregistrer des _fichiers"
-
-#: ../scripts/web-browser.scm.h:5
-msgid "Drawing _Simple Objects"
-msgstr "Dessiner des _objets simples"
-
-#: ../scripts/web-browser.scm.h:6
-msgid "How to Use _Dialogs"
-msgstr "Comment utiliser les boîtes de _dialogue"
-
-#: ../scripts/web-browser.scm.h:7
-msgid "Plug-in _Registry"
-msgstr "_Registre des greffons"
-
-#: ../scripts/web-browser.scm.h:8
+#: ../scripts/web-browser.scm:60
 msgid "Using _Paths"
 msgstr "Utiliser les _chemins"
 
-#: ../scripts/web-browser.scm.h:9
-msgid "_Basic Concepts"
-msgstr "Concepts de _base"
+#: ../scripts/web-browser.scm:61 ../scripts/web-browser.scm:74
+#: ../scripts/web-browser.scm:87 ../scripts/web-browser.scm:100
+#: ../scripts/web-browser.scm:113 ../scripts/web-browser.scm:126
+#: ../scripts/web-browser.scm:139 ../scripts/web-browser.scm:152
+msgid "Bookmark to the user manual"
+msgstr "Signet vers le manuel utilisateur"
 
-#: ../scripts/web-browser.scm.h:10
-msgid "_Developer Web Site"
-msgstr "Site Web des _développeurs"
-
-#: ../scripts/web-browser.scm.h:11
-msgid "_Main Web Site"
-msgstr "Site Web _officiel"
-
-#: ../scripts/web-browser.scm.h:12
+#: ../scripts/web-browser.scm:73
 msgid "_Preparing your Images for the Web"
 msgstr "_Préparer vos images pour le Web"
 
-#: ../scripts/web-browser.scm.h:13
-msgid "_User Manual Web Site"
-msgstr "Site Web du _manuel utilisateur"
-
-#: ../scripts/web-browser.scm.h:14
+#: ../scripts/web-browser.scm:86
 msgid "_Working with Digital Camera Photos"
 msgstr "_Travailler sur les photos numériques"
 
-#: ../scripts/xach-effect.scm.h:1
+#: ../scripts/web-browser.scm:99
+msgid "Create, Open and Save _Files"
+msgstr "Créer, ouvrir et enregistrer des _fichiers"
+
+#: ../scripts/web-browser.scm:112
+msgid "_Basic Concepts"
+msgstr "Concepts de _base"
+
+#: ../scripts/web-browser.scm:125
+msgid "How to Use _Dialogs"
+msgstr "Comment utiliser les boîtes de _dialogue"
+
+#: ../scripts/web-browser.scm:138
+msgid "Drawing _Simple Objects"
+msgstr "Dessiner des _objets simples"
+
+#: ../scripts/web-browser.scm:151
+msgid "Create and Use _Selections"
+msgstr "Créer et utiliser les _sélections"
+
+#: ../scripts/web-browser.scm:179
+msgid "_Main Web Site"
+msgstr "Site Web _officiel"
+
+#: ../scripts/web-browser.scm:180 ../scripts/web-browser.scm:193
+#: ../scripts/web-browser.scm:206 ../scripts/web-browser.scm:219
+msgid "Bookmark to the GIMP web site"
+msgstr "Signet vers le site Web de GIMP"
+
+#: ../scripts/web-browser.scm:192
+msgid "_Developer Web Site"
+msgstr "Site Web des _développeurs"
+
+#: ../scripts/web-browser.scm:205
+msgid "_User Manual Web Site"
+msgstr "Site Web du _manuel utilisateur"
+
+#: ../scripts/web-browser.scm:218
+msgid "Plug-in _Registry"
+msgstr "_Registre des greffons"
+
+#: ../scripts/xach-effect.scm:121
+msgid "_Xach-Effect..."
+msgstr "Effet _Xach..."
+
+#: ../scripts/xach-effect.scm:122
 msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
 msgstr ""
 "Ajoute un subtile effet 3D translucide à la région sélectionnée (ou alpha)"
 
-#: ../scripts/xach-effect.scm.h:2
-msgid "Drop shadow X offset"
-msgstr "Décalage X d'ombre portée"
-
-#: ../scripts/xach-effect.scm.h:3
-msgid "Drop shadow Y offset"
-msgstr "Décalage Y d'ombre portée"
-
-#: ../scripts/xach-effect.scm.h:4
-msgid "Drop shadow blur radius"
-msgstr "Rayon de flou pour l'ombre portée"
-
-#: ../scripts/xach-effect.scm.h:5
-msgid "Drop shadow color"
-msgstr "Couleur de l'ombre portée"
-
-#: ../scripts/xach-effect.scm.h:6
-msgid "Drop shadow opacity"
-msgstr "Opacité de l'ombre portée"
-
-#: ../scripts/xach-effect.scm.h:7
+#: ../scripts/xach-effect.scm:129
 msgid "Highlight X offset"
 msgstr "Décalage X éclairage"
 
-#: ../scripts/xach-effect.scm.h:8
+#: ../scripts/xach-effect.scm:130
 msgid "Highlight Y offset"
 msgstr "Décalage Y éclairage"
 
-#: ../scripts/xach-effect.scm.h:10
+#: ../scripts/xach-effect.scm:132
 msgid "Highlight opacity"
 msgstr "Opacité d'éclairage"
 
-#: ../scripts/xach-effect.scm.h:12
-msgid "_Xach-Effect..."
-msgstr "Effet _Xach..."
+#: ../scripts/xach-effect.scm:133
+msgid "Drop shadow color"
+msgstr "Couleur de l'ombre portée"
+
+#: ../scripts/xach-effect.scm:134
+msgid "Drop shadow opacity"
+msgstr "Opacité de l'ombre portée"
+
+#: ../scripts/xach-effect.scm:135
+msgid "Drop shadow blur radius"
+msgstr "Rayon de flou pour l'ombre portée"
+
+#: ../scripts/xach-effect.scm:136
+msgid "Drop shadow X offset"
+msgstr "Décalage X d'ombre portée"
+
+#: ../scripts/xach-effect.scm:137
+msgid "Drop shadow Y offset"
+msgstr "Décalage Y d'ombre portée"
