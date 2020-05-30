@@ -1,24 +1,25 @@
 # Romanian GIMP translation
 # Copyright (C) YEAR Free Software Foundation, Inc.
-# Robert Claudiu Gheorghe <rgheorghe AT writeme DOT com>, 2001.
-# Nandor Licker <lickernandor DOT yahoo.com>, 2010-2011.
-# Cristian Secară <cristi AT secarica DOT ro>, 2011.
+# Robert Claudiu Gheorghe <rgheorghe AT writeme DOT com>, 2001
+# Nandor Licker <lickernandor DOT yahoo.com>, 2010-2011
+# Cristian Secară <cristi AT secarica DOT ro>, 2011-2020
+# Daniel Șerbănescu <daniel AT serbanescu DOT dk>, 2020
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-"
-"tiny-fu&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-06 20:49+0000\n"
-"PO-Revision-Date: 2011-12-05 10:26+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/issues\n"
+"POT-Creation-Date: 2019-12-06 20:31+0000\n"
+"PO-Revision-Date: 2020-05-30 18:21+0300\n"
 "Last-Translator: Cristian Secară <cristi AT secarica DOT ro>\n"
 "Language-Team: Gnome Romanian Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
+"X-Generator: Poedit 2.3\n"
 
 #: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
@@ -269,1863 +270,2591 @@ msgstr ""
 "Script-Fu este deschisă. Închideți toate ferestele Script-Fu și încercați "
 "din nou."
 
-#: ../scripts/alien-glow-arrow.scm:182
-#: ../scripts/beveled-pattern-arrow.scm:156
+#: ../scripts/3d-outline.scm:118 ../scripts/3d-outline.scm:164
+msgid "3D _Outline..."
+msgstr "C_ontur 3D..."
+
+#: ../scripts/3d-outline.scm:119
+msgid ""
+"Outline the selected region (or alpha) with a pattern and add a drop shadow"
+msgstr ""
+"Conturează regiunea selectată (sau alfa) cu un model și adaugă o umbră "
+"detașată"
+
+#: ../scripts/3d-outline.scm:126 ../scripts/3d-outline.scm:170
+#: ../scripts/beveled-pattern-arrow.scm:157
+#: ../scripts/beveled-pattern-bullet.scm:91
+#: ../scripts/beveled-pattern-button.scm:130
+#: ../scripts/beveled-pattern-heading.scm:116
+#: ../scripts/beveled-pattern-hrule.scm:85 ../scripts/chip-away.scm:156
+#: ../scripts/chip-away.scm:203 ../scripts/textured-logo.scm:128
+msgid "Pattern"
+msgstr "Model"
+
+#: ../scripts/3d-outline.scm:127 ../scripts/3d-outline.scm:174
+msgid "Outline blur radius"
+msgstr "Raza de neclaritate a conturului"
+
+#: ../scripts/3d-outline.scm:128 ../scripts/3d-outline.scm:175
+msgid "Shadow blur radius"
+msgstr "Raza de neclaritate a umbrei"
+
+#: ../scripts/3d-outline.scm:129 ../scripts/3d-outline.scm:176
+msgid "Bumpmap (alpha layer) blur radius"
+msgstr "Raza de neclaritate a hărții de denivelări (strat alfa)"
+
+#: ../scripts/3d-outline.scm:130 ../scripts/3d-outline.scm:177
+#: ../scripts/glossy.scm:217 ../scripts/glossy.scm:289
+msgid "Default bumpmap settings"
+msgstr "Setări implicite pentru harta de denivelări"
+
+#: ../scripts/3d-outline.scm:131 ../scripts/3d-outline.scm:178
+#: ../scripts/glossy.scm:219 ../scripts/glossy.scm:291
+#: ../scripts/round-corners.scm:136
+msgid "Shadow X offset"
+msgstr "Decalajul X al umbrei"
+
+#: ../scripts/3d-outline.scm:132 ../scripts/3d-outline.scm:179
+#: ../scripts/glossy.scm:220 ../scripts/glossy.scm:292
+#: ../scripts/round-corners.scm:137
+msgid "Shadow Y offset"
+msgstr "Decalajul Y al umbrei"
+
+#: ../scripts/3d-outline.scm:165
+msgid "Create a logo with outlined text and a drop shadow"
+msgstr "Creează o siglă cu un text conturat și o umbră detașată"
+
+#: ../scripts/3d-outline.scm:171 ../scripts/alien-glow-button.scm:156
+#: ../scripts/alien-glow-logo.scm:111 ../scripts/alien-neon-logo.scm:176
+#: ../scripts/basic1-logo.scm:98 ../scripts/basic2-logo.scm:121
+#: ../scripts/beveled-button.scm:149 ../scripts/beveled-pattern-button.scm:126
+#: ../scripts/beveled-pattern-heading.scm:113 ../scripts/blended-logo.scm:186
+#: ../scripts/bovinated-logo.scm:132 ../scripts/carved-logo.scm:167
+#: ../scripts/chalk.scm:122 ../scripts/chip-away.scm:193
+#: ../scripts/chrome-logo.scm:124 ../scripts/comic-logo.scm:161
+#: ../scripts/coolmetal-logo.scm:175 ../scripts/crystal-logo.scm:215
+#: ../scripts/frosty-logo.scm:147 ../scripts/gimp-headers.scm:155
+#: ../scripts/gimp-headers.scm:178 ../scripts/gimp-labels.scm:127
+#: ../scripts/gimp-labels.scm:143 ../scripts/gimp-labels.scm:159
+#: ../scripts/gimp-labels.scm:175 ../scripts/glossy.scm:274
+#: ../scripts/glowing-logo.scm:115 ../scripts/gradient-bevel-logo.scm:140
+#: ../scripts/i26-gunya2.scm:97 ../scripts/neon-logo.scm:287
+#: ../scripts/news-text.scm:83 ../scripts/pupi-button.scm:193
+#: ../scripts/slide.scm:248 ../scripts/sota-chrome-logo.scm:212
+#: ../scripts/speed-text.scm:92 ../scripts/starburst-logo.scm:112
+#: ../scripts/starscape-logo.scm:172 ../scripts/text-circle.scm:210
+#: ../scripts/textured-logo.scm:167 ../scripts/title-header.scm:170
+#: ../scripts/t-o-p-logo.scm:147
+msgid "Text"
+msgstr "Text"
+
+#: ../scripts/3d-outline.scm:172 ../scripts/alien-glow-button.scm:158
+#: ../scripts/alien-glow-logo.scm:112 ../scripts/alien-neon-logo.scm:177
+#: ../scripts/basic1-logo.scm:99 ../scripts/basic2-logo.scm:122
+#: ../scripts/beveled-button.scm:150 ../scripts/beveled-pattern-button.scm:127
+#: ../scripts/beveled-pattern-heading.scm:114 ../scripts/blended-logo.scm:187
+#: ../scripts/bovinated-logo.scm:133 ../scripts/carved-logo.scm:168
+#: ../scripts/chalk.scm:123 ../scripts/chip-away.scm:195
+#: ../scripts/chrome-logo.scm:125 ../scripts/comic-logo.scm:162
+#: ../scripts/coolmetal-logo.scm:176 ../scripts/crystal-logo.scm:216
+#: ../scripts/frosty-logo.scm:148 ../scripts/gimp-headers.scm:157
+#: ../scripts/gimp-headers.scm:180 ../scripts/gimp-labels.scm:177
+#: ../scripts/glossy.scm:275 ../scripts/glowing-logo.scm:116
+#: ../scripts/gradient-bevel-logo.scm:141 ../scripts/i26-gunya2.scm:101
+#: ../scripts/neon-logo.scm:288 ../scripts/news-text.scm:85
+#: ../scripts/pupi-button.scm:194 ../scripts/sota-chrome-logo.scm:213
+#: ../scripts/speed-text.scm:94 ../scripts/starburst-logo.scm:113
+#: ../scripts/starscape-logo.scm:173 ../scripts/text-circle.scm:214
+#: ../scripts/textured-logo.scm:168 ../scripts/title-header.scm:171
+#: ../scripts/t-o-p-logo.scm:148
+msgid "Font size (pixels)"
+msgstr "Dimensiunea fontului (pixeli)"
+
+#: ../scripts/3d-outline.scm:173 ../scripts/alien-glow-button.scm:157
+#: ../scripts/alien-glow-logo.scm:113 ../scripts/alien-neon-logo.scm:178
+#: ../scripts/basic1-logo.scm:100 ../scripts/basic2-logo.scm:123
+#: ../scripts/beveled-button.scm:151 ../scripts/beveled-pattern-button.scm:128
+#: ../scripts/beveled-pattern-heading.scm:115 ../scripts/blended-logo.scm:188
+#: ../scripts/bovinated-logo.scm:134 ../scripts/carved-logo.scm:169
+#: ../scripts/chalk.scm:124 ../scripts/chip-away.scm:194
+#: ../scripts/chrome-logo.scm:126 ../scripts/comic-logo.scm:163
+#: ../scripts/coolmetal-logo.scm:177 ../scripts/crystal-logo.scm:217
+#: ../scripts/frosty-logo.scm:149 ../scripts/gimp-headers.scm:156
+#: ../scripts/gimp-headers.scm:179 ../scripts/gimp-labels.scm:176
+#: ../scripts/glossy.scm:276 ../scripts/glowing-logo.scm:117
+#: ../scripts/gradient-bevel-logo.scm:142 ../scripts/i26-gunya2.scm:100
+#: ../scripts/neon-logo.scm:289 ../scripts/news-text.scm:84
+#: ../scripts/pupi-button.scm:195 ../scripts/slide.scm:250
+#: ../scripts/sota-chrome-logo.scm:214 ../scripts/speed-text.scm:93
+#: ../scripts/starburst-logo.scm:114 ../scripts/starscape-logo.scm:174
+#: ../scripts/text-circle.scm:216 ../scripts/textured-logo.scm:169
+#: ../scripts/title-header.scm:172 ../scripts/t-o-p-logo.scm:149
+msgid "Font"
+msgstr "Font"
+
+#: ../scripts/3dTruchet.scm:222
+msgid "3_D Truchet..."
+msgstr "Truchet 3_D..."
+
+#: ../scripts/3dTruchet.scm:223
+msgid "Create an image filled with a 3D Truchet pattern"
+msgstr "Creează o imagine umplută cu un model Truchet 3D"
+
+#: ../scripts/3dTruchet.scm:228 ../scripts/truchet.scm:163
+msgid "Block size"
+msgstr "Dimensiunea blocului"
+
+#: ../scripts/3dTruchet.scm:229 ../scripts/add-bevel.scm:194
+#: ../scripts/truchet.scm:164
+msgid "Thickness"
+msgstr "Grosime"
+
+#: ../scripts/3dTruchet.scm:230 ../scripts/alien-glow-arrow.scm:184
+#: ../scripts/alien-glow-bar.scm:95 ../scripts/alien-glow-bullet.scm:104
+#: ../scripts/alien-glow-button.scm:161 ../scripts/alien-neon-logo.scm:136
+#: ../scripts/alien-neon-logo.scm:180 ../scripts/basic1-logo.scm:67
+#: ../scripts/basic1-logo.scm:101 ../scripts/basic2-logo.scm:90
+#: ../scripts/basic2-logo.scm:124 ../scripts/blended-logo.scm:133
+#: ../scripts/blended-logo.scm:190 ../scripts/bovinated-logo.scm:137
+#: ../scripts/chalk.scm:83 ../scripts/chalk.scm:125
+#: ../scripts/chrome-logo.scm:127 ../scripts/comic-logo.scm:127
+#: ../scripts/comic-logo.scm:168 ../scripts/contactsheet.scm:334
+#: ../scripts/coolmetal-logo.scm:140 ../scripts/coolmetal-logo.scm:178
+#: ../scripts/frosty-logo.scm:117 ../scripts/frosty-logo.scm:150
+#: ../scripts/gimp-labels.scm:180 ../scripts/glossy.scm:210
+#: ../scripts/glossy.scm:282 ../scripts/glowing-logo.scm:85
+#: ../scripts/glowing-logo.scm:118 ../scripts/gradient-bevel-logo.scm:106
+#: ../scripts/gradient-bevel-logo.scm:145 ../scripts/neon-logo.scm:254
+#: ../scripts/neon-logo.scm:290 ../scripts/news-text.scm:90
+#: ../scripts/speed-text.scm:97 ../scripts/sphere.scm:81
+#: ../scripts/starburst-logo.scm:83 ../scripts/starburst-logo.scm:116
+#: ../scripts/swirltile.scm:65 ../scripts/textured-logo.scm:132
+#: ../scripts/textured-logo.scm:174 ../scripts/t-o-p-logo.scm:114
+#: ../scripts/t-o-p-logo.scm:154 ../scripts/truchet.scm:165
+msgid "Background color"
+msgstr "Culoarea fundalului"
+
+# apare în fața unei selecții de culoare
+#: ../scripts/3dTruchet.scm:231 ../scripts/blended-logo.scm:138
+#: ../scripts/blended-logo.scm:195
+msgid "Start blend"
+msgstr "Amestec de început"
+
+# apare în fața unei selecții de culoare
+#: ../scripts/3dTruchet.scm:232 ../scripts/blended-logo.scm:139
+#: ../scripts/blended-logo.scm:196
+msgid "End blend"
+msgstr "Amestec de final"
+
+#: ../scripts/3dTruchet.scm:233
+msgid "Supersample"
+msgstr "Supereșantionare"
+
+#: ../scripts/3dTruchet.scm:234 ../scripts/truchet.scm:167
+msgid "Number of X tiles"
+msgstr "Numărul dalelor X"
+
+#: ../scripts/3dTruchet.scm:235 ../scripts/truchet.scm:168
+msgid "Number of Y tiles"
+msgstr "Numărul dalelor Y"
+
+# deliberat fără „adaugă” pentru consecvență în meniu
+#: ../scripts/add-bevel.scm:186
+msgid "Add B_evel..."
+msgstr "Chenar t_eșit..."
+
+#: ../scripts/add-bevel.scm:187
+msgid "Add a beveled border to an image"
+msgstr "Adaugă un chenar teșit la o imagine"
+
+#: ../scripts/add-bevel.scm:195 ../scripts/fuzzyborder.scm:161
+#: ../scripts/old-photo.scm:105 ../scripts/round-corners.scm:140
+#: ../scripts/slide.scm:252 ../scripts/spinning-globe.scm:107
+msgid "Work on copy"
+msgstr "Lucrează pe o copie"
+
+#: ../scripts/add-bevel.scm:196 ../scripts/chip-away.scm:153
+#: ../scripts/chip-away.scm:200
+msgid "Keep bump layer"
+msgstr "Păstrează stratul de denivelări"
+
+# deliberat fără adaugă pentru consecvență în meniu
+#: ../scripts/addborder.scm:171
+msgid "Add _Border..."
+msgstr "C_henar..."
+
+#: ../scripts/addborder.scm:172
+msgid "Add a border around an image"
+msgstr "Adaugă un chenar în jurul unei imagini"
+
+#: ../scripts/addborder.scm:179
+msgid "Border X size"
+msgstr "Dimensiunea X a chenarului"
+
+#: ../scripts/addborder.scm:180
+msgid "Border Y size"
+msgstr "Dimensiunea Y a chenarului"
+
+#: ../scripts/addborder.scm:181
+msgid "Border color"
+msgstr "Culoarea chenarului"
+
+#: ../scripts/addborder.scm:182
+msgid "Delta value on color"
+msgstr "Valoarea delta aplicată la culoare"
+
+#: ../scripts/alien-glow-arrow.scm:175 ../scripts/beveled-pattern-arrow.scm:149
+msgid "_Arrow..."
+msgstr "Săge_ată..."
+
+#: ../scripts/alien-glow-arrow.scm:176
+msgid "Create an arrow graphic with an eerie glow for web pages"
+msgstr "Creează grafica unei săgeți cu o strălucire stranie pentru pagini web"
+
+#: ../scripts/alien-glow-arrow.scm:181 ../scripts/beveled-pattern-arrow.scm:155
+#: ../scripts/lava.scm:126
+msgid "Size"
+msgstr "Dimensiune"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Orientation"
+msgstr "Orientare"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
 msgid "Right"
 msgstr "Dreapta"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Left"
+msgstr "Stânga"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Up"
+msgstr "Sus"
+
+#: ../scripts/alien-glow-arrow.scm:182 ../scripts/beveled-pattern-arrow.scm:156
+msgid "Down"
+msgstr "Jos"
+
+#: ../scripts/alien-glow-arrow.scm:183 ../scripts/alien-glow-bar.scm:94
+#: ../scripts/alien-glow-bullet.scm:103 ../scripts/alien-glow-button.scm:160
+#: ../scripts/alien-glow-logo.scm:74 ../scripts/alien-glow-logo.scm:114
+#: ../scripts/alien-neon-logo.scm:135 ../scripts/alien-neon-logo.scm:179
+#: ../scripts/burn-in-anim.scm:226 ../scripts/neon-logo.scm:255
+#: ../scripts/neon-logo.scm:291 ../scripts/starscape-logo.scm:144
+#: ../scripts/starscape-logo.scm:175
+msgid "Glow color"
+msgstr "Culoarea strălucirii"
+
+#: ../scripts/alien-glow-arrow.scm:185 ../scripts/alien-glow-bar.scm:96
+#: ../scripts/alien-glow-bullet.scm:105 ../scripts/alien-glow-button.scm:164
+#: ../scripts/camo.scm:107 ../scripts/fuzzyborder.scm:162
+msgid "Flatten image"
+msgstr "Aplatizează imaginea"
+
+#: ../scripts/alien-glow-bar.scm:86 ../scripts/beveled-pattern-hrule.scm:77
+msgid "_Hrule..."
+msgstr "_Hrule..."
+
+#: ../scripts/alien-glow-bar.scm:87
+msgid "Create an Hrule graphic with an eerie glow for web pages"
+msgstr "Creează o grafică Hrule cu o strălucire stranie pentru pagini web"
+
+#: ../scripts/alien-glow-bar.scm:92
+msgid "Bar length"
+msgstr "Lungimea barei"
+
+#: ../scripts/alien-glow-bar.scm:93
+msgid "Bar height"
+msgstr "Înălțimea barei"
+
+#: ../scripts/alien-glow-bullet.scm:96 ../scripts/beveled-pattern-bullet.scm:84
+msgid "_Bullet..."
+msgstr "_Bulină..."
+
+#: ../scripts/alien-glow-bullet.scm:97
+msgid "Create a bullet graphic with an eerie glow for web pages"
+msgstr "Creează grafica unei buline cu o strălucire stranie pentru pagini web"
+
+#: ../scripts/alien-glow-bullet.scm:102 ../scripts/text-circle.scm:211
+#: ../scripts/tileblur.scm:73
+msgid "Radius"
+msgstr "Rază"
+
+#: ../scripts/alien-glow-button.scm:150
+#: ../scripts/beveled-pattern-button.scm:120
+msgid "B_utton..."
+msgstr "B_uton..."
+
+#: ../scripts/alien-glow-button.scm:151
+msgid "Create a button graphic with an eerie glow for web pages"
+msgstr "Creează grafica unui buton cu o strălucire stranie pentru pagini web"
+
+#: ../scripts/alien-glow-button.scm:159 ../scripts/basic1-logo.scm:68
+#: ../scripts/basic1-logo.scm:102 ../scripts/basic2-logo.scm:91
+#: ../scripts/basic2-logo.scm:125 ../scripts/beveled-button.scm:154
+#: ../scripts/beveled-pattern-button.scm:129 ../scripts/blended-logo.scm:189
+#: ../scripts/contactsheet.scm:333 ../scripts/gimp-headers.scm:158
+#: ../scripts/gimp-headers.scm:181 ../scripts/gimp-labels.scm:178
+#: ../scripts/i26-gunya2.scm:98 ../scripts/news-text.scm:89
+#: ../scripts/pupi-button.scm:198 ../scripts/speed-text.scm:96
+msgid "Text color"
+msgstr "Culoarea textului"
+
+#: ../scripts/alien-glow-button.scm:162 ../scripts/beveled-button.scm:155
+msgid "Padding"
+msgstr "Umplere"
+
+#: ../scripts/alien-glow-button.scm:163
+msgid "Glow radius"
+msgstr "Raza strălucirii"
+
+#: ../scripts/alien-glow-logo.scm:65 ../scripts/alien-glow-logo.scm:105
+msgid "Alien _Glow..."
+msgstr "S_trălucire extraterestră..."
+
+#: ../scripts/alien-glow-logo.scm:66
+msgid "Add an eerie glow around the selected region (or alpha)"
+msgstr "Adaugă o strălucire stranie în jurul regiunii (sau alfa) selectate"
+
+#: ../scripts/alien-glow-logo.scm:73
+msgid "Glow size (pixels * 4)"
+msgstr "Dimensiunea strălucirii (pixeli × 4)"
+
+#: ../scripts/alien-glow-logo.scm:106
+msgid "Create a logo with an alien glow around the text"
+msgstr "Creează o siglă cu o strălucire extraterestră în jurul textului"
+
+#: ../scripts/alien-neon-logo.scm:127 ../scripts/alien-neon-logo.scm:170
+msgid "Alien _Neon..."
+msgstr "_Neon extraterestru..."
+
+#: ../scripts/alien-neon-logo.scm:128
+msgid "Add psychedelic outlines to the selected region (or alpha)"
+msgstr "Adaugă contururi psihedelice la regiunea (sau alfa) selectată"
+
+#: ../scripts/alien-neon-logo.scm:137 ../scripts/alien-neon-logo.scm:181
+msgid "Width of bands"
+msgstr "Lățimea benzilor"
+
+#: ../scripts/alien-neon-logo.scm:138 ../scripts/alien-neon-logo.scm:182
+msgid "Width of gaps"
+msgstr "Lățimea golurilor"
+
+#: ../scripts/alien-neon-logo.scm:139 ../scripts/alien-neon-logo.scm:183
+msgid "Number of bands"
+msgstr "Numărul benzilor"
+
+# hm ?
+#: ../scripts/alien-neon-logo.scm:140 ../scripts/alien-neon-logo.scm:184
+msgid "Fade away"
+msgstr "Estompează pierdut"
+
+#: ../scripts/alien-neon-logo.scm:171
+msgid "Create a logo with psychedelic outlines around the text"
+msgstr "Creează o siglă cu contururi psihedelice în jurul textului"
+
+#: ../scripts/basic1-logo.scm:59 ../scripts/basic1-logo.scm:92
+msgid "_Basic I..."
+msgstr "_Bazic I..."
+
+#: ../scripts/basic1-logo.scm:60
+msgid ""
+"Add a gradient effect, a drop shadow, and a background to the selected "
+"region (or alpha)"
+msgstr ""
+"Adaugă un efect de degrade, o umbră detașată și un fundal la regiunea (sau "
+"alfa) selectată"
+
+#: ../scripts/basic1-logo.scm:93
+msgid ""
+"Create a plain text logo with a gradient effect, a drop shadow, and a "
+"background"
+msgstr ""
+"Creează o siglă de text simplu cu un efect de degrade, o umbră detașată și "
+"un fundal"
+
+#: ../scripts/basic2-logo.scm:82 ../scripts/basic2-logo.scm:115
+msgid "B_asic II..."
+msgstr "B_azic II..."
+
+#: ../scripts/basic2-logo.scm:83
+msgid "Add a shadow and a highlight to the selected region (or alpha)"
+msgstr "Adaugă o umbră și o parte luminoasă la regiunea (sau alfa) selectată"
+
+#: ../scripts/basic2-logo.scm:116
+msgid "Create a simple logo with a shadow and a highlight"
+msgstr "Creează o siglă simplă cu o umbră și o parte luminoasă"
+
+#: ../scripts/beveled-button.scm:143
+msgid "Simple _Beveled Button..."
+msgstr "_Buton teșit simplu..."
+
+#: ../scripts/beveled-button.scm:144
+msgid "Create a simple, beveled button graphic for webpages"
+msgstr "Creează grafica unui buton simplu, teșit, pentru pagini web"
+
+#: ../scripts/beveled-button.scm:152
+msgid "Upper-left color"
+msgstr "Culoarea din stânga-sus"
+
+#: ../scripts/beveled-button.scm:153
+msgid "Lower-right color"
+msgstr "Culoarea din dreapta-jos"
+
+#: ../scripts/beveled-button.scm:156 ../scripts/gradient-bevel-logo.scm:105
+#: ../scripts/gradient-bevel-logo.scm:144 ../scripts/pupi-button.scm:204
+msgid "Bevel width"
+msgstr "Lățimea teșiturii"
+
+#: ../scripts/beveled-button.scm:157 ../scripts/beveled-pattern-button.scm:131
+#: ../scripts/pupi-button.scm:208
+msgid "Pressed"
+msgstr "Apăsat"
+
+#: ../scripts/beveled-pattern-arrow.scm:150
+msgid "Create a beveled pattern arrow for webpages"
+msgstr "Creează o săgeată cu model teșit pentru pagini web"
+
+#: ../scripts/beveled-pattern-bullet.scm:85
+msgid "Create a beveled pattern bullet for webpages"
+msgstr "Creează o bulină cu model teșit pentru pagini web"
+
+#: ../scripts/beveled-pattern-bullet.scm:90
+msgid "Diameter"
+msgstr "Diametru"
+
+#: ../scripts/beveled-pattern-bullet.scm:92
+#: ../scripts/beveled-pattern-heading.scm:117 ../scripts/spinning-globe.scm:105
+msgid "Transparent background"
+msgstr "Fundal transparent"
+
+#: ../scripts/beveled-pattern-button.scm:121
+msgid "Create a beveled pattern button for webpages"
+msgstr "Creează un buton cu model teșit pentru pagini web"
+
+#: ../scripts/beveled-pattern-heading.scm:107
+msgid "H_eading..."
+msgstr "Ant_et..."
+
+#: ../scripts/beveled-pattern-heading.scm:108
+msgid "Create a beveled pattern heading for webpages"
+msgstr "Creează un titlu cu model teșit pentru pagini web"
+
+#: ../scripts/beveled-pattern-hrule.scm:78
+msgid "Create a beveled pattern hrule for webpages"
+msgstr ""
+"Creează un separator orizontal (hrule) cu model teșit pentru pagini web"
+
+#: ../scripts/beveled-pattern-hrule.scm:83 ../scripts/gradient-example.scm:70
+#: ../scripts/mkbrush.scm:70 ../scripts/mkbrush.scm:134
+#: ../scripts/mkbrush.scm:188 ../scripts/mkbrush.scm:255
+#: ../scripts/swirltile.scm:62
+msgid "Width"
+msgstr "Lățime"
+
+#: ../scripts/beveled-pattern-hrule.scm:84 ../scripts/gimp-labels.scm:187
+#: ../scripts/gradient-example.scm:71 ../scripts/mkbrush.scm:71
+#: ../scripts/mkbrush.scm:135 ../scripts/mkbrush.scm:189
+#: ../scripts/mkbrush.scm:256 ../scripts/swirltile.scm:61
+msgid "Height"
+msgstr "Înălțime"
+
+#: ../scripts/blend-anim.scm:222
+msgid "Blend Animation needs at least three source layers"
+msgstr "Animația de amestecare necesită cel puțin trei straturi sursă"
+
+#: ../scripts/blend-anim.scm:228
+msgid "_Blend..."
+msgstr "_Amestec..."
+
+#: ../scripts/blend-anim.scm:229
+msgid ""
+"Create intermediate layers to blend two or more layers over a background as "
+"an animation"
+msgstr ""
+"Creează straturi intermediare pentru a amesteca două sau mai multe straturi "
+"peste un fundal ca o animație"
+
+#: ../scripts/blend-anim.scm:236
+msgid "Intermediate frames"
+msgstr "Cadre intermediare"
+
+#: ../scripts/blend-anim.scm:237
+msgid "Max. blur radius"
+msgstr "Raza maximă a neclarității"
+
+#: ../scripts/blend-anim.scm:238
+msgid "Looped"
+msgstr "Buclat"
+
+#: ../scripts/blended-logo.scm:124 ../scripts/blended-logo.scm:180
+msgid "Blen_ded..."
+msgstr "_Amestecat..."
+
+#: ../scripts/blended-logo.scm:125
+msgid ""
+"Add blended backgrounds, highlights, and shadows to the selected region (or "
+"alpha)"
+msgstr ""
+"Adaugă părți luminoase, umbre și fundaluri amestecate la regiunea (sau alfa) "
+"selectată"
+
+#: ../scripts/blended-logo.scm:132
+msgid "Offset (pixels)"
+msgstr "Decalaj (pixeli)"
+
+#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+msgid "Blend mode"
+msgstr "Mod de amestecare"
 
 #: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
 msgid "FG-BG-RGB"
 msgstr "PP-FD-RGB"
 
+#: ../scripts/blended-logo.scm:135 ../scripts/blended-logo.scm:192
+msgid "FG-BG-HSV"
+msgstr "PP-FD-HSV"
+
+#: ../scripts/blended-logo.scm:136 ../scripts/blended-logo.scm:193
+msgid "FG-Transparent"
+msgstr "Prim-plan-transparent"
+
+#: ../scripts/blended-logo.scm:137 ../scripts/blended-logo.scm:194
+msgid "Custom Gradient"
+msgstr "Degrade personalizat"
+
+#: ../scripts/blended-logo.scm:140 ../scripts/blended-logo.scm:197
+#: ../scripts/comic-logo.scm:123 ../scripts/comic-logo.scm:164
+#: ../scripts/coolmetal-logo.scm:141 ../scripts/coolmetal-logo.scm:179
+#: ../scripts/land.scm:86 ../scripts/lava.scm:128 ../scripts/rendermap.scm:89
+#: ../scripts/spyrogimp.scm:354
+msgid "Gradient"
+msgstr "Degrade"
+
+#: ../scripts/blended-logo.scm:141 ../scripts/blended-logo.scm:198
+#: ../scripts/comic-logo.scm:124 ../scripts/comic-logo.scm:165
+#: ../scripts/coolmetal-logo.scm:142 ../scripts/coolmetal-logo.scm:180
+#: ../scripts/gradient-example.scm:72 ../scripts/rendermap.scm:90
+#: ../scripts/title-header.scm:173
+msgid "Gradient reverse"
+msgstr "Degrade invers"
+
+#: ../scripts/blended-logo.scm:181
+msgid "Create a logo with blended backgrounds, highlights, and shadows"
+msgstr "Creează o siglă cu părți luminoase, umbre și fundaluri amestecate"
+
+#: ../scripts/bovinated-logo.scm:92 ../scripts/bovinated-logo.scm:126
+msgid "Bo_vination..."
+msgstr "Bă_lțat..."
+
+#: ../scripts/bovinated-logo.scm:93
+msgid "Add 'cow spots' to the selected region (or alpha)"
+msgstr "Adaugă „pete de vacă” la regiunea (sau alfa) selectată"
+
+#: ../scripts/bovinated-logo.scm:100 ../scripts/bovinated-logo.scm:135
+msgid "Spots density X"
+msgstr "Densitatea X a petelor"
+
+#: ../scripts/bovinated-logo.scm:101 ../scripts/bovinated-logo.scm:136
+msgid "Spots density Y"
+msgstr "Densitatea Y a petelor"
+
+#: ../scripts/bovinated-logo.scm:102 ../scripts/chrome-logo.scm:94
+msgid "Background Color"
+msgstr "Culoarea fundalului"
+
+#: ../scripts/bovinated-logo.scm:127
+msgid "Create a logo with text in the style of 'cow spots'"
+msgstr "Creează o siglă cu text în stilul „petelor de vacă”"
+
+#. --- false form of "if-1"
+#: ../scripts/burn-in-anim.scm:211
+msgid ""
+"The Burn-In script needs two layers in total. A foreground layer with "
+"transparency and a background layer."
+msgstr ""
+"Scriptul pentru arsură necesită în total două straturi: un strat de prim-"
+"plan cu transparență și un strat de fundal."
+
+#: ../scripts/burn-in-anim.scm:218
+msgid "B_urn-In..."
+msgstr "Ars_ură..."
+
+#: ../scripts/burn-in-anim.scm:219
+msgid ""
+"Create intermediate layers to produce an animated 'burn-in' transition "
+"between two layers"
+msgstr ""
+"Creează straturi intermediare pentru a produce o tranziție de „arsură” "
+"animată între două straturi"
+
+#: ../scripts/burn-in-anim.scm:227
+msgid "Fadeout"
+msgstr "Estompează pierdut"
+
+#: ../scripts/burn-in-anim.scm:228
+msgid "Fadeout width"
+msgstr "Lățimea estompării pierdute"
+
+#: ../scripts/burn-in-anim.scm:229
+msgid "Corona width"
+msgstr "Lățime coroană"
+
+# hm ?
+#: ../scripts/burn-in-anim.scm:230
+msgid "After glow"
+msgstr "După strălucire"
+
+#: ../scripts/burn-in-anim.scm:231
+msgid "Add glowing"
+msgstr "Adaugă o strălucire"
+
+#: ../scripts/burn-in-anim.scm:232
+msgid "Prepare for GIF"
+msgstr "Pregătește pentru GIF"
+
+#: ../scripts/burn-in-anim.scm:233
+msgid "Speed (pixels/frame)"
+msgstr "Viteză (pixeli/cadru)"
+
+#: ../scripts/camo.scm:95
+msgid "_Camouflage..."
+msgstr "_Camuflaj..."
+
+#: ../scripts/camo.scm:96
+msgid "Create an image filled with a camouflage pattern"
+msgstr "Creează o imagine umplută cu un model de camuflaj"
+
+#: ../scripts/camo.scm:101 ../scripts/rendermap.scm:87
+msgid "Image size"
+msgstr "Dimensiunea imaginii"
+
+#: ../scripts/camo.scm:102 ../scripts/rendermap.scm:88
+msgid "Granularity"
+msgstr "Granularitate"
+
+#: ../scripts/camo.scm:103
+msgid "Color 1"
+msgstr "Culoarea 1"
+
+#: ../scripts/camo.scm:104
+msgid "Color 2"
+msgstr "Culoarea 2"
+
+#: ../scripts/camo.scm:105
+msgid "Color 3"
+msgstr "Culoarea 3"
+
+#: ../scripts/camo.scm:106 ../scripts/distress-selection.scm:110
+msgid "Smooth"
+msgstr "Netezește"
+
+# apare în meniul de creare a unei sigle
+#: ../scripts/carved-logo.scm:161
+msgid "Carved..."
+msgstr "Sculptură..."
+
+#: ../scripts/carved-logo.scm:162
+msgid ""
+"Create a logo with text raised above or carved in to the specified "
+"background image"
+msgstr ""
+"Creează o siglă cu text scos în relief sau sculptat la imaginea de fundal "
+"specificată"
+
+#: ../scripts/carved-logo.scm:170
+msgid "Background Image"
+msgstr "Imaginea fundalului"
+
+#: ../scripts/carved-logo.scm:173
+msgid "Carve raised text"
+msgstr "Sculptează textul în relief"
+
+#: ../scripts/carved-logo.scm:174
+msgid "Padding around text"
+msgstr "Umplere în jurul textului"
+
+#: ../scripts/carve-it.scm:181
+msgid "Stencil C_arve..."
+msgstr "Ș_ablon de sculptură..."
+
+#: ../scripts/carve-it.scm:189
+msgid "Image to carve"
+msgstr "Imagine de sculptat"
+
+#: ../scripts/carve-it.scm:190
+msgid "Carve white areas"
+msgstr "Sculptează zonele albe"
+
+#: ../scripts/chalk.scm:75 ../scripts/chalk.scm:116
+msgid "_Chalk..."
+msgstr "_Cretă..."
+
+#: ../scripts/chalk.scm:76
+msgid "Create a chalk drawing effect for the selected region (or alpha)"
+msgstr ""
+"Creează un efect de desen cu cretă pentru regiunea (sau alfa) selectată"
+
+#: ../scripts/chalk.scm:117
+msgid "Create a logo resembling chalk scribbled on a blackboard"
+msgstr "Creează o siglă asemănătoare cu o mâzgăleală de cretă pe o tablă"
+
+#: ../scripts/chalk.scm:126
+msgid "Chalk color"
+msgstr "Culoarea cretei"
+
+#: ../scripts/chip-away.scm:141 ../scripts/chip-away.scm:187
+msgid "Chip Awa_y..."
+msgstr "C_ioplire cu dalta..."
+
+#: ../scripts/chip-away.scm:142
+msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
+msgstr ""
+"Adaugă un efect de sculptură de lemn cioplit la regiunea (sau alfa) selectată"
+
+#: ../scripts/chip-away.scm:149 ../scripts/chip-away.scm:196
+msgid "Chip amount"
+msgstr "Cantitatea cioplirii"
+
+#: ../scripts/chip-away.scm:150 ../scripts/chip-away.scm:197
+msgid "Blur amount"
+msgstr "Cantitatea neclarității"
+
+#: ../scripts/chip-away.scm:151 ../scripts/chip-away.scm:198
+msgid "Invert"
+msgstr "Inversează"
+
+#: ../scripts/chip-away.scm:152 ../scripts/chip-away.scm:199
+msgid "Drop shadow"
+msgstr "Umbră detașată"
+
+#: ../scripts/chip-away.scm:154 ../scripts/chip-away.scm:201
+msgid "Fill BG with pattern"
+msgstr "Umple fundalul cu un model"
+
+#: ../scripts/chip-away.scm:155 ../scripts/chip-away.scm:202
+msgid "Keep background"
+msgstr "Păstrează fundalul"
+
+#: ../scripts/chip-away.scm:188
+msgid "Create a logo resembling a chipped wood carving"
+msgstr "Creează o siglă asemănătoare cu o sculptură în lemn cioplit"
+
+#: ../scripts/chrome-it.scm:205
+msgid "Stencil C_hrome..."
+msgstr "Șablon de c_rom..."
+
+#: ../scripts/chrome-it.scm:206
+msgid ""
+"Add a chrome effect to the selected region (or alpha) using a specified "
+"(grayscale) stencil"
+msgstr ""
+"Adaugă un efect de crom la regiunea (sau alfa) selectată folosind un șablon "
+"specificat (tonuri de gri)"
+
+#: ../scripts/chrome-it.scm:213 ../scripts/sota-chrome-logo.scm:209
+msgid "Chrome saturation"
+msgstr "Saturația cromului"
+
+#: ../scripts/chrome-it.scm:214 ../scripts/sota-chrome-logo.scm:210
+msgid "Chrome lightness"
+msgstr "Luminozitatea cromului"
+
+#: ../scripts/chrome-it.scm:215 ../scripts/crystal-logo.scm:214
+#: ../scripts/sota-chrome-logo.scm:211
+msgid "Chrome factor"
+msgstr "Factorul cromului"
+
+#: ../scripts/chrome-it.scm:216 ../scripts/crystal-logo.scm:221
+#: ../scripts/sota-chrome-logo.scm:215
+msgid "Environment map"
+msgstr "Harta mediului"
+
+#: ../scripts/chrome-it.scm:219 ../scripts/sota-chrome-logo.scm:218
+msgid "Highlight balance"
+msgstr "Balansul evidențierii"
+
+#: ../scripts/chrome-it.scm:220 ../scripts/sota-chrome-logo.scm:219
+msgid "Chrome balance"
+msgstr "Balansul cromului"
+
+# checkbox
+#: ../scripts/chrome-it.scm:221
+msgid "Chrome white areas"
+msgstr "Zone albe ale cromului"
+
+#: ../scripts/chrome-logo.scm:85 ../scripts/chrome-logo.scm:118
+msgid "C_hrome..."
+msgstr "C_rom..."
+
+#: ../scripts/chrome-logo.scm:86
+msgid "Add a simple chrome effect to the selected region (or alpha)"
+msgstr "Adaugă un efect simplu de crom la regiunea (sau alfa) selectată"
+
+#: ../scripts/chrome-logo.scm:93
+msgid "Offsets (pixels * 2)"
+msgstr "Decalaje (pixeli × 2)"
+
+#: ../scripts/chrome-logo.scm:119
+msgid "Create a simplistic, but cool, chromed logo"
+msgstr "Creează o siglă cromată, simplistă, dar de efect"
+
+#: ../scripts/circuit.scm:142
+msgid "_Circuit..."
+msgstr "_Circuit..."
+
+#: ../scripts/circuit.scm:143
+msgid ""
+"Fill the selected region (or alpha) with traces like those on a circuit board"
+msgstr ""
+"Umple regiunea (sau alfa) selectată cu trasee asemănătoare cu cele de pe "
+"circuitele imprimate"
+
+#: ../scripts/circuit.scm:150
+msgid "Oilify mask size"
+msgstr "Dimensiunea măștii de uleiere"
+
+#: ../scripts/circuit.scm:151
+msgid "Circuit seed"
+msgstr "Sămânța circuitului"
+
+#: ../scripts/circuit.scm:152
+msgid "No background (only for separate layer)"
+msgstr "Fără fundal (numai pentru stratul separat)"
+
+#: ../scripts/circuit.scm:153 ../scripts/lava.scm:129
+#: ../scripts/predator.scm:130 ../scripts/xach-effect.scm:138
+msgid "Keep selection"
+msgstr "Păstrează selecția"
+
+#: ../scripts/circuit.scm:154 ../scripts/lava.scm:130
+#: ../scripts/predator.scm:131
+msgid "Separate layer"
+msgstr "Strat separat"
+
+# hm ? sau transformă în pânză ?
+#: ../scripts/clothify.scm:51
+msgid "_Clothify..."
+msgstr "Ț_esătură..."
+
+#: ../scripts/clothify.scm:52
+msgid "Add a cloth-like texture to the selected region (or alpha)"
+msgstr ""
+"Adaugă o textură asemănătoare cu o pânză la regiunea (sau alfa) selectată"
+
+#: ../scripts/clothify.scm:59
+msgid "Blur X"
+msgstr "Neclaritate X"
+
+#: ../scripts/clothify.scm:60
+msgid "Blur Y"
+msgstr "Neclaritate Y"
+
+#: ../scripts/clothify.scm:61 ../scripts/swirltile.scm:58
+msgid "Azimuth"
+msgstr "Azimut"
+
+#: ../scripts/clothify.scm:62 ../scripts/swirltile.scm:59
+msgid "Elevation"
+msgstr "Elevație"
+
+#: ../scripts/clothify.scm:63 ../scripts/swirltile.scm:57
+msgid "Depth"
+msgstr "Adâncime"
+
+#: ../scripts/coffee.scm:80
+msgid "_Coffee Stain..."
+msgstr "Pată de _cafea..."
+
+#: ../scripts/coffee.scm:81
+msgid "Add realistic looking coffee stains to the image"
+msgstr "Adaugă la imagine un aspect realistic de pete de cafea"
+
+#: ../scripts/coffee.scm:88
+msgid "Stains"
+msgstr "Pete"
+
+#: ../scripts/coffee.scm:89
+msgid "Darken only"
+msgstr "Doar întunecare"
+
+#: ../scripts/comic-logo.scm:115 ../scripts/comic-logo.scm:155
+msgid "Comic Boo_k..."
+msgstr "Ben_zi desenate..."
+
+#: ../scripts/comic-logo.scm:116
+msgid ""
+"Add a comic-book effect to the selected region (or alpha) by outlining and "
+"filling with a gradient"
+msgstr ""
+"Adaugă un efect de benzi desenate la regiunea (sau alfa) selectată, prin "
+"conturarea și umplerea cu un degrade"
+
+#: ../scripts/comic-logo.scm:125 ../scripts/comic-logo.scm:166
+#: ../scripts/glossy.scm:209 ../scripts/glossy.scm:281
+msgid "Outline size"
+msgstr "Dimensiunea conturului"
+
+#: ../scripts/comic-logo.scm:126 ../scripts/comic-logo.scm:167
+msgid "Outline color"
+msgstr "Culoarea conturului"
+
+#: ../scripts/comic-logo.scm:156
+msgid "Create a comic-book style logo by outlining and filling with a gradient"
+msgstr ""
+"Creează o siglă asemănătoare cu benzile desenate prin conturarea și umplerea "
+"cu un degrade"
+
+#: ../scripts/contactsheet.scm:120
+msgid "Contact Sheet "
+msgstr "Foaie de contact "
+
+#: ../scripts/contactsheet.scm:122
+msgid " for directory "
+msgstr " pentru directorul "
+
+#: ../scripts/contactsheet.scm:210
+msgid "Unable to open directory "
+msgstr "Nu s-a putut deschide directorul "
+
+#: ../scripts/contactsheet.scm:308
+msgid "Created "
+msgstr "Creat "
+
+#: ../scripts/contactsheet.scm:309
+msgid " contact sheets from a total of "
+msgstr " foi de contact dintr-un total de "
+
+#: ../scripts/contactsheet.scm:310
+msgid " images"
+msgstr " imagini"
+
+#: ../scripts/contactsheet.scm:319
+msgid "_Contact Sheet..."
+msgstr "Foaie de _contact..."
+
+#: ../scripts/contactsheet.scm:320
+msgid ""
+"Create a series of images containing thumbnail sized versions of all of the "
+"images in a specified directory."
+msgstr ""
+"Creează o serie de imagini ce conține versiuni miniatură ale tuturor "
+"imaginilor dintr-un director specificat."
+
+#: ../scripts/contactsheet.scm:325
+msgid "Images Directory"
+msgstr "Directorul Imagini"
+
+#: ../scripts/contactsheet.scm:326
+msgid "Sheet size"
+msgstr "Dimensiunea foii"
+
+#: ../scripts/contactsheet.scm:331
+msgid "Title font"
+msgstr "Font pentru titlu"
+
+#: ../scripts/contactsheet.scm:332
+msgid "Legend font"
+msgstr "Font pentru legendă"
+
+#: ../scripts/coolmetal-logo.scm:131 ../scripts/coolmetal-logo.scm:169
+msgid "Cool _Metal..."
+msgstr "_Metal rece..."
+
+#: ../scripts/coolmetal-logo.scm:132
+msgid ""
+"Add a metallic effect to the selected region (or alpha) with reflections and "
+"perspective shadows"
+msgstr ""
+"Adaugă un efect metalic la regiunea (sau alfa) selectată cu reflexii și "
+"umbre de perspectivă"
+
+#: ../scripts/coolmetal-logo.scm:139 ../scripts/frosty-logo.scm:116
+msgid "Effect size (pixels)"
+msgstr "Dimensiunea efectului (pixeli)"
+
+#: ../scripts/coolmetal-logo.scm:170
+msgid "Create a metallic logo with reflections and perspective shadows"
+msgstr "Creează o siglă metalică cu reflexii și umbre de perspectivă"
+
+#: ../scripts/crystal-logo.scm:208
+msgid "Crystal..."
+msgstr "Cristal..."
+
+#: ../scripts/crystal-logo.scm:209
+msgid "Create a logo with a crystal/gel effect displacing the image underneath"
+msgstr ""
+"Creează o siglă cu un efect de cristal sau de gel plasând imaginea dedesubt"
+
+#: ../scripts/crystal-logo.scm:218
+msgid "Background image"
+msgstr "Imaginea fundalului"
+
+#: ../scripts/difference-clouds.scm:68
+msgid "Difference Clouds..."
+msgstr "Nori de diferență..."
+
+#: ../scripts/difference-clouds.scm:69
+msgid "Solid noise applied with Difference layer mode"
+msgstr "Zgomot solid aplicat cu módul de strat Diferență"
+
+#: ../scripts/distress-selection.scm:99
+msgid "_Distort..."
+msgstr "_Distorsionează..."
+
+#: ../scripts/distress-selection.scm:100
+msgid "Distress the selection"
+msgstr "Perturbă selecția"
+
+#: ../scripts/distress-selection.scm:107
+msgid "Threshold (bigger 1<-->255 smaller)"
+msgstr "Prag (mai mare 1<-->255 mai mic)"
+
+#: ../scripts/distress-selection.scm:108
+msgid "Spread"
+msgstr "Răspândește"
+
+#: ../scripts/distress-selection.scm:109
+msgid "Granularity (1 is low)"
+msgstr "Granularitate (1 este puțin)"
+
+#: ../scripts/distress-selection.scm:111
+msgid "Smooth horizontally"
+msgstr "Netezește orizontal"
+
+#: ../scripts/distress-selection.scm:112
+msgid "Smooth vertically"
+msgstr "Netezește vertical"
+
+#: ../scripts/drop-shadow.scm:168
+msgid "_Drop Shadow..."
+msgstr "Umbră _detașată..."
+
+#: ../scripts/drop-shadow.scm:169
+msgid "Add a drop shadow to the selected region (or alpha)"
+msgstr "Adaugă o umbră detașată la regiunea (sau alfa) selectată"
+
+#: ../scripts/drop-shadow.scm:176 ../scripts/gimp-labels.scm:185
+msgid "Offset X"
+msgstr "Decalaj X"
+
+#: ../scripts/drop-shadow.scm:177 ../scripts/gimp-labels.scm:186
+msgid "Offset Y"
+msgstr "Decalaj Y"
+
+#: ../scripts/drop-shadow.scm:178 ../scripts/news-text.scm:88
+#: ../scripts/perspective-shadow.scm:207 ../scripts/round-corners.scm:138
+#: ../scripts/swirltile.scm:60
+msgid "Blur radius"
+msgstr "Rază de neclaritate"
+
+#: ../scripts/drop-shadow.scm:179 ../scripts/fuzzyborder.scm:155
+#: ../scripts/perspective-shadow.scm:208 ../scripts/spyrogimp.scm:353
+msgid "Color"
+msgstr "Culoare"
+
+#: ../scripts/drop-shadow.scm:180 ../scripts/perspective-shadow.scm:209
+msgid "Opacity"
+msgstr "Opacitate"
+
+#: ../scripts/drop-shadow.scm:181 ../scripts/perspective-shadow.scm:211
+msgid "Allow resizing"
+msgstr "Permite redimensionarea"
+
+#: ../scripts/erase-rows.scm:35
+msgid "_Erase Every Other Row..."
+msgstr "Ș_tergere din două în două rânduri..."
+
+#: ../scripts/erase-rows.scm:36
+msgid "Erase every other row or column"
+msgstr "Șterge din două în două rânduri sau coloane"
+
+#: ../scripts/erase-rows.scm:43
+msgid "Rows/cols"
+msgstr "Rânduri sau coloane"
+
 #: ../scripts/erase-rows.scm:43
 msgid "Rows"
 msgstr "Rânduri"
+
+#: ../scripts/erase-rows.scm:43
+msgid "Columns"
+msgstr "Coloane"
+
+#: ../scripts/erase-rows.scm:44
+msgid "Even/odd"
+msgstr "Pare sau impare"
 
 #: ../scripts/erase-rows.scm:44
 msgid "Even"
 msgstr "Pare"
 
+#: ../scripts/erase-rows.scm:44
+msgid "Odd"
+msgstr "Impare"
+
+# descriptiv despre ce se poate selecta
+#: ../scripts/erase-rows.scm:45
+msgid "Erase/fill"
+msgstr "Ștergere sau umplere"
+
 #: ../scripts/erase-rows.scm:45
 msgid "Erase"
 msgstr "Șterge"
+
+#: ../scripts/erase-rows.scm:45
+msgid "Fill with BG"
+msgstr "Umple cu culoarea de fundal"
+
+#: ../scripts/flatland.scm:61
+msgid "_Flatland..."
+msgstr "Câ_mpie..."
+
+#: ../scripts/flatland.scm:62
+msgid "Create an image filled with a Land Pattern"
+msgstr "Creează o imagine umplută cu un model de teren"
+
+#: ../scripts/flatland.scm:67 ../scripts/land.scm:78
+msgid "Image width"
+msgstr "Lățimea imaginii"
+
+#: ../scripts/flatland.scm:68 ../scripts/land.scm:79
+msgid "Image height"
+msgstr "Înălțimea imaginii"
+
+#: ../scripts/flatland.scm:69 ../scripts/land.scm:80
+msgid "Random seed"
+msgstr "Sămânță aleatoare"
+
+#: ../scripts/flatland.scm:70 ../scripts/land.scm:81
+msgid "Detail level"
+msgstr "Nivelul detaliilor"
+
+#: ../scripts/flatland.scm:71 ../scripts/land.scm:84
+msgid "Scale X"
+msgstr "Scalare X"
+
+#: ../scripts/flatland.scm:72 ../scripts/land.scm:85
+msgid "Scale Y"
+msgstr "Scalare Y"
+
+#: ../scripts/font-map.scm:152
+msgid "Render _Font Map..."
+msgstr "Randează harta de _font..."
+
+#: ../scripts/font-map.scm:153
+msgid ""
+"Create an image filled with previews of fonts matching a fontname filter"
+msgstr ""
+"Creează o imagine umplută cu previzualizări ale fonturilor care se potrivesc "
+"cu filtrul unui nume de font"
+
+#: ../scripts/font-map.scm:158
+msgid "_Text"
+msgstr "_Text"
+
+#: ../scripts/font-map.scm:159
+msgid "Use font _name as text"
+msgstr "Folosește ca text _numele fontului"
+
+#: ../scripts/font-map.scm:160
+msgid "_Labels"
+msgstr "_Etichete"
+
+#: ../scripts/font-map.scm:161
+msgid "_Filter (regexp)"
+msgstr "_Filtru (regexp)"
+
+#: ../scripts/font-map.scm:162
+msgid "Font _size (pixels)"
+msgstr "Dimen_siunea fontului (pixeli)"
+
+#: ../scripts/font-map.scm:163
+msgid "_Border (pixels)"
+msgstr "C_henar (pixeli)"
+
+#: ../scripts/font-map.scm:164
+msgid "_Color scheme"
+msgstr "Schemă de _culori"
 
 #: ../scripts/font-map.scm:164
 msgid "Black on white"
 msgstr "Negru pe alb"
 
+#: ../scripts/font-map.scm:164
+msgid "Active colors"
+msgstr "Culori active"
+
+#: ../scripts/frosty-logo.scm:108 ../scripts/frosty-logo.scm:141
+msgid "_Frosty..."
+msgstr "Îng_hețat..."
+
+#: ../scripts/frosty-logo.scm:109
+msgid ""
+"Add a frost effect to the selected region (or alpha) with an added drop "
+"shadow"
+msgstr ""
+"Adaugă un efect de îngheț la regiunea (sau alfa) selectată cu o umbră "
+"detașată adăugată"
+
+#: ../scripts/frosty-logo.scm:142
+msgid "Create frozen logo with an added drop shadow"
+msgstr "Creează o siglă înghețată cu o umbră detașată adăugată"
+
+#: ../scripts/fuzzyborder.scm:147
+msgid "_Fuzzy Border..."
+msgstr "Chenar di_fuz..."
+
+#: ../scripts/fuzzyborder.scm:148
+msgid "Add a jagged, fuzzy border to an image"
+msgstr "Adaugă la o imagine un chenar zdrențuit și difuz"
+
+#: ../scripts/fuzzyborder.scm:156 ../scripts/old-photo.scm:99
+msgid "Border size"
+msgstr "Dimensiunea chenarului"
+
+#: ../scripts/fuzzyborder.scm:157
+msgid "Blur border"
+msgstr "Atenuează claritatea chenarului"
+
+# hm ? sau 1 este scăzut ?
+#: ../scripts/fuzzyborder.scm:158
+msgid "Granularity (1 is Low)"
+msgstr "Granularitate (1 este puțin)"
+
+#: ../scripts/fuzzyborder.scm:159
+msgid "Add shadow"
+msgstr "Adaugă o umbră"
+
+#: ../scripts/fuzzyborder.scm:160
+msgid "Shadow weight (%)"
+msgstr "Ponderea umbrei (%)"
+
+#: ../scripts/gimp-headers.scm:149
+msgid "_Big Header..."
+msgstr "Antet _mare..."
+
+#: ../scripts/gimp-headers.scm:150
+msgid "Create an image of a large header using the gimp.org webpage theme"
+msgstr "Creează imaginea unui antet mare folosind tema paginii web gimp.org"
+
+#: ../scripts/gimp-headers.scm:159 ../scripts/gimp-headers.scm:182
+#: ../scripts/xach-effect.scm:131
+msgid "Highlight color"
+msgstr "Culoare luminoasă"
+
+#: ../scripts/gimp-headers.scm:160 ../scripts/gimp-headers.scm:183
+msgid "Dark color"
+msgstr "Culoare întunecată"
+
+#: ../scripts/gimp-headers.scm:161 ../scripts/gimp-headers.scm:184
+#: ../scripts/gimp-labels.scm:179
+msgid "Shadow color"
+msgstr "Culoarea umbrei"
+
+#: ../scripts/gimp-headers.scm:162 ../scripts/gimp-headers.scm:185
+msgid "Autocrop"
+msgstr "Autodecupare"
+
+#: ../scripts/gimp-headers.scm:163 ../scripts/gimp-headers.scm:186
+#: ../scripts/gimp-labels.scm:128 ../scripts/gimp-labels.scm:144
+#: ../scripts/gimp-labels.scm:160 ../scripts/gimp-labels.scm:181
+msgid "Remove background"
+msgstr "Elimină fundalul"
+
+#: ../scripts/gimp-headers.scm:164 ../scripts/gimp-headers.scm:187
+#: ../scripts/gimp-labels.scm:129 ../scripts/gimp-labels.scm:145
+#: ../scripts/gimp-labels.scm:161 ../scripts/gimp-labels.scm:182
+msgid "Index image"
+msgstr "Imagine de tip index"
+
+#: ../scripts/gimp-headers.scm:165 ../scripts/gimp-headers.scm:188
+#: ../scripts/gimp-labels.scm:183
+msgid "Number of colors"
+msgstr "Numărul de culori"
+
+#: ../scripts/gimp-headers.scm:172
+msgid "_Small Header..."
+msgstr "Antet m_ic..."
+
+#: ../scripts/gimp-headers.scm:173
+msgid "Create an image of a small header using the gimp.org webpage theme"
+msgstr "Creează imaginea unui antet mic folosind tema paginii web gimp.org"
+
+#: ../scripts/gimp-headers.scm:189 ../scripts/gimp-labels.scm:184
+msgid "Select-by-color threshold"
+msgstr "Prag de selectare-pe-bază-de-culoare"
+
+#: ../scripts/gimp-labels.scm:121
+msgid "_Tube Button Label..."
+msgstr "Eticheta butonului _tubular..."
+
+#: ../scripts/gimp-labels.scm:122
+msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
+msgstr ""
+"Creează imaginea unei etichete ca un buton tubular folosind tema paginii web "
+"gimp.org"
+
+#: ../scripts/gimp-labels.scm:137
+msgid "T_ube Sub-Button Label..."
+msgstr "Etichetă sub-buton tubular..."
+
+#: ../scripts/gimp-labels.scm:138
+msgid ""
+"Create an image of a second level Tube Button Label using the gimp.org "
+"webpage theme"
+msgstr ""
+"Creează imaginea unei etichete de nivelul doi al unui buton tubular folosing "
+"tema paginii web gimp.org"
+
+#: ../scripts/gimp-labels.scm:153
+msgid "Tub_e Sub-Sub-Button Label..."
+msgstr "_Etichetă sub-sub-buton tubular..."
+
+#: ../scripts/gimp-labels.scm:154
+msgid ""
+"Create an image of a third level Tube Button Label using the gimp.org "
+"webpage theme"
+msgstr ""
+"Creează imaginea unei etichete de nivelul trei al unui buton tubular "
+"folosing tema paginii web gimp.org"
+
+#: ../scripts/gimp-labels.scm:169
+msgid "_General Tube Labels..."
+msgstr "Etichete tubulare _generale..."
+
+#: ../scripts/gimp-labels.scm:170
+msgid ""
+"Create an image of a Tube Button Label Header using the gimp.org webpage "
+"theme"
+msgstr ""
+"Creează imaginea unui antet cu etichetă ca un buton tubular folosind tema "
+"paginii web gimp.org"
+
+#: ../scripts/glossy.scm:197 ../scripts/glossy.scm:268
+msgid "Glo_ssy..."
+msgstr "Lucio_s..."
+
+#: ../scripts/glossy.scm:198
+msgid ""
+"Add gradients, patterns, shadows, and bump maps to the selected region (or "
+"alpha)"
+msgstr ""
+"Adaugă degradeuri, modele, umbre și hărți de denivelări la regiunea (sau "
+"alfa) selectată"
+
+#: ../scripts/glossy.scm:205 ../scripts/glossy.scm:277
+msgid "Blend gradient (text)"
+msgstr "Degradeul amestecului (text)"
+
+#: ../scripts/glossy.scm:206 ../scripts/glossy.scm:278
+msgid "Text gradient reverse"
+msgstr "Inversează degradeul textului"
+
+#: ../scripts/glossy.scm:207 ../scripts/glossy.scm:279
+msgid "Blend gradient (outline)"
+msgstr "Degradeul amestecului (contur)"
+
+#: ../scripts/glossy.scm:208 ../scripts/glossy.scm:280
+msgid "Outline gradient reverse"
+msgstr "Inversează degradeul conturului"
+
+#: ../scripts/glossy.scm:211 ../scripts/glossy.scm:283
+msgid "Use pattern for text instead of gradient"
+msgstr "Folosește un model pentru text în loc de degrade"
+
+#: ../scripts/glossy.scm:212 ../scripts/glossy.scm:284
+msgid "Pattern (text)"
+msgstr "Model (text)"
+
+#: ../scripts/glossy.scm:213 ../scripts/glossy.scm:285
+msgid "Use pattern for outline instead of gradient"
+msgstr "Folosește un model pentru contur în loc de degrade"
+
+#: ../scripts/glossy.scm:214 ../scripts/glossy.scm:286
+msgid "Pattern (outline)"
+msgstr "Model (contur)"
+
+#: ../scripts/glossy.scm:215 ../scripts/glossy.scm:287
+msgid "Use pattern overlay"
+msgstr "Folosește o suprapunere de model"
+
+#: ../scripts/glossy.scm:216 ../scripts/glossy.scm:288
+msgid "Pattern (overlay)"
+msgstr "Model (suprapunere)"
+
+#: ../scripts/glossy.scm:218 ../scripts/glossy.scm:290 ../scripts/sphere.scm:80
+msgid "Shadow"
+msgstr "Umbră"
+
+#: ../scripts/glossy.scm:269
+msgid "Create a logo with gradients, patterns, shadows, and bump maps"
+msgstr "Creează o siglă cu degradeuri, modele, umbre și hărți de denivelări"
+
+#: ../scripts/glowing-logo.scm:76 ../scripts/glowing-logo.scm:109
+msgid "Glo_wing Hot..."
+msgstr "_Incandescență strălucitoare..."
+
+#: ../scripts/glowing-logo.scm:77
+msgid "Add a glowing hot metal effect to the selected region (or alpha)"
+msgstr ""
+"Adaugă un efect de metal incandescent strălucitor la regiunea (sau alfa) "
+"selectată"
+
+#: ../scripts/glowing-logo.scm:84
+msgid "Effect size (pixels * 3)"
+msgstr "Dimensiunea efectului (pixeli × 3)"
+
+#: ../scripts/glowing-logo.scm:110
+msgid "Create a logo that looks like glowing hot metal"
+msgstr "Creează o siglă care arată ca un metal incandescent strălucitor"
+
+# hm ? parcă în degrade nu merge
+#: ../scripts/gradient-bevel-logo.scm:95 ../scripts/gradient-bevel-logo.scm:134
+msgid "Gradient Beve_l..."
+msgstr "Teșitură gradua_lă..."
+
+#: ../scripts/gradient-bevel-logo.scm:96
+msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
+msgstr ""
+"Adaugă un aspect strălucitor și un efect de teșire la regiunea (sau alfa) "
+"selectată"
+
+#: ../scripts/gradient-bevel-logo.scm:103 ../scripts/textured-logo.scm:127
+#: ../scripts/t-o-p-logo.scm:109
+msgid "Border size (pixels)"
+msgstr "Dimensiunea chenarului (pixeli)"
+
+#: ../scripts/gradient-bevel-logo.scm:104
+#: ../scripts/gradient-bevel-logo.scm:143
+msgid "Bevel height (sharpness)"
+msgstr "Înălțimea teșiturii (claritate)"
+
+#: ../scripts/gradient-bevel-logo.scm:135
+msgid "Create a logo with a shiny look and beveled edges"
+msgstr "Creează o siglă cu un aspect strălucitor și margini teșite"
+
+#: ../scripts/gradient-example.scm:64
+msgid "Custom _Gradient..."
+msgstr "De_grade personalizat..."
+
+#: ../scripts/gradient-example.scm:65
+msgid "Create an image filled with an example of the current gradient"
+msgstr "Creează o imagine umplută cu un exemplu al degradeului curent"
+
+#: ../scripts/grid-system.scm:84
+msgid "_Grid..."
+msgstr "_Grilă..."
+
+#: ../scripts/grid-system.scm:85 ../scripts/guides-from-selection.scm:33
+msgid ""
+"Draw a grid as specified by the lists of X and Y locations using the current "
+"brush"
+msgstr ""
+"Desenează o grilă așa cum este specificat în listele locațiilor X și Y "
+"folosind penelul curent"
+
+#: ../scripts/grid-system.scm:92
+msgid "X divisions"
+msgstr "Diviziuni X"
+
+#: ../scripts/grid-system.scm:93
+msgid "Y divisions"
+msgstr "Diviziuni Y"
+
+#: ../scripts/guides-from-selection.scm:32
+msgid "New Guides from _Selection"
+msgstr "Ghidaje noi din _selecție"
+
+#: ../scripts/guides-new-percent.scm:27
+msgid "New Guide (by _Percent)..."
+msgstr "Ghidaj nou (în _procente)..."
+
+#: ../scripts/guides-new-percent.scm:28
+msgid "Add a guide at the position specified as a percentage of the image size"
+msgstr ""
+"Adaugă un ghidaj la poziția specificată ca procentaj din dimensiunea imaginii"
+
+#: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
+msgid "Direction"
+msgstr "Direcție"
+
 #: ../scripts/guides-new-percent.scm:35 ../scripts/guides-new.scm:35
 msgid "Horizontal"
 msgstr "Orizontal"
+
+#: ../scripts/guides-new-percent.scm:36 ../scripts/guides-new.scm:35
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../scripts/guides-new-percent.scm:37
+msgid "Position (in %)"
+msgstr "Poziție (în %)"
+
+#: ../scripts/guides-new.scm:27
+msgid "New _Guide..."
+msgstr "_Ghidaj nou..."
+
+#: ../scripts/guides-new.scm:28
+msgid "Add a guide at the orientation and position specified (in pixels)"
+msgstr "Adaugă un ghidaj la orientarea și poziția specificată (în pixeli)"
+
+#: ../scripts/guides-new.scm:36
+msgid "Position"
+msgstr "Poziție"
+
+#: ../scripts/guides-remove-all.scm:19
+msgid "_Remove all Guides"
+msgstr "_Elimină toate ghidajele"
+
+#: ../scripts/guides-remove-all.scm:20
+msgid "Remove all horizontal and vertical guides"
+msgstr "Elimină toate ghidajele orizontale și verticale"
+
+#: ../scripts/i26-gunya2.scm:91
+msgid "Imigre-_26..."
+msgstr "Imigre-_26..."
+
+#: ../scripts/i26-gunya2.scm:92
+msgid "Create a logo in a two-color, scribbled text style"
+msgstr "Creează o siglă cu text tremurat, în două culori"
+
+#: ../scripts/i26-gunya2.scm:99
+msgid "Frame color"
+msgstr "Culoarea cadrului"
+
+#: ../scripts/i26-gunya2.scm:102
+msgid "Frame size"
+msgstr "Dimensiunea cadrului"
+
+#: ../scripts/land.scm:72
+msgid "_Land..."
+msgstr "_Teren..."
+
+#: ../scripts/land.scm:73
+msgid "Create an image filled with a topographic map pattern"
+msgstr "Creează o imagine umplută cu un model de hartă topografică"
+
+#: ../scripts/land.scm:82
+msgid "Land height"
+msgstr "Înălțimea terenului"
+
+#: ../scripts/land.scm:83
+msgid "Sea depth"
+msgstr "Adâncimea oceanului"
+
+#: ../scripts/lava.scm:117
+msgid "_Lava..."
+msgstr "_Lavă..."
+
+#: ../scripts/lava.scm:118
+msgid "Fill the current selection with lava"
+msgstr "Umple selecția curentă cu lavă"
+
+#: ../scripts/lava.scm:125
+msgid "Seed"
+msgstr "Sămânță"
+
+#: ../scripts/lava.scm:127 ../scripts/swirltile.scm:64
+msgid "Roughness"
+msgstr "Rugozitate"
+
+#: ../scripts/lava.scm:131
+msgid "Use current gradient"
+msgstr "Folosește degradeul curent"
+
+# hm ? presupun că este vorba despre nova ca stea
+#: ../scripts/line-nova.scm:102
+msgid "Line _Nova..."
+msgstr "_Nova liniei..."
+
+#: ../scripts/line-nova.scm:103
+msgid ""
+"Fill a layer with rays emanating outward from its center using the FG color"
+msgstr ""
+"Umple un strat cu raze care emană din centrul lui înspre exterior, folosind "
+"culoarea de prim-plan"
+
+#: ../scripts/line-nova.scm:110
+msgid "Number of lines"
+msgstr "Numărul liniilor"
+
+#: ../scripts/line-nova.scm:111
+msgid "Sharpness (degrees)"
+msgstr "Claritate (grade)"
+
+#: ../scripts/line-nova.scm:112
+msgid "Offset radius"
+msgstr "Raza decalajului"
+
+#: ../scripts/line-nova.scm:113
+msgid "Randomness"
+msgstr "Aleatoriu"
+
+#: ../scripts/mkbrush.scm:63
+msgid "_Rectangular..."
+msgstr "D_reptunghiular..."
+
+#: ../scripts/mkbrush.scm:64
+msgid "Create a rectangular brush"
+msgstr "Creează un penel dreptunghiular"
+
+#: ../scripts/mkbrush.scm:69 ../scripts/mkbrush.scm:133
+#: ../scripts/mkbrush.scm:187 ../scripts/mkbrush.scm:254
+msgid "Name"
+msgstr "Nume"
+
+#: ../scripts/mkbrush.scm:72 ../scripts/mkbrush.scm:137
+#: ../scripts/mkbrush.scm:190 ../scripts/mkbrush.scm:258
+#: ../scripts/paste-as-brush.scm:71 ../scripts/select-to-brush.scm:143
+msgid "Spacing"
+msgstr "Spațiere"
+
+#: ../scripts/mkbrush.scm:127
+msgid "Re_ctangular, Feathered..."
+msgstr "Dreptung_hiular, estompat..."
+
+#: ../scripts/mkbrush.scm:128
+msgid "Create a rectangular brush with feathered edges"
+msgstr "Creează un penel dreptunghiular cu margini estompate"
+
+#: ../scripts/mkbrush.scm:136 ../scripts/mkbrush.scm:257
+msgid "Feathering"
+msgstr "Estompare"
+
+#: ../scripts/mkbrush.scm:181
+msgid "_Elliptical..."
+msgstr "_Eliptic..."
+
+#: ../scripts/mkbrush.scm:182
+msgid "Create an elliptical brush"
+msgstr "Creează un penel eliptic"
+
+#: ../scripts/mkbrush.scm:248
+msgid "Elli_ptical, Feathered..."
+msgstr "Eli_ptic, estompat..."
+
+#: ../scripts/mkbrush.scm:249
+msgid "Create an elliptical brush with feathered edges"
+msgstr "Creează un penel eliptic cu margini estompate"
+
+#: ../scripts/neon-logo.scm:245 ../scripts/neon-logo.scm:281
+msgid "N_eon..."
+msgstr "N_eon..."
+
+#: ../scripts/neon-logo.scm:246
+msgid "Convert the selected region (or alpha) into a neon-sign like object"
+msgstr ""
+"Convertește regiunea (sau alfa) selectată într-un obiect asemănător "
+"reclamelor cu neon"
+
+#: ../scripts/neon-logo.scm:253
+msgid "Effect size (pixels * 5)"
+msgstr "Dimensiunea efectului (pixeli × 5)"
+
+#: ../scripts/neon-logo.scm:256 ../scripts/neon-logo.scm:292
+msgid "Create shadow"
+msgstr "Creează o umbră"
+
+#: ../scripts/neon-logo.scm:282
+msgid "Create a logo in the style of a neon sign"
+msgstr "Creează o siglă în stilul unei reclame cu neon"
+
+#: ../scripts/news-text.scm:77
+msgid "Newsprint Te_xt..."
+msgstr "Te_xt pe hârtie de ziar..."
+
+#: ../scripts/news-text.scm:78
+msgid "Create a logo in the style of newspaper printing"
+msgstr "Creează o siglă în stilul tipăriturilor de ziar"
+
+#: ../scripts/news-text.scm:86
+msgid "Cell size (pixels)"
+msgstr "Dimensiunea celulei (pixeli)"
+
+#: ../scripts/news-text.scm:87 ../scripts/speed-text.scm:95
+msgid "Density (%)"
+msgstr "Densitate (%)"
+
+#: ../scripts/old-photo.scm:90
+msgid "_Old Photo..."
+msgstr "F_otografie veche..."
+
+#: ../scripts/old-photo.scm:91
+msgid "Make an image look like an old photo"
+msgstr "Face ca imaginea să arate ca o fotografie veche"
+
+#: ../scripts/old-photo.scm:98
+msgid "Defocus"
+msgstr "Defocalizează"
+
+#. since this plug-in uses the fuzzy-border plug-in, I used the
+#. values of the latter, with the exception of the initial value
+#. and the 'minimum' value.
+#: ../scripts/old-photo.scm:103
+msgid "Sepia"
+msgstr "Sepia"
+
+#: ../scripts/old-photo.scm:104
+msgid "Mottle"
+msgstr "Marmorat"
+
+#: ../scripts/paste-as-brush.scm:57 ../scripts/paste-as-pattern.scm:45
+msgid "There is no image data in the clipboard to paste."
+msgstr "Nu sunt date de imagine în clipboard pentru a fi lipite."
+
+#: ../scripts/paste-as-brush.scm:63
+msgid "New _Brush..."
+msgstr "_Penel nou..."
+
+#: ../scripts/paste-as-brush.scm:64
+msgid "Paste the clipboard contents into a new brush"
+msgstr "Lipește conținutul clipboard-ului într-un penel nou"
+
+#: ../scripts/paste-as-brush.scm:69 ../scripts/select-to-brush.scm:141
+msgid "Brush name"
+msgstr "Numele pensulei"
+
+#: ../scripts/paste-as-brush.scm:70 ../scripts/paste-as-pattern.scm:58
+#: ../scripts/select-to-brush.scm:142 ../scripts/select-to-pattern.scm:103
+msgid "File name"
+msgstr "Numele fișierului"
+
+#: ../scripts/paste-as-pattern.scm:51
+msgid "New _Pattern..."
+msgstr "_Model nou..."
+
+#: ../scripts/paste-as-pattern.scm:52
+msgid "Paste the clipboard contents into a new pattern"
+msgstr "Lipește conținutul clipboard-ului într-un model nou"
+
+#: ../scripts/paste-as-pattern.scm:57 ../scripts/select-to-pattern.scm:102
+msgid "Pattern name"
+msgstr "Nume model"
+
+#: ../scripts/perspective-shadow.scm:196
+msgid "_Perspective..."
+msgstr "_Perspectivă..."
+
+#: ../scripts/perspective-shadow.scm:197
+msgid "Add a perspective shadow to the selected region (or alpha)"
+msgstr "Adaugă o umbră de perspectivă la regiunea (sau alfa) selectată"
+
+#: ../scripts/perspective-shadow.scm:204
+msgid "Angle"
+msgstr "Unghi"
+
+#: ../scripts/perspective-shadow.scm:205
+msgid "Relative distance of horizon"
+msgstr "Distanța relativă a orizontului"
+
+#: ../scripts/perspective-shadow.scm:206
+msgid "Relative length of shadow"
+msgstr "Lungimea relativă a umbrei"
+
+#: ../scripts/perspective-shadow.scm:210
+msgid "Interpolation"
+msgstr "Interpolare"
+
+#: ../scripts/predator.scm:119
+msgid "_Predator..."
+msgstr "_Predator..."
+
+#: ../scripts/predator.scm:120
+msgid "Add a 'Predator' effect to the selected region (or alpha)"
+msgstr "Adaugă un efect de tip „Predator” la regiunea (sau alfa) selectată"
+
+#: ../scripts/predator.scm:127
+msgid "Edge amount"
+msgstr "Grosime margine"
+
+#: ../scripts/predator.scm:128
+msgid "Pixelize"
+msgstr "Pixelează"
+
+#: ../scripts/predator.scm:129
+msgid "Pixel amount"
+msgstr "Cantitate de pixeli"
+
+#: ../scripts/pupi-button.scm:187
+msgid "_Round Button..."
+msgstr "Buton _rotund..."
+
+#: ../scripts/pupi-button.scm:188
+msgid "Create images, each containing an oval button graphic"
+msgstr "Creează imagini, fiecare conținând o grafică de buton oval"
+
+#: ../scripts/pupi-button.scm:196
+msgid "Upper color"
+msgstr "Culoarea de deasupra"
+
+#: ../scripts/pupi-button.scm:197
+msgid "Lower color"
+msgstr "Culoarea de dedesubt"
+
+#: ../scripts/pupi-button.scm:199
+msgid "Upper color (active)"
+msgstr "Culoarea de deasupra (activ)"
+
+#: ../scripts/pupi-button.scm:200
+msgid "Lower color (active)"
+msgstr "Culoarea de dedesubt (activ)"
+
+#: ../scripts/pupi-button.scm:201
+msgid "Text color (active)"
+msgstr "Culoarea textului (activ)"
+
+#: ../scripts/pupi-button.scm:202
+msgid "Padding X"
+msgstr "Umplere X"
+
+#: ../scripts/pupi-button.scm:203
+msgid "Padding Y"
+msgstr "Umplere Y"
+
+#: ../scripts/pupi-button.scm:205
+msgid "Round ratio"
+msgstr "Raport de rotunjire"
+
+#: ../scripts/pupi-button.scm:206
+msgid "Not pressed"
+msgstr "Neapăsat"
+
+#: ../scripts/pupi-button.scm:207
+msgid "Not pressed (active)"
+msgstr "Neapăsat (activ)"
+
+# logica este fișier -> creează -> un model -> de care ? -> o hartă randată
+#: ../scripts/rendermap.scm:81
+msgid "Render _Map..."
+msgstr "_Hartă randată..."
+
+#: ../scripts/rendermap.scm:82
+msgid "Create an image filled with an Earth-like map pattern"
+msgstr "Creează o imagine umplută cu un model de hartă geografică"
+
+#: ../scripts/rendermap.scm:91
+msgid "Behavior"
+msgstr "Comportament"
 
 #: ../scripts/rendermap.scm:91
 msgid "Tile"
 msgstr "Dală"
 
+#: ../scripts/rendermap.scm:91
+msgid "Detail in Middle"
+msgstr "Detalii în mijloc"
+
+#: ../scripts/reverse-layers.scm:32
+msgid "Reverse Layer Order"
+msgstr "Inversează ordinea straturilor"
+
+#: ../scripts/reverse-layers.scm:33
+msgid "Reverse the order of layers in the image"
+msgstr "Inversează ordinea straturilor în imagine"
+
+#: ../scripts/ripply-anim.scm:119
+msgid "_Rippling..."
+msgstr "Ondula_re..."
+
+#: ../scripts/ripply-anim.scm:120
+msgid ""
+"Create a multi-layer image by adding a ripple effect to the current image"
+msgstr ""
+"Creează o imagine multistrat prin adăugarea unui efect de ondulare la "
+"imaginea curentă"
+
+#: ../scripts/ripply-anim.scm:127
+msgid "Rippling strength"
+msgstr "Intensitatea ondulării"
+
+#: ../scripts/ripply-anim.scm:128 ../scripts/waves-anim.scm:106
+msgid "Number of frames"
+msgstr "Numărul cadrelor"
+
+#: ../scripts/ripply-anim.scm:129
+msgid "Edge behavior"
+msgstr "Comportamentul marginilor"
+
 #: ../scripts/ripply-anim.scm:129
 msgid "Wrap"
 msgstr "Întoarse la capăt"
+
+#: ../scripts/ripply-anim.scm:129
+msgid "Smear"
+msgstr "Mâzgălite"
+
+#: ../scripts/ripply-anim.scm:129
+msgid "Black"
+msgstr "Negre"
+
+#: ../scripts/round-corners.scm:126
+msgid "_Round Corners..."
+msgstr "Colțuri _rotunjite..."
+
+#: ../scripts/round-corners.scm:127
+msgid ""
+"Round the corners of an image and optionally add a drop-shadow and background"
+msgstr ""
+"Rotunjește colțurile unei imagini și adaugă opțional o umbră detașată și un "
+"fundal"
+
+#: ../scripts/round-corners.scm:134
+msgid "Edge radius"
+msgstr "Raza marginii"
+
+#: ../scripts/round-corners.scm:135
+msgid "Add drop-shadow"
+msgstr "Adaugă o umbră detașată"
+
+#: ../scripts/round-corners.scm:139
+msgid "Add background"
+msgstr "Adaugă un fundal"
+
+#: ../scripts/script-fu-set-cmap.scm:54
+msgid "Se_t Colormap..."
+msgstr "S_tabilește paleta de culori..."
+
+#: ../scripts/script-fu-set-cmap.scm:55
+msgid "Change the colormap of an image to the colors in a specified palette."
+msgstr ""
+"Schimbă paleta de culori a unei imagini în culorile dintr-o paletă "
+"specificată."
+
+#: ../scripts/script-fu-set-cmap.scm:62
+msgid "Palette"
+msgstr "Paletă"
+
+#: ../scripts/selection-round.scm:156
+msgid "Rounded R_ectangle..."
+msgstr "Dr_eptunghi rotunjit..."
+
+#: ../scripts/selection-round.scm:157
+msgid "Round the corners of the current selection"
+msgstr "Rotunjește colțurile selecției curente"
+
+#: ../scripts/selection-round.scm:164
+msgid "Radius (%)"
+msgstr "Rază (%)"
+
+#: ../scripts/selection-round.scm:165
+msgid "Concave"
+msgstr "Concav"
+
+#: ../scripts/select-to-brush.scm:133
+msgid "To _Brush..."
+msgstr "La _penel..."
+
+#: ../scripts/select-to-brush.scm:134
+msgid "Convert a selection to a brush"
+msgstr "Convertește o selecție într-un penel"
+
+#: ../scripts/select-to-image.scm:81
+msgid "To _Image"
+msgstr "La _imagine"
+
+#: ../scripts/select-to-image.scm:82
+msgid "Convert a selection to an image"
+msgstr "Convertește o selecție într-o imagine"
+
+#: ../scripts/select-to-pattern.scm:94
+msgid "To _Pattern..."
+msgstr "La _model..."
+
+#: ../scripts/select-to-pattern.scm:95
+msgid "Convert a selection to a pattern"
+msgstr "Convertește o selecție într-un model"
+
+#: ../scripts/slide.scm:240
+msgid "_Slide..."
+msgstr "_Peliculă foto..."
+
+#: ../scripts/slide.scm:241
+msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
+msgstr ""
+"Adaugă la o imagine un cadru asemănător cu pelicula foto, cu perforații și "
+"inscripționări pe margine"
+
+#: ../scripts/slide.scm:249
+msgid "Number"
+msgstr "Număr"
+
+#: ../scripts/slide.scm:251
+msgid "Font color"
+msgstr "Culoarea fontului"
+
+# SOTA = State Of The Art
+#: ../scripts/sota-chrome-logo.scm:203
+msgid "SOTA Chrome..."
+msgstr "Crom SOTA..."
+
+#: ../scripts/sota-chrome-logo.scm:204
+msgid "Create a State Of The Art chromed logo"
+msgstr ""
+"Creează o siglă cromată cu maxim de perfecțiune (SOTA = State Of The Art)"
+
+#: ../scripts/speed-text.scm:86
+msgid "Speed Text..."
+msgstr "Text în viteză..."
+
+#: ../scripts/speed-text.scm:87
+msgid "Create a logo with a speedy text effect"
+msgstr "Creează o siglă cu un efect de text în viteză"
+
+#: ../scripts/sphere.scm:72 ../scripts/test-sphere.scm:264
+msgid "_Sphere..."
+msgstr "_Sferă..."
+
+#: ../scripts/sphere.scm:73
+msgid "Create a simple sphere with a drop shadow"
+msgstr "Creează o sferă simplă cu o umbră detașată"
+
+#: ../scripts/sphere.scm:78
+msgid "Radius (pixels)"
+msgstr "Rază (pixeli)"
+
+#: ../scripts/sphere.scm:79
+msgid "Lighting (degrees)"
+msgstr "Iluminare (grade)"
+
+#: ../scripts/sphere.scm:82
+msgid "Sphere color"
+msgstr "Culoarea sferei"
+
+#: ../scripts/spinning-globe.scm:95
+msgid "_Spinning Globe..."
+msgstr "_Glob rotitor..."
+
+#: ../scripts/spinning-globe.scm:96
+msgid "Create an animation by mapping the current image onto a spinning sphere"
+msgstr "Creează o animație prin maparea imaginii curente la o sferă rotitoare"
+
+#: ../scripts/spinning-globe.scm:103
+msgid "Frames"
+msgstr "Cadre"
+
+#: ../scripts/spinning-globe.scm:104
+msgid "Turn from left to right"
+msgstr "Rotește de la stânga la dreapta"
+
+#: ../scripts/spinning-globe.scm:106
+msgid "Index to n colors (0 = remain RGB)"
+msgstr "Index pentru n culori (0 = rămâne RGB)"
+
+#: ../scripts/spyrogimp.scm:243
+msgid "Rendering Spyro"
+msgstr "Randare Spirograf"
+
+#: ../scripts/spyrogimp.scm:317
+msgid "_Spyrogimp..."
+msgstr "_Spirogimp..."
+
+# hm ? ce-i aia
+#: ../scripts/spyrogimp.scm:318
+msgid ""
+"Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
+msgstr "Adaugă spirografe, epitrochoide și curbe Lissajous la stratul curent"
+
+#: ../scripts/spyrogimp.scm:326
+msgid "Type"
+msgstr "Tip"
 
 #: ../scripts/spyrogimp.scm:326
 msgid "Spyrograph"
 msgstr "Spirograf"
 
+#: ../scripts/spyrogimp.scm:327
+msgid "Epitrochoid"
+msgstr "Epitrochoid"
+
+#: ../scripts/spyrogimp.scm:328
+msgid "Lissajous"
+msgstr "Lissajous"
+
+#: ../scripts/spyrogimp.scm:329
+msgid "Shape"
+msgstr "Formă"
+
 #: ../scripts/spyrogimp.scm:329
 msgid "Circle"
 msgstr "Cerc"
+
+#: ../scripts/spyrogimp.scm:330
+msgid "Frame"
+msgstr "Cadru"
+
+#: ../scripts/spyrogimp.scm:331
+msgid "Triangle"
+msgstr "Triunghi"
+
+#: ../scripts/spyrogimp.scm:332
+msgid "Square"
+msgstr "Pătrat"
+
+#: ../scripts/spyrogimp.scm:333
+msgid "Pentagon"
+msgstr "Pentagon"
+
+#: ../scripts/spyrogimp.scm:334
+msgid "Hexagon"
+msgstr "Hexagon"
+
+#: ../scripts/spyrogimp.scm:335
+msgid "Polygon: 7 sides"
+msgstr "Poligon: 7 laturi"
+
+#: ../scripts/spyrogimp.scm:336
+msgid "Polygon: 8 sides"
+msgstr "Poligon: 8 laturi"
+
+#: ../scripts/spyrogimp.scm:337
+msgid "Polygon: 9 sides"
+msgstr "Poligon: 9 laturi"
+
+#: ../scripts/spyrogimp.scm:338
+msgid "Polygon: 10 sides"
+msgstr "Poligon: 10 laturi"
+
+#: ../scripts/spyrogimp.scm:339
+msgid "Outer teeth"
+msgstr "Dinte exterior"
+
+#: ../scripts/spyrogimp.scm:340
+msgid "Inner teeth"
+msgstr "Dinte interior"
+
+#: ../scripts/spyrogimp.scm:341
+msgid "Margin (pixels)"
+msgstr "Margine (pixeli)"
+
+#: ../scripts/spyrogimp.scm:342
+msgid "Hole ratio"
+msgstr "Raportul găurii"
+
+#: ../scripts/spyrogimp.scm:343 ../scripts/text-circle.scm:212
+msgid "Start angle"
+msgstr "Unghi de pornire"
+
+#: ../scripts/spyrogimp.scm:345
+msgid "Tool"
+msgstr "Instrument"
 
 #: ../scripts/spyrogimp.scm:345
 msgid "Pencil"
 msgstr "Creion"
 
+#: ../scripts/spyrogimp.scm:346 ../scripts/spyrogimp.scm:348
+msgid "Brush"
+msgstr "Penel"
+
+#: ../scripts/spyrogimp.scm:347
+msgid "Airbrush"
+msgstr "Aerograf"
+
+#: ../scripts/spyrogimp.scm:350
+msgid "Color method"
+msgstr "Metoda colorării"
+
 #: ../scripts/spyrogimp.scm:350
 msgid "Solid Color"
 msgstr "Culoare uniformă"
+
+#: ../scripts/spyrogimp.scm:351
+msgid "Gradient: Loop Sawtooth"
+msgstr "Degrade: dinte de ferăstrău ciclic"
+
+#: ../scripts/spyrogimp.scm:352
+msgid "Gradient: Loop Triangle"
+msgstr "Degrade: triunghi ciclic"
+
+#: ../scripts/starburst-logo.scm:73 ../scripts/starburst-logo.scm:106
+msgid "Starb_urst..."
+msgstr "Explozie s_telară..."
+
+#: ../scripts/starburst-logo.scm:74
+msgid ""
+"Fill the selected region (or alpha) with a starburst gradient and add a "
+"shadow"
+msgstr ""
+"Umple regiunea (sau alfa) selectată cu un degrade de explozie stelară și "
+"adaugă o umbră"
+
+#: ../scripts/starburst-logo.scm:81
+msgid "Effect size (pixels * 30)"
+msgstr "Dimensiunea efectului (pixeli × 30)"
+
+#: ../scripts/starburst-logo.scm:82 ../scripts/starburst-logo.scm:115
+msgid "Burst color"
+msgstr "Culoarea exploziei"
+
+#: ../scripts/starburst-logo.scm:107
+msgid "Create a logo using a starburst gradient"
+msgstr "Creează un logo folosind un degrade de explozie stelară"
+
+#: ../scripts/starscape-logo.scm:135 ../scripts/starscape-logo.scm:166
+msgid "Sta_rscape..."
+msgstr "Peisa_j înstelat..."
+
+#: ../scripts/starscape-logo.scm:136
+msgid ""
+"Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
+"and shadow"
+msgstr ""
+"Umple regiunea (sau alfa) selectată cu o textură pietroasă, o strălucire de "
+"novă și o umbră"
+
+#: ../scripts/starscape-logo.scm:143
+msgid "Effect size (pixels * 4)"
+msgstr "Dimensiunea efectului (pixeli × 4)"
+
+#: ../scripts/starscape-logo.scm:167
+msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
+msgstr ""
+"Creează o siglă folosind o textură pietroasă, o strălucire de novă și o umbră"
+
+#: ../scripts/swirltile.scm:51
+msgid "Swirl-_Tile..."
+msgstr "Dală _turbionară..."
+
+#: ../scripts/swirltile.scm:52
+msgid "Create an image filled with a swirled tile effect"
+msgstr "Creează o imagine umplută cu un efect de dală turbionară"
+
+#: ../scripts/swirltile.scm:63
+msgid "Whirl amount"
+msgstr "Amplitudinea vârtejului"
+
+#: ../scripts/swirly-pattern.scm:82
+msgid "_Swirly..."
+msgstr "T_urbionar..."
+
+#: ../scripts/swirly-pattern.scm:83
+msgid "Create an image filled with a swirly pattern"
+msgstr "Creează o imagine umplută cu un model turbionar"
+
+#: ../scripts/swirly-pattern.scm:88
+msgid "Quarter size"
+msgstr "Sfert de dimensiune"
+
+#: ../scripts/swirly-pattern.scm:89
+msgid "Whirl angle"
+msgstr "Unghiul vârtejului"
+
+#: ../scripts/swirly-pattern.scm:90
+msgid "Number of times to whirl"
+msgstr "Numărul de rotiri ale vârtejului"
+
+#: ../scripts/text-circle.scm:204
+msgid "Text C_ircle..."
+msgstr "_Cerc de text..."
+
+#: ../scripts/text-circle.scm:205
+msgid ""
+"Create a logo by rendering the specified text along the perimeter of a circle"
+msgstr ""
+"Creează o siglă prin randarea textului specificat de-a lungul perimetrului "
+"unui cerc"
+
+#: ../scripts/text-circle.scm:213
+msgid "Fill angle"
+msgstr "Unghiul umplerii"
+
+#: ../scripts/text-circle.scm:215
+msgid "Antialias"
+msgstr "Antialias"
+
+#: ../scripts/textured-logo.scm:119 ../scripts/textured-logo.scm:161
+msgid "_Textured..."
+msgstr "_Texturat..."
+
+#: ../scripts/textured-logo.scm:120
+msgid ""
+"Fill the selected region (or alpha) with a texture and add highlights, "
+"shadows, and a mosaic background"
+msgstr ""
+"Umple regiunea (sau alfa) selectată cu o textură și adaugă evidențieri, "
+"umbre și un fundal de mozaic"
+
+#: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
+msgid "Mosaic tile type"
+msgstr "Tipul dalei mozaic"
 
 #: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
 msgid "Squares"
 msgstr "Pătrate"
 
+#: ../scripts/textured-logo.scm:130 ../scripts/textured-logo.scm:172
+msgid "Hexagons"
+msgstr "Hexagoane"
+
+#: ../scripts/textured-logo.scm:131 ../scripts/textured-logo.scm:173
+msgid "Octagons"
+msgstr "Octogoane"
+
+#: ../scripts/textured-logo.scm:133 ../scripts/textured-logo.scm:175
+msgid "Starting blend"
+msgstr "Amestec de început"
+
+#: ../scripts/textured-logo.scm:134 ../scripts/textured-logo.scm:176
+msgid "Ending blend"
+msgstr "Amestec de sfârșit"
+
+#: ../scripts/textured-logo.scm:162
+msgid ""
+"Create a textured logo with highlights, shadows, and a mosaic background"
+msgstr "Creează o siglă texturată cu evidențieri, umbre și un fundal de mozaic"
+
+#: ../scripts/textured-logo.scm:170
+msgid "Text pattern"
+msgstr "Textura textului"
+
+#: ../scripts/tileblur.scm:65
+msgid "_Tileable Blur..."
+msgstr "Neclari_tate mozaicabilă..."
+
+#: ../scripts/tileblur.scm:66
+msgid "Blur the edges of an image so the result tiles seamlessly"
+msgstr ""
+"Atenuează claritatea marginilor unei imagini astfel încât mozaicul rezultat "
+"să nu prezinte urme de racord"
+
+#: ../scripts/tileblur.scm:74
+msgid "Blur vertically"
+msgstr "Atenuează claritatea vertical"
+
+#: ../scripts/tileblur.scm:75
+msgid "Blur horizontally"
+msgstr "Atenuează claritatea orizontal"
+
+#: ../scripts/tileblur.scm:76
+msgid "Blur type"
+msgstr "Tipul neclarității"
+
 #: ../scripts/tileblur.scm:76
 msgid "IIR"
 msgstr "IIR"
 
-#~ msgid "3D _Outline..."
-#~ msgstr "C_ontur 3D..."
-
-#~ msgid "Bumpmap (alpha layer) blur radius"
-#~ msgstr "Raza de neclaritate a hărții de denivelări (strat alfa)"
-
-#~ msgid "Create a logo with outlined text and a drop shadow"
-#~ msgstr "Creează o siglă cu un text conturat și o umbră detașată"
-
-#~ msgid "Default bumpmap settings"
-#~ msgstr "Setări implicite pentru harta de denivelări"
-
-#~ msgid "Font"
-#~ msgstr "Font"
-
-#~ msgid "Font size (pixels)"
-#~ msgstr "Dimensiunea fontului (pixeli)"
-
-#~ msgid "Outline blur radius"
-#~ msgstr "Raza de neclaritate a conturului"
-
-#~ msgid ""
-#~ "Outline the selected region (or alpha) with a pattern and add a drop "
-#~ "shadow"
-#~ msgstr ""
-#~ "Conturează regiunea selectată (sau alfa) cu un model și adaugă o umbră "
-#~ "detașată"
-
-#~ msgid "Pattern"
-#~ msgstr "Model"
-
-#~ msgid "Shadow X offset"
-#~ msgstr "Decalajul X al umbrei"
-
-#~ msgid "Shadow Y offset"
-#~ msgstr "Decalajul Y al umbrei"
-
-#~ msgid "Shadow blur radius"
-#~ msgstr "Raza de neclaritate a umbrei"
-
-#~ msgid "Text"
-#~ msgstr "Text"
-
-#~ msgid "3_D Truchet..."
-#~ msgstr "Truchet 3_D..."
-
-#~ msgid "Background color"
-#~ msgstr "Culoarea fundalului"
-
-#~ msgid "Block size"
-#~ msgstr "Dimensiunea blocului"
-
-#~ msgid "Create an image filled with a 3D Truchet pattern"
-#~ msgstr "Creează o imagine umplută cu un model Truchet 3D"
-
-# apare în fața unei selecții de culoare
-#~ msgid "End blend"
-#~ msgstr "Amestec de final"
-
-#~ msgid "Number of X tiles"
-#~ msgstr "Numărul dalelor X"
-
-#~ msgid "Number of Y tiles"
-#~ msgstr "Numărul dalelor Y"
-
-# apare în fața unei selecții de culoare
-#~ msgid "Start blend"
-#~ msgstr "Amestec de început"
-
-#~ msgid "Supersample"
-#~ msgstr "Supereșantionare"
-
-#~ msgid "Thickness"
-#~ msgstr "Grosime"
-
-# deliberat fără „adaugă” pentru consecvență în meniu
-#~ msgid "Add B_evel..."
-#~ msgstr "Chenar t_eșit..."
-
-#~ msgid "Add a beveled border to an image"
-#~ msgstr "Adaugă un chenar teșit la o imagine"
-
-#~ msgid "Keep bump layer"
-#~ msgstr "Păstrează stratul de denivelări"
-
-#~ msgid "Work on copy"
-#~ msgstr "Lucrează pe o copie"
-
-# deliberat fără adaugă pentru consecvență în meniu
-#~ msgid "Add _Border..."
-#~ msgstr "C_henar..."
-
-#~ msgid "Add a border around an image"
-#~ msgstr "Adaugă un chenar în jurul unei imagini"
-
-#~ msgid "Border X size"
-#~ msgstr "Dimensiunea X a chenarului"
-
-#~ msgid "Border Y size"
-#~ msgstr "Dimensiunea Y a chenarului"
-
-#~ msgid "Border color"
-#~ msgstr "Culoarea chenarului"
-
-#~ msgid "Delta value on color"
-#~ msgstr "Valoarea delta aplicată la culoare"
-
-#~ msgid "Create an arrow graphic with an eerie glow for web pages"
-#~ msgstr ""
-#~ "Creează grafica unei săgeți cu o strălucire stranie pentru pagini web"
-
-#~ msgid "Down"
-#~ msgstr "Jos"
-
-#~ msgid "Flatten image"
-#~ msgstr "Aplatizează imaginea"
-
-#~ msgid "Glow color"
-#~ msgstr "Culoarea strălucirii"
-
-#~ msgid "Left"
-#~ msgstr "Stânga"
-
-#~ msgid "Orientation"
-#~ msgstr "Orientare"
-
-#~ msgid "Size"
-#~ msgstr "Dimensiune"
-
-#~ msgid "Up"
-#~ msgstr "Sus"
-
-#~ msgid "_Arrow..."
-#~ msgstr "Săge_ată..."
-
-#~ msgid "Bar height"
-#~ msgstr "Înălțimea barei"
-
-#~ msgid "Bar length"
-#~ msgstr "Lungimea barei"
-
-#~ msgid "Create an Hrule graphic with an eerie glow for web pages"
-#~ msgstr "Creează o grafică Hrule cu o strălucire stranie pentru pagini web"
-
-#~ msgid "_Hrule..."
-#~ msgstr "_Hrule..."
-
-#~ msgid "Create a bullet graphic with an eerie glow for web pages"
-#~ msgstr ""
-#~ "Creează grafica unei buline cu o strălucire stranie pentru pagini web"
-
-#~ msgid "Radius"
-#~ msgstr "Rază"
-
-#~ msgid "_Bullet..."
-#~ msgstr "_Bulină..."
-
-#~ msgid "B_utton..."
-#~ msgstr "B_uton..."
-
-#~ msgid "Create a button graphic with an eerie glow for web pages"
-#~ msgstr ""
-#~ "Creează grafica unui buton cu o strălucire stranie pentru pagini web"
-
-#~ msgid "Glow radius"
-#~ msgstr "Raza strălucirii"
-
-#~ msgid "Padding"
-#~ msgstr "Umplere"
-
-#~ msgid "Text color"
-#~ msgstr "Culoarea textului"
-
-#~ msgid "Add an eerie glow around the selected region (or alpha)"
-#~ msgstr "Adaugă o strălucire stranie în jurul regiunii (sau alfa) selectate"
-
-#~ msgid "Alien _Glow..."
-#~ msgstr "S_trălucire extraterestră..."
-
-#~ msgid "Create a logo with an alien glow around the text"
-#~ msgstr "Creează o siglă cu o strălucire extraterestră în jurul textului"
-
-#~ msgid "Glow size (pixels * 4)"
-#~ msgstr "Dimensiunea strălucirii (pixeli × 4)"
-
-#~ msgid "Add psychedelic outlines to the selected region (or alpha)"
-#~ msgstr "Adaugă contururi psihedelice la regiunea (sau alfa) selectată"
-
-#~ msgid "Alien _Neon..."
-#~ msgstr "_Neon extraterestru..."
-
-#~ msgid "Create a logo with psychedelic outlines around the text"
-#~ msgstr "Creează o siglă cu contururi psihedelice în jurul textului"
-
-# hm ?
-#~ msgid "Fade away"
-#~ msgstr "Estompează pierdut"
-
-#~ msgid "Number of bands"
-#~ msgstr "Numărul benzilor"
-
-#~ msgid "Width of bands"
-#~ msgstr "Lățimea benzilor"
-
-#~ msgid "Width of gaps"
-#~ msgstr "Lățimea golurilor"
-
-#~ msgid ""
-#~ "Add a gradient effect, a drop shadow, and a background to the selected "
-#~ "region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă un efect de degrade, o umbră detașată și un fundal la regiunea "
-#~ "(sau alfa) selectată"
-
-#~ msgid ""
-#~ "Create a plain text logo with a gradient effect, a drop shadow, and a "
-#~ "background"
-#~ msgstr ""
-#~ "Creează o siglă de text simplu cu un efect de degrade, o umbră detașată "
-#~ "și un fundal"
-
-#~ msgid "_Basic I..."
-#~ msgstr "_Bazic I..."
-
-#~ msgid "Add a shadow and a highlight to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă o umbră și o parte luminoasă la regiunea (sau alfa) selectată"
-
-#~ msgid "B_asic II..."
-#~ msgstr "B_azic II..."
-
-#~ msgid "Create a simple logo with a shadow and a highlight"
-#~ msgstr "Creează o siglă simplă cu o umbră și o parte luminoasă"
-
-#~ msgid "Bevel width"
-#~ msgstr "Lățimea teșiturii"
-
-#~ msgid "Create a simple, beveled button graphic for webpages"
-#~ msgstr "Creează grafica unui buton simplu, teșit, pentru pagini web"
-
-#~ msgid "Lower-right color"
-#~ msgstr "Culoarea din dreapta-jos"
-
-#~ msgid "Pressed"
-#~ msgstr "Apăsat"
-
-#~ msgid "Simple _Beveled Button..."
-#~ msgstr "_Buton teșit simplu..."
-
-#~ msgid "Upper-left color"
-#~ msgstr "Culoarea din stânga-sus"
-
-#~ msgid "Create a beveled pattern arrow for webpages"
-#~ msgstr "Creează o săgeată cu model teșit pentru pagini web"
-
-#~ msgid "Create a beveled pattern bullet for webpages"
-#~ msgstr "Creează o bulină cu model teșit pentru pagini web"
-
-#~ msgid "Diameter"
-#~ msgstr "Diametru"
-
-#~ msgid "Transparent background"
-#~ msgstr "Fundal transparent"
-
-#~ msgid "Create a beveled pattern button for webpages"
-#~ msgstr "Creează un buton cu model teșit pentru pagini web"
-
-#~ msgid "Create a beveled pattern heading for webpages"
-#~ msgstr "Creează un titlu cu model teșit pentru pagini web"
-
-#~ msgid "H_eading..."
-#~ msgstr "Ant_et..."
-
-#~ msgid "Create a beveled pattern hrule for webpages"
-#~ msgstr ""
-#~ "Creează un separator orizontal (hrule) cu model teșit pentru pagini web"
-
-#~ msgid "Height"
-#~ msgstr "Înălțime"
-
-#~ msgid "Width"
-#~ msgstr "Lățime"
-
-#~ msgid "Blend Animation needs at least three source layers"
-#~ msgstr "Animația de amestecare necesită cel puțin trei straturi sursă"
-
-#~ msgid ""
-#~ "Create intermediate layers to blend two or more layers over a background "
-#~ "as an animation"
-#~ msgstr ""
-#~ "Creează straturi intermediare pentru a amesteca două sau mai multe "
-#~ "straturi peste un fundal ca o animație"
-
-#~ msgid "Intermediate frames"
-#~ msgstr "Cadre intermediare"
-
-#~ msgid "Looped"
-#~ msgstr "Buclat"
-
-#~ msgid "Max. blur radius"
-#~ msgstr "Raza maximă a neclarității"
-
-#~ msgid "_Blend..."
-#~ msgstr "_Amestec..."
-
-#~ msgid ""
-#~ "Add blended backgrounds, highlights, and shadows to the selected region "
-#~ "(or alpha)"
-#~ msgstr ""
-#~ "Adaugă părți luminoase, umbre și fundaluri amestecate la regiunea (sau "
-#~ "alfa) selectată"
-
-#~ msgid "Blen_ded..."
-#~ msgstr "_Amestecat..."
-
-#~ msgid "Blend mode"
-#~ msgstr "Mod de amestecare"
-
-#~ msgid "Create a logo with blended backgrounds, highlights, and shadows"
-#~ msgstr "Creează o siglă cu părți luminoase, umbre și fundaluri amestecate"
-
-#~ msgid "Custom Gradient"
-#~ msgstr "Degrade personalizat"
-
-#~ msgid "FG-BG-HSV"
-#~ msgstr "PP-FD-HSV"
-
-#~ msgid "FG-Transparent"
-#~ msgstr "Prim-plan-transparent"
-
-#~ msgid "Gradient"
-#~ msgstr "Degrade"
-
-#~ msgid "Gradient reverse"
-#~ msgstr "Degrade invers"
-
-#~ msgid "Offset (pixels)"
-#~ msgstr "Decalaj (pixeli)"
-
-#~ msgid "Add 'cow spots' to the selected region (or alpha)"
-#~ msgstr "Adaugă „pete de vacă” la regiunea (sau alfa) selectată"
-
-#~ msgid "Background Color"
-#~ msgstr "Culoarea fundalului"
-
-#~ msgid "Bo_vination..."
-#~ msgstr "Bă_lțat..."
-
-#~ msgid "Create a logo with text in the style of 'cow spots'"
-#~ msgstr "Creează o siglă cu text în stilul „petelor de vacă”"
-
-#~ msgid "Spots density X"
-#~ msgstr "Densitatea X a petelor"
-
-#~ msgid "Spots density Y"
-#~ msgstr "Densitatea Y a petelor"
-
-#~ msgid "Add glowing"
-#~ msgstr "Adaugă o strălucire"
-
-# hm ?
-#~ msgid "After glow"
-#~ msgstr "După strălucire"
-
-#~ msgid "B_urn-In..."
-#~ msgstr "Ars_ură..."
-
-#~ msgid "Corona width"
-#~ msgstr "Lățime coroană"
-
-#~ msgid ""
-#~ "Create intermediate layers to produce an animated 'burn-in' transition "
-#~ "between two layers"
-#~ msgstr ""
-#~ "Creează straturi intermediare pentru a produce o tranziție de „arsură” "
-#~ "animată între două straturi"
-
-#~ msgid "Fadeout"
-#~ msgstr "Estompează pierdut"
-
-#~ msgid "Fadeout width"
-#~ msgstr "Lățimea estompării pierdute"
-
-#~ msgid "Prepare for GIF"
-#~ msgstr "Pregătește pentru GIF"
-
-#~ msgid "Speed (pixels/frame)"
-#~ msgstr "Viteză (pixeli/cadru)"
-
-#~ msgid ""
-#~ "The Burn-In script needs two layers in total. A foreground layer with "
-#~ "transparency and a background layer."
-#~ msgstr ""
-#~ "Scriptul pentru arsură necesită în total două straturi: un strat de prim-"
-#~ "plan cu transparență și un strat de fundal."
-
-#~ msgid "Color 1"
-#~ msgstr "Culoarea 1"
-
-#~ msgid "Color 2"
-#~ msgstr "Culoarea 2"
-
-#~ msgid "Color 3"
-#~ msgstr "Culoarea 3"
-
-#~ msgid "Create an image filled with a camouflage pattern"
-#~ msgstr "Creează o imagine umplută cu un model de camuflaj"
-
-#~ msgid "Granularity"
-#~ msgstr "Granularitate"
-
-#~ msgid "Image size"
-#~ msgstr "Dimensiunea imaginii"
-
-#~ msgid "Smooth"
-#~ msgstr "Netezește"
-
-#~ msgid "_Camouflage..."
-#~ msgstr "_Camuflaj..."
-
-#~ msgid "Carve white areas"
-#~ msgstr "Sculptează zonele albe"
-
-#~ msgid "Image to carve"
-#~ msgstr "Imagine de sculptat"
-
-#~ msgid "Stencil C_arve..."
-#~ msgstr "Ș_ablon de sculptură..."
-
-#~ msgid "Background Image"
-#~ msgstr "Imaginea fundalului"
-
-#~ msgid "Carve raised text"
-#~ msgstr "Sculptează textul în relief"
-
-# apare în meniul de creare a unei sigle
-#~ msgid "Carved..."
-#~ msgstr "Sculptură..."
-
-#~ msgid ""
-#~ "Create a logo with text raised above or carved in to the specified "
-#~ "background image"
-#~ msgstr ""
-#~ "Creează o siglă cu text scos în relief sau sculptat la imaginea de fundal "
-#~ "specificată"
-
-#~ msgid "Padding around text"
-#~ msgstr "Umplere în jurul textului"
-
-#~ msgid "Chalk color"
-#~ msgstr "Culoarea cretei"
-
-#~ msgid "Create a chalk drawing effect for the selected region (or alpha)"
-#~ msgstr ""
-#~ "Creează un efect de desen cu cretă pentru regiunea (sau alfa) selectată"
-
-#~ msgid "Create a logo resembling chalk scribbled on a blackboard"
-#~ msgstr "Creează o siglă asemănătoare cu o mâzgăleală de cretă pe o tablă"
-
-#~ msgid "_Chalk..."
-#~ msgstr "_Cretă..."
-
-#~ msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă un efect de sculptură de lemn cioplit la regiunea (sau alfa) "
-#~ "selectată"
-
-#~ msgid "Blur amount"
-#~ msgstr "Cantitatea neclarității"
-
-#~ msgid "Chip Awa_y..."
-#~ msgstr "C_ioplire cu dalta..."
-
-#~ msgid "Chip amount"
-#~ msgstr "Cantitatea cioplirii"
-
-#~ msgid "Create a logo resembling a chipped wood carving"
-#~ msgstr "Creează o siglă asemănătoare cu o sculptură în lemn cioplit"
-
-#~ msgid "Drop shadow"
-#~ msgstr "Umbră detașată"
-
-#~ msgid "Fill BG with pattern"
-#~ msgstr "Umple fundalul cu un model"
-
-#~ msgid "Invert"
-#~ msgstr "Inversează"
-
-#~ msgid "Keep background"
-#~ msgstr "Păstrează fundalul"
-
-#~ msgid ""
-#~ "Add a chrome effect to the selected region (or alpha) using a specified "
-#~ "(grayscale) stencil"
-#~ msgstr ""
-#~ "Adaugă un efect de crom la regiunea (sau alfa) selectată folosind un "
-#~ "șablon specificat (tonuri de gri)"
-
-#~ msgid "Chrome balance"
-#~ msgstr "Balansul cromului"
-
-#~ msgid "Chrome factor"
-#~ msgstr "Factorul cromului"
-
-#~ msgid "Chrome lightness"
-#~ msgstr "Luminozitatea cromului"
-
-#~ msgid "Chrome saturation"
-#~ msgstr "Saturația cromului"
-
-# checkbox
-#~ msgid "Chrome white areas"
-#~ msgstr "Zone albe ale cromului"
-
-#~ msgid "Environment map"
-#~ msgstr "Harta mediului"
-
-#~ msgid "Highlight balance"
-#~ msgstr "Balansul evidențierii"
-
-#~ msgid "Stencil C_hrome..."
-#~ msgstr "Șablon de c_rom..."
-
-#~ msgid "Add a simple chrome effect to the selected region (or alpha)"
-#~ msgstr "Adaugă un efect simplu de crom la regiunea (sau alfa) selectată"
-
-#~ msgid "C_hrome..."
-#~ msgstr "C_rom..."
-
-#~ msgid "Create a simplistic, but cool, chromed logo"
-#~ msgstr "Creează o siglă cromată, simplistă, dar de efect"
-
-#~ msgid "Offsets (pixels * 2)"
-#~ msgstr "Decalaje (pixeli × 2)"
-
-#~ msgid "Circuit seed"
-#~ msgstr "Sămânța circuitului"
-
-#~ msgid ""
-#~ "Fill the selected region (or alpha) with traces like those on a circuit "
-#~ "board"
-#~ msgstr ""
-#~ "Umple regiunea (sau alfa) selectată cu trasee asemănătoare cu cele de pe "
-#~ "circuitele imprimate"
-
-#~ msgid "Keep selection"
-#~ msgstr "Păstrează selecția"
-
-#~ msgid "No background (only for separate layer)"
-#~ msgstr "Fără fundal (numai pentru stratul separat)"
-
-#~ msgid "Oilify mask size"
-#~ msgstr "Dimensiunea măștii de uleiere"
-
-#~ msgid "Separate layer"
-#~ msgstr "Strat separat"
-
-#~ msgid "_Circuit..."
-#~ msgstr "_Circuit..."
-
-#~ msgid "Add a cloth-like texture to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă o textură asemănătoare cu o pânză la regiunea (sau alfa) selectată"
-
-#~ msgid "Azimuth"
-#~ msgstr "Azimut"
-
-#~ msgid "Blur X"
-#~ msgstr "Neclaritate X"
-
-#~ msgid "Blur Y"
-#~ msgstr "Neclaritate Y"
-
-#~ msgid "Depth"
-#~ msgstr "Adâncime"
-
-#~ msgid "Elevation"
-#~ msgstr "Elevație"
-
-# hm ? sau transformă în pânză ?
-#~ msgid "_Clothify..."
-#~ msgstr "Ț_esătură..."
-
-#~ msgid "Add realistic looking coffee stains to the image"
-#~ msgstr "Adaugă la imagine un aspect realistic de pete de cafea"
-
-#~ msgid "Darken only"
-#~ msgstr "Doar întunecare"
-
-#~ msgid "Stains"
-#~ msgstr "Pete"
-
-#~ msgid "_Coffee Stain..."
-#~ msgstr "Pată de _cafea..."
-
-#~ msgid ""
-#~ "Add a comic-book effect to the selected region (or alpha) by outlining "
-#~ "and filling with a gradient"
-#~ msgstr ""
-#~ "Adaugă un efect de benzi desenate la regiunea (sau alfa) selectată, prin "
-#~ "conturarea și umplerea cu un degrade"
-
-#~ msgid "Comic Boo_k..."
-#~ msgstr "Ben_zi desenate..."
-
-#~ msgid ""
-#~ "Create a comic-book style logo by outlining and filling with a gradient"
-#~ msgstr ""
-#~ "Creează o siglă asemănătoare cu benzile desenate prin conturarea și "
-#~ "umplerea cu un degrade"
-
-#~ msgid "Outline color"
-#~ msgstr "Culoarea conturului"
-
-#~ msgid "Outline size"
-#~ msgstr "Dimensiunea conturului"
-
-#~ msgid ""
-#~ "Add a metallic effect to the selected region (or alpha) with reflections "
-#~ "and perspective shadows"
-#~ msgstr ""
-#~ "Adaugă un efect metalic la regiunea (sau alfa) selectată cu reflexii și "
-#~ "umbre de perspectivă"
-
-#~ msgid "Cool _Metal..."
-#~ msgstr "_Metal rece..."
-
-#~ msgid "Create a metallic logo with reflections and perspective shadows"
-#~ msgstr "Creează o siglă metalică cu reflexii și umbre de perspectivă"
-
-#~ msgid "Effect size (pixels)"
-#~ msgstr "Dimensiunea efectului (pixeli)"
-
-#~ msgid "Background image"
-#~ msgstr "Imaginea fundalului"
-
-#~ msgid ""
-#~ "Create a logo with a crystal/gel effect displacing the image underneath"
-#~ msgstr ""
-#~ "Creează o siglă cu un efect de cristal sau de gel plasând imaginea "
-#~ "dedesubt"
-
-#~ msgid "Crystal..."
-#~ msgstr "Cristal..."
-
-#~ msgid "Difference Clouds..."
-#~ msgstr "Nori de diferență..."
-
-#~ msgid "Solid noise applied with Difference layer mode"
-#~ msgstr "Zgomot solid aplicat cu módul de strat Diferență"
-
-#~ msgid "Distress the selection"
-#~ msgstr "Perturbă selecția"
-
-#~ msgid "Granularity (1 is low)"
-#~ msgstr "Granularitate (1 este puțin)"
-
-#~ msgid "Smooth horizontally"
-#~ msgstr "Netezește orizontal"
-
-#~ msgid "Smooth vertically"
-#~ msgstr "Netezește vertical"
-
-#~ msgid "Spread"
-#~ msgstr "Răspândește"
-
-#~ msgid "Threshold (bigger 1<-->255 smaller)"
-#~ msgstr "Prag (mai mare 1<-->255 mai mic)"
-
-#~ msgid "_Distort..."
-#~ msgstr "_Distorsionează..."
-
-#~ msgid "Add a drop shadow to the selected region (or alpha)"
-#~ msgstr "Adaugă o umbră detașată la regiunea (sau alfa) selectată"
-
-#~ msgid "Allow resizing"
-#~ msgstr "Permite redimensionarea"
-
-#~ msgid "Blur radius"
-#~ msgstr "Rază de neclaritate"
-
-#~ msgid "Color"
-#~ msgstr "Culoare"
-
-#~ msgid "Offset X"
-#~ msgstr "Decalaj X"
-
-#~ msgid "Offset Y"
-#~ msgstr "Decalaj Y"
-
-#~ msgid "Opacity"
-#~ msgstr "Opacitate"
-
-#~ msgid "_Drop Shadow..."
-#~ msgstr "Umbră _detașată..."
-
-#~ msgid "Columns"
-#~ msgstr "Coloane"
-
-#~ msgid "Erase every other row or column"
-#~ msgstr "Șterge din două în două rânduri sau coloane"
-
-# descriptiv despre ce se poate selecta
-#~ msgid "Erase/fill"
-#~ msgstr "Ștergere sau umplere"
-
-#~ msgid "Even/odd"
-#~ msgstr "Pare sau impare"
-
-#~ msgid "Fill with BG"
-#~ msgstr "Umple cu culoarea de fundal"
-
-#~ msgid "Odd"
-#~ msgstr "Impare"
-
-#~ msgid "Rows/cols"
-#~ msgstr "Rânduri sau coloane"
-
-#~ msgid "_Erase Every Other Row..."
-#~ msgstr "Ș_tergere din două în două rânduri..."
-
-#~ msgid "Create an image filled with a Land Pattern"
-#~ msgstr "Creează o imagine umplută cu un model de teren"
-
-#~ msgid "Detail level"
-#~ msgstr "Nivelul detaliilor"
-
-#~ msgid "Image height"
-#~ msgstr "Înălțimea imaginii"
-
-#~ msgid "Image width"
-#~ msgstr "Lățimea imaginii"
-
-#~ msgid "Random seed"
-#~ msgstr "Sămânță aleatoare"
-
-#~ msgid "Scale X"
-#~ msgstr "Scalare X"
-
-#~ msgid "Scale Y"
-#~ msgstr "Scalare Y"
-
-#~ msgid "_Flatland..."
-#~ msgstr "Câ_mpie..."
-
-#~ msgid "Active colors"
-#~ msgstr "Culori active"
-
-#~ msgid ""
-#~ "Create an image filled with previews of fonts matching a fontname filter"
-#~ msgstr ""
-#~ "Creează o imagine umplută cu previzualizări ale fonturilor care se "
-#~ "potrivesc cu filtrul unui nume de font"
-
-#~ msgid "Font _size (pixels)"
-#~ msgstr "Dimen_siunea fontului (pixeli)"
-
-#~ msgid "Render _Font Map..."
-#~ msgstr "Randează harta de _font..."
-
-#~ msgid "Use font _name as text"
-#~ msgstr "Folosește ca text _numele fontului"
-
-#~ msgid "_Border (pixels)"
-#~ msgstr "C_henar (pixeli)"
-
-#~ msgid "_Color scheme"
-#~ msgstr "Schemă de _culori"
-
-#~ msgid "_Filter (regexp)"
-#~ msgstr "_Filtru (regexp)"
-
-#~ msgid "_Labels"
-#~ msgstr "_Etichete"
-
-#~ msgid "_Text"
-#~ msgstr "_Text"
-
-#~ msgid ""
-#~ "Add a frost effect to the selected region (or alpha) with an added drop "
-#~ "shadow"
-#~ msgstr ""
-#~ "Adaugă un efect de îngheț la regiunea (sau alfa) selectată cu o umbră "
-#~ "detașată adăugată"
-
-#~ msgid "Create frozen logo with an added drop shadow"
-#~ msgstr "Creează o siglă înghețată cu o umbră detașată adăugată"
-
-#~ msgid "_Frosty..."
-#~ msgstr "Îng_hețat..."
-
-#~ msgid "Add a jagged, fuzzy border to an image"
-#~ msgstr "Adaugă la o imagine un chenar zdrențuit și difuz"
-
-#~ msgid "Add shadow"
-#~ msgstr "Adaugă o umbră"
-
-#~ msgid "Blur border"
-#~ msgstr "Atenuează claritatea chenarului"
-
-#~ msgid "Border size"
-#~ msgstr "Dimensiunea chenarului"
-
-# hm ? sau 1 este scăzut ?
-#~ msgid "Granularity (1 is Low)"
-#~ msgstr "Granularitate (1 este puțin)"
-
-#~ msgid "Shadow weight (%)"
-#~ msgstr "Ponderea umbrei (%)"
-
-#~ msgid "_Fuzzy Border..."
-#~ msgstr "Chenar di_fuz..."
-
-#~ msgid "Autocrop"
-#~ msgstr "Autodecupare"
-
-#~ msgid "Create an image of a large header using the gimp.org webpage theme"
-#~ msgstr "Creează imaginea unui antet mare folosind tema paginii web gimp.org"
-
-#~ msgid "Create an image of a small header using the gimp.org webpage theme"
-#~ msgstr "Creează imaginea unui antet mic folosind tema paginii web gimp.org"
-
-#~ msgid "Dark color"
-#~ msgstr "Culoare întunecată"
-
-#~ msgid "Highlight color"
-#~ msgstr "Culoare luminoasă"
-
-#~ msgid "Index image"
-#~ msgstr "Imagine de tip index"
-
-#~ msgid "Number of colors"
-#~ msgstr "Numărul de culori"
-
-#~ msgid "Remove background"
-#~ msgstr "Elimină fundalul"
-
-#~ msgid "Select-by-color threshold"
-#~ msgstr "Prag de selectare-pe-bază-de-culoare"
-
-#~ msgid "Shadow color"
-#~ msgstr "Culoarea umbrei"
-
-#~ msgid "_Big Header..."
-#~ msgstr "Antet _mare..."
-
-#~ msgid "_Small Header..."
-#~ msgstr "Antet m_ic..."
-
-#~ msgid ""
-#~ "Create an image of a Tube Button Label Header using the gimp.org webpage "
-#~ "theme"
-#~ msgstr ""
-#~ "Creează imaginea unui antet cu etichetă ca un buton tubular folosind tema "
-#~ "paginii web gimp.org"
-
-#~ msgid ""
-#~ "Create an image of a Tube Button Label using the gimp.org webpage theme"
-#~ msgstr ""
-#~ "Creează imaginea unei etichete ca un buton tubular folosind tema paginii "
-#~ "web gimp.org"
-
-#~ msgid ""
-#~ "Create an image of a second level Tube Button Label using the gimp.org "
-#~ "webpage theme"
-#~ msgstr ""
-#~ "Creează imaginea unei etichete de nivelul doi al unui buton tubular "
-#~ "folosing tema paginii web gimp.org"
-
-#~ msgid ""
-#~ "Create an image of a third level Tube Button Label using the gimp.org "
-#~ "webpage theme"
-#~ msgstr ""
-#~ "Creează imaginea unei etichete de nivelul trei al unui buton tubular "
-#~ "folosing tema paginii web gimp.org"
-
-#~ msgid "T_ube Sub-Button Label..."
-#~ msgstr "Etichetă sub-buton tubular..."
-
-#~ msgid "Tub_e Sub-Sub-Button Label..."
-#~ msgstr "_Etichetă sub-sub-buton tubular..."
-
-#~ msgid "_General Tube Labels..."
-#~ msgstr "Etichete tubulare _generale..."
-
-#~ msgid "_Tube Button Label..."
-#~ msgstr "Eticheta butonului _tubular..."
-
-#~ msgid ""
-#~ "Add gradients, patterns, shadows, and bump maps to the selected region "
-#~ "(or alpha)"
-#~ msgstr ""
-#~ "Adaugă degradeuri, modele, umbre și hărți de denivelări la regiunea (sau "
-#~ "alfa) selectată"
-
-#~ msgid "Blend gradient (outline)"
-#~ msgstr "Degradeul amestecului (contur)"
-
-#~ msgid "Blend gradient (text)"
-#~ msgstr "Degradeul amestecului (text)"
-
-#~ msgid "Create a logo with gradients, patterns, shadows, and bump maps"
-#~ msgstr "Creează o siglă cu degradeuri, modele, umbre și hărți de denivelări"
-
-#~ msgid "Glo_ssy..."
-#~ msgstr "Lucio_s..."
-
-#~ msgid "Outline gradient reverse"
-#~ msgstr "Inversează degradeul conturului"
-
-#~ msgid "Pattern (outline)"
-#~ msgstr "Model (contur)"
-
-#~ msgid "Pattern (overlay)"
-#~ msgstr "Model (suprapunere)"
-
-#~ msgid "Pattern (text)"
-#~ msgstr "Model (text)"
-
-#~ msgid "Shadow"
-#~ msgstr "Umbră"
-
-#~ msgid "Text gradient reverse"
-#~ msgstr "Inversează degradeul textului"
-
-#~ msgid "Use pattern for outline instead of gradient"
-#~ msgstr "Folosește un model pentru contur în loc de degrade"
-
-#~ msgid "Use pattern for text instead of gradient"
-#~ msgstr "Folosește un model pentru text în loc de degrade"
-
-#~ msgid "Use pattern overlay"
-#~ msgstr "Folosește o suprapunere de model"
-
-#~ msgid "Add a glowing hot metal effect to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă un efect de metal incandescent strălucitor la regiunea (sau alfa) "
-#~ "selectată"
-
-#~ msgid "Create a logo that looks like glowing hot metal"
-#~ msgstr "Creează o siglă care arată ca un metal incandescent strălucitor"
-
-#~ msgid "Effect size (pixels * 3)"
-#~ msgstr "Dimensiunea efectului (pixeli × 3)"
-
-#~ msgid "Glo_wing Hot..."
-#~ msgstr "_Incandescență strălucitoare..."
-
-#~ msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă un aspect strălucitor și un efect de teșire la regiunea (sau alfa) "
-#~ "selectată"
-
-#~ msgid "Bevel height (sharpness)"
-#~ msgstr "Înălțimea teșiturii (claritate)"
-
-#~ msgid "Border size (pixels)"
-#~ msgstr "Dimensiunea chenarului (pixeli)"
-
-#~ msgid "Create a logo with a shiny look and beveled edges"
-#~ msgstr "Creează o siglă cu un aspect strălucitor și margini teșite"
-
-# hm ? parcă în degrade nu merge
-#~ msgid "Gradient Beve_l..."
-#~ msgstr "Teșitură gradua_lă..."
-
-#~ msgid "Create an image filled with an example of the current gradient"
-#~ msgstr "Creează o imagine umplută cu un exemplu al degradeului curent"
-
-#~ msgid "Custom _Gradient..."
-#~ msgstr "De_grade personalizat..."
-
-#~ msgid ""
-#~ "Draw a grid as specified by the lists of X and Y locations using the "
-#~ "current brush"
-#~ msgstr ""
-#~ "Desenează o grilă așa cum este specificat în listele locațiilor X și Y "
-#~ "folosind penelul curent"
-
-#~ msgid "X divisions"
-#~ msgstr "Diviziuni X"
-
-#~ msgid "Y divisions"
-#~ msgstr "Diviziuni Y"
-
-#~ msgid "_Grid..."
-#~ msgstr "_Grilă..."
-
-#~ msgid "New Guides from _Selection"
-#~ msgstr "Ghidaje noi din _selecție"
-
-#~ msgid ""
-#~ "Add a guide at the position specified as a percentage of the image size"
-#~ msgstr ""
-#~ "Adaugă un ghidaj la poziția specificată ca procentaj din dimensiunea "
-#~ "imaginii"
-
-#~ msgid "Direction"
-#~ msgstr "Direcție"
-
-#~ msgid "New Guide (by _Percent)..."
-#~ msgstr "Ghidaj nou (în _procente)..."
-
-#~ msgid "Position (in %)"
-#~ msgstr "Poziție (în %)"
-
-#~ msgid "Vertical"
-#~ msgstr "Vertical"
-
-#~ msgid "Add a guide at the orientation and position specified (in pixels)"
-#~ msgstr "Adaugă un ghidaj la orientarea și poziția specificată (în pixeli)"
-
-#~ msgid "New _Guide..."
-#~ msgstr "_Ghidaj nou..."
-
-#~ msgid "Position"
-#~ msgstr "Poziție"
-
-#~ msgid "Remove all horizontal and vertical guides"
-#~ msgstr "Elimină toate ghidajele orizontale și verticale"
-
-#~ msgid "_Remove all Guides"
-#~ msgstr "_Elimină toate ghidajele"
-
-#~ msgid "Create a logo in a two-color, scribbled text style"
-#~ msgstr "Creează o siglă cu text tremurat, în două culori"
-
-#~ msgid "Frame color"
-#~ msgstr "Culoarea cadrului"
-
-#~ msgid "Frame size"
-#~ msgstr "Dimensiunea cadrului"
-
-#~ msgid "Imigre-_26..."
-#~ msgstr "Imigre-_26..."
-
-#~ msgid "Create an image filled with a topographic map pattern"
-#~ msgstr "Creează o imagine umplută cu un model de hartă topografică"
-
-#~ msgid "Land height"
-#~ msgstr "Înălțimea terenului"
-
-#~ msgid "Sea depth"
-#~ msgstr "Adâncimea oceanului"
-
-#~ msgid "_Land..."
-#~ msgstr "_Teren..."
-
-#~ msgid "Fill the current selection with lava"
-#~ msgstr "Umple selecția curentă cu lavă"
-
-#~ msgid "Roughness"
-#~ msgstr "Rugozitate"
-
-#~ msgid "Seed"
-#~ msgstr "Sămânță"
-
-#~ msgid "Use current gradient"
-#~ msgstr "Folosește degradeul curent"
-
-#~ msgid "_Lava..."
-#~ msgstr "_Lavă..."
-
-#~ msgid ""
-#~ "Fill a layer with rays emanating outward from its center using the FG "
-#~ "color"
-#~ msgstr ""
-#~ "Umple un strat cu raze care emană din centrul lui înspre exterior, "
-#~ "folosind culoarea de prim-plan"
-
-# hm ? presupun că este vorba despre nova ca stea
-#~ msgid "Line _Nova..."
-#~ msgstr "_Nova liniei..."
-
-#~ msgid "Number of lines"
-#~ msgstr "Numărul liniilor"
-
-#~ msgid "Offset radius"
-#~ msgstr "Raza decalajului"
-
-#~ msgid "Randomness"
-#~ msgstr "Aleatoriu"
-
-#~ msgid "Sharpness (degrees)"
-#~ msgstr "Claritate (grade)"
-
-#~ msgid "Create a rectangular brush"
-#~ msgstr "Creează un penel dreptunghiular"
-
-#~ msgid "Create a rectangular brush with feathered edges"
-#~ msgstr "Creează un penel dreptunghiular cu margini estompate"
-
-#~ msgid "Create an elliptical brush"
-#~ msgstr "Creează un penel eliptic"
-
-#~ msgid "Create an elliptical brush with feathered edges"
-#~ msgstr "Creează un penel eliptic cu margini estompate"
-
-#~ msgid "Elli_ptical, Feathered..."
-#~ msgstr "Eli_ptic, estompat..."
-
-#~ msgid "Feathering"
-#~ msgstr "Estompare"
-
-#~ msgid "Name"
-#~ msgstr "Nume"
-
-#~ msgid "Re_ctangular, Feathered..."
-#~ msgstr "Dreptung_hiular, estompat..."
-
-#~ msgid "Spacing"
-#~ msgstr "Spațiere"
-
-#~ msgid "_Elliptical..."
-#~ msgstr "_Eliptic..."
-
-#~ msgid "_Rectangular..."
-#~ msgstr "D_reptunghiular..."
-
-#~ msgid "Convert the selected region (or alpha) into a neon-sign like object"
-#~ msgstr ""
-#~ "Convertește regiunea (sau alfa) selectată într-un obiect asemănător "
-#~ "reclamelor cu neon"
-
-#~ msgid "Create a logo in the style of a neon sign"
-#~ msgstr "Creează o siglă în stilul unei reclame cu neon"
-
-#~ msgid "Create shadow"
-#~ msgstr "Creează o umbră"
-
-#~ msgid "Effect size (pixels * 5)"
-#~ msgstr "Dimensiunea efectului (pixeli × 5)"
-
-#~ msgid "N_eon..."
-#~ msgstr "N_eon..."
-
-#~ msgid "Cell size (pixels)"
-#~ msgstr "Dimensiunea celulei (pixeli)"
-
-#~ msgid "Create a logo in the style of newspaper printing"
-#~ msgstr "Creează o siglă în stilul tipăriturilor de ziar"
-
-#~ msgid "Density (%)"
-#~ msgstr "Densitate (%)"
-
-#~ msgid "Newsprint Te_xt..."
-#~ msgstr "Te_xt pe hârtie de ziar..."
-
-#~ msgid "Defocus"
-#~ msgstr "Defocalizează"
-
-#~ msgid "Make an image look like an old photo"
-#~ msgstr "Face ca imaginea să arate ca o fotografie veche"
-
-#~ msgid "Mottle"
-#~ msgstr "Marmorat"
-
-#~ msgid "Sepia"
-#~ msgstr "Sepia"
-
-#~ msgid "_Old Photo..."
-#~ msgstr "F_otografie veche..."
-
-#~ msgid "Brush name"
-#~ msgstr "Numele pensulei"
-
-#~ msgid "File name"
-#~ msgstr "Numele fișierului"
-
-#~ msgid "New _Brush..."
-#~ msgstr "_Penel nou..."
-
-#~ msgid "Paste the clipboard contents into a new brush"
-#~ msgstr "Lipește conținutul clipboard-ului într-un penel nou"
-
-#~ msgid "There is no image data in the clipboard to paste."
-#~ msgstr "Nu sunt date de imagine în clipboard pentru a fi lipite."
-
-#~ msgid "New _Pattern..."
-#~ msgstr "_Model nou..."
-
-#~ msgid "Paste the clipboard contents into a new pattern"
-#~ msgstr "Lipește conținutul clipboard-ului într-un model nou"
-
-#~ msgid "Pattern name"
-#~ msgstr "Nume model"
-
-#~ msgid "Add a perspective shadow to the selected region (or alpha)"
-#~ msgstr "Adaugă o umbră de perspectivă la regiunea (sau alfa) selectată"
-
-#~ msgid "Angle"
-#~ msgstr "Unghi"
-
-#~ msgid "Interpolation"
-#~ msgstr "Interpolare"
-
-#~ msgid "Relative distance of horizon"
-#~ msgstr "Distanța relativă a orizontului"
-
-#~ msgid "Relative length of shadow"
-#~ msgstr "Lungimea relativă a umbrei"
-
-#~ msgid "_Perspective..."
-#~ msgstr "_Perspectivă..."
-
-#~ msgid "Add a 'Predator' effect to the selected region (or alpha)"
-#~ msgstr "Adaugă un efect de tip „Predator” la regiunea (sau alfa) selectată"
-
-#~ msgid "Edge amount"
-#~ msgstr "Grosime margine"
-
-#~ msgid "Pixel amount"
-#~ msgstr "Cantitate de pixeli"
-
-#~ msgid "Pixelize"
-#~ msgstr "Pixelează"
-
-#~ msgid "_Predator..."
-#~ msgstr "_Predator..."
-
-#~ msgid "Create images, each containing an oval button graphic"
-#~ msgstr "Creează imagini, fiecare conținând o grafică de buton oval"
-
-#~ msgid "Lower color"
-#~ msgstr "Culoarea de dedesubt"
-
-#~ msgid "Lower color (active)"
-#~ msgstr "Culoarea de dedesubt (activ)"
-
-#~ msgid "Not pressed"
-#~ msgstr "Neapăsat"
-
-#~ msgid "Not pressed (active)"
-#~ msgstr "Neapăsat (activ)"
-
-#~ msgid "Padding X"
-#~ msgstr "Umplere X"
-
-#~ msgid "Padding Y"
-#~ msgstr "Umplere Y"
-
-#~ msgid "Round ratio"
-#~ msgstr "Raport de rotunjire"
-
-#~ msgid "Text color (active)"
-#~ msgstr "Culoarea textului (activ)"
-
-#~ msgid "Upper color"
-#~ msgstr "Culoarea de deasupra"
-
-#~ msgid "Upper color (active)"
-#~ msgstr "Culoarea de deasupra (activ)"
-
-#~ msgid "_Round Button..."
-#~ msgstr "Buton _rotund..."
-
-#~ msgid "Behavior"
-#~ msgstr "Comportament"
-
-#~ msgid "Create an image filled with an Earth-like map pattern"
-#~ msgstr "Creează o imagine umplută cu un model de hartă geografică"
-
-#~ msgid "Detail in Middle"
-#~ msgstr "Detalii în mijloc"
-
-# logica este fișier -> creează -> un model -> de care ? -> o hartă randată
-#~ msgid "Render _Map..."
-#~ msgstr "_Hartă randată..."
-
-#~ msgid "Reverse Layer Order"
-#~ msgstr "Inversează ordinea straturilor"
-
-#~ msgid "Reverse the order of layers in the image"
-#~ msgstr "Inversează ordinea straturilor în imagine"
-
-#~ msgid "Black"
-#~ msgstr "Negre"
-
-#~ msgid ""
-#~ "Create a multi-layer image by adding a ripple effect to the current image"
-#~ msgstr ""
-#~ "Creează o imagine multistrat prin adăugarea unui efect de ondulare la "
-#~ "imaginea curentă"
-
-#~ msgid "Edge behavior"
-#~ msgstr "Comportamentul marginilor"
-
-#~ msgid "Number of frames"
-#~ msgstr "Numărul cadrelor"
-
-#~ msgid "Rippling strength"
-#~ msgstr "Intensitatea ondulării"
-
-#~ msgid "Smear"
-#~ msgstr "Mâzgălite"
-
-#~ msgid "_Rippling..."
-#~ msgstr "Ondula_re..."
-
-#~ msgid "Add background"
-#~ msgstr "Adaugă un fundal"
-
-#~ msgid "Add drop-shadow"
-#~ msgstr "Adaugă o umbră detașată"
-
-#~ msgid "Edge radius"
-#~ msgstr "Raza marginii"
-
-#~ msgid ""
-#~ "Round the corners of an image and optionally add a drop-shadow and "
-#~ "background"
-#~ msgstr ""
-#~ "Rotunjește colțurile unei imagini și adaugă opțional o umbră detașată și "
-#~ "un fundal"
-
-#~ msgid "_Round Corners..."
-#~ msgstr "Colțuri _rotunjite..."
-
-#~ msgid ""
-#~ "Change the colormap of an image to the colors in a specified palette."
-#~ msgstr ""
-#~ "Schimbă paleta de culori a unei imagini în culorile dintr-o paletă "
-#~ "specificată."
-
-#~ msgid "Palette"
-#~ msgstr "Paletă"
-
-#~ msgid "Se_t Colormap..."
-#~ msgstr "S_tabilește paleta de culori..."
-
-#~ msgid "Convert a selection to a brush"
-#~ msgstr "Convertește o selecție într-un penel"
-
-#~ msgid "To _Brush..."
-#~ msgstr "La _penel..."
-
-#~ msgid "Convert a selection to an image"
-#~ msgstr "Convertește o selecție într-o imagine"
-
-#~ msgid "To _Image"
-#~ msgstr "La _imagine"
-
-#~ msgid "Convert a selection to a pattern"
-#~ msgstr "Convertește o selecție într-un model"
-
-#~ msgid "To _Pattern..."
-#~ msgstr "La _model..."
-
-#~ msgid "Concave"
-#~ msgstr "Concav"
-
-#~ msgid "Radius (%)"
-#~ msgstr "Rază (%)"
-
-#~ msgid "Round the corners of the current selection"
-#~ msgstr "Rotunjește colțurile selecției curente"
-
-#~ msgid "Rounded R_ectangle..."
-#~ msgstr "Dr_eptunghi rotunjit..."
-
-#~ msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
-#~ msgstr ""
-#~ "Adaugă la o imagine un cadru asemănător cu pelicula foto, cu perforații "
-#~ "și inscripționări pe margine"
-
-#~ msgid "Font color"
-#~ msgstr "Culoarea fontului"
-
-#~ msgid "Number"
-#~ msgstr "Număr"
-
-#~ msgid "_Slide..."
-#~ msgstr "_Peliculă foto..."
-
-#~ msgid "Create a State Of The Art chromed logo"
-#~ msgstr ""
-#~ "Creează o siglă cromată cu maxim de perfecțiune (SOTA = State Of The Art)"
-
-# SOTA = State Of The Art
-#~ msgid "SOTA Chrome..."
-#~ msgstr "Crom SOTA..."
-
-#~ msgid "Create a logo with a speedy text effect"
-#~ msgstr "Creează o siglă cu un efect de text în viteză"
-
-#~ msgid "Speed Text..."
-#~ msgstr "Text în viteză..."
-
-#~ msgid "Create a simple sphere with a drop shadow"
-#~ msgstr "Creează o sferă simplă cu o umbră detașată"
-
-#~ msgid "Lighting (degrees)"
-#~ msgstr "Iluminare (grade)"
-
-#~ msgid "Radius (pixels)"
-#~ msgstr "Rază (pixeli)"
-
-#~ msgid "Sphere color"
-#~ msgstr "Culoarea sferei"
-
-#~ msgid "_Sphere..."
-#~ msgstr "_Sferă..."
-
-#~ msgid ""
-#~ "Create an animation by mapping the current image onto a spinning sphere"
-#~ msgstr ""
-#~ "Creează o animație prin maparea imaginii curente la o sferă rotitoare"
-
-#~ msgid "Frames"
-#~ msgstr "Cadre"
-
-#~ msgid "Index to n colors (0 = remain RGB)"
-#~ msgstr "Index pentru n culori (0 = rămâne RGB)"
-
-#~ msgid "Turn from left to right"
-#~ msgstr "Rotește de la stânga la dreapta"
-
-#~ msgid "_Spinning Globe..."
-#~ msgstr "_Glob rotitor..."
-
-# hm ? ce-i aia
-#~ msgid ""
-#~ "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
-#~ msgstr ""
-#~ "Adaugă spirografe, epitrochoide și curbe Lissajous la stratul curent"
-
-#~ msgid "Airbrush"
-#~ msgstr "Aerograf"
-
-#~ msgid "Brush"
-#~ msgstr "Penel"
-
-#~ msgid "Color method"
-#~ msgstr "Metoda colorării"
-
-#~ msgid "Epitrochoid"
-#~ msgstr "Epitrochoid"
-
-#~ msgid "Frame"
-#~ msgstr "Cadru"
-
-#~ msgid "Gradient: Loop Sawtooth"
-#~ msgstr "Degrade: dinte de ferăstrău ciclic"
-
-#~ msgid "Gradient: Loop Triangle"
-#~ msgstr "Degrade: triunghi ciclic"
-
-#~ msgid "Hexagon"
-#~ msgstr "Hexagon"
-
-#~ msgid "Hole ratio"
-#~ msgstr "Raportul găurii"
-
-#~ msgid "Inner teeth"
-#~ msgstr "Dinte interior"
-
-#~ msgid "Lissajous"
-#~ msgstr "Lissajous"
-
-#~ msgid "Margin (pixels)"
-#~ msgstr "Margine (pixeli)"
-
-#~ msgid "Outer teeth"
-#~ msgstr "Dinte exterior"
-
-#~ msgid "Pentagon"
-#~ msgstr "Pentagon"
-
-#~ msgid "Polygon: 10 sides"
-#~ msgstr "Poligon: 10 laturi"
-
-#~ msgid "Polygon: 7 sides"
-#~ msgstr "Poligon: 7 laturi"
-
-#~ msgid "Polygon: 8 sides"
-#~ msgstr "Poligon: 8 laturi"
-
-#~ msgid "Polygon: 9 sides"
-#~ msgstr "Poligon: 9 laturi"
-
-#~ msgid "Rendering Spyro"
-#~ msgstr "Randare Spirograf"
-
-#~ msgid "Shape"
-#~ msgstr "Formă"
-
-#~ msgid "Square"
-#~ msgstr "Pătrat"
-
-#~ msgid "Start angle"
-#~ msgstr "Unghi de pornire"
-
-#~ msgid "Tool"
-#~ msgstr "Instrument"
-
-#~ msgid "Triangle"
-#~ msgstr "Triunghi"
-
-#~ msgid "Type"
-#~ msgstr "Tip"
-
-#~ msgid "_Spyrogimp..."
-#~ msgstr "_Spirogimp..."
-
-#~ msgid "Burst color"
-#~ msgstr "Culoarea exploziei"
-
-#~ msgid "Create a logo using a starburst gradient"
-#~ msgstr "Creează un logo folosind un degrade de explozie stelară"
-
-#~ msgid "Effect size (pixels * 30)"
-#~ msgstr "Dimensiunea efectului (pixeli × 30)"
-
-#~ msgid ""
-#~ "Fill the selected region (or alpha) with a starburst gradient and add a "
-#~ "shadow"
-#~ msgstr ""
-#~ "Umple regiunea (sau alfa) selectată cu un degrade de explozie stelară și "
-#~ "adaugă o umbră"
-
-#~ msgid "Starb_urst..."
-#~ msgstr "Explozie s_telară..."
-
-#~ msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
-#~ msgstr ""
-#~ "Creează o siglă folosind o textură pietroasă, o strălucire de novă și o "
-#~ "umbră"
-
-#~ msgid "Effect size (pixels * 4)"
-#~ msgstr "Dimensiunea efectului (pixeli × 4)"
-
-#~ msgid ""
-#~ "Fill the selected region (or alpha) with a rock-like texture, a nova "
-#~ "glow, and shadow"
-#~ msgstr ""
-#~ "Umple regiunea (sau alfa) selectată cu o textură pietroasă, o strălucire "
-#~ "de novă și o umbră"
-
-#~ msgid "Sta_rscape..."
-#~ msgstr "Peisa_j înstelat..."
-
-#~ msgid "Create an image filled with a swirled tile effect"
-#~ msgstr "Creează o imagine umplută cu un efect de dală turbionară"
-
-#~ msgid "Swirl-_Tile..."
-#~ msgstr "Dală _turbionară..."
-
-#~ msgid "Whirl amount"
-#~ msgstr "Amplitudinea vârtejului"
-
-#~ msgid "Create an image filled with a swirly pattern"
-#~ msgstr "Creează o imagine umplută cu un model turbionar"
-
-#~ msgid "Number of times to whirl"
-#~ msgstr "Numărul de rotiri ale vârtejului"
-
-#~ msgid "Quarter size"
-#~ msgstr "Sfert de dimensiune"
-
-#~ msgid "Whirl angle"
-#~ msgstr "Unghiul vârtejului"
-
-#~ msgid "_Swirly..."
-#~ msgstr "T_urbionar..."
-
-#~ msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă un efect de urmă de particule la regiunea (sau alfa) selectată"
-
-#~ msgid "Base color"
-#~ msgstr "Culoare de bază"
-
-#~ msgid "Create a logo using a Trace Of Particles effect"
-#~ msgstr "Creează o siglă folosind un efect de urmă de particule"
-
-#~ msgid "Edge only"
-#~ msgstr "Doar margini"
-
-#~ msgid "Edge width"
-#~ msgstr "Lățimea marginii"
-
-#~ msgid "Hit rate"
-#~ msgstr "Rata succesului"
-
-#~ msgid "_Particle Trace..."
-#~ msgstr "Urmă de _particule..."
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
-
-#~ msgid ""
-#~ "Create a logo by rendering the specified text along the perimeter of a "
-#~ "circle"
-#~ msgstr ""
-#~ "Creează o siglă prin randarea textului specificat de-a lungul "
-#~ "perimetrului unui cerc"
-
-#~ msgid "Fill angle"
-#~ msgstr "Unghiul umplerii"
-
-#~ msgid "Text C_ircle..."
-#~ msgstr "_Cerc de text..."
-
-#~ msgid ""
-#~ "Create a textured logo with highlights, shadows, and a mosaic background"
-#~ msgstr ""
-#~ "Creează o siglă texturată cu evidențieri, umbre și un fundal de mozaic"
-
-#~ msgid "Ending blend"
-#~ msgstr "Amestec de sfârșit"
-
-#~ msgid ""
-#~ "Fill the selected region (or alpha) with a texture and add highlights, "
-#~ "shadows, and a mosaic background"
-#~ msgstr ""
-#~ "Umple regiunea (sau alfa) selectată cu o textură și adaugă evidențieri, "
-#~ "umbre și un fundal de mozaic"
-
-#~ msgid "Hexagons"
-#~ msgstr "Hexagoane"
-
-#~ msgid "Mosaic tile type"
-#~ msgstr "Tipul dalei mozaic"
-
-#~ msgid "Octagons"
-#~ msgstr "Octogoane"
-
-#~ msgid "Starting blend"
-#~ msgstr "Amestec de început"
-
-#~ msgid "Text pattern"
-#~ msgstr "Textura textului"
-
-#~ msgid "_Textured..."
-#~ msgstr "_Texturat..."
-
-#~ msgid "Blur horizontally"
-#~ msgstr "Atenuează claritatea orizontal"
-
-#~ msgid "Blur the edges of an image so the result tiles seamlessly"
-#~ msgstr ""
-#~ "Atenuează claritatea marginilor unei imagini astfel încât mozaicul "
-#~ "rezultat să nu prezinte urme de racord"
-
-#~ msgid "Blur type"
-#~ msgstr "Tipul neclarității"
-
-#~ msgid "Blur vertically"
-#~ msgstr "Atenuează claritatea vertical"
-
-#~ msgid "RLE"
-#~ msgstr "RLE"
-
-#~ msgid "_Tileable Blur..."
-#~ msgstr "Neclari_tate mozaicabilă..."
-
-#~ msgid "Create a decorative web title header"
-#~ msgstr "Creează un antet de titlu decorativ pentru web"
-
-#~ msgid "Web Title Header..."
-#~ msgstr "Antet de titlu web..."
-
-#~ msgid "Create an image filled with a Truchet pattern"
-#~ msgstr "Creează o imagine umplută cu un model Truchet"
-
-#~ msgid "Foreground color"
-#~ msgstr "Culoarea prim-planului"
-
-#~ msgid "T_ruchet..."
-#~ msgstr "T_ruchet..."
-
-#~ msgid "Mask opacity"
-#~ msgstr "Opacitatea măștii"
-
-#~ msgid "Mask size"
-#~ msgstr "Dimensiunea măștii"
-
-#~ msgid "Amplitude"
-#~ msgstr "Amplitudine"
-
-#~ msgid ""
-#~ "Create a multi-layer image with an effect like a stone was thrown into "
-#~ "the current image"
-#~ msgstr ""
-#~ "Creează o imagine multistrat cu un efect asemănător al unei pietre "
-#~ "aruncate în imaginea curentă"
-
-#~ msgid "Invert direction"
-#~ msgstr "Inversează direcția"
-
-#~ msgid "Wavelength"
-#~ msgstr "Lungime de undă"
-
-#~ msgid "_Waves..."
-#~ msgstr "_Valuri..."
-
-#~ msgid ""
-#~ "Create a new layer filled with a weave effect to be used as an overlay or "
-#~ "bump map"
-#~ msgstr ""
-#~ "Creează un strat nou umplut cu un efect de țesătură pentru a fi folosit "
-#~ "ca o suprapunere sau ca o hartă de denivelări"
-
-#~ msgid "Ribbon spacing"
-#~ msgstr "Spațierea panglicii"
-
-#~ msgid "Ribbon width"
-#~ msgstr "Lățimea panglicii"
-
-#~ msgid "Shadow darkness"
-#~ msgstr "Întunecimea umbrei"
-
-#~ msgid "Shadow depth"
-#~ msgstr "Adâncimea umbrei"
-
-#~ msgid "Thread density"
-#~ msgstr "Densitatea firului"
-
-#~ msgid "Thread intensity"
-#~ msgstr "Intensitatea firului"
-
-#~ msgid "Thread length"
-#~ msgstr "Lungimea firului"
-
-#~ msgid "_Weave..."
-#~ msgstr "Ț_esătură..."
-
-#~ msgid "Bookmark to the GIMP web site"
-#~ msgstr "Semn de carte către site-ul web GIMP"
-
-#~ msgid "Bookmark to the user manual"
-#~ msgstr "Semn de carte către manualul utilizatorului"
-
-#~ msgid "Create and Use _Selections"
-#~ msgstr "Crearea și utilizarea _selecțiilor"
-
-#~ msgid "Create, Open and Save _Files"
-#~ msgstr "Crearea, deschiderea și salvarea _fișierelor"
-
-#~ msgid "Drawing _Simple Objects"
-#~ msgstr "Desenarea obiectelor _simple"
-
-#~ msgid "How to Use _Dialogs"
-#~ msgstr "Utilizarea ferestrelor de _dialog"
-
-#~ msgid "Plug-in _Registry"
-#~ msgstr "_Registrul modulelor"
-
-#~ msgid "Using _Paths"
-#~ msgstr "Folosirea _Căilor"
-
-#~ msgid "_Basic Concepts"
-#~ msgstr "Concepte de _bază"
-
-#~ msgid "_Developer Web Site"
-#~ msgstr "Site-ul web al _dezvoltatorilor"
-
-#~ msgid "_Main Web Site"
-#~ msgstr "Site-ul w_eb principal"
-
-#~ msgid "_Preparing your Images for the Web"
-#~ msgstr "_Prepararea imaginilor pentru web"
-
-#~ msgid "_User Manual Web Site"
-#~ msgstr "Site-ul web al manualului _utilizatorului"
-
-#~ msgid "_Working with Digital Camera Photos"
-#~ msgstr "_Lucrul cu fotografii făcute cu camere digitale"
-
-#~ msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
-#~ msgstr ""
-#~ "Adaugă un efect 3D translucid subtil la regiunea (sau alfa) selectată"
-
-#~ msgid "Drop shadow X offset"
-#~ msgstr "Decalajul X al umbrei detașate"
-
-#~ msgid "Drop shadow Y offset"
-#~ msgstr "Decalajul Y al umbrei detașate"
-
-#~ msgid "Drop shadow blur radius"
-#~ msgstr "Raza de neclaritate a umbrei detașate"
-
-#~ msgid "Drop shadow color"
-#~ msgstr "Culoarea umbrei detașate"
-
-#~ msgid "Drop shadow opacity"
-#~ msgstr "Opacitatea umbrei detașate"
-
-#~ msgid "Highlight X offset"
-#~ msgstr "Decalajul X al evidențierii"
-
-#~ msgid "Highlight Y offset"
-#~ msgstr "Decalajul Y al evidențierii"
-
-#~ msgid "Highlight opacity"
-#~ msgstr "Opacitatea evidențierii"
-
-#~ msgid "_Xach-Effect..."
-#~ msgstr "Efect _Xach..."
+#: ../scripts/tileblur.scm:76
+msgid "RLE"
+msgstr "RLE"
+
+#: ../scripts/title-header.scm:164
+msgid "Web Title Header..."
+msgstr "Antet de titlu web..."
+
+#: ../scripts/title-header.scm:165
+msgid "Create a decorative web title header"
+msgstr "Creează un antet de titlu decorativ pentru web"
+
+#: ../scripts/t-o-p-logo.scm:101 ../scripts/t-o-p-logo.scm:141
+msgid "_Particle Trace..."
+msgstr "Urmă de _particule..."
+
+#: ../scripts/t-o-p-logo.scm:102
+msgid "Add a Trace of Particles effect to the selected region (or alpha)"
+msgstr "Adaugă un efect de urmă de particule la regiunea (sau alfa) selectată"
+
+#: ../scripts/t-o-p-logo.scm:110 ../scripts/t-o-p-logo.scm:150
+msgid "Hit rate"
+msgstr "Rata succesului"
+
+#: ../scripts/t-o-p-logo.scm:111 ../scripts/t-o-p-logo.scm:151
+msgid "Edge width"
+msgstr "Lățimea marginii"
+
+#: ../scripts/t-o-p-logo.scm:112 ../scripts/t-o-p-logo.scm:152
+msgid "Edge only"
+msgstr "Doar margini"
+
+#: ../scripts/t-o-p-logo.scm:113 ../scripts/t-o-p-logo.scm:153
+msgid "Base color"
+msgstr "Culoare de bază"
+
+#: ../scripts/t-o-p-logo.scm:142
+msgid "Create a logo using a Trace Of Particles effect"
+msgstr "Creează o siglă folosind un efect de urmă de particule"
+
+#: ../scripts/truchet.scm:157
+msgid "T_ruchet..."
+msgstr "T_ruchet..."
+
+#: ../scripts/truchet.scm:158
+msgid "Create an image filled with a Truchet pattern"
+msgstr "Creează o imagine umplută cu un model Truchet"
+
+#: ../scripts/truchet.scm:166
+msgid "Foreground color"
+msgstr "Culoarea prim-planului"
+
+#: ../scripts/unsharp-mask.scm:82
+msgid "Mask size"
+msgstr "Dimensiunea măștii"
+
+#: ../scripts/unsharp-mask.scm:83
+msgid "Mask opacity"
+msgstr "Opacitatea măștii"
+
+#: ../scripts/waves-anim.scm:96
+msgid "_Waves..."
+msgstr "_Valuri..."
+
+#: ../scripts/waves-anim.scm:97
+msgid ""
+"Create a multi-layer image with an effect like a stone was thrown into the "
+"current image"
+msgstr ""
+"Creează o imagine multistrat cu un efect asemănător al unei pietre aruncate "
+"în imaginea curentă"
+
+#: ../scripts/waves-anim.scm:104
+msgid "Amplitude"
+msgstr "Amplitudine"
+
+#: ../scripts/waves-anim.scm:105
+msgid "Wavelength"
+msgstr "Lungime de undă"
+
+#: ../scripts/waves-anim.scm:107
+msgid "Invert direction"
+msgstr "Inversează direcția"
+
+#: ../scripts/weave.scm:393
+msgid "_Weave..."
+msgstr "Ț_esătură..."
+
+#: ../scripts/weave.scm:394
+msgid ""
+"Create a new layer filled with a weave effect to be used as an overlay or "
+"bump map"
+msgstr ""
+"Creează un strat nou umplut cu un efect de țesătură pentru a fi folosit ca o "
+"suprapunere sau ca o hartă de denivelări"
+
+#: ../scripts/weave.scm:401
+msgid "Ribbon width"
+msgstr "Lățimea panglicii"
+
+#: ../scripts/weave.scm:402
+msgid "Ribbon spacing"
+msgstr "Spațierea panglicii"
+
+#: ../scripts/weave.scm:403
+msgid "Shadow darkness"
+msgstr "Întunecimea umbrei"
+
+#: ../scripts/weave.scm:404
+msgid "Shadow depth"
+msgstr "Adâncimea umbrei"
+
+#: ../scripts/weave.scm:405
+msgid "Thread length"
+msgstr "Lungimea firului"
+
+#: ../scripts/weave.scm:406
+msgid "Thread density"
+msgstr "Densitatea firului"
+
+#: ../scripts/weave.scm:407
+msgid "Thread intensity"
+msgstr "Intensitatea firului"
+
+#: ../scripts/web-browser.scm:60
+msgid "Using _Paths"
+msgstr "Folosirea _Căilor"
+
+#: ../scripts/web-browser.scm:61 ../scripts/web-browser.scm:74
+#: ../scripts/web-browser.scm:87 ../scripts/web-browser.scm:100
+#: ../scripts/web-browser.scm:113 ../scripts/web-browser.scm:126
+#: ../scripts/web-browser.scm:139 ../scripts/web-browser.scm:152
+msgid "Bookmark to the user manual"
+msgstr "Semn de carte către manualul utilizatorului"
+
+#: ../scripts/web-browser.scm:73
+msgid "_Preparing your Images for the Web"
+msgstr "_Prepararea imaginilor pentru web"
+
+#: ../scripts/web-browser.scm:86
+msgid "_Working with Digital Camera Photos"
+msgstr "_Lucrul cu fotografii făcute cu camere digitale"
+
+#: ../scripts/web-browser.scm:99
+msgid "Create, Open and Save _Files"
+msgstr "Crearea, deschiderea și salvarea _fișierelor"
+
+#: ../scripts/web-browser.scm:112
+msgid "_Basic Concepts"
+msgstr "Concepte de _bază"
+
+#: ../scripts/web-browser.scm:125
+msgid "How to Use _Dialogs"
+msgstr "Utilizarea ferestrelor de _dialog"
+
+#: ../scripts/web-browser.scm:138
+msgid "Drawing _Simple Objects"
+msgstr "Desenarea obiectelor _simple"
+
+#: ../scripts/web-browser.scm:151
+msgid "Create and Use _Selections"
+msgstr "Crearea și utilizarea _selecțiilor"
+
+#: ../scripts/web-browser.scm:179
+msgid "_Main Web Site"
+msgstr "Site-ul w_eb principal"
+
+#: ../scripts/web-browser.scm:180 ../scripts/web-browser.scm:193
+#: ../scripts/web-browser.scm:206 ../scripts/web-browser.scm:219
+msgid "Bookmark to the GIMP web site"
+msgstr "Semn de carte către site-ul web GIMP"
+
+#: ../scripts/web-browser.scm:192
+msgid "_Developer Web Site"
+msgstr "Site-ul web al _dezvoltatorilor"
+
+#: ../scripts/web-browser.scm:205
+msgid "_User Manual Web Site"
+msgstr "Site-ul web al manualului _utilizatorului"
+
+#: ../scripts/web-browser.scm:218
+msgid "Plug-in _Registry"
+msgstr "_Registrul modulelor"
+
+#: ../scripts/xach-effect.scm:121
+msgid "_Xach-Effect..."
+msgstr "Efect _Xach..."
+
+#: ../scripts/xach-effect.scm:122
+msgid "Add a subtle translucent 3D effect to the selected region (or alpha)"
+msgstr "Adaugă un efect 3D translucid subtil la regiunea (sau alfa) selectată"
+
+#: ../scripts/xach-effect.scm:129
+msgid "Highlight X offset"
+msgstr "Decalajul X al evidențierii"
+
+#: ../scripts/xach-effect.scm:130
+msgid "Highlight Y offset"
+msgstr "Decalajul Y al evidențierii"
+
+#: ../scripts/xach-effect.scm:132
+msgid "Highlight opacity"
+msgstr "Opacitatea evidențierii"
+
+#: ../scripts/xach-effect.scm:133
+msgid "Drop shadow color"
+msgstr "Culoarea umbrei detașate"
+
+#: ../scripts/xach-effect.scm:134
+msgid "Drop shadow opacity"
+msgstr "Opacitatea umbrei detașate"
+
+#: ../scripts/xach-effect.scm:135
+msgid "Drop shadow blur radius"
+msgstr "Raza de neclaritate a umbrei detașate"
+
+#: ../scripts/xach-effect.scm:136
+msgid "Drop shadow X offset"
+msgstr "Decalajul X al umbrei detașate"
+
+#: ../scripts/xach-effect.scm:137
+msgid "Drop shadow Y offset"
+msgstr "Decalajul Y al umbrei detașate"
