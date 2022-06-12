@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu-2.0.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/issues\n"
-"POT-Creation-Date: 2022-06-11 19:12+0000\n"
-"PO-Revision-Date: 2022-06-12 08:06+0300\n"
+"POT-Creation-Date: 2022-06-12 12:41+0000\n"
+"PO-Revision-Date: 2022-06-12 20:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -20,7 +20,6 @@ msgstr ""
 "=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../tiny-fu/tiny-fu-console.c:130 ../tiny-fu/tiny-fu-console.c:197
-#| msgid "Script-Fu Console"
 msgid "Tiny-Fu Console"
 msgstr "Консоль Тайні-Фу"
 
@@ -37,7 +36,6 @@ msgid "_Browse..."
 msgstr "О_гляд…"
 
 #: ../tiny-fu/tiny-fu-console.c:293
-#| msgid "Save Script-Fu Console Output"
 msgid "Save Tiny-Fu Console Output"
 msgstr "Зберегти вивід консолі Тайні-Фу"
 
@@ -47,12 +45,15 @@ msgid "Could not open '%s' for writing: %s"
 msgstr "Не вдається відкрити '%s' для записи: %s"
 
 #: ../tiny-fu/tiny-fu-console.c:369
-#| msgid "Script-Fu Procedure Browser"
 msgid "Tiny-Fu Procedure Browser"
 msgstr "Перегляд процедур Тайні-Фу"
 
+#: ../tiny-fu/tiny-fu-eval.c:60
+#| msgid "Script-Fu evaluation mode only allows non-interactive invocation"
+msgid "Tiny-Fu evaluation mode only allows non-interactive invocation"
+msgstr "Режим оцінювання у Тайні-Фу дозволяє лише не інтерактивний виклик"
+
 #: ../tiny-fu/tiny-fu-interface.c:194
-#| msgid "Script-Fu cannot process two scripts at the same time."
 msgid "Tiny-Fu cannot process two scripts at the same time."
 msgstr "Тайні-Фу не може обробляти два сценарії одночасно."
 
@@ -63,7 +64,6 @@ msgstr "Ви вже запустили сценарій \"%s\"."
 
 #: ../tiny-fu/tiny-fu-interface.c:222
 #, c-format
-#| msgid "Script-Fu: %s"
 msgid "Tiny-Fu: %s"
 msgstr "Тайні-Фу: %s"
 
@@ -76,52 +76,39 @@ msgid "%s:"
 msgstr "%s:"
 
 #: ../tiny-fu/tiny-fu-interface.c:333
-#| msgid "Script-Fu Color Selection"
 msgid "Tiny-Fu Color Selection"
 msgstr "Тайні-Фу: Вибір кольору"
 
 #: ../tiny-fu/tiny-fu-interface.c:442
-#| msgid "Script-Fu File Selection"
 msgid "Tiny-Fu File Selection"
 msgstr "Тайні-Фу: Вибір файлу"
 
 #: ../tiny-fu/tiny-fu-interface.c:445
-#| msgid "Script-Fu Folder Selection"
 msgid "Tiny-Fu Folder Selection"
 msgstr "Тайні-Фу: Вибір теки"
 
 #: ../tiny-fu/tiny-fu-interface.c:458
-#| msgid "Script-Fu Font Selection"
 msgid "Tiny-Fu Font Selection"
 msgstr "Тайні-Фу: Вибір шрифту"
 
 #: ../tiny-fu/tiny-fu-interface.c:466
-#| msgid "Script-Fu Palette Selection"
 msgid "Tiny-Fu Palette Selection"
 msgstr "Тайні-Фу: Вибір палітри"
 
 #: ../tiny-fu/tiny-fu-interface.c:475
-#| msgid "Script-Fu Pattern Selection"
 msgid "Tiny-Fu Pattern Selection"
 msgstr "Тайні-Фу: Вибір текстури"
 
 #: ../tiny-fu/tiny-fu-interface.c:484
-#| msgid "Script-Fu Gradient Selection"
 msgid "Tiny-Fu Gradient Selection"
 msgstr "Тайні-Фу: Вибір градієнту"
 
 #: ../tiny-fu/tiny-fu-interface.c:493
-#| msgid "Script-Fu Brush Selection"
 msgid "Tiny-Fu Brush Selection"
 msgstr "Тайні-Фу: Вибір пензля"
 
 #: ../tiny-fu/tiny-fu-interface.c:824
 #, c-format
-#| msgid ""
-#| "Error while executing\n"
-#| "%s\n"
-#| "\n"
-#| "%s"
 msgid "Error while executing %s:"
 msgstr "Помилка під час виконання: %s"
 
@@ -131,16 +118,10 @@ msgstr "Бракує аргументів для виклику 'script-fu-regis
 
 #: ../tiny-fu/tiny-fu-scripts.c:605
 #, c-format
-#| msgid ""
-#| "Error while executing\n"
-#| "%s\n"
-#| "\n"
-#| "%s"
 msgid "Error while loading %s:"
 msgstr "Помилка під час виконання %s:"
 
 #: ../tiny-fu/tiny-fu-server.c:807
-#| msgid "Script-Fu Server Options"
 msgid "Tiny-Fu Server Options"
 msgstr "Тайні-Фу: Параметри сервера"
 
@@ -157,17 +138,14 @@ msgid "Server logfile:"
 msgstr "Журнал сервера:"
 
 #: ../tiny-fu/tiny-fu.c:118
-#| msgid "Interactive console for Script-Fu development"
 msgid "Interactive console for Tiny-Fu development"
 msgstr "Інтерактивна консоль для розробки на Тайні-Фу"
 
 #: ../tiny-fu/tiny-fu.c:124
-#| msgid "Script-Fu _Console"
 msgid "_Console"
 msgstr "_Консоль"
 
 #: ../tiny-fu/tiny-fu.c:148
-#| msgid "Server for remote Script-Fu operation"
 msgid "Server for remote Tiny-Fu operation"
 msgstr "Сервер для віддаленого виконання Тайні-Фу"
 
@@ -224,7 +202,6 @@ msgid "Alpha to _Logo"
 msgstr "_Альфа у емблему"
 
 #: ../tiny-fu/tiny-fu.c:337
-#| msgid "Re-read all available Script-Fu scripts"
 msgid "Re-read all available Tiny-Fu scripts"
 msgstr "Перечитати всі доступні сценарії Тайні-Фу"
 
@@ -233,9 +210,6 @@ msgid "_Refresh Scripts"
 msgstr "_Оновити сценарій"
 
 #: ../tiny-fu/tiny-fu.c:365
-#| msgid ""
-#| "You can not use \"Refresh Scripts\" while a Script-Fu dialog box is "
-#| "open.  Please close all Script-Fu windows and try again."
 msgid ""
 "You can not use \"Refresh Scripts\" while a Tiny-Fu dialog box is open.  "
 "Please close all Tiny-Fu windows and try again."
@@ -450,7 +424,6 @@ msgid "Keep bump layer"
 msgstr "Зберегти шар рельєфу"
 
 #: ../scripts/addborder.scm:108
-#| msgid "Border size"
 msgid "Border Layer"
 msgstr "Шар рамки"
 
@@ -479,13 +452,11 @@ msgid "Delta value on color"
 msgstr "Дельта значення кольору"
 
 #: ../scripts/alien-glow-arrow.scm:118 ../scripts/beveled-pattern-arrow.scm:78
-#| msgid "_Arrow..."
 msgid "Arrow"
 msgstr "Стрілка"
 
 #: ../scripts/alien-glow-arrow.scm:121 ../scripts/alien-glow-bar.scm:35
 #: ../scripts/alien-glow-bullet.scm:46
-#| msgid "_Alien Glow"
 msgid "Alien Glow"
 msgstr "Чуже сяйво"
 
@@ -493,7 +464,6 @@ msgstr "Чуже сяйво"
 #: ../scripts/alien-glow-bullet.scm:48 ../scripts/alien-glow-button.scm:78
 #: ../scripts/beveled-pattern-button.scm:56
 #: ../scripts/beveled-pattern-heading.scm:41 ../scripts/chrome-it.scm:103
-#| msgid "Background color"
 msgid "Background"
 msgstr "Тло"
 
@@ -566,7 +536,6 @@ msgid "Bar height"
 msgstr "Висота лінійки"
 
 #: ../scripts/alien-glow-bullet.scm:44 ../scripts/beveled-pattern-bullet.scm:25
-#| msgid "_Bullet..."
 msgid "Bullet"
 msgstr "Маркер"
 
@@ -588,7 +557,6 @@ msgid "Glow"
 msgstr "Сяйво"
 
 #: ../scripts/alien-glow-button.scm:84
-#| msgid "_Buttons"
 msgid "Button"
 msgstr "Кнопка"
 
@@ -968,17 +936,14 @@ msgid "Carved Surface"
 msgstr "Різьблені поверхні"
 
 #: ../scripts/carved-logo.scm:149 ../scripts/carve-it.scm:169
-#| msgid "Shadow"
 msgid "Bevel Shadow"
 msgstr "Тінь скосу"
 
 #: ../scripts/carved-logo.scm:150 ../scripts/carve-it.scm:170
-#| msgid "Bevel width"
 msgid "Bevel Highlight"
 msgstr "Підсвічування скосу "
 
 #: ../scripts/carved-logo.scm:151 ../scripts/carve-it.scm:171
-#| msgid "Create shadow"
 msgid "Cast Shadow"
 msgstr "Накласти тінь"
 
@@ -1088,17 +1053,14 @@ msgid "Layer 3"
 msgstr "Шар 3"
 
 #: ../scripts/chrome-it.scm:107
-#| msgid "Drop shadow"
 msgid "Drop Shadow"
 msgstr "Кинути тінь"
 
 #: ../scripts/chrome-it.scm:201
-#| msgid "C_hrome..."
 msgid "Chrome"
 msgstr "Хром"
 
 #: ../scripts/chrome-it.scm:202 ../scripts/xach-effect.scm:68
-#| msgid "Highlight color"
 msgid "Highlight"
 msgstr "Підсвічування"
 
@@ -1161,7 +1123,6 @@ msgid "Create a simplistic, but cool, chromed logo"
 msgstr "Створити простий, але ефективний ефект хромування"
 
 #: ../scripts/circuit.scm:81
-#| msgid "Separate layer"
 msgid "Effect layer"
 msgstr "Вплив шару"
 
@@ -1226,7 +1187,6 @@ msgid "Depth"
 msgstr "Глибина"
 
 #: ../scripts/coffee.scm:36
-#| msgid "Stains"
 msgid "Stain"
 msgstr "Пляма"
 
@@ -1374,7 +1334,6 @@ msgid "Distress the selection"
 msgstr "Згладити виділення"
 
 #: ../scripts/distress-selection.scm:110
-#| msgid "Threshold (bigger 1<-->255 smaller)"
 msgid "Threshold (bigger 1<-->254 smaller)"
 msgstr "Поріг (більший 1<-->254 менший)"
 
@@ -1885,9 +1844,6 @@ msgid "Line _Nova..."
 msgstr "Лінійна _нова…"
 
 #: ../scripts/line-nova.scm:107
-#| msgid ""
-#| "Fill a layer with rays emanating outward from its center using the FG "
-#| "color"
 msgid ""
 "Fill a layer with rays emanating outward from its center using the "
 "foreground color"
@@ -2012,6 +1968,57 @@ msgstr "Сепія"
 #: ../scripts/old-photo.scm:103
 msgid "Mottle"
 msgstr "Накраплення"
+
+#: ../scripts/palette-export.scm:235
+msgid "Folder for the output file"
+msgstr "Тека для вихідних файлів"
+
+#: ../scripts/palette-export.scm:236
+msgid ""
+"The name of the file to create (if a file with this name already exist, it "
+"will be replaced)"
+msgstr ""
+"Назва файлу для створення (якщо файл з цією назвою існує, його буде замінено)"
+
+#: ../scripts/palette-export.scm:244
+msgid "The filename you entered is not a suitable name for a file."
+msgstr "Введена назва не є належною назвою файлу."
+
+#: ../scripts/palette-export.scm:246
+msgid ""
+"All characters in the name are either white-spaces or characters which can "
+"not appear in filenames."
+msgstr ""
+"Усі символи у назві або пробіли, або символи, що не показуються у назві "
+"файлу."
+
+#: ../scripts/palette-export.scm:274
+msgid ""
+"Export the active palette as a CSS stylesheet with the color entry name as "
+"their class name, and the color itself as the color attribute"
+msgstr ""
+"Експортувати поточну палітру, як таблицю стилів CSS з кольором назви запису "
+"як назву їхнього класу, і сам колір, як колір атрибуту"
+
+#: ../scripts/palette-export.scm:300
+msgid "Export the active palette as a PHP dictionary (name => color)"
+msgstr "Експортувати поточну палітру, як словник PHP (назва => колір)"
+
+#: ../scripts/palette-export.scm:332
+msgid "Export the active palette as a Python dictionary (name: color)"
+msgstr "Експортувати поточну палітру, як словник Python (назва: колір)"
+
+#: ../scripts/palette-export.scm:361
+msgid ""
+"Write all the colors in a palette to a text file, one hexadecimal value per "
+"line (no names)"
+msgstr ""
+"Записати усі кольори у палітрі до текстового файлу, одне шістнадцяткове "
+"значення на рядок (без назв)"
+
+#: ../scripts/palette-export.scm:408
+msgid "Export the active palette as a java.util.Hashtable<String, Color>"
+msgstr "Експортувати поточну палітру, як java.util.Hashtable<Рядок, Колір>"
 
 #: ../scripts/paste-as-brush.scm:56 ../scripts/paste-as-pattern.scm:44
 msgid "There is no image data in the clipboard to paste."
@@ -2784,9 +2791,6 @@ msgstr "Зсув тіні по X"
 #: ../scripts/xach-effect.scm:137
 msgid "Drop shadow Y offset"
 msgstr "Зсув тіні по Y"
-
-#~ msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-#~ msgstr "Режим оцінювання у Скрипт-Фу дозволяє лише не інтерактивний виклик"
 
 #~ msgid "_Script-Fu"
 #~ msgstr "_Скрипт-Фу"
