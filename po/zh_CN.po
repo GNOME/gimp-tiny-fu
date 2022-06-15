@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-script-fu\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/issues\n"
-"POT-Creation-Date: 2022-06-11 19:12+0000\n"
-"PO-Revision-Date: 2022-06-12 11:58+0800\n"
+"POT-Creation-Date: 2022-06-13 18:42+0000\n"
+"PO-Revision-Date: 2022-06-15 19:07+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -47,6 +47,10 @@ msgstr "无法为写入打开“%s”：%s"
 #: ../tiny-fu/tiny-fu-console.c:369
 msgid "Tiny-Fu Procedure Browser"
 msgstr "Tiny-Fu 过程浏览器"
+
+#: ../tiny-fu/tiny-fu-eval.c:60
+msgid "Tiny-Fu evaluation mode only allows non-interactive invocation"
+msgstr "Script-Fu 求值模式只允许非交互式调用"
 
 #: ../tiny-fu/tiny-fu-interface.c:194
 msgid "Tiny-Fu cannot process two scripts at the same time."
@@ -1932,6 +1936,51 @@ msgstr "褐色"
 msgid "Mottle"
 msgstr "杂色"
 
+#: ../scripts/palette-export.scm:235
+msgid "Folder for the output file"
+msgstr "输出文件的文件夹"
+
+#: ../scripts/palette-export.scm:236
+msgid ""
+"The name of the file to create (if a file with this name already exist, it "
+"will be replaced)"
+msgstr "要创建文件的名称（如果使用该名称的文件已存在，它将会被取代）"
+
+#: ../scripts/palette-export.scm:244
+msgid "The filename you entered is not a suitable name for a file."
+msgstr "您输入的文件名不适合作为文件名称。"
+
+#: ../scripts/palette-export.scm:246
+msgid ""
+"All characters in the name are either white-spaces or characters which can "
+"not appear in filenames."
+msgstr "该名称的所有字符都是空格或无法在文件名中显示的字符。"
+
+#: ../scripts/palette-export.scm:274
+msgid ""
+"Export the active palette as a CSS stylesheet with the color entry name as "
+"their class name, and the color itself as the color attribute"
+msgstr ""
+"导出活动调色板为 CSS 样式表，使用颜色条目名称作为类名且颜色自己作为颜色属性"
+
+#: ../scripts/palette-export.scm:300
+msgid "Export the active palette as a PHP dictionary (name => color)"
+msgstr "导出活动调色板为 PHP 词典（name => color）"
+
+#: ../scripts/palette-export.scm:332
+msgid "Export the active palette as a Python dictionary (name: color)"
+msgstr "导出活动调色板为 Python 词典（name: color）"
+
+#: ../scripts/palette-export.scm:361
+msgid ""
+"Write all the colors in a palette to a text file, one hexadecimal value per "
+"line (no names)"
+msgstr "将调色板所有颜色写入为文本文件，每行一个十六进制数值（无名称）"
+
+#: ../scripts/palette-export.scm:408
+msgid "Export the active palette as a java.util.Hashtable<String, Color>"
+msgstr "导出活动调色板为 java.util.Hashtable<String, Color>"
+
 #: ../scripts/paste-as-brush.scm:56 ../scripts/paste-as-pattern.scm:44
 msgid "There is no image data in the clipboard to paste."
 msgstr "剪贴板中没有可以粘贴的图像数据"
@@ -2693,9 +2742,6 @@ msgstr "投影 X 偏移"
 #: ../scripts/xach-effect.scm:137
 msgid "Drop shadow Y offset"
 msgstr "投影 Y 偏移"
-
-#~ msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-#~ msgstr "Script-Fu 求值模式只允许非交互式调用"
 
 #~ msgid "_Script-Fu"
 #~ msgstr "_Script-Fu"
