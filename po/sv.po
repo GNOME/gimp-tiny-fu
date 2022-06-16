@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gimp-tiny-fu\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/issues\n"
-"POT-Creation-Date: 2022-06-11 19:12+0000\n"
-"PO-Revision-Date: 2022-06-12 12:10+0200\n"
+"POT-Creation-Date: 2022-06-12 12:41+0000\n"
+"PO-Revision-Date: 2022-06-12 16:04+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -48,6 +48,10 @@ msgstr "Kunde inte öppna ”%s” för skrivning: %s"
 #: ../tiny-fu/tiny-fu-console.c:369
 msgid "Tiny-Fu Procedure Browser"
 msgstr "Tiny-Fu-procedurbläddrare"
+
+#: ../tiny-fu/tiny-fu-eval.c:60
+msgid "Tiny-Fu evaluation mode only allows non-interactive invocation"
+msgstr "Tiny-Fu-evalueringsläget tillåter endast icke-interaktiv användning"
 
 #: ../tiny-fu/tiny-fu-interface.c:194
 msgid "Tiny-Fu cannot process two scripts at the same time."
@@ -1977,9 +1981,61 @@ msgstr "Sepia"
 msgid "Mottle"
 msgstr "Fläck"
 
+#: ../scripts/palette-export.scm:235
+msgid "Folder for the output file"
+msgstr "Mapp för utdatafilen"
+
+#: ../scripts/palette-export.scm:236
+msgid ""
+"The name of the file to create (if a file with this name already exist, it "
+"will be replaced)"
+msgstr ""
+"Namnet på filen att skapa (om en fil med detta namn redan finns så kommer "
+"den att ersättas)"
+
+#: ../scripts/palette-export.scm:244
+msgid "The filename you entered is not a suitable name for a file."
+msgstr "Filnamnet som du angav är inte ett lämpligt namn för en fil."
+
+#: ../scripts/palette-export.scm:246
+msgid ""
+"All characters in the name are either white-spaces or characters which can "
+"not appear in filenames."
+msgstr ""
+"Alla tecken i namnet är antingen blanksteg eller tecken som inte får "
+"förekomma i filnamn."
+
+#: ../scripts/palette-export.scm:274
+msgid ""
+"Export the active palette as a CSS stylesheet with the color entry name as "
+"their class name, and the color itself as the color attribute"
+msgstr ""
+"Exportera den aktiva paletten som en CSS-stilmall med färgnamnen som deras "
+"klassnamn samt själva färgen som färgattributet"
+
+#: ../scripts/palette-export.scm:300
+msgid "Export the active palette as a PHP dictionary (name => color)"
+msgstr "Exportera den aktiva paletten som ett PHP-dictionary (namn => färg)"
+
+#: ../scripts/palette-export.scm:332
+msgid "Export the active palette as a Python dictionary (name: color)"
+msgstr "Exportera den aktiva paletten som ett Python-dictionary (namn: färg)"
+
+#: ../scripts/palette-export.scm:361
+msgid ""
+"Write all the colors in a palette to a text file, one hexadecimal value per "
+"line (no names)"
+msgstr ""
+"Skriv alla färgerna i en palett till en textfil, ett hexadecimalt värde per "
+"rad (inga namn)"
+
+#: ../scripts/palette-export.scm:408
+msgid "Export the active palette as a java.util.Hashtable<String, Color>"
+msgstr "Exportera den aktiva paletten som en java.util.Hashtable<Sträng, Färg>"
+
 #: ../scripts/paste-as-brush.scm:56 ../scripts/paste-as-pattern.scm:44
 msgid "There is no image data in the clipboard to paste."
-msgstr "Det finns inget bilddata i urklipp att klistra in."
+msgstr "Det finns inga bilddata i urklipp att klistra in."
 
 #: ../scripts/paste-as-brush.scm:62
 msgid "New _Brush..."
@@ -2758,10 +2814,6 @@ msgstr "X-avstånd för skuggkastning"
 #: ../scripts/xach-effect.scm:137
 msgid "Drop shadow Y offset"
 msgstr "Y-avstånd för skuggkastning"
-
-#~ msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-#~ msgstr ""
-#~ "Script-Fu-evalueringsläget tillåter endast icke-interaktiv användning"
 
 #~ msgid "_Script-Fu"
 #~ msgstr "_Script-Fu"
