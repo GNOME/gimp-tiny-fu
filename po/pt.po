@@ -13,16 +13,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.6\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/issues\n"
-"POT-Creation-Date: 2021-03-23 15:15+0000\n"
-"PO-Revision-Date: 2021-10-06 22:03+0100\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"POT-Creation-Date: 2021-10-06 21:04+0000\n"
+"PO-Revision-Date: 2022-06-21 19:19+0100\n"
+"Last-Translator: Sara Campos <lalocas@protonmail.com>\n"
 "Language-Team: Português <https://l10n.gnome.org/teams/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
 msgid "Script-Fu Console"
@@ -30,7 +30,7 @@ msgstr "Consola Script-Fu"
 
 #: ../tiny-fu/tiny-fu-console.c:196
 msgid "Welcome to TinyScheme"
-msgstr "Bem vindo(a) ao TinyScheme"
+msgstr "Bem-vindo(a) ao TinyScheme"
 
 #: ../tiny-fu/tiny-fu-console.c:202
 msgid "Interactive Scheme Development"
@@ -398,9 +398,10 @@ msgstr "Tipo de letra"
 msgid "3_D Truchet..."
 msgstr "3_D Truchet…"
 
+# "Truchet" é em maiúscula do nome Sébastien Truchet
 #: ../scripts/3dTruchet.scm:223
 msgid "Create an image filled with a 3D Truchet pattern"
-msgstr "Criar uma imagem com uma textura 3D Truchet"
+msgstr "Criar uma imagem preenchida com uma textura Truchet 3D"
 
 #: ../scripts/3dTruchet.scm:228 ../scripts/truchet.scm:163
 msgid "Block size"
@@ -552,11 +553,13 @@ msgstr "Achatar imagem"
 
 #: ../scripts/alien-glow-bar.scm:86 ../scripts/beveled-pattern-hrule.scm:77
 msgid "_Hrule..."
-msgstr "_Hrule..."
+msgstr "_Régua horizontal..."
 
 #: ../scripts/alien-glow-bar.scm:87
 msgid "Create an Hrule graphic with an eerie glow for web pages"
-msgstr "Criar uma imagem Hrule com uma resplandecência para páginas web"
+msgstr ""
+"Criar uma imagem de régua horizontal (horizontal rule ou \"hr\" em HTML) com "
+"uma resplandecência para páginas web"
 
 #: ../scripts/alien-glow-bar.scm:92
 msgid "Bar length"
@@ -732,7 +735,7 @@ msgstr "Criar um botão com textura biselada para páginas web"
 
 #: ../scripts/beveled-pattern-heading.scm:107
 msgid "H_eading..."
-msgstr "_Título..."
+msgstr "Cab_eçalho..."
 
 #: ../scripts/beveled-pattern-heading.scm:108
 msgid "Create a beveled pattern heading for webpages"
@@ -740,7 +743,9 @@ msgstr "Criar um título com textura biselada para páginas web"
 
 #: ../scripts/beveled-pattern-hrule.scm:78
 msgid "Create a beveled pattern hrule for webpages"
-msgstr "Criar uma hrule com textura biselada para páginas web"
+msgstr ""
+"Criar uma régua horizontal (horizontal rule ou \"hr\" em HTML) com textura "
+"biselada para páginas web"
 
 #: ../scripts/beveled-pattern-hrule.scm:83 ../scripts/gradient-example.scm:70
 #: ../scripts/mkbrush.scm:70 ../scripts/mkbrush.scm:134
@@ -895,7 +900,7 @@ msgstr "Largura a desvanecer"
 
 #: ../scripts/burn-in-anim.scm:229
 msgid "Corona width"
-msgstr "Largura de Corona"
+msgstr "Largura da coroa"
 
 #: ../scripts/burn-in-anim.scm:230
 msgid "After glow"
@@ -919,7 +924,7 @@ msgstr "_Camuflagem..."
 
 #: ../scripts/camo.scm:96
 msgid "Create an image filled with a camouflage pattern"
-msgstr "Criar uma imagem cheia com uma textura de camuflagem"
+msgstr "Criar uma imagem preenchida com uma textura de camuflagem"
 
 #: ../scripts/camo.scm:101 ../scripts/rendermap.scm:87
 msgid "Image size"
@@ -971,7 +976,7 @@ msgstr "Espaço à volta do texto"
 
 #: ../scripts/carve-it.scm:181
 msgid "Stencil C_arve..."
-msgstr "_Esculpir por stencil..."
+msgstr "_Esculpir por estêncil..."
 
 #: ../scripts/carve-it.scm:189
 msgid "Image to carve"
@@ -1024,7 +1029,7 @@ msgstr "Sombra projetada"
 
 #: ../scripts/chip-away.scm:154 ../scripts/chip-away.scm:201
 msgid "Fill BG with pattern"
-msgstr "Encher FD com textura"
+msgstr "Preencher fundo com textura"
 
 #: ../scripts/chip-away.scm:155 ../scripts/chip-away.scm:202
 msgid "Keep background"
@@ -1036,15 +1041,15 @@ msgstr "Criar um logótipo parecido com madeira lascada"
 
 #: ../scripts/chrome-it.scm:205
 msgid "Stencil C_hrome..."
-msgstr "_Cromado a stencil..."
+msgstr "_Cromado a estêncil..."
 
 #: ../scripts/chrome-it.scm:206
 msgid ""
 "Add a chrome effect to the selected region (or alpha) using a specified "
 "(grayscale) stencil"
 msgstr ""
-"Adicionar um efeito cromado à região selecionada (ou alfa) usando um stencil "
-"especificado (tons de cinzento)"
+"Adicionar um efeito cromado à região selecionada (ou alfa) usando um "
+"estêncil especificado (tons de cinzento)"
 
 #: ../scripts/chrome-it.scm:213 ../scripts/sota-chrome-logo.scm:209
 msgid "Chrome saturation"
@@ -1086,7 +1091,7 @@ msgstr "Adicionar um efeito simples de cromado à região selecionada (ou alfa)"
 
 #: ../scripts/chrome-logo.scm:93
 msgid "Offsets (pixels * 2)"
-msgstr "Desvios (pixels * 2)"
+msgstr "Desvios (pixéis * 2)"
 
 #: ../scripts/chrome-logo.scm:119
 msgid "Create a simplistic, but cool, chromed logo"
@@ -1100,8 +1105,8 @@ msgstr "_Circuito..."
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
 msgstr ""
-"Encher a região selecionada (ou alfa) com traços como se fosse um circuito "
-"impresso"
+"Preencher a região selecionada (ou alfa) com traços como se fosse um "
+"circuito impresso"
 
 #: ../scripts/circuit.scm:150
 msgid "Oilify mask size"
@@ -1179,7 +1184,7 @@ msgid ""
 "filling with a gradient"
 msgstr ""
 "Adicionar um efeito de banda desenhada à região selecionada (ou alfa) "
-"realçando e enchendo com um gradiente"
+"realçando e preenchendo com um gradiente"
 
 #: ../scripts/comic-logo.scm:125 ../scripts/comic-logo.scm:166
 #: ../scripts/glossy.scm:209 ../scripts/glossy.scm:281
@@ -1193,7 +1198,8 @@ msgstr "Cor do realce"
 #: ../scripts/comic-logo.scm:156
 msgid "Create a comic-book style logo by outlining and filling with a gradient"
 msgstr ""
-"Criar um logótipo tipo banda desenhada, realçando e enchendo com um gradiente"
+"Criar um logótipo tipo banda desenhada, realçando e preenchendo com um "
+"gradiente"
 
 #: ../scripts/contactsheet.scm:120
 msgid "Contact Sheet "
@@ -1221,7 +1227,7 @@ msgstr " imagens"
 
 #: ../scripts/contactsheet.scm:319
 msgid "_Contact Sheet..."
-msgstr "Folha de _Contacto..."
+msgstr "Folha de _contacto..."
 
 #: ../scripts/contactsheet.scm:320
 msgid ""
@@ -1261,7 +1267,7 @@ msgstr ""
 
 #: ../scripts/coolmetal-logo.scm:139 ../scripts/frosty-logo.scm:116
 msgid "Effect size (pixels)"
-msgstr "Tamanho do efeito (pixels)"
+msgstr "Tamanho do efeito (píxeis)"
 
 #: ../scripts/coolmetal-logo.scm:170
 msgid "Create a metallic logo with reflections and perspective shadows"
@@ -1294,7 +1300,7 @@ msgstr "_Distorcer..."
 
 #: ../scripts/distress-selection.scm:100
 msgid "Distress the selection"
-msgstr "Perigar a seleção"
+msgstr "Distorcer as margens da seleção"
 
 #: ../scripts/distress-selection.scm:107
 msgid "Threshold (bigger 1<-->255 smaller)"
@@ -1310,11 +1316,11 @@ msgstr "Granularidade (1 é baixa)"
 
 #: ../scripts/distress-selection.scm:111
 msgid "Smooth horizontally"
-msgstr "Alisar horizontalmente"
+msgstr "Suavizar horizontalmente"
 
 #: ../scripts/distress-selection.scm:112
 msgid "Smooth vertically"
-msgstr "Alisar verticalmente"
+msgstr "Suavizar verticalmente"
 
 #: ../scripts/drop-shadow.scm:168
 msgid "_Drop Shadow..."
@@ -1373,7 +1379,7 @@ msgstr "Colunas"
 
 #: ../scripts/erase-rows.scm:44
 msgid "Even/odd"
-msgstr "Pares/Ímpares"
+msgstr "Pares/ímpares"
 
 #: ../scripts/erase-rows.scm:44
 msgid "Even"
@@ -1385,7 +1391,7 @@ msgstr "Ímpares"
 
 #: ../scripts/erase-rows.scm:45
 msgid "Erase/fill"
-msgstr "Apagar/Encher"
+msgstr "Apagar/preencher"
 
 #: ../scripts/erase-rows.scm:45
 msgid "Erase"
@@ -1393,7 +1399,7 @@ msgstr "Apagar"
 
 #: ../scripts/erase-rows.scm:45
 msgid "Fill with BG"
-msgstr "Encher com FD"
+msgstr "Preencher com cor de fundo"
 
 #: ../scripts/flatland.scm:61
 msgid "_Flatland..."
@@ -1401,7 +1407,7 @@ msgstr "_Planície..."
 
 #: ../scripts/flatland.scm:62
 msgid "Create an image filled with a Land Pattern"
-msgstr "Criar uma imagem cheia com uma textura de terra"
+msgstr "Criar uma imagem preenchida com uma textura de terra"
 
 #: ../scripts/flatland.scm:67 ../scripts/land.scm:78
 msgid "Image width"
@@ -1429,14 +1435,14 @@ msgstr "Escala Y"
 
 #: ../scripts/font-map.scm:152
 msgid "Render _Font Map..."
-msgstr "_Desenhar mapa da letra..."
+msgstr "_Renderizar mapa de tipos de letra..."
 
 #: ../scripts/font-map.scm:153
 msgid ""
 "Create an image filled with previews of fonts matching a fontname filter"
 msgstr ""
-"Criar uma imagem cheia com antevisões de letras correspondendo a um filtro "
-"de nomes de letras"
+"Cria uma imagem com todos os tipos de letra instalados. Os tipos de letra "
+"podem ser escolhidos segundo um filtro"
 
 #: ../scripts/font-map.scm:158
 msgid "_Text"
@@ -1444,7 +1450,7 @@ msgstr "_Texto"
 
 #: ../scripts/font-map.scm:159
 msgid "Use font _name as text"
-msgstr "Uasr _Nome da letra como texto"
+msgstr "Usar _nome do tipo de letra como texto"
 
 #: ../scripts/font-map.scm:160
 msgid "_Labels"
@@ -1452,19 +1458,19 @@ msgstr "_Rótulos"
 
 #: ../scripts/font-map.scm:161
 msgid "_Filter (regexp)"
-msgstr "_Filtro (expreg)"
+msgstr "_Filtro (exp.reg.)"
 
 #: ../scripts/font-map.scm:162
 msgid "Font _size (pixels)"
-msgstr "_Tamanho da letra (pixels)"
+msgstr "_Tamanho da letra (píxeis)"
 
 #: ../scripts/font-map.scm:163
 msgid "_Border (pixels)"
-msgstr "_Controno (pixels)"
+msgstr "_Contorno (píxeis)"
 
 #: ../scripts/font-map.scm:164
 msgid "_Color scheme"
-msgstr "Esquema de _Cor"
+msgstr "Esquema de _cor"
 
 #: ../scripts/font-map.scm:164
 msgid "Black on white"
@@ -1564,7 +1570,7 @@ msgstr "Número de cores"
 
 #: ../scripts/gimp-headers.scm:172
 msgid "_Small Header..."
-msgstr "Cabeçalho _Pequeno..."
+msgstr "Cabeçalho _pequeno..."
 
 #: ../scripts/gimp-headers.scm:173
 msgid "Create an image of a small header using the gimp.org webpage theme"
@@ -1577,7 +1583,7 @@ msgstr "Limite de seleção por cor"
 
 #: ../scripts/gimp-labels.scm:121
 msgid "_Tube Button Label..."
-msgstr "Rótulo de botão _Tubo..."
+msgstr "Rótulo de botão _tubo..."
 
 #: ../scripts/gimp-labels.scm:122
 msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
@@ -1587,7 +1593,7 @@ msgstr ""
 
 #: ../scripts/gimp-labels.scm:137
 msgid "T_ube Sub-Button Label..."
-msgstr "Rótulo de _Sub-botão tubo..."
+msgstr "Rótulo de _sub-botão tubo..."
 
 #: ../scripts/gimp-labels.scm:138
 msgid ""
@@ -1611,7 +1617,7 @@ msgstr ""
 
 #: ../scripts/gimp-labels.scm:169
 msgid "_General Tube Labels..."
-msgstr "Rótulos _Gerais de tubos..."
+msgstr "Rótulos _gerais de tubos..."
 
 #: ../scripts/gimp-labels.scm:170
 msgid ""
@@ -1683,7 +1689,7 @@ msgstr "Criar um logótipo com gradientes, texturas, sombras e mapas de relevo"
 
 #: ../scripts/glowing-logo.scm:76 ../scripts/glowing-logo.scm:109
 msgid "Glo_wing Hot..."
-msgstr "_Ao rubro..."
+msgstr "_Brilhante quente..."
 
 #: ../scripts/glowing-logo.scm:77
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
@@ -1691,7 +1697,7 @@ msgstr "Adicionar um efeito de metal ao rubro à região selecionada (ou alfa)"
 
 #: ../scripts/glowing-logo.scm:84
 msgid "Effect size (pixels * 3)"
-msgstr "Tamanho do efeito (pixels*3)"
+msgstr "Tamanho do efeito (píxeis * 3)"
 
 #: ../scripts/glowing-logo.scm:110
 msgid "Create a logo that looks like glowing hot metal"
@@ -1709,7 +1715,7 @@ msgstr ""
 #: ../scripts/gradient-bevel-logo.scm:103 ../scripts/textured-logo.scm:127
 #: ../scripts/t-o-p-logo.scm:109
 msgid "Border size (pixels)"
-msgstr "Tamanho do contorno (pixels)"
+msgstr "Tamanho do contorno (píxeis)"
 
 #: ../scripts/gradient-bevel-logo.scm:104
 #: ../scripts/gradient-bevel-logo.scm:143
@@ -1726,7 +1732,7 @@ msgstr "_Gradiente personalizado..."
 
 #: ../scripts/gradient-example.scm:65
 msgid "Create an image filled with an example of the current gradient"
-msgstr "Criar uma imagem cheia com um exemplo do gradiente atual"
+msgstr "Criar uma imagem preenchida com um exemplo do gradiente atual"
 
 #: ../scripts/grid-system.scm:84
 msgid "_Grid..."
@@ -1750,11 +1756,11 @@ msgstr "Divisões Y"
 
 #: ../scripts/guides-from-selection.scm:32
 msgid "New Guides from _Selection"
-msgstr "Novas guias a partir da _Seleção"
+msgstr "Novas guias a partir da _seleção"
 
 #: ../scripts/guides-new-percent.scm:27
 msgid "New Guide (by _Percent)..."
-msgstr "Nova guia (por _Percentagem)"
+msgstr "Nova guia (por _percentagem)..."
 
 #: ../scripts/guides-new-percent.scm:28
 msgid "Add a guide at the position specified as a percentage of the image size"
@@ -1780,11 +1786,11 @@ msgstr "Posição (em %)"
 
 #: ../scripts/guides-new.scm:27
 msgid "New _Guide..."
-msgstr "Nova _Guia..."
+msgstr "Nova _guia (por _píxeis)..."
 
 #: ../scripts/guides-new.scm:28
 msgid "Add a guide at the orientation and position specified (in pixels)"
-msgstr "Adicionar uma guia na orientação e posição especificada (em pixels)"
+msgstr "Adicionar uma guia na orientação e posição especificada (em píxeis)"
 
 #: ../scripts/guides-new.scm:36
 msgid "Position"
@@ -1820,7 +1826,7 @@ msgstr "_Terra..."
 
 #: ../scripts/land.scm:73
 msgid "Create an image filled with a topographic map pattern"
-msgstr "Criar uma imagem cheia com uma textura tipo mapa topográfico"
+msgstr "Criar uma imagem preenchida com uma textura tipo mapa topográfico"
 
 #: ../scripts/land.scm:82
 msgid "Land height"
@@ -1836,7 +1842,7 @@ msgstr "_Lava..."
 
 #: ../scripts/lava.scm:118
 msgid "Fill the current selection with lava"
-msgstr "Encher a seleção atual com lava"
+msgstr "Preencher a seleção atual com lava"
 
 #: ../scripts/lava.scm:125
 msgid "Seed"
@@ -1852,12 +1858,14 @@ msgstr "Usar o gradiente atual"
 
 #: ../scripts/line-nova.scm:102
 msgid "Line _Nova..."
-msgstr "Linha _Nova..."
+msgstr "Linha _nova..."
 
 #: ../scripts/line-nova.scm:103
 msgid ""
 "Fill a layer with rays emanating outward from its center using the FG color"
-msgstr "Encher uma camada com raios emanando do seu centro usando a cor de 1ºP"
+msgstr ""
+"Preencher uma camada com raios emanando do seu centro usando a cor de "
+"primeiro plano"
 
 #: ../scripts/line-nova.scm:110
 msgid "Number of lines"
@@ -1865,7 +1873,7 @@ msgstr "Número de linhas"
 
 #: ../scripts/line-nova.scm:111
 msgid "Sharpness (degrees)"
-msgstr "Agudeza (graus)"
+msgstr "Nitidez (graus)"
 
 #: ../scripts/line-nova.scm:112
 msgid "Offset radius"
@@ -1896,15 +1904,15 @@ msgstr "Espaçamento"
 
 #: ../scripts/mkbrush.scm:127
 msgid "Re_ctangular, Feathered..."
-msgstr "Retangular, _Esbatido..."
+msgstr "Retangular, _suavizado..."
 
 #: ../scripts/mkbrush.scm:128
 msgid "Create a rectangular brush with feathered edges"
-msgstr "Criar um pincel retangular com margens esbatidas"
+msgstr "Criar um pincel retangular com margens suavizadas"
 
 #: ../scripts/mkbrush.scm:136 ../scripts/mkbrush.scm:257
 msgid "Feathering"
-msgstr "Esbater"
+msgstr "Margens suavizadas"
 
 #: ../scripts/mkbrush.scm:181
 msgid "_Elliptical..."
@@ -1916,15 +1924,15 @@ msgstr "Criar um pincel elíptico"
 
 #: ../scripts/mkbrush.scm:248
 msgid "Elli_ptical, Feathered..."
-msgstr "_Elíptico, esbatido..."
+msgstr "_Elíptico, suavizado..."
 
 #: ../scripts/mkbrush.scm:249
 msgid "Create an elliptical brush with feathered edges"
-msgstr "Criar um pincel elíptico com margens esbatidas"
+msgstr "Criar um pincel elíptico com margens suavizadas"
 
 #: ../scripts/neon-logo.scm:245 ../scripts/neon-logo.scm:281
 msgid "N_eon..."
-msgstr "Né_On..."
+msgstr "Né_on..."
 
 #: ../scripts/neon-logo.scm:246
 msgid "Convert the selected region (or alpha) into a neon-sign like object"
@@ -1932,7 +1940,7 @@ msgstr "Converter a região selecionada (ou alfa) num objeto tipo sinal de néon
 
 #: ../scripts/neon-logo.scm:253
 msgid "Effect size (pixels * 5)"
-msgstr "Tamanho do efeito (pixels*5)"
+msgstr "Tamanho do efeito (píxeis * 5)"
 
 #: ../scripts/neon-logo.scm:256 ../scripts/neon-logo.scm:292
 msgid "Create shadow"
@@ -1944,7 +1952,7 @@ msgstr "Criar um logótipo ao estilo de sinal de néon"
 
 #: ../scripts/news-text.scm:77
 msgid "Newsprint Te_xt..."
-msgstr "Te_Xto de jornal..."
+msgstr "Te_xto de jornal..."
 
 #: ../scripts/news-text.scm:78
 msgid "Create a logo in the style of newspaper printing"
@@ -1952,7 +1960,7 @@ msgstr "Criar um logótipo ao estilo de impressão de jornal"
 
 #: ../scripts/news-text.scm:86
 msgid "Cell size (pixels)"
-msgstr "Tamanho da célula (pixels)"
+msgstr "Tamanho da célula (píxeis)"
 
 #: ../scripts/news-text.scm:87 ../scripts/speed-text.scm:95
 msgid "Density (%)"
@@ -1987,7 +1995,7 @@ msgstr "Não há dados de imagem na área de transferência para colar."
 
 #: ../scripts/paste-as-brush.scm:63
 msgid "New _Brush..."
-msgstr "Novo _Pincel..."
+msgstr "Novo _pincel..."
 
 #: ../scripts/paste-as-brush.scm:64
 msgid "Paste the clipboard contents into a new brush"
@@ -2004,7 +2012,7 @@ msgstr "Nome do ficheiro"
 
 #: ../scripts/paste-as-pattern.scm:51
 msgid "New _Pattern..."
-msgstr "Nova _Textura..."
+msgstr "Nova _textura..."
 
 #: ../scripts/paste-as-pattern.scm:52
 msgid "Paste the clipboard contents into a new pattern"
@@ -2044,7 +2052,7 @@ msgstr "_Predador..."
 
 #: ../scripts/predator.scm:120
 msgid "Add a 'Predator' effect to the selected region (or alpha)"
-msgstr "Adicionar um efeito 'Predador' à região selecionada (ou alfa)"
+msgstr "Adicionar um efeito \"predador\" à região selecionada (ou alfa)"
 
 #: ../scripts/predator.scm:127
 msgid "Edge amount"
@@ -2056,11 +2064,11 @@ msgstr "Pixelizar"
 
 #: ../scripts/predator.scm:129
 msgid "Pixel amount"
-msgstr "Quantidade de pixels"
+msgstr "Quantidade de píxeis"
 
 #: ../scripts/pupi-button.scm:187
 msgid "_Round Button..."
-msgstr "Botão _Redondo..."
+msgstr "Botão _redondo..."
 
 #: ../scripts/pupi-button.scm:188
 msgid "Create images, each containing an oval button graphic"
@@ -2108,11 +2116,11 @@ msgstr "Não premido (ativo)"
 
 #: ../scripts/rendermap.scm:81
 msgid "Render _Map..."
-msgstr "Desenhar _Mapa..."
+msgstr "Desenhar _mapa..."
 
 #: ../scripts/rendermap.scm:82
 msgid "Create an image filled with an Earth-like map pattern"
-msgstr "Criar uma imagem cheia com uma textura tipo planeta Terra"
+msgstr "Criar uma imagem preenchida com uma textura tipo planeta Terra"
 
 #: ../scripts/rendermap.scm:91
 msgid "Behavior"
@@ -2150,7 +2158,7 @@ msgstr "Força da ondulação"
 
 #: ../scripts/ripply-anim.scm:128 ../scripts/waves-anim.scm:106
 msgid "Number of frames"
-msgstr "Número de molduras"
+msgstr "Número de fotogramas"
 
 #: ../scripts/ripply-anim.scm:129
 msgid "Edge behavior"
@@ -2170,13 +2178,13 @@ msgstr "Preto"
 
 #: ../scripts/round-corners.scm:126
 msgid "_Round Corners..."
-msgstr "Cantos _Redondos..."
+msgstr "Cantos _redondos..."
 
 #: ../scripts/round-corners.scm:127
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
 msgstr ""
-"Arredondar os cantos de uma imagem e, opcionalmente, adicionar uma sombra "
+"Arredondar os cantos de uma imagem e adicionar opcionalmente uma sombra "
 "projetada e fundo"
 
 #: ../scripts/round-corners.scm:134
@@ -2222,7 +2230,7 @@ msgstr "Côncavo"
 
 #: ../scripts/select-to-brush.scm:133
 msgid "To _Brush..."
-msgstr "Para _Pincel..."
+msgstr "Para _pincel..."
 
 #: ../scripts/select-to-brush.scm:134
 msgid "Convert a selection to a brush"
@@ -2238,7 +2246,7 @@ msgstr "Converter uma seleção numa imagem"
 
 #: ../scripts/select-to-pattern.scm:94
 msgid "To _Pattern..."
-msgstr "_TexturasPara _Textura..."
+msgstr "Para _textura..."
 
 #: ../scripts/select-to-pattern.scm:95
 msgid "Convert a selection to a pattern"
@@ -2258,7 +2266,7 @@ msgstr "Número"
 
 #: ../scripts/slide.scm:251
 msgid "Font color"
-msgstr "Cor da letra"
+msgstr "Cor do tipo de letra"
 
 #: ../scripts/sota-chrome-logo.scm:203
 msgid "SOTA Chrome..."
@@ -2286,7 +2294,7 @@ msgstr "Criar uma esfera simples com uma sombra projetada"
 
 #: ../scripts/sphere.scm:78
 msgid "Radius (pixels)"
-msgstr "Raio (pixels)"
+msgstr "Raio (píxeis)"
 
 #: ../scripts/sphere.scm:79
 msgid "Lighting (degrees)"
@@ -2318,7 +2326,7 @@ msgstr "Indexar em n cores (0= fica RGB)"
 
 #: ../scripts/spyrogimp.scm:243
 msgid "Rendering Spyro"
-msgstr "Desenho Spyro"
+msgstr "Desenho a espirógrafo"
 
 #: ../scripts/spyrogimp.scm:317
 msgid "_Spyrogimp..."
@@ -2327,7 +2335,7 @@ msgstr "_Espirógrafo..."
 #: ../scripts/spyrogimp.scm:318
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
-msgstr "Adicionar espirógrafos, epitrocoides e curvas Lissajous à camada atual"
+msgstr "Adicionar espirógrafos, epitrocóides e curvas Lissajous à camada atual"
 
 #: ../scripts/spyrogimp.scm:326
 msgid "Type"
@@ -2339,7 +2347,7 @@ msgstr "Espirógrafo"
 
 #: ../scripts/spyrogimp.scm:327
 msgid "Epitrochoid"
-msgstr "Epitrocoide"
+msgstr "Epitrocóide"
 
 #: ../scripts/spyrogimp.scm:328
 msgid "Lissajous"
@@ -2399,7 +2407,7 @@ msgstr "Dentes internos"
 
 #: ../scripts/spyrogimp.scm:341
 msgid "Margin (pixels)"
-msgstr "Margem (pixels)"
+msgstr "Margem (píxeis)"
 
 #: ../scripts/spyrogimp.scm:342
 msgid "Hole ratio"
@@ -2450,12 +2458,12 @@ msgid ""
 "Fill the selected region (or alpha) with a starburst gradient and add a "
 "shadow"
 msgstr ""
-"Encher a região selecionada (ou alfa) com um gradiente de explosão estelar e "
-"adicionar uma sombra"
+"Preencher a região selecionada (ou alfa) com um gradiente de explosão "
+"estelar e adicionar uma sombra"
 
 #: ../scripts/starburst-logo.scm:81
 msgid "Effect size (pixels * 30)"
-msgstr "Tamanho do efeito (pixels * 30)"
+msgstr "Tamanho do efeito (píxeis * 30)"
 
 #: ../scripts/starburst-logo.scm:82 ../scripts/starburst-logo.scm:115
 msgid "Burst color"
@@ -2474,12 +2482,12 @@ msgid ""
 "Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
 "and shadow"
 msgstr ""
-"Encher a região selecionada (ou alfa) com uma textura tipo rocha, um brilho "
-"de estrela e uma sombra"
+"Preencher a região selecionada (ou alfa) com uma textura tipo rocha, um "
+"brilho de estrela e uma sombra"
 
 #: ../scripts/starscape-logo.scm:143
 msgid "Effect size (pixels * 4)"
-msgstr "Tamanho do efeito (pixels * 4)"
+msgstr "Tamanho do efeito (píxeis * 4)"
 
 #: ../scripts/starscape-logo.scm:167
 msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
@@ -2493,7 +2501,7 @@ msgstr "_Remoinho..."
 
 #: ../scripts/swirltile.scm:52
 msgid "Create an image filled with a swirled tile effect"
-msgstr "Criar uma imagem cheia com um efeito tipo remoinho"
+msgstr "Criar uma imagem preenchida com um efeito tipo remoinho"
 
 #: ../scripts/swirltile.scm:63
 msgid "Whirl amount"
@@ -2505,7 +2513,7 @@ msgstr "_Girado..."
 
 #: ../scripts/swirly-pattern.scm:83
 msgid "Create an image filled with a swirly pattern"
-msgstr "Criar uma imagem cheia com uma textura girada"
+msgstr "Criar uma imagem preenchida com uma textura girada"
 
 #: ../scripts/swirly-pattern.scm:88
 msgid "Quarter size"
@@ -2536,18 +2544,18 @@ msgstr "Ângulo de enchimento"
 
 #: ../scripts/text-circle.scm:215
 msgid "Antialias"
-msgstr "Suavização"
+msgstr "Antisserrilhado"
 
 #: ../scripts/textured-logo.scm:119 ../scripts/textured-logo.scm:161
 msgid "_Textured..."
-msgstr "_Texturada..."
+msgstr "_Texturado..."
 
 #: ../scripts/textured-logo.scm:120
 msgid ""
 "Fill the selected region (or alpha) with a texture and add highlights, "
 "shadows, and a mosaic background"
 msgstr ""
-"Encher a região selecionada (ou alfa) com uma textura e adicionar altas "
+"Preencher a região selecionada (ou alfa) com uma textura e adicionar altas "
 "luzes, sombras e um fundo em mosaico"
 
 #: ../scripts/textured-logo.scm:129 ../scripts/textured-logo.scm:171
@@ -2626,7 +2634,7 @@ msgstr "_Rasto de partículas..."
 
 #: ../scripts/t-o-p-logo.scm:102
 msgid "Add a Trace of Particles effect to the selected region (or alpha)"
-msgstr "Adicionar um efeito Rasto de partículas à região selecionada (ou alfa)"
+msgstr "Adicionar um efeito rasto de partículas à região selecionada (ou alfa)"
 
 #: ../scripts/t-o-p-logo.scm:110 ../scripts/t-o-p-logo.scm:150
 msgid "Hit rate"
@@ -2646,15 +2654,15 @@ msgstr "Cor base"
 
 #: ../scripts/t-o-p-logo.scm:142
 msgid "Create a logo using a Trace Of Particles effect"
-msgstr "Criar um logótipo usando um efeito Rasto de partículas"
+msgstr "Criar um logótipo usando um efeito rasto de partículas"
 
 #: ../scripts/truchet.scm:157
 msgid "T_ruchet..."
-msgstr "T_Ruchet..."
+msgstr "T_ruchet..."
 
 #: ../scripts/truchet.scm:158
 msgid "Create an image filled with a Truchet pattern"
-msgstr "Criar uma imagem cheia com uma textura Truchet"
+msgstr "Criar uma imagem preenchida com uma textura Truchet"
 
 #: ../scripts/truchet.scm:166
 msgid "Foreground color"
@@ -2700,7 +2708,7 @@ msgid ""
 "Create a new layer filled with a weave effect to be used as an overlay or "
 "bump map"
 msgstr ""
-"Criar uma nova camada cheia com um efeito tecido para ser usada como "
+"Criar uma nova camada preenchida com um efeito tecido para ser usada como "
 "sobreposição ou mapa de relevo"
 
 #: ../scripts/weave.scm:401
@@ -2733,7 +2741,7 @@ msgstr "Intensidade da linha"
 
 #: ../scripts/web-browser.scm:60
 msgid "Using _Paths"
-msgstr "A usar _Caminhos"
+msgstr "Usando _caminhos"
 
 #: ../scripts/web-browser.scm:61 ../scripts/web-browser.scm:74
 #: ../scripts/web-browser.scm:87 ../scripts/web-browser.scm:100
@@ -2752,7 +2760,7 @@ msgstr "_Trabalhar com fotografias de câmara digital"
 
 #: ../scripts/web-browser.scm:99
 msgid "Create, Open and Save _Files"
-msgstr "Criar, abrir e gravar _Ficheiros"
+msgstr "Criar, abrir e gravar _ficheiros"
 
 #: ../scripts/web-browser.scm:112
 msgid "_Basic Concepts"
@@ -2760,15 +2768,15 @@ msgstr "_Conceitos básicos"
 
 #: ../scripts/web-browser.scm:125
 msgid "How to Use _Dialogs"
-msgstr "Como usar _Diálogos"
+msgstr "Como usar p_ainéis"
 
 #: ../scripts/web-browser.scm:138
 msgid "Drawing _Simple Objects"
-msgstr "Desenhar objetos _Simples"
+msgstr "Desenhar _objetos simples"
 
 #: ../scripts/web-browser.scm:151
 msgid "Create and Use _Selections"
-msgstr "Criar e usar _Seleções"
+msgstr "Criar e usar _seleções"
 
 #: ../scripts/web-browser.scm:179
 msgid "_Main Web Site"
@@ -2781,15 +2789,15 @@ msgstr "Marcador na página web do GIMP"
 
 #: ../scripts/web-browser.scm:192
 msgid "_Developer Web Site"
-msgstr "Página _Web do programador"
+msgstr "Página _web do programador"
 
 #: ../scripts/web-browser.scm:205
 msgid "_User Manual Web Site"
-msgstr "Página web do _Manual de utilizador"
+msgstr "Página web do _manual de utilizador"
 
 #: ../scripts/web-browser.scm:218
 msgid "Plug-in _Registry"
-msgstr "_Registo de extensões"
+msgstr "_Registo de complementos (plug-ins)"
 
 #: ../scripts/xach-effect.scm:121
 msgid "_Xach-Effect..."
