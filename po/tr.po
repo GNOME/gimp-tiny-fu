@@ -1,511 +1,483 @@
 # Turkish translation for GIMP
 #
 # Copyright (C) 2001 Free Software Foundation, Inc.
-# Copyright (C) 2002-2019 gimp's COPYRIGHT HOLDER
+# Copyright (C) 2002-2022 gimp's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gimp package.
 #
 # Ömer Fadıl USTA <omer_fad@hotmail.com>, 2002.
 # Fatih Demir <kabalak@gtranslator.org>, 2001.
 # Alper Ersoy <aersoy@tfz.net>, 2001.
-# Sabri Ünal <libreajans@gmail.com>, 2019.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2019.
 # Muhammet Kara <muhammetk@gmail.com>, 2014-2021.
+# Sabri Ünal <libreajans@gmail.com>, 2019, 2022.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2019, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: GIMP tiny-fu master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/issues\n"
-"POT-Creation-Date: 2020-05-30 16:05+0000\n"
-"PO-Revision-Date: 2021-03-10 23:35+0300\n"
-"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"POT-Creation-Date: 2022-07-16 20:01+0000\n"
+"PO-Revision-Date: 2022-08-16 21:17+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <gnometurk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2010-10-09 17:28+0000\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: ../tiny-fu/tiny-fu-console.c:133 ../tiny-fu/tiny-fu-console.c:200
-msgid "Script-Fu Console"
-msgstr "Script-Fu Uçbirimi"
+#: ../tiny-fu/tiny-fu-console.c:130 ../tiny-fu/tiny-fu-console.c:197
+msgid "Tiny-Fu Console"
+msgstr "Tiny-Fu Uçbirimi"
 
 # TinyScheme burada marka adı gibi özel ad
-#: ../tiny-fu/tiny-fu-console.c:196
+#: ../tiny-fu/tiny-fu-console.c:193
 msgid "Welcome to TinyScheme"
 msgstr "TinyScheme'ya Hoşgeldiniz"
 
 # Scheme burada Scheme programa diline atıf, yani özel ad
-#: ../tiny-fu/tiny-fu-console.c:202
+#: ../tiny-fu/tiny-fu-console.c:199
 msgid "Interactive Scheme Development"
 msgstr "Etkileşimli Scheme Geliştirici"
 
-#: ../tiny-fu/tiny-fu-console.c:238
+#: ../tiny-fu/tiny-fu-console.c:235
 msgid "_Browse..."
 msgstr "_Gözat..."
 
-#: ../tiny-fu/tiny-fu-console.c:296
-msgid "Save Script-Fu Console Output"
-msgstr "Script-Fu Uçbirimi Çıktısını Kaydet"
+#: ../tiny-fu/tiny-fu-console.c:293
+msgid "Save Tiny-Fu Console Output"
+msgstr "Tiny-Fu Uçbirimi Çıktısını Kaydet"
 
-#: ../tiny-fu/tiny-fu-console.c:343
+#: ../tiny-fu/tiny-fu-console.c:340
 #, c-format
 msgid "Could not open '%s' for writing: %s"
 msgstr "Yazma için '%s' açılamadı: %s"
 
-#: ../tiny-fu/tiny-fu-console.c:372
-msgid "Script-Fu Procedure Browser"
-msgstr "Script-Fu Yordamı Gezgini"
+#: ../tiny-fu/tiny-fu-console.c:369
+msgid "Tiny-Fu Procedure Browser"
+msgstr "Tiny-Fu Yordamı Gezgini"
 
-#: ../tiny-fu/tiny-fu-console.c:716
-msgid "Script-Fu evaluation mode only allows non-interactive invocation"
-msgstr "Script-Fu değerlendirme kipi yalnızca etkileşimsiz çağrıma izin verir"
+#: ../tiny-fu/tiny-fu-eval.c:60
+msgid "Tiny-Fu evaluation mode only allows non-interactive invocation"
+msgstr "Tiny-Fu değerlendirme kipi yalnızca etkileşimsiz çağrıma izin verir"
 
-#: ../tiny-fu/tiny-fu-interface.c:191
-msgid "Script-Fu cannot process two scripts at the same time."
-msgstr "Script-Fu iki betiği aynı anda çalıştıramaz."
+#: ../tiny-fu/tiny-fu-interface.c:194
+msgid "Tiny-Fu cannot process two scripts at the same time."
+msgstr "Tiny-Fu iki betiği aynı anda çalıştıramaz."
 
-#: ../tiny-fu/tiny-fu-interface.c:193
+#: ../tiny-fu/tiny-fu-interface.c:196
 #, c-format
 msgid "You are already running the \"%s\" script."
 msgstr "\"%s\" betiğini zaten çalıştırıyorsunuz."
 
-#: ../tiny-fu/tiny-fu-interface.c:238
+#: ../tiny-fu/tiny-fu-interface.c:222
 #, c-format
-msgid "Script-Fu: %s"
-msgstr "Script-Fu: %s"
+msgid "Tiny-Fu: %s"
+msgstr "Tiny-Fu: %s"
 
 #. we add a colon after the label;
-#. some languages want an extra space here
-#: ../tiny-fu/tiny-fu-interface.c:300
+#. *  some languages want an extra space here
+#.
+#: ../tiny-fu/tiny-fu-interface.c:286
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: ../tiny-fu/tiny-fu-interface.c:348
-msgid "Script-Fu Color Selection"
-msgstr "Script-Fu Renk Seçimi"
+#: ../tiny-fu/tiny-fu-interface.c:333
+msgid "Tiny-Fu Color Selection"
+msgstr "Tiny-Fu Renk Seçimi"
 
-#: ../tiny-fu/tiny-fu-interface.c:460
-msgid "Script-Fu File Selection"
-msgstr "Script-Fu Dosya Seçimi"
+#: ../tiny-fu/tiny-fu-interface.c:442
+msgid "Tiny-Fu File Selection"
+msgstr "Tiny-Fu Dosya Seçimi"
 
 # Folder: Komut satırında Dizin, Arayüzde Klasör
-#: ../tiny-fu/tiny-fu-interface.c:463
-msgid "Script-Fu Folder Selection"
-msgstr "Script-Fu Dizin Seçimi"
+#: ../tiny-fu/tiny-fu-interface.c:445
+msgid "Tiny-Fu Folder Selection"
+msgstr "Tiny-Fu Dizin Seçimi"
+
+#: ../tiny-fu/tiny-fu-interface.c:458
+msgid "Tiny-Fu Font Selection"
+msgstr "Tiny-Fu Yazı Tipi Seçimi"
+
+#: ../tiny-fu/tiny-fu-interface.c:466
+msgid "Tiny-Fu Palette Selection"
+msgstr "Tiny-Fu Palet Seçimi"
 
 #: ../tiny-fu/tiny-fu-interface.c:475
-msgid "Script-Fu Font Selection"
-msgstr "Script-Fu Yazı Tipi Seçimi"
+msgid "Tiny-Fu Pattern Selection"
+msgstr "Tiny-Fu Desen Seçimi"
 
-#: ../tiny-fu/tiny-fu-interface.c:483
-msgid "Script-Fu Palette Selection"
-msgstr "Script-Fu Palet Seçimi"
+#: ../tiny-fu/tiny-fu-interface.c:484
+msgid "Tiny-Fu Gradient Selection"
+msgstr "Tiny-Fu Renk Geçişi Seçimi"
 
-#: ../tiny-fu/tiny-fu-interface.c:492
-msgid "Script-Fu Pattern Selection"
-msgstr "Script-Fu Desen Seçimi"
+#: ../tiny-fu/tiny-fu-interface.c:493
+msgid "Tiny-Fu Brush Selection"
+msgstr "Tiny-Fu Fırça Seçimi"
 
-#: ../tiny-fu/tiny-fu-interface.c:501
-msgid "Script-Fu Gradient Selection"
-msgstr "Script-Fu Renk Geçişi Seçimi"
-
-#: ../tiny-fu/tiny-fu-interface.c:510
-msgid "Script-Fu Brush Selection"
-msgstr "Script-Fu Fırça Seçimi"
-
-#: ../tiny-fu/tiny-fu-scripts.c:658
+#: ../tiny-fu/tiny-fu-interface.c:824
 #, c-format
-msgid ""
-"Error while executing\n"
-"%s\n"
-"\n"
-"%s"
-msgstr ""
-"Yürütme hatası\n"
-"%s\n"
-"\n"
-"%s"
+msgid "Error while executing %s:"
+msgstr "%s yürütülürken hata:"
 
-#: ../tiny-fu/tiny-fu-server.c:712
-msgid "Script-Fu Server Options"
-msgstr "Script-Fu Sunucu Seçenekleri"
+#: ../tiny-fu/tiny-fu-scripts.c:146
+msgid "Too few arguments to 'script-fu-register' call"
+msgstr "'script-fu-register' çağrısında çok fazla bağımsız değişken"
 
-#: ../tiny-fu/tiny-fu-server.c:717
+#: ../tiny-fu/tiny-fu-scripts.c:605
+#, c-format
+msgid "Error while loading %s:"
+msgstr "%s yüklenirken hata:"
+
+#: ../tiny-fu/tiny-fu-server.c:807
+msgid "Tiny-Fu Server Options"
+msgstr "Tiny-Fu Sunucu Seçenekleri"
+
+#: ../tiny-fu/tiny-fu-server.c:812
 msgid "_Start Server"
 msgstr "_Sunucuyu Başlat"
 
-#: ../tiny-fu/tiny-fu-server.c:745
+#: ../tiny-fu/tiny-fu-server.c:840
 msgid "Server port:"
 msgstr "Sunucu bağlantı noktası:"
 
-#: ../tiny-fu/tiny-fu-server.c:751
+#: ../tiny-fu/tiny-fu-server.c:846
 msgid "Server logfile:"
 msgstr "Sunucu günlük dosyası:"
 
-#: ../tiny-fu/tiny-fu.c:161
-msgid "Interactive console for Script-Fu development"
-msgstr "Script-Fu geliştirmesi için etkileşimli uçbirim"
+#: ../tiny-fu/tiny-fu.c:118
+msgid "Interactive console for Tiny-Fu development"
+msgstr "Tiny-Fu geliştirmesi için etkileşimli uçbirim"
 
-#: ../tiny-fu/tiny-fu.c:167
-msgid "Script-Fu _Console"
-msgstr "Script-Fu _Uçbirimi"
+#: ../tiny-fu/tiny-fu.c:124
+msgid "_Console"
+msgstr "_Uçbirim"
 
-#: ../tiny-fu/tiny-fu.c:191
-msgid "Server for remote Script-Fu operation"
-msgstr "Uzak Script-Fu işlemi için sunucu"
+#: ../tiny-fu/tiny-fu.c:148
+msgid "Server for remote Tiny-Fu operation"
+msgstr "Uzak Tiny-Fu işlemi için sunucu"
 
-#: ../tiny-fu/tiny-fu.c:196
+#: ../tiny-fu/tiny-fu.c:153
 msgid "_Start Server..."
 msgstr "Sunucuyu _Başlat..."
 
-#: ../tiny-fu/tiny-fu.c:353
+#: ../tiny-fu/tiny-fu.c:309
 msgid "_GIMP Online"
 msgstr "Çevrimiçi _GIMP"
 
-#: ../tiny-fu/tiny-fu.c:354
+#: ../tiny-fu/tiny-fu.c:310
 msgid "_User Manual"
 msgstr "_Kullanıcı Kılavuzu"
 
-#: ../tiny-fu/tiny-fu.c:357
-msgid "_Script-Fu"
-msgstr "_Script-Fu"
+#: ../tiny-fu/tiny-fu.c:313
+msgid "_Tiny-Fu"
+msgstr "_Tiny-Fu"
 
-#: ../tiny-fu/tiny-fu.c:359
-msgid "_Buttons"
-msgstr "_Düğmeler"
-
-#: ../tiny-fu/tiny-fu.c:361
-msgid "_Logos"
-msgstr "_Logolar"
-
-#: ../tiny-fu/tiny-fu.c:363
-msgid "_Misc"
-msgstr "_Çeşitli"
-
-#: ../tiny-fu/tiny-fu.c:365
-msgid "_Patterns"
-msgstr "_Desenler"
-
-#: ../tiny-fu/tiny-fu.c:367
+#: ../tiny-fu/tiny-fu.c:315
 msgid "_Test"
 msgstr "_Dene"
 
-#: ../tiny-fu/tiny-fu.c:369
-msgid "_Utilities"
-msgstr "_Araçlar"
+#: ../tiny-fu/tiny-fu.c:318
+msgid "_Buttons"
+msgstr "_Düğmeler"
 
-#: ../tiny-fu/tiny-fu.c:371
+#: ../tiny-fu/tiny-fu.c:320
+msgid "_Logos"
+msgstr "_Logolar"
+
+#: ../tiny-fu/tiny-fu.c:322
+msgid "_Patterns"
+msgstr "_Desenler"
+
+#: ../tiny-fu/tiny-fu.c:325
 msgid "_Web Page Themes"
 msgstr "_Ağ Sayfası Temaları"
 
-#: ../tiny-fu/tiny-fu.c:373
+#: ../tiny-fu/tiny-fu.c:327
 msgid "_Alien Glow"
 msgstr "Y_abancı Parıltı"
 
-#: ../tiny-fu/tiny-fu.c:375
+#: ../tiny-fu/tiny-fu.c:329
 msgid "_Beveled Pattern"
 msgstr "_Eğimli Desen"
 
-#: ../tiny-fu/tiny-fu.c:377
+#: ../tiny-fu/tiny-fu.c:331
 msgid "_Classic.Gimp.Org"
 msgstr "_Classic.Gimp.Org"
 
-#: ../tiny-fu/tiny-fu.c:380
+#: ../tiny-fu/tiny-fu.c:334
 msgid "Alpha to _Logo"
 msgstr "Alfadan _Logoya"
 
-#: ../tiny-fu/tiny-fu.c:382
-msgid "An_imation"
-msgstr "_Canlandırma"
+#: ../tiny-fu/tiny-fu.c:337
+msgid "Re-read all available Tiny-Fu scripts"
+msgstr "Kullanılabilir tüm Tiny-Fu betiklerini yeniden oku"
 
-#: ../tiny-fu/tiny-fu.c:384
-msgid "_Animators"
-msgstr "_Animatörler"
-
-#: ../tiny-fu/tiny-fu.c:386
-msgid "_Artistic"
-msgstr "_Sanatsal"
-
-#: ../tiny-fu/tiny-fu.c:388
-msgid "_Blur"
-msgstr "_Bulanıklık"
-
-#: ../tiny-fu/tiny-fu.c:390
-msgid "_Decor"
-msgstr "_Dekor"
-
-#: ../tiny-fu/tiny-fu.c:392
-msgid "_Effects"
-msgstr "_Etkiler"
-
-#: ../tiny-fu/tiny-fu.c:394
-msgid "En_hance"
-msgstr "İ_yileştir"
-
-#: ../tiny-fu/tiny-fu.c:396
-msgid "_Light and Shadow"
-msgstr "_Işık ve Gölge"
-
-#: ../tiny-fu/tiny-fu.c:398
-msgid "S_hadow"
-msgstr "_Gölge"
-
-#: ../tiny-fu/tiny-fu.c:400
-msgid "_Render"
-msgstr "_İşle"
-
-#: ../tiny-fu/tiny-fu.c:402
-msgid "_Alchemy"
-msgstr "Kimy_a"
-
-#: ../tiny-fu/tiny-fu.c:405
-msgid "Re-read all available Script-Fu scripts"
-msgstr "Kullanılabilir tüm Script-Fu betiklerini yeniden oku"
-
-#: ../tiny-fu/tiny-fu.c:410
+#: ../tiny-fu/tiny-fu.c:342
 msgid "_Refresh Scripts"
 msgstr "Betikleri _Yenile"
 
-#: ../tiny-fu/tiny-fu.c:433
+#: ../tiny-fu/tiny-fu.c:365
 msgid ""
-"You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
-"Please close all Script-Fu windows and try again."
+"You can not use \"Refresh Scripts\" while a Tiny-Fu dialog box is open.  "
+"Please close all Tiny-Fu windows and try again."
 msgstr ""
-"Bir Script-Fu iletişim kutusu açıkken \"Betikleri Yenile\"yi "
-"kullanamazsınız. Lütfen bütün Script-Fu pencerelerini kapatıp yeniden "
-"deneyin."
+"Tiny-Fu iletişim kutusu açıkken \"Betikleri Yenile\"yi kullanamazsınız. "
+"Lütfen bütün Tiny-Fu pencerelerini kapatıp yeniden deneyin."
 
-#: ../scripts/3d-outline.scm:118 ../scripts/3d-outline.scm:164
+#: ../scripts/3d-outline.scm:120 ../scripts/3d-outline.scm:166
 msgid "3D _Outline..."
 msgstr "3B _Anahat..."
 
-#: ../scripts/3d-outline.scm:119
+#: ../scripts/3d-outline.scm:121
 msgid ""
 "Outline the selected region (or alpha) with a pattern and add a drop shadow"
 msgstr ""
 "Seçilmiş bölgeyi (veya alfayı) bir desenle ana hatlarıyla belirt ve gölge "
 "ekle"
 
-#: ../scripts/3d-outline.scm:126 ../scripts/3d-outline.scm:170
+#: ../scripts/3d-outline.scm:128 ../scripts/3d-outline.scm:172
 #: ../scripts/beveled-pattern-arrow.scm:157
 #: ../scripts/beveled-pattern-bullet.scm:91
 #: ../scripts/beveled-pattern-button.scm:130
 #: ../scripts/beveled-pattern-heading.scm:116
-#: ../scripts/beveled-pattern-hrule.scm:85 ../scripts/chip-away.scm:156
-#: ../scripts/chip-away.scm:203 ../scripts/textured-logo.scm:128
+#: ../scripts/beveled-pattern-hrule.scm:85 ../scripts/chip-away.scm:155
+#: ../scripts/chip-away.scm:202 ../scripts/textured-logo.scm:128
 msgid "Pattern"
 msgstr "Desen"
 
-#: ../scripts/3d-outline.scm:127 ../scripts/3d-outline.scm:174
+#: ../scripts/3d-outline.scm:129 ../scripts/3d-outline.scm:176
 msgid "Outline blur radius"
 msgstr "Anahat bulanıklık yarıçapı"
 
-#: ../scripts/3d-outline.scm:128 ../scripts/3d-outline.scm:175
+#: ../scripts/3d-outline.scm:130 ../scripts/3d-outline.scm:177
 msgid "Shadow blur radius"
 msgstr "Gölge bulanık yarıçapı"
 
-#: ../scripts/3d-outline.scm:129 ../scripts/3d-outline.scm:176
+#: ../scripts/3d-outline.scm:131 ../scripts/3d-outline.scm:178
 msgid "Bumpmap (alpha layer) blur radius"
 msgstr "Derinlik etkisi (alfa katmanı) bulanıklık yarıçapı"
 
-#: ../scripts/3d-outline.scm:130 ../scripts/3d-outline.scm:177
-#: ../scripts/glossy.scm:217 ../scripts/glossy.scm:289
+#: ../scripts/3d-outline.scm:132 ../scripts/3d-outline.scm:179
+#: ../scripts/glossy.scm:216 ../scripts/glossy.scm:288
 msgid "Default bumpmap settings"
 msgstr "Öntanımlı derinlik etkisi ayarları"
 
-#: ../scripts/3d-outline.scm:131 ../scripts/3d-outline.scm:178
-#: ../scripts/glossy.scm:219 ../scripts/glossy.scm:291
-#: ../scripts/round-corners.scm:136
+#: ../scripts/3d-outline.scm:133 ../scripts/3d-outline.scm:180
+#: ../scripts/glossy.scm:218 ../scripts/glossy.scm:290
+#: ../scripts/round-corners.scm:139
 msgid "Shadow X offset"
 msgstr "X konum gölgesi"
 
-#: ../scripts/3d-outline.scm:132 ../scripts/3d-outline.scm:179
-#: ../scripts/glossy.scm:220 ../scripts/glossy.scm:292
-#: ../scripts/round-corners.scm:137
+#: ../scripts/3d-outline.scm:134 ../scripts/3d-outline.scm:181
+#: ../scripts/glossy.scm:219 ../scripts/glossy.scm:291
+#: ../scripts/round-corners.scm:140
 msgid "Shadow Y offset"
 msgstr "Y konum gölgesi"
 
-#: ../scripts/3d-outline.scm:165
+#: ../scripts/3d-outline.scm:167
 msgid "Create a logo with outlined text and a drop shadow"
 msgstr "Anahatlı yazı ve gölge ile bir logo oluştur"
 
-#: ../scripts/3d-outline.scm:171 ../scripts/alien-glow-button.scm:156
-#: ../scripts/alien-glow-logo.scm:111 ../scripts/alien-neon-logo.scm:176
-#: ../scripts/basic1-logo.scm:98 ../scripts/basic2-logo.scm:121
-#: ../scripts/beveled-button.scm:149 ../scripts/beveled-pattern-button.scm:126
-#: ../scripts/beveled-pattern-heading.scm:113 ../scripts/blended-logo.scm:186
-#: ../scripts/bovinated-logo.scm:132 ../scripts/carved-logo.scm:167
-#: ../scripts/chalk.scm:122 ../scripts/chip-away.scm:193
-#: ../scripts/chrome-logo.scm:124 ../scripts/comic-logo.scm:161
-#: ../scripts/coolmetal-logo.scm:175 ../scripts/crystal-logo.scm:215
-#: ../scripts/frosty-logo.scm:147 ../scripts/gimp-headers.scm:155
-#: ../scripts/gimp-headers.scm:178 ../scripts/gimp-labels.scm:127
-#: ../scripts/gimp-labels.scm:143 ../scripts/gimp-labels.scm:159
-#: ../scripts/gimp-labels.scm:175 ../scripts/glossy.scm:274
-#: ../scripts/glowing-logo.scm:115 ../scripts/gradient-bevel-logo.scm:140
-#: ../scripts/i26-gunya2.scm:97 ../scripts/neon-logo.scm:287
+#: ../scripts/3d-outline.scm:173 ../scripts/alien-glow-button.scm:156
+#: ../scripts/alien-glow-logo.scm:111 ../scripts/alien-neon-logo.scm:175
+#: ../scripts/basic1-logo.scm:98 ../scripts/basic2-logo.scm:120
+#: ../scripts/beveled-button.scm:148 ../scripts/beveled-pattern-button.scm:126
+#: ../scripts/beveled-pattern-heading.scm:113 ../scripts/blended-logo.scm:190
+#: ../scripts/bovinated-logo.scm:131 ../scripts/carved-logo.scm:168
+#: ../scripts/chalk.scm:128 ../scripts/chip-away.scm:192
+#: ../scripts/chrome-logo.scm:126 ../scripts/comic-logo.scm:158
+#: ../scripts/coolmetal-logo.scm:184 ../scripts/crystal-logo.scm:216
+#: ../scripts/frosty-logo.scm:203 ../scripts/glossy.scm:273
+#: ../scripts/glowing-logo.scm:115 ../scripts/gradient-bevel-logo.scm:139
+#: ../scripts/i26-gunya2.scm:98 ../scripts/neon-logo.scm:286
 #: ../scripts/news-text.scm:83 ../scripts/pupi-button.scm:193
-#: ../scripts/slide.scm:248 ../scripts/sota-chrome-logo.scm:212
+#: ../scripts/slide.scm:244 ../scripts/sota-chrome-logo.scm:213
 #: ../scripts/speed-text.scm:92 ../scripts/starburst-logo.scm:112
-#: ../scripts/starscape-logo.scm:172 ../scripts/text-circle.scm:210
-#: ../scripts/textured-logo.scm:167 ../scripts/title-header.scm:170
-#: ../scripts/t-o-p-logo.scm:147
+#: ../scripts/starscape-logo.scm:145 ../scripts/text-circle.scm:213
+#: ../scripts/textured-logo.scm:167 ../scripts/title-header.scm:171
+#: ../scripts/t-o-p-logo.scm:144
 msgid "Text"
 msgstr "Metin"
 
-#: ../scripts/3d-outline.scm:172 ../scripts/alien-glow-button.scm:158
-#: ../scripts/alien-glow-logo.scm:112 ../scripts/alien-neon-logo.scm:177
-#: ../scripts/basic1-logo.scm:99 ../scripts/basic2-logo.scm:122
-#: ../scripts/beveled-button.scm:150 ../scripts/beveled-pattern-button.scm:127
-#: ../scripts/beveled-pattern-heading.scm:114 ../scripts/blended-logo.scm:187
-#: ../scripts/bovinated-logo.scm:133 ../scripts/carved-logo.scm:168
-#: ../scripts/chalk.scm:123 ../scripts/chip-away.scm:195
-#: ../scripts/chrome-logo.scm:125 ../scripts/comic-logo.scm:162
-#: ../scripts/coolmetal-logo.scm:176 ../scripts/crystal-logo.scm:216
-#: ../scripts/frosty-logo.scm:148 ../scripts/gimp-headers.scm:157
-#: ../scripts/gimp-headers.scm:180 ../scripts/gimp-labels.scm:177
-#: ../scripts/glossy.scm:275 ../scripts/glowing-logo.scm:116
-#: ../scripts/gradient-bevel-logo.scm:141 ../scripts/i26-gunya2.scm:101
-#: ../scripts/neon-logo.scm:288 ../scripts/news-text.scm:85
-#: ../scripts/pupi-button.scm:194 ../scripts/sota-chrome-logo.scm:213
-#: ../scripts/speed-text.scm:94 ../scripts/starburst-logo.scm:113
-#: ../scripts/starscape-logo.scm:173 ../scripts/text-circle.scm:214
-#: ../scripts/textured-logo.scm:168 ../scripts/title-header.scm:171
-#: ../scripts/t-o-p-logo.scm:148
+#: ../scripts/3d-outline.scm:174 ../scripts/alien-glow-button.scm:158
+#: ../scripts/alien-glow-logo.scm:112 ../scripts/alien-neon-logo.scm:176
+#: ../scripts/basic1-logo.scm:99 ../scripts/basic2-logo.scm:121
+#: ../scripts/beveled-button.scm:149 ../scripts/beveled-pattern-button.scm:127
+#: ../scripts/beveled-pattern-heading.scm:114 ../scripts/blended-logo.scm:191
+#: ../scripts/bovinated-logo.scm:132 ../scripts/carved-logo.scm:169
+#: ../scripts/chalk.scm:129 ../scripts/chip-away.scm:194
+#: ../scripts/chrome-logo.scm:127 ../scripts/comic-logo.scm:159
+#: ../scripts/coolmetal-logo.scm:185 ../scripts/crystal-logo.scm:217
+#: ../scripts/frosty-logo.scm:204 ../scripts/glossy.scm:274
+#: ../scripts/glowing-logo.scm:116 ../scripts/gradient-bevel-logo.scm:140
+#: ../scripts/i26-gunya2.scm:102 ../scripts/neon-logo.scm:287
+#: ../scripts/news-text.scm:85 ../scripts/pupi-button.scm:194
+#: ../scripts/sota-chrome-logo.scm:214 ../scripts/speed-text.scm:94
+#: ../scripts/starburst-logo.scm:113 ../scripts/starscape-logo.scm:146
+#: ../scripts/text-circle.scm:217 ../scripts/textured-logo.scm:168
+#: ../scripts/title-header.scm:172 ../scripts/t-o-p-logo.scm:145
 msgid "Font size (pixels)"
 msgstr "Yazı tipi boyutu (piksel)"
 
-#: ../scripts/3d-outline.scm:173 ../scripts/alien-glow-button.scm:157
-#: ../scripts/alien-glow-logo.scm:113 ../scripts/alien-neon-logo.scm:178
-#: ../scripts/basic1-logo.scm:100 ../scripts/basic2-logo.scm:123
-#: ../scripts/beveled-button.scm:151 ../scripts/beveled-pattern-button.scm:128
-#: ../scripts/beveled-pattern-heading.scm:115 ../scripts/blended-logo.scm:188
-#: ../scripts/bovinated-logo.scm:134 ../scripts/carved-logo.scm:169
-#: ../scripts/chalk.scm:124 ../scripts/chip-away.scm:194
-#: ../scripts/chrome-logo.scm:126 ../scripts/comic-logo.scm:163
-#: ../scripts/coolmetal-logo.scm:177 ../scripts/crystal-logo.scm:217
-#: ../scripts/frosty-logo.scm:149 ../scripts/gimp-headers.scm:156
-#: ../scripts/gimp-headers.scm:179 ../scripts/gimp-labels.scm:176
-#: ../scripts/glossy.scm:276 ../scripts/glowing-logo.scm:117
-#: ../scripts/gradient-bevel-logo.scm:142 ../scripts/i26-gunya2.scm:100
-#: ../scripts/neon-logo.scm:289 ../scripts/news-text.scm:84
-#: ../scripts/pupi-button.scm:195 ../scripts/slide.scm:250
-#: ../scripts/sota-chrome-logo.scm:214 ../scripts/speed-text.scm:93
-#: ../scripts/starburst-logo.scm:114 ../scripts/starscape-logo.scm:174
-#: ../scripts/text-circle.scm:216 ../scripts/textured-logo.scm:169
-#: ../scripts/title-header.scm:172 ../scripts/t-o-p-logo.scm:149
+#: ../scripts/3d-outline.scm:175 ../scripts/alien-glow-button.scm:157
+#: ../scripts/alien-glow-logo.scm:113 ../scripts/alien-neon-logo.scm:177
+#: ../scripts/basic1-logo.scm:100 ../scripts/basic2-logo.scm:122
+#: ../scripts/beveled-button.scm:150 ../scripts/beveled-pattern-button.scm:128
+#: ../scripts/beveled-pattern-heading.scm:115 ../scripts/blended-logo.scm:192
+#: ../scripts/bovinated-logo.scm:133 ../scripts/carved-logo.scm:170
+#: ../scripts/chalk.scm:130 ../scripts/chip-away.scm:193
+#: ../scripts/chrome-logo.scm:128 ../scripts/comic-logo.scm:160
+#: ../scripts/coolmetal-logo.scm:186 ../scripts/crystal-logo.scm:218
+#: ../scripts/frosty-logo.scm:205 ../scripts/glossy.scm:275
+#: ../scripts/glowing-logo.scm:117 ../scripts/gradient-bevel-logo.scm:141
+#: ../scripts/i26-gunya2.scm:101 ../scripts/neon-logo.scm:288
+#: ../scripts/news-text.scm:84 ../scripts/pupi-button.scm:195
+#: ../scripts/slide.scm:246 ../scripts/sota-chrome-logo.scm:215
+#: ../scripts/speed-text.scm:93 ../scripts/starburst-logo.scm:114
+#: ../scripts/starscape-logo.scm:147 ../scripts/text-circle.scm:219
+#: ../scripts/textured-logo.scm:169 ../scripts/title-header.scm:173
+#: ../scripts/t-o-p-logo.scm:146
 msgid "Font"
 msgstr "Yazı tipi"
 
-#: ../scripts/3dTruchet.scm:222
+#: ../scripts/3dTruchet.scm:225
 msgid "3_D Truchet..."
 msgstr "3_D Truchet..."
 
-#: ../scripts/3dTruchet.scm:223
+#: ../scripts/3dTruchet.scm:226
 msgid "Create an image filled with a 3D Truchet pattern"
 msgstr "3D Truchet şekli ile doldurulmuş bir desen oluştur"
 
-#: ../scripts/3dTruchet.scm:228 ../scripts/truchet.scm:163
+#: ../scripts/3dTruchet.scm:231 ../scripts/truchet.scm:171
 msgid "Block size"
 msgstr "Blok boyutu"
 
-#: ../scripts/3dTruchet.scm:229 ../scripts/add-bevel.scm:194
-#: ../scripts/truchet.scm:164
+#: ../scripts/3dTruchet.scm:232 ../scripts/add-bevel.scm:193
+#: ../scripts/truchet.scm:172
 msgid "Thickness"
 msgstr "Kalınlık"
 
-#: ../scripts/3dTruchet.scm:230 ../scripts/alien-glow-arrow.scm:184
-#: ../scripts/alien-glow-bar.scm:95 ../scripts/alien-glow-bullet.scm:104
-#: ../scripts/alien-glow-button.scm:161 ../scripts/alien-neon-logo.scm:136
-#: ../scripts/alien-neon-logo.scm:180 ../scripts/basic1-logo.scm:67
-#: ../scripts/basic1-logo.scm:101 ../scripts/basic2-logo.scm:90
-#: ../scripts/basic2-logo.scm:124 ../scripts/blended-logo.scm:133
-#: ../scripts/blended-logo.scm:190 ../scripts/bovinated-logo.scm:137
-#: ../scripts/chalk.scm:83 ../scripts/chalk.scm:125
-#: ../scripts/chrome-logo.scm:127 ../scripts/comic-logo.scm:127
-#: ../scripts/comic-logo.scm:168 ../scripts/contactsheet.scm:334
-#: ../scripts/coolmetal-logo.scm:140 ../scripts/coolmetal-logo.scm:178
-#: ../scripts/frosty-logo.scm:117 ../scripts/frosty-logo.scm:150
-#: ../scripts/gimp-labels.scm:180 ../scripts/glossy.scm:210
-#: ../scripts/glossy.scm:282 ../scripts/glowing-logo.scm:85
-#: ../scripts/glowing-logo.scm:118 ../scripts/gradient-bevel-logo.scm:106
-#: ../scripts/gradient-bevel-logo.scm:145 ../scripts/neon-logo.scm:254
-#: ../scripts/neon-logo.scm:290 ../scripts/news-text.scm:90
+#: ../scripts/3dTruchet.scm:233 ../scripts/alien-glow-arrow.scm:184
+#: ../scripts/alien-glow-bar.scm:95 ../scripts/alien-glow-bullet.scm:107
+#: ../scripts/alien-glow-button.scm:161 ../scripts/alien-neon-logo.scm:135
+#: ../scripts/alien-neon-logo.scm:179 ../scripts/basic1-logo.scm:67
+#: ../scripts/basic1-logo.scm:101 ../scripts/basic2-logo.scm:89
+#: ../scripts/basic2-logo.scm:123 ../scripts/blended-logo.scm:135
+#: ../scripts/blended-logo.scm:194 ../scripts/bovinated-logo.scm:136
+#: ../scripts/chalk.scm:89 ../scripts/chalk.scm:131
+#: ../scripts/chrome-logo.scm:129 ../scripts/comic-logo.scm:124
+#: ../scripts/comic-logo.scm:165 ../scripts/contactsheet.scm:334
+#: ../scripts/coolmetal-logo.scm:149 ../scripts/coolmetal-logo.scm:187
+#: ../scripts/frosty-logo.scm:144 ../scripts/frosty-logo.scm:206
+#: ../scripts/glossy.scm:209 ../scripts/glossy.scm:281
+#: ../scripts/glowing-logo.scm:85 ../scripts/glowing-logo.scm:118
+#: ../scripts/gradient-bevel-logo.scm:105
+#: ../scripts/gradient-bevel-logo.scm:144 ../scripts/neon-logo.scm:253
+#: ../scripts/neon-logo.scm:289 ../scripts/news-text.scm:90
 #: ../scripts/speed-text.scm:97 ../scripts/sphere.scm:81
 #: ../scripts/starburst-logo.scm:83 ../scripts/starburst-logo.scm:116
 #: ../scripts/swirltile.scm:65 ../scripts/textured-logo.scm:132
-#: ../scripts/textured-logo.scm:174 ../scripts/t-o-p-logo.scm:114
-#: ../scripts/t-o-p-logo.scm:154 ../scripts/truchet.scm:165
+#: ../scripts/textured-logo.scm:174 ../scripts/t-o-p-logo.scm:111
+#: ../scripts/t-o-p-logo.scm:151 ../scripts/truchet.scm:173
 msgid "Background color"
 msgstr "Artalan rengi"
 
-#: ../scripts/3dTruchet.scm:231 ../scripts/blended-logo.scm:138
-#: ../scripts/blended-logo.scm:195
+#: ../scripts/3dTruchet.scm:234 ../scripts/blended-logo.scm:140
+#: ../scripts/blended-logo.scm:199
 msgid "Start blend"
 msgstr "Kaynaşımı başlat"
 
-#: ../scripts/3dTruchet.scm:232 ../scripts/blended-logo.scm:139
-#: ../scripts/blended-logo.scm:196
+#: ../scripts/3dTruchet.scm:235 ../scripts/blended-logo.scm:141
+#: ../scripts/blended-logo.scm:200
 msgid "End blend"
 msgstr "Kaynaşımı sonlandır"
 
-#: ../scripts/3dTruchet.scm:233
+#: ../scripts/3dTruchet.scm:236
 msgid "Supersample"
 msgstr "Üstörneklem"
 
-#: ../scripts/3dTruchet.scm:234 ../scripts/truchet.scm:167
+#: ../scripts/3dTruchet.scm:237 ../scripts/truchet.scm:175
 msgid "Number of X tiles"
 msgstr "X döşeme sayısı"
 
-#: ../scripts/3dTruchet.scm:235 ../scripts/truchet.scm:168
+#: ../scripts/3dTruchet.scm:238 ../scripts/truchet.scm:176
 msgid "Number of Y tiles"
 msgstr "Y döşeme sayısı"
 
-#: ../scripts/add-bevel.scm:186
+#: ../scripts/add-bevel.scm:76 ../scripts/beveled-button.scm:77
+#: ../scripts/beveled-pattern-arrow.scm:79
+#: ../scripts/beveled-pattern-bullet.scm:26
+#: ../scripts/beveled-pattern-button.scm:57
+#: ../scripts/beveled-pattern-heading.scm:44
+#: ../scripts/beveled-pattern-hrule.scm:30
+msgid "Bumpmap"
+msgstr "Derinlik etkisi"
+
+#: ../scripts/add-bevel.scm:185
 msgid "Add B_evel..."
 msgstr "E_ğim Ekle..."
 
-#: ../scripts/add-bevel.scm:187
+#: ../scripts/add-bevel.scm:186
 msgid "Add a beveled border to an image"
 msgstr "Bir görüntüye eğimli bir sınır ekle"
 
-#: ../scripts/add-bevel.scm:195 ../scripts/fuzzyborder.scm:161
-#: ../scripts/old-photo.scm:105 ../scripts/round-corners.scm:140
-#: ../scripts/slide.scm:252 ../scripts/spinning-globe.scm:107
+#: ../scripts/add-bevel.scm:194 ../scripts/fuzzyborder.scm:160
+#: ../scripts/old-photo.scm:104 ../scripts/round-corners.scm:143
+#: ../scripts/slide.scm:248 ../scripts/spinning-globe.scm:106
 msgid "Work on copy"
 msgstr "Kopya üzerinde çalış"
 
-#: ../scripts/add-bevel.scm:196 ../scripts/chip-away.scm:153
-#: ../scripts/chip-away.scm:200
+#: ../scripts/add-bevel.scm:195 ../scripts/chip-away.scm:152
+#: ../scripts/chip-away.scm:199
 msgid "Keep bump layer"
 msgstr "Tümsek katmanı koru"
 
-#: ../scripts/addborder.scm:171
+#: ../scripts/addborder.scm:108
+msgid "Border Layer"
+msgstr "Kenarlık Katmanı"
+
+#: ../scripts/addborder.scm:160
 msgid "Add _Border..."
 msgstr "_Sınır Ekle..."
 
-#: ../scripts/addborder.scm:172
+#: ../scripts/addborder.scm:161
 msgid "Add a border around an image"
 msgstr "Bir görüntü etrafına bir sınır ekle"
 
-#: ../scripts/addborder.scm:179
+#: ../scripts/addborder.scm:168
 msgid "Border X size"
 msgstr "Sınırın X büyüklüğü"
 
-#: ../scripts/addborder.scm:180
+#: ../scripts/addborder.scm:169
 msgid "Border Y size"
 msgstr "Sınırın Y büyüklüğü"
 
-#: ../scripts/addborder.scm:181
+#: ../scripts/addborder.scm:170
 msgid "Border color"
 msgstr "Sınır rengi"
 
-#: ../scripts/addborder.scm:182
+#: ../scripts/addborder.scm:171
 msgid "Delta value on color"
 msgstr "Renk üzerindeki değişim değeri"
+
+#: ../scripts/alien-glow-arrow.scm:118 ../scripts/beveled-pattern-arrow.scm:78
+msgid "Arrow"
+msgstr "Ok"
+
+#: ../scripts/alien-glow-arrow.scm:121 ../scripts/alien-glow-bar.scm:35
+#: ../scripts/alien-glow-bullet.scm:46
+msgid "Alien Glow"
+msgstr "Yabancı Parıltı"
+
+#: ../scripts/alien-glow-arrow.scm:124 ../scripts/alien-glow-bar.scm:38
+#: ../scripts/alien-glow-bullet.scm:48 ../scripts/alien-glow-button.scm:78
+#: ../scripts/beveled-pattern-button.scm:56
+#: ../scripts/beveled-pattern-heading.scm:41 ../scripts/chrome-it.scm:103
+msgid "Background"
+msgstr "Artalan"
 
 #: ../scripts/alien-glow-arrow.scm:175 ../scripts/beveled-pattern-arrow.scm:149
 msgid "_Arrow..."
@@ -541,20 +513,23 @@ msgid "Down"
 msgstr "Aşağı"
 
 #: ../scripts/alien-glow-arrow.scm:183 ../scripts/alien-glow-bar.scm:94
-#: ../scripts/alien-glow-bullet.scm:103 ../scripts/alien-glow-button.scm:160
+#: ../scripts/alien-glow-bullet.scm:106 ../scripts/alien-glow-button.scm:160
 #: ../scripts/alien-glow-logo.scm:74 ../scripts/alien-glow-logo.scm:114
-#: ../scripts/alien-neon-logo.scm:135 ../scripts/alien-neon-logo.scm:179
-#: ../scripts/burn-in-anim.scm:226 ../scripts/neon-logo.scm:255
-#: ../scripts/neon-logo.scm:291 ../scripts/starscape-logo.scm:144
-#: ../scripts/starscape-logo.scm:175
+#: ../scripts/alien-neon-logo.scm:134 ../scripts/alien-neon-logo.scm:178
+#: ../scripts/burn-in-anim.scm:227 ../scripts/neon-logo.scm:254
+#: ../scripts/neon-logo.scm:290 ../scripts/starscape-logo.scm:148
 msgid "Glow color"
 msgstr "Parıtlı rengi"
 
 #: ../scripts/alien-glow-arrow.scm:185 ../scripts/alien-glow-bar.scm:96
-#: ../scripts/alien-glow-bullet.scm:105 ../scripts/alien-glow-button.scm:164
-#: ../scripts/camo.scm:107 ../scripts/fuzzyborder.scm:162
+#: ../scripts/alien-glow-bullet.scm:108 ../scripts/alien-glow-button.scm:164
+#: ../scripts/camo.scm:106 ../scripts/fuzzyborder.scm:161
 msgid "Flatten image"
 msgstr "Görüntüyü düzleştir"
+
+#: ../scripts/alien-glow-bar.scm:32
+msgid "Bar"
+msgstr "Çubuk"
 
 #: ../scripts/alien-glow-bar.scm:86 ../scripts/beveled-pattern-hrule.scm:77
 msgid "_Hrule..."
@@ -572,18 +547,30 @@ msgstr "Çubuk uzunluğu"
 msgid "Bar height"
 msgstr "Çubuk yüksekliği"
 
-#: ../scripts/alien-glow-bullet.scm:96 ../scripts/beveled-pattern-bullet.scm:84
+#: ../scripts/alien-glow-bullet.scm:44 ../scripts/beveled-pattern-bullet.scm:25
+msgid "Bullet"
+msgstr "Koyu nokta"
+
+#: ../scripts/alien-glow-bullet.scm:99 ../scripts/beveled-pattern-bullet.scm:84
 msgid "_Bullet..."
 msgstr "_Koyu nokta..."
 
-#: ../scripts/alien-glow-bullet.scm:97
+#: ../scripts/alien-glow-bullet.scm:100
 msgid "Create a bullet graphic with an eerie glow for web pages"
 msgstr "Web sayfaları için tuhaf parıltılı bir madde imi şekli oluştur"
 
-#: ../scripts/alien-glow-bullet.scm:102 ../scripts/text-circle.scm:211
-#: ../scripts/tileblur.scm:73
+#: ../scripts/alien-glow-bullet.scm:105 ../scripts/text-circle.scm:214
+#: ../scripts/tileblur.scm:76
 msgid "Radius"
 msgstr "Yarıçap"
+
+#: ../scripts/alien-glow-button.scm:81
+msgid "Glow"
+msgstr "Parla"
+
+#: ../scripts/alien-glow-button.scm:84
+msgid "Button"
+msgstr "Düğme"
 
 #: ../scripts/alien-glow-button.scm:150
 #: ../scripts/beveled-pattern-button.scm:120
@@ -595,17 +582,16 @@ msgid "Create a button graphic with an eerie glow for web pages"
 msgstr "Web sayfaları için tuhaf ışıklı bir düğme şekli oluştur"
 
 #: ../scripts/alien-glow-button.scm:159 ../scripts/basic1-logo.scm:68
-#: ../scripts/basic1-logo.scm:102 ../scripts/basic2-logo.scm:91
-#: ../scripts/basic2-logo.scm:125 ../scripts/beveled-button.scm:154
-#: ../scripts/beveled-pattern-button.scm:129 ../scripts/blended-logo.scm:189
-#: ../scripts/contactsheet.scm:333 ../scripts/gimp-headers.scm:158
-#: ../scripts/gimp-headers.scm:181 ../scripts/gimp-labels.scm:178
-#: ../scripts/i26-gunya2.scm:98 ../scripts/news-text.scm:89
-#: ../scripts/pupi-button.scm:198 ../scripts/speed-text.scm:96
+#: ../scripts/basic1-logo.scm:102 ../scripts/basic2-logo.scm:90
+#: ../scripts/basic2-logo.scm:124 ../scripts/beveled-button.scm:153
+#: ../scripts/beveled-pattern-button.scm:129 ../scripts/blended-logo.scm:193
+#: ../scripts/contactsheet.scm:333 ../scripts/i26-gunya2.scm:99
+#: ../scripts/news-text.scm:89 ../scripts/pupi-button.scm:198
+#: ../scripts/speed-text.scm:96
 msgid "Text color"
 msgstr "Metin rengi"
 
-#: ../scripts/alien-glow-button.scm:162 ../scripts/beveled-button.scm:155
+#: ../scripts/alien-glow-button.scm:162 ../scripts/beveled-button.scm:154
 msgid "Padding"
 msgstr "Doldurma"
 
@@ -629,31 +615,31 @@ msgstr "Parıltı boyutu (piksel * 4)"
 msgid "Create a logo with an alien glow around the text"
 msgstr "Metnin etrafında yabancı parıltılı bir logo oluştur"
 
-#: ../scripts/alien-neon-logo.scm:127 ../scripts/alien-neon-logo.scm:170
+#: ../scripts/alien-neon-logo.scm:126 ../scripts/alien-neon-logo.scm:169
 msgid "Alien _Neon..."
 msgstr "Yabancı _Neon..."
 
-#: ../scripts/alien-neon-logo.scm:128
+#: ../scripts/alien-neon-logo.scm:127
 msgid "Add psychedelic outlines to the selected region (or alpha)"
 msgstr "Seçilen bölge (veya alfanın) rengarenk anahat ekle"
 
-#: ../scripts/alien-neon-logo.scm:137 ../scripts/alien-neon-logo.scm:181
+#: ../scripts/alien-neon-logo.scm:136 ../scripts/alien-neon-logo.scm:180
 msgid "Width of bands"
 msgstr "Bantların genişliği"
 
-#: ../scripts/alien-neon-logo.scm:138 ../scripts/alien-neon-logo.scm:182
+#: ../scripts/alien-neon-logo.scm:137 ../scripts/alien-neon-logo.scm:181
 msgid "Width of gaps"
 msgstr "Aralıkların genişliği"
 
-#: ../scripts/alien-neon-logo.scm:139 ../scripts/alien-neon-logo.scm:183
+#: ../scripts/alien-neon-logo.scm:138 ../scripts/alien-neon-logo.scm:182
 msgid "Number of bands"
 msgstr "Şerit sayısı"
 
-#: ../scripts/alien-neon-logo.scm:140 ../scripts/alien-neon-logo.scm:184
+#: ../scripts/alien-neon-logo.scm:139 ../scripts/alien-neon-logo.scm:183
 msgid "Fade away"
 msgstr "Karart"
 
-#: ../scripts/alien-neon-logo.scm:171
+#: ../scripts/alien-neon-logo.scm:170
 msgid "Create a logo with psychedelic outlines around the text"
 msgstr "Metnin etrafında rengarenk anahatları olan bir logo oluştur"
 
@@ -674,40 +660,49 @@ msgid ""
 "background"
 msgstr "Renk geçişi etkili, gölge ve artalanlı bir düz yazı logosu oluştur"
 
-#: ../scripts/basic2-logo.scm:82 ../scripts/basic2-logo.scm:115
+#: ../scripts/basic2-logo.scm:81 ../scripts/basic2-logo.scm:114
 msgid "B_asic II..."
 msgstr "T_emel II..."
 
-#: ../scripts/basic2-logo.scm:83
+#: ../scripts/basic2-logo.scm:82
 msgid "Add a shadow and a highlight to the selected region (or alpha)"
 msgstr "Seçili bölge (veya alfaya) bir gölge veya vurgu ekleyin"
 
-#: ../scripts/basic2-logo.scm:116
+#: ../scripts/basic2-logo.scm:115
 msgid "Create a simple logo with a shadow and a highlight"
 msgstr "Bir gölgeli ve vurgulu basit bir logo oluştur"
 
-#: ../scripts/beveled-button.scm:143
+#: ../scripts/beveled-button.scm:80 ../scripts/blended-logo.scm:142
+#: ../scripts/blended-logo.scm:201 ../scripts/comic-logo.scm:120
+#: ../scripts/comic-logo.scm:161 ../scripts/coolmetal-logo.scm:150
+#: ../scripts/coolmetal-logo.scm:188 ../scripts/land.scm:87
+#: ../scripts/lava.scm:128 ../scripts/rendermap.scm:88
+#: ../scripts/spyrogimp.scm:351
+msgid "Gradient"
+msgstr "Renk Geçişi"
+
+#: ../scripts/beveled-button.scm:142
 msgid "Simple _Beveled Button..."
 msgstr "Yalın _Eğimli Düğme..."
 
-#: ../scripts/beveled-button.scm:144
+#: ../scripts/beveled-button.scm:143
 msgid "Create a simple, beveled button graphic for webpages"
 msgstr "Web sayfaları için basit, eğimli bir düğme şekli oluştur"
 
-#: ../scripts/beveled-button.scm:152
+#: ../scripts/beveled-button.scm:151
 msgid "Upper-left color"
 msgstr "Üst-sol renk"
 
-#: ../scripts/beveled-button.scm:153
+#: ../scripts/beveled-button.scm:152
 msgid "Lower-right color"
 msgstr "Alt-sağ renk"
 
-#: ../scripts/beveled-button.scm:156 ../scripts/gradient-bevel-logo.scm:105
-#: ../scripts/gradient-bevel-logo.scm:144 ../scripts/pupi-button.scm:204
+#: ../scripts/beveled-button.scm:155 ../scripts/gradient-bevel-logo.scm:104
+#: ../scripts/gradient-bevel-logo.scm:143 ../scripts/pupi-button.scm:204
 msgid "Bevel width"
 msgstr "Eğim genişliği"
 
-#: ../scripts/beveled-button.scm:157 ../scripts/beveled-pattern-button.scm:131
+#: ../scripts/beveled-button.scm:156 ../scripts/beveled-pattern-button.scm:131
 #: ../scripts/pupi-button.scm:208
 msgid "Pressed"
 msgstr "Basılı"
@@ -725,7 +720,7 @@ msgid "Diameter"
 msgstr "Çevre"
 
 #: ../scripts/beveled-pattern-bullet.scm:92
-#: ../scripts/beveled-pattern-heading.scm:117 ../scripts/spinning-globe.scm:105
+#: ../scripts/beveled-pattern-heading.scm:117 ../scripts/spinning-globe.scm:104
 msgid "Transparent background"
 msgstr "Saydam artalan"
 
@@ -741,23 +736,31 @@ msgstr "B_aşlık..."
 msgid "Create a beveled pattern heading for webpages"
 msgstr "Web sayfaları için eğimli başlık deseni oluştur"
 
+#: ../scripts/beveled-pattern-hrule.scm:27
+msgid "Rule"
+msgstr "Kural"
+
 #: ../scripts/beveled-pattern-hrule.scm:78
 msgid "Create a beveled pattern hrule for webpages"
 msgstr "Web sayfaları için eğim desenli hrule oluştur"
 
-#: ../scripts/beveled-pattern-hrule.scm:83 ../scripts/gradient-example.scm:70
-#: ../scripts/mkbrush.scm:70 ../scripts/mkbrush.scm:134
-#: ../scripts/mkbrush.scm:188 ../scripts/mkbrush.scm:255
+#: ../scripts/beveled-pattern-hrule.scm:83 ../scripts/gradient-example.scm:69
+#: ../scripts/mkbrush.scm:70 ../scripts/mkbrush.scm:138
+#: ../scripts/mkbrush.scm:194 ../scripts/mkbrush.scm:263
 #: ../scripts/swirltile.scm:62
 msgid "Width"
 msgstr "Genişlik"
 
-#: ../scripts/beveled-pattern-hrule.scm:84 ../scripts/gimp-labels.scm:187
-#: ../scripts/gradient-example.scm:71 ../scripts/mkbrush.scm:71
-#: ../scripts/mkbrush.scm:135 ../scripts/mkbrush.scm:189
-#: ../scripts/mkbrush.scm:256 ../scripts/swirltile.scm:61
+#: ../scripts/beveled-pattern-hrule.scm:84 ../scripts/gradient-example.scm:70
+#: ../scripts/mkbrush.scm:71 ../scripts/mkbrush.scm:139
+#: ../scripts/mkbrush.scm:195 ../scripts/mkbrush.scm:264
+#: ../scripts/swirltile.scm:61
 msgid "Height"
 msgstr "Yükseklik"
+
+#: ../scripts/blend-anim.scm:206 ../scripts/spyrogimp.scm:327
+msgid "Frame"
+msgstr "Çerçeve"
 
 #: ../scripts/blend-anim.scm:222
 msgid "Blend Animation needs at least three source layers"
@@ -787,11 +790,11 @@ msgstr "En yüksek bulanıklık yarıçapı"
 msgid "Looped"
 msgstr "Dönüşlü"
 
-#: ../scripts/blended-logo.scm:124 ../scripts/blended-logo.scm:180
+#: ../scripts/blended-logo.scm:126 ../scripts/blended-logo.scm:184
 msgid "Blen_ded..."
 msgstr "Kaynaş_tırıldı..."
 
-#: ../scripts/blended-logo.scm:125
+#: ../scripts/blended-logo.scm:127
 msgid ""
 "Add blended backgrounds, highlights, and shadows to the selected region (or "
 "alpha)"
@@ -799,76 +802,68 @@ msgstr ""
 "Seçilmiş bölgeye (veya alfaya) kaynaşmış artalanlar, vurgular, ve gölgeler "
 "ekle"
 
-#: ../scripts/blended-logo.scm:132
+#: ../scripts/blended-logo.scm:134
 msgid "Offset (pixels)"
 msgstr "Konum (piksel)"
 
-#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+#: ../scripts/blended-logo.scm:136 ../scripts/blended-logo.scm:195
 msgid "Blend mode"
 msgstr "Kaynaşım kipi"
 
-#: ../scripts/blended-logo.scm:134 ../scripts/blended-logo.scm:191
+#: ../scripts/blended-logo.scm:136 ../scripts/blended-logo.scm:195
 msgid "FG-BG-RGB"
 msgstr "ÖA-AA-RGB"
 
-#: ../scripts/blended-logo.scm:135 ../scripts/blended-logo.scm:192
+#: ../scripts/blended-logo.scm:137 ../scripts/blended-logo.scm:196
 msgid "FG-BG-HSV"
 msgstr "ÖA-AA-HSV"
 
-#: ../scripts/blended-logo.scm:136 ../scripts/blended-logo.scm:193
+#: ../scripts/blended-logo.scm:138 ../scripts/blended-logo.scm:197
 msgid "FG-Transparent"
 msgstr "ÖA-Saydam"
 
-#: ../scripts/blended-logo.scm:137 ../scripts/blended-logo.scm:194
+#: ../scripts/blended-logo.scm:139 ../scripts/blended-logo.scm:198
 msgid "Custom Gradient"
 msgstr "Özel Renk Geçişi"
 
-#: ../scripts/blended-logo.scm:140 ../scripts/blended-logo.scm:197
-#: ../scripts/comic-logo.scm:123 ../scripts/comic-logo.scm:164
-#: ../scripts/coolmetal-logo.scm:141 ../scripts/coolmetal-logo.scm:179
-#: ../scripts/land.scm:86 ../scripts/lava.scm:128 ../scripts/rendermap.scm:89
-#: ../scripts/spyrogimp.scm:354
-msgid "Gradient"
-msgstr "Renk Geçişi"
-
-#: ../scripts/blended-logo.scm:141 ../scripts/blended-logo.scm:198
-#: ../scripts/comic-logo.scm:124 ../scripts/comic-logo.scm:165
-#: ../scripts/coolmetal-logo.scm:142 ../scripts/coolmetal-logo.scm:180
-#: ../scripts/gradient-example.scm:72 ../scripts/rendermap.scm:90
-#: ../scripts/title-header.scm:173
+#: ../scripts/blended-logo.scm:143 ../scripts/blended-logo.scm:202
+#: ../scripts/comic-logo.scm:121 ../scripts/comic-logo.scm:162
+#: ../scripts/coolmetal-logo.scm:151 ../scripts/coolmetal-logo.scm:189
+#: ../scripts/gradient-example.scm:71 ../scripts/rendermap.scm:89
+#: ../scripts/title-header.scm:174
 msgid "Gradient reverse"
 msgstr "Tersten renk geçişi"
 
-#: ../scripts/blended-logo.scm:181
+#: ../scripts/blended-logo.scm:185
 msgid "Create a logo with blended backgrounds, highlights, and shadows"
 msgstr "Kaynaşmış artalanlar, vurgular, ve gölgelerle bir logo oluştur"
 
-#: ../scripts/bovinated-logo.scm:92 ../scripts/bovinated-logo.scm:126
+#: ../scripts/bovinated-logo.scm:91 ../scripts/bovinated-logo.scm:125
 msgid "Bo_vination..."
 msgstr "Be_nekleme..."
 
-#: ../scripts/bovinated-logo.scm:93
+#: ../scripts/bovinated-logo.scm:92
 msgid "Add 'cow spots' to the selected region (or alpha)"
 msgstr "Seçilmiş bölgeye (veya alfaya) 'sığır benekleri' ekle"
 
-#: ../scripts/bovinated-logo.scm:100 ../scripts/bovinated-logo.scm:135
+#: ../scripts/bovinated-logo.scm:99 ../scripts/bovinated-logo.scm:134
 msgid "Spots density X"
 msgstr "Nokta sıklığı X"
 
-#: ../scripts/bovinated-logo.scm:101 ../scripts/bovinated-logo.scm:136
+#: ../scripts/bovinated-logo.scm:100 ../scripts/bovinated-logo.scm:135
 msgid "Spots density Y"
 msgstr "Nokta sıklığı Y"
 
-#: ../scripts/bovinated-logo.scm:102 ../scripts/chrome-logo.scm:94
+#: ../scripts/bovinated-logo.scm:101 ../scripts/chrome-logo.scm:96
 msgid "Background Color"
 msgstr "Artalan Rengi"
 
-#: ../scripts/bovinated-logo.scm:127
+#: ../scripts/bovinated-logo.scm:126
 msgid "Create a logo with text in the style of 'cow spots'"
 msgstr "'Sığır benekleri' tarzında üstünde yazı olan bir logo oluştur"
 
 #. --- false form of "if-1"
-#: ../scripts/burn-in-anim.scm:211
+#: ../scripts/burn-in-anim.scm:212
 msgid ""
 "The Burn-In script needs two layers in total. A foreground layer with "
 "transparency and a background layer."
@@ -876,169 +871,213 @@ msgstr ""
 "Burn-In betiği saydam bir önalan katmanı ve bir artalan katmanı olmak üzere "
 "iki katmana gereksinir."
 
-#: ../scripts/burn-in-anim.scm:218
+#: ../scripts/burn-in-anim.scm:219
 msgid "B_urn-In..."
 msgstr "B_urn-In..."
 
-#: ../scripts/burn-in-anim.scm:219
+#: ../scripts/burn-in-anim.scm:220
 msgid ""
 "Create intermediate layers to produce an animated 'burn-in' transition "
 "between two layers"
 msgstr ""
 "İki katman arasında 'burn-in' geçişi oluşturmak için ara katman oluştur"
 
-#: ../scripts/burn-in-anim.scm:227
+#: ../scripts/burn-in-anim.scm:228
 msgid "Fadeout"
 msgstr "Solma"
 
-#: ../scripts/burn-in-anim.scm:228
+#: ../scripts/burn-in-anim.scm:229
 msgid "Fadeout width"
 msgstr "Kararma Genişliği"
 
-#: ../scripts/burn-in-anim.scm:229
+#: ../scripts/burn-in-anim.scm:230
 msgid "Corona width"
 msgstr "Doruk genişliği"
 
-#: ../scripts/burn-in-anim.scm:230
+#: ../scripts/burn-in-anim.scm:231
 msgid "After glow"
 msgstr "Parıltıdan sonra"
 
-#: ../scripts/burn-in-anim.scm:231
+#: ../scripts/burn-in-anim.scm:232
 msgid "Add glowing"
 msgstr "Parlama ekle"
 
-#: ../scripts/burn-in-anim.scm:232
+#: ../scripts/burn-in-anim.scm:233
 msgid "Prepare for GIF"
 msgstr "GIF İçin Hazırla"
 
-#: ../scripts/burn-in-anim.scm:233
+#: ../scripts/burn-in-anim.scm:234
 msgid "Speed (pixels/frame)"
 msgstr "Hız (piksel/kare)"
 
-#: ../scripts/camo.scm:95
+#: ../scripts/camo.scm:94
 msgid "_Camouflage..."
 msgstr "_Gizleme..."
 
-#: ../scripts/camo.scm:96
+#: ../scripts/camo.scm:95
 msgid "Create an image filled with a camouflage pattern"
 msgstr "Gizleme örgüsüyle doldurulmuş bir desen oluştur"
 
-#: ../scripts/camo.scm:101 ../scripts/rendermap.scm:87
+#: ../scripts/camo.scm:100 ../scripts/rendermap.scm:86
 msgid "Image size"
 msgstr "Görüntü boyutu"
 
-#: ../scripts/camo.scm:102 ../scripts/rendermap.scm:88
+#: ../scripts/camo.scm:101 ../scripts/rendermap.scm:87
 msgid "Granularity"
 msgstr "Parçacıklılık"
 
-#: ../scripts/camo.scm:103
+#: ../scripts/camo.scm:102
 msgid "Color 1"
 msgstr "1. Renk"
 
-#: ../scripts/camo.scm:104
+#: ../scripts/camo.scm:103
 msgid "Color 2"
 msgstr "2. Renk"
 
-#: ../scripts/camo.scm:105
+#: ../scripts/camo.scm:104
 msgid "Color 3"
 msgstr "3. Renk"
 
-#: ../scripts/camo.scm:106 ../scripts/distress-selection.scm:110
+#: ../scripts/camo.scm:105 ../scripts/distress-selection.scm:113
 msgid "Smooth"
 msgstr "Yumuşat"
 
-#: ../scripts/carved-logo.scm:161
+#: ../scripts/carved-logo.scm:148 ../scripts/carve-it.scm:168
+msgid "Carved Surface"
+msgstr "Oyulmuş Yüzey"
+
+#: ../scripts/carved-logo.scm:149 ../scripts/carve-it.scm:169
+msgid "Bevel Shadow"
+msgstr "Eğim Gölge"
+
+#: ../scripts/carved-logo.scm:150 ../scripts/carve-it.scm:170
+msgid "Bevel Highlight"
+msgstr "Eğim Vurgula"
+
+#: ../scripts/carved-logo.scm:151 ../scripts/carve-it.scm:171
+msgid "Cast Shadow"
+msgstr "Gölge Oluştur"
+
+#: ../scripts/carved-logo.scm:152 ../scripts/carve-it.scm:172
+msgid "Inset"
+msgstr "İçe doğru"
+
+#: ../scripts/carved-logo.scm:162
 msgid "Carved..."
 msgstr "Oyuldu..."
 
-#: ../scripts/carved-logo.scm:162
+#: ../scripts/carved-logo.scm:163
 msgid ""
 "Create a logo with text raised above or carved in to the specified "
 "background image"
 msgstr ""
 "Metin kabarık ya da belli bir görüntünün içine oyulmuş bir logo oluştur"
 
-#: ../scripts/carved-logo.scm:170
+#: ../scripts/carved-logo.scm:171
 msgid "Background Image"
 msgstr "Artalan Görüntüsü"
 
-#: ../scripts/carved-logo.scm:173
+#: ../scripts/carved-logo.scm:174
 msgid "Carve raised text"
 msgstr "Kabarık yazıyı oy"
 
-#: ../scripts/carved-logo.scm:174
+#: ../scripts/carved-logo.scm:175
 msgid "Padding around text"
 msgstr "Yazının etrafındaki boşluk"
 
-#: ../scripts/carve-it.scm:181
+#: ../scripts/carve-it.scm:182
 msgid "Stencil C_arve..."
 msgstr "Kalıp O_yma..."
 
-#: ../scripts/carve-it.scm:189
+#: ../scripts/carve-it.scm:190
 msgid "Image to carve"
 msgstr "Oyulacak görüntü"
 
-#: ../scripts/carve-it.scm:190
+#: ../scripts/carve-it.scm:191
 msgid "Carve white areas"
 msgstr "Ak alanları oy"
 
-#: ../scripts/chalk.scm:75 ../scripts/chalk.scm:116
+#: ../scripts/chalk.scm:81 ../scripts/chalk.scm:122
 msgid "_Chalk..."
 msgstr "_Tebeşir..."
 
-#: ../scripts/chalk.scm:76
+#: ../scripts/chalk.scm:82
 msgid "Create a chalk drawing effect for the selected region (or alpha)"
 msgstr "Seçilen bölge (veya alfa) için tebeşir çizim etkisi oluştur"
 
-#: ../scripts/chalk.scm:117
+#: ../scripts/chalk.scm:123
 msgid "Create a logo resembling chalk scribbled on a blackboard"
 msgstr "Tebeşir karalamasına benzeyen logo oluştur"
 
-#: ../scripts/chalk.scm:126
+#: ../scripts/chalk.scm:132
 msgid "Chalk color"
 msgstr "Tebeşir rengi"
 
-#: ../scripts/chip-away.scm:141 ../scripts/chip-away.scm:187
+#: ../scripts/chip-away.scm:140 ../scripts/chip-away.scm:186
 msgid "Chip Awa_y..."
 msgstr "_Yont..."
 
-#: ../scripts/chip-away.scm:142
+#: ../scripts/chip-away.scm:141
 msgid "Add a chipped woodcarving effect to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) bir ağaç oyma etkisi ekle"
 
-#: ../scripts/chip-away.scm:149 ../scripts/chip-away.scm:196
+#: ../scripts/chip-away.scm:148 ../scripts/chip-away.scm:195
 msgid "Chip amount"
 msgstr "Yontma miktarı"
 
-#: ../scripts/chip-away.scm:150 ../scripts/chip-away.scm:197
+#: ../scripts/chip-away.scm:149 ../scripts/chip-away.scm:196
 msgid "Blur amount"
 msgstr "Bulanıklık miktarı"
 
-#: ../scripts/chip-away.scm:151 ../scripts/chip-away.scm:198
+#: ../scripts/chip-away.scm:150 ../scripts/chip-away.scm:197
 msgid "Invert"
 msgstr "Tersine Çevir"
 
-#: ../scripts/chip-away.scm:152 ../scripts/chip-away.scm:199
+#: ../scripts/chip-away.scm:151 ../scripts/chip-away.scm:198
 msgid "Drop shadow"
 msgstr "Gölge düşür"
 
-#: ../scripts/chip-away.scm:154 ../scripts/chip-away.scm:201
+#: ../scripts/chip-away.scm:153 ../scripts/chip-away.scm:200
 msgid "Fill BG with pattern"
 msgstr "AA'yı desenle doldur"
 
-#: ../scripts/chip-away.scm:155 ../scripts/chip-away.scm:202
+#: ../scripts/chip-away.scm:154 ../scripts/chip-away.scm:201
 msgid "Keep background"
 msgstr "Artalanı koru"
 
-#: ../scripts/chip-away.scm:188
+#: ../scripts/chip-away.scm:187
 msgid "Create a logo resembling a chipped wood carving"
 msgstr "Oyulmuş ağaca benzeyen bir logo oluştur"
 
-#: ../scripts/chrome-it.scm:205
+#: ../scripts/chrome-it.scm:104
+msgid "Layer 1"
+msgstr "Katman 1"
+
+#: ../scripts/chrome-it.scm:105
+msgid "Layer 2"
+msgstr "Katman 2"
+
+#: ../scripts/chrome-it.scm:106
+msgid "Layer 3"
+msgstr "Katman 3"
+
+#: ../scripts/chrome-it.scm:107
+msgid "Drop Shadow"
+msgstr "Gölge"
+
+#: ../scripts/chrome-it.scm:201
+msgid "Chrome"
+msgstr "Krom"
+
+#: ../scripts/chrome-it.scm:202 ../scripts/xach-effect.scm:68
+msgid "Highlight"
+msgstr "Vurgu"
+
+#: ../scripts/chrome-it.scm:214
 msgid "Stencil C_hrome..."
 msgstr "Kalıp K_rom..."
 
-#: ../scripts/chrome-it.scm:206
+#: ../scripts/chrome-it.scm:215
 msgid ""
 "Add a chrome effect to the selected region (or alpha) using a specified "
 "(grayscale) stencil"
@@ -1046,80 +1085,84 @@ msgstr ""
 "Belirtilen kalıbı (gri tonlama) kullanarak seçili bölgeye (veya alfaya) "
 "gümüş etkisi uygula"
 
-#: ../scripts/chrome-it.scm:213 ../scripts/sota-chrome-logo.scm:209
+#: ../scripts/chrome-it.scm:222 ../scripts/sota-chrome-logo.scm:210
 msgid "Chrome saturation"
 msgstr "Krom Doygunluğu"
 
-#: ../scripts/chrome-it.scm:214 ../scripts/sota-chrome-logo.scm:210
+#: ../scripts/chrome-it.scm:223 ../scripts/sota-chrome-logo.scm:211
 msgid "Chrome lightness"
 msgstr "Krom aydınlığı"
 
-#: ../scripts/chrome-it.scm:215 ../scripts/crystal-logo.scm:214
-#: ../scripts/sota-chrome-logo.scm:211
+#: ../scripts/chrome-it.scm:224 ../scripts/crystal-logo.scm:215
+#: ../scripts/sota-chrome-logo.scm:212
 msgid "Chrome factor"
 msgstr "Krom Katsayısı"
 
-#: ../scripts/chrome-it.scm:216 ../scripts/crystal-logo.scm:221
-#: ../scripts/sota-chrome-logo.scm:215
+#: ../scripts/chrome-it.scm:225 ../scripts/crystal-logo.scm:222
+#: ../scripts/sota-chrome-logo.scm:216
 msgid "Environment map"
 msgstr "Ortam eşlemi"
 
-#: ../scripts/chrome-it.scm:219 ../scripts/sota-chrome-logo.scm:218
+#: ../scripts/chrome-it.scm:228 ../scripts/sota-chrome-logo.scm:219
 msgid "Highlight balance"
 msgstr "Vurgu dengesi"
 
-#: ../scripts/chrome-it.scm:220 ../scripts/sota-chrome-logo.scm:219
+#: ../scripts/chrome-it.scm:229 ../scripts/sota-chrome-logo.scm:220
 msgid "Chrome balance"
 msgstr "Krom dengesi"
 
-#: ../scripts/chrome-it.scm:221
+#: ../scripts/chrome-it.scm:230
 msgid "Chrome white areas"
 msgstr "Krom beyaz alanlar"
 
-#: ../scripts/chrome-logo.scm:85 ../scripts/chrome-logo.scm:118
+#: ../scripts/chrome-logo.scm:87 ../scripts/chrome-logo.scm:120
 msgid "C_hrome..."
 msgstr "K_rom..."
 
-#: ../scripts/chrome-logo.scm:86
+#: ../scripts/chrome-logo.scm:88
 msgid "Add a simple chrome effect to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) krom etkisi uygula"
 
-#: ../scripts/chrome-logo.scm:93
+#: ../scripts/chrome-logo.scm:95
 msgid "Offsets (pixels * 2)"
 msgstr "Konum (piksel * 2)"
 
-#: ../scripts/chrome-logo.scm:119
+#: ../scripts/chrome-logo.scm:121
 msgid "Create a simplistic, but cool, chromed logo"
 msgstr "Basit ama hoş, krom etkisi uygulanmış bir logo oluştur"
 
-#: ../scripts/circuit.scm:142
+#: ../scripts/circuit.scm:81
+msgid "Effect layer"
+msgstr "Etki katmanı"
+
+#: ../scripts/circuit.scm:134
 msgid "_Circuit..."
 msgstr "_Devre..."
 
-#: ../scripts/circuit.scm:143
+#: ../scripts/circuit.scm:135
 msgid ""
 "Fill the selected region (or alpha) with traces like those on a circuit board"
 msgstr "Seçili bölgeyi (veya alfayı) devre üzerindeymiş gibi izlerle doldur"
 
-#: ../scripts/circuit.scm:150
+#: ../scripts/circuit.scm:142
 msgid "Oilify mask size"
 msgstr "Maske boyutunu yağlı boya"
 
-#: ../scripts/circuit.scm:151
+#: ../scripts/circuit.scm:143
 msgid "Circuit seed"
 msgstr "Devre parçacık"
 
-#: ../scripts/circuit.scm:152
+#: ../scripts/circuit.scm:144
 msgid "No background (only for separate layer)"
 msgstr "Artalan yok (yalnız ayrı katman için)"
 
-#: ../scripts/circuit.scm:153 ../scripts/lava.scm:129
-#: ../scripts/predator.scm:130 ../scripts/xach-effect.scm:138
+#: ../scripts/circuit.scm:145 ../scripts/lava.scm:129
+#: ../scripts/predator.scm:132 ../scripts/xach-effect.scm:138
 msgid "Keep selection"
 msgstr "Seçileni koru"
 
-#: ../scripts/circuit.scm:154 ../scripts/lava.scm:130
-#: ../scripts/predator.scm:131
+#: ../scripts/circuit.scm:146 ../scripts/lava.scm:130
+#: ../scripts/predator.scm:133
 msgid "Separate layer"
 msgstr "Ayrı katman"
 
@@ -1151,27 +1194,31 @@ msgstr "Yükselme"
 msgid "Depth"
 msgstr "Derinlik"
 
-#: ../scripts/coffee.scm:80
+#: ../scripts/coffee.scm:36
+msgid "Stain"
+msgstr "Leke"
+
+#: ../scripts/coffee.scm:81
 msgid "_Coffee Stain..."
 msgstr "_Kahve Lekesi..."
 
-#: ../scripts/coffee.scm:81
+#: ../scripts/coffee.scm:82
 msgid "Add realistic looking coffee stains to the image"
 msgstr "Görüntüye gerçek gibi görünen kahve lekesi ekle"
 
-#: ../scripts/coffee.scm:88
+#: ../scripts/coffee.scm:89
 msgid "Stains"
 msgstr "Lekeler"
 
-#: ../scripts/coffee.scm:89
+#: ../scripts/coffee.scm:90
 msgid "Darken only"
 msgstr "Yalnızca koyulaşan"
 
-#: ../scripts/comic-logo.scm:115 ../scripts/comic-logo.scm:155
+#: ../scripts/comic-logo.scm:112 ../scripts/comic-logo.scm:152
 msgid "Comic Boo_k..."
 msgstr "Karikatür Kitab_ı..."
 
-#: ../scripts/comic-logo.scm:116
+#: ../scripts/comic-logo.scm:113
 msgid ""
 "Add a comic-book effect to the selected region (or alpha) by outlining and "
 "filling with a gradient"
@@ -1179,26 +1226,30 @@ msgstr ""
 "Seçili bölgeye (veya alfaya) renk geçişi ile çevreleyen ve dolduran bir "
 "çizgi roman etkisi uygula"
 
-#: ../scripts/comic-logo.scm:125 ../scripts/comic-logo.scm:166
-#: ../scripts/glossy.scm:209 ../scripts/glossy.scm:281
+#: ../scripts/comic-logo.scm:122 ../scripts/comic-logo.scm:163
+#: ../scripts/glossy.scm:208 ../scripts/glossy.scm:280
 msgid "Outline size"
 msgstr "Anahat boyutu"
 
-#: ../scripts/comic-logo.scm:126 ../scripts/comic-logo.scm:167
+#: ../scripts/comic-logo.scm:123 ../scripts/comic-logo.scm:164
 msgid "Outline color"
 msgstr "Anahat rengi"
 
-#: ../scripts/comic-logo.scm:156
+#: ../scripts/comic-logo.scm:153
 msgid "Create a comic-book style logo by outlining and filling with a gradient"
 msgstr ""
 "Kıyılarını çizerek ve içini renk geçişi doldurarak, çizgi roman betiği "
 "biçeminde bir logo oluştur"
 
-#: ../scripts/contactsheet.scm:120
+# Hata raporlandı: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/-/issues/5
+#: ../scripts/contactsheet.scm:119
+#, fuzzy
 msgid "Contact Sheet "
 msgstr "Bağlantı Sayfası "
 
-#: ../scripts/contactsheet.scm:122
+# Hata raporlandı: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/-/issues/5
+#: ../scripts/contactsheet.scm:121
+#, fuzzy
 msgid " for directory "
 msgstr " dizin için "
 
@@ -1206,16 +1257,19 @@ msgstr " dizin için "
 msgid "Unable to open directory "
 msgstr "Dizin açılamadı "
 
+# Hata raporlandı: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/-/issues/5
 #: ../scripts/contactsheet.scm:308
+#, fuzzy
 msgid "Created "
 msgstr "Oluşturuldu "
 
-# %d veya %s gibi değerler eklenmeli
+# Hata raporlandı: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/-/issues/5
 #: ../scripts/contactsheet.scm:309
 #, fuzzy
 msgid " contact sheets from a total of "
-msgstr "-"
+msgstr "-not: hata düzeltilene kadar çevirmeyin!-"
 
+# Hata raporlandı: https://gitlab.gnome.org/GNOME/gimp-tiny-fu/-/issues/5
 #: ../scripts/contactsheet.scm:310
 #, fuzzy
 msgid " images"
@@ -1249,181 +1303,182 @@ msgstr "Başlık yazı tipi"
 msgid "Legend font"
 msgstr "Eski yazı tipi"
 
-#: ../scripts/coolmetal-logo.scm:131 ../scripts/coolmetal-logo.scm:169
+#: ../scripts/coolmetal-logo.scm:140 ../scripts/coolmetal-logo.scm:178
 msgid "Cool _Metal..."
 msgstr "Soğuk _Metal..."
 
-#: ../scripts/coolmetal-logo.scm:132
+#: ../scripts/coolmetal-logo.scm:141
 msgid ""
 "Add a metallic effect to the selected region (or alpha) with reflections and "
 "perspective shadows"
 msgstr ""
 "Yansımalarla ve gölgelerle seçili bölgeye (veya alfaya) metalik etki ver"
 
-#: ../scripts/coolmetal-logo.scm:139 ../scripts/frosty-logo.scm:116
+#: ../scripts/coolmetal-logo.scm:148 ../scripts/frosty-logo.scm:143
+#: ../scripts/glowing-logo.scm:84 ../scripts/neon-logo.scm:252
 msgid "Effect size (pixels)"
 msgstr "Etki boyutu (piksel)"
 
-#: ../scripts/coolmetal-logo.scm:170
+#: ../scripts/coolmetal-logo.scm:179
 msgid "Create a metallic logo with reflections and perspective shadows"
 msgstr "Yansımalarla ve gölgelerle metalik bir logo oluştur"
 
-#: ../scripts/crystal-logo.scm:208
+#: ../scripts/crystal-logo.scm:209
 msgid "Crystal..."
 msgstr "Kristal..."
 
-#: ../scripts/crystal-logo.scm:209
+#: ../scripts/crystal-logo.scm:210
 msgid "Create a logo with a crystal/gel effect displacing the image underneath"
 msgstr "Görüntünün altından çıkartarak kristal/jel etkisi ile logo oluştur"
 
-#: ../scripts/crystal-logo.scm:218
+#: ../scripts/crystal-logo.scm:219
 msgid "Background image"
 msgstr "Artalan görüntüsü"
 
-#: ../scripts/difference-clouds.scm:68
+#: ../scripts/difference-clouds.scm:67
 msgid "Difference Clouds..."
 msgstr "Farklı Bulutlar..."
 
-#: ../scripts/difference-clouds.scm:69
+#: ../scripts/difference-clouds.scm:68
 msgid "Solid noise applied with Difference layer mode"
 msgstr "Değişik katman modu ile uygulanmış yoğun gürültü"
 
-#: ../scripts/distress-selection.scm:99
+#: ../scripts/distress-selection.scm:102
 msgid "_Distort..."
 msgstr "_Bozulma..."
 
-#: ../scripts/distress-selection.scm:100
+#: ../scripts/distress-selection.scm:103
 msgid "Distress the selection"
 msgstr "Seçimi yıprat"
 
-#: ../scripts/distress-selection.scm:107
-msgid "Threshold (bigger 1<-->255 smaller)"
-msgstr "Eşik (en büyük 1<-->255 en küçük)"
+#: ../scripts/distress-selection.scm:110
+msgid "Threshold (bigger 1<-->254 smaller)"
+msgstr "Eşik (en büyük 1<-->254 en küçük)"
 
-#: ../scripts/distress-selection.scm:108
+#: ../scripts/distress-selection.scm:111
 msgid "Spread"
 msgstr "Etrafa Saç"
 
-#: ../scripts/distress-selection.scm:109
+#: ../scripts/distress-selection.scm:112
 msgid "Granularity (1 is low)"
 msgstr "Tanelilik (1 düşük)"
 
-#: ../scripts/distress-selection.scm:111
+#: ../scripts/distress-selection.scm:114
 msgid "Smooth horizontally"
 msgstr "Enine yumuşat"
 
-#: ../scripts/distress-selection.scm:112
+#: ../scripts/distress-selection.scm:115
 msgid "Smooth vertically"
 msgstr "Boyuna yumuşat"
 
-#: ../scripts/drop-shadow.scm:168
+#: ../scripts/drop-shadow.scm:169
 msgid "_Drop Shadow..."
 msgstr "_Gölge..."
 
-#: ../scripts/drop-shadow.scm:169
+#: ../scripts/drop-shadow.scm:170
 msgid "Add a drop shadow to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) gölge ekle"
 
-#: ../scripts/drop-shadow.scm:176 ../scripts/gimp-labels.scm:185
+#: ../scripts/drop-shadow.scm:177
 msgid "Offset X"
 msgstr "X Konumu"
 
-#: ../scripts/drop-shadow.scm:177 ../scripts/gimp-labels.scm:186
+#: ../scripts/drop-shadow.scm:178
 msgid "Offset Y"
 msgstr "Y Konumu"
 
-#: ../scripts/drop-shadow.scm:178 ../scripts/news-text.scm:88
-#: ../scripts/perspective-shadow.scm:207 ../scripts/round-corners.scm:138
+#: ../scripts/drop-shadow.scm:179 ../scripts/news-text.scm:88
+#: ../scripts/perspective-shadow.scm:209 ../scripts/round-corners.scm:141
 #: ../scripts/swirltile.scm:60
 msgid "Blur radius"
 msgstr "Bulanıklık yarıçapı"
 
-#: ../scripts/drop-shadow.scm:179 ../scripts/fuzzyborder.scm:155
-#: ../scripts/perspective-shadow.scm:208 ../scripts/spyrogimp.scm:353
+#: ../scripts/drop-shadow.scm:180 ../scripts/fuzzyborder.scm:154
+#: ../scripts/perspective-shadow.scm:210 ../scripts/spyrogimp.scm:350
 msgid "Color"
 msgstr "Renk"
 
-#: ../scripts/drop-shadow.scm:180 ../scripts/perspective-shadow.scm:209
+#: ../scripts/drop-shadow.scm:181 ../scripts/perspective-shadow.scm:211
 msgid "Opacity"
 msgstr "Işık geçirmezlik"
 
-#: ../scripts/drop-shadow.scm:181 ../scripts/perspective-shadow.scm:211
+#: ../scripts/drop-shadow.scm:182 ../scripts/perspective-shadow.scm:213
 msgid "Allow resizing"
 msgstr "Yeniden boyutlandırmaya izin ver"
 
-#: ../scripts/erase-rows.scm:35
+#: ../scripts/erase-rows.scm:39
 msgid "_Erase Every Other Row..."
 msgstr "Öteki Bütün Satırları _Sil..."
 
-#: ../scripts/erase-rows.scm:36
+#: ../scripts/erase-rows.scm:40
 msgid "Erase every other row or column"
 msgstr "Diğer satır ve sütunları sil"
 
-#: ../scripts/erase-rows.scm:43
+#: ../scripts/erase-rows.scm:47
 msgid "Rows/cols"
 msgstr "Satırlar/Sütunlar"
 
-#: ../scripts/erase-rows.scm:43
+#: ../scripts/erase-rows.scm:47
 msgid "Rows"
 msgstr "Satırlar"
 
-#: ../scripts/erase-rows.scm:43
+#: ../scripts/erase-rows.scm:47
 msgid "Columns"
 msgstr "Sütunlar"
 
-#: ../scripts/erase-rows.scm:44
+#: ../scripts/erase-rows.scm:48
 msgid "Even/odd"
 msgstr "Tek/çift"
 
-#: ../scripts/erase-rows.scm:44
+#: ../scripts/erase-rows.scm:48
 msgid "Even"
 msgstr "Çift"
 
-#: ../scripts/erase-rows.scm:44
+#: ../scripts/erase-rows.scm:48
 msgid "Odd"
 msgstr "Tek"
 
-#: ../scripts/erase-rows.scm:45
+#: ../scripts/erase-rows.scm:49
 msgid "Erase/fill"
 msgstr "Sil/doldur"
 
-#: ../scripts/erase-rows.scm:45
+#: ../scripts/erase-rows.scm:49
 msgid "Erase"
 msgstr "Sil"
 
-#: ../scripts/erase-rows.scm:45
+#: ../scripts/erase-rows.scm:49
 msgid "Fill with BG"
 msgstr "AA ile Doldur"
 
-#: ../scripts/flatland.scm:61
+#: ../scripts/flatland.scm:60
 msgid "_Flatland..."
 msgstr "_Düztoprak..."
 
-#: ../scripts/flatland.scm:62
+#: ../scripts/flatland.scm:61
 msgid "Create an image filled with a Land Pattern"
 msgstr "Toprak Deseniyle doldurulmuş bir görüntü oluştur"
 
-#: ../scripts/flatland.scm:67 ../scripts/land.scm:78
+#: ../scripts/flatland.scm:66 ../scripts/land.scm:79
 msgid "Image width"
 msgstr "Görüntü genişliği"
 
-#: ../scripts/flatland.scm:68 ../scripts/land.scm:79
+#: ../scripts/flatland.scm:67 ../scripts/land.scm:80
 msgid "Image height"
 msgstr "Görüntü yüksekliği"
 
-#: ../scripts/flatland.scm:69 ../scripts/land.scm:80
+#: ../scripts/flatland.scm:68 ../scripts/land.scm:81
 msgid "Random seed"
 msgstr "Rastgele parçacık"
 
-#: ../scripts/flatland.scm:70 ../scripts/land.scm:81
+#: ../scripts/flatland.scm:69 ../scripts/land.scm:82
 msgid "Detail level"
 msgstr "Detay düzeyi"
 
-#: ../scripts/flatland.scm:71 ../scripts/land.scm:84
+#: ../scripts/flatland.scm:70 ../scripts/land.scm:85
 msgid "Scale X"
 msgstr "X Ölçeği"
 
-#: ../scripts/flatland.scm:72 ../scripts/land.scm:85
+#: ../scripts/flatland.scm:71 ../scripts/land.scm:86
 msgid "Scale Y"
 msgstr "Y Ölçeği"
 
@@ -1474,155 +1529,113 @@ msgstr "Beyaz üzerine siyah"
 msgid "Active colors"
 msgstr "Etkin renkler"
 
-#: ../scripts/frosty-logo.scm:108 ../scripts/frosty-logo.scm:141
+#: ../scripts/frosty-logo.scm:135 ../scripts/frosty-logo.scm:197
 msgid "_Frosty..."
 msgstr "_Donuk..."
 
-#: ../scripts/frosty-logo.scm:109
+#: ../scripts/frosty-logo.scm:136
 msgid ""
 "Add a frost effect to the selected region (or alpha) with an added drop "
 "shadow"
 msgstr "Ekli gölgeyle seçili bölgeye (veya alfaya) donma etkisi uygula"
 
-#: ../scripts/frosty-logo.scm:142
+#: ../scripts/frosty-logo.scm:198
 msgid "Create frozen logo with an added drop shadow"
 msgstr "Donma etkisi uygulanmış gölgeli bir logo oluştur"
 
-#: ../scripts/fuzzyborder.scm:147
+#: ../scripts/fuzzyborder.scm:146
 msgid "_Fuzzy Border..."
 msgstr "_Bulanık Sınır..."
 
-#: ../scripts/fuzzyborder.scm:148
+#: ../scripts/fuzzyborder.scm:147
 msgid "Add a jagged, fuzzy border to an image"
 msgstr "Görüntüye çıkıntılı, donuk çerçeve uygula"
 
-#: ../scripts/fuzzyborder.scm:156 ../scripts/old-photo.scm:99
+#: ../scripts/fuzzyborder.scm:155 ../scripts/old-photo.scm:98
 msgid "Border size"
 msgstr "Sınır boyutu"
 
-#: ../scripts/fuzzyborder.scm:157
+#: ../scripts/fuzzyborder.scm:156
 msgid "Blur border"
 msgstr "Bulanık sınır çizgisi"
 
-#: ../scripts/fuzzyborder.scm:158
+#: ../scripts/fuzzyborder.scm:157
 msgid "Granularity (1 is Low)"
 msgstr "Parçacıklılık (1 Küçük Olmak Üzere)"
 
-#: ../scripts/fuzzyborder.scm:159
+#: ../scripts/fuzzyborder.scm:158
 msgid "Add shadow"
 msgstr "Gölge ekle"
 
-#: ../scripts/fuzzyborder.scm:160
+#: ../scripts/fuzzyborder.scm:159
 msgid "Shadow weight (%)"
 msgstr "Gölge kalınlığı"
 
-#: ../scripts/gimp-headers.scm:149
-msgid "_Big Header..."
-msgstr "_Büyük Üstbilgi..."
+#: ../scripts/gimp-online.scm:59
+msgid "Using _Paths"
+msgstr "_Yolları Kullanma"
 
-#: ../scripts/gimp-headers.scm:150
-msgid "Create an image of a large header using the gimp.org webpage theme"
-msgstr ""
-"gimp.org web sayfası temasını kullanarak, büyük bir başlık görüntüsü oluştur"
+#: ../scripts/gimp-online.scm:60 ../scripts/gimp-online.scm:73
+#: ../scripts/gimp-online.scm:86 ../scripts/gimp-online.scm:99
+#: ../scripts/gimp-online.scm:112 ../scripts/gimp-online.scm:125
+#: ../scripts/gimp-online.scm:138 ../scripts/gimp-online.scm:151
+msgid "Bookmark to the user manual"
+msgstr "Kullanıcı kılavuzunun yer imine ekleyin"
 
-#: ../scripts/gimp-headers.scm:159 ../scripts/gimp-headers.scm:182
-#: ../scripts/xach-effect.scm:131
-msgid "Highlight color"
-msgstr "Aydınlatma rengi"
+#: ../scripts/gimp-online.scm:72
+msgid "_Preparing your Images for the Web"
+msgstr "Web için kendi görüntülerinizi _hazırlama"
 
-#: ../scripts/gimp-headers.scm:160 ../scripts/gimp-headers.scm:183
-msgid "Dark color"
-msgstr "Koyu renk"
+#: ../scripts/gimp-online.scm:85
+msgid "_Working with Digital Camera Photos"
+msgstr "Sayısal Kamera Görüntüleri ile _çalışıyor"
 
-#: ../scripts/gimp-headers.scm:161 ../scripts/gimp-headers.scm:184
-#: ../scripts/gimp-labels.scm:179
-msgid "Shadow color"
-msgstr "Gölge rengi"
+#: ../scripts/gimp-online.scm:98
+msgid "Create, Open and Save _Files"
+msgstr "_Dosyaları Oluştur, Aç ve Kaydet"
 
-#: ../scripts/gimp-headers.scm:162 ../scripts/gimp-headers.scm:185
-msgid "Autocrop"
-msgstr "Kendiliğinden Kırp"
+#: ../scripts/gimp-online.scm:111
+msgid "_Basic Concepts"
+msgstr "_Temel Kavramlar"
 
-#: ../scripts/gimp-headers.scm:163 ../scripts/gimp-headers.scm:186
-#: ../scripts/gimp-labels.scm:128 ../scripts/gimp-labels.scm:144
-#: ../scripts/gimp-labels.scm:160 ../scripts/gimp-labels.scm:181
-msgid "Remove background"
-msgstr "Artalanı kaldır"
+#: ../scripts/gimp-online.scm:124
+msgid "How to Use _Dialogs"
+msgstr "İletişim _Kutuları Nasıl Kullanılır"
 
-#: ../scripts/gimp-headers.scm:164 ../scripts/gimp-headers.scm:187
-#: ../scripts/gimp-labels.scm:129 ../scripts/gimp-labels.scm:145
-#: ../scripts/gimp-labels.scm:161 ../scripts/gimp-labels.scm:182
-msgid "Index image"
-msgstr "Ana sayfa görüntüsü"
+#: ../scripts/gimp-online.scm:137
+msgid "Drawing _Simple Objects"
+msgstr "_Yalın Nesne Çizimi"
 
-#: ../scripts/gimp-headers.scm:165 ../scripts/gimp-headers.scm:188
-#: ../scripts/gimp-labels.scm:183
-msgid "Number of colors"
-msgstr "Renk sayısı"
+#: ../scripts/gimp-online.scm:150
+msgid "Create and Use _Selections"
+msgstr "_Seçimleri Oluştur ve Kullan"
 
-#: ../scripts/gimp-headers.scm:172
-msgid "_Small Header..."
-msgstr "_Küçük Üstbilgi..."
+#: ../scripts/gimp-online.scm:178
+msgid "_Main Web Site"
+msgstr "_Ana Web Sitesi"
 
-#: ../scripts/gimp-headers.scm:173
-msgid "Create an image of a small header using the gimp.org webpage theme"
-msgstr ""
-"gimp.org web sayfası temasını kullanarak, küçük bir başlık görüntüsü oluştur"
+#: ../scripts/gimp-online.scm:179 ../scripts/gimp-online.scm:192
+#: ../scripts/gimp-online.scm:205 ../scripts/gimp-online.scm:218
+msgid "Bookmark to the GIMP web site"
+msgstr "GIMP web sitesinin yer imine ekleyin"
 
-#: ../scripts/gimp-headers.scm:189 ../scripts/gimp-labels.scm:184
-msgid "Select-by-color threshold"
-msgstr "Renge göre seçim eşiği"
+#: ../scripts/gimp-online.scm:191
+msgid "_Developer Web Site"
+msgstr "_Geliştirici Web Sitesi"
 
-#: ../scripts/gimp-labels.scm:121
-msgid "_Tube Button Label..."
-msgstr "_Tüp Düğme Etiketi ..."
+#: ../scripts/gimp-online.scm:204
+msgid "_User Manual Web Site"
+msgstr "_Kullanıcı Kılavuzu Web Sitesi"
 
-#: ../scripts/gimp-labels.scm:122
-msgid "Create an image of a Tube Button Label using the gimp.org webpage theme"
-msgstr ""
-"gimp.org web sayfası temasını kullanarak Tüp Düğme Etiketi görüntüsü oluştur"
+#: ../scripts/gimp-online.scm:217
+msgid "Plug-in _Registry"
+msgstr "Eklenti _Kayıt Defteri"
 
-#: ../scripts/gimp-labels.scm:137
-msgid "T_ube Sub-Button Label..."
-msgstr "T_üp Alt-Düğme Etiketi..."
-
-#: ../scripts/gimp-labels.scm:138
-msgid ""
-"Create an image of a second level Tube Button Label using the gimp.org "
-"webpage theme"
-msgstr ""
-"gimp.org web sayfası temasını kullanarak ikinci seviye Tüp Düğme Etiketi "
-"görüntüsü oluştur"
-
-#: ../scripts/gimp-labels.scm:153
-msgid "Tub_e Sub-Sub-Button Label..."
-msgstr "T_üp Alt-Alt-Düğme Etiketi..."
-
-#: ../scripts/gimp-labels.scm:154
-msgid ""
-"Create an image of a third level Tube Button Label using the gimp.org "
-"webpage theme"
-msgstr ""
-"gimp.org web sayfası temasını kullanarak üçüncü seviye Tüp Düğme Etiketi "
-"görüntüsü oluştur"
-
-#: ../scripts/gimp-labels.scm:169
-msgid "_General Tube Labels..."
-msgstr "_Genel Tüp Etiketleri..."
-
-#: ../scripts/gimp-labels.scm:170
-msgid ""
-"Create an image of a Tube Button Label Header using the gimp.org webpage "
-"theme"
-msgstr ""
-"gimp.org web sayfa temasını kullanarak Tüp Düğme Etiket Başlığı görüntüsü "
-"oluştur"
-
-#: ../scripts/glossy.scm:197 ../scripts/glossy.scm:268
+#: ../scripts/glossy.scm:196 ../scripts/glossy.scm:267
 msgid "Glo_ssy..."
 msgstr "Par_lak..."
 
-#: ../scripts/glossy.scm:198
+#: ../scripts/glossy.scm:197
 msgid ""
 "Add gradients, patterns, shadows, and bump maps to the selected region (or "
 "alpha)"
@@ -1630,51 +1643,52 @@ msgstr ""
 "Seçilen bölgeye (veya alfaya) renk geçişleri, desenler, gölgeler ve derinlik "
 "etkisi ekle"
 
-#: ../scripts/glossy.scm:205 ../scripts/glossy.scm:277
+#: ../scripts/glossy.scm:204 ../scripts/glossy.scm:276
 msgid "Blend gradient (text)"
 msgstr "Renk geçişini harmanla (metin)"
 
-#: ../scripts/glossy.scm:206 ../scripts/glossy.scm:278
+#: ../scripts/glossy.scm:205 ../scripts/glossy.scm:277
 msgid "Text gradient reverse"
 msgstr "Metin renk geçişini tersine çevir"
 
-#: ../scripts/glossy.scm:207 ../scripts/glossy.scm:279
+#: ../scripts/glossy.scm:206 ../scripts/glossy.scm:278
 msgid "Blend gradient (outline)"
 msgstr "Renk geçişini harmanla (anahat)"
 
-#: ../scripts/glossy.scm:208 ../scripts/glossy.scm:280
+#: ../scripts/glossy.scm:207 ../scripts/glossy.scm:279
 msgid "Outline gradient reverse"
 msgstr "Anahat renk geçişini tersine çevir"
 
-#: ../scripts/glossy.scm:211 ../scripts/glossy.scm:283
+#: ../scripts/glossy.scm:210 ../scripts/glossy.scm:282
 msgid "Use pattern for text instead of gradient"
 msgstr "Metin için renk geçişi yerine desen kullan"
 
-#: ../scripts/glossy.scm:212 ../scripts/glossy.scm:284
+#: ../scripts/glossy.scm:211 ../scripts/glossy.scm:283
 msgid "Pattern (text)"
 msgstr "Desen (metin)"
 
-#: ../scripts/glossy.scm:213 ../scripts/glossy.scm:285
+#: ../scripts/glossy.scm:212 ../scripts/glossy.scm:284
 msgid "Use pattern for outline instead of gradient"
 msgstr "Anahat için renk geçişi yerine desen kullan"
 
-#: ../scripts/glossy.scm:214 ../scripts/glossy.scm:286
+#: ../scripts/glossy.scm:213 ../scripts/glossy.scm:285
 msgid "Pattern (outline)"
 msgstr "Desen (anahat)"
 
-#: ../scripts/glossy.scm:215 ../scripts/glossy.scm:287
+#: ../scripts/glossy.scm:214 ../scripts/glossy.scm:286
 msgid "Use pattern overlay"
 msgstr "Desen kaplaması kullan"
 
-#: ../scripts/glossy.scm:216 ../scripts/glossy.scm:288
+#: ../scripts/glossy.scm:215 ../scripts/glossy.scm:287
 msgid "Pattern (overlay)"
 msgstr "Desen (bindirme)"
 
-#: ../scripts/glossy.scm:218 ../scripts/glossy.scm:290 ../scripts/sphere.scm:80
+#: ../scripts/glossy.scm:217 ../scripts/glossy.scm:289 ../scripts/sphere.scm:80
+#: ../scripts/xach-effect.scm:92
 msgid "Shadow"
 msgstr "Gölge"
 
-#: ../scripts/glossy.scm:269
+#: ../scripts/glossy.scm:268
 msgid "Create a logo with gradients, patterns, shadows, and bump maps"
 msgstr ""
 "Renk geçişleri, desenler, gölgeler ve derinlik etkisi ile bir logo oluştur"
@@ -1687,41 +1701,37 @@ msgstr "_Sıcak Parlama..."
 msgid "Add a glowing hot metal effect to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) parlayan sıcak metal etkisi ekle"
 
-#: ../scripts/glowing-logo.scm:84
-msgid "Effect size (pixels * 3)"
-msgstr "Etki boyutu (piksel * 3)"
-
 #: ../scripts/glowing-logo.scm:110
 msgid "Create a logo that looks like glowing hot metal"
 msgstr "Parlayan sıcak metale benzeyen bir logo oluştur"
 
-#: ../scripts/gradient-bevel-logo.scm:95 ../scripts/gradient-bevel-logo.scm:134
+#: ../scripts/gradient-bevel-logo.scm:94 ../scripts/gradient-bevel-logo.scm:133
 msgid "Gradient Beve_l..."
 msgstr "Renk Geçişi _Eğrisi..."
 
-#: ../scripts/gradient-bevel-logo.scm:96
+#: ../scripts/gradient-bevel-logo.scm:95
 msgid "Add a shiny look and bevel effect to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) parlak bir görünüm ve eğim etkisi ekle"
 
-#: ../scripts/gradient-bevel-logo.scm:103 ../scripts/textured-logo.scm:127
-#: ../scripts/t-o-p-logo.scm:109
+#: ../scripts/gradient-bevel-logo.scm:102 ../scripts/textured-logo.scm:127
+#: ../scripts/t-o-p-logo.scm:106
 msgid "Border size (pixels)"
 msgstr "Sınır boyutu (piksel)"
 
-#: ../scripts/gradient-bevel-logo.scm:104
-#: ../scripts/gradient-bevel-logo.scm:143
+#: ../scripts/gradient-bevel-logo.scm:103
+#: ../scripts/gradient-bevel-logo.scm:142
 msgid "Bevel height (sharpness)"
 msgstr "Eğim yüksekliği (keskinlik)"
 
-#: ../scripts/gradient-bevel-logo.scm:135
+#: ../scripts/gradient-bevel-logo.scm:134
 msgid "Create a logo with a shiny look and beveled edges"
 msgstr "Parlak görünümlü ve eğik köşeli bir logo oluştur"
 
-#: ../scripts/gradient-example.scm:64
+#: ../scripts/gradient-example.scm:63
 msgid "Custom _Gradient..."
 msgstr "Özel _Renk Geçişi..."
 
-#: ../scripts/gradient-example.scm:65
+#: ../scripts/gradient-example.scm:64
 msgid "Create an image filled with an example of the current gradient"
 msgstr "Geçerli renk geçişi ile doldurulmuş bir görüntü oluştur"
 
@@ -1792,35 +1802,35 @@ msgstr "Bütün Kılavuzları _Kaldır"
 msgid "Remove all horizontal and vertical guides"
 msgstr "Bütün yatay ve dikey kılavuzları kaldır"
 
-#: ../scripts/i26-gunya2.scm:91
+#: ../scripts/i26-gunya2.scm:92
 msgid "Imigre-_26..."
 msgstr "Imigre-_26..."
 
-#: ../scripts/i26-gunya2.scm:92
+#: ../scripts/i26-gunya2.scm:93
 msgid "Create a logo in a two-color, scribbled text style"
 msgstr "İki renkli, çiziktirilmiş yazı biçeminde bir logo oluştur"
 
-#: ../scripts/i26-gunya2.scm:99
+#: ../scripts/i26-gunya2.scm:100
 msgid "Frame color"
 msgstr "Çerçeve rengi"
 
-#: ../scripts/i26-gunya2.scm:102
+#: ../scripts/i26-gunya2.scm:103
 msgid "Frame size"
 msgstr "Çerçeve boyutu"
 
-#: ../scripts/land.scm:72
+#: ../scripts/land.scm:73
 msgid "_Land..."
 msgstr "_Kara..."
 
-#: ../scripts/land.scm:73
+#: ../scripts/land.scm:74
 msgid "Create an image filled with a topographic map pattern"
 msgstr "Yerbetimsel eşlem örgüsüyle doldurulmuş bir görüntü oluştur"
 
-#: ../scripts/land.scm:82
+#: ../scripts/land.scm:83
 msgid "Land height"
 msgstr "Kara yüksekliği"
 
-#: ../scripts/land.scm:83
+#: ../scripts/land.scm:84
 msgid "Sea depth"
 msgstr "Deniz derinliği"
 
@@ -1844,30 +1854,31 @@ msgstr "Engebelilik"
 msgid "Use current gradient"
 msgstr "Seçili renk geçişini kullan"
 
-#: ../scripts/line-nova.scm:102
+#: ../scripts/line-nova.scm:106
 msgid "Line _Nova..."
 msgstr "_Nova Çizgisi..."
 
-#: ../scripts/line-nova.scm:103
+#: ../scripts/line-nova.scm:107
 msgid ""
-"Fill a layer with rays emanating outward from its center using the FG color"
+"Fill a layer with rays emanating outward from its center using the "
+"foreground color"
 msgstr ""
-"ÖA rengini kullanarak merkezden dışarıya doğru yayılan ışınla bir katmanı "
-"doldur"
+"Önalan rengini kullanarak merkezden dışarıya doğru yayılan ışınla bir "
+"katmanı doldur"
 
-#: ../scripts/line-nova.scm:110
+#: ../scripts/line-nova.scm:114
 msgid "Number of lines"
 msgstr "Çizgi sayısı"
 
-#: ../scripts/line-nova.scm:111
+#: ../scripts/line-nova.scm:115
 msgid "Sharpness (degrees)"
 msgstr "Keskinlik (derece)"
 
-#: ../scripts/line-nova.scm:112
+#: ../scripts/line-nova.scm:116
 msgid "Offset radius"
 msgstr "Denge yarıçapı"
 
-#: ../scripts/line-nova.scm:113
+#: ../scripts/line-nova.scm:117
 msgid "Randomness"
 msgstr "Raslantısallık"
 
@@ -1879,62 +1890,58 @@ msgstr "_Dikdörtgen..."
 msgid "Create a rectangular brush"
 msgstr "Dikdörtgen bir fırça oluştur"
 
-#: ../scripts/mkbrush.scm:69 ../scripts/mkbrush.scm:133
-#: ../scripts/mkbrush.scm:187 ../scripts/mkbrush.scm:254
+#: ../scripts/mkbrush.scm:69 ../scripts/mkbrush.scm:137
+#: ../scripts/mkbrush.scm:193 ../scripts/mkbrush.scm:262
 msgid "Name"
 msgstr "Ad"
 
-#: ../scripts/mkbrush.scm:72 ../scripts/mkbrush.scm:137
-#: ../scripts/mkbrush.scm:190 ../scripts/mkbrush.scm:258
-#: ../scripts/paste-as-brush.scm:71 ../scripts/select-to-brush.scm:143
+#: ../scripts/mkbrush.scm:72 ../scripts/mkbrush.scm:141
+#: ../scripts/mkbrush.scm:196 ../scripts/mkbrush.scm:266
+#: ../scripts/paste-as-brush.scm:70 ../scripts/select-to-brush.scm:143
 msgid "Spacing"
 msgstr "Boşluk"
 
-#: ../scripts/mkbrush.scm:127
+#: ../scripts/mkbrush.scm:131
 msgid "Re_ctangular, Feathered..."
 msgstr "Dik_dörtgen, Tüylü..."
 
-#: ../scripts/mkbrush.scm:128
+#: ../scripts/mkbrush.scm:132
 msgid "Create a rectangular brush with feathered edges"
 msgstr "Tüylü köşeli, dikdörtgen bir fırça oluştur"
 
-#: ../scripts/mkbrush.scm:136 ../scripts/mkbrush.scm:257
+#: ../scripts/mkbrush.scm:140 ../scripts/mkbrush.scm:265
 msgid "Feathering"
 msgstr "Yumuşak Geçiş"
 
-#: ../scripts/mkbrush.scm:181
+#: ../scripts/mkbrush.scm:187
 msgid "_Elliptical..."
 msgstr "_Oval..."
 
-#: ../scripts/mkbrush.scm:182
+#: ../scripts/mkbrush.scm:188
 msgid "Create an elliptical brush"
 msgstr "Oval bir fırça oluştur"
 
-#: ../scripts/mkbrush.scm:248
+#: ../scripts/mkbrush.scm:256
 msgid "Elli_ptical, Feathered..."
 msgstr "O_val, Tüylü..."
 
-#: ../scripts/mkbrush.scm:249
+#: ../scripts/mkbrush.scm:257
 msgid "Create an elliptical brush with feathered edges"
 msgstr "Tüylü köşeli, oval bir fırça oluştur"
 
-#: ../scripts/neon-logo.scm:245 ../scripts/neon-logo.scm:281
+#: ../scripts/neon-logo.scm:244 ../scripts/neon-logo.scm:280
 msgid "N_eon..."
 msgstr "N_eon..."
 
-#: ../scripts/neon-logo.scm:246
+#: ../scripts/neon-logo.scm:245
 msgid "Convert the selected region (or alpha) into a neon-sign like object"
-msgstr "Seçilen bölgeyi (veya alfayı) neon benzeri bir nesneye çevir"
+msgstr "Seçilen bölgeyi (veya alfayı) neon benzeri bir nesneye dönüştür"
 
-#: ../scripts/neon-logo.scm:253
-msgid "Effect size (pixels * 5)"
-msgstr "Etki boyutu (piksel * 5)"
-
-#: ../scripts/neon-logo.scm:256 ../scripts/neon-logo.scm:292
+#: ../scripts/neon-logo.scm:255 ../scripts/neon-logo.scm:291
 msgid "Create shadow"
 msgstr "Gölge oluştur"
 
-#: ../scripts/neon-logo.scm:282
+#: ../scripts/neon-logo.scm:281
 msgid "Create a logo in the style of a neon sign"
 msgstr "Neon biçeminde bir logo oluştur"
 
@@ -1954,103 +1961,156 @@ msgstr "Hücre boyutu (piksel)"
 msgid "Density (%)"
 msgstr "Sıklık (%)"
 
-#: ../scripts/old-photo.scm:90
+#: ../scripts/old-photo.scm:89
 msgid "_Old Photo..."
 msgstr "_Eski Fotoğraf..."
 
-#: ../scripts/old-photo.scm:91
+#: ../scripts/old-photo.scm:90
 msgid "Make an image look like an old photo"
 msgstr "Görüntünün eski fotoğraf gibi görünmesini sağla"
 
-#: ../scripts/old-photo.scm:98
+#: ../scripts/old-photo.scm:97
 msgid "Defocus"
 msgstr "Odak Dışına Çıkar"
 
 #. since this plug-in uses the fuzzy-border plug-in, I used the
 #. values of the latter, with the exception of the initial value
 #. and the 'minimum' value.
-#: ../scripts/old-photo.scm:103
+#: ../scripts/old-photo.scm:102
 msgid "Sepia"
 msgstr "Renksiz"
 
-#: ../scripts/old-photo.scm:104
+#: ../scripts/old-photo.scm:103
 msgid "Mottle"
 msgstr "Benekle"
 
-#: ../scripts/paste-as-brush.scm:57 ../scripts/paste-as-pattern.scm:45
+#: ../scripts/palette-export.scm:235
+msgid "Folder for the output file"
+msgstr "Çıktı dosyası dizini"
+
+#: ../scripts/palette-export.scm:236
+msgid ""
+"The name of the file to create (if a file with this name already exist, it "
+"will be replaced)"
+msgstr ""
+"Oluşturulacak dosyanın adı (bu adda bir dosya zaten varsa, değiştirilir)"
+
+#: ../scripts/palette-export.scm:244
+msgid "The filename you entered is not a suitable name for a file."
+msgstr "Girdiğiniz dosya adı bir dosya için uygun bir ad değil."
+
+#: ../scripts/palette-export.scm:246
+msgid ""
+"All characters in the name are either white-spaces or characters which can "
+"not appear in filenames."
+msgstr ""
+"Addaki tüm karakterler görünmez boşluklar veya dosya adlarında "
+"gösterilemeyen karakterlerden oluşuyor."
+
+#: ../scripts/palette-export.scm:274
+msgid ""
+"Export the active palette as a CSS stylesheet with the color entry name as "
+"their class name, and the color itself as the color attribute"
+msgstr ""
+"Etkin paleti, CSS stil sayfası olarak, sınıf adı renk değerine ve renk "
+"özniteliği renge eşit olacak biçimde, dışa aktar"
+
+#: ../scripts/palette-export.scm:300
+msgid "Export the active palette as a PHP dictionary (name => color)"
+msgstr "Etkin paleti bir PHP sözlüğü olarak dışa aktar (ad => renk)"
+
+#: ../scripts/palette-export.scm:332
+msgid "Export the active palette as a Python dictionary (name: color)"
+msgstr "Etkin paleti bir Python sözlüğü olarak dışa aktar (ad: renk)"
+
+#: ../scripts/palette-export.scm:361
+msgid ""
+"Write all the colors in a palette to a text file, one hexadecimal value per "
+"line (no names)"
+msgstr ""
+"Paletteki tüm renkleri bir metin dosyasına, her satırda onaltılık bir değer "
+"olacak şekilde (adlar olmadan) yaz"
+
+#: ../scripts/palette-export.scm:408
+msgid "Export the active palette as a java.util.Hashtable<String, Color>"
+msgstr ""
+"Etkin paleti bir Java hashtable olarak dışa aktar java.util."
+"Hashtable<String, Color>"
+
+#: ../scripts/paste-as-brush.scm:56 ../scripts/paste-as-pattern.scm:44
 msgid "There is no image data in the clipboard to paste."
 msgstr "Panoda yapıştırılacak görüntü verisi yok."
 
-#: ../scripts/paste-as-brush.scm:63
+#: ../scripts/paste-as-brush.scm:62
 msgid "New _Brush..."
 msgstr "Yeni _Fırça..."
 
-#: ../scripts/paste-as-brush.scm:64
+#: ../scripts/paste-as-brush.scm:63
 msgid "Paste the clipboard contents into a new brush"
 msgstr "Panodaki içeriği yeni fırçaya yapıştır"
 
-#: ../scripts/paste-as-brush.scm:69 ../scripts/select-to-brush.scm:141
+#: ../scripts/paste-as-brush.scm:68 ../scripts/select-to-brush.scm:141
 msgid "Brush name"
 msgstr "Fırça adı"
 
-#: ../scripts/paste-as-brush.scm:70 ../scripts/paste-as-pattern.scm:58
-#: ../scripts/select-to-brush.scm:142 ../scripts/select-to-pattern.scm:103
+#: ../scripts/paste-as-brush.scm:69 ../scripts/paste-as-pattern.scm:57
+#: ../scripts/select-to-brush.scm:142 ../scripts/select-to-pattern.scm:102
 msgid "File name"
 msgstr "Dosya adı"
 
-#: ../scripts/paste-as-pattern.scm:51
+#: ../scripts/paste-as-pattern.scm:50
 msgid "New _Pattern..."
 msgstr "Yeni _Desen..."
 
-#: ../scripts/paste-as-pattern.scm:52
+#: ../scripts/paste-as-pattern.scm:51
 msgid "Paste the clipboard contents into a new pattern"
 msgstr "Pano içeriğini yeni bir desene yapıştır"
 
-#: ../scripts/paste-as-pattern.scm:57 ../scripts/select-to-pattern.scm:102
+#: ../scripts/paste-as-pattern.scm:56 ../scripts/select-to-pattern.scm:101
 msgid "Pattern name"
 msgstr "Desen adı"
 
-#: ../scripts/perspective-shadow.scm:196
+#: ../scripts/perspective-shadow.scm:198
 msgid "_Perspective..."
 msgstr "_Perspektif..."
 
-#: ../scripts/perspective-shadow.scm:197
+#: ../scripts/perspective-shadow.scm:199
 msgid "Add a perspective shadow to the selected region (or alpha)"
 msgstr "Seçilen bölgeye (veya alfaya) perspektif gölgesi ekle"
 
-#: ../scripts/perspective-shadow.scm:204
+#: ../scripts/perspective-shadow.scm:206
 msgid "Angle"
 msgstr "Açı"
 
-#: ../scripts/perspective-shadow.scm:205
+#: ../scripts/perspective-shadow.scm:207
 msgid "Relative distance of horizon"
 msgstr "Ufkun göreceli uzaklığı"
 
-#: ../scripts/perspective-shadow.scm:206
+#: ../scripts/perspective-shadow.scm:208
 msgid "Relative length of shadow"
 msgstr "Gölgenin göreceli uzunluğu"
 
-#: ../scripts/perspective-shadow.scm:210
+#: ../scripts/perspective-shadow.scm:212
 msgid "Interpolation"
 msgstr "Aradeğerleme"
 
-#: ../scripts/predator.scm:119
+#: ../scripts/predator.scm:121
 msgid "_Predator..."
 msgstr "_Yırtıcı..."
 
-#: ../scripts/predator.scm:120
+#: ../scripts/predator.scm:122
 msgid "Add a 'Predator' effect to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) 'Yırtıcı' etkisi uygula"
 
-#: ../scripts/predator.scm:127
+#: ../scripts/predator.scm:129
 msgid "Edge amount"
 msgstr "Kenar miktarı"
 
-#: ../scripts/predator.scm:128
+#: ../scripts/predator.scm:130
 msgid "Pixelize"
 msgstr "Pikselleştir"
 
-#: ../scripts/predator.scm:129
+#: ../scripts/predator.scm:131
 msgid "Pixel amount"
 msgstr "Piksel miktarı"
 
@@ -2102,31 +2162,31 @@ msgstr "Basılmadı"
 msgid "Not pressed (active)"
 msgstr "Basılmadı (etkin)"
 
-#: ../scripts/rendermap.scm:81
+#: ../scripts/rendermap.scm:80
 msgid "Render _Map..."
 msgstr "_Eşlem Oluştur..."
 
-#: ../scripts/rendermap.scm:82
+#: ../scripts/rendermap.scm:81
 msgid "Create an image filled with an Earth-like map pattern"
 msgstr "Yeryüzü benzeri eşlem deseniyle dolu bir görüntü oluştur"
 
-#: ../scripts/rendermap.scm:91
+#: ../scripts/rendermap.scm:90
 msgid "Behavior"
 msgstr "Davranış"
 
-#: ../scripts/rendermap.scm:91
+#: ../scripts/rendermap.scm:90
 msgid "Tile"
 msgstr "Döşe"
 
-#: ../scripts/rendermap.scm:91
+#: ../scripts/rendermap.scm:90
 msgid "Detail in Middle"
 msgstr "Detay Ortada"
 
-#: ../scripts/reverse-layers.scm:32
+#: ../scripts/reverse-layers.scm:42
 msgid "Reverse Layer Order"
 msgstr "Katmanların Sırasını Tersine Çevir"
 
-#: ../scripts/reverse-layers.scm:33
+#: ../scripts/reverse-layers.scm:43
 msgid "Reverse the order of layers in the image"
 msgstr "Görüntüdeki katmanların sırasını tersine çevir"
 
@@ -2145,7 +2205,7 @@ msgstr ""
 msgid "Rippling strength"
 msgstr "Dalgalanma kuvveti"
 
-#: ../scripts/ripply-anim.scm:128 ../scripts/waves-anim.scm:106
+#: ../scripts/ripply-anim.scm:128 ../scripts/waves-anim.scm:105
 msgid "Number of frames"
 msgstr "Çerçeve sayısı"
 
@@ -2165,53 +2225,53 @@ msgstr "Yayma"
 msgid "Black"
 msgstr "Siyah"
 
-#: ../scripts/round-corners.scm:126
+#: ../scripts/round-corners.scm:129
 msgid "_Round Corners..."
 msgstr "Köşeleri _Yuvarla..."
 
-#: ../scripts/round-corners.scm:127
+#: ../scripts/round-corners.scm:130
 msgid ""
 "Round the corners of an image and optionally add a drop-shadow and background"
 msgstr ""
 "Bir görüntünün köşelerini yuvarla, ve seçmeli olarak gölge ve artalan ekle"
 
-#: ../scripts/round-corners.scm:134
+#: ../scripts/round-corners.scm:137
 msgid "Edge radius"
 msgstr "Kenar yarıçapı"
 
-#: ../scripts/round-corners.scm:135
+#: ../scripts/round-corners.scm:138
 msgid "Add drop-shadow"
 msgstr "Kabartı gölgesi ekle"
 
-#: ../scripts/round-corners.scm:139
+#: ../scripts/round-corners.scm:142
 msgid "Add background"
 msgstr "Artalan ekle"
 
-#: ../scripts/script-fu-set-cmap.scm:54
+#: ../scripts/script-fu-set-cmap.scm:53
 msgid "Se_t Colormap..."
 msgstr "Renk Eşlemi _Ata..."
 
-#: ../scripts/script-fu-set-cmap.scm:55
+#: ../scripts/script-fu-set-cmap.scm:54
 msgid "Change the colormap of an image to the colors in a specified palette."
 msgstr "Görüntünün renk eşlemini geçerli palet renklerine cevir."
 
-#: ../scripts/script-fu-set-cmap.scm:62
+#: ../scripts/script-fu-set-cmap.scm:61
 msgid "Palette"
 msgstr "Palet"
 
-#: ../scripts/selection-round.scm:156
+#: ../scripts/selection-round.scm:139
 msgid "Rounded R_ectangle..."
 msgstr "Yuvarlanmış D_ikdörtgen..."
 
-#: ../scripts/selection-round.scm:157
+#: ../scripts/selection-round.scm:140
 msgid "Round the corners of the current selection"
 msgstr "Şu anki seçimin köşelerini yuvarla"
 
-#: ../scripts/selection-round.scm:164
+#: ../scripts/selection-round.scm:147
 msgid "Radius (%)"
 msgstr "Yarıçap (%)"
 
-#: ../scripts/selection-round.scm:165
+#: ../scripts/selection-round.scm:148
 msgid "Concave"
 msgstr "İç bükey"
 
@@ -2221,7 +2281,7 @@ msgstr "_Fırçaya..."
 
 #: ../scripts/select-to-brush.scm:134
 msgid "Convert a selection to a brush"
-msgstr "Seçimi fırçaya çevir"
+msgstr "Seçimi fırçaya dönüştür"
 
 #: ../scripts/select-to-image.scm:81
 msgid "To _Image"
@@ -2229,38 +2289,38 @@ msgstr "_Görüntüye"
 
 #: ../scripts/select-to-image.scm:82
 msgid "Convert a selection to an image"
-msgstr "Seçimi görüntüye çevir"
+msgstr "Seçimi görüntüye dönüştür"
 
-#: ../scripts/select-to-pattern.scm:94
+#: ../scripts/select-to-pattern.scm:93
 msgid "To _Pattern..."
 msgstr "_Desene..."
 
-#: ../scripts/select-to-pattern.scm:95
+#: ../scripts/select-to-pattern.scm:94
 msgid "Convert a selection to a pattern"
-msgstr "Seçimi desene çevir"
+msgstr "Seçimi desene dönüştür"
 
-#: ../scripts/slide.scm:240
+#: ../scripts/slide.scm:236
 msgid "_Slide..."
 msgstr "_Kaydır..."
 
-#: ../scripts/slide.scm:241
+#: ../scripts/slide.scm:237
 msgid "Add a slide-film like frame, sprocket holes, and labels to an image"
 msgstr ""
 "Görüntüye çerçeve, dişli delikleri ve etiketler benzeri slayt filmi ekle"
 
-#: ../scripts/slide.scm:249
+#: ../scripts/slide.scm:245
 msgid "Number"
 msgstr "Sayı"
 
-#: ../scripts/slide.scm:251
+#: ../scripts/slide.scm:247
 msgid "Font color"
 msgstr "Yazı tipi rengi"
 
-#: ../scripts/sota-chrome-logo.scm:203
+#: ../scripts/sota-chrome-logo.scm:204
 msgid "SOTA Chrome..."
 msgstr "SOTA Krom..."
 
-#: ../scripts/sota-chrome-logo.scm:204
+#: ../scripts/sota-chrome-logo.scm:205
 msgid "Create a State Of The Art chromed logo"
 msgstr "Krom sanatı logosu oluştur."
 
@@ -2272,7 +2332,7 @@ msgstr "Hızlı Metin..."
 msgid "Create a logo with a speedy text effect"
 msgstr "Hızlı metin etkisi ile bir logo oluştur"
 
-#: ../scripts/sphere.scm:72 ../scripts/test-sphere.scm:264
+#: ../scripts/sphere.scm:72 ../scripts/test-sphere.scm:267
 msgid "_Sphere..."
 msgstr "_Küre..."
 
@@ -2292,150 +2352,146 @@ msgstr "Işıklandırma (derece)"
 msgid "Sphere color"
 msgstr "Küre rengi"
 
-#: ../scripts/spinning-globe.scm:95
+#: ../scripts/spinning-globe.scm:94
 msgid "_Spinning Globe..."
 msgstr "_Dönen Küre..."
 
-#: ../scripts/spinning-globe.scm:96
+#: ../scripts/spinning-globe.scm:95
 msgid "Create an animation by mapping the current image onto a spinning sphere"
 msgstr ""
 "Geçerli görüntüyü dönen bir küreye uyarlayarak, bir canlandırma oluştur"
 
-#: ../scripts/spinning-globe.scm:103
+#: ../scripts/spinning-globe.scm:102
 msgid "Frames"
 msgstr "Kare Sayısı"
 
-#: ../scripts/spinning-globe.scm:104
+#: ../scripts/spinning-globe.scm:103
 msgid "Turn from left to right"
 msgstr "Soldan sağa dön"
 
-#: ../scripts/spinning-globe.scm:106
+#: ../scripts/spinning-globe.scm:105
 msgid "Index to n colors (0 = remain RGB)"
 msgstr "n Renklerine içerik (0 = RGB kalan)"
 
-#: ../scripts/spyrogimp.scm:243
+#: ../scripts/spyrogimp.scm:240
 msgid "Rendering Spyro"
 msgstr "Spyro İşleme"
 
-#: ../scripts/spyrogimp.scm:317
+#: ../scripts/spyrogimp.scm:314
 msgid "_Spyrogimp..."
 msgstr "_Spyrogimp..."
 
-#: ../scripts/spyrogimp.scm:318
+#: ../scripts/spyrogimp.scm:315
 msgid ""
 "Add Spirographs, Epitrochoids, and Lissajous Curves to the current layer"
 msgstr ""
 "Geçerli katmana Spirografiler, Epitrokoidler ve Lissajous Eğrileri ekle"
 
-#: ../scripts/spyrogimp.scm:326
+#: ../scripts/spyrogimp.scm:323
 msgid "Type"
 msgstr "Tür"
 
-#: ../scripts/spyrogimp.scm:326
+#: ../scripts/spyrogimp.scm:323
 msgid "Spyrograph"
 msgstr "Spirograf"
 
-#: ../scripts/spyrogimp.scm:327
+#: ../scripts/spyrogimp.scm:324
 msgid "Epitrochoid"
 msgstr "Epitrokoit"
 
-#: ../scripts/spyrogimp.scm:328
+#: ../scripts/spyrogimp.scm:325
 msgid "Lissajous"
 msgstr "Lissajous"
 
-#: ../scripts/spyrogimp.scm:329
+#: ../scripts/spyrogimp.scm:326
 msgid "Shape"
 msgstr "Şekil"
 
-#: ../scripts/spyrogimp.scm:329
+#: ../scripts/spyrogimp.scm:326
 msgid "Circle"
 msgstr "Çember"
 
-#: ../scripts/spyrogimp.scm:330
-msgid "Frame"
-msgstr "Çerçeve"
-
-#: ../scripts/spyrogimp.scm:331
+#: ../scripts/spyrogimp.scm:328
 msgid "Triangle"
 msgstr "Üçgen"
 
-#: ../scripts/spyrogimp.scm:332
+#: ../scripts/spyrogimp.scm:329
 msgid "Square"
 msgstr "Kare"
 
-#: ../scripts/spyrogimp.scm:333
+#: ../scripts/spyrogimp.scm:330
 msgid "Pentagon"
 msgstr "Beşgen"
 
-#: ../scripts/spyrogimp.scm:334
+#: ../scripts/spyrogimp.scm:331
 msgid "Hexagon"
 msgstr "Altıgen"
 
-#: ../scripts/spyrogimp.scm:335
+#: ../scripts/spyrogimp.scm:332
 msgid "Polygon: 7 sides"
 msgstr "Çokgen: 7 köşeli"
 
-#: ../scripts/spyrogimp.scm:336
+#: ../scripts/spyrogimp.scm:333
 msgid "Polygon: 8 sides"
 msgstr "Çokgen: 8 köşeli"
 
-#: ../scripts/spyrogimp.scm:337
+#: ../scripts/spyrogimp.scm:334
 msgid "Polygon: 9 sides"
 msgstr "Çokgen: 9 köşeli"
 
-#: ../scripts/spyrogimp.scm:338
+#: ../scripts/spyrogimp.scm:335
 msgid "Polygon: 10 sides"
 msgstr "Çokgen: 10 köşeli"
 
-#: ../scripts/spyrogimp.scm:339
+#: ../scripts/spyrogimp.scm:336
 msgid "Outer teeth"
 msgstr "Dış dişler"
 
-#: ../scripts/spyrogimp.scm:340
+#: ../scripts/spyrogimp.scm:337
 msgid "Inner teeth"
 msgstr "İç dişler"
 
-#: ../scripts/spyrogimp.scm:341
+#: ../scripts/spyrogimp.scm:338
 msgid "Margin (pixels)"
 msgstr "Boşluk (piksel)"
 
-#: ../scripts/spyrogimp.scm:342
+#: ../scripts/spyrogimp.scm:339
 msgid "Hole ratio"
 msgstr "Boşluk oranı"
 
-#: ../scripts/spyrogimp.scm:343 ../scripts/text-circle.scm:212
+#: ../scripts/spyrogimp.scm:340 ../scripts/text-circle.scm:215
 msgid "Start angle"
 msgstr "Başlangıç açısı"
 
-#: ../scripts/spyrogimp.scm:345
+#: ../scripts/spyrogimp.scm:342
 msgid "Tool"
 msgstr "Araç"
 
-#: ../scripts/spyrogimp.scm:345
+#: ../scripts/spyrogimp.scm:342
 msgid "Pencil"
 msgstr "Kalem"
 
-#: ../scripts/spyrogimp.scm:346 ../scripts/spyrogimp.scm:348
+#: ../scripts/spyrogimp.scm:343 ../scripts/spyrogimp.scm:345
 msgid "Brush"
 msgstr "Fırça"
 
-#: ../scripts/spyrogimp.scm:347
+#: ../scripts/spyrogimp.scm:344
 msgid "Airbrush"
 msgstr "Sprey"
 
-#: ../scripts/spyrogimp.scm:350
+#: ../scripts/spyrogimp.scm:347
 msgid "Color method"
 msgstr "Renk yöntemi"
 
-#: ../scripts/spyrogimp.scm:350
+#: ../scripts/spyrogimp.scm:347
 msgid "Solid Color"
 msgstr "Düz Renk"
 
-#: ../scripts/spyrogimp.scm:351
+#: ../scripts/spyrogimp.scm:348
 msgid "Gradient: Loop Sawtooth"
 msgstr "Renk Geçişi: Testere Dişi Dönüşlü"
 
-#: ../scripts/spyrogimp.scm:352
+#: ../scripts/spyrogimp.scm:349
 msgid "Gradient: Loop Triangle"
 msgstr "Renk Geçişi: Üçgen Dönüşlü"
 
@@ -2462,23 +2518,11 @@ msgstr "Patlama rengi"
 msgid "Create a logo using a starburst gradient"
 msgstr "Yıldız patlaması renk geçişi kullanarak bir logo oluştur"
 
-#: ../scripts/starscape-logo.scm:135 ../scripts/starscape-logo.scm:166
+#: ../scripts/starscape-logo.scm:139
 msgid "Sta_rscape..."
 msgstr "Yıl_dızalanı..."
 
-#: ../scripts/starscape-logo.scm:136
-msgid ""
-"Fill the selected region (or alpha) with a rock-like texture, a nova glow, "
-"and shadow"
-msgstr ""
-"Seçili bölgeyi (veya alfayı) kaya benzeri bir doku, parıltı ve gölge ile "
-"doldur"
-
-#: ../scripts/starscape-logo.scm:143
-msgid "Effect size (pixels * 4)"
-msgstr "Etki boyutu (piksel * 4)"
-
-#: ../scripts/starscape-logo.scm:167
+#: ../scripts/starscape-logo.scm:140
 msgid "Create a logo using a rock-like texture, a nova glow, and shadow"
 msgstr "Kaya benzeri bir doku, parıltı ve gölge kullanarak bir logo oluştur"
 
@@ -2514,20 +2558,20 @@ msgstr "Sarmal açısı"
 msgid "Number of times to whirl"
 msgstr "Sarmal sayısı"
 
-#: ../scripts/text-circle.scm:204
+#: ../scripts/text-circle.scm:207
 msgid "Text C_ircle..."
 msgstr "Metin Çe_mberi..."
 
-#: ../scripts/text-circle.scm:205
+#: ../scripts/text-circle.scm:208
 msgid ""
 "Create a logo by rendering the specified text along the perimeter of a circle"
 msgstr "Bir çember çevresi boyunca belirlenen metini tarayarak logo oluştur"
 
-#: ../scripts/text-circle.scm:213
+#: ../scripts/text-circle.scm:216
 msgid "Fill angle"
 msgstr "Doldurma açısı"
 
-#: ../scripts/text-circle.scm:215
+#: ../scripts/text-circle.scm:218
 msgid "Antialias"
 msgstr "Yumuşat"
 
@@ -2576,80 +2620,80 @@ msgstr "Vurgular, gölgeler ve mozaik artalan ile bir dokulu logo oluştur"
 msgid "Text pattern"
 msgstr "Yazı deseni"
 
-#: ../scripts/tileblur.scm:65
+#: ../scripts/tileblur.scm:68
 msgid "_Tileable Blur..."
 msgstr "_Döşenebilir Bulanıklık..."
 
-#: ../scripts/tileblur.scm:66
+#: ../scripts/tileblur.scm:69
 msgid "Blur the edges of an image so the result tiles seamlessly"
 msgstr ""
 "Görüntü kenarlarını bulanıklaştır, böylece sonuç kusursuz biçimde döşenir"
 
-#: ../scripts/tileblur.scm:74
+#: ../scripts/tileblur.scm:77
 msgid "Blur vertically"
 msgstr "Dikey bulandır"
 
-#: ../scripts/tileblur.scm:75
+#: ../scripts/tileblur.scm:78
 msgid "Blur horizontally"
 msgstr "Yatay bulandır"
 
-#: ../scripts/tileblur.scm:76
+#: ../scripts/tileblur.scm:79
 msgid "Blur type"
 msgstr "Bulanıklık türü"
 
-#: ../scripts/tileblur.scm:76
+#: ../scripts/tileblur.scm:79
 msgid "IIR"
 msgstr "IIR"
 
-#: ../scripts/tileblur.scm:76
+#: ../scripts/tileblur.scm:79
 msgid "RLE"
 msgstr "RLE"
 
-#: ../scripts/title-header.scm:164
+#: ../scripts/title-header.scm:165
 msgid "Web Title Header..."
 msgstr "Web Başlığı..."
 
-#: ../scripts/title-header.scm:165
+#: ../scripts/title-header.scm:166
 msgid "Create a decorative web title header"
 msgstr "Süslü bir web başlığı oluştur"
 
-#: ../scripts/t-o-p-logo.scm:101 ../scripts/t-o-p-logo.scm:141
+#: ../scripts/t-o-p-logo.scm:98 ../scripts/t-o-p-logo.scm:138
 msgid "_Particle Trace..."
 msgstr "_Parçacık İzi..."
 
-#: ../scripts/t-o-p-logo.scm:102
+#: ../scripts/t-o-p-logo.scm:99
 msgid "Add a Trace of Particles effect to the selected region (or alpha)"
 msgstr "Seçili bölgeye (veya alfaya) Parçacık İzi etkisi ekle"
 
-#: ../scripts/t-o-p-logo.scm:110 ../scripts/t-o-p-logo.scm:150
+#: ../scripts/t-o-p-logo.scm:107 ../scripts/t-o-p-logo.scm:147
 msgid "Hit rate"
 msgstr "Vurma oranı"
 
-#: ../scripts/t-o-p-logo.scm:111 ../scripts/t-o-p-logo.scm:151
+#: ../scripts/t-o-p-logo.scm:108 ../scripts/t-o-p-logo.scm:148
 msgid "Edge width"
 msgstr "Kenar genişliği"
 
-#: ../scripts/t-o-p-logo.scm:112 ../scripts/t-o-p-logo.scm:152
+#: ../scripts/t-o-p-logo.scm:109 ../scripts/t-o-p-logo.scm:149
 msgid "Edge only"
 msgstr "Yalnız kenar"
 
-#: ../scripts/t-o-p-logo.scm:113 ../scripts/t-o-p-logo.scm:153
+#: ../scripts/t-o-p-logo.scm:110 ../scripts/t-o-p-logo.scm:150
 msgid "Base color"
 msgstr "Temel renk"
 
-#: ../scripts/t-o-p-logo.scm:142
+#: ../scripts/t-o-p-logo.scm:139
 msgid "Create a logo using a Trace Of Particles effect"
 msgstr "Parçacık İzi etkisi kullanarak bir logo oluştur"
 
-#: ../scripts/truchet.scm:157
+#: ../scripts/truchet.scm:165
 msgid "T_ruchet..."
 msgstr "T_ruchet..."
 
-#: ../scripts/truchet.scm:158
+#: ../scripts/truchet.scm:166
 msgid "Create an image filled with a Truchet pattern"
 msgstr "Truchet deseni ile doldurulmuş bir görüntü oluştur"
 
-#: ../scripts/truchet.scm:166
+#: ../scripts/truchet.scm:174
 msgid "Foreground color"
 msgstr "Önalan rengi"
 
@@ -2661,11 +2705,11 @@ msgstr "Maske boyutu"
 msgid "Mask opacity"
 msgstr "Maske ışık geçirmezliği"
 
-#: ../scripts/waves-anim.scm:96
+#: ../scripts/waves-anim.scm:95
 msgid "_Waves..."
 msgstr "_Dalgalar..."
 
-#: ../scripts/waves-anim.scm:97
+#: ../scripts/waves-anim.scm:96
 msgid ""
 "Create a multi-layer image with an effect like a stone was thrown into the "
 "current image"
@@ -2673,23 +2717,23 @@ msgstr ""
 "Geçerli görüntüye taş fırlatılmasına benzer bir etki vererek çoklu katman "
 "görüntüsü oluştur"
 
-#: ../scripts/waves-anim.scm:104
+#: ../scripts/waves-anim.scm:103
 msgid "Amplitude"
 msgstr "Boyut"
 
-#: ../scripts/waves-anim.scm:105
+#: ../scripts/waves-anim.scm:104
 msgid "Wavelength"
 msgstr "Dalgaboyu"
 
-#: ../scripts/waves-anim.scm:107
+#: ../scripts/waves-anim.scm:106
 msgid "Invert direction"
 msgstr "Yönü Tersine Çevir"
 
-#: ../scripts/weave.scm:393
+#: ../scripts/weave.scm:389
 msgid "_Weave..."
 msgstr "_Hasır..."
 
-#: ../scripts/weave.scm:394
+#: ../scripts/weave.scm:390
 msgid ""
 "Create a new layer filled with a weave effect to be used as an overlay or "
 "bump map"
@@ -2697,93 +2741,33 @@ msgstr ""
 "Kaplama veya derinlik etkisi olarak kullanılmak üzere dokuma efektiyle "
 "doldurulmuş yeni bir katman oluştur"
 
-#: ../scripts/weave.scm:401
+#: ../scripts/weave.scm:397
 msgid "Ribbon width"
 msgstr "Şerit genişliği"
 
-#: ../scripts/weave.scm:402
+#: ../scripts/weave.scm:398
 msgid "Ribbon spacing"
 msgstr "Şerit boşluğu"
 
-#: ../scripts/weave.scm:403
+#: ../scripts/weave.scm:399
 msgid "Shadow darkness"
 msgstr "Gölge koyuluğu"
 
-#: ../scripts/weave.scm:404
+#: ../scripts/weave.scm:400
 msgid "Shadow depth"
 msgstr "Gölge derinliği"
 
-#: ../scripts/weave.scm:405
+#: ../scripts/weave.scm:401
 msgid "Thread length"
 msgstr "Parçacık uzunluğu"
 
-#: ../scripts/weave.scm:406
+#: ../scripts/weave.scm:402
 msgid "Thread density"
 msgstr "Parçacık sıklığı"
 
-#: ../scripts/weave.scm:407
+#: ../scripts/weave.scm:403
 msgid "Thread intensity"
 msgstr "Parçacık yoğunluğu"
-
-#: ../scripts/web-browser.scm:60
-msgid "Using _Paths"
-msgstr "_Yolları Kullanma"
-
-#: ../scripts/web-browser.scm:61 ../scripts/web-browser.scm:74
-#: ../scripts/web-browser.scm:87 ../scripts/web-browser.scm:100
-#: ../scripts/web-browser.scm:113 ../scripts/web-browser.scm:126
-#: ../scripts/web-browser.scm:139 ../scripts/web-browser.scm:152
-msgid "Bookmark to the user manual"
-msgstr "Kullanıcı kılavuzunun yer imine ekleyin"
-
-#: ../scripts/web-browser.scm:73
-msgid "_Preparing your Images for the Web"
-msgstr "Web için kendi görüntülerinizi _hazırlama"
-
-#: ../scripts/web-browser.scm:86
-msgid "_Working with Digital Camera Photos"
-msgstr "Sayısal Kamera Görüntüleri ile _çalışıyor"
-
-#: ../scripts/web-browser.scm:99
-msgid "Create, Open and Save _Files"
-msgstr "_Dosyaları Oluştur, Aç ve Kaydet"
-
-#: ../scripts/web-browser.scm:112
-msgid "_Basic Concepts"
-msgstr "_Temel Kavramlar"
-
-#: ../scripts/web-browser.scm:125
-msgid "How to Use _Dialogs"
-msgstr "İletişim _Kutuları Nasıl Kullanılır"
-
-#: ../scripts/web-browser.scm:138
-msgid "Drawing _Simple Objects"
-msgstr "_Yalın Nesne Çizimi"
-
-#: ../scripts/web-browser.scm:151
-msgid "Create and Use _Selections"
-msgstr "_Seçimleri Oluştur ve Kullan"
-
-#: ../scripts/web-browser.scm:179
-msgid "_Main Web Site"
-msgstr "_Ana Web Sitesi"
-
-#: ../scripts/web-browser.scm:180 ../scripts/web-browser.scm:193
-#: ../scripts/web-browser.scm:206 ../scripts/web-browser.scm:219
-msgid "Bookmark to the GIMP web site"
-msgstr "GIMP web sitesinin yer imine ekleyin"
-
-#: ../scripts/web-browser.scm:192
-msgid "_Developer Web Site"
-msgstr "_Geliştirici Web Sitesi"
-
-#: ../scripts/web-browser.scm:205
-msgid "_User Manual Web Site"
-msgstr "_Kullanıcı Kılavuzu Web Sitesi"
-
-#: ../scripts/web-browser.scm:218
-msgid "Plug-in _Registry"
-msgstr "Eklenti _Kayıt Defteri"
 
 #: ../scripts/xach-effect.scm:121
 msgid "_Xach-Effect..."
@@ -2800,6 +2784,10 @@ msgstr "X konumunu aydınlat"
 #: ../scripts/xach-effect.scm:130
 msgid "Highlight Y offset"
 msgstr "Y konumunu aydınlat"
+
+#: ../scripts/xach-effect.scm:131
+msgid "Highlight color"
+msgstr "Aydınlatma rengi"
 
 #: ../scripts/xach-effect.scm:132
 msgid "Highlight opacity"
@@ -2824,87 +2812,3 @@ msgstr "Gölgenin X konumu"
 #: ../scripts/xach-effect.scm:137
 msgid "Drop shadow Y offset"
 msgstr "Gölgenin Y konumu"
-
-#~ msgid "_Console"
-#~ msgstr "_Uçbirim"
-
-#~ msgid "Too few arguments to 'script-fu-register' call"
-#~ msgstr "'script-fu-register' çağrısında çok fazla bağımsız değişken"
-
-#~ msgid "Error while loading %s:"
-#~ msgstr "%s yüklenirken hata:"
-
-#~ msgid "Listen on IP:"
-#~ msgstr "IP'yi dinle:"
-
-#~ msgid ""
-#~ "Listening on an IP address other than 127.0.0.1 (especially 0.0.0.0) can "
-#~ "allow attackers to remotely execute arbitrary code on this machine."
-#~ msgstr ""
-#~ "127.0.0.1'den başka bir IP adresini (özellikle 0.0.0.0) dinlemek, "
-#~ "saldırganların bu bilgisayar üzerinde istedikleri kodu uzaktan "
-#~ "çalıştırmalarına izin verebilir."
-
-#, fuzzy
-#~ msgid "Border Layer"
-#~ msgstr "Sınır boyutu"
-
-#, fuzzy
-#~ msgid "Arrow"
-#~ msgstr "_Ok..."
-
-#, fuzzy
-#~ msgid "Alien Glow"
-#~ msgstr "_Alien Glow"
-
-#, fuzzy
-#~ msgid "Background"
-#~ msgstr "Artalan rengi"
-
-#, fuzzy
-#~ msgid "Bullet"
-#~ msgstr "_Koyu nokta..."
-
-#, fuzzy
-#~ msgid "Button"
-#~ msgstr "_Düğmeler"
-
-#, fuzzy
-#~ msgid "Bevel Shadow"
-#~ msgstr "Gölge"
-
-#, fuzzy
-#~ msgid "Bevel Highlight"
-#~ msgstr "Eğimli genişlik"
-
-#, fuzzy
-#~ msgid "Cast Shadow"
-#~ msgstr "Gölge oluştur"
-
-#, fuzzy
-#~ msgid "Inset"
-#~ msgstr "Tersine Çevir"
-
-#, fuzzy
-#~ msgid "Drop Shadow"
-#~ msgstr "Gölge düşür"
-
-#, fuzzy
-#~ msgid "Chrome"
-#~ msgstr "K_rom"
-
-#, fuzzy
-#~ msgid "Highlight"
-#~ msgstr "Aydınlatma rengi"
-
-#, fuzzy
-#~ msgid "Effect layer"
-#~ msgstr "Ayrı katman"
-
-#, fuzzy
-#~ msgid "Stain"
-#~ msgstr "Lekeler"
-
-#, fuzzy
-#~ msgid "Create four guides around the bounding box of the current selection"
-#~ msgstr "Şu anki seçimin köşelerini yuvarla"
